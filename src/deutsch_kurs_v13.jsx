@@ -2563,17 +2563,17 @@ const LEKTIONEN=[
     sub:"Möbel · haben · kein/keine · Farben · Akkusativ",
     date:"KB Seite 29–33 · AB 28–31",col:C.green,
     sections:[
-      {id:"d3",  icon:"💬",title:"Dialogfragen L3",       sub:"Фразы для диалога",             time:"∞",     col:C.teal,  hasT:false, th:null,              ex:()=><DialogCards lId="L3"/>},
-      {id:"3i",  icon:"🏠",title:"Zimmer & Adjektive",    sub:"Комнаты + описание мебели",      time:"5 мин", col:C.blue,  hasT:true,  th:()=><T3Intro/>,    ex:()=><Quiz questions={Q_L3FARBE}/>},
-      {id:"3a",  icon:"🔑",title:"A · Wir brauchen...",   sub:"haben + kein/keine + Akkusativ", time:"8 мин", col:C.green, hasT:true,  th:()=><T3A/>,        ex:()=><Quiz questions={Q_L3A}/>},
-      {id:"3f",  icon:"🎨",title:"Farben & Meinungen",    sub:"Цвета + как выразить мнение",    time:"4 мин", col:C.orange,hasT:true,  th:()=><T3Farben/>,   ex:()=><Quiz questions={Q_L3FARBE}/>},
-      {id:"3k",  icon:"📊",title:"Akkusativ",             sub:"Nominativ vs Akkusativ",         time:"6 мин", col:C.red,   hasT:true,  th:()=><T3Akkusativ/>,ex:()=><Quiz questions={Q_L3AKKU}/>},
-      {id:"3b",  icon:"❓",title:"B · Ist das ein Tisch?",sub:"Ja/Nein-Fragen + neue Möbel",    time:"5 мин", col:C.blue,  hasT:true,  th:()=><T3B/>,        ex:()=><Quiz questions={Q_L3B}/>},
-      {id:"3c",  icon:"🏢",title:"C · Mehrfamilienhaus",  sub:"es gibt + Etagen + Richtungen",  time:"5 мин", col:C.purple,hasT:true,  th:()=><T3C/>,        ex:()=><Quiz questions={Q_L3C}/>},
-      {id:"3d",  icon:"👤",title:"D · Possessivpronomen", sub:"mein/dein/sein/ihr/unser/euer",   time:"6 мин", col:C.orange,hasT:true,  th:()=><T3Poss/>,     ex:()=><Quiz questions={Q_L3POSS}/>},
-      {id:"3e",  icon:"🏘️",title:"E · Wohnvokabular",    sub:"Bad/Balkon/Stadt/Hotel/Urlaub",   time:"6 мин", col:C.teal,  hasT:true,  th:()=><T3WohnVok/>,  ex:()=><Quiz questions={Q_L3WOHN}/>},
-      {id:"3g",  icon:"📋",title:"G · Abkürzungen",       sub:"Zi. · EFH · EBK · ZH · NK · qm", time:"3 мин", col:C.blue,  hasT:true,  th:()=><AbkBlock/>, ex:null},
-      {id:"t3",  icon:"🎯",title:"Großer Test L3",        sub:"Alle Themen — 10 Fragen",         time:"8 мин", col:C.yellow,hasT:false, th:null,              ex:()=><Quiz questions={Q_L3TEST}/>},
+      {id:"d3",  icon:"💬",title:"Dialogfragen L3",          sub:"Фразы для диалога",                  time:"∞",     col:C.teal,  hasT:false, th:null,              ex:()=><DialogCards lId="L3"/>},
+      {id:"3i",  icon:"🛋️",title:"A · Möbel und Zimmer",     sub:"Мебель, комнаты, описание квартиры", time:"5 мин", col:C.blue,  hasT:true,  th:()=><T3Intro/>,    ex:()=><Quiz questions={Q_L3FARBE}/>},
+      {id:"3a",  icon:"🔑",title:"B · Wir brauchen...",       sub:"haben + kein/keine + Akkusativ",     time:"8 мин", col:C.green, hasT:true,  th:()=><T3A/>,        ex:()=><Quiz questions={Q_L3A}/>},
+      {id:"3f",  icon:"🎨",title:"C · Farben und Meinungen",  sub:"Цвета + как выразить мнение",        time:"4 мин", col:C.orange,hasT:true,  th:()=><T3Farben/>,   ex:()=><Quiz questions={Q_L3FARBE}/>},
+      {id:"3k",  icon:"📊",title:"Akkusativ",                 sub:"Nominativ vs Akkusativ",             time:"6 мин", col:C.red,   hasT:true,  th:()=><T3Akkusativ/>,ex:()=><Quiz questions={Q_L3AKKU}/>},
+      {id:"3b",  icon:"❓",title:"Ja/Nein-Fragen",            sub:"Ist das ein Tisch? + новая мебель",  time:"5 мин", col:C.blue,  hasT:true,  th:()=><T3B/>,        ex:()=><Quiz questions={Q_L3B}/>},
+      {id:"3c",  icon:"🏢",title:"Mehrfamilienhaus",          sub:"es gibt + Etagen + Richtungen",      time:"5 мин", col:C.purple,hasT:true,  th:()=><T3C/>,        ex:()=><Quiz questions={Q_L3C}/>},
+      {id:"3d",  icon:"🏠",title:"D · Eine Wohnung suchen",   sub:"Wohnungsanzeigen + Adjektive",       time:"6 мин", col:C.orange,hasT:true,  th:()=><T3Poss/>,     ex:()=><Quiz questions={Q_L3POSS}/>},
+      {id:"3e",  icon:"🏘️",title:"E · Wie ist Ihre Wohnung?", sub:"Описание квартиры + диалог",        time:"6 мин", col:C.teal,  hasT:true,  th:()=><T3WohnVok/>,  ex:()=><Quiz questions={Q_L3WOHN}/>},
+      {id:"3g",  icon:"📋",title:"Abkürzungen Wohnung",       sub:"Zi. · EFH · EBK · ZH · NK · qm",    time:"3 мин", col:C.blue,  hasT:true,  th:()=><AbkBlock/>,   ex:null},
+      {id:"t3",  icon:"🎯",title:"Großer Test L3",            sub:"Alle Themen — 10 Fragen",            time:"8 мин", col:C.yellow,hasT:false, th:null,              ex:()=><Quiz questions={Q_L3TEST}/>},
     ]
   },
 ];
@@ -2811,8 +2811,7 @@ export default function App(){
       <div style={wrap}>
         <div style={{textAlign:"center",padding:"12px 0 24px"}}>
           <div style={{fontSize:48,marginBottom:8}}>🇩🇪</div>
-          <div style={{fontSize:22,fontWeight:900,color:C.text}}>Pluspunkt Deutsch A1</div>
-          <div style={{fontSize:13,color:C.muted,marginTop:4}}>Kursbuch · {LEKTIONEN.length} урока</div>
+          <div style={{fontSize:22,fontWeight:900,color:C.text}}>Deutschkurs</div>
         </div>
         <div style={{display:"flex",flexDirection:"column",gap:12}}>
           {/* Wörterbuch */}
