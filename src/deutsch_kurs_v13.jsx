@@ -1067,7 +1067,10 @@ function Woerterbuch(){
   };
 
   const RECENT_COUNT=WBDATA.length;
-  const recentWords=sortNew?[...WBDATA].reverse():[...WBDATA];
+  const recentBase=sortNew?[...WBDATA].reverse():[...WBDATA];
+  const recentWords=search
+    ?recentBase.filter(w=>w.de.toLowerCase().includes(search.toLowerCase())||w.ru.toLowerCase().includes(search.toLowerCase()))
+    :recentBase;
 
   // Доступные темы для текущего типа
   const availableTemen=TEMEN.filter(t=>{
