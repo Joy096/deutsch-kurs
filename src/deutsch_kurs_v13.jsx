@@ -49,6 +49,7 @@ const BERUFE=[
   {m:"Grafiker",f:"Grafikerin",ru:"дизайнер/график"},
   {m:"Student",f:"Studentin",ru:"студент"},
   {m:"Kinderarzt",f:"Kinderärztin",ru:"педиатр"},
+  {m:"Hausmann",f:"Hausfrau",ru:"домохозяин / домохозяйка"},
 ];
 
 // ─── NATIONALITÄTEN ───────────────────────────────────────────────────────────
@@ -326,6 +327,7 @@ const DIALOG_FRAGEN=[
     {q:"Bis bald! / Bis später!", tr:"До скорого! / Увидимся!",  a:"Bis bald!",                            note:"неформально"},
     {q:"Einen schönen Tag!",      tr:"Хорошего дня!",               a:"Danke, gleichfalls!",                  note:"gleichfalls = взаємно"},
     {q:"Einen schönen Abend!",    tr:"Хорошего вечера!",            a:"Danke, gleichfalls!",                  note:""},
+    {q:"Ach so.",                 tr:"Вот как. / Понятно.",          a:"— (реакция на новую информацию)",      note:"Ach so = А, понятно! · выражает лёгкое удивление или понимание"},
   ]},
   {tag:"Kennenlernen — formell (Sie)",col:C.blue,qa:[
     {q:"Wie heißen Sie?",         tr:"Как вас зовут?",              a:"Ich heiße Vitali Klymenko.",           note:"heißen = называться"},
@@ -334,7 +336,8 @@ const DIALOG_FRAGEN=[
     {q:"Was sind Sie von Beruf?", tr:"Кем вы работаете?",           a:"Ich bin Gitarrenlehrer von Beruf.",    note:"von Beruf = по профессии"},
     {q:"Welche Sprache(n) sprechen Sie?", tr:"Какие языки вы знаете?",a:"Ich spreche Deutsch und Englisch. Und Sie?",note:"sprechen = говорить"},
     {q:"Welche Hobbys haben Sie?",tr:"Какие у вас хобби?",            a:"Meine Hobbys sind Lesen und Musik.",   note:"gern = с удовольствием"},
-    {q:"Wie geht es Ihnen?",      tr:"Как у вас дела?",           a:"Danke, gut. Und Ihnen? / Mir geht es gut.",note:"Ihnen = вам (Dativ)"},
+    {q:"Wie geht es Ihnen?",      tr:"Как у вас дела?",           a:"Danke, gut. Und Ihnen? / Auch gut, danke.",note:"Ihnen = вам (Dativ) · Auch gut = у меня тоже хорошо"},
+    {q:"Sind Sie neu hier?",      tr:"Вы тут новый/новая?",        a:"Ja, ich bin neu hier. / Ja, wir kommen aus Mannheim.",note:"p.17 Dialogtraining"},
     {q:"Freut mich! / Sehr angenehm!",tr:"Рад познакомиться! / Очень приятно!", a:"Freut mich auch!",      note:"при знакомстве"},
   ]},
   {tag:"Kennenlernen — informell (du)",col:C.teal,qa:[
@@ -431,123 +434,104 @@ const KONJ_L2={
 // ─── DIALOG DATA ──────────────────────────────────────────────────────────────
 const DIALOGE={
   L1:[
-    {tag:"1A · Begrüßung & Vorstellung",col:C.blue,pairs:[
-      {q:"Guten Morgen! / Guten Tag! / Guten Abend!",a:"Guten Morgen! / Guten Tag! / Guten Abend!",note:"Приветствие по времени суток"},
-      {q:"Ich heiße Eva Meier. Und wie heißen Sie?",a:"Ich heiße... / Mein Name ist...",note:"Два варианта — оба правильные"},
-      {q:"Entschuldigung, wie heißen Sie?",a:"Mein Name ist... / Ich heiße...",note:"Entschuldigung = Извините (вежливое начало)"},
-      {q:"Woher kommen Sie?",a:"Ich komme aus der Ukraine. / Ich komme aus Spanien.",note:"Страны с артиклем: aus DER Türkei, aus DER Ukraine"},
-      {q:"Wer ist das?",a:"Das ist Paolo Costa. / Das ist Manu.",note:"Wer = Кто (для людей)"},
-      {q:"Ich bin neu hier. Ich wohne schon lange hier.",a:"— (информация о себе)",note:"neu = новый здесь; schon lange = уже давно"},
-      {q:"Wie alt sind Sie? / Wie alt bist du?",a:"Ich bin 34 Jahre alt.",note:"Jahre alt = лет. Ich bin 34 Jahre alt = мне 34 года"},
+    {tag:"Основные",col:C.blue,pairs:[
+      // Begrüßen
+      {q:"Wie geht es Ihnen?",            a:"Danke, gut. Und Ihnen? / Auch gut, danke.", note:"Ihnen = Вам (Dativ)",              fm:"f"},
+      {q:"Wie geht es dir? / Wie geht's?",a:"Gut, und dir? / Na ja, es geht so.",        note:"dir = тебе · es geht so = так себе", fm:"i"},
+      // Vorstellen
+      {q:"Wie heißen Sie?",               a:"Ich heiße … / Mein Name ist …",            note:"heißen = называться",               fm:"f"},
+      {q:"Woher kommen Sie?",             a:"Ich komme aus der Ukraine.",                note:"aus der Ukraine · aus der Türkei",   fm:"f"},
+      {q:"Wo wohnen Sie?",                a:"Ich wohne in Köln.",                        note:"",                                  fm:"f"},
+      {q:"Was sind Sie von Beruf?",       a:"Ich bin Lehrer. / Ich bin Ärztin.",         note:"OHNE Artikel: nicht «ein Lehrer»!",  fm:"f"},
+      {q:"Wie ist Ihre Handynummer?",     a:"Meine Nummer ist 0176235628.",              note:"Ihre = ваш",                         fm:"f"},
+      {q:"Wie heißt du?",                 a:"Ich heiße … / Mein Name ist …",            note:"informell · du-Form",                fm:"i"},
+      {q:"Woher kommst du?",              a:"Ich komme aus der Ukraine.",                note:"",                                  fm:"i"},
+      {q:"Wo wohnst du?",                 a:"Ich wohne in Köln.",                        note:"",                                  fm:"i"},
+      {q:"Was bist du von Beruf?",        a:"Ich bin Ingenieur. / Ich lerne Deutsch.",  note:"",                                   fm:"i"},
+      {q:"Wie ist deine Handynummer?",    a:"Meine Nummer ist …",                        note:"deine = твоя",                      fm:"i"},
+      // Phrases (Kommunikation)
+      {q:"Guten Morgen! / Guten Tag! / Guten Abend!", a:"Guten Morgen! / Guten Tag! / Guten Abend!", note:"формально · по времени суток", fm:"f"},
+      {q:"Hallo! / Guten Tag! / Guten Morgen!",       a:"Hallo! / Hey!",                note:"неформально",                        fm:"i"},
+      {q:"Auf Wiedersehen!",              a:"Auf Wiedersehen!",                          note:"прощание формально",                 fm:"f"},
+      {q:"Tschüss!",                      a:"Tschüss! / Bis bald!",                     note:"прощание неформально",               fm:"i"},
     ]},
-    {tag:"1B · Buchstabieren",col:C.purple,pairs:[
-      {q:"Wie schreibt man das?",a:"Ich buchstabiere: K-L-Y-M-E-N-K-O",note:"buchstabieren = произносить по буквам"},
-      {q:"Wie bitte?",a:"— (переспросить если не понял)",note:"Вежливая просьба повторить"},
-      {q:"Moment, ich buchstabiere:",a:"Buchstabe für Buchstabe nennen",note:"Moment = подождите секунду"},
-    ]},
-    {tag:"1C · Formell und informell",col:C.green,pairs:[
-      {q:"Wie geht es Ihnen? (formell)",a:"Danke, gut. Und Ihnen?",note:"Ihnen = Вам (официально)"},
-      {q:"Wie geht es dir? / Wie geht's? (informell)",a:"Super! / Sehr gut. / Gut. / Es geht. / Schlecht.",note:"Шкала: Super(отлично) → Sehr gut → Gut → Es geht(так себе) → Schlecht(плохо)"},
-      {q:"Auf Wiedersehen! (formell)",a:"Auf Wiedersehen! / Bis bald!",note:"Официальное прощание"},
-      {q:"Tschüss! (informell)",a:"Tschüss! / Bis bald! / Bis morgen!",note:"Неформальное прощание"},
-      {q:"Hallo, wie heißt du? (informell)",a:"Ich bin Mario. Und du?",note:"du = ты (с друзьями, детьми)"},
-      {q:"Danke! / Vielen Dank!",a:"Bitte! / Bitte sehr!",note:"Vielen Dank = большое спасибо; Bitte = пожалуйста"},
-    ]},
-    {tag:"1D · Zahlen",col:C.orange,pairs:[
-      {q:"Wie ist Ihre Handynummer? (formell)",a:"Meine Nummer ist 0176 458910.",note:"Цифры читают по одной: null-eins-sieben-sechs..."},
-      {q:"Wie ist deine Handynummer? (informell)",a:"Meine Handynummer ist...",note:"Am Telefon oft: zwo statt zwei (чтобы не путать с drei)"},
-      {q:"Auf Wiederhören! (по телефону)",a:"Auf Wiederhören!",note:"Auf Wiederhören = До свидания по телефону (hören = слышать)"},
-    ]},
-    {tag:"1E · Beruf",col:C.yellow,pairs:[
-      {q:"Was sind Sie von Beruf? (formell)",a:"Ich bin Lehrer. / Ich bin Ärztin.",note:"Без артикля! НЕ: Ich bin EIN Lehrer"},
-      {q:"Was bist du von Beruf? (informell)",a:"Ich bin Ingenieur. Und Sie?",note:""},
-      {q:"Ich bin nicht berufstätig. / Ich bin Hausfrau.",a:"— (варианты ответа)",note:"berufstätig = работающий; Hausfrau = домохозяйка"},
+    {tag:"Дополнительные",col:C.teal,pairs:[
+      {q:"Wer ist das?",                  a:"Das ist Paolo Costa. / Das ist Manu.",     note:"Wer = Кто (для людей)"},
+      {q:"Wie alt sind Sie? / Wie alt bist du?", a:"Ich bin 34 Jahre alt.",            note:"Jahre alt = лет"},
+      {q:"Sind Sie neu hier?",            a:"Ja, ich bin neu hier. / Wir kommen aus Mannheim.", note:"p.17 Dialogtraining",        fm:"f"},
+      {q:"Wie bitte?",                    a:"— (просьба повторить)",                   note:"вежливая просьба"},
+      {q:"Wie schreibt man das?",         a:"Ich buchstabiere: K-L-Y-M-E-N-K-O",      note:"buchstabieren = произносить по буквам"},
+      {q:"Danke! / Vielen Dank!",         a:"Bitte! / Bitte sehr! / Gern!",            note:"Vielen Dank = большое спасибо"},
+      {q:"Freut mich! / Sehr angenehm!",  a:"Freut mich auch!",                        note:"при знакомстве"},
+      {q:"Einen schönen Tag!",            a:"Danke, gleichfalls!",                     note:"gleichfalls = взаємно"},
+      {q:"Ach so.",                       a:"— (реакция на новую информацию)",          note:"Ach so = А, понятно!"},
+      {q:"Auf Wiederhören!",              a:"Auf Wiederhören!",                         note:"по телефону · hören = слышать"},
+      {q:"Ich bin nicht berufstätig.",    a:"— (вариант ответа)",                      note:"berufstätig = работающий · Hausfrau = домохозяйка"},
+      {q:"Moment, ich buchstabiere:",     a:"Ka-Ell-Üpsilon-Emm-Eh-Enn-Ka-Oh",        note:"Moment = подождите секунду"},
     ]},
   ],
   L2:[
-    {tag:"2A · Nationalität & Sprachen",col:C.blue,pairs:[
-      {q:"Woher kommt er/sie?",a:"Er kommt aus der Türkei. / Sie kommt aus Spanien.",note:"er = он, sie = она — по роду человека"},
-      {q:"Was ist seine/ihre Nationalität?",a:"Er ist Türke. / Sie ist Spanierin.",note:""},
-      {q:"Welche Sprache spricht er/sie?",a:"Er spricht Türkisch und Deutsch.",note:"spricht = говорит (er/sie-форма от sprechen)"},
-      {q:"Was ist Ihre Nationalität? / Was ist Ihre Muttersprache?",a:"Ich bin Ukrainer. Meine Muttersprache ist Ukrainisch.",note:"Muttersprache = родной язык"},
-      {q:"Wo liegt die Ukraine?",a:"Die Ukraine liegt in Europa, östlich von Polen.",note:"liegen = находиться, располагаться"},
-      {q:"Ich lerne auch Deutsch. / Ich lerne nicht Deutsch.",a:"Ich lerne auch Deutsch. / Ich komme nicht aus Marokko, ich komme aus Ghana.",note:"auch = тоже; nicht = не"},
+    {tag:"Основные",col:C.blue,pairs:[
+      // Adresse/Telefonnummer (Kommunikation стр.)
+      {q:"Wie ist Ihre/deine Adresse?",              a:"Ich wohne in der Schillerstraße 18 in München. Die Postleitzahl ist 80331.", note:"PLZ = Postleitzahl = почтовый индекс"},
+      {q:"Wie ist Ihre/deine Telefonnummer?",        a:"Meine Telefonnummer ist 040 41 09 861.",    note:"Цифры телефона читают попарно"},
+      // Muttersprache/Nationalität (Kommunikation стр.)
+      {q:"Welche Sprachen sprechen Sie / sprichst du?", a:"Ich spreche Deutsch und Ukrainisch.",   note:"sprechen = говорить · Sprache = язык"},
+      {q:"Was ist Ihre/deine Nationalität?",         a:"Ich bin Ukrainer. / Ich bin Ukrainerin.",  note:"без артикля после bin!"},
+      // nach Wörtern fragen (Kommunikation стр.)
+      {q:"Was ist das?",                             a:"Das ist ein Tisch. / Das ist eine Tasche.", note:"ein (m/n) / eine (f)"},
+      {q:"Wie heißt das auf Deutsch?",               a:"Das heißt Stuhl. / Das ist ein Stuhl.",    note:"Спросить немецкое название"},
+      {q:"Wie ist der Artikel?",                     a:"Der Artikel ist der/das/die.",              note:"Спросить род слова"},
+      {q:"Wie schreibt man das?",                    a:"Ich buchstabiere: S-T-U-H-L",              note:"buchstabieren = произносить по буквам"},
+      // phrases
+      {q:"Ich wohne in der Schillerstraße 18 in München.", a:"— (адрес)",                         note:"Die Postleitzahl ist ... = почтовый индекс"},
+      {q:"Ich spreche ...",                          a:"Ich spreche Deutsch und Ukrainisch.",       note:"Muttersprache = родной язык"},
+      {q:"Ich bin ...",                              a:"Ich bin Ukrainer. / Ich bin Spanier.",      note:"Nationalität — без артикля!"},
     ]},
-    {tag:"2B · Im Deutschkurs",col:C.orange,pairs:[
-      {q:"Was ist das?",a:"Das ist ein Tisch. / Das ist eine Tasche. / Das ist ein Heft.",note:"ein (m/n) / eine (f) — неопределённый артикль"},
-      {q:"Wie ist der Artikel?",a:"Das. Das Heft. / Der. Der Tisch.",note:"Сначала m/n/f, потом конкретный артикль"},
-      {q:"Was kostet das? / Wie viel kostet das?",a:"Das kostet 20 Euro. / Der Tisch kostet 20 Euro.",note:"kostet (ед.ч.) / kosten (мн.ч.)"},
-      {q:"Wie viele Stühle sind im Kursraum?",a:"Da sind zwanzig Stühle. / Hier sind sechs Stühle.",note:"wie viele = сколько; da/hier = там/здесь"},
-      {q:"Das ist aber teuer! / Das ist aber billig!",a:"Ja! / Nein, das ist günstig.",note:"teuer = дорого; billig/günstig = дёшево"},
-      {q:"richtig / kaputt / interessant / schick",a:"Das ist richtig! / Das ist kaputt. / Das ist interessant. / Das ist schick!",note:"richtig=правильно, kaputt=сломан, interessant=интересно, schick=стильно"},
-    ]},
-    {tag:"2C · Zahlen & Notruf",col:C.teal,pairs:[
-      {q:"Wie ist Ihre Vorwahl?",a:"Meine Vorwahl ist 040.",note:"Vorwahl = код города: München 089 · Berlin 030 · Frankfurt 069"},
-      {q:"Wie ist Ihre Telefonnummer?",a:"Die Telefonnummer ist 41 09 861.",note:"Цифры телефона читают попарно"},
-      {q:"Wie viel ist 17 plus 3?",a:"Siebzehn plus drei ist zwanzig.",note:"plus = + · minus = - · ist/gleich = ="},
-      {q:"Polizei / Feuerwehr — welche Nummer?",a:"Polizei: 110 · Feuerwehr/Notruf: 112",note:"Важные номера в Германии!"},
-      {q:"Auf Wiederhören! (по телефону)",a:"Auf Wiederhören!",note:"Телефонное прощание"},
-    ]},
-    {tag:"2D · Adresse & Anmeldung",col:C.purple,pairs:[
-      {q:"Wie ist Ihr Name und Ihre Adresse?",a:"Thomas Schulz, Juliusstraße 15 in Hamburg. Die Postleitzahl ist 22769.",note:"PLZ = Postleitzahl = почтовый индекс"},
-      {q:"Haben Sie eine E-Mail-Adresse?",a:"Ja, das ist schulz@gmx.de — schulz ätt ge em ix punkt de e.",note:"@ = ätt · . = Punkt · - = Bindestrich"},
-      {q:"Wie ist Ihre Handynummer? / Wie ist Ihre E-Mail-Adresse?",a:"Meine Nummer ist... / Meine E-Mail ist...",note:"Полезные вопросы при регистрации/знакомстве"},
-      {q:"Vielen Dank! / Danke schön!",a:"Bitte sehr! / Gern geschehen!",note:"Vielen Dank = большое спасибо — для официальных ситуаций"},
-      {q:"Wo ist die Kita? / Ist der Platz noch frei?",a:"Die Kita ist in der Schillerstraße. / Ja, der Platz ist frei.",note:"die Kita = детский сад · der Platz = место/площадь · frei = свободный"},
-    ]},
-    {tag:"2 · nach Wörtern fragen",col:C.teal,pairs:[
-      {q:"Was ist das?",a:"Das ist ein Tisch. / Das ist eine Brille.",note:"Спросить что это за предмет"},
-      {q:"Wie heißt das auf Deutsch?",a:"Das heißt Stuhl. / Das ist ein Stuhl.",note:"Спросить немецкое название предмета"},
-      {q:"Wie ist der Artikel?",a:"Der Artikel ist der/das/die.",note:"Спросить род слова"},
-      {q:"Wie schreibt man das?",a:"Ich buchstabiere: S-T-U-H-L",note:"Спросить написание слова"},
+    {tag:"Дополнительные",col:C.teal,pairs:[
+      {q:"Haben Sie eine E-Mail-Adresse?",           a:"Ja, meine E-Mail ist name@gmx.de.",        note:"@ = ätt · . = Punkt · - = Bindestrich"},
+      {q:"Was kostet das? / Wie viel kostet das?",   a:"Das kostet 20 Euro.",                      note:"kostet (ед.ч.) / kosten (мн.ч.)"},
+      {q:"Das ist aber teuer! / Das ist aber billig!", a:"Ja! / Nein, das ist günstig.",           note:"teuer = дорого · billig/günstig = дёшево"},
+      {q:"Wie ist Ihre Vorwahl?",                    a:"Meine Vorwahl ist 040.",                    note:"München 089 · Berlin 030 · Frankfurt 069"},
+      {q:"Polizei / Feuerwehr — welche Nummer?",     a:"Polizei: 110 · Feuerwehr/Notruf: 112",    note:"Wichtige Nummern in Deutschland!"},
+      {q:"Wo ist die Kita? / Ist der Platz noch frei?", a:"Die Kita ist in der Schillerstraße. / Ja, der Platz ist frei.", note:"Kita = детский сад · frei = свободный"},
+      {q:"Wie viele Stühle sind im Kursraum?",       a:"Da sind zwanzig Stühle.",                 note:"wie viele = сколько · da/hier = там/здесь"},
+      // phrases
+      {q:"Auf Wiederhören!",                         a:"Auf Wiederhören!",                          note:"по телефону"},
+      {q:"Das ist richtig! / Das ist kaputt.",       a:"Richtig! / Kaputt. / Schick!",             note:"richtig=правильно · kaputt=сломан · schick=стильно"},
     ]},
   ],
   L3:[
-    {tag:"3A · Möbel & haben",col:C.green,pairs:[
-      {q:"Haben Sie ein Sofa?",a:"Ja, ich habe ein Sofa. / Nein, ich habe kein Sofa.",note:"haben = иметь. Отрицание: kein/keine"},
-      {q:"Was haben Sie in der Wohnung?",a:"Ich habe einen Tisch, zwei Stühle und ein Regal.",note:"m Akkusativ после haben: einen Tisch"},
-      {q:"Was brauchen Sie noch?",a:"Ich brauche noch eine Lampe und einen Kühlschrank.",note:"brauchen = нуждаться. После brauchen — Akkusativ"},
-      {q:"Haben Sie einen Fernseher?",a:"Nein, ich habe keinen Fernseher. Ich brauche einen.",note:"m Akk.: keinen/einen Fernseher"},
-      {q:"Wie findest du den Sessel?",a:"Super! Der Sessel ist sehr elegant. Gut, dann kaufen wir den Sessel.",note:"Akkusativ: den Sessel (m → den)"},
+    {tag:"Основные",col:C.green,pairs:[
+      // über Wohnungen und Möbel sprechen (Kommunikation стр.)
+      {q:"Was kostet die Wohnung?",                  a:"500 Euro ohne Nebenkosten. / 400 Euro Warmmiete.", note:"ohne Nebenkosten = без коммунальных · Warmmiete = всё включено"},
+      {q:"Wie viele Zimmer haben Sie?",              a:"Drei Zimmer und eine Küche und ein Badezimmer.", note:"wie viele = сколько"},
+      // über Dinge sprechen (Kommunikation стр.)
+      {q:"Ist das ein Tisch?",                       a:"Nein, das ist kein Tisch. Das ist eine Lampe.", note:"kein/keine = нет"},
+      {q:"Wie findest du die Lampe?",                a:"Ich finde die Lampe elegant. / Super! / Nicht schön.", note:"finden = считать · Akkusativ: den Stuhl / die Lampe"},
+      // phrases (Kommunikation стр.)
+      {q:"Wir haben keinen Teppich.",                a:"Aber wir brauchen keinen Teppich.",         note:"keinen (m Akk.) · keine (f Akk.)"},
+      {q:"Wir brauchen eine Spülmaschine.",          a:"— (нам нужна посудомойка)",                  note:"brauchen + Akkusativ"},
+      {q:"Wirklich?",                                a:"Ja, wirklich! / Oh, klasse!",               note:"wirklich = правда? · klasse = здорово!"},
+      {q:"Der Stuhl ist schön. Ich kaufe den Stuhl.", a:"— (Стул красивый. Я покупаю стул.)",       note:"Akkusativ: den Stuhl (m → den)"},
+      {q:"Ich finde die Lampe elegant.",             a:"— (Я считаю лампу элегантной.)",            note:"finden + Akkusativ + Adjektiv"},
+      {q:"Die Wohnung ist klein, aber sie ist hell und hat einen Balkon.", a:"— (описание квартиры)", note:"aber = но · hell = светлый · hat einen Balkon = есть балкон"},
+      {q:"Ich habe eine 1-Zimmer-Wohnung. Sie ist 35 qm groß.", a:"— (описание квартиры)",         note:"qm = Quadratmeter · groß = большой/метражный"},
     ]},
-    {tag:"3 · Farben & Meinungen",col:C.orange,pairs:[
-      {q:"Wie finden Sie das Sofa?",a:"Sehr schön! / Toll! / Super! / Elegant. / Gemütlich.",note:"😊 sehr schön / toll / super / elegant / gemütlich"},
-      {q:"Wie finden Sie die Farbe?",a:"Ganz schön. / Nicht schlecht. / Okay.",note:"😐 ganz schön / nicht schlecht / okay"},
-      {q:"Wie findest du das Bild?",a:"Langweilig. / Nicht schön. / Hässlich. / Furchtbar.",note:"😞 langweilig / nicht schön / hässlich / furchtbar"},
-      {q:"Welche Farbe ist die Wand?",a:"Die Wand ist orange. / Der Stuhl ist blau.",note:"Цвет через sein: ist + Farbe"},
-    ]},
-    {tag:"3B · Ja/Nein-Fragen",col:C.blue,pairs:[
-      {q:"Ist das ein Tisch?",a:"Ja, das ist ein Tisch. / Nein, das ist kein Tisch. Das ist eine Lampe.",note:"Ja/Nein-Fragen: Ist das...? → Ja.../Nein, kein/keine..."},
-      {q:"Ist das ein Bett?",a:"Ja, das ist ein Bett. / Nein, das ist kein Bett.",note:""},
-      {q:"Wirklich? / Schau mal!",a:"Ja, wirklich! / Oh, klasse!",note:"wirklich = правда? / schau mal = посмотри / klasse = здорово!"},
-      {q:"Haben Sie eine Mikrowelle?",a:"Nein, ich habe keine Mikrowelle. Ich brauche auch keine Mikrowelle.",note:"keine = keine (f) auch = тоже"},
-    ]},
-    {tag:"3C · Mehrfamilienhaus",col:C.purple,pairs:[
-      {q:"Wo wohnen Sie?",a:"Ich wohne im 2. Stock. / Im Erdgeschoss. / Im Dachgeschoss.",note:"im = in dem. Erdgeschoss = цокольный этаж, 1.Stock = 1-й этаж"},
-      {q:"Wo gibt es einen Laden?",a:"Es gibt einen Obst- und Gemüseladen im Erdgeschoss.",note:"es gibt + Akkusativ = есть/имеется. m → einen Laden"},
-      {q:"Wohnt Familie Wang im 2. Stock?",a:"Ja, Familie Wang wohnt im 2. Stock links.",note:"links = слева, rechts = справа, oben = вверху, unten = внизу"},
-      {q:"Wie viele Stockwerke hat das Haus?",a:"Das Haus hat 3 Stockwerke und ein Dachgeschoss.",note:"das Stockwerk/der Stock = этаж"},
-      {q:"Wer wohnt im ersten Stock?",a:"Die Familie Wang wohnt im ersten Stock.",note:"ersten = первом (Dativ): im ersten/zweiten/dritten Stock"},
-    ]},
-    {tag:"3D · Wohnen & Alltag",col:C.yellow,pairs:[
-      {q:"Ich bin zu Hause.",a:"— (Я дома — нахожусь дома)",note:"zu Hause = дома (где?) ≠ nach Hause = домой (куда?)"},
-      {q:"Ich gehe jetzt nach Hause.",a:"— (Я иду домой)",note:"nach Hause = домой (движение). Сравни: Ich BIN zu Hause (состояние)"},
-      {q:"In welchem Haus wohnst du?",a:"Ich wohne in einem Apartment. / Wir haben ein Apartment gemietet.",note:"mieten = снимать жильё; das Apartment,-s = квартира"},
-      {q:"Wie hoch ist die Miete?",a:"Die Miete ist 800 Euro plus Nebenkosten.",note:"die Miete = аренда; die Nebenkosten = коммунальные платежи"},
-      {q:"Meine Familie lebt in einem Dorf.",a:"— (информация о семье)",note:"das Dorf,-er = село; die Stadt,-e = город; leben = жить/обитать"},
-      {q:"Heidelberg ist eine alte Stadt.",a:"— (описание города)",note:"alt = старый/старинный; Städte = города (мн.ч.)"},
-    ]},
-    {tag:"3E · Hotel & Urlaub",col:C.teal,pairs:[
-      {q:"Wollen Sie ein Doppelzimmer oder ein Einzelzimmer?",a:"Ein Doppelzimmer, bitte. / Ein Einzelzimmer, bitte.",note:"das Doppelzimmer = двухместный номер; das Einzelzimmer = одноместный"},
-      {q:"Im Urlaub sind wir in einem Hotel am Meer.",a:"— (информация об отпуске)",note:"der Urlaub = отпуск; übernachten = ночевать; die Nacht,-e = ночь"},
-      {q:"Wie viele Nächte möchten Sie übernachten?",a:"Wir möchten drei Nächte übernachten.",note:"übernachten = ночевать (провести ночь)"},
-    ]},
-    {tag:"3F · Possessivpronomen",col:C.orange,pairs:[
-      {q:"Das ist mein Buch.",a:"— (Это моя книга.)",note:"ich → mein/meine/mein"},
-      {q:"Ist das dein Laptop?",a:"Ja, das ist mein Laptop. / Nein, das ist nicht mein Laptop.",note:"du → dein/deine/dein"},
-      {q:"In der Garage steht sein Auto.",a:"— (В гараже стоит его машина.)",note:"er/es → sein/seine/sein"},
-      {q:"Unser Apartment ist gemütlich.",a:"— (Наша квартира уютная.)",note:"wir → unser/unsere/unser"},
-      {q:"Wie ist Ihre Adresse? (formell)",a:"Meine Adresse ist... / Mein Name ist...",note:"Sie → Ihr/Ihre/Ihr (с большой буквы!)"},
+    {tag:"Дополнительные",col:C.teal,pairs:[
+      {q:"Was haben Sie in der Wohnung?",            a:"Ich habe einen Tisch, zwei Stühle und ein Regal.", note:"m Akkusativ: einen Tisch"},
+      {q:"Was brauchen Sie noch?",                   a:"Ich brauche noch eine Lampe und einen Kühlschrank.", note:"brauchen = нуждаться · noch = ещё"},
+      {q:"Wie finden Sie das Sofa?",                 a:"Sehr schön! / Toll! / Gemütlich. / Langweilig.", note:"😊 sehr schön/toll · 😐 okay · 😞 langweilig/hässlich"},
+      {q:"Wie ist Ihre Wohnung?",                    a:"Meine Wohnung ist klein, aber hell. / Sie ist ruhig und günstig.", note:"aber = но · hell = светлый"},
+      {q:"Wie hoch ist die Miete?",                  a:"Die Miete ist 800 Euro plus Nebenkosten.",  note:"Miete = аренда · Nebenkosten = коммуналка"},
+      {q:"Wo wohnen Sie?",                           a:"Ich wohne im 2. Stock. / Im Erdgeschoss.",  note:"im = in dem · Erdgeschoss = первый этаж снизу"},
+      {q:"Wo gibt es einen Laden?",                  a:"Es gibt einen Obst- und Gemüseladen im Erdgeschoss.", note:"es gibt + Akkusativ = есть/имеется"},
+      {q:"Wollen Sie ein Doppelzimmer oder ein Einzelzimmer?", a:"Ein Doppelzimmer, bitte.",       note:"Doppelzimmer = двухм. · Einzelzimmer = одноместный"},
+      {q:"Ist das dein Laptop?",                     a:"Ja, das ist mein Laptop. / Nein, das ist nicht mein Laptop.", note:"dein = твой · mein = мой"},
+      // phrases
+      {q:"Ich bin zu Hause.",                        a:"— (Я дома)",                                note:"zu Hause = дома (где?) ≠ nach Hause = домой (куда?)"},
+      {q:"Ich gehe jetzt nach Hause.",               a:"— (Я иду домой)",                           note:"nach Hause = домой (движение)"},
+      {q:"Das Badezimmer ist furchtbar!",            a:"Ja, das finde ich auch. Es ist dunkel!",    note:"furchtbar = ужасный · dunkel = тёмный"},
     ]},
   ],
 };
@@ -652,10 +636,13 @@ function Quiz({questions}){
 function DialogCards({lId}){
   const groups=DIALOGE[lId]||[];
   const [mode,setMode]=useState("fragen");
+  const [fm,setFm]=useState("f"); // formell/informell — только для L1
   const [openItems,setOpenItems]=useState(new Set());
-  const [openGroupsP,setOpenGroupsP]=useState(new Set());
   const togItem=(k)=>setOpenItems(s=>{const n=new Set(s);n.has(k)?n.delete(k):n.add(k);return n;});
-  const togGrpP=(gi)=>setOpenGroupsP(s=>{const n=new Set(s);n.has(gi)?n.delete(gi):n.add(gi);return n;});
+
+  const isL1=lId==="L1";
+  // фильтр по fm: показываем пары без fm (оба) ИЛИ совпадающие с выбранным режимом
+  const filterFm=(pairs)=>isL1?pairs.filter(p=>!p.fm||p.fm===fm):pairs;
 
   return(
     <div style={{display:"flex",flexDirection:"column",gap:14}}>
@@ -663,6 +650,20 @@ function DialogCards({lId}){
         <H c={C.teal}>💬 Диалоговые фразы</H>
         <div style={{fontSize:13,color:C.muted}}>Нажми на вопрос — увидишь ответ. Список пополняется с каждым уроком.</div>
       </Box>
+
+      {/* ── Formell / Informell тогл (только L1) ── */}
+      {isL1&&(
+        <div style={{display:"flex",gap:6,background:C.card2,borderRadius:12,padding:4}}>
+          {[{id:"f",label:"🎩 Formell (Sie)"},{id:"i",label:"👋 Informell (du)"}].map(t=>(
+            <button key={t.id} onClick={()=>{setFm(t.id);setOpenItems(new Set());}} style={{
+              flex:1,padding:"8px 0",borderRadius:9,border:"none",cursor:"pointer",fontSize:13,fontWeight:600,
+              background:fm===t.id?(t.id==="f"?C.blue:C.green):"transparent",
+              color:fm===t.id?"#000":C.muted,transition:"all .15s"
+            }}>{t.label}</button>
+          ))}
+        </div>
+      )}
+
       <div style={{display:"flex",gap:6,background:C.card2,borderRadius:12,padding:4}}>
         {[{id:"fragen",label:"❓ Вопросы"},{id:"phrasen",label:"📋 Фразы"}].map(t=>(
           <button key={t.id} onClick={()=>setMode(t.id)} style={{
@@ -675,7 +676,7 @@ function DialogCards({lId}){
 
       {/* ══ ВОПРОСЫ ══ */}
       {mode==="fragen"&&groups.map((g,gi)=>{
-        const items=g.pairs.filter(p=>p.q.includes("?"));
+        const items=filterFm(g.pairs).filter(p=>p.q.includes("?"));
         if(!items.length)return null;
         return(
           <div key={gi}>
@@ -707,34 +708,22 @@ function DialogCards({lId}){
         );
       })}
 
-      {/* ══ ФРАЗЫ ══ */}
-      {mode==="phrasen"&&groups.map((g,gi)=>{
-        const items=g.pairs.filter(p=>!p.q.includes("?"));
-        if(!items.length)return null;
-        const grpOpen=openGroupsP.has(gi);
+      {/* ══ ФРАЗЫ — плоский список ══ */}
+      {mode==="phrasen"&&(()=>{
+        const all=groups.flatMap((g)=>filterFm(g.pairs).filter(p=>!p.q.includes("?")).map(p=>({...p,col:g.col})));
+        if(!all.length)return <div style={{color:C.muted,fontSize:13,textAlign:"center",padding:20}}>Нет фраз</div>;
         return(
-          <div key={gi} style={{background:C.card,border:`1px solid ${g.col}35`,borderRadius:14,overflow:"hidden"}}>
-            <div onClick={()=>togGrpP(gi)} style={{
-              background:g.col+"15",padding:"10px 14px",cursor:"pointer",
-              borderBottom:grpOpen?`1px solid ${g.col}25`:"none",
-              display:"flex",justifyContent:"space-between",alignItems:"center"
-            }}>
-              <div>
-                <span style={{fontWeight:700,fontSize:13,color:g.col}}>{g.tag}</span>
-                <span style={{fontSize:11,color:C.dim,marginLeft:8}}>{items.length} фраз</span>
-              </div>
-              <span style={{color:g.col,fontSize:13,opacity:0.7}}>{grpOpen?"▲":"▼"}</span>
-            </div>
-            {grpOpen&&items.map((p,pi)=>(
-              <div key={pi} style={{padding:"10px 14px",borderBottom:`1px solid ${C.border}18`}}>
+          <div style={{background:C.card,border:`1px solid ${C.border}`,borderRadius:14,overflow:"hidden"}}>
+            {all.map((p,pi)=>(
+              <div key={pi} style={{padding:"10px 14px",borderBottom:pi<all.length-1?`1px solid ${C.border}30`:"none"}}>
                 <div style={{fontSize:13,fontWeight:700,color:C.text,marginBottom:4}}>{p.q}</div>
-                <div style={{fontSize:12,color:g.col,marginBottom:p.note?3:0}}>↩ {p.a}</div>
+                <div style={{fontSize:12,color:p.col,marginBottom:p.note?3:0}}>↩ {p.a}</div>
                 {p.note&&<div style={{fontSize:11,color:C.dim,marginTop:2}}>📝 {p.note}</div>}
               </div>
             ))}
           </div>
         );
-      })}
+      })()}
     </div>
   );
 }
@@ -1903,6 +1892,38 @@ const Q_L1TEST=shuffle([
   {q:"Sie kommt aus ___ Ukraine.",opts:["aus Ukraine","aus der Ukraine","aus die Ukraine","von der Ukraine"],ans:1,hint:"Nationalität"},
 ]).slice(0,10);
 
+const Q_2B=[
+  {q:"'der Tisch' — какой род?",           opts:["maskulin","neutral","feminin","Plural"],    ans:0, hint:"Artikel"},
+  {q:"'das Heft' — какой род?",            opts:["maskulin","neutral","feminin","Plural"],    ans:1, hint:"Artikel"},
+  {q:"'die Tasche' — какой род?",          opts:["maskulin","neutral","feminin","Plural"],    ans:2, hint:"Artikel"},
+  {q:"'Das ist ___ Tasche.' (впервые)",    opts:["die","eine","ein","—"],                     ans:1, exp:"f → eine (unbestimmt, впервые)", hint:"Artikel"},
+  {q:"'___ Tasche ist schick.' (известна)",opts:["eine","ein","die","der"],                   ans:2, exp:"die Tasche (bestimmt, уже знаем)", hint:"Artikel"},
+  {q:"Lampe → Plural:",                    opts:["Lampen","Lampes","Lampens","Lampe"],        ans:0, exp:"die Lampe, -n → Lampen",         hint:"Plural"},
+  {q:"Tisch → Plural:",                    opts:["Tischen","Tischs","Tische","Tischa"],       ans:2, exp:"der Tisch, -e → Tische",         hint:"Plural"},
+  {q:"Stuhl → Plural:",                    opts:["Stuhle","Stühle","Stühlen","Stuhls"],       ans:1, exp:'der Stuhl, "-e → Stühle',        hint:"Plural"},
+  {q:"Buch → Plural:",                     opts:["Büchen","Bücher","Buchs","Buche"],          ans:1, exp:'das Buch, "-er → Bücher',        hint:"Plural"},
+  {q:"Handy → Plural:",                    opts:["Handyen","Handis","Handys","Handies"],      ans:2, exp:"das Handy, -s → Handys",         hint:"Plural"},
+];
+const Q_ABK=[
+  {q:"Что означает 'Pl.'?",  opts:["Plural","Platz","Plastik","Plakat"],       ans:0, hint:"Abkürzungen"},
+  {q:"Что означает 'm.'?",   opts:["maskulin","mittel","mehr","Moment"],       ans:0, hint:"Abkürzungen"},
+  {q:"Что означает 'f.'?",   opts:["fertig","feminin","frei","falsch"],        ans:1, hint:"Abkürzungen"},
+  {q:"Что означает 'n.'?",   opts:["neu","neutral","nicht","normal"],          ans:1, hint:"Abkürzungen"},
+  {q:"Что означает 'Str.'?", opts:["Stadt","Straße","Strich","Stock"],         ans:1, hint:"Abkürzungen"},
+  {q:"Что означает 'PLZ'?",  opts:["Polizei","Platz","Postleitzahl","Plan"],   ans:2, hint:"Abkürzungen"},
+  {q:"Что означает 'Tel.'?", opts:["Teil","Telefonnummer","Text","Termin"],    ans:1, hint:"Abkürzungen"},
+  {q:"Что означает 'Nr.'?",  opts:["Nummer","Normal","Norden","Nacht"],        ans:0, hint:"Abkürzungen"},
+];
+const Q_ABK_WOHN=[
+  {q:"Что означает 'Zi.'?",    opts:["Zimmer","Ziel","Zug","Zeit"],                        ans:0, hint:"Abkürzungen"},
+  {q:"Что означает 'EFH'?",    opts:["Einfamilienhaus","Erdgeschoss","Einheit","Etage"],   ans:0, hint:"Abkürzungen"},
+  {q:"Что означает 'EBK'?",    opts:["Einbauküche","Etagenbett","Eingang","Ende"],         ans:0, hint:"Abkürzungen"},
+  {q:"Что означает 'ZH'?",     opts:["Zentralheizung","Zwei-Haus","Zone","Zeit-Haus"],     ans:0, hint:"Abkürzungen"},
+  {q:"Что означает 'NK'?",     opts:["Nebenkosten","Neue Küche","Nord-Keller","Nacht"],    ans:0, hint:"Abkürzungen"},
+  {q:"Что означает 'qm'?",     opts:["Quadratmeter","Qualität","Quer","Querfläche"],       ans:0, hint:"Abkürzungen"},
+  {q:"Что означает 'EG'?",     opts:["Erdgeschoss","Eingang","Etage","Ende"],              ans:0, hint:"Abkürzungen"},
+  {q:"'3 Zi.-Whg.' — это:",    opts:["3-комнатная квартира","3-этажный дом","3 ванных","3 балкона"], ans:0, hint:"Anzeige"},
+];
 const Q_L2TEST=shuffle([
   {q:"Артикль: 'Tasche'",opts:["der","das","die","ein"],ans:2,hint:"Artikel"},
   {q:"Артикль: 'Heft'",opts:["der","die","das","ein"],ans:2,hint:"Artikel"},
@@ -2552,6 +2573,379 @@ const Q_L3WOHN=shuffle([
   {q:"die Stadt → Plural:",opts:["Städten","Stadtse","Städte","Stadts"],ans:2,exp:'die Stadt, "-e → die Städte',hint:"Plural"},
 ]).slice(0,8);
 
+// ═══════════════════ GROSSER TEST — ДАННЫЕ И КОМПОНЕНТЫ ════════════════════════
+
+// ─── Данные для Lückentext ────────────────────────────────────────────────────
+const LUECKEN_L1=shuffle([
+  {sent:"Ich ___ aus der Ukraine.",         opts:["komme","kommst","kommt","kommen"],  ans:0,ru:"Я из Украины.",                       hint:"kommen"},
+  {sent:"Du ___ sehr gut Deutsch.",         opts:["sprichst","spricht","spreche","sprechen"],ans:0,ru:"Ты хорошо говоришь по-немецки.", hint:"sprechen"},
+  {sent:"Wie ___ Sie?",                     opts:["heiße","heißt","heißen","heißt"],   ans:2,ru:"Как вас зовут?",                     hint:"heißen"},
+  {sent:"Ich ___ Lehrerin von Beruf.",      opts:["habe","heißt","bin","komme"],       ans:2,ru:"Я учительница по профессии.",         hint:"sein"},
+  {sent:"Wir ___ aus Deutschland.",         opts:["kommt","kommen","komme","kommst"],  ans:1,ru:"Мы из Германии.",                    hint:"kommen"},
+  {sent:"___ kommen Sie?",                  opts:["Was","Wie","Wer","Woher"],          ans:3,ru:"Откуда вы?",                         hint:"W-Frage"},
+  {sent:"Ich ___ neu hier im Haus.",        opts:["haben","bin","komme","heiße"],      ans:1,ru:"Я новенький здесь в доме.",           hint:"sein"},
+  {sent:"Sie ___ Spanisch und Englisch.",   opts:["sprichst","sprecht","spricht","sprechen"],ans:2,ru:"Она говорит по-испански и английски.",hint:"sprechen"},
+  {sent:"___ heißt du?",                    opts:["Was","Woher","Wie","Wo"],           ans:2,ru:"Как тебя зовут?",                    hint:"W-Frage"},
+  {sent:"Ihr ___ aus Kanada.",              opts:["kommen","kommt","komme","kommst"],  ans:1,ru:"Вы из Канады.",                      hint:"kommen (ihr)"},
+]);
+const LUECKEN_L2=shuffle([
+  {sent:"Er ___ aus Spanien.",              opts:["komme","kommst","kommt","kommen"],  ans:2,ru:"Он из Испании.",                     hint:"kommen (er)"},
+  {sent:"Sie ___ Türkisch und Deutsch.",    opts:["sprichst","spricht","spreche","sprechen"],ans:1,ru:"Она говорит по-турецки и немецки.",hint:"sprechen (sie)"},
+  {sent:"Das ___ ein Tisch.",               opts:["bist","bin","ist","sind"],          ans:2,ru:"Это стол.",                          hint:"sein"},
+  {sent:"Die Lampe ___ 15 Euro.",           opts:["kosten","kostest","kostet","koste"],ans:2,ru:"Лампа стоит 15 евро.",               hint:"kosten (sie)"},
+  {sent:"Wie ___ das auf Deutsch?",         opts:["heiße","heißt","heißen","bist"],    ans:1,ru:"Как это называется по-немецки?",     hint:"heißen"},
+  {sent:"Ich ___ in der Schillerstraße.",   opts:["wohnst","wohne","wohnt","wohnen"], ans:1,ru:"Я живу на Шиллерштрассе.",           hint:"wohnen"},
+  {sent:"___ ist der Artikel?",             opts:["Was","Wie","Wer","Wo"],             ans:1,ru:"Какой артикль?",                     hint:"W-Frage"},
+  {sent:"Er ___ Spanier.",                  opts:["bin","bist","ist","sind"],          ans:2,ru:"Он испанец.",                        hint:"sein (er)"},
+  {sent:"Die Stühle ___ 30 Euro.",          opts:["kostet","koste","kosten","kostest"],ans:2,ru:"Стулья стоят 30 евро.",              hint:"kosten (sie Pl.)"},
+  {sent:"Woher ___ Frau Alvarez?",          opts:["komme","kommst","kommt","kommen"],  ans:2,ru:"Откуда госпожа Альварес?",           hint:"kommen (sie)"},
+]);
+const LUECKEN_L3=shuffle([
+  {sent:"Wir haben ___ Teppich.",           opts:["keinen","keine","kein","nicht"],    ans:0,ru:"У нас нет ковра.",                   hint:"kein (m Akk.)"},
+  {sent:"Ich brauche ___ Lampe.",           opts:["keinen","keine","kein","nicht"],    ans:1,ru:"Мне не нужна лампа.",                hint:"kein (f Akk.)"},
+  {sent:"Ich kaufe ___ Stuhl.",             opts:["der","die","das","den"],            ans:3,ru:"Я покупаю стул.",                    hint:"Akkusativ m"},
+  {sent:"Wie findest du ___ Sofa?",         opts:["der","die","das","den"],            ans:2,ru:"Как тебе нравится диван?",           hint:"Akkusativ n"},
+  {sent:"Das Zimmer ist klein, ___ gemütlich.", opts:["und","oder","aber","weil"],     ans:2,ru:"Комната маленькая, но уютная.",      hint:"Konjunktion"},
+  {sent:"Die Wohnung ___ 500 Euro.",        opts:["koste","kostet","kosten","kostest"],ans:1,ru:"Квартира стоит 500 евро.",           hint:"kosten"},
+  {sent:"Ich habe ___ Fernseher.",          opts:["keinen","keine","kein","nicht"],    ans:0,ru:"У меня нет телевизора.",             hint:"kein (m Akk.)"},
+  {sent:"Wie viele Zimmer ___ Sie?",        opts:["habe","hast","hat","haben"],        ans:3,ru:"Сколько у вас комнат?",              hint:"haben (Sie)"},
+  {sent:"Das ist ___ Tisch. (отрицание)",   opts:["kein","keine","keinen","nicht"],    ans:0,ru:"Это не стол.",                       hint:"kein (m Nom.)"},
+  {sent:"Ich kaufe ___ Lampe.",             opts:["der","die","das","den"],            ans:1,ru:"Я покупаю лампу.",                   hint:"Akkusativ f"},
+]);
+const AKKU_BLITZ=shuffle([
+  {sent:"Ich kaufe ___ Tisch. (m)",         opts:["der","den","die","das"],            ans:1,exp:"m Akk: der→den"},
+  {sent:"Ich brauche ___ Lampe. (f)",       opts:["die","den","das","der"],            ans:0,exp:"f Akk: die bleibt die"},
+  {sent:"Er kauft ___ Sofa. (n)",           opts:["den","die","das","dem"],            ans:2,exp:"n Akk: das bleibt das"},
+  {sent:"Ich habe ___ Stuhl. (m, indef.)",  opts:["ein","eine","einen","einem"],       ans:2,exp:"m Akk unbestimmt: einen"},
+  {sent:"Sie hat ___ Küche. (f, indef.)",   opts:["ein","eine","einen","einem"],       ans:1,exp:"f Akk: eine"},
+  {sent:"Da ist ___ Schrank. (отрицание m)",opts:["kein","keine","keinen","nicht"],    ans:0,exp:"m Nom.: kein Schrank"},
+  {sent:"Ich brauche ___ Bett. (n, indef.)",opts:["ein","eine","einen","einem"],       ans:0,exp:"n Akk: ein Bett"},
+  {sent:"Sie kaufen ___ Sessel. (m)",       opts:["der","den","die","das"],            ans:1,exp:"m Akk: der→den"},
+]);
+
+// ─── Данные для Zuordnung ─────────────────────────────────────────────────────
+const ZUORD_L1=[
+  {de:"Guten Morgen!",          ru:"Доброе утро!"},
+  {de:"Auf Wiedersehen!",       ru:"До свидания!"},
+  {de:"Entschuldigung!",        ru:"Извините!"},
+  {de:"Wie geht es Ihnen?",     ru:"Как у вас дела?"},
+  {de:"Woher kommen Sie?",      ru:"Откуда вы?"},
+  {de:"von Beruf",              ru:"по профессии"},
+];
+const ZUORD_L1_BERUFE=[
+  {de:"Arzt",                   ru:"Ärztin"},
+  {de:"Lehrer",                 ru:"Lehrerin"},
+  {de:"Ingenieur",              ru:"Ingenieurin"},
+  {de:"Verkäufer",              ru:"Verkäuferin"},
+  {de:"Friseur",                ru:"Friseurin"},
+  {de:"Elektriker",             ru:"Elektrikerin"},
+];
+const ZUORD_L2=[
+  {de:"Pl.",                    ru:"Plural"},
+  {de:"m.",                     ru:"maskulin"},
+  {de:"f.",                     ru:"feminin"},
+  {de:"n.",                     ru:"neutral"},
+  {de:"Str.",                   ru:"Straße"},
+  {de:"PLZ",                    ru:"Postleitzahl"},
+];
+const ZUORD_L3=[
+  {de:"das Bett",               ru:"das Schlafzimmer"},
+  {de:"der Herd",               ru:"die Küche"},
+  {de:"die Badewanne",          ru:"das Bad"},
+  {de:"das Sofa",               ru:"das Wohnzimmer"},
+  {de:"der Schreibtisch",       ru:"das Arbeitszimmer"},
+  {de:"die Spüle",              ru:"die Küche"},
+];
+
+// ─── Данные для Wortstellung ──────────────────────────────────────────────────
+const WSENTS_L1=[
+  {w:["Wie","heißen","Sie","?"],                               ru:"Как вас зовут?"},
+  {w:["Ich","komme","aus","der","Ukraine","."],                ru:"Я из Украины."},
+  {w:["Was","sind","Sie","von","Beruf","?"],                   ru:"Кем вы работаете?"},
+  {w:["Ich","bin","Lehrerin","von","Beruf","."],               ru:"Я учительница по профессии."},
+  {w:["Wie","ist","Ihre","Handynummer","?"],                   ru:"Какой ваш номер телефона?"},
+  {w:["Ich","wohne","in","Köln","."],                          ru:"Я живу в Кёльне."},
+  {w:["Wir","lernen","Deutsch","."],                           ru:"Мы учим немецкий."},
+  {w:["Woher","kommst","du","?"],                              ru:"Откуда ты?"},
+];
+const WSENTS_L2=[
+  {w:["Woher","kommen","Sie","?"],                             ru:"Откуда вы?"},
+  {w:["Er","kommt","aus","Spanien","."],                       ru:"Он из Испании."},
+  {w:["Welche","Sprachen","sprechen","Sie","?"],               ru:"На каких языках вы говорите?"},
+  {w:["Das","ist","eine","Tasche","."],                        ru:"Это сумка."},
+  {w:["Die","Lampe","kostet","20","Euro","."],                 ru:"Лампа стоит 20 евро."},
+  {w:["Wie","ist","Ihre","Adresse","?"],                       ru:"Какой ваш адрес?"},
+  {w:["Ich","wohne","in","der","Schillerstraße","18","."],     ru:"Я живу на Шиллерштрассе 18."},
+  {w:["Wie","heißt","das","auf","Deutsch","?"],                ru:"Как это называется по-немецки?"},
+];
+const WSENTS_L3=[
+  {w:["Was","kostet","die","Wohnung","?"],                     ru:"Сколько стоит квартира?"},
+  {w:["Ich","kaufe","den","Stuhl","."],                        ru:"Я покупаю стул."},
+  {w:["Wir","brauchen","eine","Spülmaschine","."],             ru:"Нам нужна посудомойка."},
+  {w:["Die","Wohnung","ist","klein","aber","hell","."],        ru:"Квартира маленькая, но светлая."},
+  {w:["Wie","findest","du","die","Lampe","?"],                 ru:"Как тебе нравится лампа?"},
+  {w:["Ich","habe","keinen","Fernseher","."],                  ru:"У меня нет телевизора."},
+  {w:["Das","Zimmer","hat","einen","Balkon","."],              ru:"В комнате есть балкон."},
+  {w:["Wie","viele","Zimmer","haben","Sie","?"],               ru:"Сколько у вас комнат?"},
+];
+
+// ─── LueckenQuiz ─────────────────────────────────────────────────────────────
+function LueckenQuiz({items}){
+  const qs=useState(()=>shuffle(items))[0];
+  const[idx,setIdx]=useState(0);const[sel,setSel]=useState(null);
+  const[score,setScore]=useState(0);const[done,setDone]=useState(false);const[log,setLog]=useState([]);
+  const q=qs[idx];const parts=q.sent.split("___");
+  const pick=(i)=>{if(sel!==null)return;setSel(i);if(i===q.ans)setScore(s=>s+1);setLog(l=>[...l,i===q.ans]);};
+  const next=()=>{if(idx+1>=qs.length)setDone(true);else{setIdx(i=>i+1);setSel(null);}};
+  const reset=()=>{setIdx(0);setSel(null);setScore(0);setDone(false);setLog([]);};
+  if(done)return(
+    <div style={{textAlign:"center",padding:"24px 0"}}>
+      <div style={{fontSize:48}}>{score/qs.length>=.9?"🏆":score/qs.length>=.6?"👍":"💪"}</div>
+      <div style={{fontSize:32,fontWeight:900,color:C.green,margin:"8px 0 4px"}}>{score}/{qs.length}</div>
+      <div style={{color:C.muted,marginBottom:14}}>{score===qs.length?"Perfekt!":score/qs.length>=.7?"Gut gemacht!":"Nochmal üben!"}</div>
+      <div style={{display:"flex",justifyContent:"center",gap:5,marginBottom:18}}>
+        {log.map((r,i)=><span key={i} style={{width:10,height:10,borderRadius:"50%",background:r?C.green:C.red,display:"inline-block"}}/>)}
+      </div>
+      <button onClick={reset} style={btnSt(C.green,C.greenBg)}>🔄 Повторить</button>
+    </div>
+  );
+  return(
+    <div>
+      <div style={{display:"flex",justifyContent:"space-between",marginBottom:6}}>
+        <span style={{color:C.muted,fontSize:12}}>{idx+1}/{qs.length}</span>
+        <span style={{color:C.green,fontSize:12}}>✓{score}</span>
+      </div>
+      <div style={{height:3,background:C.border,borderRadius:3,marginBottom:12,overflow:"hidden"}}>
+        <div style={{height:"100%",width:`${idx/qs.length*100}%`,background:C.green,transition:"width .3s"}}/>
+      </div>
+      {q.hint&&<div style={{marginBottom:8}}><Pill c={C.purple}>{q.hint}</Pill></div>}
+      <Box s={{marginBottom:12}}>
+        <div style={{fontSize:16,fontWeight:700,color:C.text,lineHeight:1.9}}>
+          {parts[0]}
+          <span style={{display:"inline-block",minWidth:90,padding:"1px 10px",
+            borderBottom:`2.5px solid ${sel===null?C.blue:sel===q.ans?C.green:C.red}`,
+            color:sel===null?C.dim:sel===q.ans?C.green:C.red,
+            fontWeight:900,textAlign:"center",transition:"all .2s"}}>
+            {sel!==null?q.opts[sel]:"___"}
+          </span>
+          {parts[1]}
+        </div>
+        {q.ru&&<div style={{fontSize:12,color:C.muted,marginTop:4}}>🇺🇦 {q.ru}</div>}
+      </Box>
+      <div style={{display:"flex",flexDirection:"column",gap:7,marginBottom:10}}>
+        {q.opts.map((o,i)=>{
+          let bc=C.border,bg=C.card,tc=C.text;
+          if(sel!==null){if(i===q.ans){bc=C.green;bg=C.greenBg;tc=C.green;}else if(i===sel){bc=C.red;bg=C.redBg;tc=C.red;}}
+          return(
+            <button key={i} onClick={()=>pick(i)}
+              style={{border:`1.5px solid ${bc}`,background:bg,color:tc,borderRadius:10,
+                padding:"11px 14px",fontSize:14,fontWeight:500,cursor:"pointer",textAlign:"left",
+                display:"flex",gap:10,alignItems:"center"}}>
+              <span style={{width:23,height:23,borderRadius:6,background:"rgba(255,255,255,.04)",
+                fontSize:10,fontWeight:800,display:"flex",alignItems:"center",justifyContent:"center",flexShrink:0}}>
+                {["A","B","C","D"][i]}
+              </span>{o}
+            </button>
+          );
+        })}
+      </div>
+      {sel!==null&&(
+        <Box c={sel===q.ans?C.green:C.red} s={{marginBottom:10}}>
+          <span style={{color:sel===q.ans?C.green:C.red,fontWeight:800}}>
+            {sel===q.ans?"✓ Richtig! ":"✗ Falsch — "+q.opts[q.ans]+" "}
+          </span>
+          {q.exp&&<span style={{color:C.text,fontSize:13}}>{q.exp}</span>}
+        </Box>
+      )}
+      {sel!==null&&<button onClick={next} style={{...btnSt(C.blue,C.blueBg),width:"100%"}}>{idx+1>=qs.length?"Результат →":"Weiter →"}</button>}
+    </div>
+  );
+}
+
+// ─── Zuordnung (matching) ─────────────────────────────────────────────────────
+function Zuordnung({pairs,leftLabel="Deutsch",rightLabel="Übersetzung"}){
+  const SHOW=Math.min(6,pairs.length);
+  const[items]=useState(()=>shuffle(pairs).slice(0,SHOW));
+  const[rightOrder]=useState(()=>shuffle([...Array(SHOW).keys()]));
+  const[selLeft,setSelLeft]=useState(null);
+  const[matched,setMatched]=useState({});
+  const[doneRight,setDoneRight]=useState(new Set());
+  const[wrongPair,setWrongPair]=useState(null);
+  const[attempts,setAttempts]=useState(0);
+  const allDone=Object.keys(matched).length===SHOW;
+  const clickLeft=(i)=>{if(matched[i])return;setSelLeft(selLeft===i?null:i);setWrongPair(null);};
+  const clickRight=(ri)=>{
+    if(doneRight.has(ri)||selLeft===null)return;
+    const orig=rightOrder[ri];
+    setAttempts(a=>a+1);
+    if(orig===selLeft){
+      setMatched(m=>({...m,[selLeft]:true}));
+      setDoneRight(s=>new Set([...s,ri]));
+      setSelLeft(null);
+    } else {
+      setWrongPair({l:selLeft,r:ri});
+      setTimeout(()=>{setWrongPair(null);setSelLeft(null);},700);
+    }
+  };
+  const reset=()=>{setSelLeft(null);setMatched({});setDoneRight(new Set());setWrongPair(null);setAttempts(0);};
+  if(allDone)return(
+    <div style={{textAlign:"center",padding:"24px 0"}}>
+      <div style={{fontSize:48}}>{attempts<=SHOW?"🏆":attempts<=SHOW*1.5?"👍":"💪"}</div>
+      <div style={{fontSize:26,fontWeight:900,color:C.green,margin:"8px 0 4px"}}>{SHOW}/{SHOW} совмещено!</div>
+      <div style={{color:C.muted,marginBottom:16}}>Попыток: {attempts}</div>
+      <button onClick={reset} style={btnSt(C.green,C.greenBg)}>🔄 Повторить</button>
+    </div>
+  );
+  return(
+    <div>
+      <div style={{display:"flex",justifyContent:"space-between",marginBottom:10}}>
+        <div style={{fontSize:12,color:C.muted}}>Совмести пары · нажми слева, потом справа</div>
+        <div style={{fontSize:12,color:C.green}}>✓ {Object.keys(matched).length}/{SHOW}</div>
+      </div>
+      <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:8}}>
+        <div style={{display:"flex",flexDirection:"column",gap:6}}>
+          <div style={{fontSize:10,color:C.dim,fontWeight:700,textAlign:"center",marginBottom:2,textTransform:"uppercase",letterSpacing:1}}>{leftLabel}</div>
+          {items.map((item,i)=>{
+            const isM=matched[i],isSel=selLeft===i,isW=wrongPair?.l===i;
+            const col=isM?C.green:isSel?C.blue:isW?C.red:C.border;
+            return(
+              <button key={i} onClick={()=>clickLeft(i)}
+                style={{border:`1.5px solid ${col}`,background:isM?C.greenBg:isSel?C.blueBg:isW?C.redBg:C.card,
+                  color:isM?C.green:isSel?C.blue:C.text,borderRadius:10,padding:"9px 8px",
+                  fontSize:12,fontWeight:700,cursor:isM?"default":"pointer",textAlign:"center",transition:"all .15s"}}>
+                {isM?"✓":item.de}
+              </button>
+            );
+          })}
+        </div>
+        <div style={{display:"flex",flexDirection:"column",gap:6}}>
+          <div style={{fontSize:10,color:C.dim,fontWeight:700,textAlign:"center",marginBottom:2,textTransform:"uppercase",letterSpacing:1}}>{rightLabel}</div>
+          {rightOrder.map((origIdx,ri)=>{
+            const item=items[origIdx];
+            const isM=doneRight.has(ri),isW=wrongPair?.r===ri;
+            const col=isM?C.green:isW?C.red:C.border;
+            return(
+              <button key={ri} onClick={()=>clickRight(ri)}
+                style={{border:`1.5px solid ${col}`,background:isM?C.greenBg:isW?C.redBg:C.card,
+                  color:isM?C.green:C.text,borderRadius:10,padding:"9px 8px",
+                  fontSize:12,fontWeight:600,cursor:isM?"default":"pointer",textAlign:"center",transition:"all .15s"}}>
+                {isM?"✓":item.ru}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+      {selLeft!==null&&!wrongPair&&(
+        <div style={{marginTop:10,fontSize:12,color:C.blue,textAlign:"center"}}>
+          Выбрано: <b>{items[selLeft].de}</b> → нажми правую пару
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ─── Wortstellung ─────────────────────────────────────────────────────────────
+function WortstellungGame({sents}){
+  const S=useState(()=>shuffle(sents))[0];
+  const[idx,setIdx]=useState(0);
+  const[chosen,setChosen]=useState([]);
+  const[avail,setAvail]=useState(()=>shuffle(S[0].w.filter(x=>x!=="."&&x!=="?")));
+  const[res,setRes]=useState(null);
+  const[sc,setSc]=useState(0);
+  const[done,setDone]=useState(false);
+  const s=S[idx];const tgt=s.w.filter(x=>x!=="."&&x!=="?");
+  const pick=(word,i)=>{if(res)return;setChosen(c=>[...c,word]);setAvail(a=>a.filter((_,j)=>j!==i));};
+  const unpick=(i)=>{if(res)return;const w=chosen[i];setChosen(c=>c.filter((_,j)=>j!==i));setAvail(a=>[...a,w]);};
+  const check=()=>{const ok=chosen.join(" ")===tgt.join(" ");if(ok)setSc(s=>s+1);setRes(ok?"ok":"fail");};
+  const next=()=>{
+    if(idx+1>=S.length){setDone(true);return;}
+    const ni=idx+1;setIdx(ni);setChosen([]);
+    setAvail(shuffle(S[ni].w.filter(x=>x!=="."&&x!=="?")));setRes(null);
+  };
+  const reset=()=>{setIdx(0);setChosen([]);setAvail(shuffle(S[0].w.filter(x=>x!=="."&&x!=="?")));setRes(null);setSc(0);setDone(false);};
+  if(done)return(
+    <div style={{textAlign:"center",padding:"24px 0"}}>
+      <div style={{fontSize:48}}>{sc/S.length>=.9?"🏆":sc/S.length>=.6?"👍":"💪"}</div>
+      <div style={{fontSize:30,fontWeight:900,color:C.green}}>{sc}/{S.length}</div>
+      <button onClick={reset} style={{...btnSt(C.green,C.greenBg),marginTop:16}}>🔄 Повторить</button>
+    </div>
+  );
+  return(
+    <div>
+      <div style={{display:"flex",justifyContent:"space-between",marginBottom:10}}>
+        <span style={{color:C.muted,fontSize:13}}>{idx+1}/{S.length}</span>
+        <span style={{color:C.green,fontSize:13}}>✓{sc}</span>
+      </div>
+      <Box c={C.yellow} s={{marginBottom:12}}>
+        <div style={{fontSize:11,color:C.muted,marginBottom:3}}>Составь предложение:</div>
+        <div style={{fontSize:16,fontWeight:700,color:C.yellow}}>{s.ru}</div>
+      </Box>
+      <div style={{minHeight:48,background:C.card,border:`1.5px solid ${res==="ok"?C.green:res==="fail"?C.red:C.blue}`,
+        borderRadius:12,padding:"10px 14px",marginBottom:10,display:"flex",flexWrap:"wrap",gap:8,alignItems:"center"}}>
+        {chosen.length===0
+          ?<span style={{color:C.dim,fontSize:13}}>Нажимай слова снизу...</span>
+          :chosen.map((w,i)=><button key={i} onClick={()=>unpick(i)}
+              style={{background:C.blueBg,border:`1px solid ${C.blue}`,color:C.blue,borderRadius:8,padding:"5px 11px",fontSize:14,cursor:"pointer"}}>{w}</button>)}
+      </div>
+      <div style={{display:"flex",flexWrap:"wrap",gap:8,marginBottom:12}}>
+        {avail.map((w,i)=><button key={i} onClick={()=>pick(w,i)}
+          style={{background:C.card,border:`1px solid ${C.border}`,color:C.text,borderRadius:8,padding:"7px 13px",fontSize:14,cursor:"pointer"}}>{w}</button>)}
+      </div>
+      {res&&<Box c={res==="ok"?C.green:C.red} s={{marginBottom:10}}>
+        {res==="ok"
+          ?<span style={{color:C.green,fontWeight:800}}>✓ Richtig!</span>
+          :<span style={{color:C.red,fontWeight:800}}>✗ Richtig: <b style={{color:C.text}}>{tgt.join(" ")}.</b></span>}
+      </Box>}
+      {!res&&chosen.length===tgt.length&&<button onClick={check} style={{...btnSt(C.yellow,C.yellowBg),width:"100%"}}>Проверить ✓</button>}
+      {res&&<button onClick={next} style={{...btnSt(C.blue,C.blueBg),width:"100%"}}>{idx+1>=S.length?"Результат →":"Weiter →"}</button>}
+    </div>
+  );
+}
+
+// ─── GrosserTest контейнер с табами ──────────────────────────────────────────
+function GrosserTestContainer({rounds}){
+  const[round,setRound]=useState(0);
+  const r=rounds[round];
+  return(
+    <div>
+      <div style={{display:"flex",gap:5,marginBottom:14,overflowX:"auto",paddingBottom:2}}>
+        {rounds.map((rd,i)=>(
+          <button key={i} onClick={()=>setRound(i)} style={{
+            flexShrink:0,padding:"7px 11px",borderRadius:10,
+            border:`1.5px solid ${round===i?rd.col:C.border}`,cursor:"pointer",
+            fontSize:12,fontWeight:700,background:round===i?rd.col+"22":C.card,
+            color:round===i?rd.col:C.muted,whiteSpace:"nowrap"
+          }}>{rd.icon} {rd.label}</button>
+        ))}
+      </div>
+      <div style={{fontSize:11,color:C.dim,textAlign:"center",marginBottom:12}}>
+        Раунд {round+1}/{rounds.length}: {r.label}
+      </div>
+      {r.component()}
+    </div>
+  );
+}
+function GrosserTest1(){return <GrosserTestContainer rounds={[
+  {icon:"🎯",label:"Quiz",          col:C.yellow, component:()=><Quiz questions={Q_L1TEST}/>},
+  {icon:"📝",label:"Lückentext",    col:C.blue,   component:()=><LueckenQuiz items={LUECKEN_L1}/>},
+  {icon:"🔗",label:"Phrasen",       col:C.green,  component:()=><Zuordnung pairs={ZUORD_L1} leftLabel="Deutsch" rightLabel="Перевод"/>},
+  {icon:"👔",label:"Berufe m/f",    col:C.purple, component:()=><Zuordnung pairs={ZUORD_L1_BERUFE} leftLabel="maskulin" rightLabel="feminin"/>},
+  {icon:"🔤",label:"Wortstellung",  col:C.orange, component:()=><WortstellungGame sents={WSENTS_L1}/>},
+]}/>;}
+function GrosserTest2(){return <GrosserTestContainer rounds={[
+  {icon:"🎯",label:"Quiz",          col:C.yellow, component:()=><Quiz questions={Q_L2TEST}/>},
+  {icon:"📝",label:"Lückentext",    col:C.blue,   component:()=><LueckenQuiz items={LUECKEN_L2}/>},
+  {icon:"🔗",label:"Abkürzungen",   col:C.teal,   component:()=><Zuordnung pairs={ZUORD_L2} leftLabel="Kürzel" rightLabel="Vollform"/>},
+  {icon:"🔤",label:"Wortstellung",  col:C.orange, component:()=><WortstellungGame sents={WSENTS_L2}/>},
+]}/>;}
+function GrosserTest3(){return <GrosserTestContainer rounds={[
+  {icon:"🎯",label:"Quiz",          col:C.yellow, component:()=><Quiz questions={Q_L3TEST}/>},
+  {icon:"📝",label:"Lückentext",    col:C.blue,   component:()=><LueckenQuiz items={LUECKEN_L3}/>},
+  {icon:"⚡",label:"Akkusativ",     col:C.red,    component:()=><LueckenQuiz items={AKKU_BLITZ}/>},
+  {icon:"🔗",label:"Möbel→Zimmer",  col:C.green,  component:()=><Zuordnung pairs={ZUORD_L3} leftLabel="Möbel" rightLabel="Zimmer"/>},
+  {icon:"🔤",label:"Wortstellung",  col:C.orange, component:()=><WortstellungGame sents={WSENTS_L3}/>},
+]}/>;}
+
 const LEKTIONEN=[
   {
     id:"L1",num:"1",title:"Willkommen!",
@@ -2565,7 +2959,7 @@ const LEKTIONEN=[
       {id:"1d",  icon:"🔢",title:"D · Zahlen bis 20",     sub:"Числа 0–20 и телефон",           time:"5 мин", col:C.orange,hasT:true,  th:()=><T1D/>, ex:()=><ZahlenTrainer20/>},
       {id:"1e",  icon:"👔",title:"E · Was sind Sie von Beruf?",sub:"Профессии m/f форма",        time:"6 мин", col:C.yellow,hasT:true,  th:()=><T1E/>, ex:()=><Quiz questions={Q_1E}/>},
       {id:"1g",  icon:"📝",title:"Großschreibung",            sub:"Правила заглавных букв",        time:"4 мин", col:C.orange,hasT:true,  th:()=><TGross/>, ex:()=><Quiz questions={Q_GROSS}/>},
-      {id:"t1",  icon:"🎯",title:"Großer Test L1",        sub:"Все темы — 10 вопросов",          time:"8 мин", col:C.yellow,hasT:false, ex:()=><Quiz questions={Q_L1TEST}/>},
+      {id:"t1",  icon:"🎯",title:"Großer Test L1",        sub:"Quiz · Lücken · Zuordnung · m/f · Wortstellung", time:"20 мин",col:C.yellow,hasT:false, ex:()=><GrosserTest1/>},
     ]
   },
   {
@@ -2576,15 +2970,11 @@ const LEKTIONEN=[
       {id:"d2",  icon:"💬",title:"Dialogfragen L2",       sub:"Все фразы для диалога",          time:"∞",     col:C.teal,  hasT:false, ex:()=><DialogCards lId="L2"/>},
       {id:"2a",  icon:"🌍",title:"A · Nationalität und Sprachen",sub:"Страны + er/es/sie глаголы", time:"7 мин", col:C.blue,  hasT:true,  th:()=><T2A/>, ex:()=><Quiz questions={Q_2A_S}/>},
       {id:"wf",  icon:"❓",title:"W-Fragen",               sub:"Вопросительные слова + порядок слов",time:"5 мин",col:C.yellow,hasT:true, th:()=><TWFragen/>, ex:()=><Quiz questions={Q_WF_S}/>},
-      {id:"2b",  icon:"📚",title:"B · Im Deutschkurs",    sub:"Vokabular + Artikel + Plural",    time:"10 мин",col:C.orange,hasT:true,  th:()=><T2B/>, ex:null},
-      {id:"fc",  icon:"🗂️",title:"Karteikarten",          sub:"Карточки — все слова",            time:"8 мин", col:C.blue,  hasT:false, ex:()=><Flashcards/>},
-      {id:"at",  icon:"🏷️",title:"Artikel-Trainer",       sub:"Угадай der/das/die",              time:"5 мин", col:C.purple,hasT:false, ex:()=><ArtikelTrainer/>},
-      {id:"pq",  icon:"📝",title:"Plural-Quiz",           sub:"Выбери правильное мн. число",     time:"5 мин", col:C.orange,hasT:false, ex:()=><PluralQuiz/>},
-      {id:"sb",  icon:"✏️",title:"Sätze bauen",           sub:"Составь предложение",             time:"5 мин", col:C.green, hasT:false, ex:()=><SentenceBuilder/>},
+      {id:"2b",  icon:"📚",title:"B · Im Deutschkurs",    sub:"Vokabular + Artikel + Plural",    time:"10 мин",col:C.orange,hasT:true,  th:()=><T2B/>, ex:()=><Quiz questions={Q_2B}/>},
       {id:"2c",  icon:"🔢",title:"C · Zahlen bis 1000",   sub:"Числа 20–1000",                   time:"5 мин", col:C.teal,  hasT:true,  th:()=><ZahlenTrainer1000/>, ex:()=><ZahlenTrainer1000/>},
       {id:"2d",  icon:"📬",title:"D · Wie ist Ihre Adresse?",sub:"Адрес, телефон, e-mail",      time:"5 мин", col:C.purple,hasT:true,  th:()=><AdresseTrainer/>,    ex:()=><AdresseTrainer/>},
-      {id:"abk",  icon:"🔤",title:"Abkürzungen",              sub:"Pl./m./f./n./Tel./Nr./€/Str.", time:"3 мин", col:C.teal,  hasT:true,  th:()=><TAbkuerzungen/>, ex:null},
-      {id:"t2",  icon:"🎯",title:"Großer Test L2",        sub:"Все темы — 15 вопросов",          time:"10 мин",col:C.yellow,hasT:false, ex:()=><Quiz questions={Q_L2TEST}/>},
+      {id:"abk",  icon:"🔤",title:"Abkürzungen",              sub:"Pl./m./f./n./Tel./Nr./€/Str.", time:"3 мин", col:C.teal,  hasT:true,  th:()=><TAbkuerzungen/>, ex:()=><Quiz questions={Q_ABK}/>},
+      {id:"t2",  icon:"🎯",title:"Großer Test L2",        sub:"Quiz · Lücken · Abkürzungen · Wortstellung",     time:"20 мин",col:C.yellow,hasT:false, ex:()=><GrosserTest2/>},
     ]
   },
   {
@@ -2601,8 +2991,8 @@ const LEKTIONEN=[
       {id:"3c",  icon:"🏢",title:"Mehrfamilienhaus",          sub:"es gibt + Etagen + Richtungen",      time:"5 мин", col:C.purple,hasT:true,  th:()=><T3C/>,        ex:()=><Quiz questions={Q_L3C}/>},
       {id:"3d",  icon:"🏠",title:"D · Eine Wohnung suchen",   sub:"Wohnungsanzeigen + Adjektive",       time:"6 мин", col:C.orange,hasT:true,  th:()=><T3Poss/>,     ex:()=><Quiz questions={Q_L3POSS}/>},
       {id:"3e",  icon:"🏘️",title:"E · Wie ist Ihre Wohnung?", sub:"Описание квартиры + диалог",        time:"6 мин", col:C.teal,  hasT:true,  th:()=><T3WohnVok/>,  ex:()=><Quiz questions={Q_L3WOHN}/>},
-      {id:"3g",  icon:"📋",title:"Abkürzungen Wohnung",       sub:"Zi. · EFH · EBK · ZH · NK · qm",    time:"3 мин", col:C.blue,  hasT:true,  th:()=><AbkBlock/>,   ex:null},
-      {id:"t3",  icon:"🎯",title:"Großer Test L3",            sub:"Alle Themen — 10 Fragen",            time:"8 мин", col:C.yellow,hasT:false, th:null,              ex:()=><Quiz questions={Q_L3TEST}/>},
+      {id:"3g",  icon:"📋",title:"Abkürzungen Wohnung",       sub:"Zi. · EFH · EBK · ZH · NK · qm",    time:"3 мин", col:C.blue,  hasT:true,  th:()=><AbkBlock/>,   ex:()=><Quiz questions={Q_ABK_WOHN}/>},
+      {id:"t3",  icon:"🎯",title:"Großer Test L3",            sub:"Quiz · Lücken · Akkusativ · Möbel · Wortstellung",time:"25 мин",col:C.yellow,hasT:false, th:null,              ex:()=><GrosserTest3/>},
     ]
   },
 ];
@@ -2611,121 +3001,136 @@ const LEKTIONEN=[
 // ─── ДИАЛОГЕ — КЛЮЧЕВЫЕ ВОПРОСЫ ──────────────────────────────────────────────
 function DialogFragenPage(){
   const [mode,setMode]=useState("fragen");
-  const [openGroupsF,setOpenGroupsF]=useState(new Set());
-  const [openGroupsP,setOpenGroupsP]=useState(new Set());
-  const [openItem,setOpenItem]=useState(null);
+  const [sortNew,setSortNew]=useState(false); // false = старые первые (L1→L3)
+  const [fm,setFm]=useState("f");
+  const [openItems,setOpenItems]=useState(new Set());
+  const togItem=(k)=>setOpenItems(s=>{const n=new Set(s);n.has(k)?n.delete(k):n.add(k);return n;});
 
-  const filtered=(gruppe,isQ)=>gruppe.qa.filter(it=>isQ?it.q.includes("?"):!it.q.includes("?"));
-
-  // группы где есть хоть один элемент для данного режима
-  const visibleGroups=(isQ)=>DIALOG_FRAGEN.map((g,i)=>({...g,idx:i})).filter(g=>filtered(g,isQ).length>0);
-
-  const allExpandedF=openGroupsF.size>=visibleGroups(true).length;
-  const allExpandedP=openGroupsP.size>=visibleGroups(false).length;
-
-  const toggleAll=(isQ)=>{
-    if(isQ){
-      if(allExpandedF){setOpenGroupsF(new Set());setOpenItem(null);}
-      else setOpenGroupsF(new Set(visibleGroups(true).map(g=>g.idx)));
-    } else {
-      if(allExpandedP){setOpenGroupsP(new Set());}
-      else setOpenGroupsP(new Set(visibleGroups(false).map(g=>g.idx)));
-    }
+  const LMETA={
+    L1:{label:"L1 · Willkommen!",          col:C.blue},
+    L2:{label:"L2 · Alte Heimat, neue Heimat", col:C.purple},
+    L3:{label:"L3 · Häuser und Wohnungen",  col:C.green},
   };
+  const filterFm=(pairs,lId)=>lId==="L1"?pairs.filter(p=>!p.fm||p.fm===fm):pairs;
 
-  const toggleGroup=(gi,isQ)=>{
-    const setter=isQ?setOpenGroupsF:setOpenGroupsP;
-    setter(prev=>{
-      const s=new Set(prev);
-      if(s.has(gi)){s.delete(gi);if(isQ)setOpenItem(null);}
-      else s.add(gi);
-      return s;
-    });
-  };
-
-  const renderGroups=(isQ)=>{
-    const openSet=isQ?openGroupsF:openGroupsP;
-    return visibleGroups(isQ).map(gruppe=>{
-      const gi=gruppe.idx;
-      const items=filtered(gruppe,isQ);
-      const grpOpen=openSet.has(gi);
-      return(
-        <div key={gi} style={{background:C.card,border:`1px solid ${gruppe.col}35`,borderRadius:14,overflow:"hidden"}}>
-          <div onClick={()=>toggleGroup(gi,isQ)} style={{
-            background:gruppe.col+"15",padding:"10px 14px",cursor:"pointer",
-            borderBottom:grpOpen?`1px solid ${gruppe.col}25`:"none",
-            display:"flex",justifyContent:"space-between",alignItems:"center"
-          }}>
-            <div>
-              <span style={{fontWeight:700,fontSize:14,color:gruppe.col}}>{gruppe.tag}</span>
-              <span style={{fontSize:11,color:C.dim,marginLeft:8}}>{items.length} {isQ?"вопросов":"фраз"}</span>
-            </div>
-            <span style={{color:gruppe.col,fontSize:13,opacity:0.7}}>{grpOpen?"▲":"▼"}</span>
-          </div>
-          {grpOpen&&items.map((item,qi)=>{
-            if(isQ){
-              const key=`${gi}-q-${qi}`;
-              const isOpen=openItem===key;
-              return(
-                <div key={qi} onClick={()=>setOpenItem(isOpen?null:key)}
-                  style={{padding:"10px 14px",borderBottom:`1px solid ${C.border}22`,cursor:"pointer",
-                    background:isOpen?gruppe.col+"0a":"transparent"}}>
-                  <div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-start",gap:8}}>
-                    <div style={{fontWeight:600,fontSize:13,color:C.text,flex:1}}>— {item.q}</div>
-                    <span style={{color:C.muted,fontSize:12,flexShrink:0}}>{isOpen?"▲":"▼"}</span>
-                  </div>
-                  {isOpen&&(
-                    <div style={{marginTop:8,paddingTop:8,borderTop:`1px solid ${C.border}33`}}>
-                      <div style={{fontSize:12,color:gruppe.col,fontWeight:700,marginBottom:6,background:gruppe.col+"12",borderRadius:6,padding:"4px 8px"}}>
-                        🇺🇦 {item.tr}
-                      </div>
-                      <div style={{fontSize:13,color:C.text,fontWeight:600,marginBottom:item.note?4:0}}>
-                        ↩ {item.a}
-                      </div>
-                      {item.note&&<div style={{fontSize:11,color:C.muted,marginTop:4}}>📝 {item.note}</div>}
-                    </div>
-                  )}
-                </div>
-              );
-            } else {
-              return(
-                <div key={qi} style={{padding:"10px 14px",borderBottom:`1px solid ${C.border}18`}}>
-                  <div style={{fontSize:13,fontWeight:700,color:C.text,marginBottom:3}}>{item.q}</div>
-                  <div style={{fontSize:11,color:gruppe.col,marginBottom:4,opacity:0.85}}>🇺🇦 {item.tr}</div>
-                  <div style={{fontSize:12,color:C.muted,marginBottom:item.note?3:0}}>↩ {item.a}</div>
-                  {item.note&&<div style={{fontSize:11,color:C.dim}}>📝 {item.note}</div>}
-                </div>
-              );
-            }
-          })}
-        </div>
-      );
-    });
-  };
-
-  const isQ=mode==="fragen";
-  const allExp=isQ?allExpandedF:allExpandedP;
+  const lektIds=Object.keys(DIALOGE);
+  const ordered=sortNew?[...lektIds].reverse():lektIds;
 
   return(
     <div style={{display:"flex",flexDirection:"column",gap:10}}>
-      {/* ── Вкладки ── */}
+
+      {/* ── Вопросы / Фразы ── */}
       <div style={{display:"flex",gap:6,background:C.card2,borderRadius:12,padding:4}}>
         {[{id:"fragen",label:"❓ Вопросы"},{id:"phrasen",label:"📋 Фразы"}].map(t=>(
           <button key={t.id} onClick={()=>setMode(t.id)} style={{
-            flex:1,padding:"8px 0",borderRadius:9,border:"none",cursor:"pointer",fontSize:13,fontWeight:600,
+            flex:1,padding:"7px 0",borderRadius:9,border:"none",cursor:"pointer",fontSize:13,fontWeight:600,
             background:mode===t.id?C.teal:"transparent",
             color:mode===t.id?"#000":C.muted,transition:"all .15s"
           }}>{t.label}</button>
         ))}
       </div>
-      {/* ── Свернуть/развернуть все ── */}
+
+      {/* ── Сортировка (справа, под табами) ── */}
       <div style={{display:"flex",justifyContent:"flex-end"}}>
-        <button onClick={()=>toggleAll(isQ)} style={{
-          background:C.card2,border:`1px solid ${C.border}`,borderRadius:8,
-          color:C.muted,fontSize:12,cursor:"pointer",padding:"5px 12px"
-        }}>{allExp?"Свернуть все ▲":"Развернуть все ▼"}</button>
+        <button onClick={()=>{setSortNew(s=>!s);setOpenItems(new Set());}}
+          style={{padding:"5px 12px",borderRadius:9,fontWeight:600,fontSize:12,cursor:"pointer",
+            border:`1.5px solid ${C.border}`,background:sortNew?C.yellowBg:C.card,
+            color:sortNew?C.yellow:C.muted,whiteSpace:"nowrap"}}>
+          {sortNew?"🆕 Новые":"🕐 Старые"}
+        </button>
       </div>
-      {renderGroups(isQ)}
+
+      {/* ── Контент по урокам ── */}
+      {ordered.map(lId=>{
+        const meta=LMETA[lId];
+        const groups=DIALOGE[lId]||[];
+        const isL1=lId==="L1";
+
+        const hasContent=groups.some(g=>{
+          const pairs=filterFm(g.pairs,lId);
+          return mode==="fragen"?pairs.some(p=>p.q.includes("?")):pairs.some(p=>!p.q.includes("?"));
+        });
+        if(!hasContent)return null;
+
+        return(
+          <div key={lId} style={{display:"flex",flexDirection:"column",gap:8}}>
+
+            {/* Заголовок урока */}
+            <div style={{display:"flex",alignItems:"center",gap:8,paddingTop:4}}>
+              <div style={{background:meta.col+"22",border:`2px solid ${meta.col}`,color:meta.col,
+                borderRadius:8,padding:"3px 10px",fontWeight:900,fontSize:13,flexShrink:0}}>{lId}</div>
+              <div style={{color:meta.col,fontWeight:700,fontSize:13}}>{meta.label.split(" · ")[1]}</div>
+            </div>
+
+            {/* ── ВОПРОСЫ ── */}
+            {mode==="fragen"&&groups.map((g,gi)=>{
+              const items=filterFm(g.pairs,lId).filter(p=>p.q.includes("?"));
+              if(!items.length)return null;
+              const isHauptGruppe=isL1&&g.tag==="Основные";
+              return(
+                <div key={gi}>
+                  {/* Пилл + fm-тогл для L1 Основные */}
+                  <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:6}}>
+                    <Pill c={g.col}>{g.tag}</Pill>
+                    {isHauptGruppe&&(
+                      <div style={{display:"flex",gap:4}}>
+                        {[{id:"f",label:"Formell"},{id:"i",label:"Informell"}].map(t=>(
+                          <button key={t.id} onClick={()=>{setFm(t.id);setOpenItems(new Set());}} style={{
+                            padding:"3px 10px",borderRadius:8,border:`1.5px solid ${fm===t.id?meta.col:C.border}`,
+                            background:fm===t.id?meta.col+"22":"transparent",
+                            color:fm===t.id?meta.col:C.muted,fontSize:12,fontWeight:700,cursor:"pointer"
+                          }}>{t.label}</button>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                  <div style={{display:"flex",flexDirection:"column",gap:6}}>
+                    {items.map((p,pi)=>{
+                      const k=`${lId}-${gi}-${pi}`;const isO=openItems.has(k);
+                      return(
+                        <div key={pi} onClick={()=>togItem(k)}
+                          style={{background:C.card,border:`1.5px solid ${isO?g.col:C.border}`,borderRadius:12,padding:"11px 14px",cursor:"pointer"}}>
+                          <div style={{display:"flex",justifyContent:"space-between",gap:10}}>
+                            <div style={{fontWeight:600,fontSize:14,color:C.text,flex:1,lineHeight:1.4}}>❓ {p.q}</div>
+                            <span style={{color:C.muted,fontSize:14,flexShrink:0}}>{isO?"▲":"▼"}</span>
+                          </div>
+                          {isO&&(
+                            <div style={{marginTop:10,paddingTop:10,borderTop:`1px solid ${C.border}`}}>
+                              <div style={{background:g.col+"15",border:`1px solid ${g.col}40`,borderRadius:8,padding:"10px 12px",marginBottom:p.note?8:0}}>
+                                <div style={{fontSize:11,color:g.col,fontWeight:700,marginBottom:3}}>ОТВЕТ</div>
+                                <div style={{fontSize:14,fontWeight:600,color:C.text}}>{p.a}</div>
+                              </div>
+                              {p.note&&<div style={{background:C.yellowBg,border:`1px solid ${C.yellow}35`,borderRadius:8,padding:"6px 10px",fontSize:12,color:C.yellow}}>💡 {p.note}</div>}
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              );
+            })}
+
+            {/* ── ФРАЗЫ — плоский список ── */}
+            {mode==="phrasen"&&(()=>{
+              const all=groups.flatMap(g=>filterFm(g.pairs,lId).filter(p=>!p.q.includes("?")).map(p=>({...p,col:g.col})));
+              if(!all.length)return null;
+              return(
+                <div style={{background:C.card,border:`1px solid ${C.border}`,borderRadius:14,overflow:"hidden"}}>
+                  {all.map((p,pi)=>(
+                    <div key={pi} style={{padding:"10px 14px",borderBottom:pi<all.length-1?`1px solid ${C.border}30`:"none"}}>
+                      <div style={{fontSize:13,fontWeight:700,color:C.text,marginBottom:4}}>{p.q}</div>
+                      <div style={{fontSize:12,color:p.col,marginBottom:p.note?3:0}}>↩ {p.a}</div>
+                      {p.note&&<div style={{fontSize:11,color:C.dim,marginTop:2}}>📝 {p.note}</div>}
+                    </div>
+                  ))}
+                </div>
+              );
+            })()}
+
+          </div>
+        );
+      })}
     </div>
   );
 }
