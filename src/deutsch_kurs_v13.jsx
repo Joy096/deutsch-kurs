@@ -221,7 +221,7 @@ const WBDATA=[
   {art:"",de:"laut",         pl:"—",ru:"громкий",           tema:"Adjektive"},
   // ── Существительные стр.3 (после пар) ────────────────────────────────────────
   {art:"die",de:"Lage",           pl:"Lagen",             ru:"расположение, местоположение",tema:"Wohnung"},
-  {art:"das",de:"Stockwerk",      pl:"Stockwerke",        ru:"этаж",                        tema:"Wohnung"},
+  {art:"der",de:"Stock",          pl:"Stockwerke",         ru:"этаж",                        tema:"Wohnung"},
   {art:"das",de:"Einfamilienhaus",pl:"Einfamilienhäuser", ru:"отдельный дом (на одну семью)",tema:"Wohnung"},
   {art:"die",de:"Zentralheizung", pl:"Zentralheizungen",  ru:"центральное отопление (ZH)",  tema:"Wohnung"},
   {art:"der",de:"Quadratmeter",   pl:"Quadratmeter",      ru:"квадратный метр (qm)",        tema:"Wohnung"},
@@ -239,6 +239,29 @@ const WBDATA=[
   {art:"",de:"zentral",      pl:"—",ru:"центральный",       tema:"Adjektive"},
   {art:"",de:"interessant",  pl:"—",ru:"интересный",        tema:"Adjektive"},
   {art:"",de:"langweilig",   pl:"—",ru:"скучный",           tema:"Adjektive"},
+  {art:"die",de:"Farbe",        pl:"Farben",       ru:"цвет",                   tema:"Wohnung"},
+  {art:"das",de:"Erdgeschoss",  pl:"Erdgeschosse",  ru:"нулевой этаж (первый снизу)", tema:"Wohnung"},
+  {art:"der",de:"erste Stock",  pl:"—",             ru:"1-й этаж",                   tema:"Wohnung"},
+  {art:"der",de:"zweite Stock", pl:"—",             ru:"2-й этаж",                   tema:"Wohnung"},
+  {art:"der",de:"dritte Stock", pl:"—",             ru:"3-й этаж",                   tema:"Wohnung"},
+  {art:"das",de:"Dachgeschoss", pl:"Dachgeschosse",ru:"мансарда, верхний этаж", tema:"Wohnung"},
+  {art:"der",de:"Garten",       pl:"Gärten",       ru:"сад",                    tema:"Wohnung"},
+  {art:"das",de:"Geschäft",     pl:"Geschäfte",    ru:"магазин",                tema:"Alltag"},
+  {art:"",   de:"bezahlen",     pl:"—",            ru:"платить",                tema:"Wohnung"},
+  {art:"",   de:"es gibt",      pl:"—",            ru:"есть, имеется",          tema:"Phrase"},
+  {art:"",   de:"Wie findest du ...?",pl:"—",       ru:"Как тебе нравится ...?", tema:"Phrase"},
+  // ── Страницы 38–39 Arbeitsbuch (Wichtige Wörter) ─────────────────────────────
+  {art:"der",de:"Nachttisch",     pl:"Nachttische",     ru:"тумбочка",                tema:"Möbel"},
+  {art:"das",de:"Kissen",         pl:"Kissen",          ru:"подушка",                 tema:"Möbel"},
+  {art:"die",de:"Bettdecke",      pl:"Bettdecken",      ru:"одеяло",                  tema:"Möbel"},
+  {art:"der",de:"Teddybär",       pl:"Teddybären",      ru:"плюшевый мишка",          tema:"Möbel"},
+  {art:"das",de:"Kinderzimmer",   pl:"Kinderzimmer",    ru:"детская комната",         tema:"Möbel"},
+  {art:"der",de:"Küchenschrank",  pl:"Küchenschränke",  ru:"кухонный шкаф",           tema:"Möbel"},
+  {art:"der",de:"Blumentopf",     pl:"Blumentöpfe",     ru:"цветочный горшок",        tema:"Möbel"},
+  {art:"die",de:"Heizungsanlage", pl:"Heizungsanlagen", ru:"отопительная система",    tema:"Wohnung"},
+  {art:"die",de:"Wäsche",         pl:"—",               ru:"бельё, стирка",           tema:"Alltag"},
+  {art:"die",de:"Waschmaschine",  pl:"Waschmaschinen",  ru:"стиральная машина",       tema:"Möbel"},
+  {art:"der",de:"Keller",         pl:"Keller",          ru:"подвал, погреб",          tema:"Wohnung"},
 ];
 
 
@@ -1107,10 +1130,13 @@ function Woerterbuch(){
   });
 
   // убираем дубли: всегда показываем слово 'a' из пары, пропускаем 'b'
-  const dedupeAdj=(words)=>words.filter(w=>{
-    if(w.art!=="")return true;
-    return !bWords.has(w.de);
-  });
+  const dedupeAdj=(words,noDedup=false)=>{
+    if(noDedup)return words;
+    return words.filter(w=>{
+      if(w.art!=="")return true;
+      return !bWords.has(w.de);
+    });
+  };
 
   const WRow=({w})=>{
     const[stem,end]=getPluralEnd(w.de,w.pl);
@@ -1254,7 +1280,7 @@ function Woerterbuch(){
               <div key={h} style={{fontSize:10,color:C.dim,fontWeight:700,textTransform:"uppercase",letterSpacing:1}}>{h}</div>
             ))}
           </div>
-          {dedupeAdj(recentWords).map((w,i)=><WRow key={w.de+w.tema+i} w={w}/>)}
+          {dedupeAdj(recentWords,!!search).map((w,i)=><WRow key={w.de+w.tema+i} w={w}/>)}
         </div>
       )}
       {typ!=="recent"&&<div style={{display:"flex",flexDirection:"column",gap:8}}>
@@ -1268,7 +1294,7 @@ function Woerterbuch(){
             )}
             {g.id==="Adjektive"&&!search
               ?<><AdjPaare/><BewertungBlock/></>
-              :dedupeAdj(g.words).map((w,i)=><WRow key={w.de+w.tema+i} w={w}/>)
+              :dedupeAdj(g.words,!!search).map((w,i)=><WRow key={w.de+w.tema+i} w={w}/>)
             }
           </div>
         ))}
