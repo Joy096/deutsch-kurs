@@ -2870,7 +2870,7 @@ export default function App(){
               <div style={{flex:1}}>
                 <div style={{fontWeight:800,fontSize:17,color:C.text,marginBottom:3}}>{l.title}</div>
                 <div style={{fontSize:11,color:C.muted,marginBottom:4}}>{l.sub}</div>
-                <div style={{fontSize:11,color:l.col}}>{l.sections.length} разделов · {l.date}</div>
+
               </div>
               <span style={{color:C.dim,fontSize:20}}>›</span>
             </button>
