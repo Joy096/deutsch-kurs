@@ -300,36 +300,36 @@ const WBDATA=[
   {art:"die",de:"Waschmaschine",  pl:"Waschmaschinen",  ru:"стиральная машина",       tema:"Möbel"},
   {art:"der",de:"Keller",         pl:"Keller",          ru:"подвал, погреб",          tema:"Wohnung"},
   // ── Familie (Verwandte) — стр. 39 ───────────────────────────────────────────
-  {art:"die",de:"Großeltern",   pl:"—",             ru:"бабушка и дедушка (мн.ч.)", tema:"Alltag"},
-  {art:"der",de:"Großvater",    pl:"Großväter",     ru:"дедушка",                   tema:"Alltag"},
-  {art:"die",de:"Großmutter",   pl:"Großmütter",    ru:"бабушка",                   tema:"Alltag"},
-  {art:"die",de:"Eltern",       pl:"—",             ru:"родители (мн.ч.)",          tema:"Alltag"},
-  {art:"der",de:"Vater",        pl:"Väter",         ru:"отец",                      tema:"Alltag"},
-  {art:"die",de:"Mutter",       pl:"Mütter",        ru:"мать",                      tema:"Alltag"},
-  {art:"die",de:"Geschwister",  pl:"—",             ru:"братья и сёстры (мн.ч.)",   tema:"Alltag"},
-  {art:"die",de:"Schwester",    pl:"Schwestern",    ru:"сестра",                    tema:"Alltag"},
-  {art:"der",de:"Bruder",       pl:"Brüder",        ru:"брат",                      tema:"Alltag"},
-  {art:"der",de:"Sohn",         pl:"Söhne",         ru:"сын",                       tema:"Alltag"},
-  {art:"die",de:"Tochter",      pl:"Töchter",       ru:"дочь",                      tema:"Alltag"},
-  {art:"die",de:"Enkelkinder",  pl:"—",             ru:"внуки (мн.ч.)",             tema:"Alltag"},
-  {art:"der",de:"Enkel",        pl:"Enkel",         ru:"внук",                      tema:"Alltag"},
-  {art:"die",de:"Enkelin",      pl:"Enkelinnen",    ru:"внучка",                    tema:"Alltag"},
-  {art:"der",de:"Onkel",        pl:"Onkel",         ru:"дядя",                      tema:"Alltag"},
-  {art:"die",de:"Tante",        pl:"Tanten",        ru:"тётя",                      tema:"Alltag"},
-  {art:"der",de:"Cousin",       pl:"Cousins",       ru:"двоюродный брат",           tema:"Alltag"},
-  {art:"die",de:"Cousine",      pl:"Cousinen",      ru:"двоюродная сестра",         tema:"Alltag"},
-  {art:"der",de:"Neffe",        pl:"Neffen",        ru:"племянник",                 tema:"Alltag"},
-  {art:"die",de:"Nichte",       pl:"Nichten",       ru:"племянница",                tema:"Alltag"},
+  {art:"die",de:"Großeltern",   pl:"—",             ru:"бабушка и дедушка (мн.ч.)", tema:"Familie"},
+  {art:"der",de:"Großvater",    pl:"Großväter",     ru:"дедушка",                   tema:"Familie"},
+  {art:"die",de:"Großmutter",   pl:"Großmütter",    ru:"бабушка",                   tema:"Familie"},
+  {art:"die",de:"Eltern",       pl:"—",             ru:"родители (мн.ч.)",          tema:"Familie"},
+  {art:"der",de:"Vater",        pl:"Väter",         ru:"отец",                      tema:"Familie"},
+  {art:"die",de:"Mutter",       pl:"Mütter",        ru:"мать",                      tema:"Familie"},
+  {art:"die",de:"Geschwister",  pl:"—",             ru:"братья и сёстры (мн.ч.)",   tema:"Familie"},
+  {art:"die",de:"Schwester",    pl:"Schwestern",    ru:"сестра",                    tema:"Familie"},
+  {art:"der",de:"Bruder",       pl:"Brüder",        ru:"брат",                      tema:"Familie"},
+  {art:"der",de:"Sohn",         pl:"Söhne",         ru:"сын",                       tema:"Familie"},
+  {art:"die",de:"Tochter",      pl:"Töchter",       ru:"дочь",                      tema:"Familie"},
+  {art:"die",de:"Enkelkinder",  pl:"—",             ru:"внуки (мн.ч.)",             tema:"Familie"},
+  {art:"der",de:"Enkel",        pl:"Enkel",         ru:"внук",                      tema:"Familie"},
+  {art:"die",de:"Enkelin",      pl:"Enkelinnen",    ru:"внучка",                    tema:"Familie"},
+  {art:"der",de:"Onkel",        pl:"Onkel",         ru:"дядя",                      tema:"Familie"},
+  {art:"die",de:"Tante",        pl:"Tanten",        ru:"тётя",                      tema:"Familie"},
+  {art:"der",de:"Cousin",       pl:"Cousins",       ru:"двоюродный брат",           tema:"Familie"},
+  {art:"die",de:"Cousine",      pl:"Cousinen",      ru:"двоюродная сестра",         tema:"Familie"},
+  {art:"der",de:"Neffe",        pl:"Neffen",        ru:"племянник",                 tema:"Familie"},
+  {art:"die",de:"Nichte",       pl:"Nichten",       ru:"племянница",                tema:"Familie"},
   // ── Ehe & Familie / новые слова ──────────────────────────────────────────────
   {art:"der",de:"Kuchen",       pl:"Kuchen",        ru:"пирог, торт",               tema:"Alltag"},
   {art:"die",de:"Nachspeise",   pl:"Nachspeisen",   ru:"десерт",                    tema:"Alltag"},
   {art:"die",de:"Meinung",      pl:"Meinungen",     ru:"мнение",                    tema:"Alltag"},
   {art:"",   de:"gehören",      pl:"—",             ru:"принадлежать",              tema:"Alltag"},
-  {art:"die",de:"Ehe",          pl:"Ehen",          ru:"брак, супружество",         tema:"Alltag"},
-  {art:"das",de:"Ehepaar",      pl:"Ehepaare",      ru:"супружеская пара",          tema:"Alltag"},
-  {art:"die",de:"Ehefrau",      pl:"Ehefrauen",     ru:"жена",                      tema:"Alltag"},
-  {art:"der",de:"Ehemann",      pl:"Ehemänner",     ru:"муж",                       tema:"Alltag"},
-  {art:"",   de:"heiraten",     pl:"—",             ru:"жениться / выходить замуж", tema:"Alltag"},
+  {art:"die",de:"Ehe",          pl:"Ehen",          ru:"брак, супружество",         tema:"Familie"},
+  {art:"das",de:"Ehepaar",      pl:"Ehepaare",      ru:"супружеская пара",          tema:"Familie"},
+  {art:"die",de:"Ehefrau",      pl:"Ehefrauen",     ru:"жена",                      tema:"Familie"},
+  {art:"der",de:"Ehemann",      pl:"Ehemänner",     ru:"муж",                       tema:"Familie"},
+  {art:"",   de:"heiraten",     pl:"—",             ru:"жениться / выходить замуж", tema:"Familie"},
   {art:"",   de:"verheiratet sein",pl:"—",          ru:"быть женатым / замужней",   tema:"Phrase"},
   {art:"",   de:"nur",          pl:"—",             ru:"только",                    tema:"Alltag"},
 ];
@@ -1152,17 +1152,17 @@ function Woerterbuch(){
     {id:"Möbel",    label:"🛋️ Möbel",     col:C.orange},
     {id:"Bad",      label:"🚿 Bad",         col:C.purple},
     {id:"Wohnung",  label:"🏠 Wohnung",    col:C.green},
+    {id:"Familie",  label:"👨‍👩‍👧 Familie",   col:C.purple},
     {id:"Adjektive",label:"🎨 Adjektive",  col:C.red},
     {id:"Phrase",   label:"💬 Фразы",      col:C.teal},
   ];
   const TYPEN=[
-    {id:"recent",  label:"🆕 Последние", col:C.green},
     {id:"all",     label:"Все",           col:C.teal},
     {id:"Nomen",   label:"📦 Nomen",      col:C.blue},
     {id:"Adjektiv",label:"🎨 Adjektiv",   col:C.red},
     {id:"Phrase",  label:"💬 Фразы",      col:C.teal},
   ];
-  const [typ,setTyp]=useState("recent");
+  const [typ,setTyp]=useState("all");
   const [tema,setTema]=useState("all");
   const [art,setArt]=useState("all");
   const [search,setSearch]=useState("");
@@ -1172,8 +1172,10 @@ function Woerterbuch(){
   const changeTyp=(t)=>{setTyp(t);setTema("all");setArt("all");};
 
   const typFilter=(w)=>{
-    if(typ==="recent")  return true; // фильтруем отдельно ниже
-    if(typ==="Nomen")   return w.art!=="";
+    if(typ==="all")     return true;
+    if(typ==="Nomen")   return w.art!==""&&w.art!==undefined&&!["Adjektive","Phrase"].includes(w.tema);
+    if(typ==="Adjektiv")return w.tema==="Adjektive";
+    if(typ==="Phrase")  return w.tema==="Phrase";
     if(typ==="Adjektiv")return w.tema==="Adjektive";
     if(typ==="Phrase")  return w.tema==="Phrase";
     return true;
@@ -1186,13 +1188,14 @@ function Woerterbuch(){
     :recentBase;
 
   // Доступные темы для текущего типа
-  const availableTemen=TEMEN.filter(t=>{
-    if(t.id==="all")return true;
-    if(typ==="Nomen")   return !["Adjektive","Phrase"].includes(t.id);
-    if(typ==="Adjektiv")return t.id==="Adjektive";
-    if(typ==="Phrase")  return t.id==="Phrase";
-    return true;
+  const availableTemenRaw=TEMEN.filter(t=>{
+    if(t.id==="all") return true;
+    return !["Adjektive","Phrase"].includes(t.id);
   });
+  const availableTemen=[
+    availableTemenRaw[0],
+    ...[...availableTemenRaw.slice(1)].reverse(),
+  ];
 
   const listRaw=WBDATA.map((w,i)=>({...w,_i:i})).filter(w=>
     typFilter(w)&&
@@ -1202,7 +1205,7 @@ function Woerterbuch(){
   );
   const list=sortNew?[...listRaw].reverse():listRaw;
 
-  const temenOrder=sortNew?[...TEMEN.slice(1)].reverse():TEMEN.slice(1);
+  const temenOrder=[...TEMEN.slice(1)].reverse();
   const groups=tema==="all"
     ?temenOrder.map(t=>({...t,words:list.filter(w=>w.tema===t.id)})).filter(g=>g.words.length>0)
     :[{id:tema,words:list,col:TEMEN.find(t=>t.id===tema)?.col||C.teal}];
@@ -1359,10 +1362,10 @@ function Woerterbuch(){
       )}
 
       {/* ══ ПОСЛЕДНИЕ ══ */}
-      {typ==="recent"&&(
-        <div style={{background:C.card,border:`1px solid ${C.green}35`,borderRadius:12,overflow:"hidden"}}>
-          <div style={{background:C.green+"15",padding:"8px 12px",borderBottom:`1px solid ${C.green}25`}}>
-            <span style={{fontSize:12,color:C.green,fontWeight:700}}>🆕 Все слова · новые сначала</span>
+      {typ==="all"&&tema==="all"&&(
+        <div style={{background:C.card,border:`1px solid ${C.teal}35`,borderRadius:12,overflow:"hidden"}}>
+          <div style={{background:C.teal+"15",padding:"8px 12px",borderBottom:`1px solid ${C.teal}25`}}>
+            <span style={{fontSize:12,color:C.teal,fontWeight:700}}>🆕 Все слова · новые сначала</span>
             <span style={{fontSize:11,color:C.dim,marginLeft:8}}>{WBDATA.length} слов</span>
           </div>
           <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:4,padding:"4px 8px"}}>
@@ -1373,7 +1376,7 @@ function Woerterbuch(){
           {dedupeAdj(recentWords,!!search).map((w,i)=><WRow key={w.de+w.tema+i} w={w}/>)}
         </div>
       )}
-      {typ!=="recent"&&<div style={{display:"flex",flexDirection:"column",gap:8}}>
+      {!(typ==="all"&&tema==="all")&&<div style={{display:"flex",flexDirection:"column",gap:8}}>
         {groups.map(g=>(
           <div key={g.id} style={{background:C.card,border:`1px solid ${g.col}35`,borderRadius:12,overflow:"hidden"}}>
             {(tema==="all")&&(
