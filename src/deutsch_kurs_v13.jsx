@@ -299,6 +299,39 @@ const WBDATA=[
   {art:"die",de:"Wäsche",         pl:"—",               ru:"бельё, стирка",           tema:"Alltag"},
   {art:"die",de:"Waschmaschine",  pl:"Waschmaschinen",  ru:"стиральная машина",       tema:"Möbel"},
   {art:"der",de:"Keller",         pl:"Keller",          ru:"подвал, погреб",          tema:"Wohnung"},
+  // ── Familie (Verwandte) — стр. 39 ───────────────────────────────────────────
+  {art:"die",de:"Großeltern",   pl:"—",             ru:"бабушка и дедушка (мн.ч.)", tema:"Alltag"},
+  {art:"der",de:"Großvater",    pl:"Großväter",     ru:"дедушка",                   tema:"Alltag"},
+  {art:"die",de:"Großmutter",   pl:"Großmütter",    ru:"бабушка",                   tema:"Alltag"},
+  {art:"die",de:"Eltern",       pl:"—",             ru:"родители (мн.ч.)",          tema:"Alltag"},
+  {art:"der",de:"Vater",        pl:"Väter",         ru:"отец",                      tema:"Alltag"},
+  {art:"die",de:"Mutter",       pl:"Mütter",        ru:"мать",                      tema:"Alltag"},
+  {art:"die",de:"Geschwister",  pl:"—",             ru:"братья и сёстры (мн.ч.)",   tema:"Alltag"},
+  {art:"die",de:"Schwester",    pl:"Schwestern",    ru:"сестра",                    tema:"Alltag"},
+  {art:"der",de:"Bruder",       pl:"Brüder",        ru:"брат",                      tema:"Alltag"},
+  {art:"der",de:"Sohn",         pl:"Söhne",         ru:"сын",                       tema:"Alltag"},
+  {art:"die",de:"Tochter",      pl:"Töchter",       ru:"дочь",                      tema:"Alltag"},
+  {art:"die",de:"Enkelkinder",  pl:"—",             ru:"внуки (мн.ч.)",             tema:"Alltag"},
+  {art:"der",de:"Enkel",        pl:"Enkel",         ru:"внук",                      tema:"Alltag"},
+  {art:"die",de:"Enkelin",      pl:"Enkelinnen",    ru:"внучка",                    tema:"Alltag"},
+  {art:"der",de:"Onkel",        pl:"Onkel",         ru:"дядя",                      tema:"Alltag"},
+  {art:"die",de:"Tante",        pl:"Tanten",        ru:"тётя",                      tema:"Alltag"},
+  {art:"der",de:"Cousin",       pl:"Cousins",       ru:"двоюродный брат",           tema:"Alltag"},
+  {art:"die",de:"Cousine",      pl:"Cousinen",      ru:"двоюродная сестра",         tema:"Alltag"},
+  {art:"der",de:"Neffe",        pl:"Neffen",        ru:"племянник",                 tema:"Alltag"},
+  {art:"die",de:"Nichte",       pl:"Nichten",       ru:"племянница",                tema:"Alltag"},
+  // ── Ehe & Familie / новые слова ──────────────────────────────────────────────
+  {art:"der",de:"Kuchen",       pl:"Kuchen",        ru:"пирог, торт",               tema:"Alltag"},
+  {art:"die",de:"Nachspeise",   pl:"Nachspeisen",   ru:"десерт",                    tema:"Alltag"},
+  {art:"die",de:"Meinung",      pl:"Meinungen",     ru:"мнение",                    tema:"Alltag"},
+  {art:"",   de:"gehören",      pl:"—",             ru:"принадлежать",              tema:"Alltag"},
+  {art:"die",de:"Ehe",          pl:"Ehen",          ru:"брак, супружество",         tema:"Alltag"},
+  {art:"das",de:"Ehepaar",      pl:"Ehepaare",      ru:"супружеская пара",          tema:"Alltag"},
+  {art:"die",de:"Ehefrau",      pl:"Ehefrauen",     ru:"жена",                      tema:"Alltag"},
+  {art:"der",de:"Ehemann",      pl:"Ehemänner",     ru:"муж",                       tema:"Alltag"},
+  {art:"",   de:"heiraten",     pl:"—",             ru:"жениться / выходить замуж", tema:"Alltag"},
+  {art:"",   de:"verheiratet sein",pl:"—",          ru:"быть женатым / замужней",   tema:"Phrase"},
+  {art:"",   de:"nur",          pl:"—",             ru:"только",                    tema:"Alltag"},
 ];
 
 
@@ -568,6 +601,33 @@ const DIALOGE={
       {q:"Ich bin zu Hause.",                        a:"— (Я дома)",                                note:"zu Hause = дома (где?) ≠ nach Hause = домой (куда?)"},
       {q:"Ich gehe jetzt nach Hause.",               a:"— (Я иду домой)",                           note:"nach Hause = домой (движение)"},
       {q:"Das Badezimmer ist furchtbar!",            a:"Ja, das finde ich auch. Es ist dunkel!",    note:"furchtbar = ужасный · dunkel = тёмный"},
+    ]},
+  ],
+  L4:[
+    {tag:"Основные",col:C.teal,pairs:[
+      // über die Familie sprechen — formell/informell (Kommunikation стр. L4)
+      {q:"Wo wohnen Ihre Eltern?",      a:"Meine Eltern wohnen in Kyiv.",                     note:"Ihre (formell) = ваши · meine = мои",          fm:"f"},
+      {q:"Wo wohnen deine Eltern?",     a:"Meine Eltern wohnen in Kyiv.",                     note:"deine (informell) = твои · meine = мои",        fm:"i"},
+      {q:"Wo wohnt Ihre Familie?",      a:"Meine Familie wohnt in der Ukraine.",               note:"Ihre Familie (formell)",                         fm:"f"},
+      {q:"Wo wohnt deine Familie?",     a:"Meine Familie wohnt in der Ukraine.",               note:"deine Familie (informell)",                      fm:"i"},
+      {q:"Haben Sie Kinder?",           a:"Ja, ich habe zwei Kinder. / Nein, keine Kinder.",  note:"keine Kinder = нет детей (Akkusativ)",           fm:"f"},
+      {q:"Hast du Kinder?",             a:"Ja, ich habe einen Sohn und eine Tochter.",        note:"einen Sohn (m Akk.) · eine Tochter (f Akk.)",   fm:"i"},
+      {q:"Wie heißen Ihre Kinder?",     a:"Meine Tochter heißt Nina, mein Sohn heißt Max.",  note:"mein (m) · meine (f/pl)",                        fm:"f"},
+      {q:"Wie heißen deine Kinder?",    a:"Meine Kinder heißen Nina und Max.",                note:"heißen (мн.ч.) · meine Kinder = мои дети",      fm:"i"},
+      {q:"Ist Ihre Familie groß?",      a:"Ja, ich habe viele Verwandte. / Nein, sie ist klein.", note:"viele Verwandte = много родственников",     fm:"f"},
+      {q:"Ist deine Familie groß?",     a:"Nein, ich habe nur einen Bruder.",                 note:"nur = только · einen Bruder (m Akk.)",           fm:"i"},
+    ]},
+    {tag:"Дополнительные",col:C.green,pairs:[
+      {q:"Haben Sie Fotos dabei?",      a:"Ja, hier ist meine Schwester. / Nein, leider nicht.", note:"Fotos dabei haben = иметь фото при себе · leider nicht = к сожалению нет"},
+      {q:"Ist das Ihr Mann?",           a:"Ja, das ist Thomas, mein Mann.",                   note:"Ihr Mann (formell) · ihr Mann (он — её муж)"},
+      {q:"Ist das Ihre Frau?",          a:"Ja, das ist meine Frau und das ist sein Sohn.",    note:"meine Frau = моя жена · sein Sohn = его сын"},
+      {q:"Er/Sie ist verheiratet?",     a:"Ja, er ist verheiratet und hat zwei Kinder.",      note:"verheiratet sein = быть женатым/замужней"},
+      {q:"Das ist aber süß!",           a:"Ja! Er ist zwei Jahre alt.",                       note:"süß = милый · zwei Jahre alt = двух лет"},
+      {q:"Wie groß ist Ihre Familie?",  a:"Meine Familie ist klein. Ich habe nur einen Bruder.", note:"Wie groß ist = насколько большая"},
+      {q:"Wer ist das?",                a:"Das ist mein Freund Luka. Er kommt aus Kroatien.", note:"Wer = кто (для людей)"},
+      {q:"Das ist mein Bruder.",        a:"— (представляю брата)",                            note:"mein (m/n) · meine (f/pl)"},
+      {q:"Das ist seine Frau.",         a:"— (это его жена)",                                 note:"seine (f) → er hat eine Frau"},
+      {q:"Das ist ihre Tochter.",       a:"— (это её дочь)",                                  note:"ihre (f) → sie hat eine Tochter"},
     ]},
   ],
 };
@@ -2989,6 +3049,162 @@ function GrosserTest3(){return <GrosserTestContainer rounds={[
   {icon:"🔤",label:"Wortstellung",  col:C.orange, component:()=><WortstellungGame sents={WSENTS_L3}/>},
 ]}/>;}
 
+// ─── L4 — POSSESSIVARTIKEL ───────────────────────────────────────────────────
+const Q_L4A=[
+  {q:"Mein ___ heißt Max. (der Bruder)",     opts:["mein","meine","sein"],   ans:"mein",  note:"m → mein (без окончания)"},
+  {q:"Das ist ___ Kind. (er/sein)",          opts:["sein","seine","ihr"],    ans:"sein",  note:"n → sein (без окончания)"},
+  {q:"Wo wohnt ___ Familie? (du)",           opts:["dein","deine","ihre"],   ans:"deine", note:"f → deine (+e)"},
+  {q:"___ Eltern wohnen in Berlin. (ich)",   opts:["Mein","Meine","Seine"],  ans:"Meine", note:"Plural → meine (+e)"},
+  {q:"Das ist ___ Frau. (er)",               opts:["sein","seine","ihr"],    ans:"seine", note:"f → seine (+e)"},
+  {q:"Wie heißen ___ Kinder? (Sie/formell)", opts:["Ihr","Ihre","Sein"],     ans:"Ihre",  note:"Plural (formell) → Ihre (+e)"},
+  {q:"Das ist ___ Sohn. (sie/она)",          opts:["ihr","ihre","sein"],     ans:"ihr",   note:"m → ihr (без окончания)"},
+  {q:"Wo wohnt ___ Bruder? (du)",            opts:["dein","deine","mein"],   ans:"dein",  note:"m → dein (без окончания)"},
+  {q:"Das ist ___ Schwester. (ich)",         opts:["mein","meine","ihre"],   ans:"meine", note:"f → meine (+e)"},
+  {q:"___ Kind ist zwei Jahre alt. (sie/она)",opts:["Ihr","Ihre","Sein"],    ans:"Ihr",   note:"n → ihr (без окончания)"},
+];
+
+function T4A(){
+  const poss=[
+    {pr:"ich",      m:"mein", n:"mein", f:"meine", pl:"meine"},
+    {pr:"du",       m:"dein", n:"dein", f:"deine", pl:"deine"},
+    {pr:"er / es",  m:"sein", n:"sein", f:"seine", pl:"seine"},
+    {pr:"sie (она)",m:"ihr",  n:"ihr",  f:"ihre",  pl:"ihre"},
+    {pr:"Sie",      m:"Ihr",  n:"Ihr",  f:"Ihre",  pl:"Ihre"},
+  ];
+  return(
+    <div style={{display:"flex",flexDirection:"column",gap:12}}>
+      <Box c={C.teal}>
+        <H c={C.teal}>👨‍👩‍👧 Possessivartikel im Singular</H>
+        <div style={{overflowX:"auto"}}>
+          <table style={{width:"100%",borderCollapse:"collapse",fontSize:13}}>
+            <thead>
+              <tr>
+                <th/>
+                {[{label:"m",col:C.blue},{label:"n",col:C.orange},{label:"f",col:C.purple},{label:"Pl.",col:C.purple}].map(({label,col})=>(
+                  <th key={label} style={{padding:"3px 4px",textAlign:"center",fontSize:10,fontWeight:900,color:col,opacity:0.75}}>{label}</th>
+                ))}
+              </tr>
+              <tr>
+                {[{h:"",col:""},{h:"der Bruder",col:C.blue},{h:"das Kind",col:C.orange},{h:"die Schwester",col:C.purple},{h:"die Kinder",col:C.purple}].map(({h,col})=>(
+                  <th key={h} style={{padding:"2px 6px 6px",fontWeight:700,fontSize:11,textAlign:"center",color:col||C.muted,borderBottom:`1px solid ${C.border}`}}>{h}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {poss.map((row,i)=>(
+                <tr key={row.pr} style={{background:i%2===0?C.card2:"transparent"}}>
+                  <td style={{padding:"6px 8px",color:C.yellow,fontWeight:700,fontSize:12,whiteSpace:"nowrap"}}>{row.pr}</td>
+                  {[row.m,row.n,row.f,row.pl].map((val,j)=>{
+                    const hasE=val.endsWith("e");
+                    return(
+                      <td key={j} style={{padding:"6px 4px",textAlign:"center"}}>
+                        <span style={{color:C.text,fontWeight:600}}>
+                          {hasE
+                            ? <>{val.slice(0,-1)}<span style={{color:C.orange,fontWeight:900}}>e</span></>
+                            : val}
+                        </span>
+                      </td>
+                    );
+                  })}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </Box>
+      <Box c={C.orange}>
+        <H c={C.orange}>📐 Правило окончания</H>
+        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:8}}>
+          {[
+            {label:"m / n",sub:"der · das",ex:"mein Bruder · mein Kind",col:C.blue,end:"без окончания"},
+            {label:"f / Plural",sub:"die · die Kinder",ex:"meine Schwester · meine Kinder",col:C.purple,end:"+e"},
+          ].map(r=>(
+            <div key={r.label} style={{background:C.card2,borderRadius:10,padding:"10px 12px",textAlign:"center"}}>
+              <div style={{color:r.col,fontWeight:800,fontSize:15,marginBottom:2}}>{r.label}</div>
+              <div style={{color:C.muted,fontSize:11,marginBottom:4}}>{r.sub}</div>
+              <div style={{color:C.orange,fontWeight:800,fontSize:14,marginBottom:4}}>{r.end}</div>
+              <div style={{color:C.muted,fontSize:11}}>{r.ex}</div>
+            </div>
+          ))}
+        </div>
+      </Box>
+      <Box c={C.purple}>
+        <H c={C.purple}>⚡ ihr vs sein</H>
+
+        {/* Главное правило */}
+        <div style={{background:C.yellowBg,border:`1px solid ${C.yellow}40`,borderRadius:8,padding:"8px 12px",marginBottom:12,fontSize:12,color:C.yellow,lineHeight:1.7}}>
+          ⚡ Форма <b>ihr/ihre</b> и <b>sein/seine</b> зависит от рода <b>предмета</b> (о котором говорим), а не от рода владельца
+        </div>
+
+        {/* Два блока: sie и er/es */}
+        <div style={{display:"flex",flexDirection:"column",gap:8,marginBottom:10}}>
+
+          {/* sie → ihr/ihre */}
+          <div style={{background:C.card2,borderRadius:10,padding:"10px 12px"}}>
+            <div style={{marginBottom:8}}>
+              <span style={{color:C.purple,fontWeight:800,fontSize:14}}>sie</span>
+              <span style={{color:C.muted,fontSize:12}}> = она → её вещь = </span>
+              <span style={{color:C.text,fontWeight:800}}>ihr / ihre</span>
+            </div>
+            <div style={{display:"grid",gridTemplateColumns:"auto auto 1fr",gap:"4px 10px",fontSize:12,alignItems:"center",marginBottom:6}}>
+              <span style={{color:C.blue,fontWeight:700}}>der / das</span>
+              <span style={{color:C.text,fontWeight:800}}>ihr</span>
+              <span style={{color:C.muted}}>ihr Mann · ihr Kind</span>
+              <span style={{color:C.purple,fontWeight:700}}>die / Pl.</span>
+              <span style={{color:C.text,fontWeight:800}}>ihr<span style={{color:C.orange}}>e</span></span>
+              <span style={{color:C.muted}}>ihre Frau · ihre Kinder</span>
+            </div>
+            <div style={{borderTop:`1px solid ${C.border}`,paddingTop:6,fontSize:11,color:C.muted,lineHeight:1.8}}>
+              Das ist <b style={{color:C.text}}>ihr</b> Mann. = Это её муж.<br/>
+              Das ist <b style={{color:C.text}}>ihre</b> Tochter. = Это её дочь.
+            </div>
+          </div>
+
+          {/* er/es → sein/seine */}
+          <div style={{background:C.card2,borderRadius:10,padding:"10px 12px"}}>
+            <div style={{marginBottom:8}}>
+              <span style={{color:C.blue,fontWeight:800,fontSize:14}}>er / es</span>
+              <span style={{color:C.muted,fontSize:12}}> = он/оно → его вещь = </span>
+              <span style={{color:C.text,fontWeight:800}}>sein / seine</span>
+            </div>
+            <div style={{display:"grid",gridTemplateColumns:"auto auto 1fr",gap:"4px 10px",fontSize:12,alignItems:"center",marginBottom:6}}>
+              <span style={{color:C.blue,fontWeight:700}}>der / das</span>
+              <span style={{color:C.text,fontWeight:800}}>sein</span>
+              <span style={{color:C.muted}}>sein Vater · sein Kind</span>
+              <span style={{color:C.purple,fontWeight:700}}>die / Pl.</span>
+              <span style={{color:C.text,fontWeight:800}}>sein<span style={{color:C.orange}}>e</span></span>
+              <span style={{color:C.muted}}>seine Mutter · seine Kinder</span>
+            </div>
+            <div style={{borderTop:`1px solid ${C.border}`,paddingTop:6,fontSize:11,color:C.muted,lineHeight:1.8}}>
+              Das ist <b style={{color:C.text}}>sein</b> Vater. = Это его отец.<br/>
+              Das ist <b style={{color:C.text}}>seine</b> Mutter. = Это его мать. <span style={{color:C.orange}}>(Mutter = die → +e)</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Подсказка ihr/Ihr */}
+        <div style={{background:C.orangeBg,border:`1px solid ${C.orange}40`,borderRadius:8,padding:"8px 10px",fontSize:11,color:C.orange,lineHeight:1.7}}>
+          ⚠️ <b>ihr</b> = её (sie) · <b>Ihr</b> = Ваш (Sie formell) — одинаково пишутся, смотри на контекст!
+        </div>
+      </Box>
+      <Box c={C.green}>
+        <H c={C.green}>✏️ Примеры</H>
+        {[
+          ["Ist das dein Buch?","Ja, das ist mein Buch."],
+          ["Wo wohnen Ihre Eltern?","Meine Eltern wohnen in Kyiv."],
+          ["Das ist sein Freund Luka.","Er kommt aus Kroatien."],
+          ["Das ist ihre Schwester.","Und das sind ihre Töchter."],
+        ].map(([a,b],i)=>(
+          <div key={i} style={{background:C.card2,borderRadius:8,padding:"8px 10px",marginBottom:6}}>
+            <div style={{color:C.blue,fontSize:13,marginBottom:2}}>— {a}</div>
+            <div style={{color:C.green,fontSize:13}}>— {b}</div>
+          </div>
+        ))}
+      </Box>
+    </div>
+  );
+}
+
 const LEKTIONEN=[
   {
     id:"L1",num:"1",title:"Willkommen!",
@@ -3038,6 +3254,15 @@ const LEKTIONEN=[
       {id:"t3",  icon:"🎯",title:"Großer Test L3",            sub:"Quiz · Lücken · Akkusativ · Möbel · Wortstellung",time:"25 мин",col:C.yellow,hasT:false, th:null,              ex:()=><GrosserTest3/>},
     ]
   },
+  {
+    id:"L4",num:"4",title:"Familienleben",
+    sub:"A Familienfotos · Possessivartikel · Familie",
+    date:"KB Seite 39–...",col:C.teal,
+    sections:[
+      {id:"d4",  icon:"💬",title:"Dialogfragen L4",          sub:"Фразы для диалога",                  time:"∞",     col:C.teal,  hasT:false, th:null,         ex:()=><DialogCards lId="L4"/>},
+      {id:"4a",  icon:"👨‍👩‍👧",title:"A · Familienfotos",       sub:"Possessivartikel: mein/dein/sein/ihr", time:"7 мин", col:C.blue,  hasT:true,  th:()=><T4A/>, ex:()=><Quiz questions={Q_L4A}/>},
+    ]
+  },
 ];
 
 // ═══════════════════════════════ APP ══════════════════════════════════════════
@@ -3053,6 +3278,7 @@ function DialogFragenPage(){
     L1:{label:"L1 · Willkommen!",          col:C.blue},
     L2:{label:"L2 · Alte Heimat, neue Heimat", col:C.purple},
     L3:{label:"L3 · Häuser und Wohnungen",  col:C.green},
+    L4:{label:"L4 · Familienleben",         col:C.teal},
   };
   const filterFm=(pairs,lId)=>lId==="L1"?pairs.filter(p=>!p.fm||p.fm===fm):pairs;
 
