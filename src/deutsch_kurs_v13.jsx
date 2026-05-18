@@ -97,6 +97,42 @@ const VOCAB=[
 
 // ─── ЕДИНЫЙ СЛОВАРЬ ПО ТЕМАМ ─────────────────────────────────────────────────
 const WBDATA=[
+  // ── L1-D · Zahlen bis 20 ─────────────────────────────────────────────────────
+  {art:"",   de:"null",          pl:"—", ru:"ноль",                                 tema:"Alltag"},
+  {art:"",   de:"eins",          pl:"—", ru:"один",                                 tema:"Alltag"},
+  {art:"",   de:"zwei",          pl:"—", ru:"два",                                  tema:"Alltag"},
+  {art:"",   de:"drei",          pl:"—", ru:"три",                                  tema:"Alltag"},
+  {art:"",   de:"vier",          pl:"—", ru:"четыре",                               tema:"Alltag"},
+  {art:"",   de:"fünf",          pl:"—", ru:"пять",                                 tema:"Alltag"},
+  {art:"",   de:"sechs",         pl:"—", ru:"шесть",                                tema:"Alltag"},
+  {art:"",   de:"sieben",        pl:"—", ru:"семь",                                 tema:"Alltag"},
+  {art:"",   de:"acht",          pl:"—", ru:"восемь",                               tema:"Alltag"},
+  {art:"",   de:"neun",          pl:"—", ru:"девять",                               tema:"Alltag"},
+  {art:"",   de:"zehn",          pl:"—", ru:"десять",                               tema:"Alltag"},
+  {art:"",   de:"elf",           pl:"—", ru:"одиннадцать",                          tema:"Alltag"},
+  {art:"",   de:"zwölf",         pl:"—", ru:"двенадцать",                           tema:"Alltag"},
+  {art:"",   de:"dreizehn",      pl:"—", ru:"тринадцать",                           tema:"Alltag"},
+  {art:"",   de:"vierzehn",      pl:"—", ru:"четырнадцать",                         tema:"Alltag"},
+  {art:"",   de:"fünfzehn",      pl:"—", ru:"пятнадцать",                           tema:"Alltag"},
+  {art:"",   de:"sechzehn",      pl:"—", ru:"шестнадцать",                          tema:"Alltag"},
+  {art:"",   de:"siebzehn",      pl:"—", ru:"семнадцать",                           tema:"Alltag"},
+  {art:"",   de:"achtzehn",      pl:"—", ru:"восемнадцать",                         tema:"Alltag"},
+  {art:"",   de:"neunzehn",      pl:"—", ru:"девятнадцать",                         tema:"Alltag"},
+  {art:"",   de:"zwanzig",       pl:"—", ru:"двадцать",                             tema:"Alltag"},
+  // ── L1-E · Berufe ────────────────────────────────────────────────────────────
+  {art:"der", de:"Lehrer",       pl:"Lehrer",       ru:"учитель\nf. - die Lehrerin",    tema:"Alltag"},
+  {art:"der", de:"Arzt",         pl:"Ärzte",        ru:"врач\nf. - die Ärztin",         tema:"Alltag"},
+  {art:"der", de:"Ingenieur",    pl:"Ingenieure",   ru:"инженер\nf. - die Ingenieurin", tema:"Alltag"},
+  {art:"der", de:"Verkäufer",    pl:"Verkäufer",    ru:"продавец\nf. - die Verkäuferin",tema:"Alltag"},
+  {art:"der", de:"Elektriker",   pl:"Elektriker",   ru:"электрик\nf. - die Elektrikerin",tema:"Alltag"},
+  {art:"der", de:"Friseur",      pl:"Friseure",     ru:"парикмахер\nf. - die Friseurin",tema:"Alltag"},
+  {art:"der", de:"Programmierer",pl:"Programmierer",ru:"программист\nf. - die Programmiererin",tema:"Alltag"},
+  {art:"der", de:"Buchhalter",   pl:"Buchhalter",   ru:"бухгалтер\nf. - die Buchhalterin",tema:"Alltag"},
+  {art:"der", de:"Grafiker",     pl:"Grafiker",     ru:"дизайнер-график\nf. - die Grafikerin",tema:"Alltag"},
+  {art:"der", de:"Altenpfleger", pl:"Altenpfleger", ru:"сиделка/опекун\nf. - die Altenpflegerin",tema:"Alltag"},
+  {art:"der", de:"Student",      pl:"Studenten",    ru:"студент\nf. - die Studentin",   tema:"Alltag"},
+  {art:"der", de:"Kinderarzt",   pl:"Kinderärzte",  ru:"педиатр\nf. - die Kinderärztin",tema:"Alltag"},
+  {art:"der", de:"Hausmann",     pl:"Hausmänner",   ru:"домохозяин\nf. - die Hausfrau", tema:"Alltag"},
   // ── Левый столбик (стр. 1) ───────────────────────────────────────────────────
   {art:"die",de:"Tür",           pl:"Türen",          ru:"дверь",                  tema:"Kursraum"},
   {art:"das",de:"Fenster",       pl:"Fenster",         ru:"окно",                   tema:"Kursraum"},
@@ -537,6 +573,11 @@ const DIALOGE={
 };
 const Box=({c,s={},children})=><div style={{background:c?c+"18":C.card,border:`1px solid ${c||C.border}`,borderRadius:14,padding:"14px 16px",...s}}>{children}</div>;
 const Pill=({c,children})=><span style={{background:c+"22",border:`1px solid ${c}55`,color:c,borderRadius:20,padding:"3px 10px",fontSize:12,fontWeight:700,display:"inline-block"}}>{children}</span>;
+const RuText=({ru,style={}})=>{
+  if(!ru||!ru.includes("\n"))return <span style={style}>{ru}</span>;
+  const[main,sub]=ru.split("\n");
+  return <span style={style}>{main}<br/><span style={{fontSize:"0.85em",opacity:0.7}}>{sub}</span></span>;
+};
 const H=({c=C.text,z=15,children})=><div style={{fontWeight:800,fontSize:z,color:c,marginBottom:8}}>{children}</div>;
 const Row=({children,style={}})=><div style={{display:"flex",justifyContent:"space-between",padding:"7px 0",borderBottom:`1px solid ${C.border}`,...style}}>{children}</div>;
 const Dim=({children})=><span style={{color:C.muted,fontSize:14}}>{children}</span>;
@@ -1157,7 +1198,7 @@ function Woerterbuch(){
         <div style={{fontSize:12,lineHeight:1.3,overflowWrap:"break-word",wordBreak:"break-word"}}>
           {isAdj
             ?<><span style={{color:C.text}}>{w.ru}</span>{oppRu&&<span style={{color:C.orange}}> / {oppRu}</span>}</>
-            :<span style={{color:C.muted}}>{w.ru}</span>
+            :<RuText ru={w.ru} style={{color:C.muted}}/>
           }
         </div>
       </div>
@@ -1308,7 +1349,7 @@ function Flashcards(){
       </div>
       <div onClick={()=>setFlip(f=>!f)} style={{background:C.card,border:`2px solid ${flip?AC(w.art):C.border}`,borderRadius:16,minHeight:190,display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",cursor:"pointer",userSelect:"none",textAlign:"center",padding:20,marginBottom:12}}>
         {!flip?(<><div style={{fontSize:12,color:C.dim,marginBottom:12}}>👆 нажми</div><div style={{fontSize:36,fontWeight:900,color:C.text}}>{w.de}</div><div style={{fontSize:12,color:C.dim,marginTop:6}}>die {w.pl}</div></>)
-        :(<><div style={{fontSize:28,fontWeight:900,color:AC(w.art),marginBottom:4}}>{w.art}</div><div style={{fontSize:26,fontWeight:800,color:C.text,marginBottom:6}}>{w.de}</div><div style={{fontSize:18,color:C.muted,marginBottom:8}}>{w.ru}</div><Pill c={C.yellow}>{w.pt}</Pill></>)}
+        :(<><div style={{fontSize:28,fontWeight:900,color:AC(w.art),marginBottom:4}}>{w.art}</div><div style={{fontSize:26,fontWeight:800,color:C.text,marginBottom:6}}>{w.de}</div><div style={{fontSize:18,color:C.muted,marginBottom:8}}><RuText ru={w.ru}/></div><Pill c={C.yellow}>{w.pt}</Pill></>)}
       </div>
       {flip&&<div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:10}}>
         <button onClick={()=>move(false)} style={btnSt(C.red,C.redBg,"100%")}>✗ Не знаю</button>
