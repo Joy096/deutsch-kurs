@@ -366,6 +366,9 @@ const WBDATA=[
   {art:"",   de:"danach",       pl:"—",             ru:"после этого",               tema:"Alltag"},
   {art:"die",de:"Oma",          pl:"Omas",          ru:"бабушка (разг.)",           tema:"Familie"},
   {art:"der",de:"Opa",          pl:"Opas",          ru:"дедушка (разг.)",           tema:"Familie"},
+  {art:"der",de:"Freund",       pl:"Freunde",        ru:"друг\nf. - die Freundin",   tema:"Alltag"},
+  {art:"",   de:"trinken",      pl:"—",             ru:"пить",                       tema:"Alltag"},
+  {art:"",   de:"machen",       pl:"—",             ru:"делать",                     tema:"Alltag"},
 ];
 
 
