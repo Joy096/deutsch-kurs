@@ -332,6 +332,8 @@ const WBDATA=[
   {art:"",   de:"heiraten",     pl:"—",             ru:"жениться / выходить замуж", tema:"Familie"},
   {art:"",   de:"verheiratet sein",pl:"—",          ru:"быть женатым / замужней",   tema:"Phrase"},
   {art:"",   de:"nur",          pl:"—",             ru:"только",                    tema:"Alltag"},
+  {art:"",   de:"jetzt",        pl:"—",             ru:"сейчас, теперь",            tema:"Alltag"},
+  {art:"",   de:"auch",         pl:"—",             ru:"тоже, также",               tema:"Alltag"},
 ];
 
 
@@ -628,6 +630,11 @@ const DIALOGE={
       {q:"Das ist mein Bruder.",        a:"— (представляю брата)",                            note:"mein (m/n) · meine (f/pl)"},
       {q:"Das ist seine Frau.",         a:"— (это его жена)",                                 note:"seine (f) → er hat eine Frau"},
       {q:"Das ist ihre Tochter.",       a:"— (это её дочь)",                                  note:"ihre (f) → sie hat eine Tochter"},
+      {q:"Was macht ihr am Wochenende?",a:"Wir machen eine Radtour. / Wir besuchen ein Straßenfest.", note:"am Wochenende = в выходные · eine Radtour machen = кататься на велосипеде"},
+      {q:"Kommst du bald nach Berlin?", a:"Ja, ich komme am Wochenende und bleibe zwei Tage.", note:"nach Berlin = куда (Wohin?) ≠ in Berlin = где (Wo?)"},
+      {q:"Wo seid ihr jetzt?",          a:"Wir sind in Berlin. Es gibt hier viele Sehenswürdigkeiten.", note:"Wo? → in + Stadt (нахождение) · Sehenswürdigkeiten = достопримечательности"},
+      {q:"Was machen wir zuerst?",      a:"Zuerst kaufen wir Lebensmittel, dann essen wir zu Mittag.", note:"zuerst = сначала · dann = потом · danach = после этого"},
+      {q:"Er schläft. / Sie liest ein Buch.", a:"— (описание того, кто что делает)",          note:"Vokalwechsel: schlafen→schläft · lesen→liest · sehen→sieht · fahren→fährt"},
     ]},
   ],
 };
@@ -3052,6 +3059,22 @@ function GrosserTest3(){return <GrosserTestContainer rounds={[
   {icon:"🔤",label:"Wortstellung",  col:C.orange, component:()=><WortstellungGame sents={WSENTS_L3}/>},
 ]}/>;}
 
+// ─── L4B — VERBEN MIT VOKALWECHSEL ───────────────────────────────────────────
+const Q_L4B=[
+  {q:"schlafen → er/sie/es ...",        opts:["schlaffe","schläft","schlaft","schläfft"],  ans:1, exp:"a→ä: schlafen → schläft",              hint:"Vokalwechsel"},
+  {q:"essen → er/sie/es ...",           opts:["essst","esst","isst","ißt"],                ans:2, exp:"e→i: essen → isst",                    hint:"Vokalwechsel"},
+  {q:"sehen → er/sie/es ...",           opts:["seht","sieht","sehst","siehst"],            ans:1, exp:"e→ie: sehen → sieht",                  hint:"Vokalwechsel"},
+  {q:"lesen → er/sie/es ...",           opts:["lesst","liesst","lest","liest"],            ans:3, exp:"e→ie: lesen → liest",                  hint:"Vokalwechsel"},
+  {q:"sprechen → du ...",               opts:["sprechst","spricht","sprichst","spreche"],  ans:2, exp:"e→i: sprechen → du sprichst",           hint:"Vokalwechsel"},
+  {q:"fahren → er/sie/es ...",          opts:["fährt","fahrt","fahrst","fährest"],         ans:0, exp:"a→ä: fahren → fährt",                  hint:"Vokalwechsel"},
+  {q:"nehmen → er/sie/es ...",          opts:["nehmt","nimmt","nehmst","nimt"],            ans:1, exp:"nehmen → nimmt (особая форма!)",        hint:"Vokalwechsel"},
+  {q:"treffen → er/sie/es ...",         opts:["trefft","triffst","trifft","treffe"],       ans:2, exp:"e→i: treffen → trifft",                hint:"Vokalwechsel"},
+  {q:"Katharina ___ ein Buch. (lesen)", opts:["lest","liest","lese","lesst"],              ans:1, exp:"lesen → sie liest",                    hint:"Satz"},
+  {q:"Herr Fischer ___ einen Film. (sehen)", opts:["seht","sieht","sehe","sehst"],         ans:1, exp:"sehen → er sieht",                     hint:"Satz"},
+  {q:"'Ich fahre nach Berlin.' → nach Berlin = ...", opts:["где я","куда я еду","когда","с кем"], ans:1, exp:"Wohin? → nach + Stadt (движение)", hint:"Wo/Wohin"},
+  {q:"'Sie ist in Berlin.' → in Berlin = ...",       opts:["куда она идёт","где она находится","когда","зачем"], ans:1, exp:"Wo? → in + Stadt (нахождение)", hint:"Wo/Wohin"},
+];
+
 // ─── L4 — POSSESSIVARTIKEL ───────────────────────────────────────────────────
 const Q_L4A=[
   {q:"Mein ___ heißt Max. (der Bruder)",     opts:["mein","meine","sein"],   ans:"mein",  note:"m → mein (без окончания)"},
@@ -3208,6 +3231,123 @@ function T4A(){
   );
 }
 
+function T4B(){
+  const groups=[
+    {type:"e → i",col:C.orange,verbs:[
+      {inf:"sprechen",du:"sprichst",er:"spricht"},
+      {inf:"essen",   du:"isst",    er:"isst"},
+      {inf:"nehmen",  du:"nimmst",  er:"nimmt"},
+      {inf:"treffen", du:"triffst", er:"trifft"},
+    ]},
+    {type:"e → ie",col:C.blue,verbs:[
+      {inf:"lesen",   du:"liest",   er:"liest"},
+      {inf:"sehen",   du:"siehst",  er:"sieht"},
+    ]},
+    {type:"a → ä",col:C.purple,verbs:[
+      {inf:"schlafen",du:"schläfst",er:"schläft"},
+      {inf:"fahren",  du:"fährst",  er:"fährt"},
+    ]},
+  ];
+  return(
+    <div style={{display:"flex",flexDirection:"column",gap:12}}>
+      <Box c={C.yellow}>
+        <H c={C.yellow}>⚡ Verben mit Vokalwechsel</H>
+        <div style={{fontSize:13,color:C.muted,marginBottom:8}}>У некоторых глаголов меняется корневой гласный в формах <b style={{color:C.yellow}}>du</b> и <b style={{color:C.yellow}}>er/es/sie</b></div>
+        <div style={{background:C.card2,borderRadius:8,padding:"8px 10px",fontSize:13,color:C.text,lineHeight:1.9}}>
+          ich/wir/sie — обычная форма: <b style={{color:C.muted}}>spreche / sprechen</b><br/>
+          <b style={{color:C.orange}}>⚠️ Изменение только у: du / er / es / sie (3-е л.)</b>
+        </div>
+      </Box>
+      {groups.map(g=>(
+        <Box key={g.type} c={g.col}>
+          <H c={g.col} z={13}>{g.type}</H>
+          <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:4,marginBottom:6}}>
+            {["Infinitiv","du","er/es/sie"].map(h=>(
+              <div key={h} style={{fontSize:10,color:C.dim,fontWeight:700,textAlign:"center",textTransform:"uppercase"}}>{h}</div>
+            ))}
+          </div>
+          {g.verbs.map(v=>(
+            <div key={v.inf} style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:4,marginBottom:5}}>
+              <div style={{background:C.card2,borderRadius:7,padding:"6px 8px",fontSize:13,color:C.muted,fontWeight:600,textAlign:"center"}}>{v.inf}</div>
+              <div style={{background:g.col+"18",border:`1px solid ${g.col}40`,borderRadius:7,padding:"6px 8px",fontSize:13,color:g.col,fontWeight:800,textAlign:"center"}}>{v.du}</div>
+              <div style={{background:g.col+"18",border:`1px solid ${g.col}40`,borderRadius:7,padding:"6px 8px",fontSize:13,color:g.col,fontWeight:800,textAlign:"center"}}>{v.er}</div>
+            </div>
+          ))}
+        </Box>
+      ))}
+      <Box c={C.red}>
+        <H c={C.red} z={13}>📋 Vollständige Konjugation — sprechen (e→i)</H>
+        <div style={{overflowX:"auto"}}>
+          <table style={{width:"100%",borderCollapse:"collapse",fontSize:13}}>
+            <tbody>
+              {[["ich","spreche","wir","sprechen"],["du","sprichst","ihr","sprecht"],["er/sie","spricht","sie/Sie","sprechen"]].map(([p1,v1,p2,v2],i)=>(
+                <tr key={p1} style={{background:i%2===0?C.card2:"transparent"}}>
+                  <td style={{padding:"5px 8px",color:C.muted,width:"25%"}}>{p1}</td>
+                  <td style={{padding:"5px 8px",color:i===1||i===2?C.orange:C.text,fontWeight:i===1||i===2?800:400,width:"25%"}}>{v1}</td>
+                  <td style={{padding:"5px 8px",color:C.muted,width:"25%"}}>{p2}</td>
+                  <td style={{padding:"5px 8px",color:C.text,width:"25%"}}>{v2}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <div style={{marginTop:8,fontSize:12,color:C.muted}}>
+          Аналогично: <b style={{color:C.orange}}>nehmen → nimmt</b> (особая форма, не nimt!)
+        </div>
+      </Box>
+      <Box c={C.green}>
+        <H c={C.green} z={13}>📍 Wo? vs Wohin?</H>
+        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:8,marginBottom:8}}>
+          <div style={{background:C.blueBg,border:`1px solid ${C.blue}40`,borderRadius:9,padding:"9px 10px",textAlign:"center"}}>
+            <div style={{fontSize:11,color:C.blue,fontWeight:700,marginBottom:3}}>Wo? — где?</div>
+            <div style={{fontSize:14,color:C.text,fontWeight:700}}>in Berlin</div>
+            <div style={{fontSize:11,color:C.muted,marginTop:2}}>Ich bin <b>in</b> Berlin. ⊙</div>
+          </div>
+          <div style={{background:C.orangeBg,border:`1px solid ${C.orange}40`,borderRadius:9,padding:"9px 10px",textAlign:"center"}}>
+            <div style={{fontSize:11,color:C.orange,fontWeight:700,marginBottom:3}}>Wohin? — куда?</div>
+            <div style={{fontSize:14,color:C.text,fontWeight:700}}>nach Berlin</div>
+            <div style={{fontSize:11,color:C.muted,marginTop:2}}>Ich fahre <b>nach</b> Berlin. →</div>
+          </div>
+        </div>
+      </Box>
+      <Box c={C.teal}>
+        <H c={C.teal} z={13}>🚴 Wochenende-Aktivitäten</H>
+        <div style={{display:"flex",flexDirection:"column",gap:5}}>
+          {[
+            ["eine Radtour machen","кататься на велосипеде"],
+            ["Lebensmittel kaufen","покупать продукты"],
+            ["Sehenswürdigkeiten besichtigen","осматривать достопримечательности"],
+            ["ein Straßenfest besuchen","посещать уличный праздник"],
+            ["zu Mittag essen","обедать"],
+            ["einen Kaffee trinken","пить кофе"],
+          ].map(([de,ru])=>(
+            <div key={de} style={{display:"flex",justifyContent:"space-between",gap:8,background:C.card2,borderRadius:8,padding:"7px 10px"}}>
+              <span style={{fontSize:13,color:C.text,fontWeight:600}}>{de}</span>
+              <span style={{fontSize:12,color:C.muted}}>{ru}</span>
+            </div>
+          ))}
+        </div>
+      </Box>
+      <Box c={C.blue}>
+        <H c={C.blue} z={13}>🕐 Reihenfolge — Порядок действий</H>
+        <div style={{display:"flex",gap:6,alignItems:"center",marginBottom:8,flexWrap:"wrap"}}>
+          {[["zuerst","сначала",C.green],["dann","потом",C.yellow],["danach","после этого",C.orange]].map(([w,ru,c])=>(
+            <div key={w} style={{background:c+"22",border:`1px solid ${c}55`,borderRadius:9,padding:"6px 12px",textAlign:"center"}}>
+              <div style={{color:c,fontWeight:800,fontSize:14}}>{w}</div>
+              <div style={{color:C.muted,fontSize:11}}>{ru}</div>
+            </div>
+          ))}
+        </div>
+        <div style={{background:C.card2,borderRadius:8,padding:"8px 10px",fontSize:12,color:C.muted,lineHeight:1.8}}>
+          <b style={{color:C.green}}>Zuerst</b> kaufen sie Lebensmittel.<br/>
+          <b style={{color:C.yellow}}>Dann</b> essen sie zu Mittag.<br/>
+          <b style={{color:C.orange}}>Danach</b> besuchen sie ein Straßenfest.
+        </div>
+      </Box>
+    </div>
+  );
+}
+
 const LEKTIONEN=[
   {
     id:"L1",num:"1",title:"Willkommen!",
@@ -3264,6 +3404,7 @@ const LEKTIONEN=[
     sections:[
       {id:"d4",  icon:"💬",title:"Dialogfragen L4",          sub:"Фразы для диалога",                  time:"∞",     col:C.teal,  hasT:false, th:null,         ex:()=><DialogCards lId="L4"/>},
       {id:"4a",  icon:"👨‍👩‍👧",title:"A · Familienfotos",       sub:"Possessivartikel: mein/dein/sein/ihr", time:"7 мин", col:C.blue,  hasT:true,  th:()=><T4A/>, ex:()=><Quiz questions={Q_L4A}/>},
+      {id:"4b",  icon:"🚴",title:"B · Freizeit mit der Familie",sub:"Verben mit Vokalwechsel · Wo/Wohin · Aktivitäten", time:"8 мин", col:C.green, hasT:true, th:()=><T4B/>, ex:()=><Quiz questions={Q_L4B}/>},
     ]
   },
 ];
