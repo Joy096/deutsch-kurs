@@ -1,23 +1,23 @@
 <div align="center">
 
 ```
-██████╗ ███████╗██╗   ██╗████████╗███████╗ ██████╗██╗  ██╗
-██╔══██╗██╔════╝██║   ██║╚══██╔══╝██╔════╝██╔════╝██║  ██║
-██║  ██║█████╗  ██║   ██║   ██║   ███████╗██║     ███████║
-██║  ██║██╔══╝  ██║   ██║   ██║   ╚════██║██║     ██╔══██║
-██████╔╝███████╗╚██████╔╝   ██║   ███████║╚██████╗██║  ██║
-╚═════╝ ╚══════╝ ╚═════╝    ╚═╝   ╚══════╝ ╚═════╝╚═╝  ╚═╝
-██╗  ██╗██╗   ██╗██████╗ ███████╗
-██║ ██╔╝██║   ██║██╔══██╗██╔════╝
-█████╔╝ ██║   ██║██████╔╝███████╗
-██╔═██╗ ██║   ██║██╔══██╗╚════██║
-██║  ██╗╚██████╔╝██║  ██║███████║
-╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝
+        ██████╗ ███████╗██╗   ██╗████████╗███████╗ ██████╗██╗  ██╗
+        ██╔══██╗██╔════╝██║   ██║╚══██╔══╝██╔════╝██╔════╝██║  ██║
+        ██║  ██║█████╗  ██║   ██║   ██║   ███████╗██║     ███████║
+        ██║  ██║██╔══╝  ██║   ██║   ██║   ╚════██║██║     ██╔══██║
+        ██████╔╝███████╗╚██████╔╝   ██║   ███████║╚██████╗██║  ██║
+        ╚═════╝ ╚══════╝ ╚═════╝    ╚═╝   ╚══════╝ ╚═════╝╚═╝  ╚═╝
+              ██╗  ██╗██╗   ██╗██████╗ ███████╗
+              ██║ ██╔╝██║   ██║██╔══██╗██╔════╝
+              █████╔╝ ██║   ██║██████╔╝███████╗
+              ██╔═██╗ ██║   ██║██╔══██╗╚════██║
+              ██║  ██╗╚██████╔╝██║  ██║███████║
+              ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝
 ```
 
 # 🇩🇪 Pluspunkt Deutsch A1
 
-**Интерактивный тренажёр немецкого языка**
+**Интерактивный краткий конспект и тренажёр немецкого языка**
 
 [![React](https://img.shields.io/badge/React-18-61dafb?style=flat-square&logo=react)](https://react.dev)
 [![Vite](https://img.shields.io/badge/Vite-5-646cff?style=flat-square&logo=vite)](https://vitejs.dev)
@@ -37,7 +37,7 @@
 
 ### О проекте
 
-Персональное веб-приложение для изучения немецкого языка по учебнику **Pluspunkt Deutsch A1**. Создано для самостоятельной подготовки — теория, словарь, квизы и диалоговые карточки в одном месте.
+Персональное веб-приложение для изучения немецкого языка по учебнику **Pluspunkt Deutsch A1**. Краткий конспект каждого урока, словарь и тренажёр в одном месте — для самостоятельной подготовки к занятиям.
 
 ### ✨ Возможности
 
@@ -52,7 +52,7 @@
 ### 🚀 Установка и запуск
 
 ```bash
-git clone https://github.com/your-username/deutsch-kurs.git
+git clone https://github.com/Joy096/deutsch-kurs.git
 cd deutsch-kurs
 npm install
 npm run dev
@@ -85,7 +85,7 @@ deutsch-kurs/
 
 ### Про проєкт
 
-Персональний вебзастосунок для вивчення німецької мови за підручником **Pluspunkt Deutsch A1**. Теорія, словник, квізи та діалогові картки — все в одному місці.
+Персональний вебзастосунок для вивчення німецької мови за підручником **Pluspunkt Deutsch A1**. Короткий конспект кожного уроку, словник і тренажер в одному місці — для самостійної підготовки до занять.
 
 ### ✨ Можливості
 
@@ -100,7 +100,7 @@ deutsch-kurs/
 ### 🚀 Встановлення та запуск
 
 ```bash
-git clone https://github.com/your-username/deutsch-kurs.git
+git clone https://github.com/Joy096/deutsch-kurs.git
 cd deutsch-kurs
 npm install
 npm run dev
@@ -119,7 +119,7 @@ npm run dev
 
 ### About
 
-A personal web app for learning German with the **Pluspunkt Deutsch A1** textbook. Theory, vocabulary, quizzes and dialogue cards — all in one place, optimised for mobile.
+A personal web app for learning German with the **Pluspunkt Deutsch A1** textbook. Concise lesson notes, vocabulary and practice tools — all in one place, optimised for mobile.
 
 ### ✨ Features
 
@@ -134,7 +134,7 @@ A personal web app for learning German with the **Pluspunkt Deutsch A1** textboo
 ### 🚀 Getting Started
 
 ```bash
-git clone https://github.com/your-username/deutsch-kurs.git
+git clone https://github.com/Joy096/deutsch-kurs.git
 cd deutsch-kurs
 npm install
 npm run dev
