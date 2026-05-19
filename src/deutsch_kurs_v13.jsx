@@ -361,6 +361,11 @@ const WBDATA=[
   {art:"",   de:"ein Straßenfest besuchen",          pl:"—",ru:"посещать уличный праздник",             tema:"Phrase"},
   {art:"",   de:"Sehenswürdigkeiten besichtigen",    pl:"—",ru:"осматривать достопримечательности",     tema:"Phrase"},
   {art:"",   de:"Lebensmittel kaufen",               pl:"—",ru:"покупать продукты",                     tema:"Phrase"},
+  {art:"",   de:"zuerst",       pl:"—",             ru:"сначала",                   tema:"Alltag"},
+  {art:"",   de:"dann",         pl:"—",             ru:"потом, затем",              tema:"Alltag"},
+  {art:"",   de:"danach",       pl:"—",             ru:"после этого",               tema:"Alltag"},
+  {art:"die",de:"Oma",          pl:"Omas",          ru:"бабушка (разг.)",           tema:"Familie"},
+  {art:"der",de:"Opa",          pl:"Opas",          ru:"дедушка (разг.)",           tema:"Familie"},
 ];
 
 
@@ -529,7 +534,17 @@ const KONJ_L2={
   schicken:{ich:"schicke",du:"schickst","er/es/sie":"schickt",wir:"schicken",ihr:"schickt","sie/Sie":"schicken"},
 };
 
-// ─── DIALOG DATA ──────────────────────────────────────────────────────────────
+// ─── KONJUGATION (L4B — Verben mit Vokalwechsel) ──────────────────────────────
+const KONJ_L4B={
+  sprechen:{type:"e→i", col:C.orange,bg:C.orangeBg, ich:"spreche", du:"sprichst","er/es/sie":"spricht", wir:"sprechen",ihr:"sprecht","sie/Sie":"sprechen"},
+  essen:   {type:"e→i", col:C.orange,bg:C.orangeBg, ich:"esse",    du:"isst",    "er/es/sie":"isst",    wir:"essen",   ihr:"esst",  "sie/Sie":"essen",   note:"e выпадает перед -st/-t"},
+  nehmen:  {type:"e→i", col:C.orange,bg:C.orangeBg, ich:"nehme",   du:"nimmst",  "er/es/sie":"nimmt",   wir:"nehmen",  ihr:"nehmt", "sie/Sie":"nehmen",  note:"⚠️ особая форма!"},
+  treffen: {type:"e→i", col:C.orange,bg:C.orangeBg, ich:"treffe",  du:"triffst", "er/es/sie":"trifft",  wir:"treffen", ihr:"trefft","sie/Sie":"treffen"},
+  lesen:   {type:"e→ie",col:C.blue,  bg:C.blueBg,   ich:"lese",    du:"liest",   "er/es/sie":"liest",   wir:"lesen",   ihr:"lest",  "sie/Sie":"lesen"},
+  sehen:   {type:"e→ie",col:C.blue,  bg:C.blueBg,   ich:"sehe",    du:"siehst",  "er/es/sie":"sieht",   wir:"sehen",   ihr:"seht",  "sie/Sie":"sehen"},
+  schlafen:{type:"a→ä", col:C.purple,bg:C.purpleBg, ich:"schlafe", du:"schläfst","er/es/sie":"schläft", wir:"schlafen",ihr:"schlaft","sie/Sie":"schlafen"},
+  fahren:  {type:"a→ä", col:C.purple,bg:C.purpleBg, ich:"fahre",   du:"fährst",  "er/es/sie":"fährt",   wir:"fahren",  ihr:"fahrt", "sie/Sie":"fahren"},
+};
 const DIALOGE={
   L1:[
     {tag:"Основные",col:C.blue,pairs:[
@@ -3254,11 +3269,43 @@ function T4A(){
           </div>
         ))}
       </Box>
+      <Box c={C.green}>
+        <H c={C.green}>👨‍👩‍👧 Erweiterte Familie</H>
+        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:"4px 8px",marginBottom:10}}>
+          {[
+            ["der Onkel","дядя","die Tante","тётя"],
+            ["der Cousin","двоюродный брат","die Cousine","двоюродная сестра"],
+            ["der Neffe","племянник","die Nichte","племянница"],
+          ].map(([m,mr,f,fr])=>(
+            <>
+              <div key={m} style={{background:C.blueBg,border:`1px solid ${C.blue}30`,borderRadius:8,padding:"7px 10px"}}>
+                <div style={{fontSize:11,color:C.blue,fontWeight:700,marginBottom:1}}>der</div>
+                <div style={{fontSize:13,color:C.text,fontWeight:700}}>{m}</div>
+                <div style={{fontSize:11,color:C.muted}}>{mr}</div>
+              </div>
+              <div key={f} style={{background:C.purpleBg,border:`1px solid ${C.purple}30`,borderRadius:8,padding:"7px 10px"}}>
+                <div style={{fontSize:11,color:C.purple,fontWeight:700,marginBottom:1}}>die</div>
+                <div style={{fontSize:13,color:C.text,fontWeight:700}}>{f}</div>
+                <div style={{fontSize:11,color:C.muted}}>{fr}</div>
+              </div>
+            </>
+          ))}
+        </div>
+        <div style={{background:C.yellowBg,border:`1px solid ${C.yellow}35`,borderRadius:8,padding:"8px 10px",fontSize:12,color:C.text,lineHeight:1.9}}>
+          Schwester + Bruder = <b style={{color:C.green}}>Geschwister</b> (мн.ч.)<br/>
+          Mutter + Vater = <b style={{color:C.green}}>Eltern</b> (мн.ч.)<br/>
+          Großmutter + Großvater = <b style={{color:C.green}}>Großeltern</b> (мн.ч.)<br/>
+          Tante + Onkel → Kinder = <b style={{color:C.green}}>Cousine / Cousin</b><br/>
+          Geschwister → Kinder = <b style={{color:C.green}}>Nichte / Neffe</b>
+        </div>
+      </Box>
     </div>
   );
 }
 
 function T4B(){
+  const [sel,setSel]=useState("sprechen");
+  const c=KONJ_L4B[sel];
   const groups=[
     {type:"e → i",col:C.orange,verbs:[
       {inf:"sprechen",du:"sprichst",er:"spricht"},
@@ -3302,24 +3349,39 @@ function T4B(){
           ))}
         </Box>
       ))}
-      <Box c={C.red}>
-        <H c={C.red} z={13}>📋 Vollständige Konjugation — sprechen (e→i)</H>
-        <div style={{overflowX:"auto"}}>
-          <table style={{width:"100%",borderCollapse:"collapse",fontSize:13}}>
-            <tbody>
-              {[["ich","spreche","wir","sprechen"],["du","sprichst","ihr","sprecht"],["er/sie","spricht","sie/Sie","sprechen"]].map(([p1,v1,p2,v2],i)=>(
-                <tr key={p1} style={{background:i%2===0?C.card2:"transparent"}}>
-                  <td style={{padding:"5px 8px",color:C.muted,width:"25%"}}>{p1}</td>
-                  <td style={{padding:"5px 8px",color:i===1||i===2?C.orange:C.text,fontWeight:i===1||i===2?800:400,width:"25%"}}>{v1}</td>
-                  <td style={{padding:"5px 8px",color:C.muted,width:"25%"}}>{p2}</td>
-                  <td style={{padding:"5px 8px",color:C.text,width:"25%"}}>{v2}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+      <Box c={C.yellow}>
+        <H c={C.yellow}>📝 Verben mit Vokalwechsel — Konjugation</H>
+        {/* Кнопки-глаголы */}
+        <div style={{display:"flex",gap:6,flexWrap:"wrap",marginBottom:10}}>
+          {Object.entries(KONJ_L4B).map(([v,d])=>(
+            <button key={v} onClick={()=>setSel(v)}
+              style={{padding:"6px 12px",borderRadius:10,cursor:"pointer",fontWeight:600,fontSize:13,
+                border:`1px solid ${sel===v?d.col:C.border}`,
+                background:sel===v?d.bg:C.card,
+                color:sel===v?d.col:C.muted}}>
+              {v}
+            </button>
+          ))}
         </div>
-        <div style={{marginTop:8,fontSize:12,color:C.muted}}>
-          Аналогично: <b style={{color:C.orange}}>nehmen → nimmt</b> (особая форма, не nimt!)
+        {/* Бейдж типа + пометка */}
+        <div style={{display:"flex",alignItems:"center",gap:6,marginBottom:8}}>
+          <span style={{background:c.col+"22",border:`1px solid ${c.col}55`,color:c.col,
+            borderRadius:6,padding:"2px 10px",fontSize:12,fontWeight:800}}>{c.type}</span>
+          <span style={{fontSize:13,fontWeight:800,color:C.text}}>{sel}</span>
+          {c.note&&<span style={{fontSize:11,color:C.orange}}>{c.note}</span>}
+        </div>
+        {/* Карточки 2×3 */}
+        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:6}}>
+          {[["ich",c.ich],["wir",c.wir],["du",c.du],["ihr",c.ihr],["er/es/sie",c["er/es/sie"]],["sie/Sie",c["sie/Sie"]]].map(([p,f])=>{
+            const hi=p==="du"||p==="er/es/sie";
+            return(
+              <div key={p} style={{background:hi?c.bg:C.card2,
+                border:`1px solid ${hi?c.col+"55":C.border}`,borderRadius:8,padding:"8px 10px"}}>
+                <div style={{fontSize:11,color:hi?c.col:C.muted,marginBottom:2}}>{p}</div>
+                <div style={{color:hi?c.col:C.text,fontWeight:700,fontSize:15}}>{f}</div>
+              </div>
+            );
+          })}
         </div>
       </Box>
       <Box c={C.green}>
