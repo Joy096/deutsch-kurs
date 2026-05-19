@@ -334,6 +334,33 @@ const WBDATA=[
   {art:"",   de:"nur",          pl:"—",             ru:"только",                    tema:"Alltag"},
   {art:"",   de:"jetzt",        pl:"—",             ru:"сейчас, теперь",            tema:"Alltag"},
   {art:"",   de:"auch",         pl:"—",             ru:"тоже, также",               tema:"Alltag"},
+  // ── L4-B · Verben mit Vokalwechsel ───────────────────────────────────────────
+  {art:"",   de:"schlafen",     pl:"—",             ru:"спать",                     tema:"Alltag"},
+  {art:"",   de:"fahren",       pl:"—",             ru:"ехать, ездить",             tema:"Alltag"},
+  {art:"",   de:"lesen",        pl:"—",             ru:"читать",                    tema:"Alltag"},
+  {art:"",   de:"sehen",        pl:"—",             ru:"видеть; смотреть",          tema:"Alltag"},
+  {art:"",   de:"nehmen",       pl:"—",             ru:"брать",                     tema:"Alltag"},
+  {art:"",   de:"treffen",      pl:"—",             ru:"встречать(ся)",             tema:"Alltag"},
+  {art:"",   de:"essen",        pl:"—",             ru:"есть, кушать",              tema:"Alltag"},
+  {art:"",   de:"sprechen",     pl:"—",             ru:"говорить",                  tema:"Alltag"},
+  // ── L4-B · Новые существительные ────────────────────────────────────────────
+  {art:"der",de:"Bus",          pl:"Busse",         ru:"автобус",                   tema:"Alltag"},
+  {art:"der",de:"Kaffee",       pl:"Kaffees",       ru:"кофе",                      tema:"Alltag"},
+  {art:"der",de:"Supermarkt",   pl:"Supermärkte",   ru:"супермаркет",               tema:"Alltag"},
+  {art:"die",de:"Radtour",      pl:"Radtouren",     ru:"велопрогулка",              tema:"Alltag"},
+  {art:"die",de:"Lebensmittel", pl:"—",             ru:"продукты питания (мн.ч.)",  tema:"Alltag"},
+  {art:"die",de:"Sehenswürdigkeit",pl:"Sehenswürdigkeiten",ru:"достопримечательность",tema:"Alltag"},
+  {art:"das",de:"Straßenfest",  pl:"Straßenfeste",  ru:"уличный праздник",          tema:"Alltag"},
+  // ── L4-B · Фразы — активности ───────────────────────────────────────────────
+  {art:"",   de:"den Bus nehmen",                    pl:"—",ru:"садиться в автобус",                    tema:"Phrase"},
+  {art:"",   de:"einen Film sehen",                  pl:"—",ru:"смотреть фильм",                        tema:"Phrase"},
+  {art:"",   de:"nach Hause fahren",                 pl:"—",ru:"ехать домой",                           tema:"Phrase"},
+  {art:"",   de:"zu Mittag essen",                   pl:"—",ru:"обедать",                               tema:"Phrase"},
+  {art:"",   de:"eine Radtour machen",               pl:"—",ru:"кататься на велосипеде",                tema:"Phrase"},
+  {art:"",   de:"einen Kaffee trinken",              pl:"—",ru:"пить кофе",                             tema:"Phrase"},
+  {art:"",   de:"ein Straßenfest besuchen",          pl:"—",ru:"посещать уличный праздник",             tema:"Phrase"},
+  {art:"",   de:"Sehenswürdigkeiten besichtigen",    pl:"—",ru:"осматривать достопримечательности",     tema:"Phrase"},
+  {art:"",   de:"Lebensmittel kaufen",               pl:"—",ru:"покупать продукты",                     tema:"Phrase"},
 ];
 
 
@@ -3330,7 +3357,7 @@ function T4B(){
       </Box>
       <Box c={C.blue}>
         <H c={C.blue} z={13}>🕐 Reihenfolge — Порядок действий</H>
-        <div style={{display:"flex",gap:6,alignItems:"center",marginBottom:8,flexWrap:"wrap"}}>
+        <div style={{display:"flex",gap:6,alignItems:"center",marginBottom:12,flexWrap:"wrap"}}>
           {[["zuerst","сначала",C.green],["dann","потом",C.yellow],["danach","после этого",C.orange]].map(([w,ru,c])=>(
             <div key={w} style={{background:c+"22",border:`1px solid ${c}55`,borderRadius:9,padding:"6px 12px",textAlign:"center"}}>
               <div style={{color:c,fontWeight:800,fontSize:14}}>{w}</div>
@@ -3338,7 +3365,38 @@ function T4B(){
             </div>
           ))}
         </div>
-        <div style={{background:C.card2,borderRadius:8,padding:"8px 10px",fontSize:12,color:C.muted,lineHeight:1.8}}>
+        {/* Таблица двух вариантов порядка слов */}
+        <div style={{background:C.card2,borderRadius:10,overflow:"hidden",marginBottom:8}}>
+          <div style={{display:"grid",gridTemplateColumns:"auto auto auto 1fr"}}>
+            {["Pos. 1","Verb","Pos. 3",""].map((h,i)=>(
+              <div key={i} style={{padding:"5px 8px",fontSize:10,color:C.dim,fontWeight:700,
+                textAlign:"center",textTransform:"uppercase",background:C.card}}>{h}</div>
+            ))}
+            {/* Вариант 1: Subjekt an Pos.1 */}
+            <div style={{padding:"8px 10px",background:C.blueBg,color:C.blue,fontWeight:800,fontSize:13,
+              textAlign:"center",borderTop:`1px solid ${C.border}33`}}>Sie</div>
+            <div style={{padding:"8px 10px",background:C.tealBg,color:C.teal,fontWeight:800,fontSize:13,
+              textAlign:"center",borderTop:`1px solid ${C.border}33`}}>kaufen</div>
+            <div style={{padding:"8px 10px",background:C.greenBg,color:C.green,fontWeight:800,fontSize:13,
+              textAlign:"center",borderTop:`1px solid ${C.border}33`}}>zuerst</div>
+            <div style={{padding:"8px 10px",color:C.muted,fontSize:12,
+              borderTop:`1px solid ${C.border}33`}}>Lebensmittel.</div>
+            {/* Вариант 2: Zeitwort an Pos.1 */}
+            <div style={{padding:"8px 10px",background:C.greenBg,color:C.green,fontWeight:800,fontSize:13,
+              textAlign:"center",borderTop:`1px solid ${C.border}33`}}>Zuerst</div>
+            <div style={{padding:"8px 10px",background:C.tealBg,color:C.teal,fontWeight:800,fontSize:13,
+              textAlign:"center",borderTop:`1px solid ${C.border}33`}}>kaufen</div>
+            <div style={{padding:"8px 10px",background:C.blueBg,color:C.blue,fontWeight:800,fontSize:13,
+              textAlign:"center",borderTop:`1px solid ${C.border}33`}}>sie</div>
+            <div style={{padding:"8px 10px",color:C.muted,fontSize:12,
+              borderTop:`1px solid ${C.border}33`}}>Lebensmittel.</div>
+          </div>
+        </div>
+        <div style={{background:C.yellowBg,border:`1px solid ${C.yellow}35`,borderRadius:8,
+          padding:"6px 10px",fontSize:12,color:C.yellow,marginBottom:8}}>
+          💡 <b>Verb всегда на позиции 2!</b> Если временно́е слово стоит первым — субъект уходит на 3-е место.
+        </div>
+        <div style={{background:C.card2,borderRadius:8,padding:"8px 10px",fontSize:12,color:C.muted,lineHeight:1.9}}>
           <b style={{color:C.green}}>Zuerst</b> kaufen sie Lebensmittel.<br/>
           <b style={{color:C.yellow}}>Dann</b> essen sie zu Mittag.<br/>
           <b style={{color:C.orange}}>Danach</b> besuchen sie ein Straßenfest.
