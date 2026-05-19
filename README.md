@@ -7,6 +7,12 @@
 ██║  ██║██╔══╝  ██║   ██║   ██║   ╚════██║██║     ██╔══██║
 ██████╔╝███████╗╚██████╔╝   ██║   ███████║╚██████╗██║  ██║
 ╚═════╝ ╚══════╝ ╚═════╝    ╚═╝   ╚══════╝ ╚═════╝╚═╝  ╚═╝
+██╗  ██╗██╗   ██╗██████╗ ███████╗
+██║ ██╔╝██║   ██║██╔══██╗██╔════╝
+█████╔╝ ██║   ██║██████╔╝███████╗
+██╔═██╗ ██║   ██║██╔══██╗╚════██║
+██║  ██╗╚██████╔╝██║  ██║███████║
+╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝
 ```
 
 # 🇩🇪 Pluspunkt Deutsch A1
@@ -18,10 +24,15 @@
 [![PWA](https://img.shields.io/badge/PWA-ready-brightgreen?style=flat-square)](https://web.dev/pwa)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
 
+---
+
+[🇷🇺 Русский](#ru) · [🇺🇦 Українська](#uk) · [🇬🇧 English](#en)
+
 </div>
 
 ---
 
+<a id="ru"></a>
 ## 🇷🇺 Русский
 
 ### О проекте
@@ -69,6 +80,7 @@ deutsch-kurs/
 
 ---
 
+<a id="uk"></a>
 ## 🇺🇦 Українська
 
 ### Про проєкт
@@ -81,11 +93,11 @@ deutsch-kurs/
 |--------|------|
 | 📖 **Теорія** | Візуальні пояснення граматики до кожного уроку |
 | 📝 **Квізи** | Перевірка знань із миттєвим зворотним зв'язком |
-| 💬 **Діалоги** | Запитання та фрази для розмовної практики |
+| 💬 **Діалоги** | Запитання та фрази для розмовної практики (formell / informell) |
 | 📚 **Словник** | 250+ слів з артиклями, множиною та фільтрами |
-| 🧪 **Großer Test** | Великий тест з кожного уроку |
+| 🧪 **Großer Test** | Великий тест з кожного уроку: Quiz, Lückentext, Zuordnung, Wortstellung |
 
-### 🚀 Встановлення
+### 🚀 Встановлення та запуск
 
 ```bash
 git clone https://github.com/your-username/deutsch-kurs.git
@@ -94,8 +106,15 @@ npm install
 npm run dev
 ```
 
+Відкрий [`http://localhost:5173`](http://localhost:5173)
+
+### 🤖 AI-розробка
+
+Проєкт розробляється за допомогою **Claude** (Anthropic). Правила описані у [`CLAUDE.md`](CLAUDE.md).
+
 ---
 
+<a id="en"></a>
 ## 🇬🇧 English
 
 ### About
@@ -130,38 +149,9 @@ Open [`http://localhost:5173`](http://localhost:5173)
 - **PWA** — installable on mobile
 - **Vanilla CSS-in-JS** — no external UI library
 
----
+### 🤖 AI Development
 
-## 🇸🇦 العربية
-
-<div dir="rtl">
-
-### عن المشروع
-
-تطبيق ويب شخصي لتعلّم اللغة الألمانية باستخدام كتاب **Pluspunkt Deutsch A1**. النظرية والمفردات والاختبارات وبطاقات الحوار — كل شيء في مكان واحد.
-
-### ✨ المميزات
-
-| القسم | الوصف |
-|-------|-------|
-| 📖 **النظرية** | شرح مرئي للقواعد لكل درس |
-| 📝 **الاختبارات** | تحقق من المعرفة مع تغذية راجعة فورية |
-| 💬 **الحوارات** | أسئلة وعبارات لممارسة المحادثة |
-| 📚 **القاموس** | أكثر من 250 كلمة مع المقالات والجمع والفلاتر |
-| 🧪 **Großer Test** | اختبار شامل لكل درس |
-
-### 🚀 التثبيت والتشغيل
-
-```bash
-git clone https://github.com/your-username/deutsch-kurs.git
-cd deutsch-kurs
-npm install
-npm run dev
-```
-
-افتح [`http://localhost:5173`](http://localhost:5173)
-
-</div>
+Built with **Claude** (Anthropic). Rules and conventions are in [`CLAUDE.md`](CLAUDE.md).
 
 ---
 
