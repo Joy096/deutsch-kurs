@@ -362,13 +362,21 @@ const WBDATA=[
   {art:"",   de:"Sehenswürdigkeiten besichtigen",    pl:"—",ru:"осматривать достопримечательности",     tema:"Phrase"},
   {art:"",   de:"Lebensmittel kaufen",               pl:"—",ru:"покупать продукты",                     tema:"Phrase"},
   {art:"",   de:"zuerst",       pl:"—",             ru:"сначала",                   tema:"Alltag"},
-  {art:"",   de:"dann",         pl:"—",             ru:"потом, затем",              tema:"Alltag"},
-  {art:"",   de:"danach",       pl:"—",             ru:"после этого",               tema:"Alltag"},
+  {art:"",   de:"dann",         pl:"—",             ru:"потом, затем (следующий шаг)",  tema:"Alltag"},
+  {art:"",   de:"danach",       pl:"—",             ru:"после этого (после конкр. действия)", tema:"Alltag"},
+  {art:"",   de:"kennen",       pl:"—",             ru:"знать (человека или место)",    tema:"Alltag"},
   {art:"die",de:"Oma",          pl:"Omas",          ru:"бабушка (разг.)",           tema:"Familie"},
   {art:"der",de:"Opa",          pl:"Opas",          ru:"дедушка (разг.)",           tema:"Familie"},
   {art:"der",de:"Freund",       pl:"Freunde",        ru:"друг\nf. - die Freundin",   tema:"Alltag"},
   {art:"",   de:"trinken",      pl:"—",             ru:"пить",                       tema:"Alltag"},
   {art:"",   de:"machen",       pl:"—",             ru:"делать",                     tema:"Alltag"},
+  {art:"der",de:"Bummel",       pl:"Bummel",        ru:"прогулка (неспешная)",       tema:"Alltag"},
+  {art:"der",de:"Stadtbummel",  pl:"Stadtbummel",   ru:"прогулка по городу",         tema:"Alltag"},
+  {art:"der",de:"Hafen",        pl:"Häfen",         ru:"порт, гавань",               tema:"Alltag"},
+  {art:"das",de:"Schiff",       pl:"Schiffe",       ru:"корабль, судно",             tema:"Alltag"},
+  {art:"",   de:"besuchen",     pl:"—",             ru:"посещать (человека или мероприятие)", tema:"Alltag"},
+  {art:"",   de:"besichtigen",  pl:"—",             ru:"осматривать (место или достопримечательность)", tema:"Alltag"},
+  {art:"die",de:"Innenstadt",   pl:"Innenstädte",   ru:"центр города, старый город", tema:"Alltag"},
 ];
 
 
