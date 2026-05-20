@@ -564,6 +564,12 @@ const KONJ_L4B={
   schlafen:{type:"a→ä", col:C.purple,bg:C.purpleBg, ich:"schlafe", du:"schläfst","er/es/sie":"schläft", wir:"schlafen",ihr:"schlaft","sie/Sie":"schlafen"},
   fahren:  {type:"a→ä", col:C.purple,bg:C.purpleBg, ich:"fahre",   du:"fährst",  "er/es/sie":"fährt",   wir:"fahren",  ihr:"fahrt", "sie/Sie":"fahren"},
 };
+
+// ─── KONJUGATION (L4C — Präteritum haben/sein) ────────────────────────────────
+const KONJ_L4C={
+  "haben →": {col:C.blue,  bg:C.blueBg,   ich:"hatte",  du:"hattest", "er/es/sie":"hatte",  wir:"hatten", ihr:"hattet","sie/Sie":"hatten"},
+  "sein →":  {col:C.purple,bg:C.purpleBg, ich:"war",    du:"warst",   "er/es/sie":"war",    wir:"waren",  ihr:"wart",  "sie/Sie":"waren"},
+};
 const DIALOGE={
   L1:[
     {tag:"Основные",col:C.blue,pairs:[
@@ -696,6 +702,13 @@ const DIALOGE={
       {q:"Wo seid ihr jetzt?",          a:"Wir sind in Berlin. Es gibt hier viele Sehenswürdigkeiten.", note:"Wo? → in + Stadt (нахождение) · Sehenswürdigkeiten = достопримечательности"},
       {q:"Was machen wir zuerst?",      a:"Zuerst kaufen wir Lebensmittel, dann essen wir zu Mittag.", note:"zuerst = сначала · dann = потом · danach = после этого"},
       {q:"Er schläft. / Sie liest ein Buch.", a:"— (описание того, кто что делает)",          note:"Vokalwechsel: schlafen→schläft · lesen→liest · sehen→sieht · fahren→fährt"},
+      {q:"Sprichst du Spanisch?",             a:"Ja, natürlich! / Ja, ein bisschen. / Nein, leider nicht.", note:"sprechen → du sprichst · ein bisschen = немного · natürlich = конечно"},
+      {q:"Isst du gerne Schokolade?",         a:"Ja, ich esse sehr gern! / Nein, ich esse nicht gern.",      note:"gerne = с удовольствием · sehr gern = очень люблю · nicht gern = не люблю"},
+      {q:"Liest du gerne Bücher?",            a:"Ja, ich lese gern Bücher. / Nein, nicht so gern.",          note:"nicht so gern = не очень люблю · auch: Zeitungen, Blogs, SMS"},
+      {q:"Was machen wir morgen?",            a:"Wir sehen einen Film! Oder wir chillen und essen Pizza.",   note:"morgen = завтра · chillen = расслабляться (разг.)"},
+      {q:"Ich habe eine Idee!",               a:"— (предлагаю план)",                                        note:"eine Idee haben = иметь идею · Wir nehmen die S-Bahn und fahren nach ..."},
+      {q:"Kennt ihr den Hafen hier?",         a:"Ja, ich kenne den Hafen. / Nein, das kenne ich nicht.",     note:"kennen = знать (место/человека) · Kennt ihr? = неформ. мн.ч."},
+      {q:"In Hamburg gibt es den Hafen.",     a:"— (рассказываю о городе)",                                  note:"In + Stadt + gibt es + Akk. · Man kann eine Hafenrundfahrt machen."},
     ]},
   ],
 };
@@ -3120,6 +3133,22 @@ function GrosserTest3(){return <GrosserTestContainer rounds={[
   {icon:"🔤",label:"Wortstellung",  col:C.orange, component:()=><WortstellungGame sents={WSENTS_L3}/>},
 ]}/>;}
 
+// ─── L4C — PRÄTERITUM HABEN/SEIN ─────────────────────────────────────────────
+const Q_L4C=[
+  {q:"haben (Prät.) → ich ...",           opts:["habe","hatte","hatten","hattest"],    ans:1, exp:"ich hatte",                           hint:"Präteritum"},
+  {q:"sein (Prät.) → ich ...",            opts:["bin","war","wäre","ware"],             ans:1, exp:"ich war",                             hint:"Präteritum"},
+  {q:"haben (Prät.) → du ...",            opts:["hast","hatte","hattest","hatten"],    ans:2, exp:"du hattest",                          hint:"Präteritum"},
+  {q:"sein (Prät.) → du ...",             opts:["bist","warst","wart","waren"],         ans:1, exp:"du warst",                            hint:"Präteritum"},
+  {q:"haben (Prät.) → er/sie ...",        opts:["hat","hatte","hatten","hattest"],     ans:1, exp:"er/sie hatte",                        hint:"Präteritum"},
+  {q:"sein (Prät.) → wir ...",            opts:["sind","war","wart","waren"],           ans:3, exp:"wir waren",                           hint:"Präteritum"},
+  {q:"sein (Prät.) → ihr ...",            opts:["seid","waren","wart","ward"],          ans:2, exp:"ihr wart — не waren!",               hint:"⚠️ Achtung"},
+  {q:"haben (Prät.) → sie/Sie ...",       opts:["haben","hatte","hattet","hatten"],    ans:3, exp:"sie/Sie hatten",                      hint:"Präteritum"},
+  {q:"'Früher ___ mein Vater Arzt.' (sein)",  opts:["ist","hatte","war","waren"],      ans:2, exp:"war — Präteritum von sein",           hint:"Satz"},
+  {q:"'Wir ___ drei Geschwister.' (haben)",   opts:["haben","hatten","hattet","hatte"],ans:1, exp:"hatten — Präteritum von haben",       hint:"Satz"},
+  {q:"'Das ___ schön.' (sein)",                opts:["ist","war","waren","wart"],       ans:1, exp:"war — das/es → war",                  hint:"Satz"},
+  {q:"'Sie ___ viel Arbeit.' (haben)",         opts:["hat","hatte","hatten","hattest"],ans:1, exp:"hatte — sie (она) → hatte",           hint:"Satz"},
+];
+
 // ─── L4B — VERBEN MIT VOKALWECHSEL ───────────────────────────────────────────
 const Q_L4B=[
   {q:"schlafen → er/sie/es ...",        opts:["schlaffe","schläft","schlaft","schläfft"],  ans:1, exp:"a→ä: schlafen → schläft",              hint:"Vokalwechsel"},
@@ -3487,6 +3516,107 @@ function T4B(){
   );
 }
 
+function T4C(){
+  return(
+    <div style={{display:"flex",flexDirection:"column",gap:12}}>
+      <Box c={C.yellow}>
+        <H c={C.yellow}>⏮️ Präteritum von haben und sein</H>
+        <div style={{fontSize:13,color:C.muted,marginBottom:8}}>
+          <b style={{color:C.yellow}}>Präteritum</b> — прошедшее время. Используется для описания прошлых фактов и состояний.
+        </div>
+        <div style={{background:C.card2,borderRadius:8,padding:"9px 12px",fontSize:13,lineHeight:2}}>
+          Mein Großvater <b style={{color:C.purple}}>war</b> Arzt. <span style={{color:C.muted,fontSize:12}}>— Мой дедушка был врачом.</span><br/>
+          Mein Vater <b style={{color:C.blue}}>hatte</b> viel Arbeit. <span style={{color:C.muted,fontSize:12}}>— У папы было много работы.</span><br/>
+          Wir <b style={{color:C.purple}}>waren</b> drei Geschwister. <span style={{color:C.muted,fontSize:12}}>— Нас было трое детей.</span>
+        </div>
+      </Box>
+      <Box c={C.teal}>
+        <H c={C.teal}>📋 Präteritum — haben & sein</H>
+        <div style={{overflowX:"auto"}}>
+          <table style={{width:"100%",borderCollapse:"separate",borderSpacing:"2px"}}>
+            <thead>
+              <tr>
+                <td style={{width:52}}/>
+                <td colSpan={2} style={{textAlign:"center",background:C.blueBg,color:C.blue,
+                  fontWeight:800,fontSize:12,padding:"6px 4px",borderRadius:"8px 8px 0 0"}}>haben</td>
+                <td colSpan={2} style={{textAlign:"center",background:C.purpleBg,color:C.purple,
+                  fontWeight:800,fontSize:12,padding:"6px 4px",borderRadius:"8px 8px 0 0"}}>sein</td>
+              </tr>
+              <tr>
+                <td/>
+                <td style={{textAlign:"center",background:C.blueBg,color:C.muted,
+                  fontSize:10,fontWeight:600,padding:"3px 4px",borderRadius:"0 0 4px 4px"}}>Präsens</td>
+                <td style={{textAlign:"center",background:C.blueBg,color:C.blue,
+                  fontSize:10,fontWeight:800,padding:"3px 4px",borderRadius:"0 0 4px 4px"}}>Prät.</td>
+                <td style={{textAlign:"center",background:C.purpleBg,color:C.muted,
+                  fontSize:10,fontWeight:600,padding:"3px 4px",borderRadius:"0 0 4px 4px"}}>Präsens</td>
+                <td style={{textAlign:"center",background:C.purpleBg,color:C.purple,
+                  fontSize:10,fontWeight:800,padding:"3px 4px",borderRadius:"0 0 4px 4px"}}>Prät.</td>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                ["ich",    "habe",  "hatte",   "bin",  "war"],
+                ["du",     "hast",  "hattest", "bist", "warst"],
+                ["er/sie", "hat",   "hatte",   "ist",  "war"],
+                ["wir",    "haben", "hatten",  "sind", "waren"],
+                ["ihr",    "habt",  "hattet",  "seid", "wart"],
+                ["sie/Sie","haben", "hatten",  "sind", "waren"],
+              ].map(([p,hp,hpt,sp,spt])=>(
+                <tr key={p}>
+                  <td style={{padding:"6px 6px",fontSize:12,color:C.dim,fontWeight:700}}>{p}</td>
+                  <td style={{padding:"6px 4px",background:C.card2,borderRadius:6,fontSize:13,
+                    color:C.muted,textAlign:"center"}}>{hp}</td>
+                  <td style={{padding:"6px 4px",background:C.blueBg,border:`1px solid ${C.blue}40`,
+                    borderRadius:6,fontSize:13,color:C.blue,fontWeight:800,textAlign:"center"}}>{hpt}</td>
+                  <td style={{padding:"6px 4px",background:C.card2,borderRadius:6,fontSize:13,
+                    color:C.muted,textAlign:"center"}}>{sp}</td>
+                  <td style={{padding:"6px 4px",background:C.purpleBg,border:`1px solid ${C.purple}40`,
+                    borderRadius:6,fontSize:13,textAlign:"center",fontWeight:800,
+                    color:p==="ihr"?C.orange:C.purple}}>{spt}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </Box>
+      <Box c={C.green}>
+        <H c={C.green} z={13}>📅 gestern · heute · morgen</H>
+        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:6,marginBottom:8}}>
+          {[["gestern","вчера",C.red],["heute","сегодня",C.green],["morgen","завтра",C.blue]].map(([w,ru,col])=>(
+            <div key={w} style={{background:col+"18",border:`1px solid ${col}40`,borderRadius:9,padding:"8px 10px",textAlign:"center"}}>
+              <div style={{color:col,fontWeight:800,fontSize:14}}>{w}</div>
+              <div style={{color:C.muted,fontSize:11,marginTop:2}}>{ru}</div>
+            </div>
+          ))}
+        </div>
+        <div style={{background:C.card2,borderRadius:8,padding:"8px 10px",fontSize:12,color:C.muted,lineHeight:1.9}}>
+          <b style={{color:C.red}}>Gestern</b> hatte ich keine Zeit.<br/>
+          <b style={{color:C.green}}>Heute</b> bin ich zu Hause.<br/>
+          <b style={{color:C.blue}}>Morgen</b> fahren wir nach Potsdam.
+        </div>
+      </Box>
+      <Box c={C.blue}>
+        <H c={C.blue} z={13}>🗣️ Früher und heute</H>
+        <div style={{display:"flex",flexDirection:"column",gap:5}}>
+          {[
+            ["Früher war alles anders.","Раньше всё было иначе."],
+            ["Die Familie war sehr groß.","Семья была очень большой."],
+            ["Sie hatte keine langweilige Kindheit.","У неё не было скучного детства."],
+            ["Wir hatten keinen Computer.","У нас не было компьютера."],
+            ["Das war schön.","Это было красиво / прекрасно."],
+          ].map(([de,ru])=>(
+            <div key={de} style={{background:C.card2,borderRadius:8,padding:"7px 10px",display:"flex",justifyContent:"space-between",gap:8,flexWrap:"wrap"}}>
+              <span style={{fontSize:13,color:C.text,fontWeight:600}}>{de}</span>
+              <span style={{fontSize:12,color:C.muted}}>{ru}</span>
+            </div>
+          ))}
+        </div>
+      </Box>
+    </div>
+  );
+}
+
 const LEKTIONEN=[
   {
     id:"L1",num:"1",title:"Willkommen!",
@@ -3544,6 +3674,7 @@ const LEKTIONEN=[
       {id:"d4",  icon:"💬",title:"Dialogfragen L4",          sub:"Фразы для диалога",                  time:"∞",     col:C.teal,  hasT:false, th:null,         ex:()=><DialogCards lId="L4"/>},
       {id:"4a",  icon:"👨‍👩‍👧",title:"A · Familienfotos",       sub:"Possessivartikel: mein/dein/sein/ihr", time:"7 мин", col:C.blue,  hasT:true,  th:()=><T4A/>, ex:()=><Quiz questions={Q_L4A}/>},
       {id:"4b",  icon:"🚴",title:"B · Freizeit mit der Familie",sub:"Verben mit Vokalwechsel · Wo/Wohin · Aktivitäten", time:"8 мин", col:C.green, hasT:true, th:()=><T4B/>, ex:()=><Quiz questions={Q_L4B}/>},
+      {id:"4c",  icon:"📅",title:"C · Familien früher",        sub:"Präteritum von haben und sein: hatte, war",          time:"7 мин", col:C.purple,hasT:true, th:()=><T4C/>, ex:()=><Quiz questions={Q_L4C}/>},
     ]
   },
 ];
