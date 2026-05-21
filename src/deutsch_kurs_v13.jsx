@@ -385,6 +385,28 @@ const WBDATA=[
   {art:"der",de:"Nachmittag",   pl:"Nachmittage",   ru:"послеполудень, вторая половина дня", tema:"Alltag"},
   {art:"das",de:"Wochenende",   pl:"Wochenenden",   ru:"выходные (суббота и воскресенье)", tema:"Alltag"},
   {art:"",   de:"früher",       pl:"—",             ru:"раньше, прежде (в прошлом)",  tema:"Alltag"},
+  {art:"die",de:"Grüße",        pl:"—",             ru:"приветы, пожелания (мн.ч.)",  tema:"Alltag"},
+  // ── L4 · Wichtige Wörter (стр. 48) ──────────────────────────────────────────
+  {art:"",   de:"studieren",    pl:"—",             ru:"учиться (в университете)",    tema:"Alltag"},
+  {art:"",   de:"faulenzen",    pl:"—",             ru:"лениться, бездельничать",     tema:"Alltag"},
+  {art:"",   de:"bleiben",      pl:"—",             ru:"оставаться (на месте)",       tema:"Alltag"},
+  {art:"",   de:"chillen",      pl:"—",             ru:"расслабляться, отдыхать (разг.)", tema:"Alltag"},
+  {art:"die",de:"Freizeit",     pl:"—",             ru:"свободное время",             tema:"Alltag"},
+  {art:"der",de:"Film",         pl:"Filme",         ru:"фильм",                       tema:"Alltag"},
+  {art:"der",de:"Tag",          pl:"Tage",          ru:"день",                        tema:"Alltag"},
+  {art:"der",de:"Spaziergang",  pl:"Spaziergänge",  ru:"пешая прогулка",              tema:"Alltag"},
+  {art:"die",de:"Schifffahrt",  pl:"Schifffahrten", ru:"прогулка на корабле, круиз",  tema:"Alltag"},
+  {art:"",   de:"alle",         pl:"—",             ru:"все (без исключения)",        tema:"Alltag"},
+  {art:"",   de:"gern/gerne",   pl:"—",             ru:"с удовольствием, охотно",     tema:"Alltag"},
+  {art:"",   de:"wo",           pl:"—",             ru:"где (вопрос о месте; ≠ wohin)",    tema:"Alltag"},
+  {art:"",   de:"wohin",        pl:"—",             ru:"куда (вопрос о движении; ≠ wo)",   tema:"Alltag"},
+  {art:"",   de:"zu Hause",     pl:"—",             ru:"дома (нахождение; ≠ nach Hause)",  tema:"Phrase"},
+  {art:"",   de:"nach Hause",   pl:"—",             ru:"домой (движение; ≠ zu Hause)",     tema:"Phrase"},
+  {art:"",   de:"Zeit haben",   pl:"—",             ru:"иметь время; viel Zeit haben = иметь много времени", tema:"Phrase"},
+  {art:"",   de:"am Wochenende",pl:"—",             ru:"на выходных (в субботу-воскресенье)", tema:"Phrase"},
+  {art:"",   de:"alles anders", pl:"—",             ru:"всё иначе, всё по-другому",   tema:"Phrase"},
+  {art:"",   de:"Viele Grüße",  pl:"—",             ru:"с уважением; приветы (конец письма/открытки)", tema:"Phrase"},
+  {art:"",   de:"Bis bald",     pl:"—",             ru:"до скорого (прощание)",       tema:"Phrase"},
 ];
 
 
