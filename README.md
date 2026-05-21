@@ -27,7 +27,7 @@
 
 ---
 
-[🇺🇦 Русский](#ru) · [🇺🇦 Українська](#uk) · [🇬🇧 English](#en)
+[🇺🇦 Русский](#ru) · [🇺🇦 Українська](#uk) · [🇬🇧 English](#en) · [🇩🇪 Deutsch](#de)
 
 </div>
 
@@ -113,6 +113,27 @@ npm run dev
 
 Проєкт розробляється за допомогою **Claude** (Anthropic). Правила описані у [`CLAUDE.md`](CLAUDE.md).
 
+### 📁 Структура проєкту
+
+```
+deutsch-kurs/
+├── src/
+│   └── deutsch_kurs_v13.jsx   # Весь застосунок
+├── public/
+│   ├── manifest.json           # PWA маніфест
+│   └── icon.png
+├── index.html
+├── vite.config.js
+└── CLAUDE.md                   # Інструкції для AI-асистента
+```
+
+### 🛠 Технології
+
+- **React 18** — UI
+- **Vite 5** — збірка
+- **PWA** — встановлюється на телефон
+- **Vanilla CSS-in-JS** — без зовнішніх UI-бібліотек
+
 ---
 
 <a id="en"></a>
@@ -156,8 +177,42 @@ Built with **Claude** (Anthropic). Rules and conventions are in [`CLAUDE.md`](CL
 
 ---
 
+<a id="de"></a>
+## 🇩🇪 Deutsch
+
+### Über das Projekt
+
+Eine persönliche Web-App zum Deutschlernen mit den Lehrbüchern **Pluspunkt Deutsch A1 Kursbuch** und **Arbeitsbuch**. Kompakte Lernzusammenfassungen, Wörterbuch und Übungen — alles an einem Ort, optimiert für das Smartphone.
+
+### ✨ Funktionen
+
+| Bereich | Beschreibung |
+|---------|--------------|
+| 📖 **Theorie** | Visuelle Grammatikerklärungen zu jeder Lektion |
+| 📝 **Quiz** | Wissensüberprüfung mit sofortigem Feedback |
+| 💬 **Dialoge** | Fragen und Phrasen für die Sprechpraxis (formell / informell) |
+| 📚 **Wörterbuch** | 300+ Wörter mit Artikeln, Pluralformen und Filtern |
+| 🧪 **Großer Test** | Umfassender Test pro Lektion: Quiz, Lückentext, Zuordnung, Wortstellung |
+
+### 🚀 Installation
+
+```bash
+git clone https://github.com/Joy096/deutsch-kurs.git
+cd deutsch-kurs
+npm install
+npm run dev
+```
+
+Öffne [`http://localhost:5173`](http://localhost:5173)
+
+### 🤖 KI-Entwicklung
+
+Entwickelt mit **Claude** (Anthropic) — Vibe Coding auf Deutsch! Regeln und Konventionen stehen in [`CLAUDE.md`](CLAUDE.md).
+
+---
+
 <div align="center">
 
-Made with ☕ and 🇩🇪 · Powered by [Claude](https://claude.ai) · [Pluspunkt Deutsch A1](https://www.cornelsen.de)
+Made with ☕ and 🤖 · Powered by [Claude](https://claude.ai) · [Pluspunkt Deutsch A1](https://www.cornelsen.de)
 
 </div>
