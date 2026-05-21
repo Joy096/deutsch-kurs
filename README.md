@@ -18,6 +18,7 @@
 # 🇩🇪 Pluspunkt Deutsch A1
 
 **Интерактивный краткий конспект и тренажёр немецкого языка**
+**по учебникам Kursbuch и Arbeitsbuch — Pluspunkt Deutsch A1**
 
 [![React](https://img.shields.io/badge/React-18-61dafb?style=flat-square&logo=react)](https://react.dev)
 [![Vite](https://img.shields.io/badge/Vite-5-646cff?style=flat-square&logo=vite)](https://vitejs.dev)
@@ -26,18 +27,18 @@
 
 ---
 
-[🇷🇺 Русский](#ru) · [🇺🇦 Українська](#uk) · [🇬🇧 English](#en)
+[🇺🇦 Русский](#ru) · [🇺🇦 Українська](#uk) · [🇬🇧 English](#en)
 
 </div>
 
 ---
 
 <a id="ru"></a>
-## 🇷🇺 Русский
+## 🇺🇦 Русский
 
 ### О проекте
 
-Персональное веб-приложение для изучения немецкого языка по учебнику **Pluspunkt Deutsch A1**. Краткий конспект каждого урока, словарь и тренажёр в одном месте — для самостоятельной подготовки к занятиям.
+Персональное веб-приложение для изучения немецкого языка по учебникам **Pluspunkt Deutsch A1 Kursbuch** и **Arbeitsbuch**. Краткий конспект каждого урока, словарь и тренажёр в одном месте — для самостоятельной подготовки к занятиям.
 
 ### ✨ Возможности
 
@@ -85,7 +86,7 @@ deutsch-kurs/
 
 ### Про проєкт
 
-Персональний вебзастосунок для вивчення німецької мови за підручником **Pluspunkt Deutsch A1**. Короткий конспект кожного уроку, словник і тренажер в одному місці — для самостійної підготовки до занять.
+Персональний вебзастосунок для вивчення німецької мови за підручниками **Pluspunkt Deutsch A1 Kursbuch** та **Arbeitsbuch**. Короткий конспект кожного уроку, словник і тренажер в одному місці — для самостійної підготовки до занять.
 
 ### ✨ Можливості
 
@@ -119,7 +120,7 @@ npm run dev
 
 ### About
 
-A personal web app for learning German with the **Pluspunkt Deutsch A1** textbook. Concise lesson notes, vocabulary and practice tools — all in one place, optimised for mobile.
+A personal web app for learning German with the **Pluspunkt Deutsch A1 Kursbuch** and **Arbeitsbuch** textbooks. Concise lesson notes, vocabulary and practice tools — all in one place, optimised for mobile.
 
 ### ✨ Features
 
