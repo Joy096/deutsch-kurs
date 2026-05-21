@@ -422,6 +422,17 @@ const WBDATA=[
   {art:"die",de:"Zeit",         pl:"Zeiten",        ru:"время (свободное/занятое)",   tema:"Alltag"},
   {art:"",   de:"wenig",        pl:"—",             ru:"мало (≠ viel)",               tema:"Alltag"},
   {art:"",   de:"wieso",        pl:"—",             ru:"почему, зачем (≠ warum — более разг.)", tema:"Alltag"},
+  // ── Arbeitsbuch p.49–51 ──────────────────────────────────────────────────────
+  {art:"",   de:"schreiben",    pl:"—",             ru:"писать",                      tema:"Alltag"},
+  {art:"",   de:"lernen",       pl:"—",             ru:"учить (язык/тему); учиться",  tema:"Alltag"},
+  {art:"",   de:"oft",          pl:"—",             ru:"часто (≠ selten — редко)",    tema:"Alltag"},
+  {art:"die",de:"Zeitung",      pl:"Zeitungen",     ru:"газета",                      tema:"Alltag"},
+  {art:"der",de:"Dom",          pl:"Dome",          ru:"собор (кафедральный)",        tema:"Alltag"},
+  {art:"die",de:"E-Mail",       pl:"E-Mails",       ru:"электронное письмо",          tema:"Alltag"},
+  {art:"",   de:"eine Zeitung lesen",  pl:"—",      ru:"читать газету",               tema:"Phrase"},
+  {art:"",   de:"eine E-Mail schreiben",pl:"—",     ru:"написать/писать имейл",       tema:"Phrase"},
+  {art:"",   de:"im Restaurant essen", pl:"—",      ru:"есть в ресторане (≠ zu Hause essen)", tema:"Phrase"},
+  {art:"",   de:"Deutsch lernen",      pl:"—",      ru:"учить немецкий",              tema:"Phrase"},
 ];
 
 
@@ -711,17 +722,21 @@ const DIALOGE={
   ],
   L4:[
     {tag:"Основные",col:C.teal,pairs:[
-      // über die Familie sprechen — formell/informell (Kommunikation стр. L4)
-      {q:"Wo wohnen Ihre Eltern?",      a:"Meine Eltern wohnen in Kyiv.",                     note:"Ihre (formell) = ваши · meine = мои",          fm:"f"},
-      {q:"Wo wohnen deine Eltern?",     a:"Meine Eltern wohnen in Kyiv.",                     note:"deine (informell) = твои · meine = мои",        fm:"i"},
-      {q:"Wo wohnt Ihre Familie?",      a:"Meine Familie wohnt in der Ukraine.",               note:"Ihre Familie (formell)",                         fm:"f"},
-      {q:"Wo wohnt deine Familie?",     a:"Meine Familie wohnt in der Ukraine.",               note:"deine Familie (informell)",                      fm:"i"},
-      {q:"Haben Sie Kinder?",           a:"Ja, ich habe zwei Kinder. / Nein, keine Kinder.",  note:"keine Kinder = нет детей (Akkusativ)",           fm:"f"},
-      {q:"Hast du Kinder?",             a:"Ja, ich habe einen Sohn und eine Tochter.",        note:"einen Sohn (m Akk.) · eine Tochter (f Akk.)",   fm:"i"},
-      {q:"Wie heißen Ihre Kinder?",     a:"Meine Tochter heißt Nina, mein Sohn heißt Max.",  note:"mein (m) · meine (f/pl)",                        fm:"f"},
-      {q:"Wie heißen deine Kinder?",    a:"Meine Kinder heißen Nina und Max.",                note:"heißen (мн.ч.) · meine Kinder = мои дети",      fm:"i"},
-      {q:"Ist Ihre Familie groß?",      a:"Ja, ich habe viele Verwandte. / Nein, sie ist klein.", note:"viele Verwandte = много родственников",     fm:"f"},
-      {q:"Ist deine Familie groß?",     a:"Nein, ich habe nur einen Bruder.",                 note:"nur = только · einen Bruder (m Akk.)",           fm:"i"},
+      // über die Familie sprechen
+      {q:"Ist Ihre Familie groß?",              a:"Ja, ich habe fünf Geschwister: vier Schwestern und einen Bruder.",        note:"Geschwister (мн.ч.) · einen Bruder (m Akk.)",               fm:"f"},
+      {q:"Ist deine Familie groß?",             a:"Nein, meine Familie ist klein. Ich habe nur einen Bruder.",               note:"nur = только · klein ≠ groß",                                fm:"i"},
+      {q:"Haben Sie Kinder?",                   a:"Ja, ich habe zwei Kinder. / Nein, keine Kinder.",                        note:"keine Kinder = нет детей (Akkusativ)",                       fm:"f"},
+      {q:"Hast du Geschwister?",                a:"Ja, ich habe vier Tanten und fünf Onkel, zwei Cousins und zwei Cousinen.",note:"Cousin/Cousine = двоюродный брат/сестра",                   fm:"i"},
+      // über Vergangenes sprechen
+      {q:"Wie war Ihre Familie früher?",        a:"Früher waren die Familien groß. Meine Großeltern hatten sieben Kinder.", note:"früher = раньше · waren/hatten = Präteritum",               fm:"f"},
+      {q:"Was war Ihr Großvater von Beruf?",    a:"Mein Großvater war Arzt von Beruf.",                                     note:"von Beruf = по профессии · war = Präteritum von sein",      fm:"f"},
+      {q:"Hatten deine Großeltern viele Kinder?",a:"Ja, meine Großeltern hatten sieben Kinder.",                            note:"hatten = Präteritum von haben",                              fm:"i"},
+      // eine Stadtbesichtigung planen
+      {q:"Was machen wir zuerst?",              a:"Zuerst kaufen wir Lebensmittel, dann essen wir zu Mittag.",              note:"zuerst → dann → danach · Verb immer auf Position 2"},
+      {q:"Was machen wir danach?",              a:"Danach machen wir eine Radtour und besuchen ein Straßenfest.",           note:"danach = после этого · eine Radtour machen"},
+      // über Freizeitaktivitäten sprechen
+      {q:"Lesen Sie gerne Bücher?",             a:"Ja, sehr gern! / Nein, nicht so gern. Ich lese gerne Internet-Blogs.",  note:"gerne = с удовольствием · nicht so gern = не очень",        fm:"f"},
+      {q:"Liest du gerne Bücher?",              a:"Ja, ich lese gern! / Nein, ich lese nicht so gerne Bücher.",            note:"lesen → du liest (Vokalwechsel e→ie)",                       fm:"i"},
     ]},
     {tag:"Дополнительные",col:C.green,pairs:[
       {q:"Haben Sie Fotos dabei?",      a:"Ja, hier ist meine Schwester. / Nein, leider nicht.", note:"Fotos dabei haben = иметь фото при себе · leider nicht = к сожалению нет"},
@@ -746,6 +761,10 @@ const DIALOGE={
       {q:"Ich habe eine Idee!",               a:"— (предлагаю план)",                                        note:"eine Idee haben = иметь идею · Wir nehmen die S-Bahn und fahren nach ..."},
       {q:"Kennt ihr den Hafen hier?",         a:"Ja, ich kenne den Hafen. / Nein, das kenne ich nicht.",     note:"kennen = знать (место/человека) · Kennt ihr? = неформ. мн.ч."},
       {q:"In Hamburg gibt es den Hafen.",     a:"— (рассказываю о городе)",                                  note:"In + Stadt + gibt es + Akk. · Man kann eine Hafenrundfahrt machen."},
+      {q:"Wie alt ist Ihre Tochter?",         a:"Meine Tochter ist fünf Jahre alt.",                         note:"Wie alt ist = сколько лет · Jahre alt = лет от роду",        fm:"f"},
+      {q:"Wie alt ist dein Kind?",            a:"Mein Sohn ist drei Jahre alt. / Meine Tochter ist sieben.", note:"Jahre alt = лет · mein Sohn / meine Tochter",                fm:"i"},
+      {q:"Was machen Sie gern am Wochenende?",a:"Ich mache oft eine Radtour. / Ich lese gerne eine Zeitung.", note:"gern/oft = с удовольствием/часто · am Wochenende = в выходные", fm:"f"},
+      {q:"Was machst du gern am Wochenende?", a:"Ich chillen oft und esse Pizza. / Ich lese gern.",          note:"oft = часто · gern = с удовольствием",                        fm:"i"},
     ]},
   ],
 };
@@ -855,13 +874,13 @@ function Quiz({questions}){
 function DialogCards({lId}){
   const groups=DIALOGE[lId]||[];
   const [mode,setMode]=useState("fragen");
-  const [fm,setFm]=useState("f"); // formell/informell — только для L1
+  const [fm,setFm]=useState("f"); // formell/informell — для L1 и L4
   const [openItems,setOpenItems]=useState(new Set());
   const togItem=(k)=>setOpenItems(s=>{const n=new Set(s);n.has(k)?n.delete(k):n.add(k);return n;});
 
-  const isL1=lId==="L1";
+  const hasFmToggle=lId==="L1"||lId==="L4";
   // фильтр по fm: показываем пары без fm (оба) ИЛИ совпадающие с выбранным режимом
-  const filterFm=(pairs)=>isL1?pairs.filter(p=>!p.fm||p.fm===fm):pairs;
+  const filterFm=(pairs)=>hasFmToggle?pairs.filter(p=>!p.fm||p.fm===fm):pairs;
 
   return(
     <div style={{display:"flex",flexDirection:"column",gap:14}}>
@@ -870,19 +889,7 @@ function DialogCards({lId}){
         <div style={{fontSize:13,color:C.muted}}>Нажми на вопрос — увидишь ответ. Список пополняется с каждым уроком.</div>
       </Box>
 
-      {/* ── Formell / Informell тогл (только L1) ── */}
-      {isL1&&(
-        <div style={{display:"flex",gap:6,background:C.card2,borderRadius:12,padding:4}}>
-          {[{id:"f",label:"🎩 Formell (Sie)"},{id:"i",label:"👋 Informell (du)"}].map(t=>(
-            <button key={t.id} onClick={()=>{setFm(t.id);setOpenItems(new Set());}} style={{
-              flex:1,padding:"8px 0",borderRadius:9,border:"none",cursor:"pointer",fontSize:13,fontWeight:600,
-              background:fm===t.id?(t.id==="f"?C.blue:C.green):"transparent",
-              color:fm===t.id?"#000":C.muted,transition:"all .15s"
-            }}>{t.label}</button>
-          ))}
-        </div>
-      )}
-
+      {/* ── Вопросы / Фразы табы ── */}
       <div style={{display:"flex",gap:6,background:C.card2,borderRadius:12,padding:4}}>
         {[{id:"fragen",label:"❓ Вопросы"},{id:"phrasen",label:"📋 Фразы"}].map(t=>(
           <button key={t.id} onClick={()=>setMode(t.id)} style={{
@@ -897,9 +904,24 @@ function DialogCards({lId}){
       {mode==="fragen"&&groups.map((g,gi)=>{
         const items=filterFm(g.pairs).filter(p=>p.q.includes("?"));
         if(!items.length)return null;
+        const showFmHere=hasFmToggle&&(g.tag==="Основные"||(lId==="L4"&&g.tag==="Дополнительные"));
         return(
           <div key={gi}>
-            <div style={{marginBottom:8}}><Pill c={g.col}>{g.tag}</Pill></div>
+            <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:8}}>
+              <Pill c={g.col}>{g.tag}</Pill>
+              {showFmHere&&(
+                <div style={{display:"flex",gap:4}}>
+                  {[{id:"f",label:"Formell"},{id:"i",label:"Informell"}].map(t=>(
+                    <button key={t.id} onClick={()=>{setFm(t.id);setOpenItems(new Set());}} style={{
+                      padding:"3px 10px",borderRadius:8,cursor:"pointer",fontSize:12,fontWeight:700,
+                      border:`1.5px solid ${fm===t.id?g.col:C.border}`,
+                      background:fm===t.id?g.col+"22":"transparent",
+                      color:fm===t.id?g.col:C.muted
+                    }}>{t.label}</button>
+                  ))}
+                </div>
+              )}
+            </div>
             <div style={{display:"flex",flexDirection:"column",gap:7}}>
               {items.map((p,pi)=>{
                 const k=`${gi}-${pi}`;const isO=openItems.has(k);
@@ -3618,12 +3640,12 @@ function T4C(){
         </div>
       </Box>
       <Box c={C.green}>
-        <H c={C.green} z={13}>📅 gestern · heute · morgen</H>
-        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:6,marginBottom:8}}>
-          {[["gestern","вчера",C.red],["heute","сегодня",C.green],["morgen","завтра",C.blue]].map(([w,ru,col])=>(
-            <div key={w} style={{background:col+"18",border:`1px solid ${col}40`,borderRadius:9,padding:"8px 10px",textAlign:"center"}}>
-              <div style={{color:col,fontWeight:800,fontSize:14}}>{w}</div>
-              <div style={{color:C.muted,fontSize:11,marginTop:2}}>{ru}</div>
+        <H c={C.green} z={13}>📅 Zeitangaben — время</H>
+        <div style={{display:"grid",gridTemplateColumns:"repeat(5,1fr)",gap:4,marginBottom:8}}>
+          {[["vorgestern","позавчера",C.red],["gestern","вчера",C.orange],["heute","сегодня",C.green],["morgen","завтра",C.blue],["übermorgen","послезавтра",C.purple]].map(([w,ru,col])=>(
+            <div key={w} style={{background:col+"18",border:`1px solid ${col}40`,borderRadius:9,padding:"6px 4px",textAlign:"center"}}>
+              <div style={{color:col,fontWeight:800,fontSize:12}}>{w}</div>
+              <div style={{color:C.muted,fontSize:10,marginTop:2}}>{ru}</div>
             </div>
           ))}
         </div>
@@ -3731,7 +3753,7 @@ function DialogFragenPage(){
     L3:{label:"L3 · Häuser und Wohnungen",  col:C.green},
     L4:{label:"L4 · Familienleben",         col:C.teal},
   };
-  const filterFm=(pairs,lId)=>lId==="L1"?pairs.filter(p=>!p.fm||p.fm===fm):pairs;
+  const filterFm=(pairs,lId)=>(lId==="L1"||lId==="L4")?pairs.filter(p=>!p.fm||p.fm===fm):pairs;
 
   const lektIds=Object.keys(DIALOGE);
   const ordered=sortNew?[...lektIds].reverse():lektIds;
@@ -3765,6 +3787,7 @@ function DialogFragenPage(){
         const meta=LMETA[lId];
         const groups=DIALOGE[lId]||[];
         const isL1=lId==="L1";
+        const hasFmToggleHere=lId==="L1"||lId==="L4";
 
         const hasContent=groups.some(g=>{
           const pairs=filterFm(g.pairs,lId);
@@ -3786,7 +3809,7 @@ function DialogFragenPage(){
             {mode==="fragen"&&groups.map((g,gi)=>{
               const items=filterFm(g.pairs,lId).filter(p=>p.q.includes("?"));
               if(!items.length)return null;
-              const isHauptGruppe=isL1&&g.tag==="Основные";
+              const isHauptGruppe=hasFmToggleHere&&(g.tag==="Основные"||(lId==="L4"&&g.tag==="Дополнительные"));
               return(
                 <div key={gi}>
                   {/* Пилл + fm-тогл для L1 Основные */}
