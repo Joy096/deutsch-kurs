@@ -3930,7 +3930,7 @@ export default function App(){
           <span style={{fontSize:26}}>{sec.icon}</span>
           <div>
             <div style={{fontWeight:900,fontSize:17,color:C.text}}>{sec.title}</div>
-            <div style={{fontSize:12,color:C.muted}}>{sec.sub} · {sec.time}</div>
+            <div style={{fontSize:12,color:C.muted}}>{sec.sub}</div>
           </div>
         </div>
         {/* 2C и 2D объединяют теорию и задания в одном компоненте */}
@@ -3973,7 +3973,7 @@ export default function App(){
                 <div style={{fontWeight:700,fontSize:14,color:s.id.startsWith("t")&&!s.id.startsWith("tip")?C.yellow:s.id==="d1"||s.id==="d2"||s.id==="d3"||s.id==="wb"?C.teal:C.text}}>{s.title}</div>
                 <div style={{fontSize:11,color:C.muted,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{s.sub}</div>
               </div>
-              <div style={{fontSize:11,color:s.col,background:s.col+"18",border:`1px solid ${s.col}35`,borderRadius:8,padding:"3px 8px",flexShrink:0}}>{s.time}</div>
+              
               <span style={{color:C.dim}}>›</span>
             </button>
           ))}
