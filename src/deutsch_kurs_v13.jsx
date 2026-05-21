@@ -4024,10 +4024,7 @@ export default function App(){
             </button>
           ))}
         </div>
-        <div style={{marginTop:16,background:C.card2,border:`1px dashed ${C.border}`,borderRadius:14,padding:"14px 16px",textAlign:"center"}}>
-          <div style={{fontSize:20,marginBottom:6}}>📚</div>
-          <div style={{fontSize:13,color:C.muted}}>Lektion 4 появится после следующих занятий</div>
-        </div>
+
       </div>
     </div>
   );
