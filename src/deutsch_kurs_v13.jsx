@@ -407,6 +407,21 @@ const WBDATA=[
   {art:"",   de:"alles anders", pl:"—",             ru:"всё иначе, всё по-другому",   tema:"Phrase"},
   {art:"",   de:"Viele Grüße",  pl:"—",             ru:"с уважением; приветы (конец письма/открытки)", tema:"Phrase"},
   {art:"",   de:"Bis bald",     pl:"—",             ru:"до скорого (прощание)",       tema:"Phrase"},
+  // ── Wochentage ───────────────────────────────────────────────────────────────
+  {art:"der",de:"Montag",       pl:"Montage",       ru:"понедельник",                 tema:"Alltag"},
+  {art:"der",de:"Dienstag",     pl:"Dienstage",     ru:"вторник",                     tema:"Alltag"},
+  {art:"der",de:"Mittwoch",     pl:"Mittwoche",     ru:"среда",                       tema:"Alltag"},
+  {art:"der",de:"Donnerstag",   pl:"Donnerstage",   ru:"четверг",                     tema:"Alltag"},
+  {art:"der",de:"Freitag",      pl:"Freitage",      ru:"пятница",                     tema:"Alltag"},
+  {art:"der",de:"Samstag",      pl:"Samstage",      ru:"суббота",                     tema:"Alltag"},
+  {art:"der",de:"Sonntag",      pl:"Sonntage",      ru:"воскресенье",                 tema:"Alltag"},
+  {art:"die",de:"Woche",        pl:"Wochen",        ru:"неделя",                      tema:"Alltag"},
+  {art:"",   de:"am Montag",    pl:"—",             ru:"в понедельник (и др. дни)",   tema:"Phrase"},
+  {art:"die",de:"Kindheit",     pl:"—",             ru:"детство",                     tema:"Alltag"},
+  {art:"",   de:"draußen",      pl:"—",             ru:"снаружи, на улице (≠ drinnen)", tema:"Alltag"},
+  {art:"die",de:"Zeit",         pl:"Zeiten",        ru:"время (свободное/занятое)",   tema:"Alltag"},
+  {art:"",   de:"wenig",        pl:"—",             ru:"мало (≠ viel)",               tema:"Alltag"},
+  {art:"",   de:"wieso",        pl:"—",             ru:"почему, зачем (≠ warum — более разг.)", tema:"Alltag"},
 ];
 
 
