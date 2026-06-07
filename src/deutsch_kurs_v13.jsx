@@ -173,7 +173,7 @@ const WBDATA=[
   {art:"das",de:"Portemonnaie",  pl:"Portemonnaies",   ru:"кошелёк",                tema:"Alltag"},
   {art:"der",de:"Radiergummi",   pl:"Radiergummis",    ru:"ластик",                 tema:"Kursraum"},
   {art:"die",de:"Schere",        pl:"Scheren",         ru:"ножницы",                tema:"Kursraum"},
-  {art:"die",de:"Tasse",         pl:"Tassen",          ru:"чашка",                  tema:"Alltag"},
+  {art:"die",de:"Tasse",         pl:"Tassen",          ru:"чашка",                  tema:"Küche"},
   {art:"der",de:"CD-Player",     pl:"CD-Player",       ru:"CD-плеер",               tema:"Kursraum"},
   {art:"die",de:"Jacke",         pl:"Jacken",          ru:"куртка, пиджак",         tema:"Alltag"},
   {art:"das",de:"Lineal",        pl:"Lineale",         ru:"линейка",                tema:"Kursraum"},
@@ -184,7 +184,7 @@ const WBDATA=[
   // ── Möbel — левый столбик стр.3 ──────────────────────────────────────────────
   {art:"die",de:"Spüle",         pl:"Spülen",          ru:"раковина (кухонная)",    tema:"Möbel"},
   {art:"das",de:"Bett",          pl:"Betten",          ru:"кровать",                tema:"Möbel"},
-  {art:"der",de:"Herd",          pl:"Herde",           ru:"плита",                  tema:"Möbel"},
+  {art:"der",de:"Herd",          pl:"Herde",           ru:"плита",                  tema:"Küche"},
   {art:"das",de:"Sofa",          pl:"Sofas",           ru:"диван",                  tema:"Möbel"},
   {art:"der",de:"Schrank",       pl:"Schränke",        ru:"шкаф",                   tema:"Möbel"},
   {art:"der",de:"Fernseher",     pl:"Fernseher",       ru:"телевизор",              tema:"Möbel"},
@@ -204,8 +204,8 @@ const WBDATA=[
   {art:"das",de:"Waschbecken",   pl:"Waschbecken",     ru:"умывальник",             tema:"Bad"},
   {art:"der",de:"Spiegel",       pl:"Spiegel",         ru:"зеркало",                tema:"Bad"},
   // Левый столбик продолжается ──────────────────────────────────────────────────
-  {art:"die",de:"Küche",         pl:"Küchen",          ru:"кухня",                  tema:"Möbel"},
-  {art:"der",de:"Kühlschrank",   pl:"Kühlschränke",    ru:"холодильник",            tema:"Möbel"},
+  {art:"die",de:"Küche",         pl:"Küchen",          ru:"кухня",                  tema:"Küche"},
+  {art:"der",de:"Kühlschrank",   pl:"Kühlschränke",    ru:"холодильник",            tema:"Küche"},
   {art:"das",de:"Wohnzimmer",    pl:"Wohnzimmer",      ru:"гостиная",               tema:"Möbel"},
   {art:"die",de:"Klimaanlage",   pl:"Klimaanlagen",    ru:"кондиционер",            tema:"Möbel"},
   {art:"die",de:"Zimmerpflanze", pl:"Zimmerpflanzen",  ru:"комнатное растение",     tema:"Möbel"},
@@ -294,7 +294,7 @@ const WBDATA=[
   {art:"die",de:"Bettdecke",      pl:"Bettdecken",      ru:"одеяло",                  tema:"Möbel"},
   {art:"der",de:"Teddybär",       pl:"Teddybären",      ru:"плюшевый мишка",          tema:"Möbel"},
   {art:"das",de:"Kinderzimmer",   pl:"Kinderzimmer",    ru:"детская комната",         tema:"Möbel"},
-  {art:"der",de:"Küchenschrank",  pl:"Küchenschränke",  ru:"кухонный шкаф",           tema:"Möbel"},
+  {art:"der",de:"Küchenschrank",  pl:"Küchenschränke",  ru:"кухонный шкаф",           tema:"Küche"},
   {art:"der",de:"Blumentopf",     pl:"Blumentöpfe",     ru:"цветочный горшок",        tema:"Möbel"},
   {art:"die",de:"Heizungsanlage", pl:"Heizungsanlagen", ru:"отопительная система",    tema:"Wohnung"},
   {art:"die",de:"Wäsche",         pl:"—",               ru:"бельё, стирка",           tema:"Alltag"},
@@ -454,6 +454,28 @@ const WBDATA=[
   {art:"",   de:"weg",               pl:"—",         ru:"прочь, исчез, пропал",    tema:"Alltag"},
   {art:"",   de:"natürlich",          pl:"—",         ru:"конечно, естественно",    tema:"Alltag"},
   {art:"",   de:"vielleicht",         pl:"—",         ru:"может быть, возможно",    tema:"Alltag"},
+  {art:"das",de:"Heimatland",         pl:"Heimatländer", ru:"родина, родная страна", tema:"Familie"},
+  // ── L5 · Der Tag und die Woche ────────────────────────────────────────────────
+  {art:"der",de:"Morgen",             pl:"Morgen",       ru:"утро",                    tema:"Tageszeiten"},
+  {art:"",   de:"morgens",            pl:"—",            ru:"по утрам, утром",         tema:"Tageszeiten"},
+  {art:"",   de:"mittags",            pl:"—",            ru:"в полдень, в обед",       tema:"Tageszeiten"},
+  {art:"",   de:"abends",             pl:"—",            ru:"по вечерам, вечером",     tema:"Tageszeiten"},
+  {art:"",   de:"nachts",             pl:"—",            ru:"ночью",                   tema:"Tageszeiten"},
+  {art:"die",de:"Uhrzeit",            pl:"Uhrzeiten",    ru:"время (показание часов)", tema:"Alltag"},
+  {art:"",   de:"beginnen",           pl:"—",            ru:"начинать(ся)",            tema:"Kursraum"},
+  {art:"",   de:"enden",              pl:"—",            ru:"заканчивать(ся)",         tema:"Kursraum"},
+  {art:"die",de:"Pause",              pl:"Pausen",       ru:"перерыв",                 tema:"Kursraum"},
+  {art:"",   de:"grillen",            pl:"—",            ru:"жарить на гриле",         tema:"Alltag"},
+  {art:"",   de:"tanzen",             pl:"—",            ru:"танцевать",               tema:"Alltag"},
+  {art:"",   de:"schwimmen",          pl:"—",            ru:"плавать",                 tema:"Alltag"},
+  {art:"",   de:"joggen",             pl:"—",            ru:"бегать трусцой",          tema:"Alltag"},
+  {art:"",   de:"ein Bild malen",     pl:"—",            ru:"рисовать картину",        tema:"Phrase"},
+  {art:"",   de:"Musik hören",        pl:"—",            ru:"слушать музыку",          tema:"Phrase"},
+  {art:"",   de:"im Internet surfen", pl:"—",            ru:"сёрфить в интернете",     tema:"Phrase"},
+  {art:"",   de:"Fußball spielen",    pl:"—",            ru:"играть в футбол",         tema:"Phrase"},
+  {art:"",   de:"im Park joggen",     pl:"—",            ru:"бегать в парке",          tema:"Phrase"},
+  {art:"",   de:"Wann?",              pl:"—",            ru:"Когда?",                  tema:"Phrase"},
+  {art:"",   de:"Um wie viel Uhr?",   pl:"—",            ru:"В котором часу?",         tema:"Phrase"},
 ];
 
 
@@ -787,6 +809,26 @@ const DIALOGE={
       {q:"Wie alt ist dein Kind?",            a:"Mein Sohn ist drei Jahre alt. / Meine Tochter ist sieben.", note:"Jahre alt = лет · mein Sohn / meine Tochter",                fm:"i"},
       {q:"Was machen Sie gern am Wochenende?",a:"Ich mache oft eine Radtour. / Ich lese gerne eine Zeitung.", note:"gern/oft = с удовольствием/часто · am Wochenende = в выходные", fm:"f"},
       {q:"Was machst du gern am Wochenende?", a:"Ich chillen oft und esse Pizza. / Ich lese gern.",          note:"oft = часто · gern = с удовольствием",                        fm:"i"},
+    ]},
+  ],
+  L5:[
+    {tag:"Основные",col:C.orange,pairs:[
+      {q:"Entschuldigung, wie spät ist es?",  a:"Es ist neun Uhr. / Es ist Viertel nach neun.",              note:"wie spät ist es? = который час?"},
+      {q:"Um wie viel Uhr beginnt der Kurs?", a:"Der Kurs beginnt um Viertel nach neun.",                    note:"um + Uhrzeit → точное время · beginnen = начинаться"},
+      {q:"Wann endet der Kurs?",              a:"Der Kurs endet um halb eins.",                               note:"enden = заканчиваться · halb eins = 12:30"},
+      {q:"Um wie viel Uhr beginnt die Pause?",a:"Die Pause beginnt um halb elf.",                             note:"die Pause = перерыв"},
+      {q:"Wann gehen Sie nach Hause?",        a:"Ich gehe um zwei Uhr nach Hause.",                          note:"nach Hause gehen = идти домой"},
+      {q:"Was ist Ihr Hobby?",                a:"Mein Hobby ist Gitarre spielen. / Ich lese gern Bücher.",   note:"Was ist Ihr Hobby? = какое ваше хобби?",                     fm:"f"},
+      {q:"Was machst du in der Freizeit?",    a:"Ich jogge gern im Park. / Ich höre Musik.",                 note:"in der Freizeit = в свободное время",                        fm:"i"},
+      {q:"Was machen Sie gerne?",             a:"Ich treibe gern Sport. / Ich surfe gern im Internet.",      note:"gerne = с удовольствием",                                   fm:"f"},
+    ]},
+    {tag:"Дополнительные",col:C.green,pairs:[
+      {q:"Auf dem Bild sehe ich einen Mann.",  a:"Was macht er? — Er joggt im Park.",                         note:"auf dem Bild = на картинке · sehen→sieht"},
+      {q:"Was machen die Personen auf dem Foto?",a:"Foto 1: Der Mann grillt. Foto 3: Die Frau tanzt.",       note:"описание фото: Der/Die + Nomen + Verb"},
+      {q:"Ich schwimme gern im Meer.",         a:"Ich auch! / Ich nicht. Ich jogge lieber.",                  note:"lieber = скорее предпочту · auch = тоже"},
+      {q:"Lesen Sie gerne Bücher?",            a:"Ja, ich lese sehr gern! / Nicht so gern, ich höre lieber Musik.", note:"sehr gern = очень люблю · nicht so gern = не очень"},
+      {q:"Wann kommst du?",                    a:"Ich komme um zehn Uhr.",                                    note:"Wann? → um + Uhrzeit",                                      fm:"i"},
+      {q:"Wie lange dauert der Kurs?",         a:"Der Kurs dauert zwei Stunden.",                             note:"dauern = длиться · die Stunde = час"},
     ]},
   ],
 };
@@ -1309,10 +1351,11 @@ function WbRegeln(){
 function Woerterbuch(){
   const TEMEN=[
     {id:"all",      label:"Все",           col:C.teal},
+    {id:"Tageszeiten",label:"🕐 Tageszeiten",col:C.orange},
     {id:"Kursraum", label:"🏫 Kursraum",   col:C.blue},
     {id:"Alltag",   label:"🛒 Alltag",     col:C.red},
-    {id:"Tageszeiten",label:"🕐 Tageszeiten",col:C.orange},
-    {id:"Möbel",    label:"🛋️ Möbel",     col:C.orange},
+    {id:"Möbel",    label:"🛋️ Möbel",     col:C.purple},
+    {id:"Küche",    label:"🍳 Küche",      col:C.orange},
     {id:"Bad",      label:"🚿 Bad",         col:C.purple},
     {id:"Wohnung",  label:"🏠 Wohnung",    col:C.green},
     {id:"Familie",  label:"👨‍👩‍👧 Familie",   col:C.purple},
@@ -3699,6 +3742,88 @@ function T4C(){
   );
 }
 
+
+// ─── L5 · UHRZEITEN ──────────────────────────────────────────────────────────
+const Q_L5A=[
+  {q:"Wie fragt man nach der Uhrzeit? (formell)",a:"Entschuldigung, wie spät ist es? / Um wie viel Uhr ...?"},
+  {q:"Wie sagt man 9:00 Uhr?",a:"Es ist neun Uhr."},
+  {q:"Wie sagt man 9:30 Uhr?",a:"Es ist halb zehn."},
+  {q:"Wie sagt man 9:15 Uhr?",a:"Es ist Viertel nach neun."},
+  {q:"Wie sagt man 9:45 Uhr?",a:"Es ist Viertel vor zehn."},
+  {q:"Wie sagt man 10:20 Uhr?",a:"Es ist zwanzig nach zehn."},
+  {q:"Wie sagt man 10:25 Uhr?",a:"Es ist fünf vor halb elf."},
+  {q:"Wie sagt man 10:35 Uhr?",a:"Es ist fünf nach halb elf."},
+  {q:"Wie sagt man 10:40 Uhr?",a:"Es ist zwanzig vor elf."},
+  {q:"Wie antwortet man auf 'Wann beginnt der Kurs?'",a:"Der Kurs beginnt um acht Uhr. / Um Viertel nach neun."},
+  {q:"Was bedeutet 'vor' bei Uhrzeiten?",a:"До (перед): Viertel vor zehn = без четверти десять (9:45)"},
+  {q:"Was bedeutet 'nach' bei Uhrzeiten?",a:"После (за): Viertel nach zehn = четверть одиннадцатого (10:15)"},
+  {q:"Wie sagt man 'halb' auf Ukrainisch?",a:"Половина — halb zehn = половина десятого (9:30)"},
+];
+
+function T5A(){
+  return (
+    <div>
+      <Box icon="🕐" title="A · Wie spät ist es?" sub="Uhrzeiten — время суток">
+        <div style={{fontSize:13,color:C.muted,marginBottom:12}}>Два способа спросить время:</div>
+        <div style={{display:"flex",gap:8,marginBottom:16,flexWrap:"wrap"}}>
+          <span style={{background:C.blue+"22",border:`1px solid ${C.blue}`,borderRadius:8,padding:"6px 12px",fontSize:13,color:C.blue,fontWeight:700}}>Wie spät ist es?</span>
+          <span style={{background:C.blue+"22",border:`1px solid ${C.blue}`,borderRadius:8,padding:"6px 12px",fontSize:13,color:C.blue,fontWeight:700}}>Um wie viel Uhr ...?</span>
+        </div>
+        <div style={{fontSize:13,color:C.muted,marginBottom:8}}>Ответ: <b style={{color:C.text}}>Es ist ... Uhr.</b> / <b style={{color:C.text}}>Um ... Uhr.</b></div>
+
+        <div style={{marginBottom:16}}>
+          <div style={{fontWeight:700,fontSize:13,color:C.muted,marginBottom:8,textTransform:"uppercase",letterSpacing:1}}>Таблица времён</div>
+          <div style={{display:"flex",flexDirection:"column",gap:6}}>
+            {[
+              ["9:00","neun Uhr","девять часов"],
+              ["9:05","fünf nach neun","пять минут десятого"],
+              ["9:15","Viertel nach neun","четверть десятого"],
+              ["9:20","zwanzig nach neun","двадцать минут десятого"],
+              ["9:30","halb zehn","половина десятого ⚠️"],
+              ["9:35","fünf nach halb zehn","35 минут десятого (без 25 десять)"],
+              ["9:40","zwanzig vor zehn","без двадцати десять"],
+              ["9:45","Viertel vor zehn","без четверти десять"],
+              ["9:55","fünf vor zehn","без пяти десять"],
+              ["10:00","zehn Uhr","десять часов"],
+            ].map(([t,de,ru])=>(
+              <div key={t} style={{display:"flex",alignItems:"center",gap:10,background:C.card2,borderRadius:8,padding:"7px 12px"}}>
+                <span style={{fontWeight:800,color:C.teal,minWidth:36,fontSize:13}}>{t}</span>
+                <span style={{flex:1,fontWeight:600,fontSize:14,color:C.text}}>{de}</span>
+                <span style={{fontSize:12,color:C.muted}}>{ru}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div style={{background:C.card2,borderRadius:10,padding:"10px 14px",marginBottom:12}}>
+          <div style={{fontWeight:700,fontSize:13,color:C.orange,marginBottom:6}}>⚠️ Ключевое правило: halb</div>
+          <div style={{fontSize:13,color:C.text,marginBottom:4}}><b>halb zehn</b> = половина <b>десятого</b> = 9:30</div>
+          <div style={{fontSize:12,color:C.muted}}>«halb» смотрит вперёд — называет следующий час!</div>
+        </div>
+
+        <div style={{background:C.card2,borderRadius:10,padding:"10px 14px"}}>
+          <div style={{fontWeight:700,fontSize:13,color:C.blue,marginBottom:6}}>📌 vor и nach</div>
+          <div style={{display:"flex",gap:16}}>
+            <div style={{flex:1,textAlign:"center"}}>
+              <div style={{fontSize:20,marginBottom:4}}>⬅️</div>
+              <div style={{fontWeight:700,color:C.red,fontSize:14}}>vor</div>
+              <div style={{fontSize:12,color:C.muted}}>до / без</div>
+              <div style={{fontSize:12,color:C.text,marginTop:4}}>Viertel <b>vor</b> zehn<br/>= без четверти 10</div>
+            </div>
+            <div style={{width:1,background:C.border}}/>
+            <div style={{flex:1,textAlign:"center"}}>
+              <div style={{fontSize:20,marginBottom:4}}>➡️</div>
+              <div style={{fontWeight:700,color:C.green,fontSize:14}}>nach</div>
+              <div style={{fontSize:12,color:C.muted}}>после / прошло</div>
+              <div style={{fontSize:12,color:C.text,marginTop:4}}>Viertel <b>nach</b> zehn<br/>= четверть одиннадцатого</div>
+            </div>
+          </div>
+        </div>
+      </Box>
+    </div>
+  );
+}
+
 const LEKTIONEN=[
   {
     id:"L1",num:"1",title:"Willkommen!",
@@ -3759,6 +3884,15 @@ const LEKTIONEN=[
       {id:"4c",  icon:"📅",title:"C · Familien früher",        sub:"Präteritum von haben und sein: hatte, war",          time:"7 мин", col:C.purple,hasT:true, th:()=><T4C/>, ex:()=><Quiz questions={Q_L4C}/>},
     ]
   },
+  {
+    id:"L5",num:"5",title:"Der Tag und die Woche",
+    sub:"A Wie spät ist es? · Uhrzeiten · Hobbys · Freizeit",
+    date:"KB Seite 51–...",col:C.orange,
+    sections:[
+      {id:"d5",  icon:"💬",title:"Dialogfragen L5",          sub:"Фразы для диалога",                  time:"∞",     col:C.teal,  hasT:false, th:null,         ex:()=><DialogCards lId="L5"/>},
+      {id:"5a",  icon:"🕐",title:"A · Wie spät ist es?",     sub:"Uhrzeiten · halb · vor/nach · Viertel", time:"7 мин", col:C.orange,hasT:true,  th:()=><T5A/>, ex:()=><Quiz questions={Q_L5A}/>},
+    ]
+  },
 ];
 
 // ═══════════════════════════════ APP ══════════════════════════════════════════
@@ -3775,6 +3909,7 @@ function DialogFragenPage(){
     L2:{label:"L2 · Alte Heimat, neue Heimat", col:C.purple},
     L3:{label:"L3 · Häuser und Wohnungen",  col:C.green},
     L4:{label:"L4 · Familienleben",         col:C.teal},
+    L5:{label:"L5 · Der Tag und die Woche", col:C.orange},
   };
   const filterFm=(pairs,lId)=>(lId==="L1"||lId==="L4")?pairs.filter(p=>!p.fm||p.fm===fm):pairs;
 
