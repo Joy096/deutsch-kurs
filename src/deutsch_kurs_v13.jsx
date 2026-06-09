@@ -488,17 +488,17 @@ const WBDATA=[
   {art:"",   de:"genau",              pl:"—",            ru:"точно, именно",            tema:"Alltag"},
   {art:"",   de:"offiziell",          pl:"—",            ru:"официальный, официально",  tema:"Adjektive"},
   // ── L5B · Trennbare Verben ───────────────────────────────────────────────────
-  {art:"",   de:"anrufen",            pl:"—",            ru:"звонить (по телефону)",    tema:"Alltag"},
-  {art:"",   de:"anfangen",           pl:"—",            ru:"начинать(ся) (разг.)",     tema:"Alltag"},
-  {art:"",   de:"fernsehen",          pl:"—",            ru:"смотреть телевизор",       tema:"Alltag"},
-  {art:"",   de:"aufstehen",          pl:"—",            ru:"вставать (с постели)",     tema:"Alltag"},
-  {art:"",   de:"aufräumen",          pl:"—",            ru:"убирать, наводить порядок",tema:"Alltag"},
-  {art:"",   de:"einkaufen",          pl:"—",            ru:"делать покупки",           tema:"Alltag"},
-  {art:"",   de:"mitnehmen",          pl:"—",            ru:"брать с собой",            tema:"Alltag"},
-  {art:"",   de:"ausgehen",           pl:"—",            ru:"выходить, идти гулять",    tema:"Alltag"},
-  {art:"",   de:"mitkommen",          pl:"—",            ru:"идти вместе, присоединяться", tema:"Alltag"},
-  {art:"",   de:"aufhören",           pl:"—",            ru:"прекращать, заканчивать",  tema:"Alltag"},
-  {art:"",   de:"abspülen",           pl:"—",            ru:"мыть посуду",              tema:"Alltag"},
+  {art:"",   de:"anrufen",            pl:"—",            ru:"звонить (по телефону)",    tema:"Trennbare Verben"},
+  {art:"",   de:"anfangen",           pl:"—",            ru:"начинать(ся) (разг.)",     tema:"Trennbare Verben"},
+  {art:"",   de:"fernsehen",          pl:"—",            ru:"смотреть телевизор",       tema:"Trennbare Verben"},
+  {art:"",   de:"aufstehen",          pl:"—",            ru:"вставать (с постели)",     tema:"Trennbare Verben"},
+  {art:"",   de:"aufräumen",          pl:"—",            ru:"убирать, наводить порядок",tema:"Trennbare Verben"},
+  {art:"",   de:"einkaufen",          pl:"—",            ru:"делать покупки",           tema:"Trennbare Verben"},
+  {art:"",   de:"mitnehmen",          pl:"—",            ru:"брать с собой",            tema:"Trennbare Verben"},
+  {art:"",   de:"ausgehen",           pl:"—",            ru:"выходить, идти гулять",    tema:"Trennbare Verben"},
+  {art:"",   de:"mitkommen",          pl:"—",            ru:"идти вместе, присоединяться", tema:"Trennbare Verben"},
+  {art:"",   de:"aufhören",           pl:"—",            ru:"прекращать, заканчивать",  tema:"Trennbare Verben"},
+  {art:"",   de:"abspülen",           pl:"—",            ru:"мыть посуду",              tema:"Trennbare Verben"},
   {art:"",   de:"reparieren",         pl:"—",            ru:"ремонтировать",            tema:"Alltag"},
   {art:"",   de:"treffen",            pl:"—",            ru:"встречать, встречаться",   tema:"Alltag"},
   {art:"",   de:"kochen",             pl:"—",            ru:"готовить (еду), варить",   tema:"Alltag"},
@@ -516,6 +516,26 @@ const WBDATA=[
   {art:"",   de:"verliebt sein",      pl:"—",            ru:"быть влюблённым",         tema:"Phrase"},
   {art:"",   de:"am Wochenende",      pl:"—",            ru:"в выходные",              tema:"Phrase"},
   {art:"",   de:"von ... bis ...",    pl:"—",            ru:"с ... до ... (von 9 bis 12)", tema:"Phrase"},
+  // ── Урок 09.06 · Новые слова ─────────────────────────────────────────────────
+  {art:"",   de:"immer",             pl:"—",            ru:"всегда",                  tema:"Alltag"},
+  {art:"",   de:"montags",           pl:"—",            ru:"по понедельникам (каждый понедельник)", tema:"Alltag"},
+  {art:"",   de:"frühstücken",       pl:"—",            ru:"завтракать",              tema:"Alltag"},
+  {art:"das",de:"Frühstück",         pl:"Frühstücke",   ru:"завтрак",                 tema:"Alltag"},
+  {art:"das",de:"Abendessen",        pl:"—",            ru:"ужин",                    tema:"Alltag"},
+  {art:"der",de:"Sprachkurs",        pl:"Sprachkurse",  ru:"языковой курс",           tema:"Alltag"},
+  {art:"",   de:"zu Abend essen",    pl:"—",            ru:"ужинать",                 tema:"Phrase"},
+  {art:"",   de:"ins Bett gehen",    pl:"—",            ru:"ложиться спать",          tema:"Phrase"},
+  {art:"",   de:"einen Ausflug machen", pl:"—",         ru:"поехать на экскурсию",    tema:"Phrase"},
+  {art:"",   de:"Hausaufgaben machen",  pl:"—",         ru:"делать домашнее задание", tema:"Phrase"},
+  {art:"",   de:"zum Arzt gehen",    pl:"—",            ru:"пойти к врачу",           tema:"Phrase"},
+  // ── Trennbare Verben (neue) ───────────────────────────────────────────────────
+  {art:"",   de:"einladen",          pl:"—",            ru:"пригласить",              tema:"Trennbare Verben"},
+  {art:"",   de:"ausschlafen",       pl:"—",            ru:"выспаться",               tema:"Trennbare Verben"},
+  {art:"",   de:"mitbringen",        pl:"—",            ru:"принести с собой",        tema:"Trennbare Verben"},
+  {art:"",   de:"einschlafen",       pl:"—",            ru:"заснуть",                 tema:"Trennbare Verben"},
+  {art:"",   de:"wegfahren",         pl:"—",            ru:"уехать, отправиться",     tema:"Trennbare Verben"},
+  {art:"",   de:"ausfallen",         pl:"—",            ru:"отменяться, не состояться", tema:"Trennbare Verben"},
+  {art:"",   de:"stattfinden",       pl:"—",            ru:"состояться, проходить",   tema:"Trennbare Verben"},
 ];
 
 
@@ -738,6 +758,27 @@ const KONJ_L5B={
   abspülen:  {pref:"ab",  col:C.yellow, bg:C.yellowBg,
     ich:"spüle … ab",   du:"spülst … ab",    "er/es/sie":"spült … ab",
     wir:"spülen … ab",  ihr:"spült … ab",    "sie/Sie":"spülen … ab"},
+  einladen:  {pref:"ein", col:C.green,  bg:C.greenBg,  note:"a→ä",
+    ich:"lade … ein",   du:"lädst … ein",    "er/es/sie":"lädt … ein",
+    wir:"laden … ein",  ihr:"ladet … ein",   "sie/Sie":"laden … ein"},
+  ausschlafen:{pref:"aus",col:C.red,    bg:C.redBg,    note:"a→ä",
+    ich:"schlafe … aus",du:"schläfst … aus", "er/es/sie":"schläft … aus",
+    wir:"schlafen … aus",ihr:"schlaft … aus","sie/Sie":"schlafen … aus"},
+  mitbringen:{pref:"mit", col:C.purple, bg:C.purpleBg,
+    ich:"bringe … mit", du:"bringst … mit",  "er/es/sie":"bringt … mit",
+    wir:"bringen … mit",ihr:"bringt … mit",  "sie/Sie":"bringen … mit"},
+  einschlafen:{pref:"ein",col:C.green,  bg:C.greenBg,  note:"a→ä",
+    ich:"schlafe … ein",du:"schläfst … ein", "er/es/sie":"schläft … ein",
+    wir:"schlafen … ein",ihr:"schlaft … ein","sie/Sie":"schlafen … ein"},
+  wegfahren: {pref:"weg", col:C.orange, bg:C.orangeBg, note:"a→ä",
+    ich:"fahre … weg",  du:"fährst … weg",   "er/es/sie":"fährt … weg",
+    wir:"fahren … weg", ihr:"fahrt … weg",   "sie/Sie":"fahren … weg"},
+  ausfallen: {pref:"aus", col:C.red,    bg:C.redBg,    note:"a→ä",
+    ich:"falle … aus",  du:"fällst … aus",   "er/es/sie":"fällt … aus",
+    wir:"fallen … aus", ihr:"fallt … aus",   "sie/Sie":"fallen … aus"},
+  stattfinden:{pref:"statt",col:C.teal, bg:C.tealBg,
+    ich:"finde … statt",du:"findest … statt","er/es/sie":"findet … statt",
+    wir:"finden … statt",ihr:"findet … statt","sie/Sie":"finden … statt"},
 };
 
 const DIALOGE={
@@ -1443,6 +1484,7 @@ function Woerterbuch(){
     {id:"Familie",  label:"👨‍👩‍👧 Familie",   col:C.purple},
     {id:"Adjektive",label:"🎨 Adjektive",  col:C.red},
     {id:"Phrase",   label:"💬 Фразы",      col:C.teal},
+    {id:"Trennbare Verben", label:"✂️ Trennbare Verben", col:C.green},
   ];
   const TYPEN=[
     {id:"all",     label:"Все",           col:C.teal},
@@ -3962,8 +4004,15 @@ function T5B(){
     {inf:"ausgehen",   pref:"aus", stem:"gehen",   ich:"gehe ... aus",   er:"geht ... aus",   ru:"выходить"},
     {inf:"fernsehen",  pref:"fern",stem:"sehen",   ich:"sehe ... fern",  er:"sieht ... fern", ru:"смотреть ТВ"},
     {inf:"abspülen",   pref:"ab",  stem:"spülen",  ich:"spüle ... ab",   er:"spült ... ab",   ru:"мыть посуду"},
+    {inf:"einladen",   pref:"ein", stem:"laden",   ich:"lade ... ein",   er:"lädt ... ein",   ru:"пригласить"},
+    {inf:"ausschlafen",pref:"aus", stem:"schlafen",ich:"schlafe ... aus", er:"schläft ... aus",ru:"выспаться"},
+    {inf:"mitbringen", pref:"mit", stem:"bringen", ich:"bringe ... mit",  er:"bringt ... mit", ru:"принести с собой"},
+    {inf:"einschlafen",pref:"ein", stem:"schlafen",ich:"schlafe ... ein", er:"schläft ... ein",ru:"заснуть"},
+    {inf:"wegfahren",  pref:"weg", stem:"fahren",  ich:"fahre ... weg",   er:"fährt ... weg",  ru:"уехать"},
+    {inf:"ausfallen",  pref:"aus", stem:"fallen",  ich:"falle ... aus",   er:"fällt ... aus",  ru:"отменяться"},
+    {inf:"stattfinden",pref:"statt",stem:"finden", ich:"finde ... statt", er:"findet ... statt",ru:"состояться"},
   ];
-  const prefColors={an:C.blue, auf:C.orange, ein:C.green, mit:C.purple, aus:C.red, fern:C.teal, ab:C.yellow};
+  const prefColors={an:C.blue, auf:C.orange, ein:C.green, mit:C.purple, aus:C.red, fern:C.teal, ab:C.yellow, weg:C.orange, statt:C.teal};
   return (
     <div>
       <Box icon="✂️" title="B · Trennbare Verben" sub="Глаголы с отделяемым префиксом">
@@ -4000,6 +4049,8 @@ function T5B(){
             {pref:"mit-", col:C.purple, ru:"вместе, с собой"},
             {pref:"ab-",  col:C.yellow, ru:"от, вниз, завершение"},
             {pref:"fern-",col:C.teal,   ru:"на расстоянии"},
+            {pref:"weg-", col:C.orange, ru:"прочь, в сторону"},
+            {pref:"statt-",col:C.teal,  ru:"зафиксированный (stattfinden)"},
           ].map(({pref,col,ru})=>(
             <div key={pref} style={{display:"flex",alignItems:"center",gap:10,background:C.card2,borderRadius:8,padding:"6px 12px"}}>
               <span style={{background:col+"33",color:col,borderRadius:6,padding:"2px 8px",fontWeight:800,fontSize:12,minWidth:40,textAlign:"center"}}>{pref}</span>
