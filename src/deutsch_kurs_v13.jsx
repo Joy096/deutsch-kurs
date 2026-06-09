@@ -1067,7 +1067,7 @@ function DialogCards({lId}){
               <div key={pi} style={{padding:"10px 14px",borderBottom:pi<all.length-1?`1px solid ${C.border}30`:"none"}}>
                 <div style={{fontSize:13,fontWeight:700,color:C.text,marginBottom:4}}>{p.q}</div>
                 <div style={{fontSize:12,color:p.col,marginBottom:p.note?3:0}}>↩ {p.a}</div>
-                {p.note&&<div style={{fontSize:11,color:C.dim,marginTop:2}}>📝 {p.note}</div>}
+                {p.note&&<div style={{fontSize:11,color:C.muted,marginTop:2}}>📝 {p.note}</div>}
               </div>
             ))}
           </div>
@@ -1223,7 +1223,7 @@ function getPluralEnd(de,pl){
 function BewertungBlock(){
   return(
     <div style={{display:"flex",flexDirection:"column",gap:8,padding:"8px 8px 4px"}}>
-      <div style={{fontSize:11,color:C.dim,fontWeight:700,textTransform:"uppercase",letterSpacing:1,padding:"0 0 4px"}}>Bewertung — Оценка</div>
+      <div style={{fontSize:11,color:C.muted,fontWeight:700,textTransform:"uppercase",letterSpacing:1,padding:"0 0 4px"}}>Bewertung — Оценка</div>
       {BEWERTUNG.map(group=>(
         <div key={group.e} style={{background:group.col+"12",border:`1px solid ${group.col}30`,borderRadius:10,overflow:"hidden"}}>
           <div style={{background:group.col+"22",padding:"5px 10px",display:"flex",alignItems:"center",gap:8}}>
@@ -1266,7 +1266,7 @@ function AbkBlock({standalone}){
         <div style={{background:C.card2,borderRadius:10,overflow:"hidden"}}>
           <div style={{display:"grid",gridTemplateColumns:"auto 1fr auto",gap:0}}>
             {["Кратко","Полностью","Перевод"].map(h=>(
-              <div key={h} style={{fontSize:10,color:C.dim,fontWeight:700,padding:"6px 10px",background:C.card2,textTransform:"uppercase",letterSpacing:1}}>{h}</div>
+              <div key={h} style={{fontSize:10,color:C.muted,fontWeight:700,padding:"6px 10px",background:C.card2,textTransform:"uppercase",letterSpacing:1}}>{h}</div>
             ))}
             {ABK.map(({short,full,ru},i)=>[
               <div key={short+"s"} style={{padding:"7px 10px",borderTop:`1px solid ${C.border}33`,fontWeight:800,fontSize:13,color:C.blue,background:i%2===0?C.card:"transparent"}}>{short}</div>,
@@ -1348,7 +1348,7 @@ function WbRegeln(){
                             borderRadius:4,padding:"0px 5px",fontWeight:800,fontSize:12,fontFamily:"monospace"}}>
                             {parts[0]}
                           </span>
-                          <span style={{color:C.dim}}>→</span>
+                          <span style={{color:C.muted}}>→</span>
                           <span style={{color:C.muted}}>{parts[1]}</span>
                         </>
                       ):(
@@ -1532,7 +1532,7 @@ function Woerterbuch(){
             {p.b
               ?<><div style={{fontWeight:700,fontSize:13,color:C.text}}>{p.b}</div>
                  <div style={{fontSize:11,color:C.muted}}>{p.rb}</div></>
-              :<div style={{color:C.dim,fontSize:12}}>—</div>
+              :<div style={{color:C.muted,fontSize:12}}>—</div>
             }
           </div>
         </div>
@@ -1606,7 +1606,7 @@ function Woerterbuch(){
       {!isAdj&&typ!=="Phrase"&&typ!=="recent"&&!search&&(
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:4,padding:"4px 8px",marginBottom:2}}>
           {["Singular","Plural","Перевод"].map(h=>(
-            <div key={h} style={{fontSize:10,color:C.dim,fontWeight:700,textTransform:"uppercase",letterSpacing:1}}>{h}</div>
+            <div key={h} style={{fontSize:10,color:C.muted,fontWeight:700,textTransform:"uppercase",letterSpacing:1}}>{h}</div>
           ))}
         </div>
       )}
@@ -1616,11 +1616,11 @@ function Woerterbuch(){
         <div style={{background:C.card,border:`1px solid ${C.teal}35`,borderRadius:12,overflow:"hidden"}}>
           <div style={{background:C.teal+"15",padding:"8px 12px",borderBottom:`1px solid ${C.teal}25`}}>
             <span style={{fontSize:12,color:C.teal,fontWeight:700}}>🆕 Все слова · новые сначала</span>
-            <span style={{fontSize:11,color:C.dim,marginLeft:8}}>{WBDATA.length} слов</span>
+            <span style={{fontSize:11,color:C.muted,marginLeft:8}}>{WBDATA.length} слов</span>
           </div>
           <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:4,padding:"4px 8px"}}>
             {["Singular","Plural","Перевод"].map(h=>(
-              <div key={h} style={{fontSize:10,color:C.dim,fontWeight:700,textTransform:"uppercase",letterSpacing:1}}>{h}</div>
+              <div key={h} style={{fontSize:10,color:C.muted,fontWeight:700,textTransform:"uppercase",letterSpacing:1}}>{h}</div>
             ))}
           </div>
           {dedupeAdj(recentWords,!!search).map((w,i)=><WRow key={w.de+w.tema+i} w={w}/>)}
@@ -1632,7 +1632,7 @@ function Woerterbuch(){
             {(tema==="all")&&(
               <div style={{background:g.col+"15",padding:"6px 10px",borderBottom:`1px solid ${g.col}25`}}>
                 <span style={{fontSize:12,color:g.col,fontWeight:700}}>{TEMEN.find(t=>t.id===g.id)?.label}</span>
-                <span style={{fontSize:11,color:C.dim,marginLeft:8}}>{g.words.length} слов</span>
+                <span style={{fontSize:11,color:C.muted,marginLeft:8}}>{g.words.length} слов</span>
               </div>
             )}
             {g.id==="Adjektive"&&!search
@@ -1642,7 +1642,7 @@ function Woerterbuch(){
           </div>
         ))}
       </div>}
-      <div style={{fontSize:11,color:C.dim,textAlign:"center",marginTop:10}}>{list.length} слов</div>
+      <div style={{fontSize:11,color:C.muted,textAlign:"center",marginTop:10}}>{list.length} слов</div>
     </div>
   );
 }
@@ -1661,7 +1661,7 @@ function Flashcards(){
         <button onClick={()=>{setIdx(0);setFlip(false);setKnown(new Set());}} style={{background:"none",border:`1px solid ${C.border}`,color:C.muted,borderRadius:8,padding:"3px 10px",fontSize:12,cursor:"pointer"}}>Сначала</button>
       </div>
       <div onClick={()=>setFlip(f=>!f)} style={{background:C.card,border:`2px solid ${flip?AC(w.art):C.border}`,borderRadius:16,minHeight:190,display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",cursor:"pointer",userSelect:"none",textAlign:"center",padding:20,marginBottom:12}}>
-        {!flip?(<><div style={{fontSize:12,color:C.dim,marginBottom:12}}>👆 нажми</div><div style={{fontSize:36,fontWeight:900,color:C.text}}>{w.de}</div><div style={{fontSize:12,color:C.dim,marginTop:6}}>die {w.pl}</div></>)
+        {!flip?(<><div style={{fontSize:12,color:C.muted,marginBottom:12}}>👆 нажми</div><div style={{fontSize:36,fontWeight:900,color:C.text}}>{w.de}</div><div style={{fontSize:12,color:C.muted,marginTop:6}}>die {w.pl}</div></>)
         :(<><div style={{fontSize:28,fontWeight:900,color:AC(w.art),marginBottom:4}}>{w.art}</div><div style={{fontSize:26,fontWeight:800,color:C.text,marginBottom:6}}>{w.de}</div><div style={{fontSize:18,color:C.muted,marginBottom:8}}><RuText ru={w.ru}/></div><Pill c={C.yellow}>{w.pt}</Pill></>)}
       </div>
       {flip&&<div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:10}}>
@@ -1764,7 +1764,7 @@ function SentenceBuilder(){
       <div style={{fontSize:16,fontWeight:700,color:C.yellow}}>{s.ru}</div>
     </Box>
     <div style={{minHeight:50,background:C.card,border:`1.5px solid ${res==="ok"?C.green:res==="fail"?C.red:C.blue}`,borderRadius:12,padding:"10px 14px",marginBottom:10,display:"flex",flexWrap:"wrap",gap:8,alignItems:"center"}}>
-      {chosen.length===0?<span style={{color:C.dim,fontSize:13}}>Нажимай слова снизу...</span>
+      {chosen.length===0?<span style={{color:C.muted,fontSize:13}}>Нажимай слова снизу...</span>
        :chosen.map((w,i)=><button key={i} onClick={()=>unpick(i)} style={{background:C.blueBg,border:`1px solid ${C.blue}`,color:C.blue,borderRadius:8,padding:"5px 11px",fontSize:14,cursor:"pointer"}}>{w}</button>)}
     </div>
     <div style={{display:"flex",flexWrap:"wrap",gap:8,marginBottom:12}}>
@@ -2653,7 +2653,7 @@ function T3Intro(){
       <Box c={C.yellow}>
         <H c={C.yellow}>🏠 Zimmer — Комнаты</H>
         <div style={{fontSize:13,color:C.muted,marginBottom:8}}>Pronomen: der→<b style={{color:C.blue}}>er</b> · das→<b style={{color:C.orange}}>es</b> · die→<b style={{color:C.purple}}>sie</b> · die(Pl.)→<b style={{color:C.green}}>sie</b></div>
-        <div style={{fontSize:11,color:C.dim,marginBottom:8}}>👆 Нажми на слово — увидишь перевод</div>
+        <div style={{fontSize:11,color:C.muted,marginBottom:8}}>👆 Нажми на слово — увидишь перевод</div>
         {ZIMMER.map(z=>(
           <div key={z.name} style={{background:z.col+"15",border:`1px solid ${z.col}40`,borderRadius:10,padding:"10px 12px",marginBottom:8}}>
             <div style={{fontWeight:700,color:z.col,fontSize:14,marginBottom:6}}>{z.name} — <span style={{color:C.muted,fontSize:12}}>{z.ru}</span></div>
@@ -2669,7 +2669,7 @@ function T3Intro(){
           {ADJ.map(({a,b,ru})=>(
             <div key={a} style={{display:"flex",gap:8,alignItems:"center",background:C.card2,borderRadius:8,padding:"7px 10px"}}>
               <span style={{color:C.green,fontWeight:700,fontSize:13,minWidth:80}}>{a}</span>
-              {b!=="—"&&<><span style={{color:C.dim}}>↔</span><span style={{color:C.red,fontSize:13,minWidth:80}}>{b}</span></>}
+              {b!=="—"&&<><span style={{color:C.muted}}>↔</span><span style={{color:C.red,fontSize:13,minWidth:80}}>{b}</span></>}
               <span style={{color:C.muted,fontSize:12,flex:1}}>{ru}</span>
             </div>
           ))}
@@ -2677,7 +2677,7 @@ function T3Intro(){
       </Box>
       <Box c={C.teal}>
         <H c={C.teal} z={13}>💬 Мнения (Meinungen)</H>
-        <div style={{fontSize:11,color:C.dim,marginBottom:6}}>👆 Нажми на слово — увидишь перевод</div>
+        <div style={{fontSize:11,color:C.muted,marginBottom:6}}>👆 Нажми на слово — увидишь перевод</div>
         <div style={{display:"flex",flexDirection:"column",gap:6}}>
           {MEIN.map(({e,words,col})=>(
             <div key={e} style={{background:col+"15",border:`1px solid ${col}35`,borderRadius:8,padding:"8px 10px",display:"flex",gap:8,alignItems:"center",flexWrap:"wrap"}}>
@@ -3078,7 +3078,7 @@ function LueckenQuiz({items}){
           {parts[0]}
           <span style={{display:"inline-block",minWidth:90,padding:"1px 10px",
             borderBottom:`2.5px solid ${sel===null?C.blue:sel===q.ans?C.green:C.red}`,
-            color:sel===null?C.dim:sel===q.ans?C.green:C.red,
+            color:sel===null?C.muted:sel===q.ans?C.green:C.red,
             fontWeight:900,textAlign:"center",transition:"all .2s"}}>
             {sel!==null?q.opts[sel]:"___"}
           </span>
@@ -3158,7 +3158,7 @@ function Zuordnung({pairs,leftLabel="Deutsch",rightLabel="Übersetzung"}){
       </div>
       <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:8}}>
         <div style={{display:"flex",flexDirection:"column",gap:6}}>
-          <div style={{fontSize:10,color:C.dim,fontWeight:700,textAlign:"center",marginBottom:2,textTransform:"uppercase",letterSpacing:1}}>{leftLabel}</div>
+          <div style={{fontSize:10,color:C.muted,fontWeight:700,textAlign:"center",marginBottom:2,textTransform:"uppercase",letterSpacing:1}}>{leftLabel}</div>
           {items.map((item,i)=>{
             const isM=matched[i],isSel=selLeft===i,isW=wrongPair?.l===i;
             const col=isM?C.green:isSel?C.blue:isW?C.red:C.border;
@@ -3173,7 +3173,7 @@ function Zuordnung({pairs,leftLabel="Deutsch",rightLabel="Übersetzung"}){
           })}
         </div>
         <div style={{display:"flex",flexDirection:"column",gap:6}}>
-          <div style={{fontSize:10,color:C.dim,fontWeight:700,textAlign:"center",marginBottom:2,textTransform:"uppercase",letterSpacing:1}}>{rightLabel}</div>
+          <div style={{fontSize:10,color:C.muted,fontWeight:700,textAlign:"center",marginBottom:2,textTransform:"uppercase",letterSpacing:1}}>{rightLabel}</div>
           {rightOrder.map((origIdx,ri)=>{
             const item=items[origIdx];
             const isM=doneRight.has(ri),isW=wrongPair?.r===ri;
@@ -3237,7 +3237,7 @@ function WortstellungGame({sents}){
       <div style={{minHeight:48,background:C.card,border:`1.5px solid ${res==="ok"?C.green:res==="fail"?C.red:C.blue}`,
         borderRadius:12,padding:"10px 14px",marginBottom:10,display:"flex",flexWrap:"wrap",gap:8,alignItems:"center"}}>
         {chosen.length===0
-          ?<span style={{color:C.dim,fontSize:13}}>Нажимай слова снизу...</span>
+          ?<span style={{color:C.muted,fontSize:13}}>Нажимай слова снизу...</span>
           :chosen.map((w,i)=><button key={i} onClick={()=>unpick(i)}
               style={{background:C.blueBg,border:`1px solid ${C.blue}`,color:C.blue,borderRadius:8,padding:"5px 11px",fontSize:14,cursor:"pointer"}}>{w}</button>)}
       </div>
@@ -3272,7 +3272,7 @@ function GrosserTestContainer({rounds}){
           }}>{rd.icon} {rd.label}</button>
         ))}
       </div>
-      <div style={{fontSize:11,color:C.dim,textAlign:"center",marginBottom:12}}>
+      <div style={{fontSize:11,color:C.muted,textAlign:"center",marginBottom:12}}>
         Раунд {round+1}/{rounds.length}: {r.label}
       </div>
       <div key={round}>
@@ -3554,7 +3554,7 @@ function T4B(){
           <H c={g.col} z={13}>{g.type}</H>
           <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:4,marginBottom:6}}>
             {["Infinitiv","du","er/es/sie"].map(h=>(
-              <div key={h} style={{fontSize:10,color:C.dim,fontWeight:700,textAlign:"center",textTransform:"uppercase"}}>{h}</div>
+              <div key={h} style={{fontSize:10,color:C.muted,fontWeight:700,textAlign:"center",textTransform:"uppercase"}}>{h}</div>
             ))}
           </div>
           {g.verbs.map(v=>(
@@ -3648,7 +3648,7 @@ function T4B(){
         <div style={{background:C.card2,borderRadius:10,overflow:"hidden",marginBottom:8}}>
           <div style={{display:"grid",gridTemplateColumns:"auto auto auto 1fr"}}>
             {["Pos. 1","Verb","Pos. 3",""].map((h,i)=>(
-              <div key={i} style={{padding:"5px 8px",fontSize:10,color:C.dim,fontWeight:700,
+              <div key={i} style={{padding:"5px 8px",fontSize:10,color:C.muted,fontWeight:700,
                 textAlign:"center",textTransform:"uppercase",background:C.card}}>{h}</div>
             ))}
             {/* Вариант 1: Subjekt an Pos.1 */}
@@ -3733,7 +3733,7 @@ function T4C(){
                 ["sie/Sie","haben", "hatten",  "sind", "waren"],
               ].map(([p,hp,hpt,sp,spt])=>(
                 <tr key={p}>
-                  <td style={{padding:"6px 6px",fontSize:12,color:C.dim,fontWeight:700}}>{p}</td>
+                  <td style={{padding:"6px 6px",fontSize:12,color:C.muted,fontWeight:700}}>{p}</td>
                   <td style={{padding:"6px 4px",background:C.card2,borderRadius:6,fontSize:13,
                     color:C.muted,textAlign:"center"}}>{hp}</td>
                   <td style={{padding:"6px 4px",background:C.blueBg,border:`1px solid ${C.blue}40`,
@@ -3951,6 +3951,24 @@ function T5B(){
         </div>
 
         <div style={{fontWeight:700,fontSize:13,color:C.muted,marginBottom:8,textTransform:"uppercase",letterSpacing:1}}>Таблица глаголов</div>
+        <div style={{display:"flex",flexDirection:"column",gap:5,marginBottom:14}}>
+          {[
+            {pref:"an-",  col:C.blue,   ru:"к, на, начало действия"},
+            {pref:"auf-", col:C.orange, ru:"вверх, открытие"},
+            {pref:"aus-", col:C.red,    ru:"из, выход наружу"},
+            {pref:"ein-", col:C.green,  ru:"внутрь, в"},
+            {pref:"mit-", col:C.purple, ru:"вместе, с собой"},
+            {pref:"ab-",  col:C.yellow, ru:"от, вниз, завершение"},
+            {pref:"fern-",col:C.teal,   ru:"на расстоянии"},
+          ].map(({pref,col,ru})=>(
+            <div key={pref} style={{display:"flex",alignItems:"center",gap:10,background:C.card2,borderRadius:8,padding:"6px 12px"}}>
+              <span style={{background:col+"33",color:col,borderRadius:6,padding:"2px 8px",fontWeight:800,fontSize:12,minWidth:40,textAlign:"center"}}>{pref}</span>
+              <span style={{fontSize:12,color:C.muted}}>{ru}</span>
+            </div>
+          ))}
+        </div>
+
+        <div style={{fontWeight:700,fontSize:13,color:C.muted,marginBottom:8,textTransform:"uppercase",letterSpacing:1}}>Глаголы</div>
         <div style={{display:"flex",flexDirection:"column",gap:5}}>
           {verbs.map(v=>{
             const col=prefColors[v.pref]||C.teal;
@@ -3959,7 +3977,7 @@ function T5B(){
                 <span style={{background:col+"33",color:col,borderRadius:6,padding:"2px 7px",fontSize:11,fontWeight:800,minWidth:32,textAlign:"center"}}>{v.pref}-</span>
                 <span style={{fontWeight:700,fontSize:13,color:C.text,flex:1}}>{v.inf}</span>
                 <span style={{fontSize:12,color:C.muted,flex:2}}>{v.ich} / {v.er}</span>
-                <span style={{fontSize:11,color:C.dim}}>{v.ru}</span>
+                <span style={{fontSize:11,color:C.text,opacity:0.75}}>{v.ru}</span>
               </div>
             );
           })}
@@ -4260,7 +4278,7 @@ function DialogFragenPage(){
                     <div key={pi} style={{padding:"10px 14px",borderBottom:pi<all.length-1?`1px solid ${C.border}30`:"none"}}>
                       <div style={{fontSize:13,fontWeight:700,color:C.text,marginBottom:4}}>{p.q}</div>
                       <div style={{fontSize:12,color:p.col,marginBottom:p.note?3:0}}>↩ {p.a}</div>
-                      {p.note&&<div style={{fontSize:11,color:C.dim,marginTop:2}}>📝 {p.note}</div>}
+                      {p.note&&<div style={{fontSize:11,color:C.muted,marginTop:2}}>📝 {p.note}</div>}
                     </div>
                   ))}
                 </div>
@@ -4363,14 +4381,14 @@ export default function App(){
               style={{background:s.id.startsWith("t")&&!s.id.startsWith("tip")?C.yellowBg:s.id==="d1"||s.id==="d2"||s.id==="d3"||s.id==="wb"?C.tealBg:C.card,
                 border:`1.5px solid ${s.id.startsWith("t")&&!s.id.startsWith("tip")?C.yellow:s.id==="d1"||s.id==="d2"||s.id==="d3"||s.id==="wb"?C.teal:C.border}`,
                 borderRadius:13,padding:"12px 14px",display:"flex",alignItems:"center",gap:12,cursor:"pointer",textAlign:"left"}}>
-              <div style={{fontSize:11,color:C.dim,width:16,textAlign:"center"}}>{i+1}</div>
+              <div style={{fontSize:11,color:C.muted,width:16,textAlign:"center"}}>{i+1}</div>
               <span style={{fontSize:20}}>{s.icon}</span>
               <div style={{flex:1,minWidth:0}}>
                 <div style={{fontWeight:700,fontSize:14,color:s.id.startsWith("t")&&!s.id.startsWith("tip")?C.yellow:s.id==="d1"||s.id==="d2"||s.id==="d3"||s.id==="wb"?C.teal:C.text}}>{s.title}</div>
                 <div style={{fontSize:11,color:C.muted,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{s.sub}</div>
               </div>
               
-              <span style={{color:C.dim}}>›</span>
+              <span style={{color:C.muted}}>›</span>
             </button>
           ))}
         </div>
@@ -4416,7 +4434,7 @@ export default function App(){
                 <div style={{fontSize:11,color:C.muted,marginBottom:4}}>{l.sub}</div>
 
               </div>
-              <span style={{color:C.dim,fontSize:20}}>›</span>
+              <span style={{color:C.muted,fontSize:20}}>›</span>
             </button>
           ))}
         </div>
