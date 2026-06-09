@@ -781,6 +781,21 @@ const KONJ_L5B={
     wir:"finden … statt",ihr:"findet … statt","sie/Sie":"finden … statt"},
 };
 
+// ─── Цвета префиксов (shared) ──────────────────────────────────────────────────
+const PREF_COLORS={
+  an:   {col:C.blue,   bg:C.blueBg},
+  auf:  {col:C.orange, bg:C.orangeBg},
+  aus:  {col:C.red,    bg:C.redBg},
+  ein:  {col:C.green,  bg:C.greenBg},
+  mit:  {col:C.purple, bg:C.purpleBg},
+  weg:  {col:C.orange, bg:C.orangeBg},
+  ab:   {col:C.yellow, bg:C.yellowBg},
+  fern: {col:C.teal,   bg:C.tealBg},
+  statt:{col:C.teal,   bg:C.tealBg},
+};
+const PREF_LIST=["statt","fern","aus","auf","ein","mit","weg","an","ab"];
+const getVerbPref=de=>PREF_LIST.find(p=>de.startsWith(p))||"";
+
 const DIALOGE={
   L1:[
     {tag:"Основные",col:C.blue,pairs:[
@@ -1495,11 +1510,14 @@ function Woerterbuch(){
   const [typ,setTyp]=useState("all");
   const [tema,setTema]=useState("all");
   const [art,setArt]=useState("all");
+  const [selPref,setSelPref]=useState("all");
   const [search,setSearch]=useState("");
   const [sortNew,setSortNew]=useState(true);
 
-  // при смене типа сбрасываем тему
-  const changeTyp=(t)=>{setTyp(t);setTema("all");setArt("all");};
+  const changeTyp=(t)=>{setTyp(t);setTema("all");setArt("all");setSelPref("all");};
+  const changeTema=(t)=>{setTema(t);setArt("all");setSelPref("all");};
+  const isTrennbar=tema==="Trennbare Verben";
+  const trennbarPrefs=PREF_LIST.filter(p=>WBDATA.some(w=>w.tema==="Trennbare Verben"&&getVerbPref(w.de)===p));
 
   const typFilter=(w)=>{
     if(typ==="all")     return true;
@@ -1531,6 +1549,7 @@ function Woerterbuch(){
     typFilter(w)&&
     (tema==="all"||w.tema===tema)&&
     (art==="all"||w.art===art)&&
+    (selPref==="all"||getVerbPref(w.de)===selPref)&&
     (!search||w.de.toLowerCase().includes(search.toLowerCase())||w.ru.toLowerCase().includes(search.toLowerCase()))
   );
   const list=sortNew?[...listRaw].reverse():listRaw;
@@ -1538,7 +1557,9 @@ function Woerterbuch(){
   const temenOrder=[...TEMEN.slice(1)].reverse();
   const groups=tema==="all"
     ?temenOrder.map(t=>({...t,words:list.filter(w=>w.tema===t.id)})).filter(g=>g.words.length>0)
-    :[{id:tema,words:list,col:TEMEN.find(t=>t.id===tema)?.col||C.teal}];
+    :isTrennbar&&selPref==="all"
+      ?PREF_LIST.filter(p=>trennbarPrefs.includes(p)).map(p=>({id:p,col:PREF_COLORS[p].col,bg:PREF_COLORS[p].bg,label:p+"-",words:list.filter(w=>getVerbPref(w.de)===p)})).filter(g=>g.words.length>0)
+      :[{id:tema,words:list,col:TEMEN.find(t=>t.id===tema)?.col||C.teal}];
 
   const oppMap={};
   const oppTransMap={};
@@ -1566,6 +1587,8 @@ function Woerterbuch(){
     const isAdj=w.art==="";
     const opposite=isAdj?oppMap[w.de]:null;
     const oppRu=opposite?oppTransMap[opposite]:null;
+    const verbPref=w.tema==="Trennbare Verben"?getVerbPref(w.de):"";
+    const pc=verbPref?PREF_COLORS[verbPref]:null;
     if(w.tema==="Phrase")return(
       <div style={{padding:"8px 10px",borderBottom:`1px solid ${C.border}22`,display:"flex",justifyContent:"space-between",alignItems:"center",gap:8}}>
         <span style={{fontSize:13,color:C.teal,fontWeight:600,fontStyle:"italic"}}>{w.de}</span>
@@ -1576,8 +1599,12 @@ function Woerterbuch(){
       <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:4,
         padding:"7px 8px",borderBottom:`1px solid ${C.border}22`,alignItems:"center"}}>
         <div style={{display:"flex",alignItems:"center",gap:5}}>
-          {w.art&&<span style={{background:AB(w.art),border:`1px solid ${AC(w.art)}55`,color:AC(w.art),
-            borderRadius:5,padding:"1px 5px",fontWeight:800,fontSize:11,flexShrink:0}}>{w.art}</span>}
+          {pc
+            ?<span style={{background:pc.bg,border:`1px solid ${pc.col}55`,color:pc.col,
+                borderRadius:5,padding:"1px 5px",fontWeight:800,fontSize:11,flexShrink:0}}>{verbPref}-</span>
+            :w.art&&<span style={{background:AB(w.art),border:`1px solid ${AC(w.art)}55`,color:AC(w.art),
+                borderRadius:5,padding:"1px 5px",fontWeight:800,fontSize:11,flexShrink:0}}>{w.art}</span>
+          }
           <span style={{fontSize:13,color:C.text,fontWeight:600}}>{w.de}</span>
         </div>
         <div style={{fontSize:13}}>
@@ -1591,7 +1618,7 @@ function Woerterbuch(){
         <div style={{fontSize:12,lineHeight:1.3,overflowWrap:"break-word",wordBreak:"break-word"}}>
           {isAdj
             ?<><span style={{color:C.text}}>{w.ru}</span>{oppRu&&<span style={{color:C.orange}}> / {oppRu}</span>}</>
-            :<RuText ru={w.ru} style={{color:C.muted}}/>
+            :<RuText ru={w.ru} style={{color:C.text}}/>
           }
         </div>
       </div>
@@ -1620,7 +1647,7 @@ function Woerterbuch(){
     </div>
   );
 
-  const showArtFilter=typ==="all"||typ==="Nomen";
+  const showArtFilter=(typ==="all"||typ==="Nomen")&&!isTrennbar;
   const isAdj=typ==="Adjektiv"||(tema==="Adjektive"&&typ==="all");
 
   return(
@@ -1649,7 +1676,7 @@ function Woerterbuch(){
       {typ!=="recent"&&(
       <div style={{display:"flex",gap:6,overflowX:"auto",paddingBottom:4,marginBottom:8,scrollbarWidth:"none"}}>
         {availableTemen.map(t=>(
-          <button key={t.id} onClick={()=>setTema(t.id)}
+          <button key={t.id} onClick={()=>changeTema(t.id)}
             style={{flexShrink:0,padding:"5px 12px",borderRadius:20,fontWeight:600,fontSize:12,cursor:"pointer",
               border:`1.5px solid ${tema===t.id?t.col:C.border}`,
               background:tema===t.id?t.col+"22":C.card,
@@ -1673,6 +1700,22 @@ function Woerterbuch(){
           ))}
         </div>
       )}
+      {/* ── Фильтр по префиксу (только Trennbare Verben) ── */}
+      {isTrennbar&&typ!=="recent"&&(
+        <div style={{display:"flex",gap:5,marginBottom:8,overflowX:"auto",paddingBottom:2,scrollbarWidth:"none"}}>
+          {[{id:"all",label:"Все",col:C.teal,bg:C.tealBg},
+            ...trennbarPrefs.map(p=>({id:p,label:p+"-",...PREF_COLORS[p]}))
+          ].map(p=>(
+            <button key={p.id} onClick={()=>setSelPref(p.id)}
+              style={{flexShrink:0,padding:"5px 12px",borderRadius:9,fontWeight:700,fontSize:13,cursor:"pointer",
+                border:`1.5px solid ${selPref===p.id?p.col:C.border}`,
+                background:selPref===p.id?p.bg:C.card,
+                color:selPref===p.id?p.col:C.muted}}>
+              {p.label}
+            </button>
+          ))}
+        </div>
+      )}
       {/* ── Сортировка (всегда) ── */}
       <div style={{display:"flex",justifyContent:"flex-end",marginBottom:8}}>
         <button onClick={()=>setSortNew(s=>!s)}
@@ -1692,7 +1735,7 @@ function Woerterbuch(){
       )}
 
       {/* ══ ПОСЛЕДНИЕ ══ */}
-      {typ==="all"&&tema==="all"&&(
+      {typ==="all"&&tema==="all"&&art==="all"&&selPref==="all"&&(
         <div style={{background:C.card,border:`1px solid ${C.teal}35`,borderRadius:12,overflow:"hidden"}}>
           <div style={{background:C.teal+"15",padding:"8px 12px",borderBottom:`1px solid ${C.teal}25`}}>
             <span style={{fontSize:12,color:C.teal,fontWeight:700}}>🆕 Все слова · новые сначала</span>
@@ -1706,12 +1749,14 @@ function Woerterbuch(){
           {dedupeAdj(recentWords,!!search).map((w,i)=><WRow key={w.de+w.tema+i} w={w}/>)}
         </div>
       )}
-      {!(typ==="all"&&tema==="all")&&<div style={{display:"flex",flexDirection:"column",gap:8}}>
+      {!(typ==="all"&&tema==="all"&&art==="all"&&selPref==="all")&&<div style={{display:"flex",flexDirection:"column",gap:8}}>
         {groups.map(g=>(
           <div key={g.id} style={{background:C.card,border:`1px solid ${g.col}35`,borderRadius:12,overflow:"hidden"}}>
-            {(tema==="all")&&(
+            {(tema==="all"||(isTrennbar&&selPref==="all"))&&(
               <div style={{background:g.col+"15",padding:"6px 10px",borderBottom:`1px solid ${g.col}25`}}>
-                <span style={{fontSize:12,color:g.col,fontWeight:700}}>{TEMEN.find(t=>t.id===g.id)?.label}</span>
+                <span style={{fontSize:12,color:g.col,fontWeight:700}}>
+                  {tema==="all"?TEMEN.find(t=>t.id===g.id)?.label:g.label}
+                </span>
                 <span style={{fontSize:11,color:C.muted,marginLeft:8}}>{g.words.length} слов</span>
               </div>
             )}
