@@ -4248,6 +4248,78 @@ function T5C(){
             ))}
           </div>
         </div>
+
+        <div style={{background:C.card2,borderRadius:10,padding:"10px 14px",marginTop:12}}>
+          <div style={{fontWeight:700,fontSize:13,color:C.purple,marginBottom:4}}>📐 Порядок слов с Zeitangaben</div>
+          <div style={{fontSize:12,color:C.muted,marginBottom:10}}>
+            Глагол всегда на <span style={{color:C.orange,fontWeight:700}}>позиции 2</span>. Начало предложения меняет порядок, но не смысл.
+          </div>
+
+          {/* Легенда */}
+          <div style={{display:"flex",flexWrap:"wrap",gap:5,marginBottom:6}}>
+            {[["am …",C.green,"Tag / Teil"],["um …",C.teal,"Uhrzeit"],["Verb",C.orange,"P2 — всегда"],["Subj.",C.blue,"подлежащее"]].map(([l,col,hint])=>(
+              <div key={l} style={{display:"flex",alignItems:"center",gap:4}}>
+                <span style={{background:col+"22",border:`1px solid ${col}55`,color:col,
+                  borderRadius:5,padding:"1px 7px",fontSize:11,fontWeight:700}}>{l}</span>
+                <span style={{fontSize:10,color:C.muted}}>{hint}</span>
+              </div>
+            ))}
+          </div>
+
+          {/* Правило порядка Tag → Uhrzeit */}
+          <div style={{background:C.bg,borderRadius:8,padding:"7px 10px",marginBottom:10,
+            borderLeft:`3px solid ${C.purple}`}}>
+            <span style={{fontSize:11,color:C.purple,fontWeight:700}}>💡 Порядок: </span>
+            <span style={{fontSize:11,color:C.muted}}>сначала </span>
+            <span style={{fontSize:11,color:C.green,fontWeight:700}}>Tag (am)</span>
+            <span style={{fontSize:11,color:C.muted}}>, потом </span>
+            <span style={{fontSize:11,color:C.teal,fontWeight:700}}>Uhrzeit (um)</span>
+            <span style={{fontSize:11,color:C.muted}}> — от общего к конкретному: </span>
+            <span style={{fontSize:11,color:C.text,fontWeight:600}}>am Montag um 9 Uhr ✓</span>
+          </div>
+
+          {[
+            {
+              label:"Вариант 1 · Tag в начале",col:C.green,
+              note:"Tag → V(P2) → Subj. → Uhrzeit → …",
+              words:[["Am Samstag",C.green],["gehen",C.orange],["wir",C.blue],["um 14 Uhr",C.teal],["spazieren.",C.muted]],
+            },
+            {
+              label:"Вариант 2 · Подлежащее в начале",col:C.blue,
+              note:"Subj. → V(P2) → Uhrzeit → Tag → …",
+              words:[["Wir",C.blue],["gehen",C.orange],["um 14 Uhr",C.teal],["am Samstag",C.green],["spazieren.",C.muted]],
+            },
+          ].map(({label,col,note,words})=>(
+            <div key={label} style={{background:C.bg,borderRadius:8,padding:"8px 10px",marginBottom:6}}>
+              <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:6}}>
+                <span style={{fontSize:11,color:col,fontWeight:700}}>{label}</span>
+                <span style={{fontSize:10,color:C.muted,fontStyle:"italic"}}>{note}</span>
+              </div>
+              <div style={{display:"flex",flexWrap:"wrap",gap:4}}>
+                {words.map(([w,c])=>(
+                  <span key={w} style={{background:c+"22",border:`1px solid ${c}44`,color:c,
+                    borderRadius:6,padding:"3px 8px",fontWeight:700,fontSize:13}}>{w}</span>
+                ))}
+              </div>
+            </div>
+          ))}
+
+          {/* Ещё примеры */}
+          <div style={{fontSize:11,color:C.muted,fontWeight:700,marginTop:8,marginBottom:5}}>Ещё примеры:</div>
+          {[
+            [["Am Montagvormittag",C.green],["lernt",C.orange],["Frau Joona",C.blue],["Deutsch.",C.muted]],
+            [["Frau Joona",C.blue],["lernt",C.orange],["am Montagvormittag",C.green],["Deutsch.",C.muted]],
+            [["Um 18 Uhr",C.teal],["rufe",C.orange],["ich",C.blue],["die Mutter",C.muted],["an.",C.muted]],
+            [["Ich",C.blue],["rufe",C.orange],["um 18 Uhr",C.teal],["die Mutter",C.muted],["an.",C.muted]],
+          ].map((words,i)=>(
+            <div key={i} style={{display:"flex",flexWrap:"wrap",gap:3,marginBottom:4,
+              paddingLeft:8,borderLeft:`2px solid ${i%2===0?C.green:C.blue}`}}>
+              {words.map(([w,c])=>(
+                <span key={w} style={{color:c,fontWeight:c===C.muted?400:600,fontSize:12}}>{w}</span>
+              ))}
+            </div>
+          ))}
+        </div>
       </Box>
     </div>
   );
