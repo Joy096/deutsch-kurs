@@ -476,6 +476,46 @@ const WBDATA=[
   {art:"",   de:"im Park joggen",     pl:"—",            ru:"бегать в парке",          tema:"Phrase"},
   {art:"",   de:"Wann?",              pl:"—",            ru:"Когда?",                  tema:"Phrase"},
   {art:"",   de:"Um wie viel Uhr?",   pl:"—",            ru:"В котором часу?",         tema:"Phrase"},
+  {art:"",   de:"bunt",               pl:"—",            ru:"разноцветный, пёстрый",   tema:"Adjektive"},
+  {art:"",   de:"froh",               pl:"—",            ru:"радостный, довольный (froh sein = быть рад)", tema:"Adjektive"},
+  {art:"",   de:"fit",                pl:"—",            ru:"в форме, здоровый",       tema:"Adjektive"},
+  {art:"",   de:"wahrscheinlich",     pl:"—",            ru:"вероятно, наверное",       tema:"Alltag"},
+  {art:"",   de:"möglich",            pl:"—",            ru:"возможный, возможно",      tema:"Adjektive"},
+  {art:"",   de:"vermuten",           pl:"—",            ru:"предполагать, подозревать",tema:"Alltag"},
+  {art:"der",de:"Tanzkurs",           pl:"Tanzkurse",    ru:"курс танцев",              tema:"Alltag"},
+  {art:"",   de:"bis",                pl:"—",            ru:"до (bis zwölf = до двенадцати)", tema:"Alltag"},
+  {art:"",   de:"also",               pl:"—",            ru:"итак, значит",             tema:"Alltag"},
+  {art:"",   de:"genau",              pl:"—",            ru:"точно, именно",            tema:"Alltag"},
+  {art:"",   de:"offiziell",          pl:"—",            ru:"официальный, официально",  tema:"Adjektive"},
+  // ── L5B · Trennbare Verben ───────────────────────────────────────────────────
+  {art:"",   de:"anrufen",            pl:"—",            ru:"звонить (по телефону)",    tema:"Alltag"},
+  {art:"",   de:"anfangen",           pl:"—",            ru:"начинать(ся) (разг.)",     tema:"Alltag"},
+  {art:"",   de:"fernsehen",          pl:"—",            ru:"смотреть телевизор",       tema:"Alltag"},
+  {art:"",   de:"aufstehen",          pl:"—",            ru:"вставать (с постели)",     tema:"Alltag"},
+  {art:"",   de:"aufräumen",          pl:"—",            ru:"убирать, наводить порядок",tema:"Alltag"},
+  {art:"",   de:"einkaufen",          pl:"—",            ru:"делать покупки",           tema:"Alltag"},
+  {art:"",   de:"mitnehmen",          pl:"—",            ru:"брать с собой",            tema:"Alltag"},
+  {art:"",   de:"ausgehen",           pl:"—",            ru:"выходить, идти гулять",    tema:"Alltag"},
+  {art:"",   de:"mitkommen",          pl:"—",            ru:"идти вместе, присоединяться", tema:"Alltag"},
+  {art:"",   de:"aufhören",           pl:"—",            ru:"прекращать, заканчивать",  tema:"Alltag"},
+  {art:"",   de:"abspülen",           pl:"—",            ru:"мыть посуду",              tema:"Alltag"},
+  {art:"",   de:"reparieren",         pl:"—",            ru:"ремонтировать",            tema:"Alltag"},
+  {art:"",   de:"treffen",            pl:"—",            ru:"встречать, встречаться",   tema:"Alltag"},
+  {art:"",   de:"kochen",             pl:"—",            ru:"готовить (еду), варить",   tema:"Alltag"},
+  {art:"der",de:"Zug",                pl:"Züge",         ru:"поезд",                   tema:"Alltag"},
+  {art:"das",de:"Konzert",            pl:"Konzerte",     ru:"концерт",                 tema:"Alltag"},
+  {art:"der",de:"Radiowecker",        pl:"Radiowecker",  ru:"радиобудильник",          tema:"Alltag"},
+  {art:"das",de:"Gleis",              pl:"Gleise",       ru:"платформа, путь (на вокзале)", tema:"Alltag"},
+  {art:"",   de:"klingeln",           pl:"—",            ru:"звонить, звенеть (о звонке)", tema:"Alltag"},
+  {art:"",   de:"starten",            pl:"—",            ru:"стартовать, взлетать",    tema:"Alltag"},
+  {art:"das",de:"Flugzeug",           pl:"Flugzeuge",    ru:"самолёт",                 tema:"Alltag"},
+  {art:"die",de:"Tanzparty",          pl:"Tanzpartys",   ru:"вечеринка с танцами",     tema:"Alltag"},
+  {art:"der",de:"Krimi",              pl:"Krimis",       ru:"детектив (фильм/книга)",  tema:"Alltag"},
+  {art:"das",de:"Fußballspiel",       pl:"Fußballspiele",ru:"футбольный матч",         tema:"Alltag"},
+  {art:"die",de:"Liebe",              pl:"—",            ru:"любовь",                  tema:"Familie"},
+  {art:"",   de:"verliebt sein",      pl:"—",            ru:"быть влюблённым",         tema:"Phrase"},
+  {art:"",   de:"am Wochenende",      pl:"—",            ru:"в выходные",              tema:"Phrase"},
+  {art:"",   de:"von ... bis ...",    pl:"—",            ru:"с ... до ... (von 9 bis 12)", tema:"Phrase"},
 ];
 
 
@@ -818,17 +858,21 @@ const DIALOGE={
       {q:"Wann endet der Kurs?",              a:"Der Kurs endet um halb eins.",                               note:"enden = заканчиваться · halb eins = 12:30"},
       {q:"Um wie viel Uhr beginnt die Pause?",a:"Die Pause beginnt um halb elf.",                             note:"die Pause = перерыв"},
       {q:"Wann gehen Sie nach Hause?",        a:"Ich gehe um zwei Uhr nach Hause.",                          note:"nach Hause gehen = идти домой"},
-      {q:"Was ist Ihr Hobby?",                a:"Mein Hobby ist Gitarre spielen. / Ich lese gern Bücher.",   note:"Was ist Ihr Hobby? = какое ваше хобби?",                     fm:"f"},
-      {q:"Was machst du in der Freizeit?",    a:"Ich jogge gern im Park. / Ich höre Musik.",                 note:"in der Freizeit = в свободное время",                        fm:"i"},
-      {q:"Was machen Sie gerne?",             a:"Ich treibe gern Sport. / Ich surfe gern im Internet.",      note:"gerne = с удовольствием",                                   fm:"f"},
+      {q:"Bis wann geht der Kurs?",           a:"Bis 20 Uhr. / Bis acht Uhr.",                               note:"Bis wann? = До какого времени?"},
+      {q:"Von wann bis wann geht der Kurs?",  a:"Von sechs bis acht. / Von 18 bis 20 Uhr.",                  note:"von ... bis ... = с ... до ..."},
+      {q:"Was ist Ihr Hobby?",                a:"Mein Hobby ist Gitarre spielen. / Ich lese gern Bücher.",   note:"Was ist Ihr Hobby? = какое ваше хобби?",              fm:"f"},
+      {q:"Was machst du in der Freizeit?",    a:"Ich jogge gern im Park. / Ich höre Musik.",                 note:"in der Freizeit = в свободное время",                 fm:"i"},
+      {q:"Was machen Sie gerne?",             a:"Ich treibe gern Sport. / Ich surfe gern im Internet.",      note:"gerne = с удовольствием",                            fm:"f"},
     ]},
     {tag:"Дополнительные",col:C.green,pairs:[
-      {q:"Auf dem Bild sehe ich einen Mann.",  a:"Was macht er? — Er joggt im Park.",                         note:"auf dem Bild = на картинке · sehen→sieht"},
-      {q:"Was machen die Personen auf dem Foto?",a:"Foto 1: Der Mann grillt. Foto 3: Die Frau tanzt.",       note:"описание фото: Der/Die + Nomen + Verb"},
-      {q:"Ich schwimme gern im Meer.",         a:"Ich auch! / Ich nicht. Ich jogge lieber.",                  note:"lieber = скорее предпочту · auch = тоже"},
-      {q:"Lesen Sie gerne Bücher?",            a:"Ja, ich lese sehr gern! / Nicht so gern, ich höre lieber Musik.", note:"sehr gern = очень люблю · nicht so gern = не очень"},
-      {q:"Wann kommst du?",                    a:"Ich komme um zehn Uhr.",                                    note:"Wann? → um + Uhrzeit",                                      fm:"i"},
-      {q:"Wie lange dauert der Kurs?",         a:"Der Kurs dauert zwei Stunden.",                             note:"dauern = длиться · die Stunde = час"},
+      {q:"Wann stehst du auf?",               a:"Ich stehe um 7 Uhr auf.",                                   note:"aufstehen = вставать · Präfix 'auf' ans Ende"},
+      {q:"Wann kaufst du ein?",               a:"Ich kaufe um 10 Uhr ein.",                                  note:"einkaufen = делать покупки"},
+      {q:"Wann siehst du fern?",              a:"Ich sehe am Abend fern.",                                   note:"fernsehen = смотреть ТВ · am Abend = вечером"},
+      {q:"Wann fängt der Film an?",           a:"Der Film fängt um neun Uhr an.",                            note:"anfangen = начинаться · fängt...an (Vokalwechsel)"},
+      {q:"Wann ruft sie an?",                 a:"Sie ruft um halb zwölf an.",                                note:"anrufen = звонить · ruft...an"},
+      {q:"Wann gehst du aus?",                a:"Ich gehe am Freitagabend aus.",                             note:"ausgehen = выходить гулять · am Freitagabend"},
+      {q:"Wie lange dauert der Kurs?",        a:"Der Kurs dauert zwei Stunden.",                             note:"dauern = длиться · die Stunde = час"},
+      {q:"Was macht Frau Costa am Samstag?",  a:"Sie steht auf, kauft ein, räumt auf und geht aus.",        note:"trennbare Verben в цепочке"},
     ]},
   ],
 };
@@ -3819,6 +3863,198 @@ function T5A(){
             </div>
           </div>
         </div>
+
+        <div style={{background:C.card2,borderRadius:10,padding:"10px 14px",marginTop:12}}>
+          <div style={{fontWeight:700,fontSize:13,color:C.purple,marginBottom:8}}>🕐 Официальное время (offiziell)</div>
+          <div style={{fontSize:12,color:C.muted,marginBottom:8}}>На вокзале, в расписании, по радио — 24 часа:</div>
+          <div style={{display:"flex",flexDirection:"column",gap:5}}>
+            {[
+              ["halb neun",          "8:30",  "acht Uhr dreißig"],
+              ["fünf nach drei",     "15:05", "fünfzehn Uhr fünf"],
+              ["zehn vor sechs",     "17:50", "siebzehn Uhr fünfzig"],
+              ["Viertel nach vier",  "16:15", "sechzehn Uhr fünfzehn"],
+              ["zwanzig vor eins",   "12:40", "zwölf Uhr vierzig"],
+              ["Viertel vor elf",    "10:45", "zehn Uhr fünfundvierzig"],
+              ["zehn nach sechs",    "6:10",  "sechs Uhr zehn"],
+            ].map(([inoff,time,off])=>(
+              <div key={time} style={{display:"flex",alignItems:"center",gap:8,fontSize:12}}>
+                <span style={{color:C.teal,minWidth:38,fontWeight:700}}>{time}</span>
+                <span style={{flex:1,color:C.text}}>{inoff}</span>
+                <span style={{color:C.purple,fontWeight:600}}>{off}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </Box>
+    </div>
+  );
+}
+
+
+// ─── L5B · TRENNBARE VERBEN ───────────────────────────────────────────────────
+const Q_L5B=[
+  {q:"Wie bildet man Sätze mit trennbaren Verben?",a:"Verb kommt auf Position 2, Präfix ans Satzende: Sie räumt die Küche AUF."},
+  {q:"Wie heißt 'anrufen' in: 'Ich ___ sie ___'?",a:"Ich rufe sie an."},
+  {q:"Wie heißt 'aufstehen' in: 'Er ___ um 7 Uhr ___'?",a:"Er steht um 7 Uhr auf."},
+  {q:"Wie heißt 'fernsehen' in: 'Sie ___ am Abend ___'?",a:"Sie sieht am Abend fern."},
+  {q:"Wie heißt 'einkaufen' in: 'Wann ___ du ___?'",a:"Wann kaufst du ein?"},
+  {q:"Wie heißt 'ausgehen' in: 'Um 8 Uhr ___ Frau Costa ___'?",a:"Um 8 Uhr geht Frau Costa aus."},
+  {q:"Wie heißt 'aufräumen' in: 'Sie ___ ihre Küche ___'?",a:"Sie räumt ihre Küche auf."},
+  {q:"Wie heißt 'anfangen' in: 'Der Film ___ um 9 Uhr ___'?",a:"Der Film fängt um 9 Uhr an."},
+  {q:"Wie heißt 'aufhören' in: 'Der Film ___ spät ___'?",a:"Der Film hört spät auf."},
+  {q:"Wie heißt 'mitnehmen' in: 'Sie ___ eine Zeitung ___'?",a:"Sie nimmt eine Zeitung mit."},
+  {q:"Was ist der Infinitiv von 'Sie ruft an'?",a:"anrufen"},
+  {q:"Was ist der Infinitiv von 'Er steht auf'?",a:"aufstehen"},
+  {q:"Was ist der Infinitiv von 'Sie sieht fern'?",a:"fernsehen"},
+  {q:"Was ist der Infinitiv von 'Er kauft ein'?",a:"einkaufen"},
+];
+
+function T5B(){
+  const verbs=[
+    {inf:"anrufen",    pref:"an",  stem:"rufen",   ich:"rufe ... an",    er:"ruft ... an",    ru:"звонить"},
+    {inf:"anfangen",   pref:"an",  stem:"fangen",  ich:"fange ... an",   er:"fängt ... an",   ru:"начинать"},
+    {inf:"aufstehen",  pref:"auf", stem:"stehen",  ich:"stehe ... auf",  er:"steht ... auf",  ru:"вставать"},
+    {inf:"aufräumen",  pref:"auf", stem:"räumen",  ich:"räume ... auf",  er:"räumt ... auf",  ru:"убирать"},
+    {inf:"aufhören",   pref:"auf", stem:"hören",   ich:"höre ... auf",   er:"hört ... auf",   ru:"прекращать"},
+    {inf:"einkaufen",  pref:"ein", stem:"kaufen",  ich:"kaufe ... ein",  er:"kauft ... ein",  ru:"покупать"},
+    {inf:"mitnehmen",  pref:"mit", stem:"nehmen",  ich:"nehme ... mit",  er:"nimmt ... mit",  ru:"брать с собой"},
+    {inf:"mitkommen",  pref:"mit", stem:"kommen",  ich:"komme ... mit",  er:"kommt ... mit",  ru:"идти вместе"},
+    {inf:"ausgehen",   pref:"aus", stem:"gehen",   ich:"gehe ... aus",   er:"geht ... aus",   ru:"выходить"},
+    {inf:"fernsehen",  pref:"fern",stem:"sehen",   ich:"sehe ... fern",  er:"sieht ... fern", ru:"смотреть ТВ"},
+    {inf:"abspülen",   pref:"ab",  stem:"spülen",  ich:"spüle ... ab",   er:"spült ... ab",   ru:"мыть посуду"},
+  ];
+  const prefColors={an:C.blue, auf:C.orange, ein:C.green, mit:C.purple, aus:C.red, fern:C.teal, ab:C.yellow};
+  return (
+    <div>
+      <Box icon="✂️" title="B · Trennbare Verben" sub="Глаголы с отделяемым префиксом">
+        <div style={{background:C.card2,borderRadius:10,padding:"10px 14px",marginBottom:14}}>
+          <div style={{fontWeight:700,fontSize:13,color:C.orange,marginBottom:6}}>⚠️ Главное правило</div>
+          <div style={{fontSize:13,color:C.text,marginBottom:4}}>Глагол — на <b>2-е место</b>, префикс — в <b>конец</b> предложения:</div>
+          <div style={{background:C.bg,borderRadius:8,padding:"8px 12px",marginTop:6}}>
+            <div style={{fontSize:13,marginBottom:3}}>
+              <span style={{color:C.muted}}>Она убирает кухню → </span>
+              <span style={{color:C.text,fontWeight:600}}>Sie </span>
+              <span style={{color:C.orange,fontWeight:800}}>räumt</span>
+              <span style={{color:C.text,fontWeight:600}}> die Küche </span>
+              <span style={{color:C.orange,fontWeight:800}}>auf</span>
+              <span style={{color:C.muted}}>.</span>
+            </div>
+            <div style={{fontSize:13}}>
+              <span style={{color:C.muted}}>Она звонит → </span>
+              <span style={{color:C.text,fontWeight:600}}>Sie </span>
+              <span style={{color:C.blue,fontWeight:800}}>ruft</span>
+              <span style={{color:C.text,fontWeight:600}}> eine Freundin </span>
+              <span style={{color:C.blue,fontWeight:800}}>an</span>
+              <span style={{color:C.muted}}>.</span>
+            </div>
+          </div>
+        </div>
+
+        <div style={{fontWeight:700,fontSize:13,color:C.muted,marginBottom:8,textTransform:"uppercase",letterSpacing:1}}>Таблица глаголов</div>
+        <div style={{display:"flex",flexDirection:"column",gap:5}}>
+          {verbs.map(v=>{
+            const col=prefColors[v.pref]||C.teal;
+            return (
+              <div key={v.inf} style={{background:C.card2,borderRadius:8,padding:"7px 12px",display:"flex",alignItems:"center",gap:8}}>
+                <span style={{background:col+"33",color:col,borderRadius:6,padding:"2px 7px",fontSize:11,fontWeight:800,minWidth:32,textAlign:"center"}}>{v.pref}-</span>
+                <span style={{fontWeight:700,fontSize:13,color:C.text,flex:1}}>{v.inf}</span>
+                <span style={{fontSize:12,color:C.muted,flex:2}}>{v.ich} / {v.er}</span>
+                <span style={{fontSize:11,color:C.dim}}>{v.ru}</span>
+              </div>
+            );
+          })}
+        </div>
+
+        <div style={{background:C.card2,borderRadius:10,padding:"10px 14px",marginTop:12}}>
+          <div style={{fontWeight:700,fontSize:13,color:C.blue,marginBottom:6}}>📌 В вопросе — так же</div>
+          <div style={{display:"flex",flexDirection:"column",gap:5,fontSize:13}}>
+            {[
+              ["Wann stehst du auf?","Ich stehe um 7 Uhr auf.","aufstehen"],
+              ["Wann kaufst du ein?","Ich kaufe um 10 Uhr ein.","einkaufen"],
+              ["Wann siehst du fern?","Ich sehe am Abend fern.","fernsehen"],
+            ].map(([q,a,v])=>(
+              <div key={v} style={{borderLeft:`2px solid ${C.blue}`,paddingLeft:8}}>
+                <div style={{color:C.muted}}>{q}</div>
+                <div style={{color:C.text,fontWeight:600}}>{a}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </Box>
+    </div>
+  );
+}
+
+// ─── L5C · TEMPORALE PRÄPOSITIONEN ───────────────────────────────────────────
+const Q_L5C=[
+  {q:"Wann benutzt man 'um'?",a:"Перед точным временем: um 9 Uhr, um halb zwei"},
+  {q:"Wann benutzt man 'am'?",a:"Перед днями недели и частями дня: am Montag, am Abend, am Wochenende"},
+  {q:"Wie sagt man 'в пятницу вечером'?",a:"am Freitagabend (одно слово) oder: am Freitagabend"},
+  {q:"Wie sagt man 'с 9 до 12'?",a:"von neun bis zwölf / von 9 bis 12 Uhr"},
+  {q:"Wie sagt man 'до 20 Uhr'?",a:"bis 20 Uhr / bis zwanzig Uhr"},
+  {q:"Wie sagt man 'в ночи' с предлогом?",a:"in der Nacht (не 'am Nacht'!)"},
+  {q:"Ergänzen Sie: Der Kurs geht ___ 18 ___ 20 Uhr.",a:"von 18 bis 20 Uhr"},
+  {q:"Wie heißt 'am Montagabend' auf Ukrainisch?",a:"у понеділок ввечері / в понедельник вечером"},
+  {q:"Wann? 'am Montagvormittag' — was bedeutet das?",a:"в понедельник до полудня (Montag + Vormittag = zusammen)"},
+];
+
+function T5C(){
+  return (
+    <div>
+      <Box icon="📅" title="C · Meine Woche" sub="Temporale Präpositionen: am · um · von...bis">
+        <div style={{display:"flex",flexDirection:"column",gap:8,marginBottom:14}}>
+          {[
+            {prep:"um",  col:C.blue,  rule:"точное время",       ex:["um 9 Uhr","um halb zwei","um Viertel nach drei"]},
+            {prep:"am",  col:C.green, rule:"день / часть дня",   ex:["am Montag","am Abend","am Wochenende"]},
+            {prep:"von ... bis",col:C.orange,rule:"промежуток времени", ex:["von 9 bis 12 Uhr","von Montag bis Freitag"]},
+            {prep:"in der",col:C.purple,rule:"только: in der Nacht",ex:["in der Nacht (⚠️ не 'am Nacht')"]},
+          ].map(({prep,col,rule,ex})=>(
+            <div key={prep} style={{background:C.card2,borderRadius:10,padding:"10px 14px"}}>
+              <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:6}}>
+                <span style={{background:col+"33",color:col,borderRadius:6,padding:"3px 10px",fontWeight:800,fontSize:14}}>{prep}</span>
+                <span style={{fontSize:12,color:C.muted}}>{rule}</span>
+              </div>
+              <div style={{display:"flex",gap:6,flexWrap:"wrap"}}>
+                {ex.map(e=><span key={e} style={{background:C.bg,borderRadius:6,padding:"3px 8px",fontSize:12,color:C.text}}>{e}</span>)}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div style={{background:C.card2,borderRadius:10,padding:"10px 14px",marginBottom:12}}>
+          <div style={{fontWeight:700,fontSize:13,color:C.teal,marginBottom:8}}>🗓 Составные выражения времени</div>
+          <div style={{fontSize:12,color:C.muted,marginBottom:8}}>am + день + часть дня = одно слово:</div>
+          <div style={{display:"flex",flexDirection:"column",gap:5}}>
+            {[
+              ["am Montagvormittag","в понедельник утром"],
+              ["am Dienstagmittag", "во вторник в полдень"],
+              ["am Mittwochabend",  "в среду вечером"],
+              ["am Donnerstagmorgen","в четверг утром"],
+              ["am Freitagabend",   "в пятницу вечером"],
+            ].map(([de,ru])=>(
+              <div key={de} style={{display:"flex",justifyContent:"space-between",background:C.bg,borderRadius:6,padding:"5px 10px",fontSize:12}}>
+                <span style={{color:C.text,fontWeight:600}}>{de}</span>
+                <span style={{color:C.muted}}>{ru}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div style={{background:C.card2,borderRadius:10,padding:"10px 14px"}}>
+          <div style={{fontWeight:700,fontSize:13,color:C.orange,marginBottom:6}}>💬 Диалог-пример</div>
+          <div style={{display:"flex",flexDirection:"column",gap:6,fontSize:13}}>
+            {[
+              ["— Wann beginnt der Deutschkurs?","— Um 18 Uhr."],
+              ["— Bis wann geht der Kurs?","— Bis 20 Uhr."],
+              ["— Also von sechs bis acht?","— Ja, genau."],
+            ].map(([q,a],i)=>(
+              <div key={i}>
+                <div style={{color:C.muted}}>{q}</div>
+                <div style={{color:C.text,fontWeight:600}}>{a}</div>
+              </div>
+            ))}
+          </div>
+        </div>
       </Box>
     </div>
   );
@@ -3891,6 +4127,8 @@ const LEKTIONEN=[
     sections:[
       {id:"d5",  icon:"💬",title:"Dialogfragen L5",          sub:"Фразы для диалога",                  time:"∞",     col:C.teal,  hasT:false, th:null,         ex:()=><DialogCards lId="L5"/>},
       {id:"5a",  icon:"🕐",title:"A · Wie spät ist es?",     sub:"Uhrzeiten · halb · vor/nach · Viertel", time:"7 мин", col:C.orange,hasT:true,  th:()=><T5A/>, ex:()=><Quiz questions={Q_L5A}/>},
+      {id:"5b",  icon:"✂️",title:"B · Was macht Frau Costa?",sub:"Trennbare Verben: auf-, ein-, an-, aus-", time:"8 мин", col:C.blue,  hasT:true,  th:()=><T5B/>, ex:()=><Quiz questions={Q_L5B}/>},
+      {id:"5c",  icon:"📅",title:"C · Meine Woche",          sub:"am · um · von...bis · Zeitangaben",      time:"6 мин", col:C.green, hasT:true,  th:()=><T5C/>, ex:()=><Quiz questions={Q_L5C}/>},
     ]
   },
 ];
