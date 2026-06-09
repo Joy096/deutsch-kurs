@@ -702,6 +702,44 @@ const KONJ_L4C={
   "haben →": {col:C.blue,  bg:C.blueBg,   ich:"hatte",  du:"hattest", "er/es/sie":"hatte",  wir:"hatten", ihr:"hattet","sie/Sie":"hatten"},
   "sein →":  {col:C.purple,bg:C.purpleBg, ich:"war",    du:"warst",   "er/es/sie":"war",    wir:"waren",  ihr:"wart",  "sie/Sie":"waren"},
 };
+
+// ─── KONJUGATION (L5B — Trennbare Verben) ────────────────────────────────────
+const KONJ_L5B={
+  anrufen:   {pref:"an",  col:C.blue,   bg:C.blueBg,
+    ich:"rufe … an",    du:"rufst … an",     "er/es/sie":"ruft … an",
+    wir:"rufen … an",   ihr:"ruft … an",     "sie/Sie":"rufen … an"},
+  anfangen:  {pref:"an",  col:C.blue,   bg:C.blueBg,   note:"a→ä",
+    ich:"fange … an",   du:"fängst … an",    "er/es/sie":"fängt … an",
+    wir:"fangen … an",  ihr:"fangt … an",    "sie/Sie":"fangen … an"},
+  aufstehen: {pref:"auf", col:C.orange, bg:C.orangeBg,
+    ich:"stehe … auf",  du:"stehst … auf",   "er/es/sie":"steht … auf",
+    wir:"stehen … auf", ihr:"steht … auf",   "sie/Sie":"stehen … auf"},
+  aufräumen: {pref:"auf", col:C.orange, bg:C.orangeBg,
+    ich:"räume … auf",  du:"räumst … auf",   "er/es/sie":"räumt … auf",
+    wir:"räumen … auf", ihr:"räumt … auf",   "sie/Sie":"räumen … auf"},
+  aufhören:  {pref:"auf", col:C.orange, bg:C.orangeBg,
+    ich:"höre … auf",   du:"hörst … auf",    "er/es/sie":"hört … auf",
+    wir:"hören … auf",  ihr:"hört … auf",    "sie/Sie":"hören … auf"},
+  einkaufen: {pref:"ein", col:C.green,  bg:C.greenBg,
+    ich:"kaufe … ein",  du:"kaufst … ein",   "er/es/sie":"kauft … ein",
+    wir:"kaufen … ein", ihr:"kauft … ein",   "sie/Sie":"kaufen … ein"},
+  mitnehmen: {pref:"mit", col:C.purple, bg:C.purpleBg, note:"e→i",
+    ich:"nehme … mit",  du:"nimmst … mit",   "er/es/sie":"nimmt … mit",
+    wir:"nehmen … mit", ihr:"nehmt … mit",   "sie/Sie":"nehmen … mit"},
+  mitkommen: {pref:"mit", col:C.purple, bg:C.purpleBg,
+    ich:"komme … mit",  du:"kommst … mit",   "er/es/sie":"kommt … mit",
+    wir:"kommen … mit", ihr:"kommt … mit",   "sie/Sie":"kommen … mit"},
+  ausgehen:  {pref:"aus", col:C.red,    bg:C.redBg,
+    ich:"gehe … aus",   du:"gehst … aus",    "er/es/sie":"geht … aus",
+    wir:"gehen … aus",  ihr:"geht … aus",    "sie/Sie":"gehen … aus"},
+  fernsehen: {pref:"fern",col:C.teal,   bg:C.tealBg,   note:"e→ie",
+    ich:"sehe … fern",  du:"siehst … fern",  "er/es/sie":"sieht … fern",
+    wir:"sehen … fern", ihr:"seht … fern",   "sie/Sie":"sehen … fern"},
+  abspülen:  {pref:"ab",  col:C.yellow, bg:C.yellowBg,
+    ich:"spüle … ab",   du:"spülst … ab",    "er/es/sie":"spült … ab",
+    wir:"spülen … ab",  ihr:"spült … ab",    "sie/Sie":"spülen … ab"},
+};
+
 const DIALOGE={
   L1:[
     {tag:"Основные",col:C.blue,pairs:[
@@ -3910,6 +3948,8 @@ const Q_L5B=[
 ];
 
 function T5B(){
+  const [sel,setSel]=useState("anrufen");
+  const c=KONJ_L5B[sel];
   const verbs=[
     {inf:"anrufen",    pref:"an",  stem:"rufen",   ich:"rufe ... an",    er:"ruft ... an",    ru:"звонить"},
     {inf:"anfangen",   pref:"an",  stem:"fangen",  ich:"fange ... an",   er:"fängt ... an",   ru:"начинать"},
@@ -3997,6 +4037,45 @@ function T5B(){
               </div>
             ))}
           </div>
+        </div>
+      </Box>
+
+      <Box c={c.col} s={{marginTop:12}}>
+        <H c={c.col}>📋 Konjugation — Trennbare Verben</H>
+        <div style={{fontSize:12,color:C.muted,marginBottom:10}}>
+          … = место для объекта/дополнения. Выбери глагол:
+        </div>
+        {/* Кнопки-глаголы */}
+        <div style={{display:"flex",gap:5,flexWrap:"wrap",marginBottom:12}}>
+          {Object.entries(KONJ_L5B).map(([v,d])=>(
+            <button key={v} onClick={()=>setSel(v)}
+              style={{padding:"5px 10px",borderRadius:10,cursor:"pointer",fontWeight:600,fontSize:12,
+                border:`1px solid ${sel===v?d.col:C.border}`,
+                background:sel===v?d.bg:C.card,
+                color:sel===v?d.col:C.muted}}>
+              {v}
+            </button>
+          ))}
+        </div>
+        {/* Бейдж префикса + пометка об умлауте */}
+        <div style={{display:"flex",alignItems:"center",gap:6,marginBottom:10}}>
+          <span style={{background:c.col+"22",border:`1px solid ${c.col}55`,color:c.col,
+            borderRadius:6,padding:"2px 10px",fontSize:12,fontWeight:800}}>{c.pref}-</span>
+          <span style={{fontSize:14,fontWeight:800,color:C.text}}>{sel}</span>
+          {c.note&&<span style={{fontSize:11,color:C.orange}}>⚡ {c.note}: du / er</span>}
+        </div>
+        {/* Сетка 2×3 */}
+        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:6}}>
+          {[["ich",c.ich],["wir",c.wir],["du",c.du],["ihr",c.ihr],["er/es/sie",c["er/es/sie"]],["sie/Sie",c["sie/Sie"]]].map(([p,f])=>{
+            const hi=!!c.note&&(p==="du"||p==="er/es/sie");
+            return (
+              <div key={p} style={{background:hi?c.bg:C.card2,
+                border:`1px solid ${hi?c.col+"55":C.border}`,borderRadius:8,padding:"8px 10px"}}>
+                <div style={{fontSize:11,color:hi?c.col:C.muted,marginBottom:2}}>{p}</div>
+                <div style={{color:hi?c.col:C.text,fontWeight:700,fontSize:14}}>{f}</div>
+              </div>
+            );
+          })}
         </div>
       </Box>
     </div>
