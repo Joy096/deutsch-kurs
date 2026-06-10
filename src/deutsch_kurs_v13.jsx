@@ -488,17 +488,17 @@ const WBDATA=[
   {art:"",   de:"genau",              pl:"—",            ru:"точно, именно",            tema:"Alltag"},
   {art:"",   de:"offiziell",          pl:"—",            ru:"официальный, официально",  tema:"Adjektive"},
   // ── L5B · Trennbare Verben ───────────────────────────────────────────────────
-  {art:"",   de:"anrufen",            pl:"—",            ru:"звонить (по телефону)",    tema:"Trennbare Verben"},
-  {art:"",   de:"anfangen",           pl:"—",            ru:"начинать(ся) (разг.)",     tema:"Trennbare Verben"},
-  {art:"",   de:"fernsehen",          pl:"—",            ru:"смотреть телевизор",       tema:"Trennbare Verben"},
-  {art:"",   de:"aufstehen",          pl:"—",            ru:"вставать (с постели)",     tema:"Trennbare Verben"},
-  {art:"",   de:"aufräumen",          pl:"—",            ru:"убирать, наводить порядок",tema:"Trennbare Verben"},
-  {art:"",   de:"einkaufen",          pl:"—",            ru:"делать покупки",           tema:"Trennbare Verben"},
-  {art:"",   de:"mitnehmen",          pl:"—",            ru:"брать с собой",            tema:"Trennbare Verben"},
-  {art:"",   de:"ausgehen",           pl:"—",            ru:"выходить, идти гулять",    tema:"Trennbare Verben"},
-  {art:"",   de:"mitkommen",          pl:"—",            ru:"идти вместе, присоединяться", tema:"Trennbare Verben"},
-  {art:"",   de:"aufhören",           pl:"—",            ru:"прекращать, заканчивать",  tema:"Trennbare Verben"},
-  {art:"",   de:"abspülen",           pl:"—",            ru:"мыть посуду",              tema:"Trennbare Verben"},
+  {art:"",   de:"anrufen",            pl:"—",            ru:"звонить (по телефону)",    tema:"Alltag"},
+  {art:"",   de:"anfangen",           pl:"—",            ru:"начинать(ся) (разг.)",     tema:"Alltag"},
+  {art:"",   de:"fernsehen",          pl:"—",            ru:"смотреть телевизор",       tema:"Alltag"},
+  {art:"",   de:"aufstehen",          pl:"—",            ru:"вставать (с постели)",     tema:"Alltag"},
+  {art:"",   de:"aufräumen",          pl:"—",            ru:"убирать, наводить порядок",tema:"Alltag"},
+  {art:"",   de:"einkaufen",          pl:"—",            ru:"делать покупки",           tema:"Alltag"},
+  {art:"",   de:"mitnehmen",          pl:"—",            ru:"брать с собой",            tema:"Alltag"},
+  {art:"",   de:"ausgehen",           pl:"—",            ru:"выходить, идти гулять",    tema:"Alltag"},
+  {art:"",   de:"mitkommen",          pl:"—",            ru:"идти вместе, присоединяться", tema:"Alltag"},
+  {art:"",   de:"aufhören",           pl:"—",            ru:"прекращать, заканчивать",  tema:"Alltag"},
+  {art:"",   de:"abspülen",           pl:"—",            ru:"мыть посуду",              tema:"Alltag"},
   {art:"",   de:"reparieren",         pl:"—",            ru:"ремонтировать",            tema:"Alltag"},
   {art:"",   de:"treffen",            pl:"—",            ru:"встречать, встречаться",   tema:"Alltag"},
   {art:"",   de:"kochen",             pl:"—",            ru:"готовить (еду), варить",   tema:"Alltag"},
@@ -516,31 +516,6 @@ const WBDATA=[
   {art:"",   de:"verliebt sein",      pl:"—",            ru:"быть влюблённым",         tema:"Phrase"},
   {art:"",   de:"am Wochenende",      pl:"—",            ru:"в выходные",              tema:"Phrase"},
   {art:"",   de:"von ... bis ...",    pl:"—",            ru:"с ... до ... (von 9 bis 12)", tema:"Phrase"},
-  // ── Урок 09.06 · Новые слова ─────────────────────────────────────────────────
-  {art:"",   de:"immer",             pl:"—",            ru:"всегда",                  tema:"Alltag"},
-  {art:"",   de:"montags",           pl:"—",            ru:"по понедельникам (каждый понедельник)", tema:"Alltag"},
-  {art:"",   de:"frühstücken",       pl:"—",            ru:"завтракать",              tema:"Alltag"},
-  {art:"das",de:"Frühstück",         pl:"Frühstücke",   ru:"завтрак",                 tema:"Alltag"},
-  {art:"das",de:"Abendessen",        pl:"—",            ru:"ужин",                    tema:"Alltag"},
-  {art:"der",de:"Sprachkurs",        pl:"Sprachkurse",  ru:"языковой курс",           tema:"Alltag"},
-  {art:"",   de:"zu Abend essen",    pl:"—",            ru:"ужинать",                 tema:"Phrase"},
-  {art:"",   de:"ins Bett gehen",    pl:"—",            ru:"ложиться спать",          tema:"Phrase"},
-  {art:"",   de:"einen Ausflug machen", pl:"—",         ru:"поехать на экскурсию",    tema:"Phrase"},
-  {art:"",   de:"Hausaufgaben machen",  pl:"—",         ru:"делать домашнее задание", tema:"Phrase"},
-  {art:"",   de:"zum Arzt gehen",    pl:"—",            ru:"пойти к врачу",           tema:"Phrase"},
-  // ── Trennbare Verben (neue) ───────────────────────────────────────────────────
-  {art:"",   de:"einladen",          pl:"—",            ru:"пригласить",              tema:"Trennbare Verben"},
-  {art:"",   de:"ausschlafen",       pl:"—",            ru:"выспаться",               tema:"Trennbare Verben"},
-  {art:"",   de:"mitbringen",        pl:"—",            ru:"принести с собой",        tema:"Trennbare Verben"},
-  {art:"",   de:"einschlafen",       pl:"—",            ru:"заснуть",                 tema:"Trennbare Verben"},
-  {art:"",   de:"wegfahren",         pl:"—",            ru:"уехать, отправиться",     tema:"Trennbare Verben"},
-  {art:"",   de:"ausfallen",         pl:"—",            ru:"отменяться, не состояться", tema:"Trennbare Verben"},
-  {art:"",   de:"stattfinden",       pl:"—",            ru:"состояться, проходить",   tema:"Trennbare Verben"},
-  {art:"",   de:"müde",              pl:"—",            ru:"усталый, утомлённый",     tema:"Adjektive"},
-  {art:"",   de:"wollen",            pl:"—",            ru:"хотеть (намереваться)",   tema:"Alltag"},
-  {art:"",   de:"kostenlos",         pl:"—",            ru:"бесплатный",              tema:"Adjektive"},
-  {art:"der",de:"Fluss",             pl:"Flüsse",       ru:"река",                    tema:"Alltag"},
-  {art:"die",de:"Brücke",            pl:"Brücken",      ru:"мост",                    tema:"Alltag"},
 ];
 
 
@@ -763,75 +738,6 @@ const KONJ_L5B={
   abspülen:  {pref:"ab",  col:C.yellow, bg:C.yellowBg,
     ich:"spüle … ab",   du:"spülst … ab",    "er/es/sie":"spült … ab",
     wir:"spülen … ab",  ihr:"spült … ab",    "sie/Sie":"spülen … ab"},
-  einladen:  {pref:"ein", col:C.green,  bg:C.greenBg,  note:"a→ä",
-    ich:"lade … ein",   du:"lädst … ein",    "er/es/sie":"lädt … ein",
-    wir:"laden … ein",  ihr:"ladet … ein",   "sie/Sie":"laden … ein"},
-  ausschlafen:{pref:"aus",col:C.red,    bg:C.redBg,    note:"a→ä",
-    ich:"schlafe … aus",du:"schläfst … aus", "er/es/sie":"schläft … aus",
-    wir:"schlafen … aus",ihr:"schlaft … aus","sie/Sie":"schlafen … aus"},
-  mitbringen:{pref:"mit", col:C.purple, bg:C.purpleBg,
-    ich:"bringe … mit", du:"bringst … mit",  "er/es/sie":"bringt … mit",
-    wir:"bringen … mit",ihr:"bringt … mit",  "sie/Sie":"bringen … mit"},
-  einschlafen:{pref:"ein",col:C.green,  bg:C.greenBg,  note:"a→ä",
-    ich:"schlafe … ein",du:"schläfst … ein", "er/es/sie":"schläft … ein",
-    wir:"schlafen … ein",ihr:"schlaft … ein","sie/Sie":"schlafen … ein"},
-  wegfahren: {pref:"weg", col:C.orange, bg:C.orangeBg, note:"a→ä",
-    ich:"fahre … weg",  du:"fährst … weg",   "er/es/sie":"fährt … weg",
-    wir:"fahren … weg", ihr:"fahrt … weg",   "sie/Sie":"fahren … weg"},
-  ausfallen: {pref:"aus", col:C.red,    bg:C.redBg,    note:"a→ä",
-    ich:"falle … aus",  du:"fällst … aus",   "er/es/sie":"fällt … aus",
-    wir:"fallen … aus", ihr:"fallt … aus",   "sie/Sie":"fallen … aus"},
-  stattfinden:{pref:"statt",col:C.teal, bg:C.tealBg,
-    ich:"finde … statt",du:"findest … statt","er/es/sie":"findet … statt",
-    wir:"finden … statt",ihr:"findet … statt","sie/Sie":"finden … statt"},
-};
-
-// ─── Цвета префиксов (shared) ──────────────────────────────────────────────────
-const PREF_COLORS={
-  an:   {col:C.blue,   bg:C.blueBg},
-  auf:  {col:C.orange, bg:C.orangeBg},
-  aus:  {col:C.red,    bg:C.redBg},
-  ein:  {col:C.green,  bg:C.greenBg},
-  mit:  {col:C.purple, bg:C.purpleBg},
-  weg:  {col:C.orange, bg:C.orangeBg},
-  ab:   {col:C.yellow, bg:C.yellowBg},
-  fern: {col:C.teal,   bg:C.tealBg},
-  statt:{col:C.teal,   bg:C.tealBg},
-};
-const PREF_LIST=["statt","fern","aus","auf","ein","mit","weg","an","ab"];
-const getVerbPref=de=>PREF_LIST.find(p=>de.startsWith(p))||"";
-
-// ─── Единый словарь спряжений (для словаря) ───────────────────────────────────
-const KONJ_ALL={
-  ...KONJ_L4B,
-  ...KONJ_L5B,
-  // — haben / sein ——————————————————————————————————————————————————————————————
-  haben:      {col:C.blue,  bg:C.blueBg,   ich:"habe",      du:"hast",       "er/es/sie":"hat",       wir:"haben",    ihr:"habt",     "sie/Sie":"haben"},
-  sein:       {col:C.purple,bg:C.purpleBg, ich:"bin",       du:"bist",       "er/es/sie":"ist",       wir:"sind",     ihr:"seid",     "sie/Sie":"sind",      note:"⚠️ особый"},
-  // — Modalverben ———————————————————————————————————————————————————————————————
-  wollen:     {col:C.red,   bg:C.redBg,    ich:"will",      du:"willst",     "er/es/sie":"will",      wir:"wollen",   ihr:"wollt",    "sie/Sie":"wollen",    note:"ich = er"},
-  können:     {col:C.green, bg:C.greenBg,  ich:"kann",      du:"kannst",     "er/es/sie":"kann",      wir:"können",   ihr:"könnt",    "sie/Sie":"können",    note:"ich = er"},
-  müssen:     {col:C.orange,bg:C.orangeBg, ich:"muss",      du:"musst",      "er/es/sie":"muss",      wir:"müssen",   ihr:"müsst",    "sie/Sie":"müssen",    note:"ich = er"},
-  // — Starke Verben —————————————————————————————————————————————————————————————
-  laufen:     {col:C.purple,bg:C.purpleBg, ich:"laufe",     du:"läufst",     "er/es/sie":"läuft",     wir:"laufen",   ihr:"lauft",    "sie/Sie":"laufen",    note:"a→ä"},
-  // — Schwache Verben ————————————————————————————————————————————————————————————
-  kommen:     {col:C.teal,  bg:C.tealBg,   ich:"komme",     du:"kommst",     "er/es/sie":"kommt",     wir:"kommen",   ihr:"kommt",    "sie/Sie":"kommen"},
-  gehen:      {col:C.teal,  bg:C.tealBg,   ich:"gehe",      du:"gehst",      "er/es/sie":"geht",      wir:"gehen",    ihr:"geht",     "sie/Sie":"gehen"},
-  machen:     {col:C.teal,  bg:C.tealBg,   ich:"mache",     du:"machst",     "er/es/sie":"macht",     wir:"machen",   ihr:"macht",    "sie/Sie":"machen"},
-  lernen:     {col:C.teal,  bg:C.tealBg,   ich:"lerne",     du:"lernst",     "er/es/sie":"lernt",     wir:"lernen",   ihr:"lernt",    "sie/Sie":"lernen"},
-  wohnen:     {col:C.teal,  bg:C.tealBg,   ich:"wohne",     du:"wohnst",     "er/es/sie":"wohnt",     wir:"wohnen",   ihr:"wohnt",    "sie/Sie":"wohnen"},
-  arbeiten:   {col:C.teal,  bg:C.tealBg,   ich:"arbeite",   du:"arbeitest",  "er/es/sie":"arbeitet",  wir:"arbeiten", ihr:"arbeitet", "sie/Sie":"arbeiten",  note:"-e- вставка"},
-  heißen:     {col:C.teal,  bg:C.tealBg,   ich:"heiße",     du:"heißt",      "er/es/sie":"heißt",     wir:"heißen",   ihr:"heißt",    "sie/Sie":"heißen"},
-  kochen:     {col:C.teal,  bg:C.tealBg,   ich:"koche",     du:"kochst",     "er/es/sie":"kocht",     wir:"kochen",   ihr:"kocht",    "sie/Sie":"kochen"},
-  spielen:    {col:C.teal,  bg:C.tealBg,   ich:"spiele",    du:"spielst",    "er/es/sie":"spielt",    wir:"spielen",  ihr:"spielt",   "sie/Sie":"spielen"},
-  trinken:    {col:C.teal,  bg:C.tealBg,   ich:"trinke",    du:"trinkst",    "er/es/sie":"trinkt",    wir:"trinken",  ihr:"trinkt",   "sie/Sie":"trinken"},
-  schreiben:  {col:C.teal,  bg:C.tealBg,   ich:"schreibe",  du:"schreibst",  "er/es/sie":"schreibt",  wir:"schreiben",ihr:"schreibt", "sie/Sie":"schreiben"},
-  reparieren: {col:C.teal,  bg:C.tealBg,   ich:"repariere", du:"reparierst", "er/es/sie":"repariert", wir:"reparieren",ihr:"repariert","sie/Sie":"reparieren"},
-  starten:    {col:C.teal,  bg:C.tealBg,   ich:"starte",    du:"startest",   "er/es/sie":"startet",   wir:"starten",  ihr:"startet",  "sie/Sie":"starten",   note:"-e- вставка"},
-  klingeln:   {col:C.teal,  bg:C.tealBg,   ich:"klingle",   du:"klingelst",  "er/es/sie":"klingelt",  wir:"klingeln", ihr:"klingelt", "sie/Sie":"klingeln"},
-  frühstücken:{col:C.teal,  bg:C.tealBg,   ich:"frühstücke",du:"frühstückst","er/es/sie":"frühstückt",wir:"frühstücken",ihr:"frühstückt","sie/Sie":"frühstücken"},
-  chillen:    {col:C.teal,  bg:C.tealBg,   ich:"chille",    du:"chillst",    "er/es/sie":"chillt",    wir:"chillen",  ihr:"chillt",   "sie/Sie":"chillen"},
-  treffen:    {col:C.orange,bg:C.orangeBg, ich:"treffe",    du:"triffst",    "er/es/sie":"trifft",    wir:"treffen",  ihr:"trefft",   "sie/Sie":"treffen",   note:"e→i"},
 };
 
 const DIALOGE={
@@ -1537,7 +1443,6 @@ function Woerterbuch(){
     {id:"Familie",  label:"👨‍👩‍👧 Familie",   col:C.purple},
     {id:"Adjektive",label:"🎨 Adjektive",  col:C.red},
     {id:"Phrase",   label:"💬 Фразы",      col:C.teal},
-    {id:"Trennbare Verben", label:"✂️ Trennbare Verben", col:C.green},
   ];
   const TYPEN=[
     {id:"all",     label:"Все",           col:C.teal},
@@ -1548,15 +1453,11 @@ function Woerterbuch(){
   const [typ,setTyp]=useState("all");
   const [tema,setTema]=useState("all");
   const [art,setArt]=useState("all");
-  const [selPref,setSelPref]=useState("all");
   const [search,setSearch]=useState("");
   const [sortNew,setSortNew]=useState(true);
-  const [openConj,setOpenConj]=useState(null);
 
-  const changeTyp=(t)=>{setTyp(t);setTema("all");setArt("all");setSelPref("all");};
-  const changeTema=(t)=>{setTema(t);setArt("all");setSelPref("all");};
-  const isTrennbar=tema==="Trennbare Verben";
-  const trennbarPrefs=PREF_LIST.filter(p=>WBDATA.some(w=>w.tema==="Trennbare Verben"&&getVerbPref(w.de)===p));
+  // при смене типа сбрасываем тему
+  const changeTyp=(t)=>{setTyp(t);setTema("all");setArt("all");};
 
   const typFilter=(w)=>{
     if(typ==="all")     return true;
@@ -1588,7 +1489,6 @@ function Woerterbuch(){
     typFilter(w)&&
     (tema==="all"||w.tema===tema)&&
     (art==="all"||w.art===art)&&
-    (selPref==="all"||getVerbPref(w.de)===selPref)&&
     (!search||w.de.toLowerCase().includes(search.toLowerCase())||w.ru.toLowerCase().includes(search.toLowerCase()))
   );
   const list=sortNew?[...listRaw].reverse():listRaw;
@@ -1596,9 +1496,7 @@ function Woerterbuch(){
   const temenOrder=[...TEMEN.slice(1)].reverse();
   const groups=tema==="all"
     ?temenOrder.map(t=>({...t,words:list.filter(w=>w.tema===t.id)})).filter(g=>g.words.length>0)
-    :isTrennbar&&selPref==="all"
-      ?PREF_LIST.filter(p=>trennbarPrefs.includes(p)).map(p=>({id:p,col:PREF_COLORS[p].col,bg:PREF_COLORS[p].bg,label:p+"-",words:list.filter(w=>getVerbPref(w.de)===p)})).filter(g=>g.words.length>0)
-      :[{id:tema,words:list,col:TEMEN.find(t=>t.id===tema)?.col||C.teal}];
+    :[{id:tema,words:list,col:TEMEN.find(t=>t.id===tema)?.col||C.teal}];
 
   const oppMap={};
   const oppTransMap={};
@@ -1626,75 +1524,34 @@ function Woerterbuch(){
     const isAdj=w.art==="";
     const opposite=isAdj?oppMap[w.de]:null;
     const oppRu=opposite?oppTransMap[opposite]:null;
-    const verbPref=w.tema==="Trennbare Verben"?getVerbPref(w.de):"";
-    const pc=verbPref?PREF_COLORS[verbPref]:null;
     if(w.tema==="Phrase")return(
       <div style={{padding:"8px 10px",borderBottom:`1px solid ${C.border}22`,display:"flex",justifyContent:"space-between",alignItems:"center",gap:8}}>
         <span style={{fontSize:13,color:C.teal,fontWeight:600,fontStyle:"italic"}}>{w.de}</span>
         <span style={{fontSize:12,color:C.muted,textAlign:"right"}}>{w.ru}</span>
       </div>
     );
-    const konj=KONJ_ALL[w.de];
-    const isOpen=openConj===w.de;
-    const hiCell=(p)=>konj?.note&&konj.note.includes("→")&&(p==="du"||p==="er/es/sie");
     return(
-      <div style={{borderBottom:`1px solid ${C.border}22`}}>
-        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:4,
-          padding:"7px 8px",alignItems:"center",
-          cursor:konj?"pointer":"default",
-          background:isOpen?konj.col+"11":"transparent"}}
-          onClick={konj?()=>setOpenConj(isOpen?null:w.de):undefined}>
-          <div style={{display:"flex",alignItems:"center",gap:5}}>
-            {pc
-              ?<span style={{background:pc.bg,border:`1px solid ${pc.col}55`,color:pc.col,
-                  borderRadius:5,padding:"1px 5px",fontWeight:800,fontSize:11,flexShrink:0}}>{verbPref}-</span>
-              :w.art&&<span style={{background:AB(w.art),border:`1px solid ${AC(w.art)}55`,color:AC(w.art),
-                  borderRadius:5,padding:"1px 5px",fontWeight:800,fontSize:11,flexShrink:0}}>{w.art}</span>
-            }
-            <span style={{fontSize:13,fontWeight:600,
-              color:konj?(isOpen?konj.col:C.text):C.text,
-              textDecoration:konj?"underline dotted":"none",
-              textDecorationColor:konj?konj.col+"88":"transparent",
-              textUnderlineOffset:3}}>{w.de}</span>
-            {konj&&<span style={{fontSize:10,color:konj.col,marginLeft:1,opacity:0.8}}>{isOpen?"▲":"▾"}</span>}
-          </div>
-          <div style={{fontSize:13}}>
-            {isAdj&&opposite
-              ?<span style={{color:C.orange,fontWeight:700}}>≠ {opposite}</span>
-              :end===""
-                ?<span style={{color:C.muted}}>{stem||w.pl}</span>
-                :<><span style={{color:C.muted}}>{stem}</span><span style={{color:C.green,fontWeight:800}}>{end}</span></>
-            }
-          </div>
-          <div style={{fontSize:12,lineHeight:1.3,overflowWrap:"break-word",wordBreak:"break-word"}}>
-            {isAdj
-              ?<><span style={{color:C.text}}>{w.ru}</span>{oppRu&&<span style={{color:C.orange}}> / {oppRu}</span>}</>
-              :<RuText ru={w.ru} style={{color:C.text}}/>
-            }
-          </div>
+      <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:4,
+        padding:"7px 8px",borderBottom:`1px solid ${C.border}22`,alignItems:"center"}}>
+        <div style={{display:"flex",alignItems:"center",gap:5}}>
+          {w.art&&<span style={{background:AB(w.art),border:`1px solid ${AC(w.art)}55`,color:AC(w.art),
+            borderRadius:5,padding:"1px 5px",fontWeight:800,fontSize:11,flexShrink:0}}>{w.art}</span>}
+          <span style={{fontSize:13,color:C.text,fontWeight:600}}>{w.de}</span>
         </div>
-        {konj&&isOpen&&(
-          <div style={{background:konj.col+"0d",padding:"8px 10px",borderTop:`1px solid ${konj.col}22`}}>
-            <div style={{display:"flex",alignItems:"center",gap:6,marginBottom:8}}>
-              <span style={{background:konj.col+"22",border:`1px solid ${konj.col}55`,color:konj.col,
-                borderRadius:6,padding:"2px 10px",fontSize:12,fontWeight:800}}>{w.de}</span>
-              {konj.pref&&<span style={{fontSize:11,color:C.muted}}>отделяемая приставка: <b style={{color:konj.col}}>{konj.pref}-</b></span>}
-              {konj.note&&<span style={{fontSize:11,color:C.orange}}>⚡ {konj.note}</span>}
-            </div>
-            <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:5}}>
-              {[["ich",konj.ich],["wir",konj.wir],["du",konj.du],["ihr",konj.ihr],["er/es/sie",konj["er/es/sie"]],["sie/Sie",konj["sie/Sie"]]].map(([p,f])=>{
-                const hi=hiCell(p);
-                return(
-                  <div key={p} style={{background:hi?konj.bg:C.card2,
-                    border:`1px solid ${hi?konj.col+"55":C.border}`,borderRadius:7,padding:"5px 8px"}}>
-                    <div style={{fontSize:10,color:hi?konj.col:C.muted,marginBottom:1}}>{p}</div>
-                    <div style={{color:hi?konj.col:C.text,fontWeight:700,fontSize:13}}>{f}</div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        )}
+        <div style={{fontSize:13}}>
+          {isAdj&&opposite
+            ?<span style={{color:C.orange,fontWeight:700}}>≠ {opposite}</span>
+            :end===""
+              ?<span style={{color:C.muted}}>{stem||w.pl}</span>
+              :<><span style={{color:C.muted}}>{stem}</span><span style={{color:C.green,fontWeight:800}}>{end}</span></>
+          }
+        </div>
+        <div style={{fontSize:12,lineHeight:1.3,overflowWrap:"break-word",wordBreak:"break-word"}}>
+          {isAdj
+            ?<><span style={{color:C.text}}>{w.ru}</span>{oppRu&&<span style={{color:C.orange}}> / {oppRu}</span>}</>
+            :<RuText ru={w.ru} style={{color:C.muted}}/>
+          }
+        </div>
       </div>
     );
   };
@@ -1721,7 +1578,7 @@ function Woerterbuch(){
     </div>
   );
 
-  const showArtFilter=(typ==="all"||typ==="Nomen")&&!isTrennbar;
+  const showArtFilter=typ==="all"||typ==="Nomen";
   const isAdj=typ==="Adjektiv"||(tema==="Adjektive"&&typ==="all");
 
   return(
@@ -1750,7 +1607,7 @@ function Woerterbuch(){
       {typ!=="recent"&&(
       <div style={{display:"flex",gap:6,overflowX:"auto",paddingBottom:4,marginBottom:8,scrollbarWidth:"none"}}>
         {availableTemen.map(t=>(
-          <button key={t.id} onClick={()=>changeTema(t.id)}
+          <button key={t.id} onClick={()=>setTema(t.id)}
             style={{flexShrink:0,padding:"5px 12px",borderRadius:20,fontWeight:600,fontSize:12,cursor:"pointer",
               border:`1.5px solid ${tema===t.id?t.col:C.border}`,
               background:tema===t.id?t.col+"22":C.card,
@@ -1774,22 +1631,6 @@ function Woerterbuch(){
           ))}
         </div>
       )}
-      {/* ── Фильтр по префиксу (только Trennbare Verben) ── */}
-      {isTrennbar&&typ!=="recent"&&(
-        <div style={{display:"flex",gap:5,marginBottom:8,overflowX:"auto",paddingBottom:2,scrollbarWidth:"none"}}>
-          {[{id:"all",label:"Все",col:C.teal,bg:C.tealBg},
-            ...trennbarPrefs.map(p=>({id:p,label:p+"-",...PREF_COLORS[p]}))
-          ].map(p=>(
-            <button key={p.id} onClick={()=>setSelPref(p.id)}
-              style={{flexShrink:0,padding:"5px 12px",borderRadius:9,fontWeight:700,fontSize:13,cursor:"pointer",
-                border:`1.5px solid ${selPref===p.id?p.col:C.border}`,
-                background:selPref===p.id?p.bg:C.card,
-                color:selPref===p.id?p.col:C.muted}}>
-              {p.label}
-            </button>
-          ))}
-        </div>
-      )}
       {/* ── Сортировка (всегда) ── */}
       <div style={{display:"flex",justifyContent:"flex-end",marginBottom:8}}>
         <button onClick={()=>setSortNew(s=>!s)}
@@ -1809,7 +1650,7 @@ function Woerterbuch(){
       )}
 
       {/* ══ ПОСЛЕДНИЕ ══ */}
-      {typ==="all"&&tema==="all"&&art==="all"&&selPref==="all"&&(
+      {typ==="all"&&tema==="all"&&(
         <div style={{background:C.card,border:`1px solid ${C.teal}35`,borderRadius:12,overflow:"hidden"}}>
           <div style={{background:C.teal+"15",padding:"8px 12px",borderBottom:`1px solid ${C.teal}25`}}>
             <span style={{fontSize:12,color:C.teal,fontWeight:700}}>🆕 Все слова · новые сначала</span>
@@ -1823,14 +1664,12 @@ function Woerterbuch(){
           {dedupeAdj(recentWords,!!search).map((w,i)=><WRow key={w.de+w.tema+i} w={w}/>)}
         </div>
       )}
-      {!(typ==="all"&&tema==="all"&&art==="all"&&selPref==="all")&&<div style={{display:"flex",flexDirection:"column",gap:8}}>
+      {!(typ==="all"&&tema==="all")&&<div style={{display:"flex",flexDirection:"column",gap:8}}>
         {groups.map(g=>(
           <div key={g.id} style={{background:C.card,border:`1px solid ${g.col}35`,borderRadius:12,overflow:"hidden"}}>
-            {(tema==="all"||(isTrennbar&&selPref==="all"))&&(
+            {(tema==="all")&&(
               <div style={{background:g.col+"15",padding:"6px 10px",borderBottom:`1px solid ${g.col}25`}}>
-                <span style={{fontSize:12,color:g.col,fontWeight:700}}>
-                  {tema==="all"?TEMEN.find(t=>t.id===g.id)?.label:g.label}
-                </span>
+                <span style={{fontSize:12,color:g.col,fontWeight:700}}>{TEMEN.find(t=>t.id===g.id)?.label}</span>
                 <span style={{fontSize:11,color:C.muted,marginLeft:8}}>{g.words.length} слов</span>
               </div>
             )}
@@ -4123,15 +3962,8 @@ function T5B(){
     {inf:"ausgehen",   pref:"aus", stem:"gehen",   ich:"gehe ... aus",   er:"geht ... aus",   ru:"выходить"},
     {inf:"fernsehen",  pref:"fern",stem:"sehen",   ich:"sehe ... fern",  er:"sieht ... fern", ru:"смотреть ТВ"},
     {inf:"abspülen",   pref:"ab",  stem:"spülen",  ich:"spüle ... ab",   er:"spült ... ab",   ru:"мыть посуду"},
-    {inf:"einladen",   pref:"ein", stem:"laden",   ich:"lade ... ein",   er:"lädt ... ein",   ru:"пригласить"},
-    {inf:"ausschlafen",pref:"aus", stem:"schlafen",ich:"schlafe ... aus", er:"schläft ... aus",ru:"выспаться"},
-    {inf:"mitbringen", pref:"mit", stem:"bringen", ich:"bringe ... mit",  er:"bringt ... mit", ru:"принести с собой"},
-    {inf:"einschlafen",pref:"ein", stem:"schlafen",ich:"schlafe ... ein", er:"schläft ... ein",ru:"заснуть"},
-    {inf:"wegfahren",  pref:"weg", stem:"fahren",  ich:"fahre ... weg",   er:"fährt ... weg",  ru:"уехать"},
-    {inf:"ausfallen",  pref:"aus", stem:"fallen",  ich:"falle ... aus",   er:"fällt ... aus",  ru:"отменяться"},
-    {inf:"stattfinden",pref:"statt",stem:"finden", ich:"finde ... statt", er:"findet ... statt",ru:"состояться"},
   ];
-  const prefColors={an:C.blue, auf:C.orange, ein:C.green, mit:C.purple, aus:C.red, fern:C.teal, ab:C.yellow, weg:C.orange, statt:C.teal};
+  const prefColors={an:C.blue, auf:C.orange, ein:C.green, mit:C.purple, aus:C.red, fern:C.teal, ab:C.yellow};
   return (
     <div>
       <Box icon="✂️" title="B · Trennbare Verben" sub="Глаголы с отделяемым префиксом">
@@ -4168,8 +4000,6 @@ function T5B(){
             {pref:"mit-", col:C.purple, ru:"вместе, с собой"},
             {pref:"ab-",  col:C.yellow, ru:"от, вниз, завершение"},
             {pref:"fern-",col:C.teal,   ru:"на расстоянии"},
-            {pref:"weg-", col:C.orange, ru:"прочь, в сторону"},
-            {pref:"statt-",col:C.teal,  ru:"зафиксированный (stattfinden)"},
           ].map(({pref,col,ru})=>(
             <div key={pref} style={{display:"flex",alignItems:"center",gap:10,background:C.card2,borderRadius:8,padding:"6px 12px"}}>
               <span style={{background:col+"33",color:col,borderRadius:6,padding:"2px 8px",fontWeight:800,fontSize:12,minWidth:40,textAlign:"center"}}>{pref}</span>
@@ -4288,6 +4118,31 @@ function T5C(){
           ))}
         </div>
 
+        <div style={{background:C.card2,borderRadius:10,padding:"10px 14px"}}>
+          <div style={{fontWeight:700,fontSize:13,color:C.blue,marginBottom:8}}>🕐 Части суток</div>
+          {[
+            {name:"der Morgen",   adv:"morgens",     prep:"am",     time:"6–9",  col:"#f59e0b", note:"утро"},
+            {name:"der Vormittag",adv:"vormittags",  prep:"am",     time:"9–12", col:"#f97316", note:"до полудня"},
+            {name:"der Mittag",   adv:"mittags",     prep:"am",     time:"12–14",col:"#ef4444", note:"полдень"},
+            {name:"der Nachmittag",adv:"nachmittags",prep:"am",     time:"14–18",col:"#8b5cf6", note:"после полудня"},
+            {name:"der Abend",    adv:"abends",      prep:"am",     time:"18–22",col:"#3b82f6", note:"вечер"},
+            {name:"die Nacht",    adv:"nachts",      prep:"in der", time:"22–6", col:"#1e40af", note:"ночь ⚠️ in der"},
+          ].map(({name,adv,prep,time,col,note})=>(
+            <div key={name} style={{display:"grid",gridTemplateColumns:"1fr auto auto auto",
+              gap:6,alignItems:"center",padding:"6px 0",
+              borderBottom:`1px solid ${C.border}22`}}>
+              <div>
+                <span style={{fontSize:13,fontWeight:700,color:C.text}}>{name.split(" ")[1]}</span>
+                <span style={{fontSize:11,color:C.muted,marginLeft:5}}>{note}</span>
+              </div>
+              <span style={{background:col+"22",border:`1px solid ${col}55`,color:col,
+                borderRadius:5,padding:"1px 7px",fontSize:11,fontWeight:700,whiteSpace:"nowrap"}}>{prep}</span>
+              <span style={{fontSize:12,color:C.muted,whiteSpace:"nowrap"}}>{adv}</span>
+              <span style={{fontSize:11,color:C.muted,whiteSpace:"nowrap"}}>{time} Uhr</span>
+            </div>
+          ))}
+        </div>
+
         <div style={{background:C.card2,borderRadius:10,padding:"10px 14px",marginBottom:12}}>
           <div style={{fontWeight:700,fontSize:13,color:C.teal,marginBottom:8}}>🗓 Составные выражения времени</div>
           <div style={{fontSize:12,color:C.muted,marginBottom:8}}>am + день + часть дня = одно слово:</div>
@@ -4321,78 +4176,6 @@ function T5C(){
               </div>
             ))}
           </div>
-        </div>
-
-        <div style={{background:C.card2,borderRadius:10,padding:"10px 14px",marginTop:12}}>
-          <div style={{fontWeight:700,fontSize:13,color:C.purple,marginBottom:4}}>📐 Порядок слов с Zeitangaben</div>
-          <div style={{fontSize:12,color:C.muted,marginBottom:10}}>
-            Глагол всегда на <span style={{color:C.orange,fontWeight:700}}>позиции 2</span>. Начало предложения меняет порядок, но не смысл.
-          </div>
-
-          {/* Легенда */}
-          <div style={{display:"flex",flexWrap:"wrap",gap:5,marginBottom:6}}>
-            {[["am …",C.green,"Tag / Teil"],["um …",C.teal,"Uhrzeit"],["Verb",C.orange,"P2 — всегда"],["Subj.",C.blue,"подлежащее"]].map(([l,col,hint])=>(
-              <div key={l} style={{display:"flex",alignItems:"center",gap:4}}>
-                <span style={{background:col+"22",border:`1px solid ${col}55`,color:col,
-                  borderRadius:5,padding:"1px 7px",fontSize:11,fontWeight:700}}>{l}</span>
-                <span style={{fontSize:10,color:C.muted}}>{hint}</span>
-              </div>
-            ))}
-          </div>
-
-          {/* Правило порядка Tag → Uhrzeit */}
-          <div style={{background:C.bg,borderRadius:8,padding:"7px 10px",marginBottom:10,
-            borderLeft:`3px solid ${C.purple}`}}>
-            <span style={{fontSize:11,color:C.purple,fontWeight:700}}>💡 Порядок: </span>
-            <span style={{fontSize:11,color:C.muted}}>сначала </span>
-            <span style={{fontSize:11,color:C.green,fontWeight:700}}>Tag (am)</span>
-            <span style={{fontSize:11,color:C.muted}}>, потом </span>
-            <span style={{fontSize:11,color:C.teal,fontWeight:700}}>Uhrzeit (um)</span>
-            <span style={{fontSize:11,color:C.muted}}> — от общего к конкретному: </span>
-            <span style={{fontSize:11,color:C.text,fontWeight:600}}>am Montag um 9 Uhr ✓</span>
-          </div>
-
-          {[
-            {
-              label:"Вариант 1 · Tag в начале",col:C.green,
-              note:"Tag → V(P2) → Subj. → Uhrzeit → …",
-              words:[["Am Samstag",C.green],["gehen",C.orange],["wir",C.blue],["um 14 Uhr",C.teal],["spazieren.",C.muted]],
-            },
-            {
-              label:"Вариант 2 · Подлежащее в начале",col:C.blue,
-              note:"Subj. → V(P2) → Uhrzeit → Tag → …",
-              words:[["Wir",C.blue],["gehen",C.orange],["um 14 Uhr",C.teal],["am Samstag",C.green],["spazieren.",C.muted]],
-            },
-          ].map(({label,col,note,words})=>(
-            <div key={label} style={{background:C.bg,borderRadius:8,padding:"8px 10px",marginBottom:6}}>
-              <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:6}}>
-                <span style={{fontSize:11,color:col,fontWeight:700}}>{label}</span>
-                <span style={{fontSize:10,color:C.muted,fontStyle:"italic"}}>{note}</span>
-              </div>
-              <div style={{display:"flex",flexWrap:"wrap",gap:4}}>
-                {words.map(([w,c])=>(
-                  <span key={w} style={{background:c+"22",border:`1px solid ${c}44`,color:c,
-                    borderRadius:6,padding:"3px 8px",fontWeight:700,fontSize:13}}>{w}</span>
-                ))}
-              </div>
-            </div>
-          ))}
-
-          {/* Ещё примеры */}
-          <div style={{fontSize:11,color:C.muted,fontWeight:700,marginTop:8,marginBottom:5}}>Ещё примеры:</div>
-          {[
-            [["Am Montagvormittag",C.green],["lernt",C.orange],["Frau Joona",C.blue],["Deutsch.",C.muted]],
-            [["Frau Joona",C.blue],["lernt",C.orange],["am Montagvormittag",C.green],["Deutsch.",C.muted]],
-            [["Um 18 Uhr",C.teal],["rufe",C.orange],["ich",C.blue],["die Mutter",C.muted],["an.",C.muted]],
-            [["Ich",C.blue],["rufe",C.orange],["um 18 Uhr",C.teal],["die Mutter",C.muted],["an.",C.muted]],
-          ].map((words,i)=>(
-            <div key={i} style={{display:"flex",flexWrap:"wrap",gap:3,marginBottom:4,
-              paddingLeft:8,borderLeft:`2px solid ${i%2===0?C.green:C.blue}`}}>
-              {words.map(([w,c])=>(
-                <span key={w} style={{color:c,fontWeight:c===C.muted?400:600,fontSize:12}}>{w}</span>
-              ))}
-            </div>
-          ))}
         </div>
       </Box>
     </div>
