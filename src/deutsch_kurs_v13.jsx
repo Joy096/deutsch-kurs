@@ -562,6 +562,28 @@ const WBDATA=[
   {art:"die",de:"Fahrkarte",         pl:"Fahrkarten",   ru:"транспортный билет",      tema:"Alltag"},
   {art:"der",de:"Zahnarzttermin",    pl:"Zahnarzttermine",ru:"визит к стоматологу",   tema:"Alltag"},
   {art:"",   de:"heute Abend",       pl:"—",            ru:"сегодня вечером",         tema:"Alltag"},
+  // ── Lektion 6 · Lebensmittel und Getränke ────────────────────────────────────
+  {art:"der",de:"Apfel",             pl:"Äpfel",        ru:"яблоко",                  tema:"Lebensmittel"},
+  {art:"die",de:"Banane",            pl:"Bananen",      ru:"банан",                   tema:"Lebensmittel"},
+  {art:"das",de:"Brot",              pl:"Brote",        ru:"хлеб",                    tema:"Lebensmittel"},
+  {art:"die",de:"Butter",            pl:"—",            ru:"масло (сливочное)",       tema:"Lebensmittel"},
+  {art:"das",de:"Hähnchen",          pl:"Hähnchen",     ru:"курица (целая)",          tema:"Lebensmittel"},
+  {art:"der",de:"Joghurt",           pl:"Joghurts",     ru:"йогурт",                  tema:"Lebensmittel"},
+  {art:"der",de:"Kaffee",            pl:"Kaffees",      ru:"кофе",                    tema:"Lebensmittel"},
+  {art:"die",de:"Kartoffel",         pl:"Kartoffeln",   ru:"картофель",               tema:"Lebensmittel"},
+  {art:"der",de:"Käse",              pl:"—",            ru:"сыр",                     tema:"Lebensmittel"},
+  {art:"die",de:"Milch",             pl:"—",            ru:"молоко",                  tema:"Lebensmittel"},
+  {art:"die",de:"Nudel",             pl:"Nudeln",       ru:"макароны",                tema:"Lebensmittel"},
+  {art:"der",de:"Reis",              pl:"—",            ru:"рис",                     tema:"Lebensmittel"},
+  {art:"der",de:"Salat",             pl:"Salate",       ru:"салат",                   tema:"Lebensmittel"},
+  {art:"die",de:"Schokolade",        pl:"—",            ru:"шоколад",                 tema:"Lebensmittel"},
+  {art:"der",de:"Tee",               pl:"Tees",         ru:"чай",                     tema:"Lebensmittel"},
+  {art:"der",de:"Fisch",             pl:"Fische",       ru:"рыба",                    tema:"Lebensmittel"},
+  {art:"die",de:"Tomate",            pl:"Tomaten",      ru:"помидор",                 tema:"Lebensmittel"},
+  {art:"das",de:"Wasser",            pl:"—",            ru:"вода",                    tema:"Lebensmittel"},
+  {art:"der",de:"Wein",              pl:"Weine",        ru:"вино",                    tema:"Lebensmittel"},
+  {art:"die",de:"Wurst",             pl:"Würste",       ru:"колбаса",                 tema:"Lebensmittel"},
+  {art:"die",de:"Zwiebel",           pl:"Zwiebeln",     ru:"лук",                     tema:"Lebensmittel"},
 ];
 
 
@@ -1031,6 +1053,17 @@ const DIALOGE={
       {q:"Wann gehst du aus?",                a:"Ich gehe am Freitagabend aus.",                             note:"ausgehen = выходить гулять · am Freitagabend"},
       {q:"Wie lange dauert der Kurs?",        a:"Der Kurs dauert zwei Stunden.",                             note:"dauern = длиться · die Stunde = час"},
       {q:"Was macht Frau Costa am Samstag?",  a:"Sie steht auf, kauft ein, räumt auf und geht aus.",        note:"trennbare Verben в цепочке"},
+    ]},
+  ],
+  L6:[
+    {tag:"Основные",col:C.green,pairs:[
+      {q:"Was essen Sie gerne?",              a:"Ich esse gerne Brot mit Käse. / Ich mag Fisch.",            note:"essen = есть (еду) · mögen = любить"},
+      {q:"Was trinken Sie gerne?",            a:"Ich trinke gerne Kaffee. / Ich trinke am liebsten Wasser.", note:"trinken = пить · am liebsten = больше всего"},
+      {q:"Wie oft essen Sie Fleisch?",        a:"Ich esse oft Hähnchen. / Ich esse selten Fleisch.",         note:"wie oft? = как часто? · selten = редко"},
+    ]},
+    {tag:"Дополнительные",col:C.teal,pairs:[
+      {q:"Kaufen Sie oft im Supermarkt ein?", a:"Ja, ich kaufe jeden Tag ein. / Manchmal gehe ich auf den Markt.", note:"der Supermarkt · manchmal = иногда"},
+      {q:"Was kaufen Sie auf dem Markt?",     a:"Ich kaufe frisches Gemüse und Obst.",                      note:"das Gemüse = овощи · das Obst = фрукты"},
     ]},
   ],
 };
@@ -1564,6 +1597,7 @@ function Woerterbuch(){
     {id:"Adjektive",label:"🎨 Adjektive",  col:C.red},
     {id:"Phrase",   label:"💬 Фразы",      col:C.teal},
     {id:"Trennbare Verben",label:"✂️ Trennbare Verben",col:C.green},
+    {id:"Lebensmittel",   label:"🍎 Lebensmittel",    col:C.green},
   ];
   const TYPEN=[
     {id:"all",     label:"Все",           col:C.teal},
@@ -4429,6 +4463,74 @@ function T5D(){
   );
 }
 
+function T6A(){
+  const foods=[
+    {art:"der",de:"Apfel",      pl:"Äpfel",     ru:"яблоко"},
+    {art:"die",de:"Banane",     pl:"Bananen",   ru:"банан"},
+    {art:"das",de:"Brot",       pl:"Brote",     ru:"хлеб"},
+    {art:"die",de:"Butter",     pl:"—",         ru:"масло"},
+    {art:"das",de:"Hähnchen",   pl:"Hähnchen",  ru:"курица"},
+    {art:"der",de:"Joghurt",    pl:"Joghurts",  ru:"йогурт"},
+    {art:"der",de:"Kaffee",     pl:"Kaffees",   ru:"кофе"},
+    {art:"die",de:"Kartoffel",  pl:"Kartoffeln",ru:"картофель"},
+    {art:"der",de:"Käse",       pl:"—",         ru:"сыр"},
+    {art:"die",de:"Milch",      pl:"—",         ru:"молоко"},
+    {art:"die",de:"Nudel",      pl:"Nudeln",    ru:"макароны"},
+    {art:"der",de:"Reis",       pl:"—",         ru:"рис"},
+    {art:"der",de:"Salat",      pl:"Salate",    ru:"салат"},
+    {art:"die",de:"Schokolade", pl:"—",         ru:"шоколад"},
+    {art:"der",de:"Tee",        pl:"Tees",      ru:"чай"},
+    {art:"der",de:"Fisch",      pl:"Fische",    ru:"рыба"},
+    {art:"die",de:"Tomate",     pl:"Tomaten",   ru:"помидор"},
+    {art:"das",de:"Wasser",     pl:"—",         ru:"вода"},
+    {art:"der",de:"Wein",       pl:"Weine",     ru:"вино"},
+    {art:"die",de:"Wurst",      pl:"Würste",    ru:"колбаса"},
+    {art:"die",de:"Zwiebel",    pl:"Zwiebeln",  ru:"лук"},
+  ];
+  const AC6=(a)=>a==="der"?C.blue:a==="die"?C.red:C.orange;
+  const AB6=(a)=>a==="der"?C.blueBg:a==="die"?C.redBg:C.orangeBg;
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:12}}>
+      <Box c={C.green}>
+        <H c={C.green}>🍎 A · Lebensmittel und Getränke</H>
+        <div style={{fontSize:12,color:C.muted,marginBottom:12}}>
+          Essen und Trinken — 21 Wort. Нажми на глагол essen/trinken в словаре чтобы увидеть спряжение.
+        </div>
+        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:6}}>
+          {foods.map(({art,de,pl,ru})=>(
+            <div key={de} style={{background:C.card2,borderRadius:8,padding:"7px 10px",
+              borderLeft:`3px solid ${AC6(art)}`}}>
+              <div style={{display:"flex",alignItems:"center",gap:4,marginBottom:2}}>
+                <span style={{background:AB6(art),color:AC6(art),
+                  borderRadius:4,padding:"0px 5px",fontSize:10,fontWeight:800}}>{art}</span>
+                <span style={{fontSize:13,fontWeight:700,color:C.text}}>{de}</span>
+              </div>
+              <div style={{fontSize:11,color:C.muted}}>{pl!=="—"?pl:"(нет мн.ч.)"}</div>
+              <div style={{fontSize:12,color:C.text}}>{ru}</div>
+            </div>
+          ))}
+        </div>
+
+        {/* Häufigkeit */}
+        <div style={{background:C.card2,borderRadius:10,padding:"10px 14px",marginTop:12}}>
+          <div style={{fontWeight:700,fontSize:13,color:C.orange,marginBottom:8}}>📊 Häufigkeit — Частота</div>
+          <div style={{display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:6,textAlign:"center"}}>
+            {[["nie","никогда",C.red],["selten","редко",C.orange],["manchmal","иногда",C.yellow],["oft","часто",C.green]].map(([w,ru,col])=>(
+              <div key={w} style={{background:col+"18",border:`1px solid ${col}44`,borderRadius:8,padding:"6px 4px"}}>
+                <div style={{fontSize:13,fontWeight:800,color:col}}>{w}</div>
+                <div style={{fontSize:10,color:C.muted}}>{ru}</div>
+              </div>
+            ))}
+          </div>
+          <div style={{fontSize:12,color:C.muted,marginTop:8}}>
+            Ich esse <span style={{color:C.green,fontWeight:700}}>oft</span> Brot. · Ich trinke <span style={{color:C.red,fontWeight:700}}>nie</span> Wein.
+          </div>
+        </div>
+      </Box>
+    </div>
+  );
+}
+
 const LEKTIONEN=[
   {
     id:"L1",num:"1",title:"Willkommen!",
@@ -4499,6 +4601,15 @@ const LEKTIONEN=[
       {id:"5b",  icon:"✂️",title:"B · Was macht Frau Costa?",sub:"Trennbare Verben: auf-, ein-, an-, aus-", time:"8 мин", col:C.blue,  hasT:true,  th:()=><T5B/>, ex:()=><Quiz questions={Q_L5B}/>},
       {id:"5c",  icon:"📅",title:"C · Meine Woche",          sub:"am · um · von...bis · Zeitangaben",      time:"6 мин", col:C.green, hasT:true,  th:()=><T5C/>, ex:()=><Quiz questions={Q_L5C}/>},
       {id:"5d",  icon:"📞",title:"D · Hast du Zeit?",         sub:"Verabredung · gehen + Infinitiv",        time:"5 мин", col:C.red,   hasT:true,  th:()=><T5D/>, ex:null},
+    ]
+  },
+  {
+    id:"L6",num:"6",title:"Guten Appetit!",
+    sub:"A Lebensmittel · ...",
+    date:"Seite 64–...",col:C.green,
+    sections:[
+      {id:"d6",  icon:"💬",title:"Dialogfragen L6",           sub:"Фразы для диалога",                      time:"∞",     col:C.teal,  hasT:false, th:null,         ex:()=><DialogCards lId="L6"/>},
+      {id:"6a",  icon:"🍎",title:"A · Lebensmittel",          sub:"Essen und Trinken · Häufigkeit",          time:"5 мин", col:C.green, hasT:true,  th:()=><T6A/>, ex:null},
     ]
   },
 ];
