@@ -4454,64 +4454,100 @@ function T5D(){
 
         {/* sich verabreden — таблица */}
         <div style={{background:C.card2,borderRadius:10,overflow:"hidden"}}>
-          <div style={{padding:"8px 10px",fontWeight:700,fontSize:13,color:C.red,
-            borderBottom:`1px solid ${C.border}22`}}>
-            📞 Sich verabreden
-            <span style={{fontSize:10,color:C.muted,fontWeight:400,marginLeft:6}}>— нажми на фразу для перевода</span>
+          <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",
+            background:C.red+"22",borderBottom:`1px solid ${C.border}33`}}>
+            <div style={{padding:"6px 10px",fontSize:11,color:C.red,fontWeight:700,
+              borderRight:`1px solid ${C.border}33`}}>📋 ВОПРОСЫ</div>
+            <div style={{padding:"6px 10px",fontSize:11,color:C.red,fontWeight:700}}>💬 ОТВЕТЫ</div>
           </div>
+          <div style={{display:"grid",gridTemplateColumns:"1fr 1fr"}}>
 
-          {/* Вопросы */}
-          <div style={{background:C.blue+"0d",padding:"5px 10px 2px",fontSize:10,
-            color:C.blue,fontWeight:700,borderBottom:`1px solid ${C.border}22`}}>
-            ВОПРОСЫ / ПРЕДЛОЖЕНИЯ
-          </div>
-          {[
-            ["q1","Spielen wir zusammen Schach?",    "Сыграем вместе в шахматы?"],
-            ["q2","Gehen wir zusammen schwimmen?",   "Пойдём вместе плавать?"],
-            ["q3","Gehen wir am Samstag ins Kino?",  "Пойдём в субботу в кино?"],
-            ["q4","Hast du heute Abend Zeit?",       "У тебя есть время сегодня вечером?"],
-            ["q5","Hast du am Mittwoch Zeit?",       "У тебя есть время в среду?"],
-            ["q6","Was meinst du?",                  "Что думаешь? Как тебе?"],
-          ].map(([id,de,ru])=><PhraseRow key={id} id={id} de={de} ru={ru}/>)}
+            {/* Левая — вопросы */}
+            <div style={{borderRight:`1px solid ${C.border}33`}}>
+              {[
+                ["q1","Spielen wir zusammen Schach?",   "Сыграем в шахматы?"],
+                ["q2","Gehen wir zusammen schwimmen?",  "Пойдём плавать?"],
+                ["q3","Gehen wir ins Kino?",            "Пойдём в кино?"],
+                ["q4","Hast du heute Abend Zeit?",      "Есть время сегодня вечером?"],
+                ["q5","Hast du am Mittwoch Zeit?",      "Есть время в среду?"],
+                ["q6","Was meinst du?",                 "Что думаешь?"],
+              ].map(([id,de,ru])=>(
+                <div key={id} onClick={()=>toggle(id)}
+                  style={{padding:"6px 8px",borderBottom:`1px solid ${C.border}22`,
+                    cursor:"pointer",background:openTr===id?C.bg:"transparent",
+                    minHeight:36}}>
+                  <div style={{display:"flex",justifyContent:"space-between",gap:4}}>
+                    <span style={{fontSize:11,fontWeight:600,color:C.text,lineHeight:1.3}}>{de}</span>
+                    <span style={{fontSize:9,color:C.muted,flexShrink:0}}>{openTr===id?"▲":"▾"}</span>
+                  </div>
+                  {openTr===id&&<div style={{fontSize:10,color:C.muted,marginTop:2}}>{ru}</div>}
+                </div>
+              ))}
+            </div>
 
-          {/* ✅ Согласие */}
-          <div style={{background:C.green+"18",padding:"5px 10px 2px",fontSize:10,
-            color:C.green,fontWeight:700,borderBottom:`1px solid ${C.border}22`,
-            borderTop:`1px solid ${C.border}33`}}>
-            ✅ СОГЛАСИЕ
-          </div>
-          {[
-            ["y1","Ja, gerne.",          "Да, с удовольствием."],
-            ["y2","Sehr gerne.",         "С большим удовольствием."],
-            ["y3","Ja, das geht.",       "Да, подходит."],
-            ["y4","Ja, natürlich!",      "Да, конечно!"],
-          ].map(([id,de,ru])=><PhraseRow key={id} id={id} de={de} ru={ru} col={C.green}/>)}
+            {/* Правая — ответы */}
+            <div>
+              <div style={{background:C.green+"22",padding:"3px 8px",fontSize:10,
+                color:C.green,fontWeight:700,borderBottom:`1px solid ${C.border}22`}}>✅ Согласие</div>
+              {[
+                ["y1","Ja, gerne.",     "Да, с удовольствием."],
+                ["y2","Sehr gerne.",    "С большим удовольствием."],
+                ["y3","Ja, das geht.", "Да, подходит."],
+                ["y4","Ja, natürlich!","Да, конечно!"],
+              ].map(([id,de,ru])=>(
+                <div key={id} onClick={()=>toggle(id)}
+                  style={{padding:"5px 8px",borderBottom:`1px solid ${C.border}22`,
+                    cursor:"pointer",background:openTr===id?C.bg:"transparent",minHeight:30}}>
+                  <div style={{display:"flex",justifyContent:"space-between",gap:4}}>
+                    <span style={{fontSize:11,fontWeight:600,color:C.green,lineHeight:1.3}}>{de}</span>
+                    <span style={{fontSize:9,color:C.muted,flexShrink:0}}>{openTr===id?"▲":"▾"}</span>
+                  </div>
+                  {openTr===id&&<div style={{fontSize:10,color:C.muted,marginTop:2}}>{ru}</div>}
+                </div>
+              ))}
 
-          {/* 🔄 Альтернатива */}
-          <div style={{background:C.orange+"18",padding:"5px 10px 2px",fontSize:10,
-            color:C.orange,fontWeight:700,borderBottom:`1px solid ${C.border}22`,
-            borderTop:`1px solid ${C.border}33`}}>
-            🔄 АЛЬТЕРНАТИВА
-          </div>
-          {[
-            ["a1","Geht es auch später?",   "Можно попозже?"],
-            ["a2","Geht es auch morgen?",   "Можно завтра?"],
-            ["a3","Wie ist es am Freitag?", "Как насчёт пятницы?"],
-            ["a4","Um wie viel Uhr?",       "В котором часу?"],
-          ].map(([id,de,ru])=><PhraseRow key={id} id={id} de={de} ru={ru} col={C.orange}/>)}
+              <div style={{background:C.orange+"22",padding:"3px 8px",fontSize:10,
+                color:C.orange,fontWeight:700,borderBottom:`1px solid ${C.border}22`,
+                borderTop:`1px solid ${C.border}22`}}>🔄 Альтернатива</div>
+              {[
+                ["a1","Geht es auch später?",  "Можно попозже?"],
+                ["a2","Geht es auch morgen?",  "Можно завтра?"],
+                ["a3","Wie ist es am Freitag?","Как насчёт пятницы?"],
+                ["a4","Um wie viel Uhr?",      "В котором часу?"],
+              ].map(([id,de,ru])=>(
+                <div key={id} onClick={()=>toggle(id)}
+                  style={{padding:"5px 8px",borderBottom:`1px solid ${C.border}22`,
+                    cursor:"pointer",background:openTr===id?C.bg:"transparent",minHeight:30}}>
+                  <div style={{display:"flex",justifyContent:"space-between",gap:4}}>
+                    <span style={{fontSize:11,fontWeight:600,color:C.orange,lineHeight:1.3}}>{de}</span>
+                    <span style={{fontSize:9,color:C.muted,flexShrink:0}}>{openTr===id?"▲":"▾"}</span>
+                  </div>
+                  {openTr===id&&<div style={{fontSize:10,color:C.muted,marginTop:2}}>{ru}</div>}
+                </div>
+              ))}
 
-          {/* ❌ Отказ */}
-          <div style={{background:C.red+"18",padding:"5px 10px 2px",fontSize:10,
-            color:C.red,fontWeight:700,borderBottom:`1px solid ${C.border}22`,
-            borderTop:`1px solid ${C.border}33`}}>
-            ❌ ОТКАЗ
+              <div style={{background:C.red+"22",padding:"3px 8px",fontSize:10,
+                color:C.red,fontWeight:700,borderBottom:`1px solid ${C.border}22`,
+                borderTop:`1px solid ${C.border}22`}}>❌ Отказ</div>
+              {[
+                ["n1","Nein, leider nicht.",    "Нет, к сожалению."],
+                ["n2","Das geht nicht.",        "Не подходит."],
+                ["n3","Ich habe keine Lust.",   "Нет желания."],
+                ["n4","Es tut mir leid.",       "Мне жаль."],
+              ].map(([id,de,ru])=>(
+                <div key={id} onClick={()=>toggle(id)}
+                  style={{padding:"5px 8px",borderBottom:`1px solid ${C.border}22`,
+                    cursor:"pointer",background:openTr===id?C.bg:"transparent",minHeight:30}}>
+                  <div style={{display:"flex",justifyContent:"space-between",gap:4}}>
+                    <span style={{fontSize:11,fontWeight:600,color:C.red,lineHeight:1.3}}>{de}</span>
+                    <span style={{fontSize:9,color:C.muted,flexShrink:0}}>{openTr===id?"▲":"▾"}</span>
+                  </div>
+                  {openTr===id&&<div style={{fontSize:10,color:C.muted,marginTop:2}}>{ru}</div>}
+                </div>
+              ))}
+            </div>
+
           </div>
-          {[
-            ["n1","Nein, leider nicht.",         "Нет, к сожалению, нет."],
-            ["n2","Das geht leider nicht.",      "К сожалению, не подходит."],
-            ["n3","Ich habe keine Lust.",        "Мне не хочется. / Нет настроения."],
-            ["n4","Es tut mir leid.",            "Мне жаль. / Извини."],
-          ].map(([id,de,ru])=><PhraseRow key={id} id={id} de={de} ru={ru} col={C.red}/>)}
         </div>
       </Box>
     </div>
