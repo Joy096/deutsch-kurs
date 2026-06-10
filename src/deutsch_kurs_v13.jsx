@@ -542,6 +542,26 @@ const WBDATA=[
   {art:"die",de:"Brücke",            pl:"Brücken",      ru:"мост",                    tema:"Alltag"},
   {art:"",   de:"zum Glück",         pl:"—",            ru:"к счастью",               tema:"Phrase"},
   {art:"der",de:"Wald",              pl:"Wälder",       ru:"лес",                     tema:"Alltag"},
+  {art:"",   de:"leider",            pl:"—",            ru:"к сожалению",             tema:"Alltag"},
+  {art:"",   de:"früh",              pl:"—",            ru:"рано",                    tema:"Alltag"},
+  {art:"",   de:"nie",               pl:"—",            ru:"никогда",                 tema:"Alltag"},
+  {art:"",   de:"selten",            pl:"—",            ru:"редко",                   tema:"Alltag"},
+  {art:"",   de:"manchmal",          pl:"—",            ru:"иногда",                  tema:"Alltag"},
+  {art:"",   de:"oft",               pl:"—",            ru:"часто",                   tema:"Alltag"},
+  {art:"",   de:"fertig",            pl:"—",            ru:"готовый, законченный",    tema:"Adjektive"},
+  {art:"",   de:"bereit",            pl:"—",            ru:"готовый (к действию)",    tema:"Adjektive"},
+  // ── L5 D · Hast du Zeit? ──────────────────────────────────────────────────────
+  {art:"",   de:"spät",              pl:"—",            ru:"поздно",                  tema:"Alltag"},
+  {art:"",   de:"zusammen",          pl:"—",            ru:"вместе",                  tema:"Alltag"},
+  {art:"",   de:"später",            pl:"—",            ru:"позже",                   tema:"Alltag"},
+  {art:"",   de:"gerne",             pl:"—",            ru:"охотно, с удовольствием", tema:"Alltag"},
+  {art:"das",de:"Hobby",             pl:"Hobbys",       ru:"хобби",                   tema:"Alltag"},
+  {art:"",   de:"Lust haben",        pl:"—",            ru:"хотеть, желать",          tema:"Phrase"},
+  {art:"",   de:"Zeit haben",        pl:"—",            ru:"иметь время",             tema:"Phrase"},
+  {art:"",   de:"Schach spielen",    pl:"—",            ru:"играть в шахматы",        tema:"Phrase"},
+  {art:"die",de:"Fahrkarte",         pl:"Fahrkarten",   ru:"транспортный билет",      tema:"Alltag"},
+  {art:"der",de:"Zahnarzttermin",    pl:"Zahnarzttermine",ru:"визит к стоматологу",   tema:"Alltag"},
+  {art:"",   de:"heute Abend",       pl:"—",            ru:"сегодня вечером",         tema:"Alltag"},
 ];
 
 
@@ -829,6 +849,11 @@ const KONJ_ALL={
   frühstücken:{col:C.teal,  bg:C.tealBg,   ich:"frühstücke",du:"frühstückst","er/es/sie":"frühstückt",wir:"frühstücken",ihr:"frühstückt","sie/Sie":"frühstücken"},
   chillen:    {col:C.teal,  bg:C.tealBg,   ich:"chille",    du:"chillst",    "er/es/sie":"chillt",    wir:"chillen",  ihr:"chillt",   "sie/Sie":"chillen"},
   treffen:    {col:C.orange,bg:C.orangeBg, ich:"treffe",    du:"triffst",    "er/es/sie":"trifft",    wir:"treffen",  ihr:"trefft",   "sie/Sie":"treffen",   note:"e→i"},
+  tanzen:     {col:C.teal,  bg:C.tealBg,   ich:"tanze",     du:"tanzt",      "er/es/sie":"tanzt",     wir:"tanzen",   ihr:"tanzt",    "sie/Sie":"tanzen"},
+  schwimmen:  {col:C.teal,  bg:C.tealBg,   ich:"schwimme",  du:"schwimmst",  "er/es/sie":"schwimmt",  wir:"schwimmen",ihr:"schwimmt", "sie/Sie":"schwimmen"},
+  joggen:     {col:C.teal,  bg:C.tealBg,   ich:"jogge",     du:"joggst",     "er/es/sie":"joggt",     wir:"joggen",   ihr:"joggt",    "sie/Sie":"joggen"},
+  grillen:    {col:C.teal,  bg:C.tealBg,   ich:"grille",    du:"grillst",    "er/es/sie":"grillt",    wir:"grillen",  ihr:"grillt",   "sie/Sie":"grillen"},
+  surfen:     {col:C.teal,  bg:C.tealBg,   ich:"surfe",     du:"surfst",     "er/es/sie":"surft",     wir:"surfen",   ihr:"surft",    "sie/Sie":"surfen"},
 };
 
 const DIALOGE={
@@ -992,6 +1017,10 @@ const DIALOGE={
       {q:"Was ist Ihr Hobby?",                a:"Mein Hobby ist Gitarre spielen. / Ich lese gern Bücher.",   note:"Was ist Ihr Hobby? = какое ваше хобби?",              fm:"f"},
       {q:"Was machst du in der Freizeit?",    a:"Ich jogge gern im Park. / Ich höre Musik.",                 note:"in der Freizeit = в свободное время",                 fm:"i"},
       {q:"Was machen Sie gerne?",             a:"Ich treibe gern Sport. / Ich surfe gern im Internet.",      note:"gerne = с удовольствием",                            fm:"f"},
+      {q:"Gehen wir zusammen schwimmen?",     a:"Sehr gerne. Wann? / Ja, gerne. / Nein, ich habe keine Lust.", note:"sich verabreden = договориться о встрече"},
+      {q:"Hast du heute Abend Zeit?",         a:"Ja, das geht. / Nein, leider nicht. / Geht es auch morgen?", note:"Zeit haben = иметь время · leider = к сожалению"},
+      {q:"Geht es auch später?",              a:"Ja, das geht. Um drei Uhr habe ich Zeit.",                  note:"geht es = подходит ли · auch = тоже, также"},
+      {q:"Was meinst du?",                    a:"Ich finde das gut. / Das geht nicht.",                      note:"meinen = думать, считать"},
     ]},
     {tag:"Дополнительные",col:C.green,pairs:[
       {q:"Wann stehst du auf?",               a:"Ich stehe um 7 Uhr auf.",                                   note:"aufstehen = вставать · Präfix 'auf' ans Ende"},
@@ -4339,6 +4368,67 @@ function T5C(){
   );
 }
 
+function T5D(){
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:12}}>
+      <Box c={C.red}>
+        <H c={C.red}>📅 D · Hast du Zeit?</H>
+
+        {/* gehen + Infinitiv */}
+        <div style={{background:C.card2,borderRadius:10,padding:"10px 14px",marginBottom:12}}>
+          <div style={{fontWeight:700,fontSize:13,color:C.blue,marginBottom:8}}>🔗 gehen + Infinitiv</div>
+          <div style={{fontSize:12,color:C.muted,marginBottom:10}}>
+            Infinitiv идёт в <span style={{color:C.orange,fontWeight:700}}>конец предложения</span>. Глагол gehen спрягается нормально.
+          </div>
+          <div style={{background:C.bg,borderRadius:8,padding:"8px 10px",marginBottom:8}}>
+            <div style={{display:"flex",flexWrap:"wrap",gap:4,alignItems:"baseline"}}>
+              {[["Er",C.blue],["geht",C.orange],["später",C.muted],["einkaufen.",C.green]].map(([w,c])=>(
+                <span key={w} style={{background:c+"22",border:`1px solid ${c}44`,color:c,
+                  borderRadius:6,padding:"3px 8px",fontWeight:700,fontSize:13}}>{w}</span>
+              ))}
+            </div>
+            <div style={{fontSize:11,color:C.muted,marginTop:6}}>Subj. → V(P2) → … → <span style={{color:C.green,fontWeight:700}}>Infinitiv</span></div>
+          </div>
+          <div style={{display:"flex",flexDirection:"column",gap:5,fontSize:12}}>
+            {[
+              ["schwimmen gehen","Ich gehe am Nachmittag schwimmen."],
+              ["tanzen gehen","Gehen wir heute Abend tanzen?"],
+              ["essen gehen","Er geht mit Freunden essen."],
+              ["spazieren gehen","Wir gehen am Sonntag spazieren."],
+            ].map(([inf,ex])=>(
+              <div key={inf} style={{borderLeft:`2px solid ${C.blue}`,paddingLeft:8}}>
+                <span style={{color:C.blue,fontWeight:700}}>{inf}</span>
+                <span style={{color:C.muted}}> → </span>
+                <span style={{color:C.text}}>{ex}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* sich verabreden */}
+        <div style={{background:C.card2,borderRadius:10,padding:"10px 14px"}}>
+          <div style={{fontWeight:700,fontSize:13,color:C.red,marginBottom:8}}>📞 Sich verabreden — договориться о встрече</div>
+          <div style={{display:"flex",flexDirection:"column",gap:8,fontSize:13}}>
+            {[
+              {situation:"Предложение", de:"Gehen wir zusammen schwimmen?", ru:"Пойдём вместе плавать?"},
+              {situation:"✅ Согласие", de:"Ja, gerne. / Sehr gerne. / Das geht.", ru:"Да, с удовольствием. / Отлично."},
+              {situation:"❌ Отказ", de:"Nein, ich habe keine Lust. / Nein, leider nicht.", ru:"Нет, не хочу. / Нет, к сожалению, нет."},
+              {situation:"🔄 Альтернатива", de:"Geht es auch später? / Wie ist es am Freitag?", ru:"Можно попозже? / Как насчёт пятницы?"},
+              {situation:"⏰ Уточнение", de:"Hast du am Mittwoch Zeit?", ru:"У тебя есть время в среду?"},
+            ].map(({situation,de,ru})=>(
+              <div key={situation} style={{background:C.bg,borderRadius:8,padding:"7px 10px"}}>
+                <div style={{fontSize:10,color:C.muted,fontWeight:700,marginBottom:3}}>{situation}</div>
+                <div style={{color:C.text,fontWeight:600,marginBottom:2}}>{de}</div>
+                <div style={{color:C.muted,fontSize:11}}>{ru}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </Box>
+    </div>
+  );
+}
+
 const LEKTIONEN=[
   {
     id:"L1",num:"1",title:"Willkommen!",
@@ -4408,6 +4498,7 @@ const LEKTIONEN=[
       {id:"5a",  icon:"🕐",title:"A · Wie spät ist es?",     sub:"Uhrzeiten · halb · vor/nach · Viertel", time:"7 мин", col:C.orange,hasT:true,  th:()=><T5A/>, ex:()=><Quiz questions={Q_L5A}/>},
       {id:"5b",  icon:"✂️",title:"B · Was macht Frau Costa?",sub:"Trennbare Verben: auf-, ein-, an-, aus-", time:"8 мин", col:C.blue,  hasT:true,  th:()=><T5B/>, ex:()=><Quiz questions={Q_L5B}/>},
       {id:"5c",  icon:"📅",title:"C · Meine Woche",          sub:"am · um · von...bis · Zeitangaben",      time:"6 мин", col:C.green, hasT:true,  th:()=><T5C/>, ex:()=><Quiz questions={Q_L5C}/>},
+      {id:"5d",  icon:"📞",title:"D · Hast du Zeit?",         sub:"Verabredung · gehen + Infinitiv",        time:"5 мин", col:C.red,   hasT:true,  th:()=><T5D/>, ex:null},
     ]
   },
 ];
