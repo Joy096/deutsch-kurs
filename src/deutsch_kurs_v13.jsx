@@ -4441,19 +4441,62 @@ function T5D(){
 
         {/* sich verabreden */}
         <div style={{background:C.card2,borderRadius:10,padding:"10px 14px"}}>
-          <div style={{fontWeight:700,fontSize:13,color:C.red,marginBottom:8}}>📞 Sich verabreden — договориться о встрече</div>
-          <div style={{display:"flex",flexDirection:"column",gap:8,fontSize:13}}>
+          <div style={{fontWeight:700,fontSize:13,color:C.red,marginBottom:10}}>📞 Sich verabreden — договориться о встрече</div>
+
+          {/* Примеры вопросов/предложений */}
+          <div style={{fontSize:11,color:C.muted,fontWeight:700,marginBottom:5}}>ВОПРОСЫ / ПРЕДЛОЖЕНИЯ</div>
+          <div style={{display:"flex",flexDirection:"column",gap:4,marginBottom:12}}>
             {[
-              {situation:"Предложение", de:"Gehen wir zusammen schwimmen?", ru:"Пойдём вместе плавать?"},
-              {situation:"✅ Согласие", de:"Ja, gerne. / Sehr gerne. / Das geht.", ru:"Да, с удовольствием. / Отлично."},
-              {situation:"❌ Отказ", de:"Nein, ich habe keine Lust. / Nein, leider nicht.", ru:"Нет, не хочу. / Нет, к сожалению, нет."},
-              {situation:"🔄 Альтернатива", de:"Geht es auch später? / Wie ist es am Freitag?", ru:"Можно попозже? / Как насчёт пятницы?"},
-              {situation:"⏰ Уточнение", de:"Hast du am Mittwoch Zeit?", ru:"У тебя есть время в среду?"},
-            ].map(({situation,de,ru})=>(
-              <div key={situation} style={{background:C.bg,borderRadius:8,padding:"7px 10px"}}>
-                <div style={{fontSize:10,color:C.muted,fontWeight:700,marginBottom:3}}>{situation}</div>
-                <div style={{color:C.text,fontWeight:600,marginBottom:2}}>{de}</div>
-                <div style={{color:C.muted,fontSize:11}}>{ru}</div>
+              ["Spielen wir zusammen Schach?",    "Сыграем вместе в шахматы?"],
+              ["Gehen wir zusammen schwimmen?",   "Пойдём вместе плавать?"],
+              ["Gehen wir am Samstag ins Kino?",  "Пойдём в субботу в кино?"],
+              ["Hast du heute Abend Zeit?",       "У тебя есть время сегодня вечером?"],
+              ["Hast du am Mittwoch Zeit?",       "У тебя есть время в среду?"],
+              ["Was meinst du?",                  "Как ты думаешь? Что скажешь?"],
+            ].map(([de,ru])=>(
+              <div key={de} style={{background:C.bg,borderRadius:7,padding:"5px 10px",
+                display:"flex",justifyContent:"space-between",alignItems:"center",gap:8}}>
+                <span style={{fontSize:12,fontWeight:700,color:C.text}}>{de}</span>
+                <span style={{fontSize:11,color:C.muted,textAlign:"right",flexShrink:0}}>{ru}</span>
+              </div>
+            ))}
+          </div>
+
+          {/* Таблица ответов */}
+          <div style={{fontSize:11,color:C.muted,fontWeight:700,marginBottom:5}}>ОТВЕТЫ</div>
+          <div style={{display:"flex",flexDirection:"column",gap:5}}>
+            {[
+              {icon:"✅", label:"Согласие",    col:C.green,  items:[
+                ["Ja, gerne.",           "Да, с удовольствием."],
+                ["Sehr gerne.",          "С большим удовольствием."],
+                ["Ja, das geht.",        "Да, подходит."],
+                ["Ja, natürlich!",       "Да, конечно!"],
+              ]},
+              {icon:"🔄", label:"Альтернатива", col:C.orange, items:[
+                ["Geht es auch später?",  "Можно попозже?"],
+                ["Geht es auch morgen?",  "Можно завтра?"],
+                ["Wie ist es am Freitag?","Как насчёт пятницы?"],
+                ["Um wie viel Uhr?",      "В котором часу?"],
+              ]},
+              {icon:"❌", label:"Отказ",       col:C.red,    items:[
+                ["Nein, leider nicht.",           "Нет, к сожалению, нет."],
+                ["Das geht leider nicht.",        "К сожалению, не подходит."],
+                ["Ich habe keine Lust.",           "Мне не хочется. / Нет настроения."],
+                ["Es tut mir leid.",              "Мне жаль. / Извини."],
+              ]},
+            ].map(({icon,label,col,items})=>(
+              <div key={label} style={{background:col+"12",border:`1px solid ${col}33`,borderRadius:8,overflow:"hidden"}}>
+                <div style={{background:col+"22",padding:"4px 10px",fontSize:11,color:col,fontWeight:700}}>
+                  {icon} {label}
+                </div>
+                {items.map(([de,ru])=>(
+                  <div key={de} style={{display:"flex",justifyContent:"space-between",
+                    alignItems:"center",gap:8,padding:"5px 10px",
+                    borderTop:`1px solid ${col}18`}}>
+                    <span style={{fontSize:12,fontWeight:700,color:C.text}}>{de}</span>
+                    <span style={{fontSize:11,color:C.muted,textAlign:"right",flexShrink:0}}>{ru}</span>
+                  </div>
+                ))}
               </div>
             ))}
           </div>
