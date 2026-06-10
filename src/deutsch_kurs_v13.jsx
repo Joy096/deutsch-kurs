@@ -536,6 +536,11 @@ const WBDATA=[
   {art:"",   de:"wegfahren",         pl:"—",            ru:"уехать, отправиться",     tema:"Trennbare Verben"},
   {art:"",   de:"ausfallen",         pl:"—",            ru:"отменяться, не состояться", tema:"Trennbare Verben"},
   {art:"",   de:"stattfinden",       pl:"—",            ru:"состояться, проходить",   tema:"Trennbare Verben"},
+  {art:"",   de:"müde",              pl:"—",            ru:"усталый, утомлённый",     tema:"Adjektive"},
+  {art:"",   de:"wollen",            pl:"—",            ru:"хотеть (намереваться)",   tema:"Alltag"},
+  {art:"",   de:"kostenlos",         pl:"—",            ru:"бесплатный",              tema:"Adjektive"},
+  {art:"der",de:"Fluss",             pl:"Flüsse",       ru:"река",                    tema:"Alltag"},
+  {art:"die",de:"Brücke",            pl:"Brücken",      ru:"мост",                    tema:"Alltag"},
 ];
 
 
@@ -795,6 +800,39 @@ const PREF_COLORS={
 };
 const PREF_LIST=["statt","fern","aus","auf","ein","mit","weg","an","ab"];
 const getVerbPref=de=>PREF_LIST.find(p=>de.startsWith(p))||"";
+
+// ─── Единый словарь спряжений (для словаря) ───────────────────────────────────
+const KONJ_ALL={
+  ...KONJ_L4B,
+  ...KONJ_L5B,
+  // — haben / sein ——————————————————————————————————————————————————————————————
+  haben:      {col:C.blue,  bg:C.blueBg,   ich:"habe",      du:"hast",       "er/es/sie":"hat",       wir:"haben",    ihr:"habt",     "sie/Sie":"haben"},
+  sein:       {col:C.purple,bg:C.purpleBg, ich:"bin",       du:"bist",       "er/es/sie":"ist",       wir:"sind",     ihr:"seid",     "sie/Sie":"sind",      note:"⚠️ особый"},
+  // — Modalverben ———————————————————————————————————————————————————————————————
+  wollen:     {col:C.red,   bg:C.redBg,    ich:"will",      du:"willst",     "er/es/sie":"will",      wir:"wollen",   ihr:"wollt",    "sie/Sie":"wollen",    note:"ich = er"},
+  können:     {col:C.green, bg:C.greenBg,  ich:"kann",      du:"kannst",     "er/es/sie":"kann",      wir:"können",   ihr:"könnt",    "sie/Sie":"können",    note:"ich = er"},
+  müssen:     {col:C.orange,bg:C.orangeBg, ich:"muss",      du:"musst",      "er/es/sie":"muss",      wir:"müssen",   ihr:"müsst",    "sie/Sie":"müssen",    note:"ich = er"},
+  // — Starke Verben —————————————————————————————————————————————————————————————
+  laufen:     {col:C.purple,bg:C.purpleBg, ich:"laufe",     du:"läufst",     "er/es/sie":"läuft",     wir:"laufen",   ihr:"lauft",    "sie/Sie":"laufen",    note:"a→ä"},
+  // — Schwache Verben ————————————————————————————————————————————————————————————
+  kommen:     {col:C.teal,  bg:C.tealBg,   ich:"komme",     du:"kommst",     "er/es/sie":"kommt",     wir:"kommen",   ihr:"kommt",    "sie/Sie":"kommen"},
+  gehen:      {col:C.teal,  bg:C.tealBg,   ich:"gehe",      du:"gehst",      "er/es/sie":"geht",      wir:"gehen",    ihr:"geht",     "sie/Sie":"gehen"},
+  machen:     {col:C.teal,  bg:C.tealBg,   ich:"mache",     du:"machst",     "er/es/sie":"macht",     wir:"machen",   ihr:"macht",    "sie/Sie":"machen"},
+  lernen:     {col:C.teal,  bg:C.tealBg,   ich:"lerne",     du:"lernst",     "er/es/sie":"lernt",     wir:"lernen",   ihr:"lernt",    "sie/Sie":"lernen"},
+  wohnen:     {col:C.teal,  bg:C.tealBg,   ich:"wohne",     du:"wohnst",     "er/es/sie":"wohnt",     wir:"wohnen",   ihr:"wohnt",    "sie/Sie":"wohnen"},
+  arbeiten:   {col:C.teal,  bg:C.tealBg,   ich:"arbeite",   du:"arbeitest",  "er/es/sie":"arbeitet",  wir:"arbeiten", ihr:"arbeitet", "sie/Sie":"arbeiten",  note:"-e- вставка"},
+  heißen:     {col:C.teal,  bg:C.tealBg,   ich:"heiße",     du:"heißt",      "er/es/sie":"heißt",     wir:"heißen",   ihr:"heißt",    "sie/Sie":"heißen"},
+  kochen:     {col:C.teal,  bg:C.tealBg,   ich:"koche",     du:"kochst",     "er/es/sie":"kocht",     wir:"kochen",   ihr:"kocht",    "sie/Sie":"kochen"},
+  spielen:    {col:C.teal,  bg:C.tealBg,   ich:"spiele",    du:"spielst",    "er/es/sie":"spielt",    wir:"spielen",  ihr:"spielt",   "sie/Sie":"spielen"},
+  trinken:    {col:C.teal,  bg:C.tealBg,   ich:"trinke",    du:"trinkst",    "er/es/sie":"trinkt",    wir:"trinken",  ihr:"trinkt",   "sie/Sie":"trinken"},
+  schreiben:  {col:C.teal,  bg:C.tealBg,   ich:"schreibe",  du:"schreibst",  "er/es/sie":"schreibt",  wir:"schreiben",ihr:"schreibt", "sie/Sie":"schreiben"},
+  reparieren: {col:C.teal,  bg:C.tealBg,   ich:"repariere", du:"reparierst", "er/es/sie":"repariert", wir:"reparieren",ihr:"repariert","sie/Sie":"reparieren"},
+  starten:    {col:C.teal,  bg:C.tealBg,   ich:"starte",    du:"startest",   "er/es/sie":"startet",   wir:"starten",  ihr:"startet",  "sie/Sie":"starten",   note:"-e- вставка"},
+  klingeln:   {col:C.teal,  bg:C.tealBg,   ich:"klingle",   du:"klingelst",  "er/es/sie":"klingelt",  wir:"klingeln", ihr:"klingelt", "sie/Sie":"klingeln"},
+  frühstücken:{col:C.teal,  bg:C.tealBg,   ich:"frühstücke",du:"frühstückst","er/es/sie":"frühstückt",wir:"frühstücken",ihr:"frühstückt","sie/Sie":"frühstücken"},
+  chillen:    {col:C.teal,  bg:C.tealBg,   ich:"chille",    du:"chillst",    "er/es/sie":"chillt",    wir:"chillen",  ihr:"chillt",   "sie/Sie":"chillen"},
+  treffen:    {col:C.orange,bg:C.orangeBg, ich:"treffe",    du:"triffst",    "er/es/sie":"trifft",    wir:"treffen",  ihr:"trefft",   "sie/Sie":"treffen",   note:"e→i"},
+};
 
 const DIALOGE={
   L1:[
@@ -1513,6 +1551,7 @@ function Woerterbuch(){
   const [selPref,setSelPref]=useState("all");
   const [search,setSearch]=useState("");
   const [sortNew,setSortNew]=useState(true);
+  const [openConj,setOpenConj]=useState(null);
 
   const changeTyp=(t)=>{setTyp(t);setTema("all");setArt("all");setSelPref("all");};
   const changeTema=(t)=>{setTema(t);setArt("all");setSelPref("all");};
@@ -1595,32 +1634,67 @@ function Woerterbuch(){
         <span style={{fontSize:12,color:C.muted,textAlign:"right"}}>{w.ru}</span>
       </div>
     );
+    const konj=KONJ_ALL[w.de];
+    const isOpen=openConj===w.de;
+    const hiCell=(p)=>konj?.note&&konj.note.includes("→")&&(p==="du"||p==="er/es/sie");
     return(
-      <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:4,
-        padding:"7px 8px",borderBottom:`1px solid ${C.border}22`,alignItems:"center"}}>
-        <div style={{display:"flex",alignItems:"center",gap:5}}>
-          {pc
-            ?<span style={{background:pc.bg,border:`1px solid ${pc.col}55`,color:pc.col,
-                borderRadius:5,padding:"1px 5px",fontWeight:800,fontSize:11,flexShrink:0}}>{verbPref}-</span>
-            :w.art&&<span style={{background:AB(w.art),border:`1px solid ${AC(w.art)}55`,color:AC(w.art),
-                borderRadius:5,padding:"1px 5px",fontWeight:800,fontSize:11,flexShrink:0}}>{w.art}</span>
-          }
-          <span style={{fontSize:13,color:C.text,fontWeight:600}}>{w.de}</span>
+      <div style={{borderBottom:`1px solid ${C.border}22`}}>
+        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:4,
+          padding:"7px 8px",alignItems:"center",
+          cursor:konj?"pointer":"default",
+          background:isOpen?konj.col+"11":"transparent"}}
+          onClick={konj?()=>setOpenConj(isOpen?null:w.de):undefined}>
+          <div style={{display:"flex",alignItems:"center",gap:5}}>
+            {pc
+              ?<span style={{background:pc.bg,border:`1px solid ${pc.col}55`,color:pc.col,
+                  borderRadius:5,padding:"1px 5px",fontWeight:800,fontSize:11,flexShrink:0}}>{verbPref}-</span>
+              :w.art&&<span style={{background:AB(w.art),border:`1px solid ${AC(w.art)}55`,color:AC(w.art),
+                  borderRadius:5,padding:"1px 5px",fontWeight:800,fontSize:11,flexShrink:0}}>{w.art}</span>
+            }
+            <span style={{fontSize:13,fontWeight:600,
+              color:konj?(isOpen?konj.col:C.text):C.text,
+              textDecoration:konj?"underline dotted":"none",
+              textDecorationColor:konj?konj.col+"88":"transparent",
+              textUnderlineOffset:3}}>{w.de}</span>
+            {konj&&<span style={{fontSize:10,color:konj.col,marginLeft:1,opacity:0.8}}>{isOpen?"▲":"▾"}</span>}
+          </div>
+          <div style={{fontSize:13}}>
+            {isAdj&&opposite
+              ?<span style={{color:C.orange,fontWeight:700}}>≠ {opposite}</span>
+              :end===""
+                ?<span style={{color:C.muted}}>{stem||w.pl}</span>
+                :<><span style={{color:C.muted}}>{stem}</span><span style={{color:C.green,fontWeight:800}}>{end}</span></>
+            }
+          </div>
+          <div style={{fontSize:12,lineHeight:1.3,overflowWrap:"break-word",wordBreak:"break-word"}}>
+            {isAdj
+              ?<><span style={{color:C.text}}>{w.ru}</span>{oppRu&&<span style={{color:C.orange}}> / {oppRu}</span>}</>
+              :<RuText ru={w.ru} style={{color:C.text}}/>
+            }
+          </div>
         </div>
-        <div style={{fontSize:13}}>
-          {isAdj&&opposite
-            ?<span style={{color:C.orange,fontWeight:700}}>≠ {opposite}</span>
-            :end===""
-              ?<span style={{color:C.muted}}>{stem||w.pl}</span>
-              :<><span style={{color:C.muted}}>{stem}</span><span style={{color:C.green,fontWeight:800}}>{end}</span></>
-          }
-        </div>
-        <div style={{fontSize:12,lineHeight:1.3,overflowWrap:"break-word",wordBreak:"break-word"}}>
-          {isAdj
-            ?<><span style={{color:C.text}}>{w.ru}</span>{oppRu&&<span style={{color:C.orange}}> / {oppRu}</span>}</>
-            :<RuText ru={w.ru} style={{color:C.text}}/>
-          }
-        </div>
+        {konj&&isOpen&&(
+          <div style={{background:konj.col+"0d",padding:"8px 10px",borderTop:`1px solid ${konj.col}22`}}>
+            <div style={{display:"flex",alignItems:"center",gap:6,marginBottom:8}}>
+              <span style={{background:konj.col+"22",border:`1px solid ${konj.col}55`,color:konj.col,
+                borderRadius:6,padding:"2px 10px",fontSize:12,fontWeight:800}}>{w.de}</span>
+              {konj.pref&&<span style={{fontSize:11,color:C.muted}}>отделяемая приставка: <b style={{color:konj.col}}>{konj.pref}-</b></span>}
+              {konj.note&&<span style={{fontSize:11,color:C.orange}}>⚡ {konj.note}</span>}
+            </div>
+            <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:5}}>
+              {[["ich",konj.ich],["wir",konj.wir],["du",konj.du],["ihr",konj.ihr],["er/es/sie",konj["er/es/sie"]],["sie/Sie",konj["sie/Sie"]]].map(([p,f])=>{
+                const hi=hiCell(p);
+                return(
+                  <div key={p} style={{background:hi?konj.bg:C.card2,
+                    border:`1px solid ${hi?konj.col+"55":C.border}`,borderRadius:7,padding:"5px 8px"}}>
+                    <div style={{fontSize:10,color:hi?konj.col:C.muted,marginBottom:1}}>{p}</div>
+                    <div style={{color:hi?konj.col:C.text,fontWeight:700,fontSize:13}}>{f}</div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        )}
       </div>
     );
   };
