@@ -4555,6 +4555,7 @@ function T5D(){
 }
 
 function T6A(){
+  const [open,setOpen]=useState(null);
   const foods=[
     {art:"der",de:"Apfel",      pl:"Äpfel",     ru:"яблоко"},
     {art:"die",de:"Banane",     pl:"Bananen",   ru:"банан"},
@@ -4584,22 +4585,30 @@ function T6A(){
     <div style={{display:"flex",flexDirection:"column",gap:12}}>
       <Box c={C.green}>
         <H c={C.green}>🍎 A · Lebensmittel und Getränke</H>
-        <div style={{fontSize:12,color:C.muted,marginBottom:12}}>
-          Essen und Trinken — 21 Wort. Нажми на глагол essen/trinken в словаре чтобы увидеть спряжение.
-        </div>
-        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:6}}>
-          {foods.map(({art,de,pl,ru})=>(
-            <div key={de} style={{background:C.card2,borderRadius:8,padding:"7px 10px",
-              borderLeft:`3px solid ${AC6(art)}`}}>
-              <div style={{display:"flex",alignItems:"center",gap:4,marginBottom:2}}>
-                <span style={{background:AB6(art),color:AC6(art),
-                  borderRadius:4,padding:"0px 5px",fontSize:10,fontWeight:800}}>{art}</span>
-                <span style={{fontSize:13,fontWeight:700,color:C.text}}>{de}</span>
+        <div style={{fontSize:11,color:C.muted,marginBottom:10}}>Нажми на слово — увидишь перевод.</div>
+        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:5}}>
+          {foods.map(({art,de,pl,ru})=>{
+            const isOpen=open===de;
+            const col=AC6(art);
+            return (
+              <div key={de} onClick={()=>setOpen(isOpen?null:de)}
+                style={{background:isOpen?col+"18":C.card2,borderRadius:8,
+                  padding:"8px 10px",borderLeft:`3px solid ${col}`,
+                  cursor:"pointer",transition:"background 0.15s"}}>
+                <div style={{display:"flex",alignItems:"center",gap:5}}>
+                  <span style={{background:AB6(art),color:col,
+                    borderRadius:4,padding:"1px 5px",fontSize:10,fontWeight:800,flexShrink:0}}>{art}</span>
+                  <span style={{fontSize:14,fontWeight:700,color:C.text}}>{de}</span>
+                </div>
+                {isOpen&&(
+                  <div style={{marginTop:5,paddingTop:5,borderTop:`1px solid ${col}33`}}>
+                    <div style={{fontSize:12,color:col,fontWeight:600}}>{ru}</div>
+                    {pl!=="—"&&<div style={{fontSize:11,color:C.muted}}>Pl: {pl}</div>}
+                  </div>
+                )}
               </div>
-              <div style={{fontSize:11,color:C.muted}}>{pl!=="—"?pl:"(нет мн.ч.)"}</div>
-              <div style={{fontSize:12,color:C.text}}>{ru}</div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         {/* Häufigkeit */}
