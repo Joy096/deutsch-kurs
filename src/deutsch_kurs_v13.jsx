@@ -584,6 +584,13 @@ const WBDATA=[
   {art:"der",de:"Wein",              pl:"Weine",        ru:"вино",                    tema:"Lebensmittel"},
   {art:"die",de:"Wurst",             pl:"Würste",       ru:"колбаса",                 tema:"Lebensmittel"},
   {art:"die",de:"Zwiebel",           pl:"Zwiebeln",     ru:"лук",                     tema:"Lebensmittel"},
+  {art:"",   de:"faul",              pl:"—",            ru:"ленивый",                 tema:"Adjektive"},
+  {art:"der",de:"Tipp",              pl:"Tipps",        ru:"совет, подсказка",        tema:"Alltag"},
+  {art:"der",de:"Respekt",           pl:"—",            ru:"уважение",                tema:"Alltag"},
+  {art:"",   de:"langsam",           pl:"—",            ru:"медленный, медленно",     tema:"Adjektive"},
+  {art:"die",de:"Übung",             pl:"Übungen",      ru:"упражнение",              tema:"Kursraum"},
+  {art:"das",de:"Sonderangebot",     pl:"Sonderangebote",ru:"специальное предложение, акция", tema:"Alltag"},
+  {art:"",   de:"mögen",             pl:"—",            ru:"любить, нравиться",       tema:"Alltag"},
 ];
 
 
@@ -853,6 +860,7 @@ const KONJ_ALL={
   wollen:     {col:C.red,   bg:C.redBg,    ich:"will",      du:"willst",     "er/es/sie":"will",      wir:"wollen",   ihr:"wollt",    "sie/Sie":"wollen",    note:"ich = er"},
   können:     {col:C.green, bg:C.greenBg,  ich:"kann",      du:"kannst",     "er/es/sie":"kann",      wir:"können",   ihr:"könnt",    "sie/Sie":"können",    note:"ich = er"},
   müssen:     {col:C.orange,bg:C.orangeBg, ich:"muss",      du:"musst",      "er/es/sie":"muss",      wir:"müssen",   ihr:"müsst",    "sie/Sie":"müssen",    note:"ich = er"},
+  mögen:      {col:C.purple,bg:C.purpleBg, ich:"mag",       du:"magst",      "er/es/sie":"mag",       wir:"mögen",    ihr:"mögt",     "sie/Sie":"mögen",     note:"ich = er"},
   laufen:     {col:C.purple,bg:C.purpleBg, ich:"laufe",     du:"läufst",     "er/es/sie":"läuft",     wir:"laufen",   ihr:"lauft",    "sie/Sie":"laufen",    note:"a→ä"},
   kommen:     {col:C.teal,  bg:C.tealBg,   ich:"komme",     du:"kommst",     "er/es/sie":"kommt",     wir:"kommen",   ihr:"kommt",    "sie/Sie":"kommen"},
   gehen:      {col:C.teal,  bg:C.tealBg,   ich:"gehe",      du:"gehst",      "er/es/sie":"geht",      wir:"gehen",    ihr:"geht",     "sie/Sie":"gehen"},
