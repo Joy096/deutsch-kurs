@@ -591,6 +591,7 @@ const WBDATA=[
   {art:"die",de:"Übung",             pl:"Übungen",      ru:"упражнение",              tema:"Kursraum"},
   {art:"das",de:"Sonderangebot",     pl:"Sonderangebote",ru:"специальное предложение, акция", tema:"Alltag"},
   {art:"",   de:"mögen",             pl:"—",            ru:"любить, нравиться",       tema:"Alltag"},
+  {art:"das",de:"Gewürz",            pl:"Gewürze",      ru:"специя, пряность",        tema:"Lebensmittel"},
 ];
 
 
@@ -4055,19 +4056,16 @@ function T4C(){
 
 // ─── L5 · UHRZEITEN ──────────────────────────────────────────────────────────
 const Q_L5A=[
-  {q:"Wie fragt man nach der Uhrzeit? (formell)",a:"Entschuldigung, wie spät ist es? / Um wie viel Uhr ...?"},
-  {q:"Wie sagt man 9:00 Uhr?",a:"Es ist neun Uhr."},
-  {q:"Wie sagt man 9:30 Uhr?",a:"Es ist halb zehn."},
-  {q:"Wie sagt man 9:15 Uhr?",a:"Es ist Viertel nach neun."},
-  {q:"Wie sagt man 9:45 Uhr?",a:"Es ist Viertel vor zehn."},
-  {q:"Wie sagt man 10:20 Uhr?",a:"Es ist zwanzig nach zehn."},
-  {q:"Wie sagt man 10:25 Uhr?",a:"Es ist fünf vor halb elf."},
-  {q:"Wie sagt man 10:35 Uhr?",a:"Es ist fünf nach halb elf."},
-  {q:"Wie sagt man 10:40 Uhr?",a:"Es ist zwanzig vor elf."},
-  {q:"Wie antwortet man auf 'Wann beginnt der Kurs?'",a:"Der Kurs beginnt um acht Uhr. / Um Viertel nach neun."},
-  {q:"Was bedeutet 'vor' bei Uhrzeiten?",a:"До (перед): Viertel vor zehn = без четверти десять (9:45)"},
-  {q:"Was bedeutet 'nach' bei Uhrzeiten?",a:"После (за): Viertel nach zehn = четверть одиннадцатого (10:15)"},
-  {q:"Wie sagt man 'halb' auf Ukrainisch?",a:"Половина — halb zehn = половина десятого (9:30)"},
+  {q:"Wie sagt man 9:30 Uhr?",             opts:["Es ist halb neun.","Es ist halb zehn.","Es ist neun dreißig.","Viertel nach neun."],                 ans:1, hint:"Uhrzeiten"},
+  {q:"Wie sagt man 9:15 Uhr?",             opts:["Viertel vor neun.","Viertel nach neun.","Viertel vor zehn.","halb neun."],                           ans:1, hint:"Uhrzeiten"},
+  {q:"Wie sagt man 9:45 Uhr?",             opts:["Viertel nach neun.","Viertel vor zehn.","Viertel vor neun.","halb zehn."],                           ans:1, hint:"Uhrzeiten"},
+  {q:"Was bedeutet 'halb zehn'?",          opts:["10:30","10:00","9:30","9:00"],                                                                        ans:2, hint:"halb"},
+  {q:"Wie fragt man nach der Uhrzeit?",    opts:["Wie ist es?","Wie viel macht das?","Wie spät ist es?","Was ist die Zeit?"],                           ans:2, hint:"Frage"},
+  {q:"Wie sagt man 8:20 Uhr?",             opts:["zwanzig vor acht","Viertel nach acht","zwanzig nach acht","halb neun"],                               ans:2, hint:"Uhrzeiten"},
+  {q:"Was bedeutet 'Viertel vor neun'?",   opts:["9:15","8:45","9:45","8:15"],                                                                          ans:1, hint:"vor/nach"},
+  {q:"Welche Präposition benutzt man mit der Uhrzeit?",  opts:["am","im","um","an"],                                                                    ans:2, hint:"Präposition"},
+  {q:"Wie sagt man 5:25 Uhr?",             opts:["fünf vor halb sechs","fünf nach halb sechs","Viertel nach fünf","zwanzig nach fünf"],                 ans:0, hint:"halb"},
+  {q:"'Es ist zwanzig vor elf' — welche Uhrzeit ist das?",  opts:["11:20","10:40","10:20","11:40"],                                                     ans:1, hint:"vor"},
 ];
 
 function T5A(){
@@ -4159,20 +4157,16 @@ function T5A(){
 
 // ─── L5B · TRENNBARE VERBEN ───────────────────────────────────────────────────
 const Q_L5B=[
-  {q:"Wie bildet man Sätze mit trennbaren Verben?",a:"Verb kommt auf Position 2, Präfix ans Satzende: Sie räumt die Küche AUF."},
-  {q:"Wie heißt 'anrufen' in: 'Ich ___ sie ___'?",a:"Ich rufe sie an."},
-  {q:"Wie heißt 'aufstehen' in: 'Er ___ um 7 Uhr ___'?",a:"Er steht um 7 Uhr auf."},
-  {q:"Wie heißt 'fernsehen' in: 'Sie ___ am Abend ___'?",a:"Sie sieht am Abend fern."},
-  {q:"Wie heißt 'einkaufen' in: 'Wann ___ du ___?'",a:"Wann kaufst du ein?"},
-  {q:"Wie heißt 'ausgehen' in: 'Um 8 Uhr ___ Frau Costa ___'?",a:"Um 8 Uhr geht Frau Costa aus."},
-  {q:"Wie heißt 'aufräumen' in: 'Sie ___ ihre Küche ___'?",a:"Sie räumt ihre Küche auf."},
-  {q:"Wie heißt 'anfangen' in: 'Der Film ___ um 9 Uhr ___'?",a:"Der Film fängt um 9 Uhr an."},
-  {q:"Wie heißt 'aufhören' in: 'Der Film ___ spät ___'?",a:"Der Film hört spät auf."},
-  {q:"Wie heißt 'mitnehmen' in: 'Sie ___ eine Zeitung ___'?",a:"Sie nimmt eine Zeitung mit."},
-  {q:"Was ist der Infinitiv von 'Sie ruft an'?",a:"anrufen"},
-  {q:"Was ist der Infinitiv von 'Er steht auf'?",a:"aufstehen"},
-  {q:"Was ist der Infinitiv von 'Sie sieht fern'?",a:"fernsehen"},
-  {q:"Was ist der Infinitiv von 'Er kauft ein'?",a:"einkaufen"},
+  {q:"Wo steht der Präfix bei trennbaren Verben?",          opts:["am Anfang","am Ende des Satzes","nach dem Subjekt","vor dem Verb"],                  ans:1, hint:"Trennbare Verben"},
+  {q:"'Sie ___ um 7 Uhr ___.' (aufstehen)",                 opts:["aufsteht ... —","steht ... auf","stehen ... auf","steht ... aufsteht"],              ans:1, hint:"Präsens"},
+  {q:"Was ist der Infinitiv von 'Er ruft an'?",             opts:["rufen an","rufen","anrufen","anruft"],                                               ans:2, hint:"Infinitiv"},
+  {q:"'Ich kaufe Lebensmittel ___.' (einkaufen)",           opts:["ein","aus","auf","ab"],                                                              ans:0, hint:"Präfix"},
+  {q:"Welches ist KEIN trennbares Verb?",                   opts:["aufstehen","fernsehen","beginnen","einkaufen"],                                      ans:2, hint:"Trennbar?"},
+  {q:"'Wann ___ der Film ___?' (anfangen — er-Form)",       opts:["fangen ... an","fängt ... an","fangt ... an","anfängt ..."],                         ans:1, hint:"a→ä"},
+  {q:"'Wir ___ heute Abend ___.' (ausgehen)",               opts:["ausgehen","gehen ... aus","geht ... aus","gehen ... auf"],                           ans:1, hint:"wir-Form"},
+  {q:"'Du ___ eine Zeitung ___.' (mitnehmen — du-Form)",    opts:["mitnimmst ... —","nimmst ... mit","nimmt ... mit","nimmst mit ..."],                 ans:1, hint:"e→i"},
+  {q:"Wie lautet 'fernsehen' für er/es/sie?",               opts:["fernsieht","sieht ... fern","seht ... fern","sieht fern ..."],                       ans:1, hint:"e→ie"},
+  {q:"'Der Kurs ___ um 12 Uhr ___.' (aufhören)",            opts:["aufhört ... —","hört ... auf","höre ... auf","hört auf ..."],                        ans:1, hint:"er-Form"},
 ];
 
 function T5B(){
@@ -4312,15 +4306,16 @@ function T5B(){
 
 // ─── L5C · TEMPORALE PRÄPOSITIONEN ───────────────────────────────────────────
 const Q_L5C=[
-  {q:"Wann benutzt man 'um'?",a:"Перед точным временем: um 9 Uhr, um halb zwei"},
-  {q:"Wann benutzt man 'am'?",a:"Перед днями недели и частями дня: am Montag, am Abend, am Wochenende"},
-  {q:"Wie sagt man 'в пятницу вечером'?",a:"am Freitagabend (одно слово) oder: am Freitagabend"},
-  {q:"Wie sagt man 'с 9 до 12'?",a:"von neun bis zwölf / von 9 bis 12 Uhr"},
-  {q:"Wie sagt man 'до 20 Uhr'?",a:"bis 20 Uhr / bis zwanzig Uhr"},
-  {q:"Wie sagt man 'в ночи' с предлогом?",a:"in der Nacht (не 'am Nacht'!)"},
-  {q:"Ergänzen Sie: Der Kurs geht ___ 18 ___ 20 Uhr.",a:"von 18 bis 20 Uhr"},
-  {q:"Wie heißt 'am Montagabend' auf Ukrainisch?",a:"у понеділок ввечері / в понедельник вечером"},
-  {q:"Wann? 'am Montagvormittag' — was bedeutet das?",a:"в понедельник до полудня (Montag + Vormittag = zusammen)"},
+  {q:"Welche Präposition benutzt man mit Wochentagen?",     opts:["um","in","am","an"],                                                                 ans:2, hint:"Präposition"},
+  {q:"'Ich arbeite ___ Montag.'",                           opts:["um","an","am","im"],                                                                 ans:2, hint:"am"},
+  {q:"'Der Kurs beginnt ___ 9 Uhr.'",                       opts:["am","im","um","an"],                                                                 ans:2, hint:"um"},
+  {q:"'Er arbeitet ___ 9 ___ 17 Uhr.'",                     opts:["am...bis","von...bis","um...bis","in...am"],                                         ans:1, hint:"von...bis"},
+  {q:"Wie sagt man 'ночью' с предлогом?",                   opts:["am Nacht","im Nacht","in der Nacht","an der Nacht"],                                  ans:2, hint:"in der Nacht"},
+  {q:"Welche Reihenfolge ist richtig?",                     opts:["um 9 Uhr am Montag lernt er","er lernt am Montag um 9 Uhr","er lernt um Montag 9 Uhr","am um 9 Uhr Montag lernt er"], ans:1, hint:"Wortstellung"},
+  {q:"Was bedeutet 'am Montagvormittag'?",                  opts:["Montagnachmittag","Montagabend","Montagmorgen","am Vormittag des Montags"],           ans:3, hint:"Zusammengesetzt"},
+  {q:"'Sie sieht am Abend ___.' (fernsehen)",               opts:["fernsehen","fern","fernsiehst","sieht fern"],                                         ans:1, hint:"Trennbar"},
+  {q:"'Von' benutzt man ...",                               opts:["nur mit Uhrzeiten","nur mit Wochentagen","mit Anfangspunkt einer Zeitspanne","mit Tageszeiten"], ans:2, hint:"von"},
+  {q:"'Wann gehst du schlafen?' — типичный ответ:",         opts:["Am Nacht.","In der Nacht um 23 Uhr.","Um Mitternacht am Nacht.","Am Abend um 22 Uhr."], ans:3, hint:"am/um"},
 ];
 
 function T5C(){
@@ -4409,6 +4404,19 @@ function T5C(){
     </div>
   );
 }
+
+const Q_L5D=[
+  {q:"Wie antwortet man positiv auf 'Gehen wir schwimmen?'",  opts:["Nein, leider nicht.","Ja, gerne!","Das geht nicht.","Ich habe keine Lust."],          ans:1, hint:"Согласие"},
+  {q:"Wie sagt man 'Нет, не хочу'?",                         opts:["Nein, leider nicht.","Das geht nicht.","Ich habe keine Lust.","Es tut mir leid."],      ans:2, hint:"Отказ"},
+  {q:"'Er ___ später essen.' (gehen + Infinitiv)",            opts:["geht später essen","essen geht später","geht essen später","später geht essen"],         ans:0, hint:"gehen + Inf."},
+  {q:"Wo steht der Infinitiv bei 'gehen + Infinitiv'?",      opts:["Position 2","am Satzanfang","am Satzende","nach dem Subjekt"],                           ans:2, hint:"Wortstellung"},
+  {q:"'Gehen wir heute Abend ___.' (tanzen)",                 opts:["tanzen","tanze","tanzt","zu tanzen"],                                                    ans:0, hint:"gehen + Inf."},
+  {q:"Wie fragt man nach einer Alternative?",                 opts:["Ich habe keine Lust.","Sehr gerne!","Geht es auch morgen?","Es tut mir leid."],          ans:2, hint:"Альтернатива"},
+  {q:"'Hast du ___ Zeit?' — was fehlt hier?",                opts:["vielleicht","heute Abend","immer","gerne"],                                               ans:1, hint:"Zeit haben"},
+  {q:"Was bedeutet 'Sehr gerne!'?",                          opts:["Nein, danke.","Mit großem Vergnügen!","Vielleicht.","Ich weiß nicht."],                   ans:1, hint:"Согласие"},
+  {q:"'Wir gehen am Sonntag ___.' (spazieren gehen)",        opts:["spazieren","spazieren gehen","gehen spazieren","zu spazieren"],                           ans:0, hint:"gehen + Inf."},
+  {q:"'Das ___ nicht.' — Absage",                            opts:["hat","gibt","geht","macht"],                                                              ans:2, hint:"Das geht nicht"},
+];
 
 function T5D(){
   const [openTr,setOpenTr]=useState(null);
@@ -4562,6 +4570,21 @@ function T5D(){
   );
 }
 
+const Q_L6A=[
+  {q:"Welcher Artikel hat 'Apfel'?",          opts:["der","die","das"],                                                                     ans:0, hint:"Artikel"},
+  {q:"Welcher Artikel hat 'Milch'?",          opts:["der","die","das"],                                                                     ans:1, hint:"Artikel"},
+  {q:"Welcher Artikel hat 'Brot'?",           opts:["der","die","das"],                                                                     ans:2, hint:"Artikel"},
+  {q:"Wie lautet der Plural von 'Apfel'?",    opts:["Apfels","Äpfel","Apfeln","Apfel"],                                                     ans:1, hint:"Plural"},
+  {q:"Was hat keinen Plural?",                opts:["Apfel","Tomate","Milch","Kartoffel"],                                                   ans:2, hint:"kein Plural"},
+  {q:"Welcher Artikel hat 'Käse'?",           opts:["der","die","das"],                                                                     ans:0, hint:"Artikel"},
+  {q:"Wie lautet der Plural von 'Wurst'?",    opts:["Wursts","Würste","Wursten","Würster"],                                                  ans:1, hint:"Plural"},
+  {q:"Welcher Artikel hat 'Kartoffel'?",      opts:["der","die","das"],                                                                     ans:1, hint:"Artikel"},
+  {q:"Was bedeutet 'oft' bei Häufigkeit?",   opts:["никогда","иногда","редко","часто"],                                                     ans:3, hint:"Häufigkeit"},
+  {q:"'Ich esse ___ Fisch.' (никогда)",       opts:["oft","manchmal","nie","selten"],                                                       ans:2, hint:"Häufigkeit"},
+  {q:"Welcher Artikel hat 'Wein'?",           opts:["der","die","das"],                                                                     ans:0, hint:"Artikel"},
+  {q:"Wie lautet der Plural von 'Tomate'?",   opts:["Tomaten","Tomats","Tomäte","Tomates"],                                                  ans:0, hint:"Plural"},
+];
+
 function T6A(){
   const [open,setOpen]=useState(null);
   const foods=[
@@ -4708,7 +4731,7 @@ const LEKTIONEN=[
       {id:"5a",  icon:"🕐",title:"A · Wie spät ist es?",     sub:"Uhrzeiten · halb · vor/nach · Viertel", time:"7 мин", col:C.orange,hasT:true,  th:()=><T5A/>, ex:()=><Quiz questions={Q_L5A}/>},
       {id:"5b",  icon:"✂️",title:"B · Was macht Frau Costa?",sub:"Trennbare Verben: auf-, ein-, an-, aus-", time:"8 мин", col:C.blue,  hasT:true,  th:()=><T5B/>, ex:()=><Quiz questions={Q_L5B}/>},
       {id:"5c",  icon:"📅",title:"C · Meine Woche",          sub:"am · um · von...bis · Zeitangaben",      time:"6 мин", col:C.green, hasT:true,  th:()=><T5C/>, ex:()=><Quiz questions={Q_L5C}/>},
-      {id:"5d",  icon:"📞",title:"D · Hast du Zeit?",         sub:"Verabredung · gehen + Infinitiv",        time:"5 мин", col:C.red,   hasT:true,  th:()=><T5D/>, ex:null},
+      {id:"5d",  icon:"📞",title:"D · Hast du Zeit?",         sub:"Verabredung · gehen + Infinitiv",        time:"5 мин", col:C.red,   hasT:true,  th:()=><T5D/>, ex:()=><Quiz questions={Q_L5D}/>},
     ]
   },
   {
@@ -4717,7 +4740,7 @@ const LEKTIONEN=[
     date:"Seite 64–...",col:C.green,
     sections:[
       {id:"d6",  icon:"💬",title:"Dialogfragen L6",           sub:"Фразы для диалога",                      time:"∞",     col:C.teal,  hasT:false, th:null,         ex:()=><DialogCards lId="L6"/>},
-      {id:"6a",  icon:"🍎",title:"A · Lebensmittel",          sub:"Essen und Trinken · Häufigkeit",          time:"5 мин", col:C.green, hasT:true,  th:()=><T6A/>, ex:null},
+      {id:"6a",  icon:"🍎",title:"A · Lebensmittel",          sub:"Essen und Trinken · Häufigkeit",          time:"5 мин", col:C.green, hasT:true,  th:()=><T6A/>, ex:()=><Quiz questions={Q_L6A}/>},
     ]
   },
 ];
@@ -4923,7 +4946,7 @@ export default function App(){
           sec.th&&sec.th()
         ):(
           <>
-            {sec.hasT&&<TabBar tabs={[{id:"th",label:"📖 Теория"},{id:"ex",label:"✏️ Задания"}]} active={tab} onChange={setTab}/>}
+            {sec.hasT&&<TabBar tabs={[{id:"th",label:"📖 Теория"},...(sec.ex?[{id:"ex",label:"✏️ Задания"}]:[] )]} active={tab} onChange={setTab}/>}
             {tab==="th"&&sec.hasT?sec.th&&sec.th():sec.ex&&sec.ex()}
           </>
         )}
