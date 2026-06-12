@@ -158,12 +158,12 @@ const WBDATA=[
   {art:"der",de:"Rucksack",      pl:"Rucksäcke",       ru:"рюкзак",                 tema:"Kursraum"},
   {art:"das",de:"Tablet",        pl:"Tablets",         ru:"планшет",                tema:"Kursraum"},
   {art:"der",de:"Laptop",        pl:"Laptops",         ru:"ноутбук",                tema:"Kursraum"},
-  {art:"der",de:"Fisch",         pl:"Fische",          ru:"рыба",                   tema:"Alltag"},
+
   // ── Правый столбик (стр. 1) — порядок как в конспекте ───────────────────────
   {art:"das",de:"Formular",      pl:"Formulare",       ru:"анкета, бланк",          tema:"Alltag"},
   {art:"der",de:"Pass",          pl:"Pässe",           ru:"паспорт",                tema:"Alltag"},
   {art:"das",de:"Café",          pl:"Cafés",           ru:"кафе",                   tema:"Alltag"},
-  {art:"die",de:"Schokolade",    pl:"Schokoladen",     ru:"шоколад",                tema:"Alltag"},
+
   {art:"die",de:"Kasse",         pl:"Kassen",          ru:"касса",                  tema:"Alltag"},
   {art:"die",de:"Apotheke",      pl:"Apotheken",       ru:"аптека",                 tema:"Alltag"},
   {art:"die",de:"Pizza",         pl:"Pizzas",          ru:"пицца",                  tema:"Alltag"},
@@ -346,7 +346,7 @@ const WBDATA=[
   {art:"",   de:"sprechen",     pl:"—",             ru:"говорить",                  tema:"Alltag"},
   // ── L4-B · Новые существительные ────────────────────────────────────────────
   {art:"der",de:"Bus",          pl:"Busse",         ru:"автобус",                   tema:"Alltag"},
-  {art:"der",de:"Kaffee",       pl:"Kaffees",       ru:"кофе",                      tema:"Alltag"},
+
   {art:"der",de:"Supermarkt",   pl:"Supermärkte",   ru:"супермаркет",               tema:"Alltag"},
   {art:"die",de:"Radtour",      pl:"Radtouren",     ru:"велопрогулка",              tema:"Alltag"},
   {art:"die",de:"Lebensmittel", pl:"—",             ru:"продукты питания (мн.ч.)",  tema:"Alltag"},
@@ -382,7 +382,7 @@ const WBDATA=[
   {art:"",   de:"allein",       pl:"—",             ru:"один, в одиночку (без компании)", tema:"Alltag"},
   {art:"die",de:"Laune",        pl:"Launen",        ru:"настроение",                 tema:"Alltag"},
   {art:"",   de:"zu tun",       pl:"—",             ru:"viel zu tun haben = иметь много дел; быть занятым", tema:"Phrase"},
-  {art:"der",de:"Nachmittag",   pl:"Nachmittage",   ru:"послеполудень, вторая половина дня", tema:"Alltag"},
+
   {art:"das",de:"Wochenende",   pl:"Wochenenden",   ru:"выходные (суббота и воскресенье)", tema:"Alltag"},
   {art:"",   de:"früher",       pl:"—",             ru:"раньше, прежде (в прошлом)",  tema:"Alltag"},
   {art:"die",de:"Grüße",        pl:"—",             ru:"приветы, пожелания (мн.ч.)",  tema:"Alltag"},
@@ -450,7 +450,7 @@ const WBDATA=[
   {art:"",   de:"Sport treiben",      pl:"—",         ru:"заниматься спортом",      tema:"Phrase"},
   {art:"",   de:"spazieren gehen",    pl:"—",         ru:"гулять, идти на прогулку", tema:"Alltag"},
   {art:"",   de:"reiten",             pl:"—",         ru:"ездить верхом",           tema:"Alltag"},
-  {art:"",   de:"wiederholen",        pl:"—",         ru:"повторять",               tema:"Kursraum"},
+
   {art:"",   de:"weg",               pl:"—",         ru:"прочь, исчез, пропал",    tema:"Alltag"},
   {art:"",   de:"natürlich",          pl:"—",         ru:"конечно, естественно",    tema:"Alltag"},
   {art:"",   de:"vielleicht",         pl:"—",         ru:"может быть, возможно",    tema:"Alltag"},
@@ -500,7 +500,7 @@ const WBDATA=[
   {art:"",   de:"aufhören",           pl:"—",            ru:"прекращать, заканчивать",  tema:"Trennbare Verben"},
   {art:"",   de:"abspülen",           pl:"—",            ru:"мыть посуду",              tema:"Trennbare Verben"},
   {art:"",   de:"reparieren",         pl:"—",            ru:"ремонтировать",            tema:"Alltag"},
-  {art:"",   de:"treffen",            pl:"—",            ru:"встречать, встречаться",   tema:"Alltag"},
+
   {art:"",   de:"kochen",             pl:"—",            ru:"готовить (еду), варить",   tema:"Alltag"},
   {art:"der",de:"Zug",                pl:"Züge",         ru:"поезд",                   tema:"Alltag"},
   {art:"das",de:"Konzert",            pl:"Konzerte",     ru:"концерт",                 tema:"Alltag"},
@@ -514,7 +514,7 @@ const WBDATA=[
   {art:"das",de:"Fußballspiel",       pl:"Fußballspiele",ru:"футбольный матч",         tema:"Alltag"},
   {art:"die",de:"Liebe",              pl:"—",            ru:"любовь",                  tema:"Familie"},
   {art:"",   de:"verliebt sein",      pl:"—",            ru:"быть влюблённым",         tema:"Phrase"},
-  {art:"",   de:"am Wochenende",      pl:"—",            ru:"в выходные",              tema:"Phrase"},
+
   {art:"",   de:"von ... bis ...",    pl:"—",            ru:"с ... до ... (von 9 bis 12)", tema:"Phrase"},
   // ── Урок 09.06 · Новые слова ─────────────────────────────────────────────────
   {art:"",   de:"immer",             pl:"—",            ru:"всегда",                  tema:"Alltag"},
@@ -547,7 +547,7 @@ const WBDATA=[
   {art:"",   de:"nie",               pl:"—",            ru:"никогда",                 tema:"Alltag"},
   {art:"",   de:"selten",            pl:"—",            ru:"редко",                   tema:"Alltag"},
   {art:"",   de:"manchmal",          pl:"—",            ru:"иногда",                  tema:"Alltag"},
-  {art:"",   de:"oft",               pl:"—",            ru:"часто",                   tema:"Alltag"},
+
   {art:"",   de:"fertig",            pl:"—",            ru:"готовый, законченный",    tema:"Adjektive"},
   {art:"",   de:"bereit",            pl:"—",            ru:"готовый (к действию)",    tema:"Adjektive"},
   // ── L5 D · Hast du Zeit? ──────────────────────────────────────────────────────
@@ -557,7 +557,7 @@ const WBDATA=[
   {art:"",   de:"gerne",             pl:"—",            ru:"охотно, с удовольствием", tema:"Alltag"},
   {art:"das",de:"Hobby",             pl:"Hobbys",       ru:"хобби",                   tema:"Alltag"},
   {art:"",   de:"Lust haben",        pl:"—",            ru:"хотеть, желать",          tema:"Phrase"},
-  {art:"",   de:"Zeit haben",        pl:"—",            ru:"иметь время",             tema:"Phrase"},
+
   {art:"",   de:"Schach spielen",    pl:"—",            ru:"играть в шахматы",        tema:"Phrase"},
   {art:"die",de:"Fahrkarte",         pl:"Fahrkarten",   ru:"транспортный билет",      tema:"Alltag"},
   {art:"der",de:"Zahnarzttermin",    pl:"Zahnarzttermine",ru:"визит к стоматологу",   tema:"Alltag"},
@@ -592,6 +592,36 @@ const WBDATA=[
   {art:"das",de:"Sonderangebot",     pl:"Sonderangebote",ru:"специальное предложение, акция", tema:"Alltag"},
   {art:"",   de:"mögen",             pl:"—",            ru:"любить, нравиться",       tema:"Alltag"},
   {art:"das",de:"Gewürz",            pl:"Gewürze",      ru:"специя, пряность",        tema:"Lebensmittel"},
+  // ── Lektion 6 · Новые слова ─────────────────────────────────────────────────
+  {art:"der",de:"Kaugummi",          pl:"Kaugummis",    ru:"жевательная резинка",      tema:"Lebensmittel"},
+  {art:"der",de:"Mais",              pl:"—",            ru:"кукуруза",                 tema:"Lebensmittel"},
+  {art:"der",de:"Zucker",            pl:"—",            ru:"сахар",                    tema:"Lebensmittel"},
+  {art:"das",de:"Ei",                pl:"Eier",         ru:"яйцо",                     tema:"Lebensmittel"},
+  {art:"das",de:"Brötchen",          pl:"Brötchen",     ru:"булочка",                  tema:"Lebensmittel"},
+  {art:"die",de:"Orange",            pl:"Orangen",      ru:"апельсин",                 tema:"Lebensmittel"},
+  {art:"die",de:"Erbse",             pl:"Erbsen",       ru:"горошина; Erbsen = горох", tema:"Lebensmittel"},
+  {art:"die",de:"Spaghetti",         pl:"—",            ru:"спагетти",                 tema:"Lebensmittel"},
+  {art:"die",de:"Marmelade",         pl:"Marmeladen",   ru:"джем, варенье",            tema:"Lebensmittel"},
+  {art:"die",de:"Chips",             pl:"—",            ru:"чипсы",                    tema:"Lebensmittel"},
+  {art:"die",de:"Dose",              pl:"Dosen",        ru:"банка (консервная)",        tema:"Lebensmittel"},
+  {art:"die",de:"Packung",           pl:"Packungen",    ru:"пачка, упаковка",          tema:"Lebensmittel"},
+  {art:"der",de:"Becher",            pl:"Becher",       ru:"стаканчик, контейнер",     tema:"Lebensmittel"},
+  {art:"die",de:"Tüte",              pl:"Tüten",        ru:"пакет, кулёк",             tema:"Lebensmittel"},
+  {art:"das",de:"Stück",             pl:"Stücke",       ru:"кусок, штука",             tema:"Lebensmittel"},
+  {art:"das",de:"Glas",              pl:"Gläser",       ru:"банка (стеклянная)",        tema:"Lebensmittel"},
+  {art:"der",de:"Kasten",            pl:"Kästen",       ru:"ящик (напр. ящик воды)",   tema:"Lebensmittel"},
+  {art:"die",de:"Scheibe",           pl:"Scheiben",     ru:"ломтик, кусочек",          tema:"Lebensmittel"},
+  {art:"die",de:"Metzgerei",         pl:"Metzgereien",  ru:"мясная лавка, мясник",     tema:"Lebensmittel"},
+  {art:"die",de:"Bäckerei",          pl:"Bäckereien",   ru:"булочная, пекарня",        tema:"Lebensmittel"},
+  {art:"der",de:"Markt",             pl:"Märkte",       ru:"рынок",                    tema:"Lebensmittel"},
+  {art:"die",de:"Tankstelle",        pl:"Tankstellen",  ru:"заправочная станция",      tema:"Lebensmittel"},
+  {art:"der",de:"Kiosk",             pl:"Kioske",       ru:"киоск",                    tema:"Lebensmittel"},
+  {art:"",   de:"backen",            pl:"—",            ru:"печь, выпекать",           tema:"Lebensmittel"},
+  {art:"",   de:"kosten",            pl:"—",            ru:"стоить",                   tema:"Lebensmittel"},
+  {art:"",   de:"kaufen",            pl:"—",            ru:"покупать",                 tema:"Lebensmittel"},
+  {art:"",   de:"verkaufen",         pl:"—",            ru:"продавать",                tema:"Lebensmittel"},
+  {art:"",   de:"bekommen",          pl:"—",            ru:"получать",                 tema:"Lebensmittel"},
+  {art:"",   de:"möchten",           pl:"—",            ru:"хотеть (вежливо; ich möchte = я хотел бы)", tema:"Lebensmittel"},
 ];
 
 
@@ -887,6 +917,167 @@ const KONJ_ALL={
   surfen:     {col:C.teal,  bg:C.tealBg,   ich:"surfe",     du:"surfst",     "er/es/sie":"surft",     wir:"surfen",   ihr:"surft",    "sie/Sie":"surfen"},
 };
 
+// Ударения: комбинирующая акута \u0301 ставится после ударной гласной
+const STRESS_MARKS={
+// Числа
+"null":"nu\u0301ll","eins":"ei\u0301ns","zwei":"zwe\u0301i","drei":"dre\u0301i","vier":"vi\u0301er",
+"fünf":"f\u00FC\u0301nf","sechs":"se\u0301chs","sieben":"si\u0301eben","acht":"a\u0301cht","neun":"ne\u0301un",
+"zehn":"ze\u0301hn","elf":"e\u0301lf","zwölf":"zw\u00F6\u0301lf","dreizehn":"dre\u0301izehn",
+"vierzehn":"vi\u0301erzehn","fünfzehn":"f\u00FC\u0301nfzehn","sechzehn":"se\u0301chzehn",
+"siebzehn":"si\u0301ebzehn","achtzehn":"a\u0301chtzehn","neunzehn":"ne\u0301unzehn","zwanzig":"zwa\u0301nzig",
+// Berufe
+"Lehrer":"Le\u0301hrer","Arzt":"A\u0301rzt","Ingenieur":"Ingenie\u0301ur","Verkäufer":"Verk\u00E4\u0301ufer",
+"Elektriker":"E\u0301lektriker","Friseur":"Frise\u0301ur","Programmierer":"Programmi\u0301erer",
+"Buchhalter":"Bu\u0301chhalter","Grafiker":"Gra\u0301fiker","Altenpfleger":"A\u0301ltenpfleger",
+"Student":"Stude\u0301nt","Kinderarzt":"Ki\u0301nderarzt","Hausmann":"Ha\u0301usmann",
+// Kursraum — Gegenstände
+"Tür":"T\u00FC\u0301r","Fenster":"Fe\u0301nster","Uhr":"U\u0301hr","Stuhl":"Stu\u0301hl",
+"Plakat":"Plaka\u0301t","Tafel":"Ta\u0301fel","Lampe":"La\u0301mpe","Flasche":"Fla\u0301sche",
+"Papier":"Papi\u0301er","Wörterbuch":"W\u00F6\u0301rterbuch","Kugelschreiber":"Ku\u0301gelschreiber",
+"Kuli":"Ku\u0301li","Tisch":"Ti\u0301sch","Schlüssel":"Schl\u00FC\u0301ssel","Handy":"Ha\u0301ndy",
+"Heft":"He\u0301ft","Brille":"Bri\u0301lle","Buch":"Bu\u0301ch","Stift":"Sti\u0301ft",
+"Tasche":"Ta\u0301sche","Rucksack":"Ru\u0301cksack","Tablet":"Ta\u0301blet","Laptop":"La\u0301ptop",
+"Bleistift":"Ble\u0301istift","Radiergummi":"Radi\u0301ergummi","Schere":"Sche\u0301re",
+"Lineal":"Linea\u0301l","Markierstift":"Marki\u0301erstift","Notizbuch":"Noti\u0301zbuch",
+"Zettel":"Ze\u0301ttel","Hausaufgabe":"Ha\u0301usaufgabe","Kopfhörer":"Ko\u0301pfhörer",
+// Kursraum — Verben & Nomen
+"beginnen":"begi\u0301nnen","enden":"e\u0301nden","Pause":"Pa\u0301use","wiederholen":"wiederho\u0301len",
+"Übung":"\u00DC\u0301bung",
+// Möbel / Bad / Küche
+"Spüle":"Sp\u00FC\u0301le","Bett":"Be\u0301tt","Herd":"He\u0301rd","Sofa":"So\u0301fa",
+"Schrank":"Schra\u0301nk","Fernseher":"Fe\u0301rnseher","Sessel":"Se\u0301ssel","Bild":"Bi\u0301ld",
+"Regal":"Rega\u0301l","Teppich":"Te\u0301ppich","Vorhang":"Vo\u0301rhang",
+"Schlafzimmer":"Schla\u0301fzimmer","Zimmer":"Zi\u0301mmer","Schreibtisch":"Schre\u0301ibtisch",
+"Bad":"Ba\u0301d","Badewanne":"Ba\u0301dewanne","Dusche":"Du\u0301sche","Toilette":"Toile\u0301tte",
+"Waschbecken":"Wa\u0301schbecken","Spiegel":"Spi\u0301egel","Küche":"K\u00FC\u0301che",
+"Kühlschrank":"K\u00FC\u0301hlschrank","Wohnzimmer":"Wo\u0301hnzimmer","Klimaanlage":"Kli\u0301maanlage",
+"Zimmerpflanze":"Zi\u0301mmerpflanze","Poster":"Po\u0301ster","Nachttisch":"Na\u0301chttisch",
+"Kissen":"Ki\u0301ssen","Bettdecke":"Be\u0301ttdecke","Teddybär":"Te\u0301ddybär",
+"Kinderzimmer":"Ki\u0301nderzimmer","Küchenschrank":"K\u00FC\u0301chenschrank","Blumentopf":"Blu\u0301mentopf",
+"Waschmaschine":"Wa\u0301schmaschine","Spülmaschine":"Sp\u00FC\u0301lmaschine","Blume":"Blu\u0301me",
+"Kommode":"Kommo\u0301de","Trockner":"Tro\u0301ckner","Heizungsanlage":"He\u0301izungsanlage",
+"Tasse":"Ta\u0301sse",
+// Wohnung
+"Terrasse":"Terra\u0301sse","Balkon":"Balko\u0301n","Garage":"Gara\u0301ge",
+"Arbeitszimmer":"A\u0301rbeitszimmer","Flur":"Flu\u0301r","Haus":"Ha\u0301us",
+"Wohnung":"Wo\u0301hnung","Dorf":"Do\u0301rf","Stadt":"Sta\u0301dt","Apartment":"Apa\u0301rtment",
+"Lage":"La\u0301ge","Stock":"Sto\u0301ck","Einfamilienhaus":"Ei\u0301nfamilienhaus",
+"Zentralheizung":"Ze\u0301ntralheizung","Quadratmeter":"Quadra\u0301tmeter",
+"Mehrfamilienhaus":"Me\u0301hrfamilienhaus","Hochhaus":"Ho\u0301chhaus","Reihenhaus":"Re\u0301ihenhaus",
+"Erdgeschoss":"E\u0301rdgeschoss","erste Stock":"e\u0301rste Sto\u0301ck",
+"zweite Stock":"zwe\u0301ite Sto\u0301ck","dritte Stock":"dri\u0301tte Sto\u0301ck",
+"Dachgeschoss":"Da\u0301chgeschoss","Garten":"Ga\u0301rten","bezahlen":"beza\u0301hlen",
+"Keller":"Ke\u0301ller","Farbe":"Fa\u0301rbe","Geschäft":"Gesch\u00E4\u0301ft",
+// Adjektive
+"alt":"a\u0301lt","neu":"ne\u0301u","modern":"mode\u0301rn","groß":"gro\u0301ß","klein":"kle\u0301in",
+"schön":"sch\u00F6\u0301n","hässlich":"h\u00E4\u0301sslich","bequem":"beque\u0301m",
+"unbequem":"unbeque\u0301m","ordentlich":"o\u0301rdentlich","unordentlich":"uno\u0301rdentlich",
+"teuer":"te\u0301uer","billig":"bi\u0301llig","günstig":"g\u00FC\u0301nstig","breit":"bre\u0301it",
+"schmal":"schma\u0301l","hell":"he\u0301ll","dunkel":"du\u0301nkel","links":"li\u0301nks",
+"rechts":"re\u0301chts","oben":"o\u0301ben","unten":"u\u0301nten","gemütlich":"gem\u00FC\u0301tlich",
+"ungemütlich":"ungem\u00FC\u0301tlich","hoch":"ho\u0301ch","niedrig":"ni\u0301edrig","gut":"gu\u0301t",
+"schlecht":"schle\u0301cht","ruhig":"ru\u0301hig","laut":"la\u0301ut","verheiratet":"verhe\u0301iratet",
+"genug":"genu\u0301g","furchtbar":"fu\u0301rchtbar","kalt":"ka\u0301lt","warm":"wa\u0301rm",
+"sonnig":"so\u0301nnig","zentral":"zentra\u0301l","interessant":"interessa\u0301nt",
+"langweilig":"la\u0301ngweilig","fröhlich":"fr\u00F6\u0301hlich","traurig":"tra\u0301urig","bunt":"bu\u0301nt",
+"froh":"fro\u0301h","fit":"fi\u0301t","möglich":"m\u00F6\u0301glich","offiziell":"offizie\u0301ll",
+"müde":"m\u00FC\u0301de","faul":"fa\u0301ul","bereit":"bere\u0301it","fertig":"fe\u0301rtig",
+"langsam":"la\u0301ngsam","spät":"sp\u00E4\u0301t","später":"sp\u00E4\u0301ter","kostenlos":"ko\u0301stenlos",
+// Familie
+"Großeltern":"Gro\u0301ßeltern","Großvater":"Gro\u0301ßvater","Großmutter":"Gro\u0301ßmutter",
+"Eltern":"E\u0301ltern","Vater":"Va\u0301ter","Mutter":"Mu\u0301tter","Geschwister":"Geschwi\u0301ster",
+"Schwester":"Schwe\u0301ster","Bruder":"Bru\u0301der","Sohn":"So\u0301hn","Tochter":"To\u0301chter",
+"Enkelkinder":"E\u0301nkelkinder","Enkel":"E\u0301nkel","Enkelin":"E\u0301nkelin","Onkel":"O\u0301nkel",
+"Tante":"Ta\u0301nte","Cousin":"Cousi\u0301n","Cousine":"Cousi\u0301ne","Neffe":"Ne\u0301ffe",
+"Nichte":"Ni\u0301chte","Oma":"O\u0301ma","Opa":"O\u0301pa","Ehe":"E\u0301he","Ehepaar":"E\u0301hepaar",
+"Ehefrau":"E\u0301hefrau","Ehemann":"E\u0301hemann","heiraten":"he\u0301iraten","Liebe":"Li\u0301ebe",
+"Heimatland":"He\u0301imatland","gehören":"geh\u00F6\u0301ren",
+// Tageszeiten & Wochentage
+"Montag":"Mo\u0301ntag","Dienstag":"Di\u0301enstag","Mittwoch":"Mi\u0301ttwoch",
+"Donnerstag":"Do\u0301nnerstag","Freitag":"Fre\u0301itag","Samstag":"Sa\u0301mstag",
+"Sonntag":"So\u0301nntag","Woche":"Wo\u0301che","Mittag":"Mi\u0301ttag","Vormittag":"Vo\u0301rmittag",
+"Nachmittag":"Na\u0301chmittag","Abend":"A\u0301bend","Spätabend":"Sp\u00E4\u0301tabend","Nacht":"Na\u0301cht",
+"Morgen":"Mo\u0301rgen","morgens":"mo\u0301rgens","mittags":"mi\u0301ttags","abends":"a\u0301bends",
+"nachts":"na\u0301chts","am Montag":"am Mo\u0301ntag",
+// Trennbare Verben
+"anrufen":"a\u0301nrufen","anfangen":"a\u0301nfangen","fernsehen":"fe\u0301rnsehen",
+"aufstehen":"a\u0301ufstehen","aufräumen":"a\u0301ufräumen","einkaufen":"ei\u0301nkaufen",
+"mitnehmen":"mi\u0301tnehmen","ausgehen":"a\u0301usgehen","mitkommen":"mi\u0301tkommen",
+"aufhören":"a\u0301ufhören","abspülen":"a\u0301bspülen","einladen":"ei\u0301nladen",
+"ausschlafen":"a\u0301usschlafen","mitbringen":"mi\u0301tbringen","einschlafen":"ei\u0301nschlafen",
+"wegfahren":"we\u0301gfahren","ausfallen":"a\u0301usfallen","stattfinden":"sta\u0301ttfinden",
+// Lebensmittel
+"Apfel":"A\u0301pfel","Banane":"Bana\u0301ne","Brot":"Bro\u0301t","Butter":"Bu\u0301tter",
+"Hähnchen":"H\u00E4\u0301hnchen","Joghurt":"Jo\u0301ghurt","Kaffee":"Ka\u0301ffee",
+"Kartoffel":"Karto\u0301ffel","Käse":"K\u00E4\u0301se","Milch":"Mi\u0301lch","Nudel":"Nu\u0301del",
+"Reis":"Re\u0301is","Salat":"Sala\u0301t","Schokolade":"Schokola\u0301de","Tee":"Te\u0301e",
+"Fisch":"Fi\u0301sch","Tomate":"Toma\u0301te","Wasser":"Wa\u0301sser","Wein":"We\u0301in",
+"Wurst":"Wu\u0301rst","Zwiebel":"Zwi\u0301ebel","Gewürz":"Gew\u00FC\u0301rz",
+// Alltag — Nomen & Adjektive
+"Formular":"Formula\u0301r","Pass":"Pa\u0301ss","Schokolade":"Schokola\u0301de",
+"Kasse":"Ka\u0301sse","Apotheke":"Apothe\u0301ke","Pizza":"Pi\u0301zza","Oper":"O\u0301per",
+"Portemonnaie":"Portemonn\u0061\u0301ie","Jacke":"Ja\u0301cke","Bus":"Bu\u0301s",
+"Supermarkt":"Su\u0301permarkt","Radtour":"Ra\u0301dtour","Lebensmittel":"Le\u0301bensmittel",
+"Sehenswürdigkeit":"Se\u0301henswürdigkeit","Straßenfest":"Stra\u0301ßenfest",
+"Bummel":"Bu\u0301mmel","Stadtbummel":"Sta\u0301dtbummel","Hafen":"Ha\u0301fen","Schiff":"Schi\u0301ff",
+"Innenstadt":"I\u0301nnenstadt","Laune":"La\u0301une","Wochenende":"Wo\u0301chenende",
+"Freizeit":"Fre\u0301izeit","Film":"Fi\u0301lm","Tag":"Ta\u0301g","Spaziergang":"Spazi\u0301ergang",
+"Schifffahrt":"Schi\u0301fffahrt","Kindheit":"Ki\u0301ndheit","Zeit":"Ze\u0301it",
+"Zeitung":"Ze\u0301itung","Dom":"Do\u0301m","Ausflug":"A\u0301usflug","Uhrzeit":"U\u0301hrzeit",
+"Tanzkurs":"Ta\u0301nzkurs","Konzert":"Konze\u0301rt","Radiowecker":"Ra\u0301diowecker",
+"Gleis":"Gle\u0301is","Flugzeug":"Flu\u0301gzeug","Tanzparty":"Ta\u0301nzparty","Krimi":"Kri\u0301mi",
+"Fußballspiel":"Fu\u0301ßballspiel","Frühstück":"Fr\u00FC\u0301hstück","Abendessen":"A\u0301bendessen",
+"Sprachkurs":"Spra\u0301chkurs","Fluss":"Flu\u0301ss","Brücke":"Br\u00FC\u0301cke","Wald":"Wa\u0301ld",
+"Hobby":"Ho\u0301bby","Fahrkarte":"Fa\u0301hrkarte","Zahnarzttermin":"Za\u0301hnarzttermin",
+"Tipp":"Ti\u0301pp","Respekt":"Respe\u0301kt","Sonderangebot":"So\u0301nderangebot",
+"Wäsche":"W\u00E4\u0301sche","Kuchen":"Ku\u0301chen","Nachspeise":"Na\u0301chspeise",
+"Meinung":"Me\u0301inung","Heimatland":"He\u0301imatland",
+// Alltag — Verben
+"kennen":"ke\u0301nnen","trinken":"tri\u0301nken","machen":"ma\u0301chen","besuchen":"besu\u0301chen",
+"besichtigen":"besi\u0301chtigen","studieren":"studi\u0301eren","faulenzen":"fa\u0301ulenzen",
+"bleiben":"ble\u0301iben","schlafen":"schla\u0301fen","fahren":"fa\u0301hren","lesen":"le\u0301sen",
+"sehen":"se\u0301hen","nehmen":"ne\u0301hmen","treffen":"tre\u0301ffen","essen":"e\u0301ssen",
+"sprechen":"spre\u0301chen","schreiben":"schre\u0301iben","lernen":"le\u0301rnen",
+"grillen":"gri\u0301llen","tanzen":"ta\u0301nzen","schwimmen":"schwi\u0301mmen","joggen":"jo\u0301ggen",
+"lachen":"la\u0301chen","lächeln":"l\u00E4\u0301cheln","treiben":"tre\u0301iben","reiten":"re\u0301iten",
+"kochen":"ko\u0301chen","klingeln":"kli\u0301ngeln","starten":"sta\u0301rten","wollen":"wo\u0301llen",
+"vermuten":"vermu\u0301ten","reparieren":"repari\u0301eren","frühstücken":"fr\u00FC\u0301hstücken",
+"chillen":"chi\u0301llen","mögen":"m\u00F6\u0301gen","gehören":"geh\u00F6\u0301ren",
+"wiederholen":"wiederho\u0301len","bezahlen":"beza\u0301hlen","beginnen":"begi\u0301nnen",
+// Alltag — Adverbien & Adjektive
+"zuerst":"zue\u0301rst","dann":"da\u0301nn","danach":"dana\u0301ch","allein":"alle\u0301in",
+"früher":"fr\u00FC\u0301her","alle":"a\u0301lle","wo":"wo\u0301","wohin":"wohi\u0301n",
+"wenig":"we\u0301nig","wieso":"wieso\u0301","oft":"o\u0301ft","weg":"we\u0301g",
+"natürlich":"nat\u00FC\u0301rlich","vielleicht":"vielle\u0301icht","wahrscheinlich":"wahrsche\u0301inlich",
+"bis":"bi\u0301s","also":"a\u0301lso","genau":"gena\u0301u","immer":"i\u0301mmer",
+"montags":"mo\u0301ntags","leider":"le\u0301ider","früh":"fr\u00FC\u0301h","nie":"ni\u0301e",
+"selten":"se\u0301lten","manchmal":"ma\u0301nchmal","zusammen":"zusa\u0301mmen","gerne":"ge\u0301rne",
+"draußen":"dra\u0301ußen","jetzt":"je\u0301tzt","auch":"a\u0301uch","nur":"nu\u0301r",
+"gern/gerne":"ge\u0301rn/ge\u0301rne","heute Abend":"he\u0301ute A\u0301bend",
+"spazieren gehen":"spazi\u0301eren ge\u0301hen","Grüße":"Gr\u00FC\u0301ße",
+"Freund":"Fre\u0301und","Zug":"Zu\u0301g",
+// Phrases (короткие)
+"zu Hause":"zu Ha\u0301use","nach Hause":"nach Ha\u0301use","Zeit haben":"Ze\u0301it ha\u0301ben",
+"am Wochenende":"am Wo\u0301chenende","alles anders":"a\u0301lles a\u0301nders",
+"Viele Grüße":"Vi\u0301ele Gr\u00FC\u0301ße","Bis bald":"Bi\u0301s ba\u0301ld",
+"Sport treiben":"Spo\u0301rt tre\u0301iben","zu tun":"zu tu\u0301n","es gibt":"es gi\u0301bt",
+"verheiratet sein":"verhe\u0301iratet se\u0301in","verliebt sein":"verli\u0301ebt se\u0301in",
+"Deutsch lernen":"De\u0301utsch le\u0301rnen","Musik hören":"Mu\u0301sik h\u00F6\u0301ren",
+"Fußball spielen":"Fu\u0301ßball spie\u0301len","Hausaufgaben machen":"Ha\u0301usaufgaben ma\u0301chen",
+"zum Glück":"zum Gl\u00FC\u0301ck","Lust haben":"Lu\u0301st ha\u0301ben",
+"Schach spielen":"Scha\u0301ch spie\u0301len","Wann?":"Wa\u0301nn?",
+// Lektion 6 — новые слова
+"Kaugummi":"Ka\u0301ugummi","Mais":"Ma\u0301is","Zucker":"Zu\u0301cker","Ei":"Ei\u0301",
+"Brötchen":"Br\u00F6\u0301tchen","Orange":"Ora\u0301nge","Erbse":"E\u0301rbse",
+"Spaghetti":"Spaghe\u0301tti","Marmelade":"Marmela\u0301de","Chips":"Chi\u0301ps",
+"Dose":"Do\u0301se","Packung":"Pa\u0301ckung","Becher":"Be\u0301cher","Tüte":"T\u00FC\u0301te",
+"Stück":"St\u00FC\u0301ck","Glas":"Gla\u0301s","Kasten":"Ka\u0301sten","Scheibe":"Sche\u0301ibe",
+"Metzgerei":"Metzgere\u0301i","Bäckerei":"B\u00E4ckere\u0301i","Markt":"Ma\u0301rkt",
+"Tankstelle":"Ta\u0301nkstelle","Kiosk":"Kio\u0301sk",
+"backen":"ba\u0301cken","kosten":"ko\u0301sten","kaufen":"ka\u0301ufen",
+"verkaufen":"verka\u0301ufen","bekommen":"beko\u0301mmen","möchten":"m\u00F6\u0301chten",
+};
+
 const DIALOGE={
   L1:[
     {tag:"Основные",col:C.blue,pairs:[
@@ -1066,13 +1257,20 @@ const DIALOGE={
   ],
   L6:[
     {tag:"Основные",col:C.green,pairs:[
-      {q:"Was essen Sie gerne?",              a:"Ich esse gerne Brot mit Käse. / Ich mag Fisch.",            note:"essen = есть (еду) · mögen = любить"},
-      {q:"Was trinken Sie gerne?",            a:"Ich trinke gerne Kaffee. / Ich trinke am liebsten Wasser.", note:"trinken = пить · am liebsten = больше всего"},
-      {q:"Wie oft essen Sie Fleisch?",        a:"Ich esse oft Hähnchen. / Ich esse selten Fleisch.",         note:"wie oft? = как часто? · selten = редко"},
+      {q:"Was möchten Sie?",                    a:"Ich hätte gerne drei Kilo Kartoffeln.",         note:"hätte gerne = хотел(а) бы · вежливая просьба"},
+      {q:"Was kosten die Tomaten?",             a:"Das Kilo kostet 2,90 Euro.",                    note:"kosten (мн.ч.) / kostet (ед.ч.) = стоить"},
+      {q:"Haben Sie noch einen Wunsch?",        a:"Danke, das ist alles. / Ja, ich möchte noch...",note:"der Wunsch = желание"},
+      {q:"Das macht zusammen 7,70 Euro.\nHaben Sie es passend?",a:"Leider nicht. Ich habe nur zehn Euro.", note:"passend = точная сдача"},
+      {q:"Dann bekommen Sie 2,30 Euro zurück.", a:"Danke schön!",                                  note:"zurück = обратно · bekommen = получить"},
+      {q:"Was essen Sie gerne?",                a:"Ich esse gerne Brot mit Käse. / Ich mag Fisch.", note:"essen = есть (еду) · mögen = любить"},
+      {q:"Wie oft essen Sie Fleisch?",          a:"Ich esse oft Hähnchen. / Ich esse selten Fleisch.", note:"wie oft? = как часто? · selten = редко"},
     ]},
     {tag:"Дополнительные",col:C.teal,pairs:[
-      {q:"Kaufen Sie oft im Supermarkt ein?", a:"Ja, ich kaufe jeden Tag ein. / Manchmal gehe ich auf den Markt.", note:"der Supermarkt · manchmal = иногда"},
-      {q:"Was kaufen Sie auf dem Markt?",     a:"Ich kaufe frisches Gemüse und Obst.",                      note:"das Gemüse = овощи · das Obst = фрукты"},
+      {q:"Kaufen Sie oft im Supermarkt ein?",   a:"Ja, ich kaufe jeden Tag ein. / Manchmal gehe ich auf den Markt.", note:"einkaufen = делать покупки · manchmal = иногда"},
+      {q:"Wo kaufen Sie Kaugummis?",            a:"Kaugummis kaufe ich an der Tankstelle. / im Kiosk.", note:"an der Tankstelle · im Supermarkt · auf dem Markt"},
+      {q:"Kauf doch bitte Brot! → кто?",        a:"Du → Imperativ informell (du-Form)",            note:"du kaufst → Kauf! (убери -st и du)"},
+      {q:"Vergiss die Eier nicht! → Infinitiv?",a:"vergessen → du vergisst → Vergiss!",            note:"⚡ сохраняет изменение гласной"},
+      {q:"Kaufen Sie Milch! → какой Imperativ?",a:"Imperativ formell (Sie-Form): Infinitiv + Sie", note:"Sie kaufen → Kaufen Sie!"},
     ]},
   ],
 };
@@ -1702,7 +1900,7 @@ function Woerterbuch(){
     const hiCell=(p)=>konj?.note&&konj.note.includes("→")&&(p==="du"||p==="er/es/sie");
     if(w.tema==="Phrase")return(
       <div style={{padding:"8px 10px",borderBottom:`1px solid ${C.border}22`,display:"flex",justifyContent:"space-between",alignItems:"center",gap:8}}>
-        <span style={{fontSize:13,color:C.teal,fontWeight:600,fontStyle:"italic"}}>{w.de}</span>
+        <span style={{fontSize:13,color:C.teal,fontWeight:600,fontStyle:"italic"}}>{STRESS_MARKS[w.de]||w.de}</span>
         <span style={{fontSize:12,color:C.text,textAlign:"right"}}>{w.ru}</span>
       </div>
     );
@@ -1724,7 +1922,7 @@ function Woerterbuch(){
               color:konj?(isOpen?konj.col:C.text):C.text,
               textDecoration:konj?"underline dotted":"none",
               textDecorationColor:konj?konj.col+"88":"transparent",
-              textUnderlineOffset:3}}>{w.de}</span>
+              textUnderlineOffset:3}}>{STRESS_MARKS[w.de]||w.de}</span>
             {konj&&<span style={{fontSize:10,color:konj.col,marginLeft:1,opacity:0.8}}>{isOpen?"▲":"▾"}</span>}
           </div>
           <div style={{fontSize:13}}>
@@ -4570,6 +4768,93 @@ function T5D(){
   );
 }
 
+const Q_L6B=[
+  {q:"Imperativ (du) von 'kaufen'?\n(du kaufst → ...)",    opts:["Kaufst!","Kauf!","Kaufe!","Kaufen!"],           ans:1, hint:"Imperativ du"},
+  {q:"Imperativ (ihr) von 'kommen'?\n(ihr kommt → ...)",   opts:["Kommen!","Komm!","Kommt!","Kommt ihr!"],        ans:2, hint:"Imperativ ihr"},
+  {q:"Imperativ (Sie) von 'nehmen'?",                       opts:["Nimm Sie!","Nehmt Sie!","Nehmen Sie!","Nehm Sie!"], ans:2, hint:"Imperativ Sie"},
+  {q:"Imperativ (du) von 'vergessen'?\n(du vergisst → ...)",opts:["Vergesse!","Vergesst!","Vergiss!","Vergessen!"],ans:2, hint:"Imperativ du ⚡"},
+  {q:"Imperativ (ihr) von 'bringen'?\n(ihr bringt → ...)", opts:["Bring!","Bringt!","Bringen!","Bringet!"],       ans:1, hint:"Imperativ ihr"},
+  {q:"Imperativ (Sie) von 'kaufen'?",                       opts:["Kaufst Sie!","Kauf Sie!","Kaufen Sie!","Sie kaufen!"],ans:2, hint:"Imperativ Sie"},
+  {q:"Imperativ (du) von 'holen'?\n(du holst → ...)",      opts:["Holt!","Hole!","Hol!","Holen!"],                ans:2, hint:"Imperativ du"},
+  {q:"Imperativ (ihr) von 'vergessen'?\n(ihr vergesst → ...)",opts:["Vergess!","Vergisst!","Vergesst!","Vergessen!"],ans:2, hint:"Imperativ ihr"},
+  {q:"Как сделать Imperativ вежливее?",                     opts:["Kauf Milch!","Kauf doch bitte Milch!","Du kaufst Milch!","Sie kaufen Milch!"],ans:1, hint:"doch bitte"},
+  {q:"Imperativ (du) von 'essen'?\n(du isst → ...)",        opts:["Esst!","Esse!","Iss!","Essen!"],                ans:2, hint:"Imperativ du ⚡"},
+  {q:"Imperativ (du) von 'gehen'?\n(du gehst → ...)",       opts:["Gehe!","Geht!","Geh!","Gehen!"],                ans:2, hint:"Imperativ du"},
+  {q:"Welcher Imperativ ist formell?",                       opts:["Kauf doch Brot!","Kauft Brot!","Kaufen Sie Brot!","Kaufst du Brot?"],ans:2, hint:"formell = Sie"},
+];
+
+function T6B(){
+  const [selForm,setSelForm]=useState("du");
+  const verbs=[
+    {inf:"kaufen",   du:"Kauf!",    ihr:"Kauft!",    Sie:"Kaufen Sie!",   note:""},
+    {inf:"holen",    du:"Hol!",     ihr:"Holt!",     Sie:"Holen Sie!",    note:""},
+    {inf:"bringen",  du:"Bring!",   ihr:"Bringt!",   Sie:"Bringen Sie!",  note:""},
+    {inf:"kommen",   du:"Komm!",    ihr:"Kommt!",    Sie:"Kommen Sie!",   note:""},
+    {inf:"gehen",    du:"Geh!",     ihr:"Geht!",     Sie:"Gehen Sie!",    note:""},
+    {inf:"warten",   du:"Warte!",   ihr:"Wartet!",   Sie:"Warten Sie!",   note:"-e вставка"},
+    {inf:"vergessen",du:"Vergiss!", ihr:"Vergesst!", Sie:"Vergessen Sie!",note:"⚡ сохраняет изм."},
+    {inf:"nehmen",   du:"Nimm!",    ihr:"Nehmt!",    Sie:"Nehmen Sie!",   note:"⚡ e→i"},
+    {inf:"essen",    du:"Iss!",     ihr:"Esst!",     Sie:"Essen Sie!",    note:"⚡ e→i"},
+    {inf:"trinken",  du:"Trink!",   ihr:"Trinkt!",   Sie:"Trinken Sie!",  note:""},
+    {inf:"einkaufen",du:"Kauf ein!",ihr:"Kauft ein!",Sie:"Kaufen Sie ein!",note:"✂️ трennbar"},
+  ];
+  const forms=[
+    {key:"du",  label:"du",  rule:"du kaufst → Kauf!",    hint:"убери -st и du",   col:C.teal},
+    {key:"ihr", label:"ihr", rule:"ihr kauft → Kauft!",   hint:"убери ihr",        col:C.purple},
+    {key:"Sie", label:"Sie", rule:"kaufen → Kaufen Sie!", hint:"инфинитив + Sie",  col:C.orange},
+  ];
+  const fc=forms.find(f=>f.key===selForm);
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:12}}>
+      <Box c={C.orange}>
+        <H c={C.orange}>🛒 B · Der Einkaufszettel — Imperativ</H>
+        {/* Rule cards */}
+        <div style={{display:"flex",flexDirection:"column",gap:6,marginBottom:14}}>
+          {forms.map(({key,label,rule,hint,col})=>(
+            <div key={key} onClick={()=>setSelForm(key)}
+              style={{display:"flex",alignItems:"center",gap:10,cursor:"pointer",
+                background:selForm===key?col+"18":C.card2,
+                border:`1px solid ${selForm===key?col:C.border}`,
+                borderRadius:10,padding:"9px 12px",transition:"all .15s"}}>
+              <span style={{background:col+"22",border:`1px solid ${col}55`,color:col,
+                borderRadius:6,padding:"2px 8px",fontWeight:800,fontSize:12,minWidth:32,textAlign:"center"}}>{label}</span>
+              <div>
+                <div style={{fontWeight:700,color:C.text,fontSize:13}}>{rule}</div>
+                <div style={{fontSize:11,color:C.muted}}>{hint}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+        {/* Verb column for selected form */}
+        <div style={{fontSize:11,color:C.muted,marginBottom:6}}>
+          👆 Нажми форму выше — ниже список примеров
+        </div>
+        <div style={{display:"flex",flexDirection:"column",gap:4}}>
+          {verbs.map(({inf,du,ihr,Sie,note})=>{
+            const val=selForm==="du"?du:selForm==="ihr"?ihr:Sie;
+            return (
+              <div key={inf} style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:6,
+                background:C.card2,borderRadius:8,padding:"7px 10px",alignItems:"center"}}>
+                <span style={{fontSize:13,color:C.muted}}>{inf}{note&&<span style={{fontSize:10,color:C.orange,marginLeft:4}}>{note}</span>}</span>
+                <span style={{fontSize:14,fontWeight:800,color:fc.col}}>{val}</span>
+              </div>
+            );
+          })}
+        </div>
+        {/* doch/bitte tip */}
+        <div style={{background:C.teal+"18",border:`1px solid ${C.teal}33`,borderRadius:10,padding:"10px 14px",marginTop:10}}>
+          <div style={{fontWeight:700,fontSize:12,color:C.teal,marginBottom:5}}>💡 doch / bitte = смягчение</div>
+          <div style={{fontSize:12,color:C.muted}}>
+            <span style={{color:C.text,fontWeight:600}}>Kauf Milch!</span> — жёстко<br/>
+            <span style={{color:C.teal,fontWeight:600}}>Kauf doch bitte Milch!</span> — вежливо<br/>
+            <span style={{color:C.text,fontWeight:600}}>Kaufen Sie Milch, bitte!</span> — формально
+          </div>
+        </div>
+      </Box>
+    </div>
+  );
+}
+
 const Q_L6A=[
   {q:"Welcher Artikel hat 'Apfel'?",          opts:["der","die","das"],                                                                     ans:0, hint:"Artikel"},
   {q:"Welcher Artikel hat 'Milch'?",          opts:["der","die","das"],                                                                     ans:1, hint:"Artikel"},
@@ -4736,11 +5021,12 @@ const LEKTIONEN=[
   },
   {
     id:"L6",num:"6",title:"Guten Appetit!",
-    sub:"A Lebensmittel · ...",
-    date:"Seite 64–...",col:C.green,
+    sub:"A Lebensmittel · B Einkaufszettel · Imperativ",
+    date:"Seite 62–...",col:C.green,
     sections:[
-      {id:"d6",  icon:"💬",title:"Dialogfragen L6",           sub:"Фразы для диалога",                      time:"∞",     col:C.teal,  hasT:false, th:null,         ex:()=><DialogCards lId="L6"/>},
-      {id:"6a",  icon:"🍎",title:"A · Lebensmittel",          sub:"Essen und Trinken · Häufigkeit",          time:"5 мин", col:C.green, hasT:true,  th:()=><T6A/>, ex:()=><Quiz questions={Q_L6A}/>},
+      {id:"d6",  icon:"💬",title:"Dialogfragen L6",           sub:"Фразы для диалога",                      time:"∞",     col:C.teal,  hasT:false, th:null,           ex:()=><DialogCards lId="L6"/>},
+      {id:"6a",  icon:"🍎",title:"A · Lebensmittel",          sub:"Essen und Trinken · Häufigkeit",          time:"5 мин", col:C.green, hasT:true,  th:()=><T6A/>,     ex:()=><Quiz questions={Q_L6A}/>},
+      {id:"6b",  icon:"🛒",title:"B · Der Einkaufszettel",    sub:"Imperativ du · ihr · Sie",                time:"6 мин", col:C.orange,hasT:true,  th:()=><T6B/>,     ex:()=><Quiz questions={Q_L6B}/>},
     ]
   },
 ];
