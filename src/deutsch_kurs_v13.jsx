@@ -647,6 +647,10 @@ const WBDATA=[
   {art:"der",de:"Rotkohl",           pl:"—",            ru:"краснокочанная капуста",   tema:"Lebensmittel"},
   {art:"der",de:"Blumenkohl",        pl:"—",            ru:"цветная капуста",          tema:"Lebensmittel"},
   {art:"die",de:"Aprikose",          pl:"Aprikosen",    ru:"абрикос",                  tema:"Lebensmittel"},
+  {art:"die",de:"Leute",             pl:"—",            ru:"люди",                     tema:"Alltag"},
+  {art:"der",de:"Nachtisch",         pl:"Nachtische",   ru:"десерт",                   tema:"Lebensmittel"},
+  {art:"die",de:"Kantine",           pl:"Kantinen",     ru:"столовая",                 tema:"Lebensmittel"},
+  {art:"der",de:"Imbiss",            pl:"Imbisse",      ru:"закусочная; перекус",       tema:"Lebensmittel"},
   // ── Фото + текст: новые слова ────────────────────────────────────────────────
   // Море / рыба
   {art:"der",de:"Krebs",             pl:"Krebse",       ru:"краб",                     tema:"Lebensmittel"},
@@ -1183,7 +1187,7 @@ const STRESS_MARKS={
 "Metzgerei":"Metzgere\u0301i","Bäckerei":"B\u00E4ckere\u0301i","Markt":"Ma\u0301rkt",
 "Tankstelle":"Ta\u0301nkstelle","Kiosk":"Kio\u0301sk",
 "backen":"ba\u0301cken","kosten":"ko\u0301sten","kaufen":"ka\u0301ufen",
-"verkaufen":"verka\u0301ufen","bekommen":"beko\u0301mmen","möchten":"m\u00F6\u0301chten","Bargeld":"Ba\u0301rgeld","Olive":"Oli\u0301ve","Rührei":"R\u00FC\u0301hrei","Waffel":"Wa\u0301ffel","Bonbon":"Bonbo\u0301n","Konfitüre":"Konfit\u00FC\u0301re","Schlagsahne":"Schla\u0301gsahne","Keks":"Ke\u0301ks","Kräutertee":"Kr\u00E4\u0301utertee","Eiscreme":"Ei\u0301screme","Eiswaffel":"Ei\u0301swaffel","Sandwich":"Sa\u0301ndwich","Steak":"Ste\u0301ak","Beilagensalat":"Be\u0301ilagensalat","Frischkäse":"Fri\u0301schkäse","Salami":"Sala\u0301mi","Karotte":"Karo\u0301tte","Knoblauch":"Kno\u0301blauch","Hackfleisch":"Ha\u0301ckfleisch","Schenkel":"Sche\u0301nkel","Brust":"Bru\u0301st","Brokkoli":"Bro\u0301kkoli","Rotkohl":"Ro\u0301tkohl","Blumenkohl":"Blu\u0301menkohl","Aprikose":"Apriko\u0301se",
+"verkaufen":"verka\u0301ufen","bekommen":"beko\u0301mmen","möchten":"m\u00F6\u0301chten","Bargeld":"Ba\u0301rgeld","Olive":"Oli\u0301ve","Rührei":"R\u00FC\u0301hrei","Waffel":"Wa\u0301ffel","Bonbon":"Bonbo\u0301n","Konfitüre":"Konfit\u00FC\u0301re","Schlagsahne":"Schla\u0301gsahne","Keks":"Ke\u0301ks","Kräutertee":"Kr\u00E4\u0301utertee","Eiscreme":"Ei\u0301screme","Eiswaffel":"Ei\u0301swaffel","Sandwich":"Sa\u0301ndwich","Steak":"Ste\u0301ak","Beilagensalat":"Be\u0301ilagensalat","Frischkäse":"Fri\u0301schkäse","Salami":"Sala\u0301mi","Karotte":"Karo\u0301tte","Knoblauch":"Kno\u0301blauch","Hackfleisch":"Ha\u0301ckfleisch","Schenkel":"Sche\u0301nkel","Brust":"Bru\u0301st","Brokkoli":"Bro\u0301kkoli","Rotkohl":"Ro\u0301tkohl","Blumenkohl":"Blu\u0301menkohl","Aprikose":"Apriko\u0301se","Leute":"Le\u0301ute","Nachtisch":"Na\u0301chtisch","Kantine":"Kanti\u0301ne","Imbiss":"I\u0301mbiss",
 // Новые слова — ударения
 "Krebs":"Kre\u0301bs","Tintenfisch":"Ti\u0301ntenfisch","Forelle":"Fore\u0301lle",
 "Thunfisch":"Thu\u0301nfisch","Lachs":"La\u0301chs","Karpfen":"Ka\u0301rpfen","Garnele":"Garne\u0301le",
