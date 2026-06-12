@@ -622,6 +622,114 @@ const WBDATA=[
   {art:"",   de:"verkaufen",         pl:"—",            ru:"продавать",                tema:"Lebensmittel"},
   {art:"",   de:"bekommen",          pl:"—",            ru:"получать",                 tema:"Lebensmittel"},
   {art:"",   de:"möchten",           pl:"—",            ru:"хотеть (вежливо; ich möchte = я хотел бы)", tema:"Lebensmittel"},
+  {art:"das",de:"Bargeld",           pl:"—",            ru:"наличные (деньги)",        tema:"Lebensmittel"},
+  {art:"die",de:"Olive",             pl:"Oliven",       ru:"олива, оливка",            tema:"Lebensmittel"},
+  {art:"das",de:"Rührei",            pl:"Rühreier",     ru:"яичница-болтунья",         tema:"Lebensmittel"},
+  {art:"die",de:"Waffel",            pl:"Waffeln",      ru:"вафля",                    tema:"Lebensmittel"},
+  {art:"das",de:"Bonbon",            pl:"Bonbons",      ru:"конфета, леденец",         tema:"Lebensmittel"},
+  {art:"die",de:"Konfitüre",         pl:"Konfitüren",   ru:"конфитюр (джем с кусочками фруктов)", tema:"Lebensmittel"},
+  {art:"die",de:"Schlagsahne",       pl:"—",            ru:"взбитые сливки",           tema:"Lebensmittel"},
+  {art:"der",de:"Keks",              pl:"Kekse",        ru:"печенье (штука)",          tema:"Lebensmittel"},
+  {art:"der",de:"Kräutertee",        pl:"Kräutertees",  ru:"травяной чай",             tema:"Lebensmittel"},
+  {art:"die",de:"Eiscreme",          pl:"Eiscremes",    ru:"мороженое",                tema:"Lebensmittel"},
+  {art:"die",de:"Eiswaffel",         pl:"Eiswaffeln",   ru:"вафельный рожок",          tema:"Lebensmittel"},
+  {art:"das",de:"Sandwich",          pl:"Sandwichs",    ru:"сэндвич, бутерброд",       tema:"Lebensmittel"},
+  {art:"das",de:"Steak",             pl:"Steaks",       ru:"стейк",                    tema:"Lebensmittel"},
+  {art:"der",de:"Beilagensalat",     pl:"Beilagensalate",ru:"салат (как гарнир)",      tema:"Lebensmittel"},
+  {art:"der",de:"Frischkäse",        pl:"—",            ru:"сливочный сыр, творожный сыр", tema:"Lebensmittel"},
+  {art:"die",de:"Salami",            pl:"Salamis",      ru:"салями",                   tema:"Lebensmittel"},
+  {art:"die",de:"Karotte",           pl:"Karotten",     ru:"морковь",                  tema:"Lebensmittel"},
+  {art:"der",de:"Knoblauch",         pl:"—",            ru:"чеснок",                   tema:"Lebensmittel"},
+  {art:"das",de:"Hackfleisch",       pl:"—",            ru:"фарш",                     tema:"Lebensmittel"},
+  {art:"der",de:"Schenkel",          pl:"Schenkel",     ru:"бедрышко (мясо)",          tema:"Lebensmittel"},
+  {art:"die",de:"Brust",             pl:"Brüste",       ru:"грудка (мясо); грудь",     tema:"Lebensmittel"},
+  {art:"der",de:"Brokkoli",          pl:"—",            ru:"брокколи",                 tema:"Lebensmittel"},
+  {art:"der",de:"Rotkohl",           pl:"—",            ru:"краснокочанная капуста",   tema:"Lebensmittel"},
+  {art:"der",de:"Blumenkohl",        pl:"—",            ru:"цветная капуста",          tema:"Lebensmittel"},
+  {art:"die",de:"Aprikose",          pl:"Aprikosen",    ru:"абрикос",                  tema:"Lebensmittel"},
+  // ── Фото + текст: новые слова ────────────────────────────────────────────────
+  // Море / рыба
+  {art:"der",de:"Krebs",             pl:"Krebse",       ru:"краб",                     tema:"Lebensmittel"},
+  {art:"der",de:"Tintenfisch",       pl:"Tintenfische",  ru:"кальмар, осьминог",        tema:"Lebensmittel"},
+  {art:"die",de:"Forelle",           pl:"Forellen",     ru:"форель",                   tema:"Lebensmittel"},
+  {art:"der",de:"Thunfisch",         pl:"Thunfische",   ru:"тунец",                    tema:"Lebensmittel"},
+  {art:"der",de:"Lachs",             pl:"Lachse",       ru:"лосось",                   tema:"Lebensmittel"},
+  {art:"der",de:"Karpfen",           pl:"Karpfen",      ru:"карп",                     tema:"Lebensmittel"},
+  {art:"die",de:"Garnele",           pl:"Garnelen",     ru:"креветка",                 tema:"Lebensmittel"},
+  // Мясо
+  {art:"der",de:"Schinken",          pl:"Schinken",     ru:"ветчина",                  tema:"Lebensmittel"},
+  {art:"das",de:"Schweinefleisch",   pl:"—",            ru:"свинина",                  tema:"Lebensmittel"},
+  {art:"das",de:"Rindfleisch",       pl:"—",            ru:"говядина",                 tema:"Lebensmittel"},
+  {art:"das",de:"Würstchen",         pl:"Würstchen",    ru:"сосиска",                  tema:"Lebensmittel"},
+  // Выпечка / хлеб
+  {art:"das",de:"Toastbrot",         pl:"Toastbrote",   ru:"тостовый хлеб",            tema:"Lebensmittel"},
+  {art:"das",de:"Weißbrot",          pl:"Weißbrote",    ru:"белый хлеб",               tema:"Lebensmittel"},
+  {art:"das",de:"Vollkornbrot",      pl:"Vollkornbrote",ru:"цельнозерновой хлеб",      tema:"Lebensmittel"},
+  {art:"das",de:"Baguette",          pl:"Baguettes",    ru:"багет",                    tema:"Lebensmittel"},
+  {art:"das",de:"Croissant",         pl:"Croissants",   ru:"круассан",                 tema:"Lebensmittel"},
+  {art:"der",de:"Pfannkuchen",       pl:"Pfannkuchen",  ru:"блинчик, оладья",          tema:"Lebensmittel"},
+  {art:"der",de:"Käsekuchen",        pl:"Käsekuchen",   ru:"чизкейк, творожный пирог", tema:"Lebensmittel"},
+  // Напитки
+  {art:"die",de:"Limonade",          pl:"Limonaden",    ru:"лимонад",                  tema:"Lebensmittel"},
+  {art:"der",de:"Weißwein",          pl:"Weißweine",    ru:"белое вино",               tema:"Lebensmittel"},
+  {art:"der",de:"Sekt",              pl:"—",            ru:"игристое вино, шампанское", tema:"Lebensmittel"},
+  {art:"die",de:"Cola",              pl:"Colas",        ru:"кола",                     tema:"Lebensmittel"},
+  {art:"der",de:"Orangensaft",       pl:"Orangensäfte", ru:"апельсиновый сок",         tema:"Lebensmittel"},
+  {art:"der",de:"Cappuccino",        pl:"Cappuccinos",  ru:"капучино",                 tema:"Lebensmittel"},
+  {art:"der",de:"Espresso",          pl:"Espressos",    ru:"эспрессо",                 tema:"Lebensmittel"},
+  {art:"der",de:"Schwarztee",        pl:"Schwarztees",  ru:"чёрный чай",               tema:"Lebensmittel"},
+  {art:"der",de:"Milchkaffee",       pl:"Milchkaffees", ru:"молочный кофе (латте)",    tema:"Lebensmittel"},
+  // Блюда / подача
+  {art:"die",de:"Vorspeise",         pl:"Vorspeisen",   ru:"закуска, первое блюдо",    tema:"Lebensmittel"},
+  {art:"das",de:"Hauptgericht",      pl:"Hauptgerichte",ru:"главное блюдо",            tema:"Lebensmittel"},
+  {art:"die",de:"Suppe",             pl:"Suppen",       ru:"суп",                      tema:"Lebensmittel"},
+  {art:"die",de:"Cornflakes",        pl:"—",            ru:"кукурузные хлопья",        tema:"Lebensmittel"},
+  {art:"die",de:"Pommes frites",     pl:"—",            ru:"картофель фри",            tema:"Lebensmittel"},
+  // Посуда / действия
+  {art:"der",de:"Suppenlöffel",      pl:"Suppenlöffel", ru:"суповая ложка",            tema:"Lebensmittel"},
+  {art:"das",de:"Messer",            pl:"Messer",       ru:"нож",                      tema:"Lebensmittel"},
+  {art:"",   de:"schneiden",         pl:"—",            ru:"резать",                   tema:"Lebensmittel"},
+  {art:"",   de:"schälen",           pl:"—",            ru:"чистить (кожуру)",         tema:"Lebensmittel"},
+  // Яйца
+  {art:"das",de:"Spiegelei",         pl:"Spiegeleier",  ru:"яичница-глазунья",         tema:"Lebensmittel"},
+  {art:"das",de:"Hühnerei",          pl:"Hühnereier",   ru:"куриное яйцо",             tema:"Lebensmittel"},
+  {art:"das",de:"Eiweiß",            pl:"—",            ru:"белок яйца",               tema:"Lebensmittel"},
+  {art:"das",de:"Eigelb",            pl:"Eigelbe",      ru:"желток яйца",              tema:"Lebensmittel"},
+  // Фрукты / ягоды
+  {art:"der",de:"Pfirsich",          pl:"Pfirsiche",    ru:"персик",                   tema:"Lebensmittel"},
+  {art:"die",de:"Birne",             pl:"Birnen",       ru:"груша",                    tema:"Lebensmittel"},
+  {art:"die",de:"Kirsche",           pl:"Kirschen",     ru:"вишня, черешня",           tema:"Lebensmittel"},
+  {art:"die",de:"Himbeere",          pl:"Himbeeren",    ru:"малина",                   tema:"Lebensmittel"},
+  {art:"die",de:"Brombeere",         pl:"Brombeeren",   ru:"ежевика",                  tema:"Lebensmittel"},
+  {art:"die",de:"Erdbeere",          pl:"Erdbeeren",    ru:"клубника",                 tema:"Lebensmittel"},
+  {art:"die",de:"Grapefruit",        pl:"Grapefruits",  ru:"грейпфрут",               tema:"Lebensmittel"},
+  {art:"die",de:"Zitrone",           pl:"Zitronen",     ru:"лимон",                    tema:"Lebensmittel"},
+  {art:"die",de:"Limette",           pl:"Limetten",     ru:"лайм",                     tema:"Lebensmittel"},
+  {art:"die",de:"Rosine",            pl:"Rosinen",      ru:"изюм",                     tema:"Lebensmittel"},
+  // Овощи / зелень
+  {art:"der",de:"Spinat",            pl:"—",            ru:"шпинат",                   tema:"Lebensmittel"},
+  {art:"die",de:"Paprika",           pl:"Paprikas",     ru:"болгарский перец",         tema:"Lebensmittel"},
+  {art:"der",de:"Kopfsalat",         pl:"Kopfsalate",   ru:"листовой салат-латук",     tema:"Lebensmittel"},
+  {art:"die",de:"Gurke",             pl:"Gurken",       ru:"огурец",                   tema:"Lebensmittel"},
+  {art:"der",de:"Kürbis",            pl:"Kürbisse",     ru:"тыква",                    tema:"Lebensmittel"},
+  {art:"der",de:"Pilz",              pl:"Pilze",        ru:"гриб",                     tema:"Lebensmittel"},
+  {art:"der",de:"Champignon",        pl:"Champignons",  ru:"шампиньон",               tema:"Lebensmittel"},
+  // Приправы / специи / соусы
+  {art:"die",de:"Mayonnaise",        pl:"—",            ru:"майонез",                  tema:"Lebensmittel"},
+  {art:"der",de:"Senf",              pl:"—",            ru:"горчица",                  tema:"Lebensmittel"},
+  {art:"der",de:"Ketchup",           pl:"—",            ru:"кетчуп",                   tema:"Lebensmittel"},
+  {art:"der",de:"Essig",             pl:"—",            ru:"уксус",                    tema:"Lebensmittel"},
+  {art:"das",de:"Olivenöl",          pl:"—",            ru:"оливковое масло",          tema:"Lebensmittel"},
+  {art:"der",de:"Pfeffer",           pl:"—",            ru:"перец (специя)",           tema:"Lebensmittel"},
+  {art:"das",de:"Salz",              pl:"—",            ru:"соль",                     tema:"Lebensmittel"},
+  {art:"der",de:"Oregano",           pl:"—",            ru:"орегано",                  tema:"Lebensmittel"},
+  {art:"die",de:"Minze",             pl:"Minzen",       ru:"мята",                     tema:"Lebensmittel"},
+  {art:"der",de:"Rosmarin",          pl:"—",            ru:"розмарин",                 tema:"Lebensmittel"},
+  {art:"das",de:"Basilikum",         pl:"—",            ru:"базилик",                  tema:"Lebensmittel"},
+  {art:"der",de:"Schnittlauch",      pl:"—",            ru:"шнитт-лук",                tema:"Lebensmittel"},
+  {art:"die",de:"Petersilie",        pl:"—",            ru:"петрушка",                 tema:"Lebensmittel"},
+  // Прочее
+  {art:"",   de:"vegetarisch",       pl:"—",            ru:"вегетарианский",           tema:"Lebensmittel"},
 ];
 
 
@@ -1075,7 +1183,34 @@ const STRESS_MARKS={
 "Metzgerei":"Metzgere\u0301i","Bäckerei":"B\u00E4ckere\u0301i","Markt":"Ma\u0301rkt",
 "Tankstelle":"Ta\u0301nkstelle","Kiosk":"Kio\u0301sk",
 "backen":"ba\u0301cken","kosten":"ko\u0301sten","kaufen":"ka\u0301ufen",
-"verkaufen":"verka\u0301ufen","bekommen":"beko\u0301mmen","möchten":"m\u00F6\u0301chten",
+"verkaufen":"verka\u0301ufen","bekommen":"beko\u0301mmen","möchten":"m\u00F6\u0301chten","Bargeld":"Ba\u0301rgeld","Olive":"Oli\u0301ve","Rührei":"R\u00FC\u0301hrei","Waffel":"Wa\u0301ffel","Bonbon":"Bonbo\u0301n","Konfitüre":"Konfit\u00FC\u0301re","Schlagsahne":"Schla\u0301gsahne","Keks":"Ke\u0301ks","Kräutertee":"Kr\u00E4\u0301utertee","Eiscreme":"Ei\u0301screme","Eiswaffel":"Ei\u0301swaffel","Sandwich":"Sa\u0301ndwich","Steak":"Ste\u0301ak","Beilagensalat":"Be\u0301ilagensalat","Frischkäse":"Fri\u0301schkäse","Salami":"Sala\u0301mi","Karotte":"Karo\u0301tte","Knoblauch":"Kno\u0301blauch","Hackfleisch":"Ha\u0301ckfleisch","Schenkel":"Sche\u0301nkel","Brust":"Bru\u0301st","Brokkoli":"Bro\u0301kkoli","Rotkohl":"Ro\u0301tkohl","Blumenkohl":"Blu\u0301menkohl","Aprikose":"Apriko\u0301se",
+// Новые слова — ударения
+"Krebs":"Kre\u0301bs","Tintenfisch":"Ti\u0301ntenfisch","Forelle":"Fore\u0301lle",
+"Thunfisch":"Thu\u0301nfisch","Lachs":"La\u0301chs","Karpfen":"Ka\u0301rpfen","Garnele":"Garne\u0301le",
+"Schinken":"Schi\u0301nken","Schweinefleisch":"Schwe\u0301inefleisch","Rindfleisch":"Ri\u0301ndfleisch",
+"Würstchen":"W\u00FC\u0301rstchen","Toastbrot":"To\u0301astbrot","Weißbrot":"We\u0301ißbrot",
+"Vollkornbrot":"Vo\u0301llkornbrot","Baguette":"Bague\u0301tte","Croissant":"Croissa\u0301nt",
+"Pfannkuchen":"Pfa\u0301nnkuchen","Käsekuchen":"K\u00E4\u0301sekuchen",
+"Limonade":"Limona\u0301de","Weißwein":"We\u0301ißwein","Sekt":"Se\u0301kt",
+"Cola":"Co\u0301la","Orangensaft":"Ora\u0301ngensaft","Cappuccino":"Cappucci\u0301no",
+"Espresso":"Espre\u0301sso","Schwarztee":"Schwa\u0301rztee","Milchkaffee":"Mi\u0301lchkaffee",
+"Vorspeise":"Vo\u0301rspeise","Hauptgericht":"Ha\u0301uptgericht","Suppe":"Su\u0301ppe",
+"Cornflakes":"Co\u0301rnflakes","Pommes frites":"Po\u0301mmes fri\u0301tes",
+"Suppenlöffel":"Su\u0301ppenlöffel","Messer":"Me\u0301sser",
+"schneiden":"schne\u0301iden","schälen":"sch\u00E4\u0301len",
+"Spiegelei":"Spie\u0301gelei","Hühnerei":"H\u00FC\u0301hnerei",
+"Eiweiß":"Ei\u0301weiß","Eigelb":"Ei\u0301gelb",
+"Pfirsich":"Pfi\u0301rsich","Birne":"Bi\u0301rne","Kirsche":"Ki\u0301rsche",
+"Himbeere":"Hi\u0301mbeere","Brombeere":"Bro\u0301mbeere","Erdbeere":"E\u0301rdbeere",
+"Grapefruit":"Gra\u0301pefruit","Zitrone":"Zitro\u0301ne","Limette":"Lime\u0301tte",
+"Rosine":"Rosi\u0301ne","Spinat":"Spina\u0301t","Paprika":"Pa\u0301prika",
+"Kopfsalat":"Ko\u0301pfsalat","Gurke":"Gu\u0301rke","Kürbis":"K\u00FC\u0301rbis",
+"Pilz":"Pi\u0301lz","Champignon":"Champigno\u0301n",
+"Mayonnaise":"Mayonna\u0301ise","Senf":"Se\u0301nf","Ketchup":"Ke\u0301tchup",
+"Essig":"E\u0301ssig","Olivenöl":"Oli\u0301venöl","Pfeffer":"Pfe\u0301ffer",
+"Salz":"Sa\u0301lz","Oregano":"Ore\u0301gano","Minze":"Mi\u0301nze",
+"Rosmarin":"Ro\u0301smarin","Basilikum":"Basili\u0301kum",
+"Schnittlauch":"Schni\u0301ttlauch","Petersilie":"Petersi\u0301lie","vegetarisch":"vegeta\u0301risch",
 };
 
 const DIALOGE={
@@ -4786,68 +4921,198 @@ const Q_L6B=[
 function T6B(){
   const [selForm,setSelForm]=useState("du");
   const verbs=[
-    {inf:"kaufen",   du:"Kauf!",    ihr:"Kauft!",    Sie:"Kaufen Sie!",   note:""},
-    {inf:"holen",    du:"Hol!",     ihr:"Holt!",     Sie:"Holen Sie!",    note:""},
-    {inf:"bringen",  du:"Bring!",   ihr:"Bringt!",   Sie:"Bringen Sie!",  note:""},
-    {inf:"kommen",   du:"Komm!",    ihr:"Kommt!",    Sie:"Kommen Sie!",   note:""},
-    {inf:"gehen",    du:"Geh!",     ihr:"Geht!",     Sie:"Gehen Sie!",    note:""},
-    {inf:"warten",   du:"Warte!",   ihr:"Wartet!",   Sie:"Warten Sie!",   note:"-e вставка"},
-    {inf:"vergessen",du:"Vergiss!", ihr:"Vergesst!", Sie:"Vergessen Sie!",note:"⚡ сохраняет изм."},
-    {inf:"nehmen",   du:"Nimm!",    ihr:"Nehmt!",    Sie:"Nehmen Sie!",   note:"⚡ e→i"},
-    {inf:"essen",    du:"Iss!",     ihr:"Esst!",     Sie:"Essen Sie!",    note:"⚡ e→i"},
-    {inf:"trinken",  du:"Trink!",   ihr:"Trinkt!",   Sie:"Trinken Sie!",  note:""},
-    {inf:"einkaufen",du:"Kauf ein!",ihr:"Kauft ein!",Sie:"Kaufen Sie ein!",note:"✂️ трennbar"},
+    {inf:"kaufen",   du:"Kauf!",    ihr:"Kauft!",    Sie:"Kaufen Sie!",    note:""},
+    {inf:"holen",    du:"Hol!",     ihr:"Holt!",     Sie:"Holen Sie!",     note:""},
+    {inf:"bringen",  du:"Bring!",   ihr:"Bringt!",   Sie:"Bringen Sie!",   note:""},
+    {inf:"kommen",   du:"Komm!",    ihr:"Kommt!",    Sie:"Kommen Sie!",    note:""},
+    {inf:"gehen",    du:"Geh!",     ihr:"Geht!",     Sie:"Gehen Sie!",     note:""},
+    {inf:"trinken",  du:"Trink!",   ihr:"Trinkt!",   Sie:"Trinken Sie!",   note:""},
+    {inf:"warten",   du:"Warte!",   ihr:"Wartet!",   Sie:"Warten Sie!",    note:"-e вставка"},
+    {inf:"vergessen",du:"Vergiss!", ihr:"Vergesst!", Sie:"Vergessen Sie!",  note:"⚡ e→i"},
+    {inf:"nehmen",   du:"Nimm!",    ihr:"Nehmt!",    Sie:"Nehmen Sie!",    note:"⚡ e→i"},
+    {inf:"essen",    du:"Iss!",     ihr:"Esst!",     Sie:"Essen Sie!",     note:"⚡ e→i"},
+    {inf:"einkaufen",du:"Kauf ein!",ihr:"Kauft ein!",Sie:"Kaufen Sie ein!",note:"✂️ trennbar"},
   ];
   const forms=[
-    {key:"du",  label:"du",  rule:"du kaufst → Kauf!",    hint:"убери -st и du",   col:C.teal},
-    {key:"ihr", label:"ihr", rule:"ihr kauft → Kauft!",   hint:"убери ihr",        col:C.purple},
-    {key:"Sie", label:"Sie", rule:"kaufen → Kaufen Sie!", hint:"инфинитив + Sie",  col:C.orange},
+    {key:"du",  label:"du",  col:C.teal,
+     title:"Imperativ du — информальный, 1 человек",
+     steps:["Берём du-форму: du kauf-ST","Убираем -ST и «du» → Kauf!"],
+     special:"⚠️ Стемм оканчивается на -d/-t: добавь -e\n→ du wartest → Warte! | du redest → Rede!",
+     examples:[["du kaufst","Kauf!"],["du holst","Hol!"],["du gehst","Geh!"],["du wartest","Warte!"]],
+     usage:"С другом, в семье — на «ты»"},
+    {key:"ihr", label:"ihr", col:C.purple,
+     title:"Imperativ ihr — информальный, несколько",
+     steps:["Берём ihr-форму: ihr kauf-T","Убираем только «ihr» → Kauft!"],
+     special:"✅ Самая простая форма — ihr-форма уже готова, просто убери местоимение!",
+     examples:[["ihr kauft","Kauft!"],["ihr kommt","Kommt!"],["ihr bringt","Bringt!"],["ihr wartet","Wartet!"]],
+     usage:"С друзьями или семьёй — на «вы» (неформально)"},
+    {key:"Sie", label:"Sie", col:C.orange,
+     title:"Imperativ Sie — формальный",
+     steps:["Берём инфинитив: kauf-EN","Ставим «Sie» сразу после глагола → Kaufen Sie!"],
+     special:"📌 Порядок слов: ГЛАГОЛ + Sie (как в вопросе: «Kaufen Sie?»)\nГлагол стоит на 1-м месте!",
+     examples:[["kaufen","Kaufen Sie!"],["nehmen","Nehmen Sie!"],["probieren","Probieren Sie!"],["bezahlen","Bezahlen Sie!"]],
+     usage:"С незнакомцами, в магазине, с начальником — на «Вы»"},
   ];
   const fc=forms.find(f=>f.key===selForm);
   return (
-    <div style={{display:"flex",flexDirection:"column",gap:12}}>
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
       <Box c={C.orange}>
         <H c={C.orange}>🛒 B · Der Einkaufszettel — Imperativ</H>
-        {/* Rule cards */}
-        <div style={{display:"flex",flexDirection:"column",gap:6,marginBottom:14}}>
-          {forms.map(({key,label,rule,hint,col})=>(
-            <div key={key} onClick={()=>setSelForm(key)}
-              style={{display:"flex",alignItems:"center",gap:10,cursor:"pointer",
-                background:selForm===key?col+"18":C.card2,
-                border:`1px solid ${selForm===key?col:C.border}`,
-                borderRadius:10,padding:"9px 12px",transition:"all .15s"}}>
-              <span style={{background:col+"22",border:`1px solid ${col}55`,color:col,
-                borderRadius:6,padding:"2px 8px",fontWeight:800,fontSize:12,minWidth:32,textAlign:"center"}}>{label}</span>
-              <div>
-                <div style={{fontWeight:700,color:C.text,fontSize:13}}>{rule}</div>
-                <div style={{fontSize:11,color:C.muted}}>{hint}</div>
+
+        {/* Intro block */}
+        <div style={{background:C.card2,borderRadius:10,padding:"12px 14px",marginBottom:12}}>
+          <div style={{fontWeight:800,fontSize:13,color:C.text,marginBottom:6}}>Что такое Imperativ?</div>
+          <div style={{fontSize:12,color:C.muted,lineHeight:1.6,marginBottom:10}}>
+            Imperativ (повелительное наклонение) — форма глагола для{" "}
+            <span style={{color:C.text,fontWeight:700}}>приказов, просьб, советов и инструкций</span>.{" "}
+            Глагол стоит на <span style={{color:C.orange,fontWeight:700}}>первом месте</span> в предложении, местоимение не нужно (кроме Sie).
+          </div>
+          <div style={{display:"flex",flexDirection:"column",gap:5}}>
+            {[
+              [C.teal,  "du",  "Kauf Milch!",        "Купи молоко! (другу / члену семьи)"],
+              [C.purple,"ihr", "Kauft Milch!",        "Купите молоко! (группе друзей)"],
+              [C.orange,"Sie", "Kaufen Sie Milch!",   "Купите молоко, пожалуйста. (в магазине)"],
+            ].map(([col,form,de,ru])=>(
+              <div key={form} style={{display:"flex",alignItems:"center",gap:8,
+                background:col+"11",borderRadius:8,padding:"6px 10px"}}>
+                <span style={{background:col+"33",color:col,borderRadius:5,
+                  padding:"1px 6px",fontSize:10,fontWeight:800,minWidth:24,textAlign:"center"}}>{form}</span>
+                <span style={{fontSize:13,fontWeight:700,color:C.text,minWidth:130}}>{de}</span>
+                <span style={{fontSize:11,color:C.muted}}>{ru}</span>
               </div>
-            </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Form tab selector */}
+        <div style={{display:"flex",gap:6,marginBottom:10}}>
+          {forms.map(({key,label,col})=>(
+            <button key={key} onClick={()=>setSelForm(key)}
+              style={{flex:1,padding:"10px 4px",borderRadius:9,cursor:"pointer",fontWeight:800,fontSize:13,
+                border:`2px solid ${selForm===key?col:C.border}`,
+                background:selForm===key?col+"22":"transparent",
+                color:selForm===key?col:C.muted}}>
+              {label}
+            </button>
           ))}
         </div>
-        {/* Verb column for selected form */}
-        <div style={{fontSize:11,color:C.muted,marginBottom:6}}>
-          👆 Нажми форму выше — ниже список примеров
+
+        {/* Selected form deep-dive */}
+        <div style={{background:fc.col+"15",border:`1px solid ${fc.col}44`,borderRadius:12,
+          padding:"12px 14px",marginBottom:10}}>
+          <div style={{fontWeight:800,fontSize:13,color:fc.col,marginBottom:10}}>{fc.title}</div>
+
+          {/* Steps */}
+          <div style={{display:"flex",flexDirection:"column",gap:7,marginBottom:10}}>
+            {fc.steps.map((step,i)=>(
+              <div key={i} style={{display:"flex",alignItems:"flex-start",gap:8}}>
+                <span style={{background:fc.col,color:"#fff",borderRadius:"50%",
+                  width:20,height:20,display:"flex",alignItems:"center",justifyContent:"center",
+                  fontSize:11,fontWeight:800,flexShrink:0,marginTop:1}}>{i+1}</span>
+                <span style={{fontSize:13,color:C.text,lineHeight:1.4,fontFamily:"monospace"}}>{step}</span>
+              </div>
+            ))}
+          </div>
+
+          {/* Special note */}
+          <div style={{background:"rgba(255,255,255,.07)",borderRadius:8,
+            padding:"7px 10px",marginBottom:10,whiteSpace:"pre-line"}}>
+            <span style={{fontSize:11,color:C.muted,lineHeight:1.5}}>{fc.special}</span>
+          </div>
+
+          {/* Mini examples grid */}
+          <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:4}}>
+            {fc.examples.map(([from,to])=>(
+              <div key={from} style={{background:"rgba(255,255,255,.06)",borderRadius:7,
+                padding:"5px 8px",fontSize:11}}>
+                <span style={{color:C.muted}}>{from}</span>
+                <span style={{color:fc.col,fontWeight:800}}> → {to}</span>
+              </div>
+            ))}
+          </div>
+
+          <div style={{marginTop:8,fontSize:11,color:C.muted,fontStyle:"italic"}}>
+            👥 {fc.usage}
+          </div>
         </div>
-        <div style={{display:"flex",flexDirection:"column",gap:4}}>
+
+        {/* Interactive verb table */}
+        <div style={{fontSize:11,color:C.muted,marginBottom:5}}>
+          📋 Таблица глаголов — форма переключается кнопками выше:
+        </div>
+        <div style={{display:"flex",flexDirection:"column",gap:3,marginBottom:10}}>
           {verbs.map(({inf,du,ihr,Sie,note})=>{
             const val=selForm==="du"?du:selForm==="ihr"?ihr:Sie;
-            return (
+            return(
               <div key={inf} style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:6,
-                background:C.card2,borderRadius:8,padding:"7px 10px",alignItems:"center"}}>
-                <span style={{fontSize:13,color:C.muted}}>{inf}{note&&<span style={{fontSize:10,color:C.orange,marginLeft:4}}>{note}</span>}</span>
+                background:C.card2,borderRadius:8,padding:"6px 10px",alignItems:"center"}}>
+                <span style={{fontSize:12,color:C.muted}}>
+                  {inf}{note&&<span style={{fontSize:10,color:C.orange,marginLeft:4}}>{note}</span>}
+                </span>
                 <span style={{fontSize:14,fontWeight:800,color:fc.col}}>{val}</span>
               </div>
             );
           })}
         </div>
-        {/* doch/bitte tip */}
-        <div style={{background:C.teal+"18",border:`1px solid ${C.teal}33`,borderRadius:10,padding:"10px 14px",marginTop:10}}>
-          <div style={{fontWeight:700,fontSize:12,color:C.teal,marginBottom:5}}>💡 doch / bitte = смягчение</div>
-          <div style={{fontSize:12,color:C.muted}}>
-            <span style={{color:C.text,fontWeight:600}}>Kauf Milch!</span> — жёстко<br/>
-            <span style={{color:C.teal,fontWeight:600}}>Kauf doch bitte Milch!</span> — вежливо<br/>
-            <span style={{color:C.text,fontWeight:600}}>Kaufen Sie Milch, bitte!</span> — формально
+
+        {/* Sonderregeln */}
+        <div style={{background:C.card2,borderRadius:10,padding:"12px 14px",marginBottom:8}}>
+          <div style={{fontWeight:800,fontSize:12,color:C.orange,marginBottom:10}}>
+            ⚡ Sonderregeln (Исключения)
+          </div>
+          {[
+            {
+              icon:"🔄",title:"e→i Wechsel bleibt erhalten",
+              note:"Если у глагола чередование e→i в Präsens, оно остаётся в Imperativ (только du-форма!)",
+              pairs:[["essen → du isst","Iss!"],["nehmen → du nimmst","Nimm!"],["vergessen → du vergisst","Vergiss!"],["sprechen → du sprichst","Sprich!"]],
+              col:C.red,
+            },
+            {
+              icon:"➕",title:"Stamm auf -d/-t: +e einfügen",
+              note:"Чтобы было удобно произносить, добавляется -e",
+              pairs:[["warten → du wartest","Warte!"],["reden → du redest","Rede!"]],
+              col:C.blue,
+            },
+            {
+              icon:"✂️",title:"Trennbare Verben: Präfix ans Ende",
+              note:"Отделяемая приставка уходит в конец предложения",
+              pairs:[["einkaufen","Kauf (bitte) ein!"],["aufmachen","Mach auf!"],["mitnehmen","Nimm mit!"]],
+              col:C.teal,
+            },
+          ].map(({icon,title,note,pairs,col})=>(
+            <div key={title} style={{marginBottom:10,paddingBottom:10,
+              borderBottom:`1px solid ${C.border}`}}>
+              <div style={{fontSize:12,fontWeight:700,color:C.text,marginBottom:3}}>
+                {icon} {title}
+              </div>
+              <div style={{fontSize:11,color:C.muted,marginBottom:6}}>{note}</div>
+              <div style={{display:"flex",flexWrap:"wrap",gap:4}}>
+                {pairs.map(([from,to])=>(
+                  <span key={from} style={{background:col+"15",border:`1px solid ${col}33`,
+                    borderRadius:6,padding:"2px 8px",fontSize:11}}>
+                    <span style={{color:C.muted}}>{from} → </span>
+                    <span style={{color:col,fontWeight:700}}>{to}</span>
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* doch/bitte */}
+        <div style={{background:C.teal+"15",border:`1px solid ${C.teal}33`,borderRadius:10,padding:"10px 14px"}}>
+          <div style={{fontWeight:700,fontSize:12,color:C.teal,marginBottom:6}}>
+            🤝 doch / bitte — смягчение приказа
+          </div>
+          <div style={{fontSize:12,color:C.muted,lineHeight:1.7}}>
+            <span style={{color:C.red,fontWeight:700}}>Kauf Milch!</span>
+            <span style={{color:C.muted}}> — резко (приказ)</span><br/>
+            <span style={{color:C.yellow,fontWeight:700}}>Kauf doch Milch!</span>
+            <span style={{color:C.muted}}> — мягче</span><br/>
+            <span style={{color:C.teal,fontWeight:700}}>Kauf doch bitte Milch!</span>
+            <span style={{color:C.muted}}> — вежливо ✓</span><br/>
+            <span style={{color:C.orange,fontWeight:700}}>Kaufen Sie bitte Milch!</span>
+            <span style={{color:C.muted}}> — формально ✓</span>
           </div>
         </div>
       </Box>
