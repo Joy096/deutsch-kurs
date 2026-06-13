@@ -647,10 +647,6 @@ const WBDATA=[
   {art:"der",de:"Rotkohl",           pl:"—",            ru:"краснокочанная капуста",   tema:"Lebensmittel"},
   {art:"der",de:"Blumenkohl",        pl:"—",            ru:"цветная капуста",          tema:"Lebensmittel"},
   {art:"die",de:"Aprikose",          pl:"Aprikosen",    ru:"абрикос",                  tema:"Lebensmittel"},
-  {art:"die",de:"Leute",             pl:"—",            ru:"люди",                     tema:"Alltag"},
-  {art:"der",de:"Nachtisch",         pl:"Nachtische",   ru:"десерт",                   tema:"Lebensmittel"},
-  {art:"die",de:"Kantine",           pl:"Kantinen",     ru:"столовая",                 tema:"Lebensmittel"},
-  {art:"der",de:"Imbiss",            pl:"Imbisse",      ru:"закусочная; перекус",       tema:"Lebensmittel"},
   // ── Фото + текст: новые слова ────────────────────────────────────────────────
   // Море / рыба
   {art:"der",de:"Krebs",             pl:"Krebse",       ru:"краб",                     tema:"Lebensmittel"},
@@ -734,6 +730,10 @@ const WBDATA=[
   {art:"die",de:"Petersilie",        pl:"—",            ru:"петрушка",                 tema:"Lebensmittel"},
   // Прочее
   {art:"",   de:"vegetarisch",       pl:"—",            ru:"вегетарианский",           tema:"Lebensmittel"},
+  {art:"die",de:"Leute",             pl:"—",            ru:"люди",                     tema:"Alltag"},
+  {art:"der",de:"Nachtisch",         pl:"Nachtische",   ru:"десерт",                   tema:"Lebensmittel"},
+  {art:"die",de:"Kantine",           pl:"Kantinen",     ru:"столовая",                 tema:"Lebensmittel", ipa:"[kanˈtiːnə]"},
+  {art:"der",de:"Imbiss",            pl:"Imbisse",      ru:"закусочная; перекус",       tema:"Lebensmittel", ipa:"[ˈɪmbɪs]"},
 ];
 
 
@@ -1215,6 +1215,185 @@ const STRESS_MARKS={
 "Salz":"Sa\u0301lz","Oregano":"Ore\u0301gano","Minze":"Mi\u0301nze",
 "Rosmarin":"Ro\u0301smarin","Basilikum":"Basili\u0301kum",
 "Schnittlauch":"Schni\u0301ttlauch","Petersilie":"Petersi\u0301lie","vegetarisch":"vegeta\u0301risch",
+};
+
+// IPA-транскрипция для всего словаря (кроме фраз)
+const IPA_DATA={
+// Числа
+"null":"[nʊl]","eins":"[aɪns]","zwei":"[tsvaɪ]","drei":"[dʁaɪ]","vier":"[fiːɐ̯]",
+"fünf":"[fʏnf]","sechs":"[zɛks]","sieben":"[ˈziːbən]","acht":"[axt]","neun":"[nɔɪn]",
+"zehn":"[tseːn]","elf":"[ɛlf]","zwölf":"[tsvœlf]","dreizehn":"[ˈdʁaɪtseːn]",
+"vierzehn":"[ˈfiːɐ̯tseːn]","fünfzehn":"[ˈfʏnftseːn]","sechzehn":"[ˈzɛçtseːn]",
+"siebzehn":"[ˈziːptseːn]","achtzehn":"[ˈaxtseːn]","neunzehn":"[ˈnɔɪntseːn]","zwanzig":"[ˈtsvantsiç]",
+// Berufe
+"Lehrer":"[ˈleːʁɐ]","Arzt":"[aːɐ̯tst]","Ingenieur":"[ɪŋɡeˈniøːɐ̯]","Verkäufer":"[fɛɐ̯ˈkɔɪ̯fɐ]",
+"Elektriker":"[ˈɛlɛktʁɪkɐ]","Friseur":"[fʁiˈzøːɐ̯]","Programmierer":"[pʁoɡʁaˈmiːʁɐ]",
+"Buchhalter":"[ˈbuːxhaltɐ]","Grafiker":"[ˈɡʁaːfɪkɐ]","Altenpfleger":"[ˈaltənˌpfleːɡɐ]",
+"Student":"[ʃtuˈdɛnt]","Kinderarzt":"[ˈkɪndɐˌaːɐ̯tst]","Hausmann":"[ˈhaʊsman]",
+// Kursraum
+"Tür":"[tyːɐ̯]","Fenster":"[ˈfɛnstɐ]","Uhr":"[uːɐ̯]","Stuhl":"[ʃtuːl]",
+"Plakat":"[plaˈkaːt]","Tafel":"[ˈtaːfəl]","Lampe":"[ˈlampə]","Flasche":"[ˈflaʃə]",
+"Papier":"[paˈpiːɐ̯]","Wörterbuch":"[ˈvœʁtɐbuːx]","Kugelschreiber":"[ˈkuːɡəlˌʃʁaɪbɐ]",
+"Kuli":"[ˈkuːli]","Tisch":"[tɪʃ]","Schlüssel":"[ˈʃlʏsəl]","Handy":"[ˈhɛndi]",
+"Heft":"[hɛft]","Brille":"[ˈbʁɪlə]","Buch":"[buːx]","Stift":"[ʃtɪft]",
+"Tasche":"[ˈtaʃə]","Rucksack":"[ˈʁʊkzak]","Tablet":"[ˈtablɛt]","Laptop":"[ˈlɛptɔp]",
+"Bleistift":"[ˈblaɪʃtɪft]","Radiergummi":"[ʁaˈdiːɐ̯ɡʊmi]","Schere":"[ˈʃeːʁə]",
+"Lineal":"[lineˈaːl]","Markierstift":"[maʁˈkiːɐ̯ʃtɪft]","Notizbuch":"[noˈtiːtsbʊx]",
+"Zettel":"[ˈtsɛtəl]","Hausaufgabe":"[ˈhaʊsˌaʊfɡaːbə]","Kopfhörer":"[ˈkɔpfˌhøːʁɐ]",
+"beginnen":"[bəˈɡɪnən]","enden":"[ˈɛndən]","Pause":"[ˈpaʊzə]",
+"wiederholen":"[ˌviːdɐˈhoːlən]","Übung":"[ˈyːbʊŋ]",
+// Möbel / Bad / Küche
+"Spüle":"[ˈʃpyːlə]","Bett":"[bɛt]","Herd":"[heːɐ̯t]","Sofa":"[ˈzoːfa]",
+"Schrank":"[ʃʁaŋk]","Fernseher":"[ˈfɛʁnˌzeːɐ̯]","Sessel":"[ˈzɛsəl]","Bild":"[bɪlt]",
+"Regal":"[ʁeˈɡaːl]","Teppich":"[ˈtɛpɪç]","Vorhang":"[ˈfoːɐ̯haŋ]",
+"Schlafzimmer":"[ˈʃlaːfˌtsɪmɐ]","Zimmer":"[ˈtsɪmɐ]","Schreibtisch":"[ˈʃʁaɪpˌtɪʃ]",
+"Bad":"[baːt]","Badewanne":"[ˈbaːdəˌvanə]","Dusche":"[ˈdʊʃə]","Toilette":"[tɔɪˈlɛtə]",
+"Waschbecken":"[ˈvaʃˌbɛkən]","Spiegel":"[ˈʃpiːɡəl]","Küche":"[ˈkʏçə]",
+"Kühlschrank":"[ˈkyːlʃʁaŋk]","Wohnzimmer":"[ˈvoːnˌtsɪmɐ]","Klimaanlage":"[ˈkliːmaˌanlaːɡə]",
+"Zimmerpflanze":"[ˈtsɪmɐˌpflantsə]","Poster":"[ˈpɔstɐ]","Nachttisch":"[ˈnaxtˌtɪʃ]",
+"Kissen":"[ˈkɪsən]","Bettdecke":"[ˈbɛtˌdɛkə]","Teddybär":"[ˈtɛdiˌbɛːɐ̯]",
+"Kinderzimmer":"[ˈkɪndɐˌtsɪmɐ]","Küchenschrank":"[ˈkʏçənˌʃʁaŋk]","Blumentopf":"[ˈbluːmənˌtɔpf]",
+"Waschmaschine":"[ˈvaʃmaˌʃiːnə]","Spülmaschine":"[ˈʃpyːlmaˌʃiːnə]","Blume":"[ˈbluːmə]",
+"Kommode":"[kɔˈmoːdə]","Trockner":"[ˈtʁɔknɐ]","Heizungsanlage":"[ˈhaɪtsʊŋsˌanlaːɡə]",
+"Tasse":"[ˈtasə]",
+// Wohnung
+"Terrasse":"[tɛˈʁasə]","Balkon":"[balˈkoːn]","Garage":"[ɡaˈʁaːʒə]",
+"Arbeitszimmer":"[ˈaʁbaɪtsˌtsɪmɐ]","Flur":"[fluːɐ̯]","Haus":"[haʊs]",
+"Wohnung":"[ˈvoːnʊŋ]","Dorf":"[dɔʁf]","Stadt":"[ʃtat]","Apartment":"[aˈpaʁtmənt]",
+"Lage":"[ˈlaːɡə]","Stock":"[ʃtɔk]","Einfamilienhaus":"[ˈaɪnfaˌmiːliənhaʊs]",
+"Zentralheizung":"[tsɛnˈtʁaːlˌhaɪtsʊŋ]","Quadratmeter":"[kvaˈdʁaːtˌmeːtɐ]",
+"Mehrfamilienhaus":"[ˈmeːɐ̯faˌmiːliənhaʊs]","Hochhaus":"[ˈhɔxˌhaʊs]","Reihenhaus":"[ˈʁaɪənˌhaʊs]",
+"Erdgeschoss":"[ˈeːɐ̯tɡəˌʃɔs]","erste Stock":"[ˈeːɐ̯stə ʃtɔk]","zweite Stock":"[ˈtsvaɪtə ʃtɔk]",
+"dritte Stock":"[ˈdʁɪtə ʃtɔk]","Dachgeschoss":"[ˈdaxɡəˌʃɔs]","Garten":"[ˈɡaʁtən]",
+"bezahlen":"[bəˈtsaːlən]","Keller":"[ˈkɛlɐ]","Farbe":"[ˈfaʁbə]","Geschäft":"[ɡəˈʃɛft]",
+// Adjektive
+"alt":"[alt]","neu":"[nɔɪ]","modern":"[moˈdɛʁn]","groß":"[ɡʁoːs]","klein":"[klaɪn]",
+"schön":"[ʃøːn]","hässlich":"[ˈhɛslɪç]","bequem":"[bəˈkveːm]","unbequem":"[ʊnbəˈkveːm]",
+"ordentlich":"[ˈɔʁdəntlɪç]","unordentlich":"[ʊnˈɔʁdəntlɪç]","teuer":"[ˈtɔɪ̯ɐ]",
+"billig":"[ˈbɪlɪç]","günstig":"[ˈɡʏnstɪç]","breit":"[bʁaɪt]","schmal":"[ʃmaːl]",
+"hell":"[hɛl]","dunkel":"[ˈdʊŋkəl]","links":"[lɪŋks]","rechts":"[ʁɛçts]",
+"oben":"[ˈoːbən]","unten":"[ˈʊntən]","gemütlich":"[ɡəˈmyːtlɪç]","ungemütlich":"[ʊnɡəˈmyːtlɪç]",
+"hoch":"[hoːx]","niedrig":"[ˈniːdʁɪç]","gut":"[ɡuːt]","schlecht":"[ʃlɛçt]",
+"ruhig":"[ˈʁuːɪç]","laut":"[laʊt]","verheiratet":"[fɛɐ̯ˈhaɪʁatɪt]","genug":"[ɡəˈnuːk]",
+"furchtbar":"[ˈfʊʁçtbaːɐ̯]","kalt":"[kalt]","warm":"[vaʁm]","sonnig":"[ˈzɔnɪç]",
+"zentral":"[tsɛnˈtʁaːl]","interessant":"[ɪntɛʁɛˈzant]","langweilig":"[ˈlaŋvaɪlɪç]",
+"fröhlich":"[ˈfʁøːlɪç]","traurig":"[ˈtʁaʊʁɪç]","bunt":"[bʊnt]","froh":"[fʁoː]",
+"fit":"[fɪt]","möglich":"[ˈmøːklɪç]","offiziell":"[ɔfɪˈtsiɛl]","müde":"[ˈmyːdə]",
+"faul":"[faʊl]","bereit":"[bəˈʁaɪt]","fertig":"[ˈfɛʁtɪç]","langsam":"[ˈlaŋzaːm]",
+"spät":"[ʃpɛːt]","später":"[ˈʃpɛːtɐ]","kostenlos":"[ˈkɔstənloːs]",
+// Familie
+"Großeltern":"[ˈɡʁoːsˌɛltɐn]","Großvater":"[ˈɡʁoːsˌfaːtɐ]","Großmutter":"[ˈɡʁoːsˌmʊtɐ]",
+"Eltern":"[ˈɛltɐn]","Vater":"[ˈfaːtɐ]","Mutter":"[ˈmʊtɐ]","Geschwister":"[ɡəˈʃvɪstɐ]",
+"Schwester":"[ˈʃvɛstɐ]","Bruder":"[ˈbʁuːdɐ]","Sohn":"[zoːn]","Tochter":"[ˈtɔxtɐ]",
+"Enkelkinder":"[ˈɛŋkəlˌkɪndɐ]","Enkel":"[ˈɛŋkəl]","Enkelin":"[ˈɛŋkəlɪn]",
+"Onkel":"[ˈɔŋkəl]","Tante":"[ˈtantə]","Cousin":"[kuˈzɛ̃]","Cousine":"[kuˈziːnə]",
+"Neffe":"[ˈnɛfə]","Nichte":"[ˈnɪçtə]","Oma":"[ˈoːma]","Opa":"[ˈoːpa]",
+"Ehe":"[ˈeːə]","Ehepaar":"[ˈeːəˌpaːɐ̯]","Ehefrau":"[ˈeːəˌfʁaʊ]","Ehemann":"[ˈeːəˌman]",
+"heiraten":"[ˈhaɪʁatən]","Liebe":"[ˈliːbə]","Heimatland":"[ˈhaɪmatˌlant]","gehören":"[ɡəˈhøːʁən]",
+// Tageszeiten
+"Montag":"[ˈmoːntaːk]","Dienstag":"[ˈdiːnstaːk]","Mittwoch":"[ˈmɪtvɔx]",
+"Donnerstag":"[ˈdɔnɐstaːk]","Freitag":"[ˈfʁaɪtaːk]","Samstag":"[ˈzamstaːk]",
+"Sonntag":"[ˈzɔntaːk]","Woche":"[ˈvɔxə]","Mittag":"[ˈmɪtaːk]","Vormittag":"[ˈfoːɐ̯ˌmɪtaːk]",
+"Nachmittag":"[ˈnaxˌmɪtaːk]","Abend":"[ˈaːbənt]","Spätabend":"[ˈʃpɛːtˌaːbənt]",
+"Nacht":"[naxt]","Morgen":"[ˈmɔʁɡən]","morgens":"[ˈmɔʁɡəns]","mittags":"[ˈmɪtaːks]",
+"abends":"[ˈaːbənts]","nachts":"[naxts]","am Montag":"[am ˈmoːntaːk]",
+// Trennbare Verben
+"anrufen":"[ˈanˌʁuːfən]","anfangen":"[ˈanˌfaŋən]","fernsehen":"[ˈfɛʁnˌzeːən]",
+"aufstehen":"[ˈaʊfˌʃteːən]","aufräumen":"[ˈaʊfˌʁɔɪmən]","einkaufen":"[ˈaɪnˌkaʊfən]",
+"mitnehmen":"[ˈmɪtˌneːmən]","ausgehen":"[ˈaʊsˌɡeːən]","mitkommen":"[ˈmɪtˌkɔmən]",
+"aufhören":"[ˈaʊfˌhøːʁən]","abspülen":"[ˈapˌʃpyːlən]","einladen":"[ˈaɪnˌlaːdən]",
+"ausschlafen":"[ˈaʊsˌʃlaːfən]","mitbringen":"[ˈmɪtˌbʁɪŋən]","einschlafen":"[ˈaɪnˌʃlaːfən]",
+"wegfahren":"[ˈvɛkˌfaːʁən]","ausfallen":"[ˈaʊsˌfalən]","stattfinden":"[ˈʃtatˌfɪndən]",
+// Lebensmittel
+"Apfel":"[ˈapfəl]","Banane":"[baˈnaːnə]","Brot":"[bʁoːt]","Butter":"[ˈbʊtɐ]",
+"Hähnchen":"[ˈhɛːnçən]","Joghurt":"[ˈjoːɡʊʁt]","Kaffee":"[ˈkafe]","Kartoffel":"[kaʁˈtɔfəl]",
+"Käse":"[ˈkɛːzə]","Milch":"[mɪlç]","Nudel":"[ˈnuːdəl]","Reis":"[ʁaɪs]",
+"Salat":"[zaˈlaːt]","Schokolade":"[ʃokoˈlaːdə]","Tee":"[teː]","Fisch":"[fɪʃ]",
+"Tomate":"[toˈmaːtə]","Wasser":"[ˈvasɐ]","Wein":"[vaɪn]","Wurst":"[vʊʁst]",
+"Zwiebel":"[ˈtsviːbəl]","Gewürz":"[ɡəˈvʏʁts]","Kaugummi":"[ˈkaʊɡʊmi]",
+"Mais":"[maɪs]","Zucker":"[ˈtsʊkɐ]","Ei":"[aɪ]","Brötchen":"[ˈbʁøːtçən]",
+"Orange":"[oˈʁanʒə]","Erbse":"[ˈɛʁbzə]","Spaghetti":"[ʃpaˈɡɛti]",
+"Marmelade":"[maʁməˈlaːdə]","Chips":"[tʃɪps]","Dose":"[ˈdoːzə]","Packung":"[ˈpakʊŋ]",
+"Becher":"[ˈbɛçɐ]","Tüte":"[ˈtyːtə]","Stück":"[ʃtʏk]","Glas":"[ɡlaːs]",
+"Kasten":"[ˈkastən]","Scheibe":"[ˈʃaɪbə]","Metzgerei":"[mɛtsɡəˈʁaɪ]",
+"Bäckerei":"[bɛkəˈʁaɪ]","Markt":"[maʁkt]","Tankstelle":"[ˈtaŋkˌʃtɛlə]","Kiosk":"[kiˈɔsk]",
+"backen":"[ˈbakən]","kosten":"[ˈkɔstən]","kaufen":"[ˈkaʊfən]","verkaufen":"[fɛɐ̯ˈkaʊfən]",
+"bekommen":"[bəˈkɔmən]","möchten":"[ˈmœçtən]","Bargeld":"[ˈbaːɐ̯ɡɛlt]",
+"Olive":"[oˈliːvə]","Rührei":"[ˈʁyːɐ̯ˌaɪ]","Waffel":"[ˈvafəl]","Bonbon":"[bɔnˈbɔn]",
+"Konfitüre":"[kɔnfiˈtyːʁə]","Schlagsahne":"[ˈʃlaːkˌzaːnə]","Keks":"[keːks]",
+"Kräutertee":"[ˈkʁɔɪtɐˌteː]","Eiscreme":"[ˈaɪsˌkʁeːm]","Eiswaffel":"[ˈaɪsˌvafəl]",
+"Sandwich":"[ˈzɛntvɪtʃ]","Steak":"[steːk]","Beilagensalat":"[ˈbaɪlaːɡənzaˌlaːt]",
+"Frischkäse":"[ˈfʁɪʃˌkɛːzə]","Salami":"[zaˈlaːmi]","Karotte":"[kaˈʁɔtə]",
+"Knoblauch":"[ˈknoːblaʊx]","Hackfleisch":"[ˈhakˌflaɪʃ]","Schenkel":"[ˈʃɛŋkəl]",
+"Brust":"[bʁʊst]","Brokkoli":"[ˈbʁɔkoli]","Rotkohl":"[ˈʁoːtkoːl]",
+"Blumenkohl":"[ˈbluːmənkoːl]","Aprikose":"[apʁiˈkoːzə]","Nachtisch":"[ˈnaxtɪʃ]",
+"Kantine":"[kanˈtiːnə]","Imbiss":"[ˈɪmbɪs]",
+"Krebs":"[kʁeːps]","Tintenfisch":"[ˈtɪntənˌfɪʃ]","Forelle":"[foˈʁɛlə]",
+"Thunfisch":"[ˈtuːnˌfɪʃ]","Lachs":"[laks]","Karpfen":"[ˈkaʁpfən]","Garnele":"[ɡaʁˈneːlə]",
+"Schinken":"[ˈʃɪŋkən]","Schweinefleisch":"[ˈʃvaɪnəˌflaɪʃ]","Rindfleisch":"[ˈʁɪntˌflaɪʃ]",
+"Würstchen":"[ˈvʏʁstçən]","Toastbrot":"[ˈtoːstbʁoːt]","Weißbrot":"[ˈvaɪsbʁoːt]",
+"Vollkornbrot":"[ˈfɔlkɔʁnbʁoːt]","Baguette":"[baˈɡɛt]","Croissant":"[kʁoˈaːsɑ̃]",
+"Pfannkuchen":"[ˈpfankuːxən]","Käsekuchen":"[ˈkɛːzəˌkuːxən]","Limonade":"[limoˈnaːdə]",
+"Weißwein":"[ˈvaɪsvaɪn]","Sekt":"[zɛkt]","Cola":"[ˈkoːla]",
+"Orangensaft":"[oˈʁanʒənzaft]","Cappuccino":"[kapuˈtʃiːno]","Espresso":"[ɛˈspʁɛso]",
+"Schwarztee":"[ˈʃvaʁtsˌteː]","Milchkaffee":"[ˈmɪlçˌkafe]","Vorspeise":"[ˈfoːɐ̯ˌʃpaɪzə]",
+"Hauptgericht":"[ˈhaʊptɡəˌʁɪçt]","Suppe":"[ˈzʊpə]","Cornflakes":"[ˈkɔʁnˌfleɪks]",
+"Pommes frites":"[ˈpɔmˌfʁɪt]","Suppenlöffel":"[ˈzʊpənˌlœfəl]","Messer":"[ˈmɛsɐ]",
+"schneiden":"[ˈʃnaɪdən]","schälen":"[ˈʃɛːlən]","Spiegelei":"[ˈʃpiːɡəlˌaɪ]",
+"Hühnerei":"[ˈhyːnɐˌaɪ]","Eiweiß":"[ˈaɪvaɪs]","Eigelb":"[ˈaɪɡɛlp]",
+"Pfirsich":"[ˈpfɪʁzɪç]","Birne":"[ˈbɪʁnə]","Kirsche":"[ˈkɪʁʃə]",
+"Himbeere":"[ˈhɪmbeːʁə]","Brombeere":"[ˈbʁɔmbeːʁə]","Erdbeere":"[ˈeːɐ̯tbeːʁə]",
+"Grapefruit":"[ˈɡʁeɪpfʁuːt]","Zitrone":"[tsiˈtʁoːnə]","Limette":"[liˈmɛtə]",
+"Rosine":"[ʁoˈziːnə]","Spinat":"[ʃpiˈnaːt]","Paprika":"[ˈpapʁika]",
+"Kopfsalat":"[ˈkɔpfzaˌlaːt]","Gurke":"[ˈɡʊʁkə]","Kürbis":"[ˈkyʁbɪs]",
+"Pilz":"[pɪlts]","Champignon":"[ʃamˈpɪnjɔn]","Mayonnaise":"[majoˈnɛːzə]",
+"Senf":"[zɛnf]","Ketchup":"[ˈkɛtʃap]","Essig":"[ˈɛsɪç]","Olivenöl":"[oˈliːvənˌøːl]",
+"Pfeffer":"[ˈpfɛfɐ]","Salz":"[zalts]","Oregano":"[oˈʁeːɡano]","Minze":"[ˈmɪntsə]",
+"Rosmarin":"[ˈʁoːzmaˌʁiːn]","Basilikum":"[baˈziːlikʊm]","Schnittlauch":"[ˈʃnɪtˌlaʊx]",
+"Petersilie":"[peˈteːɐ̯ziːliə]","vegetarisch":"[veɡeˈtaːʁɪʃ]",
+// Alltag — Nomen
+"Formular":"[fɔʁmuˈlaːɐ̯]","Pass":"[pas]","Kasse":"[ˈkasə]","Apotheke":"[apoˈteːkə]",
+"Pizza":"[ˈpɪtsa]","Oper":"[ˈoːpɐ]","Portemonnaie":"[pɔʁtəˈmɔnɛ]","Jacke":"[ˈjakə]",
+"Bus":"[bʊs]","Supermarkt":"[ˈzuːpɐˌmaʁkt]","Radtour":"[ˈʁaːttuːɐ̯]",
+"Lebensmittel":"[ˈleːbənsmɪtəl]","Sehenswürdigkeit":"[ˈzeːənsvʏʁdɪçkaɪt]",
+"Straßenfest":"[ˈʃtʁaːsənˌfɛst]","Bummel":"[ˈbʊməl]","Stadtbummel":"[ˈʃtatˌbʊməl]",
+"Hafen":"[ˈhaːfən]","Schiff":"[ʃɪf]","Innenstadt":"[ˈɪnənˌʃtat]","Laune":"[ˈlaʊnə]",
+"Wochenende":"[ˈvɔxənˌɛndə]","Freizeit":"[ˈfʁaɪtsaɪt]","Film":"[fɪlm]","Tag":"[taːk]",
+"Spaziergang":"[ʃpaˈtsiːɐ̯ˌɡaŋ]","Schifffahrt":"[ˈʃɪfˌfaːɐ̯t]","Kindheit":"[ˈkɪntˌhaɪt]",
+"Zeit":"[tsaɪt]","Zeitung":"[ˈtsaɪtʊŋ]","Dom":"[doːm]","Ausflug":"[ˈaʊsˌfluːk]",
+"Uhrzeit":"[ˈuːɐ̯tsaɪt]","Tanzkurs":"[ˈtantsˌkuːɐ̯s]","Konzert":"[kɔnˈtsɛʁt]",
+"Radiowecker":"[ˈʁaːdioˌvɛkɐ]","Gleis":"[ɡlaɪs]","Flugzeug":"[ˈfluːkˌtsɔɪk]",
+"Tanzparty":"[ˈtantsˌpaːɐ̯ti]","Krimi":"[ˈkʁiːmi]","Fußballspiel":"[ˈfuːsbalˌʃpiːl]",
+"Frühstück":"[ˈfʁyːʃtʏk]","Abendessen":"[ˈaːbəntˌɛsən]","Sprachkurs":"[ˈʃpʁaxˌkuːɐ̯s]",
+"Fluss":"[flʊs]","Brücke":"[ˈbʁʏkə]","Wald":"[valt]","Hobby":"[ˈhɔbi]",
+"Fahrkarte":"[ˈfaːɐ̯ˌkaʁtə]","Zahnarzttermin":"[ˈtsaːnaʁtstˌtɛʁmiːn]",
+"heute Abend":"[ˈhɔɪtə ˈaːbənt]","Tipp":"[tɪp]","Respekt":"[ʁɛˈʃpɛkt]",
+"Sonderangebot":"[ˈzɔndɐˌanɡəboːt]","Wäsche":"[ˈvɛʃə]","Meinung":"[ˈmaɪnʊŋ]",
+"Kuchen":"[ˈkuːxən]","Nachspeise":"[ˈnaːxˌʃpaɪzə]","Freund":"[fʁɔɪnt]",
+"Zug":"[tsuːk]","Tasse":"[ˈtasə]",
+// Alltag — Verben
+"kennen":"[ˈkɛnən]","trinken":"[ˈtʁɪŋkən]","machen":"[ˈmaxən]",
+"besuchen":"[bəˈzuːxən]","besichtigen":"[bəˈzɪçtɪɡən]","studieren":"[ʃtuˈdiːʁən]",
+"faulenzen":"[ˈfaʊlɛntsən]","bleiben":"[ˈblaɪbən]","schlafen":"[ˈʃlaːfən]",
+"fahren":"[ˈfaːʁən]","lesen":"[ˈleːzən]","sehen":"[ˈzeːən]","nehmen":"[ˈneːmən]",
+"treffen":"[ˈtʁɛfən]","essen":"[ˈɛsən]","sprechen":"[ˈʃpʁɛçən]",
+"schreiben":"[ˈʃʁaɪbən]","lernen":"[ˈlɛʁnən]","grillen":"[ˈɡʁɪlən]",
+"tanzen":"[ˈtantsən]","schwimmen":"[ˈʃvɪmən]","joggen":"[ˈjɔɡən]",
+"lachen":"[ˈlaxən]","lächeln":"[ˈlɛçəln]","treiben":"[ˈtʁaɪbən]","reiten":"[ˈʁaɪtən]",
+"kochen":"[ˈkɔxən]","klingeln":"[ˈklɪŋəln]","starten":"[ˈʃtaʁtən]","wollen":"[ˈvɔlən]",
+"vermuten":"[fɛɐ̯ˈmuːtən]","reparieren":"[ʁepaˈʁiːʁən]","frühstücken":"[ˈfʁyːʃˌtʏkən]",
+"chillen":"[ˈtʃɪlən]","mögen":"[ˈmøːɡən]","bezahlen":"[bəˈtsaːlən]",
+// Alltag — Adverbien & Sonstiges
+"zuerst":"[tsuˈeːɐ̯st]","dann":"[dan]","danach":"[daˈnaːx]","allein":"[aˈlaɪn]",
+"früher":"[ˈfʁyːɐ̯]","alle":"[ˈalə]","wo":"[voː]","wohin":"[voˈhɪn]",
+"wenig":"[ˈveːnɪç]","wieso":"[viˈzoː]","oft":"[ɔft]","weg":"[vɛk]",
+"natürlich":"[naˈtyːɐ̯lɪç]","vielleicht":"[fiˈlaɪçt]","wahrscheinlich":"[vaːɐ̯ˈʃaɪnlɪç]",
+"bis":"[bɪs]","also":"[ˈalzoː]","genau":"[ɡəˈnaʊ]","immer":"[ˈɪmɐ]",
+"montags":"[ˈmoːntaːks]","leider":"[ˈlaɪdɐ]","früh":"[fʁyː]","nie":"[niː]",
+"selten":"[ˈzɛltən]","manchmal":"[ˈmançmaːl]","zusammen":"[tsuˈzamən]",
+"gerne":"[ˈɡɛʁnə]","draußen":"[ˈdʁaʊsən]","jetzt":"[jɛtst]","auch":"[aʊx]",
+"nur":"[nuːɐ̯]","gern/gerne":"[ɡɛʁn/ˈɡɛʁnə]","spazieren gehen":"[ʃpaˈtsiːʁən ˈɡeːən]",
+"Grüße":"[ˈɡʁyːsə]","Leute":"[ˈlɔɪtə]",
 };
 
 const DIALOGE={
@@ -1958,6 +2137,7 @@ function Woerterbuch(){
   const [search,setSearch]=useState("");
   const [sortNew,setSortNew]=useState(true);
   const [openConj,setOpenConj]=useState(null);
+  const [showIPA,setShowIPA]=useState(false);
 
   const changeTyp=(t)=>{setTyp(t);setTema("all");setArt("all");setSelPref("all");};
   const changeTema=(t)=>{setTema(t);setArt("all");setSelPref("all");};
@@ -2028,6 +2208,7 @@ function Woerterbuch(){
   };
 
   const WRow=({w})=>{
+    const ipa=w.ipa||IPA_DATA[w.de];
     const[stem,end]=getPluralEnd(w.de,w.pl);
     const isAdj=w.art==="";
     const opposite=isAdj?oppMap[w.de]:null;
@@ -2036,6 +2217,7 @@ function Woerterbuch(){
     const pc=verbPref?PREF_COLORS[verbPref]:null;
     const konj=KONJ_ALL[w.de];
     const isOpen=openConj===w.de;
+    const stacked=ipa&&w.de.length>10;
     const hiCell=(p)=>konj?.note&&konj.note.includes("→")&&(p==="du"||p==="er/es/sie");
     if(w.tema==="Phrase")return(
       <div style={{padding:"8px 10px",borderBottom:`1px solid ${C.border}22`,display:"flex",justifyContent:"space-between",alignItems:"center",gap:8}}>
@@ -2050,26 +2232,49 @@ function Woerterbuch(){
           cursor:konj?"pointer":"default",
           background:isOpen?konj.col+"11":"transparent"}}
           onClick={konj?()=>setOpenConj(isOpen?null:w.de):undefined}>
-          <div style={{display:"flex",alignItems:"center",gap:5}}>
-            {pc
+          <div style={{display:"flex",
+            flexDirection:stacked?"column":"row",
+            alignItems:stacked?"flex-start":"center",
+            gap:stacked?2:5}}>
+            {(pc||w.art)&&(pc
               ?<span style={{background:pc.bg,border:`1px solid ${pc.col}55`,color:pc.col,
-                  borderRadius:5,padding:"1px 5px",fontWeight:800,fontSize:11,flexShrink:0}}>{verbPref}-</span>
-              :w.art&&<span style={{background:AB(w.art),border:`1px solid ${AC(w.art)}55`,color:AC(w.art),
-                  borderRadius:5,padding:"1px 5px",fontWeight:800,fontSize:11,flexShrink:0}}>{w.art}</span>
-            }
-            <span style={{fontSize:13,fontWeight:600,
-              color:konj?(isOpen?konj.col:C.text):C.text,
-              textDecoration:konj?"underline dotted":"none",
-              textDecorationColor:konj?konj.col+"88":"transparent",
-              textUnderlineOffset:3}}>{STRESS_MARKS[w.de]||w.de}</span>
-            {konj&&<span style={{fontSize:10,color:konj.col,marginLeft:1,opacity:0.8}}>{isOpen?"▲":"▾"}</span>}
+                  borderRadius:5,padding:"1px 5px",fontWeight:800,fontSize:11}}>{verbPref}-</span>
+              :<span style={{background:AB(w.art),border:`1px solid ${AC(w.art)}55`,color:AC(w.art),
+                  borderRadius:5,padding:"1px 5px",fontWeight:800,fontSize:11}}>{w.art}</span>
+            )}
+            <div style={{display:"flex",alignItems:"center",gap:2}}>
+              <span style={{fontSize:13,fontWeight:600,whiteSpace:"nowrap",
+                color:konj?(isOpen?konj.col:C.text):C.text,
+                textDecoration:konj?"underline dotted":"none",
+                textDecorationColor:konj?konj.col+"88":"transparent",
+                textUnderlineOffset:3}}>
+                {ipa?w.de:(STRESS_MARKS[w.de]||w.de)}
+                {ipa&&w.pl&&w.pl!=="—"&&<span style={{fontSize:11,fontWeight:400,color:C.muted,marginLeft:4,whiteSpace:"nowrap"}}>
+                  {"("}
+                  {w.pl===w.de
+                    ?<span style={{color:C.green,fontWeight:800}}>-</span>
+                    :end
+                      ?<span style={{color:C.green,fontWeight:800}}>-{end}</span>
+                      :w.pl.toLowerCase().startsWith(w.de.toLowerCase())
+                        ?<span style={{color:C.green,fontWeight:800}}>-{w.pl.slice(w.de.length)}</span>
+                        :w.pl
+                  }
+                  {")"}
+                </span>}
+              </span>
+              {konj&&<span style={{fontSize:10,color:konj.col,marginLeft:1,opacity:0.8}}>{isOpen?"▲":"▾"}</span>}
+            </div>
           </div>
           <div style={{fontSize:13}}>
-            {isAdj&&opposite
-              ?<span style={{color:C.orange,fontWeight:700}}>≠ {opposite}</span>
-              :end===""
-                ?<span style={{color:C.muted}}>{stem||w.pl}</span>
-                :<><span style={{color:C.muted}}>{stem}</span><span style={{color:C.green,fontWeight:800}}>{end}</span></>
+            {ipa
+              ?<span style={{fontSize:13,color:C.teal,fontFamily:"Georgia,serif",letterSpacing:0.3,
+                  background:C.teal+"15",border:`1px solid ${C.teal}33`,borderRadius:5,padding:"1px 6px",
+                  whiteSpace:"nowrap",display:"inline-block"}}>{ipa}</span>
+              :isAdj&&opposite
+                ?<span style={{color:C.orange,fontWeight:700}}>≠ {opposite}</span>
+                :end===""
+                  ?<span style={{color:C.muted}}>{stem||w.pl}</span>
+                  :<><span style={{color:C.muted}}>{stem}</span><span style={{color:C.green,fontWeight:800}}>{end}</span></>
             }
           </div>
           <div style={{fontSize:12,lineHeight:1.3,overflowWrap:"break-word",wordBreak:"break-word"}}>
@@ -2151,6 +2356,82 @@ function Woerterbuch(){
         <input value={search} onChange={e=>setSearch(e.target.value)} placeholder="Поиск: Tisch, стол..."
           style={{width:"100%",background:C.card,border:`1px solid ${C.border}`,borderRadius:10,
             padding:"9px 12px 9px 36px",color:C.text,fontSize:14,boxSizing:"border-box",outline:"none"}}/>
+      </div>
+      {/* ── Lautschrift FAQ ── */}
+      <div style={{marginBottom:8}}>
+        <button onClick={()=>setShowIPA(v=>!v)}
+          style={{width:"100%",padding:"7px 12px",borderRadius:10,cursor:"pointer",textAlign:"left",
+            background:showIPA?C.teal+"18":C.card,border:`1px solid ${showIPA?C.teal:C.border}`,
+            color:showIPA?C.teal:C.muted,fontSize:12,fontWeight:700,display:"flex",justifyContent:"space-between"}}>
+          <span>📖 Lautschrift (IPA) — как читать транскрипцию</span>
+          <span>{showIPA?"▲":"▾"}</span>
+        </button>
+        {showIPA&&(
+          <div style={{background:C.card,border:`1px solid ${C.teal}30`,borderRadius:10,padding:"12px 14px",marginTop:4}}>
+            {/* Символы ударения и длины */}
+            <div style={{marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:12,color:C.teal,marginBottom:5}}>Основные символы</div>
+              {[
+                ["ˈ","главное ударение ставится ПЕРЕД слогом","[kanˈtiːnə] → -TII-"],
+                ["ː","длинный (долгий) звук","[tiːnə] → ТИИ-не"],
+              ].map(([sym,desc,ex])=>(
+                <div key={sym} style={{display:"flex",alignItems:"baseline",gap:8,marginBottom:4,flexWrap:"wrap"}}>
+                  <span style={{fontFamily:"Georgia,serif",fontWeight:800,fontSize:15,color:C.orange,minWidth:16}}>{sym}</span>
+                  <span style={{fontSize:12,color:C.muted,flex:1}}>{desc}</span>
+                  <span style={{fontSize:11,color:C.text,fontFamily:"Georgia,serif"}}>{ex}</span>
+                </div>
+              ))}
+            </div>
+            {/* Гласные */}
+            <div style={{marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:12,color:C.teal,marginBottom:5}}>Гласные</div>
+              <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:"2px 10px"}}>
+                {[
+                  ["[aː]","долгое А — Vater"],["[a]","короткое А — Mann"],
+                  ["[eː]","долгое Э — See"],["[ɛ]","короткое Э — Bett"],
+                  ["[iː]","долгое И — viel"],["[ɪ]","короткое И — mit"],
+                  ["[oː]","долгое О — Boot"],["[ɔ]","короткое О — kochen"],
+                  ["[uː]","долгое У — gut"],["[ʊ]","короткое У — und"],
+                  ["[yː]","долгое Ю — über"],["[ʏ]","короткое Ю — Stück"],
+                  ["[øː]","долгое Ё — schön"],["[œ]","короткое Ё — zwölf"],
+                  ["[aɪ]","АЙ — Eis, nein"],["[aʊ]","АУ — Haus"],
+                  ["[ɔɪ]","ОЙ — neu, Leute"],["[ə]","краткое Э — Kante"],
+                ].map(([s,d])=>(
+                  <div key={s} style={{fontSize:11,display:"flex",gap:5,padding:"2px 0"}}>
+                    <span style={{fontFamily:"Georgia,serif",color:C.orange,fontWeight:700,minWidth:36}}>{s}</span>
+                    <span style={{color:C.muted}}>{d}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* Согласные */}
+            <div style={{marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:12,color:C.teal,marginBottom:5}}>Нестандартные согласные</div>
+              <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:"2px 10px"}}>
+                {[
+                  ["[ʁ]","горловое Р — Brot"],["[ç]","ХЬ мягкое — ich"],
+                  ["[x]","Х твёрдое — Buch"],["[ʃ]","Ш — Schule"],
+                  ["[ts]","Ц — Zeit"],["[tʃ]","Ч — Tschüss"],
+                  ["[ŋ]","НГ — lang"],["[j]","Й — ja, Jahr"],
+                  ["[v]","В — Wasser"],["[z]","З — Sonne"],
+                ].map(([s,d])=>(
+                  <div key={s} style={{fontSize:11,display:"flex",gap:5,padding:"2px 0"}}>
+                    <span style={{fontFamily:"Georgia,serif",color:C.teal,fontWeight:700,minWidth:36}}>{s}</span>
+                    <span style={{color:C.muted}}>{d}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* Пример */}
+            <div style={{background:C.card2,borderRadius:8,padding:"8px 10px"}}>
+              <div style={{fontSize:11,color:C.muted,marginBottom:3}}>Пример разбора:</div>
+              <div style={{fontFamily:"Georgia,serif",fontSize:14,color:C.orange,marginBottom:3}}>[kanˈtiːnə]</div>
+              <div style={{fontSize:12,color:C.muted}}>
+                [kan] → кан · [ˈ] → ударение · [tiː] → <b>ТИИ</b> · [nə] → нэ
+              </div>
+            </div>
+          </div>
+        )}
       </div>
       {/* ── Фильтр по теме (скрываем в recent) ── */}
       {typ!=="recent"&&(
