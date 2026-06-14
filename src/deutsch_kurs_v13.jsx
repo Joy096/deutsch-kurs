@@ -894,95 +894,95 @@ const KONJ_L1={
   kommen: {ich:"komme",du:"kommst",wir:"kommen",ihr:"kommt","sie/Sie":"kommen"},
   sein:   {ich:"bin",  du:"bist",  wir:"sind",  ihr:"seid", "sie/Sie":"sind"},
 };
-// ─── KONJUGATION (L2 — er/es/sie + Plural) — порядок как в книге ─────────────
+// ─── KONJUGATION (L2 — er/sie/es + Plural) — порядок как в книге ─────────────
 const KONJ_L2={
-  kommen:  {ich:"komme",du:"kommst","er/es/sie":"kommt",wir:"kommen",ihr:"kommt","sie/Sie":"kommen"},
-  arbeiten:{ich:"arbeite",du:"arbeitest","er/es/sie":"arbeitet",wir:"arbeiten",ihr:"arbeitet","sie/Sie":"arbeiten"},
-  sprechen:{ich:"spreche",du:"sprichst","er/es/sie":"spricht",wir:"sprechen",ihr:"sprecht","sie/Sie":"sprechen"},
-  sein:    {ich:"bin",du:"bist","er/es/sie":"ist",wir:"sind",ihr:"seid","sie/Sie":"sind"},
-  heißen:  {ich:"heiße",du:"heißt","er/es/sie":"heißt",wir:"heißen",ihr:"heißt","sie/Sie":"heißen"},
-  lernen:  {ich:"lerne",du:"lernst","er/es/sie":"lernt",wir:"lernen",ihr:"lernt","sie/Sie":"lernen"},
-  wohnen:  {ich:"wohne",du:"wohnst","er/es/sie":"wohnt",wir:"wohnen",ihr:"wohnt","sie/Sie":"wohnen"},
-  machen:  {ich:"mache",du:"machst","er/es/sie":"macht",wir:"machen",ihr:"macht","sie/Sie":"machen"},
-  suchen:  {ich:"suche",du:"suchst","er/es/sie":"sucht",wir:"suchen",ihr:"sucht","sie/Sie":"suchen"},
-  leben:   {ich:"lebe",du:"lebst","er/es/sie":"lebt",wir:"leben",ihr:"lebt","sie/Sie":"leben"},
-  lieben:  {ich:"liebe",du:"liebst","er/es/sie":"liebt",wir:"lieben",ihr:"liebt","sie/Sie":"lieben"},
-  schicken:{ich:"schicke",du:"schickst","er/es/sie":"schickt",wir:"schicken",ihr:"schickt","sie/Sie":"schicken"},
+  kommen:  {ich:"komme",du:"kommst","er/sie/es":"kommt",wir:"kommen",ihr:"kommt","sie/Sie":"kommen"},
+  arbeiten:{ich:"arbeite",du:"arbeitest","er/sie/es":"arbeitet",wir:"arbeiten",ihr:"arbeitet","sie/Sie":"arbeiten"},
+  sprechen:{ich:"spreche",du:"sprichst","er/sie/es":"spricht",wir:"sprechen",ihr:"sprecht","sie/Sie":"sprechen"},
+  sein:    {ich:"bin",du:"bist","er/sie/es":"ist",wir:"sind",ihr:"seid","sie/Sie":"sind"},
+  heißen:  {ich:"heiße",du:"heißt","er/sie/es":"heißt",wir:"heißen",ihr:"heißt","sie/Sie":"heißen"},
+  lernen:  {ich:"lerne",du:"lernst","er/sie/es":"lernt",wir:"lernen",ihr:"lernt","sie/Sie":"lernen"},
+  wohnen:  {ich:"wohne",du:"wohnst","er/sie/es":"wohnt",wir:"wohnen",ihr:"wohnt","sie/Sie":"wohnen"},
+  machen:  {ich:"mache",du:"machst","er/sie/es":"macht",wir:"machen",ihr:"macht","sie/Sie":"machen"},
+  suchen:  {ich:"suche",du:"suchst","er/sie/es":"sucht",wir:"suchen",ihr:"sucht","sie/Sie":"suchen"},
+  leben:   {ich:"lebe",du:"lebst","er/sie/es":"lebt",wir:"leben",ihr:"lebt","sie/Sie":"leben"},
+  lieben:  {ich:"liebe",du:"liebst","er/sie/es":"liebt",wir:"lieben",ihr:"liebt","sie/Sie":"lieben"},
+  schicken:{ich:"schicke",du:"schickst","er/sie/es":"schickt",wir:"schicken",ihr:"schickt","sie/Sie":"schicken"},
 };
 
 // ─── KONJUGATION (L4B — Verben mit Vokalwechsel) ──────────────────────────────
 const KONJ_L4B={
-  sprechen:{type:"e→i", col:C.orange,bg:C.orangeBg, ich:"spreche", du:"sprichst","er/es/sie":"spricht", wir:"sprechen",ihr:"sprecht","sie/Sie":"sprechen"},
-  essen:   {type:"e→i", col:C.orange,bg:C.orangeBg, ich:"esse",    du:"isst",    "er/es/sie":"isst",    wir:"essen",   ihr:"esst",  "sie/Sie":"essen",   note:"e выпадает перед -st/-t"},
-  nehmen:  {type:"e→i", col:C.orange,bg:C.orangeBg, ich:"nehme",   du:"nimmst",  "er/es/sie":"nimmt",   wir:"nehmen",  ihr:"nehmt", "sie/Sie":"nehmen",  note:"⚠️ особая форма!"},
-  treffen: {type:"e→i", col:C.orange,bg:C.orangeBg, ich:"treffe",  du:"triffst", "er/es/sie":"trifft",  wir:"treffen", ihr:"trefft","sie/Sie":"treffen"},
-  lesen:   {type:"e→ie",col:C.blue,  bg:C.blueBg,   ich:"lese",    du:"liest",   "er/es/sie":"liest",   wir:"lesen",   ihr:"lest",  "sie/Sie":"lesen"},
-  sehen:   {type:"e→ie",col:C.blue,  bg:C.blueBg,   ich:"sehe",    du:"siehst",  "er/es/sie":"sieht",   wir:"sehen",   ihr:"seht",  "sie/Sie":"sehen"},
-  schlafen:{type:"a→ä", col:C.purple,bg:C.purpleBg, ich:"schlafe", du:"schläfst","er/es/sie":"schläft", wir:"schlafen",ihr:"schlaft","sie/Sie":"schlafen"},
-  fahren:  {type:"a→ä", col:C.purple,bg:C.purpleBg, ich:"fahre",   du:"fährst",  "er/es/sie":"fährt",   wir:"fahren",  ihr:"fahrt", "sie/Sie":"fahren"},
+  sprechen:{type:"e→i", col:C.orange,bg:C.orangeBg, ich:"spreche", du:"sprichst","er/sie/es":"spricht", wir:"sprechen",ihr:"sprecht","sie/Sie":"sprechen"},
+  essen:   {type:"e→i", col:C.orange,bg:C.orangeBg, ich:"esse",    du:"isst",    "er/sie/es":"isst",    wir:"essen",   ihr:"esst",  "sie/Sie":"essen",   note:"e выпадает перед -st/-t"},
+  nehmen:  {type:"e→i", col:C.orange,bg:C.orangeBg, ich:"nehme",   du:"nimmst",  "er/sie/es":"nimmt",   wir:"nehmen",  ihr:"nehmt", "sie/Sie":"nehmen",  note:"⚠️ особая форма!"},
+  treffen: {type:"e→i", col:C.orange,bg:C.orangeBg, ich:"treffe",  du:"triffst", "er/sie/es":"trifft",  wir:"treffen", ihr:"trefft","sie/Sie":"treffen"},
+  lesen:   {type:"e→ie",col:C.blue,  bg:C.blueBg,   ich:"lese",    du:"liest",   "er/sie/es":"liest",   wir:"lesen",   ihr:"lest",  "sie/Sie":"lesen"},
+  sehen:   {type:"e→ie",col:C.blue,  bg:C.blueBg,   ich:"sehe",    du:"siehst",  "er/sie/es":"sieht",   wir:"sehen",   ihr:"seht",  "sie/Sie":"sehen"},
+  schlafen:{type:"a→ä", col:C.purple,bg:C.purpleBg, ich:"schlafe", du:"schläfst","er/sie/es":"schläft", wir:"schlafen",ihr:"schlaft","sie/Sie":"schlafen"},
+  fahren:  {type:"a→ä", col:C.purple,bg:C.purpleBg, ich:"fahre",   du:"fährst",  "er/sie/es":"fährt",   wir:"fahren",  ihr:"fahrt", "sie/Sie":"fahren"},
 };
 
 // ─── KONJUGATION (L4C — Präteritum haben/sein) ────────────────────────────────
 const KONJ_L4C={
-  "haben →": {col:C.blue,  bg:C.blueBg,   ich:"hatte",  du:"hattest", "er/es/sie":"hatte",  wir:"hatten", ihr:"hattet","sie/Sie":"hatten"},
-  "sein →":  {col:C.purple,bg:C.purpleBg, ich:"war",    du:"warst",   "er/es/sie":"war",    wir:"waren",  ihr:"wart",  "sie/Sie":"waren"},
+  "haben →": {col:C.blue,  bg:C.blueBg,   ich:"hatte",  du:"hattest", "er/sie/es":"hatte",  wir:"hatten", ihr:"hattet","sie/Sie":"hatten"},
+  "sein →":  {col:C.purple,bg:C.purpleBg, ich:"war",    du:"warst",   "er/sie/es":"war",    wir:"waren",  ihr:"wart",  "sie/Sie":"waren"},
 };
 
 // ─── KONJUGATION (L5B — Trennbare Verben) ────────────────────────────────────
 const KONJ_L5B={
   anrufen:   {pref:"an",  col:C.blue,   bg:C.blueBg,
-    ich:"rufe … an",    du:"rufst … an",     "er/es/sie":"ruft … an",
+    ich:"rufe … an",    du:"rufst … an",     "er/sie/es":"ruft … an",
     wir:"rufen … an",   ihr:"ruft … an",     "sie/Sie":"rufen … an"},
   anfangen:  {pref:"an",  col:C.blue,   bg:C.blueBg,   note:"a→ä",
-    ich:"fange … an",   du:"fängst … an",    "er/es/sie":"fängt … an",
+    ich:"fange … an",   du:"fängst … an",    "er/sie/es":"fängt … an",
     wir:"fangen … an",  ihr:"fangt … an",    "sie/Sie":"fangen … an"},
   aufstehen: {pref:"auf", col:C.orange, bg:C.orangeBg,
-    ich:"stehe … auf",  du:"stehst … auf",   "er/es/sie":"steht … auf",
+    ich:"stehe … auf",  du:"stehst … auf",   "er/sie/es":"steht … auf",
     wir:"stehen … auf", ihr:"steht … auf",   "sie/Sie":"stehen … auf"},
   aufräumen: {pref:"auf", col:C.orange, bg:C.orangeBg,
-    ich:"räume … auf",  du:"räumst … auf",   "er/es/sie":"räumt … auf",
+    ich:"räume … auf",  du:"räumst … auf",   "er/sie/es":"räumt … auf",
     wir:"räumen … auf", ihr:"räumt … auf",   "sie/Sie":"räumen … auf"},
   aufhören:  {pref:"auf", col:C.orange, bg:C.orangeBg,
-    ich:"höre … auf",   du:"hörst … auf",    "er/es/sie":"hört … auf",
+    ich:"höre … auf",   du:"hörst … auf",    "er/sie/es":"hört … auf",
     wir:"hören … auf",  ihr:"hört … auf",    "sie/Sie":"hören … auf"},
   einkaufen: {pref:"ein", col:C.green,  bg:C.greenBg,
-    ich:"kaufe … ein",  du:"kaufst … ein",   "er/es/sie":"kauft … ein",
+    ich:"kaufe … ein",  du:"kaufst … ein",   "er/sie/es":"kauft … ein",
     wir:"kaufen … ein", ihr:"kauft … ein",   "sie/Sie":"kaufen … ein"},
   mitnehmen: {pref:"mit", col:C.purple, bg:C.purpleBg, note:"e→i",
-    ich:"nehme … mit",  du:"nimmst … mit",   "er/es/sie":"nimmt … mit",
+    ich:"nehme … mit",  du:"nimmst … mit",   "er/sie/es":"nimmt … mit",
     wir:"nehmen … mit", ihr:"nehmt … mit",   "sie/Sie":"nehmen … mit"},
   mitkommen: {pref:"mit", col:C.purple, bg:C.purpleBg,
-    ich:"komme … mit",  du:"kommst … mit",   "er/es/sie":"kommt … mit",
+    ich:"komme … mit",  du:"kommst … mit",   "er/sie/es":"kommt … mit",
     wir:"kommen … mit", ihr:"kommt … mit",   "sie/Sie":"kommen … mit"},
   ausgehen:  {pref:"aus", col:C.red,    bg:C.redBg,
-    ich:"gehe … aus",   du:"gehst … aus",    "er/es/sie":"geht … aus",
+    ich:"gehe … aus",   du:"gehst … aus",    "er/sie/es":"geht … aus",
     wir:"gehen … aus",  ihr:"geht … aus",    "sie/Sie":"gehen … aus"},
   fernsehen: {pref:"fern",col:C.teal,   bg:C.tealBg,   note:"e→ie",
-    ich:"sehe … fern",  du:"siehst … fern",  "er/es/sie":"sieht … fern",
+    ich:"sehe … fern",  du:"siehst … fern",  "er/sie/es":"sieht … fern",
     wir:"sehen … fern", ihr:"seht … fern",   "sie/Sie":"sehen … fern"},
   abspülen:  {pref:"ab",  col:C.yellow, bg:C.yellowBg,
-    ich:"spüle … ab",   du:"spülst … ab",    "er/es/sie":"spült … ab",
+    ich:"spüle … ab",   du:"spülst … ab",    "er/sie/es":"spült … ab",
     wir:"spülen … ab",  ihr:"spült … ab",    "sie/Sie":"spülen … ab"},
   einladen:  {pref:"ein", col:C.green,  bg:C.greenBg,  note:"a→ä",
-    ich:"lade … ein",   du:"lädst … ein",    "er/es/sie":"lädt … ein",
+    ich:"lade … ein",   du:"lädst … ein",    "er/sie/es":"lädt … ein",
     wir:"laden … ein",  ihr:"ladet … ein",   "sie/Sie":"laden … ein"},
   ausschlafen:{pref:"aus",col:C.red,    bg:C.redBg,    note:"a→ä",
-    ich:"schlafe … aus",du:"schläfst … aus", "er/es/sie":"schläft … aus",
+    ich:"schlafe … aus",du:"schläfst … aus", "er/sie/es":"schläft … aus",
     wir:"schlafen … aus",ihr:"schlaft … aus","sie/Sie":"schlafen … aus"},
   mitbringen:{pref:"mit", col:C.purple, bg:C.purpleBg,
-    ich:"bringe … mit", du:"bringst … mit",  "er/es/sie":"bringt … mit",
+    ich:"bringe … mit", du:"bringst … mit",  "er/sie/es":"bringt … mit",
     wir:"bringen … mit",ihr:"bringt … mit",  "sie/Sie":"bringen … mit"},
   einschlafen:{pref:"ein",col:C.green,  bg:C.greenBg,  note:"a→ä",
-    ich:"schlafe … ein",du:"schläfst … ein", "er/es/sie":"schläft … ein",
+    ich:"schlafe … ein",du:"schläfst … ein", "er/sie/es":"schläft … ein",
     wir:"schlafen … ein",ihr:"schlaft … ein","sie/Sie":"schlafen … ein"},
   wegfahren: {pref:"weg", col:C.orange, bg:C.orangeBg, note:"a→ä",
-    ich:"fahre … weg",  du:"fährst … weg",   "er/es/sie":"fährt … weg",
+    ich:"fahre … weg",  du:"fährst … weg",   "er/sie/es":"fährt … weg",
     wir:"fahren … weg", ihr:"fahrt … weg",   "sie/Sie":"fahren … weg"},
   ausfallen: {pref:"aus", col:C.red,    bg:C.redBg,    note:"a→ä",
-    ich:"falle … aus",  du:"fällst … aus",   "er/es/sie":"fällt … aus",
+    ich:"falle … aus",  du:"fällst … aus",   "er/sie/es":"fällt … aus",
     wir:"fallen … aus", ihr:"fallt … aus",   "sie/Sie":"fallen … aus"},
   stattfinden:{pref:"statt",col:C.teal, bg:C.tealBg,
-    ich:"finde … statt",du:"findest … statt","er/es/sie":"findet … statt",
+    ich:"finde … statt",du:"findest … statt","er/sie/es":"findet … statt",
     wir:"finden … statt",ihr:"findet … statt","sie/Sie":"finden … statt"},
 };
 
@@ -1005,46 +1005,46 @@ const getVerbPref=de=>PREF_LIST.find(p=>de.startsWith(p))||"";
 const KONJ_ALL={
   ...KONJ_L4B,
   ...KONJ_L5B,
-  haben:      {col:C.blue,  bg:C.blueBg,   ich:"habe",      du:"hast",       "er/es/sie":"hat",       wir:"haben",    ihr:"habt",     "sie/Sie":"haben",     imp:{du:"Hab!",    ihr:"Habt!",   Sie:"Haben Sie!"}},
-  sein:       {col:C.purple,bg:C.purpleBg, ich:"bin",       du:"bist",       "er/es/sie":"ist",       wir:"sind",     ihr:"seid",     "sie/Sie":"sind",      imp:{du:"Sei!",    ihr:"Seid!",   Sie:"Seien Sie!"},  note:"⚠️ особый"},
-  wollen:     {col:C.red,   bg:C.redBg,    ich:"will",      du:"willst",     "er/es/sie":"will",      wir:"wollen",   ihr:"wollt",    "sie/Sie":"wollen",    note:"ich = er",noImp:true},
-  können:     {col:C.green, bg:C.greenBg,  ich:"kann",      du:"kannst",     "er/es/sie":"kann",      wir:"können",   ihr:"könnt",    "sie/Sie":"können",    note:"ich = er",noImp:true},
-  müssen:     {col:C.orange,bg:C.orangeBg, ich:"muss",      du:"musst",      "er/es/sie":"muss",      wir:"müssen",   ihr:"müsst",    "sie/Sie":"müssen",    note:"ich = er",noImp:true},
-  mögen:      {col:C.purple,bg:C.purpleBg, ich:"mag",       du:"magst",      "er/es/sie":"mag",       wir:"mögen",    ihr:"mögt",     "sie/Sie":"mögen",     note:"ich = er",noImp:true},
-  laufen:     {col:C.purple,bg:C.purpleBg, ich:"laufe",     du:"läufst",     "er/es/sie":"läuft",     wir:"laufen",   ihr:"lauft",    "sie/Sie":"laufen",    imp:{du:"Lauf!",   ihr:"Lauft!", Sie:"Laufen Sie!"},  note:"a→ä"},
-  kommen:     {col:C.teal,  bg:C.tealBg,   ich:"komme",     du:"kommst",     "er/es/sie":"kommt",     wir:"kommen",   ihr:"kommt",    "sie/Sie":"kommen"},
-  gehen:      {col:C.teal,  bg:C.tealBg,   ich:"gehe",      du:"gehst",      "er/es/sie":"geht",      wir:"gehen",    ihr:"geht",     "sie/Sie":"gehen"},
-  machen:     {col:C.teal,  bg:C.tealBg,   ich:"mache",     du:"machst",     "er/es/sie":"macht",     wir:"machen",   ihr:"macht",    "sie/Sie":"machen"},
-  lernen:     {col:C.teal,  bg:C.tealBg,   ich:"lerne",     du:"lernst",     "er/es/sie":"lernt",     wir:"lernen",   ihr:"lernt",    "sie/Sie":"lernen"},
-  wohnen:     {col:C.teal,  bg:C.tealBg,   ich:"wohne",     du:"wohnst",     "er/es/sie":"wohnt",     wir:"wohnen",   ihr:"wohnt",    "sie/Sie":"wohnen"},
-  arbeiten:   {col:C.teal,  bg:C.tealBg,   ich:"arbeite",   du:"arbeitest",  "er/es/sie":"arbeitet",  wir:"arbeiten", ihr:"arbeitet", "sie/Sie":"arbeiten",  note:"-e- вставка"},
-  heißen:     {col:C.teal,  bg:C.tealBg,   ich:"heiße",     du:"heißt",      "er/es/sie":"heißt",     wir:"heißen",   ihr:"heißt",    "sie/Sie":"heißen"},
-  kochen:     {col:C.teal,  bg:C.tealBg,   ich:"koche",     du:"kochst",     "er/es/sie":"kocht",     wir:"kochen",   ihr:"kocht",    "sie/Sie":"kochen"},
-  spielen:    {col:C.teal,  bg:C.tealBg,   ich:"spiele",    du:"spielst",    "er/es/sie":"spielt",    wir:"spielen",  ihr:"spielt",   "sie/Sie":"spielen"},
-  trinken:    {col:C.teal,  bg:C.tealBg,   ich:"trinke",    du:"trinkst",    "er/es/sie":"trinkt",    wir:"trinken",  ihr:"trinkt",   "sie/Sie":"trinken"},
-  schreiben:  {col:C.teal,  bg:C.tealBg,   ich:"schreibe",  du:"schreibst",  "er/es/sie":"schreibt",  wir:"schreiben",ihr:"schreibt", "sie/Sie":"schreiben"},
-  reparieren: {col:C.teal,  bg:C.tealBg,   ich:"repariere", du:"reparierst", "er/es/sie":"repariert", wir:"reparieren",ihr:"repariert","sie/Sie":"reparieren"},
-  starten:    {col:C.teal,  bg:C.tealBg,   ich:"starte",    du:"startest",   "er/es/sie":"startet",   wir:"starten",  ihr:"startet",  "sie/Sie":"starten",   note:"-e- вставка"},
-  klingeln:   {col:C.teal,  bg:C.tealBg,   ich:"klingle",   du:"klingelst",  "er/es/sie":"klingelt",  wir:"klingeln", ihr:"klingelt", "sie/Sie":"klingeln"},
-  frühstücken:{col:C.teal,  bg:C.tealBg,   ich:"frühstücke",du:"frühstückst","er/es/sie":"frühstückt",wir:"frühstücken",ihr:"frühstückt","sie/Sie":"frühstücken"},
-  chillen:    {col:C.teal,  bg:C.tealBg,   ich:"chille",    du:"chillst",    "er/es/sie":"chillt",    wir:"chillen",  ihr:"chillt",   "sie/Sie":"chillen"},
-  treffen:    {col:C.orange,bg:C.orangeBg, ich:"treffe",    du:"triffst",    "er/es/sie":"trifft",    wir:"treffen",  ihr:"trefft",   "sie/Sie":"treffen",   note:"e→i"},
-  tanzen:     {col:C.teal,  bg:C.tealBg,   ich:"tanze",     du:"tanzt",      "er/es/sie":"tanzt",     wir:"tanzen",   ihr:"tanzt",    "sie/Sie":"tanzen"},
-  schwimmen:  {col:C.teal,  bg:C.tealBg,   ich:"schwimme",  du:"schwimmst",  "er/es/sie":"schwimmt",  wir:"schwimmen",ihr:"schwimmt", "sie/Sie":"schwimmen"},
-  joggen:     {col:C.teal,  bg:C.tealBg,   ich:"jogge",     du:"joggst",     "er/es/sie":"joggt",     wir:"joggen",   ihr:"joggt",    "sie/Sie":"joggen"},
-  grillen:    {col:C.teal,  bg:C.tealBg,   ich:"grille",    du:"grillst",    "er/es/sie":"grillt",    wir:"grillen",  ihr:"grillt",   "sie/Sie":"grillen"},
-  surfen:     {col:C.teal,  bg:C.tealBg,   ich:"surfe",     du:"surfst",     "er/es/sie":"surft",     wir:"surfen",   ihr:"surft",    "sie/Sie":"surfen"},
-  vergessen:  {col:C.orange,bg:C.orangeBg, ich:"vergesse",  du:"vergisst",   "er/es/sie":"vergisst",  wir:"vergessen",ihr:"vergesst", "sie/Sie":"vergessen", note:"e→i"},
-  möchten:    {col:C.purple,bg:C.purpleBg, ich:"möchte",    du:"möchtest",   "er/es/sie":"möchte",    wir:"möchten",  ihr:"möchtet",  "sie/Sie":"möchten",   note:"ich = er (нет -t!)",noImp:true},
-  kaufen:     {col:C.teal,  bg:C.tealBg,   ich:"kaufe",     du:"kaufst",     "er/es/sie":"kauft",     wir:"kaufen",   ihr:"kauft",    "sie/Sie":"kaufen"},
-  bekommen:   {col:C.teal,  bg:C.tealBg,   ich:"bekomme",   du:"bekommst",   "er/es/sie":"bekommt",   wir:"bekommen", ihr:"bekommt",  "sie/Sie":"bekommen"},
-  kosten:     {col:C.teal,  bg:C.tealBg,   ich:"koste",     du:"kostest",    "er/es/sie":"kostet",    wir:"kosten",   ihr:"kostet",   "sie/Sie":"kosten",    note:"-e- вставка"},
-  backen:     {col:C.orange,bg:C.orangeBg, ich:"backe",     du:"bäckst",     "er/es/sie":"bäckt",     wir:"backen",   ihr:"backt",    "sie/Sie":"backen",    imp:{du:"Back!",   ihr:"Backt!", Sie:"Backen Sie!"},  note:"a→ä"},
-  schneiden:  {col:C.teal,  bg:C.tealBg,   ich:"schneide",  du:"schneidest", "er/es/sie":"schneidet", wir:"schneiden",ihr:"schneidet","sie/Sie":"schneiden", note:"-e- вставка"},
-  schälen:    {col:C.teal,  bg:C.tealBg,   ich:"schäle",    du:"schälst",    "er/es/sie":"schält",    wir:"schälen",  ihr:"schält",   "sie/Sie":"schälen"},
-  verkaufen:  {col:C.teal,  bg:C.tealBg,   ich:"verkaufe",  du:"verkaufst",  "er/es/sie":"verkauft",  wir:"verkaufen",ihr:"verkauft", "sie/Sie":"verkaufen"},
-  holen:      {col:C.teal,  bg:C.tealBg,   ich:"hole",      du:"holst",      "er/es/sie":"holt",      wir:"holen",    ihr:"holt",     "sie/Sie":"holen"},
-  fragen:     {col:C.teal,  bg:C.tealBg,   ich:"frage",     du:"fragst",     "er/es/sie":"fragt",     wir:"fragen",   ihr:"fragt",    "sie/Sie":"fragen"},
+  haben:      {col:C.blue,  bg:C.blueBg,   ich:"habe",      du:"hast",       "er/sie/es":"hat",       wir:"haben",    ihr:"habt",     "sie/Sie":"haben",     imp:{du:"Hab!",    ihr:"Habt!",   Sie:"Haben Sie!"}},
+  sein:       {col:C.purple,bg:C.purpleBg, ich:"bin",       du:"bist",       "er/sie/es":"ist",       wir:"sind",     ihr:"seid",     "sie/Sie":"sind",      imp:{du:"Sei!",    ihr:"Seid!",   Sie:"Seien Sie!"},  note:"⚠️ особый"},
+  wollen:     {col:C.red,   bg:C.redBg,    ich:"will",      du:"willst",     "er/sie/es":"will",      wir:"wollen",   ihr:"wollt",    "sie/Sie":"wollen",    note:"ich = er",noImp:true},
+  können:     {col:C.green, bg:C.greenBg,  ich:"kann",      du:"kannst",     "er/sie/es":"kann",      wir:"können",   ihr:"könnt",    "sie/Sie":"können",    note:"ich = er",noImp:true},
+  müssen:     {col:C.orange,bg:C.orangeBg, ich:"muss",      du:"musst",      "er/sie/es":"muss",      wir:"müssen",   ihr:"müsst",    "sie/Sie":"müssen",    note:"ich = er",noImp:true},
+  mögen:      {col:C.purple,bg:C.purpleBg, ich:"mag",       du:"magst",      "er/sie/es":"mag",       wir:"mögen",    ihr:"mögt",     "sie/Sie":"mögen",     note:"ich = er",noImp:true},
+  laufen:     {col:C.purple,bg:C.purpleBg, ich:"laufe",     du:"läufst",     "er/sie/es":"läuft",     wir:"laufen",   ihr:"lauft",    "sie/Sie":"laufen",    imp:{du:"Lauf!",   ihr:"Lauft!", Sie:"Laufen Sie!"},  note:"a→ä"},
+  kommen:     {col:C.teal,  bg:C.tealBg,   ich:"komme",     du:"kommst",     "er/sie/es":"kommt",     wir:"kommen",   ihr:"kommt",    "sie/Sie":"kommen"},
+  gehen:      {col:C.teal,  bg:C.tealBg,   ich:"gehe",      du:"gehst",      "er/sie/es":"geht",      wir:"gehen",    ihr:"geht",     "sie/Sie":"gehen"},
+  machen:     {col:C.teal,  bg:C.tealBg,   ich:"mache",     du:"machst",     "er/sie/es":"macht",     wir:"machen",   ihr:"macht",    "sie/Sie":"machen"},
+  lernen:     {col:C.teal,  bg:C.tealBg,   ich:"lerne",     du:"lernst",     "er/sie/es":"lernt",     wir:"lernen",   ihr:"lernt",    "sie/Sie":"lernen"},
+  wohnen:     {col:C.teal,  bg:C.tealBg,   ich:"wohne",     du:"wohnst",     "er/sie/es":"wohnt",     wir:"wohnen",   ihr:"wohnt",    "sie/Sie":"wohnen"},
+  arbeiten:   {col:C.teal,  bg:C.tealBg,   ich:"arbeite",   du:"arbeitest",  "er/sie/es":"arbeitet",  wir:"arbeiten", ihr:"arbeitet", "sie/Sie":"arbeiten",  note:"-e- вставка"},
+  heißen:     {col:C.teal,  bg:C.tealBg,   ich:"heiße",     du:"heißt",      "er/sie/es":"heißt",     wir:"heißen",   ihr:"heißt",    "sie/Sie":"heißen"},
+  kochen:     {col:C.teal,  bg:C.tealBg,   ich:"koche",     du:"kochst",     "er/sie/es":"kocht",     wir:"kochen",   ihr:"kocht",    "sie/Sie":"kochen"},
+  spielen:    {col:C.teal,  bg:C.tealBg,   ich:"spiele",    du:"spielst",    "er/sie/es":"spielt",    wir:"spielen",  ihr:"spielt",   "sie/Sie":"spielen"},
+  trinken:    {col:C.teal,  bg:C.tealBg,   ich:"trinke",    du:"trinkst",    "er/sie/es":"trinkt",    wir:"trinken",  ihr:"trinkt",   "sie/Sie":"trinken"},
+  schreiben:  {col:C.teal,  bg:C.tealBg,   ich:"schreibe",  du:"schreibst",  "er/sie/es":"schreibt",  wir:"schreiben",ihr:"schreibt", "sie/Sie":"schreiben"},
+  reparieren: {col:C.teal,  bg:C.tealBg,   ich:"repariere", du:"reparierst", "er/sie/es":"repariert", wir:"reparieren",ihr:"repariert","sie/Sie":"reparieren"},
+  starten:    {col:C.teal,  bg:C.tealBg,   ich:"starte",    du:"startest",   "er/sie/es":"startet",   wir:"starten",  ihr:"startet",  "sie/Sie":"starten",   note:"-e- вставка"},
+  klingeln:   {col:C.teal,  bg:C.tealBg,   ich:"klingle",   du:"klingelst",  "er/sie/es":"klingelt",  wir:"klingeln", ihr:"klingelt", "sie/Sie":"klingeln"},
+  frühstücken:{col:C.teal,  bg:C.tealBg,   ich:"frühstücke",du:"frühstückst","er/sie/es":"frühstückt",wir:"frühstücken",ihr:"frühstückt","sie/Sie":"frühstücken"},
+  chillen:    {col:C.teal,  bg:C.tealBg,   ich:"chille",    du:"chillst",    "er/sie/es":"chillt",    wir:"chillen",  ihr:"chillt",   "sie/Sie":"chillen"},
+  treffen:    {col:C.orange,bg:C.orangeBg, ich:"treffe",    du:"triffst",    "er/sie/es":"trifft",    wir:"treffen",  ihr:"trefft",   "sie/Sie":"treffen",   note:"e→i"},
+  tanzen:     {col:C.teal,  bg:C.tealBg,   ich:"tanze",     du:"tanzt",      "er/sie/es":"tanzt",     wir:"tanzen",   ihr:"tanzt",    "sie/Sie":"tanzen"},
+  schwimmen:  {col:C.teal,  bg:C.tealBg,   ich:"schwimme",  du:"schwimmst",  "er/sie/es":"schwimmt",  wir:"schwimmen",ihr:"schwimmt", "sie/Sie":"schwimmen"},
+  joggen:     {col:C.teal,  bg:C.tealBg,   ich:"jogge",     du:"joggst",     "er/sie/es":"joggt",     wir:"joggen",   ihr:"joggt",    "sie/Sie":"joggen"},
+  grillen:    {col:C.teal,  bg:C.tealBg,   ich:"grille",    du:"grillst",    "er/sie/es":"grillt",    wir:"grillen",  ihr:"grillt",   "sie/Sie":"grillen"},
+  surfen:     {col:C.teal,  bg:C.tealBg,   ich:"surfe",     du:"surfst",     "er/sie/es":"surft",     wir:"surfen",   ihr:"surft",    "sie/Sie":"surfen"},
+  vergessen:  {col:C.orange,bg:C.orangeBg, ich:"vergesse",  du:"vergisst",   "er/sie/es":"vergisst",  wir:"vergessen",ihr:"vergesst", "sie/Sie":"vergessen", note:"e→i"},
+  möchten:    {col:C.purple,bg:C.purpleBg, ich:"möchte",    du:"möchtest",   "er/sie/es":"möchte",    wir:"möchten",  ihr:"möchtet",  "sie/Sie":"möchten",   note:"ich = er (нет -t!)",noImp:true},
+  kaufen:     {col:C.teal,  bg:C.tealBg,   ich:"kaufe",     du:"kaufst",     "er/sie/es":"kauft",     wir:"kaufen",   ihr:"kauft",    "sie/Sie":"kaufen"},
+  bekommen:   {col:C.teal,  bg:C.tealBg,   ich:"bekomme",   du:"bekommst",   "er/sie/es":"bekommt",   wir:"bekommen", ihr:"bekommt",  "sie/Sie":"bekommen"},
+  kosten:     {col:C.teal,  bg:C.tealBg,   ich:"koste",     du:"kostest",    "er/sie/es":"kostet",    wir:"kosten",   ihr:"kostet",   "sie/Sie":"kosten",    note:"-e- вставка"},
+  backen:     {col:C.orange,bg:C.orangeBg, ich:"backe",     du:"bäckst",     "er/sie/es":"bäckt",     wir:"backen",   ihr:"backt",    "sie/Sie":"backen",    imp:{du:"Back!",   ihr:"Backt!", Sie:"Backen Sie!"},  note:"a→ä"},
+  schneiden:  {col:C.teal,  bg:C.tealBg,   ich:"schneide",  du:"schneidest", "er/sie/es":"schneidet", wir:"schneiden",ihr:"schneidet","sie/Sie":"schneiden", note:"-e- вставка"},
+  schälen:    {col:C.teal,  bg:C.tealBg,   ich:"schäle",    du:"schälst",    "er/sie/es":"schält",    wir:"schälen",  ihr:"schält",   "sie/Sie":"schälen"},
+  verkaufen:  {col:C.teal,  bg:C.tealBg,   ich:"verkaufe",  du:"verkaufst",  "er/sie/es":"verkauft",  wir:"verkaufen",ihr:"verkauft", "sie/Sie":"verkaufen"},
+  holen:      {col:C.teal,  bg:C.tealBg,   ich:"hole",      du:"holst",      "er/sie/es":"holt",      wir:"holen",    ihr:"holt",     "sie/Sie":"holen"},
+  fragen:     {col:C.teal,  bg:C.tealBg,   ich:"frage",     du:"fragst",     "er/sie/es":"fragt",     wir:"fragen",   ihr:"fragt",    "sie/Sie":"fragen"},
 };
 
 // Ударения: комбинирующая акута \u0301 ставится после ударной гласной
@@ -1593,20 +1593,26 @@ const DIALOGE={
   ],
   L6:[
     {tag:"Основные",col:C.green,pairs:[
-      {q:"Was möchten Sie?",                    a:"Ich hätte gerne drei Kilo Kartoffeln.",         note:"hätte gerne = хотел(а) бы · вежливая просьба"},
-      {q:"Was kosten die Tomaten?",             a:"Das Kilo kostet 2,90 Euro.",                    note:"kosten (мн.ч.) / kostet (ед.ч.) = стоить"},
-      {q:"Haben Sie noch einen Wunsch?",        a:"Danke, das ist alles. / Ja, ich möchte noch...",note:"der Wunsch = желание"},
-      {q:"Das macht zusammen 7,70 Euro.\nHaben Sie es passend?",a:"Leider nicht. Ich habe nur zehn Euro.", note:"passend = точная сдача"},
-      {q:"Dann bekommen Sie 2,30 Euro zurück.", a:"Danke schön!",                                  note:"zurück = обратно · bekommen = получить"},
-      {q:"Was essen Sie gerne?",                a:"Ich esse gerne Brot mit Käse. / Ich mag Fisch.", note:"essen = есть (еду) · mögen = любить"},
-      {q:"Wie oft essen Sie Fleisch?",          a:"Ich esse oft Hähnchen. / Ich esse selten Fleisch.", note:"wie oft? = как часто? · selten = редко"},
+      {q:"Sie wünschen? / Bitte schön?",               a:"Ich hätte gerne ein Kilo Äpfel.",                   note:"hätte gerne = хотел(а) бы · вежливая просьба"},
+      {q:"Was möchten Sie?",                            a:"Ich hätte gerne drei Kilo Kartoffeln.",             note:"möchten = хотеть (вежливо)"},
+      {q:"Was kosten die Tomaten / Erdbeeren?",         a:"Das Kilo kostet 2,90€. / 8,20€ das Kilo.",         note:"kosten (мн.ч.) / kostet (ед.ч.) = стоить"},
+      {q:"Hmm, die sind aber teuer!",                   a:"Die Erdbeeren sind frisch und lecker.",             note:"aber = но · teuer = дорого · lecker = вкусно"},
+      {q:"Noch etwas? / Haben Sie noch einen Wunsch?",  a:"Dann nehme ich ein halbes Kilo. / Das ist alles.", note:"nehmen = взять · der Wunsch = желание"},
+      {q:"Das macht zusammen 9,00€.\nHaben Sie es passend?",a:"Leider nicht. Ich habe nur zehn Euro.",        note:"passend = точная сдача · zusammen = итого"},
+      {q:"Dann bekommen Sie 2,30€ zurück.",              a:"Danke schön! Einen schönen Tag noch!",             note:"zurück = обратно · einen schönen Tag = хорошего дня"},
+      {q:"Danke, gleichfalls! Auf Wiedersehen!",         a:"Auf Wiedersehen!",                                 note:"gleichfalls = и вам того же"},
+      {q:"Bitte schön? (in der Bäckerei)",               a:"Ich möchte ein Vollkornbrot, bitte!",              note:"das Vollkornbrot = хлеб из цельного зерна"},
+      {q:"Was kosten die Croissants? / Was macht das?",  a:"0,70€ das Stück.",                                 note:"das Stück = штука · Was macht das? = Сколько стоит?"},
+      {q:"Das macht zusammen 6,05€.",                    a:"Hier bitte! / Und 15 Cent zurück.",                note:"15 Cent zurück = 15 центов сдачи"},
     ]},
     {tag:"Дополнительные",col:C.teal,pairs:[
-      {q:"Kaufen Sie oft im Supermarkt ein?",   a:"Ja, ich kaufe jeden Tag ein. / Manchmal gehe ich auf den Markt.", note:"einkaufen = делать покупки · manchmal = иногда"},
-      {q:"Wo kaufen Sie Kaugummis?",            a:"Kaugummis kaufe ich an der Tankstelle. / im Kiosk.", note:"an der Tankstelle · im Supermarkt · auf dem Markt"},
-      {q:"Kauf doch bitte Brot! → кто?",        a:"Du → Imperativ informell (du-Form)",            note:"du kaufst → Kauf! (убери -st и du)"},
-      {q:"Vergiss die Eier nicht! → Infinitiv?",a:"vergessen → du vergisst → Vergiss!",            note:"⚡ сохраняет изменение гласной"},
-      {q:"Kaufen Sie Milch! → какой Imperativ?",a:"Imperativ formell (Sie-Form): Infinitiv + Sie", note:"Sie kaufen → Kaufen Sie!"},
+      {q:"Wo kaufen Sie Kaugummis?",               a:"Kaugummis kaufe ich an der Tankstelle. / im Kiosk.",     note:"an der Tankstelle · im Supermarkt · auf dem Markt"},
+      {q:"Kaufen Sie oft im Supermarkt ein?",      a:"Ja, ich kaufe jeden Tag ein. / Manchmal gehe ich auf den Markt.", note:"einkaufen = делать покупки · manchmal = иногда"},
+      {q:"Was magst du?",                          a:"Ich mag Wurst, aber ich mag keinen Käse.",               note:"mögen: ich mag = er/sie mag (нет -t!)"},
+      {q:"Isst du gerne Schokolade?",              a:"Ja, sehr gerne! / Nein, ich esse nicht gerne Schokolade.", note:"gerne / nicht gerne = с удовольствием / нет"},
+      {q:"Was isst man in Deutschland zum Frühstück?", a:"Man isst Brot mit Käse oder Wurst und trinkt Kaffee oder Tee.", note:"man = люди вообще · isst = как er"},
+      {q:"Kauf doch bitte Brot! → кто?",          a:"Du → Imperativ informell (du-Form)",                     note:"du kaufst → Kauf! (убери -st и du)"},
+      {q:"Kaufen Sie Milch! → какой Imperativ?",   a:"Imperativ formell (Sie-Form): Infinitiv + Sie",          note:"Sie kaufen → Kaufen Sie!"},
     ]},
   ],
 };
@@ -2260,7 +2266,7 @@ function Woerterbuch(){
         Sie:w.de[0].toUpperCase()+w.de.slice(1)+" Sie!"
       };
     })());
-    const hiCell=(p)=>konj?.note&&konj.note.includes("→")&&(p==="du"||p==="er/es/sie");
+    const hiCell=(p)=>konj?.note&&konj.note.includes("→")&&(p==="du"||p==="er/sie/es");
     if(w.tema==="Phrase")return(
       <div style={{padding:"8px 10px",borderBottom:`1px solid ${C.border}22`,display:"flex",justifyContent:"space-between",alignItems:"center",gap:8}}>
         <span style={{fontSize:13,color:C.teal,fontWeight:600,fontStyle:"italic"}}>{STRESS_MARKS[w.de]||w.de}</span>
@@ -2365,7 +2371,7 @@ function Woerterbuch(){
                   ))}
                 </div>
               : <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:5}}>
-                  {[["ich",konj.ich],["wir",konj.wir],["du",konj.du],["ihr",konj.ihr],["er/es/sie",konj["er/es/sie"]],["sie/Sie",konj["sie/Sie"]]].map(([p,f])=>{
+                  {[["ich",konj.ich],["wir",konj.wir],["du",konj.du],["ihr",konj.ihr],["er/sie/es",konj["er/sie/es"]],["sie/Sie",konj["sie/Sie"]]].map(([p,f])=>{
                     const hi=hiCell(p);
                     return(
                       <div key={p} style={{background:hi?konj.bg:C.card2,
@@ -2964,7 +2970,7 @@ function T2A(){
   const verbs=Object.keys(KONJ_L2);
   const [sel,setSel]=useState("kommen");
   const c=KONJ_L2[sel];
-  const rows=[["ich",c.ich],["du",c.du],["er/es/sie",c["er/es/sie"]],["wir",c.wir],["ihr",c.ihr],["sie/Sie",c["sie/Sie"]]];
+  const rows=[["ich",c.ich],["du",c.du],["er/sie/es",c["er/sie/es"]],["wir",c.wir],["ihr",c.ihr],["sie/Sie",c["sie/Sie"]]];
   return(
     <div style={{display:"flex",flexDirection:"column",gap:12}}>
       <Box c={C.green}>
@@ -2982,10 +2988,10 @@ function T2A(){
           ))}
         </div>
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:6}}>
-          {[["ich",c.ich],["wir",c.wir],["du",c.du],["ihr",c.ihr],["er/es/sie",c["er/es/sie"]],["sie/Sie",c["sie/Sie"]]].map(([p,f])=>(
-            <div key={p} style={{background:p==="er/es/sie"?C.greenBg:C.card2,border:p==="er/es/sie"?`1px solid ${C.green}40`:`1px solid ${C.border}`,borderRadius:8,padding:"8px 10px"}}>
-              <div style={{fontSize:11,color:p==="er/es/sie"?C.green:C.muted,marginBottom:2}}>{p}</div>
-              <div style={{color:p==="er/es/sie"?C.green:C.text,fontWeight:700,fontSize:15}}>{f}</div>
+          {[["ich",c.ich],["wir",c.wir],["du",c.du],["ihr",c.ihr],["er/sie/es",c["er/sie/es"]],["sie/Sie",c["sie/Sie"]]].map(([p,f])=>(
+            <div key={p} style={{background:p==="er/sie/es"?C.greenBg:C.card2,border:p==="er/sie/es"?`1px solid ${C.green}40`:`1px solid ${C.border}`,borderRadius:8,padding:"8px 10px"}}>
+              <div style={{fontSize:11,color:p==="er/sie/es"?C.green:C.muted,marginBottom:2}}>{p}</div>
+              <div style={{color:p==="er/sie/es"?C.green:C.text,fontWeight:700,fontSize:15}}>{f}</div>
             </div>
           ))}
         </div>
@@ -3337,9 +3343,9 @@ const FARBEN=[
   {de:"blau",ru:"синий / голубой"},{de:"grün",ru:"зелёный"},{de:"rosa",ru:"розовый"},
   {de:"lila",ru:"фиолетовый"},{de:"orange",ru:"оранжевый"},
 ];
-const KONJ_HABEN={ich:"habe",du:"hast","er/es/sie":"hat",wir:"haben",ihr:"habt","sie/Sie":"haben"};
-const KONJ_BRAUCHEN={ich:"brauche",du:"brauchst","er/es/sie":"braucht",wir:"brauchen",ihr:"braucht","sie/Sie":"brauchen"};
-const KONJ_KAUFEN={ich:"kaufe",du:"kaufst","er/es/sie":"kauft",wir:"kaufen",ihr:"kauft","sie/Sie":"kaufen"};
+const KONJ_HABEN={ich:"habe",du:"hast","er/sie/es":"hat",wir:"haben",ihr:"habt","sie/Sie":"haben"};
+const KONJ_BRAUCHEN={ich:"brauche",du:"brauchst","er/sie/es":"braucht",wir:"brauchen",ihr:"braucht","sie/Sie":"brauchen"};
+const KONJ_KAUFEN={ich:"kaufe",du:"kaufst","er/sie/es":"kauft",wir:"kaufen",ihr:"kauft","sie/Sie":"kaufen"};
 
 // ─── POSSESSIVPRONOMEN ────────────────────────────────────────────────────────
 const POSSESSIV=[
@@ -3427,7 +3433,7 @@ function T3A(){
       <Box c={C.blue}>
         <H c={C.blue}>🔑 Das Verb haben</H>
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:6}}>
-          {[["ich",KONJ_HABEN.ich],["wir",KONJ_HABEN.wir],["du",KONJ_HABEN.du],["ihr",KONJ_HABEN.ihr],["er/es/sie",KONJ_HABEN["er/es/sie"]],["sie/Sie",KONJ_HABEN["sie/Sie"]]].map(([p,f])=>(
+          {[["ich",KONJ_HABEN.ich],["wir",KONJ_HABEN.wir],["du",KONJ_HABEN.du],["ihr",KONJ_HABEN.ihr],["er/sie/es",KONJ_HABEN["er/sie/es"]],["sie/Sie",KONJ_HABEN["sie/Sie"]]].map(([p,f])=>(
             <div key={p} style={{background:C.card2,borderRadius:8,padding:"8px 10px"}}>
               <div style={{fontSize:11,color:C.muted,marginBottom:2}}>{p}</div>
               <div style={{color:C.text,fontWeight:700,fontSize:15}}>{f}</div>
@@ -4501,7 +4507,7 @@ function T4B(){
     <div style={{display:"flex",flexDirection:"column",gap:12}}>
       <Box c={C.yellow}>
         <H c={C.yellow}>⚡ Verben mit Vokalwechsel</H>
-        <div style={{fontSize:13,color:C.muted,marginBottom:8}}>У некоторых глаголов меняется корневой гласный в формах <b style={{color:C.yellow}}>du</b> и <b style={{color:C.yellow}}>er/es/sie</b></div>
+        <div style={{fontSize:13,color:C.muted,marginBottom:8}}>У некоторых глаголов меняется корневой гласный в формах <b style={{color:C.yellow}}>du</b> и <b style={{color:C.yellow}}>er/sie/es</b></div>
         <div style={{background:C.card2,borderRadius:8,padding:"8px 10px",fontSize:13,color:C.text,lineHeight:1.9}}>
           ich/wir/sie — обычная форма: <b style={{color:C.muted}}>spreche / sprechen</b><br/>
           <b style={{color:C.orange}}>⚠️ Изменение только у: du / er / es / sie (3-е л.)</b>
@@ -4511,7 +4517,7 @@ function T4B(){
         <Box key={g.type} c={g.col}>
           <H c={g.col} z={13}>{g.type}</H>
           <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:4,marginBottom:6}}>
-            {["Infinitiv","du","er/es/sie"].map(h=>(
+            {["Infinitiv","du","er/sie/es"].map(h=>(
               <div key={h} style={{fontSize:10,color:C.muted,fontWeight:700,textAlign:"center",textTransform:"uppercase"}}>{h}</div>
             ))}
           </div>
@@ -4547,8 +4553,8 @@ function T4B(){
         </div>
         {/* Карточки 2×3 */}
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:6}}>
-          {[["ich",c.ich],["wir",c.wir],["du",c.du],["ihr",c.ihr],["er/es/sie",c["er/es/sie"]],["sie/Sie",c["sie/Sie"]]].map(([p,f])=>{
-            const hi=p==="du"||p==="er/es/sie";
+          {[["ich",c.ich],["wir",c.wir],["du",c.du],["ihr",c.ihr],["er/sie/es",c["er/sie/es"]],["sie/Sie",c["sie/Sie"]]].map(([p,f])=>{
+            const hi=p==="du"||p==="er/sie/es";
             return(
               <div key={p} style={{background:hi?c.bg:C.card2,
                 border:`1px solid ${hi?c.col+"55":C.border}`,borderRadius:8,padding:"8px 10px"}}>
@@ -4856,7 +4862,7 @@ const Q_L5B=[
   {q:"'Wann ___ der Film ___?' (anfangen — er-Form)",       opts:["fangen ... an","fängt ... an","fangt ... an","anfängt ..."],                         ans:1, hint:"a→ä"},
   {q:"'Wir ___ heute Abend ___.' (ausgehen)",               opts:["ausgehen","gehen ... aus","geht ... aus","gehen ... auf"],                           ans:1, hint:"wir-Form"},
   {q:"'Du ___ eine Zeitung ___.' (mitnehmen — du-Form)",    opts:["mitnimmst ... —","nimmst ... mit","nimmt ... mit","nimmst mit ..."],                 ans:1, hint:"e→i"},
-  {q:"Wie lautet 'fernsehen' für er/es/sie?",               opts:["fernsieht","sieht ... fern","seht ... fern","sieht fern ..."],                       ans:1, hint:"e→ie"},
+  {q:"Wie lautet 'fernsehen' für er/sie/es?",               opts:["fernsieht","sieht ... fern","seht ... fern","sieht fern ..."],                       ans:1, hint:"e→ie"},
   {q:"'Der Kurs ___ um 12 Uhr ___.' (aufhören)",            opts:["aufhört ... —","hört ... auf","höre ... auf","hört auf ..."],                        ans:1, hint:"er-Form"},
 ];
 
@@ -4979,8 +4985,8 @@ function T5B(){
         </div>
         {/* Сетка 2×3 */}
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:6}}>
-          {[["ich",c.ich],["wir",c.wir],["du",c.du],["ihr",c.ihr],["er/es/sie",c["er/es/sie"]],["sie/Sie",c["sie/Sie"]]].map(([p,f])=>{
-            const hi=!!c.note&&(p==="du"||p==="er/es/sie");
+          {[["ich",c.ich],["wir",c.wir],["du",c.du],["ihr",c.ihr],["er/sie/es",c["er/sie/es"]],["sie/Sie",c["sie/Sie"]]].map(([p,f])=>{
+            const hi=!!c.note&&(p==="du"||p==="er/sie/es");
             return (
               <div key={p} style={{background:hi?c.bg:C.card2,
                 border:`1px solid ${hi?c.col+"55":C.border}`,borderRadius:8,padding:"8px 10px"}}>
@@ -5478,6 +5484,483 @@ function T6B(){
   );
 }
 
+const Q_L6C=[
+  {q:"'Ich möchte Brot.' — форма глагола?",        opts:["mag","möchte","mögen","möchtest"],                                           ans:1, hint:"möchten"},
+  {q:"Ich ___ gerne ein Kilo Äpfel. (вежл. просьба)",opts:["möchte","mag","will","habe"],                                              ans:0, hint:"möchten"},
+  {q:"'Ich hätte gerne...' = ?",                    opts:["У меня есть...","Я хотел(а) бы...","Мне нравится...","Мне нужно..."],       ans:1, hint:"hätte gerne"},
+  {q:"Wo kauft man Wurst? (мясная лавка)",          opts:["am Kiosk","im Supermarkt","in der Metzgerei","in der Bäckerei"],            ans:2, hint:"Einkaufsorte"},
+  {q:"Wo kauft man Brötchen?",                      opts:["auf dem Markt","in der Bäckerei","am Kiosk","an der Tankstelle"],           ans:1, hint:"Einkaufsorte"},
+  {q:"'Das macht zusammen 5€.' — что это значит?",  opts:["Это стоит 5€","Итого 5€","Скидка 5€","Сдача 5€"],                          ans:1, hint:"Einkauf"},
+  {q:"'Haben Sie es passend?' — что спрашивают?",   opts:["Вам нравится?","У вас есть точная сумма?","Что желаете?","Всё?"],           ans:1, hint:"passend"},
+  {q:"Предлог для: im Supermarkt, in der Bäckerei?",opts:["auf","an","im / in der","bei"],                                            ans:2, hint:"Präpositionen"},
+  {q:"'auf dem Markt' — предлог + артикль?",         opts:["auf dem","in dem","an der","bei dem"],                                     ans:0, hint:"auf dem Markt"},
+  {q:"Wie lautet die Sie-Form von möchten?",         opts:["möchtet","möchten","möchte","mag"],                                        ans:1, hint:"möchten"},
+  {q:"'an der Tankstelle' — где это?",               opts:["рынок","заправка","булочная","супермаркет"],                               ans:1, hint:"Tankstelle"},
+  {q:"'Ich nehme drei Stück, bitte.' — Stück = ?",   opts:["штука, кусок","литр","пачка","стаканчик"],                                ans:0, hint:"Mengen"},
+];
+
+function T6C(){
+  const [selOrte,setSelOrte]=useState(null);
+  const [openLines,setOpenLines]=useState(new Set());
+  const togLine=(key)=>setOpenLines(s=>{const n=new Set(s);n.has(key)?n.delete(key):n.add(key);return n;});
+  const orte=[
+    {loc:"am Kiosk",          prep:"am",    art:"Kiosk",       ru:"в киоске",       buy:"Kaugummi, Zeitungen, Süßigkeiten", icon:"📰"},
+    {loc:"im Supermarkt",     prep:"im",    art:"Supermarkt",  ru:"в супермаркете", buy:"alles: Lebensmittel, Getränke...", icon:"🛒"},
+    {loc:"in der Metzgerei",  prep:"in der",art:"Metzgerei",   ru:"в мясной лавке", buy:"Wurst, Fleisch, Schinken",         icon:"🥩"},
+    {loc:"auf dem Markt",     prep:"auf dem",art:"Markt",      ru:"на рынке",       buy:"Obst, Gemüse, frische Produkte",   icon:"🥦"},
+    {loc:"in der Bäckerei",   prep:"in der",art:"Bäckerei",    ru:"в булочной",     buy:"Brot, Brötchen, Croissants",       icon:"🍞"},
+    {loc:"an der Tankstelle", prep:"an der",art:"Tankstelle",  ru:"на заправке",    buy:"Kaugummi, Snacks, Getränke",       icon:"⛽"},
+  ];
+  const konj=[
+    ["ich","möchte"],["wir","möchten"],
+    ["du","möchtest"],["ihr","möchtet"],
+    ["er/sie/es","möchte"],["sie/Sie","möchten"],
+  ];
+  const dialog=[
+    {v:"Guten Tag, was möchten Sie?",          vRu:"Добрый день, что желаете?",
+     k:"Ich hätte gerne ein Kilo Äpfel.",       kRu:"Я бы хотел(а) килограмм яблок.",       note:"hätte gerne = вежливая просьба"},
+    {v:"Ein Kilo Äpfel. Noch etwas?",           vRu:"Килограмм яблок. Ещё что-нибудь?",
+     k:"Was kosten die Erdbeeren?",             kRu:"Сколько стоит клубника?",               note:"kosten (мн.ч.)"},
+    {v:"Das Kilo kostet 8,20€.",                vRu:"Килограмм стоит 8,20€.",
+     k:"Hmm, die sind aber teuer.",             kRu:"Хм, но они же дорогие.",                note:"aber = но, однако · teuer = дорого"},
+    {v:"Die Erdbeeren sind frisch und lecker.", vRu:"Клубника свежая и очень вкусная.",
+     k:"Gut, dann nehme ich ein halbes Kilo.",  kRu:"Хорошо, тогда возьму полкило.",         note:"nehmen = взять, купить"},
+    {v:"Darf es sonst noch etwas sein?",        vRu:"Можно ещё что-нибудь?",
+     k:"Nein, danke. Das ist alles.",           kRu:"Нет, спасибо. Это всё.",                note:"sonst = ещё что-нибудь"},
+    {v:"Das macht zusammen 9,00€.",             vRu:"Итого 9,00€.",
+     k:"Hier bitte!",                           kRu:"Вот, пожалуйста!",                      note:"zusammen = итого"},
+    {v:"Einen schönen Tag noch!",               vRu:"Хорошего дня!",
+     k:"Danke, gleichfalls! Auf Wiedersehen!",  kRu:"Спасибо, взаимно! До свидания!",        note:"gleichfalls = и вам того же"},
+  ];
+  const mengen=[
+    {abbr:"1 g",    full:"1 Gramm"},
+    {abbr:"1 kg",   full:"1 Kilogramm"},
+    {abbr:"1 Pfd.", full:"1 Pfund (= 500 g)"},
+    {abbr:"1 l",    full:"1 Liter"},
+    {abbr:"das Stück",   full:"штука (St.)"},
+    {abbr:"die Scheibe", full:"ломтик"},
+  ];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.teal}>
+        <H c={C.teal}>🛍️ B · Einkaufen — Где покупают?</H>
+
+        <div style={{fontSize:12,color:C.muted,marginBottom:8}}>
+          📍 Einkaufsorte — места покупки (нажми для подробностей)
+        </div>
+        <div style={{display:"flex",flexDirection:"column",gap:4,marginBottom:14}}>
+          {orte.map((o,i)=>(
+            <div key={o.loc}
+              onClick={()=>setSelOrte(selOrte===i?null:i)}
+              style={{background:selOrte===i?C.teal+"22":C.card2,
+                border:`1px solid ${selOrte===i?C.teal:C.border}`,
+                borderRadius:10,padding:"10px 12px",cursor:"pointer",transition:"all .15s"}}>
+              <div style={{display:"flex",alignItems:"center",gap:8}}>
+                <span style={{fontSize:18}}>{o.icon}</span>
+                <span style={{fontWeight:800,color:C.text,fontSize:13,flex:1}}>
+                  <span style={{color:C.teal}}>{o.prep}</span>{" "}{o.art}
+                </span>
+                <span style={{fontSize:11,color:C.muted}}>{o.ru}</span>
+              </div>
+              {selOrte===i&&(
+                <div style={{marginTop:8,paddingTop:8,borderTop:`1px solid ${C.border}`,
+                  fontSize:12,color:C.muted}}>
+                  🛍️ {o.buy}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+
+        <div style={{background:C.yellow+"18",border:`1px solid ${C.yellow}44`,
+          borderRadius:10,padding:"10px 12px",marginBottom:14}}>
+          <div style={{fontWeight:700,fontSize:12,color:C.yellow,marginBottom:6}}>
+            📌 Предлоги + Dativ (где? — Dativ!)
+          </div>
+          {[
+            ["im","(= in dem) + m/n","im Supermarkt, im Kiosk"],
+            ["in der","+ f","in der Bäckerei, in der Metzgerei"],
+            ["auf dem","+ m","auf dem Markt"],
+            ["an der","+ f","an der Tankstelle"],
+            ["am","(= an dem) + m","am Kiosk"],
+          ].map(([prep,rule,ex])=>(
+            <div key={prep} style={{display:"flex",gap:8,alignItems:"center",marginBottom:4,fontSize:12}}>
+              <span style={{color:C.yellow,fontWeight:800,minWidth:52}}>{prep}</span>
+              <span style={{color:C.muted,minWidth:80,fontSize:11}}>{rule}</span>
+              <span style={{color:C.text}}>{ex}</span>
+            </div>
+          ))}
+        </div>
+
+        <div style={{background:C.purple+"15",border:`1px solid ${C.purple}33`,
+          borderRadius:10,padding:"10px 12px",marginBottom:14}}>
+          <div style={{fontWeight:800,fontSize:12,color:C.purple,marginBottom:8}}>
+            ✨ möchten — хотеть (вежливо)
+          </div>
+          <div style={{fontSize:11,color:C.muted,marginBottom:10,lineHeight:1.5}}>
+            ⚠️ <b style={{color:C.purple}}>ich möchte = er möchte</b> — нет окончания -t!
+          </div>
+          <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:4}}>
+            {konj.map(([pro,form])=>(
+              <div key={pro} style={{display:"flex",gap:8,background:"rgba(255,255,255,.06)",
+                borderRadius:7,padding:"5px 8px",fontSize:13,alignItems:"center"}}>
+                <span style={{color:C.muted,minWidth:60,fontSize:11}}>{pro}</span>
+                <span style={{color:C.purple,fontWeight:800}}>{form}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div style={{background:C.card2,borderRadius:10,padding:"10px 12px",marginBottom:14}}>
+          <div style={{fontWeight:700,fontSize:12,color:C.orange,marginBottom:6}}>
+            🎩 möchten vs hätte gerne
+          </div>
+          <div style={{fontSize:12,color:C.muted,lineHeight:1.7}}>
+            <span style={{color:C.orange,fontWeight:700}}>Ich möchte</span> ein Kilo Äpfel.
+            <span style={{color:C.muted}}> — просто «хочу»</span><br/>
+            <span style={{color:C.green,fontWeight:700}}>Ich hätte gerne</span> ein Kilo Äpfel.
+            <span style={{color:C.muted}}> — вежливее: «я бы хотел(а)» ✓</span>
+          </div>
+        </div>
+
+        <div style={{fontWeight:700,fontSize:12,color:C.teal,marginBottom:6}}>
+          💬 Einkaufsgespräch — диалог auf dem Markt
+        </div>
+        <div style={{display:"flex",flexDirection:"column",gap:5,marginBottom:14}}>
+          {dialog.map((d,i)=>(
+            <div key={i} style={{background:C.card2,borderRadius:8,padding:"8px 10px",fontSize:12}}>
+              <div onClick={()=>togLine(`${i}-v`)}
+                style={{cursor:"pointer",marginBottom:4,borderRadius:6,padding:"4px 6px",
+                  background:openLines.has(`${i}-v`)?C.green+"15":"transparent",
+                  border:`1px solid ${openLines.has(`${i}-v`)?C.green+"44":"transparent"}`}}>
+                <div style={{display:"flex",alignItems:"center",justifyContent:"space-between"}}>
+                  <span style={{color:C.green}}>🏪 <b>V:</b> {d.v}</span>
+                  <span style={{fontSize:10,color:C.muted,flexShrink:0,marginLeft:6}}>{openLines.has(`${i}-v`)?"▲":"▾"}</span>
+                </div>
+                {openLines.has(`${i}-v`)&&(
+                  <div style={{color:C.muted,fontSize:11,paddingLeft:20,marginTop:3}}>{d.vRu}</div>
+                )}
+              </div>
+              <div onClick={()=>togLine(`${i}-k`)}
+                style={{cursor:"pointer",borderRadius:6,padding:"4px 6px",
+                  background:openLines.has(`${i}-k`)?C.teal+"15":"transparent",
+                  border:`1px solid ${openLines.has(`${i}-k`)?C.teal+"44":"transparent"}`}}>
+                <div style={{display:"flex",alignItems:"center",justifyContent:"space-between"}}>
+                  <span style={{color:C.teal}}>🙋 <b>K:</b> {d.k}</span>
+                  <span style={{fontSize:10,color:C.muted,flexShrink:0,marginLeft:6}}>{openLines.has(`${i}-k`)?"▲":"▾"}</span>
+                </div>
+                {openLines.has(`${i}-k`)&&(
+                  <div style={{color:C.muted,fontSize:11,paddingLeft:20,marginTop:3}}>{d.kRu}</div>
+                )}
+              </div>
+              {d.note&&<div style={{color:C.muted,fontSize:10,marginTop:5}}>💡 {d.note}</div>}
+            </div>
+          ))}
+        </div>
+
+        <div style={{background:C.card2,borderRadius:10,padding:"10px 12px"}}>
+          <div style={{fontWeight:700,fontSize:12,color:C.orange,marginBottom:8}}>
+            ⚖️ Mengenangaben — единицы измерения
+          </div>
+          <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:4}}>
+            {mengen.map(({abbr,full})=>(
+              <div key={abbr} style={{display:"flex",gap:6,alignItems:"center",
+                background:"rgba(255,255,255,.05)",borderRadius:6,padding:"5px 8px"}}>
+                <span style={{color:C.orange,fontWeight:800,fontSize:12,minWidth:60}}>{abbr}</span>
+                <span style={{color:C.muted,fontSize:11}}>{full}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </Box>
+    </div>
+  );
+}
+
+const Q_L6D=[
+  {q:"'Sie mag Schokolade.' — форма mögen?",          opts:["mögt","mag","mögen","magst"],                                             ans:1, hint:"mögen er/sie"},
+  {q:"Ich ___ Wurst, aber ich ___ keinen Käse.",      opts:["mag / mag","mögen / mögen","mag / magst","möchte / möchte"],             ans:0, hint:"mögen ich=er"},
+  {q:"kein- + ___ (что ставится после kein-)?",       opts:["Adjektiv","Nomen","Verb","Adverb"],                                      ans:1, hint:"kein + Nomen"},
+  {q:"'Ich mag keinen Kaffee.' → keinen потому что:", opts:["f-форма","n-форма","m Akkusativ","pl-форма"],                            ans:2, hint:"Akkusativ m"},
+  {q:"'Ich trinke nicht gern Kaffee.' → nicht + ?",   opts:["Nomen","Verb/Adverb","Artikel","Adjektiv"],                             ans:1, hint:"nicht + Verb"},
+  {q:"Отрицание: 'Ich mag ___ Fisch.' (m Akk.)",      opts:["keine","kein","keinen","nicht"],                                        ans:2, hint:"kein Akkusativ m"},
+  {q:"Отрицание: 'Ich mag ___ Milch.' (f)",           opts:["keinen","kein","keine","nicht"],                                        ans:2, hint:"kein f"},
+  {q:"Отрицание: 'Ich mag ___ Brot.' (n)",            opts:["keine","keinen","kein","nicht"],                                        ans:2, hint:"kein n"},
+  {q:"mögen vs möchten: 'Ich ___ heute Pizza.' (хочу сейчас)", opts:["mag","möchte","mögen","magst"],                               ans:1, hint:"möchten = сейчас"},
+  {q:"mögen vs möchten: 'Ich ___ Pasta.' (люблю вообще)",      opts:["möchte","möchten","mag","magst"],                             ans:2, hint:"mögen = вообще"},
+  {q:"Отрицание Pl.: 'Ich mag ___ Bratkartoffeln.'",  opts:["keinen","kein","keiner","keine"],                                       ans:3, hint:"kein Plural"},
+  {q:"'Sie isst nicht gerne Käse.' = ?",              opts:["Sie mag keinen Käse.","Sie isst Käse.","Sie kauft keinen Käse.","Sie mag Käse."], ans:0, hint:"kein = nicht gerne"},
+];
+
+function T6D(){
+  const [tab,setTab]=useState("mögen");
+  const moegen=[
+    ["ich","mag"],["wir","mögen"],
+    ["du","magst"],["ihr","mögt"],
+    ["er/sie/es","mag"],["sie/Sie","mögen"],
+  ];
+  const keinRows=[
+    {genus:"m", bsp:"der Kaffee / Käse",       akk:"keinen Kaffee / Käse",        col:C.blue},
+    {genus:"n", bsp:"das Brot / Fleisch",       akk:"kein Brot / Fleisch",         col:C.orange},
+    {genus:"f", bsp:"die Milch / Wurst",        akk:"keine Milch / Wurst",         col:C.purple},
+    {genus:"pl",bsp:"— Bratkartoffeln / Erbsen",akk:"keine Bratkartoffeln / Erbsen",col:C.teal},
+  ];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.purple}>
+        <H c={C.purple}>❤️ C · Das mag ich — Предпочтения</H>
+
+        <div style={{display:"flex",gap:6,marginBottom:12}}>
+          {[["mögen","mögen"],["vs","mögen vs möchten"],["kein","kein- vs nicht"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,padding:"9px 4px",borderRadius:9,border:"none",cursor:"pointer",
+                fontSize:11,fontWeight:700,
+                background:tab===key?C.purple+"33":"transparent",
+                color:tab===key?C.purple:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+
+        {tab==="mögen"&&(
+          <div>
+            <div style={{background:C.purple+"15",border:`1px solid ${C.purple}33`,
+              borderRadius:10,padding:"12px 14px",marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.purple,marginBottom:10}}>
+                Спряжение: mögen
+              </div>
+              <div style={{background:C.red+"15",border:`1px solid ${C.red}33`,
+                borderRadius:8,padding:"7px 10px",marginBottom:10,fontSize:12}}>
+                ⚠️ <b style={{color:C.red}}>ich mag = er/sie mag</b> — нет окончания!
+                <span style={{color:C.muted}}> (неправильный глагол)</span>
+              </div>
+              <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:4}}>
+                {moegen.map(([pro,form])=>(
+                  <div key={pro} style={{display:"flex",gap:8,background:"rgba(255,255,255,.06)",
+                    borderRadius:7,padding:"6px 10px",fontSize:13,alignItems:"center"}}>
+                    <span style={{color:C.muted,minWidth:60,fontSize:11}}>{pro}</span>
+                    <span style={{color:C.purple,fontWeight:800}}>{form}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div style={{background:C.card2,borderRadius:10,padding:"10px 12px"}}>
+              <div style={{fontWeight:700,fontSize:12,color:C.text,marginBottom:8}}>Примеры:</div>
+              {[
+                ["Susanna mag Wurst, aber sie mag keinen Käse.","Сюзанна любит колбасу, но не любит сыр."],
+                ["Ich mag Fisch.","Я люблю рыбу."],
+                ["Was magst du?","Что тебе нравится?"],
+                ["Ich mag keine Bratkartoffeln.","Мне не нравится жареная картошка."],
+              ].map(([de,ru])=>(
+                <div key={de} style={{marginBottom:6,paddingBottom:6,
+                  borderBottom:`1px solid ${C.border}`,fontSize:12}}>
+                  <div style={{color:C.text,fontWeight:600}}>{de}</div>
+                  <div style={{color:C.muted,fontSize:11}}>{ru}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {tab==="vs"&&(
+          <div>
+            <div style={{background:C.card2,borderRadius:10,padding:"12px 14px",marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:12,color:C.text,marginBottom:10}}>
+                mögen vs möchten — в чём разница?
+              </div>
+              {[
+                {verb:"mögen",  conj:"ich mag",     ru:"любить (в принципе)", ex:"Ich mag Pizza.",           note:"постоянное предпочтение"},
+                {verb:"möchten",conj:"ich möchte",  ru:"хотеть (прямо сейчас)",ex:"Ich möchte (jetzt) Pizza.",note:"желание в данный момент"},
+              ].map(({verb,conj,ru,ex,note})=>(
+                <div key={verb} style={{background:"rgba(255,255,255,.05)",borderRadius:8,
+                  padding:"10px 12px",marginBottom:8}}>
+                  <div style={{display:"flex",gap:8,alignItems:"center",marginBottom:4}}>
+                    <span style={{background:C.purple+"33",color:C.purple,borderRadius:6,
+                      padding:"2px 8px",fontSize:12,fontWeight:800}}>{verb}</span>
+                    <span style={{color:C.text,fontWeight:700,fontSize:13}}>{conj}</span>
+                  </div>
+                  <div style={{fontSize:12,color:C.muted,marginBottom:4}}>📌 {ru}</div>
+                  <div style={{fontSize:13,color:C.text,fontWeight:600}}>{ex}</div>
+                  <div style={{fontSize:11,color:C.muted,fontStyle:"italic"}}>{note}</div>
+                </div>
+              ))}
+            </div>
+            <div style={{background:C.yellow+"15",border:`1px solid ${C.yellow}33`,borderRadius:10,padding:"10px 12px"}}>
+              <div style={{fontSize:12,color:C.muted,lineHeight:1.8}}>
+                <b style={{color:C.yellow}}>Ich mag Pizza.</b> — Я люблю пиццу (всегда) ✅<br/>
+                <b style={{color:C.teal}}>Ich möchte (jetzt) Pizza.</b> — Я хочу пиццу (сейчас) ✅<br/>
+                <br/>
+                Вопросы: <b style={{color:C.text}}>Was magst du?</b> / <b style={{color:C.text}}>Was möchtest du?</b>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {tab==="kein"&&(
+          <div>
+            <div style={{background:C.card2,borderRadius:10,padding:"12px 14px",marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:12,color:C.red,marginBottom:10}}>
+                🚫 kein- + Nomen vs nicht + Verb
+              </div>
+              <div style={{background:C.red+"15",border:`1px solid ${C.red}33`,
+                borderRadius:8,padding:"8px 10px",marginBottom:10}}>
+                <div style={{fontSize:12,lineHeight:1.9}}>
+                  <b style={{color:C.red}}>kein-</b><span style={{color:C.muted}}> + Nomen: </span>
+                  <b style={{color:C.text}}>Ich mag keinen Kaffee.</b>
+                  <span style={{color:C.muted,fontSize:11}}> → отрицание предмета</span><br/>
+                  <b style={{color:C.orange}}>nicht</b><span style={{color:C.muted}}> + gern: </span>
+                  <b style={{color:C.text}}>Ich trinke nicht gern Kaffee.</b>
+                  <span style={{color:C.muted,fontSize:11}}> → отрицание действия</span>
+                </div>
+              </div>
+              <div style={{fontWeight:700,fontSize:11,color:C.muted,marginBottom:6}}>
+                Akkusativ kein — по роду:
+              </div>
+              {keinRows.map(({genus,bsp,akk,col})=>(
+                <div key={genus} style={{display:"flex",gap:8,alignItems:"center",
+                  background:col+"10",borderRadius:7,padding:"6px 10px",marginBottom:4}}>
+                  <span style={{background:col+"33",color:col,borderRadius:4,
+                    padding:"1px 6px",fontSize:10,fontWeight:800,minWidth:18,
+                    textAlign:"center"}}>{genus}</span>
+                  <span style={{color:C.muted,fontSize:11,flex:1}}>{bsp}</span>
+                  <span style={{color:col,fontWeight:800,fontSize:12}}>→ {akk}</span>
+                </div>
+              ))}
+            </div>
+            <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,
+              borderRadius:10,padding:"10px 12px"}}>
+              <div style={{fontWeight:700,fontSize:12,color:C.orange,marginBottom:6}}>
+                💡 Только m меняется в Akkusativ!
+              </div>
+              <div style={{fontSize:12,color:C.muted,lineHeight:1.7}}>
+                m: <b style={{color:C.blue}}>keinen</b> Käse / Kaffee / Fisch<br/>
+                n: <b style={{color:C.orange}}>kein</b> Brot / Fleisch / Bier<br/>
+                f: <b style={{color:C.purple}}>keine</b> Milch / Wurst / Cola<br/>
+                pl: <b style={{color:C.teal}}>keine</b> Bratkartoffeln / Erbsen
+              </div>
+            </div>
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
+const Q_L6E=[
+  {q:"'Man' спрягается как:",                       opts:["ich","du","er/sie/es","wir"],                                              ans:2, hint:"man = er"},
+  {q:"'Man isst' = ?",                               opts:["Я ем","Ты ешь","Едят / принято есть","Мы едим"],                         ans:2, hint:"man = viele"},
+  {q:"Wann isst man in Deutschland zu Mittag?",      opts:["8–10 Uhr","12–14 Uhr","15–17 Uhr","18–20 Uhr"],                         ans:1, hint:"Mittagessen"},
+  {q:"Was isst man zum Frühstück in Deutschland?",   opts:["Fleisch und Kartoffeln","Brot mit Käse/Wurst, Kaffee","Pizza","Suppe"], ans:1, hint:"Frühstück"},
+  {q:"'Das Abendessen ist oft kalt.' — когда?",      opts:["morgens","mittags","abends","nachts"],                                    ans:2, hint:"Abendessen"},
+  {q:"'Kaffee und Kuchen' — wann?",                  opts:["zum Frühstück","zum Mittagessen","am Sonntagnachmittag","abends"],       ans:2, hint:"Kaffee und Kuchen"},
+  {q:"Wo essen viele Deutsche zu Mittag?",           opts:["zu Hause","in der Bäckerei","in der Kantine / am Imbiss","im Supermarkt"], ans:2, hint:"Kantine"},
+  {q:"'Man backt den Kuchen selbst.' — Man = ?",     opts:["я","он","люди / принято","мы"],                                          ans:2, hint:"man"},
+];
+
+function T6E(){
+  const [selMeal,setSelMeal]=useState(0);
+  const meals=[
+    {id:0,icon:"☕",name:"Frühstück",     time:"7:00 – 8:00 Uhr",        ru:"Завтрак",
+     foods:["Brot mit Honig oder Marmelade","Käse oder Wurst","Müsli mit Obst","Kaffee oder Tee (Kinder: Milch / Kakao)"],
+     note:"Am Wochenende auch später.",col:C.yellow},
+    {id:1,icon:"🍲",name:"Mittagessen",   time:"12:00 – 14:00 Uhr",      ru:"Обед",
+     foods:["Suppe, Spaghetti","Fleisch mit Kartoffeln und Salat","Zum Nachtisch: Pudding oder Eis"],
+     note:"Oft in der Kantine oder am Imbiss. Das Mittagessen ist warm.",col:C.orange},
+    {id:2,icon:"🧀",name:"Abendessen",    time:"18:00 – 19:00 Uhr",      ru:"Ужин",
+     foods:["Brot, Käse- und Wurstplatte","Dose Fisch, Gurken","Bier oder Tee (Kinder: Apfelsaft / Orangensaft)"],
+     note:"Das Abendessen ist oft kalt.",col:C.blue},
+    {id:3,icon:"🍰",name:"Kaffee & Kuchen",time:"Sonntagnachmittag",     ru:"Кофе и пирог",
+     foods:["Kaffee mit Kuchen und Sahne","manchmal selbst gebacken","oder aus der Bäckerei / Konditorei"],
+     note:"Am Sonntagnachmittag mit Familie und Freunden.",col:C.teal},
+  ];
+  const meal=meals[selMeal];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.green}>
+        <H c={C.green}>🇩🇪 D · Essen in Deutschland</H>
+
+        <div style={{background:C.green+"15",border:`1px solid ${C.green}33`,
+          borderRadius:10,padding:"10px 12px",marginBottom:14}}>
+          <div style={{fontWeight:800,fontSize:12,color:C.green,marginBottom:8}}>
+            👥 Местоимение man
+          </div>
+          <div style={{fontSize:12,color:C.muted,lineHeight:1.7,marginBottom:8}}>
+            <b style={{color:C.green}}>man</b> = «люди», «все», «принято» (= viele Leute oder alle)<br/>
+            Спрягается как <b style={{color:C.text}}>er / es / sie</b>
+          </div>
+          <div style={{display:"flex",flexDirection:"column",gap:4}}>
+            {[
+              ["Man isst Brot zum Frühstück.","На завтрак (обычно) едят хлеб."],
+              ["Man trinkt Kaffee oder Tee.","Пьют кофе или чай."],
+              ["Man backt den Kuchen selbst.","Торт пекут сами."],
+              ["In Spanien isst man oft spät.","В Испании обычно едят поздно."],
+            ].map(([de,ru])=>(
+              <div key={de} style={{background:"rgba(255,255,255,.06)",borderRadius:7,
+                padding:"6px 10px",fontSize:12}}>
+                <span style={{color:C.text}}>{de}</span>
+                <span style={{color:C.muted,fontSize:11,display:"block",marginTop:2}}>{ru}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div style={{fontSize:12,color:C.muted,marginBottom:8}}>
+          🕐 Essenszeiten in Deutschland:
+        </div>
+        <div style={{display:"flex",gap:5,marginBottom:10}}>
+          {meals.map((m,i)=>(
+            <button key={m.id} onClick={()=>setSelMeal(i)}
+              style={{flex:1,padding:"10px 4px",borderRadius:9,cursor:"pointer",
+                fontSize:10,fontWeight:800,border:`2px solid ${selMeal===i?m.col:C.border}`,
+                background:selMeal===i?m.col+"22":"transparent",
+                color:selMeal===i?m.col:C.muted}}>
+              {m.icon}<br/>{m.name.split(" ")[0]}
+            </button>
+          ))}
+        </div>
+
+        <div style={{background:meal.col+"15",border:`1px solid ${meal.col}33`,borderRadius:10,padding:"12px 14px"}}>
+          <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:8}}>
+            <span style={{fontSize:24}}>{meal.icon}</span>
+            <div>
+              <div style={{fontWeight:800,fontSize:14,color:meal.col}}>{meal.name}</div>
+              <div style={{fontSize:11,color:C.muted}}>{meal.time} · {meal.ru}</div>
+            </div>
+          </div>
+          <div style={{display:"flex",flexDirection:"column",gap:4,marginBottom:8}}>
+            {meal.foods.map(f=>(
+              <div key={f} style={{display:"flex",gap:6,alignItems:"center",fontSize:12}}>
+                <span style={{color:meal.col}}>•</span>
+                <span style={{color:C.text}}>{f}</span>
+              </div>
+            ))}
+          </div>
+          <div style={{background:"rgba(255,255,255,.06)",borderRadius:7,
+            padding:"6px 10px",fontSize:11,color:C.muted,fontStyle:"italic"}}>
+            💡 {meal.note}
+          </div>
+        </div>
+
+        <div style={{background:C.card2,borderRadius:10,padding:"10px 12px",marginTop:10}}>
+          <div style={{fontWeight:700,fontSize:12,color:C.text,marginBottom:6}}>
+            🏢 Wo isst man zu Mittag?
+          </div>
+          {[
+            ["🏢 in der Kantine","В рабочей или школьной столовой"],
+            ["🌭 am Imbiss","В закусочной (быстро и недорого)"],
+            ["🏠 zu Hause","Дома (если живёшь рядом)"],
+          ].map(([de,ru])=>(
+            <div key={de} style={{display:"flex",gap:8,marginBottom:4,fontSize:12}}>
+              <span style={{color:C.text,flex:1}}>{de}</span>
+              <span style={{color:C.muted}}>{ru}</span>
+            </div>
+          ))}
+        </div>
+      </Box>
+    </div>
+  );
+}
+
 const Q_L6A=[
   {q:"Welcher Artikel hat 'Apfel'?",          opts:["der","die","das"],                                                                     ans:0, hint:"Artikel"},
   {q:"Welcher Artikel hat 'Milch'?",          opts:["der","die","das"],                                                                     ans:1, hint:"Artikel"},
@@ -5592,7 +6075,7 @@ const LEKTIONEN=[
     date:"Seite 19–27",col:C.purple,
     sections:[
       {id:"d2",  icon:"💬",title:"Dialogfragen L2",       sub:"Все фразы для диалога",          time:"∞",     col:C.teal,  hasT:false, ex:()=><DialogCards lId="L2"/>},
-      {id:"2a",  icon:"🌍",title:"A · Nationalität und Sprachen",sub:"Страны + er/es/sie глаголы", time:"7 мин", col:C.blue,  hasT:true,  th:()=><T2A/>, ex:()=><Quiz questions={Q_2A_S}/>},
+      {id:"2a",  icon:"🌍",title:"A · Nationalität und Sprachen",sub:"Страны + er/sie/es глаголы", time:"7 мин", col:C.blue,  hasT:true,  th:()=><T2A/>, ex:()=><Quiz questions={Q_2A_S}/>},
       {id:"wf",  icon:"❓",title:"W-Fragen",               sub:"Вопросительные слова + порядок слов",time:"5 мин",col:C.yellow,hasT:true, th:()=><TWFragen/>, ex:()=><Quiz questions={Q_WF_S}/>},
       {id:"2b",  icon:"📚",title:"B · Im Deutschkurs",    sub:"Vokabular + Artikel + Plural",    time:"10 мин",col:C.orange,hasT:true,  th:()=><T2B/>, ex:()=><Quiz questions={Q_2B}/>},
       {id:"2c",  icon:"🔢",title:"C · Zahlen bis 1000",   sub:"Числа 20–1000",                   time:"5 мин", col:C.teal,  hasT:true,  th:()=><ZahlenTrainer1000/>, ex:()=><ZahlenTrainer1000/>},
@@ -5644,12 +6127,15 @@ const LEKTIONEN=[
   },
   {
     id:"L6",num:"6",title:"Guten Appetit!",
-    sub:"A Lebensmittel · B Einkaufszettel · Imperativ",
-    date:"Seite 62–...",col:C.green,
+    sub:"A Lebensmittel · B Einkaufen · C Das mag ich · D Essen in Deutschland",
+    date:"Seite 62–67",col:C.green,
     sections:[
-      {id:"d6",  icon:"💬",title:"Dialogfragen L6",           sub:"Фразы для диалога",                      time:"∞",     col:C.teal,  hasT:false, th:null,           ex:()=><DialogCards lId="L6"/>},
-      {id:"6a",  icon:"🍎",title:"A · Lebensmittel",          sub:"Essen und Trinken · Häufigkeit",          time:"5 мин", col:C.green, hasT:true,  th:()=><T6A/>,     ex:()=><Quiz questions={Q_L6A}/>},
-      {id:"6b",  icon:"🛒",title:"B · Der Einkaufszettel",    sub:"Imperativ du · ihr · Sie",                time:"6 мин", col:C.orange,hasT:true,  th:()=><T6B/>,     ex:()=><Quiz questions={Q_L6B}/>},
+      {id:"d6",  icon:"💬",title:"Dialogfragen L6",             sub:"Фразы для диалога",                                    time:"∞",     col:C.teal,   hasT:false, th:null,           ex:()=><DialogCards lId="L6"/>},
+      {id:"6a",  icon:"🍎",title:"A · Lebensmittel",            sub:"Essen und Trinken · Häufigkeit",                       time:"5 мин", col:C.green,  hasT:true,  th:()=><T6A/>,     ex:()=><Quiz questions={Q_L6A}/>},
+      {id:"6b",  icon:"🛒",title:"B · Der Einkaufszettel",      sub:"Imperativ du · ihr · Sie",                             time:"6 мин", col:C.orange, hasT:true,  th:()=><T6B/>,     ex:()=><Quiz questions={Q_L6B}/>},
+      {id:"6c",  icon:"🛍️",title:"B · Einkaufen",              sub:"Einkaufsorte · möchten · hätte gerne · Mengen",        time:"6 мин", col:C.teal,   hasT:true,  th:()=><T6C/>,     ex:()=><Quiz questions={Q_L6C}/>},
+      {id:"6d",  icon:"❤️",title:"C · Das mag ich",             sub:"mögen · kein- vs nicht · Akkusativ kein",              time:"6 мин", col:C.purple, hasT:true,  th:()=><T6D/>,     ex:()=><Quiz questions={Q_L6D}/>},
+      {id:"6e",  icon:"🇩🇪",title:"D · Essen in Deutschland",   sub:"man · Essenszeiten · Frühstück/Mittag/Abend",          time:"5 мин", col:C.green,  hasT:true,  th:()=><T6E/>,     ex:()=><Quiz questions={Q_L6E}/>},
     ]
   },
 ];
