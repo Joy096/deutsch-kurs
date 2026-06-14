@@ -734,6 +734,11 @@ const WBDATA=[
   {art:"der",de:"Nachtisch",         pl:"Nachtische",   ru:"десерт",                   tema:"Lebensmittel"},
   {art:"die",de:"Kantine",           pl:"Kantinen",     ru:"столовая",                 tema:"Lebensmittel", ipa:"[kanˈtiːnə]"},
   {art:"der",de:"Imbiss",            pl:"Imbisse",      ru:"закусочная; перекус",       tema:"Lebensmittel", ipa:"[ˈɪmbɪs]"},
+  {art:"der",de:"Seetang",           pl:"—",            ru:"морская капуста; водоросли",tema:"Lebensmittel"},
+  {art:"",   de:"fast",              pl:"—",            ru:"почти, едва не",           tema:"Alltag"},
+  {art:"",   de:"doch",              pl:"—",            ru:"всё-таки; ведь; же (усиление)", tema:"Alltag"},
+  {art:"",   de:"vergessen",         pl:"—",            ru:"забывать, забыть",         tema:"Alltag"},
+  {art:"",   de:"holen",             pl:"—",            ru:"брать, забирать; принести", tema:"Alltag"},
 ];
 
 
@@ -998,13 +1003,13 @@ const getVerbPref=de=>PREF_LIST.find(p=>de.startsWith(p))||"";
 const KONJ_ALL={
   ...KONJ_L4B,
   ...KONJ_L5B,
-  haben:      {col:C.blue,  bg:C.blueBg,   ich:"habe",      du:"hast",       "er/es/sie":"hat",       wir:"haben",    ihr:"habt",     "sie/Sie":"haben"},
-  sein:       {col:C.purple,bg:C.purpleBg, ich:"bin",       du:"bist",       "er/es/sie":"ist",       wir:"sind",     ihr:"seid",     "sie/Sie":"sind",      note:"⚠️ особый"},
-  wollen:     {col:C.red,   bg:C.redBg,    ich:"will",      du:"willst",     "er/es/sie":"will",      wir:"wollen",   ihr:"wollt",    "sie/Sie":"wollen",    note:"ich = er"},
-  können:     {col:C.green, bg:C.greenBg,  ich:"kann",      du:"kannst",     "er/es/sie":"kann",      wir:"können",   ihr:"könnt",    "sie/Sie":"können",    note:"ich = er"},
-  müssen:     {col:C.orange,bg:C.orangeBg, ich:"muss",      du:"musst",      "er/es/sie":"muss",      wir:"müssen",   ihr:"müsst",    "sie/Sie":"müssen",    note:"ich = er"},
-  mögen:      {col:C.purple,bg:C.purpleBg, ich:"mag",       du:"magst",      "er/es/sie":"mag",       wir:"mögen",    ihr:"mögt",     "sie/Sie":"mögen",     note:"ich = er"},
-  laufen:     {col:C.purple,bg:C.purpleBg, ich:"laufe",     du:"läufst",     "er/es/sie":"läuft",     wir:"laufen",   ihr:"lauft",    "sie/Sie":"laufen",    note:"a→ä"},
+  haben:      {col:C.blue,  bg:C.blueBg,   ich:"habe",      du:"hast",       "er/es/sie":"hat",       wir:"haben",    ihr:"habt",     "sie/Sie":"haben",     imp:{du:"Hab!",    ihr:"Habt!",   Sie:"Haben Sie!"}},
+  sein:       {col:C.purple,bg:C.purpleBg, ich:"bin",       du:"bist",       "er/es/sie":"ist",       wir:"sind",     ihr:"seid",     "sie/Sie":"sind",      imp:{du:"Sei!",    ihr:"Seid!",   Sie:"Seien Sie!"},  note:"⚠️ особый"},
+  wollen:     {col:C.red,   bg:C.redBg,    ich:"will",      du:"willst",     "er/es/sie":"will",      wir:"wollen",   ihr:"wollt",    "sie/Sie":"wollen",    note:"ich = er",noImp:true},
+  können:     {col:C.green, bg:C.greenBg,  ich:"kann",      du:"kannst",     "er/es/sie":"kann",      wir:"können",   ihr:"könnt",    "sie/Sie":"können",    note:"ich = er",noImp:true},
+  müssen:     {col:C.orange,bg:C.orangeBg, ich:"muss",      du:"musst",      "er/es/sie":"muss",      wir:"müssen",   ihr:"müsst",    "sie/Sie":"müssen",    note:"ich = er",noImp:true},
+  mögen:      {col:C.purple,bg:C.purpleBg, ich:"mag",       du:"magst",      "er/es/sie":"mag",       wir:"mögen",    ihr:"mögt",     "sie/Sie":"mögen",     note:"ich = er",noImp:true},
+  laufen:     {col:C.purple,bg:C.purpleBg, ich:"laufe",     du:"läufst",     "er/es/sie":"läuft",     wir:"laufen",   ihr:"lauft",    "sie/Sie":"laufen",    imp:{du:"Lauf!",   ihr:"Lauft!", Sie:"Laufen Sie!"},  note:"a→ä"},
   kommen:     {col:C.teal,  bg:C.tealBg,   ich:"komme",     du:"kommst",     "er/es/sie":"kommt",     wir:"kommen",   ihr:"kommt",    "sie/Sie":"kommen"},
   gehen:      {col:C.teal,  bg:C.tealBg,   ich:"gehe",      du:"gehst",      "er/es/sie":"geht",      wir:"gehen",    ihr:"geht",     "sie/Sie":"gehen"},
   machen:     {col:C.teal,  bg:C.tealBg,   ich:"mache",     du:"machst",     "er/es/sie":"macht",     wir:"machen",   ihr:"macht",    "sie/Sie":"machen"},
@@ -1027,6 +1032,16 @@ const KONJ_ALL={
   joggen:     {col:C.teal,  bg:C.tealBg,   ich:"jogge",     du:"joggst",     "er/es/sie":"joggt",     wir:"joggen",   ihr:"joggt",    "sie/Sie":"joggen"},
   grillen:    {col:C.teal,  bg:C.tealBg,   ich:"grille",    du:"grillst",    "er/es/sie":"grillt",    wir:"grillen",  ihr:"grillt",   "sie/Sie":"grillen"},
   surfen:     {col:C.teal,  bg:C.tealBg,   ich:"surfe",     du:"surfst",     "er/es/sie":"surft",     wir:"surfen",   ihr:"surft",    "sie/Sie":"surfen"},
+  vergessen:  {col:C.orange,bg:C.orangeBg, ich:"vergesse",  du:"vergisst",   "er/es/sie":"vergisst",  wir:"vergessen",ihr:"vergesst", "sie/Sie":"vergessen", note:"e→i"},
+  möchten:    {col:C.purple,bg:C.purpleBg, ich:"möchte",    du:"möchtest",   "er/es/sie":"möchte",    wir:"möchten",  ihr:"möchtet",  "sie/Sie":"möchten",   note:"ich = er (нет -t!)",noImp:true},
+  kaufen:     {col:C.teal,  bg:C.tealBg,   ich:"kaufe",     du:"kaufst",     "er/es/sie":"kauft",     wir:"kaufen",   ihr:"kauft",    "sie/Sie":"kaufen"},
+  bekommen:   {col:C.teal,  bg:C.tealBg,   ich:"bekomme",   du:"bekommst",   "er/es/sie":"bekommt",   wir:"bekommen", ihr:"bekommt",  "sie/Sie":"bekommen"},
+  kosten:     {col:C.teal,  bg:C.tealBg,   ich:"koste",     du:"kostest",    "er/es/sie":"kostet",    wir:"kosten",   ihr:"kostet",   "sie/Sie":"kosten",    note:"-e- вставка"},
+  backen:     {col:C.orange,bg:C.orangeBg, ich:"backe",     du:"bäckst",     "er/es/sie":"bäckt",     wir:"backen",   ihr:"backt",    "sie/Sie":"backen",    imp:{du:"Back!",   ihr:"Backt!", Sie:"Backen Sie!"},  note:"a→ä"},
+  schneiden:  {col:C.teal,  bg:C.tealBg,   ich:"schneide",  du:"schneidest", "er/es/sie":"schneidet", wir:"schneiden",ihr:"schneidet","sie/Sie":"schneiden", note:"-e- вставка"},
+  schälen:    {col:C.teal,  bg:C.tealBg,   ich:"schäle",    du:"schälst",    "er/es/sie":"schält",    wir:"schälen",  ihr:"schält",   "sie/Sie":"schälen"},
+  verkaufen:  {col:C.teal,  bg:C.tealBg,   ich:"verkaufe",  du:"verkaufst",  "er/es/sie":"verkauft",  wir:"verkaufen",ihr:"verkauft", "sie/Sie":"verkaufen"},
+  holen:      {col:C.teal,  bg:C.tealBg,   ich:"hole",      du:"holst",      "er/es/sie":"holt",      wir:"holen",    ihr:"holt",     "sie/Sie":"holen"},
 };
 
 // Ударения: комбинирующая акута \u0301 ставится после ударной гласной
@@ -1187,7 +1202,7 @@ const STRESS_MARKS={
 "Metzgerei":"Metzgere\u0301i","Bäckerei":"B\u00E4ckere\u0301i","Markt":"Ma\u0301rkt",
 "Tankstelle":"Ta\u0301nkstelle","Kiosk":"Kio\u0301sk",
 "backen":"ba\u0301cken","kosten":"ko\u0301sten","kaufen":"ka\u0301ufen",
-"verkaufen":"verka\u0301ufen","bekommen":"beko\u0301mmen","möchten":"m\u00F6\u0301chten","Bargeld":"Ba\u0301rgeld","Olive":"Oli\u0301ve","Rührei":"R\u00FC\u0301hrei","Waffel":"Wa\u0301ffel","Bonbon":"Bonbo\u0301n","Konfitüre":"Konfit\u00FC\u0301re","Schlagsahne":"Schla\u0301gsahne","Keks":"Ke\u0301ks","Kräutertee":"Kr\u00E4\u0301utertee","Eiscreme":"Ei\u0301screme","Eiswaffel":"Ei\u0301swaffel","Sandwich":"Sa\u0301ndwich","Steak":"Ste\u0301ak","Beilagensalat":"Be\u0301ilagensalat","Frischkäse":"Fri\u0301schkäse","Salami":"Sala\u0301mi","Karotte":"Karo\u0301tte","Knoblauch":"Kno\u0301blauch","Hackfleisch":"Ha\u0301ckfleisch","Schenkel":"Sche\u0301nkel","Brust":"Bru\u0301st","Brokkoli":"Bro\u0301kkoli","Rotkohl":"Ro\u0301tkohl","Blumenkohl":"Blu\u0301menkohl","Aprikose":"Apriko\u0301se","Leute":"Le\u0301ute","Nachtisch":"Na\u0301chtisch","Kantine":"Kanti\u0301ne","Imbiss":"I\u0301mbiss",
+"verkaufen":"verka\u0301ufen","bekommen":"beko\u0301mmen","möchten":"m\u00F6\u0301chten","Bargeld":"Ba\u0301rgeld","Olive":"Oli\u0301ve","Rührei":"R\u00FC\u0301hrei","Waffel":"Wa\u0301ffel","Bonbon":"Bonbo\u0301n","Konfitüre":"Konfit\u00FC\u0301re","Schlagsahne":"Schla\u0301gsahne","Keks":"Ke\u0301ks","Kräutertee":"Kr\u00E4\u0301utertee","Eiscreme":"Ei\u0301screme","Eiswaffel":"Ei\u0301swaffel","Sandwich":"Sa\u0301ndwich","Steak":"Ste\u0301ak","Beilagensalat":"Be\u0301ilagensalat","Frischkäse":"Fri\u0301schkäse","Salami":"Sala\u0301mi","Karotte":"Karo\u0301tte","Knoblauch":"Kno\u0301blauch","Hackfleisch":"Ha\u0301ckfleisch","Schenkel":"Sche\u0301nkel","Brust":"Bru\u0301st","Brokkoli":"Bro\u0301kkoli","Rotkohl":"Ro\u0301tkohl","Blumenkohl":"Blu\u0301menkohl","Aprikose":"Apriko\u0301se","Leute":"Le\u0301ute","Seetang":"Se\u0301etang","fast":"fa\u0301st","doch":"do\u0301ch","vergessen":"verge\u0301ssen","holen":"ho\u0301len","Nachtisch":"Na\u0301chtisch","Kantine":"Kanti\u0301ne","Imbiss":"I\u0301mbiss",
 // Новые слова — ударения
 "Krebs":"Kre\u0301bs","Tintenfisch":"Ti\u0301ntenfisch","Forelle":"Fore\u0301lle",
 "Thunfisch":"Thu\u0301nfisch","Lachs":"La\u0301chs","Karpfen":"Ka\u0301rpfen","Garnele":"Garne\u0301le",
@@ -1393,7 +1408,7 @@ const IPA_DATA={
 "selten":"[ˈzɛltən]","manchmal":"[ˈmançmaːl]","zusammen":"[tsuˈzamən]",
 "gerne":"[ˈɡɛʁnə]","draußen":"[ˈdʁaʊsən]","jetzt":"[jɛtst]","auch":"[aʊx]",
 "nur":"[nuːɐ̯]","gern/gerne":"[ɡɛʁn/ˈɡɛʁnə]","spazieren gehen":"[ʃpaˈtsiːʁən ˈɡeːən]",
-"Grüße":"[ˈɡʁyːsə]","Leute":"[ˈlɔɪtə]",
+"Grüße":"[ˈɡʁyːsə]","Leute":"[ˈlɔɪtə]","Seetang":"[ˈzeːtaŋ]","fast":"[fast]","doch":"[dɔx]","vergessen":"[fɛɐ̯ˈɡɛsən]","holen":"[ˈhoːlən]",
 };
 
 const DIALOGE={
@@ -2138,6 +2153,7 @@ function Woerterbuch(){
   const [sortNew,setSortNew]=useState(true);
   const [openConj,setOpenConj]=useState(null);
   const [showIPA,setShowIPA]=useState(false);
+  const [impView,setImpView]=useState(false);
 
   const changeTyp=(t)=>{setTyp(t);setTema("all");setArt("all");setSelPref("all");};
   const changeTema=(t)=>{setTema(t);setArt("all");setSelPref("all");};
@@ -2218,6 +2234,11 @@ function Woerterbuch(){
     const konj=KONJ_ALL[w.de];
     const isOpen=openConj===w.de;
     const stacked=ipa&&w.de.length>10;
+    const imp=konj&&!konj.noImp&&(konj.imp||{
+      du:(s=>s[0].toUpperCase()+s.slice(1)+"!")(konj.du.slice(0,-2)),
+      ihr:konj.ihr[0].toUpperCase()+konj.ihr.slice(1)+"!",
+      Sie:w.de[0].toUpperCase()+w.de.slice(1)+" Sie!"
+    });
     const hiCell=(p)=>konj?.note&&konj.note.includes("→")&&(p==="du"||p==="er/es/sie");
     if(w.tema==="Phrase")return(
       <div style={{padding:"8px 10px",borderBottom:`1px solid ${C.border}22`,display:"flex",justifyContent:"space-between",alignItems:"center",gap:8}}>
@@ -2231,7 +2252,7 @@ function Woerterbuch(){
           padding:"7px 8px",alignItems:"center",
           cursor:konj?"pointer":"default",
           background:isOpen?konj.col+"11":"transparent"}}
-          onClick={konj?()=>setOpenConj(isOpen?null:w.de):undefined}>
+          onClick={konj?()=>{setOpenConj(isOpen?null:w.de);setImpView(false);}:undefined}>
           <div style={{display:"flex",
             flexDirection:stacked?"column":"row",
             alignItems:stacked?"flex-start":"center",
@@ -2286,24 +2307,55 @@ function Woerterbuch(){
         </div>
         {konj&&isOpen&&(
           <div style={{background:konj.col+"0d",padding:"8px 10px",borderTop:`1px solid ${konj.col}22`}}>
+            {/* Tab bar */}
+            <div style={{display:"flex",gap:4,marginBottom:8}}>
+              {[["Präsens",false],["Imperativ",true]].map(([label,val])=>(
+                konj.noImp&&val?null:
+                <button key={label} onClick={()=>setImpView(val)}
+                  style={{flex:1,padding:"5px 0",borderRadius:7,cursor:"pointer",fontWeight:700,fontSize:11,
+                    border:`1px solid ${impView===val?konj.col:C.border}`,
+                    background:impView===val?konj.col+"22":"transparent",
+                    color:impView===val?konj.col:C.muted}}>
+                  {label}
+                </button>
+              ))}
+            </div>
+            {/* Word badge + note */}
             <div style={{display:"flex",alignItems:"center",gap:6,marginBottom:8}}>
               <span style={{background:konj.col+"22",border:`1px solid ${konj.col}55`,color:konj.col,
                 borderRadius:6,padding:"2px 10px",fontSize:12,fontWeight:800}}>{w.de}</span>
               {konj.pref&&<span style={{fontSize:11,color:C.muted}}>приставка: <b style={{color:konj.col}}>{konj.pref}-</b></span>}
               {konj.note&&<span style={{fontSize:11,color:C.orange}}>⚡ {konj.note}</span>}
             </div>
-            <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:5}}>
-              {[["ich",konj.ich],["wir",konj.wir],["du",konj.du],["ihr",konj.ihr],["er/es/sie",konj["er/es/sie"]],["sie/Sie",konj["sie/Sie"]]].map(([p,f])=>{
-                const hi=hiCell(p);
-                return(
-                  <div key={p} style={{background:hi?konj.bg:C.card2,
-                    border:`1px solid ${hi?konj.col+"55":C.border}`,borderRadius:7,padding:"5px 8px"}}>
-                    <div style={{fontSize:10,color:hi?konj.col:C.muted,marginBottom:1}}>{p}</div>
-                    <div style={{color:hi?konj.col:C.text,fontWeight:700,fontSize:13}}>{f}</div>
-                  </div>
-                );
-              })}
-            </div>
+            {/* Content */}
+            {impView&&imp
+              ? <div style={{display:"flex",flexDirection:"column",gap:5}}>
+                  {[
+                    ["du","1 человек (неформ.)",C.teal],
+                    ["ihr","группа (неформ.)",C.purple],
+                    ["Sie","формально",C.orange],
+                  ].map(([key,hint,col])=>(
+                    <div key={key} style={{display:"flex",alignItems:"center",gap:10,
+                      background:col+"15",border:`1px solid ${col}33`,borderRadius:8,padding:"7px 10px"}}>
+                      <span style={{fontSize:10,color:col,fontWeight:800,minWidth:28}}>{key}</span>
+                      <span style={{fontSize:16,fontWeight:800,color:col,flex:1}}>{imp[key==="Sie"?"Sie":key]}</span>
+                      <span style={{fontSize:10,color:C.muted}}>{hint}</span>
+                    </div>
+                  ))}
+                </div>
+              : <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:5}}>
+                  {[["ich",konj.ich],["wir",konj.wir],["du",konj.du],["ihr",konj.ihr],["er/es/sie",konj["er/es/sie"]],["sie/Sie",konj["sie/Sie"]]].map(([p,f])=>{
+                    const hi=hiCell(p);
+                    return(
+                      <div key={p} style={{background:hi?konj.bg:C.card2,
+                        border:`1px solid ${hi?konj.col+"55":C.border}`,borderRadius:7,padding:"5px 8px"}}>
+                        <div style={{fontSize:10,color:hi?konj.col:C.muted,marginBottom:1}}>{p}</div>
+                        <div style={{color:hi?konj.col:C.text,fontWeight:700,fontSize:13}}>{f}</div>
+                      </div>
+                    );
+                  })}
+                </div>
+            }
           </div>
         )}
       </div>
