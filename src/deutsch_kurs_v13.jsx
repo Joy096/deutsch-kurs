@@ -739,6 +739,8 @@ const WBDATA=[
   {art:"",   de:"doch",              pl:"—",            ru:"всё-таки; ведь; же (усиление)", tema:"Alltag"},
   {art:"",   de:"vergessen",         pl:"—",            ru:"забывать, забыть",         tema:"Alltag"},
   {art:"",   de:"holen",             pl:"—",            ru:"брать, забирать; принести", tema:"Alltag"},
+  {art:"",   de:"fragen",            pl:"—",            ru:"спрашивать",               tema:"Alltag"},
+  {art:"",   de:"gehen",             pl:"—",            ru:"идти, ходить",             tema:"Alltag"},
 ];
 
 
@@ -1042,6 +1044,7 @@ const KONJ_ALL={
   schälen:    {col:C.teal,  bg:C.tealBg,   ich:"schäle",    du:"schälst",    "er/es/sie":"schält",    wir:"schälen",  ihr:"schält",   "sie/Sie":"schälen"},
   verkaufen:  {col:C.teal,  bg:C.tealBg,   ich:"verkaufe",  du:"verkaufst",  "er/es/sie":"verkauft",  wir:"verkaufen",ihr:"verkauft", "sie/Sie":"verkaufen"},
   holen:      {col:C.teal,  bg:C.tealBg,   ich:"hole",      du:"holst",      "er/es/sie":"holt",      wir:"holen",    ihr:"holt",     "sie/Sie":"holen"},
+  fragen:     {col:C.teal,  bg:C.tealBg,   ich:"frage",     du:"fragst",     "er/es/sie":"fragt",     wir:"fragen",   ihr:"fragt",    "sie/Sie":"fragen"},
 };
 
 // Ударения: комбинирующая акута \u0301 ставится после ударной гласной
@@ -1202,7 +1205,7 @@ const STRESS_MARKS={
 "Metzgerei":"Metzgere\u0301i","Bäckerei":"B\u00E4ckere\u0301i","Markt":"Ma\u0301rkt",
 "Tankstelle":"Ta\u0301nkstelle","Kiosk":"Kio\u0301sk",
 "backen":"ba\u0301cken","kosten":"ko\u0301sten","kaufen":"ka\u0301ufen",
-"verkaufen":"verka\u0301ufen","bekommen":"beko\u0301mmen","möchten":"m\u00F6\u0301chten","Bargeld":"Ba\u0301rgeld","Olive":"Oli\u0301ve","Rührei":"R\u00FC\u0301hrei","Waffel":"Wa\u0301ffel","Bonbon":"Bonbo\u0301n","Konfitüre":"Konfit\u00FC\u0301re","Schlagsahne":"Schla\u0301gsahne","Keks":"Ke\u0301ks","Kräutertee":"Kr\u00E4\u0301utertee","Eiscreme":"Ei\u0301screme","Eiswaffel":"Ei\u0301swaffel","Sandwich":"Sa\u0301ndwich","Steak":"Ste\u0301ak","Beilagensalat":"Be\u0301ilagensalat","Frischkäse":"Fri\u0301schkäse","Salami":"Sala\u0301mi","Karotte":"Karo\u0301tte","Knoblauch":"Kno\u0301blauch","Hackfleisch":"Ha\u0301ckfleisch","Schenkel":"Sche\u0301nkel","Brust":"Bru\u0301st","Brokkoli":"Bro\u0301kkoli","Rotkohl":"Ro\u0301tkohl","Blumenkohl":"Blu\u0301menkohl","Aprikose":"Apriko\u0301se","Leute":"Le\u0301ute","Seetang":"Se\u0301etang","fast":"fa\u0301st","doch":"do\u0301ch","vergessen":"verge\u0301ssen","holen":"ho\u0301len","Nachtisch":"Na\u0301chtisch","Kantine":"Kanti\u0301ne","Imbiss":"I\u0301mbiss",
+"verkaufen":"verka\u0301ufen","bekommen":"beko\u0301mmen","möchten":"m\u00F6\u0301chten","Bargeld":"Ba\u0301rgeld","Olive":"Oli\u0301ve","Rührei":"R\u00FC\u0301hrei","Waffel":"Wa\u0301ffel","Bonbon":"Bonbo\u0301n","Konfitüre":"Konfit\u00FC\u0301re","Schlagsahne":"Schla\u0301gsahne","Keks":"Ke\u0301ks","Kräutertee":"Kr\u00E4\u0301utertee","Eiscreme":"Ei\u0301screme","Eiswaffel":"Ei\u0301swaffel","Sandwich":"Sa\u0301ndwich","Steak":"Ste\u0301ak","Beilagensalat":"Be\u0301ilagensalat","Frischkäse":"Fri\u0301schkäse","Salami":"Sala\u0301mi","Karotte":"Karo\u0301tte","Knoblauch":"Kno\u0301blauch","Hackfleisch":"Ha\u0301ckfleisch","Schenkel":"Sche\u0301nkel","Brust":"Bru\u0301st","Brokkoli":"Bro\u0301kkoli","Rotkohl":"Ro\u0301tkohl","Blumenkohl":"Blu\u0301menkohl","Aprikose":"Apriko\u0301se","Leute":"Le\u0301ute","Seetang":"Se\u0301etang","fast":"fa\u0301st","doch":"do\u0301ch","vergessen":"verge\u0301ssen","holen":"ho\u0301len","fragen":"fra\u0301gen","gehen":"ge\u0301hen","Nachtisch":"Na\u0301chtisch","Kantine":"Kanti\u0301ne","Imbiss":"I\u0301mbiss",
 // Новые слова — ударения
 "Krebs":"Kre\u0301bs","Tintenfisch":"Ti\u0301ntenfisch","Forelle":"Fore\u0301lle",
 "Thunfisch":"Thu\u0301nfisch","Lachs":"La\u0301chs","Karpfen":"Ka\u0301rpfen","Garnele":"Garne\u0301le",
@@ -1408,7 +1411,7 @@ const IPA_DATA={
 "selten":"[ˈzɛltən]","manchmal":"[ˈmançmaːl]","zusammen":"[tsuˈzamən]",
 "gerne":"[ˈɡɛʁnə]","draußen":"[ˈdʁaʊsən]","jetzt":"[jɛtst]","auch":"[aʊx]",
 "nur":"[nuːɐ̯]","gern/gerne":"[ɡɛʁn/ˈɡɛʁnə]","spazieren gehen":"[ʃpaˈtsiːʁən ˈɡeːən]",
-"Grüße":"[ˈɡʁyːsə]","Leute":"[ˈlɔɪtə]","Seetang":"[ˈzeːtaŋ]","fast":"[fast]","doch":"[dɔx]","vergessen":"[fɛɐ̯ˈɡɛsən]","holen":"[ˈhoːlən]",
+"Grüße":"[ˈɡʁyːsə]","Leute":"[ˈlɔɪtə]","Seetang":"[ˈzeːtaŋ]","fast":"[fast]","doch":"[dɔx]","vergessen":"[fɛɐ̯ˈɡɛsən]","holen":"[ˈhoːlən]","fragen":"[ˈfʁaːɡən]","gehen":"[ˈɡeːən]",
 };
 
 const DIALOGE={
@@ -2234,11 +2237,29 @@ function Woerterbuch(){
     const konj=KONJ_ALL[w.de];
     const isOpen=openConj===w.de;
     const stacked=ipa&&w.de.length>10;
-    const imp=konj&&!konj.noImp&&(konj.imp||{
-      du:(s=>s[0].toUpperCase()+s.slice(1)+"!")(konj.du.slice(0,-2)),
-      ihr:konj.ihr[0].toUpperCase()+konj.ihr.slice(1)+"!",
-      Sie:w.de[0].toUpperCase()+w.de.slice(1)+" Sie!"
-    });
+    const imp=konj&&!konj.noImp&&(konj.imp||(()=>{
+      if(konj.pref){
+        const pref=konj.pref;
+        const sep=` \u2026 ${pref}`;
+        const duRaw=konj.du.replace(sep,"");
+        const duStem=duRaw.replace(/(?:e)?st$/,"");
+        const duFixed=konj.note&&konj.note.includes("a\u2192\u00E4")
+          ?duStem.replace(/\u00E4/g,"a"):duStem;
+        const ihrRaw=konj.ihr.replace(sep,"");
+        const stem=w.de.slice(pref.length);
+        return{
+          du:duFixed[0].toUpperCase()+duFixed.slice(1)+" "+pref+"!",
+          ihr:ihrRaw[0].toUpperCase()+ihrRaw.slice(1)+" "+pref+"!",
+          Sie:stem[0].toUpperCase()+stem.slice(1)+" Sie "+pref+"!"
+        };
+      }
+      const duStem=konj.du.slice(0,-2);
+      return{
+        du:duStem[0].toUpperCase()+duStem.slice(1)+"!",
+        ihr:konj.ihr[0].toUpperCase()+konj.ihr.slice(1)+"!",
+        Sie:w.de[0].toUpperCase()+w.de.slice(1)+" Sie!"
+      };
+    })());
     const hiCell=(p)=>konj?.note&&konj.note.includes("→")&&(p==="du"||p==="er/es/sie");
     if(w.tema==="Phrase")return(
       <div style={{padding:"8px 10px",borderBottom:`1px solid ${C.border}22`,display:"flex",justifyContent:"space-between",alignItems:"center",gap:8}}>
