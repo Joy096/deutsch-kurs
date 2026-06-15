@@ -741,6 +741,11 @@ const WBDATA=[
   {art:"",   de:"holen",             pl:"—",            ru:"брать, забирать; принести", tema:"Alltag"},
   {art:"",   de:"fragen",            pl:"—",            ru:"спрашивать",               tema:"Alltag"},
   {art:"",   de:"gehen",             pl:"—",            ru:"идти, ходить",             tema:"Alltag"},
+  {art:"",   de:"anbieten",          pl:"—",            ru:"предлагать, угощать",       tema:"Trennbare Verben"},
+  {art:"",   de:"empfehlen",         pl:"—",            ru:"рекомендовать",             nota:"e→ie: empfiehlt"},
+  {art:"",   de:"eineinhalb",        pl:"—",            ru:"полтора (1,5)"},
+  {art:"",   de:"anderthalb",        pl:"—",            ru:"полтора (1,5) · разговорная форма"},
+  {art:"",   de:"knapp",             pl:"—",            ru:"едва, чуть меньше; скудный, тесный"},
 ];
 
 
@@ -916,8 +921,9 @@ const KONJ_L4B={
   essen:   {type:"e→i", col:C.orange,bg:C.orangeBg, ich:"esse",    du:"isst",    "er/sie/es":"isst",    wir:"essen",   ihr:"esst",  "sie/Sie":"essen",   note:"e выпадает перед -st/-t"},
   nehmen:  {type:"e→i", col:C.orange,bg:C.orangeBg, ich:"nehme",   du:"nimmst",  "er/sie/es":"nimmt",   wir:"nehmen",  ihr:"nehmt", "sie/Sie":"nehmen",  note:"⚠️ особая форма!"},
   treffen: {type:"e→i", col:C.orange,bg:C.orangeBg, ich:"treffe",  du:"triffst", "er/sie/es":"trifft",  wir:"treffen", ihr:"trefft","sie/Sie":"treffen"},
-  lesen:   {type:"e→ie",col:C.blue,  bg:C.blueBg,   ich:"lese",    du:"liest",   "er/sie/es":"liest",   wir:"lesen",   ihr:"lest",  "sie/Sie":"lesen"},
-  sehen:   {type:"e→ie",col:C.blue,  bg:C.blueBg,   ich:"sehe",    du:"siehst",  "er/sie/es":"sieht",   wir:"sehen",   ihr:"seht",  "sie/Sie":"sehen"},
+  lesen:      {type:"e→ie",col:C.blue,  bg:C.blueBg,   ich:"lese",      du:"liest",      "er/sie/es":"liest",     wir:"lesen",     ihr:"lest",     "sie/Sie":"lesen"},
+  sehen:      {type:"e→ie",col:C.blue,  bg:C.blueBg,   ich:"sehe",      du:"siehst",     "er/sie/es":"sieht",     wir:"sehen",     ihr:"seht",     "sie/Sie":"sehen"},
+  empfehlen:  {type:"e→ie",col:C.blue,  bg:C.blueBg,   ich:"empfehle",  du:"empfiehlst", "er/sie/es":"empfiehlt", wir:"empfehlen", ihr:"empfehlt", "sie/Sie":"empfehlen"},
   schlafen:{type:"a→ä", col:C.purple,bg:C.purpleBg, ich:"schlafe", du:"schläfst","er/sie/es":"schläft", wir:"schlafen",ihr:"schlaft","sie/Sie":"schlafen"},
   fahren:  {type:"a→ä", col:C.purple,bg:C.purpleBg, ich:"fahre",   du:"fährst",  "er/sie/es":"fährt",   wir:"fahren",  ihr:"fahrt", "sie/Sie":"fahren"},
 };
@@ -936,6 +942,9 @@ const KONJ_L5B={
   anfangen:  {pref:"an",  col:C.blue,   bg:C.blueBg,   note:"a→ä",
     ich:"fange … an",   du:"fängst … an",    "er/sie/es":"fängt … an",
     wir:"fangen … an",  ihr:"fangt … an",    "sie/Sie":"fangen … an"},
+  anbieten:  {pref:"an",  col:C.blue,   bg:C.blueBg,
+    ich:"biete … an",   du:"bietest … an",   "er/sie/es":"bietet … an",
+    wir:"bieten … an",  ihr:"bietet … an",   "sie/Sie":"bieten … an"},
   aufstehen: {pref:"auf", col:C.orange, bg:C.orangeBg,
     ich:"stehe … auf",  du:"stehst … auf",   "er/sie/es":"steht … auf",
     wir:"stehen … auf", ihr:"steht … auf",   "sie/Sie":"stehen … auf"},
@@ -1130,12 +1139,13 @@ const STRESS_MARKS={
 "Morgen":"Mo\u0301rgen","morgens":"mo\u0301rgens","mittags":"mi\u0301ttags","abends":"a\u0301bends",
 "nachts":"na\u0301chts","am Montag":"am Mo\u0301ntag",
 // Trennbare Verben
-"anrufen":"a\u0301nrufen","anfangen":"a\u0301nfangen","fernsehen":"fe\u0301rnsehen",
+"anrufen":"a\u0301nrufen","anfangen":"a\u0301nfangen","anbieten":"a\u0301nbieten","fernsehen":"fe\u0301rnsehen",
 "aufstehen":"a\u0301ufstehen","aufräumen":"a\u0301ufräumen","einkaufen":"ei\u0301nkaufen",
 "mitnehmen":"mi\u0301tnehmen","ausgehen":"a\u0301usgehen","mitkommen":"mi\u0301tkommen",
 "aufhören":"a\u0301ufhören","abspülen":"a\u0301bspülen","einladen":"ei\u0301nladen",
 "ausschlafen":"a\u0301usschlafen","mitbringen":"mi\u0301tbringen","einschlafen":"ei\u0301nschlafen",
 "wegfahren":"we\u0301gfahren","ausfallen":"a\u0301usfallen","stattfinden":"sta\u0301ttfinden",
+"empfehlen":"empfe\u0301hlen",
 // Lebensmittel
 "Apfel":"A\u0301pfel","Banane":"Bana\u0301ne","Brot":"Bro\u0301t","Butter":"Bu\u0301tter",
 "Hähnchen":"H\u00E4\u0301hnchen","Joghurt":"Jo\u0301ghurt","Kaffee":"Ka\u0301ffee",
@@ -1316,12 +1326,13 @@ const IPA_DATA={
 "Nacht":"[naxt]","Morgen":"[ˈmɔʁɡən]","morgens":"[ˈmɔʁɡəns]","mittags":"[ˈmɪtaːks]",
 "abends":"[ˈaːbənts]","nachts":"[naxts]","am Montag":"[am ˈmoːntaːk]",
 // Trennbare Verben
-"anrufen":"[ˈanˌʁuːfən]","anfangen":"[ˈanˌfaŋən]","fernsehen":"[ˈfɛʁnˌzeːən]",
+"anrufen":"[ˈanˌʁuːfən]","anfangen":"[ˈanˌfaŋən]","anbieten":"[ˈanˌbiːtən]","fernsehen":"[ˈfɛʁnˌzeːən]",
 "aufstehen":"[ˈaʊfˌʃteːən]","aufräumen":"[ˈaʊfˌʁɔɪmən]","einkaufen":"[ˈaɪnˌkaʊfən]",
 "mitnehmen":"[ˈmɪtˌneːmən]","ausgehen":"[ˈaʊsˌɡeːən]","mitkommen":"[ˈmɪtˌkɔmən]",
 "aufhören":"[ˈaʊfˌhøːʁən]","abspülen":"[ˈapˌʃpyːlən]","einladen":"[ˈaɪnˌlaːdən]",
 "ausschlafen":"[ˈaʊsˌʃlaːfən]","mitbringen":"[ˈmɪtˌbʁɪŋən]","einschlafen":"[ˈaɪnˌʃlaːfən]",
 "wegfahren":"[ˈvɛkˌfaːʁən]","ausfallen":"[ˈaʊsˌfalən]","stattfinden":"[ˈʃtatˌfɪndən]",
+"empfehlen":"[ɛmpˈfeːlən]",
 // Lebensmittel
 "Apfel":"[ˈapfəl]","Banane":"[baˈnaːnə]","Brot":"[bʁoːt]","Butter":"[ˈbʊtɐ]",
 "Hähnchen":"[ˈhɛːnçən]","Joghurt":"[ˈjoːɡʊʁt]","Kaffee":"[ˈkafe]","Kartoffel":"[kaʁˈtɔfəl]",
@@ -2259,7 +2270,10 @@ function Woerterbuch(){
           Sie:stem[0].toUpperCase()+stem.slice(1)+" Sie "+pref+"!"
         };
       }
-      const duStem=konj.du.slice(0,-2);
+      const infStem=w.de.replace(/en$/,"");
+      const duStr=konj.du;
+      const duStem0=/[sßz]$/.test(infStem)?duStr.slice(0,-1):duStr.slice(0,-2);
+      const duStem=konj.type&&konj.type.includes("a→ä")?duStem0.replace(/ä/g,"a"):duStem0;
       return{
         du:duStem[0].toUpperCase()+duStem.slice(1)+"!",
         ihr:konj.ihr[0].toUpperCase()+konj.ihr.slice(1)+"!",
