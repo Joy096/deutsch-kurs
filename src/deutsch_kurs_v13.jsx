@@ -746,6 +746,86 @@ const WBDATA=[
   {art:"",   de:"eineinhalb",        pl:"—",            ru:"полтора (1,5)"},
   {art:"",   de:"anderthalb",        pl:"—",            ru:"полтора (1,5) · разговорная форма"},
   {art:"",   de:"knapp",             pl:"—",            ru:"едва, чуть меньше; скудный, тесный"},
+  // L7 Arbeit und Beruf
+  {art:"der", de:"Beruf",            pl:"Berufe",       ru:"профессия",                                   tema:"Arbeit"},
+  {art:"der", de:"Kellner",          pl:"Kellner",      ru:"официант\nf. - die Kellnerin",                tema:"Arbeit"},
+  {art:"der", de:"Koch",             pl:"Köche",        ru:"повар\nf. - die Köchin",                      tema:"Arbeit"},
+  {art:"der", de:"Krankenpfleger",   pl:"Krankenpfleger",ru:"медбрат\nf. - die Krankenschwester",         tema:"Arbeit"},
+  {art:"der", de:"Hausmeister",      pl:"Hausmeister",  ru:"завхоз, комендант\nf. - die Hausmeisterin",   tema:"Arbeit"},
+  {art:"der", de:"Bankkaufmann",     pl:"Bankkaufleute",ru:"банковский служащий\nf. - die Bankkauffrau",  tema:"Arbeit"},
+  {art:"der", de:"Programmierer",    pl:"Programmierer",ru:"программист\nf. - die Programmiererin",       tema:"Arbeit"},
+  {art:"der", de:"Briefträger",      pl:"Briefträger",  ru:"почтальон\nf. - die Briefträgerin",           tema:"Arbeit"},
+  {art:"der", de:"Taxifahrer",       pl:"Taxifahrer",   ru:"таксист\nf. - die Taxifahrerin",              tema:"Arbeit"},
+  {art:"der", de:"Sekretär",         pl:"Sekretäre",    ru:"секретарь\nf. - die Sekretärin",              tema:"Arbeit"},
+  {art:"die", de:"Altenpflegerin",   pl:"-nen",         ru:"сиделка для пожилых",                         tema:"Arbeit"},
+  {art:"die", de:"Reinigungskraft",  pl:"-kräfte",      ru:"уборщик/уборщица",                            tema:"Arbeit"},
+  {art:"die", de:"Karriere",         pl:"-n",           ru:"карьера",                                     tema:"Arbeit"},
+  {art:"die", de:"Stelle",           pl:"-n",           ru:"должность, вакансия, место",                  tema:"Arbeit"},
+  {art:"die", de:"Arbeitszeit",      pl:"-en",          ru:"рабочее время",                               tema:"Arbeit"},
+  {art:"die", de:"Mittagspause",     pl:"-n",           ru:"обеденный перерыв",                           tema:"Arbeit"},
+  {art:"die", de:"Nachtschicht",     pl:"-en",          ru:"ночная смена",                                tema:"Arbeit"},
+  {art:"der", de:"Schichtdienst",    pl:"-e",           ru:"сменная работа",                              tema:"Arbeit"},
+  {art:"",   de:"verdienen",         pl:"—",            ru:"зарабатывать",                                tema:"Arbeit"},
+  {art:"",   de:"schmecken",         pl:"—",            ru:"быть вкусным · Das schmeckt mir = мне нравится на вкус"},
+  {art:"",   de:"satt",              pl:"—",            ru:"сытый · Ich bin satt = я наелся/наелась"},
+  // L7B Bank
+  {art:"der", de:"Geldautomat",      pl:"-en",          ru:"банкомат",                                    tema:"Arbeit"},
+  {art:"die", de:"EC-Karte",         pl:"-n",           ru:"банковская карта",                            tema:"Arbeit"},
+  {art:"die", de:"Kontonummer",      pl:"-n",           ru:"номер счёта",                                 tema:"Arbeit"},
+  {art:"der", de:"Kontoauszug",      pl:"-züge",        ru:"выписка со счёта",                            tema:"Arbeit"},
+  {art:"die", de:"IBAN",             pl:"—",            ru:"IBAN (международный номер счёта)",            tema:"Arbeit"},
+  {art:"das", de:"Überweisungsformular",pl:"-e",        ru:"бланк банковского перевода",                  tema:"Arbeit"},
+  {art:"das", de:"Konto",            pl:"Konten",       ru:"банковский счёт",                             tema:"Arbeit"},
+  {art:"",   de:"überweisen",        pl:"—",            ru:"переводить (деньги)",                         tema:"Arbeit"},
+  // L8 Körperteile
+  {art:"der", de:"Kopf",             pl:"Köpfe",        ru:"голова",                pt:"\"-e",            tema:"Körper"},
+  {art:"die", de:"Haare",            pl:"Haare",        ru:"волосы (pl.)",          pt:"—",               tema:"Körper"},
+  {art:"das", de:"Auge",             pl:"Augen",        ru:"глаз",                  pt:"-n",              tema:"Körper"},
+  {art:"das", de:"Ohr",              pl:"Ohren",        ru:"ухо",                   pt:"-en",             tema:"Körper"},
+  {art:"der", de:"Mund",             pl:"Münder",       ru:"рот",                   pt:"\"-er",           tema:"Körper"},
+  {art:"die", de:"Nase",             pl:"Nasen",        ru:"нос",                   pt:"-n",              tema:"Körper"},
+  {art:"die", de:"Zunge",            pl:"Zungen",       ru:"язык (во рту)",         pt:"-n",              tema:"Körper"},
+  {art:"der", de:"Hals",             pl:"Hälse",        ru:"горло, шея",            pt:"\"-e",            tema:"Körper"},
+  {art:"die", de:"Schulter",         pl:"Schultern",    ru:"плечо",                 pt:"-n",              tema:"Körper"},
+  {art:"der", de:"Arm",              pl:"Arme",         ru:"рука (от плеча до кисти)",pt:"-e",            tema:"Körper"},
+  {art:"die", de:"Hand",             pl:"Hände",        ru:"рука (кисть)",          pt:"\"-e",            tema:"Körper"},
+  {art:"der", de:"Finger",           pl:"Finger",       ru:"палец",                 pt:"—",               tema:"Körper"},
+  {art:"das", de:"Handgelenk",       pl:"Handgelenke",  ru:"запястье",              pt:"-e",              tema:"Körper"},
+  {art:"der", de:"Rücken",           pl:"Rücken",       ru:"спина",                 pt:"—",               tema:"Körper"},
+  {art:"der", de:"Bauch",            pl:"Bäuche",       ru:"живот",                 pt:"\"-e",            tema:"Körper"},
+  {art:"die", de:"Brust",            pl:"Brüste",       ru:"грудь",                 pt:"\"-e",            tema:"Körper"},
+  {art:"das", de:"Bein",             pl:"Beine",        ru:"нога (от бедра до стопы)",pt:"-e",            tema:"Körper"},
+  {art:"das", de:"Knie",             pl:"Knie",         ru:"колено",                pt:"—",               tema:"Körper"},
+  {art:"der", de:"Fuß",              pl:"Füße",         ru:"стопа, нога (ступня)",  pt:"\"-e",            tema:"Körper"},
+  {art:"die", de:"Zehe",             pl:"Zehen",        ru:"палец ноги",            pt:"-n",              tema:"Körper"},
+  {art:"die", de:"Stirn",            pl:"Stirnen",      ru:"лоб",                   pt:"-en",             tema:"Körper"},
+  {art:"das", de:"Kinn",             pl:"Kinne",        ru:"подбородок",            pt:"-e",              tema:"Körper"},
+  {art:"die", de:"Wange",            pl:"Wangen",       ru:"щека",                  pt:"-n",              tema:"Körper"},
+  {art:"die", de:"Lippe",            pl:"Lippen",       ru:"губа",                  pt:"-n",              tema:"Körper"},
+  {art:"der", de:"Ellenbogen",       pl:"Ellenbogen",   ru:"локоть",                pt:"—",               tema:"Körper"},
+  {art:"das", de:"Gelenk",           pl:"Gelenke",      ru:"сустав",                pt:"-e",              tema:"Körper"},
+  {art:"der", de:"Knöchel",          pl:"Knöchel",      ru:"щиколотка, голеностоп", pt:"—",               tema:"Körper"},
+  {art:"die", de:"Ferse",            pl:"Fersen",       ru:"пятка",                 pt:"-n",              tema:"Körper"},
+  {art:"der", de:"Po",               pl:"Pos",          ru:"ягодица, попа",         pt:"-s",              tema:"Körper"},
+  // L8 Gesundheit
+  {art:"die", de:"Erkältung",        pl:"-en",          ru:"простуда",                                    tema:"Gesundheit"},
+  {art:"der", de:"Husten",           pl:"—",            ru:"кашель",                                      tema:"Gesundheit"},
+  {art:"der", de:"Schnupfen",        pl:"—",            ru:"насморк",                                     tema:"Gesundheit"},
+  {art:"das", de:"Fieber",           pl:"—",            ru:"температура, жар",                            tema:"Gesundheit"},
+  {art:"die", de:"Grippe",           pl:"-n",           ru:"грипп",                                       tema:"Gesundheit"},
+  {art:"die", de:"Schmerzen",        pl:"Schmerzen",    ru:"боли, болезненные ощущения (обычно мн.ч.)",  pt:"—",tema:"Gesundheit"},
+  {art:"die", de:"Tablette",         pl:"-n",           ru:"таблетка",                                    tema:"Gesundheit"},
+  {art:"das", de:"Medikament",       pl:"-e",           ru:"лекарство, медикамент",                       tema:"Gesundheit"},
+  {art:"das", de:"Rezept",           pl:"-e",           ru:"рецепт (врача); рецепт (кулинарный)",         tema:"Gesundheit"},
+  {art:"",   de:"rezeptfrei",        pl:"—",            ru:"безрецептурный (без рецепта)",                tema:"Gesundheit"},
+  {art:"",   de:"rezeptpflichtig",   pl:"—",            ru:"по рецепту (требует рецепта)",                tema:"Gesundheit"},
+  {art:"die", de:"Praxis",           pl:"Praxen",       ru:"кабинет врача, медицинская клиника",          tema:"Gesundheit"},
+  {art:"der", de:"Hausarzt",         pl:"Hausärzte",    ru:"участковый врач, терапевт\nf. - die Hausärztin",tema:"Gesundheit"},
+  {art:"die", de:"Untersuchung",     pl:"-en",          ru:"обследование, осмотр",                        tema:"Gesundheit"},
+  {art:"der", de:"Zufall",           pl:"Zufälle",      ru:"случайность, случай",                         tema:"Gesundheit"},
+  {art:"",   de:"fehlen",            pl:"—",            ru:"не хватать; болеть · Was fehlt Ihnen? = Что вас беспокоит?"},
+  {art:"",   de:"weh|tun",           pl:"—",            ru:"болеть · tut weh = болит",                    tema:"Gesundheit"},
+  {art:"",   de:"erkältet",          pl:"—",            ru:"простуженный · Ich bin erkältet = у меня простуда"},
 ];
 
 
@@ -1019,6 +1099,7 @@ const KONJ_ALL={
   wollen:     {col:C.red,   bg:C.redBg,    ich:"will",      du:"willst",     "er/sie/es":"will",      wir:"wollen",   ihr:"wollt",    "sie/Sie":"wollen",    note:"ich = er",noImp:true},
   können:     {col:C.green, bg:C.greenBg,  ich:"kann",      du:"kannst",     "er/sie/es":"kann",      wir:"können",   ihr:"könnt",    "sie/Sie":"können",    note:"ich = er",noImp:true},
   müssen:     {col:C.orange,bg:C.orangeBg, ich:"muss",      du:"musst",      "er/sie/es":"muss",      wir:"müssen",   ihr:"müsst",    "sie/Sie":"müssen",    note:"ich = er",noImp:true},
+  sollen:     {col:C.teal,  bg:C.tealBg,  ich:"soll",      du:"sollst",     "er/sie/es":"soll",      wir:"sollen",   ihr:"sollt",    "sie/Sie":"sollen",    note:"ich = er",noImp:true},
   mögen:      {col:C.purple,bg:C.purpleBg, ich:"mag",       du:"magst",      "er/sie/es":"mag",       wir:"mögen",    ihr:"mögt",     "sie/Sie":"mögen",     note:"ich = er",noImp:true},
   laufen:     {col:C.purple,bg:C.purpleBg, ich:"laufe",     du:"läufst",     "er/sie/es":"läuft",     wir:"laufen",   ihr:"lauft",    "sie/Sie":"laufen",    imp:{du:"Lauf!",   ihr:"Lauft!", Sie:"Laufen Sie!"},  note:"a→ä"},
   kommen:     {col:C.teal,  bg:C.tealBg,   ich:"komme",     du:"kommst",     "er/sie/es":"kommt",     wir:"kommen",   ihr:"kommt",    "sie/Sie":"kommen"},
@@ -1146,6 +1227,29 @@ const STRESS_MARKS={
 "ausschlafen":"a\u0301usschlafen","mitbringen":"mi\u0301tbringen","einschlafen":"ei\u0301nschlafen",
 "wegfahren":"we\u0301gfahren","ausfallen":"a\u0301usfallen","stattfinden":"sta\u0301ttfinden",
 "empfehlen":"empfe\u0301hlen",
+"Kellner":"Ke\u0301llner","Koch":"Ko\u0301ch","Krankenpfleger":"Kra\u0301nkenpfleger","Karriere":"Karrie\u0301re",
+"Beruf":"Beru\u0301f","Stelle":"Ste\u0301lle","verdienen":"verdie\u0301nen","schmecken":"schme\u0301cken",
+"Geldautomat":"Geldautoma\u0301t","Kontoauszug":"Ko\u0301ntoauszug","IBAN":"I\u0301BAN","Konto":"Ko\u0301nto",
+"Kopf":"Ko\u0301pf","Auge":"Au\u0301ge","Nase":"Na\u0301se","Mund":"Mu\u0301nd","Schulter":"Schu\u0301lter",
+"Rücken":"Rü\u0301cken","Bauch":"Ba\u0301uch","Bein":"Be\u0301in","Knie":"Kni\u0301e","Fuß":"Fu\u0301\u00DF",
+"Erkältung":"Erkä\u0301ltung","Husten":"Hu\u0301sten","Schnupfen":"Schnu\u0301pfen","Fieber":"Fie\u0301ber",
+"Tablette":"Table\u0301tte","Medikament":"Medikame\u0301nt","Rezept":"Reze\u0301pt","Praxis":"Pra\u0301xis",
+"Untersuchung":"Untersu\u0301chung","Hausarzt":"Ha\u0301usarzt","fehlen":"fe\u0301hlen",
+"Bankkaufmann":"Ba\u0301nkkaufmann","Programmierer":"Programmie\u0301rer","Briefträger":"Brie\u0301fträger",
+"Taxifahrer":"Ta\u0301xifahrer","Sekretär":"Sekretä\u0301r","Altenpflegerin":"A\u0301ltenpflegerin",
+"Reinigungskraft":"Re\u0301inigungskraft","Hausmeister":"Ha\u0301usmeister","Arbeitszeit":"A\u0301rbeitszeit",
+"Mittagspause":"Mi\u0301ttagspause","Nachtschicht":"Na\u0301chtschicht","Schichtdienst":"Schi\u0301chtdienst",
+"Kontonummer":"Ko\u0301ntonummer","EC-Karte":"E\u0301C-Karte","überweisen":"überwe\u0301isen",
+"Überweisungsformular":"Überwe\u0301isungsformular","satt":"sa\u0301tt",
+"Haare":"Ha\u0301are","Ohr":"O\u0301hr","Mund":"Mu\u0301nd","Zunge":"Zu\u0301nge","Hals":"Ha\u0301ls",
+"Arm":"A\u0301rm","Hand":"Ha\u0301nd","Finger":"Fi\u0301nger","Handgelenk":"Ha\u0301ndgelenk",
+"Brust":"Bru\u0301st","Zehe":"Ze\u0301he","Stirn":"Sti\u0301rn","Kinn":"Ki\u0301nn",
+"Wange":"Wa\u0301nge","Lippe":"Li\u0301ppe","Ellenbogen":"E\u0301llenbogen",
+"Gelenk":"Gele\u0301nk","Knöchel":"Knö\u0301chel","Ferse":"Fe\u0301rse","Po":"Po\u0301",
+"Grippe":"Gri\u0301ppe","Schmerzen":"Schme\u0301rzen","Tablette":"Table\u0301tte",
+"rezeptfrei":"reze\u0301ptfrei","rezeptpflichtig":"reze\u0301ptpflichtig",
+"Zufall":"Zu\u0301fall","erkältet":"erkä\u0301ltet","weh|tun":"we\u0301htun",
+"Kontoauszug":"Ko\u0301ntoauszug","knapp":"kna\u0301pp","anderthalb":"a\u0301nderthalb","eineinhalb":"ei\u0301neinhalb",
 // Lebensmittel
 "Apfel":"A\u0301pfel","Banane":"Bana\u0301ne","Brot":"Bro\u0301t","Butter":"Bu\u0301tter",
 "Hähnchen":"H\u00E4\u0301hnchen","Joghurt":"Jo\u0301ghurt","Kaffee":"Ka\u0301ffee",
@@ -1333,6 +1437,31 @@ const IPA_DATA={
 "ausschlafen":"[ˈaʊsˌʃlaːfən]","mitbringen":"[ˈmɪtˌbʁɪŋən]","einschlafen":"[ˈaɪnˌʃlaːfən]",
 "wegfahren":"[ˈvɛkˌfaːʁən]","ausfallen":"[ˈaʊsˌfalən]","stattfinden":"[ˈʃtatˌfɪndən]",
 "empfehlen":"[ɛmpˈfeːlən]",
+"Kellner":"[ˈkɛlnɐ]","Koch":"[kɔx]","Krankenpfleger":"[ˈkʁaŋkənˌpfleːɡɐ]","Karriere":"[kaˈʁjeːʁə]",
+"Beruf":"[bəˈʁuːf]","Stelle":"[ˈʃtɛlə]","verdienen":"[fɛɐ̯ˈdiːnən]","schmecken":"[ˈʃmɛkən]",
+"Geldautomat":"[ˈɡɛltˌʔaʊtoma̤ːt]","Konto":"[ˈkɔnto]","IBAN":"[iːˈbaːn]",
+"Kopf":"[kɔpf]","Auge":"[ˈaʊɡə]","Nase":"[ˈnaːzə]","Schulter":"[ˈʃʊltɐ]",
+"Rücken":"[ˈʁʏkən]","Bauch":"[baʊx]","Bein":"[baɪn]","Knie":"[kniː]","Fuß":"[fuːs]",
+"Erkältung":"[ɛɐ̯ˈkɛltʊŋ]","Husten":"[ˈhuːstən]","Schnupfen":"[ˈʃnʊpfən]","Fieber":"[ˈfiːbɐ]",
+"Tablette":"[taˈblɛtə]","Medikament":"[medɪkaˈmɛnt]","Rezept":"[ʁeˈtsɛpt]","Praxis":"[ˈpʁaksɪs]",
+"Hausarzt":"[ˈhaʊsˌʔaːɐ̯tst]","fehlen":"[ˈfeːlən]",
+"Bankkaufmann":"[ˈbaŋkˌkaʊfman]","Programmierer":"[pʁoɡʁaˈmiːʁɐ]","Briefträger":"[ˈbʁiːfˌtʁɛːɡɐ]",
+"Taxifahrer":"[ˈtaksiˌfaːʁɐ]","Sekretär":"[zekʁeˈtɛːʁ]","Altenpflegerin":"[ˈaltənˌpfleːɡəʁɪn]",
+"Reinigungskraft":"[ˈʁaɪnɪɡʊŋsˌkʁaft]","Hausmeister":"[ˈhaʊsˌmaɪstɐ]",
+"Arbeitszeit":"[ˈaʁbaɪtsˌtsaɪt]","Mittagspause":"[ˈmɪtaːksˌpaʊzə]",
+"Nachtschicht":"[ˈnaxtˌʃɪçt]","Schichtdienst":"[ˈʃɪçtˌdiːnst]",
+"Kontonummer":"[ˈkɔntoˌnʊmɐ]","EC-Karte":"[eːˈtseːˌkaʁtə]",
+"überweisen":"[ˈyːbɐˌvaɪzən]","Überweisungsformular":"[ˈyːbɐˌvaɪzʊŋsfɔʁmuˌlaːʁ]","satt":"[zat]",
+"Haare":"[ˈhaːʁə]","Ohr":"[oːʁ]","Mund":"[mʊnt]","Zunge":"[ˈtsʊŋə]","Hals":"[hals]",
+"Arm":"[aʁm]","Hand":"[hant]","Finger":"[ˈfɪŋɐ]","Handgelenk":"[ˈhantɡəˌlɛŋk]",
+"Brust":"[bʁʊst]","Zehe":"[ˈtseːə]","Stirn":"[ʃtɪʁn]","Kinn":"[kɪn]",
+"Wange":"[ˈvaŋə]","Lippe":"[ˈlɪpə]","Ellenbogen":"[ˈɛlənˌboːɡən]",
+"Gelenk":"[ɡəˈlɛŋk]","Knöchel":"[ˈknœçəl]","Ferse":"[ˈfɛʁzə]","Po":"[poː]",
+"Grippe":"[ˈɡʁɪpə]","Schmerzen":"[ˈʃmɛʁtsən]",
+"rezeptfrei":"[ʁeˈtsɛptˌfʁaɪ]","rezeptpflichtig":"[ʁeˈtsɛptˌpflɪçtɪç]",
+"Untersuchung":"[ˈʊntɐˌzuːxʊŋ]","Zufall":"[ˈtsuːˌfal]","erkältet":"[ɛɐ̯ˈkɛltɛt]",
+"weh|tun":"[ˈveːˌtuːn]","Kontoauszug":"[ˈkɔntoˌʔaʊstsuːk]",
+"knapp":"[knap]","anderthalb":"[ˈandɐtˌhalb]","eineinhalb":"[ˈaɪnaɪnˌhalb]",
 // Lebensmittel
 "Apfel":"[ˈapfəl]","Banane":"[baˈnaːnə]","Brot":"[bʁoːt]","Butter":"[ˈbʊtɐ]",
 "Hähnchen":"[ˈhɛːnçən]","Joghurt":"[ˈjoːɡʊʁt]","Kaffee":"[ˈkafe]","Kartoffel":"[kaʁˈtɔfəl]",
@@ -1624,6 +1753,45 @@ const DIALOGE={
       {q:"Was isst man in Deutschland zum Frühstück?", a:"Man isst Brot mit Käse oder Wurst und trinkt Kaffee oder Tee.", note:"man = люди вообще · isst = как er"},
       {q:"Kauf doch bitte Brot! → кто?",          a:"Du → Imperativ informell (du-Form)",                     note:"du kaufst → Kauf! (убери -st и du)"},
       {q:"Kaufen Sie Milch! → какой Imperativ?",   a:"Imperativ formell (Sie-Form): Infinitiv + Sie",          note:"Sie kaufen → Kaufen Sie!"},
+    ]},
+  ],
+  L7:[
+    {tag:"Основные",col:C.blue,pairs:[
+      {q:"Was sind Sie von Beruf?",              a:"Ich bin Krankenpfleger. / Ich arbeite als Kellnerin.",         note:"von Beruf = по профессии · arbeite als = работаю как"},
+      {q:"Wo arbeiten Sie?",                     a:"Ich arbeite im Büro. / auf der Baustelle. / in der Bank.",    note:"im (in dem) / auf der / in der"},
+      {q:"Was müssen Sie heute machen?",         a:"Ich muss früh aufstehen. / Ich muss viel arbeiten.",          note:"müssen + Infinitiv am Ende"},
+      {q:"Kannst du mir bitte helfen?",          a:"Ja, klar, kann ich das! / Tut mir leid, ich kann nicht.",     note:"können = мочь, уметь"},
+      {q:"Was willst du heute Abend machen?",    a:"Ich will ins Kino gehen. / Ich will zu Hause bleiben.",       note:"wollen = хотеть (намерение)"},
+      {q:"Was soll ich machen?",                 a:"Du sollst viel Wasser trinken. / Sie sollen im Bett bleiben.",note:"sollen = должен (по совету/указанию)"},
+      {q:"Wie ist Ihre IBAN?",                   a:"Meine IBAN ist DE46 1003 0000 0036 2057 00.",                 note:"die IBAN = международный номер счёта"},
+      {q:"Ich möchte Geld überweisen.",          a:"Füllen Sie bitte das Überweisungsformular aus.",              note:"überweisen = переводить деньги"},
+    ]},
+    {tag:"Дополнительные",col:C.orange,pairs:[
+      {q:"Wie komme ich zum Bahnhof?",           a:"Fahren Sie mit dem Bus. / Gehen Sie zu Fuß.",                note:"zu Fuß = пешком · mit dem = Dativ"},
+      {q:"Wo ist die Bank?",                     a:"Die Bank ist beim Bahnhof. / in der Nähe vom Supermarkt.",   note:"beim (bei+dem) · vom (von+dem)"},
+      {q:"Wohin fährst du?",                     a:"Ich fahre zum Arzt. / zur Schule. / nach Hause.",            note:"zum (zu+dem) · zur (zu+der) · nach Hause"},
+      {q:"Woher kommst du?",                     a:"Ich komme vom Arzt. / von zu Hause. / aus der Ukraine.",     note:"vom (von+dem) · aus = из"},
+      {q:"Das Essen schmeckt mir sehr gut!",     a:"Das freut mich! / Ja, wirklich lecker!",                    note:"schmeckt mir = мне нравится вкус"},
+      {q:"Nein, danke, ich bin satt.",           a:"Möchtest du wirklich nichts mehr?",                          note:"satt = сытый · nichts mehr = ничего больше"},
+    ]},
+  ],
+  L8:[
+    {tag:"Основные",col:C.red,pairs:[
+      {q:"Ich hätte gern einen Termin bei Frau Dr. Fischer.",a:"Guten Tag, wie kann ich Ihnen helfen?",          note:"Termin = запись/приём · hätte gerne = я бы хотел(а)"},
+      {q:"Sind Sie denn schon bei uns Patient?",             a:"Ja, ich war schon mal bei Ihnen.",               note:"Patient = пациент · schon mal = уже как-то раз"},
+      {q:"Geht es bei Ihnen am Montag um 10 Uhr?",          a:"Nein, da kann ich leider nicht. Ich muss arbeiten.",note:"da = тогда · leider = к сожалению"},
+      {q:"Was fehlt Ihnen denn?",                            a:"Mir geht es schlecht. Ich bin erkältet.",         note:"fehlen = что беспокоит · erkältet = простуженный"},
+      {q:"Haben Sie Husten oder Schnupfen?",                 a:"Ja, beides. Und ich habe Fieber.",               note:"beides = и то и другое · das Fieber = температура"},
+      {q:"Sie sollen viel Tee trinken.",                     a:"Und muss ich ins Bett?",                         note:"sollen = должны (по указанию врача)"},
+      {q:"Tut mir leid, wir haben nichts rezeptfrei.",       a:"Dann brauche ich ein Rezept vom Arzt.",          note:"rezeptfrei = без рецепта · das Rezept = рецепт"},
+      {q:"Wo tut es weh?",                                   a:"Mein Rücken tut weh. / Ich habe Kopfschmerzen.", note:"wehtun = болеть · Kopfschmerzen = головная боль"},
+    ]},
+    {tag:"Дополнительные",col:C.purple,pairs:[
+      {q:"Haben Sie viel Stress im Beruf?",      a:"Ja, meine Arbeit ist sehr anstrengend.",                     note:"anstrengend = напряжённый, изматывающий"},
+      {q:"Rauchen Sie?",                         a:"Nein, ich rauche nicht. / Ja, leider.",                      note:"rauchen = курить"},
+      {q:"Haben Sie Allergien?",                 a:"Ja, gegen Penicillin. / Nein, keine Allergien.",            note:"die Allergie = аллергия · gegen = против"},
+      {q:"Wie viele Zigaretten rauchen Sie täglich?",a:"Ich rauche viele / Sie sollten weniger rauchen.",       note:"täglich = ежедневно · weniger = меньше"},
+      {q:"Das war Zufall!",                      a:"Was für ein Zufall! / So ein Zufall!",                       note:"der Zufall = случайность · was für ein = какой"},
     ]},
   ],
 };
@@ -2158,6 +2326,9 @@ function Woerterbuch(){
     {id:"Phrase",   label:"💬 Фразы",      col:C.teal},
     {id:"Trennbare Verben",label:"✂️ Trennbare Verben",col:C.green},
     {id:"Lebensmittel",   label:"🍎 Lebensmittel",    col:C.green},
+    {id:"Arbeit",         label:"💼 Arbeit",            col:C.blue},
+    {id:"Gesundheit",     label:"🏥 Gesundheit",        col:C.red},
+    {id:"Körper",         label:"🫀 Körper",             col:C.purple},
   ];
   const TYPEN=[
     {id:"all",     label:"Все",           col:C.teal},
@@ -2327,11 +2498,12 @@ function Woerterbuch(){
               {konj&&<span style={{fontSize:10,color:konj.col,marginLeft:1,opacity:0.8}}>{isOpen?"▲":"▾"}</span>}
             </div>
           </div>
-          <div style={{fontSize:13}}>
+          <div style={{fontSize:13,overflow:"hidden"}}>
             {ipa
-              ?<span style={{fontSize:13,color:C.teal,fontFamily:"Georgia,serif",letterSpacing:0.3,
+              ?<span style={{fontSize:ipa.length>20?9:ipa.length>15?11:13,
+                  color:C.teal,fontFamily:"Georgia,serif",letterSpacing:0.3,
                   background:C.teal+"15",border:`1px solid ${C.teal}33`,borderRadius:5,padding:"1px 6px",
-                  whiteSpace:"nowrap",display:"inline-block"}}>{ipa}</span>
+                  wordBreak:"break-all",display:"inline-block"}}>{ipa}</span>
               :isAdj&&opposite
                 ?<span style={{color:C.orange,fontWeight:700}}>≠ {opposite}</span>
                 :end===""
@@ -2456,7 +2628,7 @@ function Woerterbuch(){
           style={{width:"100%",padding:"7px 12px",borderRadius:10,cursor:"pointer",textAlign:"left",
             background:showIPA?C.teal+"18":C.card,border:`1px solid ${showIPA?C.teal:C.border}`,
             color:showIPA?C.teal:C.muted,fontSize:12,fontWeight:700,display:"flex",justifyContent:"space-between"}}>
-          <span>📖 Lautschrift (IPA) — как читать транскрипцию</span>
+          <span>🔉 Транскрипция (IPA)</span>
           <span>{showIPA?"▲":"▾"}</span>
         </button>
         {showIPA&&(
@@ -5975,6 +6147,522 @@ function T6E(){
   );
 }
 
+const Q_L7A=[
+  {q:"'Ich ___ früh aufstehen.' (обязан)",       opts:["will","kann","muss","soll"],                                      ans:2, hint:"müssen"},
+  {q:"'Er ___ gut Klavier spielen.' (умеет)",    opts:["muss","will","soll","kann"],                                      ans:3, hint:"können"},
+  {q:"'Ich ___ heute ins Kino gehen.' (хочу)",   opts:["muss","soll","will","kann"],                                      ans:2, hint:"wollen"},
+  {q:"'Du ___ mehr Wasser trinken.' (совет врача)",opts:["musst","willst","kannst","sollst"],                             ans:3, hint:"sollen"},
+  {q:"Где Infinitiv в предложении с Modalverb?", opts:["на 2-м месте","в конце","на 1-м месте","перед Modalverb"],        ans:1, hint:"Satzklammer"},
+  {q:"Ich ___ morgen arbeiten. (ich/müssen)",     opts:["muss","musse","musst","müsse"],                                   ans:0, hint:"ich muss"},
+  {q:"Er ___ gut Deutsch. (können, er)",          opts:["kannst","können","könnt","kann"],                                 ans:3, hint:"er kann"},
+  {q:"Wir ___ viel reisen. (wollen)",             opts:["wollt","wollen","will","willst"],                                 ans:1, hint:"wir wollen"},
+  {q:"Ich ___ als Kellner arbeiten. (Beruf)",     opts:["bin","arbeite","heiße","lerne"],                                  ans:1, hint:"arbeiten als"},
+  {q:"'Ich bin Arzt von Beruf.' → артикль?",     opts:["ein Arzt","der Arzt","Arzt","einen Arzt"],                        ans:2, hint:"Berufe ohne Artikel"},
+  {q:"Ich ___ morgen nicht kommen. (können, neg)",opts:["kann nicht","nicht kann","kannst nicht","muss nicht"],           ans:0, hint:"Satzklammer"},
+  {q:"'Sie soll viel schlafen.' — soll от?",     opts:["wollen","können","sollen","müssen"],                              ans:2, hint:"sollen"},
+];
+function T7A(){
+  const [tab,setTab]=useState("modal");
+  const berufe=[
+    {m:"Kellner",       f:"Kellnerin",       ru:"официант",           wo:"im Restaurant"},
+    {m:"Koch",          f:"Köchin",          ru:"повар",              wo:"in der Küche"},
+    {m:"Krankenpfleger",f:"Krankenschwester",ru:"медбрат/медсестра",  wo:"im Krankenhaus"},
+    {m:"Hausmeister",   f:"Hausmeisterin",   ru:"завхоз",             wo:"im Haus"},
+    {m:"Bankkaufmann",  f:"Bankkauffrau",    ru:"банковский служащий",wo:"in der Bank"},
+    {m:"Programmierer", f:"Programmiererin", ru:"программист",        wo:"im Büro"},
+    {m:"Briefträger",   f:"Briefträgerin",   ru:"почтальон",          wo:"draußen"},
+    {m:"Taxifahrer",    f:"Taxifahrerin",    ru:"таксист",            wo:"im Auto"},
+    {m:"Sekretär",      f:"Sekretärin",      ru:"секретарь",          wo:"im Büro"},
+    {m:"Altenpfleger",  f:"Altenpflegerin",  ru:"сиделка (пожилых)",  wo:"zu Hause / Heim"},
+  ];
+  const modals=[
+    {v:"können",col:C.green, ich:"kann",  du:"kannst",  er:"kann",  wir:"können", ihr:"könnt",  sie:"können",  ru:"мочь, уметь",    bsp:"Ich kann gut kochen."},
+    {v:"müssen", col:C.orange,ich:"muss",  du:"musst",   er:"muss",  wir:"müssen", ihr:"müsst",  sie:"müssen",  ru:"быть обязанным", bsp:"Ich muss arbeiten."},
+    {v:"wollen", col:C.red,   ich:"will",  du:"willst",  er:"will",  wir:"wollen", ihr:"wollt",  sie:"wollen",  ru:"хотеть (намерение)",bsp:"Ich will reisen."},
+    {v:"sollen", col:C.teal,  ich:"soll",  du:"sollst",  er:"soll",  wir:"sollen", ihr:"sollt",  sie:"sollen",  ru:"должен (по чужой воле)",bsp:"Du sollst schlafen."},
+  ];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.blue}>
+        <H c={C.blue}>💼 A · Berufe & Modalverben</H>
+        <div style={{display:"flex",gap:6,marginBottom:12}}>
+          {[["modal","Modalverben"],["berufe","Berufe"],["klammer","Satzklammer"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,padding:"9px 4px",borderRadius:9,border:"none",cursor:"pointer",
+                fontSize:11,fontWeight:700,
+                background:tab===key?C.blue+"33":"transparent",
+                color:tab===key?C.blue:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="modal"&&(
+          <div style={{display:"flex",flexDirection:"column",gap:8}}>
+            <div style={{fontSize:11,color:C.muted,marginBottom:4}}>
+              ⚠️ Все модальные глаголы: <b style={{color:C.text}}>ich = er/sie/es</b> (нет окончания!)
+            </div>
+            {modals.map(m=>(
+              <div key={m.v} style={{background:m.col+"15",border:`1px solid ${m.col}33`,borderRadius:10,padding:"10px 12px"}}>
+                <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:6}}>
+                  <span style={{color:m.col,fontWeight:800,fontSize:14}}>{m.v}</span>
+                  <span style={{color:C.muted,fontSize:11}}>{m.ru}</span>
+                </div>
+                <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:3,marginBottom:6}}>
+                  {[["ich",m.ich],["wir",m.wir],["du",m.du],["ihr",m.ihr],["er/sie/es",m.er],["sie/Sie",m.sie]].map(([p,f])=>(
+                    <div key={p} style={{display:"flex",gap:6,background:"rgba(255,255,255,.06)",
+                      borderRadius:6,padding:"4px 8px",fontSize:12}}>
+                      <span style={{color:C.muted,minWidth:56,fontSize:11}}>{p}</span>
+                      <span style={{color:m.col,fontWeight:800}}>{f}</span>
+                    </div>
+                  ))}
+                </div>
+                <div style={{fontSize:12,color:C.muted,fontStyle:"italic"}}>💬 {m.bsp}</div>
+              </div>
+            ))}
+          </div>
+        )}
+        {tab==="berufe"&&(
+          <div>
+            <div style={{fontSize:11,color:C.muted,marginBottom:8}}>
+              💡 <b style={{color:C.text}}>Ich bin Kellner.</b> (без артикля!)
+              <span style={{color:C.muted}}> / </span>
+              <b style={{color:C.text}}>Ich arbeite als Kellner.</b>
+            </div>
+            <div style={{display:"flex",flexDirection:"column",gap:4}}>
+              {berufe.map(b=>(
+                <div key={b.m} style={{background:C.card2,borderRadius:8,padding:"8px 10px"}}>
+                  <div style={{display:"flex",gap:4,justifyContent:"space-between",alignItems:"center"}}>
+                    <span style={{fontSize:12,fontWeight:700,color:C.text}}>{b.m} / {b.f}</span>
+                    <span style={{fontSize:11,color:C.muted}}>{b.ru}</span>
+                  </div>
+                  <div style={{fontSize:11,color:C.blue,marginTop:3}}>📍 {b.wo}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+        {tab==="klammer"&&(
+          <div>
+            <div style={{background:C.yellow+"18",border:`1px solid ${C.yellow}44`,borderRadius:10,padding:"12px 14px",marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.yellow,marginBottom:8}}>🔑 Satzklammer</div>
+              <div style={{fontSize:12,color:C.muted,marginBottom:10,lineHeight:1.7}}>
+                Модальный глагол — на <b style={{color:C.yellow}}>2-м месте</b><br/>
+                Инфинитив — <b style={{color:C.orange}}>в конце предложения</b>
+              </div>
+              {[
+                ["Ich","muss","morgen früh","aufstehen","Я должен(а) рано встать"],
+                ["Er","kann","gut","schwimmen","Он умеет хорошо плавать"],
+                ["Wir","wollen","heute","ins Kino gehen","Мы хотим сходить в кино сегодня"],
+                ["Sie","soll","viel Tee","trinken","Ей нужно много пить чая"],
+              ].map(([sub,modal,mid,inf,ru])=>(
+                <div key={sub} style={{background:"rgba(255,255,255,.06)",borderRadius:8,
+                  padding:"8px 10px",marginBottom:6,fontSize:12}}>
+                  <div style={{display:"flex",gap:4,flexWrap:"wrap",alignItems:"center",marginBottom:4}}>
+                    <span style={{color:C.text}}>{sub}</span>
+                    <span style={{background:C.yellow+"33",color:C.yellow,fontWeight:800,
+                      borderRadius:4,padding:"1px 6px"}}>{modal}</span>
+                    <span style={{color:C.text}}>{mid}</span>
+                    <span style={{background:C.orange+"33",color:C.orange,fontWeight:800,
+                      borderRadius:4,padding:"1px 6px"}}>{inf}.</span>
+                  </div>
+                  <div style={{fontSize:11,color:C.muted}}>{ru}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
+const Q_L7B=[
+  {q:"Geldautomat = ?",                        opts:["банкомат","кассир","квитанция","переводной бланк"],           ans:0, hint:"Geldautomat"},
+  {q:"'überweisen' = ?",                       opts:["снять деньги","оплатить наличными","перевести деньги","открыть счёт"],ans:2,hint:"überweisen"},
+  {q:"IBAN — что это?",                        opts:["международный номер счёта","выписка","номер карты","PIN-код"],  ans:0, hint:"IBAN"},
+  {q:"'Kontoauszug' = ?",                      opts:["бланк перевода","выписка со счёта","кредитная карта","номер счёта"],ans:1,hint:"Kontoauszug"},
+  {q:"'Ich möchte Geld überweisen.' + ___",    opts:["Geldautomat","Überweisungsformular","Kontonummer","EC-Karte"],  ans:1, hint:"formular"},
+  {q:"'das Konto, Konten' — что это?",         opts:["квитанция","банковская карта","банковский счёт","перевод"],    ans:2, hint:"Konto"},
+];
+function T7B(){
+  const bank=[
+    {icon:"🏧",de:"der Geldautomat",      ru:"банкомат",                       bsp:"Ich hebe Geld am Geldautomaten ab."},
+    {icon:"💳",de:"die EC-Karte",         ru:"банковская карта (дебетовая)",    bsp:"Bezahlen Sie mit EC-Karte?"},
+    {icon:"🔢",de:"die Kontonummer",      ru:"номер счёта",                     bsp:"Meine Kontonummer ist..."},
+    {icon:"📄",de:"der Kontoauszug",      ru:"выписка со счёта",                bsp:"Ich drucke den Kontoauszug aus."},
+    {icon:"🌍",de:"die IBAN",             ru:"IBAN (международный номер счёта)",bsp:"DE46 1003 0000 0036 2057 00"},
+    {icon:"📋",de:"das Überweisungsformular",ru:"бланк банковского перевода",   bsp:"Füllen Sie das Formular aus."},
+    {icon:"🏦",de:"das Konto",            ru:"банковский счёт",                 bsp:"Ich habe ein Konto bei der Sparkasse."},
+    {icon:"💸",de:"überweisen",           ru:"переводить деньги",               bsp:"Ich überweise 200 Euro."},
+  ];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.orange}>
+        <H c={C.orange}>🏦 B · Rund ums Geld — Банк</H>
+        <div style={{display:"flex",flexDirection:"column",gap:6}}>
+          {bank.map(b=>(
+            <div key={b.de} style={{background:C.card2,borderRadius:9,padding:"10px 12px"}}>
+              <div style={{display:"flex",gap:8,alignItems:"center",marginBottom:4}}>
+                <span style={{fontSize:20}}>{b.icon}</span>
+                <div style={{flex:1}}>
+                  <div style={{fontWeight:800,color:C.orange,fontSize:13}}>{b.de}</div>
+                  <div style={{color:C.muted,fontSize:11}}>{b.ru}</div>
+                </div>
+              </div>
+              <div style={{fontSize:11,color:C.muted,fontStyle:"italic",paddingLeft:32}}>
+                💬 {b.bsp}
+              </div>
+            </div>
+          ))}
+        </div>
+      </Box>
+    </div>
+  );
+}
+
+const Q_L7C=[
+  {q:"'mit + Dativ' — артикль m/n?",            opts:["der","dem","den","die"],                                       ans:1, hint:"Dativ m/n = dem"},
+  {q:"'bei + Dativ' — артикль f?",              opts:["dem","den","der","die"],                                       ans:2, hint:"Dativ f = der"},
+  {q:"'mit den Kindern' — Dativ Plural на?",    opts:["-en","-er","-n","-em"],                                        ans:2, hint:"Plural Dativ = den + -n"},
+  {q:"zu + dem = ?",                            opts:["zum","zur","beim","vom"],                                       ans:0, hint:"Kontraktion"},
+  {q:"bei + dem = ?",                           opts:["zum","zur","beim","vom"],                                       ans:2, hint:"Kontraktion"},
+  {q:"von + dem = ?",                           opts:["zum","zur","beim","vom"],                                       ans:3, hint:"Kontraktion"},
+  {q:"zu + der = ?",                            opts:["zum","zur","beim","vom"],                                       ans:1, hint:"Kontraktion f"},
+  {q:"'Wohin fährst du?' → zur Schule. = ?",   opts:["Wo?","Woher?","Wohin?","Wann?"],                                ans:2, hint:"Wohin? → zu"},
+  {q:"'Woher kommst du?' → vom Arzt. = ?",      opts:["Wo?","Woher?","Wohin?","Wann?"],                               ans:1, hint:"Woher? → von"},
+  {q:"nach Hause / zu Hause / von zu Hause — 'Ich bin ___'", opts:["nach Hause","zu Hause","von zu Hause","beim Hause"],ans:1,hint:"zu Hause = дома"},
+  {q:"'Seit einem Jahr wohne ich hier.' seit = ?",opts:["Akkusativ","Dativ","Nominativ","Genitiv"],                   ans:1, hint:"seit + Dativ"},
+  {q:"'Wir fahren mit dem Bus.' mit = ?",        opts:["Akkusativ","Nominativ","Dativ","Genitiv"],                    ans:2, hint:"mit + Dativ"},
+];
+function T7C(){
+  const [tab,setTab]=useState("artikel");
+  const praeps=[
+    {p:"aus",   ru:"из (происхождение)",        bsp:["Er kommt aus der Ukraine.","Wir trinken Tee aus der Tasse."]},
+    {p:"bei",   ru:"у, при (место/работа)",     bsp:["Sara ist bei Lisa.","Mein Vater arbeitet bei Mercedes."]},
+    {p:"mit",   ru:"с (вместе/на чём)",         bsp:["Ich fahre mit dem Bus.","Ich spiele mit dem Ball."]},
+    {p:"nach",  ru:"в (гор/страну); после",     bsp:["Er fährt nach Deutschland.","Nach dem Unterricht gehe ich spazieren."]},
+    {p:"von",   ru:"от, из (принадлежность)",   bsp:["Ich komme vom Arzt.","Ein Freund von mir."]},
+    {p:"seit",  ru:"с (времени), уже…",         bsp:["Seit einem Jahr lerne ich Deutsch.","Seit Juni wohne ich hier."]},
+    {p:"zu",    ru:"к (человеку/месту)",        bsp:["Ich gehe zum Arzt.","Ich fahre zur Schule."]},
+    {p:"ab",    ru:"с (времени), начиная с",    bsp:["Ab Dienstag ist das Geschäft geöffnet.","Ab nächster Woche."]},
+  ];
+  const kontr=[
+    {long:"zu + dem",  short:"zum",  ex:"zum Bahnhof, zum Arzt"},
+    {long:"zu + der",  short:"zur",  ex:"zur Schule, zur Bank"},
+    {long:"bei + dem", short:"beim", ex:"beim Arzt, beim Bäcker"},
+    {long:"von + dem", short:"vom",  ex:"vom Arzt, vom Bahnhof"},
+  ];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.purple}>
+        <H c={C.purple}>🗺️ C · Dativ-Präpositionen</H>
+        <div style={{display:"flex",gap:6,marginBottom:12}}>
+          {[["artikel","Dativ-Artikel"],["praep","Präpositionen"],["wo","Wo/Wohin/Woher"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,padding:"9px 4px",borderRadius:9,border:"none",cursor:"pointer",
+                fontSize:11,fontWeight:700,
+                background:tab===key?C.purple+"33":"transparent",
+                color:tab===key?C.purple:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="artikel"&&(
+          <div>
+            <div style={{background:C.purple+"15",border:`1px solid ${C.purple}33`,
+              borderRadius:10,padding:"12px 14px",marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:12,color:C.purple,marginBottom:8}}>
+                Артикль в Dativ (Wo? Womit? С кем/чем?)
+              </div>
+              <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr",gap:4,marginBottom:8}}>
+                {[["m","dem",C.blue],["n","dem",C.orange],["f","der",C.purple],["Pl","den",C.teal]].map(([g,art,col])=>(
+                  <div key={g} style={{background:col+"15",borderRadius:8,padding:"8px",textAlign:"center"}}>
+                    <div style={{fontSize:10,color:col,fontWeight:800,marginBottom:4}}>{g}</div>
+                    <div style={{fontSize:16,color:col,fontWeight:800}}>{art}</div>
+                  </div>
+                ))}
+              </div>
+              <div style={{background:C.red+"15",borderRadius:7,padding:"6px 10px",fontSize:11,color:C.muted}}>
+                ⚠️ <b style={{color:C.red}}>Plural Dativ</b>: Nomen bekommt immer <b style={{color:C.red}}>-n</b>!<br/>
+                Kinder → mit den Kinder<b style={{color:C.red}}>n</b> / Freunden / Eltern
+              </div>
+            </div>
+            <div style={{fontWeight:700,fontSize:12,color:C.text,marginBottom:6}}>
+              🔗 Kontraktionen (слияния):
+            </div>
+            <div style={{display:"flex",flexDirection:"column",gap:4}}>
+              {kontr.map(k=>(
+                <div key={k.long} style={{display:"flex",gap:8,background:C.card2,
+                  borderRadius:7,padding:"7px 10px",alignItems:"center",fontSize:12}}>
+                  <span style={{color:C.muted,minWidth:80}}>{k.long}</span>
+                  <span style={{color:C.text,fontSize:18}}>→</span>
+                  <span style={{color:C.purple,fontWeight:800,minWidth:36}}>{k.short}</span>
+                  <span style={{color:C.muted,fontSize:11}}>{k.ex}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+        {tab==="praep"&&(
+          <div style={{display:"flex",flexDirection:"column",gap:6}}>
+            {praeps.map(p=>(
+              <div key={p.p} style={{background:C.card2,borderRadius:8,padding:"9px 11px"}}>
+                <div style={{display:"flex",gap:8,alignItems:"center",marginBottom:5}}>
+                  <span style={{background:C.purple+"33",color:C.purple,fontWeight:800,fontSize:13,
+                    borderRadius:6,padding:"2px 9px"}}>{p.p}</span>
+                  <span style={{color:C.muted,fontSize:11}}>{p.ru} + Dativ</span>
+                </div>
+                {p.bsp.map(b=>(
+                  <div key={b} style={{fontSize:12,color:C.text,paddingLeft:4,marginBottom:2}}>• {b}</div>
+                ))}
+              </div>
+            ))}
+          </div>
+        )}
+        {tab==="wo"&&(
+          <div>
+            <div style={{display:"flex",flexDirection:"column",gap:6,marginBottom:10}}>
+              {[
+                {q:"Wo?",     emoji:"📍",ru:"Где?",     p:"bei",ex:["beim Arzt","bei der Chefin"]},
+                {q:"Wohin?",  emoji:"➡️",ru:"Куда?",    p:"zu",ex:["zum Arzt","zur Schule"]},
+                {q:"Woher?",  emoji:"⬅️",ru:"Откуда?",  p:"von",ex:["vom Arzt","von der Chefin"]},
+              ].map(r=>(
+                <div key={r.q} style={{background:C.card2,borderRadius:9,padding:"10px 12px"}}>
+                  <div style={{display:"flex",gap:8,alignItems:"center",marginBottom:5}}>
+                    <span style={{fontSize:16}}>{r.emoji}</span>
+                    <span style={{fontWeight:800,color:C.purple,fontSize:13}}>{r.q}</span>
+                    <span style={{color:C.muted,fontSize:11}}>{r.ru}</span>
+                    <span style={{marginLeft:"auto",background:C.purple+"22",color:C.purple,
+                      borderRadius:5,padding:"2px 7px",fontSize:11,fontWeight:700}}>{r.p}+Dativ</span>
+                  </div>
+                  {r.ex.map(e=><div key={e} style={{fontSize:12,color:C.text,paddingLeft:24}}>• {e}</div>)}
+                </div>
+              ))}
+            </div>
+            <div style={{background:C.teal+"15",border:`1px solid ${C.teal}33`,borderRadius:10,padding:"10px 12px"}}>
+              <div style={{fontWeight:700,fontSize:12,color:C.teal,marginBottom:6}}>🏠 zu Hause / nach Hause</div>
+              {[
+                ["Wo bist du?",     "Ich bin zu Hause.",         "я дома"],
+                ["Wohin gehst du?", "Ich gehe nach Hause.",      "я иду домой"],
+                ["Woher kommst du?","Ich komme von zu Hause.",   "я из дома"],
+              ].map(([q,a,ru])=>(
+                <div key={q} style={{marginBottom:5,fontSize:12}}>
+                  <span style={{color:C.muted}}>{q} → </span>
+                  <span style={{color:C.teal,fontWeight:700}}>{a}</span>
+                  <span style={{color:C.muted,fontSize:11}}> ({ru})</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
+const Q_L8A=[
+  {q:"'Was fehlt Ihnen?' — что спрашивают?",   opts:["Что вам нужно?","Что вас беспокоит?","Где болит?","Как вас зовут?"],ans:1,hint:"fehlen"},
+  {q:"Erkältung = ?",                           opts:["грипп","аллергия","простуда","кашель"],                       ans:2, hint:"Erkältung"},
+  {q:"'Ich bin erkältet.' = ?",                 opts:["У меня грипп","У меня простуда","Я устал","У меня жар"],     ans:1, hint:"erkältet"},
+  {q:"sollen (ich/er) = ?",                     opts:["soll","sollst","sollen","sollt"],                              ans:0, hint:"sollen"},
+  {q:"'Sie soll viel trinken.' — soll от?",     opts:["müssen","wollen","sollen","können"],                          ans:2, hint:"sollen"},
+  {q:"rezeptpflichtig = ?",                     opts:["без рецепта","по рецепту","дорогое","натуральное"],            ans:1, hint:"Rezept"},
+  {q:"'Mir geht es schlecht.' = ?",             opts:["Мне плохо","Мне скучно","Мне жарко","Я устал"],               ans:0, hint:"gut/schlecht"},
+  {q:"Wo tut es weh? → 'Mein ___ tut weh.'",   opts:["Kopf","Kopfs","Kopfe","Köpfe"],                               ans:0, hint:"wehtun"},
+  {q:"Dativ Pl. от: Kinder, Eltern, Zähne:",   opts:["Kindern/Eltern/Zähnen","Kinder/Eltern/Zähne","Kindes/Elterne","keine Änderung"],ans:0,hint:"Plural Dativ -n"},
+  {q:"'nach Vereinbarung' = ?",                 opts:["после встречи","по предварительной записи","по рецепту","по расписанию"],ans:1,hint:"Vereinbarung"},
+];
+function T8A(){
+  const [tab,setTab]=useState("koerper");
+  const [openBody,setOpenBody]=useState(null);
+  const [openLines8,setOpenLines8]=useState(new Set());
+  const togLine8=(k)=>setOpenLines8(s=>{const n=new Set(s);n.has(k)?n.delete(k):n.add(k);return n;});
+  const koerper=[
+    {group:"Kopf",emoji:"🧠",parts:[
+      {de:"der Kopf (Köpfe)",       ru:"голова"},
+      {de:"die Haare (pl.)",        ru:"волосы"},
+      {de:"das Auge (-n)",          ru:"глаз"},
+      {de:"das Ohr (-en)",          ru:"ухо"},
+      {de:"die Nase (-n)",          ru:"нос"},
+      {de:"der Mund (Münder)",      ru:"рот"},
+      {de:"die Zunge (-n)",         ru:"язык"},
+      {de:"der Zahn (Zähne)",       ru:"зуб"},
+      {de:"die Lippe (-n)",         ru:"губа"},
+      {de:"die Wange (-n)",         ru:"щека"},
+      {de:"die Stirn (-en)",        ru:"лоб"},
+      {de:"das Kinn (-e)",          ru:"подбородок"},
+    ]},
+    {group:"Körper",emoji:"🫀",parts:[
+      {de:"der Hals (Hälse)",       ru:"горло, шея"},
+      {de:"die Schulter (-n)",      ru:"плечо"},
+      {de:"der Rücken (-)",         ru:"спина"},
+      {de:"die Brust (Brüste)",     ru:"грудь"},
+      {de:"der Bauch (Bäuche)",     ru:"живот"},
+    ]},
+    {group:"Arme & Hände",emoji:"💪",parts:[
+      {de:"der Arm (-e)",           ru:"рука (от плеча)"},
+      {de:"das Handgelenk (-e)",    ru:"запястье"},
+      {de:"die Hand (Hände)",       ru:"кисть руки"},
+      {de:"der Finger (-)",         ru:"палец руки"},
+      {de:"der Ellenbogen (-)",     ru:"локоть"},
+    ]},
+    {group:"Beine & Füße",emoji:"🦵",parts:[
+      {de:"das Bein (-e)",          ru:"нога (от бедра)"},
+      {de:"das Knie (-)",           ru:"колено"},
+      {de:"der Knöchel (-)",        ru:"щиколотка"},
+      {de:"der Fuß (Füße)",         ru:"стопа"},
+      {de:"die Ferse (-n)",         ru:"пятка"},
+      {de:"die Zehe (-n)",          ru:"палец ноги"},
+      {de:"der Po (-s)",            ru:"ягодица"},
+    ]},
+  ];
+  const sollen=[
+    ["ich","soll"],["wir","sollen"],
+    ["du","sollst"],["ihr","sollt"],
+    ["er/sie/es","soll"],["sie/Sie","sollen"],
+  ];
+  const dialog8=[
+    {v:"Praxis Dr. Arslan, guten Tag.",                    vRu:"Кабинет доктора Арслана, добрый день.",
+     k:"Ich hätte gern einen Termin.",                      kRu:"Я хотел(а) бы записаться на приём.",          note:"Termin = запись, приём"},
+    {v:"Waren Sie schon einmal hier?",                      vRu:"Вы уже были у нас?",
+     k:"Ja, ich war schon mal bei Ihnen.",                  kRu:"Да, я уже был(а) у вас.",                     note:"schon mal = уже как-то раз"},
+    {v:"Geht es bei Ihnen am Montag um 10 Uhr?",           vRu:"Вам подходит понедельник в 10:00?",
+     k:"Nein, da kann ich leider nicht. Ich muss arbeiten.",kRu:"Нет, к сожалению не могу. Я должен(а) работать.",note:"leider = к сожалению"},
+    {v:"Am Dienstag um 8 Uhr haben wir einen Termin frei.",vRu:"Во вторник в 8:00 у нас есть свободное место.",
+     k:"Ja, prima! Dienstag passt auch.",                   kRu:"Да, отлично! Вторник тоже подходит.",         note:"passt = подходит"},
+    {v:"Was fehlt Ihnen denn?",                             vRu:"Что вас беспокоит?",
+     k:"Mir geht es schlecht. Ich bin erkältet.",           kRu:"Мне плохо. Я простужен(а).",                  note:"fehlen = что болит/беспокоит"},
+    {v:"Haben Sie Husten oder Schnupfen?",                  vRu:"У вас кашель или насморк?",
+     k:"Ja, beides. Und ich habe Fieber.",                  kRu:"Да, и то и другое. И у меня температура.",    note:"beides = и то и другое"},
+    {v:"Sie sollen viel Tee trinken und im Bett bleiben.", vRu:"Вам нужно много пить чая и оставаться в постели.",
+     k:"Brauche ich ein Rezept?",                           kRu:"Мне нужен рецепт?",                           note:"sollen = должны (по совету врача)"},
+  ];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.red}>
+        <H c={C.red}>🏥 A · Beim Arzt — Тело и здоровье</H>
+        <div style={{display:"flex",gap:6,marginBottom:12}}>
+          {[["koerper","Körperteile"],["sollen","sollen & Symptome"],["dialog","Dialog"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,padding:"9px 4px",borderRadius:9,border:"none",cursor:"pointer",
+                fontSize:10,fontWeight:700,
+                background:tab===key?C.red+"33":"transparent",
+                color:tab===key?C.red:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="koerper"&&(
+          <div style={{display:"flex",flexDirection:"column",gap:6}}>
+            {koerper.map((g,gi)=>(
+              <div key={g.group}>
+                <div onClick={()=>setOpenBody(openBody===gi?null:gi)}
+                  style={{display:"flex",justifyContent:"space-between",alignItems:"center",
+                    background:C.red+"15",borderRadius:9,padding:"9px 12px",cursor:"pointer",marginBottom:4}}>
+                  <span style={{fontWeight:700,fontSize:13}}>{g.emoji} {g.group}</span>
+                  <span style={{color:C.muted,fontSize:10}}>{openBody===gi?"▲":"▾"}</span>
+                </div>
+                {openBody===gi&&(
+                  <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:3,paddingLeft:4}}>
+                    {g.parts.map(p=>(
+                      <div key={p.de} style={{background:C.card2,borderRadius:6,padding:"5px 8px",fontSize:11}}>
+                        <div style={{color:C.text,fontWeight:600}}>{p.de}</div>
+                        <div style={{color:C.muted,fontSize:10}}>{p.ru}</div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
+        {tab==="sollen"&&(
+          <div>
+            <div style={{background:C.teal+"15",border:`1px solid ${C.teal}33`,
+              borderRadius:10,padding:"10px 12px",marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:12,color:C.teal,marginBottom:8}}>
+                sollen — должен (по чужому указанию/совету)
+              </div>
+              <div style={{background:C.red+"12",borderRadius:7,padding:"5px 10px",
+                marginBottom:8,fontSize:11,color:C.muted}}>
+                ⚠️ <b style={{color:C.red}}>ich soll = er soll</b> (как все модальные глаголы)
+              </div>
+              <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:3,marginBottom:8}}>
+                {sollen.map(([p,f])=>(
+                  <div key={p} style={{display:"flex",gap:6,background:"rgba(255,255,255,.06)",
+                    borderRadius:6,padding:"4px 8px",fontSize:12}}>
+                    <span style={{color:C.muted,minWidth:56,fontSize:11}}>{p}</span>
+                    <span style={{color:C.teal,fontWeight:800}}>{f}</span>
+                  </div>
+                ))}
+              </div>
+              <div style={{fontSize:11,color:C.muted,lineHeight:1.7}}>
+                💬 Der Arzt sagt, ich <b style={{color:C.teal}}>soll</b> viel Tee <b style={{color:C.orange}}>trinken</b>.<br/>
+                💬 Sie <b style={{color:C.teal}}>sollen</b> im Bett <b style={{color:C.orange}}>bleiben</b>.
+              </div>
+            </div>
+            <div style={{background:C.card2,borderRadius:10,padding:"10px 12px"}}>
+              <div style={{fontWeight:700,fontSize:12,color:C.text,marginBottom:6}}>
+                🤒 Symptome & Empfehlungen
+              </div>
+              {[
+                ["😷","erkältet sein","простужен · Sie sollen Tee trinken."],
+                ["🤧","der Schnupfen","насморк · Nasentropfen nehmen"],
+                ["🔥","das Fieber","жар · Im Bett bleiben / viel trinken"],
+                ["😮‍💨","der Husten","кашель · Hustensaft nehmen"],
+                ["😵","die Schmerzen","боли · Tabletten nehmen / Arzt aufsuchen"],
+              ].map(([emoji,de,ru])=>(
+                <div key={de} style={{display:"flex",gap:8,alignItems:"center",
+                  marginBottom:5,fontSize:12}}>
+                  <span style={{fontSize:16,marginRight:6}}>{emoji}</span>
+                  <div>
+                    <span style={{color:C.text,fontWeight:600}}>{de}</span>
+                    <div style={{color:C.muted,fontSize:11}}>{ru}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+        {tab==="dialog"&&(
+          <div>
+            <div style={{fontSize:11,color:C.muted,marginBottom:8}}>
+              🗓️ Termin beim Arzt · нажми на фразу → перевод
+            </div>
+            <div style={{display:"flex",flexDirection:"column",gap:5}}>
+              {dialog8.map((d,i)=>(
+                <div key={i} style={{background:C.card2,borderRadius:8,padding:"8px 10px",fontSize:12}}>
+                  <div onClick={()=>togLine8(`${i}-v`)}
+                    style={{cursor:"pointer",marginBottom:4,borderRadius:6,padding:"4px 6px",
+                      background:openLines8.has(`${i}-v`)?C.green+"15":"transparent",
+                      border:`1px solid ${openLines8.has(`${i}-v`)?C.green+"44":"transparent"}`}}>
+                    <div style={{display:"flex",alignItems:"center",justifyContent:"space-between"}}>
+                      <span style={{color:C.green}}>🏥 <b>A:</b> {d.v}</span>
+                      <span style={{fontSize:10,color:C.muted,flexShrink:0,marginLeft:6}}>{openLines8.has(`${i}-v`)?"▲":"▾"}</span>
+                    </div>
+                    {openLines8.has(`${i}-v`)&&<div style={{color:C.muted,fontSize:11,paddingLeft:20,marginTop:3}}>{d.vRu}</div>}
+                  </div>
+                  <div onClick={()=>togLine8(`${i}-k`)}
+                    style={{cursor:"pointer",borderRadius:6,padding:"4px 6px",
+                      background:openLines8.has(`${i}-k`)?C.red+"15":"transparent",
+                      border:`1px solid ${openLines8.has(`${i}-k`)?C.red+"44":"transparent"}`}}>
+                    <div style={{display:"flex",alignItems:"center",justifyContent:"space-between"}}>
+                      <span style={{color:C.red}}>🙋 <b>P:</b> {d.k}</span>
+                      <span style={{fontSize:10,color:C.muted,flexShrink:0,marginLeft:6}}>{openLines8.has(`${i}-k`)?"▲":"▾"}</span>
+                    </div>
+                    {openLines8.has(`${i}-k`)&&<div style={{color:C.muted,fontSize:11,paddingLeft:20,marginTop:3}}>{d.kRu}</div>}
+                  </div>
+                  {d.note&&<div style={{color:C.muted,fontSize:10,marginTop:4}}>💡 {d.note}</div>}
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
 const Q_L6A=[
   {q:"Welcher Artikel hat 'Apfel'?",          opts:["der","die","das"],                                                                     ans:0, hint:"Artikel"},
   {q:"Welcher Artikel hat 'Milch'?",          opts:["der","die","das"],                                                                     ans:1, hint:"Artikel"},
@@ -6142,7 +6830,7 @@ const LEKTIONEN=[
   {
     id:"L6",num:"6",title:"Guten Appetit!",
     sub:"A Lebensmittel · B Einkaufen · C Das mag ich · D Essen in Deutschland",
-    date:"Seite 62–67",col:C.green,
+    date:"Seite 62–70",col:C.green,
     sections:[
       {id:"d6",  icon:"💬",title:"Dialogfragen L6",             sub:"Фразы для диалога",                                    time:"∞",     col:C.teal,   hasT:false, th:null,           ex:()=><DialogCards lId="L6"/>},
       {id:"6a",  icon:"🍎",title:"A · Lebensmittel",            sub:"Essen und Trinken · Häufigkeit",                       time:"5 мин", col:C.green,  hasT:true,  th:()=><T6A/>,     ex:()=><Quiz questions={Q_L6A}/>},
@@ -6150,6 +6838,26 @@ const LEKTIONEN=[
       {id:"6c",  icon:"🛍️",title:"B · Einkaufen",              sub:"Einkaufsorte · möchten · hätte gerne · Mengen",        time:"6 мин", col:C.teal,   hasT:true,  th:()=><T6C/>,     ex:()=><Quiz questions={Q_L6C}/>},
       {id:"6d",  icon:"❤️",title:"C · Das mag ich",             sub:"mögen · kein- vs nicht · Akkusativ kein",              time:"6 мин", col:C.purple, hasT:true,  th:()=><T6D/>,     ex:()=><Quiz questions={Q_L6D}/>},
       {id:"6e",  icon:"🇩🇪",title:"D · Essen in Deutschland",   sub:"man · Essenszeiten · Frühstück/Mittag/Abend",          time:"5 мин", col:C.green,  hasT:true,  th:()=><T6E/>,     ex:()=><Quiz questions={Q_L6E}/>},
+    ]
+  },
+  {
+    id:"L7",num:"7",title:"Arbeit und Beruf",
+    sub:"A Modalverben · B Rund ums Geld · C Dativ-Präpositionen",
+    date:"Seite 71–82",col:C.blue,
+    sections:[
+      {id:"d7",  icon:"💬",title:"Dialogfragen L7",             sub:"Фразы для диалога",                                    time:"∞",     col:C.orange, hasT:false, th:null,           ex:()=><DialogCards lId="L7"/>},
+      {id:"7a",  icon:"💼",title:"A · Berufe & Modalverben",    sub:"können · müssen · wollen · sollen · Satzklammer",      time:"7 мин", col:C.blue,   hasT:true,  th:()=><T7A/>,     ex:()=><Quiz questions={Q_L7A}/>},
+      {id:"7b",  icon:"🏦",title:"B · Rund ums Geld",           sub:"Geldautomat · EC-Karte · IBAN · überweisen",           time:"4 мин", col:C.orange, hasT:true,  th:()=><T7B/>,     ex:()=><Quiz questions={Q_L7B}/>},
+      {id:"7c",  icon:"🗺️",title:"C · Dativ-Präpositionen",     sub:"aus·bei·mit·nach·von·seit·zu + Wo/Wohin/Woher",        time:"7 мин", col:C.purple, hasT:true,  th:()=><T7C/>,     ex:()=><Quiz questions={Q_L7C}/>},
+    ]
+  },
+  {
+    id:"L8",num:"8",title:"Gute Besserung!",
+    sub:"A Körperteile · Beim Arzt · sollen",
+    date:"Seite 83–95",col:C.red,
+    sections:[
+      {id:"d8",  icon:"💬",title:"Dialogfragen L8",             sub:"Фразы для диалога",                                    time:"∞",     col:C.purple, hasT:false, th:null,           ex:()=><DialogCards lId="L8"/>},
+      {id:"8a",  icon:"🏥",title:"A · Beim Arzt",               sub:"Körperteile · sollen · Dialog Arzttermin",             time:"7 мин", col:C.red,    hasT:true,  th:()=><T8A/>,     ex:()=><Quiz questions={Q_L8A}/>},
     ]
   },
 ];
@@ -6169,6 +6877,9 @@ function DialogFragenPage(){
     L3:{label:"L3 · Häuser und Wohnungen",  col:C.green},
     L4:{label:"L4 · Familienleben",         col:C.teal},
     L5:{label:"L5 · Der Tag und die Woche", col:C.orange},
+    L6:{label:"L6 · Guten Appetit!",        col:C.green},
+    L7:{label:"L7 · Arbeit und Beruf",      col:C.blue},
+    L8:{label:"L8 · Gute Besserung!",       col:C.red},
   };
   const filterFm=(pairs,lId)=>(lId==="L1"||lId==="L4")?pairs.filter(p=>!p.fm||p.fm===fm):pairs;
 
