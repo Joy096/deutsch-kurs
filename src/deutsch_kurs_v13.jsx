@@ -881,6 +881,7 @@ const WBDATA=[
   {art:"",   de:"verletzt",         pl:"—",            ru:"раненый, травмированный",                     tema:"Notruf"},
   {art:"",   de:"dringend",         pl:"—",            ru:"срочный, неотложный",                         tema:"Notruf"},
   {art:"",   de:"erklären",         pl:"—",            ru:"объяснять",                                   tema:"Notruf"},
+  {art:"",   de:"schicken",         pl:"—",            ru:"отправлять, посылать",                         tema:"Notruf"},
   {art:"",   de:"auflegen",         pl:"—",            ru:"класть трубку (телефон)",                     tema:"Notruf"},
   {art:"",   de:"anhalten",         pl:"—",            ru:"останавливаться",                             tema:"Notruf"},
   {art:"",   de:"vorbeifahren",     pl:"—",            ru:"проезжать мимо",                              tema:"Notruf"},
@@ -1240,6 +1241,7 @@ const KONJ_ALL={
   fragen:     {col:C.teal,  bg:C.tealBg,   ich:"frage",     du:"fragst",     "er/sie/es":"fragt",     wir:"fragen",   ihr:"fragt",    "sie/Sie":"fragen"},
   // L8E Notruf
   erklären:   {col:C.teal,  bg:C.tealBg,   ich:"erkläre",   du:"erklärst",   "er/sie/es":"erklärt",   wir:"erklären", ihr:"erklärt",  "sie/Sie":"erklären"},
+  schicken:   {col:C.teal,  bg:C.tealBg,   ich:"schicke",   du:"schickst",   "er/sie/es":"schickt",   wir:"schicken", ihr:"schickt",  "sie/Sie":"schicken"},
   benutzen:   {col:C.teal,  bg:C.tealBg,   ich:"benutze",   du:"benutzt",    "er/sie/es":"benutzt",   wir:"benutzen", ihr:"benutzt",  "sie/Sie":"benutzen"},
   auflegen:   {pref:"auf",  col:C.orange, bg:C.orangeBg,
     ich:"lege … auf",   du:"legst … auf",   "er/sie/es":"legt … auf",
@@ -1418,7 +1420,7 @@ const STRESS_MARKS={
 // L8E Notruf
 "Notruf":"No\u0301truf","Notfall":"No\u0301tfall","Unfall":"U\u0301nfall",
 "Notarzt":"No\u0301tarzt","Verletzung":"Verle\u0301tzung","Not":"No\u0301t",
-"verletzt":"verle\u0301tzt","dringend":"dri\u0301ngend","erklären":"erkl\u00E4\u0301ren",
+"verletzt":"verle\u0301tzt","dringend":"dri\u0301ngend","erklären":"erkl\u00E4\u0301ren","schicken":"schi\u0301cken",
 "auflegen":"a\u0301uflegen","anhalten":"a\u0301nhalten","vorbeifahren":"vo\u0301rbeifahren",
 "erste Hilfe leisten":"e\u0301rste Hi\u0301lfe le\u0301isten",
 // L9 Verkehrsmittel
@@ -1670,7 +1672,7 @@ const IPA_DATA={
 // L8E Notruf
 "Notruf":"[ˈnoːtˌʁuːf]","Notfall":"[ˈnoːtˌfal]","Unfall":"[ˈʊnˌfal]",
 "Notarzt":"[ˈnoːtˌʔaːɐ̯tst]","Verletzung":"[fɛɐ̯ˈlɛtsʊŋ]","Not":"[noːt]",
-"verletzt":"[fɛɐ̯ˈlɛtst]","dringend":"[ˈdʁɪŋənt]","erklären":"[ɛɐ̯ˈklɛːʁən]",
+"verletzt":"[fɛɐ̯ˈlɛtst]","dringend":"[ˈdʁɪŋənt]","erklären":"[ɛɐ̯ˈklɛːʁən]","schicken":"[ˈʃɪkən]",
 "auflegen":"[ˈaʊfˌleːɡən]","anhalten":"[ˈanˌhaltən]","vorbeifahren":"[ˈfoɐ̯baɪˌfaːʁən]",
 // L9 Verkehrsmittel
 "Auto":"[ˈaʊtoː]","Fahrrad":"[ˈfaːɐ̯ˌʁaːt]","Motorrad":"[ˈmoːtoɐ̯ˌʁaːt]",
