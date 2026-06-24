@@ -2579,7 +2579,6 @@ function Woerterbuch(){
   const [search,setSearch]=useState("");
   const [sortNew,setSortNew]=useState(true);
   const [openConj,setOpenConj]=useState(null);
-  const [showIPA,setShowIPA]=useState(false);
   const [impView,setImpView]=useState(false);
 
   const changeTyp=(t)=>{setTyp(t);setTema("all");setArt("all");setSelPref("all");};
@@ -2843,82 +2842,6 @@ function Woerterbuch(){
         <input value={search} onChange={e=>setSearch(e.target.value)} placeholder="Поиск: Tisch, стол..."
           style={{width:"100%",background:C.card,border:`1px solid ${C.border}`,borderRadius:10,
             padding:"9px 12px 9px 36px",color:C.text,fontSize:14,boxSizing:"border-box",outline:"none"}}/>
-      </div>
-      {/* ── Lautschrift FAQ ── */}
-      <div style={{marginBottom:8}}>
-        <button onClick={()=>setShowIPA(v=>!v)}
-          style={{width:"100%",padding:"7px 12px",borderRadius:10,cursor:"pointer",textAlign:"left",
-            background:showIPA?C.teal+"18":C.card,border:`1px solid ${showIPA?C.teal:C.border}`,
-            color:showIPA?C.teal:C.muted,fontSize:12,fontWeight:700,display:"flex",justifyContent:"space-between"}}>
-          <span>🔉 Транскрипция (IPA)</span>
-          <span>{showIPA?"▲":"▾"}</span>
-        </button>
-        {showIPA&&(
-          <div style={{background:C.card,border:`1px solid ${C.teal}30`,borderRadius:10,padding:"12px 14px",marginTop:4}}>
-            {/* Символы ударения и длины */}
-            <div style={{marginBottom:10}}>
-              <div style={{fontWeight:800,fontSize:12,color:C.teal,marginBottom:5}}>Основные символы</div>
-              {[
-                ["ˈ","главное ударение ставится ПЕРЕД слогом","[kanˈtiːnə] → -TII-"],
-                ["ː","длинный (долгий) звук","[tiːnə] → ТИИ-не"],
-              ].map(([sym,desc,ex])=>(
-                <div key={sym} style={{display:"flex",alignItems:"baseline",gap:8,marginBottom:4,flexWrap:"wrap"}}>
-                  <span style={{fontFamily:"Georgia,serif",fontWeight:800,fontSize:15,color:C.orange,minWidth:16}}>{sym}</span>
-                  <span style={{fontSize:12,color:C.muted,flex:1}}>{desc}</span>
-                  <span style={{fontSize:11,color:C.text,fontFamily:"Georgia,serif"}}>{ex}</span>
-                </div>
-              ))}
-            </div>
-            {/* Гласные */}
-            <div style={{marginBottom:10}}>
-              <div style={{fontWeight:800,fontSize:12,color:C.teal,marginBottom:5}}>Гласные</div>
-              <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:"2px 10px"}}>
-                {[
-                  ["[aː]","долгое А — Vater"],["[a]","короткое А — Mann"],
-                  ["[eː]","долгое Э — See"],["[ɛ]","короткое Э — Bett"],
-                  ["[iː]","долгое И — viel"],["[ɪ]","короткое И — mit"],
-                  ["[oː]","долгое О — Boot"],["[ɔ]","короткое О — kochen"],
-                  ["[uː]","долгое У — gut"],["[ʊ]","короткое У — und"],
-                  ["[yː]","долгое Ю — über"],["[ʏ]","короткое Ю — Stück"],
-                  ["[øː]","долгое Ё — schön"],["[œ]","короткое Ё — zwölf"],
-                  ["[aɪ]","АЙ — Eis, nein"],["[aʊ]","АУ — Haus"],
-                  ["[ɔɪ]","ОЙ — neu, Leute"],["[ə]","краткое Э — Kante"],
-                ].map(([s,d])=>(
-                  <div key={s} style={{fontSize:11,display:"flex",gap:5,padding:"2px 0"}}>
-                    <span style={{fontFamily:"Georgia,serif",color:C.orange,fontWeight:700,minWidth:36}}>{s}</span>
-                    <span style={{color:C.muted}}>{d}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-            {/* Согласные */}
-            <div style={{marginBottom:10}}>
-              <div style={{fontWeight:800,fontSize:12,color:C.teal,marginBottom:5}}>Нестандартные согласные</div>
-              <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:"2px 10px"}}>
-                {[
-                  ["[ʁ]","горловое Р — Brot"],["[ç]","ХЬ мягкое — ich"],
-                  ["[x]","Х твёрдое — Buch"],["[ʃ]","Ш — Schule"],
-                  ["[ts]","Ц — Zeit"],["[tʃ]","Ч — Tschüss"],
-                  ["[ŋ]","НГ — lang"],["[j]","Й — ja, Jahr"],
-                  ["[v]","В — Wasser"],["[z]","З — Sonne"],
-                ].map(([s,d])=>(
-                  <div key={s} style={{fontSize:11,display:"flex",gap:5,padding:"2px 0"}}>
-                    <span style={{fontFamily:"Georgia,serif",color:C.teal,fontWeight:700,minWidth:36}}>{s}</span>
-                    <span style={{color:C.muted}}>{d}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-            {/* Пример */}
-            <div style={{background:C.card2,borderRadius:8,padding:"8px 10px"}}>
-              <div style={{fontSize:11,color:C.muted,marginBottom:3}}>Пример разбора:</div>
-              <div style={{fontFamily:"Georgia,serif",fontSize:14,color:C.orange,marginBottom:3}}>[kanˈtiːnə]</div>
-              <div style={{fontSize:12,color:C.muted}}>
-                [kan] → кан · [ˈ] → ударение · [tiː] → <b>ТИИ</b> · [nə] → нэ
-              </div>
-            </div>
-          </div>
-        )}
       </div>
       {/* ── Фильтр по теме (скрываем в recent) ── */}
       {typ!=="recent"&&(
