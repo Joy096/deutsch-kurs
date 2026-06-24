@@ -871,6 +871,57 @@ const WBDATA=[
   {art:"",   de:"wahrscheinlich",    pl:"—",            ru:"вероятно, скорее всего"},
   {art:"",   de:"überrascht",        pl:"—",            ru:"удивлённый · Ich bin überrascht = я удивлён(а)"},
   {art:"",   de:"sollte",            pl:"—",            ru:"следовало бы, нужно бы (Konjunktiv II от sollen) · Du solltest schlafen."},
+  // ── L8E · Notruf ─────────────────────────────────────────────────────────────
+  {art:"der", de:"Notruf",          pl:"-e",           ru:"экстренный вызов (112)",                      tema:"Notruf"},
+  {art:"der", de:"Notfall",         pl:"Notfälle",     ru:"чрезвычайная ситуация",                       tema:"Notruf"},
+  {art:"der", de:"Unfall",          pl:"Unfälle",      ru:"авария, несчастный случай",                   tema:"Notruf"},
+  {art:"der", de:"Notarzt",         pl:"Notärzte",     ru:"врач скорой помощи\nf. - die Notärztin",      tema:"Notruf"},
+  {art:"die", de:"Verletzung",      pl:"-en",          ru:"травма, повреждение",                         tema:"Notruf"},
+  {art:"die", de:"Not",             pl:"Nöte",         ru:"нужда, необходимость",                        tema:"Notruf"},
+  {art:"",   de:"verletzt",         pl:"—",            ru:"раненый, травмированный",                     tema:"Notruf"},
+  {art:"",   de:"dringend",         pl:"—",            ru:"срочный, неотложный",                         tema:"Notruf"},
+  {art:"",   de:"erklären",         pl:"—",            ru:"объяснять",                                   tema:"Notruf"},
+  {art:"",   de:"auflegen",         pl:"—",            ru:"класть трубку (телефон)",                     tema:"Notruf"},
+  {art:"",   de:"anhalten",         pl:"—",            ru:"останавливаться",                             tema:"Notruf"},
+  {art:"",   de:"vorbeifahren",     pl:"—",            ru:"проезжать мимо",                              tema:"Notruf"},
+  {art:"",   de:"erste Hilfe leisten", pl:"—",         ru:"оказывать первую помощь",                     tema:"Notruf"},
+  // ── L9A · Verkehrsmittel ─────────────────────────────────────────────────────
+  {art:"das", de:"Auto",            pl:"-s",           ru:"автомобиль",                                  tema:"Verkehrsmittel"},
+  {art:"das", de:"Fahrrad",         pl:"Fahrräder",    ru:"велосипед",                                   tema:"Verkehrsmittel"},
+  {art:"das", de:"Motorrad",        pl:"Motorräder",   ru:"мотоцикл",                                    tema:"Verkehrsmittel"},
+  {art:"die", de:"Straßenbahn",     pl:"-en",          ru:"трамвай",                                     tema:"Verkehrsmittel"},
+  {art:"die", de:"U-Bahn",          pl:"-en",          ru:"метро, подземка",                             tema:"Verkehrsmittel"},
+  {art:"die", de:"S-Bahn",          pl:"-en",          ru:"городская электричка",                        tema:"Verkehrsmittel"},
+  {art:"der", de:"Fußgänger",       pl:"-",            ru:"пешеход\nf. - die Fußgängerin",               tema:"Verkehrsmittel"},
+  {art:"die", de:"Autobahn",        pl:"-en",          ru:"автострада",                                  tema:"Verkehrsmittel"},
+  {art:"die", de:"Fahrbahn",        pl:"-en",          ru:"проезжая часть",                              tema:"Verkehrsmittel"},
+  {art:"der", de:"Bürgersteig",     pl:"-e",           ru:"тротуар",                                     tema:"Verkehrsmittel"},
+  {art:"der", de:"Fahrradweg",      pl:"-e",           ru:"велодорожка",                                 tema:"Verkehrsmittel"},
+  {art:"das", de:"Verkehrsmittel",  pl:"Verkehrsmittel", ru:"транспортное средство (pl: Verkehrsmittel = виды транспорта)", tema:"Verkehrsmittel"},
+  {art:"",   de:"benutzen",         pl:"—",            ru:"использовать, пользоваться",                  tema:"Verkehrsmittel"},
+  // ── L8/L9 · Allgemein ────────────────────────────────────────────────────────
+  {art:"das", de:"Werkzeug",        pl:"-e",           ru:"инструмент, орудие · das Zeug = вещи"},
+  {art:"das", de:"Spielzeug",       pl:"-e",           ru:"игрушка · das Zeug = вещи"},
+  // ── L8 · Gesundheit erweitert ─────────────────────────────────────────────────
+  {art:"",   de:"erschöpft",        pl:"—",            ru:"изможденный, истощённый (о человеке)",        tema:"Gesundheit"},
+  {art:"",   de:"übermüdet",        pl:"—",            ru:"переутомлённый",                              tema:"Gesundheit"},
+  {art:"",   de:"überarbeitet",     pl:"—",            ru:"перетрудившийся",                             tema:"Gesundheit"},
+  {art:"",   de:"überfordert",      pl:"—",            ru:"перегруженный (задачами)",                    tema:"Gesundheit"},
+  {art:"",   de:"gestresst",        pl:"—",            ru:"в стрессе (о человеке)",                      tema:"Gesundheit"},
+  {art:"",   de:"stressig",         pl:"—",            ru:"стрессовый (о ситуации)",                     tema:"Gesundheit"},
+  {art:"",   de:"sich erholen",     pl:"—",            ru:"восстанавливаться, отдыхать",                 tema:"Gesundheit"},
+  {art:"",   de:"sich entspannen",  pl:"—",            ru:"расслабляться",                               tema:"Gesundheit"},
+  {art:"",   de:"sich ausruhen",    pl:"—",            ru:"отдыхать, передыхать",                        tema:"Gesundheit"},
+  {art:"",   de:"sich hinlegen",    pl:"—",            ru:"лечь, прилечь",                               tema:"Gesundheit"},
+  {art:"",   de:"sich bewegen",     pl:"—",            ru:"двигаться, делать физ. упражнения",           tema:"Gesundheit"},
+  {art:"die", de:"Ernährung",       pl:"—",            ru:"питание, рацион",                             tema:"Gesundheit"},
+  {art:"das", de:"Arzneimittel",    pl:"Arzneimittel", ru:"лекарственное средство (фарм.)",              tema:"Gesundheit"},
+  {art:"",   de:"regelmäßig",       pl:"—",            ru:"регулярный; регулярно",                       tema:"Gesundheit"},
+  // ── L8/L9 · Trennbare Verben / Phrase ────────────────────────────────────────
+  {art:"",   de:"nachdenken",       pl:"—",            ru:"думать, размышлять (über +Akk = о чём-то)",  tema:"Trennbare Verben"},
+  {art:"",   de:"ausgeben",         pl:"—",            ru:"тратить (деньги)",                            tema:"Trennbare Verben"},
+  {art:"",   de:"sich leisten",     pl:"—",            ru:"позволить себе (купить / сделать что-то)"},
+  {art:"",   de:"umsonst",          pl:"—",            ru:"бесплатно; зря, напрасно"},
 ];
 
 
@@ -1187,6 +1238,50 @@ const KONJ_ALL={
   verkaufen:  {col:C.teal,  bg:C.tealBg,   ich:"verkaufe",  du:"verkaufst",  "er/sie/es":"verkauft",  wir:"verkaufen",ihr:"verkauft", "sie/Sie":"verkaufen"},
   holen:      {col:C.teal,  bg:C.tealBg,   ich:"hole",      du:"holst",      "er/sie/es":"holt",      wir:"holen",    ihr:"holt",     "sie/Sie":"holen"},
   fragen:     {col:C.teal,  bg:C.tealBg,   ich:"frage",     du:"fragst",     "er/sie/es":"fragt",     wir:"fragen",   ihr:"fragt",    "sie/Sie":"fragen"},
+  // L8E Notruf
+  erklären:   {col:C.teal,  bg:C.tealBg,   ich:"erkläre",   du:"erklärst",   "er/sie/es":"erklärt",   wir:"erklären", ihr:"erklärt",  "sie/Sie":"erklären"},
+  benutzen:   {col:C.teal,  bg:C.tealBg,   ich:"benutze",   du:"benutzt",    "er/sie/es":"benutzt",   wir:"benutzen", ihr:"benutzt",  "sie/Sie":"benutzen"},
+  auflegen:   {pref:"auf",  col:C.orange, bg:C.orangeBg,
+    ich:"lege … auf",   du:"legst … auf",   "er/sie/es":"legt … auf",
+    wir:"legen … auf",  ihr:"legt … auf",   "sie/Sie":"legen … auf"},
+  anhalten:   {pref:"an",   col:C.blue,   bg:C.blueBg,   note:"a→ä",
+    ich:"halte … an",   du:"hältst … an",   "er/sie/es":"hält … an",
+    wir:"halten … an",  ihr:"haltet … an",  "sie/Sie":"halten … an"},
+  vorbeifahren:{pref:"vorbei",col:C.purple,bg:C.purpleBg, note:"a→ä",
+    ich:"fahre … vorbei",  du:"fährst … vorbei",  "er/sie/es":"fährt … vorbei",
+    wir:"fahren … vorbei", ihr:"fahrt … vorbei",  "sie/Sie":"fahren … vorbei"},
+  // L8 Gesundheit — reflexive Verben
+  "sich erholen":   {col:C.teal,  bg:C.tealBg,  note:"Reflexiv",
+    ich:"erhole mich",    du:"erholst dich",    "er/sie/es":"erholt sich",
+    wir:"erholen uns",    ihr:"erholt euch",    "sie/Sie":"erholen sich",
+    imp:{du:"Erhol dich!",    ihr:"Erholt euch!",    Sie:"Erholen Sie sich!"}},
+  "sich entspannen":{col:C.teal,  bg:C.tealBg,  note:"Reflexiv",
+    ich:"entspanne mich", du:"entspannst dich", "er/sie/es":"entspannt sich",
+    wir:"entspannen uns", ihr:"entspannt euch", "sie/Sie":"entspannen sich",
+    imp:{du:"Entspann dich!", ihr:"Entspannt euch!", Sie:"Entspannen Sie sich!"}},
+  "sich bewegen":   {col:C.teal,  bg:C.tealBg,  note:"Reflexiv",
+    ich:"bewege mich",    du:"bewegst dich",    "er/sie/es":"bewegt sich",
+    wir:"bewegen uns",    ihr:"bewegt euch",    "sie/Sie":"bewegen sich",
+    imp:{du:"Beweg dich!",    ihr:"Bewegt euch!",    Sie:"Bewegen Sie sich!"}},
+  "sich ausruhen":  {pref:"aus",  col:C.red,    bg:C.redBg,   note:"Reflexiv",
+    ich:"ruhe mich … aus",  du:"ruhst dich … aus",  "er/sie/es":"ruht sich … aus",
+    wir:"ruhen uns … aus",  ihr:"ruht euch … aus",  "sie/Sie":"ruhen sich … aus",
+    imp:{du:"Ruh dich aus!",  ihr:"Ruht euch aus!",  Sie:"Ruhen Sie sich aus!"}},
+  "sich hinlegen":  {pref:"hin",  col:C.red,    bg:C.redBg,   note:"Reflexiv",
+    ich:"lege mich … hin",  du:"legst dich … hin",  "er/sie/es":"legt sich … hin",
+    wir:"legen uns … hin",  ihr:"legt euch … hin",  "sie/Sie":"legen sich … hin",
+    imp:{du:"Leg dich hin!",  ihr:"Legt euch hin!",  Sie:"Legen Sie sich hin!"}},
+  "sich leisten":   {col:C.teal,  bg:C.tealBg,  note:"Reflexiv (Dativ)",
+    ich:"leiste mir",     du:"leistest dir",    "er/sie/es":"leistet sich",
+    wir:"leisten uns",    ihr:"leistet euch",   "sie/Sie":"leisten sich",
+    imp:{du:"Leiste dir!",    ihr:"Leistet euch!",   Sie:"Leisten Sie sich!"}},
+  // L8/L9 allgemein
+  nachdenken:  {pref:"nach", col:C.teal,  bg:C.tealBg,
+    ich:"denke … nach",   du:"denkst … nach",   "er/sie/es":"denkt … nach",
+    wir:"denken … nach",  ihr:"denkt … nach",   "sie/Sie":"denken … nach"},
+  ausgeben:    {pref:"aus",  col:C.red,   bg:C.redBg,   note:"e→i",
+    ich:"gebe … aus",     du:"gibst … aus",     "er/sie/es":"gibt … aus",
+    wir:"geben … aus",    ihr:"gebt … aus",     "sie/Sie":"geben … aus"},
 };
 
 // Ударения: комбинирующая акута \u0301 ставится после ударной гласной
@@ -1320,6 +1415,30 @@ const STRESS_MARKS={
 "anmachen":"a\u0301nmachen","ausmachen":"a\u0301usmachen",
 "möglicherweise":"mö\u0301glicherweise","wahrscheinlich":"wahrsche\u0301inlich",
 "überrascht":"überra\u0301scht","sollte":"so\u0301llte",
+// L8E Notruf
+"Notruf":"No\u0301truf","Notfall":"No\u0301tfall","Unfall":"U\u0301nfall",
+"Notarzt":"No\u0301tarzt","Verletzung":"Verle\u0301tzung","Not":"No\u0301t",
+"verletzt":"verle\u0301tzt","dringend":"dri\u0301ngend","erklären":"erkl\u00E4\u0301ren",
+"auflegen":"a\u0301uflegen","anhalten":"a\u0301nhalten","vorbeifahren":"vo\u0301rbeifahren",
+"erste Hilfe leisten":"e\u0301rste Hi\u0301lfe le\u0301isten",
+// L9 Verkehrsmittel
+"Auto":"A\u0301uto","Fahrrad":"Fa\u0301hrrad","Motorrad":"Mo\u0301torrad",
+"Straßenbahn":"Stra\u0301ßenbahn","U-Bahn":"U\u0301-Bahn","S-Bahn":"S-Ba\u0301hn",
+"Fußgänger":"Fu\u0301ßg\u00E4nger","Autobahn":"A\u0301utobahn","Fahrbahn":"Fa\u0301hrbahn",
+"Bürgersteig":"B\u00FC\u0301rgersteig","Fahrradweg":"Fa\u0301hrradweg",
+"Verkehrsmittel":"Verke\u0301hrsmittel","benutzen":"benu\u0301tzen",
+"Werkzeug":"We\u0301rkzeug","Spielzeug":"Spie\u0301lzeug",
+// L8 Gesundheit erweitert
+"erschöpft":"ersch\u00F6\u0301pft","übermüdet":"\u00FCberm\u00FC\u0301det",
+"überarbeitet":"\u00FCbera\u0301rbeitet","überfordert":"\u00FCberfo\u0301rdert",
+"gestresst":"gestre\u0301sst","stressig":"stre\u0301ssig",
+"sich erholen":"sich erho\u0301len","sich entspannen":"sich entspan\u0301nen",
+"sich ausruhen":"sich a\u0301usruhen","sich hinlegen":"sich hi\u0301nlegen",
+"sich bewegen":"sich bewe\u0301gen","Ernährung":"Ern\u00E4\u0301hrung",
+"Arzneimittel":"A\u0301rzneimittel","regelmäßig":"re\u0301gelm\u00E4\u00DFig",
+// L8/L9 allgemein
+"nachdenken":"na\u0301chdenken","ausgeben":"a\u0301usgeben",
+"sich leisten":"sich le\u0301isten","umsonst":"umso\u0301nst",
 // Lebensmittel
 "Apfel":"A\u0301pfel","Banane":"Bana\u0301ne","Brot":"Bro\u0301t","Butter":"Bu\u0301tter",
 "Hähnchen":"H\u00E4\u0301hnchen","Joghurt":"Jo\u0301ghurt","Kaffee":"Ka\u0301ffee",
@@ -1548,6 +1667,29 @@ const IPA_DATA={
 "anmachen":"[ˈanˌmaxən]","ausmachen":"[ˈaʊsˌmaxən]",
 "möglicherweise":"[ˈmøːklɪçɐˌvaɪzə]","wahrscheinlich":"[vaːɐ̯ˈʃaɪnlɪç]",
 "überrascht":"[ˈyːbɐˌʁaʃt]","Krankenhaus":"[ˈkʁaŋkənˌhaʊs]",
+// L8E Notruf
+"Notruf":"[ˈnoːtˌʁuːf]","Notfall":"[ˈnoːtˌfal]","Unfall":"[ˈʊnˌfal]",
+"Notarzt":"[ˈnoːtˌʔaːɐ̯tst]","Verletzung":"[fɛɐ̯ˈlɛtsʊŋ]","Not":"[noːt]",
+"verletzt":"[fɛɐ̯ˈlɛtst]","dringend":"[ˈdʁɪŋənt]","erklären":"[ɛɐ̯ˈklɛːʁən]",
+"auflegen":"[ˈaʊfˌleːɡən]","anhalten":"[ˈanˌhaltən]","vorbeifahren":"[ˈfoɐ̯baɪˌfaːʁən]",
+// L9 Verkehrsmittel
+"Auto":"[ˈaʊtoː]","Fahrrad":"[ˈfaːɐ̯ˌʁaːt]","Motorrad":"[ˈmoːtoɐ̯ˌʁaːt]",
+"Straßenbahn":"[ˈʃtʁaːsənˌbaːn]","U-Bahn":"[ˈuːˌbaːn]","S-Bahn":"[ˈɛsˌbaːn]",
+"Fußgänger":"[ˈfuːsˌɡɛŋɐ]","Autobahn":"[ˈaʊtoˌbaːn]","Fahrbahn":"[ˈfaːɐ̯ˌbaːn]",
+"Bürgersteig":"[ˈbʏɐ̯ɡɐˌʃtaɪk]","Fahrradweg":"[ˈfaːʁʁatˌveːk]",
+"Verkehrsmittel":"[fɛɐ̯ˈkeːɐ̯sˌmɪtəl]","benutzen":"[bəˈnʊtsən]",
+"Werkzeug":"[ˈvɛɐ̯kˌtsɔɪk]","Spielzeug":"[ˈʃpiːlˌtsɔɪk]",
+// L8 Gesundheit erweitert
+"erschöpft":"[ɛɐ̯ˈʃœpft]","übermüdet":"[ˌyːbɐˈmyːdət]",
+"überarbeitet":"[ˌyːbɐˈʔaɐ̯baɪtət]","überfordert":"[ˌyːbɐˈfɔɐ̯dɐt]",
+"gestresst":"[ɡəˈʃtʁɛst]","stressig":"[ˈʃtʁɛsɪç]",
+"sich erholen":"[ɛɐ̯ˈhoːlən]","sich entspannen":"[ɛntˈʃpanən]",
+"sich ausruhen":"[ˈaʊsˌʁuːən]","sich hinlegen":"[ˈhɪnˌleːɡən]",
+"sich bewegen":"[bəˈveːɡən]","Ernährung":"[ɛɐ̯ˈnɛːʁʊŋ]",
+"Arzneimittel":"[ˈaɐ̯tsnaɪˌmɪtəl]","regelmäßig":"[ˈʁeːɡəlˌmɛːsɪç]",
+// L8/L9 allgemein
+"nachdenken":"[ˈnaxˌdɛŋkən]","ausgeben":"[ˈaʊsˌɡeːbən]",
+"sich leisten":"[ˈlaɪstən]","umsonst":"[ʊmˈzɔnst]",
 // Lebensmittel
 "Apfel":"[ˈapfəl]","Banane":"[baˈnaːnə]","Brot":"[bʁoːt]","Butter":"[ˈbʊtɐ]",
 "Hähnchen":"[ˈhɛːnçən]","Joghurt":"[ˈjoːɡʊʁt]","Kaffee":"[ˈkafe]","Kartoffel":"[kaʁˈtɔfəl]",
@@ -2419,6 +2561,8 @@ function Woerterbuch(){
     {id:"Gesundheit",     label:"🏥 Gesundheit",        col:C.red},
     {id:"Körper",         label:"🫀 Körper",             col:C.purple},
     {id:"Berufe",         label:"👔 Berufe",              col:C.orange},
+    {id:"Notruf",         label:"🚨 Notruf",              col:C.red},
+    {id:"Verkehrsmittel", label:"🚗 Verkehrsmittel",      col:C.blue},
   ];
   const TYPEN=[
     {id:"all",     label:"Все",           col:C.teal},
@@ -6973,6 +7117,320 @@ function T8A(){
   );
 }
 
+const Q_L8D=[
+  {q:"Notruf-Nummer in Deutschland?",              opts:["119","110","112","115"],                                          ans:2, hint:"112 = EU-Notruf"},
+  {q:"verletzt = ?",                               opts:["раненый","мёртвый","больной","усталый"],                         ans:0, hint:"verletzt"},
+  {q:"dringend = ?",                               opts:["слишком","срочно","дорого","медленно"],                          ans:1, hint:"dringend"},
+  {q:"auflegen = ?",                               opts:["класть трубку","открыть дверь","ложиться","уходить"],            ans:0, hint:"auflegen"},
+  {q:"vorbeifahren = ?",                           opts:["заехать","остановиться","проехать мимо","ехать быстро"],         ans:2, hint:"vorbeifahren"},
+  {q:"anhalten = ?",                               opts:["позвонить","остановиться","уехать","помочь"],                    ans:1, hint:"anhalten"},
+  {q:"erste Hilfe leisten = ?",                    opts:["прибыть первым","оказывать первую помощь","звонить","бежать"],   ans:1, hint:"Erste Hilfe"},
+  {q:"der Notarzt = ?",                            opts:["врач скорой помощи","медсестра","участковый врач","специалист"], ans:0, hint:"Notarzt"},
+  {q:"1. вопрос Notruf-Schema = ?",               opts:["Was ist passiert?","Wo ist der Notfall?","Wer ruft an?","Wann?"],ans:2, hint:"Wer ruft an?"},
+  {q:"erschöpft = ?",                              opts:["скучный","изможденный","усталый (слегка)","стрессовый"],         ans:1, hint:"erschöpft"},
+  {q:"sich erholen = ?",                           opts:["устать","восстанавливаться","заболеть","беспокоиться"],          ans:1, hint:"sich erholen"},
+  {q:"'Es ist dringend!' — как перевести?",        opts:["Это дорого!","Это срочно!","Это опасно!","Это далеко!"],         ans:1, hint:"dringend"},
+];
+function T8D(){
+  const [tab,setTab]=useState("notruf");
+  const schema=[
+    {n:1,q:"Wer ruft an?",           bsp:"Mein Name ist Petrow."},
+    {n:2,q:"Was ist passiert?",       bsp:"Es gibt hier einen Unfall."},
+    {n:3,q:"Wo ist der Notfall?",     bsp:"Bahnhofstraße, Ecke Schillerstraße."},
+    {n:4,q:"Wie viele Personen sind verletzt?",bsp:"Ich glaube, drei Personen."},
+    {n:5,q:"Wie ist die Situation?",  bsp:"Bitte kommen Sie schnell, es ist dringend."},
+    {n:6,q:"Warten Sie auf Rückfragen!",bsp:"Legen Sie nicht auf!"},
+  ];
+  const hilfe=[
+    {icon:"🛑",de:"anhalten",                 ru:"остановиться",           imp:"Halten Sie an!"},
+    {icon:"🚗",de:"nicht vorbeifahren",        ru:"не проезжать мимо",       imp:"Fahren Sie nicht vorbei!"},
+    {icon:"🆘",de:"erste Hilfe leisten",       ru:"оказывать первую помощь", imp:"Leisten Sie erste Hilfe!"},
+    {icon:"📵",de:"nicht auflegen",            ru:"не класть трубку",        imp:"Legen Sie nicht auf!"},
+  ];
+  const erschoepft=[
+    {de:"erschöpft",    ru:"изможденный",     note:"о человеке"},
+    {de:"übermüdet",    ru:"переутомлённый",  note:"о человеке"},
+    {de:"überarbeitet", ru:"перетрудившийся", note:"о человеке"},
+    {de:"überfordert",  ru:"перегруженный",   note:"о человеке"},
+    {de:"gestresst",    ru:"в стрессе",       note:"о человеке"},
+    {de:"stressig",     ru:"стрессовый",      note:"о ситуации"},
+  ];
+  const tipps=[
+    {icon:"😴",de:"schlafen",                     ru:"высыпаться"},
+    {icon:"💊",de:"Vitamine einnehmen",            ru:"принимать витамины"},
+    {icon:"🏃",de:"sich bewegen / Sport treiben",  ru:"двигаться / заниматься спортом"},
+    {icon:"🥗",de:"die gesunde Ernährung",         ru:"здоровое питание"},
+    {icon:"💧",de:"Wasser trinken",                ru:"пить воду"},
+    {icon:"🌴",de:"Urlaub / sich erholen",         ru:"отпуск / восстанавливаться"},
+  ];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.red}>
+        <H c={C.red}>🚨 D/E · Notruf 112 & Gesundheit</H>
+        <div style={{display:"flex",gap:6,marginBottom:12}}>
+          {[["notruf","Notruf 112"],["hilfe","Erste Hilfe"],["erschoepft","Erschöpft?"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,padding:"9px 4px",borderRadius:9,border:"none",cursor:"pointer",
+                fontSize:10,fontWeight:700,
+                background:tab===key?C.red+"33":"transparent",
+                color:tab===key?C.red:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="notruf"&&(
+          <div>
+            <div style={{background:C.red+"15",border:`1px solid ${C.red}33`,
+              borderRadius:10,padding:"10px 12px",marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.red,marginBottom:6}}>
+                📞 Wie macht man einen Notruf?
+              </div>
+              <div style={{fontSize:11,color:C.muted,marginBottom:10}}>
+                Sprechen Sie langsam und deutlich!
+              </div>
+              {schema.map(({n,q,bsp})=>(
+                <div key={n} style={{display:"flex",gap:8,marginBottom:7,
+                  background:"rgba(255,255,255,.04)",borderRadius:8,padding:"8px 10px"}}>
+                  <div style={{minWidth:22,height:22,background:C.red,borderRadius:"50%",
+                    display:"flex",alignItems:"center",justifyContent:"center",
+                    fontSize:11,fontWeight:800,color:"#fff",flexShrink:0}}>{n}</div>
+                  <div>
+                    <div style={{fontWeight:700,fontSize:12,color:C.text}}>{q}</div>
+                    <div style={{fontSize:11,color:C.muted,fontStyle:"italic"}}>{bsp}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div style={{background:C.card2,borderRadius:8,padding:"9px 11px"}}>
+              <div style={{fontWeight:700,fontSize:11,color:C.muted,marginBottom:6}}>☎️ Wichtige Nummern</div>
+              {[["112","Notruf / Rettungsdienst (EU)"],["110","Polizei"],["116 117","Ärztl. Bereitschaftsdienst"]].map(([n,t])=>(
+                <div key={n} style={{display:"flex",justifyContent:"space-between",
+                  padding:"5px 0",fontSize:12,borderBottom:`1px solid ${C.border}22`}}>
+                  <span style={{fontWeight:800,color:C.red,fontSize:14}}>{n}</span>
+                  <span style={{color:C.text}}>{t}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+        {tab==="hilfe"&&(
+          <div>
+            <div style={{fontSize:11,color:C.muted,marginBottom:10,fontStyle:"italic"}}>
+              Bei einem Unfall — Was muss man tun?
+            </div>
+            {hilfe.map(h=>(
+              <div key={h.de} style={{background:C.card2,borderRadius:9,padding:"10px 12px",marginBottom:6}}>
+                <div style={{display:"flex",gap:8,alignItems:"center",marginBottom:5}}>
+                  <span style={{fontSize:22}}>{h.icon}</span>
+                  <div>
+                    <div style={{fontWeight:800,color:C.text,fontSize:13}}>{h.de}</div>
+                    <div style={{color:C.muted,fontSize:11}}>{h.ru}</div>
+                  </div>
+                </div>
+                <div style={{fontSize:12,color:C.red,fontStyle:"italic",fontWeight:600,paddingLeft:30}}>
+                  → {h.imp}
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+        {tab==="erschoepft"&&(
+          <div>
+            <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,
+              borderRadius:10,padding:"10px 12px",marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:12,color:C.orange,marginBottom:8}}>
+                😓 Wie fühle ich mich? — Adjektive
+              </div>
+              <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:5}}>
+                {erschoepft.map(e=>(
+                  <div key={e.de} style={{background:"rgba(255,255,255,.04)",borderRadius:7,padding:"7px 9px"}}>
+                    <div style={{fontWeight:700,color:C.orange,fontSize:12}}>{e.de}</div>
+                    <div style={{color:C.muted,fontSize:11}}>{e.ru}</div>
+                    <div style={{color:C.muted,fontSize:10,fontStyle:"italic"}}>{e.note}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div style={{background:C.green+"15",border:`1px solid ${C.green}33`,
+              borderRadius:10,padding:"10px 12px"}}>
+              <div style={{fontWeight:800,fontSize:12,color:C.green,marginBottom:8}}>
+                💪 Tipps für die Gesundheit
+              </div>
+              {tipps.map(t=>(
+                <div key={t.de} style={{display:"flex",gap:8,alignItems:"center",marginBottom:5,fontSize:12}}>
+                  <span style={{fontSize:16}}>{t.icon}</span>
+                  <span style={{color:C.text,fontWeight:600}}>{t.de}</span>
+                  <span style={{color:C.muted}}>— {t.ru}</span>
+                </div>
+              ))}
+              <div style={{marginTop:8,background:C.card2,borderRadius:7,padding:"7px 10px",
+                fontSize:11,color:C.muted,lineHeight:1.7}}>
+                sich erholen = восстанавливаться<br/>
+                sich entspannen = расслабляться<br/>
+                sich ausruhen = отдыхать
+              </div>
+            </div>
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
+const Q_L9A=[
+  {q:"'Ich fahre mit ___ Zug.' (m, Dativ)",        opts:["der","dem","den","das"],                                        ans:1, hint:"mit + Dativ: m/n → dem"},
+  {q:"'Ich fahre mit ___ Straßenbahn.' (f, Dativ)", opts:["der","dem","den","die"],                                       ans:0, hint:"mit + Dativ: f → der"},
+  {q:"Пешком = ?",                                  opts:["mit dem Fuß","zu Fuß","mit Fuß","per Fuß"],                    ans:1, hint:"zu Fuß — исключение!"},
+  {q:"das Fahrrad, Plural = ?",                     opts:["Fahrrades","Fahrräder","Fahrräde","Fahrrads"],                 ans:1, hint:"Fahrrad → Fahrräder"},
+  {q:"die S-Bahn = ?",                              opts:["метро","трамвай","городская электричка","автобус"],             ans:2, hint:"S-Bahn"},
+  {q:"die U-Bahn = ?",                              opts:["трамвай","метро","автобус","электричка"],                      ans:1, hint:"U-Bahn"},
+  {q:"benutzen = ?",                                opts:["покупать","использовать","ехать","останавливаться"],           ans:1, hint:"benutzen"},
+  {q:"teuer ↔ ?",                                   opts:["schnell","bequem","billig","langsam"],                         ans:2, hint:"teuer ↔ billig"},
+  {q:"bequem ↔ ?",                                  opts:["teuer","langsam","gesund","unbequem"],                         ans:3, hint:"bequem ↔ unbequem"},
+  {q:"'Das Fahrrad ist ___.' (полезный для здоровья)", opts:["teuer","schnell","gesund","praktisch"],                    ans:2, hint:"gesund"},
+  {q:"der Bürgersteig = ?",                         opts:["проезжая часть","автострада","тротуар","велодорожка"],         ans:2, hint:"Bürgersteig"},
+  {q:"'Ich fahre mit ___ Auto.' (n, Dativ)",        opts:["dem","der","den","das"],                                       ans:0, hint:"mit + Dativ: n → dem"},
+];
+function T9A(){
+  const [tab,setTab]=useState("mittel");
+  const mittel=[
+    {icon:"🚗",de:"das Auto",        pl:"-s",          mit:"mit dem Auto"},
+    {icon:"🚲",de:"das Fahrrad",     pl:"Fahrräder",   mit:"mit dem Fahrrad"},
+    {icon:"🏍️",de:"das Motorrad",    pl:"Motorräder",  mit:"mit dem Motorrad"},
+    {icon:"🚌",de:"der Bus",         pl:"-se",         mit:"mit dem Bus"},
+    {icon:"🚂",de:"der Zug",         pl:"Züge",        mit:"mit dem Zug"},
+    {icon:"✈️",de:"das Flugzeug",    pl:"-e",          mit:"mit dem Flugzeug"},
+    {icon:"🚢",de:"das Schiff",      pl:"-e",          mit:"mit dem Schiff"},
+    {icon:"🚃",de:"die Straßenbahn", pl:"-en",         mit:"mit der Straßenbahn"},
+    {icon:"🚇",de:"die U-Bahn",      pl:"-en",         mit:"mit der U-Bahn"},
+    {icon:"🚆",de:"die S-Bahn",      pl:"-en",         mit:"mit der S-Bahn"},
+    {icon:"🚶",de:"der Fußgänger",   pl:"-",           mit:"zu Fuß (!)"},
+  ];
+  const adjPairs=[
+    ["teuer","billig","дорогой","дешёвый"],
+    ["schnell","langsam","быстрый","медленный"],
+    ["bequem","unbequem","удобный","неудобный"],
+    ["praktisch","—","практичный","—"],
+    ["gesund","—","полезный для здоровья","—"],
+  ];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.blue}>
+        <H c={C.blue}>🚗 L9A · Wege durch die Stadt</H>
+        <div style={{display:"flex",gap:6,marginBottom:12}}>
+          {[["mittel","Verkehrsmittel"],["dativ","mit + Dativ"],["adj","Adjektive"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,padding:"9px 4px",borderRadius:9,border:"none",cursor:"pointer",
+                fontSize:10,fontWeight:700,
+                background:tab===key?C.blue+"33":"transparent",
+                color:tab===key?C.blue:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="mittel"&&(
+          <div style={{display:"flex",flexDirection:"column",gap:5}}>
+            {mittel.map(m=>(
+              <div key={m.de} style={{display:"flex",justifyContent:"space-between",
+                alignItems:"center",background:C.card2,borderRadius:8,padding:"8px 11px"}}>
+                <div style={{display:"flex",gap:8,alignItems:"center"}}>
+                  <span style={{fontSize:20}}>{m.icon}</span>
+                  <div>
+                    <div style={{fontWeight:700,fontSize:12,color:C.text}}>{m.de}</div>
+                    <div style={{fontSize:11,color:C.muted}}>pl: {m.pl}</div>
+                  </div>
+                </div>
+                <div style={{fontWeight:600,fontSize:12,color:C.blue,textAlign:"right"}}>{m.mit}</div>
+              </div>
+            ))}
+          </div>
+        )}
+        {tab==="dativ"&&(
+          <div>
+            <div style={{background:C.blue+"15",border:`1px solid ${C.blue}33`,
+              borderRadius:10,padding:"12px 14px",marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.blue,marginBottom:10}}>
+                mit + Dativ (чем? на чём?)
+              </div>
+              <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:5,marginBottom:12}}>
+                {[["m / n","dem"],["f","der"],["Pl.","den + -n"]].map(([g,f])=>(
+                  <div key={g} style={{background:"rgba(255,255,255,.06)",borderRadius:7,
+                    padding:"7px 8px",textAlign:"center"}}>
+                    <div style={{fontSize:10,color:C.muted}}>{g}</div>
+                    <div style={{fontWeight:800,color:C.blue,fontSize:14}}>{f}</div>
+                  </div>
+                ))}
+              </div>
+              {[
+                ["mit dem Zug","на поезде"],
+                ["mit dem Auto","на машине"],
+                ["mit dem Fahrrad","на велосипеде"],
+                ["mit der Straßenbahn","на трамвае"],
+                ["mit der U-Bahn","на метро"],
+                ["mit der S-Bahn","на электричке"],
+              ].map(([de,ru])=>(
+                <div key={de} style={{display:"flex",justifyContent:"space-between",
+                  padding:"5px 8px",background:"rgba(255,255,255,.04)",
+                  borderRadius:7,marginBottom:4,fontSize:12}}>
+                  <span style={{fontWeight:700,color:C.text}}>{de}</span>
+                  <span style={{color:C.muted}}>{ru}</span>
+                </div>
+              ))}
+            </div>
+            <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,
+              borderRadius:9,padding:"10px 12px"}}>
+              <div style={{fontWeight:700,fontSize:12,color:C.orange,marginBottom:5}}>
+                ⚠️ Ausnahme: zu Fuß!
+              </div>
+              <div style={{fontSize:12,color:C.text,marginBottom:5}}>
+                Пешком = <b style={{color:C.orange}}>zu Fuß</b> (не "mit dem Fuß"!)
+              </div>
+              <div style={{fontSize:11,color:C.muted,fontStyle:"italic"}}>
+                Ich gehe zu Fuß. — Ich fahre mit dem Fahrrad.
+              </div>
+            </div>
+          </div>
+        )}
+        {tab==="adj"&&(
+          <div>
+            <div style={{fontSize:11,color:C.muted,marginBottom:10}}>Какой транспорт лучше?</div>
+            {adjPairs.map(([a,b,rua,rub])=>(
+              <div key={a} style={{display:"flex",gap:6,marginBottom:6}}>
+                <div style={{flex:1,background:C.green+"15",border:`1px solid ${C.green}33`,
+                  borderRadius:8,padding:"8px 10px",textAlign:"center"}}>
+                  <div style={{fontWeight:800,color:C.green,fontSize:13}}>{a}</div>
+                  <div style={{color:C.muted,fontSize:11}}>{rua}</div>
+                </div>
+                {b!=="—"&&(
+                  <div style={{flex:1,background:C.red+"15",border:`1px solid ${C.red}33`,
+                    borderRadius:8,padding:"8px 10px",textAlign:"center"}}>
+                    <div style={{fontWeight:800,color:C.red,fontSize:13}}>{b}</div>
+                    <div style={{color:C.muted,fontSize:11}}>{rub}</div>
+                  </div>
+                )}
+              </div>
+            ))}
+            <div style={{background:C.card2,borderRadius:8,padding:"9px 11px",marginTop:4}}>
+              <div style={{fontSize:11,color:C.muted,marginBottom:6}}>💬 Beispiele:</div>
+              {[
+                ["Das Fahrrad ist gesund, aber langsam.","Велосипед полезный, но медленный."],
+                ["Die U-Bahn ist schnell und praktisch.","Метро быстрое и практичное."],
+                ["Das Auto ist bequem, aber teuer.","Машина удобная, но дорогая."],
+              ].map(([de,ru])=>(
+                <div key={de} style={{marginBottom:5,fontSize:12,
+                  background:"rgba(255,255,255,.04)",borderRadius:6,padding:"5px 8px"}}>
+                  <div style={{color:C.text,fontWeight:600}}>{de}</div>
+                  <div style={{color:C.muted,fontSize:11}}>{ru}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
 const Q_L6A=[
   {q:"Welcher Artikel hat 'Apfel'?",          opts:["der","die","das"],                                                                     ans:0, hint:"Artikel"},
   {q:"Welcher Artikel hat 'Milch'?",          opts:["der","die","das"],                                                                     ans:1, hint:"Artikel"},
@@ -7163,13 +7621,22 @@ const LEKTIONEN=[
   },
   {
     id:"L8",num:"8",title:"Gute Besserung!",
-    sub:"A Beim Arzt · B Pronomen Akk · C sollte · Gesundheit in DE",
-    date:"Seite 83–95",col:C.red,
+    sub:"A Beim Arzt · B Pronomen Akk · C sollte · D/E Notruf 112",
+    date:"Seite 83–99",col:C.red,
     sections:[
       {id:"d8",  icon:"💬",title:"Dialogfragen L8",             sub:"Фразы для диалога",                                    time:"∞",     col:C.purple, hasT:false, th:null,           ex:()=><DialogCards lId="L8"/>},
       {id:"8a",  icon:"🏥",title:"A · Beim Arzt",               sub:"Körperteile · sollen · Dialog Arzttermin",             time:"7 мин", col:C.red,    hasT:true,  th:()=><T8A/>,     ex:()=><Quiz questions={Q_L8A}/>},
       {id:"8b",  icon:"🔄",title:"B · Personalpronomen Akk.",   sub:"ich→mich · du→dich · er→ihn · wir→uns",               time:"5 мин", col:C.orange, hasT:true,  th:()=><T8B/>,     ex:()=><Quiz questions={Q_L8B}/>},
       {id:"8c",  icon:"💊",title:"C · sollte & Gesundheit",     sub:"Konjunktiv II · Krankenkasse · Kinderkrankheiten",     time:"5 мин", col:C.teal,   hasT:true,  th:()=><T8C/>,     ex:()=><Quiz questions={Q_L8C}/>},
+      {id:"8d",  icon:"🚨",title:"D/E · Notruf 112 & Erschöpft",sub:"112-Schema · Erste Hilfe · erschöpft/gestresst · Tipps",time:"6 мин", col:C.red,    hasT:true,  th:()=><T8D/>,     ex:()=><Quiz questions={Q_L8D}/>},
+    ]
+  },
+  {
+    id:"L9",num:"9",title:"Wege durch die Stadt",
+    sub:"A Verkehrsmittel · mit + Dativ · Adjektive",
+    date:"Seite 93–",col:C.blue,
+    sections:[
+      {id:"9a",  icon:"🚗",title:"A · Wege durch die Stadt",    sub:"Verkehrsmittel · mit + Dativ · teuer/billig/schnell",  time:"6 мин", col:C.blue,   hasT:true,  th:()=><T9A/>,     ex:()=><Quiz questions={Q_L9A}/>},
     ]
   },
 ];
