@@ -900,6 +900,7 @@ const WBDATA=[
   {art:"der", de:"Fahrradweg",      pl:"-e",           ru:"велодорожка",                                 tema:"Verkehrsmittel"},
   {art:"das", de:"Verkehrsmittel",  pl:"Verkehrsmittel", ru:"транспортное средство (pl: Verkehrsmittel = виды транспорта)", tema:"Verkehrsmittel"},
   {art:"",   de:"benutzen",         pl:"—",            ru:"использовать, пользоваться",                  tema:"Verkehrsmittel"},
+  {art:"",   de:"fliegen",          pl:"—",            ru:"летать",                                      tema:"Verkehrsmittel"},
   // ── L8/L9 · Allgemein ────────────────────────────────────────────────────────
   {art:"das", de:"Werkzeug",        pl:"-e",           ru:"инструмент, орудие · das Zeug = вещи"},
   {art:"das", de:"Spielzeug",       pl:"-e",           ru:"игрушка · das Zeug = вещи"},
@@ -918,11 +919,71 @@ const WBDATA=[
   {art:"die", de:"Ernährung",       pl:"—",            ru:"питание, рацион",                             tema:"Gesundheit"},
   {art:"das", de:"Arzneimittel",    pl:"Arzneimittel", ru:"лекарственное средство (фарм.)",              tema:"Gesundheit"},
   {art:"",   de:"regelmäßig",       pl:"—",            ru:"регулярный; регулярно",                       tema:"Gesundheit"},
+  {art:"",   de:"dick",             pl:"—",            ru:"толстый; жирный",                             tema:"Gesundheit"},
+  {art:"",   de:"häufig",           pl:"—",            ru:"часто, нередко",                              tema:"Gesundheit"},
+  {art:"das", de:"Gewicht",         pl:"Gewichte",     ru:"вес · zu viel Gewicht = лишний вес",          tema:"Gesundheit"},
+  {art:"die", de:"Süßigkeiten",     pl:"—",            ru:"сладости, конфеты (только мн.ч.)",            tema:"Gesundheit"},
+  {art:"",   de:"selbst",           pl:"—",            ru:"сам, сама, само (emphatic)"},
   // ── L8/L9 · Trennbare Verben / Phrase ────────────────────────────────────────
   {art:"",   de:"nachdenken",       pl:"—",            ru:"думать, размышлять (über +Akk = о чём-то)",  tema:"Trennbare Verben"},
   {art:"",   de:"ausgeben",         pl:"—",            ru:"тратить (деньги)",                            tema:"Trennbare Verben"},
   {art:"",   de:"sich leisten",     pl:"—",            ru:"позволить себе (купить / сделать что-то)"},
   {art:"",   de:"umsonst",          pl:"—",            ru:"бесплатно; зря, напрасно"},
+  // ── Körper erweitert (pp.102-103) ─────────────────────────────────────────────
+  {art:"der", de:"Ellbogen",        pl:"-",            ru:"локоть",                                      tema:"Körper"},
+  {art:"der", de:"Unterschenkel",   pl:"-",            ru:"голень",                                      tema:"Körper"},
+  {art:"der", de:"Oberschenkel",    pl:"-",            ru:"бедро",                                       tema:"Körper"},
+  {art:"der", de:"Muskel",          pl:"-n",           ru:"мышца",                                       tema:"Körper"},
+  {art:"der", de:"Zeh",             pl:"-en",          ru:"палец ноги",                                  tema:"Körper"},
+  {art:"die", de:"Augenbraue",      pl:"-n",           ru:"бровь",                                       tema:"Körper"},
+  {art:"die", de:"Wimper",          pl:"-n",           ru:"ресница",                                     tema:"Körper"},
+  {art:"die", de:"Wirbelsäule",     pl:"—",            ru:"позвоночник",                                 tema:"Körper"},
+  {art:"das", de:"Herz",            pl:"-en",          ru:"сердце",                                      tema:"Körper"},
+  {art:"die", de:"Leber",           pl:"—",            ru:"печень",                                      tema:"Körper"},
+  {art:"der", de:"Magen",           pl:"Mägen",        ru:"желудок",                                     tema:"Körper"},
+  // ── Gesundheit L8 добавки ─────────────────────────────────────────────────────
+  {art:"die", de:"Kontrolle",       pl:"-n",           ru:"осмотр, проверка, контроль",                  tema:"Gesundheit"},
+  {art:"",   de:"untersuchen",      pl:"—",            ru:"обследовать, осматривать (пациента)",         tema:"Gesundheit"},
+  {art:"",   de:"sich krankmelden", pl:"—",            ru:"сообщать о болезни (работодателю)",           tema:"Gesundheit"},
+  // ── Notruf L8E добавки ────────────────────────────────────────────────────────
+  {art:"das", de:"Feuer",           pl:"—",            ru:"огонь; пожар",                                tema:"Notruf"},
+  {art:"die", de:"Feuerwehr",       pl:"-en",          ru:"пожарная служба",                             tema:"Notruf"},
+  {art:"der", de:"Krankenwagen",    pl:"-",            ru:"машина скорой помощи",                        tema:"Notruf"},
+  {art:"",   de:"zusammenstoßen",   pl:"—",            ru:"сталкиваться",                                tema:"Notruf"},
+  // ── Verkehrsmittel L9 добавки ─────────────────────────────────────────────────
+  {art:"",   de:"umsteigen",        pl:"—",            ru:"пересаживаться, делать пересадку",            tema:"Verkehrsmittel"},
+  {art:"der", de:"Lkw",             pl:"-s",           ru:"грузовик (Lastkraftwagen)",                   tema:"Verkehrsmittel"},
+  {art:"",   de:"parken",           pl:"—",            ru:"парковаться",                                 tema:"Verkehrsmittel"},
+  {art:"",   de:"hupen",            pl:"—",            ru:"сигналить",                                   tema:"Verkehrsmittel"},
+  {art:"",   de:"weiterfahren",     pl:"—",            ru:"продолжать ехать",                            tema:"Verkehrsmittel"},
+  {art:"",   de:"blinken",          pl:"—",            ru:"мигать (поворотник)",                         tema:"Verkehrsmittel"},
+  {art:"die", de:"Vorfahrt",        pl:"—",            ru:"право первого проезда, приоритет",            tema:"Verkehrsmittel"},
+  // ── In der Stadt L9B ──────────────────────────────────────────────────────────
+  {art:"die", de:"Kreuzung",        pl:"-en",          ru:"перекрёсток",                                 tema:"InDerStadt"},
+  {art:"die", de:"Schule",          pl:"-n",           ru:"школа",                                       tema:"InDerStadt"},
+  {art:"der", de:"Bahnhof",         pl:"Bahnhöfe",     ru:"вокзал, железнодорожная станция",              tema:"InDerStadt"},
+  {art:"die", de:"Ampel",           pl:"-n",           ru:"светофор",                                    tema:"InDerStadt"},
+  {art:"die", de:"Ecke",            pl:"-n",           ru:"угол; угол улицы · um die Ecke = за углом",  tema:"InDerStadt"},
+  {art:"der", de:"Kreisverkehr",    pl:"-e",           ru:"круговое движение, кольцо",                   tema:"InDerStadt"},
+  {art:"die", de:"Ausfahrt",        pl:"-en",          ru:"выезд, съезд (с кольца)",                    tema:"InDerStadt"},
+  {art:"die", de:"Stunde",          pl:"-n",           ru:"час (единица времени)",                       tema:"InDerStadt"},
+  {art:"die", de:"Minute",          pl:"-n",           ru:"минута",                                      tema:"InDerStadt"},
+  {art:"",   de:"geradeaus",        pl:"—",            ru:"прямо",                                       tema:"InDerStadt"},
+  {art:"",   de:"gegenüber",        pl:"—",            ru:"напротив · gegenüber dem Bahnhof",            tema:"InDerStadt"},
+  {art:"",   de:"abbiegen",         pl:"—",            ru:"поворачивать · links/rechts abbiegen",        tema:"InDerStadt"},
+  {art:"",   de:"sich verfahren",   pl:"—",            ru:"заблудиться (на машине/транспорте)",          tema:"InDerStadt"},
+  {art:"",   de:"sich verlaufen",   pl:"—",            ru:"заблудиться (пешком)",                        tema:"InDerStadt"},
+  {art:"",   de:"einige",           pl:"—",            ru:"несколько, некоторые"},
+  // ── Führerschein L9C ──────────────────────────────────────────────────────────
+  {art:"der", de:"Führerschein",    pl:"-e",           ru:"водительское удостоверение, права",           tema:"Fuehrerschein"},
+  {art:"",   de:"dürfen",           pl:"—",            ru:"иметь право, быть разрешено · ich darf",     tema:"Fuehrerschein"},
+  {art:"",   de:"erlauben",         pl:"—",            ru:"разрешать",                                   tema:"Fuehrerschein"},
+  {art:"",   de:"verbieten",        pl:"—",            ru:"запрещать",                                   tema:"Fuehrerschein"},
+  {art:"",   de:"erkennen",         pl:"—",            ru:"признавать; узнавать",                        tema:"Fuehrerschein"},
+  {art:"die", de:"Anerkennung",     pl:"—",            ru:"признание, подтверждение",                    tema:"Fuehrerschein"},
+  {art:"",   de:"ausländisch",      pl:"—",            ru:"иностранный",                                 tema:"Fuehrerschein"},
+  {art:"der", de:"Ausländer",       pl:"-",            ru:"иностранец · f. die Ausländerin",             tema:"Fuehrerschein"},
+  {art:"die", de:"Behörde",         pl:"-n",           ru:"орган власти, ведомство",                     tema:"Fuehrerschein"},
 ];
 
 
@@ -1243,6 +1304,7 @@ const KONJ_ALL={
   erklären:   {col:C.teal,  bg:C.tealBg,   ich:"erkläre",   du:"erklärst",   "er/sie/es":"erklärt",   wir:"erklären", ihr:"erklärt",  "sie/Sie":"erklären"},
   schicken:   {col:C.teal,  bg:C.tealBg,   ich:"schicke",   du:"schickst",   "er/sie/es":"schickt",   wir:"schicken", ihr:"schickt",  "sie/Sie":"schicken"},
   benutzen:   {col:C.teal,  bg:C.tealBg,   ich:"benutze",   du:"benutzt",    "er/sie/es":"benutzt",   wir:"benutzen", ihr:"benutzt",  "sie/Sie":"benutzen"},
+  fliegen:    {col:C.teal,  bg:C.tealBg,   ich:"fliege",    du:"fliegst",    "er/sie/es":"fliegt",    wir:"fliegen",  ihr:"fliegt",   "sie/Sie":"fliegen"},
   auflegen:   {pref:"auf",  col:C.orange, bg:C.orangeBg,
     ich:"lege … auf",   du:"legst … auf",   "er/sie/es":"legt … auf",
     wir:"legen … auf",  ihr:"legt … auf",   "sie/Sie":"legen … auf"},
@@ -1277,6 +1339,48 @@ const KONJ_ALL={
     ich:"leiste mir",     du:"leistest dir",    "er/sie/es":"leistet sich",
     wir:"leisten uns",    ihr:"leistet euch",   "sie/Sie":"leisten sich",
     imp:{du:"Leiste dir!",    ihr:"Leistet euch!",   Sie:"Leisten Sie sich!"}},
+  // L8 Gesundheit
+  untersuchen: {col:C.teal, bg:C.tealBg,
+    ich:"untersuche",  du:"untersuchst", "er/sie/es":"untersucht",
+    wir:"untersuchen", ihr:"untersucht", "sie/Sie":"untersuchen"},
+  // L8E Notruf
+  zusammenstoßen:{pref:"zusammen", col:C.red, bg:C.redBg, note:"sto\u00DF→st\u00F6\u00DFt",
+    ich:"sto\u00DFe … zusammen",  du:"st\u00F6\u00DFt … zusammen", "er/sie/es":"st\u00F6\u00DFt … zusammen",
+    wir:"sto\u00DFen … zusammen", ihr:"sto\u00DFt … zusammen",     "sie/Sie":"sto\u00DFen … zusammen"},
+  // L9 Verkehr
+  umsteigen:  {pref:"um",     col:C.orange, bg:C.orangeBg,
+    ich:"steige … um",   du:"steigst … um",   "er/sie/es":"steigt … um",
+    wir:"steigen … um",  ihr:"steigt … um",   "sie/Sie":"steigen … um"},
+  weiterfahren:{pref:"weiter",col:C.blue,   bg:C.blueBg,  note:"a→ä",
+    ich:"fahre … weiter",  du:"fährst … weiter",  "er/sie/es":"fährt … weiter",
+    wir:"fahren … weiter", ihr:"fahrt … weiter",  "sie/Sie":"fahren … weiter"},
+  parken:     {col:C.teal,   bg:C.tealBg,
+    ich:"parke",     du:"parkst",     "er/sie/es":"parkt",     wir:"parken",   ihr:"parkt",    "sie/Sie":"parken"},
+  hupen:      {col:C.teal,   bg:C.tealBg,
+    ich:"hupe",      du:"hupst",      "er/sie/es":"hupt",      wir:"hupen",    ihr:"hupt",     "sie/Sie":"hupen"},
+  blinken:    {col:C.teal,   bg:C.tealBg,
+    ich:"blinke",    du:"blinkst",    "er/sie/es":"blinkt",    wir:"blinken",  ihr:"blinkt",   "sie/Sie":"blinken"},
+  // L9B In der Stadt
+  abbiegen:   {pref:"ab",    col:C.purple, bg:C.purpleBg,
+    ich:"biege … ab",    du:"biegst … ab",    "er/sie/es":"biegt … ab",
+    wir:"biegen … ab",   ihr:"biegt … ab",    "sie/Sie":"biegen … ab"},
+  "sich verfahren":{col:C.teal, bg:C.tealBg, note:"a→ä | Reflexiv",
+    ich:"verfahre mich",   du:"verfährst dich",   "er/sie/es":"verfährt sich",
+    wir:"verfahren uns",   ihr:"verfahrt euch",   "sie/Sie":"verfahren sich",
+    imp:{du:"Verfahre dich nicht!", ihr:"Verfahrt euch nicht!", Sie:"Verfahren Sie sich nicht!"}},
+  "sich verlaufen":{col:C.teal, bg:C.tealBg, note:"a→ä | Reflexiv",
+    ich:"verlaufe mich",   du:"verläufst dich",   "er/sie/es":"verläuft sich",
+    wir:"verlaufen uns",   ihr:"verlauft euch",   "sie/Sie":"verlaufen sich",
+    imp:{du:"Verlaube dich nicht!", ihr:"Verlauft euch nicht!", Sie:"Verlaufen Sie sich nicht!"}},
+  // L9C Führerschein
+  dürfen:     {col:C.purple, bg:C.purpleBg, note:"Modalverb",
+    ich:"darf",     du:"darfst",    "er/sie/es":"darf",     wir:"dürfen",   ihr:"dürft",    "sie/Sie":"dürfen"},
+  erlauben:   {col:C.teal,   bg:C.tealBg,
+    ich:"erlaube",   du:"erlaubst",   "er/sie/es":"erlaubt",   wir:"erlauben", ihr:"erlaubt",  "sie/Sie":"erlauben"},
+  verbieten:  {col:C.red,    bg:C.redBg,
+    ich:"verbiete",  du:"verbietest", "er/sie/es":"verbietet", wir:"verbieten",ihr:"verbietet","sie/Sie":"verbieten"},
+  erkennen:   {col:C.teal,   bg:C.tealBg,
+    ich:"erkenne",   du:"erkennst",   "er/sie/es":"erkennt",   wir:"erkennen", ihr:"erkennt",  "sie/Sie":"erkennen"},
   // L8/L9 allgemein
   nachdenken:  {pref:"nach", col:C.teal,  bg:C.tealBg,
     ich:"denke … nach",   du:"denkst … nach",   "er/sie/es":"denkt … nach",
@@ -1428,7 +1532,7 @@ const STRESS_MARKS={
 "Straßenbahn":"Stra\u0301ßenbahn","U-Bahn":"U\u0301-Bahn","S-Bahn":"S-Ba\u0301hn",
 "Fußgänger":"Fu\u0301ßg\u00E4nger","Autobahn":"A\u0301utobahn","Fahrbahn":"Fa\u0301hrbahn",
 "Bürgersteig":"B\u00FC\u0301rgersteig","Fahrradweg":"Fa\u0301hrradweg",
-"Verkehrsmittel":"Verke\u0301hrsmittel","benutzen":"benu\u0301tzen",
+"Verkehrsmittel":"Verke\u0301hrsmittel","benutzen":"benu\u0301tzen","fliegen":"flie\u0301gen",
 "Werkzeug":"We\u0301rkzeug","Spielzeug":"Spie\u0301lzeug",
 // L8 Gesundheit erweitert
 "erschöpft":"ersch\u00F6\u0301pft","übermüdet":"\u00FCberm\u00FC\u0301det",
@@ -1437,10 +1541,31 @@ const STRESS_MARKS={
 "sich erholen":"sich erho\u0301len","sich entspannen":"sich entspan\u0301nen",
 "sich ausruhen":"sich a\u0301usruhen","sich hinlegen":"sich hi\u0301nlegen",
 "sich bewegen":"sich bewe\u0301gen","Ernährung":"Ern\u00E4\u0301hrung",
-"Arzneimittel":"A\u0301rzneimittel","regelmäßig":"re\u0301gelm\u00E4\u00DFig",
+"Arzneimittel":"A\u0301rzneimittel","regelmäßig":"re\u0301gelm\u00E4\u00DFig","dick":"di\u0301ck","häufig":"h\u00E4\u0301ufig","Gewicht":"Gewi\u0301cht","S\u00FC\u00DFigkeiten":"S\u00FC\u0301\u00DFigkeiten","selbst":"se\u0301lbst",
 // L8/L9 allgemein
 "nachdenken":"na\u0301chdenken","ausgeben":"a\u0301usgeben",
 "sich leisten":"sich le\u0301isten","umsonst":"umso\u0301nst",
+// Körper
+"Ellbogen":"E\u0301llbogen","Unterschenkel":"U\u0301nterschenkel","Oberschenkel":"O\u0301berschenkel",
+"Muskel":"Mu\u0301skel","Zeh":"Ze\u0301h","Augenbraue":"A\u0301ugenbraue","Wimper":"Wi\u0301mper",
+"Wirbels\u00E4ule":"Wi\u0301rbels\u00E4ule","Herz":"He\u0301rz","Leber":"Le\u0301ber","Magen":"Ma\u0301gen",
+// Gesundheit
+"Kontrolle":"Kontro\u0301lle","untersuchen":"untersu\u0301chen","sich krankmelden":"sich kra\u0301nkmelden",
+// Notruf
+"Feuer":"Fe\u0301uer","Feuerwehr":"Fe\u0301uerwehr","Krankenwagen":"Kra\u0301nkenwagen",
+"zusammensto\u00DFen":"zusa\u0301mmensto\u00DFen",
+// Verkehrsmittel
+"umsteigen":"u\u0301msteigen","Lkw":"L\u0301kw","parken":"pa\u0301rken","hupen":"hu\u0301pen",
+"weiterfahren":"we\u0301iterfahren","blinken":"bli\u0301nken","Vorfahrt":"Vo\u0301rfahrt",
+// In der Stadt
+"Kreuzung":"Kre\u0301uzung","Schule":"Schu\u0301le","Bahnhof":"Ba\u0301hnhof","Ampel":"A\u0301mpel","Ecke":"E\u0301cke","Kreisverkehr":"Kre\u0301isverkehr",
+"Ausfahrt":"A\u0301usfahrt","Stunde":"Stu\u0301nde","Minute":"Minu\u0301te",
+"geradeaus":"geradeaus\u0301","gegen\u00FCber":"ge\u0301gen\u00FCber","abbiegen":"a\u0301bbiegen",
+"sich verfahren":"sich verfa\u0301hren","sich verlaufen":"sich verla\u0301ufen","einige":"ei\u0301nige",
+// Führerschein
+"F\u00FChrerschein":"F\u00FC\u0301hrerschein","d\u00FCrfen":"d\u00FC\u0301rfen","erlauben":"erla\u0301uben",
+"verbieten":"verbie\u0301ten","erkennen":"erke\u0301nnen","Anerkennung":"Anerke\u0301nnung",
+"ausl\u00E4ndisch":"ausl\u00E4\u0301ndisch","Ausl\u00E4nder":"Ausl\u00E4\u0301nder","Beh\u00F6rde":"Beh\u00F6\u0301rde",
 // Lebensmittel
 "Apfel":"A\u0301pfel","Banane":"Bana\u0301ne","Brot":"Bro\u0301t","Butter":"Bu\u0301tter",
 "Hähnchen":"H\u00E4\u0301hnchen","Joghurt":"Jo\u0301ghurt","Kaffee":"Ka\u0301ffee",
@@ -1679,7 +1804,7 @@ const IPA_DATA={
 "Straßenbahn":"[ˈʃtʁaːsənˌbaːn]","U-Bahn":"[ˈuːˌbaːn]","S-Bahn":"[ˈɛsˌbaːn]",
 "Fußgänger":"[ˈfuːsˌɡɛŋɐ]","Autobahn":"[ˈaʊtoˌbaːn]","Fahrbahn":"[ˈfaːɐ̯ˌbaːn]",
 "Bürgersteig":"[ˈbʏɐ̯ɡɐˌʃtaɪk]","Fahrradweg":"[ˈfaːʁʁatˌveːk]",
-"Verkehrsmittel":"[fɛɐ̯ˈkeːɐ̯sˌmɪtəl]","benutzen":"[bəˈnʊtsən]",
+"Verkehrsmittel":"[fɛɐ̯ˈkeːɐ̯sˌmɪtəl]","benutzen":"[bəˈnʊtsən]","fliegen":"[ˈfliːɡən]",
 "Werkzeug":"[ˈvɛɐ̯kˌtsɔɪk]","Spielzeug":"[ˈʃpiːlˌtsɔɪk]",
 // L8 Gesundheit erweitert
 "erschöpft":"[ɛɐ̯ˈʃœpft]","übermüdet":"[ˌyːbɐˈmyːdət]",
@@ -1688,10 +1813,31 @@ const IPA_DATA={
 "sich erholen":"[ɛɐ̯ˈhoːlən]","sich entspannen":"[ɛntˈʃpanən]",
 "sich ausruhen":"[ˈaʊsˌʁuːən]","sich hinlegen":"[ˈhɪnˌleːɡən]",
 "sich bewegen":"[bəˈveːɡən]","Ernährung":"[ɛɐ̯ˈnɛːʁʊŋ]",
-"Arzneimittel":"[ˈaɐ̯tsnaɪˌmɪtəl]","regelmäßig":"[ˈʁeːɡəlˌmɛːsɪç]",
+"Arzneimittel":"[ˈaɐ̯tsnaɪˌmɪtəl]","regelmäßig":"[ˈʁeːɡəlˌmɛːsɪç]","dick":"[dɪk]","häufig":"[ˈhɔɪfɪç]","Gewicht":"[ɡəˈvɪçt]","Süßigkeiten":"[ˈzyːsɪçˌkaɪtən]","selbst":"[zɛlpst]",
 // L8/L9 allgemein
 "nachdenken":"[ˈnaxˌdɛŋkən]","ausgeben":"[ˈaʊsˌɡeːbən]",
 "sich leisten":"[ˈlaɪstən]","umsonst":"[ʊmˈzɔnst]",
+// Körper
+"Ellbogen":"[ˈɛlboːɡən]","Unterschenkel":"[ˈʊntɐˌʃɛŋkəl]","Oberschenkel":"[ˈoːbɐˌʃɛŋkəl]",
+"Muskel":"[ˈmʊskəl]","Zeh":"[tseː]","Augenbraue":"[ˈaʊɡənˌbʁaʊə]","Wimper":"[ˈvɪmpɐ]",
+"Wirbelsäule":"[ˈvɪʁbəlˌzɔɪlə]","Herz":"[hɛʁts]","Leber":"[ˈleːbɐ]","Magen":"[ˈmaːɡən]",
+// Gesundheit
+"Kontrolle":"[kɔnˈtʁɔlə]","untersuchen":"[ˌʊntɐˈzuːxən]","sich krankmelden":"[ˈkʁaŋkˌmɛldən]",
+// Notruf
+"Feuer":"[ˈfɔɪɐ]","Feuerwehr":"[ˈfɔɪɐˌveːɐ̯]","Krankenwagen":"[ˈkʁaŋkənˌvaːɡən]",
+"zusammenstoßen":"[tsʊˈzamənˌʃtoːsən]",
+// Verkehrsmittel
+"umsteigen":"[ˈʊmˌʃtaɪɡən]","Lkw":"[ˈɛlkaːveː]","parken":"[ˈpaʁkən]","hupen":"[ˈhuːpən]",
+"weiterfahren":"[ˈvaɪtɐˌfaːʁən]","blinken":"[ˈblɪŋkən]","Vorfahrt":"[ˈfoːɐ̯ˌfaːɐ̯t]",
+// In der Stadt
+"Kreuzung":"[ˈkʁɔɪtsʊŋ]","Schule":"[ˈʃuːlə]","Bahnhof":"[ˈbaːnˌhoːf]","Ampel":"[ˈampəl]","Ecke":"[ˈɛkə]","Kreisverkehr":"[ˈkʁaɪsfɛɐ̯ˌkeːɐ̯]",
+"Ausfahrt":"[ˈaʊsˌfaːɐ̯t]","Stunde":"[ˈʃtʊndə]","Minute":"[miˈnuːtə]",
+"geradeaus":"[ɡəˌʁaːdəˈaʊs]","gegenüber":"[ˈɡeːɡənˌʔyːbɐ]","abbiegen":"[ˈapˌbiːɡən]",
+"sich verfahren":"[fɛɐ̯ˈfaːʁən]","sich verlaufen":"[fɛɐ̯ˈlaʊfən]","einige":"[ˈaɪnɪɡə]",
+// Führerschein
+"Führerschein":"[ˈfyːʁɐˌʃaɪn]","dürfen":"[ˈdʏʁfən]","erlauben":"[ɛɐ̯ˈlaʊbən]",
+"verbieten":"[fɛɐ̯ˈbiːtən]","erkennen":"[ɛɐ̯ˈkɛnən]","Anerkennung":"[ˈanɛɐ̯ˌkɛnʊŋ]",
+"ausländisch":"[ˈaʊslɛndɪʃ]","Ausländer":"[ˈaʊslɛndɐ]","Behörde":"[bəˈhøːɐ̯də]",
 // Lebensmittel
 "Apfel":"[ˈapfəl]","Banane":"[baˈnaːnə]","Brot":"[bʁoːt]","Butter":"[ˈbʊtɐ]",
 "Hähnchen":"[ˈhɛːnçən]","Joghurt":"[ˈjoːɡʊʁt]","Kaffee":"[ˈkafe]","Kartoffel":"[kaʁˈtɔfəl]",
@@ -2565,6 +2711,8 @@ function Woerterbuch(){
     {id:"Berufe",         label:"👔 Berufe",              col:C.orange},
     {id:"Notruf",         label:"🚨 Notruf",              col:C.red},
     {id:"Verkehrsmittel", label:"🚗 Verkehrsmittel",      col:C.blue},
+    {id:"InDerStadt",     label:"🏙️ In der Stadt",        col:C.teal},
+    {id:"Fuehrerschein",  label:"🚦 Führerschein",         col:C.orange},
   ];
   const TYPEN=[
     {id:"all",     label:"Все",           col:C.teal},
@@ -7356,6 +7504,280 @@ function T9A(){
   );
 }
 
+const Q_L9B=[
+  {q:"geradeaus = ?",                                  opts:["направо","налево","прямо","назад"],                          ans:2, hint:"geradeaus"},
+  {q:"'Biegen Sie rechts ___!' (abbiegen)",            opts:["ab","auf","an","aus"],                                       ans:0, hint:"abbiegen = отделяемый"},
+  {q:"die Kreuzung = ?",                               opts:["светофор","остановка","кольцо","перекрёсток"],               ans:3, hint:"Kreuzung"},
+  {q:"die Ampel = ?",                                  opts:["светофор","знак","кольцо","остановка"],                      ans:0, hint:"Ampel"},
+  {q:"gegenüber = ?",                                  opts:["рядом","напротив","за углом","между"],
+                                                                                                                            ans:1, hint:"gegenüber dem Bahnhof"},
+  {q:"'Nehmen Sie die U2 ___!' (Richtung Zoo)",        opts:["Richtung","Seite","Kreuzung","Linie"],                       ans:0, hint:"Richtung = направление"},
+  {q:"'Ich habe mich ___.' (заблудился пешком)",       opts:["verfahren","verlaufen","verloren","verboten"],               ans:1, hint:"sich verlaufen = пешком"},
+  {q:"'Ich habe mich ___.' (заблудился на машине)",    opts:["verlaufen","verfahren","verloren","verboten"],               ans:1, hint:"sich verfahren = на транспорте"},
+  {q:"im Kreisverkehr = ?",                            opts:["на кольце","на перекрёстке","у светофора","на остановке"],   ans:0, hint:"Kreisverkehr"},
+  {q:"umsteigen = ?",                                  opts:["садиться","выходить","пересаживаться","ехать дальше"],       ans:2, hint:"umsteigen"},
+];
+function T9B(){
+  const [tab,setTab]=useState("weg");
+  const praep=[
+    {p:"in",       ru:"в (внутри)",         bsp:"im Café / in der Schule"},
+    {p:"an",       ru:"у, при, на (у края)",bsp:"an der Ampel / am Bahnhof"},
+    {p:"auf",      ru:"на (на поверхности)",bsp:"auf dem Platz / auf der Straße"},
+    {p:"unter",    ru:"под",                bsp:"unter dem Tisch"},
+    {p:"über",     ru:"над",                bsp:"über dem Eingang"},
+    {p:"vor",      ru:"перед",              bsp:"vor dem Haus"},
+    {p:"hinter",   ru:"за",                 bsp:"hinter dem Café"},
+    {p:"neben",    ru:"рядом с",            bsp:"neben dem Kino"},
+    {p:"zwischen", ru:"между",              bsp:"zwischen dem Bett und dem Sofa"},
+  ];
+  const weg=[
+    {icon:"⬆️", de:"geradeaus",       ru:"прямо",     ex:"Gehen Sie geradeaus!"},
+    {icon:"↪️", de:"rechts abbiegen", ru:"направо",   ex:"Biegen Sie rechts ab!"},
+    {icon:"↩️", de:"links abbiegen",  ru:"налево",    ex:"Biegen Sie links ab!"},
+    {icon:"📍", de:"bis zur Ampel",   ru:"до светофора", ex:"Gehen Sie bis zur Ampel."},
+    {icon:"🔄", de:"um die Ecke",     ru:"за угол",   ex:"Gehen Sie um die Ecke."},
+    {icon:"🏠", de:"gegenüber",       ru:"напротив",  ex:"Es ist gegenüber dem Bahnhof."},
+    {icon:"🛤️", de:"an ... vorbei",   ru:"мимо ...",  ex:"Gehen Sie an der Post vorbei."},
+    {icon:"🗺️", de:"auf der rechten/linken Seite", ru:"с правой/левой стороны", ex:"Es ist auf der linken Seite."},
+  ];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.teal}>
+        <H c={C.teal}>🏙️ L9B · In der Stadt</H>
+        <div style={{display:"flex",gap:6,marginBottom:12}}>
+          {[["weg","Wegbeschreibung"],["praep","Lokale Präp."],["kontr","in dem = im"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,padding:"9px 4px",borderRadius:9,border:"none",cursor:"pointer",
+                fontSize:10,fontWeight:700,
+                background:tab===key?C.teal+"33":"transparent",
+                color:tab===key?C.teal:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="weg"&&(
+          <div>
+            <div style={{fontSize:11,color:C.muted,marginBottom:10}}>Wie komme ich zum/zur ...?</div>
+            {weg.map(w=>(
+              <div key={w.de} style={{background:C.card2,borderRadius:8,padding:"8px 11px",marginBottom:5}}>
+                <div style={{display:"flex",gap:8,alignItems:"center",marginBottom:4}}>
+                  <span style={{fontSize:18}}>{w.icon}</span>
+                  <div>
+                    <span style={{fontWeight:800,color:C.teal,fontSize:12}}>{w.de}</span>
+                    <span style={{color:C.muted,fontSize:11}}> — {w.ru}</span>
+                  </div>
+                </div>
+                <div style={{fontSize:11,color:C.text,fontStyle:"italic",paddingLeft:26}}>→ {w.ex}</div>
+              </div>
+            ))}
+          </div>
+        )}
+        {tab==="praep"&&(
+          <div>
+            <div style={{background:C.teal+"15",border:`1px solid ${C.teal}33`,borderRadius:10,
+              padding:"10px 12px",marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:12,color:C.teal,marginBottom:6}}>
+                Wo? — Präpositionen + Dativ
+              </div>
+              <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:4,marginBottom:8,textAlign:"center"}}>
+                {[["m/n","dem"],["f","der"],["Pl.","den"]].map(([g,f])=>(
+                  <div key={g} style={{background:"rgba(255,255,255,.06)",borderRadius:6,padding:"5px 8px"}}>
+                    <div style={{fontSize:10,color:C.muted}}>{g}</div>
+                    <div style={{fontWeight:800,color:C.teal,fontSize:13}}>{f}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            {praep.map(pr=>(
+              <div key={pr.p} style={{display:"flex",gap:8,marginBottom:5,background:C.card2,
+                borderRadius:7,padding:"7px 10px",alignItems:"baseline"}}>
+                <div style={{fontWeight:900,color:C.teal,fontSize:14,minWidth:52}}>{pr.p}</div>
+                <div style={{flex:1}}>
+                  <div style={{fontSize:12,color:C.text}}>{pr.ru}</div>
+                  <div style={{fontSize:11,color:C.muted,fontStyle:"italic"}}>{pr.bsp}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+        {tab==="kontr"&&(
+          <div>
+            <div style={{fontSize:11,color:C.muted,marginBottom:10}}>Сокращения артикля с предлогом:</div>
+            {[["in + dem","im","im Café, im Bus, im Supermarkt"],
+              ["an + dem","am","am Bahnhof, am Montag"],
+              ["zu + dem","zum","zum Bahnhof, zum Arzt"],
+              ["zu + der","zur","zur Arbeit, zur Schule"],
+              ["bei + dem","beim","beim Arzt"],
+              ["von + dem","vom","vom Bahnhof"],
+            ].map(([full,short,bsp])=>(
+              <div key={full} style={{background:C.card2,borderRadius:7,padding:"7px 10px",marginBottom:5}}>
+                <div style={{display:"flex",gap:8,alignItems:"center",marginBottom:3}}>
+                  <span style={{color:C.muted,fontSize:11}}>{full}</span>
+                  <span style={{color:C.muted}}>→</span>
+                  <span style={{fontWeight:900,color:C.teal,fontSize:13}}>{short}</span>
+                </div>
+                <div style={{fontSize:11,color:C.muted,fontStyle:"italic"}}>{bsp}</div>
+              </div>
+            ))}
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
+const Q_L9C=[
+  {q:"dürfen = ?",                                     opts:["должен","хотеть","мочь","иметь право/разрешено"],           ans:3, hint:"dürfen"},
+  {q:"'ich ___' (dürfen, 1. Person Sg.)",              opts:["dürfe","darf","dürft","darfst"],                            ans:1, hint:"ich darf"},
+  {q:"'er/sie/man ___' (dürfen)",                      opts:["dürfen","dürft","darf","darfst"],                           ans:2, hint:"er/sie/man darf"},
+  {q:"'Das Parken ist ___.' (разрешено)",              opts:["verboten","erlaubt","dringend","dürfen"],                   ans:1, hint:"erlaubt"},
+  {q:"'Das Parken ist ___.' (запрещено)",              opts:["erlaubt","dürfen","verboten","erkennen"],                   ans:2, hint:"verboten"},
+  {q:"erlauben = ?",                                   opts:["запрещать","разрешать","требовать","признавать"],           ans:1, hint:"erlauben"},
+  {q:"verbieten = ?",                                  opts:["разрешать","запрещать","признавать","требовать"],           ans:1, hint:"verbieten"},
+  {q:"der Führerschein = ?",                           opts:["паспорт","водительские права","страховка","виза"],          ans:1, hint:"Führerschein"},
+  {q:"ausländisch = ?",                                opts:["немецкий","иностранный","местный","официальный"],           ans:1, hint:"ausländisch"},
+  {q:"die Behörde = ?",                                opts:["школа","орган власти","страховка","ведомство"],             ans:1, hint:"Behörde"},
+  {q:"'Man ___ hier nicht parken.' (dürfen, Negation)",opts:["muss","darf","soll","kann"],                                ans:1, hint:"Man darf nicht parken."},
+  {q:"die Vorfahrt = ?",                               opts:["поворот","приоритет на дороге","парковка","скорость"],      ans:1, hint:"Vorfahrt"},
+];
+function T9C(){
+  const [tab,setTab]=useState("duerfen");
+  const regeln=[
+    {sign:"🔴",de:"verboten",   ru:"запрещено",   ex:"Das Parken ist verboten. / Man darf hier nicht parken."},
+    {sign:"🟢",de:"erlaubt",    ru:"разрешено",   ex:"Das Parken ist erlaubt. / Man darf hier parken."},
+    {sign:"⚠️",de:"Vorfahrt",   ru:"приоритет",   ex:"Die Straßenbahn hat Vorfahrt."},
+  ];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.orange}>
+        <H c={C.orange}>🚦 L9C · Der Führerschein & dürfen</H>
+        <div style={{display:"flex",gap:6,marginBottom:12}}>
+          {[["duerfen","dürfen"],["regeln","erlaubt/verboten"],["schein","Führerschein"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,padding:"9px 4px",borderRadius:9,border:"none",cursor:"pointer",
+                fontSize:10,fontWeight:700,
+                background:tab===key?C.orange+"33":"transparent",
+                color:tab===key?C.orange:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="duerfen"&&(
+          <div>
+            <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,
+              borderRadius:10,padding:"12px 14px",marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.orange,marginBottom:10}}>
+                dürfen — иметь право, разрешено
+              </div>
+              <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:5}}>
+                {[["ich","darf"],["du","darfst"],["er/sie/es/man","darf"],
+                  ["wir","dürfen"],["ihr","dürft"],["sie/Sie","dürfen"]].map(([pr,f])=>(
+                  <div key={pr} style={{background:"rgba(255,255,255,.06)",borderRadius:7,padding:"7px 10px",
+                    display:"flex",justifyContent:"space-between"}}>
+                    <span style={{color:C.muted,fontSize:12}}>{pr}</span>
+                    <span style={{fontWeight:800,color:C.orange,fontSize:13}}>{f}</span>
+                  </div>
+                ))}
+              </div>
+              <div style={{marginTop:10,background:C.card2,borderRadius:7,padding:"8px 10px",
+                fontSize:11,color:C.muted}}>
+                💡 Как все Modalverben: dürfen + инфинитив в конце<br/>
+                "Ich <b style={{color:C.orange}}>darf</b> hier parken." · "Man <b style={{color:C.orange}}>darf</b> nicht hupen."
+              </div>
+            </div>
+            <div style={{background:C.card2,borderRadius:8,padding:"9px 11px"}}>
+              <div style={{fontWeight:700,fontSize:11,color:C.muted,marginBottom:6}}>Сравни:</div>
+              {[
+                ["müssen","muss","должен (необходимость)"],
+                ["sollen","soll","должен (по чьему-то указанию)"],
+                ["dürfen","darf","разрешено (право)"],
+                ["können","kann","может (способность)"],
+                ["wollen","will","хочет (желание)"],
+              ].map(([inf,er,ru])=>(
+                <div key={inf} style={{display:"flex",gap:6,marginBottom:4,fontSize:12}}>
+                  <span style={{fontWeight:700,color:C.orange,minWidth:55}}>{inf}</span>
+                  <span style={{color:C.text,minWidth:35}}>{er}</span>
+                  <span style={{color:C.muted}}>{ru}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+        {tab==="regeln"&&(
+          <div>
+            {regeln.map(r=>(
+              <div key={r.de} style={{background:C.card2,borderRadius:9,padding:"10px 12px",marginBottom:6}}>
+                <div style={{display:"flex",gap:8,alignItems:"center",marginBottom:6}}>
+                  <span style={{fontSize:24}}>{r.sign}</span>
+                  <div>
+                    <div style={{fontWeight:800,color:C.orange,fontSize:13}}>{r.de}</div>
+                    <div style={{color:C.muted,fontSize:11}}>{r.ru}</div>
+                  </div>
+                </div>
+                <div style={{fontSize:11,color:C.text,fontStyle:"italic"}}>{r.ex}</div>
+              </div>
+            ))}
+            <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,
+              borderRadius:8,padding:"9px 11px",marginTop:4}}>
+              <div style={{fontWeight:700,fontSize:11,color:C.orange,marginBottom:6}}>Verkehrsregeln üben:</div>
+              {[
+                ["🛑 STOP","Man muss anhalten.","нужно остановиться"],
+                ["🅿️ P","Das Parken ist erlaubt.","парковка разрешена"],
+                ["🚫 P","Das Parken ist verboten.","парковка запрещена"],
+                ["↪️ →","Man muss rechts abbiegen.","нужно повернуть направо"],
+                ["📯","Man darf nicht hupen.","сигналить нельзя"],
+              ].map(([sign,de,ru])=>(
+                <div key={de} style={{marginBottom:5,fontSize:12,background:C.card2,
+                  borderRadius:6,padding:"5px 8px"}}>
+                  <span style={{fontWeight:700}}>{sign} </span>
+                  <span style={{color:C.text}}>{de}</span>
+                  <span style={{color:C.muted}}> — {ru}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+        {tab==="schein"&&(
+          <div>
+            <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,
+              borderRadius:10,padding:"10px 12px",marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:12,color:C.orange,marginBottom:8}}>
+                🪪 Anerkennung ausländischer Führerscheine
+              </div>
+              {[
+                ["Tourist (bis 6 Monate)","🟢 darf mit Heimatland-Führerschein fahren"],
+                ["EU-Bürger","🟢 darf EU-Führerschein weiter benutzen"],
+                ["Nicht-EU (China, Indien, Brasilien …)","🟡 max. 6 Monate · dann: Führerscheinprüfung"],
+              ].map(([who,rule])=>(
+                <div key={who} style={{marginBottom:7,background:"rgba(255,255,255,.04)",
+                  borderRadius:7,padding:"7px 9px"}}>
+                  <div style={{fontWeight:700,fontSize:11,color:C.text,marginBottom:3}}>{who}</div>
+                  <div style={{fontSize:11,color:C.muted}}>{rule}</div>
+                </div>
+              ))}
+            </div>
+            <div style={{background:C.card2,borderRadius:8,padding:"9px 11px"}}>
+              <div style={{fontWeight:700,fontSize:11,color:C.muted,marginBottom:6}}>Schlüsselwörter:</div>
+              {[
+                ["die Behörde","орган власти, ведомство"],
+                ["erkennen","признавать · anerkennen = официально признать"],
+                ["die Anerkennung","признание, подтверждение"],
+                ["ausländisch","иностранный"],
+                ["der Ausländer / die Ausländerin","иностранец / иностранка"],
+              ].map(([de,ru])=>(
+                <div key={de} style={{marginBottom:4,fontSize:12}}>
+                  <span style={{fontWeight:700,color:C.orange}}>{de}</span>
+                  <span style={{color:C.muted}}> — {ru}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
 const Q_L6A=[
   {q:"Welcher Artikel hat 'Apfel'?",          opts:["der","die","das"],                                                                     ans:0, hint:"Artikel"},
   {q:"Welcher Artikel hat 'Milch'?",          opts:["der","die","das"],                                                                     ans:1, hint:"Artikel"},
@@ -7558,10 +7980,12 @@ const LEKTIONEN=[
   },
   {
     id:"L9",num:"9",title:"Wege durch die Stadt",
-    sub:"A Verkehrsmittel · mit + Dativ · Adjektive",
-    date:"Seite 93–",col:C.blue,
+    sub:"A Verkehrsmittel · B In der Stadt · C Führerschein & dürfen",
+    date:"Seite 93–99",col:C.blue,
     sections:[
       {id:"9a",  icon:"🚗",title:"A · Wege durch die Stadt",    sub:"Verkehrsmittel · mit + Dativ · teuer/billig/schnell",  time:"6 мин", col:C.blue,   hasT:true,  th:()=><T9A/>,     ex:()=><Quiz questions={Q_L9A}/>},
+      {id:"9b",  icon:"🏙️",title:"B · In der Stadt",            sub:"Wegbeschreibung · Lokale Präp. mit Dativ · in/an/auf", time:"6 мин", col:C.teal,   hasT:true,  th:()=><T9B/>,     ex:()=><Quiz questions={Q_L9B}/>},
+      {id:"9c",  icon:"🚦",title:"C · Führerschein & dürfen",   sub:"Modalverb dürfen · erlaubt/verboten · Führerschein",   time:"5 мин", col:C.orange, hasT:true,  th:()=><T9C/>,     ex:()=><Quiz questions={Q_L9C}/>},
     ]
   },
 ];
