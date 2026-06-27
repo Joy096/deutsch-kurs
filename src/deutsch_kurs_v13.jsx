@@ -962,6 +962,8 @@ const WBDATA=[
   {art:"die", de:"Kreuzung",        pl:"-en",          ru:"перекрёсток",                                 tema:"InDerStadt"},
   {art:"die", de:"Schule",          pl:"-n",           ru:"школа",                                       tema:"InDerStadt"},
   {art:"der", de:"Bahnhof",         pl:"Bahnhöfe",     ru:"вокзал, железнодорожная станция",              tema:"InDerStadt"},
+  {art:"",   de:"vergessen",        pl:"—",            ru:"забывать · vergisst · Vergiss!"},
+  {art:"",   de:"müssen",           pl:"—",            ru:"быть обязанным, должен · ich muss · Modalverb"},
   {art:"die", de:"Ampel",           pl:"-n",           ru:"светофор",                                    tema:"InDerStadt"},
   {art:"die", de:"Ecke",            pl:"-n",           ru:"угол; угол улицы · um die Ecke = за углом",  tema:"InDerStadt"},
   {art:"der", de:"Kreisverkehr",    pl:"-e",           ru:"круговое движение, кольцо",                   tema:"InDerStadt"},
@@ -1381,6 +1383,9 @@ const KONJ_ALL={
     ich:"verbiete",  du:"verbietest", "er/sie/es":"verbietet", wir:"verbieten",ihr:"verbietet","sie/Sie":"verbieten"},
   erkennen:   {col:C.teal,   bg:C.tealBg,
     ich:"erkenne",   du:"erkennst",   "er/sie/es":"erkennt",   wir:"erkennen", ihr:"erkennt",  "sie/Sie":"erkennen"},
+  vergessen:  {col:C.blue,   bg:C.blueBg,  note:"e→i",
+    ich:"vergesse",  du:"vergisst",   "er/sie/es":"vergisst",  wir:"vergessen",ihr:"vergesst", "sie/Sie":"vergessen",
+    imp:{du:"Vergiss!",  ihr:"Vergesst!",  Sie:"Vergessen Sie nicht!"}},
   // L8/L9 allgemein
   nachdenken:  {pref:"nach", col:C.teal,  bg:C.tealBg,
     ich:"denke … nach",   du:"denkst … nach",   "er/sie/es":"denkt … nach",
@@ -1558,7 +1563,7 @@ const STRESS_MARKS={
 "umsteigen":"u\u0301msteigen","Lkw":"L\u0301kw","parken":"pa\u0301rken","hupen":"hu\u0301pen",
 "weiterfahren":"we\u0301iterfahren","blinken":"bli\u0301nken","Vorfahrt":"Vo\u0301rfahrt",
 // In der Stadt
-"Kreuzung":"Kre\u0301uzung","Schule":"Schu\u0301le","Bahnhof":"Ba\u0301hnhof","Ampel":"A\u0301mpel","Ecke":"E\u0301cke","Kreisverkehr":"Kre\u0301isverkehr",
+"Kreuzung":"Kre\u0301uzung","Schule":"Schu\u0301le","Bahnhof":"Ba\u0301hnhof","vergessen":"verge\u0301ssen","m\u00FCssen":"m\u00FC\u0301ssen","Ampel":"A\u0301mpel","Ecke":"E\u0301cke","Kreisverkehr":"Kre\u0301isverkehr",
 "Ausfahrt":"A\u0301usfahrt","Stunde":"Stu\u0301nde","Minute":"Minu\u0301te",
 "geradeaus":"geradeaus\u0301","gegen\u00FCber":"ge\u0301gen\u00FCber","abbiegen":"a\u0301bbiegen",
 "sich verfahren":"sich verfa\u0301hren","sich verlaufen":"sich verla\u0301ufen","einige":"ei\u0301nige",
@@ -1830,7 +1835,7 @@ const IPA_DATA={
 "umsteigen":"[ˈʊmˌʃtaɪɡən]","Lkw":"[ˈɛlkaːveː]","parken":"[ˈpaʁkən]","hupen":"[ˈhuːpən]",
 "weiterfahren":"[ˈvaɪtɐˌfaːʁən]","blinken":"[ˈblɪŋkən]","Vorfahrt":"[ˈfoːɐ̯ˌfaːɐ̯t]",
 // In der Stadt
-"Kreuzung":"[ˈkʁɔɪtsʊŋ]","Schule":"[ˈʃuːlə]","Bahnhof":"[ˈbaːnˌhoːf]","Ampel":"[ˈampəl]","Ecke":"[ˈɛkə]","Kreisverkehr":"[ˈkʁaɪsfɛɐ̯ˌkeːɐ̯]",
+"Kreuzung":"[ˈkʁɔɪtsʊŋ]","Schule":"[ˈʃuːlə]","Bahnhof":"[ˈbaːnˌhoːf]","vergessen":"[fɛɐ̯ˈɡɛsən]","müssen":"[ˈmʏsən]","Ampel":"[ˈampəl]","Ecke":"[ˈɛkə]","Kreisverkehr":"[ˈkʁaɪsfɛɐ̯ˌkeːɐ̯]",
 "Ausfahrt":"[ˈaʊsˌfaːɐ̯t]","Stunde":"[ˈʃtʊndə]","Minute":"[miˈnuːtə]",
 "geradeaus":"[ɡəˌʁaːdəˈaʊs]","gegenüber":"[ˈɡeːɡənˌʔyːbɐ]","abbiegen":"[ˈapˌbiːɡən]",
 "sich verfahren":"[fɛɐ̯ˈfaːʁən]","sich verlaufen":"[fɛɐ̯ˈlaʊfən]","einige":"[ˈaɪnɪɡə]",
