@@ -1022,6 +1022,26 @@ const WBDATA=[
   {art:"",   de:"suchen",           pl:"—",            ru:"искать"},
   {art:"",   de:"reden",            pl:"—",            ru:"разговаривать, говорить (mit +Dat)"},
   {art:"",   de:"abholen",          pl:"—",            ru:"забирать, встречать (кого-то)",               tema:"Trennbare Verben"},
+  // ── Базовые глаголы (по таблице starke Verben) ────────────────────────────
+  {art:"",   de:"haben",            pl:"—",            ru:"иметь · ich habe · hat gehabt"},
+  {art:"",   de:"sein",             pl:"—",            ru:"быть · ich bin · ist gewesen"},
+  {art:"",   de:"geben",            pl:"—",            ru:"давать · gibt · hat gegeben"},
+  {art:"",   de:"helfen",           pl:"—",            ru:"помогать · hilft · hat geholfen"},
+  {art:"",   de:"heißen",           pl:"—",            ru:"называться; звать · heißt · hat geheißen"},
+  {art:"",   de:"stehen",           pl:"—",            ru:"стоять · steht · hat gestanden"},
+  {art:"",   de:"bringen",          pl:"—",            ru:"приносить, доставлять · bringt · hat gebracht"},
+  {art:"",   de:"denken",           pl:"—",            ru:"думать · denkt · hat gedacht"},
+  {art:"",   de:"wissen",           pl:"—",            ru:"знать (факты) · weiß · hat gewusst"},
+  {art:"",   de:"tun",              pl:"—",            ru:"делать · tut · hat getan"},
+  {art:"",   de:"singen",           pl:"—",            ru:"петь · singt · hat gesungen"},
+  {art:"",   de:"rufen",            pl:"—",            ru:"звать, кричать · ruft · hat gerufen"},
+  {art:"",   de:"weinen",           pl:"—",            ru:"плакать"},
+  {art:"",   de:"üben",             pl:"—",            ru:"упражняться, тренироваться"},
+  {art:"",   de:"stellen",          pl:"—",            ru:"ставить (вертикально)"},
+  {art:"",   de:"legen",            pl:"—",            ru:"класть (горизонтально)"},
+  {art:"",   de:"hängen",           pl:"—",            ru:"вешать, висеть"},
+  {art:"",   de:"zahlen",           pl:"—",            ru:"платить · zahlt · hat gezahlt"},
+  {art:"",   de:"rauchen",          pl:"—",            ru:"курить"},
 ];
 
 
@@ -1436,6 +1456,37 @@ const KONJ_ALL={
   abholen:    {pref:"ab",   col:C.orange, bg:C.orangeBg,
     ich:"hole … ab", du:"holst … ab", "er/sie/es":"holt … ab",
     wir:"holen … ab",ihr:"holt … ab", "sie/Sie":"holen … ab"},
+  // Базовые глаголы
+  geben:      {col:C.blue,   bg:C.blueBg,   note:"e→i",
+    ich:"gebe",      du:"gibst",      "er/sie/es":"gibt",      wir:"geben",    ihr:"gebt",     "sie/Sie":"geben"},
+  helfen:     {col:C.blue,   bg:C.blueBg,   note:"e→i",
+    ich:"helfe",     du:"hilfst",     "er/sie/es":"hilft",     wir:"helfen",   ihr:"helft",    "sie/Sie":"helfen"},
+  stehen:     {col:C.teal,   bg:C.tealBg,
+    ich:"stehe",     du:"stehst",     "er/sie/es":"steht",     wir:"stehen",   ihr:"steht",    "sie/Sie":"stehen"},
+  bringen:    {col:C.teal,   bg:C.tealBg,
+    ich:"bringe",    du:"bringst",    "er/sie/es":"bringt",    wir:"bringen",  ihr:"bringt",   "sie/Sie":"bringen"},
+  denken:     {col:C.teal,   bg:C.tealBg,
+    ich:"denke",     du:"denkst",     "er/sie/es":"denkt",     wir:"denken",   ihr:"denkt",    "sie/Sie":"denken"},
+  wissen:     {col:C.purple, bg:C.purpleBg, note:"weiß (ich/er)",
+    ich:"weiß",      du:"weißt",      "er/sie/es":"weiß",      wir:"wissen",   ihr:"wisst",    "sie/Sie":"wissen"},
+  tun:        {col:C.purple, bg:C.purpleBg,
+    ich:"tue",       du:"tust",       "er/sie/es":"tut",       wir:"tun",      ihr:"tut",      "sie/Sie":"tun"},
+  singen:     {col:C.teal,   bg:C.tealBg,
+    ich:"singe",     du:"singst",     "er/sie/es":"singt",     wir:"singen",   ihr:"singt",    "sie/Sie":"singen"},
+  rufen:      {col:C.teal,   bg:C.tealBg,
+    ich:"rufe",      du:"rufst",      "er/sie/es":"ruft",      wir:"rufen",    ihr:"ruft",     "sie/Sie":"rufen"},
+  weinen:     {col:C.teal,   bg:C.tealBg,
+    ich:"weine",     du:"weinst",     "er/sie/es":"weint",     wir:"weinen",   ihr:"weint",    "sie/Sie":"weinen"},
+  üben:       {col:C.teal,   bg:C.tealBg,
+    ich:"übe",       du:"übst",       "er/sie/es":"übt",       wir:"üben",     ihr:"übt",      "sie/Sie":"üben"},
+  stellen:    {col:C.teal,   bg:C.tealBg,
+    ich:"stelle",    du:"stellst",    "er/sie/es":"stellt",    wir:"stellen",  ihr:"stellt",   "sie/Sie":"stellen"},
+  legen:      {col:C.teal,   bg:C.tealBg,
+    ich:"lege",      du:"legst",      "er/sie/es":"legt",      wir:"legen",    ihr:"legt",     "sie/Sie":"legen"},
+  zahlen:     {col:C.teal,   bg:C.tealBg,
+    ich:"zahle",     du:"zahlst",     "er/sie/es":"zahlt",     wir:"zahlen",   ihr:"zahlt",    "sie/Sie":"zahlen"},
+  rauchen:    {col:C.teal,   bg:C.tealBg,
+    ich:"rauche",    du:"rauchst",    "er/sie/es":"raucht",    wir:"rauchen",  ihr:"raucht",   "sie/Sie":"rauchen"},
   // L8/L9 allgemein
   nachdenken:  {pref:"nach", col:C.teal,  bg:C.tealBg,
     ich:"denke … nach",   du:"denkst … nach",   "er/sie/es":"denkt … nach",
@@ -1639,6 +1690,12 @@ const STRESS_MARKS={
 // Perfekt verbs
 "tr\u00E4umen":"tr\u00E4\u0301umen","suchen":"su\u0301chen",
 "reden":"re\u0301den","abholen":"a\u0301bholen",
+"haben":"ha\u0301ben","sein":"se\u0301in","geben":"ge\u0301ben","helfen":"he\u0301lfen",
+"hei\u00DFen":"hei\u0301\u00DFen","stehen":"ste\u0301hen","bringen":"bri\u0301ngen",
+"denken":"de\u0301nken","wissen":"wi\u0301ssen","tun":"tu\u0301n",
+"singen":"si\u0301ngen","rufen":"ru\u0301fen","weinen":"we\u0301inen",
+"\u00FCben":"\u00FC\u0301ben","stellen":"ste\u0301llen","legen":"le\u0301gen",
+"h\u00E4ngen":"h\u00E4\u0301ngen","zahlen":"za\u0301hlen","rauchen":"ra\u0301uchen",
 // Lebensmittel
 "Apfel":"A\u0301pfel","Banane":"Bana\u0301ne","Brot":"Bro\u0301t","Butter":"Bu\u0301tter",
 "Hähnchen":"H\u00E4\u0301hnchen","Joghurt":"Jo\u0301ghurt","Kaffee":"Ka\u0301ffee",
@@ -1924,6 +1981,12 @@ const IPA_DATA={
 "ledig":"[ˈleːdɪç]","geschieden":"[ɡəˈʃiːdən]",
 "gestern":"[ˈɡɛstɐn]",
 "träumen":"[ˈtʁɔɪmən]","suchen":"[ˈzuːxən]","reden":"[ˈʁeːdən]","abholen":"[ˈaphˌoːlən]",
+"haben":"[ˈhaːbən]","sein":"[zaɪn]","geben":"[ˈɡeːbən]","helfen":"[ˈhɛlfən]",
+"heißen":"[ˈhaɪsən]","stehen":"[ˈʃteːən]","bringen":"[ˈbʁɪŋən]",
+"denken":"[ˈdɛŋkən]","wissen":"[ˈvɪsən]","tun":"[tuːn]",
+"singen":"[ˈzɪŋən]","rufen":"[ˈʁuːfən]","weinen":"[ˈvaɪnən]",
+"üben":"[ˈyːbən]","stellen":"[ˈʃtɛlən]","legen":"[ˈleːɡən]",
+"hängen":"[ˈhɛŋən]","zahlen":"[ˈtsaːlən]","rauchen":"[ˈʁaʊxən]",
 // Lebensmittel
 "Apfel":"[ˈapfəl]","Banane":"[baˈnaːnə]","Brot":"[bʁoːt]","Butter":"[ˈbʊtɐ]",
 "Hähnchen":"[ˈhɛːnçən]","Joghurt":"[ˈjoːɡʊʁt]","Kaffee":"[ˈkafe]","Kartoffel":"[kaʁˈtɔfəl]",
@@ -7959,33 +8022,105 @@ function T9C(){
 }
 
 const Q_L10A=[
-  {q:"Perfekt bildung: haben + ?",                    opts:["Infinitiv","Partizip II","Partizip I","Konjunktiv"],          ans:1, hint:"haben/sein + Partizip II"},
+  {q:"Perfekt bildung: haben/sein + ?",               opts:["Infinitiv","Partizip II","Partizip I","Konjunktiv"],          ans:1, hint:"haben/sein + Partizip II"},
   {q:"Partizip II von 'machen' = ?",                  opts:["gemakht","gemacht","macht","gegemacht"],                     ans:1, hint:"ge + mach + t"},
-  {q:"Partizip II von 'kochen' = ?",                  opts:["gekochen","kochte","gekocht","kogt"],                        ans:2, hint:"ge + koch + t"},
   {q:"Partizip II von 'arbeiten' = ?",                opts:["gearbeitet","gearbeit","arbeitete","gearbeite"],              ans:0, hint:"ge + arbeit + et (e-Einfügung!)"},
   {q:"Partizip II von 'aufräumen' (trennbar) = ?",    opts:["geaufräumt","aufgeräumt","aufräumt","aufräumte"],            ans:1, hint:"auf + ge + räum + t"},
-  {q:"Partizip II von 'einkaufen' (trennbar) = ?",    opts:["geeingekauft","eingegekkauft","eingekauft","einkauft"],      ans:2, hint:"ein + ge + kauf + t"},
-  {q:"'Gestern ___ Frau Schmidt gekocht.'",           opts:["ist","hat","habe","haben"],                                  ans:1, hint:"hat gekocht"},
-  {q:"Partizip II von 'reden' = ?",                   opts:["geredet","geredt","redete","gered"],                         ans:0, hint:"ge + red + et"},
-  {q:"Partizip II von 'abholen' (trennbar) = ?",      opts:["geabgeholt","abgeholt","abgeholen","abholte"],               ans:1, hint:"ab + ge + hol + t"},
-  {q:"Perfekt steht für ?",                           opts:["настоящее","будущее","прошедшее в разговоре","условное"],     ans:2, hint:"Perfekt = разговорное прошедшее"},
-  {q:"Partizip II von 'träumen' = ?",                 opts:["geträumen","geträumt","träumte","träumt"],                   ans:1, hint:"ge + träum + t"},
+  {q:"Partizip II von 'studieren' (-ieren) = ?",      opts:["gestudiert","studierte","studiert","gestudieren"],           ans:2, hint:"-ieren → kein ge-! nur -t"},
+  {q:"Partizip II von 'verkaufen' (ver-) = ?",        opts:["geverkauft","verkauft","vergeкauft","verkauftet"],           ans:1, hint:"ver- untrennbar → kein ge-!"},
+  {q:"Partizip II von 'fahren' (stark) = ?",          opts:["gefahrt","gefahren","gefährt","fahren"],                    ans:1, hint:"stark: fahren → gefahren"},
+  {q:"'Er ist nach Wien ___.' (fahren)",              opts:["gefahrt","gefahren","gefahren ist","fahrt"],                 ans:1, hint:"sein + gefahren (Bewegung A→B)"},
+  {q:"'Gestern ___ Frau Schmidt gekocht.'",           opts:["ist","hat","habe","haben"],                                  ans:1, hint:"kochen hat Akkusativ → haben"},
+  {q:"'Ich ___ gestern eingeschlafen.'",              opts:["habe","ist","bin","haben"],                                  ans:2, hint:"einschlafen = Zustandswechsel → sein"},
+  {q:"Perfekt mit sein: движение А→Б — пример?",     opts:["hat geschlafen","hat gegessen","ist gegangen","hat gekauft"],ans:2, hint:"gehen → ist gegangen"},
+  {q:"Partizip II von 'bleiben' = ?",                 opts:["geblieben","gebliebt","gebleibt","blieben"],                 ans:0, hint:"bleiben → ist geblieben (исключение!)"},
+  {q:"'Sie ___ im Hotel geblieben.'",                 opts:["hat","haben","ist","habe"],                                  ans:2, hint:"bleiben → sein (исключение)"},
   {q:"'Haben Sie gestern Musik ___?'",                opts:["gehören","gehört","hören","hörte"],                          ans:1, hint:"hören → gehört"},
+];
+const STARKE_VERBEN=[
+  // ── A1 ────────────────────────────────────────────────────────────────────
+  {inf:"beginnen",  pr:"beginnt",     pp:"begonnen",    h:"hat",lv:"A1",bsp:"Der Kurs hat um 9 Uhr begonnen."},
+  {inf:"bleiben",   pr:"bleibt",      pp:"geblieben",   h:"ist",lv:"A1",bsp:"Wir sind auf Mallorca geblieben."},
+  {inf:"bringen",   pr:"bringt",      pp:"gebracht",    h:"hat",lv:"A1",bsp:"Er hat das Essen gebracht."},
+  {inf:"denken",    pr:"denkt",       pp:"gedacht",     h:"hat",lv:"A1",bsp:"Ich habe an dich gedacht."},
+  {inf:"einschlafen",pr:"schläft ein",pp:"eingeschlafen",h:"ist",lv:"A1",bsp:"Hast du schnell eingeschlafen?"},
+  {inf:"essen",     pr:"isst",        pp:"gegessen",    h:"hat",lv:"A1",bsp:"Sie hat die Suppe gegessen."},
+  {inf:"fahren",    pr:"fährt",       pp:"gefahren",    h:"ist",lv:"A1",bsp:"Wir sind zu schnell gefahren."},
+  {inf:"finden",    pr:"findet",      pp:"gefunden",    h:"hat",lv:"A1",bsp:"Renate hat ihre Mutter schnell gefunden."},
+  {inf:"fliegen",   pr:"fliegt",      pp:"geflogen",    h:"ist",lv:"A1",bsp:"Er ist nach Wien geflogen."},
+  {inf:"geben",     pr:"gibt",        pp:"gegeben",     h:"hat",lv:"A1",bsp:"Peter hat mir ein Blatt Papier gegeben."},
+  {inf:"gehen",     pr:"geht",        pp:"gegangen",    h:"ist",lv:"A1",bsp:"Wohin seid ihr am Abend gegangen?"},
+  {inf:"haben",     pr:"hat",         pp:"gehabt",      h:"hat",lv:"A1",bsp:"Auf der Party haben alle viel Spaß gehabt."},
+  {inf:"heißen",    pr:"heißt",       pp:"geheißen",    h:"hat",lv:"A1",bsp:"Das Buch hat 'Faust' geheißen."},
+  {inf:"helfen",    pr:"hilft",       pp:"geholfen",    h:"hat",lv:"A1",bsp:"Die Kinder haben zu Hause geholfen."},
+  {inf:"kommen",    pr:"kommt",       pp:"gekommen",    h:"ist",lv:"A1",bsp:"Er ist pünktlich gekommen."},
+  {inf:"laufen",    pr:"läuft",       pp:"gelaufen",    h:"ist",lv:"A1",bsp:"Julio ist mit mir gelaufen."},
+  {inf:"lesen",     pr:"liest",       pp:"gelesen",     h:"hat",lv:"A1",bsp:"Hast du das Buch gelesen?"},
+  {inf:"nehmen",    pr:"nimmt",       pp:"genommen",    h:"hat",lv:"A1",bsp:"Sie hat die U-Bahn genommen."},
+  {inf:"rufen",     pr:"ruft",        pp:"gerufen",     h:"hat",lv:"A1",bsp:"Er hat die Polizei gerufen."},
+  {inf:"schlafen",  pr:"schläft",     pp:"geschlafen",  h:"hat",lv:"A1",bsp:"Er hat gut geschlafen."},
+  {inf:"schreiben", pr:"schreibt",    pp:"geschrieben", h:"hat",lv:"A1",bsp:"Hast du schon die Postkarte geschrieben?"},
+  {inf:"schwimmen", pr:"schwimmt",    pp:"geschwommen", h:"ist",lv:"A1",bsp:"Frau Novak ist heute morgen geschwommen."},
+  {inf:"sehen",     pr:"sieht",       pp:"gesehen",     h:"hat",lv:"A1",bsp:"Haben Sie den Film gesehen?"},
+  {inf:"sein",      pr:"ist",         pp:"gewesen",     h:"ist",lv:"A1",bsp:"Ich bin in Barcelona noch nie gewesen."},
+  {inf:"singen",    pr:"singt",       pp:"gesungen",    h:"hat",lv:"A1",bsp:"Sie hat ein Lied gesungen."},
+  {inf:"sprechen",  pr:"spricht",     pp:"gesprochen",  h:"hat",lv:"A1",bsp:"Wir haben über das Thema gesprochen."},
+  {inf:"aufstehen", pr:"steht auf",   pp:"aufgestanden",h:"ist",lv:"A1",bsp:"Sylvia ist sehr früh aufgestanden."},
+  {inf:"stehen",    pr:"steht",       pp:"gestanden",   h:"hat",lv:"A1",bsp:"Das Auto hat vor dem Haus gestanden."},
+  {inf:"treffen",   pr:"trifft",      pp:"getroffen",   h:"hat",lv:"A1",bsp:"Ich habe einen Freund getroffen."},
+  {inf:"trinken",   pr:"trinkt",      pp:"getrunken",   h:"hat",lv:"A1",bsp:"Er hat viel Wasser getrunken."},
+  {inf:"tun",       pr:"tut",         pp:"getan",       h:"hat",lv:"A1",bsp:"Was hast du gestern getan?"},
+  {inf:"werden",    pr:"wird",        pp:"geworden",    h:"ist",lv:"A1",bsp:"Thomas ist rot geworden."},
+  {inf:"wissen",    pr:"weiß",        pp:"gewusst",     h:"hat",lv:"A1",bsp:"Ich habe es nicht gewusst."},
+  // ── A2 ────────────────────────────────────────────────────────────────────
+  {inf:"backen",    pr:"backt",       pp:"gebacken",    h:"hat",lv:"A2",bsp:"Sie hat einen Kuchen gebacken."},
+  {inf:"biegen",    pr:"biegt",       pp:"gebogen",     h:"hat",lv:"A2",bsp:"Er hat die Stange gebogen."},
+  {inf:"bieten",    pr:"bietet",      pp:"geboten",     h:"hat",lv:"A2",bsp:"Das Hotel hat viel geboten."},
+  {inf:"bitten",    pr:"bittet",      pp:"gebeten",     h:"hat",lv:"A2",bsp:"Er hat mich um Hilfe gebeten."},
+  {inf:"braten",    pr:"brät",        pp:"gebraten",    h:"hat",lv:"A2",bsp:"Sie hat Fleisch gebraten."},
+  {inf:"fallen",    pr:"fällt",       pp:"gefallen",    h:"ist",lv:"A2",bsp:"Das Kind ist hingefallen."},
+  {inf:"gefallen",  pr:"gefällt",     pp:"gefallen",    h:"hat",lv:"A2",bsp:"Das Konzert hat mir sehr gut gefallen."},
+  {inf:"gewinnen",  pr:"gewinnt",     pp:"gewonnen",    h:"hat",lv:"A2",bsp:"Unser Team hat das Spiel gewonnen."},
+  {inf:"laden",     pr:"lädt",        pp:"geladen",     h:"hat",lv:"A2",bsp:"Er hat das Video hochgeladen."},
+  {inf:"liegen",    pr:"liegt",       pp:"gelegen",     h:"hat",lv:"A2",bsp:"Das Buch hat auf dem Tisch gelegen."},
+  {inf:"nennen",    pr:"nennt",       pp:"genannt",     h:"hat",lv:"A2",bsp:"Sie hat ihn beim Namen genannt."},
+  {inf:"rennen",    pr:"rennt",       pp:"gerannt",     h:"ist",lv:"A2",bsp:"Er ist sehr schnell gerannt."},
+  {inf:"riechen",   pr:"riecht",      pp:"gerochen",    h:"hat",lv:"A2",bsp:"Die Blumen haben gut gerochen."},
+  {inf:"schließen", pr:"schließt",    pp:"geschlossen", h:"hat",lv:"A2",bsp:"Er hat die Tür geschlossen."},
+  {inf:"sitzen",    pr:"sitzt",       pp:"gesessen",    h:"hat",lv:"A2",bsp:"Wir haben im Café gesessen."},
+  {inf:"steigen",   pr:"steigt",      pp:"gestiegen",   h:"ist",lv:"A2",bsp:"Wir sind in den Bus gestiegen."},
+  {inf:"sterben",   pr:"stirbt",      pp:"gestorben",   h:"ist",lv:"A2",bsp:"Die Pflanze ist gestorben."},
+  {inf:"treiben",   pr:"treibt",      pp:"getrieben",   h:"hat",lv:"A2",bsp:"Er hat viel Sport getrieben."},
+  {inf:"vergessen", pr:"vergisst",    pp:"vergessen",   h:"hat",lv:"A2",bsp:"Ich habe mein Handy vergessen."},
+  {inf:"verlieren", pr:"verliert",    pp:"verloren",    h:"hat",lv:"A2",bsp:"Er hat seine Schlüssel verloren."},
+  {inf:"wachsen",   pr:"wächst",      pp:"gewachsen",   h:"ist",lv:"A2",bsp:"Das Kind ist sehr gewachsen."},
 ];
 function T10A(){
   const [tab,setTab]=useState("struktur");
   const regelPP=[
-    {inf:"machen",   pp:"gemacht",    regel:"mach",    exc:false},
-    {inf:"kochen",   pp:"gekocht",    regel:"koch",    exc:false},
-    {inf:"lernen",   pp:"gelernt",    regel:"lern",    exc:false},
-    {inf:"spielen",  pp:"gespielt",   regel:"spiel",   exc:false},
-    {inf:"hören",    pp:"gehört",     regel:"hör",     exc:false},
-    {inf:"suchen",   pp:"gesucht",    regel:"such",    exc:false},
-    {inf:"träumen",  pp:"geträumt",   regel:"träum",   exc:false},
-    {inf:"kaufen",   pp:"gekauft",    regel:"kauf",    exc:false},
-    {inf:"reden",    pp:"geredet",    regel:"red",     exc:true},
-    {inf:"arbeiten", pp:"gearbeitet", regel:"arbeit",  exc:true},
-    {inf:"warten",   pp:"gewartet",   regel:"wart",    exc:true},
+    {inf:"machen",   pp:"gemacht",    stamm:"mach",    exc:false},
+    {inf:"kochen",   pp:"gekocht",    stamm:"koch",    exc:false},
+    {inf:"lernen",   pp:"gelernt",    stamm:"lern",    exc:false},
+    {inf:"hören",    pp:"gehört",     stamm:"hör",     exc:false},
+    {inf:"suchen",   pp:"gesucht",    stamm:"such",    exc:false},
+    {inf:"reden",    pp:"geredet",    stamm:"red",     exc:true},
+    {inf:"arbeiten", pp:"gearbeitet", stamm:"arbeit",  exc:true},
+    {inf:"warten",   pp:"gewartet",   stamm:"wart",    exc:true},
+  ];
+  const starkPP=[
+    {inf:"fahren",   pp:"gefahren",   hilf:"sein"},
+    {inf:"gehen",    pp:"gegangen",   hilf:"sein"},
+    {inf:"kommen",   pp:"gekommen",   hilf:"sein"},
+    {inf:"laufen",   pp:"gelaufen",   hilf:"sein"},
+    {inf:"fliegen",  pp:"geflogen",   hilf:"sein"},
+    {inf:"schreiben",pp:"geschrieben",hilf:"haben"},
+    {inf:"lesen",    pp:"gelesen",    hilf:"haben"},
+    {inf:"essen",    pp:"gegessen",   hilf:"haben"},
+    {inf:"trinken",  pp:"getrunken",  hilf:"haben"},
+    {inf:"sehen",    pp:"gesehen",    hilf:"haben"},
+    {inf:"finden",   pp:"gefunden",   hilf:"haben"},
+    {inf:"bleiben",  pp:"geblieben",  hilf:"sein"},
+    {inf:"werden",   pp:"geworden",   hilf:"sein"},
   ];
   const trennPP=[
     {inf:"aufräumen",   pp:"aufgeräumt",   pref:"auf",  stem:"räum",  suf:"t"},
@@ -7995,14 +8130,22 @@ function T10A(){
     {inf:"anrufen",     pp:"angerufen",    pref:"an",   stem:"ruf",   suf:"en ⚠️"},
     {inf:"aufstehen",   pp:"aufgestanden", pref:"auf",  stem:"stand", suf:"en ⚠️"},
   ];
+  const seinVerbs=[
+    {inf:"fahren",   pp:"gefahren",       ru:"ехать"},
+    {inf:"gehen",    pp:"gegangen",       ru:"идти"},
+    {inf:"fliegen",  pp:"geflogen",       ru:"лететь"},
+    {inf:"kommen",   pp:"gekommen",       ru:"приходить"},
+    {inf:"laufen",   pp:"gelaufen",       ru:"бежать"},
+    {inf:"reisen",   pp:"gereist",        ru:"путешествовать"},
+  ];
   return (
     <div style={{display:"flex",flexDirection:"column",gap:10}}>
       <Box c={C.purple}>
-        <H c={C.purple}>📅 L10A · Perfekt (разговорное прошедшее)</H>
-        <div style={{display:"flex",gap:6,marginBottom:12}}>
-          {[["struktur","Struktur"],["regel","Partizip II"],["trenn","Trennbare"]].map(([key,lbl])=>(
+        <H c={C.purple}>📅 L10A · Perfekt</H>
+        <div style={{display:"flex",gap:4,marginBottom:12,flexWrap:"wrap"}}>
+          {[["struktur","Struktur"],["pp","Partizip II"],["trenn","Trennb./Untrennb."],["hssein","haben / sein"],["stark","📋 Starke A1"]].map(([key,lbl])=>(
             <button key={key} onClick={()=>setTab(key)}
-              style={{flex:1,padding:"9px 4px",borderRadius:9,border:"none",cursor:"pointer",
+              style={{flex:1,minWidth:70,padding:"8px 4px",borderRadius:9,border:"none",cursor:"pointer",
                 fontSize:10,fontWeight:700,
                 background:tab===key?C.purple+"33":"transparent",
                 color:tab===key?C.purple:C.muted}}>
@@ -8010,233 +8153,285 @@ function T10A(){
             </button>
           ))}
         </div>
-
         {tab==="struktur"&&(
           <div>
-            {/* Формула */}
             <div style={{background:C.purple+"15",border:`1px solid ${C.purple}33`,
               borderRadius:10,padding:"12px 14px",marginBottom:10}}>
               <div style={{fontWeight:800,fontSize:13,color:C.purple,marginBottom:10}}>
-                Perfekt = разговорное прошедшее время
+                Perfekt = разговорное прошедшее
               </div>
-              {/* Схема предложения */}
-              <div style={{background:"rgba(255,255,255,.07)",borderRadius:9,padding:"12px",marginBottom:12}}>
-                <div style={{fontSize:10,color:C.muted,marginBottom:6,textAlign:"center"}}>СТРУКТУРА ПРЕДЛОЖЕНИЯ:</div>
-                <div style={{display:"flex",gap:4,justifyContent:"center",flexWrap:"wrap",marginBottom:6}}>
-                  {[["Subj.",""],["haben/sein","🟠 позиция 2"],["... Mitt. ...","🔵 середина"],["Partizip II","🟣 КОНЕЦ"]].map(([lbl,hint])=>(
-                    <div key={lbl} style={{textAlign:"center"}}>
-                      <div style={{background: lbl==="haben/sein"?C.orange+"33":lbl==="Partizip II"?C.purple+"33":"rgba(255,255,255,.06)",
-                        border:`1px solid ${lbl==="haben/sein"?C.orange:lbl==="Partizip II"?C.purple:C.border}44`,
-                        borderRadius:7,padding:"5px 10px",fontSize:12,fontWeight:700,
-                        color:lbl==="haben/sein"?C.orange:lbl==="Partizip II"?C.purple:C.text}}>
-                        {lbl}
-                      </div>
-                      {hint&&<div style={{fontSize:9,color:C.muted,marginTop:2}}>{hint}</div>}
-                    </div>
-                  ))}
-                </div>
+              <div style={{background:"rgba(255,255,255,.07)",borderRadius:9,padding:"10px",marginBottom:10,textAlign:"center"}}>
+                <span style={{color:C.orange,fontWeight:800,fontSize:13}}>haben/sein</span>
+                <span style={{color:C.muted}}> — позиция 2 — </span>
+                <span style={{color:C.purple,fontWeight:800,fontSize:13}}>Partizip II</span>
+                <span style={{color:C.muted}}> в конце</span>
               </div>
-              {/* Примеры */}
-              <div style={{fontSize:11,color:C.muted,marginBottom:6}}>Примеры:</div>
               {[
                 ["Ich","habe","gestern","gekocht."],
                 ["Er","hat","im Büro","gearbeitet."],
-                ["Frau Schmidt","hat","im Supermarkt","eingekauft."],
-                ["Wir","haben","viel Musik","gehört."],
-                ["Ihr","habt","zusammen","gespielt."],
+                ["Sie","ist","nach Wien","gefahren."],
+                ["Wir","haben","Musik","gehört."],
+                ["Er","ist","früh","eingeschlafen."],
               ].map(([s,h,m,pp])=>(
                 <div key={pp} style={{display:"flex",gap:6,marginBottom:5,fontSize:12,
                   background:"rgba(255,255,255,.04)",borderRadius:7,padding:"6px 10px",alignItems:"baseline"}}>
-                  <span style={{color:C.text,minWidth:55}}>{s}</span>
+                  <span style={{color:C.text,minWidth:40}}>{s}</span>
                   <span style={{color:C.orange,fontWeight:800,minWidth:28}}>{h}</span>
                   <span style={{color:C.muted,flex:1}}>{m}</span>
                   <span style={{color:C.purple,fontWeight:800}}>{pp}</span>
                 </div>
               ))}
             </div>
-            {/* Frage */}
-            <div style={{background:C.card2,borderRadius:9,padding:"10px 12px",marginBottom:8}}>
-              <div style={{fontWeight:700,fontSize:12,color:C.teal,marginBottom:8}}>❓ Вопросы в Perfekt:</div>
+            <div style={{background:C.card2,borderRadius:9,padding:"9px 11px",marginBottom:8}}>
+              <div style={{fontWeight:700,fontSize:12,color:C.teal,marginBottom:6}}>❓ Вопросы в Perfekt:</div>
               {[
                 ["Hast du gestern gekocht?","Ja, ich habe gekocht."],
-                ["Hat er im Büro gearbeitet?","Nein, er hat zu Hause gearbeitet."],
-                ["Haben Sie eingekauft?","Ja, wir haben eingekauft."],
+                ["Ist er nach Wien gefahren?","Ja, er ist gefahren."],
               ].map(([f,a])=>(
-                <div key={f} style={{marginBottom:7,fontSize:11}}>
+                <div key={f} style={{marginBottom:5,fontSize:11}}>
                   <div style={{color:C.text,fontWeight:600}}>— {f}</div>
                   <div style={{color:C.muted,paddingLeft:8}}>— {a}</div>
                 </div>
               ))}
             </div>
-            {/* Zeitmarker */}
-            <div style={{background:C.card2,borderRadius:9,padding:"10px 12px",marginBottom:8}}>
-              <div style={{fontWeight:700,fontSize:12,color:C.muted,marginBottom:6}}>🕐 Временны́е маркеры:</div>
-              <div style={{display:"flex",flexWrap:"wrap",gap:5}}>
-                {["gestern","vorgestern","letzte Woche","letzten Monat","letztes Jahr","früher","schon","noch nicht","nie"].map(m=>(
-                  <div key={m} style={{background:C.purple+"22",borderRadius:5,padding:"3px 8px",
-                    fontSize:11,color:C.purple,fontWeight:600}}>{m}</div>
+            <div style={{background:C.card2,borderRadius:9,padding:"9px 11px"}}>
+              <div style={{fontWeight:700,fontSize:11,color:C.muted,marginBottom:5}}>🕐 Временны́е маркеры:</div>
+              <div style={{display:"flex",flexWrap:"wrap",gap:4}}>
+                {["gestern","vorgestern","letzte Woche","letzten Monat","früher","schon","noch nicht","nie"].map(m=>(
+                  <span key={m} style={{background:C.purple+"22",borderRadius:5,padding:"3px 8px",
+                    fontSize:11,color:C.purple,fontWeight:600}}>{m}</span>
                 ))}
               </div>
             </div>
-            {/* Präsens vs Perfekt */}
-            <div style={{background:C.card2,borderRadius:9,padding:"10px 12px"}}>
-              <div style={{fontWeight:700,fontSize:12,color:C.muted,marginBottom:8}}>Präsens vs Perfekt:</div>
-              {[
-                ["heute","Präsens","Heute kocht sie.","настоящее"],
-                ["gestern","Perfekt","Gestern hat sie gekocht.","прошедшее (разговорное)"],
-              ].map(([when,name,bsp,ru])=>(
-                <div key={name} style={{marginBottom:6,fontSize:12,background:"rgba(255,255,255,.04)",
-                  borderRadius:7,padding:"7px 10px"}}>
-                  <div style={{display:"flex",justifyContent:"space-between",marginBottom:3}}>
-                    <span style={{color:C.teal,fontWeight:700}}>{when}</span>
-                    <span style={{color:C.orange,fontSize:11}}>{name}</span>
-                    <span style={{color:C.muted,fontSize:11}}>{ru}</span>
-                  </div>
-                  <div style={{color:C.text,fontStyle:"italic"}}>{bsp}</div>
-                </div>
-              ))}
-            </div>
           </div>
         )}
-
-        {tab==="regel"&&(
+        {tab==="pp"&&(
           <div>
-            {/* Формула */}
             <div style={{background:C.purple+"15",border:`1px solid ${C.purple}33`,
-              borderRadius:10,padding:"12px 14px",marginBottom:10}}>
-              <div style={{fontWeight:800,fontSize:12,color:C.purple,marginBottom:10}}>
-                Partizip II регулярных глаголов:
+              borderRadius:10,padding:"10px 12px",marginBottom:8}}>
+              <div style={{fontWeight:800,fontSize:12,color:C.purple,marginBottom:8}}>
+                1️⃣ Schwache (правильные): ge- + Stamm + -t
               </div>
-              {/* Пошаговая формула */}
-              <div style={{background:"rgba(255,255,255,.07)",borderRadius:9,padding:"10px 12px",marginBottom:12}}>
-                <div style={{fontSize:10,color:C.muted,marginBottom:8,textAlign:"center"}}>КАК ОБРАЗОВАТЬ:</div>
-                <div style={{display:"flex",justifyContent:"center",alignItems:"center",gap:4,flexWrap:"wrap"}}>
-                  {[["Infinitiv","machen"],["→ убрать -en","mach"],["→ ge + Stamm + t","ge·mach·t"]].map(([step,ex],i)=>(
-                    <div key={i} style={{textAlign:"center"}}>
-                      <div style={{fontSize:10,color:C.muted,marginBottom:2}}>{step}</div>
-                      <div style={{background:C.purple+"33",borderRadius:7,padding:"4px 10px",
-                        fontWeight:800,color:C.purple,fontSize:13}}>{ex}</div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-              {/* Исключение */}
-              <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,
-                borderRadius:8,padding:"9px 11px",marginBottom:10}}>
-                <div style={{fontWeight:700,fontSize:11,color:C.orange,marginBottom:5}}>
-                  ⚠️ Stamm оканчивается на -t или -d:
-                </div>
-                <div style={{fontSize:12,color:C.text,marginBottom:4}}>
-                  → добавляется <b style={{color:C.orange}}>-et</b> (не просто -t)
-                </div>
-                <div style={{fontSize:11,color:C.muted}}>
-                  Иначе было бы неудобно произносить:<br/>
-                  "arbeit + t" → "arbeitt" ✗ → "gearbeit<b style={{color:C.orange}}>et</b>" ✓
-                </div>
-              </div>
-              {/* Таблица */}
-              <div style={{display:"grid",gridTemplateColumns:"auto 1fr auto",gap:"3px 10px",alignItems:"center"}}>
-                <div style={{fontSize:10,color:C.muted,fontWeight:700}}>Infinitiv</div>
-                <div style={{fontSize:10,color:C.muted,fontWeight:700}}>Partizip II</div>
-                <div style={{fontSize:10,color:C.muted,fontWeight:700}}>Stamm</div>
-                {regelPP.map(({inf,pp,regel,exc})=>(
+              <div style={{display:"grid",gridTemplateColumns:"auto 1fr auto",gap:"2px 8px",fontSize:11,marginBottom:8}}>
+                {regelPP.map(({inf,pp,exc})=>(
                   <React.Fragment key={inf}>
-                    <div style={{fontSize:12,color:C.text,padding:"3px 0",borderTop:`1px solid ${C.border}22`}}>{inf}</div>
-                    <div style={{fontSize:13,color:C.purple,fontWeight:800,padding:"3px 0",borderTop:`1px solid ${C.border}22`}}>
-                      {pp}{exc&&<span style={{color:C.orange,fontSize:10}}> ⚠️</span>}
-                    </div>
-                    <div style={{fontSize:10,color:C.muted,padding:"3px 0",borderTop:`1px solid ${C.border}22`}}>
-                      ge+{regel}+{exc?"et":"t"}
-                    </div>
+                    <span style={{color:C.muted}}>{inf}</span>
+                    <span style={{color:C.border,textAlign:"center"}}>→</span>
+                    <span style={{color:C.purple,fontWeight:700}}>
+                      {pp}{exc&&<span style={{color:C.orange}}> ⚠️</span>}
+                    </span>
+                  </React.Fragment>
+                ))}
+              </div>
+              <div style={{background:C.orange+"15",borderRadius:7,padding:"6px 9px",fontSize:11,color:C.muted}}>
+                ⚠️ Stamm на -t/-d: +<b style={{color:C.orange}}>et</b> → gered<b style={{color:C.orange}}>et</b>, gearbeit<b style={{color:C.orange}}>et</b>
+              </div>
+            </div>
+            <div style={{background:C.blue+"15",border:`1px solid ${C.blue}33`,
+              borderRadius:10,padding:"10px 12px",marginBottom:8}}>
+              <div style={{fontWeight:800,fontSize:12,color:C.blue,marginBottom:4}}>
+                2️⃣ Starke (неправильные): ge- + Stamm + -en
+              </div>
+              <div style={{fontSize:11,color:C.muted,marginBottom:6}}>Корень меняется — нужно запоминать!</div>
+              <div style={{display:"grid",gridTemplateColumns:"auto 1fr auto auto",gap:"3px 8px",fontSize:11}}>
+                <span style={{color:C.muted,fontSize:10,fontWeight:700}}>Inf.</span>
+                <span></span>
+                <span style={{color:C.blue,fontSize:10,fontWeight:700}}>P.II</span>
+                <span style={{color:C.muted,fontSize:10,fontWeight:700}}>+</span>
+                {starkPP.map(({inf,pp,hilf})=>(
+                  <React.Fragment key={inf}>
+                    <span style={{color:C.muted}}>{inf}</span>
+                    <span style={{color:C.border,textAlign:"center"}}>→</span>
+                    <span style={{color:C.blue,fontWeight:700}}>{pp}</span>
+                    <span style={{fontSize:10,color:hilf==="sein"?C.orange:C.teal,fontWeight:700}}>{hilf}</span>
                   </React.Fragment>
                 ))}
               </div>
             </div>
-            {/* Нерегулярные глаголы — превью */}
-            <div style={{background:C.card2,borderRadius:8,padding:"9px 11px"}}>
-              <div style={{fontWeight:700,fontSize:11,color:C.muted,marginBottom:5}}>
-                ℹ️ Нерегулярные (starke) глаголы:
+            <div style={{background:C.teal+"15",border:`1px solid ${C.teal}33`,
+              borderRadius:10,padding:"10px 12px"}}>
+              <div style={{fontWeight:800,fontSize:12,color:C.teal,marginBottom:4}}>
+                3️⃣ Verben auf -ieren: только -t, без ge-!
               </div>
-              <div style={{fontSize:11,color:C.muted,lineHeight:1.6}}>
-                У сильных глаголов Partizip II оканчивается на <b style={{color:C.purple}}>-en</b> и часто меняется корень:
-                <br/>fahren → ge<b style={{color:C.purple}}>fahr</b><b style={{color:C.purple}}>en</b> · gehen → ge<b style={{color:C.purple}}>gang</b><b style={{color:C.purple}}>en</b> · kommen → ge<b style={{color:C.purple}}>komm</b><b style={{color:C.purple}}>en</b>
-                <br/><span style={{color:C.orange}}>Они изучаются отдельно — выучи наизусть!</span>
+              <div style={{fontSize:11,color:C.muted,marginBottom:6}}>Заимствованные слова — ge- не добавляется!</div>
+              <div style={{display:"grid",gridTemplateColumns:"auto 1fr auto",gap:"3px 8px",fontSize:12,marginBottom:8}}>
+                {[["studieren","studiert"],["telefonieren","telefoniert"],
+                  ["fotografieren","fotografiert"],["trainieren","trainiert"],
+                  ["passieren","passiert ⚠️ (sein)"]].map(([inf,pp])=>(
+                  <React.Fragment key={inf}>
+                    <span style={{color:C.muted}}>{inf}</span>
+                    <span style={{color:C.border,textAlign:"center"}}>→</span>
+                    <span style={{color:C.teal,fontWeight:700}}>{pp}</span>
+                  </React.Fragment>
+                ))}
+              </div>
+              <div style={{background:"rgba(255,255,255,.06)",borderRadius:7,padding:"6px 9px",fontSize:11,color:C.orange}}>
+                ✗ gestudiert ← неправильно!<br/>
+                ✓ studiert ← правильно!
               </div>
             </div>
           </div>
         )}
-
         {tab==="trenn"&&(
           <div>
             <div style={{background:C.purple+"15",border:`1px solid ${C.purple}33`,
-              borderRadius:10,padding:"12px 14px",marginBottom:10}}>
-              <div style={{fontWeight:800,fontSize:12,color:C.purple,marginBottom:10}}>
-                Trennbare Verben: -ge- вставляется между префиксом и основой
+              borderRadius:9,padding:"10px 12px",marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:12,color:C.purple,marginBottom:8}}>
+                Trennbare: Präfix + ge + Stamm + -t
               </div>
-              {/* Визуальная формула */}
-              <div style={{background:"rgba(255,255,255,.07)",borderRadius:9,padding:"10px 12px",marginBottom:12}}>
-                <div style={{fontSize:10,color:C.muted,marginBottom:8,textAlign:"center"}}>ФОРМУЛА:</div>
-                <div style={{display:"flex",justifyContent:"center",gap:0,flexWrap:"wrap"}}>
-                  {[["Präfix","auf","C.orange"],["ge","ge","C.purple"],["Stamm","räum","C.teal"],["Suffix","+t","C.muted"]].map(([label,val,col],i)=>(
-                    <div key={i} style={{textAlign:"center"}}>
-                      <div style={{fontSize:9,color:C.muted,marginBottom:2}}>{label}</div>
-                      <div style={{background:eval(col)+"33",borderRadius:i===0?"7px 0 0 7px":i===3?"0 7px 7px 0":"0",
-                        padding:"5px 8px",fontWeight:800,fontSize:13,
-                        color:eval(col),borderRight:i<3?`1px solid ${C.border}33`:"none"}}>
-                        {val}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-                <div style={{textAlign:"center",marginTop:6,fontSize:13,fontWeight:800,color:C.purple}}>
-                  → aufgeräumt ✓
-                </div>
-              </div>
-              {/* Таблица */}
               {trennPP.map(({inf,pp,pref,stem,suf})=>(
-                <div key={inf} style={{marginBottom:7,background:"rgba(255,255,255,.04)",
-                  borderRadius:8,padding:"8px 11px"}}>
-                  <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:4}}>
+                <div key={inf} style={{marginBottom:6,background:"rgba(255,255,255,.04)",
+                  borderRadius:8,padding:"7px 10px"}}>
+                  <div style={{display:"flex",justifyContent:"space-between",marginBottom:4}}>
                     <span style={{color:C.muted,fontSize:12}}>{inf}</span>
                     <span style={{color:C.purple,fontWeight:800,fontSize:13}}>{pp}</span>
                   </div>
                   <div style={{display:"flex",gap:0}}>
-                    <span style={{background:C.orange+"22",padding:"2px 6px",borderRadius:"4px 0 0 4px",
-                      fontSize:11,color:C.orange,fontWeight:700}}>{pref}</span>
-                    <span style={{background:C.purple+"22",padding:"2px 6px",
-                      fontSize:11,color:C.purple,fontWeight:700}}>ge</span>
-                    <span style={{background:C.teal+"22",padding:"2px 6px",
-                      fontSize:11,color:C.teal,fontWeight:700}}>{stem}</span>
-                    <span style={{background:"rgba(255,255,255,.08)",padding:"2px 6px",borderRadius:"0 4px 4px 0",
-                      fontSize:11,color:C.muted}}>+{suf}</span>
+                    <span style={{background:C.orange+"22",padding:"2px 6px",borderRadius:"4px 0 0 4px",fontSize:11,color:C.orange,fontWeight:700}}>{pref}</span>
+                    <span style={{background:C.purple+"22",padding:"2px 6px",fontSize:11,color:C.purple,fontWeight:700}}>ge</span>
+                    <span style={{background:C.teal+"22",padding:"2px 6px",fontSize:11,color:C.teal,fontWeight:700}}>{stem}</span>
+                    <span style={{background:"rgba(255,255,255,.08)",padding:"2px 6px",borderRadius:"0 4px 4px 0",fontSize:11,color:C.muted}}>+{suf}</span>
                   </div>
                 </div>
               ))}
             </div>
-            {/* Нераздельные глаголы */}
             <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,
               borderRadius:9,padding:"10px 12px"}}>
               <div style={{fontWeight:700,fontSize:12,color:C.orange,marginBottom:6}}>
-                ⚠️ Нераздельные глаголы (be-, er-, ver-, ent-, ge-):
+                ⚠️ Untrennbare (be-, er-, ver-, ent-, ge-): без ge-!
               </div>
-              <div style={{fontSize:11,color:C.muted,marginBottom:6}}>
-                Эти приставки неотделяемые → ge- НЕ добавляется!
-              </div>
-              {[
-                ["besuchen","besucht","(не gebesucht!)"],
-                ["erklären","erklärt","(не geerklart!)"],
-                ["vergessen","vergessen","(не gevergessen!)"],
-                ["verstehen","verstanden","(не geversanden!)"],
-              ].map(([inf,pp,note])=>(
-                <div key={inf} style={{display:"flex",gap:8,marginBottom:4,fontSize:12}}>
-                  <span style={{color:C.text,minWidth:75}}>{inf}</span>
-                  <span style={{color:C.purple,fontWeight:700,minWidth:75}}>{pp}</span>
-                  <span style={{color:C.muted,fontSize:10}}>{note}</span>
+              {[["besuchen","besucht"],["erklären","erklärt"],["vergessen","vergessen"],
+                ["verkaufen","verkauft"],["bestellen","bestellt"],["verstehen","verstanden"]].map(([inf,pp])=>(
+                <div key={inf} style={{display:"flex",justifyContent:"space-between",fontSize:12,
+                  background:"rgba(255,255,255,.04)",borderRadius:6,padding:"4px 8px",marginBottom:3}}>
+                  <span style={{color:C.muted}}>{inf}</span>
+                  <span style={{color:C.orange,fontWeight:700}}>{pp}</span>
                 </div>
               ))}
             </div>
           </div>
         )}
+        {tab==="hssein"&&(
+          <div>
+            <div style={{background:C.teal+"15",border:`1px solid ${C.teal}33`,
+              borderRadius:10,padding:"10px 12px",marginBottom:8}}>
+              <div style={{fontWeight:800,fontSize:12,color:C.teal,marginBottom:6}}>
+                ✅ haben — большинство глаголов
+              </div>
+              <div style={{fontSize:12,color:C.text,lineHeight:1.7,marginBottom:8}}>
+                → есть <b style={{color:C.teal}}>Akkusativ-объект</b> (кого/что?)<br/>
+                → или не подходит под правила sein
+              </div>
+              {[["Ich habe Musik gehört.","что? → Musik → haben"],
+                ["Er hat das Auto gekauft.","что? → Auto → haben"],
+                ["Wir haben gekocht.","нет движения → haben"]].map(([bsp,note])=>(
+                <div key={bsp} style={{marginBottom:4,background:"rgba(255,255,255,.05)",
+                  borderRadius:6,padding:"5px 8px",fontSize:11}}>
+                  <div style={{color:C.text,fontWeight:600}}>{bsp}</div>
+                  <div style={{color:C.muted}}>{note}</div>
+                </div>
+              ))}
+            </div>
+            <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,
+              borderRadius:10,padding:"10px 12px",marginBottom:8}}>
+              <div style={{fontWeight:800,fontSize:12,color:C.orange,marginBottom:8}}>
+                🚶 sein — только 3 случая
+              </div>
+              {[
+                ["Движение А → Б","fahren, gehen, fliegen, laufen, kommen, reisen"],
+                ["Изменение состояния","einschlafen, aufwachen, aufstehen, werden, sterben"],
+                ["Исключения ⚠️","bleiben (оставаться), sein (быть)"],
+              ].map(([title,verbs])=>(
+                <div key={title} style={{marginBottom:8}}>
+                  <div style={{fontSize:11,fontWeight:700,color:C.orange,marginBottom:3}}>{title}:</div>
+                  <div style={{fontSize:11,color:C.muted}}>{verbs}</div>
+                </div>
+              ))}
+              <div style={{background:"rgba(255,255,255,.05)",borderRadius:7,padding:"7px 9px",marginTop:4}}>
+                <div style={{fontWeight:700,fontSize:11,color:C.muted,marginBottom:4}}>Примеры:</div>
+                {seinVerbs.map(({inf,pp,ru})=>(
+                  <div key={inf} style={{display:"flex",gap:6,fontSize:11,marginBottom:3}}>
+                    <span style={{color:C.muted,minWidth:65}}>{inf}</span>
+                    <span style={{color:C.orange,fontWeight:700,minWidth:85}}>{pp}</span>
+                    <span style={{color:C.muted}}>{ru}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div style={{background:C.card2,borderRadius:8,padding:"9px 11px",fontSize:11}}>
+              <div style={{fontWeight:700,color:C.muted,marginBottom:5}}>💡 Быстрый тест:</div>
+              <div style={{color:C.text,lineHeight:1.8}}>
+                1. Есть объект (кого/что)? → <b style={{color:C.teal}}>haben</b><br/>
+                2. Движение А→Б? → <b style={{color:C.orange}}>sein</b><br/>
+                3. Изменение состояния? → <b style={{color:C.orange}}>sein</b><br/>
+                4. bleiben / sein? → <b style={{color:C.orange}}>sein</b> ⚠️<br/>
+                5. Всё остальное? → <b style={{color:C.teal}}>haben</b>
+              </div>
+            </div>
+          </div>
+        )}
+        {tab==="stark"&&(()=>{
+          const [openIdx,setOpenIdx]=React.useState(null);
+          const [fil,setFil]=React.useState("all");
+          const filtered=fil==="all"?STARKE_VERBEN
+            :fil==="A1"||fil==="A2"?STARKE_VERBEN.filter(v=>v.lv===fil)
+            :STARKE_VERBEN.filter(v=>v.h===fil);
+          return(
+            <div>
+              <div style={{display:"flex",gap:4,marginBottom:6,flexWrap:"wrap"}}>
+                {[["all",`Все ${STARKE_VERBEN.length}`,"purple"],
+                  ["A1",`A1 ${STARKE_VERBEN.filter(v=>v.lv==="A1").length}`,"blue"],
+                  ["A2",`A2 ${STARKE_VERBEN.filter(v=>v.lv==="A2").length}`,"teal"],
+                  ["hat",`haben ${STARKE_VERBEN.filter(v=>v.h==="hat").length}`,"teal"],
+                  ["ist",`sein ${STARKE_VERBEN.filter(v=>v.h==="ist").length}`,"orange"],
+                ].map(([f,lbl,col])=>(
+                  <button key={f} onClick={()=>setFil(f)}
+                    style={{flex:1,minWidth:50,padding:"5px 3px",borderRadius:7,border:"none",cursor:"pointer",
+                      fontSize:10,fontWeight:700,
+                      background:fil===f?C[col]+"33":"transparent",
+                      color:fil===f?C[col]:C.muted}}>
+                    {lbl}
+                  </button>
+                ))}
+              </div>
+              <div style={{display:"flex",gap:6,paddingLeft:4,marginBottom:5,fontSize:10,color:C.muted,fontWeight:700}}>
+                <span style={{flex:1}}>Infinitiv (Präsens)</span>
+                <span style={{minWidth:80}}>Partizip II</span>
+                <span style={{minWidth:30}}>+</span>
+              </div>
+              {filtered.map((v,i)=>(
+                <div key={v.inf}>
+                  <div onClick={()=>setOpenIdx(openIdx===i?null:i)}
+                    style={{display:"flex",alignItems:"center",gap:6,padding:"6px 8px",
+                      background:openIdx===i?"rgba(255,255,255,.08)":"rgba(255,255,255,.03)",
+                      borderRadius:7,marginBottom:3,cursor:"pointer",
+                      borderLeft:`3px solid ${v.h==="ist"?C.orange:C.teal}`}}>
+                    <div style={{flex:1}}>
+                      <span style={{fontWeight:700,color:C.text,fontSize:12}}>{v.inf}</span>
+                      <span style={{color:C.muted,fontSize:10}}> ({v.pr})</span>
+                      <span style={{marginLeft:4,background:v.lv==="A1"?C.blue+"22":C.teal+"22",
+                        color:v.lv==="A1"?C.blue:C.teal,borderRadius:3,
+                        padding:"0px 4px",fontSize:9,fontWeight:700}}>{v.lv}</span>
+                    </div>
+                    <div style={{minWidth:80,color:C.purple,fontWeight:700,fontSize:12}}>{v.pp}</div>
+                    <div style={{minWidth:30,textAlign:"center"}}>
+                      <span style={{background:v.h==="ist"?C.orange+"33":C.teal+"33",
+                        color:v.h==="ist"?C.orange:C.teal,
+                        borderRadius:4,padding:"1px 5px",fontSize:10,fontWeight:800}}>{v.h}</span>
+                    </div>
+                  </div>
+                  {openIdx===i&&(
+                    <div style={{background:"rgba(255,255,255,.06)",borderRadius:"0 0 7px 7px",
+                      padding:"6px 10px",marginBottom:5,fontSize:11,color:C.muted,
+                      borderLeft:`3px solid ${v.h==="ist"?C.orange:C.teal}`,fontStyle:"italic"}}>
+                      💬 {v.bsp}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          );
+        })()}
       </Box>
     </div>
   );
