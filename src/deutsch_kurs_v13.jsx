@@ -1,16 +1,45 @@
 import { useState, Fragment } from "react";
 
 // ─── PALETTE ──────────────────────────────────────────────────────────────────
-const C = {
+const DARK_THEME = {
   bg:"#0d1117",card:"#161b22",card2:"#1c2128",border:"#30363d",
   green:"#3fb950",greenBg:"#0d2a16",red:"#f85149",redBg:"#2d1117",
   blue:"#58a6ff",blueBg:"#0d1f3c",yellow:"#e3b341",yellowBg:"#2a1f00",
   purple:"#bc8cff",purpleBg:"#1e1030",orange:"#f0883e",orangeBg:"#271500",
-  teal:"#39d0d8",tealBg:"#042a2b",text:"#e6edf3",muted:"#8b949e",dim:"#484f58",
+  teal:"#39d0d8",tealBg:"#042a2b",text:"#e6edf3",muted:"#9ba5b0",dim:"#6a7280",
+  ov3:"rgba(255,255,255,.05)",ov4:"rgba(255,255,255,.06)",ov5:"rgba(255,255,255,.07)",
+  ov6:"rgba(255,255,255,.08)",ov7:"rgba(255,255,255,.10)",ov8:"rgba(255,255,255,.12)",
 };
+const LIGHT_THEME = {
+  bg:"#ffffff",card:"#f6f8fa",card2:"#eaeef2",border:"#d0d7de",
+  green:"#1a7f37",greenBg:"#dafbe1",red:"#cf222e",redBg:"#ffebe9",
+  blue:"#0969da",blueBg:"#ddf4ff",yellow:"#7a5200",yellowBg:"#fff8c5",
+  purple:"#8250df",purpleBg:"#fbefff",orange:"#bc4c00",orangeBg:"#fff1e5",
+  teal:"#126269",tealBg:"#d3f4f5",text:"#1f2328",muted:"#4c5560",dim:"#6e7781",
+  ov3:"rgba(0,0,0,.035)",ov4:"rgba(0,0,0,.045)",ov5:"rgba(0,0,0,.055)",
+  ov6:"rgba(0,0,0,.065)",ov7:"rgba(0,0,0,.08)",ov8:"rgba(0,0,0,.10)",
+};
+// C — мутируемый объект палитры. Свойства подменяются applyTheme() при
+// переключении темы; все JSX-стили читают C.xxx «вживую» при рендере,
+// поэтому смена темы отражается на всём приложении без рефакторинга.
+const C = {...DARK_THEME};
+function applyTheme(name){
+  Object.assign(C, name==="light"?LIGHT_THEME:DARK_THEME);
+}
 const AC=a=>a==="der"?C.blue:a==="die"?C.purple:C.orange;
 const AB=a=>a==="der"?C.blueBg:a==="die"?C.purpleBg:C.orangeBg;
 function shuffle(a){const r=[...a];for(let i=r.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[r[i],r[j]]=[r[j],r[i]];}return r;}
+function ThemeToggle({theme,onToggle}){
+  return (
+    <button onClick={onToggle} title={theme==="dark"?"Светлая тема":"Тёмная тема"}
+      style={{position:"fixed",top:14,right:14,zIndex:50,
+        background:C.card,border:`1.5px solid ${C.border}`,borderRadius:20,
+        width:38,height:38,display:"flex",alignItems:"center",justifyContent:"center",
+        cursor:"pointer",fontSize:17,boxShadow:"0 2px 8px rgba(0,0,0,.18)"}}>
+      {theme==="dark"?"☀️":"🌙"}
+    </button>
+  );
+}
 
 // ═══════════════════════════════════ DATA ════════════════════════════════════
 
@@ -449,6 +478,7 @@ const WBDATA=[
   {art:"",   de:"treiben",            pl:"—",         ru:"заниматься (спортом); гнать", tema:"Alltag"},
   {art:"",   de:"Sport treiben",      pl:"—",         ru:"заниматься спортом",      tema:"Phrase"},
   {art:"",   de:"spazieren gehen",    pl:"—",         ru:"гулять, идти на прогулку", tema:"Alltag"},
+  {art:"",   de:"spazieren",         pl:"—",         ru:"гулять, прогуливаться",   tema:"Alltag"},
   {art:"",   de:"reiten",             pl:"—",         ru:"ездить верхом",           tema:"Alltag"},
 
   {art:"",   de:"weg",               pl:"—",         ru:"прочь, исчез, пропал",    tema:"Alltag"},
@@ -753,7 +783,6 @@ const WBDATA=[
   {art:"der", de:"Krankenpfleger",   pl:"Krankenpfleger",ru:"медбрат\nf. - die Krankenschwester",         tema:"Berufe"},
   {art:"der", de:"Hausmeister",      pl:"Hausmeister",  ru:"завхоз, комендант\nf. - die Hausmeisterin",   tema:"Berufe"},
   {art:"der", de:"Bankkaufmann",     pl:"Bankkaufleute",ru:"банковский служащий\nf. - die Bankkauffrau",  tema:"Berufe"},
-  {art:"der", de:"Programmierer",    pl:"Programmierer",ru:"программист\nf. - die Programmiererin",       tema:"Berufe"},
   {art:"der", de:"Briefträger",      pl:"Briefträger",  ru:"почтальон\nf. - die Briefträgerin",           tema:"Berufe"},
   {art:"der", de:"Taxifahrer",       pl:"Taxifahrer",   ru:"таксист\nf. - die Taxifahrerin",              tema:"Berufe"},
   {art:"der", de:"Sekretär",         pl:"Sekretäre",    ru:"секретарь\nf. - die Sekretärin",              tema:"Berufe"},
@@ -848,9 +877,7 @@ const WBDATA=[
   {art:"",   de:"kontrollieren",     pl:"—",            ru:"контролировать, проверять",                   tema:"Arbeit"},
   {art:"",   de:"unterschreiben",    pl:"—",            ru:"подписывать",                                 tema:"Arbeit"},
   {art:"",   de:"anstrengend",       pl:"—",            ru:"утомительный, напряжённый, изматывающий"},
-  {art:"",   de:"allein",            pl:"—",            ru:"один, одна, в одиночестве · alleine = то же"},
   {art:"",   de:"reisen",            pl:"—",            ru:"путешествовать",                              tema:"Alltag"},
-  {art:"",   de:"draußen",           pl:"—",            ru:"снаружи, на улице"},
   {art:"",   de:"drinnen",           pl:"—",            ru:"внутри, в помещении"},
   // L8 новые слова
   {art:"der", de:"Mumps",            pl:"—",            ru:"свинка (болезнь)",                            tema:"Gesundheit"},
@@ -868,7 +895,6 @@ const WBDATA=[
   {art:"",   de:"anmachen",          pl:"—",            ru:"включать (свет/технику)",                     tema:"Trennbare Verben"},
   {art:"",   de:"ausmachen",         pl:"—",            ru:"выключать (свет/технику)",                    tema:"Trennbare Verben"},
   {art:"",   de:"möglicherweise",    pl:"—",            ru:"возможно, вероятно (möglicherweise > vielleicht)"},
-  {art:"",   de:"wahrscheinlich",    pl:"—",            ru:"вероятно, скорее всего"},
   {art:"",   de:"überrascht",        pl:"—",            ru:"удивлённый · Ich bin überrascht = я удивлён(а)"},
   {art:"",   de:"sollte",            pl:"—",            ru:"следовало бы, нужно бы (Konjunktiv II от sollen) · Du solltest schlafen."},
   // ── L8E · Notruf ─────────────────────────────────────────────────────────────
@@ -901,6 +927,14 @@ const WBDATA=[
   {art:"das", de:"Verkehrsmittel",  pl:"Verkehrsmittel", ru:"транспортное средство (pl: Verkehrsmittel = виды транспорта)", tema:"Verkehrsmittel"},
   {art:"",   de:"benutzen",         pl:"—",            ru:"использовать, пользоваться",                  tema:"Verkehrsmittel"},
   {art:"",   de:"fliegen",          pl:"—",            ru:"летать",                                      tema:"Verkehrsmittel"},
+  {art:"der", de:"Hubschrauber",    pl:"-",            ru:"вертолёт",                                    tema:"Verkehrsmittel"},
+  {art:"das", de:"Wohnmobil",       pl:"-e",           ru:"автодом, кемпер",                              tema:"Verkehrsmittel"},
+  {art:"die", de:"Fähre",           pl:"-n",           ru:"паром",                                       tema:"Verkehrsmittel"},
+  {art:"der", de:"Motorroller",     pl:"-",            ru:"мотороллер, скутер",                          tema:"Verkehrsmittel"},
+  {art:"das", de:"Boot",            pl:"-e",           ru:"лодка",                                       tema:"Verkehrsmittel"},
+  {art:"die", de:"Straßenbahnhaltestelle",pl:"-n",     ru:"трамвайная остановка",                        tema:"Verkehrsmittel"},
+  {art:"der", de:"Campingplatz",    pl:'"-e',          ru:"кемпинг",                                     tema:"Verkehrsmittel"},
+  {art:"der", de:"Busbahnhof",      pl:'"-e',          ru:"автовокзал",                                  tema:"Verkehrsmittel"},
   // ── L8/L9 · Allgemein ────────────────────────────────────────────────────────
   {art:"das", de:"Werkzeug",        pl:"-e",           ru:"инструмент, орудие · das Zeug = вещи"},
   {art:"das", de:"Spielzeug",       pl:"-e",           ru:"игрушка · das Zeug = вещи"},
@@ -962,7 +996,6 @@ const WBDATA=[
   {art:"die", de:"Kreuzung",        pl:"-en",          ru:"перекрёсток",                                 tema:"InDerStadt"},
   {art:"die", de:"Schule",          pl:"-n",           ru:"школа",                                       tema:"InDerStadt"},
   {art:"der", de:"Bahnhof",         pl:"Bahnhöfe",     ru:"вокзал, железнодорожная станция",              tema:"InDerStadt"},
-  {art:"",   de:"vergessen",        pl:"—",            ru:"забывать · vergisst · Vergiss!"},
   {art:"",   de:"müssen",           pl:"—",            ru:"быть обязанным, должен · ich muss · Modalverb"},
   {art:"die", de:"Ampel",           pl:"-n",           ru:"светофор",                                    tema:"InDerStadt"},
   {art:"die", de:"Ecke",            pl:"-n",           ru:"угол; угол улицы · um die Ecke = за углом",  tema:"InDerStadt"},
@@ -1347,7 +1380,8 @@ const KONJ_ALL={
   joggen:     {col:C.teal,  bg:C.tealBg,   ich:"jogge",     du:"joggst",     "er/sie/es":"joggt",     wir:"joggen",   ihr:"joggt",    "sie/Sie":"joggen", pt:"joggte", pf:"ist gejoggt"},
   grillen:    {col:C.teal,  bg:C.tealBg,   ich:"grille",    du:"grillst",    "er/sie/es":"grillt",    wir:"grillen",  ihr:"grillt",   "sie/Sie":"grillen", pt:"grillte", pf:"hat gegrillt"},
   surfen:     {col:C.teal,  bg:C.tealBg,   ich:"surfe",     du:"surfst",     "er/sie/es":"surft",     wir:"surfen",   ihr:"surft",    "sie/Sie":"surfen", pt:"surfte", pf:"hat gesurft"},
-  vergessen:  {col:C.orange,bg:C.orangeBg, ich:"vergesse",  du:"vergisst",   "er/sie/es":"vergisst",  wir:"vergessen",ihr:"vergesst", "sie/Sie":"vergessen", note:"e→i", pt:"vergaß", pf:"hat vergessen"},
+  vergessen:  {col:C.orange,bg:C.orangeBg, ich:"vergesse",  du:"vergisst",   "er/sie/es":"vergisst",  wir:"vergessen",ihr:"vergesst", "sie/Sie":"vergessen", note:"e→i",
+    imp:{du:"Vergiss!",  ihr:"Vergesst!",  Sie:"Vergessen Sie nicht!"}, pt:"vergaß", pf:"hat vergessen"},
   möchten:    {col:C.purple,bg:C.purpleBg, ich:"möchte",    du:"möchtest",   "er/sie/es":"möchte",    wir:"möchten",  ihr:"möchtet",  "sie/Sie":"möchten",   note:"ich = er (нет -t!)",noImp:true},
   kaufen:     {col:C.teal,  bg:C.tealBg,   ich:"kaufe",     du:"kaufst",     "er/sie/es":"kauft",     wir:"kaufen",   ihr:"kauft",    "sie/Sie":"kaufen", pt:"kaufte", pf:"hat gekauft"},
   bekommen:   {col:C.teal,  bg:C.tealBg,   ich:"bekomme",   du:"bekommst",   "er/sie/es":"bekommt",   wir:"bekommen", ihr:"bekommt",  "sie/Sie":"bekommen", pt:"bekam", pf:"hat bekommen"},
@@ -1439,9 +1473,6 @@ const KONJ_ALL={
     ich:"verbiete",  du:"verbietest", "er/sie/es":"verbietet", wir:"verbieten",ihr:"verbietet","sie/Sie":"verbieten", pt:"verbot", pf:"hat verboten"},
   erkennen:   {col:C.teal,   bg:C.tealBg,
     ich:"erkenne",   du:"erkennst",   "er/sie/es":"erkennt",   wir:"erkennen", ihr:"erkennt",  "sie/Sie":"erkennen", pt:"erkannte", pf:"hat erkannt"},
-  vergessen:  {col:C.blue,   bg:C.blueBg,  note:"e→i",
-    ich:"vergesse",  du:"vergisst",   "er/sie/es":"vergisst",  wir:"vergessen",ihr:"vergesst", "sie/Sie":"vergessen",
-    imp:{du:"Vergiss!",  ihr:"Vergesst!",  Sie:"Vergessen Sie nicht!"}},
   // L9C
   anerkennen: {pref:"an",   col:C.teal,   bg:C.tealBg,
     ich:"erkenne … an", du:"erkennst … an", "er/sie/es":"erkennt … an",
@@ -1449,6 +1480,10 @@ const KONJ_ALL={
   // L10 Perfekt verbs
   träumen:    {col:C.teal,  bg:C.tealBg,
     ich:"träume",    du:"träumst",    "er/sie/es":"träumt",    wir:"träumen",  ihr:"träumt",   "sie/Sie":"träumen", pt:"träumte", pf:"hat geträumt"},
+  spazieren:  {col:C.teal,  bg:C.tealBg,
+    ich:"spaziere",  du:"spazierst",  "er/sie/es":"spaziert",  wir:"spazieren",ihr:"spaziert", "sie/Sie":"spazieren", pt:"spazierte", pf:"ist spaziert"},
+  lachen:     {col:C.teal,  bg:C.tealBg,
+    ich:"lache",     du:"lachst",     "er/sie/es":"lacht",     wir:"lachen",   ihr:"lacht",    "sie/Sie":"lachen", pt:"lachte", pf:"hat gelacht"},
   suchen:     {col:C.teal,  bg:C.tealBg,
     ich:"suche",     du:"suchst",     "er/sie/es":"sucht",     wir:"suchen",   ihr:"sucht",    "sie/Sie":"suchen", pt:"suchte", pf:"hat gesucht"},
   reden:      {col:C.teal,  bg:C.tealBg,  note:"-e Einfügung",
@@ -1495,6 +1530,64 @@ const KONJ_ALL={
   ausgeben:    {pref:"aus",  col:C.red,   bg:C.redBg,   note:"e→i",
     ich:"gebe … aus",     du:"gibst … aus",     "er/sie/es":"gibt … aus",
     wir:"geben … aus",    ihr:"gebt … aus",     "sie/Sie":"geben … aus", pt:"gab … aus", pf:"hat ausgegeben"},
+  // Глаголы без таблицы — добавлено по запросу (30.06.2026)
+  bezahlen:    {col:C.teal,  bg:C.tealBg,
+    ich:"bezahle",   du:"bezahlst",   "er/sie/es":"bezahlt",   wir:"bezahlen", ihr:"bezahlt",  "sie/Sie":"bezahlen", pt:"bezahlte", pf:"hat bezahlt"},
+  gehören:     {col:C.teal,  bg:C.tealBg,
+    ich:"gehöre",    du:"gehörst",    "er/sie/es":"gehört",    wir:"gehören",  ihr:"gehört",   "sie/Sie":"gehören", pt:"gehörte", pf:"hat gehört"},
+  heiraten:    {col:C.teal,  bg:C.tealBg,  note:"-e- вставка",
+    ich:"heirate",   du:"heiratest",  "er/sie/es":"heiratet",  wir:"heiraten", ihr:"heiratet", "sie/Sie":"heiraten", pt:"heiratete", pf:"hat geheiratet"},
+  kennen:      {col:C.teal,  bg:C.tealBg,  note:"Mischverb",
+    ich:"kenne",     du:"kennst",     "er/sie/es":"kennt",     wir:"kennen",   ihr:"kennt",    "sie/Sie":"kennen", pt:"kannte", pf:"hat gekannt"},
+  besuchen:    {col:C.teal,  bg:C.tealBg,
+    ich:"besuche",   du:"besuchst",   "er/sie/es":"besucht",   wir:"besuchen", ihr:"besucht",  "sie/Sie":"besuchen", pt:"besuchte", pf:"hat besucht"},
+  besichtigen: {col:C.teal,  bg:C.tealBg,
+    ich:"besichtige",du:"besichtigst","er/sie/es":"besichtigt",wir:"besichtigen",ihr:"besichtigt","sie/Sie":"besichtigen", pt:"besichtigte", pf:"hat besichtigt"},
+  wiederholen: {col:C.teal,  bg:C.tealBg,  note:"untrennbar (повторять)",
+    ich:"wiederhole",du:"wiederholst","er/sie/es":"wiederholt",wir:"wiederholen",ihr:"wiederholt","sie/Sie":"wiederholen", pt:"wiederholte", pf:"hat wiederholt"},
+  studieren:   {col:C.teal,  bg:C.tealBg,  note:"-ieren: kein ge-",
+    ich:"studiere",  du:"studierst",  "er/sie/es":"studiert",  wir:"studieren",ihr:"studiert", "sie/Sie":"studieren", pt:"studierte", pf:"hat studiert"},
+  faulenzen:   {col:C.teal,  bg:C.tealBg,
+    ich:"faulenze",  du:"faulenzt",   "er/sie/es":"faulenzt",  wir:"faulenzen",ihr:"faulenzt", "sie/Sie":"faulenzen", pt:"faulenzte", pf:"hat gefaulenzt"},
+  bleiben:     {col:C.purple,bg:C.purpleBg,
+    ich:"bleibe",    du:"bleibst",    "er/sie/es":"bleibt",    wir:"bleiben",  ihr:"bleibt",   "sie/Sie":"bleiben", pt:"blieb", pf:"ist geblieben"},
+  lächeln:     {col:C.teal,  bg:C.tealBg,
+    ich:"lächle",    du:"lächelst",   "er/sie/es":"lächelt",   wir:"lächeln",  ihr:"lächelt",  "sie/Sie":"lächeln", pt:"lächelte", pf:"hat gelächelt"},
+  treiben:     {col:C.purple,bg:C.purpleBg,
+    ich:"treibe",    du:"treibst",    "er/sie/es":"treibt",    wir:"treiben",  ihr:"treibt",   "sie/Sie":"treiben", pt:"trieb", pf:"hat getrieben"},
+  reiten:      {col:C.orange,bg:C.orangeBg,note:"-e- вставка",
+    ich:"reite",     du:"reitest",    "er/sie/es":"reitet",    wir:"reiten",   ihr:"reitet",   "sie/Sie":"reiten", pt:"ritt", pf:"ist geritten"},
+  beginnen:    {col:C.purple,bg:C.purpleBg,
+    ich:"beginne",   du:"beginnst",   "er/sie/es":"beginnt",   wir:"beginnen", ihr:"beginnt",  "sie/Sie":"beginnen", pt:"begann", pf:"hat begonnen"},
+  enden:       {col:C.teal,  bg:C.tealBg,  note:"-e- вставка",
+    ich:"ende",      du:"endest",     "er/sie/es":"endet",     wir:"enden",    ihr:"endet",    "sie/Sie":"enden", pt:"endete", pf:"hat geendet"},
+  vermuten:    {col:C.teal,  bg:C.tealBg,  note:"-e- вставка",
+    ich:"vermute",   du:"vermutest",  "er/sie/es":"vermutet",  wir:"vermuten", ihr:"vermutet", "sie/Sie":"vermuten", pt:"vermutete", pf:"hat vermutet"},
+  verdienen:   {col:C.teal,  bg:C.tealBg,
+    ich:"verdiene",  du:"verdienst",  "er/sie/es":"verdient",  wir:"verdienen",ihr:"verdient", "sie/Sie":"verdienen", pt:"verdiente", pf:"hat verdient"},
+  schmecken:   {col:C.teal,  bg:C.tealBg,
+    ich:"schmecke",  du:"schmeckst",  "er/sie/es":"schmeckt",  wir:"schmecken",ihr:"schmeckt", "sie/Sie":"schmecken", pt:"schmeckte", pf:"hat geschmeckt"},
+  überweisen:  {col:C.orange,bg:C.orangeBg,
+    ich:"überweise", du:"überweist",  "er/sie/es":"überweist", wir:"überweisen",ihr:"überweist","sie/Sie":"überweisen", pt:"überwies", pf:"hat überwiesen"},
+  fehlen:      {col:C.teal,  bg:C.tealBg,
+    ich:"fehle",     du:"fehlst",     "er/sie/es":"fehlt",     wir:"fehlen",   ihr:"fehlt",    "sie/Sie":"fehlen", pt:"fehlte", pf:"hat gefehlt"},
+  wechseln:    {col:C.teal,  bg:C.tealBg,
+    ich:"wechsle",   du:"wechselst",  "er/sie/es":"wechselt",  wir:"wechseln", ihr:"wechselt", "sie/Sie":"wechseln", pt:"wechselte", pf:"hat gewechselt"},
+  beraten:     {col:C.orange,bg:C.orangeBg,note:"a→ä",
+    ich:"berate",    du:"berätst",    "er/sie/es":"berät",     wir:"beraten",  ihr:"beratet",  "sie/Sie":"beraten",
+    imp:{du:"Berate!",  ihr:"Beratet!",  Sie:"Beraten Sie!"}, pt:"beriet", pf:"hat beraten"},
+  kontrollieren:{col:C.teal, bg:C.tealBg,  note:"-ieren: kein ge-",
+    ich:"kontrolliere",du:"kontrollierst","er/sie/es":"kontrolliert",wir:"kontrollieren",ihr:"kontrolliert","sie/Sie":"kontrollieren", pt:"kontrollierte", pf:"hat kontrolliert"},
+  unterschreiben:{col:C.orange,bg:C.orangeBg,
+    ich:"unterschreibe",du:"unterschreibst","er/sie/es":"unterschreibt",wir:"unterschreiben",ihr:"unterschreibt","sie/Sie":"unterschreiben", pt:"unterschrieb", pf:"hat unterschrieben"},
+  reisen:      {col:C.orange,bg:C.orangeBg,
+    ich:"reise",     du:"reist",      "er/sie/es":"reist",     wir:"reisen",   ihr:"reist",    "sie/Sie":"reisen", pt:"reiste", pf:"ist gereist"},
+  operieren:   {col:C.teal,  bg:C.tealBg,  note:"-ieren: kein ge-",
+    ich:"operiere",  du:"operierst",  "er/sie/es":"operiert",  wir:"operieren",ihr:"operiert", "sie/Sie":"operieren", pt:"operierte", pf:"hat operiert"},
+  begleiten:   {col:C.teal,  bg:C.tealBg,  note:"-e- вставка",
+    ich:"begleite",  du:"begleitest", "er/sie/es":"begleitet", wir:"begleiten",ihr:"begleitet","sie/Sie":"begleiten", pt:"begleitete", pf:"hat begleitet"},
+  hängen:      {col:C.teal,  bg:C.tealBg,  note:"transitiv (вешать); 'висеть' = hing/gehangen",
+    ich:"hänge",     du:"hängst",     "er/sie/es":"hängt",     wir:"hängen",   ihr:"hängt",    "sie/Sie":"hängen", pt:"hängte", pf:"hat gehängt"},
 };
 
 // Ударения: комбинирующая акута \u0301 ставится после ударной гласной
@@ -1597,21 +1690,21 @@ const STRESS_MARKS={
 "Erkältung":"Erkä\u0301ltung","Husten":"Hu\u0301sten","Schnupfen":"Schnu\u0301pfen","Fieber":"Fie\u0301ber",
 "Tablette":"Table\u0301tte","Medikament":"Medikame\u0301nt","Rezept":"Reze\u0301pt","Praxis":"Pra\u0301xis",
 "Untersuchung":"Untersu\u0301chung","Hausarzt":"Ha\u0301usarzt","fehlen":"fe\u0301hlen",
-"Bankkaufmann":"Ba\u0301nkkaufmann","Programmierer":"Programmie\u0301rer","Briefträger":"Brie\u0301fträger",
+"Bankkaufmann":"Ba\u0301nkkaufmann","Briefträger":"Brie\u0301fträger",
 "Taxifahrer":"Ta\u0301xifahrer","Sekretär":"Sekretä\u0301r","Altenpflegerin":"A\u0301ltenpflegerin",
 "Reinigungskraft":"Re\u0301inigungskraft","Hausmeister":"Ha\u0301usmeister","Arbeitszeit":"A\u0301rbeitszeit",
 "Mittagspause":"Mi\u0301ttagspause","Nachtschicht":"Na\u0301chtschicht","Schichtdienst":"Schi\u0301chtdienst",
 "Kontonummer":"Ko\u0301ntonummer","EC-Karte":"E\u0301C-Karte","überweisen":"überwe\u0301isen",
 "Überweisungsformular":"Überwe\u0301isungsformular","satt":"sa\u0301tt",
-"Haare":"Ha\u0301are","Ohr":"O\u0301hr","Mund":"Mu\u0301nd","Zunge":"Zu\u0301nge","Hals":"Ha\u0301ls",
+"Haare":"Ha\u0301are","Ohr":"O\u0301hr","Zunge":"Zu\u0301nge","Hals":"Ha\u0301ls",
 "Arm":"A\u0301rm","Hand":"Ha\u0301nd","Finger":"Fi\u0301nger","Handgelenk":"Ha\u0301ndgelenk",
 "Brust":"Bru\u0301st","Zehe":"Ze\u0301he","Stirn":"Sti\u0301rn","Kinn":"Ki\u0301nn",
 "Wange":"Wa\u0301nge","Lippe":"Li\u0301ppe","Ellenbogen":"E\u0301llenbogen",
 "Gelenk":"Gele\u0301nk","Knöchel":"Knö\u0301chel","Ferse":"Fe\u0301rse","Po":"Po\u0301",
-"Grippe":"Gri\u0301ppe","Schmerzen":"Schme\u0301rzen","Tablette":"Table\u0301tte",
+"Grippe":"Gri\u0301ppe","Schmerzen":"Schme\u0301rzen",
 "rezeptfrei":"reze\u0301ptfrei","rezeptpflichtig":"reze\u0301ptpflichtig",
 "Zufall":"Zu\u0301fall","erkältet":"erkä\u0301ltet","weh|tun":"we\u0301htun",
-"Kontoauszug":"Ko\u0301ntoauszug","knapp":"kna\u0301pp","anderthalb":"a\u0301nderthalb","eineinhalb":"ei\u0301neinhalb",
+"knapp":"kna\u0301pp","anderthalb":"a\u0301nderthalb","eineinhalb":"ei\u0301neinhalb",
 "Baustelle":"Ba\u0301ustelle","Werkstatt":"We\u0301rkstatt","Krankenhaus":"Kra\u0301nkenhaus",
 "Gebühr":"Gebü\u0301hr","Bankverbindung":"Ba\u0301nkverbindung","Überweisung":"Überwe\u0301isung",
 "Kasse":"Ka\u0301sse","Formular":"Formula\u0301r","Team":"Tea\u0301m",
@@ -1637,6 +1730,10 @@ const STRESS_MARKS={
 // L9 Verkehrsmittel
 "Auto":"A\u0301uto","Fahrrad":"Fa\u0301hrrad","Motorrad":"Mo\u0301torrad",
 "Straßenbahn":"Stra\u0301ßenbahn","U-Bahn":"U\u0301-Bahn","S-Bahn":"S-Ba\u0301hn",
+"Hubschrauber":"Hu\u0301bschrauber","Boot":"Bo\u0301ot",
+"Wohnmobil":"Wo\u0301hnmobil","Fähre":"Fä\u0301hre","Motorroller":"Mo\u0301torroller",
+"Straßenbahnhaltestelle":"Stra\u0301ßenbahnhaltestelle",
+"Campingplatz":"Ca\u0301mpingplatz","Busbahnhof":"Bu\u0301sbahnhof",
 "Fußgänger":"Fu\u0301ßg\u00E4nger","Autobahn":"A\u0301utobahn","Fahrbahn":"Fa\u0301hrbahn",
 "Bürgersteig":"B\u00FC\u0301rgersteig","Fahrradweg":"Fa\u0301hrradweg",
 "Verkehrsmittel":"Verke\u0301hrsmittel","benutzen":"benu\u0301tzen","fliegen":"flie\u0301gen",
@@ -1705,8 +1802,8 @@ const STRESS_MARKS={
 "Fisch":"Fi\u0301sch","Tomate":"Toma\u0301te","Wasser":"Wa\u0301sser","Wein":"We\u0301in",
 "Wurst":"Wu\u0301rst","Zwiebel":"Zwi\u0301ebel","Gewürz":"Gew\u00FC\u0301rz",
 // Alltag — Nomen & Adjektive
-"Formular":"Formula\u0301r","Pass":"Pa\u0301ss","Schokolade":"Schokola\u0301de",
-"Kasse":"Ka\u0301sse","Apotheke":"Apothe\u0301ke","Pizza":"Pi\u0301zza","Oper":"O\u0301per",
+"Pass":"Pa\u0301ss",
+"Apotheke":"Apothe\u0301ke","Pizza":"Pi\u0301zza","Oper":"O\u0301per",
 "Portemonnaie":"Portemonn\u0061\u0301ie","Jacke":"Ja\u0301cke","Bus":"Bu\u0301s",
 "Supermarkt":"Su\u0301permarkt","Radtour":"Ra\u0301dtour","Lebensmittel":"Le\u0301bensmittel",
 "Sehenswürdigkeit":"Se\u0301henswürdigkeit","Straßenfest":"Stra\u0301ßenfest",
@@ -1722,7 +1819,7 @@ const STRESS_MARKS={
 "Hobby":"Ho\u0301bby","Fahrkarte":"Fa\u0301hrkarte","Zahnarzttermin":"Za\u0301hnarzttermin",
 "Tipp":"Ti\u0301pp","Respekt":"Respe\u0301kt","Sonderangebot":"So\u0301nderangebot",
 "Wäsche":"W\u00E4\u0301sche","Kuchen":"Ku\u0301chen","Nachspeise":"Na\u0301chspeise",
-"Meinung":"Me\u0301inung","Heimatland":"He\u0301imatland",
+"Meinung":"Me\u0301inung",
 // Alltag — Verben
 "kennen":"ke\u0301nnen","trinken":"tri\u0301nken","machen":"ma\u0301chen","besuchen":"besu\u0301chen",
 "besichtigen":"besi\u0301chtigen","studieren":"studi\u0301eren","faulenzen":"fa\u0301ulenzen",
@@ -1731,19 +1828,20 @@ const STRESS_MARKS={
 "sprechen":"spre\u0301chen","schreiben":"schre\u0301iben","lernen":"le\u0301rnen",
 "grillen":"gri\u0301llen","tanzen":"ta\u0301nzen","schwimmen":"schwi\u0301mmen","joggen":"jo\u0301ggen",
 "lachen":"la\u0301chen","lächeln":"l\u00E4\u0301cheln","treiben":"tre\u0301iben","reiten":"re\u0301iten",
+"spazieren":"spazi\u0301eren",
 "kochen":"ko\u0301chen","klingeln":"kli\u0301ngeln","starten":"sta\u0301rten","wollen":"wo\u0301llen",
 "vermuten":"vermu\u0301ten","reparieren":"repari\u0301eren","frühstücken":"fr\u00FC\u0301hstücken",
-"chillen":"chi\u0301llen","mögen":"m\u00F6\u0301gen","gehören":"geh\u00F6\u0301ren",
-"wiederholen":"wiederho\u0301len","bezahlen":"beza\u0301hlen","beginnen":"begi\u0301nnen",
+"chillen":"chi\u0301llen","mögen":"m\u00F6\u0301gen",
+
 // Alltag — Adverbien & Adjektive
-"zuerst":"zue\u0301rst","dann":"da\u0301nn","danach":"dana\u0301ch","allein":"alle\u0301in",
+"zuerst":"zue\u0301rst","dann":"da\u0301nn","danach":"dana\u0301ch",
 "früher":"fr\u00FC\u0301her","alle":"a\u0301lle","wo":"wo\u0301","wohin":"wohi\u0301n",
 "wenig":"we\u0301nig","wieso":"wieso\u0301","oft":"o\u0301ft","weg":"we\u0301g",
-"natürlich":"nat\u00FC\u0301rlich","vielleicht":"vielle\u0301icht","wahrscheinlich":"wahrsche\u0301inlich",
+"natürlich":"nat\u00FC\u0301rlich","vielleicht":"vielle\u0301icht",
 "bis":"bi\u0301s","also":"a\u0301lso","genau":"gena\u0301u","immer":"i\u0301mmer",
 "montags":"mo\u0301ntags","leider":"le\u0301ider","früh":"fr\u00FC\u0301h","nie":"ni\u0301e",
 "selten":"se\u0301lten","manchmal":"ma\u0301nchmal","zusammen":"zusa\u0301mmen","gerne":"ge\u0301rne",
-"draußen":"dra\u0301ußen","jetzt":"je\u0301tzt","auch":"a\u0301uch","nur":"nu\u0301r",
+"jetzt":"je\u0301tzt","auch":"a\u0301uch","nur":"nu\u0301r",
 "gern/gerne":"ge\u0301rn/ge\u0301rne","heute Abend":"he\u0301ute A\u0301bend",
 "spazieren gehen":"spazi\u0301eren ge\u0301hen","Grüße":"Gr\u00FC\u0301ße",
 "Freund":"Fre\u0301und","Zug":"Zu\u0301g",
@@ -1766,7 +1864,7 @@ const STRESS_MARKS={
 "Metzgerei":"Metzgere\u0301i","Bäckerei":"B\u00E4ckere\u0301i","Markt":"Ma\u0301rkt",
 "Tankstelle":"Ta\u0301nkstelle","Kiosk":"Kio\u0301sk",
 "backen":"ba\u0301cken","kosten":"ko\u0301sten","kaufen":"ka\u0301ufen",
-"verkaufen":"verka\u0301ufen","bekommen":"beko\u0301mmen","möchten":"m\u00F6\u0301chten","Bargeld":"Ba\u0301rgeld","Olive":"Oli\u0301ve","Rührei":"R\u00FC\u0301hrei","Waffel":"Wa\u0301ffel","Bonbon":"Bonbo\u0301n","Konfitüre":"Konfit\u00FC\u0301re","Schlagsahne":"Schla\u0301gsahne","Keks":"Ke\u0301ks","Kräutertee":"Kr\u00E4\u0301utertee","Eiscreme":"Ei\u0301screme","Eiswaffel":"Ei\u0301swaffel","Sandwich":"Sa\u0301ndwich","Steak":"Ste\u0301ak","Beilagensalat":"Be\u0301ilagensalat","Frischkäse":"Fri\u0301schkäse","Salami":"Sala\u0301mi","Karotte":"Karo\u0301tte","Knoblauch":"Kno\u0301blauch","Hackfleisch":"Ha\u0301ckfleisch","Schenkel":"Sche\u0301nkel","Brust":"Bru\u0301st","Brokkoli":"Bro\u0301kkoli","Rotkohl":"Ro\u0301tkohl","Blumenkohl":"Blu\u0301menkohl","Aprikose":"Apriko\u0301se","Leute":"Le\u0301ute","Seetang":"Se\u0301etang","fast":"fa\u0301st","doch":"do\u0301ch","vergessen":"verge\u0301ssen","holen":"ho\u0301len","fragen":"fra\u0301gen","gehen":"ge\u0301hen","Nachtisch":"Na\u0301chtisch","Kantine":"Kanti\u0301ne","Imbiss":"I\u0301mbiss",
+"verkaufen":"verka\u0301ufen","bekommen":"beko\u0301mmen","möchten":"m\u00F6\u0301chten","Bargeld":"Ba\u0301rgeld","Olive":"Oli\u0301ve","Rührei":"R\u00FC\u0301hrei","Waffel":"Wa\u0301ffel","Bonbon":"Bonbo\u0301n","Konfitüre":"Konfit\u00FC\u0301re","Schlagsahne":"Schla\u0301gsahne","Keks":"Ke\u0301ks","Kräutertee":"Kr\u00E4\u0301utertee","Eiscreme":"Ei\u0301screme","Eiswaffel":"Ei\u0301swaffel","Sandwich":"Sa\u0301ndwich","Steak":"Ste\u0301ak","Beilagensalat":"Be\u0301ilagensalat","Frischkäse":"Fri\u0301schkäse","Salami":"Sala\u0301mi","Karotte":"Karo\u0301tte","Knoblauch":"Kno\u0301blauch","Hackfleisch":"Ha\u0301ckfleisch","Schenkel":"Sche\u0301nkel","Brokkoli":"Bro\u0301kkoli","Rotkohl":"Ro\u0301tkohl","Blumenkohl":"Blu\u0301menkohl","Aprikose":"Apriko\u0301se","Leute":"Le\u0301ute","Seetang":"Se\u0301etang","fast":"fa\u0301st","doch":"do\u0301ch","holen":"ho\u0301len","fragen":"fra\u0301gen","gehen":"ge\u0301hen","Nachtisch":"Na\u0301chtisch","Kantine":"Kanti\u0301ne","Imbiss":"I\u0301mbiss",
 // Новые слова — ударения
 "Krebs":"Kre\u0301bs","Tintenfisch":"Ti\u0301ntenfisch","Forelle":"Fore\u0301lle",
 "Thunfisch":"Thu\u0301nfisch","Lachs":"La\u0301chs","Karpfen":"Ka\u0301rpfen","Garnele":"Garne\u0301le",
@@ -1892,7 +1990,7 @@ const IPA_DATA={
 "Erkältung":"[ɛɐ̯ˈkɛltʊŋ]","Husten":"[ˈhuːstən]","Schnupfen":"[ˈʃnʊpfən]","Fieber":"[ˈfiːbɐ]",
 "Tablette":"[taˈblɛtə]","Medikament":"[medɪkaˈmɛnt]","Rezept":"[ʁeˈtsɛpt]","Praxis":"[ˈpʁaksɪs]",
 "Hausarzt":"[ˈhaʊsˌʔaːɐ̯tst]","fehlen":"[ˈfeːlən]",
-"Bankkaufmann":"[ˈbaŋkˌkaʊfman]","Programmierer":"[pʁoɡʁaˈmiːʁɐ]","Briefträger":"[ˈbʁiːfˌtʁɛːɡɐ]",
+"Bankkaufmann":"[ˈbaŋkˌkaʊfman]","Briefträger":"[ˈbʁiːfˌtʁɛːɡɐ]",
 "Taxifahrer":"[ˈtaksiˌfaːʁɐ]","Sekretär":"[zekʁeˈtɛːʁ]","Altenpflegerin":"[ˈaltənˌpfleːɡəʁɪn]",
 "Reinigungskraft":"[ˈʁaɪnɪɡʊŋsˌkʁaft]","Hausmeister":"[ˈhaʊsˌmaɪstɐ]",
 "Arbeitszeit":"[ˈaʁbaɪtsˌtsaɪt]","Mittagspause":"[ˈmɪtaːksˌpaʊzə]",
@@ -1924,7 +2022,7 @@ const IPA_DATA={
 "operieren":"[opeˈʁiːʁən]","begleiten":"[bəˈɡlaɪtən]","messen":"[ˈmɛsən]",
 "anmachen":"[ˈanˌmaxən]","ausmachen":"[ˈaʊsˌmaxən]",
 "möglicherweise":"[ˈmøːklɪçɐˌvaɪzə]","wahrscheinlich":"[vaːɐ̯ˈʃaɪnlɪç]",
-"überrascht":"[ˈyːbɐˌʁaʃt]","Krankenhaus":"[ˈkʁaŋkənˌhaʊs]",
+"überrascht":"[ˈyːbɐˌʁaʃt]",
 // L8E Notruf
 "Notruf":"[ˈnoːtˌʁuːf]","Notfall":"[ˈnoːtˌfal]","Unfall":"[ˈʊnˌfal]",
 "Notarzt":"[ˈnoːtˌʔaːɐ̯tst]","Verletzung":"[fɛɐ̯ˈlɛtsʊŋ]","Not":"[noːt]",
@@ -1933,6 +2031,10 @@ const IPA_DATA={
 // L9 Verkehrsmittel
 "Auto":"[ˈaʊtoː]","Fahrrad":"[ˈfaːɐ̯ˌʁaːt]","Motorrad":"[ˈmoːtoɐ̯ˌʁaːt]",
 "Straßenbahn":"[ˈʃtʁaːsənˌbaːn]","U-Bahn":"[ˈuːˌbaːn]","S-Bahn":"[ˈɛsˌbaːn]",
+"Hubschrauber":"[ˈhuːpʃʁaʊbɐ]",
+"Wohnmobil":"[ˈvoːnmoˌbiːl]","Fähre":"[ˈfɛːʁə]","Motorroller":"[ˈmoːtoːɐ̯ˌʁɔlɐ]",
+"Boot":"[boːt]","Straßenbahnhaltestelle":"[ˈʃtʁaːsənbaːnˌhaltəʃtɛlə]",
+"Campingplatz":"[ˈkɛmpɪŋplats]","Busbahnhof":"[ˈbʊsbaːnhoːf]",
 "Fußgänger":"[ˈfuːsˌɡɛŋɐ]","Autobahn":"[ˈaʊtoˌbaːn]","Fahrbahn":"[ˈfaːɐ̯ˌbaːn]",
 "Bürgersteig":"[ˈbʏɐ̯ɡɐˌʃtaɪk]","Fahrradweg":"[ˈfaːʁʁatˌveːk]",
 "Verkehrsmittel":"[fɛɐ̯ˈkeːɐ̯sˌmɪtəl]","benutzen":"[bəˈnʊtsən]","fliegen":"[ˈfliːɡən]",
@@ -2009,7 +2111,7 @@ const IPA_DATA={
 "Sandwich":"[ˈzɛntvɪtʃ]","Steak":"[steːk]","Beilagensalat":"[ˈbaɪlaːɡənzaˌlaːt]",
 "Frischkäse":"[ˈfʁɪʃˌkɛːzə]","Salami":"[zaˈlaːmi]","Karotte":"[kaˈʁɔtə]",
 "Knoblauch":"[ˈknoːblaʊx]","Hackfleisch":"[ˈhakˌflaɪʃ]","Schenkel":"[ˈʃɛŋkəl]",
-"Brust":"[bʁʊst]","Brokkoli":"[ˈbʁɔkoli]","Rotkohl":"[ˈʁoːtkoːl]",
+"Brokkoli":"[ˈbʁɔkoli]","Rotkohl":"[ˈʁoːtkoːl]",
 "Blumenkohl":"[ˈbluːmənkoːl]","Aprikose":"[apʁiˈkoːzə]","Nachtisch":"[ˈnaxtɪʃ]",
 "Kantine":"[kanˈtiːnə]","Imbiss":"[ˈɪmbɪs]",
 "Krebs":"[kʁeːps]","Tintenfisch":"[ˈtɪntənˌfɪʃ]","Forelle":"[foˈʁɛlə]",
@@ -2036,7 +2138,7 @@ const IPA_DATA={
 "Rosmarin":"[ˈʁoːzmaˌʁiːn]","Basilikum":"[baˈziːlikʊm]","Schnittlauch":"[ˈʃnɪtˌlaʊx]",
 "Petersilie":"[peˈteːɐ̯ziːliə]","vegetarisch":"[veɡeˈtaːʁɪʃ]",
 // Alltag — Nomen
-"Formular":"[fɔʁmuˈlaːɐ̯]","Pass":"[pas]","Kasse":"[ˈkasə]","Apotheke":"[apoˈteːkə]",
+"Pass":"[pas]","Apotheke":"[apoˈteːkə]",
 "Pizza":"[ˈpɪtsa]","Oper":"[ˈoːpɐ]","Portemonnaie":"[pɔʁtəˈmɔnɛ]","Jacke":"[ˈjakə]",
 "Bus":"[bʊs]","Supermarkt":"[ˈzuːpɐˌmaʁkt]","Radtour":"[ˈʁaːttuːɐ̯]",
 "Lebensmittel":"[ˈleːbənsmɪtəl]","Sehenswürdigkeit":"[ˈzeːənsvʏʁdɪçkaɪt]",
@@ -2054,7 +2156,7 @@ const IPA_DATA={
 "heute Abend":"[ˈhɔɪtə ˈaːbənt]","Tipp":"[tɪp]","Respekt":"[ʁɛˈʃpɛkt]",
 "Sonderangebot":"[ˈzɔndɐˌanɡəboːt]","Wäsche":"[ˈvɛʃə]","Meinung":"[ˈmaɪnʊŋ]",
 "Kuchen":"[ˈkuːxən]","Nachspeise":"[ˈnaːxˌʃpaɪzə]","Freund":"[fʁɔɪnt]",
-"Zug":"[tsuːk]","Tasse":"[ˈtasə]",
+"Zug":"[tsuːk]",
 // Alltag — Verben
 "kennen":"[ˈkɛnən]","trinken":"[ˈtʁɪŋkən]","machen":"[ˈmaxən]",
 "besuchen":"[bəˈzuːxən]","besichtigen":"[bəˈzɪçtɪɡən]","studieren":"[ʃtuˈdiːʁən]",
@@ -2066,18 +2168,18 @@ const IPA_DATA={
 "lachen":"[ˈlaxən]","lächeln":"[ˈlɛçəln]","treiben":"[ˈtʁaɪbən]","reiten":"[ˈʁaɪtən]",
 "kochen":"[ˈkɔxən]","klingeln":"[ˈklɪŋəln]","starten":"[ˈʃtaʁtən]","wollen":"[ˈvɔlən]",
 "vermuten":"[fɛɐ̯ˈmuːtən]","reparieren":"[ʁepaˈʁiːʁən]","frühstücken":"[ˈfʁyːʃˌtʏkən]",
-"chillen":"[ˈtʃɪlən]","mögen":"[ˈmøːɡən]","bezahlen":"[bəˈtsaːlən]",
+"chillen":"[ˈtʃɪlən]","mögen":"[ˈmøːɡən]",
 // Alltag — Adverbien & Sonstiges
-"zuerst":"[tsuˈeːɐ̯st]","dann":"[dan]","danach":"[daˈnaːx]","allein":"[aˈlaɪn]",
+"zuerst":"[tsuˈeːɐ̯st]","dann":"[dan]","danach":"[daˈnaːx]",
 "früher":"[ˈfʁyːɐ̯]","alle":"[ˈalə]","wo":"[voː]","wohin":"[voˈhɪn]",
 "wenig":"[ˈveːnɪç]","wieso":"[viˈzoː]","oft":"[ɔft]","weg":"[vɛk]",
-"natürlich":"[naˈtyːɐ̯lɪç]","vielleicht":"[fiˈlaɪçt]","wahrscheinlich":"[vaːɐ̯ˈʃaɪnlɪç]",
+"natürlich":"[naˈtyːɐ̯lɪç]","vielleicht":"[fiˈlaɪçt]",
 "bis":"[bɪs]","also":"[ˈalzoː]","genau":"[ɡəˈnaʊ]","immer":"[ˈɪmɐ]",
 "montags":"[ˈmoːntaːks]","leider":"[ˈlaɪdɐ]","früh":"[fʁyː]","nie":"[niː]",
 "selten":"[ˈzɛltən]","manchmal":"[ˈmançmaːl]","zusammen":"[tsuˈzamən]",
-"gerne":"[ˈɡɛʁnə]","draußen":"[ˈdʁaʊsən]","jetzt":"[jɛtst]","auch":"[aʊx]",
-"nur":"[nuːɐ̯]","gern/gerne":"[ɡɛʁn/ˈɡɛʁnə]","spazieren gehen":"[ʃpaˈtsiːʁən ˈɡeːən]",
-"Grüße":"[ˈɡʁyːsə]","Leute":"[ˈlɔɪtə]","Seetang":"[ˈzeːtaŋ]","fast":"[fast]","doch":"[dɔx]","vergessen":"[fɛɐ̯ˈɡɛsən]","holen":"[ˈhoːlən]","fragen":"[ˈfʁaːɡən]","gehen":"[ˈɡeːən]",
+"gerne":"[ˈɡɛʁnə]","jetzt":"[jɛtst]","auch":"[aʊx]",
+"nur":"[nuːɐ̯]","gern/gerne":"[ɡɛʁn/ˈɡɛʁnə]","spazieren gehen":"[ʃpaˈtsiːʁən ˈɡeːən]","spazieren":"[ʃpaˈtsiːʁən]",
+"Grüße":"[ˈɡʁyːsə]","Leute":"[ˈlɔɪtə]","Seetang":"[ˈzeːtaŋ]","fast":"[fast]","doch":"[dɔx]","holen":"[ˈhoːlən]","fragen":"[ˈfʁaːɡən]","gehen":"[ˈɡeːən]",
 };
 
 const DIALOGE={
@@ -2401,8 +2503,8 @@ function Quiz({questions}){
               style={{border:`1.5px solid ${bc}`,background:bg,color:tc,borderRadius:10,
                 padding:"11px 14px",fontSize:14,fontWeight:500,cursor:"pointer",
                 textAlign:"left",display:"flex",gap:10,alignItems:"center"}}>
-              <span style={{width:23,height:23,borderRadius:6,background:"rgba(255,255,255,.04)",
-                fontSize:10,fontWeight:800,display:"flex",alignItems:"center",justifyContent:"center",flexShrink:0}}>
+              <span style={{width:23,height:23,borderRadius:6,background:C.ov4,
+                fontSize:11,fontWeight:800,display:"flex",alignItems:"center",justifyContent:"center",flexShrink:0}}>
                 {["A","B","C","D"][i]}
               </span>{o}
             </button>
@@ -2714,7 +2816,7 @@ function AbkBlock({standalone}){
         <div style={{background:C.card2,borderRadius:10,overflow:"hidden"}}>
           <div style={{display:"grid",gridTemplateColumns:"auto 1fr auto",gap:0}}>
             {["Кратко","Полностью","Перевод"].map(h=>(
-              <div key={h} style={{fontSize:10,color:C.muted,fontWeight:700,padding:"6px 10px",background:C.card2,textTransform:"uppercase",letterSpacing:1}}>{h}</div>
+              <div key={h} style={{fontSize:11,color:C.muted,fontWeight:700,padding:"6px 10px",background:C.card2,textTransform:"uppercase",letterSpacing:1}}>{h}</div>
             ))}
             {ABK.map(({short,full,ru},i)=>[
               <div key={short+"s"} style={{padding:"7px 10px",borderTop:`1px solid ${C.border}33`,fontWeight:800,fontSize:13,color:C.blue,background:i%2===0?C.card:"transparent"}}>{short}</div>,
@@ -3028,7 +3130,7 @@ function Woerterbuch(){
                   {")"}
                 </span>}
               </span>
-              {konj&&<span style={{fontSize:10,color:konj.col,marginLeft:1,opacity:0.8}}>{isOpen?"▲":"▾"}</span>}
+              {konj&&<span style={{fontSize:11,color:konj.col,marginLeft:1,opacity:0.8}}>{isOpen?"▲":"▾"}</span>}
             </div>
           </div>
           <div style={{fontSize:12,lineHeight:1.3,overflowWrap:"break-word",wordBreak:"break-word"}}>
@@ -3072,7 +3174,7 @@ function Woerterbuch(){
                   return(
                     <div key={p} style={{background:hi?konj.bg:C.card2,
                       border:`1px solid ${hi?konj.col+"55":C.border}`,borderRadius:7,padding:"5px 8px"}}>
-                      <div style={{fontSize:10,color:hi?konj.col:C.muted,marginBottom:1}}>{p}</div>
+                      <div style={{fontSize:11,color:hi?konj.col:C.muted,marginBottom:1}}>{p}</div>
                       <div style={{color:hi?konj.col:C.text,fontWeight:700,fontSize:13}}>{f}</div>
                     </div>
                   );
@@ -3089,9 +3191,9 @@ function Woerterbuch(){
                 ].map(([key,hint,col])=>(
                   <div key={key} style={{display:"flex",alignItems:"center",gap:10,
                     background:col+"15",border:`1px solid ${col}33`,borderRadius:8,padding:"7px 10px"}}>
-                    <span style={{fontSize:10,color:col,fontWeight:800,minWidth:28}}>{key}</span>
+                    <span style={{fontSize:11,color:col,fontWeight:800,minWidth:28}}>{key}</span>
                     <span style={{fontSize:16,fontWeight:800,color:col,flex:1}}>{imp[key==="Sie"?"Sie":key]}</span>
-                    <span style={{fontSize:10,color:C.muted}}>{hint}</span>
+                    <span style={{fontSize:11,color:C.muted}}>{hint}</span>
                   </div>
                 ))}
               </div>
@@ -3107,7 +3209,7 @@ function Woerterbuch(){
                   <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:5,marginBottom:6}}>
                     {forms.map(([p,f])=>(
                       <div key={p} style={{background:C.card2,border:`1px solid ${C.border}`,borderRadius:7,padding:"5px 8px"}}>
-                        <div style={{fontSize:10,color:C.muted,marginBottom:1}}>{p}</div>
+                        <div style={{fontSize:11,color:C.muted,marginBottom:1}}>{p}</div>
                         <div style={{color:f?C.orange:C.muted,fontWeight:700,fontSize:13}}>{f||"—"}</div>
                       </div>
                     ))}
@@ -3139,7 +3241,7 @@ function Woerterbuch(){
                       ["er/sie/es",hilf],["sie/Sie",hilf==="hat"?"haben":"sind"]
                     ].map(([p,h])=>(
                       <div key={p} style={{background:C.card2,borderRadius:7,padding:"5px 8px"}}>
-                        <div style={{fontSize:10,color:C.muted,marginBottom:1}}>{p}</div>
+                        <div style={{fontSize:11,color:C.muted,marginBottom:1}}>{p}</div>
                         <div style={{fontSize:12,color:C.text}}>
                           <span style={{color:C.orange,fontWeight:700}}>{h}</span>
                           <span style={{color:C.muted}}> … </span>
@@ -3260,7 +3362,7 @@ function Woerterbuch(){
       {!isAdj&&typ!=="Phrase"&&typ!=="recent"&&!search&&(
         <div style={{display:"grid",gridTemplateColumns:"minmax(min-content,1fr) 1fr",gap:8,padding:"4px 8px",marginBottom:2}}>
           {["Слово","Перевод"].map(h=>(
-            <div key={h} style={{fontSize:10,color:C.muted,fontWeight:700,textTransform:"uppercase",letterSpacing:1}}>{h}</div>
+            <div key={h} style={{fontSize:11,color:C.muted,fontWeight:700,textTransform:"uppercase",letterSpacing:1}}>{h}</div>
           ))}
         </div>
       )}
@@ -3274,7 +3376,7 @@ function Woerterbuch(){
           </div>
           <div style={{display:"grid",gridTemplateColumns:"minmax(min-content,1fr) 1fr",gap:8,padding:"4px 8px"}}>
             {["Слово","Перевод"].map(h=>(
-              <div key={h} style={{fontSize:10,color:C.muted,fontWeight:700,textTransform:"uppercase",letterSpacing:1}}>{h}</div>
+              <div key={h} style={{fontSize:11,color:C.muted,fontWeight:700,textTransform:"uppercase",letterSpacing:1}}>{h}</div>
             ))}
           </div>
           {dedupeAdj(recentWords,!!search).map((w,i)=><WRow key={w.de+w.tema+i} w={w}/>)}
@@ -3521,7 +3623,7 @@ function T1B(){return(
         {ALPHABET.map(a=>(
           <div key={a.l} style={{background:C.card2,borderRadius:8,padding:"7px 4px",textAlign:"center"}}>
             <div style={{fontWeight:900,fontSize:18,color:C.blue}}>{a.l}</div>
-            <div style={{fontSize:10,color:C.muted}}>{a.n}</div>
+            <div style={{fontSize:11,color:C.muted}}>{a.n}</div>
           </div>
         ))}
       </div>
@@ -3736,11 +3838,11 @@ function T2A(){
       <Box>
         <H c={C.text} z={14}>🌍 Nationalitäten</H>
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr",gap:5,marginBottom:6}}>
-          {["Land","m","f","Sprache"].map(h=><div key={h} style={{fontSize:10,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>)}
+          {["Land","m","f","Sprache"].map(h=><div key={h} style={{fontSize:11,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>)}
         </div>
         {NATS.map(n=>(
           <div key={n.land} style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr",gap:5,marginBottom:4}}>
-            <div style={{background:C.card2,borderRadius:7,padding:"5px 7px",fontSize:12,color:C.blue}}>{n.land}{n.art&&<span style={{color:C.muted,fontSize:10}}> ({n.art})</span>}</div>
+            <div style={{background:C.card2,borderRadius:7,padding:"5px 7px",fontSize:12,color:C.blue}}>{n.land}{n.art&&<span style={{color:C.muted,fontSize:11}}> ({n.art})</span>}</div>
             <div style={{background:C.card2,borderRadius:7,padding:"5px 7px",fontSize:12,color:C.text}}>{n.m}</div>
             <div style={{background:C.card2,borderRadius:7,padding:"5px 7px",fontSize:12,color:C.purple}}>{n.f}</div>
             <div style={{background:C.card2,borderRadius:7,padding:"5px 7px",fontSize:11,color:C.muted}}>{n.spr}</div>
@@ -3760,7 +3862,7 @@ function T2B(){return(
       <H c={C.teal}>📋 Nomen und Artikel</H>
       <div style={{display:"grid",gridTemplateColumns:"60px 1fr 1fr",gap:6,marginBottom:6}}>
         {["","bestimmter Artikel","unbestimmter Artikel"].map((h,i)=>(
-          <div key={i} style={{fontSize:10,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>
+          <div key={i} style={{fontSize:11,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>
         ))}
       </div>
       {[
@@ -3772,7 +3874,7 @@ function T2B(){return(
         <div key={l} style={{display:"grid",gridTemplateColumns:"60px 1fr 1fr",gap:6,marginBottom:7,alignItems:"center"}}>
           <div style={{background:col+"22",border:`1px solid ${col}55`,borderRadius:8,padding:"6px 4px",textAlign:"center"}}>
             <div style={{color:col,fontWeight:900,fontSize:14}}>{l}</div>
-            <div style={{color:col,fontSize:9,opacity:.8}}>{term}</div>
+            <div style={{color:col,fontSize:11,opacity:.8}}>{term}</div>
           </div>
           <div style={{background:bg,border:`1px solid ${col}`,borderRadius:8,padding:"7px 10px"}}>
             <div style={{color:col,fontWeight:900,fontSize:16}}>{def}</div>
@@ -3907,7 +4009,7 @@ function TWFragen(){
       <Box>
         <H c={C.text} z={14}>📋 Примеры из книги</H>
         <div style={{display:"grid",gridTemplateColumns:"50px 80px 1fr",gap:5,marginBottom:6}}>
-          {["Wort","Verb","Rest"].map(h=><div key={h} style={{fontSize:10,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>)}
+          {["Wort","Verb","Rest"].map(h=><div key={h} style={{fontSize:11,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>)}
         </div>
         {wf.map(({w,v,rest,ru,a})=>(
           <div key={w+v} style={{marginBottom:10}}>
@@ -4154,7 +4256,7 @@ function T3A(){
       <Box c={C.yellow}>
         <H c={C.yellow}>🏠 Möbel — Мебель</H>
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:5,marginBottom:6}}>
-          {["m (der)","n (das)","f (die)"].map(h=><div key={h} style={{fontSize:10,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>)}
+          {["m (der)","n (das)","f (die)"].map(h=><div key={h} style={{fontSize:11,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>)}
         </div>
         {[["der","blue"],["das","orange"],["die","purple"]].map(([art,col])=>(
           <div key={art} style={{marginBottom:6}}>
@@ -4270,7 +4372,7 @@ function T3Akkusativ(){
         <H c={C.red}>⚠️ Главное правило Akkusativ</H>
         <div style={{fontSize:13,color:C.muted,marginBottom:10}}>Меняется только <b style={{color:C.red}}>maskulin (m)</b>!</div>
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr 1fr",gap:5,marginBottom:6}}>
-          {["","m","n","f","Pl."].map(h=><div key={h} style={{fontSize:10,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>)}
+          {["","m","n","f","Pl."].map(h=><div key={h} style={{fontSize:11,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>)}
         </div>
         {[
           {type:"bestimmt (def.)",nom:["der","das","die","die"],akk:["den","das","die","die"]},
@@ -4514,7 +4616,7 @@ function T3Poss(){
         <H c={C.orange}>👤 Possessivpronomen — Притяжательные местоимения</H>
         <div style={{fontSize:13,color:C.muted,marginBottom:10}}>Показывают принадлежность: <b style={{color:C.orange}}>чей? чья? чьё?</b></div>
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:5,marginBottom:6}}>
-          {["Pronomen","Possessiv","Значение"].map(h=><div key={h} style={{fontSize:10,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>)}
+          {["Pronomen","Possessiv","Значение"].map(h=><div key={h} style={{fontSize:11,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>)}
         </div>
         {POSSESSIV.map(({pro,poss,ru})=>(
           <div key={pro} style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:5,marginBottom:5}}>
@@ -4546,7 +4648,7 @@ function T3Poss(){
         <div style={{fontSize:11,color:C.muted,marginBottom:8}}>Окончания как у ein/kein (пример: mein)</div>
         <div style={{display:"grid",gridTemplateColumns:"auto 1fr 1fr 1fr 1fr",gap:"3px 6px",alignItems:"center"}}>
           {["","m","n","f","Pl."].map(h=>(
-            <div key={h} style={{fontSize:10,color:C.muted,fontWeight:700,textAlign:"center",paddingBottom:4}}>{h}</div>
+            <div key={h} style={{fontSize:11,color:C.muted,fontWeight:700,textAlign:"center",paddingBottom:4}}>{h}</div>
           ))}
           {[
             ["Nom.","mein","mein","meine","meine"],
@@ -4844,8 +4946,8 @@ function LueckenQuiz({items}){
               style={{border:`1.5px solid ${bc}`,background:bg,color:tc,borderRadius:10,
                 padding:"11px 14px",fontSize:14,fontWeight:500,cursor:"pointer",textAlign:"left",
                 display:"flex",gap:10,alignItems:"center"}}>
-              <span style={{width:23,height:23,borderRadius:6,background:"rgba(255,255,255,.04)",
-                fontSize:10,fontWeight:800,display:"flex",alignItems:"center",justifyContent:"center",flexShrink:0}}>
+              <span style={{width:23,height:23,borderRadius:6,background:C.ov4,
+                fontSize:11,fontWeight:800,display:"flex",alignItems:"center",justifyContent:"center",flexShrink:0}}>
                 {["A","B","C","D"][i]}
               </span>{o}
             </button>
@@ -4907,7 +5009,7 @@ function Zuordnung({pairs,leftLabel="Deutsch",rightLabel="Übersetzung"}){
       </div>
       <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:8}}>
         <div style={{display:"flex",flexDirection:"column",gap:6}}>
-          <div style={{fontSize:10,color:C.muted,fontWeight:700,textAlign:"center",marginBottom:2,textTransform:"uppercase",letterSpacing:1}}>{leftLabel}</div>
+          <div style={{fontSize:11,color:C.muted,fontWeight:700,textAlign:"center",marginBottom:2,textTransform:"uppercase",letterSpacing:1}}>{leftLabel}</div>
           {items.map((item,i)=>{
             const isM=matched[i],isSel=selLeft===i,isW=wrongPair?.l===i;
             const col=isM?C.green:isSel?C.blue:isW?C.red:C.border;
@@ -4922,7 +5024,7 @@ function Zuordnung({pairs,leftLabel="Deutsch",rightLabel="Übersetzung"}){
           })}
         </div>
         <div style={{display:"flex",flexDirection:"column",gap:6}}>
-          <div style={{fontSize:10,color:C.muted,fontWeight:700,textAlign:"center",marginBottom:2,textTransform:"uppercase",letterSpacing:1}}>{rightLabel}</div>
+          <div style={{fontSize:11,color:C.muted,fontWeight:700,textAlign:"center",marginBottom:2,textTransform:"uppercase",letterSpacing:1}}>{rightLabel}</div>
           {rightOrder.map((origIdx,ri)=>{
             const item=items[origIdx];
             const isM=doneRight.has(ri),isW=wrongPair?.r===ri;
@@ -5115,7 +5217,7 @@ function T4A(){
               <tr>
                 <th/>
                 {[{label:"m",col:C.blue},{label:"n",col:C.orange},{label:"f",col:C.purple},{label:"Pl.",col:C.purple}].map(({label,col})=>(
-                  <th key={label} style={{padding:"3px 4px",textAlign:"center",fontSize:10,fontWeight:900,color:col,opacity:0.75}}>{label}</th>
+                  <th key={label} style={{padding:"3px 4px",textAlign:"center",fontSize:11,fontWeight:900,color:col,opacity:0.75}}>{label}</th>
                 ))}
               </tr>
               <tr>
@@ -5303,7 +5405,7 @@ function T4B(){
           <H c={g.col} z={13}>{g.type}</H>
           <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:4,marginBottom:6}}>
             {["Infinitiv","du","er/sie/es"].map(h=>(
-              <div key={h} style={{fontSize:10,color:C.muted,fontWeight:700,textAlign:"center",textTransform:"uppercase"}}>{h}</div>
+              <div key={h} style={{fontSize:11,color:C.muted,fontWeight:700,textAlign:"center",textTransform:"uppercase"}}>{h}</div>
             ))}
           </div>
           {g.verbs.map(v=>(
@@ -5397,7 +5499,7 @@ function T4B(){
         <div style={{background:C.card2,borderRadius:10,overflow:"hidden",marginBottom:8}}>
           <div style={{display:"grid",gridTemplateColumns:"auto auto auto 1fr"}}>
             {["Pos. 1","Verb","Pos. 3",""].map((h,i)=>(
-              <div key={i} style={{padding:"5px 8px",fontSize:10,color:C.muted,fontWeight:700,
+              <div key={i} style={{padding:"5px 8px",fontSize:11,color:C.muted,fontWeight:700,
                 textAlign:"center",textTransform:"uppercase",background:C.card}}>{h}</div>
             ))}
             {/* Вариант 1: Subjekt an Pos.1 */}
@@ -5463,13 +5565,13 @@ function T4C(){
               <tr>
                 <td/>
                 <td style={{textAlign:"center",background:C.blueBg,color:C.muted,
-                  fontSize:10,fontWeight:600,padding:"3px 4px",borderRadius:"0 0 4px 4px"}}>Präsens</td>
+                  fontSize:11,fontWeight:600,padding:"3px 4px",borderRadius:"0 0 4px 4px"}}>Präsens</td>
                 <td style={{textAlign:"center",background:C.blueBg,color:C.blue,
-                  fontSize:10,fontWeight:800,padding:"3px 4px",borderRadius:"0 0 4px 4px"}}>Prät.</td>
+                  fontSize:11,fontWeight:800,padding:"3px 4px",borderRadius:"0 0 4px 4px"}}>Prät.</td>
                 <td style={{textAlign:"center",background:C.purpleBg,color:C.muted,
-                  fontSize:10,fontWeight:600,padding:"3px 4px",borderRadius:"0 0 4px 4px"}}>Präsens</td>
+                  fontSize:11,fontWeight:600,padding:"3px 4px",borderRadius:"0 0 4px 4px"}}>Präsens</td>
                 <td style={{textAlign:"center",background:C.purpleBg,color:C.purple,
-                  fontSize:10,fontWeight:800,padding:"3px 4px",borderRadius:"0 0 4px 4px"}}>Prät.</td>
+                  fontSize:11,fontWeight:800,padding:"3px 4px",borderRadius:"0 0 4px 4px"}}>Prät.</td>
               </tr>
             </thead>
             <tbody>
@@ -5504,7 +5606,7 @@ function T4C(){
           {[["vorgestern","позавчера",C.red],["gestern","вчера",C.orange],["heute","сегодня",C.green],["morgen","завтра",C.blue],["übermorgen","послезавтра",C.purple]].map(([w,ru,col])=>(
             <div key={w} style={{background:col+"18",border:`1px solid ${col}40`,borderRadius:9,padding:"6px 4px",textAlign:"center"}}>
               <div style={{color:col,fontWeight:800,fontSize:12}}>{w}</div>
-              <div style={{color:C.muted,fontSize:10,marginTop:2}}>{ru}</div>
+              <div style={{color:C.muted,fontSize:11,marginTop:2}}>{ru}</div>
             </div>
           ))}
         </div>
@@ -5909,7 +6011,7 @@ function T5D(){
         background:openTr===id?C.card2:"transparent"}}>
       <div style={{display:"flex",justifyContent:"space-between",alignItems:"center"}}>
         <span style={{fontSize:13,fontWeight:600,color:col}}>{de}</span>
-        <span style={{fontSize:10,color:C.muted,flexShrink:0,marginLeft:6}}>{openTr===id?"▲":"▾"}</span>
+        <span style={{fontSize:11,color:C.muted,flexShrink:0,marginLeft:6}}>{openTr===id?"▲":"▾"}</span>
       </div>
       {openTr===id&&<div style={{fontSize:11,color:C.muted,marginTop:3}}>{ru}</div>}
     </div>
@@ -5976,16 +6078,16 @@ function T5D(){
                     minHeight:36}}>
                   <div style={{display:"flex",justifyContent:"space-between",gap:4}}>
                     <span style={{fontSize:11,fontWeight:600,color:C.text,lineHeight:1.3}}>{de}</span>
-                    <span style={{fontSize:9,color:C.muted,flexShrink:0}}>{openTr===id?"▲":"▾"}</span>
+                    <span style={{fontSize:11,color:C.muted,flexShrink:0}}>{openTr===id?"▲":"▾"}</span>
                   </div>
-                  {openTr===id&&<div style={{fontSize:10,color:C.muted,marginTop:2}}>{ru}</div>}
+                  {openTr===id&&<div style={{fontSize:11,color:C.muted,marginTop:2}}>{ru}</div>}
                 </div>
               ))}
             </div>
 
             {/* Правая — ответы */}
             <div>
-              <div style={{background:C.green+"22",padding:"3px 8px",fontSize:10,
+              <div style={{background:C.green+"22",padding:"3px 8px",fontSize:11,
                 color:C.green,fontWeight:700,borderBottom:`1px solid ${C.border}22`}}>✅ Согласие</div>
               {[
                 ["y1","Ja, gerne.",     "Да, с удовольствием."],
@@ -5998,13 +6100,13 @@ function T5D(){
                     cursor:"pointer",background:openTr===id?C.bg:"transparent",minHeight:30}}>
                   <div style={{display:"flex",justifyContent:"space-between",gap:4}}>
                     <span style={{fontSize:11,fontWeight:600,color:C.green,lineHeight:1.3}}>{de}</span>
-                    <span style={{fontSize:9,color:C.muted,flexShrink:0}}>{openTr===id?"▲":"▾"}</span>
+                    <span style={{fontSize:11,color:C.muted,flexShrink:0}}>{openTr===id?"▲":"▾"}</span>
                   </div>
-                  {openTr===id&&<div style={{fontSize:10,color:C.muted,marginTop:2}}>{ru}</div>}
+                  {openTr===id&&<div style={{fontSize:11,color:C.muted,marginTop:2}}>{ru}</div>}
                 </div>
               ))}
 
-              <div style={{background:C.orange+"22",padding:"3px 8px",fontSize:10,
+              <div style={{background:C.orange+"22",padding:"3px 8px",fontSize:11,
                 color:C.orange,fontWeight:700,borderBottom:`1px solid ${C.border}22`,
                 borderTop:`1px solid ${C.border}22`}}>🔄 Альтернатива</div>
               {[
@@ -6018,13 +6120,13 @@ function T5D(){
                     cursor:"pointer",background:openTr===id?C.bg:"transparent",minHeight:30}}>
                   <div style={{display:"flex",justifyContent:"space-between",gap:4}}>
                     <span style={{fontSize:11,fontWeight:600,color:C.orange,lineHeight:1.3}}>{de}</span>
-                    <span style={{fontSize:9,color:C.muted,flexShrink:0}}>{openTr===id?"▲":"▾"}</span>
+                    <span style={{fontSize:11,color:C.muted,flexShrink:0}}>{openTr===id?"▲":"▾"}</span>
                   </div>
-                  {openTr===id&&<div style={{fontSize:10,color:C.muted,marginTop:2}}>{ru}</div>}
+                  {openTr===id&&<div style={{fontSize:11,color:C.muted,marginTop:2}}>{ru}</div>}
                 </div>
               ))}
 
-              <div style={{background:C.red+"22",padding:"3px 8px",fontSize:10,
+              <div style={{background:C.red+"22",padding:"3px 8px",fontSize:11,
                 color:C.red,fontWeight:700,borderBottom:`1px solid ${C.border}22`,
                 borderTop:`1px solid ${C.border}22`}}>❌ Отказ</div>
               {[
@@ -6038,9 +6140,9 @@ function T5D(){
                     cursor:"pointer",background:openTr===id?C.bg:"transparent",minHeight:30}}>
                   <div style={{display:"flex",justifyContent:"space-between",gap:4}}>
                     <span style={{fontSize:11,fontWeight:600,color:C.red,lineHeight:1.3}}>{de}</span>
-                    <span style={{fontSize:9,color:C.muted,flexShrink:0}}>{openTr===id?"▲":"▾"}</span>
+                    <span style={{fontSize:11,color:C.muted,flexShrink:0}}>{openTr===id?"▲":"▾"}</span>
                   </div>
-                  {openTr===id&&<div style={{fontSize:10,color:C.muted,marginTop:2}}>{ru}</div>}
+                  {openTr===id&&<div style={{fontSize:11,color:C.muted,marginTop:2}}>{ru}</div>}
                 </div>
               ))}
             </div>
@@ -6125,7 +6227,7 @@ function T6B(){
               <div key={form} style={{display:"flex",alignItems:"center",gap:8,
                 background:col+"11",borderRadius:8,padding:"6px 10px"}}>
                 <span style={{background:col+"33",color:col,borderRadius:5,
-                  padding:"1px 6px",fontSize:10,fontWeight:800,minWidth:24,textAlign:"center"}}>{form}</span>
+                  padding:"1px 6px",fontSize:11,fontWeight:800,minWidth:24,textAlign:"center"}}>{form}</span>
                 <span style={{fontSize:13,fontWeight:700,color:C.text,minWidth:130}}>{de}</span>
                 <span style={{fontSize:11,color:C.muted}}>{ru}</span>
               </div>
@@ -6164,7 +6266,7 @@ function T6B(){
           </div>
 
           {/* Special note */}
-          <div style={{background:"rgba(255,255,255,.07)",borderRadius:8,
+          <div style={{background:C.ov7,borderRadius:8,
             padding:"7px 10px",marginBottom:10,whiteSpace:"pre-line"}}>
             <span style={{fontSize:11,color:C.muted,lineHeight:1.5}}>{fc.special}</span>
           </div>
@@ -6172,7 +6274,7 @@ function T6B(){
           {/* Mini examples grid */}
           <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:4}}>
             {fc.examples.map(([from,to])=>(
-              <div key={from} style={{background:"rgba(255,255,255,.06)",borderRadius:7,
+              <div key={from} style={{background:C.ov6,borderRadius:7,
                 padding:"5px 8px",fontSize:11}}>
                 <span style={{color:C.muted}}>{from}</span>
                 <span style={{color:fc.col,fontWeight:800}}> → {to}</span>
@@ -6196,7 +6298,7 @@ function T6B(){
               <div key={inf} style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:6,
                 background:C.card2,borderRadius:8,padding:"6px 10px",alignItems:"center"}}>
                 <span style={{fontSize:12,color:C.muted}}>
-                  {inf}{note&&<span style={{fontSize:10,color:C.orange,marginLeft:4}}>{note}</span>}
+                  {inf}{note&&<span style={{fontSize:11,color:C.orange,marginLeft:4}}>{note}</span>}
                 </span>
                 <span style={{fontSize:14,fontWeight:800,color:fc.col}}>{val}</span>
               </div>
@@ -6387,7 +6489,7 @@ function T6C(){
           </div>
           <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:4}}>
             {konj.map(([pro,form])=>(
-              <div key={pro} style={{display:"flex",gap:8,background:"rgba(255,255,255,.06)",
+              <div key={pro} style={{display:"flex",gap:8,background:C.ov6,
                 borderRadius:7,padding:"5px 8px",fontSize:13,alignItems:"center"}}>
                 <span style={{color:C.muted,minWidth:60,fontSize:11}}>{pro}</span>
                 <span style={{color:C.purple,fontWeight:800}}>{form}</span>
@@ -6420,7 +6522,7 @@ function T6C(){
                   border:`1px solid ${openLines.has(`${i}-v`)?C.green+"44":"transparent"}`}}>
                 <div style={{display:"flex",alignItems:"center",justifyContent:"space-between"}}>
                   <span style={{color:C.green}}>🏪 <b>V:</b> {d.v}</span>
-                  <span style={{fontSize:10,color:C.muted,flexShrink:0,marginLeft:6}}>{openLines.has(`${i}-v`)?"▲":"▾"}</span>
+                  <span style={{fontSize:11,color:C.muted,flexShrink:0,marginLeft:6}}>{openLines.has(`${i}-v`)?"▲":"▾"}</span>
                 </div>
                 {openLines.has(`${i}-v`)&&(
                   <div style={{color:C.muted,fontSize:11,paddingLeft:20,marginTop:3}}>{d.vRu}</div>
@@ -6432,13 +6534,13 @@ function T6C(){
                   border:`1px solid ${openLines.has(`${i}-k`)?C.teal+"44":"transparent"}`}}>
                 <div style={{display:"flex",alignItems:"center",justifyContent:"space-between"}}>
                   <span style={{color:C.teal}}>🙋 <b>K:</b> {d.k}</span>
-                  <span style={{fontSize:10,color:C.muted,flexShrink:0,marginLeft:6}}>{openLines.has(`${i}-k`)?"▲":"▾"}</span>
+                  <span style={{fontSize:11,color:C.muted,flexShrink:0,marginLeft:6}}>{openLines.has(`${i}-k`)?"▲":"▾"}</span>
                 </div>
                 {openLines.has(`${i}-k`)&&(
                   <div style={{color:C.muted,fontSize:11,paddingLeft:20,marginTop:3}}>{d.kRu}</div>
                 )}
               </div>
-              {d.note&&<div style={{color:C.muted,fontSize:10,marginTop:5}}>💡 {d.note}</div>}
+              {d.note&&<div style={{color:C.muted,fontSize:11,marginTop:5}}>💡 {d.note}</div>}
             </div>
           ))}
         </div>
@@ -6450,7 +6552,7 @@ function T6C(){
           <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:4}}>
             {mengen.map(({abbr,full})=>(
               <div key={abbr} style={{display:"flex",gap:6,alignItems:"center",
-                background:"rgba(255,255,255,.05)",borderRadius:6,padding:"5px 8px"}}>
+                background:C.ov5,borderRadius:6,padding:"5px 8px"}}>
                 <span style={{color:C.orange,fontWeight:800,fontSize:12,minWidth:60}}>{abbr}</span>
                 <span style={{color:C.muted,fontSize:11}}>{full}</span>
               </div>
@@ -6521,7 +6623,7 @@ function T6D(){
               </div>
               <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:4}}>
                 {moegen.map(([pro,form])=>(
-                  <div key={pro} style={{display:"flex",gap:8,background:"rgba(255,255,255,.06)",
+                  <div key={pro} style={{display:"flex",gap:8,background:C.ov6,
                     borderRadius:7,padding:"6px 10px",fontSize:13,alignItems:"center"}}>
                     <span style={{color:C.muted,minWidth:60,fontSize:11}}>{pro}</span>
                     <span style={{color:C.purple,fontWeight:800}}>{form}</span>
@@ -6557,7 +6659,7 @@ function T6D(){
                 {verb:"mögen",  conj:"ich mag",     ru:"любить (в принципе)", ex:"Ich mag Pizza.",           note:"постоянное предпочтение"},
                 {verb:"möchten",conj:"ich möchte",  ru:"хотеть (прямо сейчас)",ex:"Ich möchte (jetzt) Pizza.",note:"желание в данный момент"},
               ].map(({verb,conj,ru,ex,note})=>(
-                <div key={verb} style={{background:"rgba(255,255,255,.05)",borderRadius:8,
+                <div key={verb} style={{background:C.ov5,borderRadius:8,
                   padding:"10px 12px",marginBottom:8}}>
                   <div style={{display:"flex",gap:8,alignItems:"center",marginBottom:4}}>
                     <span style={{background:C.purple+"33",color:C.purple,borderRadius:6,
@@ -6605,7 +6707,7 @@ function T6D(){
                 <div key={genus} style={{display:"flex",gap:8,alignItems:"center",
                   background:col+"10",borderRadius:7,padding:"6px 10px",marginBottom:4}}>
                   <span style={{background:col+"33",color:col,borderRadius:4,
-                    padding:"1px 6px",fontSize:10,fontWeight:800,minWidth:18,
+                    padding:"1px 6px",fontSize:11,fontWeight:800,minWidth:18,
                     textAlign:"center"}}>{genus}</span>
                   <span style={{color:C.muted,fontSize:11,flex:1}}>{bsp}</span>
                   <span style={{color:col,fontWeight:800,fontSize:12}}>→ {akk}</span>
@@ -6680,7 +6782,7 @@ function T6E(){
               ["Man backt den Kuchen selbst.","Торт пекут сами."],
               ["In Spanien isst man oft spät.","В Испании обычно едят поздно."],
             ].map(([de,ru])=>(
-              <div key={de} style={{background:"rgba(255,255,255,.06)",borderRadius:7,
+              <div key={de} style={{background:C.ov6,borderRadius:7,
                 padding:"6px 10px",fontSize:12}}>
                 <span style={{color:C.text}}>{de}</span>
                 <span style={{color:C.muted,fontSize:11,display:"block",marginTop:2}}>{ru}</span>
@@ -6696,7 +6798,7 @@ function T6E(){
           {meals.map((m,i)=>(
             <button key={m.id} onClick={()=>setSelMeal(i)}
               style={{flex:1,padding:"10px 4px",borderRadius:9,cursor:"pointer",
-                fontSize:10,fontWeight:800,border:`2px solid ${selMeal===i?m.col:C.border}`,
+                fontSize:11,fontWeight:800,border:`2px solid ${selMeal===i?m.col:C.border}`,
                 background:selMeal===i?m.col+"22":"transparent",
                 color:selMeal===i?m.col:C.muted}}>
               {m.icon}<br/>{m.name.split(" ")[0]}
@@ -6720,7 +6822,7 @@ function T6E(){
               </div>
             ))}
           </div>
-          <div style={{background:"rgba(255,255,255,.06)",borderRadius:7,
+          <div style={{background:C.ov6,borderRadius:7,
             padding:"6px 10px",fontSize:11,color:C.muted,fontStyle:"italic"}}>
             💡 {meal.note}
           </div>
@@ -6808,7 +6910,7 @@ function T7A(){
                 </div>
                 <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:3,marginBottom:6}}>
                   {[["ich",m.ich],["wir",m.wir],["du",m.du],["ihr",m.ihr],["er/sie/es",m.er],["sie/Sie",m.sie]].map(([p,f])=>(
-                    <div key={p} style={{display:"flex",gap:6,background:"rgba(255,255,255,.06)",
+                    <div key={p} style={{display:"flex",gap:6,background:C.ov6,
                       borderRadius:6,padding:"4px 8px",fontSize:12}}>
                       <span style={{color:C.muted,minWidth:56,fontSize:11}}>{p}</span>
                       <span style={{color:m.col,fontWeight:800}}>{f}</span>
@@ -6854,7 +6956,7 @@ function T7A(){
                 ["Wir","wollen","heute","ins Kino gehen","Мы хотим сходить в кино сегодня"],
                 ["Sie","soll","viel Tee","trinken","Ей нужно много пить чая"],
               ].map(([sub,modal,mid,inf,ru])=>(
-                <div key={sub} style={{background:"rgba(255,255,255,.06)",borderRadius:8,
+                <div key={sub} style={{background:C.ov6,borderRadius:8,
                   padding:"8px 10px",marginBottom:6,fontSize:12}}>
                   <div style={{display:"flex",gap:4,flexWrap:"wrap",alignItems:"center",marginBottom:4}}>
                     <span style={{color:C.text}}>{sub}</span>
@@ -6976,7 +7078,7 @@ function T7C(){
               <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr",gap:4,marginBottom:8}}>
                 {[["m","dem",C.blue],["n","dem",C.orange],["f","der",C.purple],["Pl","den",C.teal]].map(([g,art,col])=>(
                   <div key={g} style={{background:col+"15",borderRadius:8,padding:"8px",textAlign:"center"}}>
-                    <div style={{fontSize:10,color:col,fontWeight:800,marginBottom:4}}>{g}</div>
+                    <div style={{fontSize:11,color:col,fontWeight:800,marginBottom:4}}>{g}</div>
                     <div style={{fontSize:16,color:col,fontWeight:800}}>{art}</div>
                   </div>
                 ))}
@@ -7108,7 +7210,7 @@ function T8B(){
           <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:4}}>
             {pronomen.map(p=>(
               <div key={p.nom} style={{display:"flex",gap:8,alignItems:"center",
-                background:"rgba(255,255,255,.06)",borderRadius:7,padding:"6px 10px"}}>
+                background:C.ov6,borderRadius:7,padding:"6px 10px"}}>
                 <span style={{color:C.muted,fontSize:11,minWidth:56}}>{p.nom}</span>
                 <span style={{color:C.text,fontSize:14}}>→</span>
                 <span style={{color:p.col,fontWeight:800,fontSize:13}}>{p.akk}</span>
@@ -7130,12 +7232,12 @@ function T8B(){
               style={{background:C.card2,borderRadius:8,padding:"8px 10px",cursor:"pointer"}}>
               <div style={{display:"flex",justifyContent:"space-between",alignItems:"center"}}>
                 <span style={{fontSize:12,color:C.text,flex:1}}>{e.de}</span>
-                <span style={{fontSize:10,color:C.muted,marginLeft:6}}>{openEx===i?"▲":"▾"}</span>
+                <span style={{fontSize:11,color:C.muted,marginLeft:6}}>{openEx===i?"▲":"▾"}</span>
               </div>
               {openEx===i&&(
                 <div style={{marginTop:6,borderTop:`1px solid ${C.border}`,paddingTop:6}}>
                   <div style={{fontSize:11,color:C.muted}}>{e.ru}</div>
-                  <div style={{fontSize:10,color:C.orange,marginTop:3}}>🔍 {e.pro}</div>
+                  <div style={{fontSize:11,color:C.orange,marginTop:3}}>🔍 {e.pro}</div>
                 </div>
               )}
             </div>
@@ -7184,7 +7286,7 @@ function T8C(){
           {[["sollte","sollte"],["gesundheit","Gesundheit in DE"],["kinder","Kinderkrankheiten"]].map(([key,lbl])=>(
             <button key={key} onClick={()=>setTab(key)}
               style={{flex:1,padding:"9px 4px",borderRadius:9,border:"none",cursor:"pointer",
-                fontSize:10,fontWeight:700,
+                fontSize:11,fontWeight:700,
                 background:tab===key?C.teal+"33":"transparent",
                 color:tab===key?C.teal:C.muted}}>
               {lbl}
@@ -7202,7 +7304,7 @@ function T8C(){
                 <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:4}}>
                   {[["ich","sollte"],["wir","sollten"],["du","solltest"],["ihr","solltet"],
                     ["er/sie/es","sollte"],["sie/Sie","sollten"]].map(([p,f])=>(
-                    <div key={p} style={{display:"flex",gap:6,background:"rgba(255,255,255,.06)",
+                    <div key={p} style={{display:"flex",gap:6,background:C.ov6,
                       borderRadius:6,padding:"4px 8px",fontSize:12}}>
                       <span style={{color:C.muted,fontSize:11,minWidth:56}}>{p}</span>
                       <span style={{color:C.teal,fontWeight:800}}>{f}</span>
@@ -7229,7 +7331,7 @@ function T8C(){
                 ["Dann geh doch zum Arzt!","Тогда сходи к врачу!"],
               ].map(([de,ru])=>(
                 <div key={de} style={{marginBottom:5,fontSize:12,
-                  background:"rgba(255,255,255,.04)",borderRadius:6,padding:"5px 8px"}}>
+                  background:C.ov4,borderRadius:6,padding:"5px 8px"}}>
                   <div style={{color:C.text,fontWeight:600}}>{de}</div>
                   <div style={{color:C.muted,fontSize:11}}>{ru}</div>
                 </div>
@@ -7378,7 +7480,7 @@ function T8A(){
           {[["koerper","Körperteile"],["sollen","sollen & Symptome"],["dialog","Dialog"]].map(([key,lbl])=>(
             <button key={key} onClick={()=>setTab(key)}
               style={{flex:1,padding:"9px 4px",borderRadius:9,border:"none",cursor:"pointer",
-                fontSize:10,fontWeight:700,
+                fontSize:11,fontWeight:700,
                 background:tab===key?C.red+"33":"transparent",
                 color:tab===key?C.red:C.muted}}>
               {lbl}
@@ -7393,14 +7495,14 @@ function T8A(){
                   style={{display:"flex",justifyContent:"space-between",alignItems:"center",
                     background:C.red+"15",borderRadius:9,padding:"9px 12px",cursor:"pointer",marginBottom:4}}>
                   <span style={{fontWeight:700,fontSize:13}}>{g.emoji} {g.group}</span>
-                  <span style={{color:C.muted,fontSize:10}}>{openBody===gi?"▲":"▾"}</span>
+                  <span style={{color:C.muted,fontSize:11}}>{openBody===gi?"▲":"▾"}</span>
                 </div>
                 {openBody===gi&&(
                   <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:3,paddingLeft:4}}>
                     {g.parts.map(p=>(
                       <div key={p.de} style={{background:C.card2,borderRadius:6,padding:"5px 8px",fontSize:11}}>
                         <div style={{color:C.text,fontWeight:600}}>{p.de}</div>
-                        <div style={{color:C.muted,fontSize:10}}>{p.ru}</div>
+                        <div style={{color:C.muted,fontSize:11}}>{p.ru}</div>
                       </div>
                     ))}
                   </div>
@@ -7422,7 +7524,7 @@ function T8A(){
               </div>
               <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:3,marginBottom:8}}>
                 {sollen.map(([p,f])=>(
-                  <div key={p} style={{display:"flex",gap:6,background:"rgba(255,255,255,.06)",
+                  <div key={p} style={{display:"flex",gap:6,background:C.ov6,
                     borderRadius:6,padding:"4px 8px",fontSize:12}}>
                     <span style={{color:C.muted,minWidth:56,fontSize:11}}>{p}</span>
                     <span style={{color:C.teal,fontWeight:800}}>{f}</span>
@@ -7471,7 +7573,7 @@ function T8A(){
                       border:`1px solid ${openLines8.has(`${i}-v`)?C.green+"44":"transparent"}`}}>
                     <div style={{display:"flex",alignItems:"center",justifyContent:"space-between"}}>
                       <span style={{color:C.green}}>🏥 <b>A:</b> {d.v}</span>
-                      <span style={{fontSize:10,color:C.muted,flexShrink:0,marginLeft:6}}>{openLines8.has(`${i}-v`)?"▲":"▾"}</span>
+                      <span style={{fontSize:11,color:C.muted,flexShrink:0,marginLeft:6}}>{openLines8.has(`${i}-v`)?"▲":"▾"}</span>
                     </div>
                     {openLines8.has(`${i}-v`)&&<div style={{color:C.muted,fontSize:11,paddingLeft:20,marginTop:3}}>{d.vRu}</div>}
                   </div>
@@ -7481,11 +7583,11 @@ function T8A(){
                       border:`1px solid ${openLines8.has(`${i}-k`)?C.red+"44":"transparent"}`}}>
                     <div style={{display:"flex",alignItems:"center",justifyContent:"space-between"}}>
                       <span style={{color:C.red}}>🙋 <b>P:</b> {d.k}</span>
-                      <span style={{fontSize:10,color:C.muted,flexShrink:0,marginLeft:6}}>{openLines8.has(`${i}-k`)?"▲":"▾"}</span>
+                      <span style={{fontSize:11,color:C.muted,flexShrink:0,marginLeft:6}}>{openLines8.has(`${i}-k`)?"▲":"▾"}</span>
                     </div>
                     {openLines8.has(`${i}-k`)&&<div style={{color:C.muted,fontSize:11,paddingLeft:20,marginTop:3}}>{d.kRu}</div>}
                   </div>
-                  {d.note&&<div style={{color:C.muted,fontSize:10,marginTop:4}}>💡 {d.note}</div>}
+                  {d.note&&<div style={{color:C.muted,fontSize:11,marginTop:4}}>💡 {d.note}</div>}
                 </div>
               ))}
             </div>
@@ -7550,7 +7652,7 @@ function T8D(){
           {[["notruf","Notruf 112"],["hilfe","Erste Hilfe"],["erschoepft","Erschöpft?"]].map(([key,lbl])=>(
             <button key={key} onClick={()=>setTab(key)}
               style={{flex:1,padding:"9px 4px",borderRadius:9,border:"none",cursor:"pointer",
-                fontSize:10,fontWeight:700,
+                fontSize:11,fontWeight:700,
                 background:tab===key?C.red+"33":"transparent",
                 color:tab===key?C.red:C.muted}}>
               {lbl}
@@ -7569,7 +7671,7 @@ function T8D(){
               </div>
               {schema.map(({n,q,bsp})=>(
                 <div key={n} style={{display:"flex",gap:8,marginBottom:7,
-                  background:"rgba(255,255,255,.04)",borderRadius:8,padding:"8px 10px"}}>
+                  background:C.ov4,borderRadius:8,padding:"8px 10px"}}>
                   <div style={{minWidth:22,height:22,background:C.red,borderRadius:"50%",
                     display:"flex",alignItems:"center",justifyContent:"center",
                     fontSize:11,fontWeight:800,color:"#fff",flexShrink:0}}>{n}</div>
@@ -7622,10 +7724,10 @@ function T8D(){
               </div>
               <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:5}}>
                 {erschoepft.map(e=>(
-                  <div key={e.de} style={{background:"rgba(255,255,255,.04)",borderRadius:7,padding:"7px 9px"}}>
+                  <div key={e.de} style={{background:C.ov4,borderRadius:7,padding:"7px 9px"}}>
                     <div style={{fontWeight:700,color:C.orange,fontSize:12}}>{e.de}</div>
                     <div style={{color:C.muted,fontSize:11}}>{e.ru}</div>
-                    <div style={{color:C.muted,fontSize:10,fontStyle:"italic"}}>{e.note}</div>
+                    <div style={{color:C.muted,fontSize:11,fontStyle:"italic"}}>{e.note}</div>
                   </div>
                 ))}
               </div>
@@ -7700,7 +7802,7 @@ function T9A(){
           {[["mittel","Verkehrsmittel"],["dativ","mit + Dativ"],["adj","Adjektive"]].map(([key,lbl])=>(
             <button key={key} onClick={()=>setTab(key)}
               style={{flex:1,padding:"9px 4px",borderRadius:9,border:"none",cursor:"pointer",
-                fontSize:10,fontWeight:700,
+                fontSize:11,fontWeight:700,
                 background:tab===key?C.blue+"33":"transparent",
                 color:tab===key?C.blue:C.muted}}>
               {lbl}
@@ -7733,9 +7835,9 @@ function T9A(){
               </div>
               <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:5,marginBottom:12}}>
                 {[["m / n","dem"],["f","der"],["Pl.","den + -n"]].map(([g,f])=>(
-                  <div key={g} style={{background:"rgba(255,255,255,.06)",borderRadius:7,
+                  <div key={g} style={{background:C.ov6,borderRadius:7,
                     padding:"7px 8px",textAlign:"center"}}>
-                    <div style={{fontSize:10,color:C.muted}}>{g}</div>
+                    <div style={{fontSize:11,color:C.muted}}>{g}</div>
                     <div style={{fontWeight:800,color:C.blue,fontSize:14}}>{f}</div>
                   </div>
                 ))}
@@ -7749,7 +7851,7 @@ function T9A(){
                 ["mit der S-Bahn","на электричке"],
               ].map(([de,ru])=>(
                 <div key={de} style={{display:"flex",justifyContent:"space-between",
-                  padding:"5px 8px",background:"rgba(255,255,255,.04)",
+                  padding:"5px 8px",background:C.ov4,
                   borderRadius:7,marginBottom:4,fontSize:12}}>
                   <span style={{fontWeight:700,color:C.text}}>{de}</span>
                   <span style={{color:C.muted}}>{ru}</span>
@@ -7797,7 +7899,7 @@ function T9A(){
                 ["Das Auto ist bequem, aber teuer.","Машина удобная, но дорогая."],
               ].map(([de,ru])=>(
                 <div key={de} style={{marginBottom:5,fontSize:12,
-                  background:"rgba(255,255,255,.04)",borderRadius:6,padding:"5px 8px"}}>
+                  background:C.ov4,borderRadius:6,padding:"5px 8px"}}>
                   <div style={{color:C.text,fontWeight:600}}>{de}</div>
                   <div style={{color:C.muted,fontSize:11}}>{ru}</div>
                 </div>
@@ -7854,7 +7956,7 @@ function T9B(){
           {[["weg","Wegbeschreibung"],["praep","Lokale Präp."],["kontr","in dem = im"]].map(([key,lbl])=>(
             <button key={key} onClick={()=>setTab(key)}
               style={{flex:1,padding:"9px 4px",borderRadius:9,border:"none",cursor:"pointer",
-                fontSize:10,fontWeight:700,
+                fontSize:11,fontWeight:700,
                 background:tab===key?C.teal+"33":"transparent",
                 color:tab===key?C.teal:C.muted}}>
               {lbl}
@@ -7887,8 +7989,8 @@ function T9B(){
               </div>
               <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:4,marginBottom:8,textAlign:"center"}}>
                 {[["m/n","dem"],["f","der"],["Pl.","den"]].map(([g,f])=>(
-                  <div key={g} style={{background:"rgba(255,255,255,.06)",borderRadius:6,padding:"5px 8px"}}>
-                    <div style={{fontSize:10,color:C.muted}}>{g}</div>
+                  <div key={g} style={{background:C.ov6,borderRadius:6,padding:"5px 8px"}}>
+                    <div style={{fontSize:11,color:C.muted}}>{g}</div>
                     <div style={{fontWeight:800,color:C.teal,fontSize:13}}>{f}</div>
                   </div>
                 ))}
@@ -7961,7 +8063,7 @@ function T9C(){
           {[["duerfen","dürfen"],["regeln","erlaubt/verboten"],["schein","Führerschein"]].map(([key,lbl])=>(
             <button key={key} onClick={()=>setTab(key)}
               style={{flex:1,padding:"9px 4px",borderRadius:9,border:"none",cursor:"pointer",
-                fontSize:10,fontWeight:700,
+                fontSize:11,fontWeight:700,
                 background:tab===key?C.orange+"33":"transparent",
                 color:tab===key?C.orange:C.muted}}>
               {lbl}
@@ -7978,7 +8080,7 @@ function T9C(){
               <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:5}}>
                 {[["ich","darf"],["du","darfst"],["er/sie/es/man","darf"],
                   ["wir","dürfen"],["ihr","dürft"],["sie/Sie","dürfen"]].map(([pr,f])=>(
-                  <div key={pr} style={{background:"rgba(255,255,255,.06)",borderRadius:7,padding:"7px 10px",
+                  <div key={pr} style={{background:C.ov6,borderRadius:7,padding:"7px 10px",
                     display:"flex",justifyContent:"space-between"}}>
                     <span style={{color:C.muted,fontSize:12}}>{pr}</span>
                     <span style={{fontWeight:800,color:C.orange,fontSize:13}}>{f}</span>
@@ -8055,7 +8157,7 @@ function T9C(){
                 ["EU-Bürger","🟢 darf EU-Führerschein weiter benutzen"],
                 ["Nicht-EU (China, Indien, Brasilien …)","🟡 max. 6 Monate · dann: Führerscheinprüfung"],
               ].map(([who,rule])=>(
-                <div key={who} style={{marginBottom:7,background:"rgba(255,255,255,.04)",
+                <div key={who} style={{marginBottom:7,background:C.ov4,
                   borderRadius:7,padding:"7px 9px"}}>
                   <div style={{fontWeight:700,fontSize:11,color:C.text,marginBottom:3}}>{who}</div>
                   <div style={{fontSize:11,color:C.muted}}>{rule}</div>
@@ -8102,62 +8204,135 @@ const Q_L10A=[
 ];
 const STARKE_VERBEN=[
   // ── A1 ────────────────────────────────────────────────────────────────────
-  {inf:"beginnen",  pr:"beginnt",     pp:"begonnen",    ru:"начинать",h:"hat",lv:"A1",bsp:"Der Kurs hat um 9 Uhr begonnen."},
-  {inf:"bleiben",   pr:"bleibt",      pp:"geblieben",   ru:"оставаться",h:"ist",lv:"A1",bsp:"Wir sind auf Mallorca geblieben."},
-  {inf:"bringen",   pr:"bringt",      pp:"gebracht",    ru:"приносить",h:"hat",lv:"A1",bsp:"Er hat das Essen gebracht."},
-  {inf:"denken",    pr:"denkt",       pp:"gedacht",     ru:"думать",h:"hat",lv:"A1",bsp:"Ich habe an dich gedacht."},
-  {inf:"einschlafen",pr:"schläft ein",pp:"eingeschlafen",ru:"засыпать",h:"ist",lv:"A1",bsp:"Hast du schnell eingeschlafen?"},
-  {inf:"essen",     pr:"isst",        pp:"gegessen",    ru:"есть, кушать",h:"hat",lv:"A1",bsp:"Sie hat die Suppe gegessen."},
-  {inf:"fahren",    pr:"fährt",       pp:"gefahren",    ru:"ехать",h:"ist",lv:"A1",bsp:"Wir sind zu schnell gefahren."},
-  {inf:"finden",    pr:"findet",      pp:"gefunden",    ru:"находить",h:"hat",lv:"A1",bsp:"Renate hat ihre Mutter schnell gefunden."},
-  {inf:"fliegen",   pr:"fliegt",      pp:"geflogen",    ru:"лететь",h:"ist",lv:"A1",bsp:"Er ist nach Wien geflogen."},
-  {inf:"geben",     pr:"gibt",        pp:"gegeben",     ru:"давать",h:"hat",lv:"A1",bsp:"Peter hat mir ein Blatt Papier gegeben."},
-  {inf:"gehen",     pr:"geht",        pp:"gegangen",    ru:"идти",h:"ist",lv:"A1",bsp:"Wohin seid ihr am Abend gegangen?"},
-  {inf:"haben",     pr:"hat",         pp:"gehabt",      ru:"иметь",h:"hat",lv:"A1",bsp:"Auf der Party haben alle viel Spaß gehabt."},
-  {inf:"heißen",    pr:"heißt",       pp:"geheißen",    ru:"называться",h:"hat",lv:"A1",bsp:"Das Buch hat 'Faust' geheißen."},
-  {inf:"helfen",    pr:"hilft",       pp:"geholfen",    ru:"помогать",h:"hat",lv:"A1",bsp:"Die Kinder haben zu Hause geholfen."},
-  {inf:"kommen",    pr:"kommt",       pp:"gekommen",    ru:"приходить",h:"ist",lv:"A1",bsp:"Er ist pünktlich gekommen."},
-  {inf:"laufen",    pr:"läuft",       pp:"gelaufen",    ru:"бежать",h:"ist",lv:"A1",bsp:"Julio ist mit mir gelaufen."},
-  {inf:"lesen",     pr:"liest",       pp:"gelesen",     ru:"читать",h:"hat",lv:"A1",bsp:"Hast du das Buch gelesen?"},
-  {inf:"nehmen",    pr:"nimmt",       pp:"genommen",    ru:"брать",h:"hat",lv:"A1",bsp:"Sie hat die U-Bahn genommen."},
-  {inf:"rufen",     pr:"ruft",        pp:"gerufen",     ru:"звать, вызывать",h:"hat",lv:"A1",bsp:"Er hat die Polizei gerufen."},
-  {inf:"schlafen",  pr:"schläft",     pp:"geschlafen",  ru:"спать",h:"hat",lv:"A1",bsp:"Er hat gut geschlafen."},
-  {inf:"schreiben", pr:"schreibt",    pp:"geschrieben", ru:"писать",h:"hat",lv:"A1",bsp:"Hast du schon die Postkarte geschrieben?"},
-  {inf:"schwimmen", pr:"schwimmt",    pp:"geschwommen", ru:"плавать",h:"ist",lv:"A1",bsp:"Frau Novak ist heute morgen geschwommen."},
-  {inf:"sehen",     pr:"sieht",       pp:"gesehen",     ru:"видеть",h:"hat",lv:"A1",bsp:"Haben Sie den Film gesehen?"},
-  {inf:"sein",      pr:"ist",         pp:"gewesen",     ru:"быть",h:"ist",lv:"A1",bsp:"Ich bin in Barcelona noch nie gewesen."},
-  {inf:"singen",    pr:"singt",       pp:"gesungen",    ru:"петь",h:"hat",lv:"A1",bsp:"Sie hat ein Lied gesungen."},
-  {inf:"sprechen",  pr:"spricht",     pp:"gesprochen",  ru:"говорить",h:"hat",lv:"A1",bsp:"Wir haben über das Thema gesprochen."},
-  {inf:"aufstehen", pr:"steht auf",   pp:"aufgestanden",ru:"вставать",h:"ist",lv:"A1",bsp:"Sylvia ist sehr früh aufgestanden."},
-  {inf:"stehen",    pr:"steht",       pp:"gestanden",   ru:"стоять",h:"hat",lv:"A1",bsp:"Das Auto hat vor dem Haus gestanden."},
-  {inf:"treffen",   pr:"trifft",      pp:"getroffen",   ru:"встречать",h:"hat",lv:"A1",bsp:"Ich habe einen Freund getroffen."},
-  {inf:"trinken",   pr:"trinkt",      pp:"getrunken",   ru:"пить",h:"hat",lv:"A1",bsp:"Er hat viel Wasser getrunken."},
-  {inf:"tun",       pr:"tut",         pp:"getan",       ru:"делать",h:"hat",lv:"A1",bsp:"Was hast du gestern getan?"},
-  {inf:"werden",    pr:"wird",        pp:"geworden",    ru:"становиться",h:"ist",lv:"A1",bsp:"Thomas ist rot geworden."},
-  {inf:"wissen",    pr:"weiß",        pp:"gewusst",     ru:"знать",h:"hat",lv:"A1",bsp:"Ich habe es nicht gewusst."},
+  {inf:"beginnen",  pr:"beginnt",     pt:"begann",pp:"begonnen",    ru:"начинать",h:"hat",lv:"A1",bsp:"Der Kurs hat um 9 Uhr begonnen."},
+  {inf:"bleiben",   pr:"bleibt",      pt:"blieb",pp:"geblieben",   ru:"оставаться",h:"ist",lv:"A1",bsp:"Wir sind auf Mallorca geblieben."},
+  {inf:"bringen",   pr:"bringt",      pt:"brachte",pp:"gebracht",    ru:"приносить",h:"hat",lv:"A1",bsp:"Er hat das Essen gebracht."},
+  {inf:"denken",    pr:"denkt",       pt:"dachte",pp:"gedacht",     ru:"думать",h:"hat",lv:"A1",bsp:"Ich habe an dich gedacht."},
+  {inf:"einschlafen",pr:"schläft ein",pt:"schlief ein",pp:"eingeschlafen",ru:"засыпать",h:"ist",lv:"A1",bsp:"Hast du schnell eingeschlafen?"},
+  {inf:"essen",     pr:"isst",        pt:"aß",pp:"gegessen",    ru:"есть, кушать",h:"hat",lv:"A1",bsp:"Sie hat die Suppe gegessen."},
+  {inf:"fahren",    pr:"fährt",       pt:"fuhr",pp:"gefahren",    ru:"ехать",h:"ist",lv:"A1",bsp:"Wir sind zu schnell gefahren."},
+  {inf:"finden",    pr:"findet",      pt:"fand",pp:"gefunden",    ru:"находить",h:"hat",lv:"A1",bsp:"Renate hat ihre Mutter schnell gefunden."},
+  {inf:"fliegen",   pr:"fliegt",      pt:"flog",pp:"geflogen",    ru:"лететь",h:"ist",lv:"A1",bsp:"Er ist nach Wien geflogen."},
+  {inf:"geben",     pr:"gibt",        pt:"gab",pp:"gegeben",     ru:"давать",h:"hat",lv:"A1",bsp:"Peter hat mir ein Blatt Papier gegeben."},
+  {inf:"gehen",     pr:"geht",        pt:"ging",pp:"gegangen",    ru:"идти",h:"ist",lv:"A1",bsp:"Wohin seid ihr am Abend gegangen?"},
+  {inf:"haben",     pr:"hat",         pt:"hatte",pp:"gehabt",      ru:"иметь",h:"hat",lv:"A1",bsp:"Auf der Party haben alle viel Spaß gehabt."},
+  {inf:"heißen",    pr:"heißt",       pt:"hieß",pp:"geheißen",    ru:"называться",h:"hat",lv:"A1",bsp:"Das Buch hat 'Faust' geheißen."},
+  {inf:"helfen",    pr:"hilft",       pt:"half",pp:"geholfen",    ru:"помогать",h:"hat",lv:"A1",bsp:"Die Kinder haben zu Hause geholfen."},
+  {inf:"kommen",    pr:"kommt",       pt:"kam",pp:"gekommen",    ru:"приходить",h:"ist",lv:"A1",bsp:"Er ist pünktlich gekommen."},
+  {inf:"laufen",    pr:"läuft",       pt:"lief",pp:"gelaufen",    ru:"бежать",h:"ist",lv:"A1",bsp:"Julio ist mit mir gelaufen."},
+  {inf:"lesen",     pr:"liest",       pt:"las",pp:"gelesen",     ru:"читать",h:"hat",lv:"A1",bsp:"Hast du das Buch gelesen?"},
+  {inf:"nehmen",    pr:"nimmt",       pt:"nahm",pp:"genommen",    ru:"брать",h:"hat",lv:"A1",bsp:"Sie hat die U-Bahn genommen."},
+  {inf:"rufen",     pr:"ruft",        pt:"rief",pp:"gerufen",     ru:"звать, вызывать",h:"hat",lv:"A1",bsp:"Er hat die Polizei gerufen."},
+  {inf:"schlafen",  pr:"schläft",     pt:"schlief",pp:"geschlafen",  ru:"спать",h:"hat",lv:"A1",bsp:"Er hat gut geschlafen."},
+  {inf:"schreiben", pr:"schreibt",    pt:"schrieb",pp:"geschrieben", ru:"писать",h:"hat",lv:"A1",bsp:"Hast du schon die Postkarte geschrieben?"},
+  {inf:"schwimmen", pr:"schwimmt",    pt:"schwamm",pp:"geschwommen", ru:"плавать",h:"ist",lv:"A1",bsp:"Frau Novak ist heute morgen geschwommen."},
+  {inf:"sehen",     pr:"sieht",       pt:"sah",pp:"gesehen",     ru:"видеть",h:"hat",lv:"A1",bsp:"Haben Sie den Film gesehen?"},
+  {inf:"sein",      pr:"ist",         pt:"war",pp:"gewesen",     ru:"быть",h:"ist",lv:"A1",bsp:"Ich bin in Barcelona noch nie gewesen."},
+  {inf:"singen",    pr:"singt",       pt:"sang",pp:"gesungen",    ru:"петь",h:"hat",lv:"A1",bsp:"Sie hat ein Lied gesungen."},
+  {inf:"sprechen",  pr:"spricht",     pt:"sprach",pp:"gesprochen",  ru:"говорить",h:"hat",lv:"A1",bsp:"Wir haben über das Thema gesprochen."},
+  {inf:"aufstehen", pr:"steht auf",   pt:"stand auf",pp:"aufgestanden",ru:"вставать",h:"ist",lv:"A1",bsp:"Sylvia ist sehr früh aufgestanden."},
+  {inf:"stehen",    pr:"steht",       pt:"stand",pp:"gestanden",   ru:"стоять",h:"hat",lv:"A1",bsp:"Das Auto hat vor dem Haus gestanden."},
+  {inf:"treffen",   pr:"trifft",      pt:"traf",pp:"getroffen",   ru:"встречать",h:"hat",lv:"A1",bsp:"Ich habe einen Freund getroffen."},
+  {inf:"trinken",   pr:"trinkt",      pt:"trank",pp:"getrunken",   ru:"пить",h:"hat",lv:"A1",bsp:"Er hat viel Wasser getrunken."},
+  {inf:"tun",       pr:"tut",         pt:"tat",pp:"getan",       ru:"делать",h:"hat",lv:"A1",bsp:"Was hast du gestern getan?"},
+  {inf:"werden",    pr:"wird",        pt:"wurde",pp:"geworden",    ru:"становиться",h:"ist",lv:"A1",bsp:"Thomas ist rot geworden."},
+  {inf:"wissen",    pr:"weiß",        pt:"wusste",pp:"gewusst",     ru:"знать",h:"hat",lv:"A1",bsp:"Ich habe es nicht gewusst."},
   // ── A2 ────────────────────────────────────────────────────────────────────
-  {inf:"backen",    pr:"backt",       pp:"gebacken",    ru:"печь",h:"hat",lv:"A2",bsp:"Sie hat einen Kuchen gebacken."},
-  {inf:"biegen",    pr:"biegt",       pp:"gebogen",     ru:"гнуть",h:"hat",lv:"A2",bsp:"Er hat die Stange gebogen."},
-  {inf:"bieten",    pr:"bietet",      pp:"geboten",     ru:"предлагать",h:"hat",lv:"A2",bsp:"Das Hotel hat viel geboten."},
-  {inf:"bitten",    pr:"bittet",      pp:"gebeten",     ru:"просить",h:"hat",lv:"A2",bsp:"Er hat mich um Hilfe gebeten."},
-  {inf:"braten",    pr:"brät",        pp:"gebraten",    ru:"жарить",h:"hat",lv:"A2",bsp:"Sie hat Fleisch gebraten."},
-  {inf:"fallen",    pr:"fällt",       pp:"gefallen",    ru:"падать",h:"ist",lv:"A2",bsp:"Das Kind ist hingefallen."},
-  {inf:"gefallen",  pr:"gefällt",     pp:"gefallen",    ru:"нравиться",h:"hat",lv:"A2",bsp:"Das Konzert hat mir sehr gut gefallen."},
-  {inf:"gewinnen",  pr:"gewinnt",     pp:"gewonnen",    ru:"выигрывать",h:"hat",lv:"A2",bsp:"Unser Team hat das Spiel gewonnen."},
-  {inf:"laden",     pr:"lädt",        pp:"geladen",     ru:"грузить, загружать",h:"hat",lv:"A2",bsp:"Er hat das Video hochgeladen."},
-  {inf:"liegen",    pr:"liegt",       pp:"gelegen",     ru:"лежать",h:"hat",lv:"A2",bsp:"Das Buch hat auf dem Tisch gelegen."},
-  {inf:"nennen",    pr:"nennt",       pp:"genannt",     ru:"называть",h:"hat",lv:"A2",bsp:"Sie hat ihn beim Namen genannt."},
-  {inf:"rennen",    pr:"rennt",       pp:"gerannt",     ru:"бежать (быстро)",h:"ist",lv:"A2",bsp:"Er ist sehr schnell gerannt."},
-  {inf:"riechen",   pr:"riecht",      pp:"gerochen",    ru:"пахнуть",h:"hat",lv:"A2",bsp:"Die Blumen haben gut gerochen."},
-  {inf:"schließen", pr:"schließt",    pp:"geschlossen", ru:"закрывать",h:"hat",lv:"A2",bsp:"Er hat die Tür geschlossen."},
-  {inf:"sitzen",    pr:"sitzt",       pp:"gesessen",    ru:"сидеть",h:"hat",lv:"A2",bsp:"Wir haben im Café gesessen."},
-  {inf:"steigen",   pr:"steigt",      pp:"gestiegen",   ru:"подниматься, садиться",h:"ist",lv:"A2",bsp:"Wir sind in den Bus gestiegen."},
-  {inf:"sterben",   pr:"stirbt",      pp:"gestorben",   ru:"умирать",h:"ist",lv:"A2",bsp:"Die Pflanze ist gestorben."},
-  {inf:"treiben",   pr:"treibt",      pp:"getrieben",   ru:"заниматься (спортом)",h:"hat",lv:"A2",bsp:"Er hat viel Sport getrieben."},
-  {inf:"vergessen", pr:"vergisst",    pp:"vergessen",   ru:"забывать",h:"hat",lv:"A2",bsp:"Ich habe mein Handy vergessen."},
-  {inf:"verlieren", pr:"verliert",    pp:"verloren",    ru:"терять",h:"hat",lv:"A2",bsp:"Er hat seine Schlüssel verloren."},
-  {inf:"wachsen",   pr:"wächst",      pp:"gewachsen",   ru:"расти",h:"ist",lv:"A2",bsp:"Das Kind ist sehr gewachsen."},
+  {inf:"backen",    pr:"backt",       pt:"backte",pp:"gebacken",    ru:"печь",h:"hat",lv:"A2",bsp:"Sie hat einen Kuchen gebacken."},
+  {inf:"biegen",    pr:"biegt",       pt:"bog",pp:"gebogen",     ru:"гнуть",h:"hat",lv:"A2",bsp:"Er hat die Stange gebogen."},
+  {inf:"bieten",    pr:"bietet",      pt:"bot",pp:"geboten",     ru:"предлагать",h:"hat",lv:"A2",bsp:"Das Hotel hat viel geboten."},
+  {inf:"bitten",    pr:"bittet",      pt:"bat",pp:"gebeten",     ru:"просить",h:"hat",lv:"A2",bsp:"Er hat mich um Hilfe gebeten."},
+  {inf:"braten",    pr:"brät",        pt:"briet",pp:"gebraten",    ru:"жарить",h:"hat",lv:"A2",bsp:"Sie hat Fleisch gebraten."},
+  {inf:"fallen",    pr:"fällt",       pt:"fiel",pp:"gefallen",    ru:"падать",h:"ist",lv:"A2",bsp:"Das Kind ist hingefallen."},
+  {inf:"gefallen",  pr:"gefällt",     pt:"gefiel",pp:"gefallen",    ru:"нравиться",h:"hat",lv:"A2",bsp:"Das Konzert hat mir sehr gut gefallen."},
+  {inf:"gewinnen",  pr:"gewinnt",     pt:"gewann",pp:"gewonnen",    ru:"выигрывать",h:"hat",lv:"A2",bsp:"Unser Team hat das Spiel gewonnen."},
+  {inf:"laden",     pr:"lädt",        pt:"lud",pp:"geladen",     ru:"грузить, загружать",h:"hat",lv:"A2",bsp:"Er hat das Video hochgeladen."},
+  {inf:"liegen",    pr:"liegt",       pt:"lag",pp:"gelegen",     ru:"лежать",h:"hat",lv:"A2",bsp:"Das Buch hat auf dem Tisch gelegen."},
+  {inf:"nennen",    pr:"nennt",       pt:"nannte",pp:"genannt",     ru:"называть",h:"hat",lv:"A2",bsp:"Sie hat ihn beim Namen genannt."},
+  {inf:"rennen",    pr:"rennt",       pt:"rannte",pp:"gerannt",     ru:"бежать (быстро)",h:"ist",lv:"A2",bsp:"Er ist sehr schnell gerannt."},
+  {inf:"riechen",   pr:"riecht",      pt:"roch",pp:"gerochen",    ru:"пахнуть",h:"hat",lv:"A2",bsp:"Die Blumen haben gut gerochen."},
+  {inf:"schließen", pr:"schließt",    pt:"schloss",pp:"geschlossen", ru:"закрывать",h:"hat",lv:"A2",bsp:"Er hat die Tür geschlossen."},
+  {inf:"sitzen",    pr:"sitzt",       pt:"saß",pp:"gesessen",    ru:"сидеть",h:"hat",lv:"A2",bsp:"Wir haben im Café gesessen."},
+  {inf:"steigen",   pr:"steigt",      pt:"stieg",pp:"gestiegen",   ru:"подниматься, садиться",h:"ist",lv:"A2",bsp:"Wir sind in den Bus gestiegen."},
+  {inf:"sterben",   pr:"stirbt",      pt:"starb",pp:"gestorben",   ru:"умирать",h:"ist",lv:"A2",bsp:"Die Pflanze ist gestorben."},
+  {inf:"treiben",   pr:"treibt",      pt:"trieb",pp:"getrieben",   ru:"заниматься (спортом)",h:"hat",lv:"A2",bsp:"Er hat viel Sport getrieben."},
+  {inf:"vergessen", pr:"vergisst",    pt:"vergaß",pp:"vergessen",   ru:"забывать",h:"hat",lv:"A2",bsp:"Ich habe mein Handy vergessen."},
+  {inf:"verlieren", pr:"verliert",    pt:"verlor",pp:"verloren",    ru:"терять",h:"hat",lv:"A2",bsp:"Er hat seine Schlüssel verloren."},
+  {inf:"wachsen",   pr:"wächst",      pt:"wuchs",pp:"gewachsen",   ru:"расти",h:"ist",lv:"A2",bsp:"Das Kind ist sehr gewachsen."},
 ];
+// Общее правило haben/sein в Perfekt — используется и в T10A (вкладка "haben / sein"),
+// и в T10B (вкладка "Regel"), чтобы не дублировать объяснение в двух местах.
+function HabenSeinRegel(){
+  const seinVerbs=[
+    {inf:"fahren",   pp:"gefahren",       ru:"ехать"},
+    {inf:"gehen",    pp:"gegangen",       ru:"идти"},
+    {inf:"fliegen",  pp:"geflogen",       ru:"лететь"},
+    {inf:"kommen",   pp:"gekommen",       ru:"приходить"},
+    {inf:"laufen",   pp:"gelaufen",       ru:"бежать"},
+    {inf:"reisen",   pp:"gereist",        ru:"путешествовать"},
+  ];
+  return (
+    <div>
+      <div style={{background:C.teal+"15",border:`1px solid ${C.teal}33`,
+        borderRadius:10,padding:"10px 12px",marginBottom:8}}>
+        <div style={{fontWeight:800,fontSize:12,color:C.teal,marginBottom:6}}>
+          ✅ haben — большинство глаголов
+        </div>
+        <div style={{fontSize:12,color:C.text,lineHeight:1.7,marginBottom:8}}>
+          → есть <b style={{color:C.teal}}>Akkusativ-объект</b> (кого/что?)<br/>
+          → или не подходит под правила sein
+        </div>
+        {[["Ich habe Musik gehört.","что? → Musik → haben"],
+          ["Er hat das Auto gekauft.","что? → Auto → haben"],
+          ["Wir haben gekocht.","нет движения → haben"]].map(([bsp,note])=>(
+          <div key={bsp} style={{marginBottom:4,background:C.ov5,
+            borderRadius:6,padding:"5px 8px",fontSize:11}}>
+            <div style={{color:C.text,fontWeight:600}}>{bsp}</div>
+            <div style={{color:C.muted}}>{note}</div>
+          </div>
+        ))}
+      </div>
+      <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,
+        borderRadius:10,padding:"10px 12px",marginBottom:8}}>
+        <div style={{fontWeight:800,fontSize:12,color:C.orange,marginBottom:8}}>
+          🚶 sein — только 3 случая
+        </div>
+        {[
+          ["1. Bewegungsverben (A → B)","fahren, gehen, fliegen, laufen, kommen, reisen","Ich bin nach Wien gefahren."],
+          ["2. Zustandsveränderung","einschlafen, aufwachen, aufstehen, werden, sterben","Ich bin früh eingeschlafen."],
+          ["3. Ausnahmen ⚠️","bleiben (оставаться) → ist geblieben · sein (быть) → ist gewesen","Ich bin nicht lange geblieben."],
+        ].map(([title,verbs,bsp])=>(
+          <div key={title} style={{marginBottom:8}}>
+            <div style={{fontSize:11,fontWeight:700,color:C.orange,marginBottom:3}}>{title}:</div>
+            <div style={{fontSize:11,color:C.muted,marginBottom:3}}>{verbs}</div>
+            <div style={{background:C.ov5,borderRadius:6,padding:"5px 8px",fontSize:11,color:C.text}}>{bsp}</div>
+          </div>
+        ))}
+        <div style={{background:C.ov5,borderRadius:7,padding:"7px 9px",marginTop:4}}>
+          <div style={{fontWeight:700,fontSize:11,color:C.muted,marginBottom:4}}>Примеры Partizip II:</div>
+          {seinVerbs.map(({inf,pp,ru})=>(
+            <div key={inf} style={{display:"flex",gap:6,fontSize:11,marginBottom:3}}>
+              <span style={{color:C.muted,minWidth:65}}>{inf}</span>
+              <span style={{color:C.orange,fontWeight:700,minWidth:85}}>{pp}</span>
+              <span style={{color:C.muted}}>{ru}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div style={{background:C.card2,borderRadius:8,padding:"9px 11px",fontSize:11}}>
+        <div style={{fontWeight:700,color:C.muted,marginBottom:5}}>💡 Быстрый тест:</div>
+        <div style={{color:C.text,lineHeight:1.8}}>
+          1. Есть объект (кого/что)? → <b style={{color:C.teal}}>haben</b><br/>
+          2. Движение А→Б? → <b style={{color:C.orange}}>sein</b><br/>
+          3. Изменение состояния? → <b style={{color:C.orange}}>sein</b><br/>
+          4. bleiben / sein? → <b style={{color:C.orange}}>sein</b> ⚠️<br/>
+          5. Всё остальное? → <b style={{color:C.teal}}>haben</b>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function T10A(){
   const [tab,setTab]=useState("struktur");
   const [starkIdx,setStarkIdx]=useState(null);
@@ -8195,14 +8370,6 @@ function T10A(){
     {inf:"anrufen",     pp:"angerufen",    pref:"an",   stem:"ruf",   suf:"en ⚠️"},
     {inf:"aufstehen",   pp:"aufgestanden", pref:"auf",  stem:"stand", suf:"en ⚠️"},
   ];
-  const seinVerbs=[
-    {inf:"fahren",   pp:"gefahren",       ru:"ехать"},
-    {inf:"gehen",    pp:"gegangen",       ru:"идти"},
-    {inf:"fliegen",  pp:"geflogen",       ru:"лететь"},
-    {inf:"kommen",   pp:"gekommen",       ru:"приходить"},
-    {inf:"laufen",   pp:"gelaufen",       ru:"бежать"},
-    {inf:"reisen",   pp:"gereist",        ru:"путешествовать"},
-  ];
   return (
     <div style={{display:"flex",flexDirection:"column",gap:10}}>
       <Box c={C.purple}>
@@ -8211,7 +8378,7 @@ function T10A(){
           {[["struktur","Struktur"],["pp","Partizip II"],["trenn","Trennb./Untrennb."],["hssein","haben / sein"],["stark","📋 A1 & A2"]].map(([key,lbl])=>(
             <button key={key} onClick={()=>setTab(key)}
               style={{flex:1,minWidth:70,padding:"8px 4px",borderRadius:9,border:"none",cursor:"pointer",
-                fontSize:10,fontWeight:700,
+                fontSize:11,fontWeight:700,
                 background:tab===key?C.purple+"33":"transparent",
                 color:tab===key?C.purple:C.muted}}>
               {lbl}
@@ -8225,7 +8392,7 @@ function T10A(){
               <div style={{fontWeight:800,fontSize:13,color:C.purple,marginBottom:10}}>
                 Perfekt = разговорное прошедшее
               </div>
-              <div style={{background:"rgba(255,255,255,.07)",borderRadius:9,padding:"10px",marginBottom:10,textAlign:"center"}}>
+              <div style={{background:C.ov7,borderRadius:9,padding:"10px",marginBottom:10,textAlign:"center"}}>
                 <span style={{color:C.orange,fontWeight:800,fontSize:13}}>haben/sein</span>
                 <span style={{color:C.muted}}> — позиция 2 — </span>
                 <span style={{color:C.purple,fontWeight:800,fontSize:13}}>Partizip II</span>
@@ -8239,7 +8406,7 @@ function T10A(){
                 ["Er","ist","früh","eingeschlafen."],
               ].map(([s,h,m,pp])=>(
                 <div key={pp} style={{display:"flex",gap:6,marginBottom:5,fontSize:12,
-                  background:"rgba(255,255,255,.04)",borderRadius:7,padding:"6px 10px",alignItems:"baseline"}}>
+                  background:C.ov4,borderRadius:7,padding:"6px 10px",alignItems:"baseline"}}>
                   <span style={{color:C.text,minWidth:40}}>{s}</span>
                   <span style={{color:C.orange,fontWeight:800,minWidth:28}}>{h}</span>
                   <span style={{color:C.muted,flex:1}}>{m}</span>
@@ -8299,16 +8466,16 @@ function T10A(){
               </div>
               <div style={{fontSize:11,color:C.muted,marginBottom:6}}>Корень меняется — нужно запоминать!</div>
               <div style={{display:"grid",gridTemplateColumns:"auto 1fr auto auto",gap:"3px 8px",fontSize:11}}>
-                <span style={{color:C.muted,fontSize:10,fontWeight:700}}>Inf.</span>
+                <span style={{color:C.muted,fontSize:11,fontWeight:700}}>Inf.</span>
                 <span></span>
-                <span style={{color:C.blue,fontSize:10,fontWeight:700}}>P.II</span>
-                <span style={{color:C.muted,fontSize:10,fontWeight:700}}>+</span>
+                <span style={{color:C.blue,fontSize:11,fontWeight:700}}>P.II</span>
+                <span style={{color:C.muted,fontSize:11,fontWeight:700}}>+</span>
                 {starkPP.map(({inf,pp,hilf})=>(
                   <Fragment key={inf}>
                     <span style={{color:C.muted}}>{inf}</span>
                     <span style={{color:C.border,textAlign:"center"}}>→</span>
                     <span style={{color:C.blue,fontWeight:700}}>{pp}</span>
-                    <span style={{fontSize:10,color:hilf==="sein"?C.orange:C.teal,fontWeight:700}}>{hilf}</span>
+                    <span style={{fontSize:11,color:hilf==="sein"?C.orange:C.teal,fontWeight:700}}>{hilf}</span>
                   </Fragment>
                 ))}
               </div>
@@ -8330,7 +8497,7 @@ function T10A(){
                   </Fragment>
                 ))}
               </div>
-              <div style={{background:"rgba(255,255,255,.06)",borderRadius:7,padding:"6px 9px",fontSize:11,color:C.orange}}>
+              <div style={{background:C.ov6,borderRadius:7,padding:"6px 9px",fontSize:11,color:C.orange}}>
                 ✗ gestudiert ← неправильно!<br/>
                 ✓ studiert ← правильно!
               </div>
@@ -8345,7 +8512,7 @@ function T10A(){
                 Trennbare: Präfix + ge + Stamm + -t
               </div>
               {trennPP.map(({inf,pp,pref,stem,suf})=>(
-                <div key={inf} style={{marginBottom:6,background:"rgba(255,255,255,.04)",
+                <div key={inf} style={{marginBottom:6,background:C.ov4,
                   borderRadius:8,padding:"7px 10px"}}>
                   <div style={{display:"flex",justifyContent:"space-between",marginBottom:4}}>
                     <span style={{color:C.muted,fontSize:12}}>{inf}</span>
@@ -8355,7 +8522,7 @@ function T10A(){
                     <span style={{background:C.orange+"22",padding:"2px 6px",borderRadius:"4px 0 0 4px",fontSize:11,color:C.orange,fontWeight:700}}>{pref}</span>
                     <span style={{background:C.purple+"22",padding:"2px 6px",fontSize:11,color:C.purple,fontWeight:700}}>ge</span>
                     <span style={{background:C.teal+"22",padding:"2px 6px",fontSize:11,color:C.teal,fontWeight:700}}>{stem}</span>
-                    <span style={{background:"rgba(255,255,255,.08)",padding:"2px 6px",borderRadius:"0 4px 4px 0",fontSize:11,color:C.muted}}>+{suf}</span>
+                    <span style={{background:C.ov8,padding:"2px 6px",borderRadius:"0 4px 4px 0",fontSize:11,color:C.muted}}>+{suf}</span>
                   </div>
                 </div>
               ))}
@@ -8368,7 +8535,7 @@ function T10A(){
               {[["besuchen","besucht"],["erklären","erklärt"],["vergessen","vergessen"],
                 ["verkaufen","verkauft"],["bestellen","bestellt"],["verstehen","verstanden"]].map(([inf,pp])=>(
                 <div key={inf} style={{display:"flex",justifyContent:"space-between",fontSize:12,
-                  background:"rgba(255,255,255,.04)",borderRadius:6,padding:"4px 8px",marginBottom:3}}>
+                  background:C.ov4,borderRadius:6,padding:"4px 8px",marginBottom:3}}>
                   <span style={{color:C.muted}}>{inf}</span>
                   <span style={{color:C.orange,fontWeight:700}}>{pp}</span>
                 </div>
@@ -8378,61 +8545,10 @@ function T10A(){
         )}
         {tab==="hssein"&&(
           <div>
-            <div style={{background:C.teal+"15",border:`1px solid ${C.teal}33`,
-              borderRadius:10,padding:"10px 12px",marginBottom:8}}>
-              <div style={{fontWeight:800,fontSize:12,color:C.teal,marginBottom:6}}>
-                ✅ haben — большинство глаголов
-              </div>
-              <div style={{fontSize:12,color:C.text,lineHeight:1.7,marginBottom:8}}>
-                → есть <b style={{color:C.teal}}>Akkusativ-объект</b> (кого/что?)<br/>
-                → или не подходит под правила sein
-              </div>
-              {[["Ich habe Musik gehört.","что? → Musik → haben"],
-                ["Er hat das Auto gekauft.","что? → Auto → haben"],
-                ["Wir haben gekocht.","нет движения → haben"]].map(([bsp,note])=>(
-                <div key={bsp} style={{marginBottom:4,background:"rgba(255,255,255,.05)",
-                  borderRadius:6,padding:"5px 8px",fontSize:11}}>
-                  <div style={{color:C.text,fontWeight:600}}>{bsp}</div>
-                  <div style={{color:C.muted}}>{note}</div>
-                </div>
-              ))}
+            <div style={{fontSize:11,color:C.muted,marginBottom:8,fontStyle:"italic"}}>
+              Практика этого правила — в разделе 10B · Unterwegs.
             </div>
-            <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,
-              borderRadius:10,padding:"10px 12px",marginBottom:8}}>
-              <div style={{fontWeight:800,fontSize:12,color:C.orange,marginBottom:8}}>
-                🚶 sein — только 3 случая
-              </div>
-              {[
-                ["Движение А → Б","fahren, gehen, fliegen, laufen, kommen, reisen"],
-                ["Изменение состояния","einschlafen, aufwachen, aufstehen, werden, sterben"],
-                ["Исключения ⚠️","bleiben (оставаться), sein (быть)"],
-              ].map(([title,verbs])=>(
-                <div key={title} style={{marginBottom:8}}>
-                  <div style={{fontSize:11,fontWeight:700,color:C.orange,marginBottom:3}}>{title}:</div>
-                  <div style={{fontSize:11,color:C.muted}}>{verbs}</div>
-                </div>
-              ))}
-              <div style={{background:"rgba(255,255,255,.05)",borderRadius:7,padding:"7px 9px",marginTop:4}}>
-                <div style={{fontWeight:700,fontSize:11,color:C.muted,marginBottom:4}}>Примеры:</div>
-                {seinVerbs.map(({inf,pp,ru})=>(
-                  <div key={inf} style={{display:"flex",gap:6,fontSize:11,marginBottom:3}}>
-                    <span style={{color:C.muted,minWidth:65}}>{inf}</span>
-                    <span style={{color:C.orange,fontWeight:700,minWidth:85}}>{pp}</span>
-                    <span style={{color:C.muted}}>{ru}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div style={{background:C.card2,borderRadius:8,padding:"9px 11px",fontSize:11}}>
-              <div style={{fontWeight:700,color:C.muted,marginBottom:5}}>💡 Быстрый тест:</div>
-              <div style={{color:C.text,lineHeight:1.8}}>
-                1. Есть объект (кого/что)? → <b style={{color:C.teal}}>haben</b><br/>
-                2. Движение А→Б? → <b style={{color:C.orange}}>sein</b><br/>
-                3. Изменение состояния? → <b style={{color:C.orange}}>sein</b><br/>
-                4. bleiben / sein? → <b style={{color:C.orange}}>sein</b> ⚠️<br/>
-                5. Всё остальное? → <b style={{color:C.teal}}>haben</b>
-              </div>
-            </div>
+            <HabenSeinRegel/>
           </div>
         )}
         {tab==="stark"&&(
@@ -8446,17 +8562,18 @@ function T10A(){
               ].map(([f,lbl,col])=>(
                 <button key={f} onClick={()=>setStarkFil(f)}
                   style={{flex:1,minWidth:50,padding:"5px 3px",borderRadius:7,border:"none",cursor:"pointer",
-                    fontSize:10,fontWeight:700,
+                    fontSize:11,fontWeight:700,
                     background:starkFil===f?C[col]+"33":"transparent",
                     color:starkFil===f?C[col]:C.muted}}>
                   {lbl}
                 </button>
               ))}
             </div>
-            <div style={{display:"flex",gap:6,paddingLeft:4,marginBottom:5,fontSize:10,color:C.muted,fontWeight:700}}>
+            <div style={{display:"flex",gap:4,paddingLeft:4,marginBottom:5,fontSize:11,color:C.muted,fontWeight:700}}>
               <span style={{flex:1}}>Infinitiv (Präsens)</span>
-              <span style={{minWidth:80}}>Partizip II</span>
-              <span style={{minWidth:30}}>+</span>
+              <span style={{minWidth:56,textAlign:"left"}}>Präteritum</span>
+              <span style={{minWidth:74}}>Partizip II</span>
+              <span style={{minWidth:28}}>+</span>
             </div>
             {(starkFil==="all"?STARKE_VERBEN
               :starkFil==="A1"||starkFil==="A2"?STARKE_VERBEN.filter(v=>v.lv===starkFil)
@@ -8464,32 +8581,248 @@ function T10A(){
             ).map((v,i)=>(
               <div key={v.inf}>
                 <div onClick={()=>setStarkIdx(starkIdx===i?null:i)}
-                  style={{display:"flex",alignItems:"center",gap:6,padding:"6px 8px",
-                    background:starkIdx===i?"rgba(255,255,255,.08)":"rgba(255,255,255,.03)",
+                  style={{display:"flex",alignItems:"center",gap:4,padding:"6px 8px",
+                    background:starkIdx===i?C.ov8:C.ov3,
                     borderRadius:7,marginBottom:3,cursor:"pointer",
                     borderLeft:`3px solid ${v.h==="ist"?C.orange:C.teal}`}}>
-                  <div style={{flex:1}}>
+                  <div style={{flex:1,minWidth:0}}>
                     <span style={{fontWeight:700,color:C.text,fontSize:12}}>{v.inf}</span>
-                    <span style={{color:C.muted,fontSize:10}}> ({v.pr})</span>
+                    <span style={{color:C.muted,fontSize:11}}> ({v.pr})</span>
                     <span style={{marginLeft:4,background:v.lv==="A1"?C.blue+"22":C.teal+"22",
                       color:v.lv==="A1"?C.blue:C.teal,borderRadius:3,
-                      padding:"0px 4px",fontSize:9,fontWeight:700}}>{v.lv}</span>
+                      padding:"0px 4px",fontSize:11,fontWeight:700}}>{v.lv}</span>
                   </div>
-                  <div style={{minWidth:80,color:C.purple,fontWeight:700,fontSize:12}}>{v.pp}</div>
-                  <div style={{minWidth:30,textAlign:"center"}}>
+                  <div style={{minWidth:56,color:C.blue,fontWeight:700,fontSize:11.5}}>{v.pt}</div>
+                  <div style={{minWidth:74,color:C.purple,fontWeight:700,fontSize:12}}>{v.pp}</div>
+                  <div style={{minWidth:28,textAlign:"center"}}>
                     <span style={{background:v.h==="ist"?C.orange+"33":C.teal+"33",
                       color:v.h==="ist"?C.orange:C.teal,
-                      borderRadius:4,padding:"1px 5px",fontSize:10,fontWeight:800}}>{v.h}</span>
+                      borderRadius:4,padding:"1px 5px",fontSize:11,fontWeight:800}}>{v.h}</span>
                   </div>
                 </div>
                 {starkIdx===i&&(
-                  <div style={{background:"rgba(255,255,255,.06)",borderRadius:"0 0 7px 7px",
+                  <div style={{background:C.ov6,borderRadius:"0 0 7px 7px",
                     padding:"6px 10px",marginBottom:5,fontSize:11,
                     borderLeft:`3px solid ${v.h==="ist"?C.orange:C.teal}`}}>
                     <div style={{color:C.text,fontWeight:700,marginBottom:3}}>🔤 {v.ru}</div>
                     <div style={{color:C.muted,fontStyle:"italic"}}>💬 {v.bsp}</div>
                   </div>
                 )}
+              </div>
+            ))}
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
+const Q_L10B=[
+  {q:"'Ich ___ gestern ins Kino gegangen.'",            opts:["habe","bin","hat","ist"],                              ans:1, hint:"gehen = Bewegung → sein"},
+  {q:"'Ich ___ heute Nacht gut geschlafen.'",           opts:["habe","bin"],                                          ans:0, hint:"schlafen = keine Bewegung → haben"},
+  {q:"'Ich ___ gestern früh eingeschlafen.'",           opts:["habe","bin"],                                         ans:1, hint:"einschlafen = Zustandsveränderung → sein"},
+  {q:"'Ich ___ am Sonntag einen Film gesehen.'",        opts:["habe","bin"],                                          ans:0, hint:"sehen → haben"},
+  {q:"'Ich ___ gestern nicht lange geblieben.'",        opts:["habe","bin"],                                         ans:1, hint:"bleiben → immer sein (Ausnahme!)"},
+  {q:"'Ich ___ am Wochenende nach Heidelberg gefahren.'",opts:["habe","bin"],                                        ans:1, hint:"fahren = Bewegung → sein"},
+  {q:"Partizip II von 'mitkommen'?",                    opts:["gemitkommt","mitgekommen","mitgekommt","kommen mit"], ans:1, hint:"trennbar + unregelmäßig: mit+ge+komm+en"},
+  {q:"Partizip II von 'aufstehen'?",                    opts:["aufgestanden","gestanden auf","aufgestehen","aufstanden"], ans:0, hint:"auf+ge+stand+en"},
+  {q:"Partizip II von 'aufräumen'?",                    opts:["geaufräumt","aufgeräumt","aufräumt","räumt auf"],     ans:1, hint:"auf+ge+räum+t"},
+  {q:"Partizip II von 'abholen'?",                      opts:["geabholt","abgeholt","abholt","holt ab"],             ans:1, hint:"ab+ge+hol+t"},
+  {q:"'Markus ___ den Autoschlüssel nicht gefunden.'",  opts:["hat","ist"],                                          ans:0, hint:"finden → haben"},
+  {q:"'Wir ___ in die Disko gegangen.'",                opts:["haben","sind"],                                       ans:1, hint:"gehen → sein"},
+];
+
+const Q_L10C=[
+  {q:"Präteritum von 'sein' für 'ich'?",                opts:["war","hatte","bin","habe"],                            ans:0, hint:"ich war"},
+  {q:"Präteritum von 'haben' für 'er'?",                opts:["war","hatte","ist","hat"],                            ans:1, hint:"er hatte"},
+  {q:"Präteritum von 'sein' für 'wir'?",                opts:["waren","hatten","sind","haben"],                       ans:0, hint:"wir waren"},
+  {q:"Präteritum von 'haben' für 'sie' (Pl.)?",         opts:["waren","hatten","sind","haben"],                       ans:1, hint:"sie hatten"},
+  {q:"'Er ___ seit 2004 in Deutschland.'",              opts:["ist","war","hat","hatte"],                            ans:0, hint:"seit + Präsens = действие длится до сейчас"},
+  {q:"'seit' требует какого падежа?",                   opts:["Nominativ","Akkusativ","Dativ","Genitiv"],            ans:2, hint:"seit + Dativ"},
+  {q:"'Ich bin seit ___ Jahr in Deutschland.' (ein, Dat. n)", opts:["ein","einem","einen","eines"],                  ans:1, hint:"seit + Dativ: n → einem"},
+  {q:"Wie liest man 1989?",                             opts:["eins-neun-acht-neun","neunzehnhundertneunundachtzig","neunzehn-neunundachtzig","tausend neunhundert"], ans:1, hint:"19|89 → neunzehnhundert + neunundachtzig"},
+  {q:"Wie liest man 2001?",                             opts:["zweitausendeins","zwanzig-null-eins","zwei tausend und eins","zweitausend und ein"], ans:0, hint:"2001 → zweitausendeins"},
+  {q:"Wie liest man 2014?",                             opts:["zwanzig-vierzehn","zweitausendvierzehn","zwei tausend vierzehn Jahre","zweitausend und vierzehn"], ans:1, hint:"2014 → zweitausendvierzehn"},
+  {q:"'Früher ___ ich in der Ukraine.' (war/wohnte)",   opts:["war","wohnte","bin","habe"],                          ans:0, hint:"Präteritum von sein: war"},
+];
+
+function T10B(){
+  const [tab,setTab]=useState("habenbin");
+  const habenBin=[
+    {de:"Ich habe heute Nacht gut geschlafen.",          hs:"habe"},
+    {de:"Ich bin gestern schon früh eingeschlafen.",     hs:"bin"},
+    {de:"Ich habe am Sonntag einen Film gesehen.",       hs:"habe"},
+    {de:"Ich bin gestern nicht lange geblieben.",        hs:"bin"},
+    {de:"Ich bin am Wochenende nach Heidelberg gefahren.",hs:"bin"},
+    {de:"Ich habe noch nicht gegessen.",                 hs:"habe"},
+    {de:"Ich bin nach Wien mitgekommen.",                hs:"bin"},
+  ];
+  const partTab=[
+    {inf:"essen",     pp:"gegessen",    hilf:"hat"},
+    {inf:"trinken",   pp:"getrunken",   hilf:"hat"},
+    {inf:"sehen",     pp:"gesehen",     hilf:"hat"},
+    {inf:"schlafen",  pp:"geschlafen",  hilf:"hat"},
+    {inf:"lesen",     pp:"gelesen",     hilf:"hat"},
+    {inf:"lernen",    pp:"gelernt",     hilf:"hat"},
+    {inf:"bleiben",   pp:"geblieben",   hilf:"ist"},
+    {inf:"fahren",    pp:"gefahren",    hilf:"ist"},
+    {inf:"gehen",     pp:"gegangen",    hilf:"ist"},
+    {inf:"kommen",    pp:"gekommen",    hilf:"ist"},
+    {inf:"mitkommen", pp:"mitgekommen",hilf:"ist"},
+    {inf:"aufstehen", pp:"aufgestanden",hilf:"ist"},
+    {inf:"aufräumen", pp:"aufgeräumt", hilf:"hat"},
+    {inf:"abholen",   pp:"abgeholt",   hilf:"hat"},
+  ];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.teal}>
+        <H c={C.teal}>🚶 L10B · Unterwegs — Perfekt mit haben/sein</H>
+        <div style={{fontSize:11,color:C.muted,marginBottom:10,fontStyle:"italic"}}>
+          Правило haben/sein разобрано в разделе 10A · Perfekt (вкладка «haben / sein»). Здесь — практика.
+        </div>
+        <div style={{display:"flex",gap:4,marginBottom:12,flexWrap:"wrap"}}>
+          {[["habenbin","habe/bin?"],["tabelle","Partizip-Tabelle"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,minWidth:70,padding:"8px 4px",borderRadius:9,border:"none",cursor:"pointer",
+                fontSize:11,fontWeight:700,
+                background:tab===key?C.teal+"33":"transparent",
+                color:tab===key?C.teal:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="habenbin"&&(
+          <div>
+            <div style={{fontSize:11,color:C.muted,marginBottom:8}}>Ich habe oder ich bin? Цветом — правильный вариант.</div>
+            {habenBin.map((s,i)=>(
+              <div key={i} style={{display:"flex",alignItems:"center",gap:8,padding:"7px 8px",
+                background:C.ov4,borderRadius:8,marginBottom:5}}>
+                <span style={{minWidth:46,textAlign:"center",fontWeight:800,fontSize:11,
+                  color:s.hs==="bin"?C.orange:C.teal,
+                  background:(s.hs==="bin"?C.orange:C.teal)+"22",borderRadius:5,padding:"2px 0"}}>
+                  {s.hs}
+                </span>
+                <span style={{fontSize:12,color:C.text}}>{s.de.replace(/^Ich (habe|bin) /,"")}</span>
+              </div>
+            ))}
+          </div>
+        )}
+        {tab==="tabelle"&&(
+          <div>
+            <div style={{display:"flex",gap:6,paddingLeft:4,marginBottom:5,fontSize:11,color:C.muted,fontWeight:700}}>
+              <span style={{flex:1}}>Infinitiv</span>
+              <span style={{minWidth:96}}>Partizip II</span>
+              <span style={{minWidth:30}}>+</span>
+            </div>
+            {partTab.map(v=>(
+              <div key={v.inf} style={{display:"flex",alignItems:"center",gap:6,padding:"6px 8px",
+                background:C.ov3,borderRadius:7,marginBottom:3,
+                borderLeft:`3px solid ${v.hilf==="ist"?C.orange:C.teal}`}}>
+                <span style={{flex:1,fontWeight:700,color:C.text,fontSize:12}}>{v.inf}</span>
+                <span style={{minWidth:96,color:C.purple,fontWeight:700,fontSize:12}}>{v.pp}</span>
+                <span style={{minWidth:30,textAlign:"center",background:(v.hilf==="ist"?C.orange:C.teal)+"33",
+                  color:v.hilf==="ist"?C.orange:C.teal,borderRadius:4,padding:"1px 5px",fontSize:11,fontWeight:800}}>{v.hilf}</span>
+              </div>
+            ))}
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
+function T10C(){
+  const [tab,setTab]=useState("prat");
+  const seinPrat=[["ich","war"],["du","warst"],["er/sie/es","war"],["wir","waren"],["ihr","wart"],["sie/Sie","waren"]];
+  const habenPrat=[["ich","hatte"],["du","hattest"],["er/sie/es","hatte"],["wir","hatten"],["ihr","hattet"],["sie/Sie","hatten"]];
+  const jahre=[
+    {n:1978,w:"neunzehnhundertachtundsiebzig"},
+    {n:1989,w:"neunzehnhundertneunundachtzig"},
+    {n:1996,w:"neunzehnhundertsechsundneunzig"},
+    {n:2000,w:"zweitausend"},
+    {n:2001,w:"zweitausendeins"},
+    {n:2005,w:"zweitausendfünf"},
+    {n:2014,w:"zweitausendvierzehn"},
+  ];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.purple}>
+        <H c={C.purple}>📖 L10C · Mein Leben früher und heute</H>
+        <div style={{display:"flex",gap:4,marginBottom:12,flexWrap:"wrap"}}>
+          {[["prat","war/hatte"],["seit","seit+Dativ"],["jahre","Jahreszahlen"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,minWidth:70,padding:"8px 4px",borderRadius:9,border:"none",cursor:"pointer",
+                fontSize:11,fontWeight:700,
+                background:tab===key?C.purple+"33":"transparent",
+                color:tab===key?C.purple:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="prat"&&(
+          <div>
+            <div style={{fontSize:11,color:C.muted,marginBottom:10}}>
+              <b style={{color:C.text}}>haben</b> и <b style={{color:C.text}}>sein</b> в рассказах о прошлом обычно стоят в Präteritum, а не в Perfekt — даже в устной речи.
+            </div>
+            <div style={{display:"flex",gap:10}}>
+              <div style={{flex:1,background:C.purple+"15",border:`1px solid ${C.purple}33`,borderRadius:10,padding:"10px"}}>
+                <div style={{fontWeight:800,color:C.purple,fontSize:12,marginBottom:6,textAlign:"center"}}>sein → war</div>
+                {seinPrat.map(([p,f])=>(
+                  <div key={p} style={{display:"flex",justifyContent:"space-between",fontSize:12,padding:"3px 0",
+                    borderBottom:`1px solid ${C.border}`}}>
+                    <span style={{color:C.muted}}>{p}</span><span style={{color:C.text,fontWeight:700}}>{f}</span>
+                  </div>
+                ))}
+              </div>
+              <div style={{flex:1,background:C.blue+"15",border:`1px solid ${C.blue}33`,borderRadius:10,padding:"10px"}}>
+                <div style={{fontWeight:800,color:C.blue,fontSize:12,marginBottom:6,textAlign:"center"}}>haben → hatte</div>
+                {habenPrat.map(([p,f])=>(
+                  <div key={p} style={{display:"flex",justifyContent:"space-between",fontSize:12,padding:"3px 0",
+                    borderBottom:`1px solid ${C.border}`}}>
+                    <span style={{color:C.muted}}>{p}</span><span style={{color:C.text,fontWeight:700}}>{f}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div style={{marginTop:10,fontSize:12,color:C.text,fontStyle:"italic"}}>
+              Früher <b>war</b> ich in der Ukraine. Heute <b>bin</b> ich in Deutschland.<br/>
+              Früher <b>hatte</b> ich kein Auto. Heute <b>habe</b> ich ein Auto.
+            </div>
+          </div>
+        )}
+        {tab==="seit"&&(
+          <div>
+            <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,
+              borderRadius:10,padding:"12px 14px",marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.orange,marginBottom:8}}>seit + Dativ</div>
+              <div style={{fontSize:12,color:C.text,marginBottom:6}}>
+                «seit» отвечает на вопрос <b>Seit wann?</b> и показывает действие, которое началось в прошлом и продолжается до сих пор. После «seit» используется <b>Präsens</b>!
+              </div>
+              <div style={{display:"flex",flexDirection:"column",gap:5,marginTop:8}}>
+                <div style={{background:C.ov7,borderRadius:8,padding:"8px 10px",fontSize:12,color:C.text}}>
+                  Er ist <b style={{color:C.orange}}>seit 2004</b> in Deutschland.
+                </div>
+                <div style={{background:C.ov7,borderRadius:8,padding:"8px 10px",fontSize:12,color:C.text}}>
+                  Ich bin <b style={{color:C.orange}}>seit einem Jahr</b> in Deutschland. <span style={{color:C.muted}}>(n, Dat.)</span>
+                </div>
+                <div style={{background:C.ov7,borderRadius:8,padding:"8px 10px",fontSize:12,color:C.text}}>
+                  Sie arbeitet <b style={{color:C.orange}}>seit einer Woche</b> im Supermarkt. <span style={{color:C.muted}}>(f, Dat.)</span>
+                </div>
+                <div style={{background:C.ov7,borderRadius:8,padding:"8px 10px",fontSize:12,color:C.text}}>
+                  Wir haben <b style={{color:C.orange}}>seit zwei Jahren</b> ein eigenes Haus. <span style={{color:C.muted}}>(Pl., Dat.)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+        {tab==="jahre"&&(
+          <div>
+            <div style={{fontSize:11,color:C.muted,marginBottom:8}}>Год читается как два двузначных числа: 19|89, 20|01.</div>
+            {jahre.map(j=>(
+              <div key={j.n} style={{display:"flex",alignItems:"center",gap:8,padding:"7px 8px",
+                background:C.ov4,borderRadius:8,marginBottom:5}}>
+                <span style={{minWidth:48,fontWeight:800,color:C.purple,fontSize:13}}>{j.n}</span>
+                <span style={{fontSize:12,color:C.text}}>{j.w}</span>
               </div>
             ))}
           </div>
@@ -8557,7 +8890,7 @@ function T6A(){
                   cursor:"pointer",transition:"background 0.15s"}}>
                 <div style={{display:"flex",alignItems:"center",gap:5}}>
                   <span style={{background:AB6(art),color:col,
-                    borderRadius:4,padding:"1px 5px",fontSize:10,fontWeight:800,flexShrink:0}}>{art}</span>
+                    borderRadius:4,padding:"1px 5px",fontSize:11,fontWeight:800,flexShrink:0}}>{art}</span>
                   <span style={{fontSize:14,fontWeight:700,color:C.text}}>{de}</span>
                 </div>
                 {isOpen&&(
@@ -8578,7 +8911,7 @@ function T6A(){
             {[["nie","никогда",C.red],["selten","редко",C.orange],["manchmal","иногда",C.yellow],["oft","часто",C.green]].map(([w,ru,col])=>(
               <div key={w} style={{background:col+"18",border:`1px solid ${col}44`,borderRadius:8,padding:"6px 4px"}}>
                 <div style={{fontSize:13,fontWeight:800,color:col}}>{w}</div>
-                <div style={{fontSize:10,color:C.muted}}>{ru}</div>
+                <div style={{fontSize:11,color:C.muted}}>{ru}</div>
               </div>
             ))}
           </div>
@@ -8711,10 +9044,12 @@ const LEKTIONEN=[
   },
   {
     id:"L10",num:"10",title:"Mein Leben",
-    sub:"A Gestern und heute (Perfekt)",
-    date:"Seite 103–",col:C.purple,
+    sub:"A Gestern und heute (Perfekt) · B Unterwegs (haben/sein) · C Früher und heute (Präteritum, seit)",
+    date:"Seite 103–109",col:C.purple,
     sections:[
       {id:"10a", icon:"📅",title:"A · Perfekt",                  sub:"haben + Partizip II · ge-...-t · Trennbare Verben",    time:"7 мин", col:C.purple, hasT:true,  th:()=><T10A/>,    ex:()=><Quiz questions={Q_L10A}/>},
+      {id:"10b", icon:"🚶",title:"B · Unterwegs",                sub:"Perfekt mit haben/sein · Bewegungsverben",             time:"6 мин", col:C.teal,   hasT:true,  th:()=><T10B/>,    ex:()=><Quiz questions={Q_L10B}/>},
+      {id:"10c", icon:"📖",title:"C · Früher und heute",         sub:"Präteritum war/hatte · seit + Dativ · Jahreszahlen",   time:"6 мин", col:C.orange, hasT:true,  th:()=><T10C/>,    ex:()=><Quiz questions={Q_L10C}/>},
     ]
   },
 ];
@@ -8869,12 +9204,24 @@ export default function App(){
   const [tab,setTab]=useState("th");
   const [wbOpen,setWbOpen]=useState(false);
   const [dialogOpen,setDialogOpen]=useState(false);
+  const [theme,setTheme]=useState(()=>{
+    try{return localStorage.getItem("dk_theme")||"dark";}catch{return "dark";}
+  });
+  applyTheme(theme);
+  const toggleTheme=()=>{
+    const next=theme==="dark"?"light":"dark";
+    setTheme(next);
+    try{localStorage.setItem("dk_theme",next);}catch{}
+  };
+  const root={minHeight:"100vh",background:C.bg,display:"flex",justifyContent:"center",padding:"16px",fontFamily:"'Segoe UI',system-ui,sans-serif",color:C.text};
+  const wrap={width:"100%",maxWidth:500};
 
   const lekt=lId?LEKTIONEN.find(l=>l.id===lId):null;
   const sec=sId&&lekt?lekt.sections.find(s=>s.id===sId):null;
 
   if(dialogOpen)return(
     <div style={root}>
+      <ThemeToggle theme={theme} onToggle={toggleTheme}/>
       <div style={wrap}>
         <button onClick={()=>setDialogOpen(false)} style={{background:"none",border:"none",color:C.muted,cursor:"pointer",fontSize:14,padding:"0 0 14px"}}>← Главная</button>
         <div style={{display:"flex",alignItems:"center",gap:12,marginBottom:18}}>
@@ -8892,6 +9239,7 @@ export default function App(){
   // Wörterbuch
   if(wbOpen)return(
     <div style={root}>
+      <ThemeToggle theme={theme} onToggle={toggleTheme}/>
       <div style={wrap}>
         <button onClick={()=>setWbOpen(false)} style={{background:"none",border:"none",color:C.muted,cursor:"pointer",fontSize:14,padding:"0 0 14px"}}>← Главная</button>
         <div style={{display:"flex",alignItems:"center",gap:12,marginBottom:18}}>
@@ -8909,6 +9257,7 @@ export default function App(){
   // Section view
   if(sec)return(
     <div style={root}>
+      <ThemeToggle theme={theme} onToggle={toggleTheme}/>
       <div style={wrap}>
         <button onClick={()=>{setSId(null);setTab("th");}} style={{background:"none",border:"none",color:C.muted,cursor:"pointer",fontSize:14,padding:"0 0 14px"}}>← {lekt.title}</button>
         <div style={{display:"flex",alignItems:"center",gap:12,marginBottom:18}}>
@@ -8934,6 +9283,7 @@ export default function App(){
   // Lektion view
   if(lekt)return(
     <div style={root}>
+      <ThemeToggle theme={theme} onToggle={toggleTheme}/>
       <div style={wrap}>
         <button onClick={()=>setLId(null)} style={{background:"none",border:"none",color:C.muted,cursor:"pointer",fontSize:14,padding:"0 0 14px"}}>← Главная</button>
         <div style={{marginBottom:18}}>
@@ -8970,6 +9320,7 @@ export default function App(){
   // Home
   return(
     <div style={root}>
+      <ThemeToggle theme={theme} onToggle={toggleTheme}/>
       <div style={wrap}>
         <div style={{textAlign:"center",padding:"12px 0 24px"}}>
           <div style={{fontSize:48,marginBottom:8}}>🇩🇪</div>
@@ -9015,5 +9366,4 @@ export default function App(){
   );
 }
 
-const root={minHeight:"100vh",background:C.bg,display:"flex",justifyContent:"center",padding:"16px",fontFamily:"'Segoe UI',system-ui,sans-serif",color:C.text};
-const wrap={width:"100%",maxWidth:500};
+
