@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, Fragment } from "react";
 
 // ─── PALETTE ──────────────────────────────────────────────────────────────────
 const C = {
@@ -4553,7 +4553,7 @@ function T3Poss(){
             ["Akk.","meinen ⚠️","mein","meine","meine"],
             ["Dat.","meinem","meinem","meiner","meinen"],
           ].map(([kasus,...forms])=>(
-            <React.Fragment key={kasus}>
+            <Fragment key={kasus}>
               <div style={{fontSize:11,color:C.muted,fontWeight:700}}>{kasus}</div>
               {forms.map((f,i)=>(
                 <div key={i} style={{background:f.includes("⚠️")?C.orange+"22":C.card2,
@@ -4563,7 +4563,7 @@ function T3Poss(){
                   {f.replace(" ⚠️","")}
                 </div>
               ))}
-            </React.Fragment>
+            </Fragment>
           ))}
         </div>
         <div style={{fontSize:11,color:C.muted,marginTop:8}}>
@@ -8279,13 +8279,13 @@ function T10A(){
               </div>
               <div style={{display:"grid",gridTemplateColumns:"auto 1fr auto",gap:"2px 8px",fontSize:11,marginBottom:8}}>
                 {regelPP.map(({inf,pp,exc})=>(
-                  <React.Fragment key={inf}>
+                  <Fragment key={inf}>
                     <span style={{color:C.muted}}>{inf}</span>
                     <span style={{color:C.border,textAlign:"center"}}>→</span>
                     <span style={{color:C.purple,fontWeight:700}}>
                       {pp}{exc&&<span style={{color:C.orange}}> ⚠️</span>}
                     </span>
-                  </React.Fragment>
+                  </Fragment>
                 ))}
               </div>
               <div style={{background:C.orange+"15",borderRadius:7,padding:"6px 9px",fontSize:11,color:C.muted}}>
@@ -8304,12 +8304,12 @@ function T10A(){
                 <span style={{color:C.blue,fontSize:10,fontWeight:700}}>P.II</span>
                 <span style={{color:C.muted,fontSize:10,fontWeight:700}}>+</span>
                 {starkPP.map(({inf,pp,hilf})=>(
-                  <React.Fragment key={inf}>
+                  <Fragment key={inf}>
                     <span style={{color:C.muted}}>{inf}</span>
                     <span style={{color:C.border,textAlign:"center"}}>→</span>
                     <span style={{color:C.blue,fontWeight:700}}>{pp}</span>
                     <span style={{fontSize:10,color:hilf==="sein"?C.orange:C.teal,fontWeight:700}}>{hilf}</span>
-                  </React.Fragment>
+                  </Fragment>
                 ))}
               </div>
             </div>
@@ -8323,11 +8323,11 @@ function T10A(){
                 {[["studieren","studiert"],["telefonieren","telefoniert"],
                   ["fotografieren","fotografiert"],["trainieren","trainiert"],
                   ["passieren","passiert ⚠️ (sein)"]].map(([inf,pp])=>(
-                  <React.Fragment key={inf}>
+                  <Fragment key={inf}>
                     <span style={{color:C.muted}}>{inf}</span>
                     <span style={{color:C.border,textAlign:"center"}}>→</span>
                     <span style={{color:C.teal,fontWeight:700}}>{pp}</span>
-                  </React.Fragment>
+                  </Fragment>
                 ))}
               </div>
               <div style={{background:"rgba(255,255,255,.06)",borderRadius:7,padding:"6px 9px",fontSize:11,color:C.orange}}>
