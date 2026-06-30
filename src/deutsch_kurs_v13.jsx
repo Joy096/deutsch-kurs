@@ -1213,16 +1213,16 @@ const KONJ_L2={
 
 // ─── KONJUGATION (L4B — Verben mit Vokalwechsel) ──────────────────────────────
 const KONJ_L4B={
-  sprechen:{type:"e→i", col:C.orange,bg:C.orangeBg, ich:"spreche", du:"sprichst","er/sie/es":"spricht", wir:"sprechen",ihr:"sprecht","sie/Sie":"sprechen"},
-  essen:   {type:"e→i", col:C.orange,bg:C.orangeBg, ich:"esse",    du:"isst",    "er/sie/es":"isst",    wir:"essen",   ihr:"esst",  "sie/Sie":"essen",   note:"e выпадает перед -st/-t"},
-  nehmen:  {type:"e→i", col:C.orange,bg:C.orangeBg, ich:"nehme",   du:"nimmst",  "er/sie/es":"nimmt",   wir:"nehmen",  ihr:"nehmt", "sie/Sie":"nehmen",  note:"⚠️ особая форма!"},
+  sprechen:{type:"e→i", col:C.orange,bg:C.orangeBg, ich:"spreche", du:"sprichst","er/sie/es":"spricht", wir:"sprechen",ihr:"sprecht","sie/Sie":"sprechen", pt:"sprach", pf:"hat gesprochen"},
+  essen:   {type:"e→i", col:C.orange,bg:C.orangeBg, ich:"esse",    du:"isst",    "er/sie/es":"isst",    wir:"essen",   ihr:"esst",  "sie/Sie":"essen",   note:"e выпадает перед -st/-t", pt:"aß", pf:"hat gegessen"},
+  nehmen:  {type:"e→i", col:C.orange,bg:C.orangeBg, ich:"nehme",   du:"nimmst",  "er/sie/es":"nimmt",   wir:"nehmen",  ihr:"nehmt", "sie/Sie":"nehmen",  note:"⚠️ особая форма!", pt:"nahm", pf:"hat genommen"},
   treffen: {type:"e→i", col:C.orange,bg:C.orangeBg, ich:"treffe",  du:"triffst", "er/sie/es":"trifft",  wir:"treffen", ihr:"trefft","sie/Sie":"treffen"},
-  messen:  {type:"e→i", col:C.orange,bg:C.orangeBg, ich:"messe",   du:"misst",   "er/sie/es":"misst",   wir:"messen",  ihr:"messt", "sie/Sie":"messen"},
-  lesen:      {type:"e→ie",col:C.blue,  bg:C.blueBg,   ich:"lese",      du:"liest",      "er/sie/es":"liest",     wir:"lesen",     ihr:"lest",     "sie/Sie":"lesen"},
-  sehen:      {type:"e→ie",col:C.blue,  bg:C.blueBg,   ich:"sehe",      du:"siehst",     "er/sie/es":"sieht",     wir:"sehen",     ihr:"seht",     "sie/Sie":"sehen"},
-  empfehlen:  {type:"e→ie",col:C.blue,  bg:C.blueBg,   ich:"empfehle",  du:"empfiehlst", "er/sie/es":"empfiehlt", wir:"empfehlen", ihr:"empfehlt", "sie/Sie":"empfehlen"},
-  schlafen:{type:"a→ä", col:C.purple,bg:C.purpleBg, ich:"schlafe", du:"schläfst","er/sie/es":"schläft", wir:"schlafen",ihr:"schlaft","sie/Sie":"schlafen"},
-  fahren:  {type:"a→ä", col:C.purple,bg:C.purpleBg, ich:"fahre",   du:"fährst",  "er/sie/es":"fährt",   wir:"fahren",  ihr:"fahrt", "sie/Sie":"fahren"},
+  messen:  {type:"e→i", col:C.orange,bg:C.orangeBg, ich:"messe",   du:"misst",   "er/sie/es":"misst",   wir:"messen",  ihr:"messt", "sie/Sie":"messen", pt:"maß", pf:"hat gemessen"},
+  lesen:      {type:"e→ie",col:C.blue,  bg:C.blueBg,   ich:"lese",      du:"liest",      "er/sie/es":"liest",     wir:"lesen",     ihr:"lest",     "sie/Sie":"lesen", pt:"las", pf:"hat gelesen"},
+  sehen:      {type:"e→ie",col:C.blue,  bg:C.blueBg,   ich:"sehe",      du:"siehst",     "er/sie/es":"sieht",     wir:"sehen",     ihr:"seht",     "sie/Sie":"sehen", pt:"sah", pf:"hat gesehen"},
+  empfehlen:  {type:"e→ie",col:C.blue,  bg:C.blueBg,   ich:"empfehle",  du:"empfiehlst", "er/sie/es":"empfiehlt", wir:"empfehlen", ihr:"empfehlt", "sie/Sie":"empfehlen", pt:"empfahl", pf:"hat empfohlen"},
+  schlafen:{type:"a→ä", col:C.purple,bg:C.purpleBg, ich:"schlafe", du:"schläfst","er/sie/es":"schläft", wir:"schlafen",ihr:"schlaft","sie/Sie":"schlafen", pt:"schlief", pf:"hat geschlafen"},
+  fahren:  {type:"a→ä", col:C.purple,bg:C.purpleBg, ich:"fahre",   du:"fährst",  "er/sie/es":"fährt",   wir:"fahren",  ihr:"fahrt", "sie/Sie":"fahren", pt:"fuhr", pf:"ist gefahren"},
 };
 
 // ─── KONJUGATION (L4C — Präteritum haben/sein) ────────────────────────────────
@@ -1235,67 +1235,67 @@ const KONJ_L4C={
 const KONJ_L5B={
   anrufen:   {pref:"an",  col:C.blue,   bg:C.blueBg,
     ich:"rufe … an",    du:"rufst … an",     "er/sie/es":"ruft … an",
-    wir:"rufen … an",   ihr:"ruft … an",     "sie/Sie":"rufen … an"},
+    wir:"rufen … an",   ihr:"ruft … an",     "sie/Sie":"rufen … an", pt:"rief … an", pf:"hat angerufen"},
   anfangen:  {pref:"an",  col:C.blue,   bg:C.blueBg,   note:"a→ä",
     ich:"fange … an",   du:"fängst … an",    "er/sie/es":"fängt … an",
-    wir:"fangen … an",  ihr:"fangt … an",    "sie/Sie":"fangen … an"},
+    wir:"fangen … an",  ihr:"fangt … an",    "sie/Sie":"fangen … an", pt:"fing … an", pf:"hat angefangen"},
   anbieten:  {pref:"an",  col:C.blue,   bg:C.blueBg,
     ich:"biete … an",   du:"bietest … an",   "er/sie/es":"bietet … an",
-    wir:"bieten … an",  ihr:"bietet … an",   "sie/Sie":"bieten … an"},
+    wir:"bieten … an",  ihr:"bietet … an",   "sie/Sie":"bieten … an", pt:"bot … an", pf:"hat angeboten"},
   aufstehen: {pref:"auf", col:C.orange, bg:C.orangeBg,
     ich:"stehe … auf",  du:"stehst … auf",   "er/sie/es":"steht … auf",
-    wir:"stehen … auf", ihr:"steht … auf",   "sie/Sie":"stehen … auf"},
+    wir:"stehen … auf", ihr:"steht … auf",   "sie/Sie":"stehen … auf", pt:"stand … auf", pf:"ist aufgestanden"},
   aufräumen: {pref:"auf", col:C.orange, bg:C.orangeBg,
     ich:"räume … auf",  du:"räumst … auf",   "er/sie/es":"räumt … auf",
-    wir:"räumen … auf", ihr:"räumt … auf",   "sie/Sie":"räumen … auf"},
+    wir:"räumen … auf", ihr:"räumt … auf",   "sie/Sie":"räumen … auf", pt:"räumte … auf", pf:"hat aufgeräumt"},
   aufhören:  {pref:"auf", col:C.orange, bg:C.orangeBg,
     ich:"höre … auf",   du:"hörst … auf",    "er/sie/es":"hört … auf",
-    wir:"hören … auf",  ihr:"hört … auf",    "sie/Sie":"hören … auf"},
+    wir:"hören … auf",  ihr:"hört … auf",    "sie/Sie":"hören … auf", pt:"hörte … auf", pf:"hat aufgehört"},
   einkaufen: {pref:"ein", col:C.green,  bg:C.greenBg,
     ich:"kaufe … ein",  du:"kaufst … ein",   "er/sie/es":"kauft … ein",
-    wir:"kaufen … ein", ihr:"kauft … ein",   "sie/Sie":"kaufen … ein"},
+    wir:"kaufen … ein", ihr:"kauft … ein",   "sie/Sie":"kaufen … ein", pt:"kaufte … ein", pf:"hat eingekauft"},
   mitnehmen: {pref:"mit", col:C.purple, bg:C.purpleBg, note:"e→i",
     ich:"nehme … mit",  du:"nimmst … mit",   "er/sie/es":"nimmt … mit",
-    wir:"nehmen … mit", ihr:"nehmt … mit",   "sie/Sie":"nehmen … mit"},
+    wir:"nehmen … mit", ihr:"nehmt … mit",   "sie/Sie":"nehmen … mit", pt:"nahm … mit", pf:"hat mitgenommen"},
   mitkommen: {pref:"mit", col:C.purple, bg:C.purpleBg,
     ich:"komme … mit",  du:"kommst … mit",   "er/sie/es":"kommt … mit",
-    wir:"kommen … mit", ihr:"kommt … mit",   "sie/Sie":"kommen … mit"},
+    wir:"kommen … mit", ihr:"kommt … mit",   "sie/Sie":"kommen … mit", pt:"kam … mit", pf:"ist mitgekommen"},
   ausgehen:  {pref:"aus", col:C.red,    bg:C.redBg,
     ich:"gehe … aus",   du:"gehst … aus",    "er/sie/es":"geht … aus",
-    wir:"gehen … aus",  ihr:"geht … aus",    "sie/Sie":"gehen … aus"},
+    wir:"gehen … aus",  ihr:"geht … aus",    "sie/Sie":"gehen … aus", pt:"ging … aus", pf:"ist ausgegangen"},
   fernsehen: {pref:"fern",col:C.teal,   bg:C.tealBg,   note:"e→ie",
     ich:"sehe … fern",  du:"siehst … fern",  "er/sie/es":"sieht … fern",
-    wir:"sehen … fern", ihr:"seht … fern",   "sie/Sie":"sehen … fern"},
+    wir:"sehen … fern", ihr:"seht … fern",   "sie/Sie":"sehen … fern", pt:"sah … fern", pf:"hat ferngesehen"},
   abspülen:  {pref:"ab",  col:C.yellow, bg:C.yellowBg,
     ich:"spüle … ab",   du:"spülst … ab",    "er/sie/es":"spült … ab",
-    wir:"spülen … ab",  ihr:"spült … ab",    "sie/Sie":"spülen … ab"},
+    wir:"spülen … ab",  ihr:"spült … ab",    "sie/Sie":"spülen … ab", pt:"spülte … ab", pf:"hat abgespült"},
   anmachen:  {pref:"an",  col:C.blue,   bg:C.blueBg,
     ich:"mache … an",   du:"machst … an",    "er/sie/es":"macht … an",
-    wir:"machen … an",  ihr:"macht … an",    "sie/Sie":"machen … an"},
+    wir:"machen … an",  ihr:"macht … an",    "sie/Sie":"machen … an", pt:"machte … an", pf:"hat angemacht"},
   ausmachen: {pref:"aus", col:C.red,    bg:C.redBg,
     ich:"mache … aus",  du:"machst … aus",   "er/sie/es":"macht … aus",
-    wir:"machen … aus", ihr:"macht … aus",   "sie/Sie":"machen … aus"},
+    wir:"machen … aus", ihr:"macht … aus",   "sie/Sie":"machen … aus", pt:"machte … aus", pf:"hat ausgemacht"},
   einladen:  {pref:"ein", col:C.green,  bg:C.greenBg,  note:"a→ä",
     ich:"lade … ein",   du:"lädst … ein",    "er/sie/es":"lädt … ein",
-    wir:"laden … ein",  ihr:"ladet … ein",   "sie/Sie":"laden … ein"},
+    wir:"laden … ein",  ihr:"ladet … ein",   "sie/Sie":"laden … ein", pt:"lud … ein", pf:"hat eingeladen"},
   ausschlafen:{pref:"aus",col:C.red,    bg:C.redBg,    note:"a→ä",
     ich:"schlafe … aus",du:"schläfst … aus", "er/sie/es":"schläft … aus",
-    wir:"schlafen … aus",ihr:"schlaft … aus","sie/Sie":"schlafen … aus"},
+    wir:"schlafen … aus",ihr:"schlaft … aus","sie/Sie":"schlafen … aus", pt:"schlief … aus", pf:"hat ausgeschlafen"},
   mitbringen:{pref:"mit", col:C.purple, bg:C.purpleBg,
     ich:"bringe … mit", du:"bringst … mit",  "er/sie/es":"bringt … mit",
-    wir:"bringen … mit",ihr:"bringt … mit",  "sie/Sie":"bringen … mit"},
+    wir:"bringen … mit",ihr:"bringt … mit",  "sie/Sie":"bringen … mit", pt:"brachte … mit", pf:"hat mitgebracht"},
   einschlafen:{pref:"ein",col:C.green,  bg:C.greenBg,  note:"a→ä",
     ich:"schlafe … ein",du:"schläfst … ein", "er/sie/es":"schläft … ein",
-    wir:"schlafen … ein",ihr:"schlaft … ein","sie/Sie":"schlafen … ein"},
+    wir:"schlafen … ein",ihr:"schlaft … ein","sie/Sie":"schlafen … ein", pt:"schlief … ein", pf:"ist eingeschlafen"},
   wegfahren: {pref:"weg", col:C.orange, bg:C.orangeBg, note:"a→ä",
     ich:"fahre … weg",  du:"fährst … weg",   "er/sie/es":"fährt … weg",
-    wir:"fahren … weg", ihr:"fahrt … weg",   "sie/Sie":"fahren … weg"},
+    wir:"fahren … weg", ihr:"fahrt … weg",   "sie/Sie":"fahren … weg", pt:"fuhr … weg", pf:"ist weggefahren"},
   ausfallen: {pref:"aus", col:C.red,    bg:C.redBg,    note:"a→ä",
     ich:"falle … aus",  du:"fällst … aus",   "er/sie/es":"fällt … aus",
-    wir:"fallen … aus", ihr:"fallt … aus",   "sie/Sie":"fallen … aus"},
+    wir:"fallen … aus", ihr:"fallt … aus",   "sie/Sie":"fallen … aus", pt:"fiel … aus", pf:"ist ausgefallen"},
   stattfinden:{pref:"statt",col:C.teal, bg:C.tealBg,
     ich:"finde … statt",du:"findest … statt","er/sie/es":"findet … statt",
-    wir:"finden … statt",ihr:"findet … statt","sie/Sie":"finden … statt"},
+    wir:"finden … statt",ihr:"findet … statt","sie/Sie":"finden … statt", pt:"fand … statt", pf:"hat stattgefunden"},
 };
 
 // ─── Цвета префиксов ──────────────────────────────────────────────────────────
@@ -1317,183 +1317,184 @@ const getVerbPref=de=>PREF_LIST.find(p=>de.startsWith(p))||"";
 const KONJ_ALL={
   ...KONJ_L4B,
   ...KONJ_L5B,
-  haben:      {col:C.blue,  bg:C.blueBg,   ich:"habe",      du:"hast",       "er/sie/es":"hat",       wir:"haben",    ihr:"habt",     "sie/Sie":"haben",     imp:{du:"Hab!",    ihr:"Habt!",   Sie:"Haben Sie!"}},
-  sein:       {col:C.purple,bg:C.purpleBg, ich:"bin",       du:"bist",       "er/sie/es":"ist",       wir:"sind",     ihr:"seid",     "sie/Sie":"sind",      imp:{du:"Sei!",    ihr:"Seid!",   Sie:"Seien Sie!"},  note:"⚠️ особый"},
-  wollen:     {col:C.red,   bg:C.redBg,    ich:"will",      du:"willst",     "er/sie/es":"will",      wir:"wollen",   ihr:"wollt",    "sie/Sie":"wollen",    note:"ich = er",noImp:true},
-  können:     {col:C.green, bg:C.greenBg,  ich:"kann",      du:"kannst",     "er/sie/es":"kann",      wir:"können",   ihr:"könnt",    "sie/Sie":"können",    note:"ich = er",noImp:true},
-  müssen:     {col:C.orange,bg:C.orangeBg, ich:"muss",      du:"musst",      "er/sie/es":"muss",      wir:"müssen",   ihr:"müsst",    "sie/Sie":"müssen",    note:"ich = er",noImp:true},
-  sollen:     {col:C.teal,  bg:C.tealBg,  ich:"soll",      du:"sollst",     "er/sie/es":"soll",      wir:"sollen",   ihr:"sollt",    "sie/Sie":"sollen",    note:"ich = er",noImp:true},
-  mögen:      {col:C.purple,bg:C.purpleBg, ich:"mag",       du:"magst",      "er/sie/es":"mag",       wir:"mögen",    ihr:"mögt",     "sie/Sie":"mögen",     note:"ich = er",noImp:true},
-  laufen:     {col:C.purple,bg:C.purpleBg, ich:"laufe",     du:"läufst",     "er/sie/es":"läuft",     wir:"laufen",   ihr:"lauft",    "sie/Sie":"laufen",    imp:{du:"Lauf!",   ihr:"Lauft!", Sie:"Laufen Sie!"},  note:"a→ä"},
-  kommen:     {col:C.teal,  bg:C.tealBg,   ich:"komme",     du:"kommst",     "er/sie/es":"kommt",     wir:"kommen",   ihr:"kommt",    "sie/Sie":"kommen"},
-  gehen:      {col:C.teal,  bg:C.tealBg,   ich:"gehe",      du:"gehst",      "er/sie/es":"geht",      wir:"gehen",    ihr:"geht",     "sie/Sie":"gehen"},
-  machen:     {col:C.teal,  bg:C.tealBg,   ich:"mache",     du:"machst",     "er/sie/es":"macht",     wir:"machen",   ihr:"macht",    "sie/Sie":"machen"},
-  lernen:     {col:C.teal,  bg:C.tealBg,   ich:"lerne",     du:"lernst",     "er/sie/es":"lernt",     wir:"lernen",   ihr:"lernt",    "sie/Sie":"lernen"},
-  wohnen:     {col:C.teal,  bg:C.tealBg,   ich:"wohne",     du:"wohnst",     "er/sie/es":"wohnt",     wir:"wohnen",   ihr:"wohnt",    "sie/Sie":"wohnen"},
-  arbeiten:   {col:C.teal,  bg:C.tealBg,   ich:"arbeite",   du:"arbeitest",  "er/sie/es":"arbeitet",  wir:"arbeiten", ihr:"arbeitet", "sie/Sie":"arbeiten",  note:"-e- вставка"},
-  heißen:     {col:C.teal,  bg:C.tealBg,   ich:"heiße",     du:"heißt",      "er/sie/es":"heißt",     wir:"heißen",   ihr:"heißt",    "sie/Sie":"heißen"},
-  kochen:     {col:C.teal,  bg:C.tealBg,   ich:"koche",     du:"kochst",     "er/sie/es":"kocht",     wir:"kochen",   ihr:"kocht",    "sie/Sie":"kochen"},
-  spielen:    {col:C.teal,  bg:C.tealBg,   ich:"spiele",    du:"spielst",    "er/sie/es":"spielt",    wir:"spielen",  ihr:"spielt",   "sie/Sie":"spielen"},
-  trinken:    {col:C.teal,  bg:C.tealBg,   ich:"trinke",    du:"trinkst",    "er/sie/es":"trinkt",    wir:"trinken",  ihr:"trinkt",   "sie/Sie":"trinken"},
-  schreiben:  {col:C.teal,  bg:C.tealBg,   ich:"schreibe",  du:"schreibst",  "er/sie/es":"schreibt",  wir:"schreiben",ihr:"schreibt", "sie/Sie":"schreiben"},
-  reparieren: {col:C.teal,  bg:C.tealBg,   ich:"repariere", du:"reparierst", "er/sie/es":"repariert", wir:"reparieren",ihr:"repariert","sie/Sie":"reparieren"},
-  starten:    {col:C.teal,  bg:C.tealBg,   ich:"starte",    du:"startest",   "er/sie/es":"startet",   wir:"starten",  ihr:"startet",  "sie/Sie":"starten",   note:"-e- вставка"},
-  klingeln:   {col:C.teal,  bg:C.tealBg,   ich:"klingle",   du:"klingelst",  "er/sie/es":"klingelt",  wir:"klingeln", ihr:"klingelt", "sie/Sie":"klingeln"},
-  frühstücken:{col:C.teal,  bg:C.tealBg,   ich:"frühstücke",du:"frühstückst","er/sie/es":"frühstückt",wir:"frühstücken",ihr:"frühstückt","sie/Sie":"frühstücken"},
-  chillen:    {col:C.teal,  bg:C.tealBg,   ich:"chille",    du:"chillst",    "er/sie/es":"chillt",    wir:"chillen",  ihr:"chillt",   "sie/Sie":"chillen"},
-  treffen:    {col:C.orange,bg:C.orangeBg, ich:"treffe",    du:"triffst",    "er/sie/es":"trifft",    wir:"treffen",  ihr:"trefft",   "sie/Sie":"treffen",   note:"e→i"},
-  tanzen:     {col:C.teal,  bg:C.tealBg,   ich:"tanze",     du:"tanzt",      "er/sie/es":"tanzt",     wir:"tanzen",   ihr:"tanzt",    "sie/Sie":"tanzen"},
-  schwimmen:  {col:C.teal,  bg:C.tealBg,   ich:"schwimme",  du:"schwimmst",  "er/sie/es":"schwimmt",  wir:"schwimmen",ihr:"schwimmt", "sie/Sie":"schwimmen"},
-  joggen:     {col:C.teal,  bg:C.tealBg,   ich:"jogge",     du:"joggst",     "er/sie/es":"joggt",     wir:"joggen",   ihr:"joggt",    "sie/Sie":"joggen"},
-  grillen:    {col:C.teal,  bg:C.tealBg,   ich:"grille",    du:"grillst",    "er/sie/es":"grillt",    wir:"grillen",  ihr:"grillt",   "sie/Sie":"grillen"},
-  surfen:     {col:C.teal,  bg:C.tealBg,   ich:"surfe",     du:"surfst",     "er/sie/es":"surft",     wir:"surfen",   ihr:"surft",    "sie/Sie":"surfen"},
-  vergessen:  {col:C.orange,bg:C.orangeBg, ich:"vergesse",  du:"vergisst",   "er/sie/es":"vergisst",  wir:"vergessen",ihr:"vergesst", "sie/Sie":"vergessen", note:"e→i"},
+  haben:      {col:C.blue,  bg:C.blueBg,   ich:"habe",      du:"hast",       "er/sie/es":"hat",       wir:"haben",    ihr:"habt",     "sie/Sie":"haben",     imp:{du:"Hab!",    ihr:"Habt!",   Sie:"Haben Sie!"}, pt:"hatte", pf:"hat gehabt"},
+  sein:       {col:C.purple,bg:C.purpleBg, ich:"bin",       du:"bist",       "er/sie/es":"ist",       wir:"sind",     ihr:"seid",     "sie/Sie":"sind",      imp:{du:"Sei!",    ihr:"Seid!",   Sie:"Seien Sie!"},  note:"⚠️ особый", pt:"war", pf:"ist gewesen"},
+  wollen:     {col:C.red,   bg:C.redBg,    ich:"will",      du:"willst",     "er/sie/es":"will",      wir:"wollen",   ihr:"wollt",    "sie/Sie":"wollen",    note:"ich = er",noImp:true, pt:"wollte", pf:"hat gewollt"},
+  können:     {col:C.green, bg:C.greenBg,  ich:"kann",      du:"kannst",     "er/sie/es":"kann",      wir:"können",   ihr:"könnt",    "sie/Sie":"können",    note:"ich = er",noImp:true, pt:"konnte", pf:"hat gekonnt"},
+  müssen:     {col:C.orange,bg:C.orangeBg, ich:"muss",      du:"musst",      "er/sie/es":"muss",      wir:"müssen",   ihr:"müsst",    "sie/Sie":"müssen",    note:"ich = er",noImp:true, pt:"musste", pf:"hat gemusst"},
+  sollen:     {col:C.teal,  bg:C.tealBg,  ich:"soll",      du:"sollst",     "er/sie/es":"soll",      wir:"sollen",   ihr:"sollt",    "sie/Sie":"sollen",    note:"ich = er",noImp:true, pt:"sollte", pf:"hat gesollt"},
+  mögen:      {col:C.purple,bg:C.purpleBg, ich:"mag",       du:"magst",      "er/sie/es":"mag",       wir:"mögen",    ihr:"mögt",     "sie/Sie":"mögen",     note:"ich = er",noImp:true, pt:"mochte", pf:"hat gemocht"},
+  laufen:     {col:C.purple,bg:C.purpleBg, ich:"laufe",     du:"läufst",     "er/sie/es":"läuft",     wir:"laufen",   ihr:"lauft",    "sie/Sie":"laufen",    imp:{du:"Lauf!",   ihr:"Lauft!", Sie:"Laufen Sie!"},  note:"a→ä", pt:"lief", pf:"ist gelaufen"},
+  kommen:     {col:C.teal,  bg:C.tealBg,   ich:"komme",     du:"kommst",     "er/sie/es":"kommt",     wir:"kommen",   ihr:"kommt",    "sie/Sie":"kommen", pt:"kam", pf:"ist gekommen"},
+  gehen:      {col:C.teal,  bg:C.tealBg,   ich:"gehe",      du:"gehst",      "er/sie/es":"geht",      wir:"gehen",    ihr:"geht",     "sie/Sie":"gehen", pt:"ging", pf:"ist gegangen"},
+  machen:     {col:C.teal,  bg:C.tealBg,   ich:"mache",     du:"machst",     "er/sie/es":"macht",     wir:"machen",   ihr:"macht",    "sie/Sie":"machen", pt:"machte", pf:"hat gemacht"},
+  lernen:     {col:C.teal,  bg:C.tealBg,   ich:"lerne",     du:"lernst",     "er/sie/es":"lernt",     wir:"lernen",   ihr:"lernt",    "sie/Sie":"lernen", pt:"lernte", pf:"hat gelernt"},
+  wohnen:     {col:C.teal,  bg:C.tealBg,   ich:"wohne",     du:"wohnst",     "er/sie/es":"wohnt",     wir:"wohnen",   ihr:"wohnt",    "sie/Sie":"wohnen", pt:"wohnte", pf:"hat gewohnt"},
+  arbeiten:   {col:C.teal,  bg:C.tealBg,   ich:"arbeite",   du:"arbeitest",  "er/sie/es":"arbeitet",  wir:"arbeiten", ihr:"arbeitet", "sie/Sie":"arbeiten",  note:"-e- вставка", pt:"arbeitete", pf:"hat gearbeitet"},
+  heißen:     {col:C.teal,  bg:C.tealBg,   ich:"heiße",     du:"heißt",      "er/sie/es":"heißt",     wir:"heißen",   ihr:"heißt",    "sie/Sie":"heißen", pt:"hieß", pf:"hat geheißen"},
+  kochen:     {col:C.teal,  bg:C.tealBg,   ich:"koche",     du:"kochst",     "er/sie/es":"kocht",     wir:"kochen",   ihr:"kocht",    "sie/Sie":"kochen", pt:"kochte", pf:"hat gekocht"},
+  spielen:    {col:C.teal,  bg:C.tealBg,   ich:"spiele",    du:"spielst",    "er/sie/es":"spielt",    wir:"spielen",  ihr:"spielt",   "sie/Sie":"spielen", pt:"spielte", pf:"hat gespielt"},
+  trinken:    {col:C.teal,  bg:C.tealBg,   ich:"trinke",    du:"trinkst",    "er/sie/es":"trinkt",    wir:"trinken",  ihr:"trinkt",   "sie/Sie":"trinken", pt:"trank", pf:"hat getrunken"},
+  schreiben:  {col:C.teal,  bg:C.tealBg,   ich:"schreibe",  du:"schreibst",  "er/sie/es":"schreibt",  wir:"schreiben",ihr:"schreibt", "sie/Sie":"schreiben", pt:"schrieb", pf:"hat geschrieben"},
+  reparieren: {col:C.teal,  bg:C.tealBg,   ich:"repariere", du:"reparierst", "er/sie/es":"repariert", wir:"reparieren",ihr:"repariert","sie/Sie":"reparieren", pt:"reparierte", pf:"hat repariert"},
+  starten:    {col:C.teal,  bg:C.tealBg,   ich:"starte",    du:"startest",   "er/sie/es":"startet",   wir:"starten",  ihr:"startet",  "sie/Sie":"starten",   note:"-e- вставка", pt:"startete", pf:"hat gestartet"},
+  klingeln:   {col:C.teal,  bg:C.tealBg,   ich:"klingle",   du:"klingelst",  "er/sie/es":"klingelt",  wir:"klingeln", ihr:"klingelt", "sie/Sie":"klingeln", pt:"klingelte", pf:"hat geklingelt"},
+  frühstücken:{col:C.teal,  bg:C.tealBg,   ich:"frühstücke",du:"frühstückst","er/sie/es":"frühstückt",wir:"frühstücken",ihr:"frühstückt","sie/Sie":"frühstücken", pt:"frühstückte", pf:"hat gefrühstückt"},
+  chillen:    {col:C.teal,  bg:C.tealBg,   ich:"chille",    du:"chillst",    "er/sie/es":"chillt",    wir:"chillen",  ihr:"chillt",   "sie/Sie":"chillen", pt:"chillte", pf:"hat gechillt"},
+  treffen:    {col:C.orange,bg:C.orangeBg, ich:"treffe",    du:"triffst",    "er/sie/es":"trifft",    wir:"treffen",  ihr:"trefft",   "sie/Sie":"treffen",   note:"e→i", pt:"traf", pf:"hat getroffen"},
+  tanzen:     {col:C.teal,  bg:C.tealBg,   ich:"tanze",     du:"tanzt",      "er/sie/es":"tanzt",     wir:"tanzen",   ihr:"tanzt",    "sie/Sie":"tanzen", pt:"tanzte", pf:"hat getanzt"},
+  schwimmen:  {col:C.teal,  bg:C.tealBg,   ich:"schwimme",  du:"schwimmst",  "er/sie/es":"schwimmt",  wir:"schwimmen",ihr:"schwimmt", "sie/Sie":"schwimmen", pt:"schwamm", pf:"ist geschwommen"},
+  joggen:     {col:C.teal,  bg:C.tealBg,   ich:"jogge",     du:"joggst",     "er/sie/es":"joggt",     wir:"joggen",   ihr:"joggt",    "sie/Sie":"joggen", pt:"joggte", pf:"ist gejoggt"},
+  grillen:    {col:C.teal,  bg:C.tealBg,   ich:"grille",    du:"grillst",    "er/sie/es":"grillt",    wir:"grillen",  ihr:"grillt",   "sie/Sie":"grillen", pt:"grillte", pf:"hat gegrillt"},
+  surfen:     {col:C.teal,  bg:C.tealBg,   ich:"surfe",     du:"surfst",     "er/sie/es":"surft",     wir:"surfen",   ihr:"surft",    "sie/Sie":"surfen", pt:"surfte", pf:"hat gesurft"},
+  vergessen:  {col:C.orange,bg:C.orangeBg, ich:"vergesse",  du:"vergisst",   "er/sie/es":"vergisst",  wir:"vergessen",ihr:"vergesst", "sie/Sie":"vergessen", note:"e→i", pt:"vergaß", pf:"hat vergessen"},
   möchten:    {col:C.purple,bg:C.purpleBg, ich:"möchte",    du:"möchtest",   "er/sie/es":"möchte",    wir:"möchten",  ihr:"möchtet",  "sie/Sie":"möchten",   note:"ich = er (нет -t!)",noImp:true},
-  kaufen:     {col:C.teal,  bg:C.tealBg,   ich:"kaufe",     du:"kaufst",     "er/sie/es":"kauft",     wir:"kaufen",   ihr:"kauft",    "sie/Sie":"kaufen"},
-  bekommen:   {col:C.teal,  bg:C.tealBg,   ich:"bekomme",   du:"bekommst",   "er/sie/es":"bekommt",   wir:"bekommen", ihr:"bekommt",  "sie/Sie":"bekommen"},
-  kosten:     {col:C.teal,  bg:C.tealBg,   ich:"koste",     du:"kostest",    "er/sie/es":"kostet",    wir:"kosten",   ihr:"kostet",   "sie/Sie":"kosten",    note:"-e- вставка"},
-  backen:     {col:C.orange,bg:C.orangeBg, ich:"backe",     du:"bäckst",     "er/sie/es":"bäckt",     wir:"backen",   ihr:"backt",    "sie/Sie":"backen",    imp:{du:"Back!",   ihr:"Backt!", Sie:"Backen Sie!"},  note:"a→ä"},
-  schneiden:  {col:C.teal,  bg:C.tealBg,   ich:"schneide",  du:"schneidest", "er/sie/es":"schneidet", wir:"schneiden",ihr:"schneidet","sie/Sie":"schneiden", note:"-e- вставка"},
-  schälen:    {col:C.teal,  bg:C.tealBg,   ich:"schäle",    du:"schälst",    "er/sie/es":"schält",    wir:"schälen",  ihr:"schält",   "sie/Sie":"schälen"},
-  verkaufen:  {col:C.teal,  bg:C.tealBg,   ich:"verkaufe",  du:"verkaufst",  "er/sie/es":"verkauft",  wir:"verkaufen",ihr:"verkauft", "sie/Sie":"verkaufen"},
-  holen:      {col:C.teal,  bg:C.tealBg,   ich:"hole",      du:"holst",      "er/sie/es":"holt",      wir:"holen",    ihr:"holt",     "sie/Sie":"holen"},
-  fragen:     {col:C.teal,  bg:C.tealBg,   ich:"frage",     du:"fragst",     "er/sie/es":"fragt",     wir:"fragen",   ihr:"fragt",    "sie/Sie":"fragen"},
+  kaufen:     {col:C.teal,  bg:C.tealBg,   ich:"kaufe",     du:"kaufst",     "er/sie/es":"kauft",     wir:"kaufen",   ihr:"kauft",    "sie/Sie":"kaufen", pt:"kaufte", pf:"hat gekauft"},
+  bekommen:   {col:C.teal,  bg:C.tealBg,   ich:"bekomme",   du:"bekommst",   "er/sie/es":"bekommt",   wir:"bekommen", ihr:"bekommt",  "sie/Sie":"bekommen", pt:"bekam", pf:"hat bekommen"},
+  kosten:     {col:C.teal,  bg:C.tealBg,   ich:"koste",     du:"kostest",    "er/sie/es":"kostet",    wir:"kosten",   ihr:"kostet",   "sie/Sie":"kosten",    note:"-e- вставка", pt:"kostete", pf:"hat gekostet"},
+  backen:     {col:C.orange,bg:C.orangeBg, ich:"backe",     du:"bäckst",     "er/sie/es":"bäckt",     wir:"backen",   ihr:"backt",    "sie/Sie":"backen",    imp:{du:"Back!",   ihr:"Backt!", Sie:"Backen Sie!"},  note:"a→ä", pt:"buk", pf:"hat gebacken"},
+  schneiden:  {col:C.teal,  bg:C.tealBg,   ich:"schneide",  du:"schneidest", "er/sie/es":"schneidet", wir:"schneiden",ihr:"schneidet","sie/Sie":"schneiden", note:"-e- вставка", pt:"schnitt", pf:"hat geschnitten"},
+  schälen:    {col:C.teal,  bg:C.tealBg,   ich:"schäle",    du:"schälst",    "er/sie/es":"schält",    wir:"schälen",  ihr:"schält",   "sie/Sie":"schälen", pt:"schälte", pf:"hat geschält"},
+  verkaufen:  {col:C.teal,  bg:C.tealBg,   ich:"verkaufe",  du:"verkaufst",  "er/sie/es":"verkauft",  wir:"verkaufen",ihr:"verkauft", "sie/Sie":"verkaufen", pt:"verkaufte", pf:"hat verkauft"},
+  holen:      {col:C.teal,  bg:C.tealBg,   ich:"hole",      du:"holst",      "er/sie/es":"holt",      wir:"holen",    ihr:"holt",     "sie/Sie":"holen", pt:"holte", pf:"hat geholt"},
+  fragen:     {col:C.teal,  bg:C.tealBg,   ich:"frage",     du:"fragst",     "er/sie/es":"fragt",     wir:"fragen",   ihr:"fragt",    "sie/Sie":"fragen", pt:"fragte", pf:"hat gefragt"},
   // L8E Notruf
-  erklären:   {col:C.teal,  bg:C.tealBg,   ich:"erkläre",   du:"erklärst",   "er/sie/es":"erklärt",   wir:"erklären", ihr:"erklärt",  "sie/Sie":"erklären"},
-  schicken:   {col:C.teal,  bg:C.tealBg,   ich:"schicke",   du:"schickst",   "er/sie/es":"schickt",   wir:"schicken", ihr:"schickt",  "sie/Sie":"schicken"},
-  benutzen:   {col:C.teal,  bg:C.tealBg,   ich:"benutze",   du:"benutzt",    "er/sie/es":"benutzt",   wir:"benutzen", ihr:"benutzt",  "sie/Sie":"benutzen"},
-  fliegen:    {col:C.teal,  bg:C.tealBg,   ich:"fliege",    du:"fliegst",    "er/sie/es":"fliegt",    wir:"fliegen",  ihr:"fliegt",   "sie/Sie":"fliegen"},
+  erklären:   {col:C.teal,  bg:C.tealBg,   ich:"erkläre",   du:"erklärst",   "er/sie/es":"erklärt",   wir:"erklären", ihr:"erklärt",  "sie/Sie":"erklären", pt:"erklärte", pf:"hat erklärt"},
+  schicken:   {col:C.teal,  bg:C.tealBg,   ich:"schicke",   du:"schickst",   "er/sie/es":"schickt",   wir:"schicken", ihr:"schickt",  "sie/Sie":"schicken", pt:"schickte", pf:"hat geschickt"},
+  benutzen:   {col:C.teal,  bg:C.tealBg,   ich:"benutze",   du:"benutzt",    "er/sie/es":"benutzt",   wir:"benutzen", ihr:"benutzt",  "sie/Sie":"benutzen", pt:"benutzte", pf:"hat benutzt"},
+  fliegen:    {col:C.teal,  bg:C.tealBg,   ich:"fliege",    du:"fliegst",    "er/sie/es":"fliegt",    wir:"fliegen",  ihr:"fliegt",   "sie/Sie":"fliegen", pt:"flog", pf:"ist geflogen"},
   auflegen:   {pref:"auf",  col:C.orange, bg:C.orangeBg,
     ich:"lege … auf",   du:"legst … auf",   "er/sie/es":"legt … auf",
-    wir:"legen … auf",  ihr:"legt … auf",   "sie/Sie":"legen … auf"},
+    wir:"legen … auf",  ihr:"legt … auf",   "sie/Sie":"legen … auf", pt:"legte … auf", pf:"hat aufgelegt"},
   anhalten:   {pref:"an",   col:C.blue,   bg:C.blueBg,   note:"a→ä",
     ich:"halte … an",   du:"hältst … an",   "er/sie/es":"hält … an",
-    wir:"halten … an",  ihr:"haltet … an",  "sie/Sie":"halten … an"},
+    wir:"halten … an",  ihr:"haltet … an",  "sie/Sie":"halten … an", pt:"hielt … an", pf:"hat angehalten"},
   vorbeifahren:{pref:"vorbei",col:C.purple,bg:C.purpleBg, note:"a→ä",
     ich:"fahre … vorbei",  du:"fährst … vorbei",  "er/sie/es":"fährt … vorbei",
-    wir:"fahren … vorbei", ihr:"fahrt … vorbei",  "sie/Sie":"fahren … vorbei"},
+    wir:"fahren … vorbei", ihr:"fahrt … vorbei",  "sie/Sie":"fahren … vorbei", pt:"fuhr … vorbei", pf:"ist vorbeigefahren"},
   // L8 Gesundheit — reflexive Verben
   "sich erholen":   {col:C.teal,  bg:C.tealBg,  note:"Reflexiv",
     ich:"erhole mich",    du:"erholst dich",    "er/sie/es":"erholt sich",
     wir:"erholen uns",    ihr:"erholt euch",    "sie/Sie":"erholen sich",
-    imp:{du:"Erhol dich!",    ihr:"Erholt euch!",    Sie:"Erholen Sie sich!"}},
+    imp:{du:"Erhol dich!",    ihr:"Erholt euch!",    Sie:"Erholen Sie sich!"}, pt:"erholte sich", pf:"hat sich erholt"},
   "sich entspannen":{col:C.teal,  bg:C.tealBg,  note:"Reflexiv",
     ich:"entspanne mich", du:"entspannst dich", "er/sie/es":"entspannt sich",
     wir:"entspannen uns", ihr:"entspannt euch", "sie/Sie":"entspannen sich",
-    imp:{du:"Entspann dich!", ihr:"Entspannt euch!", Sie:"Entspannen Sie sich!"}},
+    imp:{du:"Entspann dich!", ihr:"Entspannt euch!", Sie:"Entspannen Sie sich!"}, pt:"entspannte sich", pf:"hat sich entspannt"},
   "sich bewegen":   {col:C.teal,  bg:C.tealBg,  note:"Reflexiv",
     ich:"bewege mich",    du:"bewegst dich",    "er/sie/es":"bewegt sich",
     wir:"bewegen uns",    ihr:"bewegt euch",    "sie/Sie":"bewegen sich",
-    imp:{du:"Beweg dich!",    ihr:"Bewegt euch!",    Sie:"Bewegen Sie sich!"}},
+    imp:{du:"Beweg dich!",    ihr:"Bewegt euch!",    Sie:"Bewegen Sie sich!"}, pt:"bewegte sich", pf:"hat sich bewegt"},
   "sich ausruhen":  {pref:"aus",  col:C.red,    bg:C.redBg,   note:"Reflexiv",
     ich:"ruhe mich … aus",  du:"ruhst dich … aus",  "er/sie/es":"ruht sich … aus",
     wir:"ruhen uns … aus",  ihr:"ruht euch … aus",  "sie/Sie":"ruhen sich … aus",
-    imp:{du:"Ruh dich aus!",  ihr:"Ruht euch aus!",  Sie:"Ruhen Sie sich aus!"}},
+    imp:{du:"Ruh dich aus!",  ihr:"Ruht euch aus!",  Sie:"Ruhen Sie sich aus!"}, pt:"ruhte sich … aus", pf:"hat sich ausgeruht"},
   "sich hinlegen":  {pref:"hin",  col:C.red,    bg:C.redBg,   note:"Reflexiv",
     ich:"lege mich … hin",  du:"legst dich … hin",  "er/sie/es":"legt sich … hin",
     wir:"legen uns … hin",  ihr:"legt euch … hin",  "sie/Sie":"legen sich … hin",
-    imp:{du:"Leg dich hin!",  ihr:"Legt euch hin!",  Sie:"Legen Sie sich hin!"}},
+    imp:{du:"Leg dich hin!",  ihr:"Legt euch hin!",  Sie:"Legen Sie sich hin!"}, pt:"legte sich … hin", pf:"hat sich hingelegt"},
   "sich leisten":   {col:C.teal,  bg:C.tealBg,  note:"Reflexiv (Dativ)",
     ich:"leiste mir",     du:"leistest dir",    "er/sie/es":"leistet sich",
     wir:"leisten uns",    ihr:"leistet euch",   "sie/Sie":"leisten sich",
-    imp:{du:"Leiste dir!",    ihr:"Leistet euch!",   Sie:"Leisten Sie sich!"}},
+    imp:{du:"Leiste dir!",    ihr:"Leistet euch!",   Sie:"Leisten Sie sich!"}, pt:"leistete sich", pf:"hat sich geleistet"},
   // L8 Gesundheit
   untersuchen: {col:C.teal, bg:C.tealBg,
     ich:"untersuche",  du:"untersuchst", "er/sie/es":"untersucht",
-    wir:"untersuchen", ihr:"untersucht", "sie/Sie":"untersuchen"},
+    wir:"untersuchen", ihr:"untersucht", "sie/Sie":"untersuchen", pt:"untersuchte", pf:"hat untersucht"},
   // L8E Notruf
   zusammenstoßen:{pref:"zusammen", col:C.red, bg:C.redBg, note:"sto\u00DF→st\u00F6\u00DFt",
     ich:"sto\u00DFe … zusammen",  du:"st\u00F6\u00DFt … zusammen", "er/sie/es":"st\u00F6\u00DFt … zusammen",
-    wir:"sto\u00DFen … zusammen", ihr:"sto\u00DFt … zusammen",     "sie/Sie":"sto\u00DFen … zusammen"},
+    wir:"sto\u00DFen … zusammen", ihr:"sto\u00DFt … zusammen",     "sie/Sie":"sto\u00DFen … zusammen", pt:"stieß … zusammen", pf:"ist zusammengestoßen"},
   // L9 Verkehr
   umsteigen:  {pref:"um",     col:C.orange, bg:C.orangeBg,
     ich:"steige … um",   du:"steigst … um",   "er/sie/es":"steigt … um",
-    wir:"steigen … um",  ihr:"steigt … um",   "sie/Sie":"steigen … um"},
+    wir:"steigen … um",  ihr:"steigt … um",   "sie/Sie":"steigen … um", pt:"stieg … um", pf:"ist umgestiegen"},
   weiterfahren:{pref:"weiter",col:C.blue,   bg:C.blueBg,  note:"a→ä",
     ich:"fahre … weiter",  du:"fährst … weiter",  "er/sie/es":"fährt … weiter",
-    wir:"fahren … weiter", ihr:"fahrt … weiter",  "sie/Sie":"fahren … weiter"},
+    wir:"fahren … weiter", ihr:"fahrt … weiter",  "sie/Sie":"fahren … weiter", pt:"fuhr … weiter", pf:"ist weitergefahren"},
   parken:     {col:C.teal,   bg:C.tealBg,
-    ich:"parke",     du:"parkst",     "er/sie/es":"parkt",     wir:"parken",   ihr:"parkt",    "sie/Sie":"parken"},
+    ich:"parke",     du:"parkst",     "er/sie/es":"parkt",     wir:"parken",   ihr:"parkt",    "sie/Sie":"parken", pt:"parkte", pf:"hat geparkt"},
   hupen:      {col:C.teal,   bg:C.tealBg,
-    ich:"hupe",      du:"hupst",      "er/sie/es":"hupt",      wir:"hupen",    ihr:"hupt",     "sie/Sie":"hupen"},
+    ich:"hupe",      du:"hupst",      "er/sie/es":"hupt",      wir:"hupen",    ihr:"hupt",     "sie/Sie":"hupen", pt:"hupte", pf:"hat gehupt"},
   blinken:    {col:C.teal,   bg:C.tealBg,
-    ich:"blinke",    du:"blinkst",    "er/sie/es":"blinkt",    wir:"blinken",  ihr:"blinkt",   "sie/Sie":"blinken"},
+    ich:"blinke",    du:"blinkst",    "er/sie/es":"blinkt",    wir:"blinken",  ihr:"blinkt",   "sie/Sie":"blinken", pt:"blinkte", pf:"hat geblinkt"},
   // L9B In der Stadt
   abbiegen:   {pref:"ab",    col:C.purple, bg:C.purpleBg,
     ich:"biege … ab",    du:"biegst … ab",    "er/sie/es":"biegt … ab",
-    wir:"biegen … ab",   ihr:"biegt … ab",    "sie/Sie":"biegen … ab"},
+    wir:"biegen … ab",   ihr:"biegt … ab",    "sie/Sie":"biegen … ab", pt:"bog … ab", pf:"ist abgebogen"},
   "sich verfahren":{col:C.teal, bg:C.tealBg, note:"a→ä | Reflexiv",
     ich:"verfahre mich",   du:"verfährst dich",   "er/sie/es":"verfährt sich",
     wir:"verfahren uns",   ihr:"verfahrt euch",   "sie/Sie":"verfahren sich",
-    imp:{du:"Verfahre dich nicht!", ihr:"Verfahrt euch nicht!", Sie:"Verfahren Sie sich nicht!"}},
+    imp:{du:"Verfahre dich nicht!", ihr:"Verfahrt euch nicht!", Sie:"Verfahren Sie sich nicht!"}, pt:"verfuhr sich", pf:"hat sich verfahren"},
   "sich verlaufen":{col:C.teal, bg:C.tealBg, note:"a→ä | Reflexiv",
     ich:"verlaufe mich",   du:"verläufst dich",   "er/sie/es":"verläuft sich",
     wir:"verlaufen uns",   ihr:"verlauft euch",   "sie/Sie":"verlaufen sich",
-    imp:{du:"Verlaube dich nicht!", ihr:"Verlauft euch nicht!", Sie:"Verlaufen Sie sich nicht!"}},
+    imp:{du:"Verlaube dich nicht!", ihr:"Verlauft euch nicht!", Sie:"Verlaufen Sie sich nicht!"}, pt:"verlief sich", pf:"hat sich verlaufen"},
   // L9C Führerschein
   dürfen:     {col:C.purple, bg:C.purpleBg, note:"Modalverb",
-    ich:"darf",     du:"darfst",    "er/sie/es":"darf",     wir:"dürfen",   ihr:"dürft",    "sie/Sie":"dürfen"},
+    ich:"darf",     du:"darfst",    "er/sie/es":"darf",     wir:"dürfen",   ihr:"dürft",    "sie/Sie":"dürfen", pt:"durfte", pf:"hat gedurft"},
   erlauben:   {col:C.teal,   bg:C.tealBg,
-    ich:"erlaube",   du:"erlaubst",   "er/sie/es":"erlaubt",   wir:"erlauben", ihr:"erlaubt",  "sie/Sie":"erlauben"},
+    ich:"erlaube",   du:"erlaubst",   "er/sie/es":"erlaubt",   wir:"erlauben", ihr:"erlaubt",  "sie/Sie":"erlauben", pt:"erlaubte", pf:"hat erlaubt"},
   verbieten:  {col:C.red,    bg:C.redBg,
-    ich:"verbiete",  du:"verbietest", "er/sie/es":"verbietet", wir:"verbieten",ihr:"verbietet","sie/Sie":"verbieten"},
+    ich:"verbiete",  du:"verbietest", "er/sie/es":"verbietet", wir:"verbieten",ihr:"verbietet","sie/Sie":"verbieten", pt:"verbot", pf:"hat verboten"},
   erkennen:   {col:C.teal,   bg:C.tealBg,
-    ich:"erkenne",   du:"erkennst",   "er/sie/es":"erkennt",   wir:"erkennen", ihr:"erkennt",  "sie/Sie":"erkennen"},
+    ich:"erkenne",   du:"erkennst",   "er/sie/es":"erkennt",   wir:"erkennen", ihr:"erkennt",  "sie/Sie":"erkennen", pt:"erkannte", pf:"hat erkannt"},
   vergessen:  {col:C.blue,   bg:C.blueBg,  note:"e→i",
     ich:"vergesse",  du:"vergisst",   "er/sie/es":"vergisst",  wir:"vergessen",ihr:"vergesst", "sie/Sie":"vergessen",
     imp:{du:"Vergiss!",  ihr:"Vergesst!",  Sie:"Vergessen Sie nicht!"}},
   // L9C
   anerkennen: {pref:"an",   col:C.teal,   bg:C.tealBg,
     ich:"erkenne … an", du:"erkennst … an", "er/sie/es":"erkennt … an",
-    wir:"erkennen … an",ihr:"erkennt … an", "sie/Sie":"erkennen … an"},
+    wir:"erkennen … an",ihr:"erkennt … an", "sie/Sie":"erkennen … an", pt:"erkannte … an", pf:"hat anerkannt"},
   // L10 Perfekt verbs
   träumen:    {col:C.teal,  bg:C.tealBg,
-    ich:"träume",    du:"träumst",    "er/sie/es":"träumt",    wir:"träumen",  ihr:"träumt",   "sie/Sie":"träumen"},
+    ich:"träume",    du:"träumst",    "er/sie/es":"träumt",    wir:"träumen",  ihr:"träumt",   "sie/Sie":"träumen", pt:"träumte", pf:"hat geträumt"},
   suchen:     {col:C.teal,  bg:C.tealBg,
-    ich:"suche",     du:"suchst",     "er/sie/es":"sucht",     wir:"suchen",   ihr:"sucht",    "sie/Sie":"suchen"},
+    ich:"suche",     du:"suchst",     "er/sie/es":"sucht",     wir:"suchen",   ihr:"sucht",    "sie/Sie":"suchen", pt:"suchte", pf:"hat gesucht"},
   reden:      {col:C.teal,  bg:C.tealBg,  note:"-e Einfügung",
-    ich:"rede",      du:"redest",     "er/sie/es":"redet",     wir:"reden",    ihr:"redet",    "sie/Sie":"reden"},
+    ich:"rede",      du:"redest",     "er/sie/es":"redet",     wir:"reden",    ihr:"redet",    "sie/Sie":"reden", pt:"redete", pf:"hat geredet"},
   abholen:    {pref:"ab",   col:C.orange, bg:C.orangeBg,
     ich:"hole … ab", du:"holst … ab", "er/sie/es":"holt … ab",
-    wir:"holen … ab",ihr:"holt … ab", "sie/Sie":"holen … ab"},
+    wir:"holen … ab",ihr:"holt … ab", "sie/Sie":"holen … ab", pt:"holte … ab", pf:"hat abgeholt"},
   // Базовые глаголы
   geben:      {col:C.blue,   bg:C.blueBg,   note:"e→i",
-    ich:"gebe",      du:"gibst",      "er/sie/es":"gibt",      wir:"geben",    ihr:"gebt",     "sie/Sie":"geben"},
+    ich:"gebe",      du:"gibst",      "er/sie/es":"gibt",      wir:"geben",    ihr:"gebt",     "sie/Sie":"geben", pt:"gab", pf:"hat gegeben"},
   helfen:     {col:C.blue,   bg:C.blueBg,   note:"e→i",
-    ich:"helfe",     du:"hilfst",     "er/sie/es":"hilft",     wir:"helfen",   ihr:"helft",    "sie/Sie":"helfen"},
+    ich:"helfe",     du:"hilfst",     "er/sie/es":"hilft",     wir:"helfen",   ihr:"helft",    "sie/Sie":"helfen", pt:"half", pf:"hat geholfen"},
   stehen:     {col:C.teal,   bg:C.tealBg,
-    ich:"stehe",     du:"stehst",     "er/sie/es":"steht",     wir:"stehen",   ihr:"steht",    "sie/Sie":"stehen"},
+    ich:"stehe",     du:"stehst",     "er/sie/es":"steht",     wir:"stehen",   ihr:"steht",    "sie/Sie":"stehen", pt:"stand", pf:"hat gestanden"},
   bringen:    {col:C.teal,   bg:C.tealBg,
-    ich:"bringe",    du:"bringst",    "er/sie/es":"bringt",    wir:"bringen",  ihr:"bringt",   "sie/Sie":"bringen"},
+    ich:"bringe",    du:"bringst",    "er/sie/es":"bringt",    wir:"bringen",  ihr:"bringt",   "sie/Sie":"bringen", pt:"brachte", pf:"hat gebracht"},
   denken:     {col:C.teal,   bg:C.tealBg,
-    ich:"denke",     du:"denkst",     "er/sie/es":"denkt",     wir:"denken",   ihr:"denkt",    "sie/Sie":"denken"},
+    ich:"denke",     du:"denkst",     "er/sie/es":"denkt",     wir:"denken",   ihr:"denkt",    "sie/Sie":"denken", pt:"dachte", pf:"hat gedacht"},
   wissen:     {col:C.purple, bg:C.purpleBg, note:"weiß (ich/er)",
-    ich:"weiß",      du:"weißt",      "er/sie/es":"weiß",      wir:"wissen",   ihr:"wisst",    "sie/Sie":"wissen"},
+    ich:"weiß",      du:"weißt",      "er/sie/es":"weiß",      wir:"wissen",   ihr:"wisst",    "sie/Sie":"wissen", pt:"wusste", pf:"hat gewusst"},
   tun:        {col:C.purple, bg:C.purpleBg,
-    ich:"tue",       du:"tust",       "er/sie/es":"tut",       wir:"tun",      ihr:"tut",      "sie/Sie":"tun"},
+    ich:"tue",       du:"tust",       "er/sie/es":"tut",       wir:"tun",      ihr:"tut",      "sie/Sie":"tun", pt:"tat", pf:"hat getan"},
   singen:     {col:C.teal,   bg:C.tealBg,
-    ich:"singe",     du:"singst",     "er/sie/es":"singt",     wir:"singen",   ihr:"singt",    "sie/Sie":"singen"},
+    ich:"singe",     du:"singst",     "er/sie/es":"singt",     wir:"singen",   ihr:"singt",    "sie/Sie":"singen", pt:"sang", pf:"hat gesungen"},
   rufen:      {col:C.teal,   bg:C.tealBg,
-    ich:"rufe",      du:"rufst",      "er/sie/es":"ruft",      wir:"rufen",    ihr:"ruft",     "sie/Sie":"rufen"},
+    ich:"rufe",      du:"rufst",      "er/sie/es":"ruft",      wir:"rufen",    ihr:"ruft",     "sie/Sie":"rufen", pt:"rief", pf:"hat gerufen"},
   weinen:     {col:C.teal,   bg:C.tealBg,
-    ich:"weine",     du:"weinst",     "er/sie/es":"weint",     wir:"weinen",   ihr:"weint",    "sie/Sie":"weinen"},
+    ich:"weine",     du:"weinst",     "er/sie/es":"weint",     wir:"weinen",   ihr:"weint",    "sie/Sie":"weinen", pt:"weinte", pf:"hat geweint"},
   üben:       {col:C.teal,   bg:C.tealBg,
-    ich:"übe",       du:"übst",       "er/sie/es":"übt",       wir:"üben",     ihr:"übt",      "sie/Sie":"üben"},
+    ich:"übe",       du:"übst",       "er/sie/es":"übt",       wir:"üben",     ihr:"übt",      "sie/Sie":"üben", pt:"übte", pf:"hat geübt"},
   stellen:    {col:C.teal,   bg:C.tealBg,
-    ich:"stelle",    du:"stellst",    "er/sie/es":"stellt",    wir:"stellen",  ihr:"stellt",   "sie/Sie":"stellen"},
+    ich:"stelle",    du:"stellst",    "er/sie/es":"stellt",    wir:"stellen",  ihr:"stellt",   "sie/Sie":"stellen", pt:"stellte", pf:"hat gestellt"},
   legen:      {col:C.teal,   bg:C.tealBg,
-    ich:"lege",      du:"legst",      "er/sie/es":"legt",      wir:"legen",    ihr:"legt",     "sie/Sie":"legen"},
+    ich:"lege",      du:"legst",      "er/sie/es":"legt",      wir:"legen",    ihr:"legt",     "sie/Sie":"legen", pt:"legte", pf:"hat gelegt"},
   zahlen:     {col:C.teal,   bg:C.tealBg,
-    ich:"zahle",     du:"zahlst",     "er/sie/es":"zahlt",     wir:"zahlen",   ihr:"zahlt",    "sie/Sie":"zahlen"},
+    ich:"zahle",     du:"zahlst",     "er/sie/es":"zahlt",     wir:"zahlen",   ihr:"zahlt",    "sie/Sie":"zahlen", pt:"zahlte", pf:"hat gezahlt"},
   rauchen:    {col:C.teal,   bg:C.tealBg,
-    ich:"rauche",    du:"rauchst",    "er/sie/es":"raucht",    wir:"rauchen",  ihr:"raucht",   "sie/Sie":"rauchen"},
+    ich:"rauche",    du:"rauchst",    "er/sie/es":"raucht",    wir:"rauchen",  ihr:"raucht",   "sie/Sie":"rauchen",
+    pt:"rauchte", pf:"hat geraucht"},
   // L8/L9 allgemein
   nachdenken:  {pref:"nach", col:C.teal,  bg:C.tealBg,
     ich:"denke … nach",   du:"denkst … nach",   "er/sie/es":"denkt … nach",
-    wir:"denken … nach",  ihr:"denkt … nach",   "sie/Sie":"denken … nach"},
+    wir:"denken … nach",  ihr:"denkt … nach",   "sie/Sie":"denken … nach", pt:"dachte … nach", pf:"hat nachgedacht"},
   ausgeben:    {pref:"aus",  col:C.red,   bg:C.redBg,   note:"e→i",
     ich:"gebe … aus",     du:"gibst … aus",     "er/sie/es":"gibt … aus",
-    wir:"geben … aus",    ihr:"gebt … aus",     "sie/Sie":"geben … aus"},
+    wir:"geben … aus",    ihr:"gebt … aus",     "sie/Sie":"geben … aus", pt:"gab … aus", pf:"hat ausgegeben"},
 };
 
 // Ударения: комбинирующая акута \u0301 ставится после ударной гласной
@@ -2877,7 +2878,7 @@ function Woerterbuch(){
   const [search,setSearch]=useState("");
   const [sortNew,setSortNew]=useState(true);
   const [openConj,setOpenConj]=useState(null);
-  const [impView,setImpView]=useState(false);
+  const [konjTab,setKonjTab]=useState("pres");
 
   const changeTyp=(t)=>{setTyp(t);setTema("all");setArt("all");setSelPref("all");};
   const changeTema=(t)=>{setTema(t);setArt("all");setSelPref("all");};
@@ -2999,7 +3000,7 @@ function Woerterbuch(){
           padding:"7px 8px",alignItems:"center",
           cursor:konj?"pointer":"default",
           background:isOpen?konj.col+"11":"transparent"}}
-          onClick={konj?()=>{setOpenConj(isOpen?null:w.de);setImpView(false);}:undefined}>
+          onClick={konj?()=>{setOpenConj(isOpen?null:w.de);setKonjTab("pres");}:undefined}>
           <div style={{display:"flex",flexDirection:"row",alignItems:"center",gap:5,minWidth:0}}>
             {(pc||w.art)&&(pc
               ?<span style={{background:pc.bg,border:`1px solid ${pc.col}55`,color:pc.col,
@@ -3040,14 +3041,18 @@ function Woerterbuch(){
         {konj&&isOpen&&(
           <div style={{background:konj.col+"0d",padding:"8px 10px",borderTop:`1px solid ${konj.col}22`}}>
             {/* Tab bar */}
-            <div style={{display:"flex",gap:4,marginBottom:8}}>
-              {[["Präsens",false],["Imperativ",true]].map(([label,val])=>(
-                konj.noImp&&val?null:
-                <button key={label} onClick={()=>setImpView(val)}
+            <div style={{display:"flex",gap:3,marginBottom:8,flexWrap:"wrap"}}>
+              {[
+                ["Präsens","pres",true],
+                ["Imperativ","imp",!konj.noImp],
+                ["Präteritum","praet",!!konj.pt],
+                ["Perfekt","pf",!!konj.pf],
+              ].filter(([,,show])=>show).map(([label,val])=>(
+                <button key={val} onClick={()=>setKonjTab(val)}
                   style={{flex:1,padding:"5px 0",borderRadius:7,cursor:"pointer",fontWeight:700,fontSize:11,
-                    border:`1px solid ${impView===val?konj.col:C.border}`,
-                    background:impView===val?konj.col+"22":"transparent",
-                    color:impView===val?konj.col:C.muted}}>
+                    border:`1px solid ${konjTab===val?konj.col:C.border}`,
+                    background:konjTab===val?konj.col+"22":"transparent",
+                    color:konjTab===val?konj.col:C.muted}}>
                   {label}
                 </button>
               ))}
@@ -3059,35 +3064,93 @@ function Woerterbuch(){
               {konj.pref&&<span style={{fontSize:11,color:C.muted}}>приставка: <b style={{color:konj.col}}>{konj.pref}-</b></span>}
               {konj.note&&<span style={{fontSize:11,color:C.orange}}>⚡ {konj.note}</span>}
             </div>
-            {/* Content */}
-            {impView&&imp
-              ? <div style={{display:"flex",flexDirection:"column",gap:5}}>
-                  {[
-                    ["du","1 человек (неформ.)",C.teal],
-                    ["ihr","группа (неформ.)",C.purple],
-                    ["Sie","формально",C.orange],
-                  ].map(([key,hint,col])=>(
-                    <div key={key} style={{display:"flex",alignItems:"center",gap:10,
-                      background:col+"15",border:`1px solid ${col}33`,borderRadius:8,padding:"7px 10px"}}>
-                      <span style={{fontSize:10,color:col,fontWeight:800,minWidth:28}}>{key}</span>
-                      <span style={{fontSize:16,fontWeight:800,color:col,flex:1}}>{imp[key==="Sie"?"Sie":key]}</span>
-                      <span style={{fontSize:10,color:C.muted}}>{hint}</span>
+            {/* Präsens */}
+            {konjTab==="pres"&&(
+              <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:5}}>
+                {[["ich",konj.ich],["wir",konj.wir],["du",konj.du],["ihr",konj.ihr],["er/sie/es",konj["er/sie/es"]],["sie/Sie",konj["sie/Sie"]]].map(([p,f])=>{
+                  const hi=hiCell(p);
+                  return(
+                    <div key={p} style={{background:hi?konj.bg:C.card2,
+                      border:`1px solid ${hi?konj.col+"55":C.border}`,borderRadius:7,padding:"5px 8px"}}>
+                      <div style={{fontSize:10,color:hi?konj.col:C.muted,marginBottom:1}}>{p}</div>
+                      <div style={{color:hi?konj.col:C.text,fontWeight:700,fontSize:13}}>{f}</div>
                     </div>
-                  ))}
-                </div>
-              : <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:5}}>
-                  {[["ich",konj.ich],["wir",konj.wir],["du",konj.du],["ihr",konj.ihr],["er/sie/es",konj["er/sie/es"]],["sie/Sie",konj["sie/Sie"]]].map(([p,f])=>{
-                    const hi=hiCell(p);
-                    return(
-                      <div key={p} style={{background:hi?konj.bg:C.card2,
-                        border:`1px solid ${hi?konj.col+"55":C.border}`,borderRadius:7,padding:"5px 8px"}}>
-                        <div style={{fontSize:10,color:hi?konj.col:C.muted,marginBottom:1}}>{p}</div>
-                        <div style={{color:hi?konj.col:C.text,fontWeight:700,fontSize:13}}>{f}</div>
+                  );
+                })}
+              </div>
+            )}
+            {/* Imperativ */}
+            {konjTab==="imp"&&imp&&(
+              <div style={{display:"flex",flexDirection:"column",gap:5}}>
+                {[
+                  ["du","1 человек (неформ.)",C.teal],
+                  ["ihr","группа (неформ.)",C.purple],
+                  ["Sie","формально",C.orange],
+                ].map(([key,hint,col])=>(
+                  <div key={key} style={{display:"flex",alignItems:"center",gap:10,
+                    background:col+"15",border:`1px solid ${col}33`,borderRadius:8,padding:"7px 10px"}}>
+                    <span style={{fontSize:10,color:col,fontWeight:800,minWidth:28}}>{key}</span>
+                    <span style={{fontSize:16,fontWeight:800,color:col,flex:1}}>{imp[key==="Sie"?"Sie":key]}</span>
+                    <span style={{fontSize:10,color:C.muted}}>{hint}</span>
+                  </div>
+                ))}
+              </div>
+            )}
+            {/* Präteritum */}
+            {konjTab==="praet"&&konj.pt&&(()=>{
+              const ptStem=konj.pt.endsWith("te")?konj.pt.slice(0,-1):null;
+              const forms=ptStem
+                ?[["ich",konj.pt],["wir",ptStem+"en"],["du",ptStem+"est"],["ihr",ptStem+"et"],["er/sie/es",konj.pt],["sie/Sie",ptStem+"en"]]
+                :[["ich",konj.pt],["wir",""],["du",""],["ihr",""],["er/sie/es",""],["sie/Sie",""]];
+              return(
+                <div>
+                  <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:5,marginBottom:6}}>
+                    {forms.map(([p,f])=>(
+                      <div key={p} style={{background:C.card2,border:`1px solid ${C.border}`,borderRadius:7,padding:"5px 8px"}}>
+                        <div style={{fontSize:10,color:C.muted,marginBottom:1}}>{p}</div>
+                        <div style={{color:f?C.orange:C.muted,fontWeight:700,fontSize:13}}>{f||"—"}</div>
                       </div>
-                    );
-                  })}
+                    ))}
+                  </div>
+                  {!ptStem&&<div style={{fontSize:11,color:C.muted,padding:"5px 8px",background:C.card2,borderRadius:7}}>
+                    ⚠️ Сильный глагол — Präteritum нужно запомнить
+                  </div>}
                 </div>
-            }
+              );
+            })()}
+            {/* Perfekt */}
+            {konjTab==="pf"&&konj.pf&&(()=>{
+              const [hilf,...ppParts]=konj.pf.split(" ");
+              const pp=ppParts.join(" ");
+              return(
+                <div>
+                  <div style={{background:C.purple+"15",border:`1px solid ${C.purple}33`,
+                    borderRadius:9,padding:"10px 14px",marginBottom:8,textAlign:"center"}}>
+                    <div style={{fontSize:11,color:C.muted,marginBottom:6}}>Perfekt = {hilf} + Partizip II</div>
+                    <div style={{fontSize:18,fontWeight:800,color:C.text}}>
+                      <span style={{color:C.orange}}>{hilf}</span>
+                      <span style={{color:C.muted}}> … </span>
+                      <span style={{color:C.purple}}>{pp}</span>
+                    </div>
+                  </div>
+                  <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:5}}>
+                    {[["ich",hilf==="hat"?"habe":"bin"],["wir",hilf==="hat"?"haben":"sind"],
+                      ["du",hilf==="hat"?"hast":"bist"],["ihr",hilf==="hat"?"habt":"seid"],
+                      ["er/sie/es",hilf],["sie/Sie",hilf==="hat"?"haben":"sind"]
+                    ].map(([p,h])=>(
+                      <div key={p} style={{background:C.card2,borderRadius:7,padding:"5px 8px"}}>
+                        <div style={{fontSize:10,color:C.muted,marginBottom:1}}>{p}</div>
+                        <div style={{fontSize:12,color:C.text}}>
+                          <span style={{color:C.orange,fontWeight:700}}>{h}</span>
+                          <span style={{color:C.muted}}> … </span>
+                          <span style={{color:C.purple,fontWeight:700}}>{pp}</span>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              );
+            })()}
           </div>
         )}
       </div>
@@ -8097,6 +8160,8 @@ const STARKE_VERBEN=[
 ];
 function T10A(){
   const [tab,setTab]=useState("struktur");
+  const [starkIdx,setStarkIdx]=useState(null);
+  const [starkFil,setStarkFil]=useState("all");
   const regelPP=[
     {inf:"machen",   pp:"gemacht",    stamm:"mach",    exc:false},
     {inf:"kochen",   pp:"gekocht",    stamm:"koch",    exc:false},
@@ -8143,7 +8208,7 @@ function T10A(){
       <Box c={C.purple}>
         <H c={C.purple}>📅 L10A · Perfekt</H>
         <div style={{display:"flex",gap:4,marginBottom:12,flexWrap:"wrap"}}>
-          {[["struktur","Struktur"],["pp","Partizip II"],["trenn","Trennb./Untrennb."],["hssein","haben / sein"],["stark","📋 Starke A1"]].map(([key,lbl])=>(
+          {[["struktur","Struktur"],["pp","Partizip II"],["trenn","Trennb./Untrennb."],["hssein","haben / sein"],["stark","📋 A1 & A2"]].map(([key,lbl])=>(
             <button key={key} onClick={()=>setTab(key)}
               style={{flex:1,minWidth:70,padding:"8px 4px",borderRadius:9,border:"none",cursor:"pointer",
                 fontSize:10,fontWeight:700,
@@ -8370,68 +8435,64 @@ function T10A(){
             </div>
           </div>
         )}
-        {tab==="stark"&&(()=>{
-          const [openIdx,setOpenIdx]=React.useState(null);
-          const [fil,setFil]=React.useState("all");
-          const filtered=fil==="all"?STARKE_VERBEN
-            :fil==="A1"||fil==="A2"?STARKE_VERBEN.filter(v=>v.lv===fil)
-            :STARKE_VERBEN.filter(v=>v.h===fil);
-          return(
-            <div>
-              <div style={{display:"flex",gap:4,marginBottom:6,flexWrap:"wrap"}}>
-                {[["all",`Все ${STARKE_VERBEN.length}`,"purple"],
-                  ["A1",`A1 ${STARKE_VERBEN.filter(v=>v.lv==="A1").length}`,"blue"],
-                  ["A2",`A2 ${STARKE_VERBEN.filter(v=>v.lv==="A2").length}`,"teal"],
-                  ["hat",`haben ${STARKE_VERBEN.filter(v=>v.h==="hat").length}`,"teal"],
-                  ["ist",`sein ${STARKE_VERBEN.filter(v=>v.h==="ist").length}`,"orange"],
-                ].map(([f,lbl,col])=>(
-                  <button key={f} onClick={()=>setFil(f)}
-                    style={{flex:1,minWidth:50,padding:"5px 3px",borderRadius:7,border:"none",cursor:"pointer",
-                      fontSize:10,fontWeight:700,
-                      background:fil===f?C[col]+"33":"transparent",
-                      color:fil===f?C[col]:C.muted}}>
-                    {lbl}
-                  </button>
-                ))}
-              </div>
-              <div style={{display:"flex",gap:6,paddingLeft:4,marginBottom:5,fontSize:10,color:C.muted,fontWeight:700}}>
-                <span style={{flex:1}}>Infinitiv (Präsens)</span>
-                <span style={{minWidth:80}}>Partizip II</span>
-                <span style={{minWidth:30}}>+</span>
-              </div>
-              {filtered.map((v,i)=>(
-                <div key={v.inf}>
-                  <div onClick={()=>setOpenIdx(openIdx===i?null:i)}
-                    style={{display:"flex",alignItems:"center",gap:6,padding:"6px 8px",
-                      background:openIdx===i?"rgba(255,255,255,.08)":"rgba(255,255,255,.03)",
-                      borderRadius:7,marginBottom:3,cursor:"pointer",
-                      borderLeft:`3px solid ${v.h==="ist"?C.orange:C.teal}`}}>
-                    <div style={{flex:1}}>
-                      <span style={{fontWeight:700,color:C.text,fontSize:12}}>{v.inf}</span>
-                      <span style={{color:C.muted,fontSize:10}}> ({v.pr})</span>
-                      <span style={{marginLeft:4,background:v.lv==="A1"?C.blue+"22":C.teal+"22",
-                        color:v.lv==="A1"?C.blue:C.teal,borderRadius:3,
-                        padding:"0px 4px",fontSize:9,fontWeight:700}}>{v.lv}</span>
-                    </div>
-                    <div style={{minWidth:80,color:C.purple,fontWeight:700,fontSize:12}}>{v.pp}</div>
-                    <div style={{minWidth:30,textAlign:"center"}}>
-                      <span style={{background:v.h==="ist"?C.orange+"33":C.teal+"33",
-                        color:v.h==="ist"?C.orange:C.teal,
-                        borderRadius:4,padding:"1px 5px",fontSize:10,fontWeight:800}}>{v.h}</span>
-                    </div>
-                  </div>
-                  {openIdx===i&&(
-                    <div style={{background:"rgba(255,255,255,.06)",borderRadius:"0 0 7px 7px",
-                      padding:"6px 10px",marginBottom:5,fontSize:11,color:C.muted,
-                      borderLeft:`3px solid ${v.h==="ist"?C.orange:C.teal}`,fontStyle:"italic"}}>
-                      💬 {v.bsp}
-                    </div>
-                  )}
-                </div>
+        {tab==="stark"&&(
+          <div>
+            <div style={{display:"flex",gap:4,marginBottom:6,flexWrap:"wrap"}}>
+              {[["all",`Все ${STARKE_VERBEN.length}`,"purple"],
+                ["A1",`A1 ${STARKE_VERBEN.filter(v=>v.lv==="A1").length}`,"blue"],
+                ["A2",`A2 ${STARKE_VERBEN.filter(v=>v.lv==="A2").length}`,"teal"],
+                ["hat",`haben ${STARKE_VERBEN.filter(v=>v.h==="hat").length}`,"teal"],
+                ["ist",`sein ${STARKE_VERBEN.filter(v=>v.h==="ist").length}`,"orange"],
+              ].map(([f,lbl,col])=>(
+                <button key={f} onClick={()=>setStarkFil(f)}
+                  style={{flex:1,minWidth:50,padding:"5px 3px",borderRadius:7,border:"none",cursor:"pointer",
+                    fontSize:10,fontWeight:700,
+                    background:starkFil===f?C[col]+"33":"transparent",
+                    color:starkFil===f?C[col]:C.muted}}>
+                  {lbl}
+                </button>
               ))}
             </div>
-          );
-        })()}
+            <div style={{display:"flex",gap:6,paddingLeft:4,marginBottom:5,fontSize:10,color:C.muted,fontWeight:700}}>
+              <span style={{flex:1}}>Infinitiv (Präsens)</span>
+              <span style={{minWidth:80}}>Partizip II</span>
+              <span style={{minWidth:30}}>+</span>
+            </div>
+            {(starkFil==="all"?STARKE_VERBEN
+              :starkFil==="A1"||starkFil==="A2"?STARKE_VERBEN.filter(v=>v.lv===starkFil)
+              :STARKE_VERBEN.filter(v=>v.h===starkFil)
+            ).map((v,i)=>(
+              <div key={v.inf}>
+                <div onClick={()=>setStarkIdx(starkIdx===i?null:i)}
+                  style={{display:"flex",alignItems:"center",gap:6,padding:"6px 8px",
+                    background:starkIdx===i?"rgba(255,255,255,.08)":"rgba(255,255,255,.03)",
+                    borderRadius:7,marginBottom:3,cursor:"pointer",
+                    borderLeft:`3px solid ${v.h==="ist"?C.orange:C.teal}`}}>
+                  <div style={{flex:1}}>
+                    <span style={{fontWeight:700,color:C.text,fontSize:12}}>{v.inf}</span>
+                    <span style={{color:C.muted,fontSize:10}}> ({v.pr})</span>
+                    <span style={{marginLeft:4,background:v.lv==="A1"?C.blue+"22":C.teal+"22",
+                      color:v.lv==="A1"?C.blue:C.teal,borderRadius:3,
+                      padding:"0px 4px",fontSize:9,fontWeight:700}}>{v.lv}</span>
+                  </div>
+                  <div style={{minWidth:80,color:C.purple,fontWeight:700,fontSize:12}}>{v.pp}</div>
+                  <div style={{minWidth:30,textAlign:"center"}}>
+                    <span style={{background:v.h==="ist"?C.orange+"33":C.teal+"33",
+                      color:v.h==="ist"?C.orange:C.teal,
+                      borderRadius:4,padding:"1px 5px",fontSize:10,fontWeight:800}}>{v.h}</span>
+                  </div>
+                </div>
+                {starkIdx===i&&(
+                  <div style={{background:"rgba(255,255,255,.06)",borderRadius:"0 0 7px 7px",
+                    padding:"6px 10px",marginBottom:5,fontSize:11,color:C.muted,
+                    borderLeft:`3px solid ${v.h==="ist"?C.orange:C.teal}`,fontStyle:"italic"}}>
+                    💬 {v.bsp}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
       </Box>
     </div>
   );
