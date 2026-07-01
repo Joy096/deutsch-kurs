@@ -1075,6 +1075,60 @@ const WBDATA=[
   {art:"",   de:"hängen",           pl:"—",            ru:"вешать, висеть"},
   {art:"",   de:"zahlen",           pl:"—",            ru:"платить · zahlt · hat gezahlt"},
   {art:"",   de:"rauchen",          pl:"—",            ru:"курить"},
+  // ── L10 · Wichtige Wörter (доп.) ─────────────────────────────────────────────
+  {art:"",   de:"heute",            pl:"—",            ru:"сегодня; в наши дни",                          tema:"MeinLeben"},
+  {art:"",   de:"unterwegs",        pl:"—",            ru:"в пути, в дороге",                             tema:"MeinLeben"},
+  {art:"die", de:"Postkarte",       pl:"-n",           ru:"открытка",                                     tema:"MeinLeben"},
+  {art:"",   de:"aufwachen",        pl:"—",            ru:"просыпаться (≠ aufstehen — вставать)",         tema:"MeinLeben"},
+  {art:"der", de:"Autoschlüssel",   pl:"-",            ru:"ключ от машины",                               tema:"MeinLeben"},
+  {art:"",   de:"am Anfang",        pl:"—",            ru:"в начале",                                     tema:"MeinLeben"},
+  {art:"",   de:"zuletzt",          pl:"—",            ru:"напоследок, в последний раз",                  tema:"MeinLeben"},
+  {art:"",   de:"seit",             pl:"—",            ru:"с (какого-то времени) · seit + Dativ",         tema:"MeinLeben"},
+  {art:"",   de:"arm",              pl:"—",            ru:"бедный",                                       tema:"MeinLeben"},
+  {art:"",   de:"schwer",           pl:"—",            ru:"тяжёлый; трудный",                             tema:"MeinLeben"},
+  {art:"das", de:"Taxiunternehmen", pl:"-",            ru:"таксомоторная компания",                       tema:"MeinLeben"},
+  {art:"der", de:"Angestellte",     pl:"-n",           ru:"служащий · die Angestellte = служащая",        tema:"MeinLeben"},
+  {art:"",   de:"wichtig",          pl:"—",            ru:"важный",                                       tema:"MeinLeben"},
+  {art:"das", de:"Radio",           pl:"-s",           ru:"радио · Radio hören = слушать радио",          tema:"MeinLeben"},
+  {art:"",   de:"finden",           pl:"—",            ru:"находить",                                     tema:"MeinLeben"},
+  {art:"",   de:"vorhaben",         pl:"—",            ru:"намереваться, планировать · Ich habe vor, nach Italien zu fahren", tema:"MeinLeben"},
+  {art:"",   de:"planen",           pl:"—",            ru:"планировать",                                  tema:"MeinLeben"},
+  {art:"",   de:"sich beeilen",     pl:"—",            ru:"торопиться, спешить · Ich habe mich beeilt",   tema:"MeinLeben"},
+  {art:"",   de:"malen",            pl:"—",            ru:"рисовать (красками)",                          tema:"MeinLeben"},
+  {art:"",   de:"sterben",          pl:"—",            ru:"умирать · stirbt · starb · ist gestorben",     tema:"MeinLeben"},
+  // ── L11 · Ämter und Behörden ─────────────────────────────────────────────────
+  {art:"das", de:"Amt",             pl:'"-er',         ru:"ведомство, учреждение",                        tema:"Ämter"},
+  {art:"",   de:"beantragen",       pl:"—",            ru:"подавать заявление (на что-то)",               tema:"Ämter"},
+  {art:"die", de:"Zulassung",       pl:"-en",          ru:"регистрация, допуск",                          tema:"Ämter"},
+  {art:"der", de:"Wohnsitz",        pl:"-e",           ru:"место жительства",                             tema:"Ämter"},
+  {art:"der", de:"Umzug",           pl:'"-e',          ru:"переезд",                                      tema:"Ämter"},
+  {art:"",   de:"umziehen",         pl:"—",            ru:"переезжать · ist umgezogen",                   tema:"Ämter"},
+  {art:"",   de:"einziehen",        pl:"—",            ru:"въезжать (в квартиру) · ist eingezogen",       tema:"Ämter"},
+  {art:"",   de:"ausziehen",        pl:"—",            ru:"выезжать (из квартиры) · ist ausgezogen",      tema:"Ämter"},
+  {art:"der", de:"Einzug",          pl:'"-e',          ru:"въезд (в жильё) · Tag des Einzugs",            tema:"Ämter"},
+  {art:"der", de:"Auszug",          pl:'"-e',          ru:"выезд (из жилья)",                             tema:"Ämter"},
+  {art:"",   de:"verlassen",        pl:"—",            ru:"покидать, оставлять",                          tema:"Ämter"},
+  {art:"",   de:"erwischen",        pl:"—",            ru:"успеть (на поезд); поймать · den Zug nicht erwischen", tema:"Ämter"},
+  {art:"",   de:"zur Welt bringen", pl:"—",            ru:"родить (ребёнка)",                             tema:"Ämter"},
+  {art:"",   de:"zur Welt kommen",  pl:"—",            ru:"родиться",                                     tema:"Ämter"},
+  {art:"das", de:"Angebot",         pl:"-e",           ru:"предложение (товар, услуга, скидка)",          tema:"Ämter"},
+  {art:"das", de:"Eigentum",        pl:"—",            ru:"собственность, имущество",                     tema:"Ämter"},
+  {art:"das", de:"Standesamt",      pl:'"-er',         ru:"ЗАГС",                                         tema:"Ämter"},
+  {art:"die", de:"Familienkasse",   pl:"-n",           ru:"семейная касса (выплачивает Kindergeld)",      tema:"Ämter"},
+  {art:"das", de:"Kindergeld",      pl:"—",            ru:"детское пособие",                              tema:"Ämter"},
+  {art:"die", de:"Kfz-Zulassungsstelle",pl:"-n",       ru:"пункт регистрации автомобилей",                tema:"Ämter"},
+  {art:"der", de:"Warteraum",       pl:'"-e',          ru:"зал ожидания",                                 tema:"Ämter"},
+  {art:"die", de:"Meldestelle",     pl:"-n",           ru:"паспортный стол, отдел регистрации",           tema:"Ämter"},
+  {art:"das", de:"Bürgeramt",       pl:'"-er',         ru:"бюро обслуживания граждан",                    tema:"Ämter"},
+  {art:"",   de:"anmelden",         pl:"—",            ru:"регистрировать; записывать(ся)",               tema:"Ämter"},
+  {art:"",   de:"abmelden",         pl:"—",            ru:"снимать с регистрации",                        tema:"Ämter"},
+  {art:"das", de:"Geburtsdatum",    pl:"-daten",       ru:"дата рождения",                                tema:"Ämter"},
+  {art:"der", de:"Geburtsort",      pl:"-e",           ru:"место рождения",                               tema:"Ämter"},
+  {art:"die", de:"Staatsangehörigkeit",pl:"-en",       ru:"гражданство",                                  tema:"Ämter"},
+  {art:"der", de:"Familienstand",   pl:"—",            ru:"семейное положение",                           tema:"Ämter"},
+  {art:"der", de:"Vermieter",       pl:"-",            ru:"арендодатель · die Vermieterin",               tema:"Ämter"},
+  {art:"die", de:"Gemeinde",        pl:"-n",           ru:"община, муниципалитет",                        tema:"Ämter"},
+  {art:"die", de:"Hauptwohnung",    pl:"-en",          ru:"основное жильё (≠ Nebenwohnung)",              tema:"Ämter"},
 ];
 
 
@@ -1588,6 +1642,48 @@ const KONJ_ALL={
     ich:"begleite",  du:"begleitest", "er/sie/es":"begleitet", wir:"begleiten",ihr:"begleitet","sie/Sie":"begleiten", pt:"begleitete", pf:"hat begleitet"},
   hängen:      {col:C.teal,  bg:C.tealBg,  note:"transitiv (вешать); 'висеть' = hing/gehangen",
     ich:"hänge",     du:"hängst",     "er/sie/es":"hängt",     wir:"hängen",   ihr:"hängt",    "sie/Sie":"hängen", pt:"hängte", pf:"hat gehängt"},
+  // L10/L11 (01.07.2026)
+  finden:      {col:C.purple,bg:C.purpleBg,
+    ich:"finde",     du:"findest",    "er/sie/es":"findet",    wir:"finden",   ihr:"findet",   "sie/Sie":"finden", pt:"fand", pf:"hat gefunden"},
+  sterben:     {col:C.orange,bg:C.orangeBg,note:"e→i",
+    ich:"sterbe",    du:"stirbst",    "er/sie/es":"stirbt",    wir:"sterben",  ihr:"sterbt",   "sie/Sie":"sterben",
+    imp:{du:"Stirb!", ihr:"Sterbt!", Sie:"Sterben Sie!"}, pt:"starb", pf:"ist gestorben"},
+  verlassen:   {col:C.orange,bg:C.orangeBg,note:"a→ä",
+    ich:"verlasse",  du:"verlässt",   "er/sie/es":"verlässt",  wir:"verlassen",ihr:"verlasst", "sie/Sie":"verlassen",
+    imp:{du:"Verlasse!", ihr:"Verlasst!", Sie:"Verlassen Sie!"}, pt:"verließ", pf:"hat verlassen"},
+  malen:       {col:C.teal,  bg:C.tealBg,
+    ich:"male",      du:"malst",      "er/sie/es":"malt",      wir:"malen",    ihr:"malt",     "sie/Sie":"malen", pt:"malte", pf:"hat gemalt"},
+  planen:      {col:C.teal,  bg:C.tealBg,
+    ich:"plane",     du:"planst",     "er/sie/es":"plant",     wir:"planen",   ihr:"plant",    "sie/Sie":"planen", pt:"plante", pf:"hat geplant"},
+  aufwachen:   {pref:"auf", col:C.teal, bg:C.tealBg,
+    ich:"wache … auf",  du:"wachst … auf",  "er/sie/es":"wacht … auf",
+    wir:"wachen … auf", ihr:"wacht … auf",  "sie/Sie":"wachen … auf", pt:"wachte … auf", pf:"ist aufgewacht"},
+  vorhaben:    {pref:"vor", col:C.blue, bg:C.blueBg, note:"⚠️ как haben",
+    ich:"habe … vor",   du:"hast … vor",    "er/sie/es":"hat … vor",
+    wir:"haben … vor",  ihr:"habt … vor",   "sie/Sie":"haben … vor", pt:"hatte … vor", pf:"hat vorgehabt"},
+  "sich beeilen":{col:C.teal, bg:C.tealBg, note:"Reflexiv",
+    ich:"beeile mich",   du:"beeilst dich",   "er/sie/es":"beeilt sich",
+    wir:"beeilen uns",   ihr:"beeilt euch",   "sie/Sie":"beeilen sich",
+    imp:{du:"Beeil dich!", ihr:"Beeilt euch!", Sie:"Beeilen Sie sich!"}, pt:"beeilte sich", pf:"hat sich beeilt"},
+  beantragen:  {col:C.teal,  bg:C.tealBg,  note:"untrennbar: kein ge-",
+    ich:"beantrage", du:"beantragst", "er/sie/es":"beantragt", wir:"beantragen",ihr:"beantragt","sie/Sie":"beantragen", pt:"beantragte", pf:"hat beantragt"},
+  erwischen:   {col:C.teal,  bg:C.tealBg,  note:"untrennbar: kein ge-",
+    ich:"erwische",  du:"erwischst",  "er/sie/es":"erwischt",  wir:"erwischen",ihr:"erwischt", "sie/Sie":"erwischen", pt:"erwischte", pf:"hat erwischt"},
+  umziehen:    {pref:"um",  col:C.orange,bg:C.orangeBg,
+    ich:"ziehe … um",   du:"ziehst … um",   "er/sie/es":"zieht … um",
+    wir:"ziehen … um",  ihr:"zieht … um",   "sie/Sie":"ziehen … um", pt:"zog … um", pf:"ist umgezogen"},
+  einziehen:   {pref:"ein", col:C.orange,bg:C.orangeBg,
+    ich:"ziehe … ein",  du:"ziehst … ein",  "er/sie/es":"zieht … ein",
+    wir:"ziehen … ein", ihr:"zieht … ein",  "sie/Sie":"ziehen … ein", pt:"zog … ein", pf:"ist eingezogen"},
+  ausziehen:   {pref:"aus", col:C.orange,bg:C.orangeBg,
+    ich:"ziehe … aus",  du:"ziehst … aus",  "er/sie/es":"zieht … aus",
+    wir:"ziehen … aus", ihr:"zieht … aus",  "sie/Sie":"ziehen … aus", pt:"zog … aus", pf:"ist ausgezogen"},
+  anmelden:    {pref:"an",  col:C.teal, bg:C.tealBg, note:"-e- вставка",
+    ich:"melde … an",   du:"meldest … an",  "er/sie/es":"meldet … an",
+    wir:"melden … an",  ihr:"meldet … an",  "sie/Sie":"melden … an", pt:"meldete … an", pf:"hat angemeldet"},
+  abmelden:    {pref:"ab",  col:C.teal, bg:C.tealBg, note:"-e- вставка",
+    ich:"melde … ab",   du:"meldest … ab",  "er/sie/es":"meldet … ab",
+    wir:"melden … ab",  ihr:"meldet … ab",  "sie/Sie":"melden … ab", pt:"meldete … ab", pf:"hat abgemeldet"},
 };
 
 // Ударения: комбинирующая акута \u0301 ставится после ударной гласной
@@ -1829,6 +1925,22 @@ const STRESS_MARKS={
 "grillen":"gri\u0301llen","tanzen":"ta\u0301nzen","schwimmen":"schwi\u0301mmen","joggen":"jo\u0301ggen",
 "lachen":"la\u0301chen","lächeln":"l\u00E4\u0301cheln","treiben":"tre\u0301iben","reiten":"re\u0301iten",
 "spazieren":"spazi\u0301eren",
+// L10/L11 (01.07.2026)
+"heute":"he\u0301ute","unterwegs":"unterwe\u0301gs","Postkarte":"Po\u0301stkarte","aufwachen":"a\u0301ufwachen",
+"Autoschlüssel":"A\u0301utoschlüssel","zuletzt":"zule\u0301tzt","seit":"se\u0301it","arm":"a\u0301rm",
+"schwer":"schwe\u0301r","Taxiunternehmen":"Ta\u0301xiunternehmen","Angestellte":"A\u0301ngestellte",
+"wichtig":"wi\u0301chtig","Radio":"Ra\u0301dio","finden":"fi\u0301nden","vorhaben":"vo\u0301rhaben",
+"planen":"pla\u0301nen","malen":"ma\u0301len","sterben":"ste\u0301rben",
+"Amt":"A\u0301mt","beantragen":"bea\u0301ntragen","Zulassung":"Zu\u0301lassung","Wohnsitz":"Wo\u0301hnsitz",
+"Umzug":"U\u0301mzug","umziehen":"u\u0301mziehen","einziehen":"e\u0301inziehen","ausziehen":"a\u0301usziehen",
+"Einzug":"E\u0301inzug","Auszug":"A\u0301uszug","verlassen":"verla\u0301ssen","erwischen":"erwi\u0301schen",
+"Angebot":"A\u0301ngebot","Eigentum":"E\u0301igentum","Standesamt":"Sta\u0301ndesamt",
+"Familienkasse":"Fami\u0301lienkasse","Kindergeld":"Ki\u0301ndergeld","Kfz-Zulassungsstelle":"Kfz-Zu\u0301lassungsstelle",
+"Warteraum":"Wa\u0301rteraum","Meldestelle":"Me\u0301ldestelle","Bürgeramt":"B\u00FC\u0301rgeramt",
+"anmelden":"a\u0301nmelden","abmelden":"a\u0301bmelden","Geburtsdatum":"Gebu\u0301rtsdatum",
+"Geburtsort":"Gebu\u0301rtsort","Staatsangehörigkeit":"Sta\u0301atsangehörigkeit",
+"Familienstand":"Fami\u0301lienstand","Vermieter":"Vermi\u0301eter","Gemeinde":"Geme\u0301inde",
+"Hauptwohnung":"Ha\u0301uptwohnung",
 "kochen":"ko\u0301chen","klingeln":"kli\u0301ngeln","starten":"sta\u0301rten","wollen":"wo\u0301llen",
 "vermuten":"vermu\u0301ten","reparieren":"repari\u0301eren","frühstücken":"fr\u00FC\u0301hstücken",
 "chillen":"chi\u0301llen","mögen":"m\u00F6\u0301gen",
@@ -2179,6 +2291,21 @@ const IPA_DATA={
 "selten":"[ˈzɛltən]","manchmal":"[ˈmançmaːl]","zusammen":"[tsuˈzamən]",
 "gerne":"[ˈɡɛʁnə]","jetzt":"[jɛtst]","auch":"[aʊx]",
 "nur":"[nuːɐ̯]","gern/gerne":"[ɡɛʁn/ˈɡɛʁnə]","spazieren gehen":"[ʃpaˈtsiːʁən ˈɡeːən]","spazieren":"[ʃpaˈtsiːʁən]",
+"heute":"[ˈhɔɪtə]","unterwegs":"[ʊntɐˈveːks]","Postkarte":"[ˈpɔstkaʁtə]","aufwachen":"[ˈaʊfvaxən]",
+"Autoschlüssel":"[ˈaʊtoʃlʏsəl]","zuletzt":"[tsuˈlɛtst]","seit":"[zaɪt]","arm":"[aʁm]",
+"schwer":"[ʃveːɐ̯]","Taxiunternehmen":"[ˈtaksiʊntɐˌneːmən]","Angestellte":"[ˈanɡəʃtɛltə]",
+"wichtig":"[ˈvɪçtɪç]","Radio":"[ˈʁaːdio]","finden":"[ˈfɪndən]","vorhaben":"[ˈfoːɐ̯haːbən]",
+"planen":"[ˈplaːnən]","malen":"[ˈmaːlən]","sterben":"[ˈʃtɛʁbən]",
+"Amt":"[amt]","beantragen":"[bəˈantʁaːɡən]","Zulassung":"[ˈtsuːlasʊŋ]","Wohnsitz":"[ˈvoːnzɪts]",
+"Umzug":"[ˈʊmtsuːk]","umziehen":"[ˈʊmtsiːən]","einziehen":"[ˈaɪntsiːən]","ausziehen":"[ˈaʊstsiːən]",
+"Einzug":"[ˈaɪntsuːk]","Auszug":"[ˈaʊstsuːk]","verlassen":"[fɛɐ̯ˈlasən]","erwischen":"[ɛɐ̯ˈvɪʃən]",
+"Angebot":"[ˈanɡəboːt]","Eigentum":"[ˈaɪɡəntuːm]","Standesamt":"[ˈʃtandəsʔamt]",
+"Familienkasse":"[faˈmiːliənkasə]","Kindergeld":"[ˈkɪndɐɡɛlt]","Kfz-Zulassungsstelle":"[kaʔɛfˈtsɛt-ˈtsuːlasʊŋsʃtɛlə]",
+"Warteraum":"[ˈvaʁtəʁaʊm]","Meldestelle":"[ˈmɛldəʃtɛlə]","Bürgeramt":"[ˈbʏʁɡɐʔamt]",
+"anmelden":"[ˈanmɛldən]","abmelden":"[ˈapmɛldən]","Geburtsdatum":"[ɡəˈbuːɐ̯tsdaːtʊm]",
+"Geburtsort":"[ɡəˈbuːɐ̯tsʔɔʁt]","Staatsangehörigkeit":"[ˈʃtaːtsʔanɡəhøːʁɪçkaɪt]",
+"Familienstand":"[faˈmiːliənʃtant]","Vermieter":"[fɛɐ̯ˈmiːtɐ]","Gemeinde":"[ɡəˈmaɪndə]",
+"Hauptwohnung":"[ˈhaʊptvoːnʊŋ]",
 "Grüße":"[ˈɡʁyːsə]","Leute":"[ˈlɔɪtə]","Seetang":"[ˈzeːtaŋ]","fast":"[fast]","doch":"[dɔx]","holen":"[ˈhoːlən]","fragen":"[ˈfʁaːɡən]","gehen":"[ˈɡeːən]",
 };
 
@@ -2427,7 +2554,7 @@ const DIALOGE={
   ],
 };
 const Box=({c,s={},children})=><div style={{background:c?c+"18":C.card,border:`1px solid ${c||C.border}`,borderRadius:14,padding:"14px 16px",...s}}>{children}</div>;
-const Pill=({c,children})=><span style={{background:c+"22",border:`1px solid ${c}55`,color:c,borderRadius:20,padding:"3px 10px",fontSize:12,fontWeight:700,display:"inline-block"}}>{children}</span>;
+const Pill=({c,children})=><span style={{background:c+"22",border:`1px solid ${c}55`,color:c,borderRadius:20,padding:"3px 10px",fontSize:13,fontWeight:700,display:"inline-block"}}>{children}</span>;
 const RuText=({ru,style={}})=>{
   if(!ru||!ru.includes("\n"))return <span style={style}>{ru}</span>;
   const[main,sub]=ru.split("\n");
@@ -2445,7 +2572,7 @@ function TabBar({tabs,active,onChange}){
         <button key={t.id} onClick={()=>onChange(t.id)}
           style={{flex:1,padding:"9px 4px",borderRadius:9,border:"none",
             background:active===t.id?C.border:"transparent",
-            color:active===t.id?C.text:C.muted,fontWeight:600,fontSize:12,cursor:"pointer"}}>
+            color:active===t.id?C.text:C.muted,fontWeight:600,fontSize:13,cursor:"pointer"}}>
           {t.label}
         </button>
       ))}
@@ -2484,8 +2611,8 @@ function Quiz({questions}){
   return(
     <div>
       <div style={{display:"flex",justifyContent:"space-between",marginBottom:6}}>
-        <span style={{color:C.muted,fontSize:12}}>{idx+1}/{questions.length}</span>
-        <span style={{color:C.green,fontSize:12}}>✓{score}</span>
+        <span style={{color:C.muted,fontSize:13}}>{idx+1}/{questions.length}</span>
+        <span style={{color:C.green,fontSize:13}}>✓{score}</span>
       </div>
       <div style={{height:3,background:C.border,borderRadius:3,marginBottom:12,overflow:"hidden"}}>
         <div style={{height:"100%",width:`${idx/questions.length*100}%`,background:C.green,transition:"width .3s"}}/>
@@ -2504,7 +2631,7 @@ function Quiz({questions}){
                 padding:"11px 14px",fontSize:14,fontWeight:500,cursor:"pointer",
                 textAlign:"left",display:"flex",gap:10,alignItems:"center"}}>
               <span style={{width:23,height:23,borderRadius:6,background:C.ov4,
-                fontSize:11,fontWeight:800,display:"flex",alignItems:"center",justifyContent:"center",flexShrink:0}}>
+                fontSize:12,fontWeight:800,display:"flex",alignItems:"center",justifyContent:"center",flexShrink:0}}>
                 {["A","B","C","D"][i]}
               </span>{o}
             </button>
@@ -2514,7 +2641,7 @@ function Quiz({questions}){
       {sel!==null&&ex.exp&&(
         <Box c={sel===ex.ans?C.green:C.red} s={{marginBottom:10}}>
           <span style={{color:sel===ex.ans?C.green:C.red,fontWeight:800}}>{sel===ex.ans?"✓ Richtig!  ":"✗ Falsch — "}</span>
-          <span style={{color:C.text,fontSize:13}}>{ex.exp}</span>
+          <span style={{color:C.text,fontSize:14}}>{ex.exp}</span>
         </Box>
       )}
       {sel!==null&&(
@@ -2544,14 +2671,14 @@ function DialogCards({lId}){
     <div style={{display:"flex",flexDirection:"column",gap:14}}>
       <Box c={C.teal}>
         <H c={C.teal}>💬 Диалоговые фразы</H>
-        <div style={{fontSize:13,color:C.muted}}>Нажми на вопрос — увидишь ответ. Список пополняется с каждым уроком.</div>
+        <div style={{fontSize:14,color:C.muted}}>Нажми на вопрос — увидишь ответ. Список пополняется с каждым уроком.</div>
       </Box>
 
       {/* ── Вопросы / Фразы табы ── */}
       <div style={{display:"flex",gap:6,background:C.card2,borderRadius:12,padding:4}}>
         {[{id:"fragen",label:"❓ Вопросы"},{id:"phrasen",label:"📋 Фразы"}].map(t=>(
           <button key={t.id} onClick={()=>setMode(t.id)} style={{
-            flex:1,padding:"8px 0",borderRadius:9,border:"none",cursor:"pointer",fontSize:13,fontWeight:600,
+            flex:1,padding:"8px 0",borderRadius:9,border:"none",cursor:"pointer",fontSize:14,fontWeight:600,
             background:mode===t.id?C.teal:"transparent",
             color:mode===t.id?"#000":C.muted,transition:"all .15s"
           }}>{t.label}</button>
@@ -2571,7 +2698,7 @@ function DialogCards({lId}){
                 <div style={{display:"flex",gap:4}}>
                   {[{id:"f",label:"Formell"},{id:"i",label:"Informell"}].map(t=>(
                     <button key={t.id} onClick={()=>{setFm(t.id);setOpenItems(new Set());}} style={{
-                      padding:"3px 10px",borderRadius:8,cursor:"pointer",fontSize:12,fontWeight:700,
+                      padding:"3px 10px",borderRadius:8,cursor:"pointer",fontSize:13,fontWeight:700,
                       border:`1.5px solid ${fm===t.id?g.col:C.border}`,
                       background:fm===t.id?g.col+"22":"transparent",
                       color:fm===t.id?g.col:C.muted
@@ -2593,10 +2720,10 @@ function DialogCards({lId}){
                     {isO&&(
                       <div style={{marginTop:10,paddingTop:10,borderTop:`1px solid ${C.border}`}}>
                         <div style={{background:g.col+"15",border:`1px solid ${g.col}40`,borderRadius:8,padding:"10px 12px",marginBottom:p.note?8:0}}>
-                          <div style={{fontSize:11,color:g.col,fontWeight:700,marginBottom:3}}>ОТВЕТ</div>
+                          <div style={{fontSize:12,color:g.col,fontWeight:700,marginBottom:3}}>ОТВЕТ</div>
                           <div style={{fontSize:14,fontWeight:600,color:C.text}}>{p.a}</div>
                         </div>
-                        {p.note&&<div style={{background:C.yellowBg,border:`1px solid ${C.yellow}35`,borderRadius:8,padding:"6px 10px",fontSize:12,color:C.yellow}}>💡 {p.note}</div>}
+                        {p.note&&<div style={{background:C.yellowBg,border:`1px solid ${C.yellow}35`,borderRadius:8,padding:"6px 10px",fontSize:13,color:C.yellow}}>💡 {p.note}</div>}
                       </div>
                     )}
                   </div>
@@ -2610,14 +2737,14 @@ function DialogCards({lId}){
       {/* ══ ФРАЗЫ — плоский список ══ */}
       {mode==="phrasen"&&(()=>{
         const all=groups.flatMap((g)=>filterFm(g.pairs).filter(p=>!p.q.includes("?")).map(p=>({...p,col:g.col})));
-        if(!all.length)return <div style={{color:C.muted,fontSize:13,textAlign:"center",padding:20}}>Нет фраз</div>;
+        if(!all.length)return <div style={{color:C.muted,fontSize:14,textAlign:"center",padding:20}}>Нет фраз</div>;
         return(
           <div style={{background:C.card,border:`1px solid ${C.border}`,borderRadius:14,overflow:"hidden"}}>
             {all.map((p,pi)=>(
               <div key={pi} style={{padding:"10px 14px",borderBottom:pi<all.length-1?`1px solid ${C.border}30`:"none"}}>
-                <div style={{fontSize:13,fontWeight:700,color:C.text,marginBottom:4}}>{p.q}</div>
-                <div style={{fontSize:12,color:p.col,marginBottom:p.note?3:0}}>↩ {p.a}</div>
-                {p.note&&<div style={{fontSize:11,color:C.muted,marginTop:2}}>📝 {p.note}</div>}
+                <div style={{fontSize:14,fontWeight:700,color:C.text,marginBottom:4}}>{p.q}</div>
+                <div style={{fontSize:13,color:p.col,marginBottom:p.note?3:0}}>↩ {p.a}</div>
+                {p.note&&<div style={{fontSize:12,color:C.muted,marginTop:2}}>📝 {p.note}</div>}
               </div>
             ))}
           </div>
@@ -2643,7 +2770,7 @@ function AlphabetTrainer(){
           {ALPHABET.map(a=>(
             <div key={a.l} style={{background:C.card,border:`1px solid ${C.border}`,borderRadius:10,padding:"8px 4px",textAlign:"center"}}>
               <div style={{fontWeight:900,fontSize:18,color:C.blue}}>{a.l}</div>
-              <div style={{fontSize:11,color:C.muted,marginTop:2}}>{a.n}</div>
+              <div style={{fontSize:12,color:C.muted,marginTop:2}}>{a.n}</div>
             </div>
           ))}
         </div>
@@ -2668,7 +2795,7 @@ function ZahlenTrainer20(){
           {Z20.map(z=>(
             <div key={z.n} style={{background:C.card,border:`1px solid ${C.border}`,borderRadius:10,padding:"10px",textAlign:"center"}}>
               <div style={{fontWeight:900,fontSize:22,color:C.orange}}>{z.n}</div>
-              <div style={{fontSize:13,color:C.text,marginTop:3}}>{z.w}</div>
+              <div style={{fontSize:14,color:C.text,marginTop:3}}>{z.w}</div>
             </div>
           ))}
         </div>
@@ -2711,14 +2838,14 @@ function ZahlenTrainer1000(){
               <b style={{color:C.orange}}>единицы + und + десятки</b><br/>
               45 = fünf<b style={{color:C.orange}}>und</b>vierzig<br/>
               21 = ein<b style={{color:C.orange}}>und</b>zwanzig (не zwei!)<br/>
-              <span style={{color:C.muted,fontSize:12}}>⚠️ dreißig (не dreizig!) — особое написание</span>
+              <span style={{color:C.muted,fontSize:13}}>⚠️ dreißig (не dreizig!) — особое написание</span>
             </div>
           </Box>
           <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:6}}>
             {ZEHNER.map(z=>(
               <div key={z.n} style={{background:C.card,border:`1px solid ${C.border}`,borderRadius:10,padding:"10px",display:"flex",justifyContent:"space-between",alignItems:"center"}}>
                 <span style={{fontWeight:900,fontSize:20,color:C.orange}}>{z.n}</span>
-                <span style={{fontSize:13,color:C.text}}>{z.w}</span>
+                <span style={{fontSize:14,color:C.text}}>{z.w}</span>
               </div>
             ))}
           </div>
@@ -2728,8 +2855,8 @@ function ZahlenTrainer1000(){
               {[["Polizei","110","Полиция"],["Feuerwehr / Notruf","112","Пожарные / Скорая"]].map(([n,num,ru])=>(
                 <div key={n} style={{background:C.redBg,border:`1px solid ${C.red}`,borderRadius:10,padding:"10px",textAlign:"center"}}>
                   <div style={{fontWeight:900,fontSize:24,color:C.red}}>{num}</div>
-                  <div style={{fontSize:12,color:C.text,marginTop:3}}>{n}</div>
-                  <div style={{fontSize:11,color:C.muted}}>{ru}</div>
+                  <div style={{fontSize:13,color:C.text,marginTop:3}}>{n}</div>
+                  <div style={{fontSize:12,color:C.muted}}>{ru}</div>
                 </div>
               ))}
             </div>
@@ -2740,7 +2867,7 @@ function ZahlenTrainer1000(){
               {[["Deutschland","+49","9"],["Österreich","+43","43"],["Schweiz","+41","41"],["München","089",""],["Berlin","030",""],["Frankfurt","069",""]].map(([n,v,l])=>(
                 <div key={n} style={{background:C.card2,border:`1px solid ${C.border}`,borderRadius:8,padding:"7px",textAlign:"center"}}>
                   <div style={{fontWeight:800,fontSize:16,color:C.blue}}>{v}</div>
-                  <div style={{fontSize:11,color:C.muted,marginTop:2}}>{n}</div>
+                  <div style={{fontSize:12,color:C.muted,marginTop:2}}>{n}</div>
                 </div>
               ))}
             </div>
@@ -2773,17 +2900,17 @@ function getPluralEnd(de,pl){
 function BewertungBlock(){
   return(
     <div style={{display:"flex",flexDirection:"column",gap:8,padding:"8px 8px 4px"}}>
-      <div style={{fontSize:11,color:C.muted,fontWeight:700,textTransform:"uppercase",letterSpacing:1,padding:"0 0 4px"}}>Bewertung — Оценка</div>
+      <div style={{fontSize:12,color:C.muted,fontWeight:700,textTransform:"uppercase",letterSpacing:1,padding:"0 0 4px"}}>Bewertung — Оценка</div>
       {BEWERTUNG.map(group=>(
         <div key={group.e} style={{background:group.col+"12",border:`1px solid ${group.col}30`,borderRadius:10,overflow:"hidden"}}>
           <div style={{background:group.col+"22",padding:"5px 10px",display:"flex",alignItems:"center",gap:8}}>
             <span style={{fontSize:18}}>{group.e}</span>
-            <span style={{fontSize:12,color:group.col,fontWeight:700}}>{group.label}</span>
+            <span style={{fontSize:13,color:group.col,fontWeight:700}}>{group.label}</span>
           </div>
           {group.words.map(w=>(
             <div key={w.de} style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:4,padding:"6px 10px",borderBottom:`1px solid ${group.col}15`}}>
-              <span style={{fontSize:13,color:C.text,fontWeight:600}}>{w.de}</span>
-              <span style={{fontSize:12,color:C.muted}}>{w.ru}</span>
+              <span style={{fontSize:14,color:C.text,fontWeight:600}}>{w.de}</span>
+              <span style={{fontSize:13,color:C.muted}}>{w.ru}</span>
             </div>
           ))}
         </div>
@@ -2812,26 +2939,26 @@ function AbkBlock({standalone}){
     <div style={{display:"flex",flexDirection:"column",gap:12}}>
       <Box c={C.blue}>
         <H c={C.blue}>📋 Abkürzungen in Wohnungsanzeigen</H>
-        <div style={{fontSize:12,color:C.muted,marginBottom:10}}>Сокращения в объявлениях об аренде — упр. 22</div>
+        <div style={{fontSize:13,color:C.muted,marginBottom:10}}>Сокращения в объявлениях об аренде — упр. 22</div>
         <div style={{background:C.card2,borderRadius:10,overflow:"hidden"}}>
           <div style={{display:"grid",gridTemplateColumns:"auto 1fr auto",gap:0}}>
             {["Кратко","Полностью","Перевод"].map(h=>(
-              <div key={h} style={{fontSize:11,color:C.muted,fontWeight:700,padding:"6px 10px",background:C.card2,textTransform:"uppercase",letterSpacing:1}}>{h}</div>
+              <div key={h} style={{fontSize:12,color:C.muted,fontWeight:700,padding:"6px 10px",background:C.card2,textTransform:"uppercase",letterSpacing:1}}>{h}</div>
             ))}
             {ABK.map(({short,full,ru},i)=>[
-              <div key={short+"s"} style={{padding:"7px 10px",borderTop:`1px solid ${C.border}33`,fontWeight:800,fontSize:13,color:C.blue,background:i%2===0?C.card:"transparent"}}>{short}</div>,
-              <div key={short+"f"} style={{padding:"7px 10px",borderTop:`1px solid ${C.border}33`,fontSize:13,color:C.text,background:i%2===0?C.card:"transparent"}}>{full}</div>,
-              <div key={short+"r"} style={{padding:"7px 10px",borderTop:`1px solid ${C.border}33`,fontSize:12,color:C.muted,background:i%2===0?C.card:"transparent"}}>{ru}</div>,
+              <div key={short+"s"} style={{padding:"7px 10px",borderTop:`1px solid ${C.border}33`,fontWeight:800,fontSize:14,color:C.blue,background:i%2===0?C.card:"transparent"}}>{short}</div>,
+              <div key={short+"f"} style={{padding:"7px 10px",borderTop:`1px solid ${C.border}33`,fontSize:14,color:C.text,background:i%2===0?C.card:"transparent"}}>{full}</div>,
+              <div key={short+"r"} style={{padding:"7px 10px",borderTop:`1px solid ${C.border}33`,fontSize:13,color:C.muted,background:i%2===0?C.card:"transparent"}}>{ru}</div>,
             ])}
           </div>
         </div>
       </Box>
       <Box c={C.yellow}>
         <H c={C.yellow} z={13}>📰 Пример объявления</H>
-        <div style={{background:C.card2,borderRadius:8,padding:"10px 12px",fontSize:12,color:C.text,lineHeight:1.9}}>
+        <div style={{background:C.card2,borderRadius:8,padding:"10px 12px",fontSize:13,color:C.text,lineHeight:1.9}}>
           <b style={{color:C.blue}}>3 Zi.-Whg.</b>, 80 <b style={{color:C.blue}}>qm</b>, <b style={{color:C.blue}}>EBK</b>, Bad, <b style={{color:C.blue}}>ZH</b>,<br/>
           ruhige Lage, 850 € + 180 € <b style={{color:C.blue}}>NK</b><br/>
-          <span style={{color:C.muted,fontSize:11}}>= 3-комнатная квартира, 80 кв.м, встр. кухня, ванная, центр. отопление, тихое место, 850€ + 180€ коммунальные</span>
+          <span style={{color:C.muted,fontSize:12}}>= 3-комнатная квартира, 80 кв.м, встр. кухня, ванная, центр. отопление, тихое место, 850€ + 180€ коммунальные</span>
         </div>
       </Box>
     </div>
@@ -2845,8 +2972,8 @@ function WbRegeln(){
       <button onClick={()=>setOpen(o=>!o)}
         style={{width:"100%",background:C.card2,border:`1px solid ${C.border}`,borderRadius:10,
           padding:"9px 14px",display:"flex",justifyContent:"space-between",alignItems:"center",cursor:"pointer"}}>
-        <span style={{fontWeight:700,fontSize:13,color:C.yellow}}>📌 Правила: артикли & окончания множ. числа</span>
-        <span style={{color:C.muted,fontSize:13}}>{open?"▲":"▼"}</span>
+        <span style={{fontWeight:700,fontSize:14,color:C.yellow}}>📌 Правила: артикли & окончания множ. числа</span>
+        <span style={{color:C.muted,fontSize:14}}>{open?"▲":"▼"}</span>
       </button>
       {open&&(
         <div style={{background:C.card,border:`1px solid ${C.border}`,borderRadius:10,padding:"12px 14px",marginTop:4,
@@ -2854,7 +2981,7 @@ function WbRegeln(){
 
           {/* Артикли */}
           <div>
-            <div style={{fontWeight:700,fontSize:12,color:C.yellow,marginBottom:8,textTransform:"uppercase",letterSpacing:1}}>
+            <div style={{fontWeight:700,fontSize:13,color:C.yellow,marginBottom:8,textTransform:"uppercase",letterSpacing:1}}>
               🏷️ Как узнать артикль по окончанию слова
             </div>
             {[
@@ -2885,17 +3012,17 @@ function WbRegeln(){
             ].map(({art,col,tips})=>(
               <div key={art} style={{background:col+"12",border:`1px solid ${col}30`,borderRadius:8,padding:"8px 10px",marginBottom:6}}>
                 <div style={{background:col+"22",border:`1px solid ${col}55`,color:col,borderRadius:6,
-                  padding:"2px 8px",fontWeight:800,fontSize:13,display:"inline-block",marginBottom:6}}>{art}</div>
+                  padding:"2px 8px",fontWeight:800,fontSize:14,display:"inline-block",marginBottom:6}}>{art}</div>
                 {tips.map(t=>{
                   const parts=t.split(" → ");
                   const isEnding=parts.length===2&&parts[0].startsWith("-");
                   return(
-                    <div key={t} style={{fontSize:12,color:C.muted,marginBottom:3,display:"flex",alignItems:"baseline",gap:4,flexWrap:"wrap"}}>
+                    <div key={t} style={{fontSize:13,color:C.muted,marginBottom:3,display:"flex",alignItems:"baseline",gap:4,flexWrap:"wrap"}}>
                       <span>•</span>
                       {isEnding?(
                         <>
                           <span style={{background:col+"30",border:`1px solid ${col}60`,color:col,
-                            borderRadius:4,padding:"0px 5px",fontWeight:800,fontSize:12,fontFamily:"monospace"}}>
+                            borderRadius:4,padding:"0px 5px",fontWeight:800,fontSize:13,fontFamily:"monospace"}}>
                             {parts[0]}
                           </span>
                           <span style={{color:C.muted}}>→</span>
@@ -2913,7 +3040,7 @@ function WbRegeln(){
 
           {/* Окончания мн.числа */}
           <div>
-            <div style={{fontWeight:700,fontSize:12,color:C.yellow,marginBottom:8,textTransform:"uppercase",letterSpacing:1}}>
+            <div style={{fontWeight:700,fontSize:13,color:C.yellow,marginBottom:8,textTransform:"uppercase",letterSpacing:1}}>
               📋 Типы окончаний множественного числа
             </div>
             {[
@@ -2927,10 +3054,10 @@ function WbRegeln(){
             ].map(({tp,col,ex,tip})=>(
               <div key={tp} style={{display:"flex",gap:8,marginBottom:7,alignItems:"flex-start"}}>
                 <span style={{background:col+"22",border:`1px solid ${col}55`,color:col,
-                  borderRadius:6,padding:"2px 9px",fontWeight:900,fontSize:12,flexShrink:0,minWidth:36,textAlign:"center"}}>{tp}</span>
+                  borderRadius:6,padding:"2px 9px",fontWeight:900,fontSize:13,flexShrink:0,minWidth:36,textAlign:"center"}}>{tp}</span>
                 <div>
-                  <div style={{fontSize:12,color:C.text}}>{ex}</div>
-                  <div style={{fontSize:11,color:C.muted}}>{tip}</div>
+                  <div style={{fontSize:13,color:C.text}}>{ex}</div>
+                  <div style={{fontSize:12,color:C.muted}}>{tip}</div>
                 </div>
               </div>
             ))}
@@ -2966,6 +3093,7 @@ function Woerterbuch(){
     {id:"InDerStadt",     label:"🏙️ In der Stadt",        col:C.teal},
     {id:"Fuehrerschein",  label:"🚦 Führerschein",         col:C.orange},
     {id:"MeinLeben",      label:"👤 Mein Leben",            col:C.purple},
+    {id:"Ämter",          label:"🏛️ Ämter",                 col:C.green},
   ];
   const TYPEN=[
     {id:"all",     label:"Все",           col:C.teal},
@@ -3415,11 +3543,11 @@ function Flashcards(){
   return(
     <div>
       <div style={{display:"flex",justifyContent:"space-between",marginBottom:10}}>
-        <span style={{color:C.muted,fontSize:13}}>{idx+1}/{words.length} · <span style={{color:C.green}}>✓{known.size}</span></span>
-        <button onClick={()=>{setIdx(0);setFlip(false);setKnown(new Set());}} style={{background:"none",border:`1px solid ${C.border}`,color:C.muted,borderRadius:8,padding:"3px 10px",fontSize:12,cursor:"pointer"}}>Сначала</button>
+        <span style={{color:C.muted,fontSize:14}}>{idx+1}/{words.length} · <span style={{color:C.green}}>✓{known.size}</span></span>
+        <button onClick={()=>{setIdx(0);setFlip(false);setKnown(new Set());}} style={{background:"none",border:`1px solid ${C.border}`,color:C.muted,borderRadius:8,padding:"3px 10px",fontSize:13,cursor:"pointer"}}>Сначала</button>
       </div>
       <div onClick={()=>setFlip(f=>!f)} style={{background:C.card,border:`2px solid ${flip?AC(w.art):C.border}`,borderRadius:16,minHeight:190,display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",cursor:"pointer",userSelect:"none",textAlign:"center",padding:20,marginBottom:12}}>
-        {!flip?(<><div style={{fontSize:12,color:C.muted,marginBottom:12}}>👆 нажми</div><div style={{fontSize:36,fontWeight:900,color:C.text}}>{w.de}</div><div style={{fontSize:12,color:C.muted,marginTop:6}}>die {w.pl}</div></>)
+        {!flip?(<><div style={{fontSize:13,color:C.muted,marginBottom:12}}>👆 нажми</div><div style={{fontSize:36,fontWeight:900,color:C.text}}>{w.de}</div><div style={{fontSize:13,color:C.muted,marginTop:6}}>die {w.pl}</div></>)
         :(<><div style={{fontSize:28,fontWeight:900,color:AC(w.art),marginBottom:4}}>{w.art}</div><div style={{fontSize:26,fontWeight:800,color:C.text,marginBottom:6}}>{w.de}</div><div style={{fontSize:18,color:C.muted,marginBottom:8}}><RuText ru={w.ru}/></div><Pill c={C.yellow}>{w.pt}</Pill></>)}
       </div>
       {flip&&<div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:10}}>
@@ -3453,14 +3581,14 @@ function ArtikelTrainer(){
   </div>);
   return(<div>
     <div style={{display:"flex",justifyContent:"space-between",marginBottom:10}}>
-      <span style={{color:C.muted,fontSize:13}}>{idx+1}/{words.length}</span>
-      <span><span style={{color:C.green,fontSize:13}}>✓{sc}</span> <span style={{color:C.red,fontSize:13}}>✗{wr}</span></span>
+      <span style={{color:C.muted,fontSize:14}}>{idx+1}/{words.length}</span>
+      <span><span style={{color:C.green,fontSize:14}}>✓{sc}</span> <span style={{color:C.red,fontSize:14}}>✗{wr}</span></span>
     </div>
     <Box s={{minHeight:150,display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",textAlign:"center",marginBottom:16,border:`2px solid ${flash==="ok"?C.green:flash==="fail"?C.red:C.border}`}}>
-      <div style={{fontSize:12,color:C.muted,marginBottom:8}}>Какой артикль?</div>
+      <div style={{fontSize:13,color:C.muted,marginBottom:8}}>Какой артикль?</div>
       <div style={{fontSize:34,fontWeight:900,color:C.text}}>{w.de}</div>
-      <div style={{fontSize:13,color:C.muted,marginTop:4}}>{w.ru}</div>
-      {flash==="fail"&&<div style={{color:C.red,fontSize:13,marginTop:8}}>Правильно: <b style={{color:AC(w.art)}}>{w.art}</b></div>}
+      <div style={{fontSize:14,color:C.muted,marginTop:4}}>{w.ru}</div>
+      {flash==="fail"&&<div style={{color:C.red,fontSize:14,marginTop:8}}>Правильно: <b style={{color:AC(w.art)}}>{w.art}</b></div>}
       {flash==="ok"&&<div style={{fontSize:20,marginTop:6}}>✓</div>}
     </Box>
     <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:10}}>
@@ -3514,15 +3642,15 @@ function SentenceBuilder(){
   </div>);
   return(<div>
     <div style={{display:"flex",justifyContent:"space-between",marginBottom:10}}>
-      <span style={{color:C.muted,fontSize:13}}>{idx+1}/{SENTS.length}</span>
-      <span style={{color:C.green,fontSize:13}}>✓{sc}</span>
+      <span style={{color:C.muted,fontSize:14}}>{idx+1}/{SENTS.length}</span>
+      <span style={{color:C.green,fontSize:14}}>✓{sc}</span>
     </div>
     <Box c={C.yellow} s={{marginBottom:12}}>
-      <div style={{fontSize:12,color:C.muted,marginBottom:3}}>Составь предложение:</div>
+      <div style={{fontSize:13,color:C.muted,marginBottom:3}}>Составь предложение:</div>
       <div style={{fontSize:16,fontWeight:700,color:C.yellow}}>{s.ru}</div>
     </Box>
     <div style={{minHeight:50,background:C.card,border:`1.5px solid ${res==="ok"?C.green:res==="fail"?C.red:C.blue}`,borderRadius:12,padding:"10px 14px",marginBottom:10,display:"flex",flexWrap:"wrap",gap:8,alignItems:"center"}}>
-      {chosen.length===0?<span style={{color:C.muted,fontSize:13}}>Нажимай слова снизу...</span>
+      {chosen.length===0?<span style={{color:C.muted,fontSize:14}}>Нажимай слова снизу...</span>
        :chosen.map((w,i)=><button key={i} onClick={()=>unpick(i)} style={{background:C.blueBg,border:`1px solid ${C.blue}`,color:C.blue,borderRadius:8,padding:"5px 11px",fontSize:14,cursor:"pointer"}}>{w}</button>)}
     </div>
     <div style={{display:"flex",flexWrap:"wrap",gap:8,marginBottom:12}}>
@@ -3554,22 +3682,22 @@ function AdresseTrainer(){
         <div style={{display:"flex",flexDirection:"column",gap:8}}>
           {ADRESSE.map(a=>(
             <div key={a.de} style={{background:C.card,border:`1px solid ${C.border}`,borderRadius:10,padding:"10px 14px",display:"flex",gap:10,alignItems:"center"}}>
-              <span style={{background:AB(a.art),border:`1px solid ${AC(a.art)}`,color:AC(a.art),borderRadius:7,padding:"2px 8px",fontWeight:800,fontSize:13,flexShrink:0}}>{a.art}</span>
+              <span style={{background:AB(a.art),border:`1px solid ${AC(a.art)}`,color:AC(a.art),borderRadius:7,padding:"2px 8px",fontWeight:800,fontSize:14,flexShrink:0}}>{a.art}</span>
               <span style={{fontWeight:700,color:C.text,flex:1}}>{a.de}</span>
-              <span style={{color:C.muted,fontSize:13}}>{a.ru}</span>
+              <span style={{color:C.muted,fontSize:14}}>{a.ru}</span>
             </div>
           ))}
           <Box c={C.yellow}>
             <H c={C.yellow} z={13}>📧 E-Mail lesen</H>
-            <div style={{fontSize:13,color:C.text,lineHeight:1.9}}>
+            <div style={{fontSize:14,color:C.text,lineHeight:1.9}}>
               kita-regenbogen@gmx.de читается:<br/>
               <b style={{color:C.blue}}>kita bindestrich regenbogen ätt ge em ix <span style={{color:C.orange}}>punkt</span> de e</b><br/>
-              <span style={{color:C.muted,fontSize:12}}>@ = <b style={{color:C.green}}>ätt</b>  ·  . = <b style={{color:C.orange}}>Punkt</b>  ·  - = <b style={{color:C.muted}}>Bindestrich</b></span>
+              <span style={{color:C.muted,fontSize:13}}>@ = <b style={{color:C.green}}>ätt</b>  ·  . = <b style={{color:C.orange}}>Punkt</b>  ·  - = <b style={{color:C.muted}}>Bindestrich</b></span>
             </div>
           </Box>
           <Box c={C.blue}>
             <H c={C.blue} z={13}>📋 Пример адреса</H>
-            <div style={{fontSize:13,color:C.text,lineHeight:1.9}}>
+            <div style={{fontSize:14,color:C.text,lineHeight:1.9}}>
               Thomas Schulz<br/>
               Juliusstraße <b style={{color:C.orange}}>15</b><br/>
               <b style={{color:C.orange}}>22769</b> Hamburg
@@ -3590,8 +3718,8 @@ function T1A(){return(
       {[["Guten Morgen","Доброе утро","до ~11:00"],["Guten Tag","Добрый день","~11:00–18:00"],["Guten Abend","Добрый вечер","после 18:00"],["Hallo","Привет","неформально"],].map(([de,ru,note])=>(
         <div key={de} style={{display:"flex",gap:8,marginBottom:8,alignItems:"center"}}>
           <span style={{fontWeight:700,fontSize:14,color:C.blue,minWidth:120}}>{de}</span>
-          <span style={{color:C.text,fontSize:13,flex:1}}>{ru}</span>
-          <span style={{color:C.muted,fontSize:11}}>{note}</span>
+          <span style={{color:C.text,fontSize:14,flex:1}}>{ru}</span>
+          <span style={{color:C.muted,fontSize:12}}>{note}</span>
         </div>
       ))}
     </Box>
@@ -3599,14 +3727,14 @@ function T1A(){return(
       <H c={C.purple}>🙋 Sich vorstellen — Знакомство</H>
       {[["Ich heiße Vitalii.","Меня зовут Виталий."],["Mein Name ist Klymenko.","Моя фамилия Клименко."],["Ich komme aus der Ukraine.","Я из Украины."],["Ich bin neu hier im Haus.","Я здесь новый (в доме)."],["Ich wohne schon lange hier.","Я уже давно здесь живу."],].map(([de,ru])=>(
         <div key={de} style={{background:C.card2,borderRadius:8,padding:"8px 10px",marginBottom:6}}>
-          <div style={{fontWeight:600,fontSize:13,color:C.text,marginBottom:2}}>{de}</div>
-          <div style={{fontSize:12,color:C.muted}}>{ru}</div>
+          <div style={{fontWeight:600,fontSize:14,color:C.text,marginBottom:2}}>{de}</div>
+          <div style={{fontSize:13,color:C.muted}}>{ru}</div>
         </div>
       ))}
     </Box>
     <Box c={C.yellow}>
       <H c={C.yellow} z={13}>💡 Ich heiße vs Ich bin</H>
-      <div style={{fontSize:13,color:C.text,lineHeight:1.8}}>
+      <div style={{fontSize:14,color:C.text,lineHeight:1.8}}>
         <b style={{color:C.blue}}>Ich heiße</b> Vitalii. — Меня зовут (буквально: я называюсь)<br/>
         <b style={{color:C.orange}}>Ich bin</b> Vitalii. — Я есть Виталий (= я представляюсь)<br/>
         Оба варианта правильны при знакомстве!
@@ -3623,7 +3751,7 @@ function T1B(){return(
         {ALPHABET.map(a=>(
           <div key={a.l} style={{background:C.card2,borderRadius:8,padding:"7px 4px",textAlign:"center"}}>
             <div style={{fontWeight:900,fontSize:18,color:C.blue}}>{a.l}</div>
-            <div style={{fontSize:11,color:C.muted}}>{a.n}</div>
+            <div style={{fontSize:12,color:C.muted}}>{a.n}</div>
           </div>
         ))}
       </div>
@@ -3634,15 +3762,15 @@ function T1B(){return(
         {[["Ä","A-Umlaut","звучит как «э»"],["Ö","O-Umlaut","«ё» с округлёнными губами"],["Ü","U-Umlaut","«ю» с округлёнными губами"],["ß","Eszett","долгое «сс»: heißen, Straße"]].map(([l,n,d])=>(
           <div key={l} style={{background:C.card2,borderRadius:10,padding:"10px"}}>
             <div style={{fontWeight:900,fontSize:24,color:C.purple}}>{l}</div>
-            <div style={{fontSize:12,color:C.text,fontWeight:600}}>{n}</div>
-            <div style={{fontSize:11,color:C.muted,marginTop:2}}>{d}</div>
+            <div style={{fontSize:13,color:C.text,fontWeight:600}}>{n}</div>
+            <div style={{fontSize:12,color:C.muted,marginTop:2}}>{d}</div>
           </div>
         ))}
       </div>
     </Box>
     <Box c={C.yellow}>
       <H c={C.yellow} z={13}>✍️ Buchstabieren — Как произносить по буквам</H>
-      <div style={{fontSize:13,color:C.text,lineHeight:1.8}}>
+      <div style={{fontSize:14,color:C.text,lineHeight:1.8}}>
         <b>Wie schreibt man das?</b> — Как это пишется?<br/>
         <b>Ich buchstabiere:</b> — Я произнесу по буквам:<br/>
         K-L-Y-M-E-N-K-O → Ka-Ell-Üpsilon-Emm-Eh-Enn-Ka-Oh
@@ -3662,31 +3790,31 @@ function T1C(){
         <H c={C.blue}>💬 Formell (Sie) vs Informell (du)</H>
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:8,marginBottom:8}}>
           <div style={{background:C.blueBg,border:`1px solid ${C.blue}`,borderRadius:10,padding:"10px"}}>
-            <div style={{color:C.blue,fontWeight:800,fontSize:13,marginBottom:6}}>Formell — Sie</div>
+            <div style={{color:C.blue,fontWeight:800,fontSize:14,marginBottom:6}}>Formell — Sie</div>
             {[["Frau + Familienname","Frau Schneider"],["Herr + Familienname","Herr Klein"],["Sie (с большой буквы)","= Вы"]].map(([k,v])=>(
-              <div key={k} style={{fontSize:12,color:C.text,marginBottom:3}}><span style={{color:C.muted}}>{k}:</span> {v}</div>
+              <div key={k} style={{fontSize:13,color:C.text,marginBottom:3}}><span style={{color:C.muted}}>{k}:</span> {v}</div>
             ))}
           </div>
           <div style={{background:C.greenBg,border:`1px solid ${C.green}`,borderRadius:10,padding:"10px"}}>
-            <div style={{color:C.green,fontWeight:800,fontSize:13,marginBottom:6}}>Informell — du</div>
+            <div style={{color:C.green,fontWeight:800,fontSize:14,marginBottom:6}}>Informell — du</div>
             {[["Vorname","Mario, Laura"],["du (с маленькой)","= ты"],["mit Freunden","с друзьями"]].map(([k,v])=>(
-              <div key={k} style={{fontSize:12,color:C.text,marginBottom:3}}><span style={{color:C.muted}}>{k}:</span> {v}</div>
+              <div key={k} style={{fontSize:13,color:C.text,marginBottom:3}}><span style={{color:C.muted}}>{k}:</span> {v}</div>
             ))}
           </div>
         </div>
       </Box>
       <Box c={C.yellow}>
         <H c={C.yellow}>📝 Verben im Präsens (L1)</H>
-        <div style={{fontSize:12,color:C.muted,marginBottom:10}}>⚠️ В Lektion 1 изучаем без формы er/sie/es — она появится в Lektion 2</div>
+        <div style={{fontSize:13,color:C.muted,marginBottom:10}}>⚠️ В Lektion 1 изучаем без формы er/sie/es — она появится в Lektion 2</div>
         <div style={{display:"flex",gap:6,flexWrap:"wrap",marginBottom:10}}>
           {verbs.map(v=>(
-            <button key={v} onClick={()=>setSel(v)} style={{padding:"6px 12px",borderRadius:10,border:`1px solid ${sel===v?C.blue:C.border}`,background:sel===v?C.blueBg:C.card,color:sel===v?C.blue:C.muted,fontWeight:600,fontSize:13,cursor:"pointer"}}>{v}</button>
+            <button key={v} onClick={()=>setSel(v)} style={{padding:"6px 12px",borderRadius:10,border:`1px solid ${sel===v?C.blue:C.border}`,background:sel===v?C.blueBg:C.card,color:sel===v?C.blue:C.muted,fontWeight:600,fontSize:14,cursor:"pointer"}}>{v}</button>
           ))}
         </div>
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:6}}>
           {rows.map(([p,f])=>(
             <div key={p} style={{background:C.card2,borderRadius:8,padding:"8px 10px"}}>
-              <div style={{fontSize:11,color:C.muted,marginBottom:2}}>{p}</div>
+              <div style={{fontSize:12,color:C.muted,marginBottom:2}}>{p}</div>
               <div style={{color:C.text,fontWeight:700,fontSize:15}}>{f}</div>
             </div>
           ))}
@@ -3694,7 +3822,7 @@ function T1C(){
       </Box>
       <Box c={C.yellow}>
         <H c={C.yellow} z={13}>💡 Ich auch / Ich nicht</H>
-        <div style={{fontSize:13,color:C.text,lineHeight:1.8}}>
+        <div style={{fontSize:14,color:C.text,lineHeight:1.8}}>
           Wir lernen Deutsch. → Ich lerne <b style={{color:C.green}}>auch</b> Deutsch.<br/>
           Ich komme aus Marokko. → Ich komme <b style={{color:C.red}}>nicht</b> aus Marokko.
         </div>
@@ -3711,32 +3839,32 @@ function T1D(){return(
         {Z20.map(z=>(
           <div key={z.n} style={{background:C.card2,borderRadius:8,padding:"8px",textAlign:"center"}}>
             <div style={{fontWeight:900,fontSize:20,color:C.orange}}>{z.n}</div>
-            <div style={{fontSize:12,color:C.text,marginTop:2}}>{z.w}</div>
+            <div style={{fontSize:13,color:C.text,marginTop:2}}>{z.w}</div>
           </div>
         ))}
       </div>
     </Box>
     <Box c={C.purple}>
       <H c={C.purple} z={13}>📐 Zahlen 13–19: Muster</H>
-      <div style={{fontSize:12,color:C.muted,marginBottom:8}}>13–19 = Zahl + <b style={{color:C.purple}}>zehn</b></div>
+      <div style={{fontSize:13,color:C.muted,marginBottom:8}}>13–19 = Zahl + <b style={{color:C.purple}}>zehn</b></div>
       <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:5}}>
         {[["3 + zehn","dreizehn"],["4 + zehn","vierzehn"],["5 + zehn","fünfzehn"],
           ["6 + zehn","sechzehn ⚠️"],["7 + zehn","siebzehn ⚠️"],["8 + zehn","achtzehn"],
           ["9 + zehn","neunzehn"]].map(([rule,word])=>(
-          <div key={word} style={{display:"flex",gap:6,background:C.card2,borderRadius:6,padding:"5px 8px",fontSize:12}}>
+          <div key={word} style={{display:"flex",gap:6,background:C.card2,borderRadius:6,padding:"5px 8px",fontSize:13}}>
             <span style={{color:C.muted,flex:1}}>{rule}</span>
             <span style={{color:C.purple,fontWeight:700}}>{word}</span>
           </div>
         ))}
       </div>
       <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,borderRadius:7,
-        padding:"7px 10px",marginTop:6,fontSize:11,color:C.muted}}>
+        padding:"7px 10px",marginTop:6,fontSize:12,color:C.muted}}>
         ⚠️ Исключения: <b style={{color:C.orange}}>sech</b>zehn (не sechszehn) · <b style={{color:C.orange}}>sieb</b>zehn (не siebenzehn)
       </div>
     </Box>
     <Box c={C.teal}>
       <H c={C.teal} z={13}>📐 Zahlen 21–99: Muster</H>
-      <div style={{fontSize:12,color:C.muted,marginBottom:8}}>
+      <div style={{fontSize:13,color:C.muted,marginBottom:8}}>
         Единицы <b style={{color:C.orange}}>+und+</b> Десятки (сначала единицы!)
       </div>
       <div style={{background:C.card2,borderRadius:8,padding:"10px 12px",marginBottom:8,textAlign:"center"}}>
@@ -3746,24 +3874,24 @@ function T1D(){return(
           <span style={{color:C.teal}}>zwanzig</span>
           <span style={{color:C.muted}}> = 21</span>
         </div>
-        <div style={{fontSize:11,color:C.muted}}>единица + und + десяток</div>
+        <div style={{fontSize:12,color:C.muted}}>единица + und + десяток</div>
       </div>
       {[["20","zwanzig"],["30","dreißig ⚠️"],["40","vierzig"],["50","fünfzig"],
         ["60","sechzig ⚠️"],["70","siebzig ⚠️"],["80","achtzig"],["90","neunzig"]].map(([n,w])=>(
         <div key={n} style={{display:"flex",justifyContent:"space-between",
-          background:C.card2,borderRadius:6,padding:"5px 10px",marginBottom:4,fontSize:12}}>
+          background:C.card2,borderRadius:6,padding:"5px 10px",marginBottom:4,fontSize:13}}>
           <span style={{color:C.muted}}>{n}</span>
           <span style={{color:C.teal,fontWeight:700}}>{w}</span>
         </div>
       ))}
       <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,borderRadius:7,
-        padding:"7px 10px",marginTop:4,fontSize:11,color:C.muted}}>
+        padding:"7px 10px",marginTop:4,fontSize:12,color:C.muted}}>
         ⚠️ 30 = drei<b style={{color:C.orange}}>ßig</b> · 60 = sech<b style={{color:C.orange}}>zig</b> · 70 = sieb<b style={{color:C.orange}}>zig</b>
       </div>
     </Box>
     <Box c={C.blue}>
       <H c={C.blue} z={13}>📱 Handynummer — как называть цифры</H>
-      <div style={{fontSize:13,color:C.text,lineHeight:1.8}}>
+      <div style={{fontSize:14,color:C.text,lineHeight:1.8}}>
         Цифры называют <b>по одной</b> или парами:<br/>
         0176 458910 → null eins sieben sechs / vier fünf acht neun eins null<br/>
         <span style={{color:C.muted}}>⚠️ По телефону: <b style={{color:C.orange}}>zwo</b> вместо zwei (чтобы не путать с drei)</span>
@@ -3779,24 +3907,24 @@ function T1E(){return(
       <div style={{fontSize:14,color:C.text,lineHeight:1.8}}>
         Ich bin <b style={{color:C.green}}>Ingenieur</b>. ✓<br/>
         Ich bin <b style={{color:C.red}}>ein Ingenieur</b>. ✗ (без артикля!)<br/>
-        <span style={{color:C.muted,fontSize:12}}>После sein + профессия — артикль не используется</span>
+        <span style={{color:C.muted,fontSize:13}}>После sein + профессия — артикль не используется</span>
       </div>
     </Box>
     <Box>
       <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:6,marginBottom:8}}>
-        {["m 👨","f 👩","Bedeutung"].map(h=><div key={h} style={{fontSize:11,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>)}
+        {["m 👨","f 👩","Bedeutung"].map(h=><div key={h} style={{fontSize:12,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>)}
       </div>
       {BERUFE.map(b=>(
         <div key={b.m} style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:6,marginBottom:5}}>
-          <div style={{background:C.card2,borderRadius:8,padding:"7px 10px",fontSize:13,color:C.text}}>{b.m}</div>
-          <div style={{background:C.card2,borderRadius:8,padding:"7px 10px",fontSize:13,color:C.purple}}>{b.f}</div>
-          <div style={{background:C.card2,borderRadius:8,padding:"7px 10px",fontSize:12,color:C.muted}}>{b.ru}</div>
+          <div style={{background:C.card2,borderRadius:8,padding:"7px 10px",fontSize:14,color:C.text}}>{b.m}</div>
+          <div style={{background:C.card2,borderRadius:8,padding:"7px 10px",fontSize:14,color:C.purple}}>{b.f}</div>
+          <div style={{background:C.card2,borderRadius:8,padding:"7px 10px",fontSize:13,color:C.muted}}>{b.ru}</div>
         </div>
       ))}
     </Box>
     <Box c={C.blue}>
       <H c={C.blue} z={13}>➕ Правило образования f-формы</H>
-      <div style={{fontSize:13,color:C.text,lineHeight:1.8}}>
+      <div style={{fontSize:14,color:C.text,lineHeight:1.8}}>
         m-форма + <b style={{color:C.green}}>-in</b> = f-форма<br/>
         Arzt → Ärz<b style={{color:C.green}}>t</b>in (+ умлаут)<br/>
         Elektriker → Elektrikerin
@@ -3814,7 +3942,7 @@ function T2A(){
     <div style={{display:"flex",flexDirection:"column",gap:12}}>
       <Box c={C.green}>
         <H c={C.green}>🆕 Новое в L2: er / sie / es</H>
-        <div style={{fontSize:13,color:C.text,lineHeight:1.8}}>
+        <div style={{fontSize:14,color:C.text,lineHeight:1.8}}>
           В Lektion 1 мы изучали без третьего лица. Теперь добавляется <b style={{color:C.green}}>er/sie/es</b> (он/она/оно).<br/>
           Окончание: обычно <b style={{color:C.green}}>-t</b> → komm<b style={{color:C.green}}>t</b>, lern<b style={{color:C.green}}>t</b>
         </div>
@@ -3823,13 +3951,13 @@ function T2A(){
         <H c={C.yellow}>📝 Verben im Präsens (L2 — полная таблица)</H>
         <div style={{display:"flex",gap:6,flexWrap:"wrap",marginBottom:10}}>
           {verbs.map(v=>(
-            <button key={v} onClick={()=>setSel(v)} style={{padding:"6px 12px",borderRadius:10,border:`1px solid ${sel===v?C.blue:C.border}`,background:sel===v?C.blueBg:C.card,color:sel===v?C.blue:C.muted,fontWeight:600,fontSize:13,cursor:"pointer"}}>{v}</button>
+            <button key={v} onClick={()=>setSel(v)} style={{padding:"6px 12px",borderRadius:10,border:`1px solid ${sel===v?C.blue:C.border}`,background:sel===v?C.blueBg:C.card,color:sel===v?C.blue:C.muted,fontWeight:600,fontSize:14,cursor:"pointer"}}>{v}</button>
           ))}
         </div>
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:6}}>
           {[["ich",c.ich],["wir",c.wir],["du",c.du],["ihr",c.ihr],["er/sie/es",c["er/sie/es"]],["sie/Sie",c["sie/Sie"]]].map(([p,f])=>(
             <div key={p} style={{background:p==="er/sie/es"?C.greenBg:C.card2,border:p==="er/sie/es"?`1px solid ${C.green}40`:`1px solid ${C.border}`,borderRadius:8,padding:"8px 10px"}}>
-              <div style={{fontSize:11,color:p==="er/sie/es"?C.green:C.muted,marginBottom:2}}>{p}</div>
+              <div style={{fontSize:12,color:p==="er/sie/es"?C.green:C.muted,marginBottom:2}}>{p}</div>
               <div style={{color:p==="er/sie/es"?C.green:C.text,fontWeight:700,fontSize:15}}>{f}</div>
             </div>
           ))}
@@ -3838,18 +3966,18 @@ function T2A(){
       <Box>
         <H c={C.text} z={14}>🌍 Nationalitäten</H>
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr",gap:5,marginBottom:6}}>
-          {["Land","m","f","Sprache"].map(h=><div key={h} style={{fontSize:11,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>)}
+          {["Land","m","f","Sprache"].map(h=><div key={h} style={{fontSize:12,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>)}
         </div>
         {NATS.map(n=>(
           <div key={n.land} style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr",gap:5,marginBottom:4}}>
-            <div style={{background:C.card2,borderRadius:7,padding:"5px 7px",fontSize:12,color:C.blue}}>{n.land}{n.art&&<span style={{color:C.muted,fontSize:11}}> ({n.art})</span>}</div>
-            <div style={{background:C.card2,borderRadius:7,padding:"5px 7px",fontSize:12,color:C.text}}>{n.m}</div>
-            <div style={{background:C.card2,borderRadius:7,padding:"5px 7px",fontSize:12,color:C.purple}}>{n.f}</div>
-            <div style={{background:C.card2,borderRadius:7,padding:"5px 7px",fontSize:11,color:C.muted}}>{n.spr}</div>
+            <div style={{background:C.card2,borderRadius:7,padding:"5px 7px",fontSize:13,color:C.blue}}>{n.land}{n.art&&<span style={{color:C.muted,fontSize:12}}> ({n.art})</span>}</div>
+            <div style={{background:C.card2,borderRadius:7,padding:"5px 7px",fontSize:13,color:C.text}}>{n.m}</div>
+            <div style={{background:C.card2,borderRadius:7,padding:"5px 7px",fontSize:13,color:C.purple}}>{n.f}</div>
+            <div style={{background:C.card2,borderRadius:7,padding:"5px 7px",fontSize:12,color:C.muted}}>{n.spr}</div>
           </div>
         ))}
         <Box c={C.yellow} s={{marginTop:8}}>
-          <div style={{fontSize:12,color:C.yellow}}>⚠️ Страны с артиклем: <b>aus DER Ukraine</b>, <b>aus DER Türkei</b></div>
+          <div style={{fontSize:13,color:C.yellow}}>⚠️ Страны с артиклем: <b>aus DER Ukraine</b>, <b>aus DER Türkei</b></div>
         </Box>
       </Box>
     </div>
@@ -3862,7 +3990,7 @@ function T2B(){return(
       <H c={C.teal}>📋 Nomen und Artikel</H>
       <div style={{display:"grid",gridTemplateColumns:"60px 1fr 1fr",gap:6,marginBottom:6}}>
         {["","bestimmter Artikel","unbestimmter Artikel"].map((h,i)=>(
-          <div key={i} style={{fontSize:11,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>
+          <div key={i} style={{fontSize:12,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>
         ))}
       </div>
       {[
@@ -3874,22 +4002,22 @@ function T2B(){return(
         <div key={l} style={{display:"grid",gridTemplateColumns:"60px 1fr 1fr",gap:6,marginBottom:7,alignItems:"center"}}>
           <div style={{background:col+"22",border:`1px solid ${col}55`,borderRadius:8,padding:"6px 4px",textAlign:"center"}}>
             <div style={{color:col,fontWeight:900,fontSize:14}}>{l}</div>
-            <div style={{color:col,fontSize:11,opacity:.8}}>{term}</div>
+            <div style={{color:col,fontSize:12,opacity:.8}}>{term}</div>
           </div>
           <div style={{background:bg,border:`1px solid ${col}`,borderRadius:8,padding:"7px 10px"}}>
             <div style={{color:col,fontWeight:900,fontSize:16}}>{def}</div>
-            <div style={{color:C.muted,fontSize:11}}>{defEx}</div>
+            <div style={{color:C.muted,fontSize:12}}>{defEx}</div>
           </div>
           <div style={{background:C.card2,border:`1px solid ${C.border}`,borderRadius:8,padding:"7px 10px"}}>
             <div style={{color:col,fontWeight:900,fontSize:16}}>{indef}</div>
-            <div style={{color:C.muted,fontSize:11}}>{indefEx}</div>
+            <div style={{color:C.muted,fontSize:12}}>{indefEx}</div>
           </div>
         </div>
       ))}
       <Box c={C.yellow} s={{marginTop:4}}>
-        <div style={{fontSize:13,color:C.text}}>
+        <div style={{fontSize:14,color:C.text}}>
           Das ist <b style={{color:C.orange}}>eine</b> Tasche. <b style={{color:C.blue}}>Die</b> Tasche ist schick.<br/>
-          <span style={{color:C.muted,fontSize:12}}>unbestimmt (впервые) → bestimmt (уже знаем)</span>
+          <span style={{color:C.muted,fontSize:13}}>unbestimmt (впервые) → bestimmt (уже знаем)</span>
         </div>
       </Box>
     </Box>
@@ -3905,8 +4033,8 @@ function T2B(){return(
         {tp:'"-er',col:C.red,ex:"Buch→Bücher",w:"+er и умлаут"},
       ].map(({tp,col,ex,w})=>(
         <div key={tp} style={{display:"flex",gap:8,marginBottom:8,alignItems:"flex-start"}}>
-          <span style={{background:col+"22",border:`1px solid ${col}55`,color:col,borderRadius:8,padding:"3px 10px",fontWeight:900,fontSize:13,flexShrink:0,whiteSpace:"nowrap"}}>{tp}</span>
-          <div><div style={{fontSize:12,color:C.muted,marginBottom:1}}>{w}</div><div style={{fontSize:12,color:col}}>{ex}</div></div>
+          <span style={{background:col+"22",border:`1px solid ${col}55`,color:col,borderRadius:8,padding:"3px 10px",fontWeight:900,fontSize:14,flexShrink:0,whiteSpace:"nowrap"}}>{tp}</span>
+          <div><div style={{fontSize:13,color:C.muted,marginBottom:1}}>{w}</div><div style={{fontSize:13,color:col}}>{ex}</div></div>
         </div>
       ))}
     </Box>
@@ -3918,7 +4046,7 @@ function TGross(){
     <div style={{display:"flex",flexDirection:"column",gap:12}}>
       <Box c={C.yellow}>
         <H c={C.yellow}>📝 Großschreibung — заглавные буквы</H>
-        <div style={{fontSize:13,color:C.muted,marginBottom:10}}>В немецком заглавные буквы используются чаще, чем в русском!</div>
+        <div style={{fontSize:14,color:C.muted,marginBottom:10}}>В немецком заглавные буквы используются чаще, чем в русском!</div>
       </Box>
       {[
         {rule:"Начало предложения",col:C.blue,ex:["Wie heißen Sie?","Ich komme aus Berlin."],note:"Всегда с большой буквы"},
@@ -3932,14 +4060,14 @@ function TGross(){
           <div style={{display:"flex",gap:5,flexWrap:"wrap",marginBottom:6}}>
             {ex.map(e=><Pill key={e} c={col}>{e}</Pill>)}
           </div>
-          <div style={{fontSize:12,color:C.yellow,background:C.yellowBg,border:`1px solid ${C.yellow}35`,borderRadius:7,padding:"4px 8px"}}>
+          <div style={{fontSize:13,color:C.yellow,background:C.yellowBg,border:`1px solid ${C.yellow}35`,borderRadius:7,padding:"4px 8px"}}>
             💡 {note}
           </div>
         </div>
       ))}
       <Box c={C.blue}>
         <H c={C.blue} z={13}>⚠️ Частая ошибка</H>
-        <div style={{fontSize:13,color:C.text,lineHeight:1.8}}>
+        <div style={{fontSize:14,color:C.text,lineHeight:1.8}}>
           ✗ <span style={{color:C.red}}>wie heißen sie und woher kommen sie?</span><br/>
           ✓ <span style={{color:C.green}}>Wie heißen <b>S</b>ie und woher kommen <b>S</b>ie?</span><br/>
           ✓ <span style={{color:C.green}}>Ich heiße <b>C</b>lara <b>B</b>ai. Ich wohne in <b>M</b>ünchen.</span>
@@ -3966,14 +4094,14 @@ function TAbkuerzungen(){
     <div style={{display:"flex",flexDirection:"column",gap:12}}>
       <Box c={C.teal}>
         <H c={C.teal}>🔤 Abkürzungen — Сокращения</H>
-        <div style={{fontSize:13,color:C.muted}}>Часто встречаются в словарях и документах</div>
+        <div style={{fontSize:14,color:C.muted}}>Часто встречаются в словарях и документах</div>
       </Box>
       <div style={{display:"flex",flexDirection:"column",gap:6}}>
         {ab.map(a=>(
           <div key={a.ab} style={{background:C.card,border:`1px solid ${C.border}`,borderRadius:10,padding:"10px 14px",display:"flex",gap:12,alignItems:"center"}}>
             <span style={{background:C.tealBg,border:`1px solid ${C.teal}`,color:C.teal,borderRadius:8,padding:"3px 10px",fontWeight:800,fontSize:14,minWidth:50,textAlign:"center",flexShrink:0}}>{a.ab}</span>
-            <span style={{color:C.text,fontWeight:600,fontSize:13,flex:1}}>{a.full}</span>
-            <span style={{color:C.muted,fontSize:12}}>{a.ru}</span>
+            <span style={{color:C.text,fontWeight:600,fontSize:14,flex:1}}>{a.full}</span>
+            <span style={{color:C.muted,fontSize:13}}>{a.ru}</span>
           </div>
         ))}
       </div>
@@ -3994,14 +4122,14 @@ function TWFragen(){
     <div style={{display:"flex",flexDirection:"column",gap:12}}>
       <Box c={C.blue}>
         <H c={C.blue}>❓ W-Fragen — вопросительные слова</H>
-        <div style={{fontSize:13,color:C.muted,marginBottom:10}}>
+        <div style={{fontSize:14,color:C.muted,marginBottom:10}}>
           Структура: <b style={{color:C.yellow}}>Fragewort</b> + <b style={{color:C.green}}>Verb</b> + остаток фразы
         </div>
         <div style={{display:"flex",flexDirection:"column",gap:5,marginBottom:8}}>
           {[["Wie","Как?"],["Wo","Где?"],["Was","Что?"],["Wer","Кто?"],["Woher","Откуда?"],["Wohin","Куда?"],["Welche","Какой/Какие?"],["Wie viel","Сколько?"]].map(([w,ru])=>(
             <div key={w} style={{display:"flex",gap:8,alignItems:"center"}}>
               <div style={{background:C.yellowBg,border:`1px solid ${C.yellow}40`,borderRadius:8,padding:"6px 10px",textAlign:"center",fontWeight:800,color:C.yellow,fontSize:14,minWidth:70,flexShrink:0}}>{w}</div>
-              <div style={{background:C.card2,borderRadius:8,padding:"6px 10px",fontSize:13,color:C.muted,flex:1}}>{ru}</div>
+              <div style={{background:C.card2,borderRadius:8,padding:"6px 10px",fontSize:14,color:C.muted,flex:1}}>{ru}</div>
             </div>
           ))}
         </div>
@@ -4009,23 +4137,23 @@ function TWFragen(){
       <Box>
         <H c={C.text} z={14}>📋 Примеры из книги</H>
         <div style={{display:"grid",gridTemplateColumns:"50px 80px 1fr",gap:5,marginBottom:6}}>
-          {["Wort","Verb","Rest"].map(h=><div key={h} style={{fontSize:11,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>)}
+          {["Wort","Verb","Rest"].map(h=><div key={h} style={{fontSize:12,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>)}
         </div>
         {wf.map(({w,v,rest,ru,a})=>(
           <div key={w+v} style={{marginBottom:10}}>
             <div style={{display:"grid",gridTemplateColumns:"50px 80px 1fr",gap:5,alignItems:"center",marginBottom:4}}>
               <div style={{background:C.yellowBg,border:`1px solid ${C.yellow}40`,borderRadius:7,padding:"6px",textAlign:"center",fontWeight:800,color:C.yellow,fontSize:14}}>{w}</div>
-              <div style={{background:C.greenBg,border:`1px solid ${C.green}40`,borderRadius:7,padding:"6px",textAlign:"center",fontWeight:700,color:C.green,fontSize:13}}>{v}</div>
-              <div style={{background:C.card2,borderRadius:7,padding:"6px 10px",fontSize:13,color:C.text}}>{rest}</div>
+              <div style={{background:C.greenBg,border:`1px solid ${C.green}40`,borderRadius:7,padding:"6px",textAlign:"center",fontWeight:700,color:C.green,fontSize:14}}>{v}</div>
+              <div style={{background:C.card2,borderRadius:7,padding:"6px 10px",fontSize:14,color:C.text}}>{rest}</div>
             </div>
-            <div style={{fontSize:12,color:C.muted,marginLeft:4,marginBottom:2}}>{ru}</div>
-            <div style={{fontSize:12,color:C.blue,marginLeft:4}}>→ {a}</div>
+            <div style={{fontSize:13,color:C.muted,marginLeft:4,marginBottom:2}}>{ru}</div>
+            <div style={{fontSize:13,color:C.blue,marginLeft:4}}>→ {a}</div>
           </div>
         ))}
       </Box>
       <Box c={C.yellow}>
         <H c={C.yellow} z={13}>💡 Правило порядка слов</H>
-        <div style={{fontSize:13,color:C.text,lineHeight:1.8}}>
+        <div style={{fontSize:14,color:C.text,lineHeight:1.8}}>
           В немецком вопросе глагол стоит <b style={{color:C.green}}>всегда на 2-м месте</b>:<br/>
           <b style={{color:C.yellow}}>Wie</b> <b style={{color:C.green}}>heißen</b> Sie? ✓<br/>
           <b style={{color:C.yellow}}>Woher</b> <b style={{color:C.green}}>kommen</b> Sie? ✓
@@ -4256,12 +4384,12 @@ function T3A(){
       <Box c={C.yellow}>
         <H c={C.yellow}>🏠 Möbel — Мебель</H>
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:5,marginBottom:6}}>
-          {["m (der)","n (das)","f (die)"].map(h=><div key={h} style={{fontSize:11,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>)}
+          {["m (der)","n (das)","f (die)"].map(h=><div key={h} style={{fontSize:12,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>)}
         </div>
         {[["der","blue"],["das","orange"],["die","purple"]].map(([art,col])=>(
           <div key={art} style={{marginBottom:6}}>
             {MOEBEL.filter(m=>m.art===art).map(m=>(
-              <div key={m.de} style={{background:C.card2,borderRadius:7,padding:"5px 8px",marginBottom:4,display:"flex",justifyContent:"space-between",fontSize:13}}>
+              <div key={m.de} style={{background:C.card2,borderRadius:7,padding:"5px 8px",marginBottom:4,display:"flex",justifyContent:"space-between",fontSize:14}}>
                 <span style={{color:C[col],fontWeight:600}}>{art} {m.de}</span>
                 <span style={{color:C.muted}}>{m.ru}</span>
               </div>
@@ -4274,7 +4402,7 @@ function T3A(){
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:6}}>
           {[["ich",KONJ_HABEN.ich],["wir",KONJ_HABEN.wir],["du",KONJ_HABEN.du],["ihr",KONJ_HABEN.ihr],["er/sie/es",KONJ_HABEN["er/sie/es"]],["sie/Sie",KONJ_HABEN["sie/Sie"]]].map(([p,f])=>(
             <div key={p} style={{background:C.card2,borderRadius:8,padding:"8px 10px"}}>
-              <div style={{fontSize:11,color:C.muted,marginBottom:2}}>{p}</div>
+              <div style={{fontSize:12,color:C.muted,marginBottom:2}}>{p}</div>
               <div style={{color:C.text,fontWeight:700,fontSize:15}}>{f}</div>
             </div>
           ))}
@@ -4282,7 +4410,7 @@ function T3A(){
       </Box>
       <Box c={C.red}>
         <H c={C.red}>❌ kein / keine / kein</H>
-        <div style={{fontSize:13,color:C.muted,marginBottom:8}}>Отрицание при существительных = «нет / не имею»</div>
+        <div style={{fontSize:14,color:C.muted,marginBottom:8}}>Отрицание при существительных = «нет / не имею»</div>
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:6,marginBottom:10}}>
           {[
             {label:"m",pos:"ein Tisch",neg:"kein Tisch",col:C.blue},
@@ -4290,14 +4418,14 @@ function T3A(){
             {label:"f",pos:"eine Lampe",neg:"keine Lampe",col:C.purple},
           ].map(({label,pos,neg,col})=>(
             <div key={label} style={{background:C.card2,borderRadius:10,padding:"8px",textAlign:"center"}}>
-              <div style={{color:col,fontWeight:800,fontSize:13,marginBottom:4}}>{label}</div>
-              <div style={{fontSize:12,color:C.green,marginBottom:2}}>{pos}</div>
-              <div style={{fontSize:12,color:C.red}}>{neg}</div>
+              <div style={{color:col,fontWeight:800,fontSize:14,marginBottom:4}}>{label}</div>
+              <div style={{fontSize:13,color:C.green,marginBottom:2}}>{pos}</div>
+              <div style={{fontSize:13,color:C.red}}>{neg}</div>
             </div>
           ))}
         </div>
         <Box c={C.yellow}>
-          <div style={{fontSize:13,color:C.text,lineHeight:1.8}}>
+          <div style={{fontSize:14,color:C.text,lineHeight:1.8}}>
             Da ist <b style={{color:C.green}}>ein</b> Schrank. → Da ist <b style={{color:C.red}}>kein</b> Schrank.<br/>
             Da ist <b style={{color:C.green}}>eine</b> Spüle. → Da ist <b style={{color:C.red}}>keine</b> Spüle.<br/>
             Da sind <b style={{color:C.green}}>—</b> Bilder. → Da sind <b style={{color:C.red}}>keine</b> Bilder.
@@ -4321,8 +4449,8 @@ function ClickPill({text,col}){
         background:open?col+"44":col+"22",border:`1px solid ${col}${open?"99":"55"}`,
         borderRadius:20,padding:open?"5px 12px":"4px 10px",cursor:"pointer",
         transition:"background 0.15s",minWidth:60,textAlign:"center"}}>
-      <span style={{fontSize:13,color:col,fontWeight:600,whiteSpace:"nowrap"}}>{text}</span>
-      {open&&ru&&<span style={{fontSize:11,color:C.muted,marginTop:2}}>{ru}</span>}
+      <span style={{fontSize:14,color:col,fontWeight:600,whiteSpace:"nowrap"}}>{text}</span>
+      {open&&ru&&<span style={{fontSize:12,color:C.muted,marginTop:2}}>{ru}</span>}
     </div>
   );
 }
@@ -4336,14 +4464,14 @@ function T3Farben(){
           {FARBEN.map(f=>(
             <div key={f.de} style={{background:C.card2,border:`1px solid ${C.border}`,borderRadius:10,padding:"10px 12px",display:"flex",justifyContent:"space-between",alignItems:"center"}}>
               <span style={{fontWeight:700,fontSize:14,color:C.text}}>{f.de}</span>
-              <span style={{color:C.muted,fontSize:13}}>{f.ru}</span>
+              <span style={{color:C.muted,fontSize:14}}>{f.ru}</span>
             </div>
           ))}
         </div>
       </Box>
       <Box c={C.yellow}>
         <H c={C.yellow} z={13}>💡 Как использовать</H>
-        <div style={{fontSize:13,color:C.text,lineHeight:1.9}}>
+        <div style={{fontSize:14,color:C.text,lineHeight:1.9}}>
           Der Stuhl ist <b style={{color:C.blue}}>blau</b>.<br/>
           Ich finde das Sofa <b style={{color:C.orange}}>orange</b>.<br/>
           <span style={{color:C.muted}}>Цвета не меняются по родам!</span>
@@ -4358,11 +4486,11 @@ function T3Akkusativ(){
     <div style={{display:"flex",flexDirection:"column",gap:12}}>
       <Box c={C.yellow}>
         <H c={C.yellow}>📌 Nominativ vs Akkusativ</H>
-        <div style={{fontSize:13,color:C.muted,marginBottom:10}}>
+        <div style={{fontSize:14,color:C.muted,marginBottom:10}}>
           Nominativ = подлежащее (кто/что делает)<br/>
           Akkusativ = дополнение (кого/что?)
         </div>
-        <div style={{background:C.card2,borderRadius:10,padding:"10px 12px",fontSize:13,color:C.text,lineHeight:1.9}}>
+        <div style={{background:C.card2,borderRadius:10,padding:"10px 12px",fontSize:14,color:C.text,lineHeight:1.9}}>
           <b style={{color:C.blue}}>Der Lehrer</b> (Nom.) schreibt <b style={{color:C.orange}}>einen Satz</b> (Akk.).<br/>
           <b style={{color:C.purple}}>Die Lehrerin</b> (Nom.) hat <b style={{color:C.orange}}>eine CD</b> (Akk.).<br/>
           <b style={{color:C.green}}>Ich</b> (Nom.) kaufe <b style={{color:C.orange}}>den Laptop</b> (Akk.).
@@ -4370,9 +4498,9 @@ function T3Akkusativ(){
       </Box>
       <Box c={C.red}>
         <H c={C.red}>⚠️ Главное правило Akkusativ</H>
-        <div style={{fontSize:13,color:C.muted,marginBottom:10}}>Меняется только <b style={{color:C.red}}>maskulin (m)</b>!</div>
+        <div style={{fontSize:14,color:C.muted,marginBottom:10}}>Меняется только <b style={{color:C.red}}>maskulin (m)</b>!</div>
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr 1fr",gap:5,marginBottom:6}}>
-          {["","m","n","f","Pl."].map(h=><div key={h} style={{fontSize:11,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>)}
+          {["","m","n","f","Pl."].map(h=><div key={h} style={{fontSize:12,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>)}
         </div>
         {[
           {type:"bestimmt (def.)",nom:["der","das","die","die"],akk:["den","das","die","die"]},
@@ -4380,33 +4508,33 @@ function T3Akkusativ(){
           {type:"negation",nom:["kein","kein","keine","keine"],akk:["keinen","kein","keine","keine"]},
         ].map(({type,nom,akk})=>(
           <div key={type} style={{marginBottom:8}}>
-            <div style={{fontSize:11,color:C.muted,marginBottom:4}}>{type}</div>
+            <div style={{fontSize:12,color:C.muted,marginBottom:4}}>{type}</div>
             <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr 1fr",gap:5}}>
-              <div style={{fontSize:11,color:C.muted,textAlign:"center"}}>Nom.</div>
-              {nom.map((a,i)=><div key={i} style={{background:C.card2,borderRadius:6,padding:"4px",textAlign:"center",fontSize:13,color:C.text}}>{a}</div>)}
+              <div style={{fontSize:12,color:C.muted,textAlign:"center"}}>Nom.</div>
+              {nom.map((a,i)=><div key={i} style={{background:C.card2,borderRadius:6,padding:"4px",textAlign:"center",fontSize:14,color:C.text}}>{a}</div>)}
             </div>
             <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr 1fr",gap:5,marginTop:3}}>
-              <div style={{fontSize:11,color:C.orange,textAlign:"center"}}>Akk.</div>
-              {akk.map((a,i)=><div key={i} style={{background:i===0?C.orangeBg:C.card2,border:i===0?`1px solid ${C.orange}`:`1px solid ${C.border}`,borderRadius:6,padding:"4px",textAlign:"center",fontSize:13,color:i===0?C.orange:C.muted,fontWeight:i===0?800:400}}>{a}</div>)}
+              <div style={{fontSize:12,color:C.orange,textAlign:"center"}}>Akk.</div>
+              {akk.map((a,i)=><div key={i} style={{background:i===0?C.orangeBg:C.card2,border:i===0?`1px solid ${C.orange}`:`1px solid ${C.border}`,borderRadius:6,padding:"4px",textAlign:"center",fontSize:14,color:i===0?C.orange:C.muted,fontWeight:i===0?800:400}}>{a}</div>)}
             </div>
           </div>
         ))}
       </Box>
       <Box c={C.green}>
         <H c={C.green} z={13}>✅ Глаголы, всегда требующие Akkusativ</H>
-        <div style={{fontSize:11,color:C.muted,marginBottom:8}}>После этих глаголов → всегда Wen? / Was? → Akkusativ:</div>
+        <div style={{fontSize:12,color:C.muted,marginBottom:8}}>После этих глаголов → всегда Wen? / Was? → Akkusativ:</div>
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:4}}>
           {[["haben","иметь"],["kaufen","покупать"],["brauchen","нужен"],["suchen","искать"],
             ["essen","есть"],["trinken","пить"],["nehmen","брать"],["sehen","видеть"],
             ["mögen","любить"],["kennen","знать"],["lesen","читать"],["schreiben","писать"],
             ["hören","слышать"],["finden","находить"]].map(([v,ru])=>(
-            <div key={v} style={{display:"flex",gap:6,background:C.card2,borderRadius:6,padding:"4px 8px",fontSize:12}}>
+            <div key={v} style={{display:"flex",gap:6,background:C.card2,borderRadius:6,padding:"4px 8px",fontSize:13}}>
               <span style={{color:C.green,fontWeight:700,minWidth:55}}>{v}</span>
               <span style={{color:C.muted}}>{ru}</span>
             </div>
           ))}
         </div>
-        <div style={{background:C.card2,borderRadius:7,padding:"7px 10px",marginTop:8,fontSize:12}}>
+        <div style={{background:C.card2,borderRadius:7,padding:"7px 10px",marginTop:8,fontSize:13}}>
           💡 <b>Тест:</b> задай вопрос к дополнению:<br/>
           "Ich kaufe _den_ Laptop." → Ich kaufe <b style={{color:C.orange}}>wen/was</b>? → <b style={{color:C.orange}}>den</b> Laptop ✓ (Akkusativ)
         </div>
@@ -4463,9 +4591,9 @@ function T3Intro(){
         display:"inline-flex",alignItems:"center",gap:5,cursor:"pointer",
         background:isOn?col:col+"22",border:`1px solid ${col}55`,
         color:isOn?"#fff":col,borderRadius:20,padding:"4px 10px",
-        fontSize:12,fontWeight:600,transition:"all 0.15s",userSelect:"none",
+        fontSize:13,fontWeight:600,transition:"all 0.15s",userSelect:"none",
       }}>
-        {word}{isOn&&<span style={{fontSize:11,opacity:0.9}}>— {ru}</span>}
+        {word}{isOn&&<span style={{fontSize:12,opacity:0.9}}>— {ru}</span>}
       </span>
     );
   };
@@ -4474,11 +4602,11 @@ function T3Intro(){
     <div style={{display:"flex",flexDirection:"column",gap:12}}>
       <Box c={C.yellow}>
         <H c={C.yellow}>🏠 Zimmer — Комнаты</H>
-        <div style={{fontSize:13,color:C.muted,marginBottom:8}}>Pronomen: der→<b style={{color:C.blue}}>er</b> · das→<b style={{color:C.orange}}>es</b> · die→<b style={{color:C.purple}}>sie</b> · die(Pl.)→<b style={{color:C.green}}>sie</b></div>
-        <div style={{fontSize:11,color:C.muted,marginBottom:8}}>👆 Нажми на слово — увидишь перевод</div>
+        <div style={{fontSize:14,color:C.muted,marginBottom:8}}>Pronomen: der→<b style={{color:C.blue}}>er</b> · das→<b style={{color:C.orange}}>es</b> · die→<b style={{color:C.purple}}>sie</b> · die(Pl.)→<b style={{color:C.green}}>sie</b></div>
+        <div style={{fontSize:12,color:C.muted,marginBottom:8}}>👆 Нажми на слово — увидишь перевод</div>
         {ZIMMER.map(z=>(
           <div key={z.name} style={{background:z.col+"15",border:`1px solid ${z.col}40`,borderRadius:10,padding:"10px 12px",marginBottom:8}}>
-            <div style={{fontWeight:700,color:z.col,fontSize:14,marginBottom:6}}>{z.name} — <span style={{color:C.muted,fontSize:12}}>{z.ru}</span></div>
+            <div style={{fontWeight:700,color:z.col,fontSize:14,marginBottom:6}}>{z.name} — <span style={{color:C.muted,fontSize:13}}>{z.ru}</span></div>
             <div style={{display:"flex",flexWrap:"wrap",gap:5}}>
               {z.items.map(i=><ClickPill key={i.w} word={i.w} ru={i.ru} col={z.col}/>)}
             </div>
@@ -4490,16 +4618,16 @@ function T3Intro(){
         <div style={{display:"flex",flexDirection:"column",gap:6}}>
           {ADJ.map(({a,b,ru})=>(
             <div key={a} style={{display:"flex",gap:8,alignItems:"center",background:C.card2,borderRadius:8,padding:"7px 10px"}}>
-              <span style={{color:C.green,fontWeight:700,fontSize:13,minWidth:80}}>{a}</span>
-              {b!=="—"&&<><span style={{color:C.muted}}>↔</span><span style={{color:C.red,fontSize:13,minWidth:80}}>{b}</span></>}
-              <span style={{color:C.muted,fontSize:12,flex:1}}>{ru}</span>
+              <span style={{color:C.green,fontWeight:700,fontSize:14,minWidth:80}}>{a}</span>
+              {b!=="—"&&<><span style={{color:C.muted}}>↔</span><span style={{color:C.red,fontSize:14,minWidth:80}}>{b}</span></>}
+              <span style={{color:C.muted,fontSize:13,flex:1}}>{ru}</span>
             </div>
           ))}
         </div>
       </Box>
       <Box c={C.teal}>
         <H c={C.teal} z={13}>💬 Мнения (Meinungen)</H>
-        <div style={{fontSize:11,color:C.muted,marginBottom:6}}>👆 Нажми на слово — увидишь перевод</div>
+        <div style={{fontSize:12,color:C.muted,marginBottom:6}}>👆 Нажми на слово — увидишь перевод</div>
         <div style={{display:"flex",flexDirection:"column",gap:6}}>
           {MEIN.map(({e,words,col})=>(
             <div key={e} style={{background:col+"15",border:`1px solid ${col}35`,borderRadius:8,padding:"8px 10px",display:"flex",gap:8,alignItems:"center",flexWrap:"wrap"}}>
@@ -4518,16 +4646,16 @@ function T3B(){
     <div style={{display:"flex",flexDirection:"column",gap:12}}>
       <Box c={C.blue}>
         <H c={C.blue}>❓ Ja/Nein-Fragen</H>
-        <div style={{fontSize:13,color:C.muted,marginBottom:10}}>Вопросы на Да/Нет — глагол стоит на первом месте!</div>
+        <div style={{fontSize:14,color:C.muted,marginBottom:10}}>Вопросы на Да/Нет — глагол стоит на первом месте!</div>
         <div style={{background:C.card2,borderRadius:10,padding:"12px",marginBottom:10}}>
           <div style={{fontSize:14,color:C.text,lineHeight:2}}>
             <b style={{color:C.blue}}>Ist</b> das ein Tisch? → Ja, das <b style={{color:C.blue}}>ist</b> ein Tisch.<br/>
-            <span style={{color:C.muted,fontSize:12,marginLeft:20}}>Nein, das <b style={{color:C.red}}>ist kein</b> Tisch. Das ist eine Lampe.</span><br/>
+            <span style={{color:C.muted,fontSize:13,marginLeft:20}}>Nein, das <b style={{color:C.red}}>ist kein</b> Tisch. Das ist eine Lampe.</span><br/>
             <b style={{color:C.green}}>Haben</b> Sie eine Mikrowelle? → Ja, ich <b style={{color:C.green}}>habe</b> eine.<br/>
-            <span style={{color:C.muted,fontSize:12,marginLeft:20}}>Nein, ich <b style={{color:C.red}}>habe keine</b> Mikrowelle.</span>
+            <span style={{color:C.muted,fontSize:13,marginLeft:20}}>Nein, ich <b style={{color:C.red}}>habe keine</b> Mikrowelle.</span>
           </div>
         </div>
-        <div style={{background:C.yellowBg,border:`1px solid ${C.yellow}35`,borderRadius:8,padding:"8px 10px",fontSize:13,color:C.yellow}}>
+        <div style={{background:C.yellowBg,border:`1px solid ${C.yellow}35`,borderRadius:8,padding:"8px 10px",fontSize:14,color:C.yellow}}>
           💡 Ja/Nein-Frage: <b>Verb</b> + Subjekt + ...?<br/>
           Сравни: <b style={{color:C.blue}}>Ist</b> das ein Tisch? vs <b style={{color:C.green}}>Wie</b> <b style={{color:C.blue}}>heißen</b> Sie?
         </div>
@@ -4543,15 +4671,15 @@ function T3B(){
           ["der Kühlschrank","-e+uml.","холодильник"],
         ].map(([w,pl,ru])=>(
           <div key={w} style={{display:"flex",justifyContent:"space-between",padding:"6px 0",borderBottom:`1px solid ${C.border}`}}>
-            <span style={{color:C.text,fontSize:13,fontWeight:600}}>{w}</span>
-            <span style={{color:C.teal,fontSize:12}}>{pl}</span>
-            <span style={{color:C.muted,fontSize:13}}>{ru}</span>
+            <span style={{color:C.text,fontSize:14,fontWeight:600}}>{w}</span>
+            <span style={{color:C.teal,fontSize:13}}>{pl}</span>
+            <span style={{color:C.muted,fontSize:14}}>{ru}</span>
           </div>
         ))}
       </Box>
       <Box c={C.green}>
         <H c={C.green} z={13}>🗣️ Nützliche Ausdrücke</H>
-        <div style={{fontSize:13,color:C.text,lineHeight:2}}>
+        <div style={{fontSize:14,color:C.text,lineHeight:2}}>
           <b>Wirklich?</b> — Правда? Серьёзно?<br/>
           <b>Schau mal!</b> — Посмотри!<br/>
           <b>Oh, klasse!</b> — Отлично! Здорово!<br/>
@@ -4577,19 +4705,19 @@ function T3C(){
         <div style={{display:"flex",flexDirection:"column",gap:5,marginBottom:10}}>
           {etagen.map((e,i)=>(
             <div key={e.de} style={{background:i===0?C.purpleBg:C.card2,border:`1px solid ${i===0?C.purple:C.border}`,borderRadius:8,padding:"8px 12px",display:"flex",justifyContent:"space-between"}}>
-              <span style={{color:i===0?C.purple:C.text,fontWeight:600,fontSize:13}}>{e.de}</span>
-              <span style={{color:C.muted,fontSize:12}}>{e.ru}</span>
+              <span style={{color:i===0?C.purple:C.text,fontWeight:600,fontSize:14}}>{e.de}</span>
+              <span style={{color:C.muted,fontSize:13}}>{e.ru}</span>
             </div>
           ))}
         </div>
-        <div style={{fontSize:13,color:C.text,lineHeight:1.8}}>
+        <div style={{fontSize:14,color:C.text,lineHeight:1.8}}>
           <b style={{color:C.blue}}>oben</b> = вверху &nbsp; <b style={{color:C.blue}}>unten</b> = внизу<br/>
           <b style={{color:C.green}}>links</b> = слева &nbsp; <b style={{color:C.green}}>rechts</b> = справа
         </div>
       </Box>
       <Box c={C.red}>
         <H c={C.red}>⭐ es gibt + Akkusativ</H>
-        <div style={{fontSize:13,color:C.muted,marginBottom:10}}>«есть / имеется» — es gibt + Akkusativ</div>
+        <div style={{fontSize:14,color:C.muted,marginBottom:10}}>«есть / имеется» — es gibt + Akkusativ</div>
         {[
           {nom:"ein Laden (m)",akk:"Es gibt einen Laden.",col:C.blue},
           {nom:"ein Café (n)",akk:"Es gibt ein Café.",col:C.orange},
@@ -4597,11 +4725,11 @@ function T3C(){
           {nom:"Geschäfte (Pl.)",akk:"Es gibt Geschäfte.",col:C.green},
         ].map(({nom,akk,col})=>(
           <div key={nom} style={{display:"flex",gap:8,marginBottom:7,alignItems:"center"}}>
-            <span style={{background:col+"22",border:`1px solid ${col}55`,color:col,borderRadius:7,padding:"3px 8px",fontSize:12,flexShrink:0}}>{nom}</span>
-            <span style={{fontSize:13,color:C.text}}>{akk}</span>
+            <span style={{background:col+"22",border:`1px solid ${col}55`,color:col,borderRadius:7,padding:"3px 8px",fontSize:13,flexShrink:0}}>{nom}</span>
+            <span style={{fontSize:14,color:C.text}}>{akk}</span>
           </div>
         ))}
-        <div style={{background:C.yellowBg,border:`1px solid ${C.yellow}35`,borderRadius:8,padding:"7px 10px",fontSize:13,color:C.yellow,marginTop:8}}>
+        <div style={{background:C.yellowBg,border:`1px solid ${C.yellow}35`,borderRadius:8,padding:"7px 10px",fontSize:14,color:C.yellow,marginTop:8}}>
           💡 После <b>es gibt</b> — всегда Akkusativ! <b style={{color:C.red}}>m: einen</b> (не ein!)
         </div>
       </Box>
@@ -4614,29 +4742,29 @@ function T3Poss(){
     <div style={{display:"flex",flexDirection:"column",gap:12}}>
       <Box c={C.orange}>
         <H c={C.orange}>👤 Possessivpronomen — Притяжательные местоимения</H>
-        <div style={{fontSize:13,color:C.muted,marginBottom:10}}>Показывают принадлежность: <b style={{color:C.orange}}>чей? чья? чьё?</b></div>
+        <div style={{fontSize:14,color:C.muted,marginBottom:10}}>Показывают принадлежность: <b style={{color:C.orange}}>чей? чья? чьё?</b></div>
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:5,marginBottom:6}}>
-          {["Pronomen","Possessiv","Значение"].map(h=><div key={h} style={{fontSize:11,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>)}
+          {["Pronomen","Possessiv","Значение"].map(h=><div key={h} style={{fontSize:12,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>)}
         </div>
         {POSSESSIV.map(({pro,poss,ru})=>(
           <div key={pro} style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:5,marginBottom:5}}>
-            <div style={{background:C.card2,borderRadius:7,padding:"6px 8px",fontSize:13,color:C.blue,fontWeight:600,textAlign:"center"}}>{pro}</div>
+            <div style={{background:C.card2,borderRadius:7,padding:"6px 8px",fontSize:14,color:C.blue,fontWeight:600,textAlign:"center"}}>{pro}</div>
             <div style={{background:C.orangeBg,border:`1px solid ${C.orange}55`,borderRadius:7,padding:"6px 8px",fontSize:14,color:C.orange,fontWeight:800,textAlign:"center"}}>{poss}</div>
-            <div style={{background:C.card2,borderRadius:7,padding:"6px 8px",fontSize:12,color:C.muted,textAlign:"center"}}>{ru}</div>
+            <div style={{background:C.card2,borderRadius:7,padding:"6px 8px",fontSize:13,color:C.muted,textAlign:"center"}}>{ru}</div>
           </div>
         ))}
       </Box>
       <Box c={C.yellow}>
         <H c={C.yellow} z={13}>⚠️ Окончания — как у ein/kein</H>
-        <div style={{fontSize:13,color:C.text,lineHeight:1.9}}>
+        <div style={{fontSize:14,color:C.text,lineHeight:1.9}}>
           <b style={{color:C.blue}}>mein</b> Tisch (m, Nom.) &nbsp; <b style={{color:C.purple}}>meine</b> Lampe (f)<br/>
           <b style={{color:C.orange}}>mein</b> Heft (n) &nbsp; <b style={{color:C.red}}>meinen</b> Tisch (m, Akk.)<br/>
-          <span style={{color:C.muted,fontSize:12}}>= окончания те же, что у ein/eine/einen!</span>
+          <span style={{color:C.muted,fontSize:13}}>= окончания те же, что у ein/eine/einen!</span>
         </div>
       </Box>
       <Box c={C.green}>
         <H c={C.green} z={13}>📝 Примеры</H>
-        <div style={{fontSize:13,color:C.text,lineHeight:2}}>
+        <div style={{fontSize:14,color:C.text,lineHeight:2}}>
           Das ist <b style={{color:C.orange}}>mein</b> Buch. — Это моя книга.<br/>
           Ist das <b style={{color:C.blue}}>dein</b> Laptop? — Это твой ноутбук?<br/>
           In der Garage steht <b style={{color:C.purple}}>sein</b> Auto. — В гараже его машина.<br/>
@@ -4645,10 +4773,10 @@ function T3Poss(){
       </Box>
       <Box c={C.blue}>
         <H c={C.blue} z={13}>📊 Полная таблица: Nom. und Akk.</H>
-        <div style={{fontSize:11,color:C.muted,marginBottom:8}}>Окончания как у ein/kein (пример: mein)</div>
+        <div style={{fontSize:12,color:C.muted,marginBottom:8}}>Окончания как у ein/kein (пример: mein)</div>
         <div style={{display:"grid",gridTemplateColumns:"auto 1fr 1fr 1fr 1fr",gap:"3px 6px",alignItems:"center"}}>
           {["","m","n","f","Pl."].map(h=>(
-            <div key={h} style={{fontSize:11,color:C.muted,fontWeight:700,textAlign:"center",paddingBottom:4}}>{h}</div>
+            <div key={h} style={{fontSize:12,color:C.muted,fontWeight:700,textAlign:"center",paddingBottom:4}}>{h}</div>
           ))}
           {[
             ["Nom.","mein","mein","meine","meine"],
@@ -4656,19 +4784,19 @@ function T3Poss(){
             ["Dat.","meinem","meinem","meiner","meinen"],
           ].map(([kasus,...forms])=>(
             <Fragment key={kasus}>
-              <div style={{fontSize:11,color:C.muted,fontWeight:700}}>{kasus}</div>
+              <div style={{fontSize:12,color:C.muted,fontWeight:700}}>{kasus}</div>
               {forms.map((f,i)=>(
                 <div key={i} style={{background:f.includes("⚠️")?C.orange+"22":C.card2,
                   border:`1px solid ${f.includes("⚠️")?C.orange:C.border}33`,
                   borderRadius:5,padding:"3px 5px",textAlign:"center",
-                  fontSize:11,color:f.includes("⚠️")?C.orange:C.text,fontWeight:f.includes("⚠️")?700:400}}>
+                  fontSize:12,color:f.includes("⚠️")?C.orange:C.text,fontWeight:f.includes("⚠️")?700:400}}>
                   {f.replace(" ⚠️","")}
                 </div>
               ))}
             </Fragment>
           ))}
         </div>
-        <div style={{fontSize:11,color:C.muted,marginTop:8}}>
+        <div style={{fontSize:12,color:C.muted,marginTop:8}}>
           ⚠️ Меняется только <b style={{color:C.orange}}>m в Akkusativ</b>: mein → mein<b style={{color:C.orange}}>en</b>
         </div>
       </Box>
@@ -4681,16 +4809,16 @@ function T3WohnVok(){
     <div style={{display:"flex",flexDirection:"column",gap:12}}>
       <Box c={C.blue}>
         <H c={C.blue}>🚿 Das Bad — Ванная комната</H>
-        <div style={{fontSize:12,color:C.muted,marginBottom:8}}>Im Bad dusche ich mich.</div>
+        <div style={{fontSize:13,color:C.muted,marginBottom:8}}>Im Bad dusche ich mich.</div>
         {[
           {art:"die",de:"Dusche",ru:"душ"},{art:"die",de:"Badewanne",ru:"ванна"},
           {art:"die",de:"Toilette",ru:"туалет"},{art:"das",de:"Waschbecken",ru:"умывальник"},
           {art:"der",de:"Spiegel",ru:"зеркало"},
         ].map(w=>(
           <div key={w.de} style={{background:C.card2,borderRadius:8,padding:"7px 10px",marginBottom:4,display:"flex",gap:8,alignItems:"center"}}>
-            <span style={{background:AB(w.art),border:`1px solid ${AC(w.art)}`,color:AC(w.art),borderRadius:7,padding:"2px 7px",fontWeight:800,fontSize:12,flexShrink:0}}>{w.art}</span>
+            <span style={{background:AB(w.art),border:`1px solid ${AC(w.art)}`,color:AC(w.art),borderRadius:7,padding:"2px 7px",fontWeight:800,fontSize:13,flexShrink:0}}>{w.art}</span>
             <span style={{fontWeight:600,color:C.text,flex:1}}>{w.de}</span>
-            <span style={{color:C.muted,fontSize:12}}>{w.ru}</span>
+            <span style={{color:C.muted,fontSize:13}}>{w.ru}</span>
           </div>
         ))}
       </Box>
@@ -4699,29 +4827,29 @@ function T3WohnVok(){
         <div style={{display:"flex",flexDirection:"column",gap:4}}>
           {WOHN_EXTRA.map(w=>(
             <div key={w.de} style={{background:C.card2,borderRadius:8,padding:"6px 10px",display:"flex",gap:8,alignItems:"center"}}>
-              <span style={{background:AB(w.art),border:`1px solid ${AC(w.art)}`,color:AC(w.art),borderRadius:6,padding:"1px 6px",fontWeight:800,fontSize:11,flexShrink:0}}>{w.art}</span>
-              <span style={{fontWeight:600,color:C.text,fontSize:13,flex:1}}>{w.de}</span>
-              <span style={{color:C.teal,fontSize:11,marginRight:4}}>{w.pl}</span>
-              <span style={{color:C.muted,fontSize:12}}>{w.ru}</span>
+              <span style={{background:AB(w.art),border:`1px solid ${AC(w.art)}`,color:AC(w.art),borderRadius:6,padding:"1px 6px",fontWeight:800,fontSize:12,flexShrink:0}}>{w.art}</span>
+              <span style={{fontWeight:600,color:C.text,fontSize:14,flex:1}}>{w.de}</span>
+              <span style={{color:C.teal,fontSize:12,marginRight:4}}>{w.pl}</span>
+              <span style={{color:C.muted,fontSize:13}}>{w.ru}</span>
             </div>
           ))}
         </div>
       </Box>
       <Box c={C.teal}>
         <H c={C.teal} z={13}>🔊 Aussprache: sp & st</H>
-        <div style={{fontSize:13,color:C.text,lineHeight:2}}>
+        <div style={{fontSize:14,color:C.text,lineHeight:2}}>
           В начале слова/слога:<br/>
           <b style={{color:C.orange}}>sp</b> = <b style={{color:C.green}}>шп</b>: <b>sp</b>rechen, <b>Sp</b>üle, <b>Sp</b>iegel<br/>
           <b style={{color:C.orange}}>st</b> = <b style={{color:C.green}}>шт</b>: <b>St</b>adt, <b>St</b>uhl, <b>St</b>raße<br/>
-          <span style={{color:C.muted,fontSize:12}}>В середине слова — обычное «сп/ст»</span>
+          <span style={{color:C.muted,fontSize:13}}>В середине слова — обычное «сп/ст»</span>
         </div>
       </Box>
       <Box c={C.yellow}>
         <H c={C.yellow} z={13}>🏠 zu Hause vs nach Hause</H>
-        <div style={{fontSize:13,color:C.text,lineHeight:2}}>
+        <div style={{fontSize:14,color:C.text,lineHeight:2}}>
           Ich <b style={{color:C.blue}}>bin</b> <b style={{color:C.green}}>zu Hause</b>. — Я <b>дома</b> (нахожусь).<br/>
           Ich <b style={{color:C.blue}}>gehe</b> <b style={{color:C.orange}}>nach Hause</b>. — Я иду <b>домой</b>.<br/>
-          <span style={{color:C.muted,fontSize:12}}>zu Hause = где? · nach Hause = куда?</span>
+          <span style={{color:C.muted,fontSize:13}}>zu Hause = где? · nach Hause = куда?</span>
         </div>
       </Box>
     </div>
@@ -4917,8 +5045,8 @@ function LueckenQuiz({items}){
   return(
     <div>
       <div style={{display:"flex",justifyContent:"space-between",marginBottom:6}}>
-        <span style={{color:C.muted,fontSize:12}}>{idx+1}/{qs.length}</span>
-        <span style={{color:C.green,fontSize:12}}>✓{score}</span>
+        <span style={{color:C.muted,fontSize:13}}>{idx+1}/{qs.length}</span>
+        <span style={{color:C.green,fontSize:13}}>✓{score}</span>
       </div>
       <div style={{height:3,background:C.border,borderRadius:3,marginBottom:12,overflow:"hidden"}}>
         <div style={{height:"100%",width:`${idx/qs.length*100}%`,background:C.green,transition:"width .3s"}}/>
@@ -4935,7 +5063,7 @@ function LueckenQuiz({items}){
           </span>
           {parts[1]}
         </div>
-        {q.ru&&<div style={{fontSize:12,color:C.muted,marginTop:4}}>🇺🇦 {q.ru}</div>}
+        {q.ru&&<div style={{fontSize:13,color:C.muted,marginTop:4}}>🇺🇦 {q.ru}</div>}
       </Box>
       <div style={{display:"flex",flexDirection:"column",gap:7,marginBottom:10}}>
         {q.opts.map((o,i)=>{
@@ -4947,7 +5075,7 @@ function LueckenQuiz({items}){
                 padding:"11px 14px",fontSize:14,fontWeight:500,cursor:"pointer",textAlign:"left",
                 display:"flex",gap:10,alignItems:"center"}}>
               <span style={{width:23,height:23,borderRadius:6,background:C.ov4,
-                fontSize:11,fontWeight:800,display:"flex",alignItems:"center",justifyContent:"center",flexShrink:0}}>
+                fontSize:12,fontWeight:800,display:"flex",alignItems:"center",justifyContent:"center",flexShrink:0}}>
                 {["A","B","C","D"][i]}
               </span>{o}
             </button>
@@ -4959,7 +5087,7 @@ function LueckenQuiz({items}){
           <span style={{color:sel===q.ans?C.green:C.red,fontWeight:800}}>
             {sel===q.ans?"✓ Richtig! ":"✗ Falsch — "+q.opts[q.ans]+" "}
           </span>
-          {q.exp&&<span style={{color:C.text,fontSize:13}}>{q.exp}</span>}
+          {q.exp&&<span style={{color:C.text,fontSize:14}}>{q.exp}</span>}
         </Box>
       )}
       {sel!==null&&<button onClick={next} style={{...btnSt(C.blue,C.blueBg),width:"100%"}}>{idx+1>=qs.length?"Результат →":"Weiter →"}</button>}
@@ -5004,12 +5132,12 @@ function Zuordnung({pairs,leftLabel="Deutsch",rightLabel="Übersetzung"}){
   return(
     <div>
       <div style={{display:"flex",justifyContent:"space-between",marginBottom:10}}>
-        <div style={{fontSize:12,color:C.muted}}>Совмести пары · нажми слева, потом справа</div>
-        <div style={{fontSize:12,color:C.green}}>✓ {Object.keys(matched).length}/{SHOW}</div>
+        <div style={{fontSize:13,color:C.muted}}>Совмести пары · нажми слева, потом справа</div>
+        <div style={{fontSize:13,color:C.green}}>✓ {Object.keys(matched).length}/{SHOW}</div>
       </div>
       <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:8}}>
         <div style={{display:"flex",flexDirection:"column",gap:6}}>
-          <div style={{fontSize:11,color:C.muted,fontWeight:700,textAlign:"center",marginBottom:2,textTransform:"uppercase",letterSpacing:1}}>{leftLabel}</div>
+          <div style={{fontSize:12,color:C.muted,fontWeight:700,textAlign:"center",marginBottom:2,textTransform:"uppercase",letterSpacing:1}}>{leftLabel}</div>
           {items.map((item,i)=>{
             const isM=matched[i],isSel=selLeft===i,isW=wrongPair?.l===i;
             const col=isM?C.green:isSel?C.blue:isW?C.red:C.border;
@@ -5017,14 +5145,14 @@ function Zuordnung({pairs,leftLabel="Deutsch",rightLabel="Übersetzung"}){
               <button key={i} onClick={()=>clickLeft(i)}
                 style={{border:`1.5px solid ${col}`,background:isM?C.greenBg:isSel?C.blueBg:isW?C.redBg:C.card,
                   color:isM?C.green:isSel?C.blue:C.text,borderRadius:10,padding:"9px 8px",
-                  fontSize:12,fontWeight:700,cursor:isM?"default":"pointer",textAlign:"center",transition:"all .15s"}}>
+                  fontSize:13,fontWeight:700,cursor:isM?"default":"pointer",textAlign:"center",transition:"all .15s"}}>
                 {isM?"✓":item.de}
               </button>
             );
           })}
         </div>
         <div style={{display:"flex",flexDirection:"column",gap:6}}>
-          <div style={{fontSize:11,color:C.muted,fontWeight:700,textAlign:"center",marginBottom:2,textTransform:"uppercase",letterSpacing:1}}>{rightLabel}</div>
+          <div style={{fontSize:12,color:C.muted,fontWeight:700,textAlign:"center",marginBottom:2,textTransform:"uppercase",letterSpacing:1}}>{rightLabel}</div>
           {rightOrder.map((origIdx,ri)=>{
             const item=items[origIdx];
             const isM=doneRight.has(ri),isW=wrongPair?.r===ri;
@@ -5033,7 +5161,7 @@ function Zuordnung({pairs,leftLabel="Deutsch",rightLabel="Übersetzung"}){
               <button key={ri} onClick={()=>clickRight(ri)}
                 style={{border:`1.5px solid ${col}`,background:isM?C.greenBg:isW?C.redBg:C.card,
                   color:isM?C.green:C.text,borderRadius:10,padding:"9px 8px",
-                  fontSize:12,fontWeight:600,cursor:isM?"default":"pointer",textAlign:"center",transition:"all .15s"}}>
+                  fontSize:13,fontWeight:600,cursor:isM?"default":"pointer",textAlign:"center",transition:"all .15s"}}>
                 {isM?"✓":item.ru}
               </button>
             );
@@ -5041,7 +5169,7 @@ function Zuordnung({pairs,leftLabel="Deutsch",rightLabel="Übersetzung"}){
         </div>
       </div>
       {selLeft!==null&&!wrongPair&&(
-        <div style={{marginTop:10,fontSize:12,color:C.blue,textAlign:"center"}}>
+        <div style={{marginTop:10,fontSize:13,color:C.blue,textAlign:"center"}}>
           Выбрано: <b>{items[selLeft].de}</b> → нажми правую пару
         </div>
       )}
@@ -5078,17 +5206,17 @@ function WortstellungGame({sents}){
   return(
     <div>
       <div style={{display:"flex",justifyContent:"space-between",marginBottom:10}}>
-        <span style={{color:C.muted,fontSize:13}}>{idx+1}/{S.length}</span>
-        <span style={{color:C.green,fontSize:13}}>✓{sc}</span>
+        <span style={{color:C.muted,fontSize:14}}>{idx+1}/{S.length}</span>
+        <span style={{color:C.green,fontSize:14}}>✓{sc}</span>
       </div>
       <Box c={C.yellow} s={{marginBottom:12}}>
-        <div style={{fontSize:11,color:C.muted,marginBottom:3}}>Составь предложение:</div>
+        <div style={{fontSize:12,color:C.muted,marginBottom:3}}>Составь предложение:</div>
         <div style={{fontSize:16,fontWeight:700,color:C.yellow}}>{s.ru}</div>
       </Box>
       <div style={{minHeight:48,background:C.card,border:`1.5px solid ${res==="ok"?C.green:res==="fail"?C.red:C.blue}`,
         borderRadius:12,padding:"10px 14px",marginBottom:10,display:"flex",flexWrap:"wrap",gap:8,alignItems:"center"}}>
         {chosen.length===0
-          ?<span style={{color:C.muted,fontSize:13}}>Нажимай слова снизу...</span>
+          ?<span style={{color:C.muted,fontSize:14}}>Нажимай слова снизу...</span>
           :chosen.map((w,i)=><button key={i} onClick={()=>unpick(i)}
               style={{background:C.blueBg,border:`1px solid ${C.blue}`,color:C.blue,borderRadius:8,padding:"5px 11px",fontSize:14,cursor:"pointer"}}>{w}</button>)}
       </div>
@@ -5118,12 +5246,12 @@ function GrosserTestContainer({rounds}){
           <button key={i} onClick={()=>setRound(i)} style={{
             flexShrink:0,padding:"7px 11px",borderRadius:10,
             border:`1.5px solid ${round===i?rd.col:C.border}`,cursor:"pointer",
-            fontSize:12,fontWeight:700,background:round===i?rd.col+"22":C.card,
+            fontSize:13,fontWeight:700,background:round===i?rd.col+"22":C.card,
             color:round===i?rd.col:C.muted,whiteSpace:"nowrap"
           }}>{rd.icon} {rd.label}</button>
         ))}
       </div>
-      <div style={{fontSize:11,color:C.muted,textAlign:"center",marginBottom:12}}>
+      <div style={{fontSize:12,color:C.muted,textAlign:"center",marginBottom:12}}>
         Раунд {round+1}/{rounds.length}: {r.label}
       </div>
       <div key={round}>
@@ -5212,24 +5340,24 @@ function T4A(){
       <Box c={C.teal}>
         <H c={C.teal}>👨‍👩‍👧 Possessivartikel im Singular</H>
         <div style={{overflowX:"auto"}}>
-          <table style={{width:"100%",borderCollapse:"collapse",fontSize:13}}>
+          <table style={{width:"100%",borderCollapse:"collapse",fontSize:14}}>
             <thead>
               <tr>
                 <th/>
                 {[{label:"m",col:C.blue},{label:"n",col:C.orange},{label:"f",col:C.purple},{label:"Pl.",col:C.purple}].map(({label,col})=>(
-                  <th key={label} style={{padding:"3px 4px",textAlign:"center",fontSize:11,fontWeight:900,color:col,opacity:0.75}}>{label}</th>
+                  <th key={label} style={{padding:"3px 4px",textAlign:"center",fontSize:12,fontWeight:900,color:col,opacity:0.75}}>{label}</th>
                 ))}
               </tr>
               <tr>
                 {[{h:"",col:""},{h:"der Bruder",col:C.blue},{h:"das Kind",col:C.orange},{h:"die Schwester",col:C.purple},{h:"die Kinder",col:C.purple}].map(({h,col})=>(
-                  <th key={h} style={{padding:"2px 6px 6px",fontWeight:700,fontSize:11,textAlign:"center",color:col||C.muted,borderBottom:`1px solid ${C.border}`}}>{h}</th>
+                  <th key={h} style={{padding:"2px 6px 6px",fontWeight:700,fontSize:12,textAlign:"center",color:col||C.muted,borderBottom:`1px solid ${C.border}`}}>{h}</th>
                 ))}
               </tr>
             </thead>
             <tbody>
               {poss.map((row,i)=>(
                 <tr key={row.pr} style={{background:i%2===0?C.card2:"transparent"}}>
-                  <td style={{padding:"6px 8px",color:C.yellow,fontWeight:700,fontSize:12,whiteSpace:"nowrap"}}>{row.pr}</td>
+                  <td style={{padding:"6px 8px",color:C.yellow,fontWeight:700,fontSize:13,whiteSpace:"nowrap"}}>{row.pr}</td>
                   {[row.m,row.n,row.f,row.pl].map((val,j)=>{
                     const hasE=val.endsWith("e");
                     return(
@@ -5257,9 +5385,9 @@ function T4A(){
           ].map(r=>(
             <div key={r.label} style={{background:C.card2,borderRadius:10,padding:"10px 12px",textAlign:"center"}}>
               <div style={{color:r.col,fontWeight:800,fontSize:15,marginBottom:2}}>{r.label}</div>
-              <div style={{color:C.muted,fontSize:11,marginBottom:4}}>{r.sub}</div>
+              <div style={{color:C.muted,fontSize:12,marginBottom:4}}>{r.sub}</div>
               <div style={{color:C.orange,fontWeight:800,fontSize:14,marginBottom:4}}>{r.end}</div>
-              <div style={{color:C.muted,fontSize:11}}>{r.ex}</div>
+              <div style={{color:C.muted,fontSize:12}}>{r.ex}</div>
             </div>
           ))}
         </div>
@@ -5268,7 +5396,7 @@ function T4A(){
         <H c={C.purple}>⚡ ihr vs sein</H>
 
         {/* Главное правило */}
-        <div style={{background:C.yellowBg,border:`1px solid ${C.yellow}40`,borderRadius:8,padding:"8px 12px",marginBottom:12,fontSize:12,color:C.yellow,lineHeight:1.7}}>
+        <div style={{background:C.yellowBg,border:`1px solid ${C.yellow}40`,borderRadius:8,padding:"8px 12px",marginBottom:12,fontSize:13,color:C.yellow,lineHeight:1.7}}>
           ⚡ Форма <b>ihr/ihre</b> и <b>sein/seine</b> зависит от рода <b>предмета</b> (о котором говорим), а не от рода владельца
         </div>
 
@@ -5279,10 +5407,10 @@ function T4A(){
           <div style={{background:C.card2,borderRadius:10,padding:"10px 12px"}}>
             <div style={{marginBottom:8}}>
               <span style={{color:C.purple,fontWeight:800,fontSize:14}}>sie</span>
-              <span style={{color:C.muted,fontSize:12}}> = она → её вещь = </span>
+              <span style={{color:C.muted,fontSize:13}}> = она → её вещь = </span>
               <span style={{color:C.text,fontWeight:800}}>ihr / ihre</span>
             </div>
-            <div style={{display:"grid",gridTemplateColumns:"auto auto 1fr",gap:"4px 10px",fontSize:12,alignItems:"center",marginBottom:6}}>
+            <div style={{display:"grid",gridTemplateColumns:"auto auto 1fr",gap:"4px 10px",fontSize:13,alignItems:"center",marginBottom:6}}>
               <span style={{color:C.blue,fontWeight:700}}>der / das</span>
               <span style={{color:C.text,fontWeight:800}}>ihr</span>
               <span style={{color:C.muted}}>ihr Mann · ihr Kind</span>
@@ -5290,7 +5418,7 @@ function T4A(){
               <span style={{color:C.text,fontWeight:800}}>ihr<span style={{color:C.orange}}>e</span></span>
               <span style={{color:C.muted}}>ihre Frau · ihre Kinder</span>
             </div>
-            <div style={{borderTop:`1px solid ${C.border}`,paddingTop:6,fontSize:11,color:C.muted,lineHeight:1.8}}>
+            <div style={{borderTop:`1px solid ${C.border}`,paddingTop:6,fontSize:12,color:C.muted,lineHeight:1.8}}>
               Das ist <b style={{color:C.text}}>ihr</b> Mann. = Это её муж.<br/>
               Das ist <b style={{color:C.text}}>ihre</b> Tochter. = Это её дочь.
             </div>
@@ -5300,10 +5428,10 @@ function T4A(){
           <div style={{background:C.card2,borderRadius:10,padding:"10px 12px"}}>
             <div style={{marginBottom:8}}>
               <span style={{color:C.blue,fontWeight:800,fontSize:14}}>er / es</span>
-              <span style={{color:C.muted,fontSize:12}}> = он/оно → его вещь = </span>
+              <span style={{color:C.muted,fontSize:13}}> = он/оно → его вещь = </span>
               <span style={{color:C.text,fontWeight:800}}>sein / seine</span>
             </div>
-            <div style={{display:"grid",gridTemplateColumns:"auto auto 1fr",gap:"4px 10px",fontSize:12,alignItems:"center",marginBottom:6}}>
+            <div style={{display:"grid",gridTemplateColumns:"auto auto 1fr",gap:"4px 10px",fontSize:13,alignItems:"center",marginBottom:6}}>
               <span style={{color:C.blue,fontWeight:700}}>der / das</span>
               <span style={{color:C.text,fontWeight:800}}>sein</span>
               <span style={{color:C.muted}}>sein Vater · sein Kind</span>
@@ -5311,7 +5439,7 @@ function T4A(){
               <span style={{color:C.text,fontWeight:800}}>sein<span style={{color:C.orange}}>e</span></span>
               <span style={{color:C.muted}}>seine Mutter · seine Kinder</span>
             </div>
-            <div style={{borderTop:`1px solid ${C.border}`,paddingTop:6,fontSize:11,color:C.muted,lineHeight:1.8}}>
+            <div style={{borderTop:`1px solid ${C.border}`,paddingTop:6,fontSize:12,color:C.muted,lineHeight:1.8}}>
               Das ist <b style={{color:C.text}}>sein</b> Vater. = Это его отец.<br/>
               Das ist <b style={{color:C.text}}>seine</b> Mutter. = Это его мать. <span style={{color:C.orange}}>(Mutter = die → +e)</span>
             </div>
@@ -5319,7 +5447,7 @@ function T4A(){
         </div>
 
         {/* Подсказка ihr/Ihr */}
-        <div style={{background:C.orangeBg,border:`1px solid ${C.orange}40`,borderRadius:8,padding:"8px 10px",fontSize:11,color:C.orange,lineHeight:1.7}}>
+        <div style={{background:C.orangeBg,border:`1px solid ${C.orange}40`,borderRadius:8,padding:"8px 10px",fontSize:12,color:C.orange,lineHeight:1.7}}>
           ⚠️ <b>ihr</b> = её (sie) · <b>Ihr</b> = Ваш (Sie formell) — одинаково пишутся, смотри на контекст!
         </div>
       </Box>
@@ -5332,8 +5460,8 @@ function T4A(){
           ["Das ist ihre Schwester.","Und das sind ihre Töchter."],
         ].map(([a,b],i)=>(
           <div key={i} style={{background:C.card2,borderRadius:8,padding:"8px 10px",marginBottom:6}}>
-            <div style={{color:C.blue,fontSize:13,marginBottom:2}}>— {a}</div>
-            <div style={{color:C.green,fontSize:13}}>— {b}</div>
+            <div style={{color:C.blue,fontSize:14,marginBottom:2}}>— {a}</div>
+            <div style={{color:C.green,fontSize:14}}>— {b}</div>
           </div>
         ))}
       </Box>
@@ -5347,19 +5475,19 @@ function T4A(){
           ].map(([m,mr,f,fr])=>(
             <>
               <div key={m} style={{background:C.blueBg,border:`1px solid ${C.blue}30`,borderRadius:8,padding:"7px 10px"}}>
-                <div style={{fontSize:11,color:C.blue,fontWeight:700,marginBottom:1}}>der</div>
-                <div style={{fontSize:13,color:C.text,fontWeight:700}}>{m}</div>
-                <div style={{fontSize:11,color:C.muted}}>{mr}</div>
+                <div style={{fontSize:12,color:C.blue,fontWeight:700,marginBottom:1}}>der</div>
+                <div style={{fontSize:14,color:C.text,fontWeight:700}}>{m}</div>
+                <div style={{fontSize:12,color:C.muted}}>{mr}</div>
               </div>
               <div key={f} style={{background:C.purpleBg,border:`1px solid ${C.purple}30`,borderRadius:8,padding:"7px 10px"}}>
-                <div style={{fontSize:11,color:C.purple,fontWeight:700,marginBottom:1}}>die</div>
-                <div style={{fontSize:13,color:C.text,fontWeight:700}}>{f}</div>
-                <div style={{fontSize:11,color:C.muted}}>{fr}</div>
+                <div style={{fontSize:12,color:C.purple,fontWeight:700,marginBottom:1}}>die</div>
+                <div style={{fontSize:14,color:C.text,fontWeight:700}}>{f}</div>
+                <div style={{fontSize:12,color:C.muted}}>{fr}</div>
               </div>
             </>
           ))}
         </div>
-        <div style={{background:C.yellowBg,border:`1px solid ${C.yellow}35`,borderRadius:8,padding:"8px 10px",fontSize:12,color:C.text,lineHeight:1.9}}>
+        <div style={{background:C.yellowBg,border:`1px solid ${C.yellow}35`,borderRadius:8,padding:"8px 10px",fontSize:13,color:C.text,lineHeight:1.9}}>
           Schwester + Bruder = <b style={{color:C.green}}>Geschwister</b> (мн.ч.)<br/>
           Mutter + Vater = <b style={{color:C.green}}>Eltern</b> (мн.ч.)<br/>
           Großmutter + Großvater = <b style={{color:C.green}}>Großeltern</b> (мн.ч.)<br/>
@@ -5394,8 +5522,8 @@ function T4B(){
     <div style={{display:"flex",flexDirection:"column",gap:12}}>
       <Box c={C.yellow}>
         <H c={C.yellow}>⚡ Verben mit Vokalwechsel</H>
-        <div style={{fontSize:13,color:C.muted,marginBottom:8}}>У некоторых глаголов меняется корневой гласный в формах <b style={{color:C.yellow}}>du</b> и <b style={{color:C.yellow}}>er/sie/es</b></div>
-        <div style={{background:C.card2,borderRadius:8,padding:"8px 10px",fontSize:13,color:C.text,lineHeight:1.9}}>
+        <div style={{fontSize:14,color:C.muted,marginBottom:8}}>У некоторых глаголов меняется корневой гласный в формах <b style={{color:C.yellow}}>du</b> и <b style={{color:C.yellow}}>er/sie/es</b></div>
+        <div style={{background:C.card2,borderRadius:8,padding:"8px 10px",fontSize:14,color:C.text,lineHeight:1.9}}>
           ich/wir/sie — обычная форма: <b style={{color:C.muted}}>spreche / sprechen</b><br/>
           <b style={{color:C.orange}}>⚠️ Изменение только у: du / er / es / sie (3-е л.)</b>
         </div>
@@ -5405,14 +5533,14 @@ function T4B(){
           <H c={g.col} z={13}>{g.type}</H>
           <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:4,marginBottom:6}}>
             {["Infinitiv","du","er/sie/es"].map(h=>(
-              <div key={h} style={{fontSize:11,color:C.muted,fontWeight:700,textAlign:"center",textTransform:"uppercase"}}>{h}</div>
+              <div key={h} style={{fontSize:12,color:C.muted,fontWeight:700,textAlign:"center",textTransform:"uppercase"}}>{h}</div>
             ))}
           </div>
           {g.verbs.map(v=>(
             <div key={v.inf} style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:4,marginBottom:5}}>
-              <div style={{background:C.card2,borderRadius:7,padding:"6px 8px",fontSize:13,color:C.muted,fontWeight:600,textAlign:"center"}}>{v.inf}</div>
-              <div style={{background:g.col+"18",border:`1px solid ${g.col}40`,borderRadius:7,padding:"6px 8px",fontSize:13,color:g.col,fontWeight:800,textAlign:"center"}}>{v.du}</div>
-              <div style={{background:g.col+"18",border:`1px solid ${g.col}40`,borderRadius:7,padding:"6px 8px",fontSize:13,color:g.col,fontWeight:800,textAlign:"center"}}>{v.er}</div>
+              <div style={{background:C.card2,borderRadius:7,padding:"6px 8px",fontSize:14,color:C.muted,fontWeight:600,textAlign:"center"}}>{v.inf}</div>
+              <div style={{background:g.col+"18",border:`1px solid ${g.col}40`,borderRadius:7,padding:"6px 8px",fontSize:14,color:g.col,fontWeight:800,textAlign:"center"}}>{v.du}</div>
+              <div style={{background:g.col+"18",border:`1px solid ${g.col}40`,borderRadius:7,padding:"6px 8px",fontSize:14,color:g.col,fontWeight:800,textAlign:"center"}}>{v.er}</div>
             </div>
           ))}
         </Box>
@@ -5423,7 +5551,7 @@ function T4B(){
         <div style={{display:"flex",gap:6,flexWrap:"wrap",marginBottom:10}}>
           {Object.entries(KONJ_L4B).map(([v,d])=>(
             <button key={v} onClick={()=>setSel(v)}
-              style={{padding:"6px 12px",borderRadius:10,cursor:"pointer",fontWeight:600,fontSize:13,
+              style={{padding:"6px 12px",borderRadius:10,cursor:"pointer",fontWeight:600,fontSize:14,
                 border:`1px solid ${sel===v?d.col:C.border}`,
                 background:sel===v?d.bg:C.card,
                 color:sel===v?d.col:C.muted}}>
@@ -5434,9 +5562,9 @@ function T4B(){
         {/* Бейдж типа + пометка */}
         <div style={{display:"flex",alignItems:"center",gap:6,marginBottom:8}}>
           <span style={{background:c.col+"22",border:`1px solid ${c.col}55`,color:c.col,
-            borderRadius:6,padding:"2px 10px",fontSize:12,fontWeight:800}}>{c.type}</span>
-          <span style={{fontSize:13,fontWeight:800,color:C.text}}>{sel}</span>
-          {c.note&&<span style={{fontSize:11,color:C.orange}}>{c.note}</span>}
+            borderRadius:6,padding:"2px 10px",fontSize:13,fontWeight:800}}>{c.type}</span>
+          <span style={{fontSize:14,fontWeight:800,color:C.text}}>{sel}</span>
+          {c.note&&<span style={{fontSize:12,color:C.orange}}>{c.note}</span>}
         </div>
         {/* Карточки 2×3 */}
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:6}}>
@@ -5445,7 +5573,7 @@ function T4B(){
             return(
               <div key={p} style={{background:hi?c.bg:C.card2,
                 border:`1px solid ${hi?c.col+"55":C.border}`,borderRadius:8,padding:"8px 10px"}}>
-                <div style={{fontSize:11,color:hi?c.col:C.muted,marginBottom:2}}>{p}</div>
+                <div style={{fontSize:12,color:hi?c.col:C.muted,marginBottom:2}}>{p}</div>
                 <div style={{color:hi?c.col:C.text,fontWeight:700,fontSize:15}}>{f}</div>
               </div>
             );
@@ -5456,14 +5584,14 @@ function T4B(){
         <H c={C.green} z={13}>📍 Wo? vs Wohin?</H>
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:8,marginBottom:8}}>
           <div style={{background:C.blueBg,border:`1px solid ${C.blue}40`,borderRadius:9,padding:"9px 10px",textAlign:"center"}}>
-            <div style={{fontSize:11,color:C.blue,fontWeight:700,marginBottom:3}}>Wo? — где?</div>
+            <div style={{fontSize:12,color:C.blue,fontWeight:700,marginBottom:3}}>Wo? — где?</div>
             <div style={{fontSize:14,color:C.text,fontWeight:700}}>in Berlin</div>
-            <div style={{fontSize:11,color:C.muted,marginTop:2}}>Ich bin <b>in</b> Berlin. ⊙</div>
+            <div style={{fontSize:12,color:C.muted,marginTop:2}}>Ich bin <b>in</b> Berlin. ⊙</div>
           </div>
           <div style={{background:C.orangeBg,border:`1px solid ${C.orange}40`,borderRadius:9,padding:"9px 10px",textAlign:"center"}}>
-            <div style={{fontSize:11,color:C.orange,fontWeight:700,marginBottom:3}}>Wohin? — куда?</div>
+            <div style={{fontSize:12,color:C.orange,fontWeight:700,marginBottom:3}}>Wohin? — куда?</div>
             <div style={{fontSize:14,color:C.text,fontWeight:700}}>nach Berlin</div>
-            <div style={{fontSize:11,color:C.muted,marginTop:2}}>Ich fahre <b>nach</b> Berlin. →</div>
+            <div style={{fontSize:12,color:C.muted,marginTop:2}}>Ich fahre <b>nach</b> Berlin. →</div>
           </div>
         </div>
       </Box>
@@ -5479,8 +5607,8 @@ function T4B(){
             ["einen Kaffee trinken","пить кофе"],
           ].map(([de,ru])=>(
             <div key={de} style={{display:"flex",justifyContent:"space-between",gap:8,background:C.card2,borderRadius:8,padding:"7px 10px"}}>
-              <span style={{fontSize:13,color:C.text,fontWeight:600}}>{de}</span>
-              <span style={{fontSize:12,color:C.muted}}>{ru}</span>
+              <span style={{fontSize:14,color:C.text,fontWeight:600}}>{de}</span>
+              <span style={{fontSize:13,color:C.muted}}>{ru}</span>
             </div>
           ))}
         </div>
@@ -5491,7 +5619,7 @@ function T4B(){
           {[["zuerst","сначала",C.green],["dann","потом",C.yellow],["danach","после этого",C.orange]].map(([w,ru,c])=>(
             <div key={w} style={{background:c+"22",border:`1px solid ${c}55`,borderRadius:9,padding:"6px 12px",textAlign:"center"}}>
               <div style={{color:c,fontWeight:800,fontSize:14}}>{w}</div>
-              <div style={{color:C.muted,fontSize:11}}>{ru}</div>
+              <div style={{color:C.muted,fontSize:12}}>{ru}</div>
             </div>
           ))}
         </div>
@@ -5499,34 +5627,34 @@ function T4B(){
         <div style={{background:C.card2,borderRadius:10,overflow:"hidden",marginBottom:8}}>
           <div style={{display:"grid",gridTemplateColumns:"auto auto auto 1fr"}}>
             {["Pos. 1","Verb","Pos. 3",""].map((h,i)=>(
-              <div key={i} style={{padding:"5px 8px",fontSize:11,color:C.muted,fontWeight:700,
+              <div key={i} style={{padding:"5px 8px",fontSize:12,color:C.muted,fontWeight:700,
                 textAlign:"center",textTransform:"uppercase",background:C.card}}>{h}</div>
             ))}
             {/* Вариант 1: Subjekt an Pos.1 */}
-            <div style={{padding:"8px 10px",background:C.blueBg,color:C.blue,fontWeight:800,fontSize:13,
+            <div style={{padding:"8px 10px",background:C.blueBg,color:C.blue,fontWeight:800,fontSize:14,
               textAlign:"center",borderTop:`1px solid ${C.border}33`}}>Sie</div>
-            <div style={{padding:"8px 10px",background:C.tealBg,color:C.teal,fontWeight:800,fontSize:13,
+            <div style={{padding:"8px 10px",background:C.tealBg,color:C.teal,fontWeight:800,fontSize:14,
               textAlign:"center",borderTop:`1px solid ${C.border}33`}}>kaufen</div>
-            <div style={{padding:"8px 10px",background:C.greenBg,color:C.green,fontWeight:800,fontSize:13,
+            <div style={{padding:"8px 10px",background:C.greenBg,color:C.green,fontWeight:800,fontSize:14,
               textAlign:"center",borderTop:`1px solid ${C.border}33`}}>zuerst</div>
-            <div style={{padding:"8px 10px",color:C.muted,fontSize:12,
+            <div style={{padding:"8px 10px",color:C.muted,fontSize:13,
               borderTop:`1px solid ${C.border}33`}}>Lebensmittel.</div>
             {/* Вариант 2: Zeitwort an Pos.1 */}
-            <div style={{padding:"8px 10px",background:C.greenBg,color:C.green,fontWeight:800,fontSize:13,
+            <div style={{padding:"8px 10px",background:C.greenBg,color:C.green,fontWeight:800,fontSize:14,
               textAlign:"center",borderTop:`1px solid ${C.border}33`}}>Zuerst</div>
-            <div style={{padding:"8px 10px",background:C.tealBg,color:C.teal,fontWeight:800,fontSize:13,
+            <div style={{padding:"8px 10px",background:C.tealBg,color:C.teal,fontWeight:800,fontSize:14,
               textAlign:"center",borderTop:`1px solid ${C.border}33`}}>kaufen</div>
-            <div style={{padding:"8px 10px",background:C.blueBg,color:C.blue,fontWeight:800,fontSize:13,
+            <div style={{padding:"8px 10px",background:C.blueBg,color:C.blue,fontWeight:800,fontSize:14,
               textAlign:"center",borderTop:`1px solid ${C.border}33`}}>sie</div>
-            <div style={{padding:"8px 10px",color:C.muted,fontSize:12,
+            <div style={{padding:"8px 10px",color:C.muted,fontSize:13,
               borderTop:`1px solid ${C.border}33`}}>Lebensmittel.</div>
           </div>
         </div>
         <div style={{background:C.yellowBg,border:`1px solid ${C.yellow}35`,borderRadius:8,
-          padding:"6px 10px",fontSize:12,color:C.yellow,marginBottom:8}}>
+          padding:"6px 10px",fontSize:13,color:C.yellow,marginBottom:8}}>
           💡 <b>Verb всегда на позиции 2!</b> Если временно́е слово стоит первым — субъект уходит на 3-е место.
         </div>
-        <div style={{background:C.card2,borderRadius:8,padding:"8px 10px",fontSize:12,color:C.muted,lineHeight:1.9}}>
+        <div style={{background:C.card2,borderRadius:8,padding:"8px 10px",fontSize:13,color:C.muted,lineHeight:1.9}}>
           <b style={{color:C.green}}>Zuerst</b> kaufen sie Lebensmittel.<br/>
           <b style={{color:C.yellow}}>Dann</b> essen sie zu Mittag.<br/>
           <b style={{color:C.orange}}>Danach</b> besuchen sie ein Straßenfest.
@@ -5541,13 +5669,13 @@ function T4C(){
     <div style={{display:"flex",flexDirection:"column",gap:12}}>
       <Box c={C.yellow}>
         <H c={C.yellow}>⏮️ Präteritum von haben und sein</H>
-        <div style={{fontSize:13,color:C.muted,marginBottom:8}}>
+        <div style={{fontSize:14,color:C.muted,marginBottom:8}}>
           <b style={{color:C.yellow}}>Präteritum</b> — прошедшее время. Используется для описания прошлых фактов и состояний.
         </div>
-        <div style={{background:C.card2,borderRadius:8,padding:"9px 12px",fontSize:13,lineHeight:2}}>
-          Mein Großvater <b style={{color:C.purple}}>war</b> Arzt. <span style={{color:C.muted,fontSize:12}}>— Мой дедушка был врачом.</span><br/>
-          Mein Vater <b style={{color:C.blue}}>hatte</b> viel Arbeit. <span style={{color:C.muted,fontSize:12}}>— У папы было много работы.</span><br/>
-          Wir <b style={{color:C.purple}}>waren</b> drei Geschwister. <span style={{color:C.muted,fontSize:12}}>— Нас было трое детей.</span>
+        <div style={{background:C.card2,borderRadius:8,padding:"9px 12px",fontSize:14,lineHeight:2}}>
+          Mein Großvater <b style={{color:C.purple}}>war</b> Arzt. <span style={{color:C.muted,fontSize:13}}>— Мой дедушка был врачом.</span><br/>
+          Mein Vater <b style={{color:C.blue}}>hatte</b> viel Arbeit. <span style={{color:C.muted,fontSize:13}}>— У папы было много работы.</span><br/>
+          Wir <b style={{color:C.purple}}>waren</b> drei Geschwister. <span style={{color:C.muted,fontSize:13}}>— Нас было трое детей.</span>
         </div>
       </Box>
       <Box c={C.teal}>
@@ -5558,20 +5686,20 @@ function T4C(){
               <tr>
                 <td style={{width:52}}/>
                 <td colSpan={2} style={{textAlign:"center",background:C.blueBg,color:C.blue,
-                  fontWeight:800,fontSize:12,padding:"6px 4px",borderRadius:"8px 8px 0 0"}}>haben</td>
+                  fontWeight:800,fontSize:13,padding:"6px 4px",borderRadius:"8px 8px 0 0"}}>haben</td>
                 <td colSpan={2} style={{textAlign:"center",background:C.purpleBg,color:C.purple,
-                  fontWeight:800,fontSize:12,padding:"6px 4px",borderRadius:"8px 8px 0 0"}}>sein</td>
+                  fontWeight:800,fontSize:13,padding:"6px 4px",borderRadius:"8px 8px 0 0"}}>sein</td>
               </tr>
               <tr>
                 <td/>
                 <td style={{textAlign:"center",background:C.blueBg,color:C.muted,
-                  fontSize:11,fontWeight:600,padding:"3px 4px",borderRadius:"0 0 4px 4px"}}>Präsens</td>
+                  fontSize:12,fontWeight:600,padding:"3px 4px",borderRadius:"0 0 4px 4px"}}>Präsens</td>
                 <td style={{textAlign:"center",background:C.blueBg,color:C.blue,
-                  fontSize:11,fontWeight:800,padding:"3px 4px",borderRadius:"0 0 4px 4px"}}>Prät.</td>
+                  fontSize:12,fontWeight:800,padding:"3px 4px",borderRadius:"0 0 4px 4px"}}>Prät.</td>
                 <td style={{textAlign:"center",background:C.purpleBg,color:C.muted,
-                  fontSize:11,fontWeight:600,padding:"3px 4px",borderRadius:"0 0 4px 4px"}}>Präsens</td>
+                  fontSize:12,fontWeight:600,padding:"3px 4px",borderRadius:"0 0 4px 4px"}}>Präsens</td>
                 <td style={{textAlign:"center",background:C.purpleBg,color:C.purple,
-                  fontSize:11,fontWeight:800,padding:"3px 4px",borderRadius:"0 0 4px 4px"}}>Prät.</td>
+                  fontSize:12,fontWeight:800,padding:"3px 4px",borderRadius:"0 0 4px 4px"}}>Prät.</td>
               </tr>
             </thead>
             <tbody>
@@ -5584,15 +5712,15 @@ function T4C(){
                 ["sie/Sie","haben", "hatten",  "sind", "waren"],
               ].map(([p,hp,hpt,sp,spt])=>(
                 <tr key={p}>
-                  <td style={{padding:"6px 6px",fontSize:12,color:C.muted,fontWeight:700}}>{p}</td>
-                  <td style={{padding:"6px 4px",background:C.card2,borderRadius:6,fontSize:13,
+                  <td style={{padding:"6px 6px",fontSize:13,color:C.muted,fontWeight:700}}>{p}</td>
+                  <td style={{padding:"6px 4px",background:C.card2,borderRadius:6,fontSize:14,
                     color:C.muted,textAlign:"center"}}>{hp}</td>
                   <td style={{padding:"6px 4px",background:C.blueBg,border:`1px solid ${C.blue}40`,
-                    borderRadius:6,fontSize:13,color:C.blue,fontWeight:800,textAlign:"center"}}>{hpt}</td>
-                  <td style={{padding:"6px 4px",background:C.card2,borderRadius:6,fontSize:13,
+                    borderRadius:6,fontSize:14,color:C.blue,fontWeight:800,textAlign:"center"}}>{hpt}</td>
+                  <td style={{padding:"6px 4px",background:C.card2,borderRadius:6,fontSize:14,
                     color:C.muted,textAlign:"center"}}>{sp}</td>
                   <td style={{padding:"6px 4px",background:C.purpleBg,border:`1px solid ${C.purple}40`,
-                    borderRadius:6,fontSize:13,textAlign:"center",fontWeight:800,
+                    borderRadius:6,fontSize:14,textAlign:"center",fontWeight:800,
                     color:p==="ihr"?C.orange:C.purple}}>{spt}</td>
                 </tr>
               ))}
@@ -5605,12 +5733,12 @@ function T4C(){
         <div style={{display:"grid",gridTemplateColumns:"repeat(5,1fr)",gap:4,marginBottom:8}}>
           {[["vorgestern","позавчера",C.red],["gestern","вчера",C.orange],["heute","сегодня",C.green],["morgen","завтра",C.blue],["übermorgen","послезавтра",C.purple]].map(([w,ru,col])=>(
             <div key={w} style={{background:col+"18",border:`1px solid ${col}40`,borderRadius:9,padding:"6px 4px",textAlign:"center"}}>
-              <div style={{color:col,fontWeight:800,fontSize:12}}>{w}</div>
-              <div style={{color:C.muted,fontSize:11,marginTop:2}}>{ru}</div>
+              <div style={{color:col,fontWeight:800,fontSize:13}}>{w}</div>
+              <div style={{color:C.muted,fontSize:12,marginTop:2}}>{ru}</div>
             </div>
           ))}
         </div>
-        <div style={{background:C.card2,borderRadius:8,padding:"8px 10px",fontSize:12,color:C.muted,lineHeight:1.9}}>
+        <div style={{background:C.card2,borderRadius:8,padding:"8px 10px",fontSize:13,color:C.muted,lineHeight:1.9}}>
           <b style={{color:C.red}}>Gestern</b> hatte ich keine Zeit.<br/>
           <b style={{color:C.green}}>Heute</b> bin ich zu Hause.<br/>
           <b style={{color:C.blue}}>Morgen</b> fahren wir nach Potsdam.
@@ -5627,8 +5755,8 @@ function T4C(){
             ["Das war schön.","Это было красиво / прекрасно."],
           ].map(([de,ru])=>(
             <div key={de} style={{background:C.card2,borderRadius:8,padding:"7px 10px",display:"flex",justifyContent:"space-between",gap:8,flexWrap:"wrap"}}>
-              <span style={{fontSize:13,color:C.text,fontWeight:600}}>{de}</span>
-              <span style={{fontSize:12,color:C.muted}}>{ru}</span>
+              <span style={{fontSize:14,color:C.text,fontWeight:600}}>{de}</span>
+              <span style={{fontSize:13,color:C.muted}}>{ru}</span>
             </div>
           ))}
         </div>
@@ -5656,15 +5784,15 @@ function T5A(){
   return (
     <div>
       <Box icon="🕐" title="A · Wie spät ist es?" sub="Uhrzeiten — время суток">
-        <div style={{fontSize:13,color:C.muted,marginBottom:12}}>Два способа спросить время:</div>
+        <div style={{fontSize:14,color:C.muted,marginBottom:12}}>Два способа спросить время:</div>
         <div style={{display:"flex",gap:8,marginBottom:16,flexWrap:"wrap"}}>
-          <span style={{background:C.blue+"22",border:`1px solid ${C.blue}`,borderRadius:8,padding:"6px 12px",fontSize:13,color:C.blue,fontWeight:700}}>Wie spät ist es?</span>
-          <span style={{background:C.blue+"22",border:`1px solid ${C.blue}`,borderRadius:8,padding:"6px 12px",fontSize:13,color:C.blue,fontWeight:700}}>Um wie viel Uhr ...?</span>
+          <span style={{background:C.blue+"22",border:`1px solid ${C.blue}`,borderRadius:8,padding:"6px 12px",fontSize:14,color:C.blue,fontWeight:700}}>Wie spät ist es?</span>
+          <span style={{background:C.blue+"22",border:`1px solid ${C.blue}`,borderRadius:8,padding:"6px 12px",fontSize:14,color:C.blue,fontWeight:700}}>Um wie viel Uhr ...?</span>
         </div>
-        <div style={{fontSize:13,color:C.muted,marginBottom:8}}>Ответ: <b style={{color:C.text}}>Es ist ... Uhr.</b> / <b style={{color:C.text}}>Um ... Uhr.</b></div>
+        <div style={{fontSize:14,color:C.muted,marginBottom:8}}>Ответ: <b style={{color:C.text}}>Es ist ... Uhr.</b> / <b style={{color:C.text}}>Um ... Uhr.</b></div>
 
         <div style={{marginBottom:16}}>
-          <div style={{fontWeight:700,fontSize:13,color:C.muted,marginBottom:8,textTransform:"uppercase",letterSpacing:1}}>Таблица времён</div>
+          <div style={{fontWeight:700,fontSize:14,color:C.muted,marginBottom:8,textTransform:"uppercase",letterSpacing:1}}>Таблица времён</div>
           <div style={{display:"flex",flexDirection:"column",gap:6}}>
             {[
               ["9:00","neun Uhr","девять часов"],
@@ -5679,42 +5807,42 @@ function T5A(){
               ["10:00","zehn Uhr","десять часов"],
             ].map(([t,de,ru])=>(
               <div key={t} style={{display:"flex",alignItems:"center",gap:10,background:C.card2,borderRadius:8,padding:"7px 12px"}}>
-                <span style={{fontWeight:800,color:C.teal,minWidth:36,fontSize:13}}>{t}</span>
+                <span style={{fontWeight:800,color:C.teal,minWidth:36,fontSize:14}}>{t}</span>
                 <span style={{flex:1,fontWeight:600,fontSize:14,color:C.text}}>{de}</span>
-                <span style={{fontSize:12,color:C.muted}}>{ru}</span>
+                <span style={{fontSize:13,color:C.muted}}>{ru}</span>
               </div>
             ))}
           </div>
         </div>
 
         <div style={{background:C.card2,borderRadius:10,padding:"10px 14px",marginBottom:12}}>
-          <div style={{fontWeight:700,fontSize:13,color:C.orange,marginBottom:6}}>⚠️ Ключевое правило: halb</div>
-          <div style={{fontSize:13,color:C.text,marginBottom:4}}><b>halb zehn</b> = половина <b>десятого</b> = 9:30</div>
-          <div style={{fontSize:12,color:C.muted}}>«halb» смотрит вперёд — называет следующий час!</div>
+          <div style={{fontWeight:700,fontSize:14,color:C.orange,marginBottom:6}}>⚠️ Ключевое правило: halb</div>
+          <div style={{fontSize:14,color:C.text,marginBottom:4}}><b>halb zehn</b> = половина <b>десятого</b> = 9:30</div>
+          <div style={{fontSize:13,color:C.muted}}>«halb» смотрит вперёд — называет следующий час!</div>
         </div>
 
         <div style={{background:C.card2,borderRadius:10,padding:"10px 14px"}}>
-          <div style={{fontWeight:700,fontSize:13,color:C.blue,marginBottom:6}}>📌 vor и nach</div>
+          <div style={{fontWeight:700,fontSize:14,color:C.blue,marginBottom:6}}>📌 vor и nach</div>
           <div style={{display:"flex",gap:16}}>
             <div style={{flex:1,textAlign:"center"}}>
               <div style={{fontSize:20,marginBottom:4}}>⬅️</div>
               <div style={{fontWeight:700,color:C.red,fontSize:14}}>vor</div>
-              <div style={{fontSize:12,color:C.muted}}>до / без</div>
-              <div style={{fontSize:12,color:C.text,marginTop:4}}>Viertel <b>vor</b> zehn<br/>= без четверти 10</div>
+              <div style={{fontSize:13,color:C.muted}}>до / без</div>
+              <div style={{fontSize:13,color:C.text,marginTop:4}}>Viertel <b>vor</b> zehn<br/>= без четверти 10</div>
             </div>
             <div style={{width:1,background:C.border}}/>
             <div style={{flex:1,textAlign:"center"}}>
               <div style={{fontSize:20,marginBottom:4}}>➡️</div>
               <div style={{fontWeight:700,color:C.green,fontSize:14}}>nach</div>
-              <div style={{fontSize:12,color:C.muted}}>после / прошло</div>
-              <div style={{fontSize:12,color:C.text,marginTop:4}}>Viertel <b>nach</b> zehn<br/>= четверть одиннадцатого</div>
+              <div style={{fontSize:13,color:C.muted}}>после / прошло</div>
+              <div style={{fontSize:13,color:C.text,marginTop:4}}>Viertel <b>nach</b> zehn<br/>= четверть одиннадцатого</div>
             </div>
           </div>
         </div>
 
         <div style={{background:C.card2,borderRadius:10,padding:"10px 14px",marginTop:12}}>
-          <div style={{fontWeight:700,fontSize:13,color:C.purple,marginBottom:8}}>🕐 Официальное время (offiziell)</div>
-          <div style={{fontSize:12,color:C.muted,marginBottom:8}}>На вокзале, в расписании, по радио — 24 часа:</div>
+          <div style={{fontWeight:700,fontSize:14,color:C.purple,marginBottom:8}}>🕐 Официальное время (offiziell)</div>
+          <div style={{fontSize:13,color:C.muted,marginBottom:8}}>На вокзале, в расписании, по радио — 24 часа:</div>
           <div style={{display:"flex",flexDirection:"column",gap:5}}>
             {[
               ["halb neun",          "8:30",  "acht Uhr dreißig"],
@@ -5725,7 +5853,7 @@ function T5A(){
               ["Viertel vor elf",    "10:45", "zehn Uhr fünfundvierzig"],
               ["zehn nach sechs",    "6:10",  "sechs Uhr zehn"],
             ].map(([inoff,time,off])=>(
-              <div key={time} style={{display:"flex",alignItems:"center",gap:8,fontSize:12}}>
+              <div key={time} style={{display:"flex",alignItems:"center",gap:8,fontSize:13}}>
                 <span style={{color:C.teal,minWidth:38,fontWeight:700}}>{time}</span>
                 <span style={{flex:1,color:C.text}}>{inoff}</span>
                 <span style={{color:C.purple,fontWeight:600}}>{off}</span>
@@ -5774,10 +5902,10 @@ function T5B(){
     <div>
       <Box icon="✂️" title="B · Trennbare Verben" sub="Глаголы с отделяемым префиксом">
         <div style={{background:C.card2,borderRadius:10,padding:"10px 14px",marginBottom:14}}>
-          <div style={{fontWeight:700,fontSize:13,color:C.orange,marginBottom:6}}>⚠️ Главное правило</div>
-          <div style={{fontSize:13,color:C.text,marginBottom:4}}>Глагол — на <b>2-е место</b>, префикс — в <b>конец</b> предложения:</div>
+          <div style={{fontWeight:700,fontSize:14,color:C.orange,marginBottom:6}}>⚠️ Главное правило</div>
+          <div style={{fontSize:14,color:C.text,marginBottom:4}}>Глагол — на <b>2-е место</b>, префикс — в <b>конец</b> предложения:</div>
           <div style={{background:C.bg,borderRadius:8,padding:"8px 12px",marginTop:6}}>
-            <div style={{fontSize:13,marginBottom:3}}>
+            <div style={{fontSize:14,marginBottom:3}}>
               <span style={{color:C.muted}}>Она убирает кухню → </span>
               <span style={{color:C.text,fontWeight:600}}>Sie </span>
               <span style={{color:C.orange,fontWeight:800}}>räumt</span>
@@ -5785,7 +5913,7 @@ function T5B(){
               <span style={{color:C.orange,fontWeight:800}}>auf</span>
               <span style={{color:C.muted}}>.</span>
             </div>
-            <div style={{fontSize:13}}>
+            <div style={{fontSize:14}}>
               <span style={{color:C.muted}}>Она звонит → </span>
               <span style={{color:C.text,fontWeight:600}}>Sie </span>
               <span style={{color:C.blue,fontWeight:800}}>ruft</span>
@@ -5796,7 +5924,7 @@ function T5B(){
           </div>
         </div>
 
-        <div style={{fontWeight:700,fontSize:13,color:C.muted,marginBottom:8,textTransform:"uppercase",letterSpacing:1}}>Таблица глаголов</div>
+        <div style={{fontWeight:700,fontSize:14,color:C.muted,marginBottom:8,textTransform:"uppercase",letterSpacing:1}}>Таблица глаголов</div>
         <div style={{display:"flex",flexDirection:"column",gap:5,marginBottom:14}}>
           {[
             {pref:"an-",  col:C.blue,   ru:"к, на, начало действия"},
@@ -5808,30 +5936,30 @@ function T5B(){
             {pref:"fern-",col:C.teal,   ru:"на расстоянии"},
           ].map(({pref,col,ru})=>(
             <div key={pref} style={{display:"flex",alignItems:"center",gap:10,background:C.card2,borderRadius:8,padding:"6px 12px"}}>
-              <span style={{background:col+"33",color:col,borderRadius:6,padding:"2px 8px",fontWeight:800,fontSize:12,minWidth:40,textAlign:"center"}}>{pref}</span>
-              <span style={{fontSize:12,color:C.muted}}>{ru}</span>
+              <span style={{background:col+"33",color:col,borderRadius:6,padding:"2px 8px",fontWeight:800,fontSize:13,minWidth:40,textAlign:"center"}}>{pref}</span>
+              <span style={{fontSize:13,color:C.muted}}>{ru}</span>
             </div>
           ))}
         </div>
 
-        <div style={{fontWeight:700,fontSize:13,color:C.muted,marginBottom:8,textTransform:"uppercase",letterSpacing:1}}>Глаголы</div>
+        <div style={{fontWeight:700,fontSize:14,color:C.muted,marginBottom:8,textTransform:"uppercase",letterSpacing:1}}>Глаголы</div>
         <div style={{display:"flex",flexDirection:"column",gap:5}}>
           {verbs.map(v=>{
             const col=prefColors[v.pref]||C.teal;
             return (
               <div key={v.inf} style={{background:C.card2,borderRadius:8,padding:"7px 12px",display:"flex",alignItems:"center",gap:8}}>
-                <span style={{background:col+"33",color:col,borderRadius:6,padding:"2px 7px",fontSize:11,fontWeight:800,minWidth:32,textAlign:"center"}}>{v.pref}-</span>
-                <span style={{fontWeight:700,fontSize:13,color:C.text,flex:1}}>{v.inf}</span>
-                <span style={{fontSize:12,color:C.muted,flex:2}}>{v.ich} / {v.er}</span>
-                <span style={{fontSize:11,color:C.text,opacity:0.75}}>{v.ru}</span>
+                <span style={{background:col+"33",color:col,borderRadius:6,padding:"2px 7px",fontSize:12,fontWeight:800,minWidth:32,textAlign:"center"}}>{v.pref}-</span>
+                <span style={{fontWeight:700,fontSize:14,color:C.text,flex:1}}>{v.inf}</span>
+                <span style={{fontSize:13,color:C.muted,flex:2}}>{v.ich} / {v.er}</span>
+                <span style={{fontSize:12,color:C.text,opacity:0.75}}>{v.ru}</span>
               </div>
             );
           })}
         </div>
 
         <div style={{background:C.card2,borderRadius:10,padding:"10px 14px",marginTop:12}}>
-          <div style={{fontWeight:700,fontSize:13,color:C.blue,marginBottom:6}}>📌 В вопросе — так же</div>
-          <div style={{display:"flex",flexDirection:"column",gap:5,fontSize:13}}>
+          <div style={{fontWeight:700,fontSize:14,color:C.blue,marginBottom:6}}>📌 В вопросе — так же</div>
+          <div style={{display:"flex",flexDirection:"column",gap:5,fontSize:14}}>
             {[
               ["Wann stehst du auf?","Ich stehe um 7 Uhr auf.","aufstehen"],
               ["Wann kaufst du ein?","Ich kaufe um 10 Uhr ein.","einkaufen"],
@@ -5848,14 +5976,14 @@ function T5B(){
 
       <Box c={c.col} s={{marginTop:12}}>
         <H c={c.col}>📋 Konjugation — Trennbare Verben</H>
-        <div style={{fontSize:12,color:C.muted,marginBottom:10}}>
+        <div style={{fontSize:13,color:C.muted,marginBottom:10}}>
           … = место для объекта/дополнения. Выбери глагол:
         </div>
         {/* Кнопки-глаголы */}
         <div style={{display:"flex",gap:5,flexWrap:"wrap",marginBottom:12}}>
           {Object.entries(KONJ_L5B).map(([v,d])=>(
             <button key={v} onClick={()=>setSel(v)}
-              style={{padding:"5px 10px",borderRadius:10,cursor:"pointer",fontWeight:600,fontSize:12,
+              style={{padding:"5px 10px",borderRadius:10,cursor:"pointer",fontWeight:600,fontSize:13,
                 border:`1px solid ${sel===v?d.col:C.border}`,
                 background:sel===v?d.bg:C.card,
                 color:sel===v?d.col:C.muted}}>
@@ -5866,9 +5994,9 @@ function T5B(){
         {/* Бейдж префикса + пометка об умлауте */}
         <div style={{display:"flex",alignItems:"center",gap:6,marginBottom:10}}>
           <span style={{background:c.col+"22",border:`1px solid ${c.col}55`,color:c.col,
-            borderRadius:6,padding:"2px 10px",fontSize:12,fontWeight:800}}>{c.pref}-</span>
+            borderRadius:6,padding:"2px 10px",fontSize:13,fontWeight:800}}>{c.pref}-</span>
           <span style={{fontSize:14,fontWeight:800,color:C.text}}>{sel}</span>
-          {c.note&&<span style={{fontSize:11,color:C.orange}}>⚡ {c.note}: du / er</span>}
+          {c.note&&<span style={{fontSize:12,color:C.orange}}>⚡ {c.note}: du / er</span>}
         </div>
         {/* Сетка 2×3 */}
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:6}}>
@@ -5877,7 +6005,7 @@ function T5B(){
             return (
               <div key={p} style={{background:hi?c.bg:C.card2,
                 border:`1px solid ${hi?c.col+"55":C.border}`,borderRadius:8,padding:"8px 10px"}}>
-                <div style={{fontSize:11,color:hi?c.col:C.muted,marginBottom:2}}>{p}</div>
+                <div style={{fontSize:12,color:hi?c.col:C.muted,marginBottom:2}}>{p}</div>
                 <div style={{color:hi?c.col:C.text,fontWeight:700,fontSize:14}}>{f}</div>
               </div>
             );
@@ -5916,17 +6044,17 @@ function T5C(){
             <div key={prep} style={{background:C.card2,borderRadius:10,padding:"10px 14px"}}>
               <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:6}}>
                 <span style={{background:col+"33",color:col,borderRadius:6,padding:"3px 10px",fontWeight:800,fontSize:14}}>{prep}</span>
-                <span style={{fontSize:12,color:C.muted}}>{rule}</span>
+                <span style={{fontSize:13,color:C.muted}}>{rule}</span>
               </div>
               <div style={{display:"flex",gap:6,flexWrap:"wrap"}}>
-                {ex.map(e=><span key={e} style={{background:C.bg,borderRadius:6,padding:"3px 8px",fontSize:12,color:C.text}}>{e}</span>)}
+                {ex.map(e=><span key={e} style={{background:C.bg,borderRadius:6,padding:"3px 8px",fontSize:13,color:C.text}}>{e}</span>)}
               </div>
             </div>
           ))}
         </div>
 
         <div style={{background:C.card2,borderRadius:10,padding:"10px 14px"}}>
-          <div style={{fontWeight:700,fontSize:13,color:C.blue,marginBottom:8}}>🕐 Части суток</div>
+          <div style={{fontWeight:700,fontSize:14,color:C.blue,marginBottom:8}}>🕐 Части суток</div>
           {[
             {name:"der Morgen",   adv:"morgens",     prep:"am",     time:"6–9",  col:"#f59e0b", note:"утро"},
             {name:"der Vormittag",adv:"vormittags",  prep:"am",     time:"9–12", col:"#f97316", note:"до полудня"},
@@ -5939,20 +6067,20 @@ function T5C(){
               gap:6,alignItems:"center",padding:"6px 0",
               borderBottom:`1px solid ${C.border}22`}}>
               <div>
-                <span style={{fontSize:13,fontWeight:700,color:C.text}}>{name.split(" ")[1]}</span>
-                <span style={{fontSize:11,color:C.muted,marginLeft:5}}>{note}</span>
+                <span style={{fontSize:14,fontWeight:700,color:C.text}}>{name.split(" ")[1]}</span>
+                <span style={{fontSize:12,color:C.muted,marginLeft:5}}>{note}</span>
               </div>
               <span style={{background:col+"22",border:`1px solid ${col}55`,color:col,
-                borderRadius:5,padding:"1px 7px",fontSize:11,fontWeight:700,whiteSpace:"nowrap"}}>{prep}</span>
-              <span style={{fontSize:12,color:C.muted,whiteSpace:"nowrap"}}>{adv}</span>
-              <span style={{fontSize:11,color:C.muted,whiteSpace:"nowrap"}}>{time} Uhr</span>
+                borderRadius:5,padding:"1px 7px",fontSize:12,fontWeight:700,whiteSpace:"nowrap"}}>{prep}</span>
+              <span style={{fontSize:13,color:C.muted,whiteSpace:"nowrap"}}>{adv}</span>
+              <span style={{fontSize:12,color:C.muted,whiteSpace:"nowrap"}}>{time} Uhr</span>
             </div>
           ))}
         </div>
 
         <div style={{background:C.card2,borderRadius:10,padding:"10px 14px",marginBottom:12}}>
-          <div style={{fontWeight:700,fontSize:13,color:C.teal,marginBottom:8}}>🗓 Составные выражения времени</div>
-          <div style={{fontSize:12,color:C.muted,marginBottom:8}}>am + день + часть дня = одно слово:</div>
+          <div style={{fontWeight:700,fontSize:14,color:C.teal,marginBottom:8}}>🗓 Составные выражения времени</div>
+          <div style={{fontSize:13,color:C.muted,marginBottom:8}}>am + день + часть дня = одно слово:</div>
           <div style={{display:"flex",flexDirection:"column",gap:5}}>
             {[
               ["am Montagvormittag","в понедельник утром"],
@@ -5961,7 +6089,7 @@ function T5C(){
               ["am Donnerstagmorgen","в четверг утром"],
               ["am Freitagabend",   "в пятницу вечером"],
             ].map(([de,ru])=>(
-              <div key={de} style={{display:"flex",justifyContent:"space-between",background:C.bg,borderRadius:6,padding:"5px 10px",fontSize:12}}>
+              <div key={de} style={{display:"flex",justifyContent:"space-between",background:C.bg,borderRadius:6,padding:"5px 10px",fontSize:13}}>
                 <span style={{color:C.text,fontWeight:600}}>{de}</span>
                 <span style={{color:C.muted}}>{ru}</span>
               </div>
@@ -5970,8 +6098,8 @@ function T5C(){
         </div>
 
         <div style={{background:C.card2,borderRadius:10,padding:"10px 14px"}}>
-          <div style={{fontWeight:700,fontSize:13,color:C.orange,marginBottom:6}}>💬 Диалог-пример</div>
-          <div style={{display:"flex",flexDirection:"column",gap:6,fontSize:13}}>
+          <div style={{fontWeight:700,fontSize:14,color:C.orange,marginBottom:6}}>💬 Диалог-пример</div>
+          <div style={{display:"flex",flexDirection:"column",gap:6,fontSize:14}}>
             {[
               ["— Wann beginnt der Deutschkurs?","— Um 18 Uhr."],
               ["— Bis wann geht der Kurs?","— Bis 20 Uhr."],
@@ -6010,10 +6138,10 @@ function T5D(){
       style={{padding:"7px 10px",borderBottom:`1px solid ${C.border}22`,cursor:"pointer",
         background:openTr===id?C.card2:"transparent"}}>
       <div style={{display:"flex",justifyContent:"space-between",alignItems:"center"}}>
-        <span style={{fontSize:13,fontWeight:600,color:col}}>{de}</span>
-        <span style={{fontSize:11,color:C.muted,flexShrink:0,marginLeft:6}}>{openTr===id?"▲":"▾"}</span>
+        <span style={{fontSize:14,fontWeight:600,color:col}}>{de}</span>
+        <span style={{fontSize:12,color:C.muted,flexShrink:0,marginLeft:6}}>{openTr===id?"▲":"▾"}</span>
       </div>
-      {openTr===id&&<div style={{fontSize:11,color:C.muted,marginTop:3}}>{ru}</div>}
+      {openTr===id&&<div style={{fontSize:12,color:C.muted,marginTop:3}}>{ru}</div>}
     </div>
   );
   return (
@@ -6023,20 +6151,20 @@ function T5D(){
 
         {/* gehen + Infinitiv */}
         <div style={{background:C.card2,borderRadius:10,padding:"10px 14px",marginBottom:12}}>
-          <div style={{fontWeight:700,fontSize:13,color:C.blue,marginBottom:8}}>🔗 gehen + Infinitiv</div>
-          <div style={{fontSize:12,color:C.muted,marginBottom:10}}>
+          <div style={{fontWeight:700,fontSize:14,color:C.blue,marginBottom:8}}>🔗 gehen + Infinitiv</div>
+          <div style={{fontSize:13,color:C.muted,marginBottom:10}}>
             Infinitiv идёт в <span style={{color:C.orange,fontWeight:700}}>конец предложения</span>. Глагол gehen спрягается нормально.
           </div>
           <div style={{background:C.bg,borderRadius:8,padding:"8px 10px",marginBottom:8}}>
             <div style={{display:"flex",flexWrap:"wrap",gap:4,alignItems:"baseline"}}>
               {[["Er",C.blue],["geht",C.orange],["später",C.muted],["einkaufen.",C.green]].map(([w,c])=>(
                 <span key={w} style={{background:c+"22",border:`1px solid ${c}44`,color:c,
-                  borderRadius:6,padding:"3px 8px",fontWeight:700,fontSize:13}}>{w}</span>
+                  borderRadius:6,padding:"3px 8px",fontWeight:700,fontSize:14}}>{w}</span>
               ))}
             </div>
-            <div style={{fontSize:11,color:C.muted,marginTop:6}}>Subj. → V(P2) → … → <span style={{color:C.green,fontWeight:700}}>Infinitiv</span></div>
+            <div style={{fontSize:12,color:C.muted,marginTop:6}}>Subj. → V(P2) → … → <span style={{color:C.green,fontWeight:700}}>Infinitiv</span></div>
           </div>
-          <div style={{display:"flex",flexDirection:"column",gap:5,fontSize:12}}>
+          <div style={{display:"flex",flexDirection:"column",gap:5,fontSize:13}}>
             {[
               ["schwimmen gehen","Ich gehe am Nachmittag schwimmen."],
               ["tanzen gehen","Gehen wir heute Abend tanzen?"],
@@ -6056,9 +6184,9 @@ function T5D(){
         <div style={{background:C.card2,borderRadius:10,overflow:"hidden"}}>
           <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",
             background:C.red+"22",borderBottom:`1px solid ${C.border}33`}}>
-            <div style={{padding:"6px 10px",fontSize:11,color:C.red,fontWeight:700,
+            <div style={{padding:"6px 10px",fontSize:12,color:C.red,fontWeight:700,
               borderRight:`1px solid ${C.border}33`}}>📋 ВОПРОСЫ</div>
-            <div style={{padding:"6px 10px",fontSize:11,color:C.red,fontWeight:700}}>💬 ОТВЕТЫ</div>
+            <div style={{padding:"6px 10px",fontSize:12,color:C.red,fontWeight:700}}>💬 ОТВЕТЫ</div>
           </div>
           <div style={{display:"grid",gridTemplateColumns:"1fr 1fr"}}>
 
@@ -6077,17 +6205,17 @@ function T5D(){
                     cursor:"pointer",background:openTr===id?C.bg:"transparent",
                     minHeight:36}}>
                   <div style={{display:"flex",justifyContent:"space-between",gap:4}}>
-                    <span style={{fontSize:11,fontWeight:600,color:C.text,lineHeight:1.3}}>{de}</span>
-                    <span style={{fontSize:11,color:C.muted,flexShrink:0}}>{openTr===id?"▲":"▾"}</span>
+                    <span style={{fontSize:12,fontWeight:600,color:C.text,lineHeight:1.3}}>{de}</span>
+                    <span style={{fontSize:12,color:C.muted,flexShrink:0}}>{openTr===id?"▲":"▾"}</span>
                   </div>
-                  {openTr===id&&<div style={{fontSize:11,color:C.muted,marginTop:2}}>{ru}</div>}
+                  {openTr===id&&<div style={{fontSize:12,color:C.muted,marginTop:2}}>{ru}</div>}
                 </div>
               ))}
             </div>
 
             {/* Правая — ответы */}
             <div>
-              <div style={{background:C.green+"22",padding:"3px 8px",fontSize:11,
+              <div style={{background:C.green+"22",padding:"3px 8px",fontSize:12,
                 color:C.green,fontWeight:700,borderBottom:`1px solid ${C.border}22`}}>✅ Согласие</div>
               {[
                 ["y1","Ja, gerne.",     "Да, с удовольствием."],
@@ -6099,14 +6227,14 @@ function T5D(){
                   style={{padding:"5px 8px",borderBottom:`1px solid ${C.border}22`,
                     cursor:"pointer",background:openTr===id?C.bg:"transparent",minHeight:30}}>
                   <div style={{display:"flex",justifyContent:"space-between",gap:4}}>
-                    <span style={{fontSize:11,fontWeight:600,color:C.green,lineHeight:1.3}}>{de}</span>
-                    <span style={{fontSize:11,color:C.muted,flexShrink:0}}>{openTr===id?"▲":"▾"}</span>
+                    <span style={{fontSize:12,fontWeight:600,color:C.green,lineHeight:1.3}}>{de}</span>
+                    <span style={{fontSize:12,color:C.muted,flexShrink:0}}>{openTr===id?"▲":"▾"}</span>
                   </div>
-                  {openTr===id&&<div style={{fontSize:11,color:C.muted,marginTop:2}}>{ru}</div>}
+                  {openTr===id&&<div style={{fontSize:12,color:C.muted,marginTop:2}}>{ru}</div>}
                 </div>
               ))}
 
-              <div style={{background:C.orange+"22",padding:"3px 8px",fontSize:11,
+              <div style={{background:C.orange+"22",padding:"3px 8px",fontSize:12,
                 color:C.orange,fontWeight:700,borderBottom:`1px solid ${C.border}22`,
                 borderTop:`1px solid ${C.border}22`}}>🔄 Альтернатива</div>
               {[
@@ -6119,14 +6247,14 @@ function T5D(){
                   style={{padding:"5px 8px",borderBottom:`1px solid ${C.border}22`,
                     cursor:"pointer",background:openTr===id?C.bg:"transparent",minHeight:30}}>
                   <div style={{display:"flex",justifyContent:"space-between",gap:4}}>
-                    <span style={{fontSize:11,fontWeight:600,color:C.orange,lineHeight:1.3}}>{de}</span>
-                    <span style={{fontSize:11,color:C.muted,flexShrink:0}}>{openTr===id?"▲":"▾"}</span>
+                    <span style={{fontSize:12,fontWeight:600,color:C.orange,lineHeight:1.3}}>{de}</span>
+                    <span style={{fontSize:12,color:C.muted,flexShrink:0}}>{openTr===id?"▲":"▾"}</span>
                   </div>
-                  {openTr===id&&<div style={{fontSize:11,color:C.muted,marginTop:2}}>{ru}</div>}
+                  {openTr===id&&<div style={{fontSize:12,color:C.muted,marginTop:2}}>{ru}</div>}
                 </div>
               ))}
 
-              <div style={{background:C.red+"22",padding:"3px 8px",fontSize:11,
+              <div style={{background:C.red+"22",padding:"3px 8px",fontSize:12,
                 color:C.red,fontWeight:700,borderBottom:`1px solid ${C.border}22`,
                 borderTop:`1px solid ${C.border}22`}}>❌ Отказ</div>
               {[
@@ -6139,10 +6267,10 @@ function T5D(){
                   style={{padding:"5px 8px",borderBottom:`1px solid ${C.border}22`,
                     cursor:"pointer",background:openTr===id?C.bg:"transparent",minHeight:30}}>
                   <div style={{display:"flex",justifyContent:"space-between",gap:4}}>
-                    <span style={{fontSize:11,fontWeight:600,color:C.red,lineHeight:1.3}}>{de}</span>
-                    <span style={{fontSize:11,color:C.muted,flexShrink:0}}>{openTr===id?"▲":"▾"}</span>
+                    <span style={{fontSize:12,fontWeight:600,color:C.red,lineHeight:1.3}}>{de}</span>
+                    <span style={{fontSize:12,color:C.muted,flexShrink:0}}>{openTr===id?"▲":"▾"}</span>
                   </div>
-                  {openTr===id&&<div style={{fontSize:11,color:C.muted,marginTop:2}}>{ru}</div>}
+                  {openTr===id&&<div style={{fontSize:12,color:C.muted,marginTop:2}}>{ru}</div>}
                 </div>
               ))}
             </div>
@@ -6212,8 +6340,8 @@ function T6B(){
 
         {/* Intro block */}
         <div style={{background:C.card2,borderRadius:10,padding:"12px 14px",marginBottom:12}}>
-          <div style={{fontWeight:800,fontSize:13,color:C.text,marginBottom:6}}>Что такое Imperativ?</div>
-          <div style={{fontSize:12,color:C.muted,lineHeight:1.6,marginBottom:10}}>
+          <div style={{fontWeight:800,fontSize:14,color:C.text,marginBottom:6}}>Что такое Imperativ?</div>
+          <div style={{fontSize:13,color:C.muted,lineHeight:1.6,marginBottom:10}}>
             Imperativ (повелительное наклонение) — форма глагола для{" "}
             <span style={{color:C.text,fontWeight:700}}>приказов, просьб, советов и инструкций</span>.{" "}
             Глагол стоит на <span style={{color:C.orange,fontWeight:700}}>первом месте</span> в предложении, местоимение не нужно (кроме Sie).
@@ -6227,9 +6355,9 @@ function T6B(){
               <div key={form} style={{display:"flex",alignItems:"center",gap:8,
                 background:col+"11",borderRadius:8,padding:"6px 10px"}}>
                 <span style={{background:col+"33",color:col,borderRadius:5,
-                  padding:"1px 6px",fontSize:11,fontWeight:800,minWidth:24,textAlign:"center"}}>{form}</span>
-                <span style={{fontSize:13,fontWeight:700,color:C.text,minWidth:130}}>{de}</span>
-                <span style={{fontSize:11,color:C.muted}}>{ru}</span>
+                  padding:"1px 6px",fontSize:12,fontWeight:800,minWidth:24,textAlign:"center"}}>{form}</span>
+                <span style={{fontSize:14,fontWeight:700,color:C.text,minWidth:130}}>{de}</span>
+                <span style={{fontSize:12,color:C.muted}}>{ru}</span>
               </div>
             ))}
           </div>
@@ -6239,7 +6367,7 @@ function T6B(){
         <div style={{display:"flex",gap:6,marginBottom:10}}>
           {forms.map(({key,label,col})=>(
             <button key={key} onClick={()=>setSelForm(key)}
-              style={{flex:1,padding:"10px 4px",borderRadius:9,cursor:"pointer",fontWeight:800,fontSize:13,
+              style={{flex:1,padding:"10px 4px",borderRadius:9,cursor:"pointer",fontWeight:800,fontSize:14,
                 border:`2px solid ${selForm===key?col:C.border}`,
                 background:selForm===key?col+"22":"transparent",
                 color:selForm===key?col:C.muted}}>
@@ -6251,7 +6379,7 @@ function T6B(){
         {/* Selected form deep-dive */}
         <div style={{background:fc.col+"15",border:`1px solid ${fc.col}44`,borderRadius:12,
           padding:"12px 14px",marginBottom:10}}>
-          <div style={{fontWeight:800,fontSize:13,color:fc.col,marginBottom:10}}>{fc.title}</div>
+          <div style={{fontWeight:800,fontSize:14,color:fc.col,marginBottom:10}}>{fc.title}</div>
 
           {/* Steps */}
           <div style={{display:"flex",flexDirection:"column",gap:7,marginBottom:10}}>
@@ -6259,8 +6387,8 @@ function T6B(){
               <div key={i} style={{display:"flex",alignItems:"flex-start",gap:8}}>
                 <span style={{background:fc.col,color:"#fff",borderRadius:"50%",
                   width:20,height:20,display:"flex",alignItems:"center",justifyContent:"center",
-                  fontSize:11,fontWeight:800,flexShrink:0,marginTop:1}}>{i+1}</span>
-                <span style={{fontSize:13,color:C.text,lineHeight:1.4,fontFamily:"monospace"}}>{step}</span>
+                  fontSize:12,fontWeight:800,flexShrink:0,marginTop:1}}>{i+1}</span>
+                <span style={{fontSize:14,color:C.text,lineHeight:1.4,fontFamily:"monospace"}}>{step}</span>
               </div>
             ))}
           </div>
@@ -6268,27 +6396,27 @@ function T6B(){
           {/* Special note */}
           <div style={{background:C.ov7,borderRadius:8,
             padding:"7px 10px",marginBottom:10,whiteSpace:"pre-line"}}>
-            <span style={{fontSize:11,color:C.muted,lineHeight:1.5}}>{fc.special}</span>
+            <span style={{fontSize:12,color:C.muted,lineHeight:1.5}}>{fc.special}</span>
           </div>
 
           {/* Mini examples grid */}
           <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:4}}>
             {fc.examples.map(([from,to])=>(
               <div key={from} style={{background:C.ov6,borderRadius:7,
-                padding:"5px 8px",fontSize:11}}>
+                padding:"5px 8px",fontSize:12}}>
                 <span style={{color:C.muted}}>{from}</span>
                 <span style={{color:fc.col,fontWeight:800}}> → {to}</span>
               </div>
             ))}
           </div>
 
-          <div style={{marginTop:8,fontSize:11,color:C.muted,fontStyle:"italic"}}>
+          <div style={{marginTop:8,fontSize:12,color:C.muted,fontStyle:"italic"}}>
             👥 {fc.usage}
           </div>
         </div>
 
         {/* Interactive verb table */}
-        <div style={{fontSize:11,color:C.muted,marginBottom:5}}>
+        <div style={{fontSize:12,color:C.muted,marginBottom:5}}>
           📋 Таблица глаголов — форма переключается кнопками выше:
         </div>
         <div style={{display:"flex",flexDirection:"column",gap:3,marginBottom:10}}>
@@ -6297,8 +6425,8 @@ function T6B(){
             return(
               <div key={inf} style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:6,
                 background:C.card2,borderRadius:8,padding:"6px 10px",alignItems:"center"}}>
-                <span style={{fontSize:12,color:C.muted}}>
-                  {inf}{note&&<span style={{fontSize:11,color:C.orange,marginLeft:4}}>{note}</span>}
+                <span style={{fontSize:13,color:C.muted}}>
+                  {inf}{note&&<span style={{fontSize:12,color:C.orange,marginLeft:4}}>{note}</span>}
                 </span>
                 <span style={{fontSize:14,fontWeight:800,color:fc.col}}>{val}</span>
               </div>
@@ -6308,7 +6436,7 @@ function T6B(){
 
         {/* Sonderregeln */}
         <div style={{background:C.card2,borderRadius:10,padding:"12px 14px",marginBottom:8}}>
-          <div style={{fontWeight:800,fontSize:12,color:C.orange,marginBottom:10}}>
+          <div style={{fontWeight:800,fontSize:13,color:C.orange,marginBottom:10}}>
             ⚡ Sonderregeln (Исключения)
           </div>
           {[
@@ -6333,14 +6461,14 @@ function T6B(){
           ].map(({icon,title,note,pairs,col})=>(
             <div key={title} style={{marginBottom:10,paddingBottom:10,
               borderBottom:`1px solid ${C.border}`}}>
-              <div style={{fontSize:12,fontWeight:700,color:C.text,marginBottom:3}}>
+              <div style={{fontSize:13,fontWeight:700,color:C.text,marginBottom:3}}>
                 {icon} {title}
               </div>
-              <div style={{fontSize:11,color:C.muted,marginBottom:6}}>{note}</div>
+              <div style={{fontSize:12,color:C.muted,marginBottom:6}}>{note}</div>
               <div style={{display:"flex",flexWrap:"wrap",gap:4}}>
                 {pairs.map(([from,to])=>(
                   <span key={from} style={{background:col+"15",border:`1px solid ${col}33`,
-                    borderRadius:6,padding:"2px 8px",fontSize:11}}>
+                    borderRadius:6,padding:"2px 8px",fontSize:12}}>
                     <span style={{color:C.muted}}>{from} → </span>
                     <span style={{color:col,fontWeight:700}}>{to}</span>
                   </span>
@@ -6352,10 +6480,10 @@ function T6B(){
 
         {/* doch/bitte */}
         <div style={{background:C.teal+"15",border:`1px solid ${C.teal}33`,borderRadius:10,padding:"10px 14px"}}>
-          <div style={{fontWeight:700,fontSize:12,color:C.teal,marginBottom:6}}>
+          <div style={{fontWeight:700,fontSize:13,color:C.teal,marginBottom:6}}>
             🤝 doch / bitte — смягчение приказа
           </div>
-          <div style={{fontSize:12,color:C.muted,lineHeight:1.7}}>
+          <div style={{fontSize:13,color:C.muted,lineHeight:1.7}}>
             <span style={{color:C.red,fontWeight:700}}>Kauf Milch!</span>
             <span style={{color:C.muted}}> — резко (приказ)</span><br/>
             <span style={{color:C.yellow,fontWeight:700}}>Kauf doch Milch!</span>
@@ -6432,7 +6560,7 @@ function T6C(){
       <Box c={C.teal}>
         <H c={C.teal}>🛍️ B · Einkaufen — Где покупают?</H>
 
-        <div style={{fontSize:12,color:C.muted,marginBottom:8}}>
+        <div style={{fontSize:13,color:C.muted,marginBottom:8}}>
           📍 Einkaufsorte — места покупки (нажми для подробностей)
         </div>
         <div style={{display:"flex",flexDirection:"column",gap:4,marginBottom:14}}>
@@ -6444,14 +6572,14 @@ function T6C(){
                 borderRadius:10,padding:"10px 12px",cursor:"pointer",transition:"all .15s"}}>
               <div style={{display:"flex",alignItems:"center",gap:8}}>
                 <span style={{fontSize:18}}>{o.icon}</span>
-                <span style={{fontWeight:800,color:C.text,fontSize:13,flex:1}}>
+                <span style={{fontWeight:800,color:C.text,fontSize:14,flex:1}}>
                   <span style={{color:C.teal}}>{o.prep}</span>{" "}{o.art}
                 </span>
-                <span style={{fontSize:11,color:C.muted}}>{o.ru}</span>
+                <span style={{fontSize:12,color:C.muted}}>{o.ru}</span>
               </div>
               {selOrte===i&&(
                 <div style={{marginTop:8,paddingTop:8,borderTop:`1px solid ${C.border}`,
-                  fontSize:12,color:C.muted}}>
+                  fontSize:13,color:C.muted}}>
                   🛍️ {o.buy}
                 </div>
               )}
@@ -6461,7 +6589,7 @@ function T6C(){
 
         <div style={{background:C.yellow+"18",border:`1px solid ${C.yellow}44`,
           borderRadius:10,padding:"10px 12px",marginBottom:14}}>
-          <div style={{fontWeight:700,fontSize:12,color:C.yellow,marginBottom:6}}>
+          <div style={{fontWeight:700,fontSize:13,color:C.yellow,marginBottom:6}}>
             📌 Предлоги + Dativ (где? — Dativ!)
           </div>
           {[
@@ -6471,9 +6599,9 @@ function T6C(){
             ["an der","+ f","an der Tankstelle"],
             ["am","(= an dem) + m","am Kiosk"],
           ].map(([prep,rule,ex])=>(
-            <div key={prep} style={{display:"flex",gap:8,alignItems:"center",marginBottom:4,fontSize:12}}>
+            <div key={prep} style={{display:"flex",gap:8,alignItems:"center",marginBottom:4,fontSize:13}}>
               <span style={{color:C.yellow,fontWeight:800,minWidth:52}}>{prep}</span>
-              <span style={{color:C.muted,minWidth:80,fontSize:11}}>{rule}</span>
+              <span style={{color:C.muted,minWidth:80,fontSize:12}}>{rule}</span>
               <span style={{color:C.text}}>{ex}</span>
             </div>
           ))}
@@ -6481,17 +6609,17 @@ function T6C(){
 
         <div style={{background:C.purple+"15",border:`1px solid ${C.purple}33`,
           borderRadius:10,padding:"10px 12px",marginBottom:14}}>
-          <div style={{fontWeight:800,fontSize:12,color:C.purple,marginBottom:8}}>
+          <div style={{fontWeight:800,fontSize:13,color:C.purple,marginBottom:8}}>
             ✨ möchten — хотеть (вежливо)
           </div>
-          <div style={{fontSize:11,color:C.muted,marginBottom:10,lineHeight:1.5}}>
+          <div style={{fontSize:12,color:C.muted,marginBottom:10,lineHeight:1.5}}>
             ⚠️ <b style={{color:C.purple}}>ich möchte = er möchte</b> — нет окончания -t!
           </div>
           <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:4}}>
             {konj.map(([pro,form])=>(
               <div key={pro} style={{display:"flex",gap:8,background:C.ov6,
-                borderRadius:7,padding:"5px 8px",fontSize:13,alignItems:"center"}}>
-                <span style={{color:C.muted,minWidth:60,fontSize:11}}>{pro}</span>
+                borderRadius:7,padding:"5px 8px",fontSize:14,alignItems:"center"}}>
+                <span style={{color:C.muted,minWidth:60,fontSize:12}}>{pro}</span>
                 <span style={{color:C.purple,fontWeight:800}}>{form}</span>
               </div>
             ))}
@@ -6499,10 +6627,10 @@ function T6C(){
         </div>
 
         <div style={{background:C.card2,borderRadius:10,padding:"10px 12px",marginBottom:14}}>
-          <div style={{fontWeight:700,fontSize:12,color:C.orange,marginBottom:6}}>
+          <div style={{fontWeight:700,fontSize:13,color:C.orange,marginBottom:6}}>
             🎩 möchten vs hätte gerne
           </div>
-          <div style={{fontSize:12,color:C.muted,lineHeight:1.7}}>
+          <div style={{fontSize:13,color:C.muted,lineHeight:1.7}}>
             <span style={{color:C.orange,fontWeight:700}}>Ich möchte</span> ein Kilo Äpfel.
             <span style={{color:C.muted}}> — просто «хочу»</span><br/>
             <span style={{color:C.green,fontWeight:700}}>Ich hätte gerne</span> ein Kilo Äpfel.
@@ -6510,22 +6638,22 @@ function T6C(){
           </div>
         </div>
 
-        <div style={{fontWeight:700,fontSize:12,color:C.teal,marginBottom:6}}>
+        <div style={{fontWeight:700,fontSize:13,color:C.teal,marginBottom:6}}>
           💬 Einkaufsgespräch — диалог auf dem Markt
         </div>
         <div style={{display:"flex",flexDirection:"column",gap:5,marginBottom:14}}>
           {dialog.map((d,i)=>(
-            <div key={i} style={{background:C.card2,borderRadius:8,padding:"8px 10px",fontSize:12}}>
+            <div key={i} style={{background:C.card2,borderRadius:8,padding:"8px 10px",fontSize:13}}>
               <div onClick={()=>togLine(`${i}-v`)}
                 style={{cursor:"pointer",marginBottom:4,borderRadius:6,padding:"4px 6px",
                   background:openLines.has(`${i}-v`)?C.green+"15":"transparent",
                   border:`1px solid ${openLines.has(`${i}-v`)?C.green+"44":"transparent"}`}}>
                 <div style={{display:"flex",alignItems:"center",justifyContent:"space-between"}}>
                   <span style={{color:C.green}}>🏪 <b>V:</b> {d.v}</span>
-                  <span style={{fontSize:11,color:C.muted,flexShrink:0,marginLeft:6}}>{openLines.has(`${i}-v`)?"▲":"▾"}</span>
+                  <span style={{fontSize:12,color:C.muted,flexShrink:0,marginLeft:6}}>{openLines.has(`${i}-v`)?"▲":"▾"}</span>
                 </div>
                 {openLines.has(`${i}-v`)&&(
-                  <div style={{color:C.muted,fontSize:11,paddingLeft:20,marginTop:3}}>{d.vRu}</div>
+                  <div style={{color:C.muted,fontSize:12,paddingLeft:20,marginTop:3}}>{d.vRu}</div>
                 )}
               </div>
               <div onClick={()=>togLine(`${i}-k`)}
@@ -6534,27 +6662,27 @@ function T6C(){
                   border:`1px solid ${openLines.has(`${i}-k`)?C.teal+"44":"transparent"}`}}>
                 <div style={{display:"flex",alignItems:"center",justifyContent:"space-between"}}>
                   <span style={{color:C.teal}}>🙋 <b>K:</b> {d.k}</span>
-                  <span style={{fontSize:11,color:C.muted,flexShrink:0,marginLeft:6}}>{openLines.has(`${i}-k`)?"▲":"▾"}</span>
+                  <span style={{fontSize:12,color:C.muted,flexShrink:0,marginLeft:6}}>{openLines.has(`${i}-k`)?"▲":"▾"}</span>
                 </div>
                 {openLines.has(`${i}-k`)&&(
-                  <div style={{color:C.muted,fontSize:11,paddingLeft:20,marginTop:3}}>{d.kRu}</div>
+                  <div style={{color:C.muted,fontSize:12,paddingLeft:20,marginTop:3}}>{d.kRu}</div>
                 )}
               </div>
-              {d.note&&<div style={{color:C.muted,fontSize:11,marginTop:5}}>💡 {d.note}</div>}
+              {d.note&&<div style={{color:C.muted,fontSize:12,marginTop:5}}>💡 {d.note}</div>}
             </div>
           ))}
         </div>
 
         <div style={{background:C.card2,borderRadius:10,padding:"10px 12px"}}>
-          <div style={{fontWeight:700,fontSize:12,color:C.orange,marginBottom:8}}>
+          <div style={{fontWeight:700,fontSize:13,color:C.orange,marginBottom:8}}>
             ⚖️ Mengenangaben — единицы измерения
           </div>
           <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:4}}>
             {mengen.map(({abbr,full})=>(
               <div key={abbr} style={{display:"flex",gap:6,alignItems:"center",
                 background:C.ov5,borderRadius:6,padding:"5px 8px"}}>
-                <span style={{color:C.orange,fontWeight:800,fontSize:12,minWidth:60}}>{abbr}</span>
-                <span style={{color:C.muted,fontSize:11}}>{full}</span>
+                <span style={{color:C.orange,fontWeight:800,fontSize:13,minWidth:60}}>{abbr}</span>
+                <span style={{color:C.muted,fontSize:12}}>{full}</span>
               </div>
             ))}
           </div>
@@ -6600,9 +6728,10 @@ function T6D(){
         <div style={{display:"flex",gap:6,marginBottom:12}}>
           {[["mögen","mögen"],["vs","mögen vs möchten"],["kein","kein- vs nicht"]].map(([key,lbl])=>(
             <button key={key} onClick={()=>setTab(key)}
-              style={{flex:1,padding:"9px 4px",borderRadius:9,border:"none",cursor:"pointer",
-                fontSize:11,fontWeight:700,
-                background:tab===key?C.purple+"33":"transparent",
+              style={{flex:1,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,lineHeight:1.35,textAlign:"center",
+                border:`1px solid ${tab===key?C.purple+"55":C.border}`,
+                background:tab===key?C.purple+"22":C.ov3,
                 color:tab===key?C.purple:C.muted}}>
               {lbl}
             </button>
@@ -6613,26 +6742,26 @@ function T6D(){
           <div>
             <div style={{background:C.purple+"15",border:`1px solid ${C.purple}33`,
               borderRadius:10,padding:"12px 14px",marginBottom:10}}>
-              <div style={{fontWeight:800,fontSize:13,color:C.purple,marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:14,color:C.purple,marginBottom:10}}>
                 Спряжение: mögen
               </div>
               <div style={{background:C.red+"15",border:`1px solid ${C.red}33`,
-                borderRadius:8,padding:"7px 10px",marginBottom:10,fontSize:12}}>
+                borderRadius:8,padding:"7px 10px",marginBottom:10,fontSize:13}}>
                 ⚠️ <b style={{color:C.red}}>ich mag = er/sie mag</b> — нет окончания!
                 <span style={{color:C.muted}}> (неправильный глагол)</span>
               </div>
               <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:4}}>
                 {moegen.map(([pro,form])=>(
                   <div key={pro} style={{display:"flex",gap:8,background:C.ov6,
-                    borderRadius:7,padding:"6px 10px",fontSize:13,alignItems:"center"}}>
-                    <span style={{color:C.muted,minWidth:60,fontSize:11}}>{pro}</span>
+                    borderRadius:7,padding:"6px 10px",fontSize:14,alignItems:"center"}}>
+                    <span style={{color:C.muted,minWidth:60,fontSize:12}}>{pro}</span>
                     <span style={{color:C.purple,fontWeight:800}}>{form}</span>
                   </div>
                 ))}
               </div>
             </div>
             <div style={{background:C.card2,borderRadius:10,padding:"10px 12px"}}>
-              <div style={{fontWeight:700,fontSize:12,color:C.text,marginBottom:8}}>Примеры:</div>
+              <div style={{fontWeight:700,fontSize:13,color:C.text,marginBottom:8}}>Примеры:</div>
               {[
                 ["Susanna mag Wurst, aber sie mag keinen Käse.","Сюзанна любит колбасу, но не любит сыр."],
                 ["Ich mag Fisch.","Я люблю рыбу."],
@@ -6640,9 +6769,9 @@ function T6D(){
                 ["Ich mag keine Bratkartoffeln.","Мне не нравится жареная картошка."],
               ].map(([de,ru])=>(
                 <div key={de} style={{marginBottom:6,paddingBottom:6,
-                  borderBottom:`1px solid ${C.border}`,fontSize:12}}>
+                  borderBottom:`1px solid ${C.border}`,fontSize:13}}>
                   <div style={{color:C.text,fontWeight:600}}>{de}</div>
-                  <div style={{color:C.muted,fontSize:11}}>{ru}</div>
+                  <div style={{color:C.muted,fontSize:12}}>{ru}</div>
                 </div>
               ))}
             </div>
@@ -6652,7 +6781,7 @@ function T6D(){
         {tab==="vs"&&(
           <div>
             <div style={{background:C.card2,borderRadius:10,padding:"12px 14px",marginBottom:10}}>
-              <div style={{fontWeight:800,fontSize:12,color:C.text,marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.text,marginBottom:10}}>
                 mögen vs möchten — в чём разница?
               </div>
               {[
@@ -6663,17 +6792,17 @@ function T6D(){
                   padding:"10px 12px",marginBottom:8}}>
                   <div style={{display:"flex",gap:8,alignItems:"center",marginBottom:4}}>
                     <span style={{background:C.purple+"33",color:C.purple,borderRadius:6,
-                      padding:"2px 8px",fontSize:12,fontWeight:800}}>{verb}</span>
-                    <span style={{color:C.text,fontWeight:700,fontSize:13}}>{conj}</span>
+                      padding:"2px 8px",fontSize:13,fontWeight:800}}>{verb}</span>
+                    <span style={{color:C.text,fontWeight:700,fontSize:14}}>{conj}</span>
                   </div>
-                  <div style={{fontSize:12,color:C.muted,marginBottom:4}}>📌 {ru}</div>
-                  <div style={{fontSize:13,color:C.text,fontWeight:600}}>{ex}</div>
-                  <div style={{fontSize:11,color:C.muted,fontStyle:"italic"}}>{note}</div>
+                  <div style={{fontSize:13,color:C.muted,marginBottom:4}}>📌 {ru}</div>
+                  <div style={{fontSize:14,color:C.text,fontWeight:600}}>{ex}</div>
+                  <div style={{fontSize:12,color:C.muted,fontStyle:"italic"}}>{note}</div>
                 </div>
               ))}
             </div>
             <div style={{background:C.yellow+"15",border:`1px solid ${C.yellow}33`,borderRadius:10,padding:"10px 12px"}}>
-              <div style={{fontSize:12,color:C.muted,lineHeight:1.8}}>
+              <div style={{fontSize:13,color:C.muted,lineHeight:1.8}}>
                 <b style={{color:C.yellow}}>Ich mag Pizza.</b> — Я люблю пиццу (всегда) ✅<br/>
                 <b style={{color:C.teal}}>Ich möchte (jetzt) Pizza.</b> — Я хочу пиццу (сейчас) ✅<br/>
                 <br/>
@@ -6686,40 +6815,40 @@ function T6D(){
         {tab==="kein"&&(
           <div>
             <div style={{background:C.card2,borderRadius:10,padding:"12px 14px",marginBottom:10}}>
-              <div style={{fontWeight:800,fontSize:12,color:C.red,marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.red,marginBottom:10}}>
                 🚫 kein- + Nomen vs nicht + Verb
               </div>
               <div style={{background:C.red+"15",border:`1px solid ${C.red}33`,
                 borderRadius:8,padding:"8px 10px",marginBottom:10}}>
-                <div style={{fontSize:12,lineHeight:1.9}}>
+                <div style={{fontSize:13,lineHeight:1.9}}>
                   <b style={{color:C.red}}>kein-</b><span style={{color:C.muted}}> + Nomen: </span>
                   <b style={{color:C.text}}>Ich mag keinen Kaffee.</b>
-                  <span style={{color:C.muted,fontSize:11}}> → отрицание предмета</span><br/>
+                  <span style={{color:C.muted,fontSize:12}}> → отрицание предмета</span><br/>
                   <b style={{color:C.orange}}>nicht</b><span style={{color:C.muted}}> + gern: </span>
                   <b style={{color:C.text}}>Ich trinke nicht gern Kaffee.</b>
-                  <span style={{color:C.muted,fontSize:11}}> → отрицание действия</span>
+                  <span style={{color:C.muted,fontSize:12}}> → отрицание действия</span>
                 </div>
               </div>
-              <div style={{fontWeight:700,fontSize:11,color:C.muted,marginBottom:6}}>
+              <div style={{fontWeight:700,fontSize:12,color:C.muted,marginBottom:6}}>
                 Akkusativ kein — по роду:
               </div>
               {keinRows.map(({genus,bsp,akk,col})=>(
                 <div key={genus} style={{display:"flex",gap:8,alignItems:"center",
                   background:col+"10",borderRadius:7,padding:"6px 10px",marginBottom:4}}>
                   <span style={{background:col+"33",color:col,borderRadius:4,
-                    padding:"1px 6px",fontSize:11,fontWeight:800,minWidth:18,
+                    padding:"1px 6px",fontSize:12,fontWeight:800,minWidth:18,
                     textAlign:"center"}}>{genus}</span>
-                  <span style={{color:C.muted,fontSize:11,flex:1}}>{bsp}</span>
-                  <span style={{color:col,fontWeight:800,fontSize:12}}>→ {akk}</span>
+                  <span style={{color:C.muted,fontSize:12,flex:1}}>{bsp}</span>
+                  <span style={{color:col,fontWeight:800,fontSize:13}}>→ {akk}</span>
                 </div>
               ))}
             </div>
             <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,
               borderRadius:10,padding:"10px 12px"}}>
-              <div style={{fontWeight:700,fontSize:12,color:C.orange,marginBottom:6}}>
+              <div style={{fontWeight:700,fontSize:13,color:C.orange,marginBottom:6}}>
                 💡 Только m меняется в Akkusativ!
               </div>
-              <div style={{fontSize:12,color:C.muted,lineHeight:1.7}}>
+              <div style={{fontSize:13,color:C.muted,lineHeight:1.7}}>
                 m: <b style={{color:C.blue}}>keinen</b> Käse / Kaffee / Fisch<br/>
                 n: <b style={{color:C.orange}}>kein</b> Brot / Fleisch / Bier<br/>
                 f: <b style={{color:C.purple}}>keine</b> Milch / Wurst / Cola<br/>
@@ -6768,10 +6897,10 @@ function T6E(){
 
         <div style={{background:C.green+"15",border:`1px solid ${C.green}33`,
           borderRadius:10,padding:"10px 12px",marginBottom:14}}>
-          <div style={{fontWeight:800,fontSize:12,color:C.green,marginBottom:8}}>
+          <div style={{fontWeight:800,fontSize:13,color:C.green,marginBottom:8}}>
             👥 Местоимение man
           </div>
-          <div style={{fontSize:12,color:C.muted,lineHeight:1.7,marginBottom:8}}>
+          <div style={{fontSize:13,color:C.muted,lineHeight:1.7,marginBottom:8}}>
             <b style={{color:C.green}}>man</b> = «люди», «все», «принято» (= viele Leute oder alle)<br/>
             Спрягается как <b style={{color:C.text}}>er / es / sie</b>
           </div>
@@ -6783,22 +6912,22 @@ function T6E(){
               ["In Spanien isst man oft spät.","В Испании обычно едят поздно."],
             ].map(([de,ru])=>(
               <div key={de} style={{background:C.ov6,borderRadius:7,
-                padding:"6px 10px",fontSize:12}}>
+                padding:"6px 10px",fontSize:13}}>
                 <span style={{color:C.text}}>{de}</span>
-                <span style={{color:C.muted,fontSize:11,display:"block",marginTop:2}}>{ru}</span>
+                <span style={{color:C.muted,fontSize:12,display:"block",marginTop:2}}>{ru}</span>
               </div>
             ))}
           </div>
         </div>
 
-        <div style={{fontSize:12,color:C.muted,marginBottom:8}}>
+        <div style={{fontSize:13,color:C.muted,marginBottom:8}}>
           🕐 Essenszeiten in Deutschland:
         </div>
         <div style={{display:"flex",gap:5,marginBottom:10}}>
           {meals.map((m,i)=>(
             <button key={m.id} onClick={()=>setSelMeal(i)}
               style={{flex:1,padding:"10px 4px",borderRadius:9,cursor:"pointer",
-                fontSize:11,fontWeight:800,border:`2px solid ${selMeal===i?m.col:C.border}`,
+                fontSize:12,fontWeight:800,border:`2px solid ${selMeal===i?m.col:C.border}`,
                 background:selMeal===i?m.col+"22":"transparent",
                 color:selMeal===i?m.col:C.muted}}>
               {m.icon}<br/>{m.name.split(" ")[0]}
@@ -6811,25 +6940,25 @@ function T6E(){
             <span style={{fontSize:24}}>{meal.icon}</span>
             <div>
               <div style={{fontWeight:800,fontSize:14,color:meal.col}}>{meal.name}</div>
-              <div style={{fontSize:11,color:C.muted}}>{meal.time} · {meal.ru}</div>
+              <div style={{fontSize:12,color:C.muted}}>{meal.time} · {meal.ru}</div>
             </div>
           </div>
           <div style={{display:"flex",flexDirection:"column",gap:4,marginBottom:8}}>
             {meal.foods.map(f=>(
-              <div key={f} style={{display:"flex",gap:6,alignItems:"center",fontSize:12}}>
+              <div key={f} style={{display:"flex",gap:6,alignItems:"center",fontSize:13}}>
                 <span style={{color:meal.col}}>•</span>
                 <span style={{color:C.text}}>{f}</span>
               </div>
             ))}
           </div>
           <div style={{background:C.ov6,borderRadius:7,
-            padding:"6px 10px",fontSize:11,color:C.muted,fontStyle:"italic"}}>
+            padding:"6px 10px",fontSize:12,color:C.muted,fontStyle:"italic"}}>
             💡 {meal.note}
           </div>
         </div>
 
         <div style={{background:C.card2,borderRadius:10,padding:"10px 12px",marginTop:10}}>
-          <div style={{fontWeight:700,fontSize:12,color:C.text,marginBottom:6}}>
+          <div style={{fontWeight:700,fontSize:13,color:C.text,marginBottom:6}}>
             🏢 Wo isst man zu Mittag?
           </div>
           {[
@@ -6837,7 +6966,7 @@ function T6E(){
             ["🌭 am Imbiss","В закусочной (быстро и недорого)"],
             ["🏠 zu Hause","Дома (если живёшь рядом)"],
           ].map(([de,ru])=>(
-            <div key={de} style={{display:"flex",gap:8,marginBottom:4,fontSize:12}}>
+            <div key={de} style={{display:"flex",gap:8,marginBottom:4,fontSize:13}}>
               <span style={{color:C.text,flex:1}}>{de}</span>
               <span style={{color:C.muted}}>{ru}</span>
             </div>
@@ -6889,9 +7018,10 @@ function T7A(){
         <div style={{display:"flex",gap:6,marginBottom:12}}>
           {[["modal","Modalverben"],["berufe","Berufe"],["klammer","Satzklammer"]].map(([key,lbl])=>(
             <button key={key} onClick={()=>setTab(key)}
-              style={{flex:1,padding:"9px 4px",borderRadius:9,border:"none",cursor:"pointer",
-                fontSize:11,fontWeight:700,
-                background:tab===key?C.blue+"33":"transparent",
+              style={{flex:1,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,lineHeight:1.35,textAlign:"center",
+                border:`1px solid ${tab===key?C.blue+"55":C.border}`,
+                background:tab===key?C.blue+"22":C.ov3,
                 color:tab===key?C.blue:C.muted}}>
               {lbl}
             </button>
@@ -6899,32 +7029,32 @@ function T7A(){
         </div>
         {tab==="modal"&&(
           <div style={{display:"flex",flexDirection:"column",gap:8}}>
-            <div style={{fontSize:11,color:C.muted,marginBottom:4}}>
+            <div style={{fontSize:12,color:C.muted,marginBottom:4}}>
               ⚠️ Все модальные глаголы: <b style={{color:C.text}}>ich = er/sie/es</b> (нет окончания!)
             </div>
             {modals.map(m=>(
               <div key={m.v} style={{background:m.col+"15",border:`1px solid ${m.col}33`,borderRadius:10,padding:"10px 12px"}}>
                 <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:6}}>
                   <span style={{color:m.col,fontWeight:800,fontSize:14}}>{m.v}</span>
-                  <span style={{color:C.muted,fontSize:11}}>{m.ru}</span>
+                  <span style={{color:C.muted,fontSize:12}}>{m.ru}</span>
                 </div>
                 <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:3,marginBottom:6}}>
                   {[["ich",m.ich],["wir",m.wir],["du",m.du],["ihr",m.ihr],["er/sie/es",m.er],["sie/Sie",m.sie]].map(([p,f])=>(
                     <div key={p} style={{display:"flex",gap:6,background:C.ov6,
-                      borderRadius:6,padding:"4px 8px",fontSize:12}}>
-                      <span style={{color:C.muted,minWidth:56,fontSize:11}}>{p}</span>
+                      borderRadius:6,padding:"4px 8px",fontSize:13}}>
+                      <span style={{color:C.muted,minWidth:56,fontSize:12}}>{p}</span>
                       <span style={{color:m.col,fontWeight:800}}>{f}</span>
                     </div>
                   ))}
                 </div>
-                <div style={{fontSize:12,color:C.muted,fontStyle:"italic"}}>💬 {m.bsp}</div>
+                <div style={{fontSize:13,color:C.muted,fontStyle:"italic"}}>💬 {m.bsp}</div>
               </div>
             ))}
           </div>
         )}
         {tab==="berufe"&&(
           <div>
-            <div style={{fontSize:11,color:C.muted,marginBottom:8}}>
+            <div style={{fontSize:12,color:C.muted,marginBottom:8}}>
               💡 <b style={{color:C.text}}>Ich bin Kellner.</b> (без артикля!)
               <span style={{color:C.muted}}> / </span>
               <b style={{color:C.text}}>Ich arbeite als Kellner.</b>
@@ -6933,10 +7063,10 @@ function T7A(){
               {berufe.map(b=>(
                 <div key={b.m} style={{background:C.card2,borderRadius:8,padding:"8px 10px"}}>
                   <div style={{display:"flex",gap:4,justifyContent:"space-between",alignItems:"center"}}>
-                    <span style={{fontSize:12,fontWeight:700,color:C.text}}>{b.m} / {b.f}</span>
-                    <span style={{fontSize:11,color:C.muted}}>{b.ru}</span>
+                    <span style={{fontSize:13,fontWeight:700,color:C.text}}>{b.m} / {b.f}</span>
+                    <span style={{fontSize:12,color:C.muted}}>{b.ru}</span>
                   </div>
-                  <div style={{fontSize:11,color:C.blue,marginTop:3}}>📍 {b.wo}</div>
+                  <div style={{fontSize:12,color:C.blue,marginTop:3}}>📍 {b.wo}</div>
                 </div>
               ))}
             </div>
@@ -6945,8 +7075,8 @@ function T7A(){
         {tab==="klammer"&&(
           <div>
             <div style={{background:C.yellow+"18",border:`1px solid ${C.yellow}44`,borderRadius:10,padding:"12px 14px",marginBottom:10}}>
-              <div style={{fontWeight:800,fontSize:13,color:C.yellow,marginBottom:8}}>🔑 Satzklammer</div>
-              <div style={{fontSize:12,color:C.muted,marginBottom:10,lineHeight:1.7}}>
+              <div style={{fontWeight:800,fontSize:14,color:C.yellow,marginBottom:8}}>🔑 Satzklammer</div>
+              <div style={{fontSize:13,color:C.muted,marginBottom:10,lineHeight:1.7}}>
                 Модальный глагол — на <b style={{color:C.yellow}}>2-м месте</b><br/>
                 Инфинитив — <b style={{color:C.orange}}>в конце предложения</b>
               </div>
@@ -6957,7 +7087,7 @@ function T7A(){
                 ["Sie","soll","viel Tee","trinken","Ей нужно много пить чая"],
               ].map(([sub,modal,mid,inf,ru])=>(
                 <div key={sub} style={{background:C.ov6,borderRadius:8,
-                  padding:"8px 10px",marginBottom:6,fontSize:12}}>
+                  padding:"8px 10px",marginBottom:6,fontSize:13}}>
                   <div style={{display:"flex",gap:4,flexWrap:"wrap",alignItems:"center",marginBottom:4}}>
                     <span style={{color:C.text}}>{sub}</span>
                     <span style={{background:C.yellow+"33",color:C.yellow,fontWeight:800,
@@ -6966,7 +7096,7 @@ function T7A(){
                     <span style={{background:C.orange+"33",color:C.orange,fontWeight:800,
                       borderRadius:4,padding:"1px 6px"}}>{inf}.</span>
                   </div>
-                  <div style={{fontSize:11,color:C.muted}}>{ru}</div>
+                  <div style={{fontSize:12,color:C.muted}}>{ru}</div>
                 </div>
               ))}
             </div>
@@ -7006,11 +7136,11 @@ function T7B(){
               <div style={{display:"flex",gap:8,alignItems:"center",marginBottom:4}}>
                 <span style={{fontSize:20}}>{b.icon}</span>
                 <div style={{flex:1}}>
-                  <div style={{fontWeight:800,color:C.orange,fontSize:13}}>{b.de}</div>
-                  <div style={{color:C.muted,fontSize:11}}>{b.ru}</div>
+                  <div style={{fontWeight:800,color:C.orange,fontSize:14}}>{b.de}</div>
+                  <div style={{color:C.muted,fontSize:12}}>{b.ru}</div>
                 </div>
               </div>
-              <div style={{fontSize:11,color:C.muted,fontStyle:"italic",paddingLeft:32}}>
+              <div style={{fontSize:12,color:C.muted,fontStyle:"italic",paddingLeft:32}}>
                 💬 {b.bsp}
               </div>
             </div>
@@ -7058,11 +7188,12 @@ function T7C(){
       <Box c={C.purple}>
         <H c={C.purple}>🗺️ C · Dativ-Präpositionen</H>
         <div style={{display:"flex",gap:6,marginBottom:12}}>
-          {[["artikel","Dativ-Artikel"],["praep","Präpositionen"],["wo","Wo/Wohin/Woher"]].map(([key,lbl])=>(
+          {[["artikel","Dativ-Artikel"],["praep","Präpositionen"],["wo","Wo / Wohin / Woher"]].map(([key,lbl])=>(
             <button key={key} onClick={()=>setTab(key)}
-              style={{flex:1,padding:"9px 4px",borderRadius:9,border:"none",cursor:"pointer",
-                fontSize:11,fontWeight:700,
-                background:tab===key?C.purple+"33":"transparent",
+              style={{flex:1,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,lineHeight:1.35,textAlign:"center",
+                border:`1px solid ${tab===key?C.purple+"55":C.border}`,
+                background:tab===key?C.purple+"22":C.ov3,
                 color:tab===key?C.purple:C.muted}}>
               {lbl}
             </button>
@@ -7072,33 +7203,33 @@ function T7C(){
           <div>
             <div style={{background:C.purple+"15",border:`1px solid ${C.purple}33`,
               borderRadius:10,padding:"12px 14px",marginBottom:10}}>
-              <div style={{fontWeight:800,fontSize:12,color:C.purple,marginBottom:8}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.purple,marginBottom:8}}>
                 Артикль в Dativ (Wo? Womit? С кем/чем?)
               </div>
               <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr",gap:4,marginBottom:8}}>
                 {[["m","dem",C.blue],["n","dem",C.orange],["f","der",C.purple],["Pl","den",C.teal]].map(([g,art,col])=>(
                   <div key={g} style={{background:col+"15",borderRadius:8,padding:"8px",textAlign:"center"}}>
-                    <div style={{fontSize:11,color:col,fontWeight:800,marginBottom:4}}>{g}</div>
+                    <div style={{fontSize:12,color:col,fontWeight:800,marginBottom:4}}>{g}</div>
                     <div style={{fontSize:16,color:col,fontWeight:800}}>{art}</div>
                   </div>
                 ))}
               </div>
-              <div style={{background:C.red+"15",borderRadius:7,padding:"6px 10px",fontSize:11,color:C.muted}}>
+              <div style={{background:C.red+"15",borderRadius:7,padding:"6px 10px",fontSize:12,color:C.muted}}>
                 ⚠️ <b style={{color:C.red}}>Plural Dativ</b>: Nomen bekommt immer <b style={{color:C.red}}>-n</b>!<br/>
                 Kinder → mit den Kinder<b style={{color:C.red}}>n</b> / Freunden / Eltern
               </div>
             </div>
-            <div style={{fontWeight:700,fontSize:12,color:C.text,marginBottom:6}}>
+            <div style={{fontWeight:700,fontSize:13,color:C.text,marginBottom:6}}>
               🔗 Kontraktionen (слияния):
             </div>
             <div style={{display:"flex",flexDirection:"column",gap:4}}>
               {kontr.map(k=>(
                 <div key={k.long} style={{display:"flex",gap:8,background:C.card2,
-                  borderRadius:7,padding:"7px 10px",alignItems:"center",fontSize:12}}>
+                  borderRadius:7,padding:"7px 10px",alignItems:"center",fontSize:13}}>
                   <span style={{color:C.muted,minWidth:80}}>{k.long}</span>
                   <span style={{color:C.text,fontSize:18}}>→</span>
                   <span style={{color:C.purple,fontWeight:800,minWidth:36}}>{k.short}</span>
-                  <span style={{color:C.muted,fontSize:11}}>{k.ex}</span>
+                  <span style={{color:C.muted,fontSize:12}}>{k.ex}</span>
                 </div>
               ))}
             </div>
@@ -7109,12 +7240,12 @@ function T7C(){
             {praeps.map(p=>(
               <div key={p.p} style={{background:C.card2,borderRadius:8,padding:"9px 11px"}}>
                 <div style={{display:"flex",gap:8,alignItems:"center",marginBottom:5}}>
-                  <span style={{background:C.purple+"33",color:C.purple,fontWeight:800,fontSize:13,
+                  <span style={{background:C.purple+"33",color:C.purple,fontWeight:800,fontSize:14,
                     borderRadius:6,padding:"2px 9px"}}>{p.p}</span>
-                  <span style={{color:C.muted,fontSize:11}}>{p.ru} + Dativ</span>
+                  <span style={{color:C.muted,fontSize:12}}>{p.ru} + Dativ</span>
                 </div>
                 {p.bsp.map(b=>(
-                  <div key={b} style={{fontSize:12,color:C.text,paddingLeft:4,marginBottom:2}}>• {b}</div>
+                  <div key={b} style={{fontSize:13,color:C.text,paddingLeft:4,marginBottom:2}}>• {b}</div>
                 ))}
               </div>
             ))}
@@ -7131,26 +7262,26 @@ function T7C(){
                 <div key={r.q} style={{background:C.card2,borderRadius:9,padding:"10px 12px"}}>
                   <div style={{display:"flex",gap:8,alignItems:"center",marginBottom:5}}>
                     <span style={{fontSize:16}}>{r.emoji}</span>
-                    <span style={{fontWeight:800,color:C.purple,fontSize:13}}>{r.q}</span>
-                    <span style={{color:C.muted,fontSize:11}}>{r.ru}</span>
+                    <span style={{fontWeight:800,color:C.purple,fontSize:14}}>{r.q}</span>
+                    <span style={{color:C.muted,fontSize:12}}>{r.ru}</span>
                     <span style={{marginLeft:"auto",background:C.purple+"22",color:C.purple,
-                      borderRadius:5,padding:"2px 7px",fontSize:11,fontWeight:700}}>{r.p}+Dativ</span>
+                      borderRadius:5,padding:"2px 7px",fontSize:12,fontWeight:700}}>{r.p}+Dativ</span>
                   </div>
-                  {r.ex.map(e=><div key={e} style={{fontSize:12,color:C.text,paddingLeft:24}}>• {e}</div>)}
+                  {r.ex.map(e=><div key={e} style={{fontSize:13,color:C.text,paddingLeft:24}}>• {e}</div>)}
                 </div>
               ))}
             </div>
             <div style={{background:C.teal+"15",border:`1px solid ${C.teal}33`,borderRadius:10,padding:"10px 12px"}}>
-              <div style={{fontWeight:700,fontSize:12,color:C.teal,marginBottom:6}}>🏠 zu Hause / nach Hause</div>
+              <div style={{fontWeight:700,fontSize:13,color:C.teal,marginBottom:6}}>🏠 zu Hause / nach Hause</div>
               {[
                 ["Wo bist du?",     "Ich bin zu Hause.",         "я дома"],
                 ["Wohin gehst du?", "Ich gehe nach Hause.",      "я иду домой"],
                 ["Woher kommst du?","Ich komme von zu Hause.",   "я из дома"],
               ].map(([q,a,ru])=>(
-                <div key={q} style={{marginBottom:5,fontSize:12}}>
+                <div key={q} style={{marginBottom:5,fontSize:13}}>
                   <span style={{color:C.muted}}>{q} → </span>
                   <span style={{color:C.teal,fontWeight:700}}>{a}</span>
-                  <span style={{color:C.muted,fontSize:11}}> ({ru})</span>
+                  <span style={{color:C.muted,fontSize:12}}> ({ru})</span>
                 </div>
               ))}
             </div>
@@ -7201,29 +7332,29 @@ function T8B(){
         <H c={C.orange}>🔄 B · Personalpronomen Akkusativ</H>
         <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,
           borderRadius:10,padding:"12px 14px",marginBottom:12}}>
-          <div style={{fontWeight:800,fontSize:12,color:C.orange,marginBottom:10}}>
+          <div style={{fontWeight:800,fontSize:13,color:C.orange,marginBottom:10}}>
             Nominativ → Akkusativ
           </div>
-          <div style={{fontSize:11,color:C.muted,marginBottom:10}}>
+          <div style={{fontSize:12,color:C.muted,marginBottom:10}}>
             ❓ Wer? (подлежащее) → Wen? Was? (дополнение)
           </div>
           <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:4}}>
             {pronomen.map(p=>(
               <div key={p.nom} style={{display:"flex",gap:8,alignItems:"center",
                 background:C.ov6,borderRadius:7,padding:"6px 10px"}}>
-                <span style={{color:C.muted,fontSize:11,minWidth:56}}>{p.nom}</span>
+                <span style={{color:C.muted,fontSize:12,minWidth:56}}>{p.nom}</span>
                 <span style={{color:C.text,fontSize:14}}>→</span>
-                <span style={{color:p.col,fontWeight:800,fontSize:13}}>{p.akk}</span>
+                <span style={{color:p.col,fontWeight:800,fontSize:14}}>{p.akk}</span>
               </div>
             ))}
           </div>
         </div>
         <div style={{background:C.red+"15",border:`1px solid ${C.red}33`,
-          borderRadius:8,padding:"8px 10px",marginBottom:12,fontSize:11}}>
+          borderRadius:8,padding:"8px 10px",marginBottom:12,fontSize:12}}>
           ⚠️ Меняются только: <b style={{color:C.red}}>ich→mich, du→dich, er→ihn</b><br/>
           Остальные: wir→uns, ihr→euch; es/sie/Sie остаются.
         </div>
-        <div style={{fontWeight:700,fontSize:12,color:C.text,marginBottom:6}}>
+        <div style={{fontWeight:700,fontSize:13,color:C.text,marginBottom:6}}>
           💬 Примеры из учебника:
         </div>
         <div style={{display:"flex",flexDirection:"column",gap:5}}>
@@ -7231,13 +7362,13 @@ function T8B(){
             <div key={i} onClick={()=>setOpenEx(openEx===i?null:i)}
               style={{background:C.card2,borderRadius:8,padding:"8px 10px",cursor:"pointer"}}>
               <div style={{display:"flex",justifyContent:"space-between",alignItems:"center"}}>
-                <span style={{fontSize:12,color:C.text,flex:1}}>{e.de}</span>
-                <span style={{fontSize:11,color:C.muted,marginLeft:6}}>{openEx===i?"▲":"▾"}</span>
+                <span style={{fontSize:13,color:C.text,flex:1}}>{e.de}</span>
+                <span style={{fontSize:12,color:C.muted,marginLeft:6}}>{openEx===i?"▲":"▾"}</span>
               </div>
               {openEx===i&&(
                 <div style={{marginTop:6,borderTop:`1px solid ${C.border}`,paddingTop:6}}>
-                  <div style={{fontSize:11,color:C.muted}}>{e.ru}</div>
-                  <div style={{fontSize:11,color:C.orange,marginTop:3}}>🔍 {e.pro}</div>
+                  <div style={{fontSize:12,color:C.muted}}>{e.ru}</div>
+                  <div style={{fontSize:12,color:C.orange,marginTop:3}}>🔍 {e.pro}</div>
                 </div>
               )}
             </div>
@@ -7285,9 +7416,10 @@ function T8C(){
         <div style={{display:"flex",gap:6,marginBottom:12}}>
           {[["sollte","sollte"],["gesundheit","Gesundheit in DE"],["kinder","Kinderkrankheiten"]].map(([key,lbl])=>(
             <button key={key} onClick={()=>setTab(key)}
-              style={{flex:1,padding:"9px 4px",borderRadius:9,border:"none",cursor:"pointer",
-                fontSize:11,fontWeight:700,
-                background:tab===key?C.teal+"33":"transparent",
+              style={{flex:1,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,lineHeight:1.35,textAlign:"center",
+                border:`1px solid ${tab===key?C.teal+"55":C.border}`,
+                background:tab===key?C.teal+"22":C.ov3,
                 color:tab===key?C.teal:C.muted}}>
               {lbl}
             </button>
@@ -7297,7 +7429,7 @@ function T8C(){
           <div>
             <div style={{background:C.teal+"15",border:`1px solid ${C.teal}33`,
               borderRadius:10,padding:"12px 14px",marginBottom:10}}>
-              <div style={{fontWeight:800,fontSize:13,color:C.teal,marginBottom:8}}>
+              <div style={{fontWeight:800,fontSize:14,color:C.teal,marginBottom:8}}>
                 sollte — Konjunktiv II (мягкий совет/рекомендация)
               </div>
               <div style={{background:C.card2,borderRadius:8,padding:"8px 10px",marginBottom:10}}>
@@ -7305,8 +7437,8 @@ function T8C(){
                   {[["ich","sollte"],["wir","sollten"],["du","solltest"],["ihr","solltet"],
                     ["er/sie/es","sollte"],["sie/Sie","sollten"]].map(([p,f])=>(
                     <div key={p} style={{display:"flex",gap:6,background:C.ov6,
-                      borderRadius:6,padding:"4px 8px",fontSize:12}}>
-                      <span style={{color:C.muted,fontSize:11,minWidth:56}}>{p}</span>
+                      borderRadius:6,padding:"4px 8px",fontSize:13}}>
+                      <span style={{color:C.muted,fontSize:12,minWidth:56}}>{p}</span>
                       <span style={{color:C.teal,fontWeight:800}}>{f}</span>
                     </div>
                   ))}
@@ -7314,10 +7446,10 @@ function T8C(){
               </div>
               <div style={{background:C.yellow+"15",border:`1px solid ${C.yellow}33`,
                 borderRadius:8,padding:"8px 10px",marginBottom:10}}>
-                <div style={{fontWeight:700,fontSize:11,color:C.yellow,marginBottom:6}}>
+                <div style={{fontWeight:700,fontSize:12,color:C.yellow,marginBottom:6}}>
                   ⚖️ sollen vs sollte:
                 </div>
-                <div style={{fontSize:12,color:C.muted,lineHeight:1.8}}>
+                <div style={{fontSize:13,color:C.muted,lineHeight:1.8}}>
                   <b style={{color:C.text}}>Du sollst</b> Tabletten nehmen.
                   <span style={{color:C.muted}}> — врач НАЗНАЧИЛ (обязанность)</span><br/>
                   <b style={{color:C.teal}}>Du solltest</b> Tabletten nehmen.
@@ -7330,15 +7462,15 @@ function T8C(){
                 ["Du solltest viel schlafen.","Тебе следует много спать."],
                 ["Dann geh doch zum Arzt!","Тогда сходи к врачу!"],
               ].map(([de,ru])=>(
-                <div key={de} style={{marginBottom:5,fontSize:12,
+                <div key={de} style={{marginBottom:5,fontSize:13,
                   background:C.ov4,borderRadius:6,padding:"5px 8px"}}>
                   <div style={{color:C.text,fontWeight:600}}>{de}</div>
-                  <div style={{color:C.muted,fontSize:11}}>{ru}</div>
+                  <div style={{color:C.muted,fontSize:12}}>{ru}</div>
                 </div>
               ))}
             </div>
             <div style={{background:C.card2,borderRadius:10,padding:"10px 12px"}}>
-              <div style={{fontWeight:700,fontSize:12,color:C.text,marginBottom:6}}>
+              <div style={{fontWeight:700,fontSize:13,color:C.text,marginBottom:6}}>
                 💡 Также: messen + anmachen/ausmachen
               </div>
               {[
@@ -7346,7 +7478,7 @@ function T8C(){
                 ["den Fernseher anmachen","включить телевизор"],
                 ["das Licht ausmachen","выключить свет"],
               ].map(([de,ru])=>(
-                <div key={de} style={{marginBottom:4,fontSize:12}}>
+                <div key={de} style={{marginBottom:4,fontSize:13}}>
                   <span style={{color:C.teal,fontWeight:700}}>{de}</span>
                   <span style={{color:C.muted}}> — {ru}</span>
                 </div>
@@ -7361,11 +7493,11 @@ function T8C(){
                 <div style={{display:"flex",gap:8,alignItems:"center",marginBottom:5}}>
                   <span style={{fontSize:20}}>{g.icon}</span>
                   <div>
-                    <div style={{fontWeight:800,color:C.teal,fontSize:13}}>{g.de}</div>
-                    <div style={{color:C.muted,fontSize:11}}>{g.ru}</div>
+                    <div style={{fontWeight:800,color:C.teal,fontSize:14}}>{g.de}</div>
+                    <div style={{color:C.muted,fontSize:12}}>{g.ru}</div>
                   </div>
                 </div>
-                <div style={{fontSize:11,color:C.muted,fontStyle:"italic",paddingLeft:28}}>
+                <div style={{fontSize:12,color:C.muted,fontStyle:"italic",paddingLeft:28}}>
                   💡 {g.note}
                 </div>
               </div>
@@ -7374,17 +7506,17 @@ function T8C(){
         )}
         {tab==="kinder"&&(
           <div>
-            <div style={{fontSize:11,color:C.muted,marginBottom:8}}>
+            <div style={{fontSize:12,color:C.muted,marginBottom:8}}>
               🧒 Kinderkrankheiten — детские болезни
             </div>
             <div style={{display:"flex",flexDirection:"column",gap:5}}>
               {kids.map(k=>(
                 <div key={k.de} style={{background:C.card2,borderRadius:8,padding:"9px 11px"}}>
                   <div style={{display:"flex",justifyContent:"space-between",marginBottom:4}}>
-                    <span style={{fontWeight:800,color:C.text,fontSize:13}}>{k.de}</span>
-                    <span style={{color:C.teal,fontSize:12}}>{k.ru}</span>
+                    <span style={{fontWeight:800,color:C.text,fontSize:14}}>{k.de}</span>
+                    <span style={{color:C.teal,fontSize:13}}>{k.ru}</span>
                   </div>
-                  <div style={{fontSize:11,color:C.muted}}>🤒 {k.symptom}</div>
+                  <div style={{fontSize:12,color:C.muted}}>🤒 {k.symptom}</div>
                 </div>
               ))}
             </div>
@@ -7479,9 +7611,10 @@ function T8A(){
         <div style={{display:"flex",gap:6,marginBottom:12}}>
           {[["koerper","Körperteile"],["sollen","sollen & Symptome"],["dialog","Dialog"]].map(([key,lbl])=>(
             <button key={key} onClick={()=>setTab(key)}
-              style={{flex:1,padding:"9px 4px",borderRadius:9,border:"none",cursor:"pointer",
-                fontSize:11,fontWeight:700,
-                background:tab===key?C.red+"33":"transparent",
+              style={{flex:1,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,lineHeight:1.35,textAlign:"center",
+                border:`1px solid ${tab===key?C.red+"55":C.border}`,
+                background:tab===key?C.red+"22":C.ov3,
                 color:tab===key?C.red:C.muted}}>
               {lbl}
             </button>
@@ -7494,15 +7627,15 @@ function T8A(){
                 <div onClick={()=>setOpenBody(openBody===gi?null:gi)}
                   style={{display:"flex",justifyContent:"space-between",alignItems:"center",
                     background:C.red+"15",borderRadius:9,padding:"9px 12px",cursor:"pointer",marginBottom:4}}>
-                  <span style={{fontWeight:700,fontSize:13}}>{g.emoji} {g.group}</span>
-                  <span style={{color:C.muted,fontSize:11}}>{openBody===gi?"▲":"▾"}</span>
+                  <span style={{fontWeight:700,fontSize:14}}>{g.emoji} {g.group}</span>
+                  <span style={{color:C.muted,fontSize:12}}>{openBody===gi?"▲":"▾"}</span>
                 </div>
                 {openBody===gi&&(
                   <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:3,paddingLeft:4}}>
                     {g.parts.map(p=>(
-                      <div key={p.de} style={{background:C.card2,borderRadius:6,padding:"5px 8px",fontSize:11}}>
+                      <div key={p.de} style={{background:C.card2,borderRadius:6,padding:"5px 8px",fontSize:12}}>
                         <div style={{color:C.text,fontWeight:600}}>{p.de}</div>
-                        <div style={{color:C.muted,fontSize:11}}>{p.ru}</div>
+                        <div style={{color:C.muted,fontSize:12}}>{p.ru}</div>
                       </div>
                     ))}
                   </div>
@@ -7515,29 +7648,29 @@ function T8A(){
           <div>
             <div style={{background:C.teal+"15",border:`1px solid ${C.teal}33`,
               borderRadius:10,padding:"10px 12px",marginBottom:10}}>
-              <div style={{fontWeight:800,fontSize:12,color:C.teal,marginBottom:8}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.teal,marginBottom:8}}>
                 sollen — должен (по чужому указанию/совету)
               </div>
               <div style={{background:C.red+"12",borderRadius:7,padding:"5px 10px",
-                marginBottom:8,fontSize:11,color:C.muted}}>
+                marginBottom:8,fontSize:12,color:C.muted}}>
                 ⚠️ <b style={{color:C.red}}>ich soll = er soll</b> (как все модальные глаголы)
               </div>
               <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:3,marginBottom:8}}>
                 {sollen.map(([p,f])=>(
                   <div key={p} style={{display:"flex",gap:6,background:C.ov6,
-                    borderRadius:6,padding:"4px 8px",fontSize:12}}>
-                    <span style={{color:C.muted,minWidth:56,fontSize:11}}>{p}</span>
+                    borderRadius:6,padding:"4px 8px",fontSize:13}}>
+                    <span style={{color:C.muted,minWidth:56,fontSize:12}}>{p}</span>
                     <span style={{color:C.teal,fontWeight:800}}>{f}</span>
                   </div>
                 ))}
               </div>
-              <div style={{fontSize:11,color:C.muted,lineHeight:1.7}}>
+              <div style={{fontSize:12,color:C.muted,lineHeight:1.7}}>
                 💬 Der Arzt sagt, ich <b style={{color:C.teal}}>soll</b> viel Tee <b style={{color:C.orange}}>trinken</b>.<br/>
                 💬 Sie <b style={{color:C.teal}}>sollen</b> im Bett <b style={{color:C.orange}}>bleiben</b>.
               </div>
             </div>
             <div style={{background:C.card2,borderRadius:10,padding:"10px 12px"}}>
-              <div style={{fontWeight:700,fontSize:12,color:C.text,marginBottom:6}}>
+              <div style={{fontWeight:700,fontSize:13,color:C.text,marginBottom:6}}>
                 🤒 Symptome & Empfehlungen
               </div>
               {[
@@ -7548,11 +7681,11 @@ function T8A(){
                 ["😵","die Schmerzen","боли · Tabletten nehmen / Arzt aufsuchen"],
               ].map(([emoji,de,ru])=>(
                 <div key={de} style={{display:"flex",gap:8,alignItems:"center",
-                  marginBottom:5,fontSize:12}}>
+                  marginBottom:5,fontSize:13}}>
                   <span style={{fontSize:16,marginRight:6}}>{emoji}</span>
                   <div>
                     <span style={{color:C.text,fontWeight:600}}>{de}</span>
-                    <div style={{color:C.muted,fontSize:11}}>{ru}</div>
+                    <div style={{color:C.muted,fontSize:12}}>{ru}</div>
                   </div>
                 </div>
               ))}
@@ -7561,21 +7694,21 @@ function T8A(){
         )}
         {tab==="dialog"&&(
           <div>
-            <div style={{fontSize:11,color:C.muted,marginBottom:8}}>
+            <div style={{fontSize:12,color:C.muted,marginBottom:8}}>
               🗓️ Termin beim Arzt · нажми на фразу → перевод
             </div>
             <div style={{display:"flex",flexDirection:"column",gap:5}}>
               {dialog8.map((d,i)=>(
-                <div key={i} style={{background:C.card2,borderRadius:8,padding:"8px 10px",fontSize:12}}>
+                <div key={i} style={{background:C.card2,borderRadius:8,padding:"8px 10px",fontSize:13}}>
                   <div onClick={()=>togLine8(`${i}-v`)}
                     style={{cursor:"pointer",marginBottom:4,borderRadius:6,padding:"4px 6px",
                       background:openLines8.has(`${i}-v`)?C.green+"15":"transparent",
                       border:`1px solid ${openLines8.has(`${i}-v`)?C.green+"44":"transparent"}`}}>
                     <div style={{display:"flex",alignItems:"center",justifyContent:"space-between"}}>
                       <span style={{color:C.green}}>🏥 <b>A:</b> {d.v}</span>
-                      <span style={{fontSize:11,color:C.muted,flexShrink:0,marginLeft:6}}>{openLines8.has(`${i}-v`)?"▲":"▾"}</span>
+                      <span style={{fontSize:12,color:C.muted,flexShrink:0,marginLeft:6}}>{openLines8.has(`${i}-v`)?"▲":"▾"}</span>
                     </div>
-                    {openLines8.has(`${i}-v`)&&<div style={{color:C.muted,fontSize:11,paddingLeft:20,marginTop:3}}>{d.vRu}</div>}
+                    {openLines8.has(`${i}-v`)&&<div style={{color:C.muted,fontSize:12,paddingLeft:20,marginTop:3}}>{d.vRu}</div>}
                   </div>
                   <div onClick={()=>togLine8(`${i}-k`)}
                     style={{cursor:"pointer",borderRadius:6,padding:"4px 6px",
@@ -7583,11 +7716,11 @@ function T8A(){
                       border:`1px solid ${openLines8.has(`${i}-k`)?C.red+"44":"transparent"}`}}>
                     <div style={{display:"flex",alignItems:"center",justifyContent:"space-between"}}>
                       <span style={{color:C.red}}>🙋 <b>P:</b> {d.k}</span>
-                      <span style={{fontSize:11,color:C.muted,flexShrink:0,marginLeft:6}}>{openLines8.has(`${i}-k`)?"▲":"▾"}</span>
+                      <span style={{fontSize:12,color:C.muted,flexShrink:0,marginLeft:6}}>{openLines8.has(`${i}-k`)?"▲":"▾"}</span>
                     </div>
-                    {openLines8.has(`${i}-k`)&&<div style={{color:C.muted,fontSize:11,paddingLeft:20,marginTop:3}}>{d.kRu}</div>}
+                    {openLines8.has(`${i}-k`)&&<div style={{color:C.muted,fontSize:12,paddingLeft:20,marginTop:3}}>{d.kRu}</div>}
                   </div>
-                  {d.note&&<div style={{color:C.muted,fontSize:11,marginTop:4}}>💡 {d.note}</div>}
+                  {d.note&&<div style={{color:C.muted,fontSize:12,marginTop:4}}>💡 {d.note}</div>}
                 </div>
               ))}
             </div>
@@ -7651,9 +7784,10 @@ function T8D(){
         <div style={{display:"flex",gap:6,marginBottom:12}}>
           {[["notruf","Notruf 112"],["hilfe","Erste Hilfe"],["erschoepft","Erschöpft?"]].map(([key,lbl])=>(
             <button key={key} onClick={()=>setTab(key)}
-              style={{flex:1,padding:"9px 4px",borderRadius:9,border:"none",cursor:"pointer",
-                fontSize:11,fontWeight:700,
-                background:tab===key?C.red+"33":"transparent",
+              style={{flex:1,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,lineHeight:1.35,textAlign:"center",
+                border:`1px solid ${tab===key?C.red+"55":C.border}`,
+                background:tab===key?C.red+"22":C.ov3,
                 color:tab===key?C.red:C.muted}}>
               {lbl}
             </button>
@@ -7663,10 +7797,10 @@ function T8D(){
           <div>
             <div style={{background:C.red+"15",border:`1px solid ${C.red}33`,
               borderRadius:10,padding:"10px 12px",marginBottom:10}}>
-              <div style={{fontWeight:800,fontSize:13,color:C.red,marginBottom:6}}>
+              <div style={{fontWeight:800,fontSize:14,color:C.red,marginBottom:6}}>
                 📞 Wie macht man einen Notruf?
               </div>
-              <div style={{fontSize:11,color:C.muted,marginBottom:10}}>
+              <div style={{fontSize:12,color:C.muted,marginBottom:10}}>
                 Sprechen Sie langsam und deutlich!
               </div>
               {schema.map(({n,q,bsp})=>(
@@ -7674,19 +7808,19 @@ function T8D(){
                   background:C.ov4,borderRadius:8,padding:"8px 10px"}}>
                   <div style={{minWidth:22,height:22,background:C.red,borderRadius:"50%",
                     display:"flex",alignItems:"center",justifyContent:"center",
-                    fontSize:11,fontWeight:800,color:"#fff",flexShrink:0}}>{n}</div>
+                    fontSize:12,fontWeight:800,color:"#fff",flexShrink:0}}>{n}</div>
                   <div>
-                    <div style={{fontWeight:700,fontSize:12,color:C.text}}>{q}</div>
-                    <div style={{fontSize:11,color:C.muted,fontStyle:"italic"}}>{bsp}</div>
+                    <div style={{fontWeight:700,fontSize:13,color:C.text}}>{q}</div>
+                    <div style={{fontSize:12,color:C.muted,fontStyle:"italic"}}>{bsp}</div>
                   </div>
                 </div>
               ))}
             </div>
             <div style={{background:C.card2,borderRadius:8,padding:"9px 11px"}}>
-              <div style={{fontWeight:700,fontSize:11,color:C.muted,marginBottom:6}}>☎️ Wichtige Nummern</div>
+              <div style={{fontWeight:700,fontSize:12,color:C.muted,marginBottom:6}}>☎️ Wichtige Nummern</div>
               {[["112","Notruf / Rettungsdienst (EU)"],["110","Polizei"],["116 117","Ärztl. Bereitschaftsdienst"]].map(([n,t])=>(
                 <div key={n} style={{display:"flex",justifyContent:"space-between",
-                  padding:"5px 0",fontSize:12,borderBottom:`1px solid ${C.border}22`}}>
+                  padding:"5px 0",fontSize:13,borderBottom:`1px solid ${C.border}22`}}>
                   <span style={{fontWeight:800,color:C.red,fontSize:14}}>{n}</span>
                   <span style={{color:C.text}}>{t}</span>
                 </div>
@@ -7696,7 +7830,7 @@ function T8D(){
         )}
         {tab==="hilfe"&&(
           <div>
-            <div style={{fontSize:11,color:C.muted,marginBottom:10,fontStyle:"italic"}}>
+            <div style={{fontSize:12,color:C.muted,marginBottom:10,fontStyle:"italic"}}>
               Bei einem Unfall — Was muss man tun?
             </div>
             {hilfe.map(h=>(
@@ -7704,11 +7838,11 @@ function T8D(){
                 <div style={{display:"flex",gap:8,alignItems:"center",marginBottom:5}}>
                   <span style={{fontSize:22}}>{h.icon}</span>
                   <div>
-                    <div style={{fontWeight:800,color:C.text,fontSize:13}}>{h.de}</div>
-                    <div style={{color:C.muted,fontSize:11}}>{h.ru}</div>
+                    <div style={{fontWeight:800,color:C.text,fontSize:14}}>{h.de}</div>
+                    <div style={{color:C.muted,fontSize:12}}>{h.ru}</div>
                   </div>
                 </div>
-                <div style={{fontSize:12,color:C.red,fontStyle:"italic",fontWeight:600,paddingLeft:30}}>
+                <div style={{fontSize:13,color:C.red,fontStyle:"italic",fontWeight:600,paddingLeft:30}}>
                   → {h.imp}
                 </div>
               </div>
@@ -7719,33 +7853,33 @@ function T8D(){
           <div>
             <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,
               borderRadius:10,padding:"10px 12px",marginBottom:10}}>
-              <div style={{fontWeight:800,fontSize:12,color:C.orange,marginBottom:8}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.orange,marginBottom:8}}>
                 😓 Wie fühle ich mich? — Adjektive
               </div>
               <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:5}}>
                 {erschoepft.map(e=>(
                   <div key={e.de} style={{background:C.ov4,borderRadius:7,padding:"7px 9px"}}>
-                    <div style={{fontWeight:700,color:C.orange,fontSize:12}}>{e.de}</div>
-                    <div style={{color:C.muted,fontSize:11}}>{e.ru}</div>
-                    <div style={{color:C.muted,fontSize:11,fontStyle:"italic"}}>{e.note}</div>
+                    <div style={{fontWeight:700,color:C.orange,fontSize:13}}>{e.de}</div>
+                    <div style={{color:C.muted,fontSize:12}}>{e.ru}</div>
+                    <div style={{color:C.muted,fontSize:12,fontStyle:"italic"}}>{e.note}</div>
                   </div>
                 ))}
               </div>
             </div>
             <div style={{background:C.green+"15",border:`1px solid ${C.green}33`,
               borderRadius:10,padding:"10px 12px"}}>
-              <div style={{fontWeight:800,fontSize:12,color:C.green,marginBottom:8}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.green,marginBottom:8}}>
                 💪 Tipps für die Gesundheit
               </div>
               {tipps.map(t=>(
-                <div key={t.de} style={{display:"flex",gap:8,alignItems:"center",marginBottom:5,fontSize:12}}>
+                <div key={t.de} style={{display:"flex",gap:8,alignItems:"center",marginBottom:5,fontSize:13}}>
                   <span style={{fontSize:16}}>{t.icon}</span>
                   <span style={{color:C.text,fontWeight:600}}>{t.de}</span>
                   <span style={{color:C.muted}}>— {t.ru}</span>
                 </div>
               ))}
               <div style={{marginTop:8,background:C.card2,borderRadius:7,padding:"7px 10px",
-                fontSize:11,color:C.muted,lineHeight:1.7}}>
+                fontSize:12,color:C.muted,lineHeight:1.7}}>
                 sich erholen = восстанавливаться<br/>
                 sich entspannen = расслабляться<br/>
                 sich ausruhen = отдыхать
@@ -7801,9 +7935,10 @@ function T9A(){
         <div style={{display:"flex",gap:6,marginBottom:12}}>
           {[["mittel","Verkehrsmittel"],["dativ","mit + Dativ"],["adj","Adjektive"]].map(([key,lbl])=>(
             <button key={key} onClick={()=>setTab(key)}
-              style={{flex:1,padding:"9px 4px",borderRadius:9,border:"none",cursor:"pointer",
-                fontSize:11,fontWeight:700,
-                background:tab===key?C.blue+"33":"transparent",
+              style={{flex:1,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,lineHeight:1.35,textAlign:"center",
+                border:`1px solid ${tab===key?C.blue+"55":C.border}`,
+                background:tab===key?C.blue+"22":C.ov3,
                 color:tab===key?C.blue:C.muted}}>
               {lbl}
             </button>
@@ -7817,11 +7952,11 @@ function T9A(){
                 <div style={{display:"flex",gap:8,alignItems:"center"}}>
                   <span style={{fontSize:20}}>{m.icon}</span>
                   <div>
-                    <div style={{fontWeight:700,fontSize:12,color:C.text}}>{m.de}</div>
-                    <div style={{fontSize:11,color:C.muted}}>pl: {m.pl}</div>
+                    <div style={{fontWeight:700,fontSize:13,color:C.text}}>{m.de}</div>
+                    <div style={{fontSize:12,color:C.muted}}>pl: {m.pl}</div>
                   </div>
                 </div>
-                <div style={{fontWeight:600,fontSize:12,color:C.blue,textAlign:"right"}}>{m.mit}</div>
+                <div style={{fontWeight:600,fontSize:13,color:C.blue,textAlign:"right"}}>{m.mit}</div>
               </div>
             ))}
           </div>
@@ -7830,14 +7965,14 @@ function T9A(){
           <div>
             <div style={{background:C.blue+"15",border:`1px solid ${C.blue}33`,
               borderRadius:10,padding:"12px 14px",marginBottom:10}}>
-              <div style={{fontWeight:800,fontSize:13,color:C.blue,marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:14,color:C.blue,marginBottom:10}}>
                 mit + Dativ (чем? на чём?)
               </div>
               <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:5,marginBottom:12}}>
                 {[["m / n","dem"],["f","der"],["Pl.","den + -n"]].map(([g,f])=>(
                   <div key={g} style={{background:C.ov6,borderRadius:7,
                     padding:"7px 8px",textAlign:"center"}}>
-                    <div style={{fontSize:11,color:C.muted}}>{g}</div>
+                    <div style={{fontSize:12,color:C.muted}}>{g}</div>
                     <div style={{fontWeight:800,color:C.blue,fontSize:14}}>{f}</div>
                   </div>
                 ))}
@@ -7852,7 +7987,7 @@ function T9A(){
               ].map(([de,ru])=>(
                 <div key={de} style={{display:"flex",justifyContent:"space-between",
                   padding:"5px 8px",background:C.ov4,
-                  borderRadius:7,marginBottom:4,fontSize:12}}>
+                  borderRadius:7,marginBottom:4,fontSize:13}}>
                   <span style={{fontWeight:700,color:C.text}}>{de}</span>
                   <span style={{color:C.muted}}>{ru}</span>
                 </div>
@@ -7860,13 +7995,13 @@ function T9A(){
             </div>
             <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,
               borderRadius:9,padding:"10px 12px"}}>
-              <div style={{fontWeight:700,fontSize:12,color:C.orange,marginBottom:5}}>
+              <div style={{fontWeight:700,fontSize:13,color:C.orange,marginBottom:5}}>
                 ⚠️ Ausnahme: zu Fuß!
               </div>
-              <div style={{fontSize:12,color:C.text,marginBottom:5}}>
+              <div style={{fontSize:13,color:C.text,marginBottom:5}}>
                 Пешком = <b style={{color:C.orange}}>zu Fuß</b> (не "mit dem Fuß"!)
               </div>
-              <div style={{fontSize:11,color:C.muted,fontStyle:"italic"}}>
+              <div style={{fontSize:12,color:C.muted,fontStyle:"italic"}}>
                 Ich gehe zu Fuß. — Ich fahre mit dem Fahrrad.
               </div>
             </div>
@@ -7874,34 +8009,34 @@ function T9A(){
         )}
         {tab==="adj"&&(
           <div>
-            <div style={{fontSize:11,color:C.muted,marginBottom:10}}>Какой транспорт лучше?</div>
+            <div style={{fontSize:12,color:C.muted,marginBottom:10}}>Какой транспорт лучше?</div>
             {adjPairs.map(([a,b,rua,rub])=>(
               <div key={a} style={{display:"flex",gap:6,marginBottom:6}}>
                 <div style={{flex:1,background:C.green+"15",border:`1px solid ${C.green}33`,
                   borderRadius:8,padding:"8px 10px",textAlign:"center"}}>
-                  <div style={{fontWeight:800,color:C.green,fontSize:13}}>{a}</div>
-                  <div style={{color:C.muted,fontSize:11}}>{rua}</div>
+                  <div style={{fontWeight:800,color:C.green,fontSize:14}}>{a}</div>
+                  <div style={{color:C.muted,fontSize:12}}>{rua}</div>
                 </div>
                 {b!=="—"&&(
                   <div style={{flex:1,background:C.red+"15",border:`1px solid ${C.red}33`,
                     borderRadius:8,padding:"8px 10px",textAlign:"center"}}>
-                    <div style={{fontWeight:800,color:C.red,fontSize:13}}>{b}</div>
-                    <div style={{color:C.muted,fontSize:11}}>{rub}</div>
+                    <div style={{fontWeight:800,color:C.red,fontSize:14}}>{b}</div>
+                    <div style={{color:C.muted,fontSize:12}}>{rub}</div>
                   </div>
                 )}
               </div>
             ))}
             <div style={{background:C.card2,borderRadius:8,padding:"9px 11px",marginTop:4}}>
-              <div style={{fontSize:11,color:C.muted,marginBottom:6}}>💬 Beispiele:</div>
+              <div style={{fontSize:12,color:C.muted,marginBottom:6}}>💬 Beispiele:</div>
               {[
                 ["Das Fahrrad ist gesund, aber langsam.","Велосипед полезный, но медленный."],
                 ["Die U-Bahn ist schnell und praktisch.","Метро быстрое и практичное."],
                 ["Das Auto ist bequem, aber teuer.","Машина удобная, но дорогая."],
               ].map(([de,ru])=>(
-                <div key={de} style={{marginBottom:5,fontSize:12,
+                <div key={de} style={{marginBottom:5,fontSize:13,
                   background:C.ov4,borderRadius:6,padding:"5px 8px"}}>
                   <div style={{color:C.text,fontWeight:600}}>{de}</div>
-                  <div style={{color:C.muted,fontSize:11}}>{ru}</div>
+                  <div style={{color:C.muted,fontSize:12}}>{ru}</div>
                 </div>
               ))}
             </div>
@@ -7955,9 +8090,10 @@ function T9B(){
         <div style={{display:"flex",gap:6,marginBottom:12}}>
           {[["weg","Wegbeschreibung"],["praep","Lokale Präp."],["kontr","in dem = im"]].map(([key,lbl])=>(
             <button key={key} onClick={()=>setTab(key)}
-              style={{flex:1,padding:"9px 4px",borderRadius:9,border:"none",cursor:"pointer",
-                fontSize:11,fontWeight:700,
-                background:tab===key?C.teal+"33":"transparent",
+              style={{flex:1,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,lineHeight:1.35,textAlign:"center",
+                border:`1px solid ${tab===key?C.teal+"55":C.border}`,
+                background:tab===key?C.teal+"22":C.ov3,
                 color:tab===key?C.teal:C.muted}}>
               {lbl}
             </button>
@@ -7965,17 +8101,17 @@ function T9B(){
         </div>
         {tab==="weg"&&(
           <div>
-            <div style={{fontSize:11,color:C.muted,marginBottom:10}}>Wie komme ich zum/zur ...?</div>
+            <div style={{fontSize:12,color:C.muted,marginBottom:10}}>Wie komme ich zum/zur ...?</div>
             {weg.map(w=>(
               <div key={w.de} style={{background:C.card2,borderRadius:8,padding:"8px 11px",marginBottom:5}}>
                 <div style={{display:"flex",gap:8,alignItems:"center",marginBottom:4}}>
                   <span style={{fontSize:18}}>{w.icon}</span>
                   <div>
-                    <span style={{fontWeight:800,color:C.teal,fontSize:12}}>{w.de}</span>
-                    <span style={{color:C.muted,fontSize:11}}> — {w.ru}</span>
+                    <span style={{fontWeight:800,color:C.teal,fontSize:13}}>{w.de}</span>
+                    <span style={{color:C.muted,fontSize:12}}> — {w.ru}</span>
                   </div>
                 </div>
-                <div style={{fontSize:11,color:C.text,fontStyle:"italic",paddingLeft:26}}>→ {w.ex}</div>
+                <div style={{fontSize:12,color:C.text,fontStyle:"italic",paddingLeft:26}}>→ {w.ex}</div>
               </div>
             ))}
           </div>
@@ -7984,14 +8120,14 @@ function T9B(){
           <div>
             <div style={{background:C.teal+"15",border:`1px solid ${C.teal}33`,borderRadius:10,
               padding:"10px 12px",marginBottom:10}}>
-              <div style={{fontWeight:800,fontSize:12,color:C.teal,marginBottom:6}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.teal,marginBottom:6}}>
                 Wo? — Präpositionen + Dativ
               </div>
               <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:4,marginBottom:8,textAlign:"center"}}>
                 {[["m/n","dem"],["f","der"],["Pl.","den"]].map(([g,f])=>(
                   <div key={g} style={{background:C.ov6,borderRadius:6,padding:"5px 8px"}}>
-                    <div style={{fontSize:11,color:C.muted}}>{g}</div>
-                    <div style={{fontWeight:800,color:C.teal,fontSize:13}}>{f}</div>
+                    <div style={{fontSize:12,color:C.muted}}>{g}</div>
+                    <div style={{fontWeight:800,color:C.teal,fontSize:14}}>{f}</div>
                   </div>
                 ))}
               </div>
@@ -8001,8 +8137,8 @@ function T9B(){
                 borderRadius:7,padding:"7px 10px",alignItems:"baseline"}}>
                 <div style={{fontWeight:900,color:C.teal,fontSize:14,minWidth:52}}>{pr.p}</div>
                 <div style={{flex:1}}>
-                  <div style={{fontSize:12,color:C.text}}>{pr.ru}</div>
-                  <div style={{fontSize:11,color:C.muted,fontStyle:"italic"}}>{pr.bsp}</div>
+                  <div style={{fontSize:13,color:C.text}}>{pr.ru}</div>
+                  <div style={{fontSize:12,color:C.muted,fontStyle:"italic"}}>{pr.bsp}</div>
                 </div>
               </div>
             ))}
@@ -8010,7 +8146,7 @@ function T9B(){
         )}
         {tab==="kontr"&&(
           <div>
-            <div style={{fontSize:11,color:C.muted,marginBottom:10}}>Сокращения артикля с предлогом:</div>
+            <div style={{fontSize:12,color:C.muted,marginBottom:10}}>Сокращения артикля с предлогом:</div>
             {[["in + dem","im","im Café, im Bus, im Supermarkt"],
               ["an + dem","am","am Bahnhof, am Montag"],
               ["zu + dem","zum","zum Bahnhof, zum Arzt"],
@@ -8020,11 +8156,11 @@ function T9B(){
             ].map(([full,short,bsp])=>(
               <div key={full} style={{background:C.card2,borderRadius:7,padding:"7px 10px",marginBottom:5}}>
                 <div style={{display:"flex",gap:8,alignItems:"center",marginBottom:3}}>
-                  <span style={{color:C.muted,fontSize:11}}>{full}</span>
+                  <span style={{color:C.muted,fontSize:12}}>{full}</span>
                   <span style={{color:C.muted}}>→</span>
-                  <span style={{fontWeight:900,color:C.teal,fontSize:13}}>{short}</span>
+                  <span style={{fontWeight:900,color:C.teal,fontSize:14}}>{short}</span>
                 </div>
-                <div style={{fontSize:11,color:C.muted,fontStyle:"italic"}}>{bsp}</div>
+                <div style={{fontSize:12,color:C.muted,fontStyle:"italic"}}>{bsp}</div>
               </div>
             ))}
           </div>
@@ -8062,9 +8198,10 @@ function T9C(){
         <div style={{display:"flex",gap:6,marginBottom:12}}>
           {[["duerfen","dürfen"],["regeln","erlaubt/verboten"],["schein","Führerschein"]].map(([key,lbl])=>(
             <button key={key} onClick={()=>setTab(key)}
-              style={{flex:1,padding:"9px 4px",borderRadius:9,border:"none",cursor:"pointer",
-                fontSize:11,fontWeight:700,
-                background:tab===key?C.orange+"33":"transparent",
+              style={{flex:1,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,lineHeight:1.35,textAlign:"center",
+                border:`1px solid ${tab===key?C.orange+"55":C.border}`,
+                background:tab===key?C.orange+"22":C.ov3,
                 color:tab===key?C.orange:C.muted}}>
               {lbl}
             </button>
@@ -8074,7 +8211,7 @@ function T9C(){
           <div>
             <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,
               borderRadius:10,padding:"12px 14px",marginBottom:10}}>
-              <div style={{fontWeight:800,fontSize:13,color:C.orange,marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:14,color:C.orange,marginBottom:10}}>
                 dürfen — иметь право, разрешено
               </div>
               <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:5}}>
@@ -8082,19 +8219,19 @@ function T9C(){
                   ["wir","dürfen"],["ihr","dürft"],["sie/Sie","dürfen"]].map(([pr,f])=>(
                   <div key={pr} style={{background:C.ov6,borderRadius:7,padding:"7px 10px",
                     display:"flex",justifyContent:"space-between"}}>
-                    <span style={{color:C.muted,fontSize:12}}>{pr}</span>
-                    <span style={{fontWeight:800,color:C.orange,fontSize:13}}>{f}</span>
+                    <span style={{color:C.muted,fontSize:13}}>{pr}</span>
+                    <span style={{fontWeight:800,color:C.orange,fontSize:14}}>{f}</span>
                   </div>
                 ))}
               </div>
               <div style={{marginTop:10,background:C.card2,borderRadius:7,padding:"8px 10px",
-                fontSize:11,color:C.muted}}>
+                fontSize:12,color:C.muted}}>
                 💡 Как все Modalverben: dürfen + инфинитив в конце<br/>
                 "Ich <b style={{color:C.orange}}>darf</b> hier parken." · "Man <b style={{color:C.orange}}>darf</b> nicht hupen."
               </div>
             </div>
             <div style={{background:C.card2,borderRadius:8,padding:"9px 11px"}}>
-              <div style={{fontWeight:700,fontSize:11,color:C.muted,marginBottom:6}}>Сравни:</div>
+              <div style={{fontWeight:700,fontSize:12,color:C.muted,marginBottom:6}}>Сравни:</div>
               {[
                 ["müssen","muss","должен (необходимость)"],
                 ["sollen","soll","должен (по чьему-то указанию)"],
@@ -8102,7 +8239,7 @@ function T9C(){
                 ["können","kann","может (способность)"],
                 ["wollen","will","хочет (желание)"],
               ].map(([inf,er,ru])=>(
-                <div key={inf} style={{display:"flex",gap:6,marginBottom:4,fontSize:12}}>
+                <div key={inf} style={{display:"flex",gap:6,marginBottom:4,fontSize:13}}>
                   <span style={{fontWeight:700,color:C.orange,minWidth:55}}>{inf}</span>
                   <span style={{color:C.text,minWidth:35}}>{er}</span>
                   <span style={{color:C.muted}}>{ru}</span>
@@ -8118,16 +8255,16 @@ function T9C(){
                 <div style={{display:"flex",gap:8,alignItems:"center",marginBottom:6}}>
                   <span style={{fontSize:24}}>{r.sign}</span>
                   <div>
-                    <div style={{fontWeight:800,color:C.orange,fontSize:13}}>{r.de}</div>
-                    <div style={{color:C.muted,fontSize:11}}>{r.ru}</div>
+                    <div style={{fontWeight:800,color:C.orange,fontSize:14}}>{r.de}</div>
+                    <div style={{color:C.muted,fontSize:12}}>{r.ru}</div>
                   </div>
                 </div>
-                <div style={{fontSize:11,color:C.text,fontStyle:"italic"}}>{r.ex}</div>
+                <div style={{fontSize:12,color:C.text,fontStyle:"italic"}}>{r.ex}</div>
               </div>
             ))}
             <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,
               borderRadius:8,padding:"9px 11px",marginTop:4}}>
-              <div style={{fontWeight:700,fontSize:11,color:C.orange,marginBottom:6}}>Verkehrsregeln üben:</div>
+              <div style={{fontWeight:700,fontSize:12,color:C.orange,marginBottom:6}}>Verkehrsregeln üben:</div>
               {[
                 ["🛑 STOP","Man muss anhalten.","нужно остановиться"],
                 ["🅿️ P","Das Parken ist erlaubt.","парковка разрешена"],
@@ -8135,7 +8272,7 @@ function T9C(){
                 ["↪️ →","Man muss rechts abbiegen.","нужно повернуть направо"],
                 ["📯","Man darf nicht hupen.","сигналить нельзя"],
               ].map(([sign,de,ru])=>(
-                <div key={de} style={{marginBottom:5,fontSize:12,background:C.card2,
+                <div key={de} style={{marginBottom:5,fontSize:13,background:C.card2,
                   borderRadius:6,padding:"5px 8px"}}>
                   <span style={{fontWeight:700}}>{sign} </span>
                   <span style={{color:C.text}}>{de}</span>
@@ -8149,7 +8286,7 @@ function T9C(){
           <div>
             <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,
               borderRadius:10,padding:"10px 12px",marginBottom:10}}>
-              <div style={{fontWeight:800,fontSize:12,color:C.orange,marginBottom:8}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.orange,marginBottom:8}}>
                 🪪 Anerkennung ausländischer Führerscheine
               </div>
               {[
@@ -8159,13 +8296,13 @@ function T9C(){
               ].map(([who,rule])=>(
                 <div key={who} style={{marginBottom:7,background:C.ov4,
                   borderRadius:7,padding:"7px 9px"}}>
-                  <div style={{fontWeight:700,fontSize:11,color:C.text,marginBottom:3}}>{who}</div>
-                  <div style={{fontSize:11,color:C.muted}}>{rule}</div>
+                  <div style={{fontWeight:700,fontSize:12,color:C.text,marginBottom:3}}>{who}</div>
+                  <div style={{fontSize:12,color:C.muted}}>{rule}</div>
                 </div>
               ))}
             </div>
             <div style={{background:C.card2,borderRadius:8,padding:"9px 11px"}}>
-              <div style={{fontWeight:700,fontSize:11,color:C.muted,marginBottom:6}}>Schlüsselwörter:</div>
+              <div style={{fontWeight:700,fontSize:12,color:C.muted,marginBottom:6}}>Schlüsselwörter:</div>
               {[
                 ["die Behörde","орган власти, ведомство"],
                 ["erkennen","признавать · anerkennen = официально признать"],
@@ -8173,7 +8310,7 @@ function T9C(){
                 ["ausländisch","иностранный"],
                 ["der Ausländer / die Ausländerin","иностранец / иностранка"],
               ].map(([de,ru])=>(
-                <div key={de} style={{marginBottom:4,fontSize:12}}>
+                <div key={de} style={{marginBottom:4,fontSize:13}}>
                   <span style={{fontWeight:700,color:C.orange}}>{de}</span>
                   <span style={{color:C.muted}}> — {ru}</span>
                 </div>
@@ -8275,10 +8412,10 @@ function HabenSeinRegel(){
     <div>
       <div style={{background:C.teal+"15",border:`1px solid ${C.teal}33`,
         borderRadius:10,padding:"10px 12px",marginBottom:8}}>
-        <div style={{fontWeight:800,fontSize:12,color:C.teal,marginBottom:6}}>
+        <div style={{fontWeight:800,fontSize:13,color:C.teal,marginBottom:6}}>
           ✅ haben — большинство глаголов
         </div>
-        <div style={{fontSize:12,color:C.text,lineHeight:1.7,marginBottom:8}}>
+        <div style={{fontSize:13,color:C.text,lineHeight:1.7,marginBottom:8}}>
           → есть <b style={{color:C.teal}}>Akkusativ-объект</b> (кого/что?)<br/>
           → или не подходит под правила sein
         </div>
@@ -8286,7 +8423,7 @@ function HabenSeinRegel(){
           ["Er hat das Auto gekauft.","что? → Auto → haben"],
           ["Wir haben gekocht.","нет движения → haben"]].map(([bsp,note])=>(
           <div key={bsp} style={{marginBottom:4,background:C.ov5,
-            borderRadius:6,padding:"5px 8px",fontSize:11}}>
+            borderRadius:6,padding:"5px 8px",fontSize:12}}>
             <div style={{color:C.text,fontWeight:600}}>{bsp}</div>
             <div style={{color:C.muted}}>{note}</div>
           </div>
@@ -8294,7 +8431,7 @@ function HabenSeinRegel(){
       </div>
       <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,
         borderRadius:10,padding:"10px 12px",marginBottom:8}}>
-        <div style={{fontWeight:800,fontSize:12,color:C.orange,marginBottom:8}}>
+        <div style={{fontWeight:800,fontSize:13,color:C.orange,marginBottom:8}}>
           🚶 sein — только 3 случая
         </div>
         {[
@@ -8303,15 +8440,15 @@ function HabenSeinRegel(){
           ["3. Ausnahmen ⚠️","bleiben (оставаться) → ist geblieben · sein (быть) → ist gewesen","Ich bin nicht lange geblieben."],
         ].map(([title,verbs,bsp])=>(
           <div key={title} style={{marginBottom:8}}>
-            <div style={{fontSize:11,fontWeight:700,color:C.orange,marginBottom:3}}>{title}:</div>
-            <div style={{fontSize:11,color:C.muted,marginBottom:3}}>{verbs}</div>
-            <div style={{background:C.ov5,borderRadius:6,padding:"5px 8px",fontSize:11,color:C.text}}>{bsp}</div>
+            <div style={{fontSize:12,fontWeight:700,color:C.orange,marginBottom:3}}>{title}:</div>
+            <div style={{fontSize:12,color:C.muted,marginBottom:3}}>{verbs}</div>
+            <div style={{background:C.ov5,borderRadius:6,padding:"5px 8px",fontSize:12,color:C.text}}>{bsp}</div>
           </div>
         ))}
         <div style={{background:C.ov5,borderRadius:7,padding:"7px 9px",marginTop:4}}>
-          <div style={{fontWeight:700,fontSize:11,color:C.muted,marginBottom:4}}>Примеры Partizip II:</div>
+          <div style={{fontWeight:700,fontSize:12,color:C.muted,marginBottom:4}}>Примеры Partizip II:</div>
           {seinVerbs.map(({inf,pp,ru})=>(
-            <div key={inf} style={{display:"flex",gap:6,fontSize:11,marginBottom:3}}>
+            <div key={inf} style={{display:"flex",gap:6,fontSize:12,marginBottom:3}}>
               <span style={{color:C.muted,minWidth:65}}>{inf}</span>
               <span style={{color:C.orange,fontWeight:700,minWidth:85}}>{pp}</span>
               <span style={{color:C.muted}}>{ru}</span>
@@ -8319,7 +8456,7 @@ function HabenSeinRegel(){
           ))}
         </div>
       </div>
-      <div style={{background:C.card2,borderRadius:8,padding:"9px 11px",fontSize:11}}>
+      <div style={{background:C.card2,borderRadius:8,padding:"9px 11px",fontSize:12}}>
         <div style={{fontWeight:700,color:C.muted,marginBottom:5}}>💡 Быстрый тест:</div>
         <div style={{color:C.text,lineHeight:1.8}}>
           1. Есть объект (кого/что)? → <b style={{color:C.teal}}>haben</b><br/>
@@ -8374,12 +8511,13 @@ function T10A(){
     <div style={{display:"flex",flexDirection:"column",gap:10}}>
       <Box c={C.purple}>
         <H c={C.purple}>📅 L10A · Perfekt</H>
-        <div style={{display:"flex",gap:4,marginBottom:12,flexWrap:"wrap"}}>
-          {[["struktur","Struktur"],["pp","Partizip II"],["trenn","Trennb./Untrennb."],["hssein","haben / sein"],["stark","📋 A1 & A2"]].map(([key,lbl])=>(
+        <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
+          {[["struktur","Struktur"],["pp","Partizip II"],["trenn","Trennb. / Untrennb."],["hssein","haben / sein"],["stark","📋 A1 & A2"]].map(([key,lbl])=>(
             <button key={key} onClick={()=>setTab(key)}
-              style={{flex:1,minWidth:70,padding:"8px 4px",borderRadius:9,border:"none",cursor:"pointer",
-                fontSize:11,fontWeight:700,
-                background:tab===key?C.purple+"33":"transparent",
+              style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,lineHeight:1.35,textAlign:"center",
+                border:`1px solid ${tab===key?C.purple+"55":C.border}`,
+                background:tab===key?C.purple+"22":C.ov3,
                 color:tab===key?C.purple:C.muted}}>
               {lbl}
             </button>
@@ -8389,13 +8527,13 @@ function T10A(){
           <div>
             <div style={{background:C.purple+"15",border:`1px solid ${C.purple}33`,
               borderRadius:10,padding:"12px 14px",marginBottom:10}}>
-              <div style={{fontWeight:800,fontSize:13,color:C.purple,marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:14,color:C.purple,marginBottom:10}}>
                 Perfekt = разговорное прошедшее
               </div>
               <div style={{background:C.ov7,borderRadius:9,padding:"10px",marginBottom:10,textAlign:"center"}}>
-                <span style={{color:C.orange,fontWeight:800,fontSize:13}}>haben/sein</span>
+                <span style={{color:C.orange,fontWeight:800,fontSize:14}}>haben/sein</span>
                 <span style={{color:C.muted}}> — позиция 2 — </span>
-                <span style={{color:C.purple,fontWeight:800,fontSize:13}}>Partizip II</span>
+                <span style={{color:C.purple,fontWeight:800,fontSize:14}}>Partizip II</span>
                 <span style={{color:C.muted}}> в конце</span>
               </div>
               {[
@@ -8405,7 +8543,7 @@ function T10A(){
                 ["Wir","haben","Musik","gehört."],
                 ["Er","ist","früh","eingeschlafen."],
               ].map(([s,h,m,pp])=>(
-                <div key={pp} style={{display:"flex",gap:6,marginBottom:5,fontSize:12,
+                <div key={pp} style={{display:"flex",gap:6,marginBottom:5,fontSize:13,
                   background:C.ov4,borderRadius:7,padding:"6px 10px",alignItems:"baseline"}}>
                   <span style={{color:C.text,minWidth:40}}>{s}</span>
                   <span style={{color:C.orange,fontWeight:800,minWidth:28}}>{h}</span>
@@ -8415,23 +8553,23 @@ function T10A(){
               ))}
             </div>
             <div style={{background:C.card2,borderRadius:9,padding:"9px 11px",marginBottom:8}}>
-              <div style={{fontWeight:700,fontSize:12,color:C.teal,marginBottom:6}}>❓ Вопросы в Perfekt:</div>
+              <div style={{fontWeight:700,fontSize:13,color:C.teal,marginBottom:6}}>❓ Вопросы в Perfekt:</div>
               {[
                 ["Hast du gestern gekocht?","Ja, ich habe gekocht."],
                 ["Ist er nach Wien gefahren?","Ja, er ist gefahren."],
               ].map(([f,a])=>(
-                <div key={f} style={{marginBottom:5,fontSize:11}}>
+                <div key={f} style={{marginBottom:5,fontSize:12}}>
                   <div style={{color:C.text,fontWeight:600}}>— {f}</div>
                   <div style={{color:C.muted,paddingLeft:8}}>— {a}</div>
                 </div>
               ))}
             </div>
             <div style={{background:C.card2,borderRadius:9,padding:"9px 11px"}}>
-              <div style={{fontWeight:700,fontSize:11,color:C.muted,marginBottom:5}}>🕐 Временны́е маркеры:</div>
+              <div style={{fontWeight:700,fontSize:12,color:C.muted,marginBottom:5}}>🕐 Временны́е маркеры:</div>
               <div style={{display:"flex",flexWrap:"wrap",gap:4}}>
                 {["gestern","vorgestern","letzte Woche","letzten Monat","früher","schon","noch nicht","nie"].map(m=>(
                   <span key={m} style={{background:C.purple+"22",borderRadius:5,padding:"3px 8px",
-                    fontSize:11,color:C.purple,fontWeight:600}}>{m}</span>
+                    fontSize:12,color:C.purple,fontWeight:600}}>{m}</span>
                 ))}
               </div>
             </div>
@@ -8441,10 +8579,10 @@ function T10A(){
           <div>
             <div style={{background:C.purple+"15",border:`1px solid ${C.purple}33`,
               borderRadius:10,padding:"10px 12px",marginBottom:8}}>
-              <div style={{fontWeight:800,fontSize:12,color:C.purple,marginBottom:8}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.purple,marginBottom:8}}>
                 1️⃣ Schwache (правильные): ge- + Stamm + -t
               </div>
-              <div style={{display:"grid",gridTemplateColumns:"auto 1fr auto",gap:"2px 8px",fontSize:11,marginBottom:8}}>
+              <div style={{display:"grid",gridTemplateColumns:"auto 1fr auto",gap:"2px 8px",fontSize:12,marginBottom:8}}>
                 {regelPP.map(({inf,pp,exc})=>(
                   <Fragment key={inf}>
                     <span style={{color:C.muted}}>{inf}</span>
@@ -8455,38 +8593,38 @@ function T10A(){
                   </Fragment>
                 ))}
               </div>
-              <div style={{background:C.orange+"15",borderRadius:7,padding:"6px 9px",fontSize:11,color:C.muted}}>
+              <div style={{background:C.orange+"15",borderRadius:7,padding:"6px 9px",fontSize:12,color:C.muted}}>
                 ⚠️ Stamm на -t/-d: +<b style={{color:C.orange}}>et</b> → gered<b style={{color:C.orange}}>et</b>, gearbeit<b style={{color:C.orange}}>et</b>
               </div>
             </div>
             <div style={{background:C.blue+"15",border:`1px solid ${C.blue}33`,
               borderRadius:10,padding:"10px 12px",marginBottom:8}}>
-              <div style={{fontWeight:800,fontSize:12,color:C.blue,marginBottom:4}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.blue,marginBottom:4}}>
                 2️⃣ Starke (неправильные): ge- + Stamm + -en
               </div>
-              <div style={{fontSize:11,color:C.muted,marginBottom:6}}>Корень меняется — нужно запоминать!</div>
-              <div style={{display:"grid",gridTemplateColumns:"auto 1fr auto auto",gap:"3px 8px",fontSize:11}}>
-                <span style={{color:C.muted,fontSize:11,fontWeight:700}}>Inf.</span>
+              <div style={{fontSize:12,color:C.muted,marginBottom:6}}>Корень меняется — нужно запоминать!</div>
+              <div style={{display:"grid",gridTemplateColumns:"auto 1fr auto auto",gap:"3px 8px",fontSize:12}}>
+                <span style={{color:C.muted,fontSize:12,fontWeight:700}}>Inf.</span>
                 <span></span>
-                <span style={{color:C.blue,fontSize:11,fontWeight:700}}>P.II</span>
-                <span style={{color:C.muted,fontSize:11,fontWeight:700}}>+</span>
+                <span style={{color:C.blue,fontSize:12,fontWeight:700}}>P.II</span>
+                <span style={{color:C.muted,fontSize:12,fontWeight:700}}>+</span>
                 {starkPP.map(({inf,pp,hilf})=>(
                   <Fragment key={inf}>
                     <span style={{color:C.muted}}>{inf}</span>
                     <span style={{color:C.border,textAlign:"center"}}>→</span>
                     <span style={{color:C.blue,fontWeight:700}}>{pp}</span>
-                    <span style={{fontSize:11,color:hilf==="sein"?C.orange:C.teal,fontWeight:700}}>{hilf}</span>
+                    <span style={{fontSize:12,color:hilf==="sein"?C.orange:C.teal,fontWeight:700}}>{hilf}</span>
                   </Fragment>
                 ))}
               </div>
             </div>
             <div style={{background:C.teal+"15",border:`1px solid ${C.teal}33`,
               borderRadius:10,padding:"10px 12px"}}>
-              <div style={{fontWeight:800,fontSize:12,color:C.teal,marginBottom:4}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.teal,marginBottom:4}}>
                 3️⃣ Verben auf -ieren: только -t, без ge-!
               </div>
-              <div style={{fontSize:11,color:C.muted,marginBottom:6}}>Заимствованные слова — ge- не добавляется!</div>
-              <div style={{display:"grid",gridTemplateColumns:"auto 1fr auto",gap:"3px 8px",fontSize:12,marginBottom:8}}>
+              <div style={{fontSize:12,color:C.muted,marginBottom:6}}>Заимствованные слова — ge- не добавляется!</div>
+              <div style={{display:"grid",gridTemplateColumns:"auto 1fr auto",gap:"3px 8px",fontSize:13,marginBottom:8}}>
                 {[["studieren","studiert"],["telefonieren","telefoniert"],
                   ["fotografieren","fotografiert"],["trainieren","trainiert"],
                   ["passieren","passiert ⚠️ (sein)"]].map(([inf,pp])=>(
@@ -8497,7 +8635,7 @@ function T10A(){
                   </Fragment>
                 ))}
               </div>
-              <div style={{background:C.ov6,borderRadius:7,padding:"6px 9px",fontSize:11,color:C.orange}}>
+              <div style={{background:C.ov6,borderRadius:7,padding:"6px 9px",fontSize:12,color:C.orange}}>
                 ✗ gestudiert ← неправильно!<br/>
                 ✓ studiert ← правильно!
               </div>
@@ -8508,33 +8646,33 @@ function T10A(){
           <div>
             <div style={{background:C.purple+"15",border:`1px solid ${C.purple}33`,
               borderRadius:9,padding:"10px 12px",marginBottom:10}}>
-              <div style={{fontWeight:800,fontSize:12,color:C.purple,marginBottom:8}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.purple,marginBottom:8}}>
                 Trennbare: Präfix + ge + Stamm + -t
               </div>
               {trennPP.map(({inf,pp,pref,stem,suf})=>(
                 <div key={inf} style={{marginBottom:6,background:C.ov4,
                   borderRadius:8,padding:"7px 10px"}}>
                   <div style={{display:"flex",justifyContent:"space-between",marginBottom:4}}>
-                    <span style={{color:C.muted,fontSize:12}}>{inf}</span>
-                    <span style={{color:C.purple,fontWeight:800,fontSize:13}}>{pp}</span>
+                    <span style={{color:C.muted,fontSize:13}}>{inf}</span>
+                    <span style={{color:C.purple,fontWeight:800,fontSize:14}}>{pp}</span>
                   </div>
                   <div style={{display:"flex",gap:0}}>
-                    <span style={{background:C.orange+"22",padding:"2px 6px",borderRadius:"4px 0 0 4px",fontSize:11,color:C.orange,fontWeight:700}}>{pref}</span>
-                    <span style={{background:C.purple+"22",padding:"2px 6px",fontSize:11,color:C.purple,fontWeight:700}}>ge</span>
-                    <span style={{background:C.teal+"22",padding:"2px 6px",fontSize:11,color:C.teal,fontWeight:700}}>{stem}</span>
-                    <span style={{background:C.ov8,padding:"2px 6px",borderRadius:"0 4px 4px 0",fontSize:11,color:C.muted}}>+{suf}</span>
+                    <span style={{background:C.orange+"22",padding:"2px 6px",borderRadius:"4px 0 0 4px",fontSize:12,color:C.orange,fontWeight:700}}>{pref}</span>
+                    <span style={{background:C.purple+"22",padding:"2px 6px",fontSize:12,color:C.purple,fontWeight:700}}>ge</span>
+                    <span style={{background:C.teal+"22",padding:"2px 6px",fontSize:12,color:C.teal,fontWeight:700}}>{stem}</span>
+                    <span style={{background:C.ov8,padding:"2px 6px",borderRadius:"0 4px 4px 0",fontSize:12,color:C.muted}}>+{suf}</span>
                   </div>
                 </div>
               ))}
             </div>
             <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,
               borderRadius:9,padding:"10px 12px"}}>
-              <div style={{fontWeight:700,fontSize:12,color:C.orange,marginBottom:6}}>
+              <div style={{fontWeight:700,fontSize:13,color:C.orange,marginBottom:6}}>
                 ⚠️ Untrennbare (be-, er-, ver-, ent-, ge-): без ge-!
               </div>
               {[["besuchen","besucht"],["erklären","erklärt"],["vergessen","vergessen"],
                 ["verkaufen","verkauft"],["bestellen","bestellt"],["verstehen","verstanden"]].map(([inf,pp])=>(
-                <div key={inf} style={{display:"flex",justifyContent:"space-between",fontSize:12,
+                <div key={inf} style={{display:"flex",justifyContent:"space-between",fontSize:13,
                   background:C.ov4,borderRadius:6,padding:"4px 8px",marginBottom:3}}>
                   <span style={{color:C.muted}}>{inf}</span>
                   <span style={{color:C.orange,fontWeight:700}}>{pp}</span>
@@ -8545,7 +8683,7 @@ function T10A(){
         )}
         {tab==="hssein"&&(
           <div>
-            <div style={{fontSize:11,color:C.muted,marginBottom:8,fontStyle:"italic"}}>
+            <div style={{fontSize:12,color:C.muted,marginBottom:8,fontStyle:"italic"}}>
               Практика этого правила — в разделе 10B · Unterwegs.
             </div>
             <HabenSeinRegel/>
@@ -8562,18 +8700,18 @@ function T10A(){
               ].map(([f,lbl,col])=>(
                 <button key={f} onClick={()=>setStarkFil(f)}
                   style={{flex:1,minWidth:50,padding:"5px 3px",borderRadius:7,border:"none",cursor:"pointer",
-                    fontSize:11,fontWeight:700,
+                    fontSize:12,fontWeight:700,
                     background:starkFil===f?C[col]+"33":"transparent",
                     color:starkFil===f?C[col]:C.muted}}>
                   {lbl}
                 </button>
               ))}
             </div>
-            <div style={{display:"flex",gap:4,paddingLeft:4,marginBottom:5,fontSize:11,color:C.muted,fontWeight:700}}>
+            <div style={{display:"flex",gap:4,paddingLeft:4,marginBottom:5,fontSize:12,color:C.muted,fontWeight:700}}>
               <span style={{flex:1}}>Infinitiv (Präsens)</span>
-              <span style={{minWidth:56,textAlign:"left"}}>Präteritum</span>
-              <span style={{minWidth:74}}>Partizip II</span>
-              <span style={{minWidth:28}}>+</span>
+              <span style={{minWidth:64,textAlign:"left"}}>Präteritum</span>
+              <span style={{minWidth:84}}>Partizip II</span>
+              <span style={{minWidth:30}}>+</span>
             </div>
             {(starkFil==="all"?STARKE_VERBEN
               :starkFil==="A1"||starkFil==="A2"?STARKE_VERBEN.filter(v=>v.lv===starkFil)
@@ -8586,23 +8724,23 @@ function T10A(){
                     borderRadius:7,marginBottom:3,cursor:"pointer",
                     borderLeft:`3px solid ${v.h==="ist"?C.orange:C.teal}`}}>
                   <div style={{flex:1,minWidth:0}}>
-                    <span style={{fontWeight:700,color:C.text,fontSize:12}}>{v.inf}</span>
-                    <span style={{color:C.muted,fontSize:11}}> ({v.pr})</span>
+                    <span style={{fontWeight:700,color:C.text,fontSize:13}}>{v.inf}</span>
+                    <span style={{color:C.muted,fontSize:12}}> ({v.pr})</span>
                     <span style={{marginLeft:4,background:v.lv==="A1"?C.blue+"22":C.teal+"22",
                       color:v.lv==="A1"?C.blue:C.teal,borderRadius:3,
-                      padding:"0px 4px",fontSize:11,fontWeight:700}}>{v.lv}</span>
+                      padding:"0px 4px",fontSize:12,fontWeight:700}}>{v.lv}</span>
                   </div>
-                  <div style={{minWidth:56,color:C.blue,fontWeight:700,fontSize:11.5}}>{v.pt}</div>
-                  <div style={{minWidth:74,color:C.purple,fontWeight:700,fontSize:12}}>{v.pp}</div>
-                  <div style={{minWidth:28,textAlign:"center"}}>
+                  <div style={{minWidth:64,color:C.blue,fontWeight:700,fontSize:12}}>{v.pt}</div>
+                  <div style={{minWidth:84,color:C.purple,fontWeight:700,fontSize:13}}>{v.pp}</div>
+                  <div style={{minWidth:30,textAlign:"center"}}>
                     <span style={{background:v.h==="ist"?C.orange+"33":C.teal+"33",
                       color:v.h==="ist"?C.orange:C.teal,
-                      borderRadius:4,padding:"1px 5px",fontSize:11,fontWeight:800}}>{v.h}</span>
+                      borderRadius:4,padding:"1px 5px",fontSize:12,fontWeight:800}}>{v.h}</span>
                   </div>
                 </div>
                 {starkIdx===i&&(
                   <div style={{background:C.ov6,borderRadius:"0 0 7px 7px",
-                    padding:"6px 10px",marginBottom:5,fontSize:11,
+                    padding:"6px 10px",marginBottom:5,fontSize:12,
                     borderLeft:`3px solid ${v.h==="ist"?C.orange:C.teal}`}}>
                     <div style={{color:C.text,fontWeight:700,marginBottom:3}}>🔤 {v.ru}</div>
                     <div style={{color:C.muted,fontStyle:"italic"}}>💬 {v.bsp}</div>
@@ -8677,15 +8815,16 @@ function T10B(){
     <div style={{display:"flex",flexDirection:"column",gap:10}}>
       <Box c={C.teal}>
         <H c={C.teal}>🚶 L10B · Unterwegs — Perfekt mit haben/sein</H>
-        <div style={{fontSize:11,color:C.muted,marginBottom:10,fontStyle:"italic"}}>
+        <div style={{fontSize:12,color:C.muted,marginBottom:10,fontStyle:"italic"}}>
           Правило haben/sein разобрано в разделе 10A · Perfekt (вкладка «haben / sein»). Здесь — практика.
         </div>
-        <div style={{display:"flex",gap:4,marginBottom:12,flexWrap:"wrap"}}>
-          {[["habenbin","habe/bin?"],["tabelle","Partizip-Tabelle"]].map(([key,lbl])=>(
+        <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
+          {[["habenbin","habe / bin?"],["tabelle","Partizip-Tabelle"]].map(([key,lbl])=>(
             <button key={key} onClick={()=>setTab(key)}
-              style={{flex:1,minWidth:70,padding:"8px 4px",borderRadius:9,border:"none",cursor:"pointer",
-                fontSize:11,fontWeight:700,
-                background:tab===key?C.teal+"33":"transparent",
+              style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,lineHeight:1.35,textAlign:"center",
+                border:`1px solid ${tab===key?C.teal+"55":C.border}`,
+                background:tab===key?C.teal+"22":C.ov3,
                 color:tab===key?C.teal:C.muted}}>
               {lbl}
             </button>
@@ -8693,23 +8832,23 @@ function T10B(){
         </div>
         {tab==="habenbin"&&(
           <div>
-            <div style={{fontSize:11,color:C.muted,marginBottom:8}}>Ich habe oder ich bin? Цветом — правильный вариант.</div>
+            <div style={{fontSize:12,color:C.muted,marginBottom:8}}>Ich habe oder ich bin? Цветом — правильный вариант.</div>
             {habenBin.map((s,i)=>(
               <div key={i} style={{display:"flex",alignItems:"center",gap:8,padding:"7px 8px",
                 background:C.ov4,borderRadius:8,marginBottom:5}}>
-                <span style={{minWidth:46,textAlign:"center",fontWeight:800,fontSize:11,
+                <span style={{minWidth:46,textAlign:"center",fontWeight:800,fontSize:12,
                   color:s.hs==="bin"?C.orange:C.teal,
                   background:(s.hs==="bin"?C.orange:C.teal)+"22",borderRadius:5,padding:"2px 0"}}>
                   {s.hs}
                 </span>
-                <span style={{fontSize:12,color:C.text}}>{s.de.replace(/^Ich (habe|bin) /,"")}</span>
+                <span style={{fontSize:13,color:C.text}}>{s.de.replace(/^Ich (habe|bin) /,"")}</span>
               </div>
             ))}
           </div>
         )}
         {tab==="tabelle"&&(
           <div>
-            <div style={{display:"flex",gap:6,paddingLeft:4,marginBottom:5,fontSize:11,color:C.muted,fontWeight:700}}>
+            <div style={{display:"flex",gap:6,paddingLeft:4,marginBottom:5,fontSize:12,color:C.muted,fontWeight:700}}>
               <span style={{flex:1}}>Infinitiv</span>
               <span style={{minWidth:96}}>Partizip II</span>
               <span style={{minWidth:30}}>+</span>
@@ -8718,10 +8857,10 @@ function T10B(){
               <div key={v.inf} style={{display:"flex",alignItems:"center",gap:6,padding:"6px 8px",
                 background:C.ov3,borderRadius:7,marginBottom:3,
                 borderLeft:`3px solid ${v.hilf==="ist"?C.orange:C.teal}`}}>
-                <span style={{flex:1,fontWeight:700,color:C.text,fontSize:12}}>{v.inf}</span>
-                <span style={{minWidth:96,color:C.purple,fontWeight:700,fontSize:12}}>{v.pp}</span>
+                <span style={{flex:1,fontWeight:700,color:C.text,fontSize:13}}>{v.inf}</span>
+                <span style={{minWidth:96,color:C.purple,fontWeight:700,fontSize:13}}>{v.pp}</span>
                 <span style={{minWidth:30,textAlign:"center",background:(v.hilf==="ist"?C.orange:C.teal)+"33",
-                  color:v.hilf==="ist"?C.orange:C.teal,borderRadius:4,padding:"1px 5px",fontSize:11,fontWeight:800}}>{v.hilf}</span>
+                  color:v.hilf==="ist"?C.orange:C.teal,borderRadius:4,padding:"1px 5px",fontSize:12,fontWeight:800}}>{v.hilf}</span>
               </div>
             ))}
           </div>
@@ -8748,12 +8887,13 @@ function T10C(){
     <div style={{display:"flex",flexDirection:"column",gap:10}}>
       <Box c={C.purple}>
         <H c={C.purple}>📖 L10C · Mein Leben früher und heute</H>
-        <div style={{display:"flex",gap:4,marginBottom:12,flexWrap:"wrap"}}>
-          {[["prat","war/hatte"],["seit","seit+Dativ"],["jahre","Jahreszahlen"]].map(([key,lbl])=>(
+        <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
+          {[["prat","war / hatte"],["seit","seit+Dativ"],["jahre","Jahreszahlen"]].map(([key,lbl])=>(
             <button key={key} onClick={()=>setTab(key)}
-              style={{flex:1,minWidth:70,padding:"8px 4px",borderRadius:9,border:"none",cursor:"pointer",
-                fontSize:11,fontWeight:700,
-                background:tab===key?C.purple+"33":"transparent",
+              style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,lineHeight:1.35,textAlign:"center",
+                border:`1px solid ${tab===key?C.purple+"55":C.border}`,
+                background:tab===key?C.purple+"22":C.ov3,
                 color:tab===key?C.purple:C.muted}}>
               {lbl}
             </button>
@@ -8761,30 +8901,30 @@ function T10C(){
         </div>
         {tab==="prat"&&(
           <div>
-            <div style={{fontSize:11,color:C.muted,marginBottom:10}}>
+            <div style={{fontSize:12,color:C.muted,marginBottom:10}}>
               <b style={{color:C.text}}>haben</b> и <b style={{color:C.text}}>sein</b> в рассказах о прошлом обычно стоят в Präteritum, а не в Perfekt — даже в устной речи.
             </div>
             <div style={{display:"flex",gap:10}}>
               <div style={{flex:1,background:C.purple+"15",border:`1px solid ${C.purple}33`,borderRadius:10,padding:"10px"}}>
-                <div style={{fontWeight:800,color:C.purple,fontSize:12,marginBottom:6,textAlign:"center"}}>sein → war</div>
+                <div style={{fontWeight:800,color:C.purple,fontSize:13,marginBottom:6,textAlign:"center"}}>sein → war</div>
                 {seinPrat.map(([p,f])=>(
-                  <div key={p} style={{display:"flex",justifyContent:"space-between",fontSize:12,padding:"3px 0",
+                  <div key={p} style={{display:"flex",justifyContent:"space-between",fontSize:13,padding:"3px 0",
                     borderBottom:`1px solid ${C.border}`}}>
                     <span style={{color:C.muted}}>{p}</span><span style={{color:C.text,fontWeight:700}}>{f}</span>
                   </div>
                 ))}
               </div>
               <div style={{flex:1,background:C.blue+"15",border:`1px solid ${C.blue}33`,borderRadius:10,padding:"10px"}}>
-                <div style={{fontWeight:800,color:C.blue,fontSize:12,marginBottom:6,textAlign:"center"}}>haben → hatte</div>
+                <div style={{fontWeight:800,color:C.blue,fontSize:13,marginBottom:6,textAlign:"center"}}>haben → hatte</div>
                 {habenPrat.map(([p,f])=>(
-                  <div key={p} style={{display:"flex",justifyContent:"space-between",fontSize:12,padding:"3px 0",
+                  <div key={p} style={{display:"flex",justifyContent:"space-between",fontSize:13,padding:"3px 0",
                     borderBottom:`1px solid ${C.border}`}}>
                     <span style={{color:C.muted}}>{p}</span><span style={{color:C.text,fontWeight:700}}>{f}</span>
                   </div>
                 ))}
               </div>
             </div>
-            <div style={{marginTop:10,fontSize:12,color:C.text,fontStyle:"italic"}}>
+            <div style={{marginTop:10,fontSize:13,color:C.text,fontStyle:"italic"}}>
               Früher <b>war</b> ich in der Ukraine. Heute <b>bin</b> ich in Deutschland.<br/>
               Früher <b>hatte</b> ich kein Auto. Heute <b>habe</b> ich ein Auto.
             </div>
@@ -8794,21 +8934,21 @@ function T10C(){
           <div>
             <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,
               borderRadius:10,padding:"12px 14px",marginBottom:10}}>
-              <div style={{fontWeight:800,fontSize:13,color:C.orange,marginBottom:8}}>seit + Dativ</div>
-              <div style={{fontSize:12,color:C.text,marginBottom:6}}>
+              <div style={{fontWeight:800,fontSize:14,color:C.orange,marginBottom:8}}>seit + Dativ</div>
+              <div style={{fontSize:13,color:C.text,marginBottom:6}}>
                 «seit» отвечает на вопрос <b>Seit wann?</b> и показывает действие, которое началось в прошлом и продолжается до сих пор. После «seit» используется <b>Präsens</b>!
               </div>
               <div style={{display:"flex",flexDirection:"column",gap:5,marginTop:8}}>
-                <div style={{background:C.ov7,borderRadius:8,padding:"8px 10px",fontSize:12,color:C.text}}>
+                <div style={{background:C.ov7,borderRadius:8,padding:"8px 10px",fontSize:13,color:C.text}}>
                   Er ist <b style={{color:C.orange}}>seit 2004</b> in Deutschland.
                 </div>
-                <div style={{background:C.ov7,borderRadius:8,padding:"8px 10px",fontSize:12,color:C.text}}>
+                <div style={{background:C.ov7,borderRadius:8,padding:"8px 10px",fontSize:13,color:C.text}}>
                   Ich bin <b style={{color:C.orange}}>seit einem Jahr</b> in Deutschland. <span style={{color:C.muted}}>(n, Dat.)</span>
                 </div>
-                <div style={{background:C.ov7,borderRadius:8,padding:"8px 10px",fontSize:12,color:C.text}}>
+                <div style={{background:C.ov7,borderRadius:8,padding:"8px 10px",fontSize:13,color:C.text}}>
                   Sie arbeitet <b style={{color:C.orange}}>seit einer Woche</b> im Supermarkt. <span style={{color:C.muted}}>(f, Dat.)</span>
                 </div>
-                <div style={{background:C.ov7,borderRadius:8,padding:"8px 10px",fontSize:12,color:C.text}}>
+                <div style={{background:C.ov7,borderRadius:8,padding:"8px 10px",fontSize:13,color:C.text}}>
                   Wir haben <b style={{color:C.orange}}>seit zwei Jahren</b> ein eigenes Haus. <span style={{color:C.muted}}>(Pl., Dat.)</span>
                 </div>
               </div>
@@ -8817,14 +8957,151 @@ function T10C(){
         )}
         {tab==="jahre"&&(
           <div>
-            <div style={{fontSize:11,color:C.muted,marginBottom:8}}>Год читается как два двузначных числа: 19|89, 20|01.</div>
+            <div style={{fontSize:12,color:C.muted,marginBottom:8}}>Год читается как два двузначных числа: 19|89, 20|01.</div>
             {jahre.map(j=>(
               <div key={j.n} style={{display:"flex",alignItems:"center",gap:8,padding:"7px 8px",
                 background:C.ov4,borderRadius:8,marginBottom:5}}>
-                <span style={{minWidth:48,fontWeight:800,color:C.purple,fontSize:13}}>{j.n}</span>
-                <span style={{fontSize:12,color:C.text}}>{j.w}</span>
+                <span style={{minWidth:48,fontWeight:800,color:C.purple,fontSize:14}}>{j.n}</span>
+                <span style={{fontSize:13,color:C.text}}>{j.w}</span>
               </div>
             ))}
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
+const Q_L11A=[
+  {q:"Где можно heiraten (пожениться)?",                opts:["Standesamt","Familienkasse","Kfz-Zulassungsstelle","Bundesagentur für Arbeit"], ans:0, hint:"Standesamt = ЗАГС"},
+  {q:"Где beantragt man Kindergeld?",                   opts:["Standesamt","Familienkasse","Meldestelle","Bürgeramt"],                        ans:1, hint:"Familienkasse платит Kindergeld"},
+  {q:"Где meldet man das Auto an?",                     opts:["Kfz-Zulassungsstelle","Standesamt","Warteraum","Familienkasse"],               ans:0, hint:"Kfz = Kraftfahrzeug (автомобиль)"},
+  {q:"'Heute ist ___ erste Juli.' (Nominativ)",         opts:["der","den","dem","am"],                                                        ans:0, hint:"Heute ist der erste."},
+  {q:"'Ich komme ___ ersten Juli.' (Dativ)",            opts:["der","am","den","im"],                                                         ans:1, hint:"am = an + dem → Dativ"},
+  {q:"1–19: какой суффикс у порядковых числительных?",  opts:["-ten","-sten","-er","-e"],                                                     ans:0, hint:"der erste, der zweite … der neunzehnte"},
+  {q:"20 и больше: какой суффикс?",                     opts:["-ten","-sten","-er","-e"],                                                     ans:1, hint:"der zwanzigste, der dreißigste"},
+  {q:"09.05 = 'der ___ fünfte'",                        opts:["neunte","neun","neunzehnte","neunter"],                                        ans:0, hint:"9. = der neunte"},
+  {q:"'въезжать в новую квартиру' — какой глагол?",     opts:["einziehen","ausziehen","umziehen","verlassen"],                                ans:0, hint:"ein = внутрь"},
+  {q:"'выезжать из старой квартиры' — какой глагол?",   opts:["einziehen","ausziehen","umziehen","erwischen"],                                ans:1, hint:"aus = наружу"},
+  {q:"Perfekt von 'umziehen'?",                         opts:["hat umgezogen","ist umgezogen","hat umziehen","ist umziehen"],                 ans:1, hint:"движение → sein: ist umgezogen"},
+  {q:"'родиться' по-немецки:",                          opts:["zur Welt kommen","zur Welt bringen","zur Welt gehen","auf die Welt sein"],     ans:0, hint:"kommen = родиться, bringen = родить"},
+];
+
+function T11A(){
+  const [tab,setTab]=useState("aemter");
+  const aemter=[
+    {icon:"💼",name:"Bundesagentur für Arbeit",was:"eine Berufsberatung bekommen",ru:"агентство занятости — консультация по профессии, поиск работы"},
+    {icon:"💍",name:"das Standesamt",          was:"heiraten",                    ru:"ЗАГС — регистрация брака, рождения"},
+    {icon:"👶",name:"die Familienkasse",       was:"Kindergeld beantragen",       ru:"семейная касса — детское пособие"},
+    {icon:"🚗",name:"die Kfz-Zulassungsstelle",was:"das Auto anmelden und abmelden",ru:"регистрация автомобилей"},
+    {icon:"🏠",name:"die Meldestelle / das Bürgeramt",was:"die Wohnung anmelden", ru:"паспортный стол — регистрация по месту жительства"},
+  ];
+  const ord1=[["1.","der erste","am ersten"],["2.","der zweite","am zweiten"],["3.","der dritte ⚠️","am dritten"],
+    ["4.","der vierte","am vierten"],["7.","der siebte ⚠️","am siebten"],["10.","der zehnte","am zehnten"],
+    ["19.","der neunzehnte","am neunzehnten"]];
+  const ord2=[["20.","der zwanzigste","am zwanzigsten"],["21.","der einundzwanzigste","am einundzwanzigsten"],
+    ["30.","der dreißigste","am dreißigsten"],["31.","der einunddreißigste","am einunddreißigsten"]];
+  const umzugFam=[
+    {v:"umziehen",     pf:"ist umgezogen",  ru:"переезжать (вообще)"},
+    {v:"einziehen",    pf:"ist eingezogen", ru:"въезжать (in eine neue Wohnung)"},
+    {v:"ausziehen",    pf:"ist ausgezogen", ru:"выезжать (aus einer alten Wohnung)"},
+    {v:"der Umzug",    pf:"",               ru:"переезд (существительное)"},
+    {v:"der Einzug",   pf:"",               ru:"въезд · Tag des Einzugs — день въезда"},
+    {v:"der Auszug",   pf:"",               ru:"выезд"},
+  ];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.green}>
+        <H c={C.green}>🏛️ L11A · Ämter und Behörden</H>
+        <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
+          {[["aemter","Ämter"],["datum","Das Datum"],["umzug","Umzug"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,lineHeight:1.35,textAlign:"center",
+                border:`1px solid ${tab===key?C.green+"55":C.border}`,
+                background:tab===key?C.green+"22":C.ov3,
+                color:tab===key?C.green:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="aemter"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,marginBottom:10}}>
+              Behörden (гос. учреждения) в Германии: куда идти и зачем.
+            </div>
+            {aemter.map(a=>(
+              <div key={a.name} style={{background:C.ov4,borderRadius:9,padding:"9px 11px",marginBottom:6,
+                borderLeft:`3px solid ${C.green}`}}>
+                <div style={{fontWeight:800,fontSize:13,color:C.text,marginBottom:2}}>{a.icon} {a.name}</div>
+                <div style={{fontSize:13,color:C.green,fontWeight:600,marginBottom:2}}>→ {a.was}</div>
+                <div style={{fontSize:12,color:C.muted}}>{a.ru}</div>
+              </div>
+            ))}
+          </div>
+        )}
+        {tab==="datum"&&(
+          <div>
+            <div style={{background:C.green+"15",border:`1px solid ${C.green}33`,
+              borderRadius:10,padding:"11px 13px",marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.green,marginBottom:6}}>Порядковые числительные (дата)</div>
+              <div style={{fontSize:13,color:C.text,lineHeight:1.7}}>
+                <b style={{color:C.orange}}>1–19</b> → число + <b style={{color:C.orange}}>-te(n)</b><br/>
+                <b style={{color:C.blue}}>20 и больше</b> → число + <b style={{color:C.blue}}>-ste(n)</b>
+              </div>
+              <div style={{fontSize:12,color:C.muted,marginTop:6}}>
+                Nominativ: Heute ist <b style={{color:C.text}}>der erste</b> Juli. (Welcher Tag ist heute?)<br/>
+                Dativ (am = an + dem): Ich komme <b style={{color:C.text}}>am vierten</b>. (Wann kommst du?)
+              </div>
+            </div>
+            <div style={{display:"flex",gap:8}}>
+              <div style={{flex:1}}>
+                <div style={{fontSize:12,fontWeight:700,color:C.orange,marginBottom:4}}>1–19 → -te</div>
+                {ord1.map(([n,nom,dat])=>(
+                  <div key={n} style={{display:"flex",gap:5,fontSize:12,padding:"3px 0",borderBottom:`1px solid ${C.border}`}}>
+                    <span style={{minWidth:24,color:C.muted,fontWeight:700}}>{n}</span>
+                    <span style={{flex:1,color:C.text}}>{nom}</span>
+                  </div>
+                ))}
+              </div>
+              <div style={{flex:1}}>
+                <div style={{fontSize:12,fontWeight:700,color:C.blue,marginBottom:4}}>20+ → -ste</div>
+                {ord2.map(([n,nom,dat])=>(
+                  <div key={n} style={{display:"flex",gap:5,fontSize:12,padding:"3px 0",borderBottom:`1px solid ${C.border}`}}>
+                    <span style={{minWidth:24,color:C.muted,fontWeight:700}}>{n}</span>
+                    <span style={{flex:1,color:C.text}}>{nom}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div style={{background:C.ov4,borderRadius:8,padding:"8px 11px",marginTop:8,fontSize:12,color:C.text}}>
+              ⚠️ Исключения: 1. → der <b>erste</b> (не einte), 3. → der <b>dritte</b> (не dreite), 7. → der <b>siebte</b> (не siebente)
+            </div>
+            <div style={{background:C.ov4,borderRadius:8,padding:"8px 11px",marginTop:6,fontSize:12,color:C.text,fontStyle:"italic"}}>
+              — Welcher Tag ist heute? — Heute ist der erste siebte. (01.07.)<br/>
+              — Wann kommst du? — Ich komme am vierten sechsten. (04.06.)
+            </div>
+          </div>
+        )}
+        {tab==="umzug"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,marginBottom:10}}>
+              Семья слова «ziehen» — переезд. Все глаголы движения → Perfekt с <b style={{color:C.orange}}>sein</b>.
+            </div>
+            {umzugFam.map(u=>(
+              <div key={u.v} style={{display:"flex",alignItems:"center",gap:8,padding:"7px 9px",
+                background:C.ov4,borderRadius:8,marginBottom:5,
+                borderLeft:`3px solid ${u.pf?C.orange:C.blue}`}}>
+                <div style={{minWidth:100,fontWeight:700,fontSize:13,color:u.pf?C.orange:C.blue}}>{u.v}</div>
+                <div style={{flex:1}}>
+                  {u.pf&&<div style={{fontSize:12,color:C.purple,fontWeight:600}}>{u.pf}</div>}
+                  <div style={{fontSize:12,color:C.muted}}>{u.ru}</div>
+                </div>
+              </div>
+            ))}
+            <div style={{background:C.ov4,borderRadius:8,padding:"8px 11px",marginTop:6,fontSize:12,color:C.text}}>
+              💡 <b>der Zug</b> — поезд · <b>den Zug nicht erwischen</b> — не успеть на поезд · <b>verlassen</b> — покидать
+            </div>
           </div>
         )}
       </Box>
@@ -8878,7 +9155,7 @@ function T6A(){
     <div style={{display:"flex",flexDirection:"column",gap:12}}>
       <Box c={C.green}>
         <H c={C.green}>🍎 A · Lebensmittel und Getränke</H>
-        <div style={{fontSize:11,color:C.muted,marginBottom:10}}>Нажми на слово — увидишь перевод.</div>
+        <div style={{fontSize:12,color:C.muted,marginBottom:10}}>Нажми на слово — увидишь перевод.</div>
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:5}}>
           {foods.map(({art,de,pl,ru})=>{
             const isOpen=open===de;
@@ -8890,13 +9167,13 @@ function T6A(){
                   cursor:"pointer",transition:"background 0.15s"}}>
                 <div style={{display:"flex",alignItems:"center",gap:5}}>
                   <span style={{background:AB6(art),color:col,
-                    borderRadius:4,padding:"1px 5px",fontSize:11,fontWeight:800,flexShrink:0}}>{art}</span>
+                    borderRadius:4,padding:"1px 5px",fontSize:12,fontWeight:800,flexShrink:0}}>{art}</span>
                   <span style={{fontSize:14,fontWeight:700,color:C.text}}>{de}</span>
                 </div>
                 {isOpen&&(
                   <div style={{marginTop:5,paddingTop:5,borderTop:`1px solid ${col}33`}}>
-                    <div style={{fontSize:12,color:col,fontWeight:600}}>{ru}</div>
-                    {pl!=="—"&&<div style={{fontSize:11,color:C.muted}}>Pl: {pl}</div>}
+                    <div style={{fontSize:13,color:col,fontWeight:600}}>{ru}</div>
+                    {pl!=="—"&&<div style={{fontSize:12,color:C.muted}}>Pl: {pl}</div>}
                   </div>
                 )}
               </div>
@@ -8906,16 +9183,16 @@ function T6A(){
 
         {/* Häufigkeit */}
         <div style={{background:C.card2,borderRadius:10,padding:"10px 14px",marginTop:12}}>
-          <div style={{fontWeight:700,fontSize:13,color:C.orange,marginBottom:8}}>📊 Häufigkeit — Частота</div>
+          <div style={{fontWeight:700,fontSize:14,color:C.orange,marginBottom:8}}>📊 Häufigkeit — Частота</div>
           <div style={{display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:6,textAlign:"center"}}>
             {[["nie","никогда",C.red],["selten","редко",C.orange],["manchmal","иногда",C.yellow],["oft","часто",C.green]].map(([w,ru,col])=>(
               <div key={w} style={{background:col+"18",border:`1px solid ${col}44`,borderRadius:8,padding:"6px 4px"}}>
-                <div style={{fontSize:13,fontWeight:800,color:col}}>{w}</div>
-                <div style={{fontSize:11,color:C.muted}}>{ru}</div>
+                <div style={{fontSize:14,fontWeight:800,color:col}}>{w}</div>
+                <div style={{fontSize:12,color:C.muted}}>{ru}</div>
               </div>
             ))}
           </div>
-          <div style={{fontSize:12,color:C.muted,marginTop:8}}>
+          <div style={{fontSize:13,color:C.muted,marginTop:8}}>
             Ich esse <span style={{color:C.green,fontWeight:700}}>oft</span> Brot. · Ich trinke <span style={{color:C.red,fontWeight:700}}>nie</span> Wein.
           </div>
         </div>
@@ -9045,11 +9322,19 @@ const LEKTIONEN=[
   {
     id:"L10",num:"10",title:"Mein Leben",
     sub:"A Gestern und heute (Perfekt) · B Unterwegs (haben/sein) · C Früher und heute (Präteritum, seit)",
-    date:"Seite 103–109",col:C.purple,
+    date:"Seite 103–112",col:C.purple,
     sections:[
       {id:"10a", icon:"📅",title:"A · Perfekt",                  sub:"haben + Partizip II · ge-...-t · Trennbare Verben",    time:"7 мин", col:C.purple, hasT:true,  th:()=><T10A/>,    ex:()=><Quiz questions={Q_L10A}/>},
       {id:"10b", icon:"🚶",title:"B · Unterwegs",                sub:"Perfekt mit haben/sein · Bewegungsverben",             time:"6 мин", col:C.teal,   hasT:true,  th:()=><T10B/>,    ex:()=><Quiz questions={Q_L10B}/>},
       {id:"10c", icon:"📖",title:"C · Früher und heute",         sub:"Präteritum war/hatte · seit + Dativ · Jahreszahlen",   time:"6 мин", col:C.orange, hasT:true,  th:()=><T10C/>,    ex:()=><Quiz questions={Q_L10C}/>},
+    ]
+  },
+  {
+    id:"L11",num:"11",title:"Ämter und Behörden",
+    sub:"A Bei der Meldestelle · Das Datum · Umzug",
+    date:"Seite 113–",col:C.green,
+    sections:[
+      {id:"11a", icon:"🏛️",title:"A · Ämter & Datum",            sub:"Behörden в Германии · Порядковые числа · umziehen/einziehen/ausziehen", time:"7 мин", col:C.green, hasT:true, th:()=><T11A/>, ex:()=><Quiz questions={Q_L11A}/>},
     ]
   },
 ];
@@ -9085,7 +9370,7 @@ function DialogFragenPage(){
       <div style={{display:"flex",gap:6,background:C.card2,borderRadius:12,padding:4}}>
         {[{id:"fragen",label:"❓ Вопросы"},{id:"phrasen",label:"📋 Фразы"}].map(t=>(
           <button key={t.id} onClick={()=>setMode(t.id)} style={{
-            flex:1,padding:"7px 0",borderRadius:9,border:"none",cursor:"pointer",fontSize:13,fontWeight:600,
+            flex:1,padding:"7px 0",borderRadius:9,border:"none",cursor:"pointer",fontSize:14,fontWeight:600,
             background:mode===t.id?C.teal:"transparent",
             color:mode===t.id?"#000":C.muted,transition:"all .15s"
           }}>{t.label}</button>
@@ -9095,7 +9380,7 @@ function DialogFragenPage(){
       {/* ── Сортировка (справа, под табами) ── */}
       <div style={{display:"flex",justifyContent:"flex-end"}}>
         <button onClick={()=>{setSortNew(s=>!s);setOpenItems(new Set());}}
-          style={{padding:"5px 12px",borderRadius:9,fontWeight:600,fontSize:12,cursor:"pointer",
+          style={{padding:"5px 12px",borderRadius:9,fontWeight:600,fontSize:13,cursor:"pointer",
             border:`1.5px solid ${C.border}`,background:sortNew?C.yellowBg:C.card,
             color:sortNew?C.yellow:C.muted,whiteSpace:"nowrap"}}>
           {sortNew?"🆕 Новые":"🕐 Старые"}
@@ -9121,8 +9406,8 @@ function DialogFragenPage(){
             {/* Заголовок урока */}
             <div style={{display:"flex",alignItems:"center",gap:8,paddingTop:4}}>
               <div style={{background:meta.col+"22",border:`2px solid ${meta.col}`,color:meta.col,
-                borderRadius:8,padding:"3px 10px",fontWeight:900,fontSize:13,flexShrink:0}}>{lId}</div>
-              <div style={{color:meta.col,fontWeight:700,fontSize:13}}>{meta.label.split(" · ")[1]}</div>
+                borderRadius:8,padding:"3px 10px",fontWeight:900,fontSize:14,flexShrink:0}}>{lId}</div>
+              <div style={{color:meta.col,fontWeight:700,fontSize:14}}>{meta.label.split(" · ")[1]}</div>
             </div>
 
             {/* ── ВОПРОСЫ ── */}
@@ -9141,7 +9426,7 @@ function DialogFragenPage(){
                           <button key={t.id} onClick={()=>{setFm(t.id);setOpenItems(new Set());}} style={{
                             padding:"3px 10px",borderRadius:8,border:`1.5px solid ${fm===t.id?meta.col:C.border}`,
                             background:fm===t.id?meta.col+"22":"transparent",
-                            color:fm===t.id?meta.col:C.muted,fontSize:12,fontWeight:700,cursor:"pointer"
+                            color:fm===t.id?meta.col:C.muted,fontSize:13,fontWeight:700,cursor:"pointer"
                           }}>{t.label}</button>
                         ))}
                       </div>
@@ -9160,10 +9445,10 @@ function DialogFragenPage(){
                           {isO&&(
                             <div style={{marginTop:10,paddingTop:10,borderTop:`1px solid ${C.border}`}}>
                               <div style={{background:g.col+"15",border:`1px solid ${g.col}40`,borderRadius:8,padding:"10px 12px",marginBottom:p.note?8:0}}>
-                                <div style={{fontSize:11,color:g.col,fontWeight:700,marginBottom:3}}>ОТВЕТ</div>
+                                <div style={{fontSize:12,color:g.col,fontWeight:700,marginBottom:3}}>ОТВЕТ</div>
                                 <div style={{fontSize:14,fontWeight:600,color:C.text}}>{p.a}</div>
                               </div>
-                              {p.note&&<div style={{background:C.yellowBg,border:`1px solid ${C.yellow}35`,borderRadius:8,padding:"6px 10px",fontSize:12,color:C.yellow}}>💡 {p.note}</div>}
+                              {p.note&&<div style={{background:C.yellowBg,border:`1px solid ${C.yellow}35`,borderRadius:8,padding:"6px 10px",fontSize:13,color:C.yellow}}>💡 {p.note}</div>}
                             </div>
                           )}
                         </div>
@@ -9182,9 +9467,9 @@ function DialogFragenPage(){
                 <div style={{background:C.card,border:`1px solid ${C.border}`,borderRadius:14,overflow:"hidden"}}>
                   {all.map((p,pi)=>(
                     <div key={pi} style={{padding:"10px 14px",borderBottom:pi<all.length-1?`1px solid ${C.border}30`:"none"}}>
-                      <div style={{fontSize:13,fontWeight:700,color:C.text,marginBottom:4}}>{p.q}</div>
-                      <div style={{fontSize:12,color:p.col,marginBottom:p.note?3:0}}>↩ {p.a}</div>
-                      {p.note&&<div style={{fontSize:11,color:C.muted,marginTop:2}}>📝 {p.note}</div>}
+                      <div style={{fontSize:14,fontWeight:700,color:C.text,marginBottom:4}}>{p.q}</div>
+                      <div style={{fontSize:13,color:p.col,marginBottom:p.note?3:0}}>↩ {p.a}</div>
+                      {p.note&&<div style={{fontSize:12,color:C.muted,marginTop:2}}>📝 {p.note}</div>}
                     </div>
                   ))}
                 </div>
@@ -9228,7 +9513,7 @@ export default function App(){
           <span style={{fontSize:26}}>💬</span>
           <div>
             <div style={{fontWeight:900,fontSize:17,color:C.text}}>Dialoge</div>
-            <div style={{fontSize:12,color:C.muted}}>Ключевые вопросы · нажми для ответа</div>
+            <div style={{fontSize:13,color:C.muted}}>Ключевые вопросы · нажми для ответа</div>
           </div>
         </div>
         <DialogFragenPage/>
@@ -9246,7 +9531,7 @@ export default function App(){
           <span style={{fontSize:26}}>📖</span>
           <div>
             <div style={{fontWeight:900,fontSize:17,color:C.text}}>Wörterbuch</div>
-            <div style={{fontSize:12,color:C.muted}}>Все слова по темам · ед. / мн. / перевод</div>
+            <div style={{fontSize:13,color:C.muted}}>Все слова по темам · ед. / мн. / перевод</div>
           </div>
         </div>
         <Woerterbuch/>
@@ -9264,7 +9549,7 @@ export default function App(){
           <span style={{fontSize:26}}>{sec.icon}</span>
           <div>
             <div style={{fontWeight:900,fontSize:17,color:C.text}}>{sec.title}</div>
-            <div style={{fontSize:12,color:C.muted}}>{sec.sub}</div>
+            <div style={{fontSize:13,color:C.muted}}>{sec.sub}</div>
           </div>
         </div>
         {/* 2C и 2D объединяют теорию и задания в одном компоненте */}
@@ -9291,10 +9576,10 @@ export default function App(){
             <div style={{background:lekt.col+"22",border:`2px solid ${lekt.col}`,color:lekt.col,borderRadius:10,padding:"4px 12px",fontWeight:900,fontSize:18}}>L{lekt.num}</div>
             <div>
               <div style={{fontWeight:900,fontSize:18,color:C.text}}>{lekt.title}</div>
-              <div style={{fontSize:12,color:C.muted}}>{lekt.date}</div>
+              <div style={{fontSize:13,color:C.muted}}>{lekt.date}</div>
             </div>
           </div>
-          <div style={{fontSize:12,color:C.muted}}>{lekt.sub}</div>
+          <div style={{fontSize:13,color:C.muted}}>{lekt.sub}</div>
         </div>
         <div style={{display:"flex",flexDirection:"column",gap:8}}>
           {lekt.sections.map((s,i)=>(
@@ -9302,11 +9587,11 @@ export default function App(){
               style={{background:s.id.startsWith("t")&&!s.id.startsWith("tip")?C.yellowBg:s.id==="d1"||s.id==="d2"||s.id==="d3"||s.id==="wb"?C.tealBg:C.card,
                 border:`1.5px solid ${s.id.startsWith("t")&&!s.id.startsWith("tip")?C.yellow:s.id==="d1"||s.id==="d2"||s.id==="d3"||s.id==="wb"?C.teal:C.border}`,
                 borderRadius:13,padding:"12px 14px",display:"flex",alignItems:"center",gap:12,cursor:"pointer",textAlign:"left"}}>
-              <div style={{fontSize:11,color:C.muted,width:16,textAlign:"center"}}>{i+1}</div>
+              <div style={{fontSize:12,color:C.muted,width:16,textAlign:"center"}}>{i+1}</div>
               <span style={{fontSize:20}}>{s.icon}</span>
               <div style={{flex:1,minWidth:0}}>
                 <div style={{fontWeight:700,fontSize:14,color:s.id.startsWith("t")&&!s.id.startsWith("tip")?C.yellow:s.id==="d1"||s.id==="d2"||s.id==="d3"||s.id==="wb"?C.teal:C.text}}>{s.title}</div>
-                <div style={{fontSize:11,color:C.muted,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{s.sub}</div>
+                <div style={{fontSize:12,color:C.muted,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{s.sub}</div>
               </div>
               
               <span style={{color:C.muted}}>›</span>
@@ -9333,7 +9618,7 @@ export default function App(){
             <span style={{fontSize:28}}>📖</span>
             <div style={{flex:1}}>
               <div style={{fontWeight:800,fontSize:16,color:C.teal}}>Wörterbuch</div>
-              <div style={{fontSize:11,color:C.muted,marginTop:2}}>{WBDATA.length} слов · Kursraum · Möbel · Wohnung · Reise · Adresse</div>
+              <div style={{fontSize:12,color:C.muted,marginTop:2}}>{WBDATA.length} слов · Kursraum · Möbel · Wohnung · Reise · Adresse</div>
             </div>
             <span style={{color:C.teal,fontSize:20}}>›</span>
           </button>
@@ -9343,7 +9628,7 @@ export default function App(){
             <span style={{fontSize:28}}>💬</span>
             <div style={{flex:1}}>
               <div style={{fontWeight:800,fontSize:16,color:C.blue}}>Dialoge</div>
-              <div style={{fontSize:11,color:C.muted,marginTop:2}}>{DIALOG_FRAGEN.reduce((s,g)=>s+g.qa.length,0)} вопросов · Kennenlernen · Wohnen · Kursraum</div>
+              <div style={{fontSize:12,color:C.muted,marginTop:2}}>{DIALOG_FRAGEN.reduce((s,g)=>s+g.qa.length,0)} вопросов · Kennenlernen · Wohnen · Kursraum</div>
             </div>
             <span style={{color:C.blue,fontSize:20}}>›</span>
           </button>
@@ -9353,7 +9638,7 @@ export default function App(){
               <div style={{background:l.col+"22",border:`2px solid ${l.col}`,color:l.col,borderRadius:12,padding:"8px 14px",fontWeight:900,fontSize:22,flexShrink:0}}>L{l.num}</div>
               <div style={{flex:1}}>
                 <div style={{fontWeight:800,fontSize:17,color:C.text,marginBottom:3}}>{l.title}</div>
-                <div style={{fontSize:11,color:C.muted,marginBottom:4}}>{l.sub}</div>
+                <div style={{fontSize:12,color:C.muted,marginBottom:4}}>{l.sub}</div>
 
               </div>
               <span style={{color:C.muted,fontSize:20}}>›</span>
