@@ -1129,6 +1129,55 @@ const WBDATA=[
   {art:"der", de:"Vermieter",       pl:"-",            ru:"арендодатель · die Vermieterin",               tema:"Ämter"},
   {art:"die", de:"Gemeinde",        pl:"-n",           ru:"община, муниципалитет",                        tema:"Ämter"},
   {art:"die", de:"Hauptwohnung",    pl:"-en",          ru:"основное жильё (≠ Nebenwohnung)",              tema:"Ämter"},
+  // ── L11 · Ämter und Behörden (доп., 02.07.2026) ──────────────────────────────
+  {art:"die", de:"Ausländerbehörde",pl:"-n",           ru:"миграционная служба (для иностранцев)",        tema:"Ämter"},
+  {art:"das", de:"Finanzamt",       pl:'"-er',         ru:"налоговая инспекция",                          tema:"Ämter"},
+  {art:"das", de:"Landratsamt",     pl:'"-er',         ru:"районная администрация",                       tema:"Ämter"},
+  {art:"der", de:"Aufenthaltstitel",pl:"-",            ru:"вид на жительство",                            tema:"Ämter"},
+  {art:"die", de:"Fiktionsbescheinigung",pl:"-en",     ru:"временное удостоверение (пока оформляется ВНЖ)",tema:"Ämter"},
+  {art:"das", de:"Jobcenter",       pl:"-",            ru:"центр занятости (для получателей Bürgergeld)", tema:"Ämter"},
+  {art:"das", de:"Bürgergeld",      pl:"—",            ru:"пособие по безработице (базовое)",             tema:"Ämter"},
+  {art:"die", de:"Arbeitssuche",    pl:"—",            ru:"поиск работы",                                 tema:"Ämter"},
+  {art:"die", de:"Ausbildungssuche",pl:"—",            ru:"поиск учебного места (Ausbildung)",            tema:"Ämter"},
+  {art:"die", de:"Berufsberatung",  pl:"-en",          ru:"консультация по профессии",                    tema:"Ämter"},
+  {art:"die", de:"Arbeitslosigkeit",pl:"—",            ru:"безработица",                                  tema:"Ämter"},
+  {art:"der", de:"Integrationskurs",pl:"-e",           ru:"интеграционный курс (немецкий + страноведение)",tema:"Ämter"},
+  {art:"",   de:"Bundesagentur für Arbeit",pl:"—",     ru:"федеральное агентство занятости",              tema:"Ämter"},
+  {art:"die", de:"Bundespolizei",   pl:"—",            ru:"федеральная полиция",                          tema:"Ämter"},
+  {art:"die", de:"Angelegenheit",   pl:"-en",          ru:"дело, вопрос (административный)",              tema:"Ämter"},
+  {art:"die", de:"Unterlagen",      pl:"(Pl.)",        ru:"документы, бумаги (только мн.ч.)",             tema:"Ämter"},
+  {art:"der", de:"Reisepass",       pl:'"-e',          ru:"загранпаспорт",                                tema:"Ämter"},
+  {art:"die", de:"Geburtsurkunde",  pl:"-n",           ru:"свидетельство о рождении",                     tema:"Ämter"},
+  {art:"der", de:"Personalausweis",pl:"-e",            ru:"внутренний удостоверение личности",            tema:"Ämter"},
+  {art:"die", de:"Gehaltsabrechnung",pl:"-en",         ru:"расчётный лист по зарплате",                   tema:"Ämter"},
+  {art:"das", de:"Autokennzeichen",pl:"-",             ru:"автомобильный номерной знак",                  tema:"Ämter"},
+  {art:"",   de:"ausfüllen",        pl:"—",            ru:"заполнять (формуляр)",                         tema:"Ämter"},
+  {art:"die", de:"Informationsbroschüre",pl:"-n",      ru:"информационная брошюра",                       tema:"Ämter"},
+  {art:"die", de:"Sachbearbeiterin",pl:"-nen",         ru:"сотрудница (ведущая дело) · m. der Sachbearbeiter",tema:"Ämter"},
+  {art:"der", de:"Nummernautomat",  pl:"-en",          ru:"автомат выдачи номерков (электронная очередь)",tema:"Ämter"},
+  {art:"die", de:"Wartenummer",     pl:"-n",           ru:"номерок очереди",                              tema:"Ämter"},
+  {art:"die", de:"Kursgebühr",      pl:"-en",          ru:"плата за курс",                                tema:"Ämter"},
+  {art:"der", de:"Betrag",          pl:'"-e',          ru:"сумма (денежная)",                             tema:"Ämter"},
+  {art:"der", de:"Schalter",        pl:"-",            ru:"окошко, стойка (в учреждении)",                tema:"Ämter"},
+  {art:"",   de:"nötig",            pl:"—",            ru:"нужный, необходимый",                          tema:"Ämter"},
+  {art:"der", de:"Antrag",          pl:'"-e',          ru:"заявление · einen Antrag stellen = подать заявление",tema:"Ämter"},
+  {art:"",   de:"mieten",           pl:"—",            ru:"снимать, арендовать (квартиру)",               tema:"Wohnung"},
+  {art:"",   de:"vermieten",        pl:"—",            ru:"сдавать в аренду",                             tema:"Wohnung"},
+  {art:"die", de:"Miete",           pl:"-n",           ru:"арендная плата",                               tema:"Wohnung"},
+  {art:"die", de:"Mietwohnung",     pl:"-en",          ru:"съёмное жильё",                                tema:"Wohnung"},
+  {art:"der", de:"Mietvertrag",     pl:'"-e',          ru:"договор аренды",                               tema:"Wohnung"},
+  {art:"die", de:"Eigentumswohnung",pl:"-en",          ru:"собственная квартира (в личной собственности)",tema:"Wohnung"},
+  {art:"der", de:"Arbeitsvertrag",  pl:'"-e',          ru:"трудовой договор",                             tema:"Arbeit"},
+  {art:"der", de:"Kompass",         pl:"-e",           ru:"компас",                                       tema:"Alltag"},
+  {art:"das", de:"Mäppchen",        pl:"-",            ru:"пенал",                                        tema:"Alltag"},
+  {art:"das", de:"Brillenetui",     pl:"-s",           ru:"футляр для очков",                             tema:"Alltag"},
+  {art:"der", de:"Norden",          pl:"—",            ru:"север",                                        tema:"Alltag"},
+  {art:"der", de:"Süden",           pl:"—",            ru:"юг",                                           tema:"Alltag"},
+  {art:"der", de:"Osten",           pl:"—",            ru:"восток",                                       tema:"Alltag"},
+  {art:"der", de:"Westen",          pl:"—",            ru:"запад",                                        tema:"Alltag"},
+  {art:"",   de:"Verzeihung",       pl:"—",            ru:"извините, простите",                           tema:"Phrase"},
+  {art:"",   de:"ich verstehe",     pl:"—",            ru:"я понимаю",                                    tema:"Phrase"},
+  {art:"",   de:"danken",           pl:"—",            ru:"благодарить · +Dativ · Ich danke dir/Ihnen",   tema:"Phrase"},
 ];
 
 
@@ -1684,6 +1733,19 @@ const KONJ_ALL={
   abmelden:    {pref:"ab",  col:C.teal, bg:C.tealBg, note:"-e- вставка",
     ich:"melde … ab",   du:"meldest … ab",  "er/sie/es":"meldet … ab",
     wir:"melden … ab",  ihr:"meldet … ab",  "sie/Sie":"melden … ab", pt:"meldete … ab", pf:"hat abgemeldet"},
+  ausfüllen:   {pref:"aus", col:C.teal, bg:C.tealBg,
+    ich:"fülle … aus",  du:"füllst … aus",  "er/sie/es":"füllt … aus",
+    wir:"füllen … aus", ihr:"füllt … aus",  "sie/Sie":"füllen … aus", pt:"füllte … aus", pf:"hat ausgefüllt"},
+  mieten:      {col:C.teal,  bg:C.tealBg,
+    ich:"miete",     du:"mietest",    "er/sie/es":"mietet",    wir:"mieten",   ihr:"mietet",   "sie/Sie":"mieten", pt:"mietete", pf:"hat gemietet"},
+  vermieten:   {col:C.teal,  bg:C.tealBg,  note:"untrennbar: kein ge-",
+    ich:"vermiete",  du:"vermietest", "er/sie/es":"vermietet", wir:"vermieten",ihr:"vermietet","sie/Sie":"vermieten", pt:"vermietete", pf:"hat vermietet"},
+  danken:      {col:C.orange,bg:C.orangeBg, note:"+ Dativ",
+    ich:"danke",     du:"dankst",     "er/sie/es":"dankt",     wir:"danken",   ihr:"dankt",    "sie/Sie":"danken", pt:"dankte", pf:"hat gedankt"},
+  "sich aufhalten":{pref:"auf", col:C.purple,bg:C.purpleBg, note:"a→ä | Reflexiv",
+    ich:"halte mich … auf",   du:"hältst dich … auf",   "er/sie/es":"hält sich … auf",
+    wir:"halten uns … auf",   ihr:"haltet euch … auf",  "sie/Sie":"halten sich … auf",
+    imp:{du:"Halt dich … auf!", ihr:"Haltet euch … auf!", Sie:"Halten Sie sich … auf!"}, pt:"hielt sich … auf", ptc:{du:"hieltest dich … auf",wir:"hielten uns … auf",ihr:"hieltet euch … auf",sie:"hielten sich … auf"}, pf:"hat sich aufgehalten"},
 };
 
 // Ударения: комбинирующая акута \u0301 ставится после ударной гласной
@@ -1941,6 +2003,25 @@ const STRESS_MARKS={
 "Geburtsort":"Gebu\u0301rtsort","Staatsangehörigkeit":"Sta\u0301atsangehörigkeit",
 "Familienstand":"Fami\u0301lienstand","Vermieter":"Vermi\u0301eter","Gemeinde":"Geme\u0301inde",
 "Hauptwohnung":"Ha\u0301uptwohnung",
+// L11 доп. (02.07.2026)
+"Ausländerbehörde":"Ausländerbehö\u0301rde","Finanzamt":"Fina\u0301nzamt","Landratsamt":"La\u0301ndratsamt",
+"Aufenthaltstitel":"Aufe\u0301nthaltstitel","Fiktionsbescheinigung":"Fikti\u0301onsbescheinigung",
+"Jobcenter":"Jo\u0301bcenter","Bürgergeld":"Bü\u0301rgergeld","Arbeitssuche":"A\u0301rbeitssuche",
+"Ausbildungssuche":"Au\u0301sbildungssuche","Berufsberatung":"Beru\u0301fsberatung",
+"Arbeitslosigkeit":"A\u0301rbeitslosigkeit","Integrationskurs":"Integrati\u0301onskurs",
+"Bundesagentur für Arbeit":"Bu\u0301ndesagentur für A\u0301rbeit","Bundespolizei":"Bu\u0301ndespolizei",
+"Angelegenheit":"A\u0301ngelegenheit","Unterlagen":"U\u0301nterlagen","Reisepass":"Re\u0301isepass",
+"Geburtsurkunde":"Gebu\u0301rtsurkunde","Personalausweis":"Persona\u0301lausweis",
+"Gehaltsabrechnung":"Geha\u0301ltsabrechnung","Autokennzeichen":"A\u0301utokennzeichen",
+"ausfüllen":"a\u0301usfüllen","Informationsbroschüre":"Informati\u0301onsbroschüre",
+"Sachbearbeiterin":"Sa\u0301chbearbeiterin","Nummernautomat":"Nu\u0301mmernautomat",
+"Wartenummer":"Wa\u0301rtenummer","Kursgebühr":"Ku\u0301rsgebühr","Betrag":"Betra\u0301g",
+"Schalter":"Scha\u0301lter","nötig":"nö\u0301tig","Antrag":"A\u0301ntrag",
+"mieten":"mi\u0301eten","vermieten":"vermi\u0301eten","Miete":"Mi\u0301ete","Mietwohnung":"Mi\u0301etwohnung",
+"Mietvertrag":"Mi\u0301etvertrag","Eigentumswohnung":"E\u0301igentumswohnung","Arbeitsvertrag":"A\u0301rbeitsvertrag",
+"Kompass":"Ko\u0301mpass","Mäppchen":"Mä\u0301ppchen","Brillenetui":"Bri\u0301llenetui",
+"Norden":"No\u0301rden","Süden":"Sü\u0301den","Osten":"O\u0301sten","Westen":"We\u0301sten",
+"Verzeihung":"Verze\u0301ihung","danken":"da\u0301nken",
 "kochen":"ko\u0301chen","klingeln":"kli\u0301ngeln","starten":"sta\u0301rten","wollen":"wo\u0301llen",
 "vermuten":"vermu\u0301ten","reparieren":"repari\u0301eren","frühstücken":"fr\u00FC\u0301hstücken",
 "chillen":"chi\u0301llen","mögen":"m\u00F6\u0301gen",
@@ -2306,6 +2387,24 @@ const IPA_DATA={
 "Geburtsort":"[ɡəˈbuːɐ̯tsʔɔʁt]","Staatsangehörigkeit":"[ˈʃtaːtsʔanɡəhøːʁɪçkaɪt]",
 "Familienstand":"[faˈmiːliənʃtant]","Vermieter":"[fɛɐ̯ˈmiːtɐ]","Gemeinde":"[ɡəˈmaɪndə]",
 "Hauptwohnung":"[ˈhaʊptvoːnʊŋ]",
+"Ausländerbehörde":"[ˈaʊslɛndɐbəˌhøːɐ̯də]","Finanzamt":"[fiˈnantsʔamt]","Landratsamt":"[ˈlantʁaːtsʔamt]",
+"Aufenthaltstitel":"[ˈaʊfʔɛnthaltsˌtiːtl̩]","Fiktionsbescheinigung":"[fɪkˈtsi̯oːnsbəˌʃaɪnɪɡʊŋ]",
+"Jobcenter":"[ˈdʒɔpsɛntɐ]","Bürgergeld":"[ˈbʏʁɡɐɡɛlt]","Arbeitssuche":"[ˈaʁbaɪtsˌzuːxə]",
+"Ausbildungssuche":"[ˈaʊsbɪldʊŋsˌzuːxə]","Berufsberatung":"[bəˈʁuːfsbəˌʁaːtʊŋ]",
+"Arbeitslosigkeit":"[ˈaʁbaɪtsˌloːzɪçkaɪt]","Integrationskurs":"[ʔɪntɛɡʁaˈtsi̯oːnsˌkʊʁs]",
+"Bundesagentur für Arbeit":"[ˈbʊndəsʔaɡɛnˌtuːɐ̯ fyːɐ̯ ˈaʁbaɪt]","Bundespolizei":"[ˈbʊndəspoliˌtsaɪ]",
+"Angelegenheit":"[ˈanɡəˌleːɡn̩haɪt]","Unterlagen":"[ˈʊntɐˌlaːɡn̩]","Reisepass":"[ˈʁaɪzəpas]",
+"Geburtsurkunde":"[ɡəˈbuːɐ̯tsʔuːɐ̯kʊndə]","Personalausweis":"[pɛʁzoˈnaːlʔaʊsvaɪs]",
+"Gehaltsabrechnung":"[ɡəˈhaltsʔapˌʁɛçnʊŋ]","Autokennzeichen":"[ˈaʊtoːkɛntsˌaɪçn̩]",
+"ausfüllen":"[ˈaʊsfʏlən]","Informationsbroschüre":"[ʔɪnfɔʁmaˈtsi̯oːnsbʁoˌʃyːʁə]",
+"Sachbearbeiterin":"[ˈzaxbəˌʔaʁbaɪtəʁɪn]","Nummernautomat":"[ˈnʊmɐnʔaʊtoˌmaːt]",
+"Wartenummer":"[ˈvaʁtəˌnʊmɐ]","Kursgebühr":"[ˈkʊʁsɡəˌbyːɐ̯]","Betrag":"[bəˈtʁaːk]",
+"Schalter":"[ˈʃaltɐ]","nötig":"[ˈnøːtɪç]","Antrag":"[ˈantʁaːk]",
+"mieten":"[ˈmiːtn̩]","vermieten":"[fɛɐ̯ˈmiːtn̩]","Miete":"[ˈmiːtə]","Mietwohnung":"[ˈmiːtvoːnʊŋ]",
+"Mietvertrag":"[ˈmiːtfɛɐ̯ˌtʁaːk]","Eigentumswohnung":"[ˈaɪɡn̩tuːmsˌvoːnʊŋ]","Arbeitsvertrag":"[ˈaʁbaɪtsfɛɐ̯ˌtʁaːk]",
+"Kompass":"[ˈkɔmpas]","Mäppchen":"[ˈmɛpçən]","Brillenetui":"[ˈbʁɪlənʔetˌviː]",
+"Norden":"[ˈnɔʁdn̩]","Süden":"[ˈzyːdn̩]","Osten":"[ˈɔstn̩]","Westen":"[ˈvɛstn̩]",
+"Verzeihung":"[fɛɐ̯ˈtsaɪʊŋ]","danken":"[ˈdaŋkn̩]","ich verstehe":"[ɪç fɛɐ̯ˈʃteːə]",
 "Grüße":"[ˈɡʁyːsə]","Leute":"[ˈlɔɪtə]","Seetang":"[ˈzeːtaŋ]","fast":"[fast]","doch":"[dɔx]","holen":"[ˈhoːlən]","fragen":"[ˈfʁaːɡən]","gehen":"[ˈɡeːən]",
 };
 
@@ -2550,6 +2649,58 @@ const DIALOGE={
       {q:"Das war Zufall!",                                  a:"Was für ein Zufall! / So ein Zufall!",              note:"der Zufall = случайность"},
       {q:"Gute Besserung!",                                  a:"Danke schön! Das brauche ich!",                     note:"Gute Besserung! = выздоравливайте!"},
       {q:"Du solltest mehr schlafen.",                       a:"Ich weiß, aber ich habe keine Zeit.",               note:"sollte = Konjunktiv II, мягкий совет"},
+    ]},
+  ],
+  L9:[
+    {tag:"Основные",col:C.blue,pairs:[
+      {q:"Wie oft benutzen Sie das Auto?",                   a:"Ich benutze es täglich. / Ich benutze es selten.", note:"täglich/oft/manchmal/selten/nie",      fm:"f"},
+      {q:"Welche Verkehrsmittel benutzen Sie?",              a:"Ich fahre mit dem Fahrrad zur Arbeit.",            note:"mit + Dativ: mit dem/der",              fm:"f"},
+      {q:"Wie kommst du zur Arbeit?",                        a:"Ich fahre mit dem Bus.",                           note:"informell",                             fm:"i"},
+      {q:"Entschuldigung, wie komme ich zum Bahnhof?",       a:"Gehen Sie geradeaus und dann links.",              note:"Wegbeschreibung",                       fm:"f"},
+      {q:"Ist es weit von hier?",                            a:"Nein, es ist ganz in der Nähe.",                   note:"in der Nähe = рядом",                   fm:"f"},
+      {q:"Haben Sie einen Führerschein?",                    a:"Ja, ich habe einen Führerschein. / Nein, ich habe keinen.", note:"einen → keinen (Akkusativ)",   fm:"f"},
+      {q:"Darf man hier parken?",                            a:"Nein, hier ist Parkverbot.",                       note:"dürfen = разрешено ли",                 fm:"f"},
+    ]},
+    {tag:"Дополнительные",col:C.teal,pairs:[
+      {q:"Wo ist die nächste Haltestelle?",                  a:"Die Haltestelle ist um die Ecke.",                 note:"um die Ecke = за углом"},
+      {q:"Fährt der Bus zum Flughafen?",                     a:"Ja, der Bus 100 fährt zum Flughafen.",             note:"Liniennummer"},
+      {q:"Wie lange dauert die Fahrt?",                      a:"Die Fahrt dauert 20 Minuten.",                     note:"dauern = длиться"},
+      {q:"Muss ich umsteigen?",                              a:"Ja, Sie müssen einmal umsteigen.",                 note:"umsteigen = пересаживаться"},
+      {q:"Was bedeutet dieses Schild?",                      a:"Das bedeutet Vorfahrt / Halteverbot.",             note:"Verkehrsschilder"},
+    ]},
+  ],
+  L10:[
+    {tag:"Основные",col:C.purple,pairs:[
+      {q:"Was haben Sie gestern gemacht?",                   a:"Ich habe eingekauft und dann Musik gehört.",       note:"Perfekt: haben + Partizip II",          fm:"f"},
+      {q:"Sind Sie gestern ausgegangen?",                    a:"Ja, ich bin ins Kino gegangen.",                   note:"gehen → sein",                          fm:"f"},
+      {q:"Wo haben Sie früher gelebt?",                      a:"Früher habe ich in der Ukraine gelebt.",           note:"früher = раньше",                       fm:"f"},
+      {q:"Wann sind Sie nach Deutschland gekommen?",         a:"Ich bin 2022 nach Deutschland gekommen.",          note:"kommen → sein",                         fm:"f"},
+      {q:"Seit wann sind Sie in Deutschland?",                a:"Ich bin seit 2022 in Deutschland.",               note:"seit + Präsens, nicht Perfekt!",        fm:"f"},
+      {q:"Was haben Sie am Wochenende gemacht?",             a:"Wir haben einen Ausflug gemacht.",                 note:"einen Ausflug machen",                  fm:"f"},
+      {q:"Wie war Ihr Wochenende?",                          a:"Es war toll! Wir sind spazieren gegangen.",        note:"war = Präteritum von sein",             fm:"f"},
+    ]},
+    {tag:"Дополнительные",col:C.teal,pairs:[
+      {q:"Haben Sie Deutsch gelernt?",                       a:"Ja, ich habe einen Kurs gemacht.",                 note:"einen Kurs machen"},
+      {q:"Sind Sie verheiratet?",                            a:"Nein, ich bin geschieden. / Ja, ich bin verheiratet.", note:"ledig/verheiratet/geschieden"},
+      {q:"Wie lange haben Sie dort gewohnt?",                a:"Ich habe dort sechs Jahre gewohnt.",               note:"Zeitdauer + Perfekt"},
+      {q:"Was hat Ihnen an der Reise gefallen?",             a:"Das Brandenburger Tor hat mir sehr gut gefallen.", note:"gefallen + Dativ"},
+    ]},
+  ],
+  L11:[
+    {tag:"Основные",col:C.green,pairs:[
+      {q:"Verzeihung, können Sie mir helfen?",               a:"Ja, gern. Was kann ich für Sie tun?",              note:"helfen + Dativ",                        fm:"f"},
+      {q:"Wo finde ich das Standesamt?",                     a:"Es ist im dritten Stock, Zimmer 351.",             note:"Stockwerk + Zimmer",                    fm:"f"},
+      {q:"Wie bekomme ich eine Wohnung?",                    a:"Man muss eine Wohnung beantragen und Formulare ausfüllen.", note:"beantragen · ausfüllen",         fm:"f"},
+      {q:"Wem gehört das?",                                  a:"Das gehört mir.",                                  note:"gehören + Dativ",                       fm:"f"},
+      {q:"Können Sie mir helfen, das Formular auszufüllen?", a:"Ja, kein Problem.",                                note:"um Hilfe bitten",                       fm:"f"},
+      {q:"Was brauche ich für den Antrag?",                  a:"Sie brauchen die Geburtsurkunde und den Pass.",    note:"für + Akkusativ",                       fm:"f"},
+      {q:"Wann kann ich den Personalausweis abholen?",       a:"In drei Wochen.",                                  note:"abholen = забрать"},
+    ]},
+    {tag:"Дополнительные",col:C.blue,pairs:[
+      {q:"Wann sind Sie geboren?",                           a:"Ich bin am 4. Mai 1981 geboren.",                  note:"Datum: am + Ordinalzahl"},
+      {q:"Was ist Ihre Staatsangehörigkeit?",                a:"Meine Staatsangehörigkeit ist ukrainisch.",        note:"Staatsangehörigkeit = гражданство"},
+      {q:"Sind Sie berufstätig?",                            a:"Ja, ich arbeite als … / Nein, ich bin nicht berufstätig.", note:"berufstätig = работающий"},
+      {q:"Können Sie das bitte wiederholen?",                a:"Ja, natürlich. Wie schreibt man das? Können Sie buchstabieren?", note:"wiederholen · buchstabieren"},
     ]},
   ],
 };
@@ -5026,6 +5177,353 @@ const WSENTS_L3=[
   {w:["Das","Zimmer","hat","einen","Balkon","."],              ru:"В комнате есть балкон."},
   {w:["Wie","viele","Zimmer","haben","Sie","?"],               ru:"Сколько у вас комнат?"},
 ];
+const Q_L4TEST=shuffle([
+  {q:"'Das ist ___ Bruder.' (ich, m)",           opts:["mein","meine","meinen","meins"],        ans:0, hint:"Possessivartikel m"},
+  {q:"'Das ist ___ Schwester.' (du, f)",         opts:["dein","deine","deinen","deins"],        ans:1, hint:"Possessivartikel f"},
+  {q:"'Er zeigt ___ Foto.' (er, n)",             opts:["sein","seine","seinen","seins"],        ans:0, hint:"Possessivartikel n"},
+  {q:"'Wo ist ___ Auto?' (sie, n)",              opts:["ihr","ihre","ihren","ihrs"],            ans:0, hint:"ihr (n)"},
+  {q:"'Du ___ sehr schnell.' (fahren, a→ä)",     opts:["fahrst","fährst","fahrest","fahren"],   ans:1, hint:"a→ä"},
+  {q:"'Er ___ um 22 Uhr.' (schlafen, a→ä)",      opts:["schlaft","schläft","schlafe","schlafen"],ans:1, hint:"a→ä"},
+  {q:"'Sie ___ gern Fisch.' (essen, e→i)",       opts:["esst","isst","essen","essst"],          ans:1, hint:"e→i"},
+  {q:"'Er ___ ein Buch.' (lesen, e→ie)",         opts:["lest","liest","liese","lesen"],         ans:1, hint:"e→ie"},
+  {q:"'Wohin ___ du?' — 'Ich gehe ins Kino.'",   opts:["bist","gehst","bin","fährst"],          ans:1, hint:"Wohin + движение"},
+  {q:"'Früher ___ meine Großeltern sieben Kinder.'",opts:["waren","hatten","sind","haben"],     ans:1, hint:"Präteritum von haben"},
+  {q:"'Mein Vater ___ Arzt von Beruf.'",         opts:["war","hatte","ist","hat"],              ans:0, hint:"Präteritum von sein"},
+  {q:"'Wir spielen mit ___ Kindern.' (unser, Dat.)",opts:["unser","unsere","unseren","unserem"],ans:2, hint:"unser + Kindern (Dat. Pl.)"},
+]);
+
+const LUECKEN_L4=shuffle([
+  {sent:"Das ist ___ Mutter.",              opts:["mein","meine","meinen","meins"],      ans:1,ru:"Это моя мать.",                hint:"meine (f)"},
+  {sent:"Wo ist ___ Vater?",                opts:["dein","deine","deinen","deins"],      ans:0,ru:"Где твой отец?",              hint:"dein (m)"},
+  {sent:"Er liebt ___ Familie.",            opts:["sein","seine","seinen","seins"],      ans:1,ru:"Он любит свою семью.",         hint:"seine (f, Akk.)"},
+  {sent:"Sie zeigt ___ Kinder.",            opts:["ihr","ihre","ihren","ihrs"],          ans:1,ru:"Она показывает своих детей.",  hint:"ihre (Pl.)"},
+  {sent:"Du ___ sehr gut.' (sprechen)",     opts:["sprichst","sprechst","spreche","sprecht"],ans:0,ru:"Ты очень хорошо говоришь.",hint:"e→i"},
+  {sent:"Er ___ ein T-Shirt.' (tragen)",    opts:["tragt","trägt","trage","tragen"],     ans:1,ru:"Он носит футболку.",           hint:"a→ä"},
+  {sent:"Wir ___ jeden Tag Fahrrad.' (fahren)",opts:["fahrt","fährt","fahren","fahre"],  ans:2,ru:"Мы каждый день катаемся на велосипеде.",hint:"wir-Form регулярная"},
+  {sent:"___ hattet ihr als Kind ein Haustier?",opts:["Wie","Was","Wann","Wo"],           ans:1,ru:"Что у вас было в детстве за питомец?",hint:"W-Frage"},
+]);
+
+const ZUORD_L4=[
+  {de:"die Großmutter",     ru:"бабушка"},
+  {de:"der Großvater",      ru:"дедушка"},
+  {de:"die Geschwister",    ru:"братья и сёстры"},
+  {de:"die Enkelkinder",    ru:"внуки"},
+  {de:"der Neffe",          ru:"племянник"},
+  {de:"die Nichte",         ru:"племянница"},
+];
+
+const WSENTS_L4=[
+  {w:["Das","ist","meine","Schwester","."],                     ru:"Это моя сестра."},
+  {w:["Er","zeigt","seinen","Kindern","Fotos","."],              ru:"Он показывает детям фотографии."},
+  {w:["Wir","fahren","jeden","Sonntag","Fahrrad","."],           ru:"Мы каждое воскресенье катаемся на велосипеде."},
+  {w:["Sie","spricht","sehr","gut","Deutsch","."],                ru:"Она очень хорошо говорит по-немецки."},
+  {w:["Früher","hatte","ich","kein","Auto","."],                 ru:"Раньше у меня не было машины."},
+  {w:["Mein","Großvater","war","Lehrer","von","Beruf","."],       ru:"Мой дедушка был учителем по профессии."},
+  {w:["Wohin","gehst","du","heute","Abend","?"],                 ru:"Куда ты идёшь сегодня вечером?"},
+  {w:["Isst","du","gern","Obst","?"],                            ru:"Ты любишь фрукты?"},
+];
+const Q_L5TEST=shuffle([
+  {q:"'Es ist halb zehn.' — сколько времени?",   opts:["10:30","9:30","9:15","10:15"],          ans:1, hint:"halb смотрит вперёд"},
+  {q:"'Viertel vor sieben' — это:",              opts:["7:15","6:45","6:15","7:45"],            ans:1, hint:"vor = без"},
+  {q:"'Viertel nach acht' — это:",               opts:["8:15","7:45","8:45","8:30"],            ans:0, hint:"nach = после"},
+  {q:"'Ich ___ um 7 Uhr ___.' (aufstehen)",      opts:["stehe … auf","aufstehe","stehe auf …","stehen … auf"],ans:0, hint:"trennbares Verb"},
+  {q:"Infinitiv von 'Er ruft an'?",              opts:["rufen an","anrufen","rufen","anruft"],  ans:1, hint:"Infinitiv"},
+  {q:"'Wir ___ heute Abend ___.' (ausgehen)",    opts:["ausgehen","gehen … aus","geht … aus","gehen … auf"],ans:1, hint:"wir-Form"},
+  {q:"'Der Kurs ___ um 20 Uhr ___.' (anfangen, a→ä)",opts:["fängt … an","fangt … an","fange … an","fangen … an"],ans:0, hint:"a→ä + trennbar"},
+  {q:"'___ Montag habe ich Deutschkurs.'",        opts:["Am","Um","In","Im"],                    ans:0, hint:"am + Wochentag"},
+  {q:"'Der Kurs ist ___ 9 ___ 12 Uhr.'",          opts:["von … bis","um … Uhr","am … Uhr","seit … bis"],ans:0, hint:"von...bis"},
+  {q:"'Hast du morgen Zeit?' — вежливый ответ, если нет:",opts:["Ja, klar!","Nein, ich habe keine Zeit.","Tut mir leid, ich kann nicht.","Vielleicht."],ans:2, hint:"вежливый отказ"},
+]);
+
+const LUECKEN_L5=shuffle([
+  {sent:"Ich ___ jeden Morgen um 6 Uhr ___.' (aufstehen)",opts:["stehe … auf","aufstehe","stehe … an","steht … auf"],ans:0,ru:"Я встаю каждое утро в 6 часов.",hint:"trennbar"},
+  {sent:"Sie ___ das Fenster ___.' (aufmachen)",opts:["macht … auf","aufmacht","macht … zu","macht auf …"],ans:0,ru:"Она открывает окно.",hint:"trennbar"},
+  {sent:"Wann ___ der Film ___?' (anfangen)",   opts:["fangt … an","fängt … an","fange … an","anfängt"],  ans:1,ru:"Когда начинается фильм?",hint:"a→ä"},
+  {sent:"Ich ___ um 22 Uhr ___.' (einschlafen)",opts:["schlafe … ein","einschlafe","schläft … ein","schlafe … an"],ans:0,ru:"Я засыпаю в 22 часа.",hint:"trennbar"},
+  {sent:"Es ist ___ acht.' (7:30)",             opts:["Viertel vor","Viertel nach","halb","fünf vor"], ans:2,ru:"Половина восьмого.",hint:"halb"},
+  {sent:"Der Unterricht ist ___ Montag ___ Freitag.'",opts:["von … bis","am … am","um … um","seit … bis"],ans:0,ru:"Занятия с понедельника по пятницу.",hint:"von...bis"},
+  {sent:"___ hast du am Wochenende Zeit?'",     opts:["Wann","Wie","Was","Wo"],                        ans:0,ru:"Когда у тебя есть время на выходных?",hint:"W-Frage"},
+]);
+
+const ZUORD_L5=[
+  {de:"aufstehen",     ru:"вставать"},
+  {de:"anfangen",      ru:"начинать"},
+  {de:"aufhören",      ru:"заканчивать"},
+  {de:"einkaufen",     ru:"делать покупки"},
+  {de:"fernsehen",     ru:"смотреть телевизор"},
+  {de:"mitnehmen",     ru:"брать с собой"},
+];
+
+const WSENTS_L5=[
+  {w:["Ich","stehe","um","sieben","Uhr","auf","."],              ru:"Я встаю в семь часов."},
+  {w:["Wann","fängt","der","Kurs","an","?"],                     ru:"Когда начинается курс?"},
+  {w:["Wir","gehen","heute","Abend","aus","."],                  ru:"Мы сегодня вечером идём гулять."},
+  {w:["Der","Unterricht","ist","von","neun","bis","zwölf","Uhr","."],ru:"Занятия с девяти до двенадцати часов."},
+  {w:["Sie","kauft","am","Samstag","ein","."],                   ru:"Она делает покупки в субботу."},
+  {w:["Um","wie","viel","Uhr","beginnt","der","Film","?"],       ru:"Во сколько начинается фильм?"},
+  {w:["Ich","habe","am","Montag","keine","Zeit","."],            ru:"У меня в понедельник нет времени."},
+  {w:["Er","sieht","jeden","Abend","fern","."],                  ru:"Он каждый вечер смотрит телевизор."},
+];
+const Q_L6TEST=shuffle([
+  {q:"'___ mir bitte das Brot!' (Imperativ du)", opts:["Gib","Gebe","Gibst","Gebt"],             ans:0, hint:"geben: e→i, Gib!"},
+  {q:"'___ bitte leise!' (Imperativ ihr, sein)", opts:["Sei","Seid","Seien","Bist"],             ans:1, hint:"sein: Seid!"},
+  {q:"'___ Sie bitte Platz!' (Imperativ Sie, nehmen)",opts:["Nehmt","Nimm","Nehmen","Nehme"],    ans:2, hint:"Infinitiv + Sie"},
+  {q:"'Ich ___ gern Kaffee.' (möchten)",         opts:["mag","möchte","mögt","möchtest"],       ans:1, hint:"möchten = хотеть бы"},
+  {q:"'Ich ___ keinen Fisch.' (mögen, отрицание)",opts:["mag nicht","mag kein","mag keinen","möchte kein"],ans:2, hint:"mögen + Akkusativ kein-"},
+  {q:"'Das ___ nicht gut.' (schmecken)",         opts:["schmeckt","schmecke","schmecken","schmeckst"],ans:0, hint:"es schmeckt"},
+  {q:"'Ich hätte gern ___ Kilo Äpfel.'",         opts:["ein","eine","einen","—"],               ans:3, hint:"единицы измерения без артикля"},
+  {q:"Кто такой 'der Kunde'?",                   opts:["продавец","покупатель","повар","официант"],ans:1, hint:"словарь"},
+  {q:"'Man isst in Deutschland ___ Frühstück meistens Brot.'",opts:["beim","zum","am","im"],    ans:1, hint:"zum Frühstück"},
+  {q:"Что значит 'man'?",                        opts:["мужчина","безличное 'вы/люди'","он","она"],ans:1, hint:"man isst = едят/принято есть"},
+]);
+
+const LUECKEN_L6=shuffle([
+  {sent:"___ mir bitte die Butter!' (du, geben)",opts:["Gib","Gebe","Gebt","Geben"],           ans:0,ru:"Дай мне, пожалуйста, масло.",   hint:"e→i"},
+  {sent:"___ nicht so viel Zucker!' (du, essen)",opts:["Iss","Esse","Esst","Essen"],           ans:0,ru:"Не ешь так много сахара.",       hint:"e→i"},
+  {sent:"Ich ___ lieber Tee als Kaffee.' (mögen)",opts:["mag","möchte","magst","mögt"],        ans:0,ru:"Я больше люблю чай, чем кофе.",  hint:"mögen"},
+  {sent:"Ich ___ gern einen Apfelsaft.' (möchten)",opts:["mag","möchte","möchtest","mögt"],    ans:1,ru:"Я хотел бы яблочный сок.",       hint:"möchten"},
+  {sent:"Ich habe ___ Hunger mehr.' (kein/nicht)",opts:["keinen","kein","nicht","keine"],      ans:0,ru:"Я больше не голоден.",           hint:"kein + Hunger (m)"},
+  {sent:"Das schmeckt mir ___.' (отрицание)",    opts:["kein","keine","nicht","keinen"],       ans:2,ru:"Мне это не нравится (на вкус).",hint:"nicht (не сущ.)"},
+  {sent:"___ Sie bitte Platz!' (nehmen, Sie)",   opts:["Nimm","Nehmt","Nehmen","Nehme"],       ans:2,ru:"Присаживайтесь, пожалуйста.",   hint:"Infinitiv+Sie"},
+]);
+
+const ZUORD_L6=[
+  {de:"das Obst",         ru:"фрукты"},
+  {de:"das Gemüse",       ru:"овощи"},
+  {de:"die Milchprodukte",ru:"молочные продукты"},
+  {de:"das Fleisch",      ru:"мясо"},
+  {de:"die Getränke",     ru:"напитки"},
+  {de:"die Süßigkeiten",  ru:"сладости"},
+];
+
+const WSENTS_L6=[
+  {w:["Gib","mir","bitte","das","Salz","!"],                    ru:"Дай мне, пожалуйста, соль."},
+  {w:["Ich","möchte","gern","einen","Kaffee","."],               ru:"Я хотел бы кофе."},
+  {w:["Er","mag","kein","Fleisch","."],                          ru:"Он не любит мясо."},
+  {w:["Nehmen","Sie","bitte","Platz","!"],                       ru:"Присаживайтесь, пожалуйста."},
+  {w:["Wir","essen","meistens","um","zwölf","Uhr","."],          ru:"Мы обычно едим в двенадцать часов."},
+  {w:["Das","schmeckt","mir","sehr","gut","."],                  ru:"Мне это очень нравится (на вкус)."},
+  {w:["Kauf","bitte","zwei","Kilo","Kartoffeln","!"],            ru:"Купи, пожалуйста, два кило картошки."},
+  {w:["Was","isst","man","in","Deutschland","zum","Frühstück","?"],ru:"Что едят в Германии на завтрак?"},
+];
+const Q_L7TEST=shuffle([
+  {q:"'Ich ___ gut kochen.' (können)",           opts:["kann","kannst","könnt","können"],       ans:0, hint:"ich kann"},
+  {q:"'Du ___ heute arbeiten.' (müssen)",        opts:["muss","musst","müsst","müssen"],        ans:1, hint:"du musst"},
+  {q:"'Er ___ Arzt werden.' (wollen)",           opts:["will","willst","wollt","wollen"],       ans:0, hint:"er will"},
+  {q:"'Wo stehen Modalverb + Infinitiv im Satz?'",opts:["оба в начале","Modalverb 2, Infinitiv в конце","оба в конце","Infinitiv 2, Modalverb в конце"],ans:1, hint:"Satzklammer"},
+  {q:"'Ich hole Geld ___ Geldautomaten.'",       opts:["im","am","vom","zum"],                  ans:2, hint:"vom = von + dem"},
+  {q:"Что такое 'die IBAN'?",                    opts:["код банка","номер банковского счёта","карта","чек"],ans:1, hint:"словарь L7B"},
+  {q:"'Er kommt ___ der Arbeit.'",               opts:["aus","von","bei","zu"],                 ans:1, hint:"von = от (источник)"},
+  {q:"'Sara ist ___ Lisa.' (у Лизы, в гостях)",  opts:["bei","mit","zu","für"],                 ans:0, hint:"bei = у кого-то"},
+  {q:"'___ einem Jahr lerne ich Deutsch.'",      opts:["Vor","Seit","Ab","Bei"],                ans:1, hint:"seit = уже как…"},
+  {q:"'Ich fahre ___ Bus zur Arbeit.'",          opts:["mit dem","mit den","mit der","im"],     ans:0, hint:"mit + Dativ (m)"},
+]);
+
+const LUECKEN_L7=shuffle([
+  {sent:"Ich ___ am Wochenende nicht arbeiten.' (müssen, отрицание)",opts:["muss","musst","müssen","müsst"],ans:0,ru:"Мне не нужно работать на выходных.",hint:"ich muss nicht"},
+  {sent:"___ du mir helfen?' (können)",          opts:["Kannst","Kann","Könnt","Können"],       ans:0,ru:"Ты можешь мне помочь?",         hint:"du-Form"},
+  {sent:"Er ___ Programmierer werden.' (wollen)",opts:["will","willst","wollt","wollen"],       ans:0,ru:"Он хочет стать программистом.", hint:"er-Form"},
+  {sent:"Ich hole Geld ___ der Bank.'",          opts:["aus","von","bei","zu"],                 ans:0,ru:"Я снимаю деньги в банке.",      hint:"aus = из"},
+  {sent:"Er kommt gerade ___ Arzt.'",            opts:["vom","beim","zum","aus dem"],           ans:0,ru:"Он только что от врача.",       hint:"vom = von + dem"},
+  {sent:"Ich fahre ___ Fahrrad zur Arbeit.'",    opts:["mit dem","mit der","mit den","im"],     ans:0,ru:"Я еду на велосипеде на работу.",hint:"mit + Dativ (n)"},
+  {sent:"___ wann arbeitest du hier?'",          opts:["Seit","Vor","Bei","Ab"],                ans:0,ru:"С каких пор ты здесь работаешь?",hint:"Seit wann?"},
+]);
+
+const ZUORD_L7=[
+  {de:"der Geldautomat",   ru:"банкомат"},
+  {de:"die EC-Karte",      ru:"дебетовая карта"},
+  {de:"überweisen",        ru:"переводить (деньги)"},
+  {de:"das Konto",         ru:"счёт"},
+  {de:"die Rechnung",      ru:"счёт, квитанция"},
+  {de:"bar bezahlen",      ru:"платить наличными"},
+];
+
+const WSENTS_L7=[
+  {w:["Ich","kann","sehr","gut","kochen","."],                   ru:"Я умею очень хорошо готовить."},
+  {w:["Du","musst","morgen","früh","aufstehen","."],              ru:"Тебе нужно завтра рано встать."},
+  {w:["Er","will","nach","Berlin","fahren","."],                  ru:"Он хочет поехать в Берлин."},
+  {w:["Ich","hole","Geld","vom","Geldautomaten","."],             ru:"Я снимаю деньги в банкомате."},
+  {w:["Sie","arbeitet","seit","zwei","Jahren","hier","."],        ru:"Она работает здесь уже два года."},
+  {w:["Kannst","du","mir","fünfzig","Euro","leihen","?"],         ru:"Можешь одолжить мне пятьдесят евро?"},
+  {w:["Ich","fahre","mit","dem","Bus","zur","Arbeit","."],        ru:"Я еду на работу на автобусе."},
+  {w:["Wir","müssen","die","Rechnung","bezahlen","."],            ru:"Нам нужно оплатить счёт."},
+];
+const Q_L8TEST=shuffle([
+  {q:"'Der Arzt untersucht ___.' (mich)",        opts:["ich","mich","mir","meiner"],            ans:1, hint:"Akkusativ: ich→mich"},
+  {q:"'Ruf ___ an!' (ihn = er)",                 opts:["er","ihn","ihm","es"],                  ans:1, hint:"Akkusativ: er→ihn"},
+  {q:"'Holst du ___ ab?' (uns)",                 opts:["wir","uns","unser","euch"],             ans:1, hint:"Akkusativ: wir→uns"},
+  {q:"'Was fehlt Ihnen?' — что это значит?",     opts:["Что вы забыли?","Что вас беспокоит?","Где вы?","Как дела?"],ans:1, hint:"У врача"},
+  {q:"'Du ___ mehr schlafen.' (sollte)",         opts:["solltest","sollte","solltet","sollten"],ans:0, hint:"Konjunktiv II: du solltest"},
+  {q:"Номер экстренной помощи в Германии:",       opts:["911","102","112","103"],                ans:2, hint:"Notruf"},
+  {q:"'Ich habe Kopfschmerzen.' — что болит?",   opts:["живот","голова","горло","спина"],       ans:1, hint:"der Kopf = голова"},
+  {q:"'Er ist erkältet.' — что с ним?",          opts:["устал","простужен","болен животом","здоров"],ans:1, hint:"erkältet = простужен"},
+  {q:"'Machen Sie bitte den Mund ___.' (aufmachen)",opts:["auf","zu","an","ein"],                ans:0, hint:"aufmachen"},
+  {q:"'Ich habe seit gestern Fieber.' — с каких пор?",opts:["с завтра","со вчера","сейчас","никогда"],ans:1, hint:"seit gestern"},
+]);
+
+const LUECKEN_L8=shuffle([
+  {sent:"Der Arzt fragt ___.' (mich)",           opts:["ich","mich","mir","meiner"],           ans:1,ru:"Врач спрашивает меня.",         hint:"Akkusativ"},
+  {sent:"Ich rufe ___ an.' (sie = она)",          opts:["sie","ihr","sie/Sie","ihre"],          ans:0,ru:"Я звоню ей.",                  hint:"Akkusativ: sie→sie"},
+  {sent:"Siehst du ___?' (mich)",                opts:["ich","mich","mir","du"],               ans:1,ru:"Ты меня видишь?",              hint:"Akkusativ"},
+  {sent:"Du ___ mehr Wasser trinken.' (sollte)", opts:["solltest","sollte","sollten","solltet"],ans:0,ru:"Тебе следовало бы пить больше воды.",hint:"du solltest"},
+  {sent:"Er ___ zum Arzt gehen.' (sollte)",      opts:["solltest","sollte","sollten","solltet"],ans:1,ru:"Ему следовало бы сходить к врачу.",hint:"er sollte"},
+  {sent:"Machen Sie den Mund ___!'",             opts:["auf","zu","ein","an"],                 ans:0,ru:"Откройте, пожалуйста, рот!",    hint:"aufmachen"},
+  {sent:"Ich habe ___ Husten und Schnupfen.'",   opts:["ein","eine","—","einen"],               ans:2,ru:"У меня кашель и насморк.",     hint:"без артикля"},
+]);
+
+const ZUORD_L8=[
+  {de:"der Kopf",          ru:"голова"},
+  {de:"der Bauch",         ru:"живот"},
+  {de:"der Rücken",        ru:"спина"},
+  {de:"der Hals",          ru:"горло"},
+  {de:"die Nase",          ru:"нос"},
+  {de:"das Ohr",           ru:"ухо"},
+];
+
+const WSENTS_L8=[
+  {w:["Der","Arzt","untersucht","mich","."],                    ru:"Врач меня осматривает."},
+  {w:["Ich","habe","seit","gestern","Fieber","."],               ru:"У меня со вчера температура."},
+  {w:["Du","solltest","mehr","schlafen","."],                    ru:"Тебе следовало бы больше спать."},
+  {w:["Rufen","Sie","sofort","den","Notarzt","!"],                ru:"Вызовите немедленно скорую помощь!"},
+  {w:["Machen","Sie","bitte","den","Mund","auf","."],             ru:"Откройте, пожалуйста, рот."},
+  {w:["Ich","bin","erkältet","und","habe","Husten","."],          ru:"Я простужен, и у меня кашель."},
+  {w:["Holst","du","mich","morgen","ab","?"],                     ru:"Заберёшь меня завтра?"},
+  {w:["Er","hat","starke","Kopfschmerzen","."],                   ru:"У него сильные головные боли."},
+];
+const Q_L9TEST=shuffle([
+  {q:"'Ich fahre mit ___ Bus.' (m, Dativ)",       opts:["der","dem","den","das"],                ans:1, hint:"mit + Dativ m"},
+  {q:"'Ich fahre mit ___ Straßenbahn.' (f, Dativ)",opts:["der","dem","den","die"],                ans:0, hint:"mit + Dativ f"},
+  {q:"Entschuldigung, wie komme ich zum Bahnhof? — ответ:",opts:["Ja, gerne.","Gehen Sie geradeaus.","Um 9 Uhr.","Das ist teuer."],ans:1, hint:"Wegbeschreibung"},
+  {q:"'Biegen Sie rechts ___!'",                  opts:["ab","an","auf","aus"],                  ans:0, hint:"abbiegen"},
+  {q:"'Sie ___ hier nicht parken.' (dürfen)",     opts:["darf","dürfen","dürft","darfst"],       ans:1, hint:"Sie dürfen"},
+  {q:"'Ich ___ hier fotografieren.' (dürfen, отрицание)",opts:["darf nicht","dürfe nicht","darfst nicht","dürft nicht"],ans:0, hint:"ich darf nicht"},
+  {q:"Что нужно для вождения авто в Германии?",    opts:["Personalausweis","Führerschein","Reisepass","Visum"],ans:1, hint:"словарь L9C"},
+  {q:"'Das Geschäft ist ___ dem Bahnhof.' (напротив)",opts:["neben","gegenüber","zwischen","hinter"],ans:1, hint:"gegenüber"},
+  {q:"'Wie oft fährst du mit dem Auto?' — 'Ich fahre es ___.'",opts:["täglich","niemals danke","gestern","морген"],ans:0, hint:"Häufigkeit"},
+  {q:"'Gehen Sie ___ zur Ampel.'",                opts:["bis","zu","nach","bei"],                ans:0, hint:"bis zur Ampel"},
+]);
+
+const LUECKEN_L9=shuffle([
+  {sent:"Ich fahre mit ___ Fahrrad.' (n, Dativ)",opts:["dem","der","den","das"],               ans:0,ru:"Я езжу на велосипеде.",         hint:"mit + Dativ n"},
+  {sent:"Wir fahren mit ___ Zug.' (m, Dativ)",   opts:["dem","der","den","das"],               ans:0,ru:"Мы едем на поезде.",            hint:"mit + Dativ m"},
+  {sent:"___ Sie bitte links ab!' (abbiegen)",   opts:["Biegen","Biegt","Bieg","Biege"],       ans:0,ru:"Поверните, пожалуйста, налево.",hint:"Imperativ Sie"},
+  {sent:"Man ___ hier nicht parken.' (dürfen)",  opts:["darf","dürft","dürfen","darfst"],      ans:0,ru:"Здесь нельзя парковаться.",     hint:"man darf"},
+  {sent:"Ich habe einen ___.' (документ на вождение)",opts:["Reisepass","Führerschein","Personalausweis","Termin"],ans:1,ru:"У меня есть водительские права.",hint:"словарь"},
+  {sent:"Der Bahnhof ist ___ der Post.' (напротив)",opts:["neben","gegenüber","vor","zwischen"],ans:1,ru:"Вокзал напротив почты.",       hint:"gegenüber"},
+  {sent:"Gehen Sie ___ die Ecke!'",              opts:["um","bis","zu","an"],                  ans:0,ru:"Идите за угол!",               hint:"um die Ecke"},
+]);
+
+const ZUORD_L9=[
+  {de:"geradeaus",         ru:"прямо"},
+  {de:"rechts abbiegen",   ru:"повернуть направо"},
+  {de:"links abbiegen",    ru:"повернуть налево"},
+  {de:"gegenüber",         ru:"напротив"},
+  {de:"um die Ecke",       ru:"за углом"},
+  {de:"an … vorbei",       ru:"мимо"},
+];
+
+const WSENTS_L9=[
+  {w:["Ich","fahre","mit","dem","Bus","zur","Arbeit","."],       ru:"Я еду на автобусе на работу."},
+  {w:["Wie","komme","ich","zum","Bahnhof","?"],                  ru:"Как мне пройти к вокзалу?"},
+  {w:["Biegen","Sie","rechts","ab","!"],                         ru:"Поверните направо!"},
+  {w:["Hier","dürfen","Sie","nicht","parken","."],                ru:"Здесь вам нельзя парковаться."},
+  {w:["Ich","habe","einen","Führerschein","."],                  ru:"У меня есть водительские права."},
+  {w:["Das","Café","ist","gegenüber","der","Post","."],           ru:"Кафе напротив почты."},
+  {w:["Gehen","Sie","geradeaus","bis","zur","Ampel","."],         ru:"Идите прямо до светофора."},
+  {w:["Darf","man","hier","fotografieren","?"],                  ru:"Здесь можно фотографировать?"},
+];
+const Q_L10TEST=shuffle([
+  {q:"'Ich ___ Deutsch ___.' (lernen, Perfekt)", opts:["habe … gelernt","bin … gelernt","habe … gelernen","hat … gelernt"],ans:0, hint:"haben + ge-t"},
+  {q:"'Ich ___ nach Berlin ___.' (fahren, Perfekt)",opts:["habe … gefahren","bin … gefahren","habe … gefährt","bin … gefahrt"],ans:1, hint:"Bewegung → sein"},
+  {q:"'Ich ___ gestern früh ___.' (einschlafen, Perfekt)",opts:["habe … eingeschlafen","bin … eingeschlafen","habe … eingeschlaft","bin … eingeschlaft"],ans:1, hint:"Zustandsveränderung → sein"},
+  {q:"'Ich ___ nicht lange ___.' (bleiben, Perfekt)",opts:["habe … geblieben","bin … geblieben","habe … bleibt","bin … bleibt"],ans:1, hint:"bleiben → immer sein"},
+  {q:"Präteritum von 'sein' (ich)?",              opts:["war","hatte","bin","habe"],             ans:0, hint:"ich war"},
+  {q:"Präteritum von 'haben' (wir)?",             opts:["waren","hatten","haben","sind"],        ans:1, hint:"wir hatten"},
+  {q:"'Er ist ___ 2020 in Deutschland.' (seit + Präsens)",opts:["seit","vor","ab","für"],        ans:0, hint:"seit + Dativ"},
+  {q:"Как читается 1989?",                        opts:["eins-neun-acht-neun","neunzehnhundertneunundachtzig","neunzehn-neunundachtzig","tausend"],ans:1, hint:"19|89"},
+  {q:"Как читается 2015?",                        opts:["zwanzig-fünfzehn","zweitausendfünfzehn","zwei tausend fünfzehn Jahre","zweitausend und fünfzehn"],ans:1, hint:"2015"},
+  {q:"'Was haben Sie gestern gemacht?' — правильный ответ:",opts:["Ich mache Musik hören.","Ich habe Musik gehört.","Ich höre Musik gemacht.","Ich bin Musik gehört."],ans:1, hint:"Perfekt"},
+]);
+
+const LUECKEN_L10=shuffle([
+  {sent:"Ich ___ gestern eingekauft.' (haben/sein)",opts:["habe","bin","hat","ist"],            ans:0,ru:"Я вчера сходил за покупками.",  hint:"einkaufen → haben"},
+  {sent:"Wir ___ ins Kino gegangen.'",           opts:["haben","sind","hat","ist"],             ans:1,ru:"Мы пошли в кино.",              hint:"gehen → sein"},
+  {sent:"Er ___ den Kuchen gegessen.'",          opts:["hat","ist","habe","bin"],               ans:0,ru:"Он съел торт.",                 hint:"essen → haben"},
+  {sent:"Früher ___ ich in der Ukraine.' (sein)",opts:["war","hatte","bin","habe"],             ans:0,ru:"Раньше я жил в Украине.",       hint:"Präteritum"},
+  {sent:"Früher ___ ich kein Auto.' (haben)",    opts:["war","hatte","habe","bin"],             ans:1,ru:"Раньше у меня не было машины.",hint:"Präteritum"},
+  {sent:"Ich bin ___ einem Jahr in Deutschland.'",opts:["seit","vor","ab","für"],               ans:0,ru:"Я в Германии уже год.",         hint:"seit + Dativ"},
+  {sent:"Sie ___ am Sonntag spät aufgestanden.'",opts:["hat","ist","habe","bin"],               ans:1,ru:"Она встала поздно в воскресенье.",hint:"aufstehen → sein"},
+]);
+
+const ZUORD_L10=[
+  {de:"gehen — ist gegangen",       ru:"идти"},
+  {de:"essen — hat gegessen",       ru:"есть"},
+  {de:"fahren — ist gefahren",      ru:"ехать"},
+  {de:"sehen — hat gesehen",        ru:"видеть"},
+  {de:"bleiben — ist geblieben",    ru:"оставаться"},
+  {de:"trinken — hat getrunken",    ru:"пить"},
+];
+
+const WSENTS_L10=[
+  {w:["Ich","habe","gestern","Musik","gehört","."],               ru:"Я вчера слушал музыку."},
+  {w:["Wir","sind","nach","Wien","gefahren","."],                 ru:"Мы поехали в Вену."},
+  {w:["Früher","war","ich","in","der","Ukraine","."],             ru:"Раньше я был в Украине."},
+  {w:["Ich","bin","seit","2022","in","Deutschland","."],          ru:"Я в Германии с 2022 года."},
+  {w:["Er","ist","gestern","spät","aufgestanden","."],            ru:"Он вчера поздно встал."},
+  {w:["Was","haben","Sie","am","Wochenende","gemacht","?"],       ru:"Что вы делали на выходных?"},
+  {w:["Sie","hat","früher","kein","Auto","gehabt","."],           ru:"У неё раньше не было машины."},
+  {w:["Wir","sind","lange","dort","geblieben","."],               ru:"Мы там долго оставались."},
+];
+const Q_L11TEST=shuffle([
+  {q:"Wo kann man heiraten?",                     opts:["Finanzamt","Standesamt","Jobcenter","Ausländerbehörde"],ans:1, hint:"Standesamt = ЗАГС"},
+  {q:"Wo beantragt man Kindergeld?",              opts:["Familienkasse","Standesamt","Bürgeramt","Finanzamt"],ans:0, hint:"Familienkasse"},
+  {q:"Wo meldet man das Auto an?",                opts:["Meldestelle","Kfz-Zulassungsstelle","Standesamt","Jobcenter"],ans:1, hint:"Kfz-Zulassungsstelle"},
+  {q:"'Kannst du ___ helfen?' (mir)",             opts:["ich","mich","mir","mein"],              ans:2, hint:"helfen + Dativ"},
+  {q:"'Das Buch gehört ___.' (ihr, Sg.)",         opts:["sie","ihr","sie/Sie","ihn"],            ans:1, hint:"gehören + Dativ"},
+  {q:"'Ich danke ___.' (Ihnen, формально)",       opts:["Sie","Ihnen","dich","dir"],             ans:1, hint:"danken + Dativ"},
+  {q:"'09.05.' — как прочитать день?",            opts:["der neunte","neun","der neunzehnte","neunter"],ans:0, hint:"der neunte"},
+  {q:"'Für die Kfz-Zulassung braucht man ___.' (das Autokennzeichen)",opts:["für den","für die","für das","für dem"],ans:2, hint:"für + Akk. n"},
+  {q:"'въезжать в новую квартиру' — какой глагол?",opts:["ausziehen","einziehen","umziehen","verlassen"],ans:1, hint:"ein = внутрь"},
+  {q:"Perfekt von 'umziehen'?",                   opts:["hat umgezogen","ist umgezogen","hat umziehen","ist umziehen"],ans:1, hint:"движение → sein"},
+]);
+
+const LUECKEN_L11=shuffle([
+  {sent:"Hilfst du ___?' (mir)",                 opts:["ich","mich","mir","mein"],             ans:2,ru:"Ты мне поможешь?",              hint:"helfen + Dativ"},
+  {sent:"Wem gehört das? — Es gehört ___.' (ihm)",opts:["er","ihn","ihm","sein"],               ans:2,ru:"Это принадлежит ему.",           hint:"gehören + Dativ"},
+  {sent:"Ich danke ___ herzlich.' (dir)",        opts:["du","dich","dir","dein"],              ans:2,ru:"Я тебя сердечно благодарю.",     hint:"danken + Dativ"},
+  {sent:"Ich komme ___ vierten.' (am)",          opts:["am","dem","der","im"],                 ans:0,ru:"Я приду четвёртого.",            hint:"am + Ordinalzahl"},
+  {sent:"Für einen Kindergeldantrag braucht man ___ Geburtsurkunde.' (f)",opts:["für den","für die","die","der"],ans:2,ru:"Для заявления на детское пособие нужно свидетельство о рождении.",hint:"Akkusativ f"},
+  {sent:"Ich ___ letztes Jahr in eine neue Wohnung ___.' (einziehen)",opts:["bin … eingezogen","habe … eingezogen","bin … eingezogt","habe … eingezogt"],ans:0,ru:"Я в прошлом году въехал в новую квартиру.",hint:"Perfekt mit sein"},
+  {sent:"Wo ist das Standesamt? — Es ist ___ dritten Stock.'",opts:["im","am","in den","auf dem"],ans:0,ru:"Это на третьем этаже.",         hint:"im = in + dem"},
+]);
+
+const ZUORD_L11=[
+  {de:"das Standesamt",         ru:"ЗАГС — регистрация брака"},
+  {de:"die Familienkasse",      ru:"детское пособие"},
+  {de:"die Kfz-Zulassungsstelle",ru:"регистрация авто"},
+  {de:"die Ausländerbehörde",   ru:"виза, ВНЖ"},
+  {de:"das Jobcenter",          ru:"пособие по безработице"},
+  {de:"das Finanzamt",          ru:"налоги"},
+];
+
+const WSENTS_L11=[
+  {w:["Können","Sie","mir","bitte","helfen","?"],                 ru:"Вы можете мне помочь?"},
+  {w:["Das","Buch","gehört","mir","."],                           ru:"Эта книга принадлежит мне."},
+  {w:["Ich","danke","Ihnen","herzlich","."],                      ru:"Я вас сердечно благодарю."},
+  {w:["Heute","ist","der","erste","Juli","."],                    ru:"Сегодня первое июля."},
+  {w:["Ich","komme","am","vierten","Juni","."],                   ru:"Я приду четвёртого июня."},
+  {w:["Wir","sind","letzten","Monat","umgezogen","."],            ru:"Мы переехали в прошлом месяце."},
+  {w:["Für","den","Antrag","braucht","man","die","Geburtsurkunde","."],ru:"Для заявления нужно свидетельство о рождении."},
+  {w:["Wo","finde","ich","das","Standesamt","?"],                 ru:"Где мне найти ЗАГС?"},
+];
+
+
+
+
+
+
+
+
 
 // ─── LueckenQuiz ─────────────────────────────────────────────────────────────
 function LueckenQuiz({items}){
@@ -5284,6 +5782,55 @@ function GrosserTest3(){return <GrosserTestContainer rounds={[
   {icon:"⚡",label:"Akkusativ",     col:C.red,    component:()=><LueckenQuiz items={AKKU_BLITZ}/>},
   {icon:"🔗",label:"Möbel→Zimmer",  col:C.green,  component:()=><Zuordnung pairs={ZUORD_L3} leftLabel="Möbel" rightLabel="Zimmer"/>},
   {icon:"🔤",label:"Wortstellung",  col:C.orange, component:()=><WortstellungGame sents={WSENTS_L3}/>},
+]}/>;}
+
+function GrosserTest4(){return <GrosserTestContainer rounds={[
+  {icon:"🎯",label:"Quiz",          col:C.yellow, component:()=><Quiz questions={Q_L4TEST}/>},
+  {icon:"📝",label:"Lückentext",    col:C.blue,   component:()=><LueckenQuiz items={LUECKEN_L4}/>},
+  {icon:"🔗",label:"Familie",       col:C.purple, component:()=><Zuordnung pairs={ZUORD_L4} leftLabel="Deutsch" rightLabel="Перевод"/>},
+  {icon:"🔤",label:"Wortstellung",  col:C.orange, component:()=><WortstellungGame sents={WSENTS_L4}/>},
+]}/>;}
+function GrosserTest5(){return <GrosserTestContainer rounds={[
+  {icon:"🎯",label:"Quiz",          col:C.yellow, component:()=><Quiz questions={Q_L5TEST}/>},
+  {icon:"📝",label:"Lückentext",    col:C.blue,   component:()=><LueckenQuiz items={LUECKEN_L5}/>},
+  {icon:"🔗",label:"Trennbare Verben",col:C.teal, component:()=><Zuordnung pairs={ZUORD_L5} leftLabel="Deutsch" rightLabel="Перевод"/>},
+  {icon:"🔤",label:"Wortstellung",  col:C.orange, component:()=><WortstellungGame sents={WSENTS_L5}/>},
+]}/>;}
+function GrosserTest6(){return <GrosserTestContainer rounds={[
+  {icon:"🎯",label:"Quiz",          col:C.yellow, component:()=><Quiz questions={Q_L6TEST}/>},
+  {icon:"📝",label:"Lückentext",    col:C.blue,   component:()=><LueckenQuiz items={LUECKEN_L6}/>},
+  {icon:"🔗",label:"Lebensmittel",  col:C.green,  component:()=><Zuordnung pairs={ZUORD_L6} leftLabel="Deutsch" rightLabel="Перевод"/>},
+  {icon:"🔤",label:"Wortstellung",  col:C.orange, component:()=><WortstellungGame sents={WSENTS_L6}/>},
+]}/>;}
+function GrosserTest7(){return <GrosserTestContainer rounds={[
+  {icon:"🎯",label:"Quiz",          col:C.yellow, component:()=><Quiz questions={Q_L7TEST}/>},
+  {icon:"📝",label:"Lückentext",    col:C.blue,   component:()=><LueckenQuiz items={LUECKEN_L7}/>},
+  {icon:"🔗",label:"Geld & Bank",   col:C.purple, component:()=><Zuordnung pairs={ZUORD_L7} leftLabel="Deutsch" rightLabel="Перевод"/>},
+  {icon:"🔤",label:"Wortstellung",  col:C.orange, component:()=><WortstellungGame sents={WSENTS_L7}/>},
+]}/>;}
+function GrosserTest8(){return <GrosserTestContainer rounds={[
+  {icon:"🎯",label:"Quiz",          col:C.yellow, component:()=><Quiz questions={Q_L8TEST}/>},
+  {icon:"📝",label:"Lückentext",    col:C.blue,   component:()=><LueckenQuiz items={LUECKEN_L8}/>},
+  {icon:"🔗",label:"Körperteile",   col:C.red,    component:()=><Zuordnung pairs={ZUORD_L8} leftLabel="Deutsch" rightLabel="Перевод"/>},
+  {icon:"🔤",label:"Wortstellung",  col:C.orange, component:()=><WortstellungGame sents={WSENTS_L8}/>},
+]}/>;}
+function GrosserTest9(){return <GrosserTestContainer rounds={[
+  {icon:"🎯",label:"Quiz",          col:C.yellow, component:()=><Quiz questions={Q_L9TEST}/>},
+  {icon:"📝",label:"Lückentext",    col:C.blue,   component:()=><LueckenQuiz items={LUECKEN_L9}/>},
+  {icon:"🔗",label:"Wegbeschreibung",col:C.teal,  component:()=><Zuordnung pairs={ZUORD_L9} leftLabel="Deutsch" rightLabel="Перевод"/>},
+  {icon:"🔤",label:"Wortstellung",  col:C.orange, component:()=><WortstellungGame sents={WSENTS_L9}/>},
+]}/>;}
+function GrosserTest10(){return <GrosserTestContainer rounds={[
+  {icon:"🎯",label:"Quiz",          col:C.yellow, component:()=><Quiz questions={Q_L10TEST}/>},
+  {icon:"📝",label:"Lückentext",    col:C.blue,   component:()=><LueckenQuiz items={LUECKEN_L10}/>},
+  {icon:"🔗",label:"Partizip II",   col:C.purple, component:()=><Zuordnung pairs={ZUORD_L10} leftLabel="Deutsch" rightLabel="Перевод"/>},
+  {icon:"🔤",label:"Wortstellung",  col:C.orange, component:()=><WortstellungGame sents={WSENTS_L10}/>},
+]}/>;}
+function GrosserTest11(){return <GrosserTestContainer rounds={[
+  {icon:"🎯",label:"Quiz",          col:C.yellow, component:()=><Quiz questions={Q_L11TEST}/>},
+  {icon:"📝",label:"Lückentext",    col:C.blue,   component:()=><LueckenQuiz items={LUECKEN_L11}/>},
+  {icon:"🔗",label:"Ämter",         col:C.green,  component:()=><Zuordnung pairs={ZUORD_L11} leftLabel="Amt" rightLabel="Zweck"/>},
+  {icon:"🔤",label:"Wortstellung",  col:C.orange, component:()=><WortstellungGame sents={WSENTS_L11}/>},
 ]}/>;}
 
 // ─── L4C — PRÄTERITUM HABEN/SEIN ─────────────────────────────────────────────
@@ -9000,6 +9547,11 @@ function T11A(){
     {icon:"👶",name:"die Familienkasse",       was:"Kindergeld beantragen",       ru:"семейная касса — детское пособие"},
     {icon:"🚗",name:"die Kfz-Zulassungsstelle",was:"das Auto anmelden und abmelden",ru:"регистрация автомобилей"},
     {icon:"🏠",name:"die Meldestelle / das Bürgeramt",was:"die Wohnung anmelden", ru:"паспортный стол — регистрация по месту жительства"},
+    {icon:"🌍",name:"die Ausländerbehörde",    was:"das Visum verlängern, den Aufenthaltstitel beantragen", ru:"миграционная служба — виза, ВНЖ, Fiktionsbescheinigung"},
+    {icon:"💰",name:"das Finanzamt",           was:"Steuern bezahlen",            ru:"налоговая инспекция"},
+    {icon:"🏛️",name:"das Landratsamt",         was:"die Aufenthaltstitel und Fiktionsbescheinigung bekommen", ru:"районная администрация — документы для иностранцев"},
+    {icon:"🧑‍💻",name:"das Jobcenter",          was:"Bürgergeld beantragen, einen Integrationskurs finden", ru:"центр занятости — пособие, интеграционные курсы"},
+    {icon:"👮",name:"die Bundespolizei",       was:"Sie schützen und helfen",     ru:"федеральная полиция — защита и помощь"},
   ];
   const ord1=[["1.","der erste","am ersten"],["2.","der zweite","am zweiten"],["3.","der dritte ⚠️","am dritten"],
     ["4.","der vierte","am vierten"],["7.","der siebte ⚠️","am siebten"],["10.","der zehnte","am zehnten"],
@@ -9107,6 +9659,141 @@ function T11A(){
             <div style={{background:C.ov4,borderRadius:8,padding:"8px 11px",marginTop:6,fontSize:12,color:C.text}}>
               💡 <b>der Zug</b> — поезд · <b>den Zug nicht erwischen</b> — не успеть на поезд · <b>verlassen</b> — покидать
             </div>
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
+const Q_L11B=[
+  {q:"'Kannst du ___ helfen?' (mir)",             opts:["ich","mich","mir","mein"],                     ans:2, hint:"helfen + Dativ → mir"},
+  {q:"'Das Buch gehört ___.' (ihr, Sg.)",         opts:["sie","ihr","sie","ihn"],                       ans:1, hint:"gehören + Dativ → ihr"},
+  {q:"'Ich danke ___.' (Sie, формально)",         opts:["Sie","Ihnen","Ihr","dich"],                    ans:1, hint:"danken + Dativ → Ihnen"},
+  {q:"Nominativ 'wir' → Dativ?",                  opts:["uns","unser","euch","wir"],                    ans:0, hint:"wir → uns"},
+  {q:"Nominativ 'ihr' → Dativ?",                  opts:["euch","ihr","Ihnen","uns"],                    ans:0, hint:"ihr → euch"},
+  {q:"Nominativ 'Sie' (формально) → Dativ?",      opts:["dir","Sie","Ihnen","sie"],                     ans:2, hint:"Sie → Ihnen"},
+  {q:"Nominativ 'sie' (она) → Dativ?",            opts:["ihr","ihm","sie","ihn"],                       ans:0, hint:"sie → ihr"},
+  {q:"Nominativ 'er' → Dativ?",                   opts:["ihr","ihm","ihn","es"],                        ans:1, hint:"er → ihm"},
+  {q:"'Das Formular braucht man ___ Kfz-Zulassung.' (für + Akk., f)", opts:["für den","für die","für das","für dem"], ans:1, hint:"für + Akkusativ: f → die"},
+  {q:"'Wir brauchen den Pass ___ Auslandsreise.' (für + ein, f)",     opts:["für einen","für eine","für ein","für einem"], ans:1, hint:"für eine (f, Akk.)"},
+  {q:"Как вежливо попросить о помощи?",           opts:["Hilf mir!","Verzeihung, können Sie mir helfen?","Was?","Nein danke"], ans:1, hint:"формальная просьба о помощи"},
+  {q:"Как ответить 'да, с радостью' на просьбу о помощи?",opts:["Nein danke","Ja, gern.","Vielleicht","Tut mir leid"], ans:1, hint:"Ja, gern. / Ja, gerne."},
+  {q:"'Ich ___ Ihnen.' (благодарить)",            opts:["danke","helfe","gehöre","bringe"],             ans:0, hint:"Ich danke Ihnen."},
+  {q:"Wem gehört das Auto? — Es gehört ___. (ich)",opts:["ich","mich","mir","mein"],                    ans:2, hint:"gehören + Dativ → mir"},
+];
+
+function T11B(){
+  const [tab,setTab]=useState("dativ");
+  const dativTab=[["ich","mir"],["du","dir"],["er/es","ihm"],["sie","ihr"],["wir","uns"],["ihr","euch"],["sie/Sie","ihnen/Ihnen"]];
+  const verbenDativ=[
+    {v:"helfen",  bsp:"Können Sie mir helfen?",        ru:"помогать кому-то (Dativ)"},
+    {v:"danken",  bsp:"Ich danke Ihnen.",              ru:"благодарить кого-то (Dativ)"},
+    {v:"gehören", bsp:"Das Haus gehört mir.",          ru:"принадлежать кому-то (Dativ)"},
+  ];
+  const fuerAkk=[["m","für den / für einen"],["n","für das / für ein"],["f","für die / für eine"],["Pl.","für die / für —"]];
+  const bitten=["Entschuldigen Sie bitte, darf ich Sie etwas fragen?","Verzeihung, können Sie mir helfen?","Ja, gern.","Was kann ich für Sie tun?"];
+  const leihen=[
+    {q:"Wem gehört das?",                       a:"Gehört das Buch dir? / Gehört das euch?",              note:"gehören + Dativ"},
+    {q:"Kannst du mir einen Stift geben?",      a:"Ja, gerne. / Nein, es tut mir leid. Ich habe keinen.", note:"es tut mir leid = мне жаль"},
+    {q:"Bringst du mir morgen das Buch mit?",   a:"Ja, das kann ich dir mitbringen.",                    note:"mitbringen = принести с собой"},
+  ];
+  const danken=["Vielen Dank.","Herzlichen Dank.","Ich danke Ihnen."];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.blue}>
+        <H c={C.blue}>🙋 L11B · Können Sie mir helfen?</H>
+        <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
+          {[["dativ","Dativ-Pronomen"],["verben","Verben + Dativ"],["fuer","für + Akk."],["phrasen","Höflich bitten"],["leihen","Etwas leihen"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,lineHeight:1.35,textAlign:"center",
+                border:`1px solid ${tab===key?C.blue+"55":C.border}`,
+                background:tab===key?C.blue+"22":C.ov3,
+                color:tab===key?C.blue:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="dativ"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,marginBottom:10}}>
+              Личные местоимения в Dativ — нужны после глаголов helfen, danken, gehören и других.
+            </div>
+            <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gridTemplateRows:"repeat(4,auto)",gridAutoFlow:"column",gap:6}}>
+              {dativTab.map(([nom,dat])=>(
+                <div key={nom} style={{background:C.ov4,borderRadius:8,padding:"8px 10px",
+                  display:"flex",justifyContent:"space-between",alignItems:"center"}}>
+                  <span style={{color:C.muted,fontSize:12}}>{nom}</span>
+                  <span style={{color:C.blue,fontWeight:800,fontSize:14}}>→ {dat}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+        {tab==="verben"&&(
+          <div>
+            {verbenDativ.map(v=>(
+              <div key={v.v} style={{background:C.ov4,borderRadius:9,padding:"9px 11px",marginBottom:6,
+                borderLeft:`3px solid ${C.orange}`}}>
+                <div style={{fontWeight:800,fontSize:13,color:C.orange,marginBottom:3}}>{v.v} <span style={{fontSize:11,color:C.muted,fontWeight:400}}>+ Dativ</span></div>
+                <div style={{fontSize:13,color:C.text,marginBottom:2,fontStyle:"italic"}}>{v.bsp}</div>
+                <div style={{fontSize:12,color:C.muted}}>{v.ru}</div>
+              </div>
+            ))}
+            <div style={{background:C.ov4,borderRadius:8,padding:"8px 11px",marginTop:4,fontSize:12,color:C.text}}>
+              💡 <b>Wem gehört das?</b> — вопрос всегда с Dativ.
+            </div>
+          </div>
+        )}
+        {tab==="fuer"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,marginBottom:10}}>
+              Предлог <b style={{color:C.text}}>für</b> всегда требует Akkusativ.
+            </div>
+            <div style={{display:"grid",gridTemplateColumns:"1fr 2fr",gap:6,marginBottom:10}}>
+              {fuerAkk.map(([r,f])=>(
+                <Fragment key={r}>
+                  <div style={{background:C.ov4,borderRadius:7,padding:"6px 10px",color:C.muted,fontSize:12,fontWeight:700}}>{r}</div>
+                  <div style={{background:C.ov4,borderRadius:7,padding:"6px 10px",color:C.blue,fontSize:13,fontWeight:700}}>{f}</div>
+                </Fragment>
+              ))}
+            </div>
+            <div style={{background:C.blue+"15",border:`1px solid ${C.blue}33`,borderRadius:9,padding:"9px 11px",fontSize:12,color:C.text}}>
+              Für die Kfz-Zulassung braucht man das Autokennzeichen.<br/>
+              Für einen Kindergeldantrag braucht man die Geburtsurkunde.
+            </div>
+          </div>
+        )}
+        {tab==="phrasen"&&(
+          <div>
+            <div style={{marginBottom:10}}>
+              <div style={{fontSize:12,fontWeight:700,color:C.green,marginBottom:5}}>Um Hilfe bitten:</div>
+              {bitten.map(p=>(
+                <div key={p} style={{background:C.ov4,borderRadius:7,padding:"6px 10px",fontSize:12,color:C.text,marginBottom:4}}>{p}</div>
+              ))}
+            </div>
+            <div>
+              <div style={{fontSize:12,fontWeight:700,color:C.orange,marginBottom:5}}>Sich bedanken:</div>
+              {danken.map(p=>(
+                <div key={p} style={{background:C.ov4,borderRadius:7,padding:"6px 10px",fontSize:12,color:C.text,marginBottom:4}}>{p}</div>
+              ))}
+            </div>
+          </div>
+        )}
+        {tab==="leihen"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,marginBottom:10}}>
+              Мини-диалоги: попросить или одолжить что-то — с Dativ-местоимениями.
+            </div>
+            {leihen.map(d=>(
+              <div key={d.q} style={{background:C.ov4,borderRadius:9,padding:"9px 11px",marginBottom:6,
+                borderLeft:`3px solid ${C.purple}`}}>
+                <div style={{fontSize:13,color:C.text,fontWeight:600,marginBottom:3}}>— {d.q}</div>
+                <div style={{fontSize:13,color:C.purple,marginBottom:3}}>— {d.a}</div>
+                <div style={{fontSize:11,color:C.muted}}>{d.note}</div>
+              </div>
+            ))}
           </div>
         )}
       </Box>
@@ -9264,6 +9951,7 @@ const LEKTIONEN=[
       {id:"4a",  icon:"👨‍👩‍👧",title:"A · Familienfotos",       sub:"Possessivartikel: mein/dein/sein/ihr", time:"7 мин", col:C.blue,  hasT:true,  th:()=><T4A/>, ex:()=><Quiz questions={Q_L4A}/>},
       {id:"4b",  icon:"🚴",title:"B · Freizeit mit der Familie",sub:"Verben mit Vokalwechsel · Wo/Wohin · Aktivitäten", time:"8 мин", col:C.green, hasT:true, th:()=><T4B/>, ex:()=><Quiz questions={Q_L4B}/>},
       {id:"4c",  icon:"📅",title:"C · Familien früher",        sub:"Präteritum von haben und sein: hatte, war",          time:"7 мин", col:C.purple,hasT:true, th:()=><T4C/>, ex:()=><Quiz questions={Q_L4C}/>},
+      {id:"t4",  icon:"🎯",title:"Großer Test L4",        sub:"Quiz · Lücken · Familie · Wortstellung", time:"20 мин",col:C.yellow,hasT:false, ex:()=><GrosserTest4/>},
     ]
   },
   {
@@ -9276,6 +9964,7 @@ const LEKTIONEN=[
       {id:"5b",  icon:"✂️",title:"B · Was macht Frau Costa?",sub:"Trennbare Verben: auf-, ein-, an-, aus-", time:"8 мин", col:C.blue,  hasT:true,  th:()=><T5B/>, ex:()=><Quiz questions={Q_L5B}/>},
       {id:"5c",  icon:"📅",title:"C · Meine Woche",          sub:"am · um · von...bis · Zeitangaben",      time:"6 мин", col:C.green, hasT:true,  th:()=><T5C/>, ex:()=><Quiz questions={Q_L5C}/>},
       {id:"5d",  icon:"📞",title:"D · Hast du Zeit?",         sub:"Verabredung · gehen + Infinitiv",        time:"5 мин", col:C.red,   hasT:true,  th:()=><T5D/>, ex:()=><Quiz questions={Q_L5D}/>},
+      {id:"t5",  icon:"🎯",title:"Großer Test L5",        sub:"Quiz · Lücken · Trennbare Verben · Wortstellung", time:"20 мин",col:C.yellow,hasT:false, ex:()=><GrosserTest5/>},
     ]
   },
   {
@@ -9289,6 +9978,7 @@ const LEKTIONEN=[
       {id:"6c",  icon:"🛍️",title:"B · Einkaufen",              sub:"Einkaufsorte · möchten · hätte gerne · Mengen",        time:"6 мин", col:C.teal,   hasT:true,  th:()=><T6C/>,     ex:()=><Quiz questions={Q_L6C}/>},
       {id:"6d",  icon:"❤️",title:"C · Das mag ich",             sub:"mögen · kein- vs nicht · Akkusativ kein",              time:"6 мин", col:C.purple, hasT:true,  th:()=><T6D/>,     ex:()=><Quiz questions={Q_L6D}/>},
       {id:"6e",  icon:"🇩🇪",title:"D · Essen in Deutschland",   sub:"man · Essenszeiten · Frühstück/Mittag/Abend",          time:"5 мин", col:C.green,  hasT:true,  th:()=><T6E/>,     ex:()=><Quiz questions={Q_L6E}/>},
+      {id:"t6",  icon:"🎯",title:"Großer Test L6",             sub:"Quiz · Lücken · Lebensmittel · Wortstellung",          time:"20 мин",col:C.yellow, hasT:false, ex:()=><GrosserTest6/>},
     ]
   },
   {
@@ -9300,6 +9990,7 @@ const LEKTIONEN=[
       {id:"7a",  icon:"💼",title:"A · Berufe & Modalverben",    sub:"können · müssen · wollen · sollen · Satzklammer",      time:"7 мин", col:C.blue,   hasT:true,  th:()=><T7A/>,     ex:()=><Quiz questions={Q_L7A}/>},
       {id:"7b",  icon:"🏦",title:"B · Rund ums Geld",           sub:"Geldautomat · EC-Karte · IBAN · überweisen",           time:"4 мин", col:C.orange, hasT:true,  th:()=><T7B/>,     ex:()=><Quiz questions={Q_L7B}/>},
       {id:"7c",  icon:"🗺️",title:"C · Dativ-Präpositionen",     sub:"aus·bei·mit·nach·von·seit·zu + Wo/Wohin/Woher",        time:"7 мин", col:C.purple, hasT:true,  th:()=><T7C/>,     ex:()=><Quiz questions={Q_L7C}/>},
+      {id:"t7",  icon:"🎯",title:"Großer Test L7",             sub:"Quiz · Lücken · Geld & Bank · Wortstellung",           time:"20 мин",col:C.yellow, hasT:false, ex:()=><GrosserTest7/>},
     ]
   },
   {
@@ -9312,6 +10003,7 @@ const LEKTIONEN=[
       {id:"8b",  icon:"🔄",title:"B · Personalpronomen Akk.",   sub:"ich→mich · du→dich · er→ihn · wir→uns",               time:"5 мин", col:C.orange, hasT:true,  th:()=><T8B/>,     ex:()=><Quiz questions={Q_L8B}/>},
       {id:"8c",  icon:"💊",title:"C · sollte & Gesundheit",     sub:"Konjunktiv II · Krankenkasse · Kinderkrankheiten",     time:"5 мин", col:C.teal,   hasT:true,  th:()=><T8C/>,     ex:()=><Quiz questions={Q_L8C}/>},
       {id:"8d",  icon:"🚨",title:"D/E · Notruf 112 & Erschöpft",sub:"112-Schema · Erste Hilfe · erschöpft/gestresst · Tipps",time:"6 мин", col:C.red,    hasT:true,  th:()=><T8D/>,     ex:()=><Quiz questions={Q_L8D}/>},
+      {id:"t8",  icon:"🎯",title:"Großer Test L8",             sub:"Quiz · Lücken · Körperteile · Wortstellung",           time:"20 мин",col:C.yellow, hasT:false, ex:()=><GrosserTest8/>},
     ]
   },
   {
@@ -9319,9 +10011,11 @@ const LEKTIONEN=[
     sub:"A Verkehrsmittel · B In der Stadt · C Führerschein & dürfen",
     date:"Seite 93–99",col:C.blue,
     sections:[
+      {id:"d9",  icon:"💬",title:"Dialogfragen L9",             sub:"Фразы для диалога",                                    time:"∞",     col:C.teal,   hasT:false, th:null,           ex:()=><DialogCards lId="L9"/>},
       {id:"9a",  icon:"🚗",title:"A · Wege durch die Stadt",    sub:"Verkehrsmittel · mit + Dativ · teuer/billig/schnell",  time:"6 мин", col:C.blue,   hasT:true,  th:()=><T9A/>,     ex:()=><Quiz questions={Q_L9A}/>},
       {id:"9b",  icon:"🏙️",title:"B · In der Stadt",            sub:"Wegbeschreibung · Lokale Präp. mit Dativ · in/an/auf", time:"6 мин", col:C.teal,   hasT:true,  th:()=><T9B/>,     ex:()=><Quiz questions={Q_L9B}/>},
       {id:"9c",  icon:"🚦",title:"C · Führerschein & dürfen",   sub:"Modalverb dürfen · erlaubt/verboten · Führerschein",   time:"5 мин", col:C.orange, hasT:true,  th:()=><T9C/>,     ex:()=><Quiz questions={Q_L9C}/>},
+      {id:"t9",  icon:"🎯",title:"Großer Test L9",             sub:"Quiz · Lücken · Wegbeschreibung · Wortstellung",       time:"20 мин",col:C.yellow, hasT:false, ex:()=><GrosserTest9/>},
     ]
   },
   {
@@ -9329,17 +10023,22 @@ const LEKTIONEN=[
     sub:"A Gestern und heute (Perfekt) · B Unterwegs (haben/sein) · C Früher und heute (Präteritum, seit)",
     date:"Seite 103–112",col:C.purple,
     sections:[
+      {id:"d10", icon:"💬",title:"Dialogfragen L10",            sub:"Фразы для диалога",                                    time:"∞",     col:C.purple, hasT:false, th:null,           ex:()=><DialogCards lId="L10"/>},
       {id:"10a", icon:"📅",title:"A · Perfekt",                  sub:"haben + Partizip II · ge-...-t · Trennbare Verben",    time:"7 мин", col:C.purple, hasT:true,  th:()=><T10A/>,    ex:()=><Quiz questions={Q_L10A}/>},
       {id:"10b", icon:"🚶",title:"B · Unterwegs",                sub:"Perfekt mit haben/sein · Bewegungsverben",             time:"6 мин", col:C.teal,   hasT:true,  th:()=><T10B/>,    ex:()=><Quiz questions={Q_L10B}/>},
       {id:"10c", icon:"📖",title:"C · Früher und heute",         sub:"Präteritum war/hatte · seit + Dativ · Jahreszahlen",   time:"6 мин", col:C.orange, hasT:true,  th:()=><T10C/>,    ex:()=><Quiz questions={Q_L10C}/>},
+      {id:"t10", icon:"🎯",title:"Großer Test L10",              sub:"Quiz · Lücken · Partizip II · Wortstellung",           time:"20 мин",col:C.yellow, hasT:false, ex:()=><GrosserTest10/>},
     ]
   },
   {
     id:"L11",num:"11",title:"Ämter und Behörden",
-    sub:"A Bei der Meldestelle · Das Datum · Umzug",
-    date:"Seite 113–",col:C.green,
+    sub:"A Bei der Meldestelle · Das Datum · Umzug · B Können Sie mir helfen? (Dativ)",
+    date:"Seite 113–122",col:C.green,
     sections:[
+      {id:"d11", icon:"💬",title:"Dialogfragen L11",            sub:"Фразы для диалога",                                    time:"∞",     col:C.green,  hasT:false, th:null,           ex:()=><DialogCards lId="L11"/>},
       {id:"11a", icon:"🏛️",title:"A · Ämter & Datum",            sub:"Behörden в Германии · Порядковые числа · umziehen/einziehen/ausziehen", time:"7 мин", col:C.green, hasT:true, th:()=><T11A/>, ex:()=><Quiz questions={Q_L11A}/>},
+      {id:"11b", icon:"🙋",title:"B · Können Sie mir helfen?",   sub:"Dativ-Pronomen · helfen/danken/gehören · für + Akkusativ",              time:"6 мин", col:C.blue,  hasT:true, th:()=><T11B/>, ex:()=><Quiz questions={Q_L11B}/>},
+      {id:"t11", icon:"🎯",title:"Großer Test L11",              sub:"Quiz · Lücken · Ämter · Wortstellung",           time:"20 мин",col:C.yellow, hasT:false, ex:()=><GrosserTest11/>},
     ]
   },
 ];
@@ -9362,6 +10061,9 @@ function DialogFragenPage(){
     L6:{label:"L6 · Guten Appetit!",        col:C.green},
     L7:{label:"L7 · Arbeit und Beruf",      col:C.blue},
     L8:{label:"L8 · Gute Besserung!",       col:C.red},
+    L9:{label:"L9 · Wege durch die Stadt",  col:C.blue},
+    L10:{label:"L10 · Mein Leben",          col:C.purple},
+    L11:{label:"L11 · Ämter und Behörden",  col:C.green},
   };
   const filterFm=(pairs,lId)=>(lId==="L1"||lId==="L4")?pairs.filter(p=>!p.fm||p.fm===fm):pairs;
 
@@ -9488,11 +10190,296 @@ function DialogFragenPage(){
   );
 }
 
+// ─── ТАБЛИЦЫ — сводный справочник грамматики ───────────────────────────────────
+function TableAccordion({icon,title,col,sub,children,open,onToggle}){
+  return (
+    <div style={{background:col+"0d",border:`1px solid ${open?col+"55":C.border}`,borderRadius:14,marginBottom:10,overflow:"hidden"}}>
+      <div onClick={onToggle} style={{display:"flex",alignItems:"center",gap:12,padding:"14px 16px",cursor:"pointer"}}>
+        <span style={{fontSize:22}}>{icon}</span>
+        <div style={{flex:1}}>
+          <div style={{fontWeight:800,fontSize:15,color:col}}>{title}</div>
+          {sub&&<div style={{fontSize:12,color:C.muted,marginTop:2}}>{sub}</div>}
+        </div>
+        <span style={{color:col,fontSize:16,transform:open?"rotate(180deg)":"none",transition:"transform .2s"}}>▾</span>
+      </div>
+      {open&&<div style={{padding:"0 16px 16px"}}>{children}</div>}
+    </div>
+  );
+}
+const GridT=({headers,rows,cols})=>(
+  <div style={{display:"grid",gridTemplateColumns:`repeat(${cols},1fr)`,gap:4}}>
+    {headers.map((h,i)=>(
+      <div key={"h"+i} style={{fontSize:11,color:C.muted,fontWeight:700,textAlign:"center",padding:"2px 0"}}>{h}</div>
+    ))}
+    {rows.flat().map((cell,i)=>(
+      <div key={i} style={{background:i%cols===0?"transparent":C.ov4,borderRadius:6,padding:"6px 4px",
+        fontSize:13,color:i%cols===0?C.muted:C.text,textAlign:"center",fontWeight:i%cols===0?700:600}}>{cell}</div>
+    ))}
+  </div>
+);
+
+function TabellenPage(){
+  const [open,setOpen]=useState(null);
+  const tg=(k)=>setOpen(open===k?null:k);
+  const [starkFil,setStarkFil]=useState("all");
+  const [starkIdx,setStarkIdx]=useState(null);
+
+  const personalpron=[["ich","mich","mir"],["du","dich","dir"],["er","ihn","ihm"],["sie","sie","ihr"],
+    ["es","es","ihm"],["wir","uns","uns"],["ihr","euch","euch"],["sie/Sie","sie/Sie","ihnen/Ihnen"]];
+
+  const possessiv=[["ich","mein","meine"],["du","dein","deine"],["er/es","sein","seine"],["sie","ihr","ihre"],
+    ["wir","unser","unsere"],["ihr","euer","eure"],["sie (Pl.)","ihr","ihre"],["Sie","Ihr","Ihre"]];
+
+  const artikel=[
+    {kasus:"Nominativ",bestimmt:["der","das","die","die"],unbestimmt:["ein","ein","eine","—"],kein:["kein","kein","keine","keine"]},
+    {kasus:"Akkusativ", bestimmt:["den","das","die","die"],unbestimmt:["einen","ein","eine","—"],kein:["keinen","kein","keine","keine"]},
+    {kasus:"Dativ",     bestimmt:["dem","dem","der","den"],unbestimmt:["einem","einem","einer","—"],kein:["keinem","keinem","keiner","keinen"]},
+  ];
+
+  const wfragen=[["Wer?","кто?"],["Was?","что?"],["Wo?","где?"],["Wohin?","куда?"],["Woher?","откуда?"],
+    ["Wann?","когда?"],["Wie?","как?"],["Warum?","почему?"],["Wie viel(e)?","сколько?"],["Welche/r/s?","какой?"]];
+
+  const modalverben=[
+    ["können","kann","kannst","kann","können"],
+    ["müssen","muss","musst","muss","müssen"],
+    ["wollen","will","willst","will","wollen"],
+    ["sollen","soll","sollst","soll","sollen"],
+    ["dürfen","darf","darfst","darf","dürfen"],
+    ["möchten","möchte","möchtest","möchte","möchten"],
+  ];
+
+  const praepDativ=[["aus","из (происхождение)"],["bei","у, при (место/работа)"],["mit","с (вместе/на чём)"],
+    ["nach","в (город/страну); после"],["von","от, из (принадлежность)"],["seit","с (времени)"],
+    ["zu","к (человеку/месту)"],["ab","с (времени), начиная с"]];
+
+  const wechsel=[["in","в"],["an","у, при"],["auf","на"],["unter","под"],["über","над"],
+    ["vor","перед"],["hinter","за"],["neben","рядом с"],["zwischen","между"]];
+
+  const seinPratT=[["ich","war"],["du","warst"],["er/sie/es","war"],["wir","waren"],["ihr","wart"],["sie/Sie","waren"]];
+  const habenPratT=[["ich","hatte"],["du","hattest"],["er/sie/es","hatte"],["wir","hatten"],["ihr","hattet"],["sie/Sie","hatten"]];
+
+  const uhrzeit=[["9:00","neun Uhr"],["9:05","fünf nach neun"],["9:15","Viertel nach neun"],
+    ["9:30","halb zehn ⚠️"],["9:45","Viertel vor zehn"],["9:55","fünf vor zehn"]];
+
+  const ord1=[["1.","der erste"],["2.","der zweite"],["3.","der dritte ⚠️"],["4.","der vierte"],
+    ["7.","der siebte ⚠️"],["10.","der zehnte"],["19.","der neunzehnte"]];
+  const ord2=[["20.","der zwanzigste"],["21.","der einundzwanzigste"],["30.","der dreißigste"],["31.","der einunddreißigste"]];
+
+  return (
+    <div style={{display:"flex",flexDirection:"column"}}>
+<TableAccordion icon="📅" title="Datum" col={C.green} sub="порядковые числительные" open={open==="datum"} onToggle={()=>tg("datum")}>
+        <div style={{background:C.green+"15",border:`1px solid ${C.green}33`,
+          borderRadius:10,padding:"11px 13px",marginBottom:10}}>
+          <div style={{fontWeight:800,fontSize:13,color:C.green,marginBottom:6}}>Порядковые числительные (дата)</div>
+          <div style={{fontSize:13,color:C.text,lineHeight:1.7}}>
+            <b style={{color:C.orange}}>1–19</b> → число + <b style={{color:C.orange}}>-te(n)</b><br/>
+            <b style={{color:C.blue}}>20 и больше</b> → число + <b style={{color:C.blue}}>-ste(n)</b>
+          </div>
+          <div style={{fontSize:12,color:C.muted,marginTop:6}}>
+            Nominativ: Heute ist <b style={{color:C.text}}>der erste</b> Juli. (Welcher Tag ist heute?)<br/>
+            Dativ (am = an + dem): Ich komme <b style={{color:C.text}}>am vierten</b>. (Wann kommst du?)
+          </div>
+        </div>
+        <div style={{display:"flex",gap:8}}>
+          <div style={{flex:1}}>
+            <div style={{fontSize:12,fontWeight:700,color:C.orange,marginBottom:4}}>1–19 → -te</div>
+            {ord1.map(([n,nom])=>(
+              <div key={n} style={{display:"flex",gap:5,fontSize:12,padding:"3px 0",borderBottom:`1px solid ${C.border}`}}>
+                <span style={{minWidth:24,color:C.muted,fontWeight:700}}>{n}</span>
+                <span style={{flex:1,color:C.text}}>{nom}</span>
+              </div>
+            ))}
+          </div>
+          <div style={{flex:1}}>
+            <div style={{fontSize:12,fontWeight:700,color:C.blue,marginBottom:4}}>20+ → -ste</div>
+            {ord2.map(([n,nom])=>(
+              <div key={n} style={{display:"flex",gap:5,fontSize:12,padding:"3px 0",borderBottom:`1px solid ${C.border}`}}>
+                <span style={{minWidth:24,color:C.muted,fontWeight:700}}>{n}</span>
+                <span style={{flex:1,color:C.text}}>{nom}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div style={{background:C.ov4,borderRadius:8,padding:"8px 11px",marginTop:8,fontSize:12,color:C.text}}>
+          ⚠️ Исключения: 1. → der <b>erste</b> (не einte), 3. → der <b>dritte</b> (не dreite), 7. → der <b>siebte</b> (не siebente)
+        </div>
+        <div style={{background:C.ov4,borderRadius:8,padding:"8px 11px",marginTop:6,fontSize:12,color:C.text,fontStyle:"italic"}}>
+          — Welcher Tag ist heute? — Heute ist der erste siebte. (01.07.)<br/>
+          — Wann kommst du? — Ich komme am vierten sechsten. (04.06.)
+        </div>
+      </TableAccordion>
+      <TableAccordion icon="🔄" title="Personalpronomen" col={C.blue} sub="Nominativ · Akkusativ · Dativ" open={open==="pron"} onToggle={()=>tg("pron")}>
+        <GridT headers={["Nom.","Akk.","Dat."]} cols={3} rows={personalpron}/>
+      </TableAccordion>
+
+      <TableAccordion icon="📋" title="Starke Verben (A1 & A2)" col={C.purple} sub={`${STARKE_VERBEN.length} глаголов · Präteritum + Partizip II`} open={open==="stark"} onToggle={()=>tg("stark")}>
+        <div style={{display:"flex",gap:4,marginBottom:6,flexWrap:"wrap"}}>
+          {[["all",`Все ${STARKE_VERBEN.length}`,"purple"],
+            ["A1",`A1 ${STARKE_VERBEN.filter(v=>v.lv==="A1").length}`,"blue"],
+            ["A2",`A2 ${STARKE_VERBEN.filter(v=>v.lv==="A2").length}`,"teal"],
+            ["hat",`haben ${STARKE_VERBEN.filter(v=>v.h==="hat").length}`,"teal"],
+            ["ist",`sein ${STARKE_VERBEN.filter(v=>v.h==="ist").length}`,"orange"],
+          ].map(([f,lbl,col])=>(
+            <button key={f} onClick={()=>setStarkFil(f)}
+              style={{flex:1,minWidth:50,padding:"5px 3px",borderRadius:7,border:"none",cursor:"pointer",
+                fontSize:12,fontWeight:700,
+                background:starkFil===f?C[col]+"33":"transparent",
+                color:starkFil===f?C[col]:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        <div style={{display:"flex",gap:4,paddingLeft:4,marginBottom:5,fontSize:12,color:C.muted,fontWeight:700}}>
+          <span style={{flex:1}}>Infinitiv (Präsens)</span>
+          <span style={{minWidth:64,textAlign:"left"}}>Präteritum</span>
+          <span style={{minWidth:84}}>Partizip II</span>
+          <span style={{minWidth:30}}>+</span>
+        </div>
+        {(starkFil==="all"?STARKE_VERBEN
+          :starkFil==="A1"||starkFil==="A2"?STARKE_VERBEN.filter(v=>v.lv===starkFil)
+          :STARKE_VERBEN.filter(v=>v.h===starkFil)
+        ).map((v,i)=>(
+          <div key={v.inf}>
+            <div onClick={()=>setStarkIdx(starkIdx===i?null:i)}
+              style={{display:"flex",alignItems:"center",gap:4,padding:"6px 8px",
+                background:starkIdx===i?C.ov8:C.ov3,
+                borderRadius:7,marginBottom:3,cursor:"pointer",
+                borderLeft:`3px solid ${v.h==="ist"?C.orange:C.teal}`}}>
+              <div style={{flex:1,minWidth:0}}>
+                <span style={{fontWeight:700,color:C.text,fontSize:13}}>{v.inf}</span>
+                <span style={{color:C.muted,fontSize:12}}> ({v.pr})</span>
+                <span style={{marginLeft:4,background:v.lv==="A1"?C.blue+"22":C.teal+"22",
+                  color:v.lv==="A1"?C.blue:C.teal,borderRadius:3,
+                  padding:"0px 4px",fontSize:12,fontWeight:700}}>{v.lv}</span>
+              </div>
+              <div style={{minWidth:64,color:C.blue,fontWeight:700,fontSize:12}}>{v.pt}</div>
+              <div style={{minWidth:84,color:C.purple,fontWeight:700,fontSize:13}}>{v.pp}</div>
+              <div style={{minWidth:30,textAlign:"center"}}>
+                <span style={{background:v.h==="ist"?C.orange+"33":C.teal+"33",
+                  color:v.h==="ist"?C.orange:C.teal,
+                  borderRadius:4,padding:"1px 5px",fontSize:12,fontWeight:800}}>{v.h}</span>
+              </div>
+            </div>
+            {starkIdx===i&&(
+              <div style={{background:C.ov6,borderRadius:"0 0 7px 7px",
+                padding:"6px 10px",marginBottom:5,fontSize:12,
+                borderLeft:`3px solid ${v.h==="ist"?C.orange:C.teal}`}}>
+                <div style={{color:C.text,fontWeight:700,marginBottom:3}}>🔤 {v.ru}</div>
+                <div style={{color:C.muted,fontStyle:"italic"}}>💬 {v.bsp}</div>
+              </div>
+            )}
+          </div>
+        ))}
+      </TableAccordion>
+
+      <TableAccordion icon="🧭" title="Wechselpräpositionen" col={C.blue} sub="Wo? = Dativ · Wohin? = Akkusativ" open={open==="wechsel"} onToggle={()=>tg("wechsel")}>
+        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:6}}>
+          {wechsel.map(([p,ru])=>(
+            <div key={p} style={{background:C.ov4,borderRadius:7,padding:"6px 4px",textAlign:"center"}}>
+              <div style={{color:C.blue,fontWeight:800,fontSize:13}}>{p}</div>
+              <div style={{color:C.muted,fontSize:10}}>{ru}</div>
+            </div>
+          ))}
+        </div>
+        <div style={{background:C.blue+"15",border:`1px solid ${C.blue}33`,borderRadius:8,padding:"8px 10px",marginTop:8,fontSize:12,color:C.text}}>
+          <b>Wo?</b> (место) → Dativ: <i>Das Buch liegt auf dem Tisch.</i><br/>
+          <b>Wohin?</b> (направление) → Akkusativ: <i>Ich lege das Buch auf den Tisch.</i>
+        </div>
+      </TableAccordion>
+
+      <TableAccordion icon="🗺️" title="Präpositionen mit Dativ" col={C.purple} sub="aus · bei · mit · nach · von · seit · zu · ab" open={open==="pdativ"} onToggle={()=>tg("pdativ")}>
+        {praepDativ.map(([p,ru])=>(
+          <div key={p} style={{display:"flex",gap:8,padding:"5px 0",borderBottom:`1px solid ${C.border}`}}>
+            <span style={{minWidth:44,color:C.purple,fontWeight:800,fontSize:13}}>{p}</span>
+            <span style={{fontSize:12,color:C.muted}}>{ru}</span>
+          </div>
+        ))}
+      </TableAccordion>
+
+      <TableAccordion icon="💪" title="Modalverben" col={C.green} sub="können · müssen · wollen · sollen · dürfen · möchten" open={open==="modal"} onToggle={()=>tg("modal")}>
+        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr 1fr",gap:4,marginBottom:4}}>
+          {["","ich","du","er/sie/es","wir/ihr/sie"].map(h=><div key={h} style={{fontSize:10,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>)}
+        </div>
+        {modalverben.map(([v,ich,du,er,pl])=>(
+          <div key={v} style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr 1fr",gap:4,marginBottom:3}}>
+            <div style={{fontSize:12,fontWeight:700,color:C.green}}>{v}</div>
+            {[ich,du,er,pl].map((f,i)=><div key={i} style={{background:C.ov4,borderRadius:5,padding:"4px",textAlign:"center",fontSize:12,color:C.text}}>{f}</div>)}
+          </div>
+        ))}
+        <div style={{background:C.ov4,borderRadius:8,padding:"8px 10px",marginTop:8,fontSize:11,color:C.muted}}>
+          ⚠️ möchten: ich = er/sie/es (möchte, без -t!)
+        </div>
+      </TableAccordion>
+
+      <TableAccordion icon="🕐" title="Uhrzeit" col={C.teal} sub="как называть время" open={open==="uhr"} onToggle={()=>tg("uhr")}>
+        {uhrzeit.map(([t,de])=>(
+          <div key={t} style={{display:"flex",gap:10,padding:"5px 0",borderBottom:`1px solid ${C.border}`}}>
+            <span style={{minWidth:44,color:C.teal,fontWeight:800,fontSize:13}}>{t}</span>
+            <span style={{fontSize:13,color:C.text}}>{de}</span>
+          </div>
+        ))}
+        <div style={{background:C.ov4,borderRadius:8,padding:"8px 10px",marginTop:8,fontSize:11,color:C.muted}}>
+          ⚠️ halb смотрит вперёд: halb zehn = 9:30 (половина ДЕСЯТОГО)
+        </div>
+      </TableAccordion>
+
+      <TableAccordion icon="⏮️" title="Präteritum: war / hatte" col={C.orange} sub="haben и sein в прошедшем" open={open==="praeteritum"} onToggle={()=>tg("praeteritum")}>
+        <div style={{display:"flex",gap:10}}>
+          <div style={{flex:1}}>
+            <div style={{fontWeight:700,color:C.purple,fontSize:12,marginBottom:5,textAlign:"center"}}>sein → war</div>
+            <GridT headers={["",""]} cols={2} rows={seinPratT}/>
+          </div>
+          <div style={{flex:1}}>
+            <div style={{fontWeight:700,color:C.blue,fontSize:12,marginBottom:5,textAlign:"center"}}>haben → hatte</div>
+            <GridT headers={["",""]} cols={2} rows={habenPratT}/>
+          </div>
+        </div>
+      </TableAccordion>
+
+      <TableAccordion icon="👨‍👩‍👧" title="Possessivartikel" col={C.teal} sub="мой/твой/его/её… (Nominativ)" open={open==="poss"} onToggle={()=>tg("poss")}>
+        <GridT headers={["","m/n","f/Pl."]} cols={3} rows={possessiv}/>
+        <div style={{fontSize:11,color:C.muted,marginTop:8}}>n и Pl. добавляют -e к m-форме: mein→meine (f, Pl.)</div>
+      </TableAccordion>
+
+      <TableAccordion icon="📌" title="Artikel-Deklination" col={C.orange} sub="der/die/das по падежам" open={open==="art"} onToggle={()=>tg("art")}>
+        {artikel.map(a=>(
+          <div key={a.kasus} style={{marginBottom:10}}>
+            <div style={{fontSize:12,fontWeight:700,color:C.orange,marginBottom:4}}>{a.kasus}</div>
+            <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr 1fr",gap:4,marginBottom:3}}>
+              {["","m","n","f","Pl."].map(h=><div key={h} style={{fontSize:10,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>)}
+            </div>
+            {[["bestimmt",a.bestimmt],["unbestimmt",a.unbestimmt],["kein-",a.kein]].map(([lbl,vals])=>(
+              <div key={lbl} style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr 1fr",gap:4,marginBottom:3}}>
+                <div style={{fontSize:10,color:C.muted,textAlign:"center",alignSelf:"center"}}>{lbl}</div>
+                {vals.map((v,i)=><div key={i} style={{background:C.ov4,borderRadius:5,padding:"4px",textAlign:"center",fontSize:12,color:C.text}}>{v}</div>)}
+              </div>
+            ))}
+          </div>
+        ))}
+      </TableAccordion>
+
+      <TableAccordion icon="❓" title="W-Fragen" col={C.yellow} sub="вопросительные слова" open={open==="wf"} onToggle={()=>tg("wf")}>
+        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:6}}>
+          {wfragen.map(([w,ru])=>(
+            <div key={w} style={{background:C.ov4,borderRadius:7,padding:"6px 9px",display:"flex",justifyContent:"space-between"}}>
+              <span style={{color:C.yellow,fontWeight:700,fontSize:13}}>{w}</span>
+              <span style={{color:C.muted,fontSize:12}}>{ru}</span>
+            </div>
+          ))}
+        </div>
+      </TableAccordion>
+
+      
+    </div>
+  );
+}
+
 export default function App(){
   const [lId,setLId]=useState(null);
   const [sId,setSId]=useState(null);
   const [tab,setTab]=useState("th");
   const [wbOpen,setWbOpen]=useState(false);
+  const [tablesOpen,setTablesOpen]=useState(false);
   const [dialogOpen,setDialogOpen]=useState(false);
   const [theme,setTheme]=useState(()=>{
     try{return localStorage.getItem("dk_theme")||"dark";}catch{return "dark";}
@@ -9540,6 +10527,24 @@ export default function App(){
           </div>
         </div>
         <Woerterbuch/>
+      </div>
+    </div>
+  );
+
+  // Tabellen
+  if(tablesOpen)return(
+    <div style={root}>
+      <ThemeToggle theme={theme} onToggle={toggleTheme}/>
+      <div style={wrap}>
+        <button onClick={()=>setTablesOpen(false)} style={{background:"none",border:"none",color:C.muted,cursor:"pointer",fontSize:14,padding:"0 0 14px"}}>← Главная</button>
+        <div style={{display:"flex",alignItems:"center",gap:12,marginBottom:18}}>
+          <span style={{fontSize:26}}>📊</span>
+          <div>
+            <div style={{fontWeight:900,fontSize:17,color:C.text}}>Grammatiktabellen</div>
+            <div style={{fontSize:13,color:C.muted}}>Вся грамматика в одном месте · нажми, чтобы открыть</div>
+          </div>
+        </div>
+        <TabellenPage/>
       </div>
     </div>
   );
@@ -9636,6 +10641,16 @@ export default function App(){
               <div style={{fontSize:12,color:C.muted,marginTop:2}}>{DIALOG_FRAGEN.reduce((s,g)=>s+g.qa.length,0)} вопросов · Kennenlernen · Wohnen · Kursraum</div>
             </div>
             <span style={{color:C.blue,fontSize:20}}>›</span>
+          </button>
+          {/* Tabellen */}
+          <button onClick={()=>setTablesOpen(true)}
+            style={{background:C.green+"15",border:`2px solid ${C.green}`,borderRadius:16,padding:"16px 18px",display:"flex",alignItems:"center",gap:14,cursor:"pointer",textAlign:"left"}}>
+            <span style={{fontSize:28}}>📊</span>
+            <div style={{flex:1}}>
+              <div style={{fontWeight:800,fontSize:16,color:C.green}}>Grammatiktabellen</div>
+              <div style={{fontSize:12,color:C.muted,marginTop:2}}>11 таблиц · вся грамматика в одном месте</div>
+            </div>
+            <span style={{color:C.green,fontSize:20}}>›</span>
           </button>
           {LEKTIONEN.map(l=>(
             <button key={l.id} onClick={()=>setLId(l.id)}
