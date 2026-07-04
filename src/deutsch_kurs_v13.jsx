@@ -2521,312 +2521,312 @@ const DIALOGE={
   L1:[
     {tag:"Основные",col:C.blue,pairs:[
       // Begrüßen
-      {q:"Wie geht es Ihnen?",            a:"Danke, gut. Und Ihnen? / Auch gut, danke.", note:"Ihnen = Вам (Dativ)",              fm:"f"},
-      {q:"Wie geht es dir? / Wie geht's?",a:"Gut, und dir? / Na ja, es geht so.",        note:"dir = тебе · es geht so = так себе", fm:"i"},
+      {q:"Wie geht es Ihnen?",            qRu:"Как у вас дела?",             a:"Danke, gut. Und Ihnen? / Auch gut, danke.", aRu:"Спасибо, хорошо. А у вас? / Тоже хорошо, спасибо.", note:"Ihnen = Вам (Dativ)",              fm:"f"},
+      {q:"Wie geht es dir? / Wie geht's?",qRu:"Как у тебя дела?",            a:"Gut, und dir? / Na ja, es geht so.",        aRu:"Хорошо, а у тебя? / Ну так, так себе.",             note:"dir = тебе · es geht so = так себе", fm:"i"},
       // Vorstellen
-      {q:"Wie heißen Sie?",               a:"Ich heiße … / Mein Name ist …",            note:"heißen = называться",               fm:"f"},
-      {q:"Woher kommen Sie?",             a:"Ich komme aus der Ukraine.",                note:"aus der Ukraine · aus der Türkei",   fm:"f"},
-      {q:"Wo wohnen Sie?",                a:"Ich wohne in Köln.",                        note:"",                                  fm:"f"},
-      {q:"Was sind Sie von Beruf?",       a:"Ich bin Lehrer. / Ich bin Ärztin.",         note:"OHNE Artikel: nicht «ein Lehrer»!",  fm:"f"},
-      {q:"Wie ist Ihre Handynummer?",     a:"Meine Nummer ist 0176235628.",              note:"Ihre = ваш",                         fm:"f"},
-      {q:"Wie heißt du?",                 a:"Ich heiße … / Mein Name ist …",            note:"informell · du-Form",                fm:"i"},
-      {q:"Woher kommst du?",              a:"Ich komme aus der Ukraine.",                note:"",                                  fm:"i"},
-      {q:"Wo wohnst du?",                 a:"Ich wohne in Köln.",                        note:"",                                  fm:"i"},
-      {q:"Was bist du von Beruf?",        a:"Ich bin Ingenieur. / Ich lerne Deutsch.",  note:"",                                   fm:"i"},
-      {q:"Wie ist deine Handynummer?",    a:"Meine Nummer ist …",                        note:"deine = твоя",                      fm:"i"},
+      {q:"Wie heißen Sie?",               qRu:"Как вас зовут?",              a:"Ich heiße … / Mein Name ist …",            aRu:"Меня зовут … / Моё имя …",                          note:"heißen = называться",               fm:"f"},
+      {q:"Woher kommen Sie?",             qRu:"Откуда вы?",                  a:"Ich komme aus der Ukraine.",                aRu:"Я из Украины.",                                      note:"aus der Ukraine · aus der Türkei",   fm:"f"},
+      {q:"Wo wohnen Sie?",                qRu:"Где вы живёте?",              a:"Ich wohne in Köln.",                        aRu:"Я живу в Кёльне.",                                   note:"",                                  fm:"f"},
+      {q:"Was sind Sie von Beruf?",       qRu:"Кто вы по профессии?",        a:"Ich bin Lehrer. / Ich bin Ärztin.",         aRu:"Я учитель. / Я врач (женщина).",                     note:"OHNE Artikel: nicht «ein Lehrer»!",  fm:"f"},
+      {q:"Wie ist Ihre Handynummer?",     qRu:"Какой у вас номер телефона?", a:"Meine Nummer ist 0176235628.",              aRu:"Мой номер 0176235628.",                              note:"Ihre = ваш",                         fm:"f"},
+      {q:"Wie heißt du?",                 qRu:"Как тебя зовут?",             a:"Ich heiße … / Mein Name ist …",            aRu:"Меня зовут … / Моё имя …",                          note:"informell · du-Form",                fm:"i"},
+      {q:"Woher kommst du?",              qRu:"Откуда ты?",                  a:"Ich komme aus der Ukraine.",                aRu:"Я из Украины.",                                      note:"",                                  fm:"i"},
+      {q:"Wo wohnst du?",                 qRu:"Где ты живёшь?",              a:"Ich wohne in Köln.",                        aRu:"Я живу в Кёльне.",                                   note:"",                                  fm:"i"},
+      {q:"Was bist du von Beruf?",        qRu:"Кто ты по профессии?",        a:"Ich bin Ingenieur. / Ich lerne Deutsch.",  aRu:"Я инженер. / Я учу немецкий.",                       note:"",                                   fm:"i"},
+      {q:"Wie ist deine Handynummer?",    qRu:"Какой у тебя номер телефона?",a:"Meine Nummer ist …",                        aRu:"Мой номер …",                                        note:"deine = твоя",                      fm:"i"},
       // Phrases (Kommunikation)
-      {q:"Guten Morgen! / Guten Tag! / Guten Abend!", a:"Guten Morgen! / Guten Tag! / Guten Abend!", note:"формально · по времени суток", fm:"f"},
-      {q:"Hallo! / Guten Tag! / Guten Morgen!",       a:"Hallo! / Hey!",                note:"неформально",                        fm:"i"},
-      {q:"Auf Wiedersehen!",              a:"Auf Wiedersehen!",                          note:"прощание формально",                 fm:"f"},
-      {q:"Tschüss!",                      a:"Tschüss! / Bis bald!",                     note:"прощание неформально",               fm:"i"},
+      {q:"Guten Morgen! / Guten Tag! / Guten Abend!", qRu:"Доброе утро! / Добрый день! / Добрый вечер!", a:"Guten Morgen! / Guten Tag! / Guten Abend!", aRu:"Доброе утро! / Добрый день! / Добрый вечер!", note:"формально · по времени суток", fm:"f"},
+      {q:"Hallo! / Guten Tag! / Guten Morgen!",       qRu:"Привет! / Добрый день! / Доброе утро!",       a:"Hallo! / Hey!",                aRu:"Привет! / Эй!",                                     note:"неформально",                        fm:"i"},
+      {q:"Auf Wiedersehen!",              qRu:"До свидания!",                a:"Auf Wiedersehen!",                          aRu:"До свидания!",                                       note:"прощание формально",                 fm:"f"},
+      {q:"Tschüss!",                      qRu:"Пока!",                       a:"Tschüss! / Bis bald!",                     aRu:"Пока! / До скорого!",                                note:"прощание неформально",               fm:"i"},
     ]},
     {tag:"Дополнительные",col:C.teal,pairs:[
-      {q:"Wer ist das?",                  a:"Das ist Paolo Costa. / Das ist Manu.",     note:"Wer = Кто (для людей)"},
-      {q:"Wie alt sind Sie? / Wie alt bist du?", a:"Ich bin 34 Jahre alt.",            note:"Jahre alt = лет"},
-      {q:"Sind Sie neu hier?",            a:"Ja, ich bin neu hier. / Wir kommen aus Mannheim.", note:"p.17 Dialogtraining",        fm:"f"},
-      {q:"Wie bitte?",                    a:"— (просьба повторить)",                   note:"вежливая просьба"},
-      {q:"Wie schreibt man das?",         a:"Ich buchstabiere: K-L-Y-M-E-N-K-O",      note:"buchstabieren = произносить по буквам"},
-      {q:"Danke! / Vielen Dank!",         a:"Bitte! / Bitte sehr! / Gern!",            note:"Vielen Dank = большое спасибо"},
-      {q:"Freut mich! / Sehr angenehm!",  a:"Freut mich auch!",                        note:"при знакомстве"},
-      {q:"Einen schönen Tag!",            a:"Danke, gleichfalls!",                     note:"gleichfalls = взаємно"},
-      {q:"Ach so.",                       a:"— (реакция на новую информацию)",          note:"Ach so = А, понятно!"},
-      {q:"Auf Wiederhören!",              a:"Auf Wiederhören!",                         note:"по телефону · hören = слышать"},
-      {q:"Ich bin nicht berufstätig.",    a:"— (вариант ответа)",                      note:"berufstätig = работающий · Hausfrau = домохозяйка"},
-      {q:"Moment, ich buchstabiere:",     a:"Ka-Ell-Üpsilon-Emm-Eh-Enn-Ka-Oh",        note:"Moment = подождите секунду"},
+      {q:"Wer ist das?",                  qRu:"Кто это?",                    a:"Das ist Paolo Costa. / Das ist Manu.",     aRu:"Это Паоло Коста. / Это Ману.",                       note:"Wer = Кто (для людей)"},
+      {q:"Wie alt sind Sie? / Wie alt bist du?", qRu:"Сколько вам/тебе лет?", a:"Ich bin 34 Jahre alt.",            aRu:"Мне 34 года.",                                       note:"Jahre alt = лет"},
+      {q:"Sind Sie neu hier?",            qRu:"Вы здесь новенький?",         a:"Ja, ich bin neu hier. / Wir kommen aus Mannheim.", aRu:"Да, я тут новенький. / Мы из Мангейма.",       note:"p.17 Dialogtraining",        fm:"f"},
+      {q:"Wie bitte?",                    qRu:"Простите, повторите?",        a:"— (просьба повторить)",                   note:"вежливая просьба"},
+      {q:"Wie schreibt man das?",         qRu:"Как это пишется?",            a:"Ich buchstabiere: K-L-Y-M-E-N-K-O",      aRu:"Я произнесу по буквам: К-Л-И-М-Е-Н-К-О",             note:"buchstabieren = произносить по буквам"},
+      {q:"Danke! / Vielen Dank!",         qRu:"Спасибо! / Большое спасибо!", a:"Bitte! / Bitte sehr! / Gern!",            aRu:"Пожалуйста! / Пожалуйста! / Рад(а) был(а) помочь!",  note:"Vielen Dank = большое спасибо"},
+      {q:"Freut mich! / Sehr angenehm!",  qRu:"Приятно познакомиться!",      a:"Freut mich auch!",                        aRu:"Мне тоже приятно!",                                  note:"при знакомстве"},
+      {q:"Einen schönen Tag!",            qRu:"Хорошего дня!",               a:"Danke, gleichfalls!",                     aRu:"Спасибо, и вам того же!",                            note:"gleichfalls = взаємно"},
+      {q:"Ach so.",                       qRu:"А, понятно.",                 a:"— (реакция на новую информацию)",          note:"Ach so = А, понятно!"},
+      {q:"Auf Wiederhören!",              qRu:"До свидания (по телефону)!",  a:"Auf Wiederhören!",                         aRu:"До свидания (по телефону)!",                         note:"по телефону · hören = слышать"},
+      {q:"Ich bin nicht berufstätig.",    qRu:"Я не работаю.",               a:"— (вариант ответа)",                      note:"berufstätig = работающий · Hausfrau = домохозяйка"},
+      {q:"Moment, ich buchstabiere:",     qRu:"Момент, я произнесу по буквам:", a:"Ka-Ell-Üpsilon-Emm-Eh-Enn-Ka-Oh",     aRu:"Ка-Эль-Игрек-Эм-Э-Эн-Ка-О",                          note:"Moment = подождите секунду"},
     ]},
   ],
   L2:[
     {tag:"Основные",col:C.blue,pairs:[
       // Adresse/Telefonnummer (Kommunikation стр.)
-      {q:"Wie ist Ihre/deine Adresse?",              a:"Ich wohne in der Schillerstraße 18 in München. Die Postleitzahl ist 80331.", note:"PLZ = Postleitzahl = почтовый индекс"},
-      {q:"Wie ist Ihre/deine Telefonnummer?",        a:"Meine Telefonnummer ist 040 41 09 861.",    note:"Цифры телефона читают попарно"},
+      {q:"Wie ist Ihre/deine Adresse?",              qRu:"Какой у вас/тебя адрес?",           a:"Ich wohne in der Schillerstraße 18 in München. Die Postleitzahl ist 80331.", aRu:"Я живу на Шиллерштрассе 18 в Мюнхене. Индекс 80331.", note:"PLZ = Postleitzahl = почтовый индекс"},
+      {q:"Wie ist Ihre/deine Telefonnummer?",        qRu:"Какой у вас/тебя номер телефона?",  a:"Meine Telefonnummer ist 040 41 09 861.",    aRu:"Мой номер телефона 040 41 09 861.",  note:"Цифры телефона читают попарно"},
       // Muttersprache/Nationalität (Kommunikation стр.)
-      {q:"Welche Sprachen sprechen Sie / sprichst du?", a:"Ich spreche Deutsch und Ukrainisch.",   note:"sprechen = говорить · Sprache = язык"},
-      {q:"Was ist Ihre/deine Nationalität?",         a:"Ich bin Ukrainer. / Ich bin Ukrainerin.",  note:"без артикля после bin!"},
+      {q:"Welche Sprachen sprechen Sie / sprichst du?", qRu:"Какими языками вы владеете / ты владеешь?", a:"Ich spreche Deutsch und Ukrainisch.",   aRu:"Я говорю по-немецки и по-украински.", note:"sprechen = говорить · Sprache = язык"},
+      {q:"Was ist Ihre/deine Nationalität?",         qRu:"Какая у вас/тебя национальность?",  a:"Ich bin Ukrainer. / Ich bin Ukrainerin.",  aRu:"Я украинец. / Я украинка.",           note:"без артикля после bin!"},
       // nach Wörtern fragen (Kommunikation стр.)
-      {q:"Was ist das?",                             a:"Das ist ein Tisch. / Das ist eine Tasche.", note:"ein (m/n) / eine (f)"},
-      {q:"Wie heißt das auf Deutsch?",               a:"Das heißt Stuhl. / Das ist ein Stuhl.",    note:"Спросить немецкое название"},
-      {q:"Wie ist der Artikel?",                     a:"Der Artikel ist der/das/die.",              note:"Спросить род слова"},
-      {q:"Wie schreibt man das?",                    a:"Ich buchstabiere: S-T-U-H-L",              note:"buchstabieren = произносить по буквам"},
+      {q:"Was ist das?",                             qRu:"Что это?",                          a:"Das ist ein Tisch. / Das ist eine Tasche.", aRu:"Это стол. / Это сумка.",             note:"ein (m/n) / eine (f)"},
+      {q:"Wie heißt das auf Deutsch?",               qRu:"Как это называется по-немецки?",    a:"Das heißt Stuhl. / Das ist ein Stuhl.",    aRu:"Это называется стул. / Это стул.",   note:"Спросить немецкое название"},
+      {q:"Wie ist der Artikel?",                     qRu:"Какой у этого слова артикль?",      a:"Der Artikel ist der/das/die.",              aRu:"Артикль der/das/die.",                note:"Спросить род слова"},
+      {q:"Wie schreibt man das?",                    qRu:"Как это пишется?",                  a:"Ich buchstabiere: S-T-U-H-L",              aRu:"Я произнесу по буквам: Ш-Т-У-Х-Л",   note:"buchstabieren = произносить по буквам"},
       // phrases
-      {q:"Ich wohne in der Schillerstraße 18 in München.", a:"— (адрес)",                         note:"Die Postleitzahl ist ... = почтовый индекс"},
-      {q:"Ich spreche ...",                          a:"Ich spreche Deutsch und Ukrainisch.",       note:"Muttersprache = родной язык"},
-      {q:"Ich bin ...",                              a:"Ich bin Ukrainer. / Ich bin Spanier.",      note:"Nationalität — без артикля!"},
+      {q:"Ich wohne in der Schillerstraße 18 in München.", qRu:"Я живу на Шиллерштрассе 18 в Мюнхене.", a:"— (адрес)",                         note:"Die Postleitzahl ist ... = почтовый индекс"},
+      {q:"Ich spreche ...",                          qRu:"Я говорю ...",                      a:"Ich spreche Deutsch und Ukrainisch.",       aRu:"Я говорю по-немецки и по-украински.", note:"Muttersprache = родной язык"},
+      {q:"Ich bin ...",                              qRu:"Я ... (национальность)",            a:"Ich bin Ukrainer. / Ich bin Spanier.",      aRu:"Я украинец. / Я испанец.",            note:"Nationalität — без артикля!"},
     ]},
     {tag:"Дополнительные",col:C.teal,pairs:[
-      {q:"Haben Sie eine E-Mail-Adresse?",           a:"Ja, meine E-Mail ist name@gmx.de.",        note:"@ = ätt · . = Punkt · - = Bindestrich"},
-      {q:"Was kostet das? / Wie viel kostet das?",   a:"Das kostet 20 Euro.",                      note:"kostet (ед.ч.) / kosten (мн.ч.)"},
-      {q:"Das ist aber teuer! / Das ist aber billig!", a:"Ja! / Nein, das ist günstig.",           note:"teuer = дорого · billig/günstig = дёшево"},
-      {q:"Wie ist Ihre Vorwahl?",                    a:"Meine Vorwahl ist 040.",                    note:"München 089 · Berlin 030 · Frankfurt 069"},
-      {q:"Polizei / Feuerwehr — welche Nummer?",     a:"Polizei: 110 · Feuerwehr/Notruf: 112",    note:"Wichtige Nummern in Deutschland!"},
-      {q:"Wo ist die Kita? / Ist der Platz noch frei?", a:"Die Kita ist in der Schillerstraße. / Ja, der Platz ist frei.", note:"Kita = детский сад · frei = свободный"},
-      {q:"Wie viele Stühle sind im Kursraum?",       a:"Da sind zwanzig Stühle.",                 note:"wie viele = сколько · da/hier = там/здесь"},
+      {q:"Haben Sie eine E-Mail-Adresse?",           qRu:"У вас есть адрес электронной почты?",a:"Ja, meine E-Mail ist name@gmx.de.",        aRu:"Да, моя почта name@gmx.de.",         note:"@ = ätt · . = Punkt · - = Bindestrich"},
+      {q:"Was kostet das? / Wie viel kostet das?",   qRu:"Сколько это стоит?",                a:"Das kostet 20 Euro.",                      aRu:"Это стоит 20 евро.",                  note:"kostet (ед.ч.) / kosten (мн.ч.)"},
+      {q:"Das ist aber teuer! / Das ist aber billig!", qRu:"Это же дорого! / Это же дёшево!", a:"Ja! / Nein, das ist günstig.",           aRu:"Да! / Нет, это выгодно.",              note:"teuer = дорого · billig/günstig = дёшево"},
+      {q:"Wie ist Ihre Vorwahl?",                    qRu:"Какой у вас код города?",           a:"Meine Vorwahl ist 040.",                    aRu:"Мой код города 040.",                 note:"München 089 · Berlin 030 · Frankfurt 069"},
+      {q:"Polizei / Feuerwehr — welche Nummer?",     qRu:"Полиция / пожарная — какой номер?", a:"Polizei: 110 · Feuerwehr/Notruf: 112",    aRu:"Полиция: 110 · Пожарная/скорая: 112",  note:"Wichtige Nummern in Deutschland!"},
+      {q:"Wo ist die Kita? / Ist der Platz noch frei?", qRu:"Где детский сад? / Место ещё свободно?", a:"Die Kita ist in der Schillerstraße. / Ja, der Platz ist frei.", aRu:"Садик на Шиллерштрассе. / Да, место свободно.", note:"Kita = детский сад · frei = свободный"},
+      {q:"Wie viele Stühle sind im Kursraum?",       qRu:"Сколько стульев в аудитории?",      a:"Da sind zwanzig Stühle.",                 aRu:"Там двадцать стульев.",                note:"wie viele = сколько · da/hier = там/здесь"},
       // phrases
-      {q:"Auf Wiederhören!",                         a:"Auf Wiederhören!",                          note:"по телефону"},
-      {q:"Das ist richtig! / Das ist kaputt.",       a:"Richtig! / Kaputt. / Schick!",             note:"richtig=правильно · kaputt=сломан · schick=стильно"},
+      {q:"Auf Wiederhören!",                         qRu:"До свидания (по телефону)!",        a:"Auf Wiederhören!",                          aRu:"До свидания (по телефону)!",          note:"по телефону"},
+      {q:"Das ist richtig! / Das ist kaputt.",       qRu:"Это правильно! / Это сломано.",     a:"Richtig! / Kaputt. / Schick!",             aRu:"Правильно! / Сломано. / Стильно!",    note:"richtig=правильно · kaputt=сломан · schick=стильно"},
     ]},
   ],
   L3:[
     {tag:"Основные",col:C.green,pairs:[
       // über Wohnungen und Möbel sprechen (Kommunikation стр.)
-      {q:"Was kostet die Wohnung?",                  a:"500 Euro ohne Nebenkosten. / 400 Euro Warmmiete.", note:"ohne Nebenkosten = без коммунальных · Warmmiete = всё включено"},
-      {q:"Wie viele Zimmer haben Sie?",              a:"Drei Zimmer und eine Küche und ein Badezimmer.", note:"wie viele = сколько"},
+      {q:"Was kostet die Wohnung?",                  qRu:"Сколько стоит квартира?",           a:"500 Euro ohne Nebenkosten. / 400 Euro Warmmiete.", aRu:"500 евро без коммунальных. / 400 евро всё включено.", note:"ohne Nebenkosten = без коммунальных · Warmmiete = всё включено"},
+      {q:"Wie viele Zimmer haben Sie?",              qRu:"Сколько у вас комнат?",              a:"Drei Zimmer und eine Küche und ein Badezimmer.", aRu:"Три комнаты, кухня и ванная.", note:"wie viele = сколько"},
       // über Dinge sprechen (Kommunikation стр.)
-      {q:"Ist das ein Tisch?",                       a:"Nein, das ist kein Tisch. Das ist eine Lampe.", note:"kein/keine = нет"},
-      {q:"Wie findest du die Lampe?",                a:"Ich finde die Lampe elegant. / Super! / Nicht schön.", note:"finden = считать · Akkusativ: den Stuhl / die Lampe"},
+      {q:"Ist das ein Tisch?",                       qRu:"Это стол?",                          a:"Nein, das ist kein Tisch. Das ist eine Lampe.", aRu:"Нет, это не стол. Это лампа.", note:"kein/keine = нет"},
+      {q:"Wie findest du die Lampe?",                qRu:"Как тебе лампа?",                    a:"Ich finde die Lampe elegant. / Super! / Nicht schön.", aRu:"Я считаю лампу элегантной. / Супер! / Некрасиво.", note:"finden = считать · Akkusativ: den Stuhl / die Lampe"},
       // phrases (Kommunikation стр.)
-      {q:"Wir haben keinen Teppich.",                a:"Aber wir brauchen keinen Teppich.",         note:"keinen (m Akk.) · keine (f Akk.)"},
-      {q:"Wir brauchen eine Spülmaschine.",          a:"— (нам нужна посудомойка)",                  note:"brauchen + Akkusativ"},
-      {q:"Wirklich?",                                a:"Ja, wirklich! / Oh, klasse!",               note:"wirklich = правда? · klasse = здорово!"},
-      {q:"Der Stuhl ist schön. Ich kaufe den Stuhl.", a:"— (Стул красивый. Я покупаю стул.)",       note:"Akkusativ: den Stuhl (m → den)"},
-      {q:"Ich finde die Lampe elegant.",             a:"— (Я считаю лампу элегантной.)",            note:"finden + Akkusativ + Adjektiv"},
-      {q:"Die Wohnung ist klein, aber sie ist hell und hat einen Balkon.", a:"— (описание квартиры)", note:"aber = но · hell = светлый · hat einen Balkon = есть балкон"},
-      {q:"Ich habe eine 1-Zimmer-Wohnung. Sie ist 35 qm groß.", a:"— (описание квартиры)",         note:"qm = Quadratmeter · groß = большой/метражный"},
+      {q:"Wir haben keinen Teppich.",                qRu:"У нас нет ковра.",                   a:"Aber wir brauchen keinen Teppich.",         aRu:"Но нам не нужен ковёр.",       note:"keinen (m Akk.) · keine (f Akk.)"},
+      {q:"Wir brauchen eine Spülmaschine.",          qRu:"Нам нужна посудомоечная машина.",    a:"— (нам нужна посудомойка)",                  note:"brauchen + Akkusativ"},
+      {q:"Wirklich?",                                qRu:"Правда?",                            a:"Ja, wirklich! / Oh, klasse!",               aRu:"Да, правда! / Ого, здорово!",   note:"wirklich = правда? · klasse = здорово!"},
+      {q:"Der Stuhl ist schön. Ich kaufe den Stuhl.", qRu:"Стул красивый. Я покупаю стул.",   a:"— (Стул красивый. Я покупаю стул.)",       note:"Akkusativ: den Stuhl (m → den)"},
+      {q:"Ich finde die Lampe elegant.",             qRu:"Я считаю лампу элегантной.",         a:"— (Я считаю лампу элегантной.)",            note:"finden + Akkusativ + Adjektiv"},
+      {q:"Die Wohnung ist klein, aber sie ist hell und hat einen Balkon.", qRu:"Квартира маленькая, но светлая и с балконом.", a:"— (описание квартиры)", note:"aber = но · hell = светлый · hat einen Balkon = есть балкон"},
+      {q:"Ich habe eine 1-Zimmer-Wohnung. Sie ist 35 qm groß.", qRu:"У меня однокомнатная квартира. Её площадь 35 кв.м.", a:"— (описание квартиры)",         note:"qm = Quadratmeter · groß = большой/метражный"},
     ]},
     {tag:"Дополнительные",col:C.teal,pairs:[
-      {q:"Was haben Sie in der Wohnung?",            a:"Ich habe einen Tisch, zwei Stühle und ein Regal.", note:"m Akkusativ: einen Tisch"},
-      {q:"Was brauchen Sie noch?",                   a:"Ich brauche noch eine Lampe und einen Kühlschrank.", note:"brauchen = нуждаться · noch = ещё"},
-      {q:"Wie finden Sie das Sofa?",                 a:"Sehr schön! / Toll! / Gemütlich. / Langweilig.", note:"😊 sehr schön/toll · 😐 okay · 😞 langweilig/hässlich"},
-      {q:"Wie ist Ihre Wohnung?",                    a:"Meine Wohnung ist klein, aber hell. / Sie ist ruhig und günstig.", note:"aber = но · hell = светлый"},
-      {q:"Wie hoch ist die Miete?",                  a:"Die Miete ist 800 Euro plus Nebenkosten.",  note:"Miete = аренда · Nebenkosten = коммуналка"},
-      {q:"Wo wohnen Sie?",                           a:"Ich wohne im 2. Stock. / Im Erdgeschoss.",  note:"im = in dem · Erdgeschoss = первый этаж снизу"},
-      {q:"Wo gibt es einen Laden?",                  a:"Es gibt einen Obst- und Gemüseladen im Erdgeschoss.", note:"es gibt + Akkusativ = есть/имеется"},
-      {q:"Wollen Sie ein Doppelzimmer oder ein Einzelzimmer?", a:"Ein Doppelzimmer, bitte.",       note:"Doppelzimmer = двухм. · Einzelzimmer = одноместный"},
-      {q:"Ist das dein Laptop?",                     a:"Ja, das ist mein Laptop. / Nein, das ist nicht mein Laptop.", note:"dein = твой · mein = мой"},
+      {q:"Was haben Sie in der Wohnung?",            qRu:"Что у вас есть в квартире?",         a:"Ich habe einen Tisch, zwei Stühle und ein Regal.", aRu:"У меня есть стол, два стула и полка.", note:"m Akkusativ: einen Tisch"},
+      {q:"Was brauchen Sie noch?",                   qRu:"Что вам ещё нужно?",                 a:"Ich brauche noch eine Lampe und einen Kühlschrank.", aRu:"Мне ещё нужны лампа и холодильник.", note:"brauchen = нуждаться · noch = ещё"},
+      {q:"Wie finden Sie das Sofa?",                 qRu:"Как вам диван?",                     a:"Sehr schön! / Toll! / Gemütlich. / Langweilig.", aRu:"Очень красивый! / Отлично! / Уютный. / Скучный.", note:"😊 sehr schön/toll · 😐 okay · 😞 langweilig/hässlich"},
+      {q:"Wie ist Ihre Wohnung?",                    qRu:"Какая у вас квартира?",              a:"Meine Wohnung ist klein, aber hell. / Sie ist ruhig und günstig.", aRu:"Моя квартира маленькая, но светлая. / Она тихая и выгодная.", note:"aber = но · hell = светлый"},
+      {q:"Wie hoch ist die Miete?",                  qRu:"Какая арендная плата?",              a:"Die Miete ist 800 Euro plus Nebenkosten.",  aRu:"Аренда 800 евро плюс коммунальные.", note:"Miete = аренда · Nebenkosten = коммуналка"},
+      {q:"Wo wohnen Sie?",                           qRu:"Где вы живёте?",                     a:"Ich wohne im 2. Stock. / Im Erdgeschoss.",  aRu:"Я живу на 2-м этаже. / На первом этаже.", note:"im = in dem · Erdgeschoss = первый этаж снизу"},
+      {q:"Wo gibt es einen Laden?",                  qRu:"Где тут есть магазин?",              a:"Es gibt einen Obst- und Gemüseladen im Erdgeschoss.", aRu:"На первом этаже есть овощной магазин.", note:"es gibt + Akkusativ = есть/имеется"},
+      {q:"Wollen Sie ein Doppelzimmer oder ein Einzelzimmer?", qRu:"Хотите двухместный или одноместный номер?", a:"Ein Doppelzimmer, bitte.",       aRu:"Двухместный, пожалуйста.",      note:"Doppelzimmer = двухм. · Einzelzimmer = одноместный"},
+      {q:"Ist das dein Laptop?",                     qRu:"Это твой ноутбук?",                  a:"Ja, das ist mein Laptop. / Nein, das ist nicht mein Laptop.", aRu:"Да, это мой ноутбук. / Нет, это не мой ноутбук.", note:"dein = твой · mein = мой"},
       // phrases
-      {q:"Ich bin zu Hause.",                        a:"— (Я дома)",                                note:"zu Hause = дома (где?) ≠ nach Hause = домой (куда?)"},
-      {q:"Ich gehe jetzt nach Hause.",               a:"— (Я иду домой)",                           note:"nach Hause = домой (движение)"},
-      {q:"Das Badezimmer ist furchtbar!",            a:"Ja, das finde ich auch. Es ist dunkel!",    note:"furchtbar = ужасный · dunkel = тёмный"},
+      {q:"Ich bin zu Hause.",                        qRu:"Я дома.",                            a:"— (Я дома)",                                note:"zu Hause = дома (где?) ≠ nach Hause = домой (куда?)"},
+      {q:"Ich gehe jetzt nach Hause.",               qRu:"Я иду сейчас домой.",                a:"— (Я иду домой)",                           note:"nach Hause = домой (движение)"},
+      {q:"Das Badezimmer ist furchtbar!",            qRu:"Ванная ужасная!",                    a:"Ja, das finde ich auch. Es ist dunkel!",    aRu:"Да, я тоже так думаю. Она тёмная!", note:"furchtbar = ужасный · dunkel = тёмный"},
     ]},
   ],
   L4:[
     {tag:"Основные",col:C.teal,pairs:[
       // über die Familie sprechen
-      {q:"Ist Ihre Familie groß?",              a:"Ja, ich habe fünf Geschwister: vier Schwestern und einen Bruder.",        note:"Geschwister (мн.ч.) · einen Bruder (m Akk.)",               fm:"f"},
-      {q:"Ist deine Familie groß?",             a:"Nein, meine Familie ist klein. Ich habe nur einen Bruder.",               note:"nur = только · klein ≠ groß",                                fm:"i"},
-      {q:"Haben Sie Kinder?",                   a:"Ja, ich habe zwei Kinder. / Nein, keine Kinder.",                        note:"keine Kinder = нет детей (Akkusativ)",                       fm:"f"},
-      {q:"Hast du Geschwister?",                a:"Ja, ich habe vier Tanten und fünf Onkel, zwei Cousins und zwei Cousinen.",note:"Cousin/Cousine = двоюродный брат/сестра",                   fm:"i"},
+      {q:"Ist Ihre Familie groß?",              qRu:"У вас большая семья?",           a:"Ja, ich habe fünf Geschwister: vier Schwestern und einen Bruder.",        aRu:"Да, у меня пятеро братьев/сестёр: четыре сестры и один брат.", note:"Geschwister (мн.ч.) · einen Bruder (m Akk.)",               fm:"f"},
+      {q:"Ist deine Familie groß?",             qRu:"У тебя большая семья?",           a:"Nein, meine Familie ist klein. Ich habe nur einen Bruder.",               aRu:"Нет, моя семья маленькая. У меня только один брат.", note:"nur = только · klein ≠ groß",                                fm:"i"},
+      {q:"Haben Sie Kinder?",                   qRu:"У вас есть дети?",                a:"Ja, ich habe zwei Kinder. / Nein, keine Kinder.",                        aRu:"Да, у меня двое детей. / Нет, детей нет.", note:"keine Kinder = нет детей (Akkusativ)",                       fm:"f"},
+      {q:"Hast du Geschwister?",                qRu:"У тебя есть братья/сёстры?",      a:"Ja, ich habe vier Tanten und fünf Onkel, zwei Cousins und zwei Cousinen.",aRu:"Да, у меня четыре тёти и пять дядь, два кузена и две кузины.",note:"Cousin/Cousine = двоюродный брат/сестра",                   fm:"i"},
       // über Vergangenes sprechen
-      {q:"Wie war Ihre Familie früher?",        a:"Früher waren die Familien groß. Meine Großeltern hatten sieben Kinder.", note:"früher = раньше · waren/hatten = Präteritum",               fm:"f"},
-      {q:"Was war Ihr Großvater von Beruf?",    a:"Mein Großvater war Arzt von Beruf.",                                     note:"von Beruf = по профессии · war = Präteritum von sein",      fm:"f"},
-      {q:"Hatten deine Großeltern viele Kinder?",a:"Ja, meine Großeltern hatten sieben Kinder.",                            note:"hatten = Präteritum von haben",                              fm:"i"},
+      {q:"Wie war Ihre Familie früher?",        qRu:"Какой была ваша семья раньше?",   a:"Früher waren die Familien groß. Meine Großeltern hatten sieben Kinder.", aRu:"Раньше семьи были большими. У моих дедушки с бабушкой было семеро детей.", note:"früher = раньше · waren/hatten = Präteritum",               fm:"f"},
+      {q:"Was war Ihr Großvater von Beruf?",    qRu:"Кем по профессии был ваш дедушка?", a:"Mein Großvater war Arzt von Beruf.",                                     aRu:"Мой дедушка был врачом по профессии.", note:"von Beruf = по профессии · war = Präteritum von sein",      fm:"f"},
+      {q:"Hatten deine Großeltern viele Kinder?",qRu:"У твоих дедушки с бабушкой было много детей?",a:"Ja, meine Großeltern hatten sieben Kinder.",                            aRu:"Да, у моих дедушки с бабушкой было семеро детей.", note:"hatten = Präteritum von haben",                              fm:"i"},
       // eine Stadtbesichtigung planen
-      {q:"Was machen wir zuerst?",              a:"Zuerst kaufen wir Lebensmittel, dann essen wir zu Mittag.",              note:"zuerst → dann → danach · Verb immer auf Position 2"},
-      {q:"Was machen wir danach?",              a:"Danach machen wir eine Radtour und besuchen ein Straßenfest.",           note:"danach = после этого · eine Radtour machen"},
+      {q:"Was machen wir zuerst?",              qRu:"Что мы делаем сначала?",          a:"Zuerst kaufen wir Lebensmittel, dann essen wir zu Mittag.",              aRu:"Сначала мы покупаем продукты, потом обедаем.", note:"zuerst → dann → danach · Verb immer auf Position 2"},
+      {q:"Was machen wir danach?",              qRu:"Что мы делаем после этого?",      a:"Danach machen wir eine Radtour und besuchen ein Straßenfest.",           aRu:"После этого мы едем на велопрогулку и идём на уличный праздник.", note:"danach = после этого · eine Radtour machen"},
       // über Freizeitaktivitäten sprechen
-      {q:"Lesen Sie gerne Bücher?",             a:"Ja, sehr gern! / Nein, nicht so gern. Ich lese gerne Internet-Blogs.",  note:"gerne = с удовольствием · nicht so gern = не очень",        fm:"f"},
-      {q:"Liest du gerne Bücher?",              a:"Ja, ich lese gern! / Nein, ich lese nicht so gerne Bücher.",            note:"lesen → du liest (Vokalwechsel e→ie)",                       fm:"i"},
+      {q:"Lesen Sie gerne Bücher?",             qRu:"Вы любите читать книги?",         a:"Ja, sehr gern! / Nein, nicht so gern. Ich lese gerne Internet-Blogs.",  aRu:"Да, очень люблю! / Нет, не очень. Я люблю читать интернет-блоги.", note:"gerne = с удовольствием · nicht so gern = не очень",        fm:"f"},
+      {q:"Liest du gerne Bücher?",              qRu:"Ты любишь читать книги?",         a:"Ja, ich lese gern! / Nein, ich lese nicht so gerne Bücher.",            aRu:"Да, я люблю читать! / Нет, я не очень люблю читать книги.", note:"lesen → du liest (Vokalwechsel e→ie)",                       fm:"i"},
     ]},
     {tag:"Дополнительные",col:C.green,pairs:[
-      {q:"Haben Sie Fotos dabei?",      a:"Ja, hier ist meine Schwester. / Nein, leider nicht.", note:"Fotos dabei haben = иметь фото при себе · leider nicht = к сожалению нет"},
-      {q:"Ist das Ihr Mann?",           a:"Ja, das ist Thomas, mein Mann.",                   note:"Ihr Mann (formell) · ihr Mann (он — её муж)"},
-      {q:"Ist das Ihre Frau?",          a:"Ja, das ist meine Frau und das ist sein Sohn.",    note:"meine Frau = моя жена · sein Sohn = его сын"},
-      {q:"Er/Sie ist verheiratet?",     a:"Ja, er ist verheiratet und hat zwei Kinder.",      note:"verheiratet sein = быть женатым/замужней"},
-      {q:"Das ist aber süß!",           a:"Ja! Er ist zwei Jahre alt.",                       note:"süß = милый · zwei Jahre alt = двух лет"},
-      {q:"Wie groß ist Ihre Familie?",  a:"Meine Familie ist klein. Ich habe nur einen Bruder.", note:"Wie groß ist = насколько большая"},
-      {q:"Wer ist das?",                a:"Das ist mein Freund Luka. Er kommt aus Kroatien.", note:"Wer = кто (для людей)"},
-      {q:"Das ist mein Bruder.",        a:"— (представляю брата)",                            note:"mein (m/n) · meine (f/pl)"},
-      {q:"Das ist seine Frau.",         a:"— (это его жена)",                                 note:"seine (f) → er hat eine Frau"},
-      {q:"Das ist ihre Tochter.",       a:"— (это её дочь)",                                  note:"ihre (f) → sie hat eine Tochter"},
-      {q:"Was macht ihr am Wochenende?",a:"Wir machen eine Radtour. / Wir besuchen ein Straßenfest.", note:"am Wochenende = в выходные · eine Radtour machen = кататься на велосипеде"},
-      {q:"Kommst du bald nach Berlin?", a:"Ja, ich komme am Wochenende und bleibe zwei Tage.", note:"nach Berlin = куда (Wohin?) ≠ in Berlin = где (Wo?)"},
-      {q:"Wo seid ihr jetzt?",          a:"Wir sind in Berlin. Es gibt hier viele Sehenswürdigkeiten.", note:"Wo? → in + Stadt (нахождение) · Sehenswürdigkeiten = достопримечательности"},
-      {q:"Was machen wir zuerst?",      a:"Zuerst kaufen wir Lebensmittel, dann essen wir zu Mittag.", note:"zuerst = сначала · dann = потом · danach = после этого"},
-      {q:"Er schläft. / Sie liest ein Buch.", a:"— (описание того, кто что делает)",          note:"Vokalwechsel: schlafen→schläft · lesen→liest · sehen→sieht · fahren→fährt"},
-      {q:"Sprichst du Spanisch?",             a:"Ja, natürlich! / Ja, ein bisschen. / Nein, leider nicht.", note:"sprechen → du sprichst · ein bisschen = немного · natürlich = конечно"},
-      {q:"Isst du gerne Schokolade?",         a:"Ja, ich esse sehr gern! / Nein, ich esse nicht gern.",      note:"gerne = с удовольствием · sehr gern = очень люблю · nicht gern = не люблю"},
-      {q:"Liest du gerne Bücher?",            a:"Ja, ich lese gern Bücher. / Nein, nicht so gern.",          note:"nicht so gern = не очень люблю · auch: Zeitungen, Blogs, SMS"},
-      {q:"Was machen wir morgen?",            a:"Wir sehen einen Film! Oder wir chillen und essen Pizza.",   note:"morgen = завтра · chillen = расслабляться (разг.)"},
-      {q:"Ich habe eine Idee!",               a:"— (предлагаю план)",                                        note:"eine Idee haben = иметь идею · Wir nehmen die S-Bahn und fahren nach ..."},
-      {q:"Kennt ihr den Hafen hier?",         a:"Ja, ich kenne den Hafen. / Nein, das kenne ich nicht.",     note:"kennen = знать (место/человека) · Kennt ihr? = неформ. мн.ч."},
-      {q:"In Hamburg gibt es den Hafen.",     a:"— (рассказываю о городе)",                                  note:"In + Stadt + gibt es + Akk. · Man kann eine Hafenrundfahrt machen."},
-      {q:"Wie alt ist Ihre Tochter?",         a:"Meine Tochter ist fünf Jahre alt.",                         note:"Wie alt ist = сколько лет · Jahre alt = лет от роду",        fm:"f"},
-      {q:"Wie alt ist dein Kind?",            a:"Mein Sohn ist drei Jahre alt. / Meine Tochter ist sieben.", note:"Jahre alt = лет · mein Sohn / meine Tochter",                fm:"i"},
-      {q:"Was machen Sie gern am Wochenende?",a:"Ich mache oft eine Radtour. / Ich lese gerne eine Zeitung.", note:"gern/oft = с удовольствием/часто · am Wochenende = в выходные", fm:"f"},
-      {q:"Was machst du gern am Wochenende?", a:"Ich chillen oft und esse Pizza. / Ich lese gern.",          note:"oft = часто · gern = с удовольствием",                        fm:"i"},
+      {q:"Haben Sie Fotos dabei?",      qRu:"У вас есть фото с собой?",       a:"Ja, hier ist meine Schwester. / Nein, leider nicht.", aRu:"Да, вот моя сестра. / Нет, к сожалению.", note:"Fotos dabei haben = иметь фото при себе · leider nicht = к сожалению нет"},
+      {q:"Ist das Ihr Mann?",           qRu:"Это ваш муж?",                   a:"Ja, das ist Thomas, mein Mann.",                   aRu:"Да, это Томас, мой муж.", note:"Ihr Mann (formell) · ihr Mann (он — её муж)"},
+      {q:"Ist das Ihre Frau?",          qRu:"Это ваша жена?",                 a:"Ja, das ist meine Frau und das ist sein Sohn.",    aRu:"Да, это моя жена, а это его сын.", note:"meine Frau = моя жена · sein Sohn = его сын"},
+      {q:"Er/Sie ist verheiratet?",     qRu:"Он/она женат/замужем?",          a:"Ja, er ist verheiratet und hat zwei Kinder.",      aRu:"Да, он женат и у него двое детей.", note:"verheiratet sein = быть женатым/замужней"},
+      {q:"Das ist aber süß!",           qRu:"Какой(ая) же милый(ая)!",        a:"Ja! Er ist zwei Jahre alt.",                       aRu:"Да! Ему два года.", note:"süß = милый · zwei Jahre alt = двух лет"},
+      {q:"Wie groß ist Ihre Familie?",  qRu:"Насколько большая у вас семья?", a:"Meine Familie ist klein. Ich habe nur einen Bruder.", aRu:"Моя семья маленькая. У меня только один брат.", note:"Wie groß ist = насколько большая"},
+      {q:"Wer ist das?",                qRu:"Кто это?",                       a:"Das ist mein Freund Luka. Er kommt aus Kroatien.", aRu:"Это мой друг Лука. Он из Хорватии.", note:"Wer = кто (для людей)"},
+      {q:"Das ist mein Bruder.",        qRu:"Это мой брат.",                  a:"— (представляю брата)",                            note:"mein (m/n) · meine (f/pl)"},
+      {q:"Das ist seine Frau.",         qRu:"Это его жена.",                  a:"— (это его жена)",                                 note:"seine (f) → er hat eine Frau"},
+      {q:"Das ist ihre Tochter.",       qRu:"Это её дочь.",                   a:"— (это её дочь)",                                  note:"ihre (f) → sie hat eine Tochter"},
+      {q:"Was macht ihr am Wochenende?",qRu:"Что вы делаете на выходных?",    a:"Wir machen eine Radtour. / Wir besuchen ein Straßenfest.", aRu:"Мы едем на велопрогулку. / Мы идём на уличный праздник.", note:"am Wochenende = в выходные · eine Radtour machen = кататься на велосипеде"},
+      {q:"Kommst du bald nach Berlin?", qRu:"Ты скоро приедешь в Берлин?",    a:"Ja, ich komme am Wochenende und bleibe zwei Tage.", aRu:"Да, я приеду на выходных и останусь на два дня.", note:"nach Berlin = куда (Wohin?) ≠ in Berlin = где (Wo?)"},
+      {q:"Wo seid ihr jetzt?",          qRu:"Где вы сейчас?",                 a:"Wir sind in Berlin. Es gibt hier viele Sehenswürdigkeiten.", aRu:"Мы в Берлине. Здесь много достопримечательностей.", note:"Wo? → in + Stadt (нахождение) · Sehenswürdigkeiten = достопримечательности"},
+      {q:"Was machen wir zuerst?",      qRu:"Что мы делаем сначала?",         a:"Zuerst kaufen wir Lebensmittel, dann essen wir zu Mittag.", aRu:"Сначала покупаем продукты, потом обедаем.", note:"zuerst = сначала · dann = потом · danach = после этого"},
+      {q:"Er schläft. / Sie liest ein Buch.", qRu:"Он спит. / Она читает книгу.", a:"— (описание того, кто что делает)",          note:"Vokalwechsel: schlafen→schläft · lesen→liest · sehen→sieht · fahren→fährt"},
+      {q:"Sprichst du Spanisch?",             qRu:"Ты говоришь по-испански?",   a:"Ja, natürlich! / Ja, ein bisschen. / Nein, leider nicht.", aRu:"Да, конечно! / Да, немного. / Нет, к сожалению.", note:"sprechen → du sprichst · ein bisschen = немного · natürlich = конечно"},
+      {q:"Isst du gerne Schokolade?",         qRu:"Ты любишь шоколад?",         a:"Ja, ich esse sehr gern! / Nein, ich esse nicht gern.",      aRu:"Да, очень люблю! / Нет, не люблю.", note:"gerne = с удовольствием · sehr gern = очень люблю · nicht gern = не люблю"},
+      {q:"Liest du gerne Bücher?",            qRu:"Ты любишь читать книги?",    a:"Ja, ich lese gern Bücher. / Nein, nicht so gern.",          aRu:"Да, я люблю читать книги. / Нет, не очень.", note:"nicht so gern = не очень люблю · auch: Zeitungen, Blogs, SMS"},
+      {q:"Was machen wir morgen?",            qRu:"Что мы делаем завтра?",      a:"Wir sehen einen Film! Oder wir chillen und essen Pizza.",   aRu:"Мы смотрим фильм! Или отдыхаем и едим пиццу.", note:"morgen = завтра · chillen = расслабляться (разг.)"},
+      {q:"Ich habe eine Idee!",               qRu:"У меня есть идея!",          a:"— (предлагаю план)",                                        note:"eine Idee haben = иметь идею · Wir nehmen die S-Bahn und fahren nach ..."},
+      {q:"Kennt ihr den Hafen hier?",         qRu:"Вы знаете здешний порт?",    a:"Ja, ich kenne den Hafen. / Nein, das kenne ich nicht.",     aRu:"Да, я знаю порт. / Нет, я этого не знаю.", note:"kennen = знать (место/человека) · Kennt ihr? = неформ. мн.ч."},
+      {q:"In Hamburg gibt es den Hafen.",     qRu:"В Гамбурге есть порт.",      a:"— (рассказываю о городе)",                                  note:"In + Stadt + gibt es + Akk. · Man kann eine Hafenrundfahrt machen."},
+      {q:"Wie alt ist Ihre Tochter?",         qRu:"Сколько лет вашей дочери?",  a:"Meine Tochter ist fünf Jahre alt.",                         aRu:"Моей дочери пять лет.", note:"Wie alt ist = сколько лет · Jahre alt = лет от роду",        fm:"f"},
+      {q:"Wie alt ist dein Kind?",            qRu:"Сколько лет твоему ребёнку?",a:"Mein Sohn ist drei Jahre alt. / Meine Tochter ist sieben.", aRu:"Моему сыну три года. / Моей дочери семь.", note:"Jahre alt = лет · mein Sohn / meine Tochter",                fm:"i"},
+      {q:"Was machen Sie gern am Wochenende?",qRu:"Что вы любите делать на выходных?",a:"Ich mache oft eine Radtour. / Ich lese gerne eine Zeitung.", aRu:"Я часто езжу на велопрогулку. / Я люблю читать газету.", note:"gern/oft = с удовольствием/часто · am Wochenende = в выходные", fm:"f"},
+      {q:"Was machst du gern am Wochenende?", qRu:"Что ты любишь делать на выходных?", a:"Ich chillen oft und esse Pizza. / Ich lese gern.",          aRu:"Я часто отдыхаю и ем пиццу. / Я люблю читать.", note:"oft = часто · gern = с удовольствием",                        fm:"i"},
     ]},
   ],
   L5:[
     {tag:"Основные",col:C.orange,pairs:[
-      {q:"Entschuldigung, wie spät ist es?",  a:"Es ist neun Uhr. / Es ist Viertel nach neun.",              note:"wie spät ist es? = который час?"},
-      {q:"Um wie viel Uhr beginnt der Kurs?", a:"Der Kurs beginnt um Viertel nach neun.",                    note:"um + Uhrzeit → точное время · beginnen = начинаться"},
-      {q:"Wann endet der Kurs?",              a:"Der Kurs endet um halb eins.",                               note:"enden = заканчиваться · halb eins = 12:30"},
-      {q:"Um wie viel Uhr beginnt die Pause?",a:"Die Pause beginnt um halb elf.",                             note:"die Pause = перерыв"},
-      {q:"Wann gehen Sie nach Hause?",        a:"Ich gehe um zwei Uhr nach Hause.",                          note:"nach Hause gehen = идти домой"},
-      {q:"Bis wann geht der Kurs?",           a:"Bis 20 Uhr. / Bis acht Uhr.",                               note:"Bis wann? = До какого времени?"},
-      {q:"Von wann bis wann geht der Kurs?",  a:"Von sechs bis acht. / Von 18 bis 20 Uhr.",                  note:"von ... bis ... = с ... до ..."},
-      {q:"Was ist Ihr Hobby?",                a:"Mein Hobby ist Gitarre spielen. / Ich lese gern Bücher.",   note:"Was ist Ihr Hobby? = какое ваше хобби?",              fm:"f"},
-      {q:"Was machst du in der Freizeit?",    a:"Ich jogge gern im Park. / Ich höre Musik.",                 note:"in der Freizeit = в свободное время",                 fm:"i"},
-      {q:"Was machen Sie gerne?",             a:"Ich treibe gern Sport. / Ich surfe gern im Internet.",      note:"gerne = с удовольствием",                            fm:"f"},
-      {q:"Gehen wir zusammen schwimmen?",     a:"Sehr gerne. Wann? / Ja, gerne. / Nein, ich habe keine Lust.", note:"sich verabreden = договориться о встрече"},
-      {q:"Hast du heute Abend Zeit?",         a:"Ja, das geht. / Nein, leider nicht. / Geht es auch morgen?", note:"Zeit haben = иметь время · leider = к сожалению"},
-      {q:"Geht es auch später?",              a:"Ja, das geht. Um drei Uhr habe ich Zeit.",                  note:"geht es = подходит ли · auch = тоже, также"},
-      {q:"Was meinst du?",                    a:"Ich finde das gut. / Das geht nicht.",                      note:"meinen = думать, считать"},
+      {q:"Entschuldigung, wie spät ist es?",  qRu:"Извините, который час?",         a:"Es ist neun Uhr. / Es ist Viertel nach neun.",              aRu:"Сейчас девять часов. / Сейчас четверть десятого.", note:"wie spät ist es? = который час?"},
+      {q:"Um wie viel Uhr beginnt der Kurs?", qRu:"В котором часу начинается курс?",a:"Der Kurs beginnt um Viertel nach neun.",                    aRu:"Курс начинается в четверть десятого.", note:"um + Uhrzeit → точное время · beginnen = начинаться"},
+      {q:"Wann endet der Kurs?",              qRu:"Когда заканчивается курс?",       a:"Der Kurs endet um halb eins.",                               aRu:"Курс заканчивается в половине первого.", note:"enden = заканчиваться · halb eins = 12:30"},
+      {q:"Um wie viel Uhr beginnt die Pause?",qRu:"В котором часу начинается перерыв?",a:"Die Pause beginnt um halb elf.",                             aRu:"Перерыв начинается в половине одиннадцатого.", note:"die Pause = перерыв"},
+      {q:"Wann gehen Sie nach Hause?",        qRu:"Когда вы идёте домой?",           a:"Ich gehe um zwei Uhr nach Hause.",                          aRu:"Я иду домой в два часа.", note:"nach Hause gehen = идти домой"},
+      {q:"Bis wann geht der Kurs?",           qRu:"До какого времени длится курс?",  a:"Bis 20 Uhr. / Bis acht Uhr.",                               aRu:"До 20 часов. / До восьми часов.", note:"Bis wann? = До какого времени?"},
+      {q:"Von wann bis wann geht der Kurs?",  qRu:"С какого до какого времени курс?",a:"Von sechs bis acht. / Von 18 bis 20 Uhr.",                  aRu:"С шести до восьми. / С 18 до 20 часов.", note:"von ... bis ... = с ... до ..."},
+      {q:"Was ist Ihr Hobby?",                qRu:"Какое у вас хобби?",              a:"Mein Hobby ist Gitarre spielen. / Ich lese gern Bücher.",   aRu:"Моё хобби — играть на гитаре. / Я люблю читать книги.", note:"Was ist Ihr Hobby? = какое ваше хобби?",              fm:"f"},
+      {q:"Was machst du in der Freizeit?",    qRu:"Что ты делаешь в свободное время?",a:"Ich jogge gern im Park. / Ich höre Musik.",                 aRu:"Я люблю бегать в парке. / Я слушаю музыку.", note:"in der Freizeit = в свободное время",                 fm:"i"},
+      {q:"Was machen Sie gerne?",             qRu:"Что вы любите делать?",           a:"Ich treibe gern Sport. / Ich surfe gern im Internet.",      aRu:"Я люблю заниматься спортом. / Я люблю сидеть в интернете.", note:"gerne = с удовольствием",                            fm:"f"},
+      {q:"Gehen wir zusammen schwimmen?",     qRu:"Пойдём вместе плавать?",          a:"Sehr gerne. Wann? / Ja, gerne. / Nein, ich habe keine Lust.", aRu:"С большим удовольствием. Когда? / Да, охотно. / Нет, не хочется.", note:"sich verabreden = договориться о встрече"},
+      {q:"Hast du heute Abend Zeit?",         qRu:"У тебя есть время сегодня вечером?",a:"Ja, das geht. / Nein, leider nicht. / Geht es auch morgen?", aRu:"Да, подходит. / Нет, к сожалению. / А может завтра?", note:"Zeit haben = иметь время · leider = к сожалению"},
+      {q:"Geht es auch später?",              qRu:"А можно попозже?",                a:"Ja, das geht. Um drei Uhr habe ich Zeit.",                  aRu:"Да, подходит. В три часа у меня есть время.", note:"geht es = подходит ли · auch = тоже, также"},
+      {q:"Was meinst du?",                    qRu:"Что ты думаешь?",                 a:"Ich finde das gut. / Das geht nicht.",                      aRu:"Я считаю, что это хорошо. / Это не подходит.", note:"meinen = думать, считать"},
     ]},
     {tag:"Дополнительные",col:C.green,pairs:[
-      {q:"Wann stehst du auf?",               a:"Ich stehe um 7 Uhr auf.",                                   note:"aufstehen = вставать · Präfix 'auf' ans Ende"},
-      {q:"Wann kaufst du ein?",               a:"Ich kaufe um 10 Uhr ein.",                                  note:"einkaufen = делать покупки"},
-      {q:"Wann siehst du fern?",              a:"Ich sehe am Abend fern.",                                   note:"fernsehen = смотреть ТВ · am Abend = вечером"},
-      {q:"Wann fängt der Film an?",           a:"Der Film fängt um neun Uhr an.",                            note:"anfangen = начинаться · fängt...an (Vokalwechsel)"},
-      {q:"Wann ruft sie an?",                 a:"Sie ruft um halb zwölf an.",                                note:"anrufen = звонить · ruft...an"},
-      {q:"Wann gehst du aus?",                a:"Ich gehe am Freitagabend aus.",                             note:"ausgehen = выходить гулять · am Freitagabend"},
-      {q:"Wie lange dauert der Kurs?",        a:"Der Kurs dauert zwei Stunden.",                             note:"dauern = длиться · die Stunde = час"},
-      {q:"Was macht Frau Costa am Samstag?",  a:"Sie steht auf, kauft ein, räumt auf und geht aus.",        note:"trennbare Verben в цепочке"},
+      {q:"Wann stehst du auf?",               qRu:"Когда ты встаёшь?",               a:"Ich stehe um 7 Uhr auf.",                                   aRu:"Я встаю в 7 часов.", note:"aufstehen = вставать · Präfix 'auf' ans Ende"},
+      {q:"Wann kaufst du ein?",               qRu:"Когда ты идёшь за покупками?",    a:"Ich kaufe um 10 Uhr ein.",                                  aRu:"Я иду за покупками в 10 часов.", note:"einkaufen = делать покупки"},
+      {q:"Wann siehst du fern?",              qRu:"Когда ты смотришь ТВ?",           a:"Ich sehe am Abend fern.",                                   aRu:"Я смотрю ТВ вечером.", note:"fernsehen = смотреть ТВ · am Abend = вечером"},
+      {q:"Wann fängt der Film an?",           qRu:"Когда начинается фильм?",         a:"Der Film fängt um neun Uhr an.",                            aRu:"Фильм начинается в девять часов.", note:"anfangen = начинаться · fängt...an (Vokalwechsel)"},
+      {q:"Wann ruft sie an?",                 qRu:"Когда она звонит?",               a:"Sie ruft um halb zwölf an.",                                aRu:"Она звонит в половине двенадцатого.", note:"anrufen = звонить · ruft...an"},
+      {q:"Wann gehst du aus?",                qRu:"Когда ты идёшь гулять?",          a:"Ich gehe am Freitagabend aus.",                             aRu:"Я иду гулять в пятницу вечером.", note:"ausgehen = выходить гулять · am Freitagabend"},
+      {q:"Wie lange dauert der Kurs?",        qRu:"Сколько длится курс?",            a:"Der Kurs dauert zwei Stunden.",                             aRu:"Курс длится два часа.", note:"dauern = длиться · die Stunde = час"},
+      {q:"Was macht Frau Costa am Samstag?",  qRu:"Что делает госпожа Коста в субботу?",a:"Sie steht auf, kauft ein, räumt auf und geht aus.",        aRu:"Она встаёт, идёт за покупками, убирает и идёт гулять.", note:"trennbare Verben в цепочке"},
     ]},
   ],
   L6:[
     {tag:"Основные",col:C.green,pairs:[
-      {q:"Sie wünschen? / Bitte schön?",               a:"Ich hätte gerne ein Kilo Äpfel.",                   note:"hätte gerne = хотел(а) бы · вежливая просьба"},
-      {q:"Was möchten Sie?",                            a:"Ich hätte gerne drei Kilo Kartoffeln.",             note:"möchten = хотеть (вежливо)"},
-      {q:"Was kosten die Tomaten / Erdbeeren?",         a:"Das Kilo kostet 2,90€. / 8,20€ das Kilo.",         note:"kosten (мн.ч.) / kostet (ед.ч.) = стоить"},
-      {q:"Hmm, die sind aber teuer!",                   a:"Die Erdbeeren sind frisch und lecker.",             note:"aber = но · teuer = дорого · lecker = вкусно"},
-      {q:"Noch etwas? / Haben Sie noch einen Wunsch?",  a:"Dann nehme ich ein halbes Kilo. / Das ist alles.", note:"nehmen = взять · der Wunsch = желание"},
-      {q:"Das macht zusammen 9,00€.\nHaben Sie es passend?",a:"Leider nicht. Ich habe nur zehn Euro.",        note:"passend = точная сдача · zusammen = итого"},
-      {q:"Dann bekommen Sie 2,30€ zurück.",              a:"Danke schön! Einen schönen Tag noch!",             note:"zurück = обратно · einen schönen Tag = хорошего дня"},
-      {q:"Danke, gleichfalls! Auf Wiedersehen!",         a:"Auf Wiedersehen!",                                 note:"gleichfalls = и вам того же"},
-      {q:"Bitte schön? (in der Bäckerei)",               a:"Ich möchte ein Vollkornbrot, bitte!",              note:"das Vollkornbrot = хлеб из цельного зерна"},
-      {q:"Was kosten die Croissants? / Was macht das?",  a:"0,70€ das Stück.",                                 note:"das Stück = штука · Was macht das? = Сколько стоит?"},
-      {q:"Das macht zusammen 6,05€.",                    a:"Hier bitte! / Und 15 Cent zurück.",                note:"15 Cent zurück = 15 центов сдачи"},
+      {q:"Sie wünschen? / Bitte schön?",               qRu:"Что желаете? / Пожалуйста?",       a:"Ich hätte gerne ein Kilo Äpfel.",                   aRu:"Я бы хотел(а) килограмм яблок.", note:"hätte gerne = хотел(а) бы · вежливая просьба"},
+      {q:"Was möchten Sie?",                            qRu:"Что вы хотите?",                    a:"Ich hätte gerne drei Kilo Kartoffeln.",             aRu:"Я бы хотел(а) три килограмма картофеля.", note:"möchten = хотеть (вежливо)"},
+      {q:"Was kosten die Tomaten / Erdbeeren?",         qRu:"Сколько стоят помидоры / клубника?",a:"Das Kilo kostet 2,90€. / 8,20€ das Kilo.",         aRu:"Килограмм стоит 2,90€. / 8,20€ за килограмм.", note:"kosten (мн.ч.) / kostet (ед.ч.) = стоить"},
+      {q:"Hmm, die sind aber teuer!",                   qRu:"Хм, но они же дорогие!",            a:"Die Erdbeeren sind frisch und lecker.",             aRu:"Клубника свежая и вкусная.", note:"aber = но · teuer = дорого · lecker = вкусно"},
+      {q:"Noch etwas? / Haben Sie noch einen Wunsch?",  qRu:"Что-нибудь ещё?",                   a:"Dann nehme ich ein halbes Kilo. / Das ist alles.", aRu:"Тогда возьму полкило. / Это всё.", note:"nehmen = взять · der Wunsch = желание"},
+      {q:"Das macht zusammen 9,00€.\nHaben Sie es passend?",qRu:"Итого 9,00€. У вас есть без сдачи?",a:"Leider nicht. Ich habe nur zehn Euro.",        aRu:"К сожалению нет. У меня только десять евро.", note:"passend = точная сдача · zusammen = итого"},
+      {q:"Dann bekommen Sie 2,30€ zurück.",              qRu:"Тогда ваша сдача 2,30€.",           a:"Danke schön! Einen schönen Tag noch!",             aRu:"Большое спасибо! Хорошего дня!", note:"zurück = обратно · einen schönen Tag = хорошего дня"},
+      {q:"Danke, gleichfalls! Auf Wiedersehen!",         qRu:"Спасибо, и вам! До свидания!",      a:"Auf Wiedersehen!",                                 aRu:"До свидания!", note:"gleichfalls = и вам того же"},
+      {q:"Bitte schön? (in der Bäckerei)",               qRu:"Пожалуйста? (в пекарне)",           a:"Ich möchte ein Vollkornbrot, bitte!",              aRu:"Я хочу хлеб из цельного зерна, пожалуйста!", note:"das Vollkornbrot = хлеб из цельного зерна"},
+      {q:"Was kosten die Croissants? / Was macht das?",  qRu:"Сколько стоят круассаны? / Сколько это?",a:"0,70€ das Stück.",                                 aRu:"0,70€ за штуку.", note:"das Stück = штука · Was macht das? = Сколько стоит?"},
+      {q:"Das macht zusammen 6,05€.",                    qRu:"Итого 6,05€.",                      a:"Hier bitte! / Und 15 Cent zurück.",                aRu:"Вот, пожалуйста! / И 15 центов сдачи.", note:"15 Cent zurück = 15 центов сдачи"},
     ]},
     {tag:"Дополнительные",col:C.teal,pairs:[
-      {q:"Wo kaufen Sie Kaugummis?",               a:"Kaugummis kaufe ich an der Tankstelle. / im Kiosk.",     note:"an der Tankstelle · im Supermarkt · auf dem Markt"},
-      {q:"Kaufen Sie oft im Supermarkt ein?",      a:"Ja, ich kaufe jeden Tag ein. / Manchmal gehe ich auf den Markt.", note:"einkaufen = делать покупки · manchmal = иногда"},
-      {q:"Was magst du?",                          a:"Ich mag Wurst, aber ich mag keinen Käse.",               note:"mögen: ich mag = er/sie mag (нет -t!)"},
-      {q:"Isst du gerne Schokolade?",              a:"Ja, sehr gerne! / Nein, ich esse nicht gerne Schokolade.", note:"gerne / nicht gerne = с удовольствием / нет"},
-      {q:"Was isst man in Deutschland zum Frühstück?", a:"Man isst Brot mit Käse oder Wurst und trinkt Kaffee oder Tee.", note:"man = люди вообще · isst = как er"},
-      {q:"Kauf doch bitte Brot! → кто?",          a:"Du → Imperativ informell (du-Form)",                     note:"du kaufst → Kauf! (убери -st и du)"},
-      {q:"Kaufen Sie Milch! → какой Imperativ?",   a:"Imperativ formell (Sie-Form): Infinitiv + Sie",          note:"Sie kaufen → Kaufen Sie!"},
+      {q:"Wo kaufen Sie Kaugummis?",               qRu:"Где вы покупаете жевательную резинку?", a:"Kaugummis kaufe ich an der Tankstelle. / im Kiosk.",     aRu:"Резинку я покупаю на заправке. / в киоске.", note:"an der Tankstelle · im Supermarkt · auf dem Markt"},
+      {q:"Kaufen Sie oft im Supermarkt ein?",      qRu:"Вы часто покупаете в супермаркете?",    a:"Ja, ich kaufe jeden Tag ein. / Manchmal gehe ich auf den Markt.", aRu:"Да, я покупаю каждый день. / Иногда я хожу на рынок.", note:"einkaufen = делать покупки · manchmal = иногда"},
+      {q:"Was magst du?",                          qRu:"Что ты любишь?",                        a:"Ich mag Wurst, aber ich mag keinen Käse.",               aRu:"Я люблю колбасу, но не люблю сыр.", note:"mögen: ich mag = er/sie mag (нет -t!)"},
+      {q:"Isst du gerne Schokolade?",              qRu:"Ты любишь шоколад?",                    a:"Ja, sehr gerne! / Nein, ich esse nicht gerne Schokolade.", aRu:"Да, очень люблю! / Нет, не люблю шоколад.", note:"gerne / nicht gerne = с удовольствием / нет"},
+      {q:"Was isst man in Deutschland zum Frühstück?", qRu:"Что едят в Германии на завтрак?",   a:"Man isst Brot mit Käse oder Wurst und trinkt Kaffee oder Tee.", aRu:"Едят хлеб с сыром или колбасой и пьют кофе или чай.", note:"man = люди вообще · isst = как er"},
+      {q:"Kauf doch bitte Brot! → кто?",          qRu:"Купи, пожалуйста, хлеб! → кто?",       a:"Du → Imperativ informell (du-Form)",                     aRu:"Ты → неформальный императив (форма du)", note:"du kaufst → Kauf! (убери -st и du)"},
+      {q:"Kaufen Sie Milch! → какой Imperativ?",   qRu:"Купите молоко! → какой императив?",    a:"Imperativ formell (Sie-Form): Infinitiv + Sie",          aRu:"Формальный императив (форма Sie): инфинитив + Sie", note:"Sie kaufen → Kaufen Sie!"},
     ]},
   ],
   L7:[
     {tag:"Основные",col:C.blue,pairs:[
-      {q:"Was sind Sie von Beruf?",              a:"Ich bin Krankenpfleger. / Ich arbeite als Kellnerin.",         note:"von Beruf = по профессии · arbeite als = работаю как"},
-      {q:"Wo arbeiten Sie?",                     a:"Ich arbeite im Büro. / auf der Baustelle. / in der Bank.",    note:"im (in dem) / auf der / in der"},
-      {q:"Was müssen Sie heute machen?",         a:"Ich muss früh aufstehen. / Ich muss viel arbeiten.",          note:"müssen + Infinitiv am Ende"},
-      {q:"Kannst du mir bitte helfen?",          a:"Ja, klar, kann ich das! / Tut mir leid, ich kann nicht.",     note:"können = мочь, уметь"},
-      {q:"Was willst du heute Abend machen?",    a:"Ich will ins Kino gehen. / Ich will zu Hause bleiben.",       note:"wollen = хотеть (намерение)"},
-      {q:"Was soll ich machen?",                 a:"Du sollst viel Wasser trinken. / Sie sollen im Bett bleiben.",note:"sollen = должен (по совету/указанию)"},
-      {q:"Wie ist Ihre IBAN?",                   a:"Meine IBAN ist DE46 1003 0000 0036 2057 00.",                 note:"die IBAN = международный номер счёта"},
-      {q:"Ich möchte Geld überweisen.",          a:"Füllen Sie bitte das Überweisungsformular aus.",              note:"überweisen = переводить деньги"},
+      {q:"Was sind Sie von Beruf?",              qRu:"Кто вы по профессии?",              a:"Ich bin Krankenpfleger. / Ich arbeite als Kellnerin.",         aRu:"Я медбрат. / Я работаю официанткой.", note:"von Beruf = по профессии · arbeite als = работаю как"},
+      {q:"Wo arbeiten Sie?",                     qRu:"Где вы работаете?",                 a:"Ich arbeite im Büro. / auf der Baustelle. / in der Bank.",    aRu:"Я работаю в офисе. / на стройке. / в банке.", note:"im (in dem) / auf der / in der"},
+      {q:"Was müssen Sie heute machen?",         qRu:"Что вам нужно сделать сегодня?",    a:"Ich muss früh aufstehen. / Ich muss viel arbeiten.",          aRu:"Мне нужно рано встать. / Мне нужно много работать.", note:"müssen + Infinitiv am Ende"},
+      {q:"Kannst du mir bitte helfen?",          qRu:"Ты можешь мне помочь?",             a:"Ja, klar, kann ich das! / Tut mir leid, ich kann nicht.",     aRu:"Да, конечно могу! / Мне жаль, я не могу.", note:"können = мочь, уметь"},
+      {q:"Was willst du heute Abend machen?",    qRu:"Что ты хочешь делать сегодня вечером?",a:"Ich will ins Kino gehen. / Ich will zu Hause bleiben.",       aRu:"Я хочу пойти в кино. / Я хочу остаться дома.", note:"wollen = хотеть (намерение)"},
+      {q:"Was soll ich machen?",                 qRu:"Что мне следует делать?",           a:"Du sollst viel Wasser trinken. / Sie sollen im Bett bleiben.",aRu:"Тебе следует пить много воды. / Вам следует оставаться в постели.", note:"sollen = должен (по совету/указанию)"},
+      {q:"Wie ist Ihre IBAN?",                   qRu:"Какой у вас IBAN?",                 a:"Meine IBAN ist DE46 1003 0000 0036 2057 00.",                 aRu:"Мой IBAN DE46 1003 0000 0036 2057 00.", note:"die IBAN = международный номер счёта"},
+      {q:"Ich möchte Geld überweisen.",          qRu:"Я хочу перевести деньги.",          a:"Füllen Sie bitte das Überweisungsformular aus.",              aRu:"Заполните, пожалуйста, бланк перевода.", note:"überweisen = переводить деньги"},
     ]},
     {tag:"Дополнительные",col:C.orange,pairs:[
-      {q:"Wie komme ich zum Bahnhof?",           a:"Fahren Sie mit dem Bus. / Gehen Sie zu Fuß.",                note:"zu Fuß = пешком · mit dem = Dativ"},
-      {q:"Wo ist die Bank?",                     a:"Die Bank ist beim Bahnhof. / in der Nähe vom Supermarkt.",   note:"beim (bei+dem) · vom (von+dem)"},
-      {q:"Wohin fährst du?",                     a:"Ich fahre zum Arzt. / zur Schule. / nach Hause.",            note:"zum (zu+dem) · zur (zu+der) · nach Hause"},
-      {q:"Woher kommst du?",                     a:"Ich komme vom Arzt. / von zu Hause. / aus der Ukraine.",     note:"vom (von+dem) · aus = из"},
-      {q:"Das Essen schmeckt mir sehr gut!",     a:"Das freut mich! / Ja, wirklich lecker!",                    note:"schmeckt mir = мне нравится вкус"},
-      {q:"Nein, danke, ich bin satt.",           a:"Möchtest du wirklich nichts mehr?",                          note:"satt = сытый · nichts mehr = ничего больше"},
+      {q:"Wie komme ich zum Bahnhof?",           qRu:"Как мне добраться до вокзала?",     a:"Fahren Sie mit dem Bus. / Gehen Sie zu Fuß.",                aRu:"Поезжайте на автобусе. / Идите пешком.", note:"zu Fuß = пешком · mit dem = Dativ"},
+      {q:"Wo ist die Bank?",                     qRu:"Где банк?",                         a:"Die Bank ist beim Bahnhof. / in der Nähe vom Supermarkt.",   aRu:"Банк у вокзала. / рядом с супермаркетом.", note:"beim (bei+dem) · vom (von+dem)"},
+      {q:"Wohin fährst du?",                     qRu:"Куда ты едешь?",                    a:"Ich fahre zum Arzt. / zur Schule. / nach Hause.",            aRu:"Я еду к врачу. / в школу. / домой.", note:"zum (zu+dem) · zur (zu+der) · nach Hause"},
+      {q:"Woher kommst du?",                     qRu:"Откуда ты идёшь?",                  a:"Ich komme vom Arzt. / von zu Hause. / aus der Ukraine.",     aRu:"Я иду от врача. / из дома. / из Украины.", note:"vom (von+dem) · aus = из"},
+      {q:"Das Essen schmeckt mir sehr gut!",     qRu:"Еда очень вкусная!",                a:"Das freut mich! / Ja, wirklich lecker!",                    aRu:"Я рад(а)! / Да, действительно вкусно!", note:"schmeckt mir = мне нравится вкус"},
+      {q:"Nein, danke, ich bin satt.",           qRu:"Нет, спасибо, я сыт(а).",           a:"Möchtest du wirklich nichts mehr?",                          aRu:"Ты точно больше ничего не хочешь?", note:"satt = сытый · nichts mehr = ничего больше"},
     ]},
   ],
   L8:[
     {tag:"Основные",col:C.red,pairs:[
-      {q:"Praxis Dr. Arslan, guten Tag.",                     a:"Guten Tag, ich hätte gern einen Termin.",            note:"Termin = запись на приём"},
-      {q:"Waren Sie schon einmal hier?",                      a:"Ja, ich war schon mal bei Ihnen.",                   note:"schon mal = уже как-то раз"},
-      {q:"Geht es bei Ihnen am Montag um 10 Uhr?",           a:"Nein, da kann ich leider nicht. Ich muss arbeiten.", note:"leider = к сожалению"},
-      {q:"Was fehlt Ihnen denn?",                             a:"Mir geht es schlecht. Ich bin erkältet.",            note:"Was fehlt? = Что беспокоит?"},
-      {q:"Haben Sie Husten oder Schnupfen?",                  a:"Ja, beides. Und ich habe etwas Fieber.",            note:"beides = и то и другое"},
-      {q:"Machen Sie bitte den Mund auf.",                    a:"Ihr Hals ist rot. Sie haben eine Erkältung.",       note:"aufmachen = открывать · rot = красный"},
-      {q:"Sie sollen viel Tee trinken und schlafen.",         a:"Muss ich auch Tabletten nehmen?",                   note:"sollen = по назначению врача"},
-      {q:"Am Freitag kommen Sie noch einmal zur Kontrolle.",  a:"Vielen Dank, Frau Doktor. Auf Wiedersehen!",        note:"Kontrolle = контрольный осмотр"},
-      {q:"Holst du mich morgen ab?",                         a:"Ja, klar. Wann soll ich dich abholen?",             note:"mich / dich — Akkusativ Personalpronomen"},
-      {q:"Rufst du deinen Chef an?",                         a:"Ja, ich rufe ihn an.",                              note:"ihn = er (Akkusativ)"},
+      {q:"Praxis Dr. Arslan, guten Tag.",                     qRu:"Кабинет доктора Арслана, добрый день.", a:"Guten Tag, ich hätte gern einen Termin.",            aRu:"Добрый день, я хотел(а) бы записаться на приём.", note:"Termin = запись на приём"},
+      {q:"Waren Sie schon einmal hier?",                      qRu:"Вы уже были у нас?",                    a:"Ja, ich war schon mal bei Ihnen.",                   aRu:"Да, я уже был(а) у вас.", note:"schon mal = уже как-то раз"},
+      {q:"Geht es bei Ihnen am Montag um 10 Uhr?",           qRu:"Вам подходит понедельник в 10 часов?",   a:"Nein, da kann ich leider nicht. Ich muss arbeiten.", aRu:"Нет, к сожалению не могу. Мне нужно работать.", note:"leider = к сожалению"},
+      {q:"Was fehlt Ihnen denn?",                             qRu:"Что вас беспокоит?",                    a:"Mir geht es schlecht. Ich bin erkältet.",            aRu:"Мне плохо. Я простужен(а).", note:"Was fehlt? = Что беспокоит?"},
+      {q:"Haben Sie Husten oder Schnupfen?",                  qRu:"У вас кашель или насморк?",             a:"Ja, beides. Und ich habe etwas Fieber.",            aRu:"Да, и то и другое. И у меня небольшая температура.", note:"beides = и то и другое"},
+      {q:"Machen Sie bitte den Mund auf.",                    qRu:"Откройте, пожалуйста, рот.",            a:"Ihr Hals ist rot. Sie haben eine Erkältung.",       aRu:"У вас красное горло. У вас простуда.", note:"aufmachen = открывать · rot = красный"},
+      {q:"Sie sollen viel Tee trinken und schlafen.",         qRu:"Вам следует пить много чая и спать.",   a:"Muss ich auch Tabletten nehmen?",                   aRu:"Мне нужно ещё принимать таблетки?", note:"sollen = по назначению врача"},
+      {q:"Am Freitag kommen Sie noch einmal zur Kontrolle.",  qRu:"В пятницу приходите ещё раз на осмотр.",a:"Vielen Dank, Frau Doktor. Auf Wiedersehen!",        aRu:"Большое спасибо, доктор. До свидания!", note:"Kontrolle = контрольный осмотр"},
+      {q:"Holst du mich morgen ab?",                         qRu:"Ты заберёшь меня завтра?",              a:"Ja, klar. Wann soll ich dich abholen?",             aRu:"Да, конечно. Когда мне тебя забрать?", note:"mich / dich — Akkusativ Personalpronomen"},
+      {q:"Rufst du deinen Chef an?",                         qRu:"Ты звонишь своему шефу?",                a:"Ja, ich rufe ihn an.",                              aRu:"Да, я звоню ему.", note:"ihn = er (Akkusativ)"},
     ]},
     {tag:"Дополнительные",col:C.purple,pairs:[
-      {q:"Haben Sie viel Stress im Beruf?",                  a:"Ja, meine Arbeit ist sehr anstrengend.",            note:"anstrengend = изматывающий"},
-      {q:"Rauchen Sie?",                                     a:"Nein, ich rauche nicht. / Ja, leider.",             note:"rauchen = курить"},
-      {q:"Haben Sie Allergien?",                             a:"Ja, gegen Penicillin. / Nein, keine Allergien.",    note:"die Allergie + gegen = против"},
-      {q:"Das war Zufall!",                                  a:"Was für ein Zufall! / So ein Zufall!",              note:"der Zufall = случайность"},
-      {q:"Gute Besserung!",                                  a:"Danke schön! Das brauche ich!",                     note:"Gute Besserung! = выздоравливайте!"},
-      {q:"Du solltest mehr schlafen.",                       a:"Ich weiß, aber ich habe keine Zeit.",               note:"sollte = Konjunktiv II, мягкий совет"},
+      {q:"Haben Sie viel Stress im Beruf?",                  qRu:"У вас много стресса на работе?",        a:"Ja, meine Arbeit ist sehr anstrengend.",            aRu:"Да, моя работа очень изматывающая.", note:"anstrengend = изматывающий"},
+      {q:"Rauchen Sie?",                                     qRu:"Вы курите?",                            a:"Nein, ich rauche nicht. / Ja, leider.",             aRu:"Нет, я не курю. / Да, к сожалению.", note:"rauchen = курить"},
+      {q:"Haben Sie Allergien?",                             qRu:"У вас есть аллергии?",                  a:"Ja, gegen Penicillin. / Nein, keine Allergien.",    aRu:"Да, на пенициллин. / Нет, аллергий нет.", note:"die Allergie + gegen = против"},
+      {q:"Das war Zufall!",                                  qRu:"Вот это совпадение!",                   a:"Was für ein Zufall! / So ein Zufall!",              aRu:"Какое совпадение! / Вот так совпадение!", note:"der Zufall = случайность"},
+      {q:"Gute Besserung!",                                  qRu:"Выздоравливайте!",                      a:"Danke schön! Das brauche ich!",                     aRu:"Большое спасибо! Это мне нужно!", note:"Gute Besserung! = выздоравливайте!"},
+      {q:"Du solltest mehr schlafen.",                       qRu:"Тебе следует больше спать.",            a:"Ich weiß, aber ich habe keine Zeit.",               aRu:"Я знаю, но у меня нет времени.", note:"sollte = Konjunktiv II, мягкий совет"},
     ]},
   ],
   L9:[
     {tag:"Основные",col:C.blue,pairs:[
-      {q:"Wie oft benutzen Sie das Auto?",                   a:"Ich benutze es täglich. / Ich benutze es selten.", note:"täglich/oft/manchmal/selten/nie",      fm:"f"},
-      {q:"Welche Verkehrsmittel benutzen Sie?",              a:"Ich fahre mit dem Fahrrad zur Arbeit.",            note:"mit + Dativ: mit dem/der",              fm:"f"},
-      {q:"Wie kommst du zur Arbeit?",                        a:"Ich fahre mit dem Bus.",                           note:"informell",                             fm:"i"},
-      {q:"Entschuldigung, wie komme ich zum Bahnhof?",       a:"Gehen Sie geradeaus und dann links.",              note:"Wegbeschreibung",                       fm:"f"},
-      {q:"Ist es weit von hier?",                            a:"Nein, es ist ganz in der Nähe.",                   note:"in der Nähe = рядом",                   fm:"f"},
-      {q:"Haben Sie einen Führerschein?",                    a:"Ja, ich habe einen Führerschein. / Nein, ich habe keinen.", note:"einen → keinen (Akkusativ)",   fm:"f"},
-      {q:"Darf man hier parken?",                            a:"Nein, hier ist Parkverbot.",                       note:"dürfen = разрешено ли",                 fm:"f"},
+      {q:"Wie oft benutzen Sie das Auto?",                   qRu:"Как часто вы пользуетесь машиной?",      a:"Ich benutze es täglich. / Ich benutze es selten.", aRu:"Я пользуюсь ею ежедневно. / Я пользуюсь ею редко.", note:"täglich/oft/manchmal/selten/nie",      fm:"f"},
+      {q:"Welche Verkehrsmittel benutzen Sie?",              qRu:"Каким транспортом вы пользуетесь?",       a:"Ich fahre mit dem Fahrrad zur Arbeit.",            aRu:"Я езжу на работу на велосипеде.", note:"mit + Dativ: mit dem/der",              fm:"f"},
+      {q:"Wie kommst du zur Arbeit?",                        qRu:"Как ты добираешься на работу?",           a:"Ich fahre mit dem Bus.",                           aRu:"Я езжу на автобусе.", note:"informell",                             fm:"i"},
+      {q:"Entschuldigung, wie komme ich zum Bahnhof?",       qRu:"Извините, как мне пройти на вокзал?",     a:"Gehen Sie geradeaus und dann links.",              aRu:"Идите прямо, потом налево.", note:"Wegbeschreibung",                       fm:"f"},
+      {q:"Ist es weit von hier?",                            qRu:"Это далеко отсюда?",                      a:"Nein, es ist ganz in der Nähe.",                   aRu:"Нет, это совсем рядом.", note:"in der Nähe = рядом",                   fm:"f"},
+      {q:"Haben Sie einen Führerschein?",                    qRu:"У вас есть водительские права?",          a:"Ja, ich habe einen Führerschein. / Nein, ich habe keinen.", aRu:"Да, у меня есть права. / Нет, у меня их нет.", note:"einen → keinen (Akkusativ)",   fm:"f"},
+      {q:"Darf man hier parken?",                            qRu:"Здесь можно парковаться?",                a:"Nein, hier ist Parkverbot.",                       aRu:"Нет, здесь парковка запрещена.", note:"dürfen = разрешено ли",                 fm:"f"},
     ]},
     {tag:"Дополнительные",col:C.teal,pairs:[
-      {q:"Wo ist die nächste Haltestelle?",                  a:"Die Haltestelle ist um die Ecke.",                 note:"um die Ecke = за углом"},
-      {q:"Fährt der Bus zum Flughafen?",                     a:"Ja, der Bus 100 fährt zum Flughafen.",             note:"Liniennummer"},
-      {q:"Wie lange dauert die Fahrt?",                      a:"Die Fahrt dauert 20 Minuten.",                     note:"dauern = длиться"},
-      {q:"Muss ich umsteigen?",                              a:"Ja, Sie müssen einmal umsteigen.",                 note:"umsteigen = пересаживаться"},
-      {q:"Was bedeutet dieses Schild?",                      a:"Das bedeutet Vorfahrt / Halteverbot.",             note:"Verkehrsschilder"},
+      {q:"Wo ist die nächste Haltestelle?",                  qRu:"Где ближайшая остановка?",                a:"Die Haltestelle ist um die Ecke.",                 aRu:"Остановка за углом.", note:"um die Ecke = за углом"},
+      {q:"Fährt der Bus zum Flughafen?",                     qRu:"Этот автобус едет в аэропорт?",           a:"Ja, der Bus 100 fährt zum Flughafen.",             aRu:"Да, автобус 100 едет в аэропорт.", note:"Liniennummer"},
+      {q:"Wie lange dauert die Fahrt?",                      qRu:"Сколько длится поездка?",                 a:"Die Fahrt dauert 20 Minuten.",                     aRu:"Поездка длится 20 минут.", note:"dauern = длиться"},
+      {q:"Muss ich umsteigen?",                              qRu:"Мне нужно делать пересадку?",             a:"Ja, Sie müssen einmal umsteigen.",                 aRu:"Да, вам нужно сделать одну пересадку.", note:"umsteigen = пересаживаться"},
+      {q:"Was bedeutet dieses Schild?",                      qRu:"Что означает этот знак?",                 a:"Das bedeutet Vorfahrt / Halteverbot.",             aRu:"Это означает «главная дорога» / «остановка запрещена».", note:"Verkehrsschilder"},
     ]},
   ],
   L10:[
     {tag:"Основные",col:C.purple,pairs:[
-      {q:"Was haben Sie gestern gemacht?",                   a:"Ich habe eingekauft und dann Musik gehört.",       note:"Perfekt: haben + Partizip II",          fm:"f"},
-      {q:"Sind Sie gestern ausgegangen?",                    a:"Ja, ich bin ins Kino gegangen.",                   note:"gehen → sein",                          fm:"f"},
-      {q:"Wo haben Sie früher gelebt?",                      a:"Früher habe ich in der Ukraine gelebt.",           note:"früher = раньше",                       fm:"f"},
-      {q:"Wann sind Sie nach Deutschland gekommen?",         a:"Ich bin 2022 nach Deutschland gekommen.",          note:"kommen → sein",                         fm:"f"},
-      {q:"Seit wann sind Sie in Deutschland?",                a:"Ich bin seit 2022 in Deutschland.",               note:"seit + Präsens, nicht Perfekt!",        fm:"f"},
-      {q:"Was haben Sie am Wochenende gemacht?",             a:"Wir haben einen Ausflug gemacht.",                 note:"einen Ausflug machen",                  fm:"f"},
-      {q:"Wie war Ihr Wochenende?",                          a:"Es war toll! Wir sind spazieren gegangen.",        note:"war = Präteritum von sein",             fm:"f"},
+      {q:"Was haben Sie gestern gemacht?",                   qRu:"Что вы делали вчера?",                a:"Ich habe eingekauft und dann Musik gehört.",       aRu:"Я сделал(а) покупки, потом слушал(а) музыку.", note:"Perfekt: haben + Partizip II",          fm:"f"},
+      {q:"Sind Sie gestern ausgegangen?",                    qRu:"Вы вчера выходили куда-то?",           a:"Ja, ich bin ins Kino gegangen.",                   aRu:"Да, я ходил(а) в кино.", note:"gehen → sein",                          fm:"f"},
+      {q:"Wo haben Sie früher gelebt?",                      qRu:"Где вы жили раньше?",                  a:"Früher habe ich in der Ukraine gelebt.",           aRu:"Раньше я жил(а) в Украине.", note:"früher = раньше",                       fm:"f"},
+      {q:"Wann sind Sie nach Deutschland gekommen?",         qRu:"Когда вы приехали в Германию?",        a:"Ich bin 2022 nach Deutschland gekommen.",          aRu:"Я приехал(а) в Германию в 2022 году.", note:"kommen → sein",                         fm:"f"},
+      {q:"Seit wann sind Sie in Deutschland?",                qRu:"С какого времени вы в Германии?",     a:"Ich bin seit 2022 in Deutschland.",               aRu:"Я в Германии с 2022 года.", note:"seit + Präsens, nicht Perfekt!",        fm:"f"},
+      {q:"Was haben Sie am Wochenende gemacht?",             qRu:"Что вы делали на выходных?",            a:"Wir haben einen Ausflug gemacht.",                 aRu:"Мы совершили прогулку/поездку.", note:"einen Ausflug machen",                  fm:"f"},
+      {q:"Wie war Ihr Wochenende?",                          qRu:"Как прошли ваши выходные?",             a:"Es war toll! Wir sind spazieren gegangen.",        aRu:"Было отлично! Мы гуляли.", note:"war = Präteritum von sein",             fm:"f"},
     ]},
     {tag:"Дополнительные",col:C.teal,pairs:[
-      {q:"Haben Sie Deutsch gelernt?",                       a:"Ja, ich habe einen Kurs gemacht.",                 note:"einen Kurs machen"},
-      {q:"Sind Sie verheiratet?",                            a:"Nein, ich bin geschieden. / Ja, ich bin verheiratet.", note:"ledig/verheiratet/geschieden"},
-      {q:"Wie lange haben Sie dort gewohnt?",                a:"Ich habe dort sechs Jahre gewohnt.",               note:"Zeitdauer + Perfekt"},
-      {q:"Was hat Ihnen an der Reise gefallen?",             a:"Das Brandenburger Tor hat mir sehr gut gefallen.", note:"gefallen + Dativ"},
+      {q:"Haben Sie Deutsch gelernt?",                       qRu:"Вы изучали немецкий?",                 a:"Ja, ich habe einen Kurs gemacht.",                 aRu:"Да, я прошёл(шла) курс.", note:"einen Kurs machen"},
+      {q:"Sind Sie verheiratet?",                            qRu:"Вы женаты/замужем?",                    a:"Nein, ich bin geschieden. / Ja, ich bin verheiratet.", aRu:"Нет, я в разводе. / Да, я женат(замужем).", note:"ledig/verheiratet/geschieden"},
+      {q:"Wie lange haben Sie dort gewohnt?",                qRu:"Сколько вы там жили?",                  a:"Ich habe dort sechs Jahre gewohnt.",               aRu:"Я жил(а) там шесть лет.", note:"Zeitdauer + Perfekt"},
+      {q:"Was hat Ihnen an der Reise gefallen?",             qRu:"Что вам понравилось в поездке?",        a:"Das Brandenburger Tor hat mir sehr gut gefallen.", aRu:"Мне очень понравились Бранденбургские ворота.", note:"gefallen + Dativ"},
     ]},
   ],
   L11:[
     {tag:"Основные",col:C.green,pairs:[
-      {q:"Verzeihung, können Sie mir helfen?",               a:"Ja, gern. Was kann ich für Sie tun?",              note:"helfen + Dativ",                        fm:"f"},
-      {q:"Wo finde ich das Standesamt?",                     a:"Es ist im dritten Stock, Zimmer 351.",             note:"Stockwerk + Zimmer",                    fm:"f"},
-      {q:"Wie bekomme ich eine Wohnung?",                    a:"Man muss eine Wohnung beantragen und Formulare ausfüllen.", note:"beantragen · ausfüllen",         fm:"f"},
-      {q:"Wem gehört das?",                                  a:"Das gehört mir.",                                  note:"gehören + Dativ",                       fm:"f"},
-      {q:"Können Sie mir helfen, das Formular auszufüllen?", a:"Ja, kein Problem.",                                note:"um Hilfe bitten",                       fm:"f"},
-      {q:"Was brauche ich für den Antrag?",                  a:"Sie brauchen die Geburtsurkunde und den Pass.",    note:"für + Akkusativ",                       fm:"f"},
-      {q:"Wann kann ich den Personalausweis abholen?",       a:"In drei Wochen.",                                  note:"abholen = забрать"},
+      {q:"Verzeihung, können Sie mir helfen?",               qRu:"Извините, вы можете мне помочь?",       a:"Ja, gern. Was kann ich für Sie tun?",              aRu:"Да, охотно. Что я могу для вас сделать?", note:"helfen + Dativ",                        fm:"f"},
+      {q:"Wo finde ich das Standesamt?",                     qRu:"Где мне найти ЗАГС?",                   a:"Es ist im dritten Stock, Zimmer 351.",             aRu:"Он на третьем этаже, кабинет 351.", note:"Stockwerk + Zimmer",                    fm:"f"},
+      {q:"Wie bekomme ich eine Wohnung?",                    qRu:"Как мне получить квартиру?",            a:"Man muss eine Wohnung beantragen und Formulare ausfüllen.", aRu:"Нужно подать заявку на квартиру и заполнить формы.", note:"beantragen · ausfüllen",         fm:"f"},
+      {q:"Wem gehört das?",                                  qRu:"Кому это принадлежит?",                 a:"Das gehört mir.",                                  aRu:"Это принадлежит мне.", note:"gehören + Dativ",                       fm:"f"},
+      {q:"Können Sie mir helfen, das Formular auszufüllen?", qRu:"Вы можете помочь мне заполнить бланк?", a:"Ja, kein Problem.",                                aRu:"Да, без проблем.", note:"um Hilfe bitten",                       fm:"f"},
+      {q:"Was brauche ich für den Antrag?",                  qRu:"Что мне нужно для заявления?",          a:"Sie brauchen die Geburtsurkunde und den Pass.",    aRu:"Вам нужны свидетельство о рождении и паспорт.", note:"für + Akkusativ",                       fm:"f"},
+      {q:"Wann kann ich den Personalausweis abholen?",       qRu:"Когда я могу забрать удостоверение личности?", a:"In drei Wochen.",                                  aRu:"Через три недели.", note:"abholen = забрать"},
     ]},
     {tag:"Дополнительные",col:C.blue,pairs:[
-      {q:"Wann sind Sie geboren?",                           a:"Ich bin am 4. Mai 1981 geboren.",                  note:"Datum: am + Ordinalzahl"},
-      {q:"Was ist Ihre Staatsangehörigkeit?",                a:"Meine Staatsangehörigkeit ist ukrainisch.",        note:"Staatsangehörigkeit = гражданство"},
-      {q:"Sind Sie berufstätig?",                            a:"Ja, ich arbeite als … / Nein, ich bin nicht berufstätig.", note:"berufstätig = работающий"},
-      {q:"Können Sie das bitte wiederholen?",                a:"Ja, natürlich. Wie schreibt man das? Können Sie buchstabieren?", note:"wiederholen · buchstabieren"},
+      {q:"Wann sind Sie geboren?",                           qRu:"Когда вы родились?",                    a:"Ich bin am 4. Mai 1981 geboren.",                  aRu:"Я родился(лась) 4 мая 1981 года.", note:"Datum: am + Ordinalzahl"},
+      {q:"Was ist Ihre Staatsangehörigkeit?",                qRu:"Какое у вас гражданство?",              a:"Meine Staatsangehörigkeit ist ukrainisch.",        aRu:"Моё гражданство украинское.", note:"Staatsangehörigkeit = гражданство"},
+      {q:"Sind Sie berufstätig?",                            qRu:"Вы работаете?",                         a:"Ja, ich arbeite als … / Nein, ich bin nicht berufstätig.", aRu:"Да, я работаю как … / Нет, я не работаю.", note:"berufstätig = работающий"},
+      {q:"Können Sie das bitte wiederholen?",                qRu:"Вы можете, пожалуйста, повторить?",     a:"Ja, natürlich. Wie schreibt man das? Können Sie buchstabieren?", aRu:"Да, конечно. Как это пишется? Вы можете произнести по буквам?", note:"wiederholen · buchstabieren"},
     ]},
   ],
   L12:[
     {tag:"Основные",col:C.red,pairs:[
-      {q:"Wie gefällt dir der Rock?",                        a:"Er gefällt mir sehr gut. / Er gefällt mir nicht so gut.", note:"gefallen + Dativ"},
-      {q:"Wie steht mir die Farbe?",                         a:"Die Farbe steht dir gut. Sie passt gut zu deinen Augen.", note:"stehen + Dativ"},
-      {q:"Passt Ihnen die Hose?",                            a:"Nein, sie ist mir zu klein. Haben Sie eine größere Größe?", note:"passen + Dativ"},
-      {q:"Welche Größe haben Sie?",                          a:"Ich habe Größe 40.",                               note:"welche + Größe"},
-      {q:"Kann ich das Kleid anprobieren?",                  a:"Ja, natürlich. Die Umkleidekabine ist dort.",       note:"anprobieren"},
-      {q:"Wo kann ich bezahlen?",                            a:"Die Kasse ist gleich hier vorne.",                  note:"bezahlen · die Kasse"},
-      {q:"Haben Sie das auch in Blau?",                      a:"Ja, einen Moment, ich schaue nach.",               note:"Farbe + in + Dativ"},
+      {q:"Wie gefällt dir der Rock?",                        qRu:"Как тебе юбка?",                        a:"Er gefällt mir sehr gut. / Er gefällt mir nicht so gut.", aRu:"Она мне очень нравится. / Она мне не очень нравится.", note:"gefallen + Dativ"},
+      {q:"Wie steht mir die Farbe?",                         qRu:"Как мне этот цвет?",                    a:"Die Farbe steht dir gut. Sie passt gut zu deinen Augen.", aRu:"Этот цвет тебе идёт. Он хорошо подходит к твоим глазам.", note:"stehen + Dativ"},
+      {q:"Passt Ihnen die Hose?",                            qRu:"Вам подходят брюки?",                   a:"Nein, sie ist mir zu klein. Haben Sie eine größere Größe?", aRu:"Нет, они мне малы. У вас есть размер побольше?", note:"passen + Dativ"},
+      {q:"Welche Größe haben Sie?",                          qRu:"Какой у вас размер?",                   a:"Ich habe Größe 40.",                               aRu:"У меня размер 40.", note:"welche + Größe"},
+      {q:"Kann ich das Kleid anprobieren?",                  qRu:"Могу я примерить платье?",              a:"Ja, natürlich. Die Umkleidekabine ist dort.",       aRu:"Да, конечно. Примерочная там.", note:"anprobieren"},
+      {q:"Wo kann ich bezahlen?",                            qRu:"Где я могу заплатить?",                 a:"Die Kasse ist gleich hier vorne.",                  aRu:"Касса прямо здесь впереди.", note:"bezahlen · die Kasse"},
+      {q:"Haben Sie das auch in Blau?",                      qRu:"У вас есть это в синем цвете?",         a:"Ja, einen Moment, ich schaue nach.",               aRu:"Да, минутку, я посмотрю.", note:"Farbe + in + Dativ"},
     ]},
     {tag:"Дополнительные",col:C.orange,pairs:[
-      {q:"Wo kaufst du am liebsten Kleidung?",               a:"Ich kaufe am liebsten im Kaufhaus, aber manchmal auch auf dem Flohmarkt.", note:"Kaufhaus · Flohmarkt"},
-      {q:"Warum kaufst du gebrauchte Kleidung?",             a:"Sie ist günstiger und praktischer für die Umwelt.", note:"gebraucht = б/у"},
-      {q:"Wie sieht das Hemd aus?",                          a:"Es sieht sehr schick aus, aber ein bisschen altmodisch.", note:"aussehen"},
-      {q:"Worüber habt ihr euch unterhalten?",               a:"Wir haben uns über die neue Kleidung unterhalten.",note:"sich unterhalten"},
+      {q:"Wo kaufst du am liebsten Kleidung?",               qRu:"Где ты предпочитаешь покупать одежду?",  a:"Ich kaufe am liebsten im Kaufhaus, aber manchmal auch auf dem Flohmarkt.", aRu:"Я предпочитаю покупать в универмаге, но иногда и на блошином рынке.", note:"Kaufhaus · Flohmarkt"},
+      {q:"Warum kaufst du gebrauchte Kleidung?",             qRu:"Почему ты покупаешь одежду б/у?",        a:"Sie ist günstiger und praktischer für die Umwelt.", aRu:"Она дешевле и лучше для экологии.", note:"gebraucht = б/у"},
+      {q:"Wie sieht das Hemd aus?",                          qRu:"Как смотрится эта рубашка?",             a:"Es sieht sehr schick aus, aber ein bisschen altmodisch.", aRu:"Она смотрится очень стильно, но немного старомодно.", note:"aussehen"},
+      {q:"Worüber habt ihr euch unterhalten?",               qRu:"О чём вы разговаривали?",                a:"Wir haben uns über die neue Kleidung unterhalten.",aRu:"Мы разговаривали о новой одежде.", note:"sich unterhalten"},
     ]},
   ],
 };
@@ -2996,9 +2996,11 @@ function DialogCards({lId}){
                     </div>
                     {isO&&(
                       <div style={{marginTop:10,paddingTop:10,borderTop:`1px solid ${C.border}`}}>
+                        {p.qRu&&<div style={{fontSize:12,color:C.muted,marginBottom:8,fontStyle:"italic"}}>🌐 {p.qRu}</div>}
                         <div style={{background:g.col+"15",border:`1px solid ${g.col}40`,borderRadius:8,padding:"10px 12px",marginBottom:p.note?8:0}}>
                           <div style={{fontSize:12,color:g.col,fontWeight:700,marginBottom:3}}>ОТВЕТ</div>
                           <div style={{fontSize:14,fontWeight:600,color:C.text}}>{p.a}</div>
+                          {p.aRu&&<div style={{fontSize:12,color:C.muted,marginTop:4}}>{p.aRu}</div>}
                         </div>
                         {p.note&&<div style={{background:C.yellowBg,border:`1px solid ${C.yellow}35`,borderRadius:8,padding:"6px 10px",fontSize:13,color:C.yellow}}>💡 {p.note}</div>}
                       </div>
@@ -3017,13 +3019,28 @@ function DialogCards({lId}){
         if(!all.length)return <div style={{color:C.muted,fontSize:14,textAlign:"center",padding:20}}>Нет фраз</div>;
         return(
           <div style={{background:C.card,border:`1px solid ${C.border}`,borderRadius:14,overflow:"hidden"}}>
-            {all.map((p,pi)=>(
-              <div key={pi} style={{padding:"10px 14px",borderBottom:pi<all.length-1?`1px solid ${C.border}30`:"none"}}>
-                <div style={{fontSize:14,fontWeight:700,color:C.text,marginBottom:4}}>{p.q}</div>
-                <div style={{fontSize:13,color:p.col,marginBottom:p.note?3:0}}>↩ {p.a}</div>
-                {p.note&&<div style={{fontSize:12,color:C.muted,marginTop:2}}>📝 {p.note}</div>}
-              </div>
-            ))}
+            {all.map((p,pi)=>{
+              const k=`ph-${pi}`;const isO=openItems.has(k);
+              return(
+                <div key={pi} onClick={()=>togItem(k)}
+                  style={{padding:"10px 14px",borderBottom:pi<all.length-1?`1px solid ${C.border}30`:"none",cursor:"pointer"}}>
+                  <div style={{display:"flex",justifyContent:"space-between",gap:8}}>
+                    <div style={{flex:1}}>
+                      <div style={{fontSize:14,fontWeight:700,color:C.text,marginBottom:4}}>{p.q}</div>
+                      <div style={{fontSize:13,color:p.col,marginBottom:p.note?3:0}}>↩ {p.a}</div>
+                    </div>
+                    <span style={{color:C.muted,fontSize:13,flexShrink:0}}>{isO?"▲":"▼"}</span>
+                  </div>
+                  {p.note&&<div style={{fontSize:12,color:C.muted,marginTop:2}}>📝 {p.note}</div>}
+                  {isO&&(p.qRu||p.aRu)&&(
+                    <div style={{marginTop:8,paddingTop:8,borderTop:`1px solid ${C.border}30`,fontSize:12,color:C.muted}}>
+                      {p.qRu&&<div>🌐 {p.qRu}</div>}
+                      {p.aRu&&<div style={{marginTop:p.qRu?3:0}}>↩ {p.aRu}</div>}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
           </div>
         );
       })()}
@@ -10077,20 +10094,20 @@ function T12A(){
   ];
   const artikelVoll=[
     {kasus:"Nominativ",vals:["der","das","die","die"]},
-    {kasus:"Dativ",    vals:["dem","dem","der","den"]},
     {kasus:"Akkusativ",vals:["den","das","die","die"]},
+    {kasus:"Dativ",    vals:["dem","dem","der","den"]},
     {kasus:"Genitiv",  vals:["des","des","der","der"]},
   ];
   const kasusErklaerung=[
     {k:"Nominativ",frage:"кто? что?",ru:"подлежащее — кто/что делает действие",bsp:"Der Anzug ist neu.",bspRu:"Костюм новый."},
-    {k:"Dativ",    frage:"кому? чему?",ru:"косвенное дополнение — кому что-то дают/идёт/подходит",bsp:"Der Anzug gefällt dem Mann.",bspRu:"Костюм нравится мужчине."},
     {k:"Akkusativ",frage:"кого? что?",ru:"прямое дополнение — что вижу/покупаю/беру",bsp:"Ich kaufe den Anzug.",bspRu:"Я покупаю костюм."},
+    {k:"Dativ",    frage:"кому? чему?",ru:"косвенное дополнение — кому что-то дают/идёт/подходит",bsp:"Der Anzug gefällt dem Mann.",bspRu:"Костюм нравится мужчине."},
     {k:"Genitiv",  frage:"чей? кого?/чего?",ru:"принадлежность — чей это предмет",bsp:"die Farbe des Anzugs",bspRu:"цвет костюма"},
   ];
   const adjDeklVoll=[
     {kasus:"Nominativ",end:["-e","-e","-e","-en"],bsp:["der neue Anzug","das neue Hemd","die neue Bluse","die neuen Schuhe"]},
-    {kasus:"Dativ",    end:["-en","-en","-en","-en"],bsp:["dem neuen Anzug","dem neuen Hemd","der neuen Bluse","den neuen Schuhen"]},
     {kasus:"Akkusativ",end:["-en","-e","-e","-en"],bsp:["den neuen Anzug","das neue Hemd","die neue Bluse","die neuen Schuhe"]},
+    {kasus:"Dativ",    end:["-en","-en","-en","-en"],bsp:["dem neuen Anzug","dem neuen Hemd","der neuen Bluse","den neuen Schuhen"]},
     {kasus:"Genitiv",  end:["-en","-en","-en","-en"],bsp:["des neuen Anzugs","des neuen Hemds","der neuen Bluse","der neuen Schuhe"]},
   ];
   const dativVerben=[
@@ -10706,9 +10723,11 @@ function DialogFragenPage(){
                           </div>
                           {isO&&(
                             <div style={{marginTop:10,paddingTop:10,borderTop:`1px solid ${C.border}`}}>
+                              {p.qRu&&<div style={{fontSize:12,color:C.muted,marginBottom:8,fontStyle:"italic"}}>🌐 {p.qRu}</div>}
                               <div style={{background:g.col+"15",border:`1px solid ${g.col}40`,borderRadius:8,padding:"10px 12px",marginBottom:p.note?8:0}}>
                                 <div style={{fontSize:12,color:g.col,fontWeight:700,marginBottom:3}}>ОТВЕТ</div>
                                 <div style={{fontSize:14,fontWeight:600,color:C.text}}>{p.a}</div>
+                                {p.aRu&&<div style={{fontSize:12,color:C.muted,marginTop:4}}>{p.aRu}</div>}
                               </div>
                               {p.note&&<div style={{background:C.yellowBg,border:`1px solid ${C.yellow}35`,borderRadius:8,padding:"6px 10px",fontSize:13,color:C.yellow}}>💡 {p.note}</div>}
                             </div>
@@ -10727,13 +10746,28 @@ function DialogFragenPage(){
               if(!all.length)return null;
               return(
                 <div style={{background:C.card,border:`1px solid ${C.border}`,borderRadius:14,overflow:"hidden"}}>
-                  {all.map((p,pi)=>(
-                    <div key={pi} style={{padding:"10px 14px",borderBottom:pi<all.length-1?`1px solid ${C.border}30`:"none"}}>
-                      <div style={{fontSize:14,fontWeight:700,color:C.text,marginBottom:4}}>{p.q}</div>
-                      <div style={{fontSize:13,color:p.col,marginBottom:p.note?3:0}}>↩ {p.a}</div>
-                      {p.note&&<div style={{fontSize:12,color:C.muted,marginTop:2}}>📝 {p.note}</div>}
-                    </div>
-                  ))}
+                  {all.map((p,pi)=>{
+                    const k=`${lId}-ph-${pi}`;const isO=openItems.has(k);
+                    return(
+                      <div key={pi} onClick={()=>togItem(k)}
+                        style={{padding:"10px 14px",borderBottom:pi<all.length-1?`1px solid ${C.border}30`:"none",cursor:"pointer"}}>
+                        <div style={{display:"flex",justifyContent:"space-between",gap:8}}>
+                          <div style={{flex:1}}>
+                            <div style={{fontSize:14,fontWeight:700,color:C.text,marginBottom:4}}>{p.q}</div>
+                            <div style={{fontSize:13,color:p.col,marginBottom:p.note?3:0}}>↩ {p.a}</div>
+                          </div>
+                          <span style={{color:C.muted,fontSize:13,flexShrink:0}}>{isO?"▲":"▼"}</span>
+                        </div>
+                        {p.note&&<div style={{fontSize:12,color:C.muted,marginTop:2}}>📝 {p.note}</div>}
+                        {isO&&(p.qRu||p.aRu)&&(
+                          <div style={{marginTop:8,paddingTop:8,borderTop:`1px solid ${C.border}30`,fontSize:12,color:C.muted}}>
+                            {p.qRu&&<div>🌐 {p.qRu}</div>}
+                            {p.aRu&&<div style={{marginTop:p.qRu?3:0}}>↩ {p.aRu}</div>}
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
                 </div>
               );
             })()}
@@ -10823,8 +10857,8 @@ function TabellenPage(){
 
   const adjDekl=[
     {kasus:"Nominativ",end:["-e","-e","-e","-en"],bsp:["der neue Anzug","das neue Hemd","die neue Bluse","die neuen Schuhe"]},
-    {kasus:"Dativ",     end:["-en","-en","-en","-en"],bsp:["dem neuen Anzug","dem neuen Hemd","der neuen Bluse","den neuen Schuhen"]},
     {kasus:"Akkusativ", end:["-en","-e","-e","-en"],bsp:["den neuen Anzug","das neue Hemd","die neue Bluse","die neuen Schuhe"]},
+    {kasus:"Dativ",     end:["-en","-en","-en","-en"],bsp:["dem neuen Anzug","dem neuen Hemd","der neuen Bluse","den neuen Schuhen"]},
     {kasus:"Genitiv",   end:["-en","-en","-en","-en"],bsp:["des neuen Anzugs","des neuen Hemds","der neuen Bluse","der neuen Schuhe"]},
   ];
 
