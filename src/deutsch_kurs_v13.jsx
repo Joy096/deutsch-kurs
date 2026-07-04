@@ -1061,7 +1061,7 @@ const WBDATA=[
   {art:"",   de:"geben",            pl:"—",            ru:"давать · gibt · hat gegeben", lekt:"L8"},
   {art:"",   de:"helfen",           pl:"—",            ru:"помогать · hilft · hat geholfen", lekt:"L7"},
   {art:"",   de:"heißen",           pl:"—",            ru:"называться; звать · heißt · hat geheißen", lekt:"L1"},
-  {art:"",   de:"stehen",           pl:"—",            ru:"стоять · steht · hat gestanden", lekt:"L1"},
+  {art:"",   de:"stehen",           pl:"—",            ru:"стоять · steht · hat gestanden · (Kleidung) идёт, подходит +Dativ", lekt:"L1"},
   {art:"",   de:"bringen",          pl:"—",            ru:"приносить, доставлять · bringt · hat gebracht", lekt:"L1"},
   {art:"",   de:"denken",           pl:"—",            ru:"думать · denkt · hat gedacht", lekt:"L1"},
   {art:"",   de:"wissen",           pl:"—",            ru:"знать (факты) · weiß · hat gewusst", lekt:"L1"},
@@ -1160,7 +1160,7 @@ const WBDATA=[
   {art:"der", de:"Betrag",          pl:'"-e',          ru:"сумма (денежная)",                             tema:"Ämter", lekt:"L11"},
   {art:"der", de:"Schalter",        pl:"-",            ru:"окошко, стойка (в учреждении)",                tema:"Ämter", lekt:"L11"},
   {art:"",   de:"nötig",            pl:"—",            ru:"нужный, необходимый",                          tema:"Ämter", lekt:"L11"},
-  {art:"der", de:"Antrag",          pl:'"-e',          ru:"заявление · einen Antrag stellen = подать заявление",tema:"Ämter", lekt:"L11"},
+  {art:"der", de:"Antrag",          pl:'"-e',          ru:"заявление · einen Antrag stellen = подать заявление · einen Antrag auf etwas(Akk) stellen",tema:"Ämter", lekt:"L11"},
   {art:"",   de:"mieten",           pl:"—",            ru:"снимать, арендовать (квартиру)",               tema:"Wohnung", lekt:"L11"},
   {art:"",   de:"vermieten",        pl:"—",            ru:"сдавать в аренду",                             tema:"Wohnung", lekt:"L11"},
   {art:"die", de:"Miete",           pl:"-n",           ru:"арендная плата",                               tema:"Wohnung", lekt:"L11"},
@@ -1178,6 +1178,55 @@ const WBDATA=[
   {art:"",   de:"Verzeihung",       pl:"—",            ru:"извините, простите",                           tema:"Phrase", lekt:"L11"},
   {art:"",   de:"ich verstehe",     pl:"—",            ru:"я понимаю",                                    tema:"Phrase", lekt:"L11"},
   {art:"",   de:"danken",           pl:"—",            ru:"благодарить · +Dativ · Ich danke dir/Ihnen",   tema:"Phrase", lekt:"L11"},
+  // ── L12 · Im Kaufhaus — Kleidung kaufen ──────────────────────────────────────
+  {art:"die", de:"Bluse",           pl:"-n",           ru:"блузка",                                        tema:"Kleidung", lekt:"L12"},
+  {art:"das", de:"Hemd",            pl:"-en",          ru:"рубашка",                                       tema:"Kleidung", lekt:"L12"},
+  {art:"das", de:"Kleid",           pl:"-er",          ru:"платье",                                        tema:"Kleidung", lekt:"L12"},
+  {art:"der", de:"Pullover",        pl:"-",            ru:"свитер, пуловер",                               tema:"Kleidung", lekt:"L12"},
+  {art:"der", de:"Mantel",          pl:'"-',           ru:"пальто",                                        tema:"Kleidung", lekt:"L12"},
+  {art:"der", de:"Anzug",           pl:'"-e',          ru:"костюм (мужской)",                              tema:"Kleidung", lekt:"L12"},
+  {art:"das", de:"Sweatshirt",      pl:"-s",           ru:"свитшот",                                       tema:"Kleidung", lekt:"L12"},
+  {art:"das", de:"T-Shirt",         pl:"-s",           ru:"футболка",                                      tema:"Kleidung", lekt:"L12"},
+  {art:"die", de:"Jeans",           pl:"-",            ru:"джинсы",                                        tema:"Kleidung", lekt:"L12"},
+  {art:"der", de:"Rock",            pl:'"-e',          ru:"юбка",                                          tema:"Kleidung", lekt:"L12"},
+  {art:"die", de:"Hose",            pl:"-n",           ru:"брюки, штаны",                                  tema:"Kleidung", lekt:"L12"},
+  {art:"die", de:"Krawatte",        pl:"-n",           ru:"галстук",                                       tema:"Kleidung", lekt:"L12"},
+  {art:"der", de:"Schuh",           pl:"-e",           ru:"туфля, ботинок · чаще Pl.: die Schuhe",         tema:"Kleidung", lekt:"L12"},
+  {art:"die", de:"Socke",           pl:"-n",           ru:"носок · чаще Pl.: die Socken",                  tema:"Kleidung", lekt:"L12"},
+  {art:"die", de:"Unterwäsche",     pl:"—",            ru:"нижнее бельё (только Sg.)",                     tema:"Kleidung", lekt:"L12"},
+  {art:"das", de:"Kaufhaus",        pl:'"-er',         ru:"универмаг",                                     tema:"Kleidung", lekt:"L12"},
+  {art:"die", de:"Umkleidekabine",  pl:"-n",           ru:"примерочная",                                   tema:"Kleidung", lekt:"L12"},
+  {art:"die", de:"Größe",           pl:"-n",           ru:"размер (одежды)",                               tema:"Kleidung", lekt:"L12"},
+  {art:"der", de:"Flohmarkt",       pl:'"-e',          ru:"блошиный рынок",                                tema:"Kleidung", lekt:"L12"},
+  {art:"die", de:"Boutique",        pl:"-n",           ru:"бутик",                                         tema:"Kleidung", lekt:"L12"},
+  {art:"der", de:"Secondhandladen", pl:'"-',           ru:"секонд-хенд (магазин)",                         tema:"Kleidung", lekt:"L12"},
+  {art:"der", de:"Anhänger",        pl:"-",            ru:"брелок, подвеска, украшение",                   tema:"Kleidung", lekt:"L12"},
+  {art:"",   de:"schick",           pl:"—",            ru:"шикарный, стильный",                            tema:"Kleidung", lekt:"L12"},
+  {art:"",   de:"altmodisch",       pl:"—",            ru:"старомодный",                                   tema:"Kleidung", lekt:"L12"},
+  {art:"",   de:"komisch",          pl:"—",            ru:"странный, смешной",                             tema:"Kleidung", lekt:"L12"},
+  {art:"",   de:"praktisch",        pl:"—",            ru:"практичный",                                    tema:"Kleidung", lekt:"L12"},
+  {art:"",   de:"kompliziert",      pl:"—",            ru:"сложный, запутанный",                           tema:"Kleidung", lekt:"L12"},
+  {art:"",   de:"angenehm",         pl:"—",            ru:"приятный",                                      tema:"Kleidung", lekt:"L12"},
+  {art:"",   de:"gebraucht",        pl:"—",            ru:"бывший в употреблении, б/у",                    tema:"Kleidung", lekt:"L12"},
+  {art:"",   de:"kariert",          pl:"—",            ru:"клетчатый (в клетку)",                          tema:"Kleidung", lekt:"L12"},
+  {art:"",   de:"gestreift",        pl:"—",            ru:"полосатый",                                     tema:"Kleidung", lekt:"L12"},
+  {art:"",   de:"gemustert",        pl:"—",            ru:"узорчатый (с узором)",                          tema:"Kleidung", lekt:"L12"},
+  {art:"",   de:"geblümt",          pl:"—",            ru:"цветочный (с цветочным узором)",                tema:"Kleidung", lekt:"L12"},
+  {art:"",   de:"gefallen",         pl:"—",            ru:"нравиться · gefällt · hat gefallen · +Dativ",   tema:"Kleidung", lekt:"L12"},
+  {art:"",   de:"passen",           pl:"—",            ru:"подходить, быть впору (по размеру) · +Dativ",   tema:"Kleidung", lekt:"L12"},
+  {art:"",   de:"anprobieren",      pl:"—",            ru:"примерять (одежду)",                            tema:"Kleidung", lekt:"L12"},
+  {art:"",   de:"aussehen",         pl:"—",            ru:"выглядеть · sieht aus · hat ausgesehen",        tema:"Kleidung", lekt:"L12"},
+  {art:"",   de:"anziehen",         pl:"—",            ru:"надевать (одежду), одеваться · hat angezogen", tema:"Kleidung", lekt:"L12"},
+  // ── L12 · доп. слова (беседа, официальные дела) ──────────────────────────────
+  {art:"die", de:"Verantwortung",   pl:"—",            ru:"ответственность",                               tema:"Alltag",  lekt:"L12"},
+  {art:"",   de:"verlangen",        pl:"—",            ru:"требовать, просить",                            tema:"Alltag",  lekt:"L12"},
+  {art:"",   de:"verlängern",       pl:"—",            ru:"продлевать",                                    tema:"Alltag",  lekt:"L12"},
+  {art:"",   de:"sich unterhalten", pl:"—",            ru:"беседовать, разговаривать · unterhält sich · hat sich unterhalten", tema:"Alltag", lekt:"L12"},
+  {art:"",   de:"auslachen",        pl:"—",            ru:"высмеивать, насмехаться (над кем-л.)",          tema:"Alltag",  lekt:"L12"},
+  {art:"",   de:"anlächeln",        pl:"—",            ru:"улыбаться (кому-л.)",                           tema:"Alltag",  lekt:"L12"},
+  {art:"",   de:"sich über etwas lustig machen", pl:"—", ru:"насмехаться, шутить над кем/чем-л. (+Akk.)", tema:"Alltag", lekt:"L12"},
+  {art:"",   de:"locker",           pl:"—",            ru:"непринуждённый, раскованный",                   tema:"Alltag",  lekt:"L12"},
+  {art:"",   de:"bestellen",        pl:"—",            ru:"заказывать",                                    tema:"Alltag",  lekt:"L12"},
 ];
 
 
@@ -1746,6 +1795,36 @@ const KONJ_ALL={
     ich:"halte mich … auf",   du:"hältst dich … auf",   "er/sie/es":"hält sich … auf",
     wir:"halten uns … auf",   ihr:"haltet euch … auf",  "sie/Sie":"halten sich … auf",
     imp:{du:"Halt dich … auf!", ihr:"Haltet euch … auf!", Sie:"Halten Sie sich … auf!"}, pt:"hielt sich … auf", ptc:{du:"hieltest dich … auf",wir:"hielten uns … auf",ihr:"hieltet euch … auf",sie:"hielten sich … auf"}, pf:"hat sich aufgehalten"},
+  // L12 (04.07.2026) — Im Kaufhaus
+  gefallen:    {col:C.orange,bg:C.orangeBg, note:"a→ä | + Dativ",
+    ich:"gefalle",   du:"gefällst",   "er/sie/es":"gefällt",   wir:"gefallen", ihr:"gefallt",  "sie/Sie":"gefallen", pt:"gefiel", ptc:{du:"gefielst",wir:"gefielen",ihr:"gefielt",sie:"gefielen"}, pf:"hat gefallen"},
+  passen:      {col:C.teal,  bg:C.tealBg,  note:"+ Dativ",
+    ich:"passe",     du:"passt",      "er/sie/es":"passt",     wir:"passen",   ihr:"passt",    "sie/Sie":"passen", pt:"passte", pf:"hat gepasst"},
+  anprobieren: {pref:"an",  col:C.teal, bg:C.tealBg, note:"-ieren: kein ge-",
+    ich:"probiere … an",  du:"probierst … an",  "er/sie/es":"probiert … an",
+    wir:"probieren … an", ihr:"probiert … an",  "sie/Sie":"probieren … an", pt:"probierte … an", pf:"hat anprobiert"},
+  aussehen:    {pref:"aus", col:C.orange,bg:C.orangeBg, note:"e→ie",
+    ich:"sehe … aus",   du:"siehst … aus",   "er/sie/es":"sieht … aus",
+    wir:"sehen … aus",  ihr:"seht … aus",    "sie/Sie":"sehen … aus", pt:"sah … aus", ptc:{du:"sahst … aus",wir:"sahen … aus",ihr:"saht … aus",sie:"sahen … aus"}, pf:"hat ausgesehen"},
+  anziehen:    {pref:"an",  col:C.orange,bg:C.orangeBg,
+    ich:"ziehe … an",   du:"ziehst … an",   "er/sie/es":"zieht … an",
+    wir:"ziehen … an",  ihr:"zieht … an",   "sie/Sie":"ziehen … an", pt:"zog … an", ptc:{du:"zogst … an",wir:"zogen … an",ihr:"zogt … an",sie:"zogen … an"}, pf:"hat angezogen"},
+  bestellen:   {col:C.teal,  bg:C.tealBg,  note:"untrennbar: kein ge-",
+    ich:"bestelle",  du:"bestellst",  "er/sie/es":"bestellt",  wir:"bestellen",ihr:"bestellt", "sie/Sie":"bestellen", pt:"bestellte", pf:"hat bestellt"},
+  "sich unterhalten":{col:C.purple,bg:C.purpleBg, note:"a→ä | Reflexiv | untrennbar: kein ge-",
+    ich:"unterhalte mich",   du:"unterhältst dich",   "er/sie/es":"unterhält sich",
+    wir:"unterhalten uns",   ihr:"unterhaltet euch",  "sie/Sie":"unterhalten sich",
+    imp:{du:"Unterhalte dich!", ihr:"Unterhaltet euch!", Sie:"Unterhalten Sie sich!"}, pt:"unterhielt sich", ptc:{du:"unterhieltst dich",wir:"unterhielten uns",ihr:"unterhieltet euch",sie:"unterhielten sich"}, pf:"hat sich unterhalten"},
+  verlangen:   {col:C.teal,  bg:C.tealBg,  note:"untrennbar: kein ge-",
+    ich:"verlange",  du:"verlangst",  "er/sie/es":"verlangt",  wir:"verlangen",ihr:"verlangt", "sie/Sie":"verlangen", pt:"verlangte", pf:"hat verlangt"},
+  verlängern:  {col:C.teal,  bg:C.tealBg,  note:"untrennbar: kein ge-",
+    ich:"verlängere",du:"verlängerst","er/sie/es":"verlängert",wir:"verlängern",ihr:"verlängert","sie/Sie":"verlängern", pt:"verlängerte", pf:"hat verlängert"},
+  auslachen:   {pref:"aus", col:C.teal, bg:C.tealBg,
+    ich:"lache … aus",  du:"lachst … aus",  "er/sie/es":"lacht … aus",
+    wir:"lachen … aus", ihr:"lacht … aus",  "sie/Sie":"lachen … aus", pt:"lachte … aus", pf:"hat ausgelacht"},
+  anlächeln:   {pref:"an",  col:C.teal, bg:C.tealBg,
+    ich:"lächle … an",  du:"lächelst … an", "er/sie/es":"lächelt … an",
+    wir:"lächeln … an", ihr:"lächelt … an", "sie/Sie":"lächeln … an", pt:"lächelte … an", pf:"hat angelächelt"},
 };
 
 // Ударения: комбинирующая акута \u0301 ставится после ударной гласной
@@ -2085,6 +2164,21 @@ const STRESS_MARKS={
 "Salz":"Sa\u0301lz","Oregano":"Ore\u0301gano","Minze":"Mi\u0301nze",
 "Rosmarin":"Ro\u0301smarin","Basilikum":"Basili\u0301kum",
 "Schnittlauch":"Schni\u0301ttlauch","Petersilie":"Petersi\u0301lie","vegetarisch":"vegeta\u0301risch",
+// L12 — Im Kaufhaus (Kleidung)
+"Bluse":"Blu\u0301se","Hemd":"He\u0301md","Kleid":"Kle\u0301id","Pullover":"Pullo\u0301ver",
+"Mantel":"Ma\u0301ntel","Anzug":"A\u0301nzug","Sweatshirt":"Swe\u0301atshirt","T-Shirt":"T-Shi\u0301rt",
+"Jeans":"Jea\u0301ns","Rock":"Ro\u0301ck","Hose":"Ho\u0301se","Krawatte":"Krawa\u0301tte",
+"Schuh":"Schu\u0301h","Socke":"So\u0301cke","Unterwäsche":"U\u0301nterwäsche","Kaufhaus":"Ka\u0301ufhaus",
+"Umkleidekabine":"U\u0301mkleidekabine","Größe":"Gr\u00F6\u0301ße","Flohmarkt":"Flo\u0301hmarkt",
+"Boutique":"Bouti\u0301que","Secondhandladen":"Se\u0301condhandladen","Anhänger":"A\u0301nhänger",
+"schick":"schi\u0301ck","altmodisch":"a\u0301ltmodisch","komisch":"ko\u0301misch","praktisch":"pra\u0301ktisch",
+"kompliziert":"komplizie\u0301rt","angenehm":"a\u0301ngenehm","gebraucht":"gebra\u0301ucht",
+"kariert":"karie\u0301rt","gestreift":"gestre\u0301ift","gemustert":"gemu\u0301stert","geblümt":"gebl\u00FC\u0301mt",
+"gefallen":"gefa\u0301llen","passen":"pa\u0301ssen","anprobieren":"a\u0301nprobieren",
+"aussehen":"a\u0301ussehen","anziehen":"a\u0301nziehen",
+"Verantwortung":"Vera\u0301ntwortung","verlangen":"verla\u0301ngen","verlängern":"verl\u00E4\u0301ngern",
+"sich unterhalten":"sich unterha\u0301lten","auslachen":"a\u0301uslachen","anlächeln":"a\u0301nlächeln",
+"locker":"lo\u0301cker","bestellen":"beste\u0301llen",
 };
 
 // IPA-транскрипция для всего словаря (кроме фраз)
@@ -2406,6 +2500,21 @@ const IPA_DATA={
 "Norden":"[ˈnɔʁdn̩]","Süden":"[ˈzyːdn̩]","Osten":"[ˈɔstn̩]","Westen":"[ˈvɛstn̩]",
 "Verzeihung":"[fɛɐ̯ˈtsaɪʊŋ]","danken":"[ˈdaŋkn̩]","ich verstehe":"[ɪç fɛɐ̯ˈʃteːə]",
 "Grüße":"[ˈɡʁyːsə]","Leute":"[ˈlɔɪtə]","Seetang":"[ˈzeːtaŋ]","fast":"[fast]","doch":"[dɔx]","holen":"[ˈhoːlən]","fragen":"[ˈfʁaːɡən]","gehen":"[ˈɡeːən]",
+// L12 — Im Kaufhaus (Kleidung)
+"Bluse":"[ˈbluːzə]","Hemd":"[hɛmt]","Kleid":"[klaɪt]","Pullover":"[pʊˈloːvɐ]",
+"Mantel":"[ˈmantl̩]","Anzug":"[ˈantsuːk]","Sweatshirt":"[ˈswɛtʃœɐ̯t]","T-Shirt":"[ˈtiːʃœɐ̯t]",
+"Jeans":"[dʒiːns]","Rock":"[ʁɔk]","Hose":"[ˈhoːzə]","Krawatte":"[kʁaˈvatə]",
+"Schuh":"[ʃuː]","Socke":"[ˈzɔkə]","Unterwäsche":"[ˈʊntɐˌvɛʃə]","Kaufhaus":"[ˈkaʊfhaʊs]",
+"Umkleidekabine":"[ˈʊmklaɪdəkaˌbiːnə]","Größe":"[ˈɡʁøːsə]","Flohmarkt":"[ˈfloːmaʁkt]",
+"Boutique":"[buˈtiːk]","Secondhandladen":"[ˈsɛkəntˌhɛntlaːdn̩]","Anhänger":"[ˈanhɛŋɐ]",
+"schick":"[ʃɪk]","altmodisch":"[ˈaltmoːdɪʃ]","komisch":"[ˈkoːmɪʃ]","praktisch":"[ˈpʁaktɪʃ]",
+"kompliziert":"[kɔmpliˈtsiːɐ̯t]","angenehm":"[ˈanɡəneːm]","gebraucht":"[ɡəˈbʁaʊxt]",
+"kariert":"[kaˈʁiːɐ̯t]","gestreift":"[ɡəˈʃtʁaɪft]","gemustert":"[ɡəˈmʊstɐt]","geblümt":"[ɡəˈblyːmt]",
+"gefallen":"[ɡəˈfalən]","passen":"[ˈpasn̩]","anprobieren":"[ˈanpʁoˌbiːʁən]",
+"aussehen":"[ˈaʊsˌzeːən]","anziehen":"[ˈanˌtsiːən]",
+"Verantwortung":"[fɛɐ̯ˈʔantvɔʁtʊŋ]","verlangen":"[fɛɐ̯ˈlaŋən]","verlängern":"[fɛɐ̯ˈlɛŋɐn]",
+"sich unterhalten":"[ʊntɐˈhaltən]","auslachen":"[ˈaʊsˌlaxən]","anlächeln":"[ˈanˌlɛçl̩n]",
+"locker":"[ˈlɔkɐ]","bestellen":"[bəˈʃtɛlən]",
 };
 
 const DIALOGE={
@@ -2701,6 +2810,23 @@ const DIALOGE={
       {q:"Was ist Ihre Staatsangehörigkeit?",                a:"Meine Staatsangehörigkeit ist ukrainisch.",        note:"Staatsangehörigkeit = гражданство"},
       {q:"Sind Sie berufstätig?",                            a:"Ja, ich arbeite als … / Nein, ich bin nicht berufstätig.", note:"berufstätig = работающий"},
       {q:"Können Sie das bitte wiederholen?",                a:"Ja, natürlich. Wie schreibt man das? Können Sie buchstabieren?", note:"wiederholen · buchstabieren"},
+    ]},
+  ],
+  L12:[
+    {tag:"Основные",col:C.red,pairs:[
+      {q:"Wie gefällt dir der Rock?",                        a:"Er gefällt mir sehr gut. / Er gefällt mir nicht so gut.", note:"gefallen + Dativ"},
+      {q:"Wie steht mir die Farbe?",                         a:"Die Farbe steht dir gut. Sie passt gut zu deinen Augen.", note:"stehen + Dativ"},
+      {q:"Passt Ihnen die Hose?",                            a:"Nein, sie ist mir zu klein. Haben Sie eine größere Größe?", note:"passen + Dativ"},
+      {q:"Welche Größe haben Sie?",                          a:"Ich habe Größe 40.",                               note:"welche + Größe"},
+      {q:"Kann ich das Kleid anprobieren?",                  a:"Ja, natürlich. Die Umkleidekabine ist dort.",       note:"anprobieren"},
+      {q:"Wo kann ich bezahlen?",                            a:"Die Kasse ist gleich hier vorne.",                  note:"bezahlen · die Kasse"},
+      {q:"Haben Sie das auch in Blau?",                      a:"Ja, einen Moment, ich schaue nach.",               note:"Farbe + in + Dativ"},
+    ]},
+    {tag:"Дополнительные",col:C.orange,pairs:[
+      {q:"Wo kaufst du am liebsten Kleidung?",               a:"Ich kaufe am liebsten im Kaufhaus, aber manchmal auch auf dem Flohmarkt.", note:"Kaufhaus · Flohmarkt"},
+      {q:"Warum kaufst du gebrauchte Kleidung?",             a:"Sie ist günstiger und praktischer für die Umwelt.", note:"gebraucht = б/у"},
+      {q:"Wie sieht das Hemd aus?",                          a:"Es sieht sehr schick aus, aber ein bisschen altmodisch.", note:"aussehen"},
+      {q:"Worüber habt ihr euch unterhalten?",               a:"Wir haben uns über die neue Kleidung unterhalten.",note:"sich unterhalten"},
     ]},
   ],
 };
@@ -3245,6 +3371,7 @@ function Woerterbuch({words=WBDATA}={}){
     {id:"Fuehrerschein",  label:"🚦 Führerschein",         col:C.orange},
     {id:"MeinLeben",      label:"👤 Mein Leben",            col:C.purple},
     {id:"Ämter",          label:"🏛️ Ämter",                 col:C.green},
+    {id:"Kleidung",       label:"👗 Kleidung",               col:C.red},
   ];
   const TYPEN=[
     {id:"all",     label:"Все",           col:C.teal},
@@ -4582,11 +4709,8 @@ function T3A(){
           ))}
         </div>
         <Box c={C.yellow}>
-          <div style={{fontSize:14,color:C.text,lineHeight:1.8}}>
-            Da ist <b style={{color:C.green}}>ein</b> Schrank. → Da ist <b style={{color:C.red}}>kein</b> Schrank.<br/>
-            Da ist <b style={{color:C.green}}>eine</b> Spüle. → Da ist <b style={{color:C.red}}>keine</b> Spüle.<br/>
-            Da sind <b style={{color:C.green}}>—</b> Bilder. → Da sind <b style={{color:C.red}}>keine</b> Bilder.
-          </div>
+          <TapEx de={<>Da ist <b style={{color:C.green}}>ein</b> Schrank. → Da ist <b style={{color:C.red}}>kein</b> Schrank. Da ist <b style={{color:C.green}}>eine</b> Spüle. → Da ist <b style={{color:C.red}}>keine</b> Spüle. Da sind <b style={{color:C.green}}>—</b> Bilder. → Da sind <b style={{color:C.red}}>keine</b> Bilder.</>}
+            ru="Там есть шкаф. → Там нет шкафа. Там есть раковина. → Там нет раковины. Там есть картины. → Там нет картин." col={C.yellow}/>
         </Box>
       </Box>
     </div>
@@ -4628,11 +4752,9 @@ function T3Farben(){
       </Box>
       <Box c={C.yellow}>
         <H c={C.yellow} z={13}>💡 Как использовать</H>
-        <div style={{fontSize:14,color:C.text,lineHeight:1.9}}>
-          Der Stuhl ist <b style={{color:C.blue}}>blau</b>.<br/>
-          Ich finde das Sofa <b style={{color:C.orange}}>orange</b>.<br/>
-          <span style={{color:C.muted}}>Цвета не меняются по родам!</span>
-        </div>
+        <TapEx de={<>Der Stuhl ist <b style={{color:C.blue}}>blau</b>. Ich finde das Sofa <b style={{color:C.orange}}>orange</b>.</>}
+          ru="Стул синий. Я считаю, что диван оранжевый." col={C.yellow}/>
+        <div style={{fontSize:12,color:C.muted,marginTop:6}}>Цвета не меняются по родам!</div>
       </Box>
     </div>
   );
@@ -4647,11 +4769,8 @@ function T3Akkusativ(){
           Nominativ = подлежащее (кто/что делает)<br/>
           Akkusativ = дополнение (кого/что?)
         </div>
-        <div style={{background:C.card2,borderRadius:10,padding:"10px 12px",fontSize:14,color:C.text,lineHeight:1.9}}>
-          <b style={{color:C.blue}}>Der Lehrer</b> (Nom.) schreibt <b style={{color:C.orange}}>einen Satz</b> (Akk.).<br/>
-          <b style={{color:C.purple}}>Die Lehrerin</b> (Nom.) hat <b style={{color:C.orange}}>eine CD</b> (Akk.).<br/>
-          <b style={{color:C.green}}>Ich</b> (Nom.) kaufe <b style={{color:C.orange}}>den Laptop</b> (Akk.).
-        </div>
+        <TapEx de={<><b style={{color:C.blue}}>Der Lehrer</b> (Nom.) schreibt <b style={{color:C.orange}}>einen Satz</b> (Akk.). <b style={{color:C.purple}}>Die Lehrerin</b> (Nom.) hat <b style={{color:C.orange}}>eine CD</b> (Akk.). <b style={{color:C.green}}>Ich</b> (Nom.) kaufe <b style={{color:C.orange}}>den Laptop</b> (Akk.).</>}
+          ru="Учитель (подлежащее) пишет предложение (дополнение). Учительница (подлежащее) имеет диск (дополнение). Я (подлежащее) покупаю ноутбук (дополнение)." col={C.text}/>
       </Box>
       <Box c={C.red}>
         <H c={C.red}>⚠️ Главное правило Akkusativ</H>
@@ -4804,13 +4923,11 @@ function T3B(){
       <Box c={C.blue}>
         <H c={C.blue}>❓ Ja/Nein-Fragen</H>
         <div style={{fontSize:14,color:C.muted,marginBottom:10}}>Вопросы на Да/Нет — глагол стоит на первом месте!</div>
-        <div style={{background:C.card2,borderRadius:10,padding:"12px",marginBottom:10}}>
-          <div style={{fontSize:14,color:C.text,lineHeight:2}}>
-            <b style={{color:C.blue}}>Ist</b> das ein Tisch? → Ja, das <b style={{color:C.blue}}>ist</b> ein Tisch.<br/>
-            <span style={{color:C.muted,fontSize:13,marginLeft:20}}>Nein, das <b style={{color:C.red}}>ist kein</b> Tisch. Das ist eine Lampe.</span><br/>
-            <b style={{color:C.green}}>Haben</b> Sie eine Mikrowelle? → Ja, ich <b style={{color:C.green}}>habe</b> eine.<br/>
-            <span style={{color:C.muted,fontSize:13,marginLeft:20}}>Nein, ich <b style={{color:C.red}}>habe keine</b> Mikrowelle.</span>
-          </div>
+        <div style={{background:C.card2,borderRadius:10,padding:"12px",marginBottom:10,display:"flex",flexDirection:"column",gap:8}}>
+          <TapEx de={<>Ist das ein Tisch? → Ja, das ist ein Tisch. Nein, das ist kein Tisch. Das ist eine Lampe.</>}
+            ru="Это стол? — Да, это стол. Нет, это не стол. Это лампа." col={C.blue}/>
+          <TapEx de={<>Haben Sie eine Mikrowelle? → Ja, ich habe eine. Nein, ich habe keine Mikrowelle.</>}
+            ru="У вас есть микроволновка? — Да, есть. Нет, у меня нет микроволновки." col={C.green}/>
         </div>
         <div style={{background:C.yellowBg,border:`1px solid ${C.yellow}35`,borderRadius:8,padding:"8px 10px",fontSize:14,color:C.yellow}}>
           💡 Ja/Nein-Frage: <b>Verb</b> + Subjekt + ...?<br/>
@@ -4921,11 +5038,11 @@ function T3Poss(){
       </Box>
       <Box c={C.green}>
         <H c={C.green} z={13}>📝 Примеры</H>
-        <div style={{fontSize:14,color:C.text,lineHeight:2}}>
-          Das ist <b style={{color:C.orange}}>mein</b> Buch. — Это моя книга.<br/>
-          Ist das <b style={{color:C.blue}}>dein</b> Laptop? — Это твой ноутбук?<br/>
-          In der Garage steht <b style={{color:C.purple}}>sein</b> Auto. — В гараже его машина.<br/>
-          <b style={{color:C.green}}>Unser</b> Apartment ist gemütlich. — Наша квартира уютная.
+        <div style={{display:"flex",flexDirection:"column",gap:6}}>
+          <TapEx de={<>Das ist <b style={{color:C.orange}}>mein</b> Buch.</>} ru="Это моя книга." col={C.green}/>
+          <TapEx de={<>Ist das <b style={{color:C.blue}}>dein</b> Laptop?</>} ru="Это твой ноутбук?" col={C.green}/>
+          <TapEx de={<>In der Garage steht <b style={{color:C.purple}}>sein</b> Auto.</>} ru="В гараже его машина." col={C.green}/>
+          <TapEx de={<><b style={{color:C.green}}>Unser</b> Apartment ist gemütlich.</>} ru="Наша квартира уютная." col={C.green}/>
         </div>
       </Box>
       <Box c={C.blue}>
@@ -4966,7 +5083,7 @@ function T3WohnVok(){
     <div style={{display:"flex",flexDirection:"column",gap:12}}>
       <Box c={C.blue}>
         <H c={C.blue}>🚿 Das Bad — Ванная комната</H>
-        <div style={{fontSize:13,color:C.muted,marginBottom:8}}>Im Bad dusche ich mich.</div>
+        <TapEx de="Im Bad dusche ich mich." ru="В ванной я принимаю душ." col={C.blue} style={{marginBottom:8}}/>
         {[
           {art:"die",de:"Dusche",ru:"душ"},{art:"die",de:"Badewanne",ru:"ванна"},
           {art:"die",de:"Toilette",ru:"туалет"},{art:"das",de:"Waschbecken",ru:"умывальник"},
@@ -5518,6 +5635,47 @@ const WSENTS_L11=[
   {w:["Wo","finde","ich","das","Standesamt","?"],                 ru:"Где мне найти ЗАГС?"},
 ];
 
+const Q_L12TEST=shuffle([
+  {q:"'der ___ Anzug' (neu, Nominativ)",              opts:["neue","neuen","neuer","neues"], ans:0, hint:"Nominativ überall → -e"},
+  {q:"'Ich kaufe den ___ Rock.' (neu, Akkusativ m)",  opts:["neue","neuen","neuer","neues"], ans:1, hint:"Akkusativ m → -en"},
+  {q:"'die ___ Bluse' (neu, Nominativ f)",            opts:["neue","neuen","neuer","neues"], ans:0, hint:"f Nom. → -e"},
+  {q:"'Der Pullover ___ mir gut.' (gefallen)",        opts:["gefalle","gefällst","gefällt","gefallt"], ans:2, hint:"a→ä"},
+  {q:"'Die Farbe ___ dir gut.' (stehen)",             opts:["steht","stehst","stehe","stehen"], ans:0, hint:"stehen + Dativ"},
+  {q:"'Die Hose ___ mir nicht.' (passen)",            opts:["passe","passt","passen","passst"], ans:1, hint:"passen + Dativ"},
+  {q:"'___ Rock gefällt dir?' (m, Nom.)",             opts:["Welcher","Welchen","Welche","Welches"], ans:0, hint:"welch- wie der/das/die"},
+  {q:"'___ Hose nimmst du?' (f, Akk.)",               opts:["Welcher","Welchen","Welche","Welches"], ans:2, hint:"f Akk. → welche"},
+  {q:"Wo kauft man günstig gebrauchte Kleidung?",     opts:["Boutique","Kaufhaus","Flohmarkt","Bank"], ans:2, hint:"gebraucht = б/у"},
+  {q:"'kariert' по-русски:",                          opts:["полосатый","клетчатый","цветочный","однотонный"], ans:1, hint:"Karo = клетка"},
+]);
+
+const LUECKEN_L12=shuffle([
+  {sent:"Wie ___ dir das Kleid?' (gefallen)",          opts:["gefällst","gefällt","gefalle","gefallt"], ans:1,ru:"Как тебе платье?",              hint:"es → gefällt"},
+  {sent:"Die Hose ist mir zu klein. Haben Sie eine ___ Größe?' (größer)",opts:["große","größere","größte","groß"], ans:1,ru:"У вас есть размер побольше?",hint:"Komparativ"},
+  {sent:"Ich kaufe die ___ Schuhe.' (neu, Akk. Pl.)",  opts:["neue","neuen","neuer","neues"], ans:1,ru:"Я покупаю новые туфли.",           hint:"Plural → -en"},
+  {sent:"___ Farbe gefällt dir am besten?' (welch-, f)",opts:["Welcher","Welchen","Welche","Welches"], ans:2,ru:"Какой цвет тебе нравится больше всего?",hint:"f → welche"},
+  {sent:"Kann ich das Hemd ___?' (anprobieren)",       opts:["anprobieren","probiere an","anprobiere","probieren an"], ans:0,ru:"Могу я примерить рубашку?",hint:"Infinitiv nach 'kann'"},
+  {sent:"Die Jacke ___ mir sehr gut.' (stehen)",       opts:["steht","stehst","stehe","stehen"], ans:0,ru:"Куртка мне очень идёт.",           hint:"stehen + Dativ"},
+]);
+
+const ZUORD_L12=[
+  {de:"der Flohmarkt",         ru:"дешёвая б/у одежда, много людей"},
+  {de:"die Boutique",          ru:"небольшой стильный магазин"},
+  {de:"das Kaufhaus",          ru:"универмаг — большой выбор"},
+  {de:"der Secondhandladen",   ru:"гардеробленная одежда, эко"},
+  {de:"die Umkleidekabine",    ru:"место, где примеряют одежду"},
+  {de:"die Größe",             ru:"размер одежды"},
+];
+
+const WSENTS_L12=[
+  {w:["Wie","gefällt","dir","der","neue","Rock","?"],             ru:"Как тебе новая юбка?"},
+  {w:["Die","Farbe","steht","dir","sehr","gut","."],               ru:"Этот цвет тебе очень идёт."},
+  {w:["Die","Hose","passt","mir","leider","nicht","."],            ru:"Брюки мне, к сожалению, не подходят."},
+  {w:["Welche","Größe","haben","Sie","?"],                         ru:"Какой у вас размер?"},
+  {w:["Kann","ich","das","Kleid","anprobieren","?"],                ru:"Могу я примерить платье?"},
+  {w:["Ich","kaufe","gern","gebrauchte","Kleidung","."],            ru:"Я люблю покупать б/у одежду."},
+  {w:["Wo","ist","die","Umkleidekabine","?"],                       ru:"Где примерочная?"},
+];
+
 
 
 
@@ -5915,6 +6073,13 @@ function GrosserTest11(){return <GrosserTestContainer rounds={[
   {icon:"🔤",label:"Wortstellung",  col:C.orange, component:()=><WortstellungGame sents={WSENTS_L11}/>},
 ]}/>;}
 
+function GrosserTest12(){return <GrosserTestContainer rounds={[
+  {icon:"🎯",label:"Quiz",          col:C.yellow, component:()=><Quiz questions={Q_L12TEST}/>},
+  {icon:"📝",label:"Lückentext",    col:C.blue,   component:()=><LueckenQuiz items={LUECKEN_L12}/>},
+  {icon:"🔗",label:"Kleidung",      col:C.red,    component:()=><Zuordnung pairs={ZUORD_L12} leftLabel="Ort/Wort" rightLabel="Bedeutung"/>},
+  {icon:"🔤",label:"Wortstellung",  col:C.orange, component:()=><WortstellungGame sents={WSENTS_L12}/>},
+]}/>;}
+
 // ─── L4C — PRÄTERITUM HABEN/SEIN ─────────────────────────────────────────────
 const Q_L4C=[
   {q:"haben (Prät.) → ich ...",           opts:["habe","hatte","hatten","hattest"],    ans:1, exp:"ich hatte",                           hint:"Präteritum"},
@@ -6220,12 +6385,12 @@ function T4B(){
           <div style={{background:C.blueBg,border:`1px solid ${C.blue}40`,borderRadius:9,padding:"9px 10px",textAlign:"center"}}>
             <div style={{fontSize:12,color:C.blue,fontWeight:700,marginBottom:3}}>Wo? — где?</div>
             <div style={{fontSize:14,color:C.text,fontWeight:700}}>in Berlin</div>
-            <div style={{fontSize:12,color:C.muted,marginTop:2}}>Ich bin <b>in</b> Berlin. ⊙</div>
+            <TapEx de={<>Ich bin <b>in</b> Berlin. ⊙</>} ru="Я в Берлине." col={C.blue} style={{background:"transparent",border:"none",padding:"4px 0 0",marginTop:2}}/>
           </div>
           <div style={{background:C.orangeBg,border:`1px solid ${C.orange}40`,borderRadius:9,padding:"9px 10px",textAlign:"center"}}>
             <div style={{fontSize:12,color:C.orange,fontWeight:700,marginBottom:3}}>Wohin? — куда?</div>
             <div style={{fontSize:14,color:C.text,fontWeight:700}}>nach Berlin</div>
-            <div style={{fontSize:12,color:C.muted,marginTop:2}}>Ich fahre <b>nach</b> Berlin. →</div>
+            <TapEx de={<>Ich fahre <b>nach</b> Berlin. →</>} ru="Я еду в Берлин." col={C.orange} style={{background:"transparent",border:"none",padding:"4px 0 0",marginTop:2}}/>
           </div>
         </div>
       </Box>
@@ -6306,10 +6471,10 @@ function T4C(){
         <div style={{fontSize:14,color:C.muted,marginBottom:8}}>
           <b style={{color:C.yellow}}>Präteritum</b> — прошедшее время. Используется для описания прошлых фактов и состояний.
         </div>
-        <div style={{background:C.card2,borderRadius:8,padding:"9px 12px",fontSize:14,lineHeight:2}}>
-          Mein Großvater <b style={{color:C.purple}}>war</b> Arzt. <span style={{color:C.muted,fontSize:13}}>— Мой дедушка был врачом.</span><br/>
-          Mein Vater <b style={{color:C.blue}}>hatte</b> viel Arbeit. <span style={{color:C.muted,fontSize:13}}>— У папы было много работы.</span><br/>
-          Wir <b style={{color:C.purple}}>waren</b> drei Geschwister. <span style={{color:C.muted,fontSize:13}}>— Нас было трое детей.</span>
+        <div style={{display:"flex",flexDirection:"column",gap:6}}>
+          <TapEx de={<>Mein Großvater <b style={{color:C.purple}}>war</b> Arzt.</>} ru="Мой дедушка был врачом." col={C.purple}/>
+          <TapEx de={<>Mein Vater <b style={{color:C.blue}}>hatte</b> viel Arbeit.</>} ru="У папы было много работы." col={C.blue}/>
+          <TapEx de={<>Wir <b style={{color:C.purple}}>waren</b> drei Geschwister.</>} ru="Нас было трое детей." col={C.purple}/>
         </div>
       </Box>
       <Box c={C.teal}>
@@ -6372,10 +6537,10 @@ function T4C(){
             </div>
           ))}
         </div>
-        <div style={{background:C.card2,borderRadius:8,padding:"8px 10px",fontSize:13,color:C.muted,lineHeight:1.9}}>
-          <b style={{color:C.red}}>Gestern</b> hatte ich keine Zeit.<br/>
-          <b style={{color:C.green}}>Heute</b> bin ich zu Hause.<br/>
-          <b style={{color:C.blue}}>Morgen</b> fahren wir nach Potsdam.
+        <div style={{display:"flex",flexDirection:"column",gap:6}}>
+          <TapEx de={<><b style={{color:C.red}}>Gestern</b> hatte ich keine Zeit.</>} ru="Вчера у меня не было времени." col={C.red}/>
+          <TapEx de={<><b style={{color:C.green}}>Heute</b> bin ich zu Hause.</>} ru="Сегодня я дома." col={C.green}/>
+          <TapEx de={<><b style={{color:C.blue}}>Morgen</b> fahren wir nach Potsdam.</>} ru="Завтра мы едем в Потсдам." col={C.blue}/>
         </div>
       </Box>
       <Box c={C.blue}>
@@ -6388,10 +6553,7 @@ function T4C(){
             ["Wir hatten keinen Computer.","У нас не было компьютера."],
             ["Das war schön.","Это было красиво / прекрасно."],
           ].map(([de,ru])=>(
-            <div key={de} style={{background:C.card2,borderRadius:8,padding:"7px 10px",display:"flex",justifyContent:"space-between",gap:8,flexWrap:"wrap"}}>
-              <span style={{fontSize:14,color:C.text,fontWeight:600}}>{de}</span>
-              <span style={{fontSize:13,color:C.muted}}>{ru}</span>
-            </div>
+            <TapEx key={de} de={de} ru={ru} col={C.blue}/>
           ))}
         </div>
       </Box>
@@ -6595,13 +6757,13 @@ function T5B(){
           <div style={{fontWeight:700,fontSize:14,color:C.blue,marginBottom:6}}>📌 В вопросе — так же</div>
           <div style={{display:"flex",flexDirection:"column",gap:5,fontSize:14}}>
             {[
-              ["Wann stehst du auf?","Ich stehe um 7 Uhr auf.","aufstehen"],
-              ["Wann kaufst du ein?","Ich kaufe um 10 Uhr ein.","einkaufen"],
-              ["Wann siehst du fern?","Ich sehe am Abend fern.","fernsehen"],
-            ].map(([q,a,v])=>(
+              ["Wann stehst du auf?","Ich stehe um 7 Uhr auf.","aufstehen","Когда ты встаёшь?","Я встаю в 7 часов."],
+              ["Wann kaufst du ein?","Ich kaufe um 10 Uhr ein.","einkaufen","Когда ты идёшь за покупками?","Я иду за покупками в 10 часов."],
+              ["Wann siehst du fern?","Ich sehe am Abend fern.","fernsehen","Когда ты смотришь ТВ?","Я смотрю ТВ вечером."],
+            ].map(([q,a,v,qRu,aRu])=>(
               <div key={v} style={{borderLeft:`2px solid ${C.blue}`,paddingLeft:8}}>
-                <div style={{color:C.muted}}>{q}</div>
-                <div style={{color:C.text,fontWeight:600}}>{a}</div>
+                <TapEx de={q} ru={qRu} col={C.muted} style={{marginBottom:3}}/>
+                <TapEx de={a} ru={aRu} col={C.blue}/>
               </div>
             ))}
           </div>
@@ -6735,13 +6897,13 @@ function T5C(){
           <div style={{fontWeight:700,fontSize:14,color:C.orange,marginBottom:6}}>💬 Диалог-пример</div>
           <div style={{display:"flex",flexDirection:"column",gap:6,fontSize:14}}>
             {[
-              ["— Wann beginnt der Deutschkurs?","— Um 18 Uhr."],
-              ["— Bis wann geht der Kurs?","— Bis 20 Uhr."],
-              ["— Also von sechs bis acht?","— Ja, genau."],
-            ].map(([q,a],i)=>(
+              ["— Wann beginnt der Deutschkurs?","— Um 18 Uhr.","— Когда начинается курс немецкого?","— В 18 часов."],
+              ["— Bis wann geht der Kurs?","— Bis 20 Uhr.","— До какого часа идёт курс?","— До 20 часов."],
+              ["— Also von sechs bis acht?","— Ja, genau.","— Значит, с шести до восьми?","— Да, точно."],
+            ].map(([q,a,qRu,aRu],i)=>(
               <div key={i}>
-                <div style={{color:C.muted}}>{q}</div>
-                <div style={{color:C.text,fontWeight:600}}>{a}</div>
+                <TapEx de={q} ru={qRu} col={C.muted} style={{marginBottom:3}}/>
+                <TapEx de={a} ru={aRu} col={C.orange}/>
               </div>
             ))}
           </div>
@@ -6800,15 +6962,16 @@ function T5D(){
           </div>
           <div style={{display:"flex",flexDirection:"column",gap:5,fontSize:13}}>
             {[
-              ["schwimmen gehen","Ich gehe am Nachmittag schwimmen."],
-              ["tanzen gehen","Gehen wir heute Abend tanzen?"],
-              ["essen gehen","Er geht mit Freunden essen."],
-              ["spazieren gehen","Wir gehen am Sonntag spazieren."],
-            ].map(([inf,ex])=>(
+              ["schwimmen gehen","Ich gehe am Nachmittag schwimmen.","Я иду плавать днём."],
+              ["tanzen gehen","Gehen wir heute Abend tanzen?","Пойдём танцевать сегодня вечером?"],
+              ["essen gehen","Er geht mit Freunden essen.","Он идёт поесть с друзьями."],
+              ["spazieren gehen","Wir gehen am Sonntag spazieren.","Мы идём гулять в воскресенье."],
+            ].map(([inf,ex,exRu])=>(
               <div key={inf} style={{borderLeft:`2px solid ${C.blue}`,paddingLeft:8}}>
-                <span style={{color:C.blue,fontWeight:700}}>{inf}</span>
-                <span style={{color:C.muted}}> → </span>
-                <span style={{color:C.text}}>{ex}</span>
+                <div style={{marginBottom:2}}>
+                  <span style={{color:C.blue,fontWeight:700}}>{inf}</span>
+                </div>
+                <TapEx de={ex} ru={exRu} col={C.blue}/>
               </div>
             ))}
           </div>
@@ -7419,9 +7582,9 @@ function T6D(){
                 mögen vs möchten — в чём разница?
               </div>
               {[
-                {verb:"mögen",  conj:"ich mag",     ru:"любить (в принципе)", ex:"Ich mag Pizza.",           note:"постоянное предпочтение"},
-                {verb:"möchten",conj:"ich möchte",  ru:"хотеть (прямо сейчас)",ex:"Ich möchte (jetzt) Pizza.",note:"желание в данный момент"},
-              ].map(({verb,conj,ru,ex,note})=>(
+                {verb:"mögen",  conj:"ich mag",     ru:"любить (в принципе)", ex:"Ich mag Pizza.",           exRu:"Я люблю пиццу.",           note:"постоянное предпочтение"},
+                {verb:"möchten",conj:"ich möchte",  ru:"хотеть (прямо сейчас)",ex:"Ich möchte (jetzt) Pizza.",exRu:"Я хочу (сейчас) пиццу.",  note:"желание в данный момент"},
+              ].map(({verb,conj,ru,ex,exRu,note})=>(
                 <div key={verb} style={{background:C.ov5,borderRadius:8,
                   padding:"10px 12px",marginBottom:8}}>
                   <div style={{display:"flex",gap:8,alignItems:"center",marginBottom:4}}>
@@ -7429,9 +7592,9 @@ function T6D(){
                       padding:"2px 8px",fontSize:13,fontWeight:800}}>{verb}</span>
                     <span style={{color:C.text,fontWeight:700,fontSize:14}}>{conj}</span>
                   </div>
-                  <div style={{fontSize:13,color:C.muted,marginBottom:4}}>📌 {ru}</div>
-                  <div style={{fontSize:14,color:C.text,fontWeight:600}}>{ex}</div>
-                  <div style={{fontSize:12,color:C.muted,fontStyle:"italic"}}>{note}</div>
+                  <div style={{fontSize:13,color:C.muted,marginBottom:6}}>📌 {ru}</div>
+                  <TapEx de={ex} ru={exRu} col={C.purple}/>
+                  <div style={{fontSize:12,color:C.muted,fontStyle:"italic",marginTop:4}}>{note}</div>
                 </div>
               ))}
             </div>
@@ -7545,11 +7708,7 @@ function T6E(){
               ["Man backt den Kuchen selbst.","Торт пекут сами."],
               ["In Spanien isst man oft spät.","В Испании обычно едят поздно."],
             ].map(([de,ru])=>(
-              <div key={de} style={{background:C.ov6,borderRadius:7,
-                padding:"6px 10px",fontSize:13}}>
-                <span style={{color:C.text}}>{de}</span>
-                <span style={{color:C.muted,fontSize:12,display:"block",marginTop:2}}>{ru}</span>
-              </div>
+              <TapEx key={de} de={de} ru={ru} col={C.green}/>
             ))}
           </div>
         </div>
@@ -7640,10 +7799,10 @@ function T7A(){
     {m:"Altenpfleger",  f:"Altenpflegerin",  ru:"сиделка (пожилых)",  wo:"zu Hause / Heim"},
   ];
   const modals=[
-    {v:"können",col:C.green, ich:"kann",  du:"kannst",  er:"kann",  wir:"können", ihr:"könnt",  sie:"können",  ru:"мочь, уметь",    bsp:"Ich kann gut kochen."},
-    {v:"müssen", col:C.orange,ich:"muss",  du:"musst",   er:"muss",  wir:"müssen", ihr:"müsst",  sie:"müssen",  ru:"быть обязанным", bsp:"Ich muss arbeiten."},
-    {v:"wollen", col:C.red,   ich:"will",  du:"willst",  er:"will",  wir:"wollen", ihr:"wollt",  sie:"wollen",  ru:"хотеть (намерение)",bsp:"Ich will reisen."},
-    {v:"sollen", col:C.teal,  ich:"soll",  du:"sollst",  er:"soll",  wir:"sollen", ihr:"sollt",  sie:"sollen",  ru:"должен (по чужой воле)",bsp:"Du sollst schlafen."},
+    {v:"können",col:C.green, ich:"kann",  du:"kannst",  er:"kann",  wir:"können", ihr:"könnt",  sie:"können",  ru:"мочь, уметь",    bsp:"Ich kann gut kochen.",bspRu:"Я умею хорошо готовить."},
+    {v:"müssen", col:C.orange,ich:"muss",  du:"musst",   er:"muss",  wir:"müssen", ihr:"müsst",  sie:"müssen",  ru:"быть обязанным", bsp:"Ich muss arbeiten.",bspRu:"Я должен(на) работать."},
+    {v:"wollen", col:C.red,   ich:"will",  du:"willst",  er:"will",  wir:"wollen", ihr:"wollt",  sie:"wollen",  ru:"хотеть (намерение)",bsp:"Ich will reisen.",bspRu:"Я хочу путешествовать."},
+    {v:"sollen", col:C.teal,  ich:"soll",  du:"sollst",  er:"soll",  wir:"sollen", ihr:"sollt",  sie:"sollen",  ru:"должен (по чужой воле)",bsp:"Du sollst schlafen.",bspRu:"Тебе следует спать."},
   ];
   return (
     <div style={{display:"flex",flexDirection:"column",gap:10}}>
@@ -7681,7 +7840,7 @@ function T7A(){
                     </div>
                   ))}
                 </div>
-                <div style={{fontSize:13,color:C.muted,fontStyle:"italic"}}>💬 {m.bsp}</div>
+                <TapEx de={m.bsp} ru={m.bspRu} col={m.col}/>
               </div>
             ))}
           </div>
@@ -7751,14 +7910,14 @@ const Q_L7B=[
 ];
 function T7B(){
   const bank=[
-    {icon:"🏧",de:"der Geldautomat",      ru:"банкомат",                       bsp:"Ich hebe Geld am Geldautomaten ab."},
-    {icon:"💳",de:"die EC-Karte",         ru:"банковская карта (дебетовая)",    bsp:"Bezahlen Sie mit EC-Karte?"},
-    {icon:"🔢",de:"die Kontonummer",      ru:"номер счёта",                     bsp:"Meine Kontonummer ist..."},
-    {icon:"📄",de:"der Kontoauszug",      ru:"выписка со счёта",                bsp:"Ich drucke den Kontoauszug aus."},
-    {icon:"🌍",de:"die IBAN",             ru:"IBAN (международный номер счёта)",bsp:"DE46 1003 0000 0036 2057 00"},
-    {icon:"📋",de:"das Überweisungsformular",ru:"бланк банковского перевода",   bsp:"Füllen Sie das Formular aus."},
-    {icon:"🏦",de:"das Konto",            ru:"банковский счёт",                 bsp:"Ich habe ein Konto bei der Sparkasse."},
-    {icon:"💸",de:"überweisen",           ru:"переводить деньги",               bsp:"Ich überweise 200 Euro."},
+    {icon:"🏧",de:"der Geldautomat",      ru:"банкомат",                       bsp:"Ich hebe Geld am Geldautomaten ab.",bspRu:"Я снимаю деньги в банкомате."},
+    {icon:"💳",de:"die EC-Karte",         ru:"банковская карта (дебетовая)",    bsp:"Bezahlen Sie mit EC-Karte?",bspRu:"Вы платите картой?"},
+    {icon:"🔢",de:"die Kontonummer",      ru:"номер счёта",                     bsp:"Meine Kontonummer ist...",bspRu:"Мой номер счёта..."},
+    {icon:"📄",de:"der Kontoauszug",      ru:"выписка со счёта",                bsp:"Ich drucke den Kontoauszug aus.",bspRu:"Я распечатываю выписку со счёта."},
+    {icon:"🌍",de:"die IBAN",             ru:"IBAN (международный номер счёта)",bsp:"DE46 1003 0000 0036 2057 00",bspRu:"пример номера IBAN"},
+    {icon:"📋",de:"das Überweisungsformular",ru:"бланк банковского перевода",   bsp:"Füllen Sie das Formular aus.",bspRu:"Заполните бланк."},
+    {icon:"🏦",de:"das Konto",            ru:"банковский счёт",                 bsp:"Ich habe ein Konto bei der Sparkasse.",bspRu:"У меня есть счёт в Sparkasse."},
+    {icon:"💸",de:"überweisen",           ru:"переводить деньги",               bsp:"Ich überweise 200 Euro.",bspRu:"Я перевожу 200 евро."},
   ];
   return (
     <div style={{display:"flex",flexDirection:"column",gap:10}}>
@@ -7774,8 +7933,8 @@ function T7B(){
                   <div style={{color:C.muted,fontSize:12}}>{b.ru}</div>
                 </div>
               </div>
-              <div style={{fontSize:12,color:C.muted,fontStyle:"italic",paddingLeft:32}}>
-                💬 {b.bsp}
+              <div style={{paddingLeft:32}}>
+                <TapEx de={b.bsp} ru={b.bspRu} col={C.orange}/>
               </div>
             </div>
           ))}
@@ -7908,15 +8067,11 @@ function T7C(){
             <div style={{background:C.teal+"15",border:`1px solid ${C.teal}33`,borderRadius:10,padding:"10px 12px"}}>
               <div style={{fontWeight:700,fontSize:13,color:C.teal,marginBottom:6}}>🏠 zu Hause / nach Hause</div>
               {[
-                ["Wo bist du?",     "Ich bin zu Hause.",         "я дома"],
-                ["Wohin gehst du?", "Ich gehe nach Hause.",      "я иду домой"],
-                ["Woher kommst du?","Ich komme von zu Hause.",   "я из дома"],
+                ["Wo bist du?",     "Ich bin zu Hause.",         "Ты где? — Я дома."],
+                ["Wohin gehst du?", "Ich gehe nach Hause.",      "Ты куда идёшь? — Я иду домой."],
+                ["Woher kommst du?","Ich komme von zu Hause.",   "Ты откуда идёшь? — Я иду из дома."],
               ].map(([q,a,ru])=>(
-                <div key={q} style={{marginBottom:5,fontSize:13}}>
-                  <span style={{color:C.muted}}>{q} → </span>
-                  <span style={{color:C.teal,fontWeight:700}}>{a}</span>
-                  <span style={{color:C.muted,fontSize:12}}> ({ru})</span>
-                </div>
+                <TapEx key={q} de={<>{q} → <b>{a}</b></>} ru={ru} col={C.teal} style={{marginBottom:5}}/>
               ))}
             </div>
           </div>
@@ -8096,11 +8251,7 @@ function T8C(){
                 ["Du solltest viel schlafen.","Тебе следует много спать."],
                 ["Dann geh doch zum Arzt!","Тогда сходи к врачу!"],
               ].map(([de,ru])=>(
-                <div key={de} style={{marginBottom:5,fontSize:13,
-                  background:C.ov4,borderRadius:6,padding:"5px 8px"}}>
-                  <div style={{color:C.text,fontWeight:600}}>{de}</div>
-                  <div style={{color:C.muted,fontSize:12}}>{ru}</div>
-                </div>
+                <TapEx key={de} de={de} ru={ru} col={C.teal} style={{marginBottom:5}}/>
               ))}
             </div>
             <div style={{background:C.card2,borderRadius:10,padding:"10px 12px"}}>
@@ -8298,9 +8449,11 @@ function T8A(){
                   </div>
                 ))}
               </div>
-              <div style={{fontSize:12,color:C.muted,lineHeight:1.7}}>
-                💬 Der Arzt sagt, ich <b style={{color:C.teal}}>soll</b> viel Tee <b style={{color:C.orange}}>trinken</b>.<br/>
-                💬 Sie <b style={{color:C.teal}}>sollen</b> im Bett <b style={{color:C.orange}}>bleiben</b>.
+              <div style={{display:"flex",flexDirection:"column",gap:5}}>
+                <TapEx de={<>💬 Der Arzt sagt, ich <b style={{color:C.teal}}>soll</b> viel Tee <b style={{color:C.orange}}>trinken</b>.</>}
+                  ru="Врач говорит, что я должен(а) пить много чая." col={C.teal}/>
+                <TapEx de={<>💬 Sie <b style={{color:C.teal}}>sollen</b> im Bett <b style={{color:C.orange}}>bleiben</b>.</>}
+                  ru="Вам следует оставаться в постели." col={C.teal}/>
               </div>
             </div>
             <div style={{background:C.card2,borderRadius:10,padding:"10px 12px"}}>
@@ -8382,18 +8535,18 @@ const Q_L8D=[
 function T8D(){
   const [tab,setTab]=useState("notruf");
   const schema=[
-    {n:1,q:"Wer ruft an?",           bsp:"Mein Name ist Petrow."},
-    {n:2,q:"Was ist passiert?",       bsp:"Es gibt hier einen Unfall."},
-    {n:3,q:"Wo ist der Notfall?",     bsp:"Bahnhofstraße, Ecke Schillerstraße."},
-    {n:4,q:"Wie viele Personen sind verletzt?",bsp:"Ich glaube, drei Personen."},
-    {n:5,q:"Wie ist die Situation?",  bsp:"Bitte kommen Sie schnell, es ist dringend."},
-    {n:6,q:"Warten Sie auf Rückfragen!",bsp:"Legen Sie nicht auf!"},
+    {n:1,q:"Wer ruft an?",           qRu:"Кто звонит?",                          bsp:"Mein Name ist Petrow.",bspRu:"Меня зовут Петров."},
+    {n:2,q:"Was ist passiert?",      qRu:"Что случилось?",                       bsp:"Es gibt hier einen Unfall.",bspRu:"Здесь произошла авария."},
+    {n:3,q:"Wo ist der Notfall?",    qRu:"Где произошёл случай?",                bsp:"Bahnhofstraße, Ecke Schillerstraße.",bspRu:"Bahnhofstraße, угол Schillerstraße."},
+    {n:4,q:"Wie viele Personen sind verletzt?",qRu:"Сколько человек пострадало?",bsp:"Ich glaube, drei Personen.",bspRu:"Думаю, три человека."},
+    {n:5,q:"Wie ist die Situation?", qRu:"Какая ситуация?",                      bsp:"Bitte kommen Sie schnell, es ist dringend.",bspRu:"Пожалуйста, приезжайте быстрее, это срочно."},
+    {n:6,q:"Warten Sie auf Rückfragen!",qRu:"Ждите уточняющих вопросов!",        bsp:"Legen Sie nicht auf!",bspRu:"Не кладите трубку!"},
   ];
   const hilfe=[
-    {icon:"🛑",de:"anhalten",                 ru:"остановиться",           imp:"Halten Sie an!"},
-    {icon:"🚗",de:"nicht vorbeifahren",        ru:"не проезжать мимо",       imp:"Fahren Sie nicht vorbei!"},
-    {icon:"🆘",de:"erste Hilfe leisten",       ru:"оказывать первую помощь", imp:"Leisten Sie erste Hilfe!"},
-    {icon:"📵",de:"nicht auflegen",            ru:"не класть трубку",        imp:"Legen Sie nicht auf!"},
+    {icon:"🛑",de:"anhalten",                 ru:"остановиться",           imp:"Halten Sie an!",impRu:"Остановитесь!"},
+    {icon:"🚗",de:"nicht vorbeifahren",        ru:"не проезжать мимо",       imp:"Fahren Sie nicht vorbei!",impRu:"Не проезжайте мимо!"},
+    {icon:"🆘",de:"erste Hilfe leisten",       ru:"оказывать первую помощь", imp:"Leisten Sie erste Hilfe!",impRu:"Окажите первую помощь!"},
+    {icon:"📵",de:"nicht auflegen",            ru:"не класть трубку",        imp:"Legen Sie nicht auf!",impRu:"Не кладите трубку!"},
   ];
   const erschoepft=[
     {de:"erschöpft",    ru:"изможденный",     note:"о человеке"},
@@ -8437,15 +8590,15 @@ function T8D(){
               <div style={{fontSize:12,color:C.muted,marginBottom:10}}>
                 Sprechen Sie langsam und deutlich!
               </div>
-              {schema.map(({n,q,bsp})=>(
+              {schema.map(({n,q,qRu,bsp,bspRu})=>(
                 <div key={n} style={{display:"flex",gap:8,marginBottom:7,
                   background:C.ov4,borderRadius:8,padding:"8px 10px"}}>
                   <div style={{minWidth:22,height:22,background:C.red,borderRadius:"50%",
                     display:"flex",alignItems:"center",justifyContent:"center",
                     fontSize:12,fontWeight:800,color:"#fff",flexShrink:0}}>{n}</div>
-                  <div>
-                    <div style={{fontWeight:700,fontSize:13,color:C.text}}>{q}</div>
-                    <div style={{fontSize:12,color:C.muted,fontStyle:"italic"}}>{bsp}</div>
+                  <div style={{flex:1}}>
+                    <TapEx de={q} ru={qRu} col={C.text} style={{marginBottom:4}}/>
+                    <TapEx de={bsp} ru={bspRu} col={C.red}/>
                   </div>
                 </div>
               ))}
@@ -8476,8 +8629,8 @@ function T8D(){
                     <div style={{color:C.muted,fontSize:12}}>{h.ru}</div>
                   </div>
                 </div>
-                <div style={{fontSize:13,color:C.red,fontStyle:"italic",fontWeight:600,paddingLeft:30}}>
-                  → {h.imp}
+                <div style={{paddingLeft:30}}>
+                  <TapEx de={`→ ${h.imp}`} ru={h.impRu} col={C.red}/>
                 </div>
               </div>
             ))}
@@ -8635,9 +8788,7 @@ function T9A(){
               <div style={{fontSize:13,color:C.text,marginBottom:5}}>
                 Пешком = <b style={{color:C.orange}}>zu Fuß</b> (не "mit dem Fuß"!)
               </div>
-              <div style={{fontSize:12,color:C.muted,fontStyle:"italic"}}>
-                Ich gehe zu Fuß. — Ich fahre mit dem Fahrrad.
-              </div>
+              <TapEx de="Ich gehe zu Fuß. — Ich fahre mit dem Fahrrad." ru="Я иду пешком. — Я езжу на велосипеде." col={C.orange}/>
             </div>
           </div>
         )}
@@ -8667,11 +8818,7 @@ function T9A(){
                 ["Die U-Bahn ist schnell und praktisch.","Метро быстрое и практичное."],
                 ["Das Auto ist bequem, aber teuer.","Машина удобная, но дорогая."],
               ].map(([de,ru])=>(
-                <div key={de} style={{marginBottom:5,fontSize:13,
-                  background:C.ov4,borderRadius:6,padding:"5px 8px"}}>
-                  <div style={{color:C.text,fontWeight:600}}>{de}</div>
-                  <div style={{color:C.muted,fontSize:12}}>{ru}</div>
-                </div>
+                <TapEx key={de} de={de} ru={ru} col={C.green} style={{marginBottom:5}}/>
               ))}
             </div>
           </div>
@@ -8697,25 +8844,25 @@ const Q_L9B=[
 function T9B(){
   const [tab,setTab]=useState("weg");
   const praep=[
-    {p:"in",       ru:"в (внутри)",         bsp:"im Café / in der Schule"},
-    {p:"an",       ru:"у, при, на (у края)",bsp:"an der Ampel / am Bahnhof"},
-    {p:"auf",      ru:"на (на поверхности)",bsp:"auf dem Platz / auf der Straße"},
-    {p:"unter",    ru:"под",                bsp:"unter dem Tisch"},
-    {p:"über",     ru:"над",                bsp:"über dem Eingang"},
-    {p:"vor",      ru:"перед",              bsp:"vor dem Haus"},
-    {p:"hinter",   ru:"за",                 bsp:"hinter dem Café"},
-    {p:"neben",    ru:"рядом с",            bsp:"neben dem Kino"},
-    {p:"zwischen", ru:"между",              bsp:"zwischen dem Bett und dem Sofa"},
+    {p:"in",       ru:"в (внутри)",         bsp:"im Café / in der Schule",bspRu:"в кафе / в школе"},
+    {p:"an",       ru:"у, при, на (у края)",bsp:"an der Ampel / am Bahnhof",bspRu:"у светофора / на вокзале"},
+    {p:"auf",      ru:"на (на поверхности)",bsp:"auf dem Platz / auf der Straße",bspRu:"на площади / на улице"},
+    {p:"unter",    ru:"под",                bsp:"unter dem Tisch",bspRu:"под столом"},
+    {p:"über",     ru:"над",                bsp:"über dem Eingang",bspRu:"над входом"},
+    {p:"vor",      ru:"перед",              bsp:"vor dem Haus",bspRu:"перед домом"},
+    {p:"hinter",   ru:"за",                 bsp:"hinter dem Café",bspRu:"за кафе"},
+    {p:"neben",    ru:"рядом с",            bsp:"neben dem Kino",bspRu:"рядом с кинотеатром"},
+    {p:"zwischen", ru:"между",              bsp:"zwischen dem Bett und dem Sofa",bspRu:"между кроватью и диваном"},
   ];
   const weg=[
-    {icon:"⬆️", de:"geradeaus",       ru:"прямо",     ex:"Gehen Sie geradeaus!"},
-    {icon:"↪️", de:"rechts abbiegen", ru:"направо",   ex:"Biegen Sie rechts ab!"},
-    {icon:"↩️", de:"links abbiegen",  ru:"налево",    ex:"Biegen Sie links ab!"},
-    {icon:"📍", de:"bis zur Ampel",   ru:"до светофора", ex:"Gehen Sie bis zur Ampel."},
-    {icon:"🔄", de:"um die Ecke",     ru:"за угол",   ex:"Gehen Sie um die Ecke."},
-    {icon:"🏠", de:"gegenüber",       ru:"напротив",  ex:"Es ist gegenüber dem Bahnhof."},
-    {icon:"🛤️", de:"an ... vorbei",   ru:"мимо ...",  ex:"Gehen Sie an der Post vorbei."},
-    {icon:"🗺️", de:"auf der rechten/linken Seite", ru:"с правой/левой стороны", ex:"Es ist auf der linken Seite."},
+    {icon:"⬆️", de:"geradeaus",       ru:"прямо",     ex:"Gehen Sie geradeaus!",exRu:"Идите прямо!"},
+    {icon:"↪️", de:"rechts abbiegen", ru:"направо",   ex:"Biegen Sie rechts ab!",exRu:"Поверните направо!"},
+    {icon:"↩️", de:"links abbiegen",  ru:"налево",    ex:"Biegen Sie links ab!",exRu:"Поверните налево!"},
+    {icon:"📍", de:"bis zur Ampel",   ru:"до светофора", ex:"Gehen Sie bis zur Ampel.",exRu:"Идите до светофора."},
+    {icon:"🔄", de:"um die Ecke",     ru:"за угол",   ex:"Gehen Sie um die Ecke.",exRu:"Идите за угол."},
+    {icon:"🏠", de:"gegenüber",       ru:"напротив",  ex:"Es ist gegenüber dem Bahnhof.",exRu:"Это напротив вокзала."},
+    {icon:"🛤️", de:"an ... vorbei",   ru:"мимо ...",  ex:"Gehen Sie an der Post vorbei.",exRu:"Пройдите мимо почты."},
+    {icon:"🗺️", de:"auf der rechten/linken Seite", ru:"с правой/левой стороны", ex:"Es ist auf der linken Seite.",exRu:"Это с левой стороны."},
   ];
   return (
     <div style={{display:"flex",flexDirection:"column",gap:10}}>
@@ -8745,7 +8892,9 @@ function T9B(){
                     <span style={{color:C.muted,fontSize:12}}> — {w.ru}</span>
                   </div>
                 </div>
-                <div style={{fontSize:12,color:C.text,fontStyle:"italic",paddingLeft:26}}>→ {w.ex}</div>
+                <div style={{paddingLeft:26}}>
+                  <TapEx de={`→ ${w.ex}`} ru={w.exRu} col={C.teal}/>
+                </div>
               </div>
             ))}
           </div>
@@ -8771,8 +8920,8 @@ function T9B(){
                 borderRadius:7,padding:"7px 10px",alignItems:"baseline"}}>
                 <div style={{fontWeight:900,color:C.teal,fontSize:14,minWidth:52}}>{pr.p}</div>
                 <div style={{flex:1}}>
-                  <div style={{fontSize:13,color:C.text}}>{pr.ru}</div>
-                  <div style={{fontSize:12,color:C.muted,fontStyle:"italic"}}>{pr.bsp}</div>
+                  <div style={{fontSize:13,color:C.text,marginBottom:4}}>{pr.ru}</div>
+                  <TapEx de={pr.bsp} ru={pr.bspRu} col={C.teal}/>
                 </div>
               </div>
             ))}
@@ -8781,20 +8930,20 @@ function T9B(){
         {tab==="kontr"&&(
           <div>
             <div style={{fontSize:12,color:C.muted,marginBottom:10}}>Сокращения артикля с предлогом:</div>
-            {[["in + dem","im","im Café, im Bus, im Supermarkt"],
-              ["an + dem","am","am Bahnhof, am Montag"],
-              ["zu + dem","zum","zum Bahnhof, zum Arzt"],
-              ["zu + der","zur","zur Arbeit, zur Schule"],
-              ["bei + dem","beim","beim Arzt"],
-              ["von + dem","vom","vom Bahnhof"],
-            ].map(([full,short,bsp])=>(
+            {[["in + dem","im","im Café, im Bus, im Supermarkt","в кафе, в автобусе, в супермаркете"],
+              ["an + dem","am","am Bahnhof, am Montag","на вокзале, в понедельник"],
+              ["zu + dem","zum","zum Bahnhof, zum Arzt","к вокзалу, к врачу"],
+              ["zu + der","zur","zur Arbeit, zur Schule","на работу, в школу"],
+              ["bei + dem","beim","beim Arzt","у врача"],
+              ["von + dem","vom","vom Bahnhof","от вокзала"],
+            ].map(([full,short,bsp,bspRu])=>(
               <div key={full} style={{background:C.card2,borderRadius:7,padding:"7px 10px",marginBottom:5}}>
-                <div style={{display:"flex",gap:8,alignItems:"center",marginBottom:3}}>
+                <div style={{display:"flex",gap:8,alignItems:"center",marginBottom:5}}>
                   <span style={{color:C.muted,fontSize:12}}>{full}</span>
                   <span style={{color:C.muted}}>→</span>
                   <span style={{fontWeight:900,color:C.teal,fontSize:14}}>{short}</span>
                 </div>
-                <div style={{fontSize:12,color:C.muted,fontStyle:"italic"}}>{bsp}</div>
+                <TapEx de={bsp} ru={bspRu} col={C.teal}/>
               </div>
             ))}
           </div>
@@ -8821,9 +8970,9 @@ const Q_L9C=[
 function T9C(){
   const [tab,setTab]=useState("duerfen");
   const regeln=[
-    {sign:"🔴",de:"verboten",   ru:"запрещено",   ex:"Das Parken ist verboten. / Man darf hier nicht parken."},
-    {sign:"🟢",de:"erlaubt",    ru:"разрешено",   ex:"Das Parken ist erlaubt. / Man darf hier parken."},
-    {sign:"⚠️",de:"Vorfahrt",   ru:"приоритет",   ex:"Die Straßenbahn hat Vorfahrt."},
+    {sign:"🔴",de:"verboten",   ru:"запрещено",   ex:"Das Parken ist verboten. / Man darf hier nicht parken.",exRu:"Парковка запрещена. / Здесь нельзя парковаться."},
+    {sign:"🟢",de:"erlaubt",    ru:"разрешено",   ex:"Das Parken ist erlaubt. / Man darf hier parken.",exRu:"Парковка разрешена. / Здесь можно парковаться."},
+    {sign:"⚠️",de:"Vorfahrt",   ru:"приоритет",   ex:"Die Straßenbahn hat Vorfahrt.",exRu:"У трамвая приоритет проезда."},
   ];
   return (
     <div style={{display:"flex",flexDirection:"column",gap:10}}>
@@ -8893,7 +9042,7 @@ function T9C(){
                     <div style={{color:C.muted,fontSize:12}}>{r.ru}</div>
                   </div>
                 </div>
-                <div style={{fontSize:12,color:C.text,fontStyle:"italic"}}>{r.ex}</div>
+                <TapEx de={r.ex} ru={r.exRu} col={C.orange}/>
               </div>
             ))}
             <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,
@@ -8906,11 +9055,8 @@ function T9C(){
                 ["↪️ →","Man muss rechts abbiegen.","нужно повернуть направо"],
                 ["📯","Man darf nicht hupen.","сигналить нельзя"],
               ].map(([sign,de,ru])=>(
-                <div key={de} style={{marginBottom:5,fontSize:13,background:C.card2,
-                  borderRadius:6,padding:"5px 8px"}}>
-                  <span style={{fontWeight:700}}>{sign} </span>
-                  <span style={{color:C.text}}>{de}</span>
-                  <span style={{color:C.muted}}> — {ru}</span>
+                <div key={de} style={{marginBottom:5}}>
+                  <TapEx de={`${sign} ${de}`} ru={ru} col={C.orange}/>
                 </div>
               ))}
             </div>
@@ -8975,61 +9121,61 @@ const Q_L10A=[
 ];
 const STARKE_VERBEN=[
   // ── A1 ────────────────────────────────────────────────────────────────────
-  {inf:"beginnen",  pr:"beginnt",     pt:"begann",pp:"begonnen",    ru:"начинать",h:"hat",lv:"A1",bsp:"Der Kurs hat um 9 Uhr begonnen."},
-  {inf:"bleiben",   pr:"bleibt",      pt:"blieb",pp:"geblieben",   ru:"оставаться",h:"ist",lv:"A1",bsp:"Wir sind auf Mallorca geblieben."},
-  {inf:"bringen",   pr:"bringt",      pt:"brachte",pp:"gebracht",    ru:"приносить",h:"hat",lv:"A1",bsp:"Er hat das Essen gebracht."},
-  {inf:"denken",    pr:"denkt",       pt:"dachte",pp:"gedacht",     ru:"думать",h:"hat",lv:"A1",bsp:"Ich habe an dich gedacht."},
-  {inf:"einschlafen",pr:"schläft ein",pt:"schlief ein",pp:"eingeschlafen",ru:"засыпать",h:"ist",lv:"A1",bsp:"Hast du schnell eingeschlafen?"},
-  {inf:"essen",     pr:"isst",        pt:"aß",pp:"gegessen",    ru:"есть, кушать",h:"hat",lv:"A1",bsp:"Sie hat die Suppe gegessen."},
-  {inf:"fahren",    pr:"fährt",       pt:"fuhr",pp:"gefahren",    ru:"ехать",h:"ist",lv:"A1",bsp:"Wir sind zu schnell gefahren."},
-  {inf:"finden",    pr:"findet",      pt:"fand",pp:"gefunden",    ru:"находить",h:"hat",lv:"A1",bsp:"Renate hat ihre Mutter schnell gefunden."},
-  {inf:"fliegen",   pr:"fliegt",      pt:"flog",pp:"geflogen",    ru:"лететь",h:"ist",lv:"A1",bsp:"Er ist nach Wien geflogen."},
-  {inf:"geben",     pr:"gibt",        pt:"gab",pp:"gegeben",     ru:"давать",h:"hat",lv:"A1",bsp:"Peter hat mir ein Blatt Papier gegeben."},
-  {inf:"gehen",     pr:"geht",        pt:"ging",pp:"gegangen",    ru:"идти",h:"ist",lv:"A1",bsp:"Wohin seid ihr am Abend gegangen?"},
-  {inf:"haben",     pr:"hat",         pt:"hatte",pp:"gehabt",      ru:"иметь",h:"hat",lv:"A1",bsp:"Auf der Party haben alle viel Spaß gehabt."},
-  {inf:"heißen",    pr:"heißt",       pt:"hieß",pp:"geheißen",    ru:"называться",h:"hat",lv:"A1",bsp:"Das Buch hat 'Faust' geheißen."},
-  {inf:"helfen",    pr:"hilft",       pt:"half",pp:"geholfen",    ru:"помогать",h:"hat",lv:"A1",bsp:"Die Kinder haben zu Hause geholfen."},
-  {inf:"kommen",    pr:"kommt",       pt:"kam",pp:"gekommen",    ru:"приходить",h:"ist",lv:"A1",bsp:"Er ist pünktlich gekommen."},
-  {inf:"laufen",    pr:"läuft",       pt:"lief",pp:"gelaufen",    ru:"бежать",h:"ist",lv:"A1",bsp:"Julio ist mit mir gelaufen."},
-  {inf:"lesen",     pr:"liest",       pt:"las",pp:"gelesen",     ru:"читать",h:"hat",lv:"A1",bsp:"Hast du das Buch gelesen?"},
-  {inf:"nehmen",    pr:"nimmt",       pt:"nahm",pp:"genommen",    ru:"брать",h:"hat",lv:"A1",bsp:"Sie hat die U-Bahn genommen."},
-  {inf:"rufen",     pr:"ruft",        pt:"rief",pp:"gerufen",     ru:"звать, вызывать",h:"hat",lv:"A1",bsp:"Er hat die Polizei gerufen."},
-  {inf:"schlafen",  pr:"schläft",     pt:"schlief",pp:"geschlafen",  ru:"спать",h:"hat",lv:"A1",bsp:"Er hat gut geschlafen."},
-  {inf:"schreiben", pr:"schreibt",    pt:"schrieb",pp:"geschrieben", ru:"писать",h:"hat",lv:"A1",bsp:"Hast du schon die Postkarte geschrieben?"},
-  {inf:"schwimmen", pr:"schwimmt",    pt:"schwamm",pp:"geschwommen", ru:"плавать",h:"ist",lv:"A1",bsp:"Frau Novak ist heute morgen geschwommen."},
-  {inf:"sehen",     pr:"sieht",       pt:"sah",pp:"gesehen",     ru:"видеть",h:"hat",lv:"A1",bsp:"Haben Sie den Film gesehen?"},
-  {inf:"sein",      pr:"ist",         pt:"war",pp:"gewesen",     ru:"быть",h:"ist",lv:"A1",bsp:"Ich bin in Barcelona noch nie gewesen."},
-  {inf:"singen",    pr:"singt",       pt:"sang",pp:"gesungen",    ru:"петь",h:"hat",lv:"A1",bsp:"Sie hat ein Lied gesungen."},
-  {inf:"sprechen",  pr:"spricht",     pt:"sprach",pp:"gesprochen",  ru:"говорить",h:"hat",lv:"A1",bsp:"Wir haben über das Thema gesprochen."},
-  {inf:"aufstehen", pr:"steht auf",   pt:"stand auf",pp:"aufgestanden",ru:"вставать",h:"ist",lv:"A1",bsp:"Sylvia ist sehr früh aufgestanden."},
-  {inf:"stehen",    pr:"steht",       pt:"stand",pp:"gestanden",   ru:"стоять",h:"hat",lv:"A1",bsp:"Das Auto hat vor dem Haus gestanden."},
-  {inf:"treffen",   pr:"trifft",      pt:"traf",pp:"getroffen",   ru:"встречать",h:"hat",lv:"A1",bsp:"Ich habe einen Freund getroffen."},
-  {inf:"trinken",   pr:"trinkt",      pt:"trank",pp:"getrunken",   ru:"пить",h:"hat",lv:"A1",bsp:"Er hat viel Wasser getrunken."},
-  {inf:"tun",       pr:"tut",         pt:"tat",pp:"getan",       ru:"делать",h:"hat",lv:"A1",bsp:"Was hast du gestern getan?"},
-  {inf:"werden",    pr:"wird",        pt:"wurde",pp:"geworden",    ru:"становиться",h:"ist",lv:"A1",bsp:"Thomas ist rot geworden."},
-  {inf:"wissen",    pr:"weiß",        pt:"wusste",pp:"gewusst",     ru:"знать",h:"hat",lv:"A1",bsp:"Ich habe es nicht gewusst."},
+  {inf:"beginnen",  pr:"beginnt",     pt:"begann",pp:"begonnen",    ru:"начинать",h:"hat",lv:"A1",bsp:"Der Kurs hat um 9 Uhr begonnen.",bspRu:"Курс начался в 9 часов."},
+  {inf:"bleiben",   pr:"bleibt",      pt:"blieb",pp:"geblieben",   ru:"оставаться",h:"ist",lv:"A1",bsp:"Wir sind auf Mallorca geblieben.",bspRu:"Мы остались на Майорке."},
+  {inf:"bringen",   pr:"bringt",      pt:"brachte",pp:"gebracht",    ru:"приносить",h:"hat",lv:"A1",bsp:"Er hat das Essen gebracht.",bspRu:"Он принёс еду."},
+  {inf:"denken",    pr:"denkt",       pt:"dachte",pp:"gedacht",     ru:"думать",h:"hat",lv:"A1",bsp:"Ich habe an dich gedacht.",bspRu:"Я думал(а) о тебе."},
+  {inf:"einschlafen",pr:"schläft ein",pt:"schlief ein",pp:"eingeschlafen",ru:"засыпать",h:"ist",lv:"A1",bsp:"Hast du schnell eingeschlafen?",bspRu:"Ты быстро заснул(а)?"},
+  {inf:"essen",     pr:"isst",        pt:"aß",pp:"gegessen",    ru:"есть, кушать",h:"hat",lv:"A1",bsp:"Sie hat die Suppe gegessen.",bspRu:"Она съела суп."},
+  {inf:"fahren",    pr:"fährt",       pt:"fuhr",pp:"gefahren",    ru:"ехать",h:"ist",lv:"A1",bsp:"Wir sind zu schnell gefahren.",bspRu:"Мы ехали слишком быстро."},
+  {inf:"finden",    pr:"findet",      pt:"fand",pp:"gefunden",    ru:"находить",h:"hat",lv:"A1",bsp:"Renate hat ihre Mutter schnell gefunden.",bspRu:"Ренате быстро нашла свою маму."},
+  {inf:"fliegen",   pr:"fliegt",      pt:"flog",pp:"geflogen",    ru:"лететь",h:"ist",lv:"A1",bsp:"Er ist nach Wien geflogen.",bspRu:"Он полетел в Вену."},
+  {inf:"geben",     pr:"gibt",        pt:"gab",pp:"gegeben",     ru:"давать",h:"hat",lv:"A1",bsp:"Peter hat mir ein Blatt Papier gegeben.",bspRu:"Петер дал мне лист бумаги."},
+  {inf:"gehen",     pr:"geht",        pt:"ging",pp:"gegangen",    ru:"идти",h:"ist",lv:"A1",bsp:"Wohin seid ihr am Abend gegangen?",bspRu:"Куда вы пошли вечером?"},
+  {inf:"haben",     pr:"hat",         pt:"hatte",pp:"gehabt",      ru:"иметь",h:"hat",lv:"A1",bsp:"Auf der Party haben alle viel Spaß gehabt.",bspRu:"На вечеринке всем было очень весело."},
+  {inf:"heißen",    pr:"heißt",       pt:"hieß",pp:"geheißen",    ru:"называться",h:"hat",lv:"A1",bsp:"Das Buch hat 'Faust' geheißen.",bspRu:"Книга называлась «Фауст»."},
+  {inf:"helfen",    pr:"hilft",       pt:"half",pp:"geholfen",    ru:"помогать",h:"hat",lv:"A1",bsp:"Die Kinder haben zu Hause geholfen.",bspRu:"Дети помогали по дому."},
+  {inf:"kommen",    pr:"kommt",       pt:"kam",pp:"gekommen",    ru:"приходить",h:"ist",lv:"A1",bsp:"Er ist pünktlich gekommen.",bspRu:"Он пришёл точно вовремя."},
+  {inf:"laufen",    pr:"läuft",       pt:"lief",pp:"gelaufen",    ru:"бежать",h:"ist",lv:"A1",bsp:"Julio ist mit mir gelaufen.",bspRu:"Хулио бежал со мной."},
+  {inf:"lesen",     pr:"liest",       pt:"las",pp:"gelesen",     ru:"читать",h:"hat",lv:"A1",bsp:"Hast du das Buch gelesen?",bspRu:"Ты прочитал(а) книгу?"},
+  {inf:"nehmen",    pr:"nimmt",       pt:"nahm",pp:"genommen",    ru:"брать",h:"hat",lv:"A1",bsp:"Sie hat die U-Bahn genommen.",bspRu:"Она поехала на метро."},
+  {inf:"rufen",     pr:"ruft",        pt:"rief",pp:"gerufen",     ru:"звать, вызывать",h:"hat",lv:"A1",bsp:"Er hat die Polizei gerufen.",bspRu:"Он вызвал полицию."},
+  {inf:"schlafen",  pr:"schläft",     pt:"schlief",pp:"geschlafen",  ru:"спать",h:"hat",lv:"A1",bsp:"Er hat gut geschlafen.",bspRu:"Он хорошо спал."},
+  {inf:"schreiben", pr:"schreibt",    pt:"schrieb",pp:"geschrieben", ru:"писать",h:"hat",lv:"A1",bsp:"Hast du schon die Postkarte geschrieben?",bspRu:"Ты уже написал(а) открытку?"},
+  {inf:"schwimmen", pr:"schwimmt",    pt:"schwamm",pp:"geschwommen", ru:"плавать",h:"ist",lv:"A1",bsp:"Frau Novak ist heute morgen geschwommen.",bspRu:"Госпожа Новак плавала сегодня утром."},
+  {inf:"sehen",     pr:"sieht",       pt:"sah",pp:"gesehen",     ru:"видеть",h:"hat",lv:"A1",bsp:"Haben Sie den Film gesehen?",bspRu:"Вы видели этот фильм?"},
+  {inf:"sein",      pr:"ist",         pt:"war",pp:"gewesen",     ru:"быть",h:"ist",lv:"A1",bsp:"Ich bin in Barcelona noch nie gewesen.",bspRu:"Я никогда не был(а) в Барселоне."},
+  {inf:"singen",    pr:"singt",       pt:"sang",pp:"gesungen",    ru:"петь",h:"hat",lv:"A1",bsp:"Sie hat ein Lied gesungen.",bspRu:"Она спела песню."},
+  {inf:"sprechen",  pr:"spricht",     pt:"sprach",pp:"gesprochen",  ru:"говорить",h:"hat",lv:"A1",bsp:"Wir haben über das Thema gesprochen.",bspRu:"Мы говорили на эту тему."},
+  {inf:"aufstehen", pr:"steht auf",   pt:"stand auf",pp:"aufgestanden",ru:"вставать",h:"ist",lv:"A1",bsp:"Sylvia ist sehr früh aufgestanden.",bspRu:"Сильвия встала очень рано."},
+  {inf:"stehen",    pr:"steht",       pt:"stand",pp:"gestanden",   ru:"стоять",h:"hat",lv:"A1",bsp:"Das Auto hat vor dem Haus gestanden.",bspRu:"Машина стояла перед домом."},
+  {inf:"treffen",   pr:"trifft",      pt:"traf",pp:"getroffen",   ru:"встречать",h:"hat",lv:"A1",bsp:"Ich habe einen Freund getroffen.",bspRu:"Я встретил(а) друга."},
+  {inf:"trinken",   pr:"trinkt",      pt:"trank",pp:"getrunken",   ru:"пить",h:"hat",lv:"A1",bsp:"Er hat viel Wasser getrunken.",bspRu:"Он выпил много воды."},
+  {inf:"tun",       pr:"tut",         pt:"tat",pp:"getan",       ru:"делать",h:"hat",lv:"A1",bsp:"Was hast du gestern getan?",bspRu:"Что ты делал(а) вчера?"},
+  {inf:"werden",    pr:"wird",        pt:"wurde",pp:"geworden",    ru:"становиться",h:"ist",lv:"A1",bsp:"Thomas ist rot geworden.",bspRu:"Томас покраснел."},
+  {inf:"wissen",    pr:"weiß",        pt:"wusste",pp:"gewusst",     ru:"знать",h:"hat",lv:"A1",bsp:"Ich habe es nicht gewusst.",bspRu:"Я этого не знал(а)."},
   // ── A2 ────────────────────────────────────────────────────────────────────
-  {inf:"backen",    pr:"backt",       pt:"backte",pp:"gebacken",    ru:"печь",h:"hat",lv:"A2",bsp:"Sie hat einen Kuchen gebacken."},
-  {inf:"biegen",    pr:"biegt",       pt:"bog",pp:"gebogen",     ru:"гнуть",h:"hat",lv:"A2",bsp:"Er hat die Stange gebogen."},
-  {inf:"bieten",    pr:"bietet",      pt:"bot",pp:"geboten",     ru:"предлагать",h:"hat",lv:"A2",bsp:"Das Hotel hat viel geboten."},
-  {inf:"bitten",    pr:"bittet",      pt:"bat",pp:"gebeten",     ru:"просить",h:"hat",lv:"A2",bsp:"Er hat mich um Hilfe gebeten."},
-  {inf:"braten",    pr:"brät",        pt:"briet",pp:"gebraten",    ru:"жарить",h:"hat",lv:"A2",bsp:"Sie hat Fleisch gebraten."},
-  {inf:"fallen",    pr:"fällt",       pt:"fiel",pp:"gefallen",    ru:"падать",h:"ist",lv:"A2",bsp:"Das Kind ist hingefallen."},
-  {inf:"gefallen",  pr:"gefällt",     pt:"gefiel",pp:"gefallen",    ru:"нравиться",h:"hat",lv:"A2",bsp:"Das Konzert hat mir sehr gut gefallen."},
-  {inf:"gewinnen",  pr:"gewinnt",     pt:"gewann",pp:"gewonnen",    ru:"выигрывать",h:"hat",lv:"A2",bsp:"Unser Team hat das Spiel gewonnen."},
-  {inf:"laden",     pr:"lädt",        pt:"lud",pp:"geladen",     ru:"грузить, загружать",h:"hat",lv:"A2",bsp:"Er hat das Video hochgeladen."},
-  {inf:"liegen",    pr:"liegt",       pt:"lag",pp:"gelegen",     ru:"лежать",h:"hat",lv:"A2",bsp:"Das Buch hat auf dem Tisch gelegen."},
-  {inf:"nennen",    pr:"nennt",       pt:"nannte",pp:"genannt",     ru:"называть",h:"hat",lv:"A2",bsp:"Sie hat ihn beim Namen genannt."},
-  {inf:"rennen",    pr:"rennt",       pt:"rannte",pp:"gerannt",     ru:"бежать (быстро)",h:"ist",lv:"A2",bsp:"Er ist sehr schnell gerannt."},
-  {inf:"riechen",   pr:"riecht",      pt:"roch",pp:"gerochen",    ru:"пахнуть",h:"hat",lv:"A2",bsp:"Die Blumen haben gut gerochen."},
-  {inf:"schließen", pr:"schließt",    pt:"schloss",pp:"geschlossen", ru:"закрывать",h:"hat",lv:"A2",bsp:"Er hat die Tür geschlossen."},
-  {inf:"sitzen",    pr:"sitzt",       pt:"saß",pp:"gesessen",    ru:"сидеть",h:"hat",lv:"A2",bsp:"Wir haben im Café gesessen."},
-  {inf:"steigen",   pr:"steigt",      pt:"stieg",pp:"gestiegen",   ru:"подниматься, садиться",h:"ist",lv:"A2",bsp:"Wir sind in den Bus gestiegen."},
-  {inf:"sterben",   pr:"stirbt",      pt:"starb",pp:"gestorben",   ru:"умирать",h:"ist",lv:"A2",bsp:"Die Pflanze ist gestorben."},
-  {inf:"treiben",   pr:"treibt",      pt:"trieb",pp:"getrieben",   ru:"заниматься (спортом)",h:"hat",lv:"A2",bsp:"Er hat viel Sport getrieben."},
-  {inf:"vergessen", pr:"vergisst",    pt:"vergaß",pp:"vergessen",   ru:"забывать",h:"hat",lv:"A2",bsp:"Ich habe mein Handy vergessen."},
-  {inf:"verlieren", pr:"verliert",    pt:"verlor",pp:"verloren",    ru:"терять",h:"hat",lv:"A2",bsp:"Er hat seine Schlüssel verloren."},
-  {inf:"wachsen",   pr:"wächst",      pt:"wuchs",pp:"gewachsen",   ru:"расти",h:"ist",lv:"A2",bsp:"Das Kind ist sehr gewachsen."},
+  {inf:"backen",    pr:"backt",       pt:"backte",pp:"gebacken",    ru:"печь",h:"hat",lv:"A2",bsp:"Sie hat einen Kuchen gebacken.",bspRu:"Она испекла пирог."},
+  {inf:"biegen",    pr:"biegt",       pt:"bog",pp:"gebogen",     ru:"гнуть",h:"hat",lv:"A2",bsp:"Er hat die Stange gebogen.",bspRu:"Он согнул прут."},
+  {inf:"bieten",    pr:"bietet",      pt:"bot",pp:"geboten",     ru:"предлагать",h:"hat",lv:"A2",bsp:"Das Hotel hat viel geboten.",bspRu:"Отель предложил много всего."},
+  {inf:"bitten",    pr:"bittet",      pt:"bat",pp:"gebeten",     ru:"просить",h:"hat",lv:"A2",bsp:"Er hat mich um Hilfe gebeten.",bspRu:"Он попросил меня о помощи."},
+  {inf:"braten",    pr:"brät",        pt:"briet",pp:"gebraten",    ru:"жарить",h:"hat",lv:"A2",bsp:"Sie hat Fleisch gebraten.",bspRu:"Она пожарила мясо."},
+  {inf:"fallen",    pr:"fällt",       pt:"fiel",pp:"gefallen",    ru:"падать",h:"ist",lv:"A2",bsp:"Das Kind ist hingefallen.",bspRu:"Ребёнок упал."},
+  {inf:"gefallen",  pr:"gefällt",     pt:"gefiel",pp:"gefallen",    ru:"нравиться",h:"hat",lv:"A2",bsp:"Das Konzert hat mir sehr gut gefallen.",bspRu:"Концерт мне очень понравился."},
+  {inf:"gewinnen",  pr:"gewinnt",     pt:"gewann",pp:"gewonnen",    ru:"выигрывать",h:"hat",lv:"A2",bsp:"Unser Team hat das Spiel gewonnen.",bspRu:"Наша команда выиграла игру."},
+  {inf:"laden",     pr:"lädt",        pt:"lud",pp:"geladen",     ru:"грузить, загружать",h:"hat",lv:"A2",bsp:"Er hat das Video hochgeladen.",bspRu:"Он загрузил видео."},
+  {inf:"liegen",    pr:"liegt",       pt:"lag",pp:"gelegen",     ru:"лежать",h:"hat",lv:"A2",bsp:"Das Buch hat auf dem Tisch gelegen.",bspRu:"Книга лежала на столе."},
+  {inf:"nennen",    pr:"nennt",       pt:"nannte",pp:"genannt",     ru:"называть",h:"hat",lv:"A2",bsp:"Sie hat ihn beim Namen genannt.",bspRu:"Она назвала его по имени."},
+  {inf:"rennen",    pr:"rennt",       pt:"rannte",pp:"gerannt",     ru:"бежать (быстро)",h:"ist",lv:"A2",bsp:"Er ist sehr schnell gerannt.",bspRu:"Он очень быстро бежал."},
+  {inf:"riechen",   pr:"riecht",      pt:"roch",pp:"gerochen",    ru:"пахнуть",h:"hat",lv:"A2",bsp:"Die Blumen haben gut gerochen.",bspRu:"Цветы хорошо пахли."},
+  {inf:"schließen", pr:"schließt",    pt:"schloss",pp:"geschlossen", ru:"закрывать",h:"hat",lv:"A2",bsp:"Er hat die Tür geschlossen.",bspRu:"Он закрыл дверь."},
+  {inf:"sitzen",    pr:"sitzt",       pt:"saß",pp:"gesessen",    ru:"сидеть",h:"hat",lv:"A2",bsp:"Wir haben im Café gesessen.",bspRu:"Мы сидели в кафе."},
+  {inf:"steigen",   pr:"steigt",      pt:"stieg",pp:"gestiegen",   ru:"подниматься, садиться",h:"ist",lv:"A2",bsp:"Wir sind in den Bus gestiegen.",bspRu:"Мы сели в автобус."},
+  {inf:"sterben",   pr:"stirbt",      pt:"starb",pp:"gestorben",   ru:"умирать",h:"ist",lv:"A2",bsp:"Die Pflanze ist gestorben.",bspRu:"Растение погибло."},
+  {inf:"treiben",   pr:"treibt",      pt:"trieb",pp:"getrieben",   ru:"заниматься (спортом)",h:"hat",lv:"A2",bsp:"Er hat viel Sport getrieben.",bspRu:"Он много занимался спортом."},
+  {inf:"vergessen", pr:"vergisst",    pt:"vergaß",pp:"vergessen",   ru:"забывать",h:"hat",lv:"A2",bsp:"Ich habe mein Handy vergessen.",bspRu:"Я забыл(а) свой телефон."},
+  {inf:"verlieren", pr:"verliert",    pt:"verlor",pp:"verloren",    ru:"терять",h:"hat",lv:"A2",bsp:"Er hat seine Schlüssel verloren.",bspRu:"Он потерял свои ключи."},
+  {inf:"wachsen",   pr:"wächst",      pt:"wuchs",pp:"gewachsen",   ru:"расти",h:"ist",lv:"A2",bsp:"Das Kind ist sehr gewachsen.",bspRu:"Ребёнок очень вырос."},
 ];
 // Общее правило haben/sein в Perfekt — используется и в T10A (вкладка "haben / sein"),
 // и в T10B (вкладка "Regel"), чтобы не дублировать объяснение в двух местах.
@@ -9376,8 +9522,8 @@ function T10A(){
                   <div style={{background:C.ov6,borderRadius:"0 0 7px 7px",
                     padding:"6px 10px",marginBottom:5,fontSize:12,
                     borderLeft:`3px solid ${v.h==="ist"?C.orange:C.teal}`}}>
-                    <div style={{color:C.text,fontWeight:700,marginBottom:3}}>🔤 {v.ru}</div>
-                    <div style={{color:C.muted,fontStyle:"italic"}}>💬 {v.bsp}</div>
+                    <div style={{color:C.text,fontWeight:700,marginBottom:5}}>🔤 {v.ru}</div>
+                    <TapEx de={v.bsp} ru={v.bspRu} col={v.h==="ist"?C.orange:C.teal}/>
                   </div>
                 )}
               </div>
@@ -9558,10 +9704,8 @@ function T10C(){
                 ))}
               </div>
             </div>
-            <div style={{marginTop:10,fontSize:13,color:C.text,fontStyle:"italic"}}>
-              Früher <b>war</b> ich in der Ukraine. Heute <b>bin</b> ich in Deutschland.<br/>
-              Früher <b>hatte</b> ich kein Auto. Heute <b>habe</b> ich ein Auto.
-            </div>
+            <TapEx de="Früher war ich in der Ukraine. Heute bin ich in Deutschland. Früher hatte ich kein Auto. Heute habe ich ein Auto."
+              ru="Раньше я был(а) в Украине. Сегодня я в Германии. Раньше у меня не было машины. Сегодня у меня есть машина." col={C.purple} style={{marginTop:10}}/>
           </div>
         )}
         {tab==="seit"&&(
@@ -9573,18 +9717,10 @@ function T10C(){
                 «seit» отвечает на вопрос <b>Seit wann?</b> и показывает действие, которое началось в прошлом и продолжается до сих пор. После «seit» используется <b>Präsens</b>!
               </div>
               <div style={{display:"flex",flexDirection:"column",gap:5,marginTop:8}}>
-                <div style={{background:C.ov7,borderRadius:8,padding:"8px 10px",fontSize:13,color:C.text}}>
-                  Er ist <b style={{color:C.orange}}>seit 2004</b> in Deutschland.
-                </div>
-                <div style={{background:C.ov7,borderRadius:8,padding:"8px 10px",fontSize:13,color:C.text}}>
-                  Ich bin <b style={{color:C.orange}}>seit einem Jahr</b> in Deutschland. <span style={{color:C.muted}}>(n, Dat.)</span>
-                </div>
-                <div style={{background:C.ov7,borderRadius:8,padding:"8px 10px",fontSize:13,color:C.text}}>
-                  Sie arbeitet <b style={{color:C.orange}}>seit einer Woche</b> im Supermarkt. <span style={{color:C.muted}}>(f, Dat.)</span>
-                </div>
-                <div style={{background:C.ov7,borderRadius:8,padding:"8px 10px",fontSize:13,color:C.text}}>
-                  Wir haben <b style={{color:C.orange}}>seit zwei Jahren</b> ein eigenes Haus. <span style={{color:C.muted}}>(Pl., Dat.)</span>
-                </div>
+                <TapEx de={<>Er ist <b style={{color:C.orange}}>seit 2004</b> in Deutschland.</>} ru="Он в Германии с 2004 года." col={C.orange}/>
+                <TapEx de={<>Ich bin <b style={{color:C.orange}}>seit einem Jahr</b> in Deutschland. <span style={{color:C.muted}}>(n, Dat.)</span></>} ru="Я в Германии уже год." col={C.orange}/>
+                <TapEx de={<>Sie arbeitet <b style={{color:C.orange}}>seit einer Woche</b> im Supermarkt. <span style={{color:C.muted}}>(f, Dat.)</span></>} ru="Она работает в супермаркете уже неделю." col={C.orange}/>
+                <TapEx de={<>Wir haben <b style={{color:C.orange}}>seit zwei Jahren</b> ein eigenes Haus. <span style={{color:C.muted}}>(Pl., Dat.)</span></>} ru="У нас уже два года есть свой дом." col={C.orange}/>
               </div>
             </div>
           </div>
@@ -9716,10 +9852,8 @@ function T11A(){
             <div style={{background:C.ov4,borderRadius:8,padding:"8px 11px",marginTop:8,fontSize:12,color:C.text}}>
               ⚠️ Исключения: 1. → der <b>erste</b> (не einte), 3. → der <b>dritte</b> (не dreite), 7. → der <b>siebte</b> (не siebente)
             </div>
-            <div style={{background:C.ov4,borderRadius:8,padding:"8px 11px",marginTop:6,fontSize:12,color:C.text,fontStyle:"italic"}}>
-              — Welcher Tag ist heute? — Heute ist der erste siebte. (01.07.)<br/>
-              — Wann kommst du? — Ich komme am vierten sechsten. (04.06.)
-            </div>
+            <TapEx de="— Welcher Tag ist heute? — Heute ist der erste siebte. (01.07.) — Wann kommst du? — Ich komme am vierten sechsten. (04.06.)"
+              ru="— Какое сегодня число? — Сегодня первое июля. — Когда ты приедешь? — Я приеду четвёртого июня." col={C.green} style={{marginTop:6}}/>
           </div>
         )}
         {tab==="umzug"&&(
@@ -9769,18 +9903,30 @@ function T11B(){
   const [tab,setTab]=useState("dativ");
   const dativTab=[["ich","mir"],["du","dir"],["er/es","ihm"],["sie","ihr"],["wir","uns"],["ihr","euch"],["sie/Sie","ihnen/Ihnen"]];
   const verbenDativ=[
-    {v:"helfen",  bsp:"Können Sie mir helfen?",        ru:"помогать кому-то (Dativ)"},
-    {v:"danken",  bsp:"Ich danke Ihnen.",              ru:"благодарить кого-то (Dativ)"},
-    {v:"gehören", bsp:"Das Haus gehört mir.",          ru:"принадлежать кому-то (Dativ)"},
+    {v:"helfen",  bsp:"Können Sie mir helfen?",        bspRu:"Вы можете мне помочь?",ru:"помогать кому-то (Dativ)"},
+    {v:"danken",  bsp:"Ich danke Ihnen.",              bspRu:"Я вас благодарю.",ru:"благодарить кого-то (Dativ)"},
+    {v:"gehören", bsp:"Das Haus gehört mir.",          bspRu:"Этот дом принадлежит мне.",ru:"принадлежать кому-то (Dativ)"},
   ];
   const fuerAkk=[["m","für den / für einen"],["n","für das / für ein"],["f","für die / für eine"],["Pl.","für die / für —"]];
-  const bitten=["Entschuldigen Sie bitte, darf ich Sie etwas fragen?","Verzeihung, können Sie mir helfen?","Ja, gern.","Was kann ich für Sie tun?"];
-  const leihen=[
-    {q:"Wem gehört das?",                       a:"Gehört das Buch dir? / Gehört das euch?",              note:"gehören + Dativ"},
-    {q:"Kannst du mir einen Stift geben?",      a:"Ja, gerne. / Nein, es tut mir leid. Ich habe keinen.", note:"es tut mir leid = мне жаль"},
-    {q:"Bringst du mir morgen das Buch mit?",   a:"Ja, das kann ich dir mitbringen.",                    note:"mitbringen = принести с собой"},
+  const bitten=[
+    ["Entschuldigen Sie bitte, darf ich Sie etwas fragen?","Извините, можно вас кое-что спросить?"],
+    ["Verzeihung, können Sie mir helfen?","Простите, вы можете мне помочь?"],
+    ["Ja, gern.","Да, с радостью."],
+    ["Was kann ich für Sie tun?","Что я могу для вас сделать?"],
   ];
-  const danken=["Vielen Dank.","Herzlichen Dank.","Ich danke Ihnen."];
+  const leihen=[
+    {q:"Wem gehört das?",                       qRu:"Кому это принадлежит?",
+     a:"Gehört das Buch dir? / Gehört das euch?",              aRu:"Эта книга твоя? / Это ваше?", note:"gehören + Dativ"},
+    {q:"Kannst du mir einen Stift geben?",      qRu:"Ты можешь дать мне ручку?",
+     a:"Ja, gerne. / Nein, es tut mir leid. Ich habe keinen.", aRu:"Да, конечно. / Нет, мне жаль, у меня нет.", note:"es tut mir leid = мне жаль"},
+    {q:"Bringst du mir morgen das Buch mit?",   qRu:"Ты принесёшь мне завтра книгу?",
+     a:"Ja, das kann ich dir mitbringen.",                    aRu:"Да, я могу тебе её принести.", note:"mitbringen = принести с собой"},
+  ];
+  const danken=[
+    ["Vielen Dank.","Большое спасибо."],
+    ["Herzlichen Dank.","Сердечно благодарю."],
+    ["Ich danke Ihnen.","Я вас благодарю."],
+  ];
   return (
     <div style={{display:"flex",flexDirection:"column",gap:10}}>
       <Box c={C.blue}>
@@ -9819,8 +9965,8 @@ function T11B(){
               <div key={v.v} style={{background:C.ov4,borderRadius:9,padding:"9px 11px",marginBottom:6,
                 borderLeft:`3px solid ${C.orange}`}}>
                 <div style={{fontWeight:800,fontSize:13,color:C.orange,marginBottom:3}}>{v.v} <span style={{fontSize:11,color:C.muted,fontWeight:400}}>+ Dativ</span></div>
-                <div style={{fontSize:13,color:C.text,marginBottom:2,fontStyle:"italic"}}>{v.bsp}</div>
-                <div style={{fontSize:12,color:C.muted}}>{v.ru}</div>
+                <div style={{fontSize:12,color:C.muted,marginBottom:5}}>{v.ru}</div>
+                <TapEx de={v.bsp} ru={v.bspRu} col={C.orange}/>
               </div>
             ))}
             <div style={{background:C.ov4,borderRadius:8,padding:"8px 11px",marginTop:4,fontSize:12,color:C.text}}>
@@ -9841,24 +9987,22 @@ function T11B(){
                 </Fragment>
               ))}
             </div>
-            <div style={{background:C.blue+"15",border:`1px solid ${C.blue}33`,borderRadius:9,padding:"9px 11px",fontSize:12,color:C.text}}>
-              Für die Kfz-Zulassung braucht man das Autokennzeichen.<br/>
-              Für einen Kindergeldantrag braucht man die Geburtsurkunde.
-            </div>
+            <TapEx de="Für die Kfz-Zulassung braucht man das Autokennzeichen. Für einen Kindergeldantrag braucht man die Geburtsurkunde."
+              ru="Для регистрации авто нужен номерной знак. Для заявления на детское пособие нужно свидетельство о рождении." col={C.blue}/>
           </div>
         )}
         {tab==="phrasen"&&(
           <div>
             <div style={{marginBottom:10}}>
               <div style={{fontSize:12,fontWeight:700,color:C.green,marginBottom:5}}>Um Hilfe bitten:</div>
-              {bitten.map(p=>(
-                <div key={p} style={{background:C.ov4,borderRadius:7,padding:"6px 10px",fontSize:12,color:C.text,marginBottom:4}}>{p}</div>
+              {bitten.map(([de,ru])=>(
+                <TapEx key={de} de={de} ru={ru} col={C.green} style={{marginBottom:4}}/>
               ))}
             </div>
             <div>
               <div style={{fontSize:12,fontWeight:700,color:C.orange,marginBottom:5}}>Sich bedanken:</div>
-              {danken.map(p=>(
-                <div key={p} style={{background:C.ov4,borderRadius:7,padding:"6px 10px",fontSize:12,color:C.text,marginBottom:4}}>{p}</div>
+              {danken.map(([de,ru])=>(
+                <TapEx key={de} de={de} ru={ru} col={C.orange} style={{marginBottom:4}}/>
               ))}
             </div>
           </div>
@@ -9871,10 +10015,303 @@ function T11B(){
             {leihen.map(d=>(
               <div key={d.q} style={{background:C.ov4,borderRadius:9,padding:"9px 11px",marginBottom:6,
                 borderLeft:`3px solid ${C.purple}`}}>
-                <div style={{fontSize:13,color:C.text,fontWeight:600,marginBottom:3}}>— {d.q}</div>
-                <div style={{fontSize:13,color:C.purple,marginBottom:3}}>— {d.a}</div>
+                <TapEx de={`— ${d.q}`} ru={d.qRu} col={C.text} style={{marginBottom:4}}/>
+                <TapEx de={`— ${d.a}`} ru={d.aRu} col={C.purple} style={{marginBottom:4}}/>
                 <div style={{fontSize:11,color:C.muted}}>{d.note}</div>
               </div>
+            ))}
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
+const Q_L12A=[
+  {q:"Nach 'der/das/die' + Adjektiv + Nomen — Nominativ (alle Genera): welche Endung?", opts:["-e","-en","-er","-es"], ans:0, hint:"Nominativ überall → -e"},
+  {q:"'den ___ Anzug' (neu, Akkusativ m)",            opts:["neue","neuen","neuer","neues"], ans:1, hint:"Akkusativ m → -en"},
+  {q:"'das ___ Hemd' (neu, Akkusativ n)",             opts:["neue","neuen","neuer","neues"], ans:0, hint:"Akkusativ n → -e (wie Nom.)"},
+  {q:"'die ___ Schuhe' (neu, Plural, egal welcher Kasus außer Nom./Akk.)",opts:["neue","neuen","neuer","neu"], ans:1, hint:"Plural fast immer → -en"},
+  {q:"gefallen: 'Der Rock ___ mir sehr gut.' (er)",   opts:["gefalle","gefällst","gefällt","gefallt"], ans:2, hint:"a→ä: er/sie/es gefällt"},
+  {q:"'Die Farbe steht dir gut.' — steht = ?",        opts:["стоит","идёт, подходит (о внешности)","стоит на месте","останавливается"], ans:1, hint:"stehen + Dativ = об одежде"},
+  {q:"'Die Hose passt mir nicht.' — passen = ?",      opts:["нравиться","идти (о внешности)","подходить по размеру","стоить"], ans:2, hint:"passen = размер"},
+  {q:"Welches Verb braucht immer Dativ: gefallen, stehen, passen — сколько из них?", opts:["0","1","2","3"], ans:3, hint:"все три требуют Dativ"},
+  {q:"'Wie ___ dir das Kleid?' (gefallen, du)",       opts:["gefällst","gefällt","gefalle","gefallt"], ans:1, hint:"es → gefällt"},
+  {q:"'gestreift' по-русски:",                        opts:["клетчатый","в горошек","полосатый","однотонный"], ans:2, hint:"Streifen = полоса"},
+  {q:"'kariert' по-русски:",                          opts:["клетчатый","полосатый","цветочный","узорчатый"], ans:0, hint:"Karo = клетка"},
+];
+
+// TapEx — пример-предложение с переводом по нажатию
+function TapEx({de,ru,col=C.text,style={}}){
+  const [open,setOpen]=useState(false);
+  return (
+    <div onClick={()=>setOpen(s=>!s)}
+      style={{cursor:"pointer",borderRadius:8,padding:"8px 11px",
+        background:open?col+"15":C.ov4,
+        border:`1px solid ${open?col+"44":"transparent"}`,transition:"background .15s",...style}}>
+      <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",gap:6}}>
+        <span style={{fontSize:12,color:C.text,fontStyle:"italic",flex:1}}>{de}</span>
+        <span style={{fontSize:11,color:C.muted,flexShrink:0}}>{open?"▲":"▾"}</span>
+      </div>
+      {open&&<div style={{fontSize:12,color:C.muted,marginTop:4}}>{ru}</div>}
+    </div>
+  );
+}
+
+function T12A(){
+  const [tab,setTab]=useState("kleidung");
+  const kleidung=[
+    {icon:"👔",art:"der",w:"Anzug",ru:"костюм"},
+    {icon:"👕",art:"das",w:"Hemd",ru:"рубашка"},
+    {icon:"👚",art:"die",w:"Bluse",ru:"блузка"},
+    {icon:"👗",art:"das",w:"Kleid",ru:"платье"},
+    {icon:"🧥",art:"der",w:"Mantel",ru:"пальто"},
+    {icon:"🧶",art:"der",w:"Pullover",ru:"свитер"},
+    {icon:"👖",art:"die",w:"Hose",ru:"брюки"},
+    {icon:"👖",art:"die",w:"Jeans",ru:"джинсы"},
+    {icon:"🩳",art:"der",w:"Rock",ru:"юбка"},
+    {icon:"👕",art:"das",w:"T-Shirt",ru:"футболка"},
+    {icon:"👔",art:"die",w:"Krawatte",ru:"галстук"},
+    {icon:"🧦",art:"die",w:"Socke",ru:"носок"},
+    {icon:"👞",art:"der",w:"Schuh",ru:"туфля, ботинок"},
+  ];
+  const artikelVoll=[
+    {kasus:"Nominativ",vals:["der","das","die","die"]},
+    {kasus:"Dativ",    vals:["dem","dem","der","den"]},
+    {kasus:"Akkusativ",vals:["den","das","die","die"]},
+    {kasus:"Genitiv",  vals:["des","des","der","der"]},
+  ];
+  const kasusErklaerung=[
+    {k:"Nominativ",frage:"кто? что?",ru:"подлежащее — кто/что делает действие",bsp:"Der Anzug ist neu.",bspRu:"Костюм новый."},
+    {k:"Dativ",    frage:"кому? чему?",ru:"косвенное дополнение — кому что-то дают/идёт/подходит",bsp:"Der Anzug gefällt dem Mann.",bspRu:"Костюм нравится мужчине."},
+    {k:"Akkusativ",frage:"кого? что?",ru:"прямое дополнение — что вижу/покупаю/беру",bsp:"Ich kaufe den Anzug.",bspRu:"Я покупаю костюм."},
+    {k:"Genitiv",  frage:"чей? кого?/чего?",ru:"принадлежность — чей это предмет",bsp:"die Farbe des Anzugs",bspRu:"цвет костюма"},
+  ];
+  const adjDeklVoll=[
+    {kasus:"Nominativ",end:["-e","-e","-e","-en"],bsp:["der neue Anzug","das neue Hemd","die neue Bluse","die neuen Schuhe"]},
+    {kasus:"Dativ",    end:["-en","-en","-en","-en"],bsp:["dem neuen Anzug","dem neuen Hemd","der neuen Bluse","den neuen Schuhen"]},
+    {kasus:"Akkusativ",end:["-en","-e","-e","-en"],bsp:["den neuen Anzug","das neue Hemd","die neue Bluse","die neuen Schuhe"]},
+    {kasus:"Genitiv",  end:["-en","-en","-en","-en"],bsp:["des neuen Anzugs","des neuen Hemds","der neuen Bluse","der neuen Schuhe"]},
+  ];
+  const dativVerben=[
+    {v:"gefallen",bsp:"Der Rock gefällt mir (sehr gut).",bspRu:"Юбка мне нравится (очень).",ru:"нравиться (общее впечатление)"},
+    {v:"stehen",  bsp:"Die Farbe steht dir gut.",         bspRu:"Этот цвет тебе идёт.",ru:"идёт, подходит (о внешности)"},
+    {v:"passen",  bsp:"Die Hose passt mir nicht.",        bspRu:"Брюки мне не подходят (по размеру).",ru:"подходит по размеру"},
+  ];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.red}>
+        <H c={C.red}>👗 L12A · Kleidung & Meinung</H>
+        <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
+          {[["kleidung","Kleidung"],["adjektive","Adjektive vor Nomen"],["verben","gefallen / stehen / passen"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,lineHeight:1.35,textAlign:"center",
+                border:`1px solid ${tab===key?C.red+"55":C.border}`,
+                background:tab===key?C.red+"22":C.ov3,
+                color:tab===key?C.red:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="kleidung"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,marginBottom:10}}>
+              Kleidungsstücke — важно запомнить артикль каждого слова.
+            </div>
+            <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:6}}>
+              {kleidung.map(k=>(
+                <div key={k.w} style={{background:C.ov4,borderRadius:8,padding:"7px 9px",display:"flex",alignItems:"center",gap:7}}>
+                  <span style={{fontSize:18}}>{k.icon}</span>
+                  <div style={{minWidth:0}}>
+                    <div style={{fontSize:13,fontWeight:700,color:C.text}}>{k.art} {k.w}</div>
+                    <div style={{fontSize:11,color:C.muted}}>{k.ru}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+        {tab==="adjektive"&&(
+          <div>
+            <div style={{background:C.red+"15",border:`1px solid ${C.red}33`,borderRadius:10,padding:"11px 13px",marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.red,marginBottom:6}}>Adjektiv nach der/das/die (bestimmter Artikel)</div>
+              <div style={{fontSize:13,color:C.text,lineHeight:1.7}}>
+                Артикль уже показывает род и падеж → прилагательное почти всегда получает <b style={{color:C.orange}}>-e</b> или <b style={{color:C.blue}}>-en</b> (слабое склонение).
+              </div>
+            </div>
+
+            <div style={{fontSize:12,fontWeight:700,color:C.muted,marginBottom:5,textTransform:"uppercase",letterSpacing:0.5}}>Напоминание: der bestimmte Artikel</div>
+            <div style={{display:"grid",gridTemplateColumns:"0.9fr 1fr 1fr 1fr 1fr",gap:4,marginBottom:3}}>
+              {["","m","n","f","Pl."].map(h=><div key={h} style={{fontSize:10,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>)}
+            </div>
+            {artikelVoll.map(a=>(
+              <div key={a.kasus} style={{display:"grid",gridTemplateColumns:"0.9fr 1fr 1fr 1fr 1fr",gap:4,marginBottom:4}}>
+                <div style={{fontSize:11,color:C.muted,fontWeight:700,alignSelf:"center"}}>{a.kasus}</div>
+                {a.vals.map((v,i)=><div key={i} style={{background:C.ov4,borderRadius:5,padding:"5px 2px",textAlign:"center",fontSize:12,color:C.text}}>{v}</div>)}
+              </div>
+            ))}
+
+            <div style={{fontSize:12,fontWeight:700,color:C.muted,margin:"14px 0 5px",textTransform:"uppercase",letterSpacing:0.5}}>4 падежа — коротко</div>
+            {kasusErklaerung.map(k=>(
+              <div key={k.k} style={{background:C.ov4,borderRadius:9,padding:"8px 11px",marginBottom:5,borderLeft:`3px solid ${C.purple}`}}>
+                <div style={{display:"flex",justifyContent:"space-between",alignItems:"baseline",marginBottom:2}}>
+                  <span style={{fontWeight:800,fontSize:13,color:C.purple}}>{k.k}</span>
+                  <span style={{fontSize:11,color:C.muted,fontStyle:"italic"}}>{k.frage}</span>
+                </div>
+                <div style={{fontSize:12,color:C.text,marginBottom:5}}>{k.ru}</div>
+                <TapEx de={k.bsp} ru={k.bspRu} col={C.purple} style={{marginBottom:0}}/>
+              </div>
+            ))}
+            <div style={{background:C.ov4,borderRadius:8,padding:"8px 11px",marginTop:2,marginBottom:14,fontSize:11,color:C.muted}}>
+              ⚠️ Genitiv мы официально ещё не проходили как отдельную тему — здесь он только для полноты картины (он есть в таблице прилагательных ниже).
+            </div>
+
+            <div style={{fontSize:12,fontWeight:700,color:C.muted,marginBottom:5,textTransform:"uppercase",letterSpacing:0.5}}>Adjektivendungen — полная таблица</div>
+            {adjDeklVoll.map(a=>(
+              <div key={a.kasus} style={{marginBottom:10}}>
+                <div style={{fontSize:12,fontWeight:700,color:C.red,marginBottom:4}}>{a.kasus}</div>
+                <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr",gap:4,marginBottom:3}}>
+                  {["m","n","f","Pl."].map(h=><div key={h} style={{fontSize:10,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>)}
+                </div>
+                <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr",gap:4,marginBottom:3}}>
+                  {a.end.map((v,i)=><div key={i} style={{background:C.ov4,borderRadius:5,padding:"4px",textAlign:"center",fontSize:13,fontWeight:800,color:C.orange}}>{v}</div>)}
+                </div>
+                <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr",gap:4}}>
+                  {a.bsp.map((v,i)=><div key={i} style={{fontSize:10,color:C.muted,textAlign:"center"}}>{v}</div>)}
+                </div>
+              </div>
+            ))}
+            <TapEx de="Wie gefällt dir der neue Rock? — Der Rock ist toll, aber die neue Bluse gefällt mir noch besser."
+              ru="Как тебе новая юбка? — Юбка отличная, но новая блузка мне нравится ещё больше." col={C.red}/>
+          </div>
+        )}
+        {tab==="verben"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,marginBottom:10}}>
+              Три глагола для мнения об одежде — все с <b style={{color:C.text}}>Dativ</b>.
+            </div>
+            {dativVerben.map(v=>(
+              <div key={v.v} style={{background:C.ov4,borderRadius:9,padding:"9px 11px",marginBottom:6,borderLeft:`3px solid ${C.orange}`}}>
+                <div style={{fontWeight:800,fontSize:13,color:C.orange,marginBottom:3}}>{v.v} <span style={{fontSize:11,color:C.muted,fontWeight:400}}>+ Dativ</span></div>
+                <div style={{fontSize:12,color:C.muted,marginBottom:5}}>{v.ru}</div>
+                <TapEx de={v.bsp} ru={v.bspRu} col={C.orange}/>
+              </div>
+            ))}
+            <TapEx de="— Wie gefällt dir der Pullover? — Er gefällt mir gut, aber die Farbe steht mir nicht. Und die Größe passt mir auch nicht."
+              ru="— Как тебе свитер? — Он мне нравится, но цвет мне не идёт. И размер тоже не подходит." col={C.orange}/>
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
+const Q_L12B=[
+  {q:"Wo kauft man oft gebrauchte Kleidung günstig?",  opts:["Boutique","Flohmarkt / Secondhandladen","Kaufhaus","Bank"], ans:1, hint:"gebraucht = б/у"},
+  {q:"'Welcher' — вопрос к роду 'der' (m). А к 'die' (f)?", opts:["welcher","welches","welche","welchem"], ans:2, hint:"f → welche"},
+  {q:"'___ Rock gefällt dir?' (m, Nom.)",              opts:["Welcher","Welches","Welche","Welchem"], ans:0, hint:"welch- как der/das/die"},
+  {q:"'___ Hose nimmst du?' (f, Akk.)",                opts:["Welcher","Welchen","Welche","Welches"], ans:2, hint:"f Akk. = welche"},
+  {q:"'___ Anzug nimmst du?' (m, Akk.)",               opts:["Welcher","Welchen","Welche","Welches"], ans:1, hint:"m Akk. = welchen"},
+  {q:"'Kann ich das anprobieren?' — anprobieren = ?",  opts:["купить","примерить","заказать","вернуть"], ans:1, hint:"probieren = пробовать"},
+  {q:"'Die Hose ist mir zu klein.' — что нужно попросить?", opts:["eine kleinere Größe","eine größere Größe","eine andere Farbe","einen Rabatt"], ans:1, hint:"zu klein → größer"},
+  {q:"'praktisch' по-русски:",                          opts:["сложный","практичный","приятный","стрессовый"], ans:1, hint:"praktisch"},
+  {q:"'kompliziert' по-русски:",                        opts:["простой","практичный","сложный, запутанный","приятный"], ans:2, hint:"kompliziert"},
+  {q:"Где обычно находится 'die Umkleidekabine'?",     opts:["в Kaufhaus","на Flohmarkt","дома","в банке"], ans:0, hint:"примерочная в магазине"},
+];
+
+function T12B(){
+  const [tab,setTab]=useState("orte");
+  const orte=[
+    {icon:"🏬",w:"das Kaufhaus",ru:"универмаг — большой выбор, разные марки"},
+    {icon:"🛍️",w:"die Boutique",ru:"бутик — небольшой магазин, часто дороже"},
+    {icon:"🏕️",w:"der Flohmarkt",ru:"блошиный рынок — б/у вещи, недорого"},
+    {icon:"♻️",w:"der Secondhandladen",ru:"секонд-хенд — гардеробленная одежда"},
+    {icon:"💻",w:"online bestellen",ru:"заказ в интернете"},
+  ];
+  const welch=[["m","welcher","welchen"],["n","welches","welches"],["f","welche","welche"],["Pl.","welche","welche"]];
+  const groessen=[["XS","32–34"],["S","36–38"],["M","40"],["L","42–44"],["XL","46–48"],["XXL","50+"]];
+  const dialog=[
+    {de:"Kann ich Ihnen helfen?",                                          ru:"Могу я вам помочь?"},
+    {de:"Ich suche eine Hose in Größe 40.",                                 ru:"Я ищу брюки размера 40."},
+    {de:"Welche Farbe möchten Sie?",                                       ru:"Какой цвет вы хотите?"},
+    {de:"Kann ich das anprobieren? — Die Umkleidekabine ist dort drüben.", ru:"Могу я это примерить? — Примерочная там."},
+    {de:"Das steht Ihnen sehr gut!",                                       ru:"Это вам очень идёт!"},
+    {de:"Haben Sie das auch eine Nummer größer?",                         ru:"У вас есть это на размер больше?"},
+    {de:"Ich nehme es. Wo kann ich bezahlen?",                             ru:"Я это беру. Где я могу заплатить?"},
+  ];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.orange}>
+        <H c={C.orange}>🏬 L12B · Im Kaufhaus einkaufen</H>
+        <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
+          {[["orte","Wo einkaufen?"],["welch","welch-"],["groessen","Größen"],["dialog","Im Geschäft"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,lineHeight:1.35,textAlign:"center",
+                border:`1px solid ${tab===key?C.orange+"55":C.border}`,
+                background:tab===key?C.orange+"22":C.ov3,
+                color:tab===key?C.orange:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="orte"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,marginBottom:10}}>
+              Wo kaufen die Leute Kleidung? — разные варианты.
+            </div>
+            {orte.map(o=>(
+              <div key={o.w} style={{background:C.ov4,borderRadius:9,padding:"9px 11px",marginBottom:6,borderLeft:`3px solid ${C.orange}`}}>
+                <div style={{fontWeight:800,fontSize:13,color:C.text,marginBottom:2}}>{o.icon} {o.w}</div>
+                <div style={{fontSize:12,color:C.muted}}>{o.ru}</div>
+              </div>
+            ))}
+          </div>
+        )}
+        {tab==="welch"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,marginBottom:10}}>
+              <b style={{color:C.text}}>welch-</b> склоняется как определённый артикль (der/das/die).
+            </div>
+            <div style={{display:"grid",gridTemplateColumns:"0.6fr 1fr 1fr",gap:4,marginBottom:3}}>
+              {["","Nominativ","Akkusativ"].map(h=><div key={h} style={{fontSize:10,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>)}
+            </div>
+            {welch.map(([g,nom,akk])=>(
+              <div key={g} style={{display:"grid",gridTemplateColumns:"0.6fr 1fr 1fr",gap:4,marginBottom:4}}>
+                <div style={{fontSize:11,color:C.muted,fontWeight:700,alignSelf:"center",textAlign:"center"}}>{g}</div>
+                <div style={{background:C.ov4,borderRadius:6,padding:"6px",textAlign:"center",fontSize:13,color:C.orange,fontWeight:700}}>{nom}</div>
+                <div style={{background:C.ov4,borderRadius:6,padding:"6px",textAlign:"center",fontSize:13,color:C.blue,fontWeight:700}}>{akk}</div>
+              </div>
+            ))}
+            <TapEx de="Welcher Rock gefällt dir? — Welche Hose nimmst du? — Welches Kleid ist das?"
+              ru="Какая юбка тебе нравится? — Какие брюки ты берёшь? — Какое это платье?" col={C.blue}/>
+          </div>
+        )}
+        {tab==="groessen"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,marginBottom:10}}>
+              Примерная таблица размеров одежды (Damen/Herren, EU).
+            </div>
+            <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:6}}>
+              {groessen.map(([l,n])=>(
+                <div key={l} style={{background:C.ov4,borderRadius:8,padding:"8px 10px",display:"flex",justifyContent:"space-between"}}>
+                  <span style={{color:C.orange,fontWeight:800,fontSize:13}}>{l}</span>
+                  <span style={{color:C.muted,fontSize:12}}>{n}</span>
+                </div>
+              ))}
+            </div>
+            <TapEx de="— Welche Größe haben Sie? — Ich habe Größe 40. / Ich brauche Größe M."
+              ru="— Какой у вас размер? — У меня размер 40. / Мне нужен размер M." col={C.orange}/>
+          </div>
+        )}
+        {tab==="dialog"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,marginBottom:10}}>
+              Полезные фразы для магазина одежды.
+            </div>
+            {dialog.map(p=>(
+              <TapEx key={p.de} de={p.de} ru={p.ru} col={C.orange} style={{marginBottom:5}}/>
             ))}
           </div>
         )}
@@ -10145,6 +10582,19 @@ const LEKTIONEN=[
       {id:"wt11", icon:"🧠",title:"Wortschatz-Test L11",         sub:"Перевод · Артикли · Обратный перевод",                 time:"10 мин",col:C.teal,   hasT:false, ex:()=><WortschatzTest lekt="L11"/>},
     ]
   },
+  {
+    id:"L12",num:"12",title:"Im Kaufhaus",
+    sub:"A Kleidung & Meinung (Adjektivdeklination, gefallen/stehen/passen) · B Im Kaufhaus einkaufen (welch-)",
+    date:"Seite 125–133",col:C.red,
+    sections:[
+      {id:"d12", icon:"💬",title:"Dialogfragen L12",            sub:"Фразы для диалога",                                    time:"∞",     col:C.red,   hasT:false, th:null,           ex:()=><DialogCards lId="L12"/>},
+      {id:"12a", icon:"👗",title:"A · Kleidung & Meinung",       sub:"Adjektive vor Nomen · gefallen/stehen/passen + Dativ", time:"7 мин", col:C.red,   hasT:true, th:()=><T12A/>, ex:()=><Quiz questions={Q_L12A}/>},
+      {id:"12b", icon:"🏬",title:"B · Im Kaufhaus einkaufen",    sub:"Wo einkaufen? · welch- · Größen · Dialoge",            time:"6 мин", col:C.orange,hasT:true, th:()=><T12B/>, ex:()=><Quiz questions={Q_L12B}/>},
+      {id:"wb12", icon:"📖",title:"Wörterbuch L12",              sub:"Слова этого урока",                                    time:"—",    col:C.teal,   hasT:false, ex:()=><LektWoerterbuch lekt="L12"/>},
+      {id:"t12", icon:"🎯",title:"Großer Test L12",              sub:"Quiz · Lücken · Kleidung · Wortstellung",        time:"20 мин",col:C.yellow, hasT:false, ex:()=><GrosserTest12/>},
+      {id:"wt12", icon:"🧠",title:"Wortschatz-Test L12",         sub:"Перевод · Артикли · Обратный перевод",                 time:"10 мин",col:C.teal,   hasT:false, ex:()=><WortschatzTest lekt="L12"/>},
+    ]
+  },
 ];
 
 // ═══════════════════════════════ APP ══════════════════════════════════════════
@@ -10168,6 +10618,7 @@ function DialogFragenPage(){
     L9:{label:"L9 · Wege durch die Stadt",  col:C.blue},
     L10:{label:"L10 · Mein Leben",          col:C.purple},
     L11:{label:"L11 · Ämter und Behörden",  col:C.green},
+    L12:{label:"L12 · Im Kaufhaus",         col:C.red},
   };
   const filterFm=(pairs,lId)=>(lId==="L1"||lId==="L4")?pairs.filter(p=>!p.fm||p.fm===fm):pairs;
 
@@ -10336,8 +10787,9 @@ function TabellenPage(){
 
   const artikel=[
     {kasus:"Nominativ",bestimmt:["der","das","die","die"],unbestimmt:["ein","ein","eine","—"],kein:["kein","kein","keine","keine"]},
-    {kasus:"Akkusativ", bestimmt:["den","das","die","die"],unbestimmt:["einen","ein","eine","—"],kein:["keinen","kein","keine","keine"]},
+    {kasus:"Genitiv",  bestimmt:["des","des","der","der"],unbestimmt:["eines","eines","einer","—"],kein:["keines","keines","keiner","keiner"]},
     {kasus:"Dativ",     bestimmt:["dem","dem","der","den"],unbestimmt:["einem","einem","einer","—"],kein:["keinem","keinem","keiner","keinen"]},
+    {kasus:"Akkusativ", bestimmt:["den","das","die","die"],unbestimmt:["einen","ein","eine","—"],kein:["keinen","kein","keine","keine"]},
   ];
 
   const wfragen=[["Wer?","кто?"],["Was?","что?"],["Wo?","где?"],["Wohin?","куда?"],["Woher?","откуда?"],
@@ -10369,8 +10821,64 @@ function TabellenPage(){
     ["7.","der siebte ⚠️"],["10.","der zehnte"],["19.","der neunzehnte"]];
   const ord2=[["20.","der zwanzigste"],["21.","der einundzwanzigste"],["30.","der dreißigste"],["31.","der einunddreißigste"]];
 
+  const adjDekl=[
+    {kasus:"Nominativ",end:["-e","-e","-e","-en"],bsp:["der neue Anzug","das neue Hemd","die neue Bluse","die neuen Schuhe"]},
+    {kasus:"Dativ",     end:["-en","-en","-en","-en"],bsp:["dem neuen Anzug","dem neuen Hemd","der neuen Bluse","den neuen Schuhen"]},
+    {kasus:"Akkusativ", end:["-en","-e","-e","-en"],bsp:["den neuen Anzug","das neue Hemd","die neue Bluse","die neuen Schuhe"]},
+    {kasus:"Genitiv",   end:["-en","-en","-en","-en"],bsp:["des neuen Anzugs","des neuen Hemds","der neuen Bluse","der neuen Schuhe"]},
+  ];
+
+  const welchDekl=[
+    {kasus:"Nominativ",vals:["welcher","welches","welche","welche"]},
+    {kasus:"Akkusativ", vals:["welchen","welches","welche","welche"]},
+    {kasus:"Dativ",     vals:["welchem","welchem","welcher","welchen"]},
+  ];
+
   return (
     <div style={{display:"flex",flexDirection:"column"}}>
+<TableAccordion icon="🧥" title="Adjektivdeklination & welch-" col={C.red} sub="Endungen nach der/das/die/die · Fragewort welch-" open={open==="adjdekl"} onToggle={()=>tg("adjdekl")}>
+        <div style={{background:C.red+"15",border:`1px solid ${C.red}33`,
+          borderRadius:10,padding:"11px 13px",marginBottom:10}}>
+          <div style={{fontWeight:800,fontSize:13,color:C.red,marginBottom:6}}>После определённого артикля</div>
+          <div style={{fontSize:13,color:C.text,lineHeight:1.7}}>
+            Nominativ (везде) и Akkusativ (n/f/Pl) → <b style={{color:C.orange}}>-e</b><br/>
+            Всё остальное (Akk. m, Dativ, Genitiv — все роды) → <b style={{color:C.blue}}>-en</b>
+          </div>
+        </div>
+        {adjDekl.map(a=>(
+          <div key={a.kasus} style={{marginBottom:10}}>
+            <div style={{fontSize:12,fontWeight:700,color:C.red,marginBottom:4}}>{a.kasus}</div>
+            <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr",gap:4,marginBottom:3}}>
+              {["m","n","f","Pl."].map(h=><div key={h} style={{fontSize:10,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>)}
+            </div>
+            <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr",gap:4,marginBottom:3}}>
+              {a.end.map((v,i)=><div key={i} style={{background:C.ov4,borderRadius:5,padding:"4px",textAlign:"center",fontSize:13,fontWeight:800,color:C.orange}}>{v}</div>)}
+            </div>
+            <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr",gap:4}}>
+              {a.bsp.map((v,i)=><div key={i} style={{fontSize:10,color:C.muted,textAlign:"center"}}>{v}</div>)}
+            </div>
+          </div>
+        ))}
+        <TapEx de="Wie gefällt dir der neue Rock? — Der Rock ist toll, aber die neue Bluse gefällt mir noch besser."
+          ru="Как тебе новая юбка? — Юбка отличная, но новая блузка мне нравится ещё больше." col={C.red} style={{marginTop:8,marginBottom:14}}/>
+
+        <div style={{fontSize:12,fontWeight:700,color:C.blue,marginBottom:8,textTransform:"uppercase",letterSpacing:0.5}}>❓ Fragewort welch- (какой/какая/какое?)</div>
+        <div style={{fontSize:12,color:C.muted,marginBottom:8}}>Склоняется точно как определённый артикль (der/das/die).</div>
+        {welchDekl.map(w=>(
+          <div key={w.kasus} style={{marginBottom:10}}>
+            <div style={{fontSize:12,fontWeight:700,color:C.blue,marginBottom:4}}>{w.kasus}</div>
+            <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr",gap:4,marginBottom:3}}>
+              {["m","n","f","Pl."].map(h=><div key={h} style={{fontSize:10,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>)}
+            </div>
+            <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr",gap:4}}>
+              {w.vals.map((v,i)=><div key={i} style={{background:C.ov4,borderRadius:5,padding:"4px",textAlign:"center",fontSize:12,color:C.text}}>{v}</div>)}
+            </div>
+          </div>
+        ))}
+        <TapEx de="Welcher Rock gefällt dir? — Welche Hose nimmst du? — Welches Kleid ist das?"
+          ru="Какая юбка тебе нравится? — Какие брюки ты берёшь? — Какое это платье?" col={C.blue} style={{marginTop:6}}/>
+      </TableAccordion>
+
 <TableAccordion icon="📅" title="Datum" col={C.green} sub="порядковые числительные" open={open==="datum"} onToggle={()=>tg("datum")}>
         <div style={{background:C.green+"15",border:`1px solid ${C.green}33`,
           borderRadius:10,padding:"11px 13px",marginBottom:10}}>
@@ -10407,10 +10915,8 @@ function TabellenPage(){
         <div style={{background:C.ov4,borderRadius:8,padding:"8px 11px",marginTop:8,fontSize:12,color:C.text}}>
           ⚠️ Исключения: 1. → der <b>erste</b> (не einte), 3. → der <b>dritte</b> (не dreite), 7. → der <b>siebte</b> (не siebente)
         </div>
-        <div style={{background:C.ov4,borderRadius:8,padding:"8px 11px",marginTop:6,fontSize:12,color:C.text,fontStyle:"italic"}}>
-          — Welcher Tag ist heute? — Heute ist der erste siebte. (01.07.)<br/>
-          — Wann kommst du? — Ich komme am vierten sechsten. (04.06.)
-        </div>
+        <TapEx de="— Welcher Tag ist heute? — Heute ist der erste siebte. (01.07.) — Wann kommst du? — Ich komme am vierten sechsten. (04.06.)"
+          ru="— Какое сегодня число? — Сегодня первое июля. — Когда ты приедешь? — Я приеду четвёртого июня." col={C.green} style={{marginTop:6}}/>
       </TableAccordion>
       <TableAccordion icon="🔄" title="Personalpronomen" col={C.blue} sub="Nominativ · Akkusativ · Dativ" open={open==="pron"} onToggle={()=>tg("pron")}>
         <GridT headers={["Nom.","Akk.","Dat."]} cols={3} rows={personalpron}/>
@@ -10468,8 +10974,8 @@ function TabellenPage(){
               <div style={{background:C.ov6,borderRadius:"0 0 7px 7px",
                 padding:"6px 10px",marginBottom:5,fontSize:12,
                 borderLeft:`3px solid ${v.h==="ist"?C.orange:C.teal}`}}>
-                <div style={{color:C.text,fontWeight:700,marginBottom:3}}>🔤 {v.ru}</div>
-                <div style={{color:C.muted,fontStyle:"italic"}}>💬 {v.bsp}</div>
+                <div style={{color:C.text,fontWeight:700,marginBottom:5}}>🔤 {v.ru}</div>
+                <TapEx de={v.bsp} ru={v.bspRu} col={v.h==="ist"?C.orange:C.teal}/>
               </div>
             )}
           </div>
@@ -10545,7 +11051,7 @@ function TabellenPage(){
         <div style={{fontSize:11,color:C.muted,marginTop:8}}>n и Pl. добавляют -e к m-форме: mein→meine (f, Pl.)</div>
       </TableAccordion>
 
-      <TableAccordion icon="📌" title="Artikel-Deklination" col={C.orange} sub="der/die/das по падежам" open={open==="art"} onToggle={()=>tg("art")}>
+      <TableAccordion icon="📌" title="Artikel-Deklination" col={C.orange} sub="der/die/das по 4 падежам (Nom./Gen./Dat./Akk.)" open={open==="art"} onToggle={()=>tg("art")}>
         {artikel.map(a=>(
           <div key={a.kasus} style={{marginBottom:10}}>
             <div style={{fontSize:12,fontWeight:700,color:C.orange,marginBottom:4}}>{a.kasus}</div>
@@ -10752,7 +11258,7 @@ export default function App(){
             <span style={{fontSize:28}}>📊</span>
             <div style={{flex:1}}>
               <div style={{fontWeight:800,fontSize:16,color:C.green}}>Grammatiktabellen</div>
-              <div style={{fontSize:12,color:C.muted,marginTop:2}}>11 таблиц · вся грамматика в одном месте</div>
+              <div style={{fontSize:12,color:C.muted,marginTop:2}}>12 таблиц · вся грамматика в одном месте</div>
             </div>
             <span style={{color:C.green,fontSize:20}}>›</span>
           </button>
