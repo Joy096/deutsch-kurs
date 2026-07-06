@@ -1147,7 +1147,7 @@ const WBDATA=[
   {art:"die", de:"Berufsberatung", pl:"-en",          ru:"консультация по профессии",                    tema:"Ämter", lekt:"L11"},
   {art:"die", de:"Arbeitslosigkeit",pl:"—",            ru:"безработица",                                  tema:"Ämter", lekt:"L11"},
   {art:"der", de:"Integrationskurs", pl:"-e",           ru:"интеграционный курс (немецкий + страноведение)",tema:"Ämter", lekt:"L11"},
-  {art:"",   de:"Bundesagentur für Arbeit",pl:"—",     ru:"федеральное агентство занятости",              tema:"Ämter", lekt:"L11"},
+  {art:"die",   de:"Bundesagentur für Arbeit",pl:"—",     ru:"федеральное агентство занятости",              tema:"Ämter", lekt:"L11"},
   {art:"die", de:"Bundespolizei",   pl:"—",            ru:"федеральная полиция",                          tema:"Ämter", lekt:"L11"},
   {art:"die", de:"Angelegenheit", pl:"-en",          ru:"дело, вопрос (административный)",              tema:"Ämter", lekt:"L11"},
   {art:"die", de:"Unterlagen",      pl:"(Pl.)",        ru:"документы, бумаги (только мн.ч.)",             tema:"Ämter", lekt:"L11"},
@@ -1214,6 +1214,56 @@ const WBDATA=[
   {art:"der", de:"Anhänger", pl:"-",            ru:"брелок, подвеска, украшение",                   tema:"Kleidung", lekt:"L12"},
   {art:"die", de:"Kleidung",        pl:"—",            ru:"одежда (только Sg.)",                           tema:"Kleidung", lekt:"L12"},
   {art:"die", de:"Mütze", pl:"-n",           ru:"шапка",                                          tema:"Kleidung", lekt:"L12"},
+  {art:"der", de:"Schmuck",     pl:"—",            ru:"украшения, бижутерия (только Sg.)",             tema:"Kleidung", lekt:"L12"},
+  {art:"der", de:"Artikel",     pl:"-",            ru:"товар, изделие",                                tema:"Kleidung", lekt:"L12"},
+  {art:"die", de:"Bekleidung",  pl:"—",            ru:"одежда (более официально, синоним Kleidung)",   tema:"Kleidung", lekt:"L12"},
+  {art:"das", de:"Geschenk",    pl:"-e",           ru:"подарок",                                        tema:"Kleidung", lekt:"L12"},
+  {art:"die", de:"Ware",        pl:"-n",           ru:"товар",                                          tema:"Kleidung", lekt:"L12"},
+  {art:"die", de:"Geschenkwaren",pl:"—",           ru:"подарочные товары (отдел в магазине, обычно только Pl.)", tema:"Kleidung", lekt:"L12"},
+  // ── L12 · Im Kaufhaus einkaufen — Komposita, отделы универмага ──────────────
+  {art:"der", de:"Sportartikel",     pl:"-",     ru:"спортивный товар",                              tema:"Kleidung", lekt:"L12"},
+  {art:"die", de:"Herrenbekleidung", pl:"—",     ru:"мужская одежда (только Sg.)",                    tema:"Kleidung", lekt:"L12"},
+  {art:"der", de:"Modeschmuck",      pl:"—",     ru:"модная бижутерия (только Sg.)",                  tema:"Kleidung", lekt:"L12"},
+  {art:"die", de:"Babywäsche",       pl:"—",     ru:"бельё для младенцев (только Sg.)",               tema:"Kleidung", lekt:"L12"},
+  {art:"die", de:"Kinderbekleidung", pl:"—",     ru:"детская одежда (только Sg.)",                    tema:"Kleidung", lekt:"L12"},
+  {art:"das", de:"Accessoire",       pl:"-s",    ru:"аксессуар",                                       tema:"Kleidung", lekt:"L12"},
+  {art:"das", de:"Elektro-Kleingerät",pl:"-e",   ru:"мелкая бытовая техника",                          tema:"Kleidung", lekt:"L12"},
+  {art:"die", de:"Damenwäsche",      pl:"—",     ru:"женское бельё (только Sg.)",                     tema:"Kleidung", lekt:"L12"},
+  {art:"die", de:"Strumpfwaren",     pl:"—",     ru:"чулочно-носочные изделия (только Pl.)",           tema:"Kleidung", lekt:"L12"},
+  {art:"die", de:"Lederwaren",       pl:"—",     ru:"кожаные изделия (только Pl.)",                    tema:"Kleidung", lekt:"L12"},
+  {art:"der", de:"Schirm",           pl:"-e",    ru:"зонт",                                            tema:"Kleidung", lekt:"L12"},
+  {art:"die", de:"Parfümerie",       pl:"-n",    ru:"парфюмерия (отдел, магазин)",                    tema:"Kleidung", lekt:"L12"},
+  {art:"die", de:"Süßwaren",         pl:"—",     ru:"сладости, кондитерские изделия (только Pl.)",     tema:"Kleidung", lekt:"L12"},
+  {art:"die", de:"Schreibwaren",     pl:"—",     ru:"канцтовары (только Pl.)",                         tema:"Kleidung", lekt:"L12"},
+  {art:"der", de:"Schlüsseldienst",  pl:"-e",    ru:"служба по изготовлению ключей",                   tema:"Kleidung", lekt:"L12"},
+  {art:"die", de:"Schuhreparatur",   pl:"-en",   ru:"ремонт обуви",                                    tema:"Kleidung", lekt:"L12"},
+  {art:"die", de:"Herrenhose",       pl:"-n",    ru:"мужские брюки",                                   tema:"Kleidung", lekt:"L12"},
+  {art:"der", de:"Damenmantel",      pl:'"-',    ru:"женское пальто",                                  tema:"Kleidung", lekt:"L12"},
+  {art:"die", de:"Winterjacke",      pl:"-n",    ru:"зимняя куртка",                                   tema:"Kleidung", lekt:"L12"},
+  {art:"der", de:"Sportschuh",       pl:"-e",    ru:"спортивная обувь, кроссовок",                     tema:"Kleidung", lekt:"L12"},
+  {art:"das", de:"Abendkleid",       pl:"-er",   ru:"вечернее платье",                                 tema:"Kleidung", lekt:"L12"},
+  {art:"die", de:"Multimedia-Abteilung",pl:"-en",ru:"мультимедийный отдел",                            tema:"Kleidung", lekt:"L12"},
+  {art:"die", de:"Rolltreppe",       pl:"-n",    ru:"эскалатор",                                       tema:"Kleidung", lekt:"L12"},
+  {art:"der", de:"Ausgang",          pl:'"-e',   ru:"выход",                                           tema:"Kleidung", lekt:"L12"},
+  {art:"die", de:"Abteilung",        pl:"-en",   ru:"отдел, секция",                                   tema:"Kleidung", lekt:"L12"},
+  {art:"die", de:"Haushaltswaren",   pl:"—",     ru:"хозяйственные товары (только Pl.)",               tema:"Kleidung", lekt:"L12"},
+  {art:"die", de:"Heimtextilien",    pl:"—",     ru:"текстиль для дома (только Pl.)",                  tema:"Kleidung", lekt:"L12"},
+  {art:"der", de:"Bilderrahmen",     pl:"-",     ru:"рамка для фото",                                  tema:"Kleidung", lekt:"L12"},
+  {art:"das", de:"Fotoalbum",        pl:"-alben",ru:"фотоальбом",                                      tema:"Kleidung", lekt:"L12"},
+  {art:"das", de:"Computerzubehör",  pl:"—",     ru:"компьютерные аксессуары (только Sg.)",            tema:"Kleidung", lekt:"L12"},
+  {art:"die", de:"Damenbekleidung",  pl:"—",     ru:"женская одежда (только Sg.)",                     tema:"Kleidung", lekt:"L12"},
+  {art:"",   de:"öffnen",            pl:"—",     ru:"открывать · öffnet · hat geöffnet",               tema:"Kleidung", lekt:"L12"},
+  // ── L12 · доп. слова из конспекта ────────────────────────────────────────────
+  {art:"",   de:"tadeln",            pl:"—",     ru:"ругать, порицать",                                tema:"Alltag",  lekt:"L12"},
+  {art:"",   de:"loben",             pl:"—",     ru:"хвалить",                                         tema:"Alltag",  lekt:"L12"},
+  {art:"die", de:"Zeile",            pl:"-n",    ru:"строка",                                          tema:"Alltag",  lekt:"L12"},
+  {art:"der", de:"Gast",             pl:'"-e',   ru:"гость",                                           tema:"Familie", lekt:"L12"},
+  {art:"",   de:"bemalen",           pl:"—",     ru:"раскрашивать, расписывать",                       tema:"Alltag",  lekt:"L12"},
+  {art:"",   de:"ausmalen",          pl:"—",     ru:"раскрашивать (напр. для детей)",                  tema:"Alltag",  lekt:"L12"},
+  {art:"",   de:"zu Besuch kommen",  pl:"—",     ru:"приходить в гости",                               tema:"Familie", lekt:"L12"},
+  // ── L11 · доп. слова (пропущены ранее) ───────────────────────────────────────
+  {art:"das", de:"Ausländeramt",     pl:'"-er',  ru:"управление по делам иностранцев",                  tema:"Ämter", lekt:"L11"},
+  {art:"der", de:"Kindergeldantrag", pl:'"-e',   ru:"заявление на детское пособие",                    tema:"Ämter", lekt:"L11"},
   {art:"",   de:"schick",           pl:"—",            ru:"шикарный, стильный",                            tema:"Kleidung", lekt:"L12"},
   {art:"",   de:"altmodisch",       pl:"—",            ru:"старомодный",                                   tema:"Kleidung", lekt:"L12"},
   {art:"",   de:"komisch",          pl:"—",            ru:"странный, смешной",                             tema:"Kleidung", lekt:"L12"},
@@ -1842,6 +1892,23 @@ const KONJ_ALL={
     ich:"höre",  du:"hörst",  "er/sie/es":"hört",
     wir:"hören", ihr:"hört",  "sie/Sie":"hören",
     imp:{du:"Hör(e)!", ihr:"Hört!", Sie:"Hören Sie!"}, pt:"hörte", pf:"hat gehört"},
+  // L12 (06.07.2026) — Im Kaufhaus, Komposita
+  öffnen:      {col:C.teal, bg:C.tealBg,
+    ich:"öffne", du:"öffnest", "er/sie/es":"öffnet",
+    wir:"öffnen",ihr:"öffnet", "sie/Sie":"öffnen",
+    imp:{du:"Öffne!", ihr:"Öffnet!", Sie:"Öffnen Sie!"}, pt:"öffnete", pf:"hat geöffnet"},
+  tadeln:      {col:C.red,  bg:C.redBg,
+    ich:"tadle", du:"tadelst","er/sie/es":"tadelt",
+    wir:"tadeln",ihr:"tadelt","sie/Sie":"tadeln", pt:"tadelte", pf:"hat getadelt"},
+  loben:       {col:C.green,bg:C.greenBg,
+    ich:"lobe",  du:"lobst",  "er/sie/es":"lobt",
+    wir:"loben", ihr:"lobt",  "sie/Sie":"loben", pt:"lobte", pf:"hat gelobt"},
+  bemalen:     {col:C.purple,bg:C.purpleBg, note:"untrennbar: kein ge-",
+    ich:"bemale",du:"bemalst","er/sie/es":"bemalt",
+    wir:"bemalen",ihr:"bemalt","sie/Sie":"bemalen", pt:"bemalte", pf:"hat bemalt"},
+  ausmalen:    {pref:"aus", col:C.purple,bg:C.purpleBg,
+    ich:"male … aus",  du:"malst … aus",  "er/sie/es":"malt … aus",
+    wir:"malen … aus", ihr:"malt … aus",  "sie/Sie":"malen … aus", pt:"malte … aus", pf:"hat ausgemalt"},
 };
 
 // Ударения: комбинирующая акута \u0301 ставится после ударной гласной
@@ -2187,7 +2254,10 @@ const STRESS_MARKS={
 "Jeans":"Jea\u0301ns","Rock":"Ro\u0301ck","Hose":"Ho\u0301se","Krawatte":"Krawa\u0301tte",
 "Schuh":"Schu\u0301h","Socke":"So\u0301cke","Unterwäsche":"U\u0301nterwäsche","Kaufhaus":"Ka\u0301ufhaus",
 "Umkleidekabine":"U\u0301mkleidekabine","Größe":"Gr\u00F6\u0301ße","Flohmarkt":"Flo\u0301hmarkt",
-"Boutique":"Bouti\u0301que","Secondhandladen":"Se\u0301condhandladen","Anhänger":"A\u0301nhänger","Kleidung":"Kle\u0301idung","Mütze":"M\u00FC\u0301tze",
+"Boutique":"Bouti\u0301que","Secondhandladen":"Se\u0301condhandladen","Anhänger":"A\u0301nhänger","Kleidung":"Kle\u0301idung","Mütze":"M\u00FC\u0301tze","Schmuck":"Schmu\u0301ck","Artikel":"Arti\u0301kel","Bekleidung":"Bekle\u0301idung","Geschenk":"Gesche\u0301nk","Ware":"Wa\u0301re","Geschenkwaren":"Gesche\u0301nkwaren",
+"Sportartikel":"Spo\u0301rtartikel","Herrenbekleidung":"He\u0301rrenbekleidung","Modeschmuck":"Mo\u0301deschmuck","Babywäsche":"Ba\u0301bywäsche","Kinderbekleidung":"Ki\u0301nderbekleidung","Accessoire":"Accessoi\u0301re","Elektro-Kleingerät":"Elektro-Klei\u0301ngerät","Damenwäsche":"Da\u0301menwäsche","Strumpfwaren":"Stru\u0301mpfwaren","Lederwaren":"Le\u0301derwaren","Schirm":"Schi\u0301rm","Parfümerie":"Parfümeri\u0301e","Süßwaren":"S\u00FC\u0301ßwaren","Schreibwaren":"Schrei\u0301bwaren","Schlüsseldienst":"Schl\u00FC\u0301sseldienst","Schuhreparatur":"Schu\u0301hreparatur","Herrenhose":"He\u0301rrenhose","Damenmantel":"Da\u0301menmantel","Winterjacke":"Wi\u0301nterjacke","Sportschuh":"Spo\u0301rtschuh","Abendkleid":"A\u0301bendkleid","Multimedia-Abteilung":"Multime\u0301dia-Abteilung","Rolltreppe":"Ro\u0301lltreppe","Ausgang":"A\u0301usgang","Abteilung":"Abtei\u0301lung","Haushaltswaren":"Ha\u0301ushaltswaren","Heimtextilien":"Hei\u0301mtextilien","Bilderrahmen":"Bi\u0301lderrahmen","Fotoalbum":"Fo\u0301toalbum","Computerzubehör":"Compu\u0301terzubehör","Damenbekleidung":"Da\u0301menbekleidung","öffnen":"\u00F6\u0301ffnen",
+"tadeln":"ta\u0301deln","loben":"lo\u0301ben","Zeile":"Zei\u0301le","Gast":"Ga\u0301st","bemalen":"bema\u0301len","ausmalen":"a\u0301usmalen",
+"Ausländeramt":"Au\u0301sländeramt","Kindergeldantrag":"Ki\u0301ndergeldantrag",
 "schick":"schi\u0301ck","altmodisch":"a\u0301ltmodisch","komisch":"ko\u0301misch","praktisch":"pra\u0301ktisch",
 "kompliziert":"komplizie\u0301rt","angenehm":"a\u0301ngenehm","gebraucht":"gebra\u0301ucht",
 "kariert":"karie\u0301rt","gestreift":"gestre\u0301ift","gemustert":"gemu\u0301stert","geblümt":"gebl\u00FC\u0301mt",
@@ -2523,7 +2593,10 @@ const IPA_DATA={
 "Jeans":"[dʒiːns]","Rock":"[ʁɔk]","Hose":"[ˈhoːzə]","Krawatte":"[kʁaˈvatə]",
 "Schuh":"[ʃuː]","Socke":"[ˈzɔkə]","Unterwäsche":"[ˈʊntɐˌvɛʃə]","Kaufhaus":"[ˈkaʊfhaʊs]",
 "Umkleidekabine":"[ˈʊmklaɪdəkaˌbiːnə]","Größe":"[ˈɡʁøːsə]","Flohmarkt":"[ˈfloːmaʁkt]",
-"Boutique":"[buˈtiːk]","Secondhandladen":"[ˈsɛkəntˌhɛntlaːdn̩]","Anhänger":"[ˈanhɛŋɐ]","Kleidung":"[ˈklaɪdʊŋ]","Mütze":"[ˈmʏtsə]",
+"Boutique":"[buˈtiːk]","Secondhandladen":"[ˈsɛkəntˌhɛntlaːdn̩]","Anhänger":"[ˈanhɛŋɐ]","Kleidung":"[ˈklaɪdʊŋ]","Mütze":"[ˈmʏtsə]","Schmuck":"[ʃmʊk]","Artikel":"[aʁˈtiːkl̩]","Bekleidung":"[bəˈklaɪdʊŋ]","Geschenk":"[ɡəˈʃɛŋk]","Ware":"[ˈvaːʁə]","Geschenkwaren":"[ɡəˈʃɛŋkˌvaːʁən]",
+"Sportartikel":"[ˈʃpɔʁtʔaʁˌtiːkl̩]","Herrenbekleidung":"[ˈhɛʁənbəˌklaɪdʊŋ]","Modeschmuck":"[ˈmoːdəʃmʊk]","Babywäsche":"[ˈbeːbiˌvɛʃə]","Kinderbekleidung":"[ˈkɪndɐbəˌklaɪdʊŋ]","Accessoire":"[akseˈsoːɐ̯]","Elektro-Kleingerät":"[eˈlɛktroˌklaɪnɡəˌʁɛːt]","Damenwäsche":"[ˈdaːmənˌvɛʃə]","Strumpfwaren":"[ˈʃtʁʊmpfˌvaːʁən]","Lederwaren":"[ˈleːdɐˌvaːʁən]","Schirm":"[ʃɪʁm]","Parfümerie":"[paʁfyməˈʁiː]","Süßwaren":"[ˈzyːsˌvaːʁən]","Schreibwaren":"[ˈʃʁaɪpˌvaːʁən]","Schlüsseldienst":"[ˈʃlʏsl̩ˌdiːnst]","Schuhreparatur":"[ˈʃuːʁepaʁaˌtuːɐ̯]","Herrenhose":"[ˈhɛʁənˌhoːzə]","Damenmantel":"[ˈdaːmənˌmantl̩]","Winterjacke":"[ˈvɪntɐˌjakə]","Sportschuh":"[ˈʃpɔʁtʃuː]","Abendkleid":"[ˈaːbn̩tˌklaɪt]","Multimedia-Abteilung":"[mʊltiˈmeːdi̯aʔapˌtaɪlʊŋ]","Rolltreppe":"[ˈʁɔlˌtʁɛpə]","Ausgang":"[ˈaʊsɡaŋ]","Abteilung":"[apˈtaɪlʊŋ]","Haushaltswaren":"[ˈhaʊshaltsˌvaːʁən]","Heimtextilien":"[ˈhaɪmtɛksˌtiːli̯ən]","Bilderrahmen":"[ˈbɪldɐˌʁaːmən]","Fotoalbum":"[ˈfoːtoˌʔalbʊm]","Computerzubehör":"[kɔmˈpjuːtɐtsuːbəˌhøːɐ̯]","Damenbekleidung":"[ˈdaːmənbəˌklaɪdʊŋ]","öffnen":"[ˈœfnən]",
+"tadeln":"[ˈtaːdl̩n]","loben":"[ˈloːbn̩]","Zeile":"[ˈtsaɪlə]","Gast":"[ɡast]","bemalen":"[bəˈmaːlən]","ausmalen":"[ˈaʊsˌmaːlən]",
+"Ausländeramt":"[ˈaʊslɛndɐˌʔamt]","Kindergeldantrag":"[ˈkɪndɐɡɛltˌʔantʁaːk]",
 "schick":"[ʃɪk]","altmodisch":"[ˈaltmoːdɪʃ]","komisch":"[ˈkoːmɪʃ]","praktisch":"[ˈpʁaktɪʃ]",
 "kompliziert":"[kɔmpliˈtsiːɐ̯t]","angenehm":"[ˈanɡəneːm]","gebraucht":"[ɡəˈbʁaʊxt]",
 "kariert":"[kaˈʁiːɐ̯t]","gestreift":"[ɡəˈʃtʁaɪft]","gemustert":"[ɡəˈmʊstɐt]","geblümt":"[ɡəˈblyːmt]",
@@ -2838,12 +2911,26 @@ const DIALOGE={
       {q:"Kann ich das Kleid anprobieren?",                  qRu:"Могу я примерить платье?",              a:"Ja, natürlich. Die Umkleidekabine ist dort.",       aRu:"Да, конечно. Примерочная там.", note:"anprobieren"},
       {q:"Wo kann ich bezahlen?",                            qRu:"Где я могу заплатить?",                 a:"Die Kasse ist gleich hier vorne.",                  aRu:"Касса прямо здесь впереди.", note:"bezahlen · die Kasse"},
       {q:"Haben Sie das auch in Blau?",                      qRu:"У вас есть это в синем цвете?",         a:"Ja, einen Moment, ich schaue nach.",               aRu:"Да, минутку, я посмотрю.", note:"Farbe + in + Dativ"},
+      {q:"Entschuldigung, ich suche den Ausgang.",           qRu:"Извините, я ищу выход.",                a:"Der Ausgang ist da vorne links.",                  aRu:"Выход там впереди слева.", note:"der Ausgang"},
+      {q:"Entschuldigung, wo finde ich die Toiletten?",      qRu:"Извините, где найти туалет?",           a:"Die sind im ersten Stock, direkt neben der Rolltreppe.", aRu:"Он на первом этаже, прямо рядом с эскалатором.", note:"die Rolltreppe = эскалатор"},
+      {q:"Wie lange haben Sie geöffnet?",                    qRu:"До какого времени вы открыты?",         a:"Bis 20 Uhr.",                                      aRu:"До 20 часов.", note:"geöffnet haben = быть открытым"},
+      {q:"Ach bitte, wo kann ich das bezahlen?",             qRu:"Простите, где я могу это оплатить?",    a:"Die Kasse ist dort hinten rechts.",                aRu:"Касса там сзади справа.", note:"vorne/hinten links/rechts"},
+      {q:"Danke, ich schaue nur.",                           qRu:"Спасибо, я просто смотрю.",             a:"Gern, sagen Sie Bescheid, wenn Sie eine Frage haben.", aRu:"Пожалуйста, скажите, если у вас будет вопрос.", note:"nur = только"},
+      {q:"Wie findest du das Kleid?",                        qRu:"Как тебе платье?",                      a:"Ich finde, es sieht elegant aus.",                 aRu:"По-моему, оно смотрится элегантно.", note:"elegant/günstig/teuer/praktisch/bequem/altmodisch"},
+      {q:"Was soll ich anziehen?",                           qRu:"Что мне надеть?",                       a:"Ich mag den blauen Anzug. Der sieht richtig gut aus.", aRu:"Мне нравится синий костюм. Он отлично смотрится.", note:"welches/welchen/welche + Adjektiv"},
+      {q:"Wo ist/sind die Umkleidekabinen?",                 qRu:"Где примерочная?",                      a:"Die Umkleidekabinen sind dort hinten links.",       aRu:"Примерочные там сзади слева.", note:"Wo ist (Sg.) / Wo sind (Pl.)"},
+      {q:"Welcher Pullover steht mir?",                      qRu:"Какой свитер мне идёт?",                a:"Der rote steht dir gut. / Der grüne passt besser.", aRu:"Красный тебе идёт. / Зелёный подходит лучше.", note:"welcher (Nom., m) · stehen/passen + Dativ"},
+      {q:"Welchen Pullover findest du schön?",               qRu:"Какой свитер тебе нравится (кажется красивым)?", a:"Den grünen. / Den roten finde ich schöner.",   aRu:"Зелёный. / Красный мне кажется красивее.", note:"welchen (Akk., m) · finden + Akk."},
+      {q:"Haben Sie den Mantel auch in Größe 42?",           qRu:"У вас есть это пальто размера 42?",     a:"Ja, einen Moment, ich schaue nach.",               aRu:"Да, минутку, я посмотрю.", note:"den Mantel (Akk., m)"},
+      {q:"Haben Sie den Mantel auch in Rot?",                qRu:"У вас есть это пальто в красном цвете?",a:"Nein, den haben wir leider nur in Grau und Blau.", aRu:"Нет, у нас есть только в сером и синем.", note:"in + Farbe (Dativ)"},
+      {q:"Entschuldigung, ich hätte noch eine Frage.",       qRu:"Извините, у меня ещё один вопрос.",     a:"Ja, bitte, was möchten Sie wissen?",               aRu:"Да, пожалуйста, что вы хотите узнать?", note:"вежливая формула, чтобы задать доп. вопрос"},
     ]},
     {tag:"Дополнительные",col:C.orange,pairs:[
       {q:"Wo kaufst du am liebsten Kleidung?",               qRu:"Где ты предпочитаешь покупать одежду?",  a:"Ich kaufe am liebsten im Kaufhaus, aber manchmal auch auf dem Flohmarkt.", aRu:"Я предпочитаю покупать в универмаге, но иногда и на блошином рынке.", note:"Kaufhaus · Flohmarkt"},
       {q:"Warum kaufst du gebrauchte Kleidung?",             qRu:"Почему ты покупаешь одежду б/у?",        a:"Sie ist günstiger und praktischer für die Umwelt.", aRu:"Она дешевле и лучше для экологии.", note:"gebraucht = б/у"},
       {q:"Wie sieht das Hemd aus?",                          qRu:"Как смотрится эта рубашка?",             a:"Es sieht sehr schick aus, aber ein bisschen altmodisch.", aRu:"Она смотрится очень стильно, но немного старомодно.", note:"aussehen"},
       {q:"Worüber habt ihr euch unterhalten?",               qRu:"О чём вы разговаривали?",                a:"Wir haben uns über die neue Kleidung unterhalten.",aRu:"Мы разговаривали о новой одежде.", note:"sich unterhalten"},
+      {q:"Was passt zusammen: die Dame + der Mantel?",       qRu:"Что получится: die Dame + der Mantel?",  a:"Der Damenmantel — der Artikel kommt vom 2. Wort.", aRu:"Женское пальто — артикль от второго слова.", note:"Komposita"},
     ]},
   ],
 };
@@ -10277,13 +10364,34 @@ function T12B(){
     {de:"Das steht Ihnen sehr gut!",                                       ru:"Это вам очень идёт!"},
     {de:"Haben Sie das auch eine Nummer größer?",                         ru:"У вас есть это на размер больше?"},
     {de:"Ich nehme es. Wo kann ich bezahlen?",                             ru:"Я это беру. Где я могу заплатить?"},
+    {de:"Entschuldigung, ich suche den Ausgang.",                          ru:"Извините, я ищу выход."},
+    {de:"Wie lange haben Sie geöffnet?",                                    ru:"До какого времени вы открыты?"},
+    {de:"Entschuldigung, wo finde ich die Toiletten?",                     ru:"Извините, где найти туалет?"},
+  ];
+  const komposita=[
+    {a:"die Dame",b:"der Mantel",res:"der Damenmantel",resRu:"женское пальто"},
+    {a:"der Herr",b:"die Hose",res:"die Herrenhose",resRu:"мужские брюки"},
+    {a:"der Winter",b:"die Jacke",res:"die Winterjacke",resRu:"зимняя куртка"},
+    {a:"der Sport",b:"die Schuhe",res:"die Sportschuhe",resRu:"спортивная обувь"},
+    {a:"der Abend",b:"das Kleid",res:"das Abendkleid",resRu:"вечернее платье"},
+    {a:"die Mode",b:"der Schmuck",res:"der Modeschmuck",resRu:"модная бижутерия"},
+    {a:"das Auto",b:"der Schlüssel",res:"der Autoschlüssel",resRu:"ключ от машины"},
+    {a:"das Haus",b:"der Meister",res:"der Hausmeister",resRu:"домоуправитель, комендант"},
+    {a:"der Ingenieur",b:"das Büro",res:"das Ingenieurbüro",resRu:"инженерное бюро"},
+  ];
+  const abteilungen=[
+    {stock:"3. Stock",items:"DVDs · CDs · Bücher · Fotoalben · Bilderrahmen · Computerspiele · Computerzubehör"},
+    {stock:"2. Stock",items:"Spielzeug · Kinderbekleidung · Babywäsche · Sportwaren · Haushaltswaren · Glas/Porzellan · Geschenkartikel · Heimtextilien · Elektro-Kleingeräte"},
+    {stock:"1. Stock",items:"Damenbekleidung · Accessoires/Modeschmuck · Herrenbekleidung"},
+    {stock:"Erdgeschoss",items:"Damenwäsche · Strumpfwaren · Lederwaren · Schirme · Zeitschriften · Parfümerie · Süßwaren · Schreibwaren · Uhren/Schmuck · Schlüsseldienst · Schuhreparatur"},
+    {stock:"Untergeschoss",items:"Supermarkt"},
   ];
   return (
     <div style={{display:"flex",flexDirection:"column",gap:10}}>
       <Box c={C.orange}>
         <H c={C.orange}>🏬 L12B · Im Kaufhaus einkaufen</H>
         <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
-          {[["orte","Wo einkaufen?"],["welch","welch-"],["groessen","Größen"],["dialog","Im Geschäft"]].map(([key,lbl])=>(
+          {[["orte","Wo einkaufen?"],["komposita","Komposita"],["welch","welch-"],["groessen","Größen"],["abteilungen","Abteilungen"],["dialog","Im Geschäft"]].map(([key,lbl])=>(
             <button key={key} onClick={()=>setTab(key)}
               style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
                 fontSize:12,fontWeight:700,lineHeight:1.35,textAlign:"center",
@@ -10305,6 +10413,26 @@ function T12B(){
                 <div style={{fontSize:12,color:C.muted}}>{o.ru}</div>
               </div>
             ))}
+          </div>
+        )}
+        {tab==="komposita"&&(
+          <div>
+            <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,borderRadius:10,padding:"11px 13px",marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.orange,marginBottom:6}}>Komposita (сложные слова)</div>
+              <div style={{fontSize:13,color:C.text,lineHeight:1.7}}>
+                Немецкий любит соединять слова в одно. <b style={{color:C.orange}}>Артикль всегда берётся от ПОСЛЕДНЕГО слова</b> — оно и определяет род всего сложного слова.
+              </div>
+            </div>
+            {komposita.map(k=>(
+              <div key={k.res} style={{background:C.ov4,borderRadius:9,padding:"9px 11px",marginBottom:6,borderLeft:`3px solid ${C.orange}`}}>
+                <div style={{fontSize:12,color:C.muted,marginBottom:3}}>{k.a} + {k.b} →</div>
+                <div style={{fontWeight:800,fontSize:14,color:C.orange,marginBottom:2}}>{k.res}</div>
+                <div style={{fontSize:12,color:C.muted}}>{k.resRu}</div>
+              </div>
+            ))}
+            <div style={{background:C.ov4,borderRadius:8,padding:"8px 11px",marginTop:4,fontSize:12,color:C.text}}>
+              💡 die Dame + <b>der Mantel</b> → <b>der</b> Damenmantel (артикль от «der Mantel», второго слова)
+            </div>
           </div>
         )}
         {tab==="welch"&&(
@@ -10341,6 +10469,21 @@ function T12B(){
             </div>
             <TapEx de="— Welche Größe haben Sie? — Ich habe Größe 40. / Ich brauche Größe M."
               ru="— Какой у вас размер? — У меня размер 40. / Мне нужен размер M." col={C.orange}/>
+          </div>
+        )}
+        {tab==="abteilungen"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,marginBottom:10}}>
+              Пример инфо-таблички универмага «Kaufhaus Augustin» — что и на каком этаже.
+            </div>
+            {abteilungen.map(a=>(
+              <div key={a.stock} style={{background:C.ov4,borderRadius:9,padding:"9px 11px",marginBottom:6,borderLeft:`3px solid ${C.orange}`}}>
+                <div style={{fontWeight:800,fontSize:13,color:C.orange,marginBottom:3}}>{a.stock}</div>
+                <div style={{fontSize:12,color:C.text}}>{a.items}</div>
+              </div>
+            ))}
+            <TapEx de="Entschuldigung, wo finde ich Babywäsche? — Im zweiten Stock. — Danke schön."
+              ru="Извините, где найти бельё для младенцев? — На втором этаже. — Большое спасибо." col={C.orange}/>
           </div>
         )}
         {tab==="dialog"&&(
