@@ -3904,22 +3904,22 @@ function Woerterbuch({words=WBDATA}={}){
         </div>
       )}
 
-      {/* ══ ПОСЛЕДНИЕ ══ */}
-      {typ==="all"&&tema==="all"&&art==="all"&&selPref==="all"&&(
+      {/* ══ ПОСЛЕДНИЕ (плоский список без группировки по темам) ══ */}
+      {tema==="all"&&(
         <div style={{background:C.card,border:`1px solid ${C.teal}35`,borderRadius:12,overflow:"hidden"}}>
           <div style={{background:C.teal+"15",padding:"8px 12px",borderBottom:`1px solid ${C.teal}25`}}>
-            <span style={{fontSize:12,color:C.teal,fontWeight:700}}>🆕 Все слова · новые сначала</span>
-            <span style={{fontSize:11,color:C.muted,marginLeft:8}}>{words.length} слов</span>
+            <span style={{fontSize:12,color:C.teal,fontWeight:700}}>{sortNew?"🆕 Новые сначала":"🕐 Старые сначала"}</span>
+            <span style={{fontSize:11,color:C.muted,marginLeft:8}}>{list.length} слов</span>
           </div>
           <div style={{display:"grid",gridTemplateColumns:"minmax(min-content,1fr) 1fr",gap:8,padding:"4px 8px"}}>
             {["Слово","Перевод"].map(h=>(
               <div key={h} style={{fontSize:11,color:C.muted,fontWeight:700,textTransform:"uppercase",letterSpacing:1}}>{h}</div>
             ))}
           </div>
-          {dedupeAdj(recentWords,!!search).map((w,i)=><WRow key={w.de+w.tema+i} w={w}/>)}
+          {dedupeAdj(list,!!search).map((w,i)=><WRow key={w.de+w.tema+i} w={w}/>)}
         </div>
       )}
-      {!(typ==="all"&&tema==="all"&&art==="all"&&selPref==="all")&&<div style={{display:"flex",flexDirection:"column",gap:8}}>
+      {tema!=="all"&&<div style={{display:"flex",flexDirection:"column",gap:8}}>
         {groups.map(g=>(
           <div key={g.id} style={{background:C.card,border:`1px solid ${g.col}35`,borderRadius:12,overflow:"hidden"}}>
             {(tema==="all"||(isTrennbar&&selPref==="all"))&&(
