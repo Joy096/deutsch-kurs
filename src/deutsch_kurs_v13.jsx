@@ -160,19 +160,19 @@ const WBDATA=[
   {art:"der", de:"Grafiker",     pl:"Grafiker",     ru:"дизайнер-график\nf. - die Grafikerin",tema:"Alltag", lekt:"L1"},
   {art:"der", de:"Altenpfleger", pl:"Altenpfleger", ru:"сиделка/опекун\nf. - die Altenpflegerin",tema:"Alltag", lekt:"L7"},
   {art:"der", de:"Student",      pl:"Studenten",    ru:"студент\nf. - die Studentin",   tema:"Berufe", lekt:"L7"},
-  {art:"der", de:"Kinderarzt",   pl:"Kinderärzte",  ru:"педиатр\nf. - die Kinderärztin",tema:"Alltag", lekt:"L7"},
-  {art:"der", de:"Hausmann",     pl:"Hausmänner",   ru:"домохозяин\nf. - die Hausfrau", tema:"Alltag", lekt:"L7"},
+  {art:"der", de:"Kinderarzt",   pl:'"-e',  ru:"педиатр\nf. - die Kinderärztin",tema:"Alltag", lekt:"L7"},
+  {art:"der", de:"Hausmann",     pl:'"-er',   ru:"домохозяин\nf. - die Hausfrau", tema:"Alltag", lekt:"L7"},
   // ── Левый столбик (стр. 1) ───────────────────────────────────────────────────
   {art:"die",de:"Tür",           pl:"Türen",          ru:"дверь",                  tema:"Kursraum", lekt:"L2"},
   {art:"das",de:"Fenster",       pl:"Fenster",         ru:"окно",                   tema:"Kursraum", lekt:"L2"},
   {art:"die",de:"Uhr",           pl:"Uhren",           ru:"часы",                   tema:"Kursraum", lekt:"L2"},
-  {art:"der",de:"Stuhl",         pl:"Stühle",          ru:"стул",                   tema:"Kursraum", lekt:"L2"},
+  {art:"der",de:"Stuhl",         pl:'"-e',          ru:"стул",                   tema:"Kursraum", lekt:"L2"},
   {art:"das",de:"Plakat",        pl:"Plakate",         ru:"плакат",                 tema:"Kursraum", lekt:"L2"},
   {art:"die",de:"Tafel",         pl:"Tafeln",          ru:"доска",                  tema:"Kursraum", lekt:"L2"},
   {art:"die",de:"Lampe",         pl:"Lampen",          ru:"лампа",                  tema:"Kursraum", lekt:"L2"},
   {art:"die",de:"Flasche",       pl:"Flaschen",        ru:"бутылка",                tema:"Kursraum", lekt:"L2"},
   {art:"das",de:"Papier",        pl:"Papiere",         ru:"бумага",                 tema:"Kursraum", lekt:"L2"},
-  {art:"das",de:"Wörterbuch",    pl:"Wörterbücher",    ru:"словарь",                tema:"Kursraum", lekt:"L2"},
+  {art:"das",de:"Wörterbuch",    pl:'"-er',    ru:"словарь",                tema:"Kursraum", lekt:"L2"},
   {art:"der",de:"Kugelschreiber",pl:"Kugelschreiber",  ru:"шариковая ручка",        tema:"Kursraum", lekt:"L2"},
   {art:"der",de:"Kuli",          pl:"Kulis",           ru:"ручка (разг.)",          tema:"Kursraum", lekt:"L2"},
   {art:"der",de:"Tisch",         pl:"Tische",          ru:"стол",                   tema:"Kursraum", lekt:"L2"},
@@ -181,16 +181,16 @@ const WBDATA=[
   {art:"das",de:"Handy",         pl:"Handys",          ru:"мобильный телефон",      tema:"Kursraum", lekt:"L2"},
   {art:"das",de:"Heft",          pl:"Hefte",           ru:"тетрадь",                tema:"Kursraum", lekt:"L2"},
   {art:"die",de:"Brille",        pl:"Brillen",         ru:"очки",                   tema:"Kursraum", lekt:"L2"},
-  {art:"das",de:"Buch",          pl:"Bücher",          ru:"книга",                  tema:"Kursraum", lekt:"L2"},
+  {art:"das",de:"Buch",          pl:'"-er',          ru:"книга",                  tema:"Kursraum", lekt:"L2"},
   {art:"der",de:"Stift",         pl:"Stifte",          ru:"карандаш / ручка",       tema:"Kursraum", lekt:"L2"},
   {art:"die",de:"Tasche",        pl:"Taschen",         ru:"сумка",                  tema:"Kursraum", lekt:"L2"},
-  {art:"der",de:"Rucksack",      pl:"Rucksäcke",       ru:"рюкзак",                 tema:"Kursraum", lekt:"L2"},
+  {art:"der",de:"Rucksack",      pl:'"-e',       ru:"рюкзак",                 tema:"Kursraum", lekt:"L2"},
   {art:"das",de:"Tablet",        pl:"Tablets",         ru:"планшет",                tema:"Kursraum", lekt:"L2"},
   {art:"der",de:"Laptop",        pl:"Laptops",         ru:"ноутбук",                tema:"Kursraum", lekt:"L2"},
 
   // ── Правый столбик (стр. 1) — порядок как в конспекте ───────────────────────
   {art:"das",de:"Formular", pl:"-e",       ru:"анкета, бланк",          tema:"Alltag", lekt:"L2"},
-  {art:"der",de:"Pass",          pl:"Pässe",           ru:"паспорт",                tema:"Alltag", lekt:"L2"},
+  {art:"der",de:"Pass",          pl:'"-e',           ru:"паспорт",                tema:"Alltag", lekt:"L2"},
   {art:"das",de:"Café",          pl:"Cafés",           ru:"кафе",                   tema:"Alltag", lekt:"L2"},
 
   {art:"die",de:"Kasse", pl:"-n",          ru:"касса",                  tema:"Alltag", lekt:"L7"},
@@ -207,7 +207,7 @@ const WBDATA=[
   {art:"die",de:"Jacke",         pl:"Jacken",          ru:"куртка, пиджак",         tema:"Alltag", lekt:"L2"},
   {art:"das",de:"Lineal",        pl:"Lineale",         ru:"линейка",                tema:"Kursraum", lekt:"L2"},
   {art:"der",de:"Markierstift",  pl:"Markierstifte",   ru:"маркер",                 tema:"Kursraum", lekt:"L2"},
-  {art:"das",de:"Notizbuch",     pl:"Notizbücher",     ru:"блокнот",                tema:"Kursraum", lekt:"L2"},
+  {art:"das",de:"Notizbuch",     pl:'"-er',     ru:"блокнот",                tema:"Kursraum", lekt:"L2"},
   {art:"der",de:"Zettel",        pl:"Zettel",          ru:"листок, записка",        tema:"Kursraum", lekt:"L2"},
   {art:"die",de:"Hausaufgabe",   pl:"Hausaufgaben",    ru:"домашнее задание",       tema:"Kursraum", lekt:"L5"},
   // ── Möbel — левый столбик стр.3 ──────────────────────────────────────────────
@@ -215,18 +215,18 @@ const WBDATA=[
   {art:"das",de:"Bett",          pl:"Betten",          ru:"кровать",                tema:"Möbel", lekt:"L3"},
   {art:"der",de:"Herd",          pl:"Herde",           ru:"плита",                  tema:"Küche", lekt:"L3"},
   {art:"das",de:"Sofa",          pl:"Sofas",           ru:"диван",                  tema:"Möbel", lekt:"L3"},
-  {art:"der",de:"Schrank",       pl:"Schränke",        ru:"шкаф",                   tema:"Möbel", lekt:"L3"},
+  {art:"der",de:"Schrank",       pl:'"-e',        ru:"шкаф",                   tema:"Möbel", lekt:"L3"},
   {art:"der",de:"Fernseher",     pl:"Fernseher",       ru:"телевизор",              tema:"Möbel", lekt:"L3"},
   {art:"der",de:"Sessel",        pl:"Sessel",          ru:"кресло",                 tema:"Möbel", lekt:"L3"},
   {art:"das",de:"Bild",          pl:"Bilder",          ru:"картина",                tema:"Möbel", lekt:"L3"},
   {art:"das",de:"Regal",         pl:"Regale",          ru:"полка",                  tema:"Möbel", lekt:"L3"},
   {art:"der",de:"Teppich",       pl:"Teppiche",        ru:"ковёр",                  tema:"Möbel", lekt:"L3"},
-  {art:"der",de:"Vorhang",       pl:"Vorhänge",        ru:"штора, занавеска",       tema:"Möbel", lekt:"L3"},
+  {art:"der",de:"Vorhang",       pl:'"-e',        ru:"штора, занавеска",       tema:"Möbel", lekt:"L3"},
   {art:"das",de:"Schlafzimmer",  pl:"Schlafzimmer",    ru:"спальня",                tema:"Möbel", lekt:"L3"},
   {art:"das",de:"Zimmer",        pl:"Zimmer",          ru:"комната",                tema:"Möbel", lekt:"L3"},
   {art:"der",de:"Schreibtisch",  pl:"Schreibtische",   ru:"письменный стол",        tema:"Möbel", lekt:"L3"},
   // Bad — идёт в левом столбике после Schreibtisch ──────────────────────────────
-  {art:"das",de:"Bad",           pl:"Bäder",           ru:"ванная комната",         tema:"Bad", lekt:"L3"},
+  {art:"das",de:"Bad",           pl:'"-er',           ru:"ванная комната",         tema:"Bad", lekt:"L3"},
   {art:"die",de:"Badewanne",     pl:"Badewannen",      ru:"ванна",                  tema:"Bad", lekt:"L3"},
   {art:"die",de:"Dusche",        pl:"Duschen",         ru:"душ",                    tema:"Bad", lekt:"L3"},
   {art:"die",de:"Toilette",      pl:"Toiletten",       ru:"туалет",                 tema:"Bad", lekt:"L3"},
@@ -234,7 +234,7 @@ const WBDATA=[
   {art:"der",de:"Spiegel",       pl:"Spiegel",         ru:"зеркало",                tema:"Bad", lekt:"L3"},
   // Левый столбик продолжается ──────────────────────────────────────────────────
   {art:"die",de:"Küche",         pl:"Küchen",          ru:"кухня",                  tema:"Küche", lekt:"L3"},
-  {art:"der",de:"Kühlschrank",   pl:"Kühlschränke",    ru:"холодильник",            tema:"Küche", lekt:"L3"},
+  {art:"der",de:"Kühlschrank",   pl:'"-e',    ru:"холодильник",            tema:"Küche", lekt:"L3"},
   {art:"das",de:"Wohnzimmer",    pl:"Wohnzimmer",      ru:"гостиная",               tema:"Möbel", lekt:"L3"},
   {art:"die",de:"Klimaanlage",   pl:"Klimaanlagen",    ru:"кондиционер",            tema:"Möbel", lekt:"L3"},
   {art:"die",de:"Zimmerpflanze", pl:"Zimmerpflanzen",  ru:"комнатное растение",     tema:"Möbel", lekt:"L3"},
@@ -249,10 +249,10 @@ const WBDATA=[
   {art:"die",de:"Blume",         pl:"Blumen",          ru:"цветок",                 tema:"Möbel", lekt:"L3"},
   {art:"die",de:"Kommode",       pl:"Kommoden",        ru:"комод",                  tema:"Möbel", lekt:"L3"},
   {art:"der",de:"Trockner",      pl:"Trockner",        ru:"сушильная машина",       tema:"Möbel", lekt:"L3"},
-  {art:"das",de:"Haus",          pl:"Häuser",          ru:"дом",                    tema:"Wohnung", lekt:"L1"},
+  {art:"das",de:"Haus",          pl:'"-er',          ru:"дом",                    tema:"Wohnung", lekt:"L1"},
   {art:"die",de:"Wohnung",       pl:"Wohnungen",       ru:"квартира",               tema:"Wohnung", lekt:"L3"},
-  {art:"das",de:"Dorf",          pl:"Dörfer",          ru:"село, деревня",          tema:"Wohnung", lekt:"L3"},
-  {art:"die",de:"Stadt",         pl:"Städte",          ru:"город",                  tema:"Wohnung", lekt:"L9"},
+  {art:"das",de:"Dorf",          pl:'"-er',          ru:"село, деревня",          tema:"Wohnung", lekt:"L3"},
+  {art:"die",de:"Stadt",         pl:'"-e',          ru:"город",                  tema:"Wohnung", lekt:"L9"},
   {art:"das",de:"Apartment",     pl:"Apartments",      ru:"апартаменты, квартира",  tema:"Wohnung", lekt:"L9"},
   // ── Adjektive фото 4 — правый столбик стр.2 (после Apartment) ───────────────
   {art:"",de:"alt",          pl:"—",ru:"старый",           tema:"Adjektive", lekt:"L9"},
@@ -289,13 +289,13 @@ const WBDATA=[
   // ── Существительные стр.3 (после пар) ────────────────────────────────────────
   {art:"die",de:"Lage",           pl:"Lagen",             ru:"расположение, местоположение",tema:"Wohnung", lekt:"L3"},
   {art:"der",de:"Stock",          pl:"Stockwerke",         ru:"этаж",                        tema:"Wohnung", lekt:"L3"},
-  {art:"das",de:"Einfamilienhaus",pl:"Einfamilienhäuser", ru:"отдельный дом (на одну семью)",tema:"Wohnung", lekt:"L3"},
+  {art:"das",de:"Einfamilienhaus",pl:'"-er', ru:"отдельный дом (на одну семью)",tema:"Wohnung", lekt:"L3"},
   {art:"die",de:"Zentralheizung", pl:"Zentralheizungen",  ru:"центральное отопление (ZH)",  tema:"Wohnung", lekt:"L3"},
   {art:"der",de:"Quadratmeter",   pl:"Quadratmeter",      ru:"квадратный метр (qm)",        tema:"Wohnung", lekt:"L3"},
-  {art:"das",de:"Mehrfamilienhaus",pl:"Mehrfamilienhäuser",ru:"многокв. дом",               tema:"Wohnung", lekt:"L3"},
-  {art:"das",de:"Hochhaus",       pl:"Hochhäuser",        ru:"высотный дом, небоскрёб",     tema:"Wohnung", lekt:"L3"},
+  {art:"das",de:"Mehrfamilienhaus",pl:'"-er',ru:"многокв. дом",               tema:"Wohnung", lekt:"L3"},
+  {art:"das",de:"Hochhaus",       pl:'"-er',        ru:"высотный дом, небоскрёб",     tema:"Wohnung", lekt:"L3"},
   {art:"",   de:"in der Nähe von",pl:"—",                 ru:"рядом с, вблизи от",          tema:"Phrase", lekt:"L3"},
-  {art:"das",de:"Reihenhaus",     pl:"Reihenhäuser",      ru:"таунхаус, рядовой дом",       tema:"Wohnung", lekt:"L3"},
+  {art:"das",de:"Reihenhaus",     pl:'"-er',      ru:"таунхаус, рядовой дом",       tema:"Wohnung", lekt:"L3"},
   // ── Стр.3 низ + сегодняшний урок ─────────────────────────────────────────────
   {art:"",de:"verheiratet",  pl:"—",ru:"женатый, замужем",  tema:"Adjektive", lekt:"L10"},
   {art:"",de:"genug",        pl:"—",ru:"достаточно",        tema:"Adjektive", lekt:"L10"},
@@ -323,8 +323,8 @@ const WBDATA=[
   {art:"die",de:"Bettdecke",      pl:"Bettdecken",      ru:"одеяло",                  tema:"Möbel", lekt:"L3"},
   {art:"der",de:"Teddybär",       pl:"Teddybären",      ru:"плюшевый мишка",          tema:"Möbel", lekt:"L3"},
   {art:"das",de:"Kinderzimmer",   pl:"Kinderzimmer",    ru:"детская комната",         tema:"Möbel", lekt:"L3"},
-  {art:"der",de:"Küchenschrank",  pl:"Küchenschränke",  ru:"кухонный шкаф",           tema:"Küche", lekt:"L3"},
-  {art:"der",de:"Blumentopf",     pl:"Blumentöpfe",     ru:"цветочный горшок",        tema:"Möbel", lekt:"L3"},
+  {art:"der",de:"Küchenschrank",  pl:'"-e',  ru:"кухонный шкаф",           tema:"Küche", lekt:"L3"},
+  {art:"der",de:"Blumentopf",     pl:'"-e',     ru:"цветочный горшок",        tema:"Möbel", lekt:"L3"},
   {art:"die",de:"Heizungsanlage", pl:"Heizungsanlagen", ru:"отопительная система",    tema:"Wohnung", lekt:"L3"},
   {art:"die",de:"Wäsche",         pl:"—",               ru:"бельё, стирка",           tema:"Alltag", lekt:"L3"},
   {art:"die",de:"Waschmaschine",  pl:"Waschmaschinen",  ru:"стиральная машина",       tema:"Möbel", lekt:"L3"},
@@ -339,7 +339,7 @@ const WBDATA=[
   {art:"die",de:"Geschwister",  pl:"—",             ru:"братья и сёстры (мн.ч.)",   tema:"Familie", lekt:"L4"},
   {art:"die",de:"Schwester",    pl:"Schwestern",    ru:"сестра",                    tema:"Familie", lekt:"L4"},
   {art:"der",de:"Bruder",       pl:'"-',        ru:"брат",                      tema:"Familie", lekt:"L4"},
-  {art:"der",de:"Sohn",         pl:"Söhne",         ru:"сын",                       tema:"Familie", lekt:"L4"},
+  {art:"der",de:"Sohn",         pl:'"-e',         ru:"сын",                       tema:"Familie", lekt:"L4"},
   {art:"die",de:"Tochter",      pl:'"-',       ru:"дочь",                      tema:"Familie", lekt:"L4"},
   {art:"die",de:"Enkelkinder",  pl:"—",             ru:"внуки (мн.ч.)",             tema:"Familie", lekt:"L4"},
   {art:"der",de:"Enkel",        pl:"Enkel",         ru:"внук",                      tema:"Familie", lekt:"L4"},
@@ -358,7 +358,7 @@ const WBDATA=[
   {art:"die",de:"Ehe",          pl:"Ehen",          ru:"брак, супружество",         tema:"Familie", lekt:"L4"},
   {art:"das",de:"Ehepaar",      pl:"Ehepaare",      ru:"супружеская пара",          tema:"Familie", lekt:"L4"},
   {art:"die",de:"Ehefrau",      pl:"Ehefrauen",     ru:"жена",                      tema:"Familie", lekt:"L4"},
-  {art:"der",de:"Ehemann",      pl:"Ehemänner",     ru:"муж",                       tema:"Familie", lekt:"L4"},
+  {art:"der",de:"Ehemann",      pl:'"-er',     ru:"муж",                       tema:"Familie", lekt:"L4"},
   {art:"",   de:"heiraten",     pl:"—",             ru:"жениться / выходить замуж", tema:"Familie", lekt:"L4"},
   {art:"",   de:"verheiratet sein",pl:"—",          ru:"быть женатым / замужней",   tema:"Phrase", lekt:"L4"},
   {art:"",   de:"nur",          pl:"—",             ru:"только",                    tema:"Alltag", lekt:"L4"},
@@ -376,7 +376,7 @@ const WBDATA=[
   // ── L4-B · Новые существительные ────────────────────────────────────────────
   {art:"der",de:"Bus",          pl:"Busse",         ru:"автобус",                   tema:"Alltag", lekt:"L9"},
 
-  {art:"der",de:"Supermarkt",   pl:"Supermärkte",   ru:"супермаркет",               tema:"Alltag", lekt:"L4"},
+  {art:"der",de:"Supermarkt",   pl:'"-e',   ru:"супермаркет",               tema:"Alltag", lekt:"L4"},
   {art:"die",de:"Radtour",      pl:"Radtouren",     ru:"велопрогулка",              tema:"Alltag", lekt:"L4"},
   {art:"die",de:"Lebensmittel", pl:"—",             ru:"продукты питания (мн.ч.)",  tema:"Alltag", lekt:"L4"},
   {art:"die",de:"Sehenswürdigkeit",pl:"Sehenswürdigkeiten",ru:"достопримечательность",tema:"Alltag", lekt:"L4"},
@@ -407,7 +407,7 @@ const WBDATA=[
   {art:"das",de:"Schiff",       pl:"Schiffe",       ru:"корабль, судно",             tema:"Alltag", lekt:"L9"},
   {art:"",   de:"besuchen",     pl:"—",             ru:"посещать (человека или мероприятие)", tema:"Alltag", lekt:"L4"},
   {art:"",   de:"besichtigen",  pl:"—",             ru:"осматривать (место или достопримечательность)", tema:"Alltag", lekt:"L4"},
-  {art:"die",de:"Innenstadt",   pl:"Innenstädte",   ru:"центр города, старый город", tema:"Alltag", lekt:"L4"},
+  {art:"die",de:"Innenstadt",   pl:'"-e',   ru:"центр города, старый город", tema:"Alltag", lekt:"L4"},
   {art:"",   de:"wiederholen",  pl:"—",             ru:"повторять (материал); повторить", tema:"Alltag", lekt:"L4"},
   {art:"",   de:"allein",       pl:"—",             ru:"один, в одиночку (без компании)", tema:"Alltag", lekt:"L7"},
   {art:"die",de:"Laune",        pl:"Launen",        ru:"настроение",                 tema:"Alltag", lekt:"L7"},
@@ -424,7 +424,7 @@ const WBDATA=[
   {art:"die",de:"Freizeit",     pl:"—",             ru:"свободное время",             tema:"Alltag", lekt:"L4"},
   {art:"der",de:"Film",         pl:"Filme",         ru:"фильм",                       tema:"Alltag", lekt:"L4"},
   {art:"der",de:"Tag",          pl:"Tage",          ru:"день",                        tema:"Alltag", lekt:"L4"},
-  {art:"der",de:"Spaziergang",  pl:"Spaziergänge",  ru:"пешая прогулка",              tema:"Alltag", lekt:"L4"},
+  {art:"der",de:"Spaziergang",  pl:'"-e',  ru:"пешая прогулка",              tema:"Alltag", lekt:"L4"},
   {art:"die",de:"Schifffahrt",  pl:"Schifffahrten", ru:"прогулка на корабле, круиз",  tema:"Alltag", lekt:"L4"},
   {art:"",   de:"alle",         pl:"—",             ru:"все (без исключения)",        tema:"Alltag", lekt:"L4"},
   {art:"",   de:"gern/gerne",   pl:"—",             ru:"с удовольствием, охотно",     tema:"Alltag", lekt:"L4"},
@@ -464,14 +464,14 @@ const WBDATA=[
   {art:"",   de:"im Restaurant essen", pl:"—",      ru:"есть в ресторане (≠ zu Hause essen)", tema:"Phrase", lekt:"L5"},
   {art:"",   de:"Deutsch lernen",      pl:"—",      ru:"учить немецкий",              tema:"Phrase", lekt:"L5"},
   {art:"der",de:"Kopfhörer",           pl:"Kopfhörer", ru:"наушники",                tema:"Kursraum", lekt:"L2"},
-  {art:"der",de:"Ausflug",             pl:"Ausflüge",  ru:"экскурсия, вылазка",      tema:"Alltag", lekt:"L2"},
+  {art:"der",de:"Ausflug",             pl:'"-e',  ru:"экскурсия, вылазка",      tema:"Alltag", lekt:"L2"},
   // ── Tageszeiten ──────────────────────────────────────────────────────────────
   {art:"der",de:"Mittag",              pl:"Mittage",   ru:"полдень",                 tema:"Tageszeiten", lekt:"L5"},
   {art:"der",de:"Vormittag",           pl:"Vormittage",ru:"первая половина дня (до полудня)", tema:"Tageszeiten", lekt:"L5"},
   {art:"der",de:"Nachmittag",          pl:"Nachmittage",ru:"вторая половина дня (после полудня)", tema:"Tageszeiten", lekt:"L5"},
   {art:"der",de:"Abend",              pl:"Abende",    ru:"вечер",                   tema:"Tageszeiten", lekt:"L5"},
   {art:"der",de:"Spätabend",          pl:"Spätabende",ru:"поздний вечер",           tema:"Tageszeiten", lekt:"L5"},
-  {art:"die",de:"Nacht",              pl:"Nächte",    ru:"ночь",                    tema:"Tageszeiten", lekt:"L5"},
+  {art:"die",de:"Nacht",              pl:'"-e',    ru:"ночь",                    tema:"Tageszeiten", lekt:"L5"},
   {art:"",   de:"lachen",             pl:"—",         ru:"смеяться",                tema:"Alltag", lekt:"L5"},
   {art:"",   de:"laufen",ord:107,     pl:"—",         ru:"бежать, бегать · läuft · ist gelaufen", tema:"Alltag", lekt:"L5"},
   {art:"",   de:"hören",ord:50,              pl:"—",         ru:"слушать, слышать · hört · hat gehört", tema:"Alltag", lekt:"L5"},
@@ -487,7 +487,7 @@ const WBDATA=[
   {art:"",   de:"weg",               pl:"—",         ru:"прочь, исчез, пропал",    tema:"Alltag", lekt:"L9"},
   {art:"",   de:"natürlich",          pl:"—",         ru:"конечно, естественно",    tema:"Alltag", lekt:"L9"},
   {art:"",   de:"vielleicht",         pl:"—",         ru:"может быть, возможно",    tema:"Alltag", lekt:"L5"},
-  {art:"das",de:"Heimatland",         pl:"Heimatländer", ru:"родина, родная страна", tema:"Familie", lekt:"L4"},
+  {art:"das",de:"Heimatland",         pl:'"-er', ru:"родина, родная страна", tema:"Familie", lekt:"L4"},
   // ── L5 · Der Tag und die Woche ────────────────────────────────────────────────
   {art:"der",de:"Morgen",             pl:"Morgen",       ru:"утро",                    tema:"Tageszeiten", lekt:"L5"},
   {art:"",   de:"morgens",            pl:"—",            ru:"по утрам, утром",         tema:"Tageszeiten", lekt:"L9"},
@@ -535,7 +535,7 @@ const WBDATA=[
   {art:"",   de:"reparieren",         pl:"—",            ru:"ремонтировать",            tema:"Alltag", lekt:"L5"},
 
   {art:"",   de:"kochen",             pl:"—",            ru:"готовить (еду), варить",   tema:"Alltag", lekt:"L5"},
-  {art:"der",de:"Zug",                pl:"Züge",         ru:"поезд",                   tema:"Alltag", lekt:"L5"},
+  {art:"der",de:"Zug",                pl:'"-e',         ru:"поезд",                   tema:"Alltag", lekt:"L5"},
   {art:"das",de:"Konzert",            pl:"Konzerte",     ru:"концерт",                 tema:"Alltag", lekt:"L5"},
   {art:"der",de:"Radiowecker",        pl:"Radiowecker",  ru:"радиобудильник",          tema:"Alltag", lekt:"L5"},
   {art:"das",de:"Gleis",              pl:"Gleise",       ru:"платформа, путь (на вокзале)", tema:"Alltag", lekt:"L5"},
@@ -571,10 +571,10 @@ const WBDATA=[
   {art:"",   de:"müde",              pl:"—",            ru:"усталый, утомлённый",     tema:"Adjektive", lekt:"L10"},
   {art:"",   de:"wollen",            pl:"—",            ru:"хотеть (намереваться)",   tema:"Alltag", lekt:"L7"},
   {art:"",   de:"kostenlos",         pl:"—",            ru:"бесплатный",              tema:"Adjektive", lekt:"L7"},
-  {art:"der",de:"Fluss",             pl:"Flüsse",       ru:"река",                    tema:"Alltag", lekt:"L9"},
+  {art:"der",de:"Fluss",             pl:'"-e',       ru:"река",                    tema:"Alltag", lekt:"L9"},
   {art:"die",de:"Brücke",            pl:"Brücken",      ru:"мост",                    tema:"Alltag", lekt:"L9"},
   {art:"",   de:"zum Glück",         pl:"—",            ru:"к счастью",               tema:"Phrase", lekt:"L9"},
-  {art:"der",de:"Wald",              pl:"Wälder",       ru:"лес",                     tema:"Alltag", lekt:"L9"},
+  {art:"der",de:"Wald",              pl:'"-er',       ru:"лес",                     tema:"Alltag", lekt:"L9"},
   {art:"",   de:"leider",            pl:"—",            ru:"к сожалению",             tema:"Alltag", lekt:"L5"},
   {art:"",   de:"früh",              pl:"—",            ru:"рано",                    tema:"Alltag", lekt:"L5"},
   {art:"",   de:"nie",               pl:"—",            ru:"никогда",                 tema:"Alltag", lekt:"L6"},
@@ -615,7 +615,7 @@ const WBDATA=[
   {art:"die",de:"Tomate",            pl:"Tomaten",      ru:"помидор",                 tema:"Lebensmittel", lekt:"L6"},
   {art:"das",de:"Wasser",            pl:"—",            ru:"вода",                    tema:"Lebensmittel", lekt:"L6"},
   {art:"der",de:"Wein",              pl:"Weine",        ru:"вино",                    tema:"Lebensmittel", lekt:"L6"},
-  {art:"die",de:"Wurst",             pl:"Würste",       ru:"колбаса",                 tema:"Lebensmittel", lekt:"L6"},
+  {art:"die",de:"Wurst",             pl:'"-e',       ru:"колбаса",                 tema:"Lebensmittel", lekt:"L6"},
   {art:"die",de:"Zwiebel",           pl:"Zwiebeln",     ru:"лук",                     tema:"Lebensmittel", lekt:"L6"},
   {art:"",   de:"faul",              pl:"—",            ru:"ленивый",                 tema:"Adjektive", lekt:"L6"},
   {art:"der",de:"Tipp",              pl:"Tipps",        ru:"совет, подсказка",        tema:"Alltag", lekt:"L6"},
@@ -641,12 +641,12 @@ const WBDATA=[
   {art:"der",de:"Becher",            pl:"Becher",       ru:"стаканчик, контейнер",     tema:"Lebensmittel", lekt:"L6"},
   {art:"die",de:"Tüte",              pl:"Tüten",        ru:"пакет, кулёк",             tema:"Lebensmittel", lekt:"L6"},
   {art:"das",de:"Stück",             pl:"Stücke",       ru:"кусок, штука",             tema:"Lebensmittel", lekt:"L6"},
-  {art:"das",de:"Glas",              pl:"Gläser",       ru:"банка (стеклянная)",        tema:"Lebensmittel", lekt:"L6"},
+  {art:"das",de:"Glas",              pl:'"-er',       ru:"банка (стеклянная)",        tema:"Lebensmittel", lekt:"L6"},
   {art:"der",de:"Kasten",            pl:'"-',       ru:"ящик (напр. ящик воды)",   tema:"Lebensmittel", lekt:"L6"},
   {art:"die",de:"Scheibe",           pl:"Scheiben",     ru:"ломтик, кусочек",          tema:"Lebensmittel", lekt:"L6"},
   {art:"die",de:"Metzgerei",         pl:"Metzgereien",  ru:"мясная лавка, мясник",     tema:"Lebensmittel", lekt:"L6"},
   {art:"die",de:"Bäckerei",          pl:"Bäckereien",   ru:"булочная, пекарня",        tema:"Lebensmittel", lekt:"L6"},
-  {art:"der",de:"Markt",             pl:"Märkte",       ru:"рынок",                    tema:"Lebensmittel", lekt:"L6"},
+  {art:"der",de:"Markt",             pl:'"-e',       ru:"рынок",                    tema:"Lebensmittel", lekt:"L6"},
   {art:"der",de:"Einkaufszettel",ord:57, pl:"-",            ru:"список покупок",           tema:"Lebensmittel", lekt:"L6"},
   {art:"das",de:"Getränk",ord:59, pl:"-e",           ru:"напиток",                  tema:"Lebensmittel", lekt:"L6"},
   {art:"die",de:"Tankstelle",        pl:"Tankstellen",  ru:"заправочная станция",      tema:"Lebensmittel", lekt:"L6"},
@@ -677,7 +677,7 @@ const WBDATA=[
   {art:"der",de:"Knoblauch",         pl:"—",            ru:"чеснок",                   tema:"Lebensmittel", lekt:"L6"},
   {art:"das",de:"Hackfleisch",       pl:"—",            ru:"фарш",                     tema:"Lebensmittel", lekt:"L6"},
   {art:"der",de:"Schenkel",          pl:"Schenkel",     ru:"бедрышко (мясо)",          tema:"Lebensmittel", lekt:"L6"},
-  {art:"die",de:"Brust",             pl:"Brüste",       ru:"грудка (мясо); грудь",     tema:"Lebensmittel", lekt:"L6"},
+  {art:"die",de:"Brust",             pl:'"-e',       ru:"грудка (мясо); грудь",     tema:"Lebensmittel", lekt:"L6"},
   {art:"der",de:"Brokkoli",          pl:"—",            ru:"брокколи",                 tema:"Lebensmittel", lekt:"L6"},
   {art:"der",de:"Rotkohl",           pl:"—",            ru:"краснокочанная капуста",   tema:"Lebensmittel", lekt:"L6"},
   {art:"der",de:"Blumenkohl",        pl:"—",            ru:"цветная капуста",          tema:"Lebensmittel", lekt:"L6"},
@@ -709,7 +709,7 @@ const WBDATA=[
   {art:"der",de:"Weißwein",          pl:"Weißweine",    ru:"белое вино",               tema:"Lebensmittel", lekt:"L6"},
   {art:"der",de:"Sekt",              pl:"—",            ru:"игристое вино, шампанское", tema:"Lebensmittel", lekt:"L6"},
   {art:"die",de:"Cola",              pl:"Colas",        ru:"кола",                     tema:"Lebensmittel", lekt:"L6"},
-  {art:"der",de:"Orangensaft",       pl:"Orangensäfte", ru:"апельсиновый сок",         tema:"Lebensmittel", lekt:"L6"},
+  {art:"der",de:"Orangensaft",       pl:'"-e', ru:"апельсиновый сок",         tema:"Lebensmittel", lekt:"L6"},
   {art:"der",de:"Cappuccino",        pl:"Cappuccinos",  ru:"капучино",                 tema:"Lebensmittel", lekt:"L6"},
   {art:"der",de:"Espresso",          pl:"Espressos",    ru:"эспрессо",                 tema:"Lebensmittel", lekt:"L6"},
   {art:"der",de:"Schwarztee",        pl:"Schwarztees",  ru:"чёрный чай",               tema:"Lebensmittel", lekt:"L6"},
@@ -784,7 +784,7 @@ const WBDATA=[
   // L7 Arbeit und Beruf
   {art:"der", de:"Beruf",            pl:"Berufe",       ru:"профессия",                                   tema:"Berufe", lekt:"L1"},
   {art:"der", de:"Kellner",          pl:"Kellner",      ru:"официант\nf. - die Kellnerin",                tema:"Berufe", lekt:"L7"},
-  {art:"der", de:"Koch",             pl:"Köche",        ru:"повар\nf. - die Köchin",                      tema:"Berufe", lekt:"L7"},
+  {art:"der", de:"Koch",             pl:'"-e',        ru:"повар\nf. - die Köchin",                      tema:"Berufe", lekt:"L7"},
   {art:"der", de:"Krankenpfleger",   pl:"Krankenpfleger",ru:"медбрат\nf. - die Krankenschwester",         tema:"Berufe", lekt:"L7"},
   {art:"der", de:"Hausmeister",      pl:"Hausmeister",  ru:"завхоз, комендант\nf. - die Hausmeisterin",   tema:"Berufe", lekt:"L7"},
   {art:"der", de:"Bankkaufmann",     pl:"Bankkaufleute",ru:"банковский служащий\nf. - die Bankkauffrau",  tema:"Berufe", lekt:"L7"},
@@ -812,25 +812,25 @@ const WBDATA=[
   {art:"das", de:"Konto",            pl:"Konten",       ru:"банковский счёт",                             tema:"Arbeit", lekt:"L7"},
   {art:"",   de:"überweisen",        pl:"—",            ru:"переводить (деньги)",                         tema:"Arbeit", lekt:"L7"},
   // L8 Körperteile
-  {art:"der", de:"Kopf",             pl:"Köpfe",        ru:"голова",                pt:"\"-e",            tema:"Körper", lekt:"L8"},
+  {art:"der", de:"Kopf",             pl:'"-e',        ru:"голова",                pt:"\"-e",            tema:"Körper", lekt:"L8"},
   {art:"die", de:"Haare",            pl:"Haare",        ru:"волосы (pl.)",          pt:"—",               tema:"Körper", lekt:"L8"},
   {art:"das", de:"Auge",             pl:"Augen",        ru:"глаз",                  pt:"-n",              tema:"Körper", lekt:"L8"},
   {art:"das", de:"Ohr",              pl:"Ohren",        ru:"ухо",                   pt:"-en",             tema:"Körper", lekt:"L8"},
-  {art:"der", de:"Mund",             pl:"Münder",       ru:"рот",                   pt:"\"-er",           tema:"Körper", lekt:"L8"},
+  {art:"der", de:"Mund",             pl:'"-er',       ru:"рот",                   pt:"\"-er",           tema:"Körper", lekt:"L8"},
   {art:"die", de:"Nase",             pl:"Nasen",        ru:"нос",                   pt:"-n",              tema:"Körper", lekt:"L8"},
   {art:"die", de:"Zunge",            pl:"Zungen",       ru:"язык (во рту)",         pt:"-n",              tema:"Körper", lekt:"L8"},
-  {art:"der", de:"Hals",             pl:"Hälse",        ru:"горло, шея",            pt:"\"-e",            tema:"Körper", lekt:"L8"},
+  {art:"der", de:"Hals",             pl:'"-e',        ru:"горло, шея",            pt:"\"-e",            tema:"Körper", lekt:"L8"},
   {art:"die", de:"Schulter",         pl:"Schultern",    ru:"плечо",                 pt:"-n",              tema:"Körper", lekt:"L8"},
   {art:"der", de:"Arm",              pl:"Arme",         ru:"рука (от плеча до кисти)",pt:"-e",            tema:"Körper", lekt:"L8"},
-  {art:"die", de:"Hand",             pl:"Hände",        ru:"рука (кисть)",          pt:"\"-e",            tema:"Körper", lekt:"L8"},
+  {art:"die", de:"Hand",             pl:'"-e',        ru:"рука (кисть)",          pt:"\"-e",            tema:"Körper", lekt:"L8"},
   {art:"der", de:"Finger",           pl:"Finger",       ru:"палец",                 pt:"—",               tema:"Körper", lekt:"L8"},
   {art:"das", de:"Handgelenk",       pl:"Handgelenke",  ru:"запястье",              pt:"-e",              tema:"Körper", lekt:"L8"},
   {art:"der", de:"Rücken",           pl:"Rücken",       ru:"спина",                 pt:"—",               tema:"Körper", lekt:"L8"},
-  {art:"der", de:"Bauch",            pl:"Bäuche",       ru:"живот",                 pt:"\"-e",            tema:"Körper", lekt:"L8"},
-  {art:"die", de:"Brust",            pl:"Brüste",       ru:"грудь",                 pt:"\"-e",            tema:"Körper", lekt:"L8"},
+  {art:"der", de:"Bauch",            pl:'"-e',       ru:"живот",                 pt:"\"-e",            tema:"Körper", lekt:"L8"},
+  {art:"die", de:"Brust",            pl:'"-e',       ru:"грудь",                 pt:"\"-e",            tema:"Körper", lekt:"L8"},
   {art:"das", de:"Bein",             pl:"Beine",        ru:"нога (от бедра до стопы)",pt:"-e",            tema:"Körper", lekt:"L8"},
   {art:"das", de:"Knie",             pl:"Knie",         ru:"колено",                pt:"—",               tema:"Körper", lekt:"L8"},
-  {art:"der", de:"Fuß",              pl:"Füße",         ru:"стопа, нога (ступня)",  pt:"\"-e",            tema:"Körper", lekt:"L8"},
+  {art:"der", de:"Fuß",              pl:'"-e',         ru:"стопа, нога (ступня)",  pt:"\"-e",            tema:"Körper", lekt:"L8"},
   {art:"die", de:"Zehe",             pl:"Zehen",        ru:"палец ноги",            pt:"-n",              tema:"Körper", lekt:"L8"},
   {art:"die", de:"Stirn",            pl:"Stirnen",      ru:"лоб",                   pt:"-en",             tema:"Körper", lekt:"L8"},
   {art:"das", de:"Kinn",             pl:"Kinne",        ru:"подбородок",            pt:"-e",              tema:"Körper", lekt:"L8"},
@@ -855,16 +855,16 @@ const WBDATA=[
   {art:"",   de:"rezeptfrei",        pl:"—",            ru:"безрецептурный (без рецепта)",                tema:"Gesundheit", lekt:"L8"},
   {art:"",   de:"rezeptpflichtig",   pl:"—",            ru:"по рецепту (требует рецепта)",                tema:"Gesundheit", lekt:"L8"},
   {art:"die", de:"Praxis",           pl:"Praxen",       ru:"кабинет врача, медицинская клиника",          tema:"Gesundheit", lekt:"L8"},
-  {art:"der", de:"Hausarzt",         pl:"Hausärzte",    ru:"участковый врач, терапевт\nf. - die Hausärztin",tema:"Gesundheit", lekt:"L8"},
+  {art:"der", de:"Hausarzt",         pl:'"-e',    ru:"участковый врач, терапевт\nf. - die Hausärztin",tema:"Gesundheit", lekt:"L8"},
   {art:"die", de:"Untersuchung", pl:"-en",          ru:"обследование, осмотр",                        tema:"Gesundheit", lekt:"L8"},
-  {art:"der", de:"Zufall",           pl:"Zufälle",      ru:"случайность, случай",                         tema:"Gesundheit", lekt:"L8"},
+  {art:"der", de:"Zufall",           pl:'"-e',      ru:"случайность, случай",                         tema:"Gesundheit", lekt:"L8"},
   {art:"",   de:"fehlen",            pl:"—",            ru:"не хватать; болеть · Was fehlt Ihnen? = Что вас беспокоит?", lekt:"L8"},
   {art:"",   de:"weh|tun",           pl:"—",            ru:"болеть · tut weh = болит",                    tema:"Gesundheit", lekt:"L8"},
   {art:"",   de:"erkältet",          pl:"—",            ru:"простуженный · Ich bin erkältet = у меня простуда", lekt:"L8"},
   // L7 дополнительные слова
   {art:"die", de:"Baustelle", pl:"-n",           ru:"стройка, строительная площадка",              tema:"Arbeit", lekt:"L7"},
   {art:"die", de:"Werkstatt", pl:'"-en',          ru:"мастерская, автосервис",     tema:"Arbeit", lekt:"L7"},
-  {art:"das", de:"Krankenhaus",      pl:"Krankenhäuser",ru:"больница",                   pt:"\"-er",       tema:"Gesundheit", lekt:"L7"},
+  {art:"das", de:"Krankenhaus",      pl:'"-er',ru:"больница",                   pt:"\"-er",       tema:"Gesundheit", lekt:"L7"},
   {art:"die", de:"Gebühr", pl:"-en",          ru:"сбор, комиссия, плата",                       tema:"Arbeit", lekt:"L7"},
   {art:"die", de:"Bankverbindung", pl:"-en",          ru:"банковские реквизиты",                        tema:"Arbeit", lekt:"L7"},
   {art:"die", de:"Überweisung", pl:"-en",          ru:"банковский перевод; направление (к врачу)",   tema:"Arbeit", lekt:"L7"},
@@ -905,11 +905,11 @@ const WBDATA=[
   {art:"",   de:"sollte",            pl:"—",            ru:"следовало бы, нужно бы (Konjunktiv II от sollen) · Du solltest schlafen.", lekt:"L8"},
   // ── L8E · Notruf ─────────────────────────────────────────────────────────────
   {art:"der", de:"Notruf", pl:"-e",           ru:"экстренный вызов (112)",                      tema:"Notruf", lekt:"L8"},
-  {art:"der", de:"Notfall",         pl:"Notfälle",     ru:"чрезвычайная ситуация",                       tema:"Notruf", lekt:"L8"},
-  {art:"der", de:"Unfall",          pl:"Unfälle",      ru:"авария, несчастный случай",                   tema:"Notruf", lekt:"L8"},
-  {art:"der", de:"Notarzt",         pl:"Notärzte",     ru:"врач скорой помощи\nf. - die Notärztin",      tema:"Notruf", lekt:"L8"},
+  {art:"der", de:"Notfall",         pl:'"-e',     ru:"чрезвычайная ситуация",                       tema:"Notruf", lekt:"L8"},
+  {art:"der", de:"Unfall",          pl:'"-e',      ru:"авария, несчастный случай",                   tema:"Notruf", lekt:"L8"},
+  {art:"der", de:"Notarzt",         pl:'"-e',     ru:"врач скорой помощи\nf. - die Notärztin",      tema:"Notruf", lekt:"L8"},
   {art:"die", de:"Verletzung", pl:"-en",          ru:"травма, повреждение",                         tema:"Notruf", lekt:"L8"},
-  {art:"die", de:"Not",             pl:"Nöte",         ru:"нужда, необходимость",                        tema:"Notruf", lekt:"L8"},
+  {art:"die", de:"Not",             pl:'"-e',         ru:"нужда, необходимость",                        tema:"Notruf", lekt:"L8"},
   {art:"",   de:"verletzt",         pl:"—",            ru:"раненый, травмированный",                     tema:"Notruf", lekt:"L8"},
   {art:"",   de:"dringend",         pl:"—",            ru:"срочный, неотложный",                         tema:"Notruf", lekt:"L8"},
   {art:"",   de:"erklären",         pl:"—",            ru:"объяснять",                                   tema:"Notruf", lekt:"L8"},
@@ -920,8 +920,8 @@ const WBDATA=[
   {art:"",   de:"erste Hilfe leisten", pl:"—",         ru:"оказывать первую помощь",                     tema:"Notruf", lekt:"L8"},
   // ── L9A · Verkehrsmittel ─────────────────────────────────────────────────────
   {art:"das", de:"Auto", pl:"-s",           ru:"автомобиль",                                  tema:"Verkehrsmittel", lekt:"L9"},
-  {art:"das", de:"Fahrrad",         pl:"Fahrräder",    ru:"велосипед",                                   tema:"Verkehrsmittel", lekt:"L5"},
-  {art:"das", de:"Motorrad",        pl:"Motorräder",   ru:"мотоцикл",                                    tema:"Verkehrsmittel", lekt:"L9"},
+  {art:"das", de:"Fahrrad",         pl:'"-er',    ru:"велосипед",                                   tema:"Verkehrsmittel", lekt:"L5"},
+  {art:"das", de:"Motorrad",        pl:'"-er',   ru:"мотоцикл",                                    tema:"Verkehrsmittel", lekt:"L9"},
   {art:"die", de:"Straßenbahn", pl:"-en",          ru:"трамвай",                                     tema:"Verkehrsmittel", lekt:"L9"},
   {art:"die", de:"U-Bahn", pl:"-en",          ru:"метро, подземка",                             tema:"Verkehrsmittel", lekt:"L9"},
   {art:"die", de:"S-Bahn", pl:"-en",          ru:"городская электричка",                        tema:"Verkehrsmittel", lekt:"L9"},
@@ -1001,7 +1001,7 @@ const WBDATA=[
   // ── In der Stadt L9B ──────────────────────────────────────────────────────────
   {art:"die", de:"Kreuzung", pl:"-en",          ru:"перекрёсток",                                 tema:"InDerStadt", lekt:"L9"},
   {art:"die", de:"Schule", pl:"-n",           ru:"школа",                                       tema:"InDerStadt", lekt:"L9"},
-  {art:"der", de:"Bahnhof",         pl:"Bahnhöfe",     ru:"вокзал, железнодорожная станция",              tema:"InDerStadt", lekt:"L9"},
+  {art:"der", de:"Bahnhof",         pl:'"-e',     ru:"вокзал, железнодорожная станция",              tema:"InDerStadt", lekt:"L9"},
   {art:"",   de:"müssen",           pl:"—",            ru:"быть обязанным, должен · ich muss · Modalverb", lekt:"L7"},
   {art:"",   de:"können",ord:143,   pl:"—",            ru:"мочь, уметь · ich kann · Modalverb",             tema:"Alltag", lekt:"L7"},
   {art:"",   de:"sollen",ord:144,   pl:"—",            ru:"должен (по чужой воле/совету) · ich soll · Modalverb", tema:"Alltag", lekt:"L7"},
@@ -1033,29 +1033,29 @@ const WBDATA=[
   {art:"der", de:"Flughafen",       pl:'"-',    ru:"аэропорт",                                     tema:"InDerStadt", lekt:"L9"},
   {art:"die", de:"Stadtmitte",      pl:"—",            ru:"центр города",                                 tema:"InDerStadt", lekt:"L9"},
   {art:"die", de:"Monatskarte", pl:"-n",           ru:"месячный проездной",                           tema:"InDerStadt", lekt:"L9"},
-  {art:"der", de:"Platz",           pl:"Plätze",       ru:"площадь; место",                               tema:"InDerStadt", lekt:"L9"},
-  {art:"der", de:"Baum",            pl:"Bäume",        ru:"дерево",                                       tema:"InDerStadt", lekt:"L9"},
-  {art:"die", de:"Bank",            pl:"Bänke",        ru:"скамейка · die Bank/-en = банк",               tema:"InDerStadt", lekt:"L9"},
+  {art:"der", de:"Platz",           pl:'"-e',       ru:"площадь; место",                               tema:"InDerStadt", lekt:"L9"},
+  {art:"der", de:"Baum",            pl:'"-e',        ru:"дерево",                                       tema:"InDerStadt", lekt:"L9"},
+  {art:"die", de:"Bank",            pl:'"-e',        ru:"скамейка · die Bank/-en = банк",               tema:"InDerStadt", lekt:"L9"},
   {art:"der", de:"Hund", pl:"-e",           ru:"собака",                                       tema:"InDerStadt", lekt:"L9"},
-  {art:"das", de:"Schwimmbad",      pl:"Schwimmbäder", ru:"бассейн, купальня",                            tema:"InDerStadt", lekt:"L9"},
-  {art:"das", de:"Rathaus",         pl:"Rathäuser",    ru:"ратуша, мэрия",                                tema:"InDerStadt", lekt:"L9"},
+  {art:"das", de:"Schwimmbad",      pl:'"-er', ru:"бассейн, купальня",                            tema:"InDerStadt", lekt:"L9"},
+  {art:"das", de:"Rathaus",         pl:'"-er',    ru:"ратуша, мэрия",                                tema:"InDerStadt", lekt:"L9"},
   {art:"die", de:"Bibliothek", pl:"-en",          ru:"библиотека",                                   tema:"InDerStadt", lekt:"L9"},
-  {art:"der", de:"Hauptbahnhof",    pl:"Hauptbahnhöfe",ru:"главный вокзал (Hbf)",                         tema:"InDerStadt", lekt:"L9"},
+  {art:"der", de:"Hauptbahnhof",    pl:'"-e',ru:"главный вокзал (Hbf)",                         tema:"InDerStadt", lekt:"L9"},
   {art:"",   de:"weit",             pl:"—",            ru:"далеко; далёкий · nicht weit = недалеко",      tema:"InDerStadt", lekt:"L9"},
   {art:"die", de:"Linie", pl:"-n",           ru:"линия (транспортная)",                         tema:"InDerStadt", lekt:"L9"},
   {art:"der", de:"Zoo", pl:"-s",           ru:"зоопарк",                                      tema:"InDerStadt", lekt:"L9"},
-  {art:"der", de:"Spielplatz",      pl:"Spielplätze",  ru:"детская площадка",                             tema:"InDerStadt", lekt:"L9"},
+  {art:"der", de:"Spielplatz",      pl:'"-e',  ru:"детская площадка",                             tema:"InDerStadt", lekt:"L9"},
   // L9C Führerschein добавки
   {art:"die", de:"Führerscheinprüfung", pl:"-en",       ru:"экзамен на водительские права",                tema:"Fuehrerschein", lekt:"L9"},
   {art:"",   de:"anerkennen",       pl:"—",            ru:"официально признавать",                        tema:"Fuehrerschein", lekt:"L9"},
   {art:"das", de:"Vorfahrtsschild", pl:"-er",          ru:"знак приоритета",                              tema:"Fuehrerschein", lekt:"L9"},
   {art:"das", de:"Schild", pl:"-er",          ru:"знак, табличка",                               tema:"Fuehrerschein", lekt:"L9"},
   // Fahrplan
-  {art:"der", de:"Fahrplan",        pl:"Fahrpläne",    ru:"расписание (транспорта)",                      tema:"Verkehrsmittel", lekt:"L9"},
+  {art:"der", de:"Fahrplan",        pl:'"-e',    ru:"расписание (транспорта)",                      tema:"Verkehrsmittel", lekt:"L9"},
   {art:"die", de:"Abfahrt", pl:"-en",          ru:"отправление (поезда/автобуса)",                tema:"Verkehrsmittel", lekt:"L9"},
   // ── L10 · Mein Leben ─────────────────────────────────────────────────────────
-  {art:"die", de:"Großstadt",       pl:"Großstädte",   ru:"большой город (мегаполис)",                    tema:"MeinLeben", lekt:"L10"},
-  {art:"die", de:"Kleinstadt",      pl:"Kleinstädte",  ru:"маленький город",                              tema:"MeinLeben", lekt:"L10"},
+  {art:"die", de:"Großstadt",       pl:'"-e',   ru:"большой город (мегаполис)",                    tema:"MeinLeben", lekt:"L10"},
+  {art:"die", de:"Kleinstadt",      pl:'"-e',  ru:"маленький город",                              tema:"MeinLeben", lekt:"L10"},
   {art:"",   de:"ledig",            pl:"—",            ru:"холостой, незамужняя; не в браке",             tema:"MeinLeben", lekt:"L10"},
   {art:"",   de:"geschieden",       pl:"—",            ru:"разведённый/разведённая",                      tema:"MeinLeben", lekt:"L10"},
   {art:"",   de:"gestern",          pl:"—",            ru:"вчера", lekt:"L10"},
@@ -1190,6 +1190,10 @@ const WBDATA=[
   {art:"der", de:"Süden",           pl:"—",            ru:"юг",                                           tema:"Alltag", lekt:"L11"},
   {art:"der", de:"Osten",           pl:"—",            ru:"восток",                                       tema:"Alltag", lekt:"L11"},
   {art:"der", de:"Westen",          pl:"—",            ru:"запад",                                        tema:"Alltag", lekt:"L11"},
+  {art:"der", de:"Nordosten",ord:197,pl:"—",           ru:"северо-восток",                                tema:"Reisen", lekt:"L13"},
+  {art:"der", de:"Nordwesten",ord:198,pl:"—",          ru:"северо-запад",                                 tema:"Reisen", lekt:"L13"},
+  {art:"der", de:"Südosten",ord:199, pl:"—",           ru:"юго-восток",                                   tema:"Reisen", lekt:"L13"},
+  {art:"der", de:"Südwesten",ord:200,pl:"—",           ru:"юго-запад",                                    tema:"Reisen", lekt:"L13"},
   {art:"",   de:"Verzeihung",       pl:"—",            ru:"извините, простите",                           tema:"Phrase", lekt:"L11"},
   {art:"",   de:"ich verstehe",     pl:"—",            ru:"я понимаю",                                    tema:"Phrase", lekt:"L11"},
   {art:"",   de:"danken",           pl:"—",            ru:"благодарить · +Dativ · Ich danke dir/Ihnen",   tema:"Phrase", lekt:"L11"},
@@ -1330,6 +1334,58 @@ const WBDATA=[
   {art:"der", de:"Heiratstermin",ord:140, pl:"-e",           ru:"дата регистрации брака",                          tema:"Ämter", lekt:"L11"},
   {art:"das", de:"Wohngeld",ord:141,      pl:"—",            ru:"жилищное пособие (только Sg.)",                   tema:"Ämter", lekt:"L11"},
   {art:"das", de:"Nummernschild",ord:142, pl:"-er",          ru:"номерной знак (автомобиля)",                      tema:"Ämter", lekt:"L11"},
+  // ── L13 · Das Wetter & Die Jahreszeiten ──────────────────────────────────────
+  {art:"der", de:"Regen",ord:146,         pl:"—",            ru:"дождь (только Sg.)",                              tema:"Reisen", lekt:"L13"},
+  {art:"der", de:"Schnee",ord:147,        pl:"—",            ru:"снег (только Sg.)",                               tema:"Reisen", lekt:"L13"},
+  {art:"die", de:"Sonne",ord:148,         pl:"—",            ru:"солнце",                                          tema:"Reisen", lekt:"L13"},
+  {art:"der", de:"Wind",ord:149,          pl:"-e",           ru:"ветер",                                           tema:"Reisen", lekt:"L13"},
+  {art:"die", de:"Wolke",ord:150,         pl:"-n",           ru:"облако",                                          tema:"Reisen", lekt:"L13"},
+  {art:"",   de:"schneien",ord:151,       pl:"—",            ru:"идти (о снеге) · es schneit",                     tema:"Reisen", lekt:"L13"},
+  {art:"",   de:"regnen",ord:152,         pl:"—",            ru:"идти (о дожде) · es regnet",                      tema:"Reisen", lekt:"L13"},
+  {art:"",   de:"nass",ord:153,           pl:"—",            ru:"мокрый",                                          tema:"Reisen", lekt:"L13"},
+  {art:"",   de:"heiß",ord:154,           pl:"—",            ru:"жаркий, горячий",                                 tema:"Reisen", lekt:"L13"},
+  {art:"",   de:"bewölkt",ord:155,        pl:"—",            ru:"облачно, пасмурно",                               tema:"Reisen", lekt:"L13"},
+  {art:"",   de:"windig",ord:156,         pl:"—",            ru:"ветрено",                                         tema:"Reisen", lekt:"L13"},
+  {art:"der", de:"Monat",ord:157,         pl:"-e",           ru:"месяц",                                           tema:"Reisen", lekt:"L13"},
+  {art:"das", de:"Grad",ord:158,          pl:"-",            ru:"градус",                                          tema:"Reisen", lekt:"L13"},
+  {art:"der", de:"Frühling",ord:159,      pl:"-e",           ru:"весна",                                           tema:"Reisen", lekt:"L13"},
+  {art:"der", de:"Sommer",ord:160,        pl:"-",            ru:"лето",                                            tema:"Reisen", lekt:"L13"},
+  {art:"der", de:"Herbst",ord:161,        pl:"-e",           ru:"осень",                                           tema:"Reisen", lekt:"L13"},
+  {art:"der", de:"Winter",ord:162,        pl:"-",            ru:"зима",                                            tema:"Reisen", lekt:"L13"},
+  {art:"der", de:"Januar",ord:163,        pl:"—",            ru:"январь",                                          tema:"Reisen", lekt:"L13"},
+  {art:"der", de:"Februar",ord:164,       pl:"—",            ru:"февраль",                                         tema:"Reisen", lekt:"L13"},
+  {art:"der", de:"März",ord:165,          pl:"—",            ru:"март",                                            tema:"Reisen", lekt:"L13"},
+  {art:"der", de:"April",ord:166,         pl:"—",            ru:"апрель",                                          tema:"Reisen", lekt:"L13"},
+  {art:"der", de:"Mai",ord:167,           pl:"—",            ru:"май",                                             tema:"Reisen", lekt:"L13"},
+  {art:"der", de:"Juni",ord:168,          pl:"—",            ru:"июнь",                                            tema:"Reisen", lekt:"L13"},
+  {art:"der", de:"Juli",ord:169,          pl:"—",            ru:"июль",                                            tema:"Reisen", lekt:"L13"},
+  {art:"der", de:"August",ord:170,        pl:"—",            ru:"август",                                          tema:"Reisen", lekt:"L13"},
+  {art:"der", de:"September",ord:171,     pl:"—",            ru:"сентябрь",                                        tema:"Reisen", lekt:"L13"},
+  {art:"der", de:"Oktober",ord:172,       pl:"—",            ru:"октябрь",                                         tema:"Reisen", lekt:"L13"},
+  {art:"der", de:"November",ord:173,      pl:"—",            ru:"ноябрь",                                          tema:"Reisen", lekt:"L13"},
+  {art:"der", de:"Dezember",ord:174,      pl:"—",            ru:"декабрь",                                         tema:"Reisen", lekt:"L13"},
+  {art:"",   de:"vergleichen",ord:175,    pl:"—",            ru:"сравнивать",                                      tema:"Reisen", lekt:"L13"},
+  {art:"der", de:"Unterschied",ord:176,   pl:"-e",           ru:"разница, отличие",                                tema:"Reisen", lekt:"L13"},
+  {art:"",   de:"genauso",ord:177,        pl:"—",            ru:"точно так же",                                    tema:"Reisen", lekt:"L13"},
+  {art:"",   de:"durchschnittlich",ord:178,pl:"—",           ru:"в среднем",                                       tema:"Reisen", lekt:"L13"},
+  {art:"",   de:"deshalb",ord:179,        pl:"—",            ru:"поэтому",                                         tema:"Reisen", lekt:"L13"},
+  {art:"das", de:"Sternzeichen",ord:180,  pl:"-",            ru:"знак зодиака",                                    tema:"Reisen", lekt:"L13"},
+  {art:"der", de:"Stern",ord:181,         pl:"-e",           ru:"звезда",                                          tema:"Reisen", lekt:"L13"},
+  {art:"die", de:"Eigenschaft",ord:182,   pl:"-en",          ru:"свойство, качество, черта характера",             tema:"Reisen", lekt:"L13"},
+  {art:"",   de:"kurz",ord:183,           pl:"—",            ru:"короткий",                                        tema:"Reisen", lekt:"L13"},
+  {art:"",   de:"gern",ord:184,           pl:"—",            ru:"охотно, с удовольствием",                         tema:"Reisen", lekt:"L13"},
+  {art:"",   de:"viel",ord:185,           pl:"—",            ru:"много",                                           tema:"Reisen", lekt:"L13"},
+  {art:"",   de:"lang",ord:186,           pl:"—",            ru:"длинный",                                         tema:"Reisen", lekt:"L13"},
+  {art:"",   de:"surfen",ord:187,         pl:"—",            ru:"сёрфить (на волнах / в интернете)",               tema:"Reisen", lekt:"L13"},
+  {art:"",   de:"beladen",ord:188,        pl:"—",            ru:"грузить, загружать · belädt · hat beladen",       tema:"Reisen", lekt:"L13"},
+  {art:"",   de:"entladen",ord:189,       pl:"—",            ru:"разгружать · entlädt · hat entladen",             tema:"Reisen", lekt:"L13"},
+  {art:"",   de:"verstauen",ord:190,      pl:"—",            ru:"размещать, укладывать (вещи)",                    tema:"Reisen", lekt:"L13"},
+  {art:"der", de:"Verdienst",ord:191,     pl:"-e",           ru:"заработок",                                       tema:"Reisen", lekt:"L13"},
+  {art:"",   de:"verschlafen",ord:192,    pl:"—",            ru:"проспать · verschläft · hat verschlafen",         tema:"Reisen", lekt:"L13"},
+  {art:"",   de:"sich verspäten",ord:193, pl:"—",            ru:"опаздывать",                                      tema:"Reisen", lekt:"L13"},
+  {art:"",   de:"durchschlafen",ord:194,  pl:"—",            ru:"проспать всю ночь · hat durchgeschlafen",         tema:"Reisen", lekt:"L13"},
+  {art:"die", de:"Armbanduhr",ord:195,    pl:"-en",          ru:"наручные часы",                                   tema:"Reisen", lekt:"L13"},
+  {art:"das", de:"Leder",ord:196,         pl:"—",            ru:"кожа (материал)",                                 tema:"Reisen", lekt:"L13"},
 ];
 
 
@@ -1634,7 +1690,9 @@ const KONJ_ALL={
   schwimmen:  {col:C.teal,  bg:C.tealBg,   ich:"schwimme",  du:"schwimmst",  "er/sie/es":"schwimmt",  wir:"schwimmen",ihr:"schwimmt", "sie/Sie":"schwimmen", pt:"schwamm", ptc:{du:"schwammst",wir:"schwammen",ihr:"schwammt",sie:"schwammen"}, pf:"ist geschwommen"},
   joggen:     {col:C.teal,  bg:C.tealBg,   ich:"jogge",     du:"joggst",     "er/sie/es":"joggt",     wir:"joggen",   ihr:"joggt",    "sie/Sie":"joggen", pt:"joggte", pf:"ist gejoggt"},
   grillen:    {col:C.teal,  bg:C.tealBg,   ich:"grille",    du:"grillst",    "er/sie/es":"grillt",    wir:"grillen",  ihr:"grillt",   "sie/Sie":"grillen", pt:"grillte", pf:"hat gegrillt"},
-  surfen:     {col:C.teal,  bg:C.tealBg,   ich:"surfe",     du:"surfst",     "er/sie/es":"surft",     wir:"surfen",   ihr:"surft",    "sie/Sie":"surfen", pt:"surfte", pf:"hat gesurft"},
+  surfen:      {col:C.blue, bg:C.blueBg,
+    ich:"surfe", du:"surfst", "er/sie/es":"surft",
+    wir:"surfen",ihr:"surft", "sie/Sie":"surfen", pt:"surfte", pf:"hat gesurft"},
   vergessen:  {col:C.orange,bg:C.orangeBg, ich:"vergesse",  du:"vergisst",   "er/sie/es":"vergisst",  wir:"vergessen",ihr:"vergesst", "sie/Sie":"vergessen", note:"e→i",
     imp:{du:"Vergiss!",  ihr:"Vergesst!",  Sie:"Vergessen Sie nicht!"}, pt:"vergaß", ptc:{du:"vergaßt",wir:"vergaßen",ihr:"vergaßt",sie:"vergaßen"}, pf:"hat vergessen"},
   möchten:    {col:C.purple,bg:C.purpleBg, ich:"möchte",    du:"möchtest",   "er/sie/es":"möchte",    wir:"möchten",  ihr:"möchtet",  "sie/Sie":"möchten",   note:"ich = er (нет -t!)",noImp:true},
@@ -1977,6 +2035,39 @@ const KONJ_ALL={
   brauchen:    {col:C.blue, bg:C.blueBg,
     ich:"brauche", du:"brauchst","er/sie/es":"braucht",
     wir:"brauchen",ihr:"braucht","sie/Sie":"brauchen", pt:"brauchte", pf:"hat gebraucht"},
+  // L13 (08.07.2026) — Das Wetter, Die Jahreszeiten
+  schneien:    {col:C.teal, bg:C.tealBg, note:"обычно только es schneit",
+    ich:"schneie",du:"schneist","er/sie/es":"schneit",
+    wir:"schneien",ihr:"schneit","sie/Sie":"schneien", pt:"schneite", pf:"hat geschneit"},
+  regnen:      {col:C.teal, bg:C.tealBg, note:"обычно только es regnet",
+    ich:"regne", du:"regnest","er/sie/es":"regnet",
+    wir:"regnen",ihr:"regnet","sie/Sie":"regnen", pt:"regnete", pf:"hat geregnet"},
+  vergleichen: {col:C.green,bg:C.greenBg, note:"untrennbar: kein ge-",
+    ich:"vergleiche",du:"vergleichst","er/sie/es":"vergleicht",
+    wir:"vergleichen",ihr:"vergleicht","sie/Sie":"vergleichen",
+    pt:"verglich", ptc:{du:"verglichst",wir:"verglichen",ihr:"verglicht",sie:"verglichen"}, pf:"hat verglichen"},
+  verschlafen: {col:C.red,  bg:C.redBg,  note:"a→ä | untrennbar: kein ge-",
+    ich:"verschlafe",du:"verschläfst","er/sie/es":"verschläft",
+    wir:"verschlafen",ihr:"verschlaft","sie/Sie":"verschlafen",
+    pt:"verschlief", ptc:{du:"verschliefst",wir:"verschliefen",ihr:"verschlieft",sie:"verschliefen"}, pf:"hat verschlafen"},
+  "sich verspäten":{col:C.red,bg:C.redBg, note:"Reflexiv",
+    ich:"verspäte mich",du:"verspätest dich","er/sie/es":"verspätet sich",
+    wir:"verspäten uns",ihr:"verspätet euch","sie/Sie":"verspäten sich", pt:"verspätete sich", pf:"hat sich verspätet"},
+  durchschlafen:{pref:"durch",col:C.orange,bg:C.orangeBg, note:"a→ä",
+    ich:"schlafe … durch",  du:"schläfst … durch",  "er/sie/es":"schläft … durch",
+    wir:"schlafen … durch", ihr:"schlaft … durch",  "sie/Sie":"schlafen … durch",
+    pt:"schlief … durch", ptc:{du:"schliefst … durch",wir:"schliefen … durch",ihr:"schlieft … durch",sie:"schliefen … durch"}, pf:"hat durchgeschlafen"},
+  beladen:     {col:C.purple,bg:C.purpleBg, note:"a→ä | untrennbar: kein ge-",
+    ich:"belade", du:"belädst", "er/sie/es":"belädt",
+    wir:"beladen",ihr:"beladet","sie/Sie":"beladen",
+    pt:"belud", ptc:{du:"beludst",wir:"beluden",ihr:"beludet",sie:"beluden"}, pf:"hat beladen"},
+  entladen:    {col:C.purple,bg:C.purpleBg, note:"a→ä | untrennbar: kein ge-",
+    ich:"entlade",du:"entlädst","er/sie/es":"entlädt",
+    wir:"entladen",ihr:"entladet","sie/Sie":"entladen",
+    pt:"entlud", ptc:{du:"entludst",wir:"entluden",ihr:"entludet",sie:"entluden"}, pf:"hat entladen"},
+  verstauen:   {col:C.teal, bg:C.tealBg, note:"untrennbar: kein ge-",
+    ich:"verstaue",du:"verstaust","er/sie/es":"verstaut",
+    wir:"verstauen",ihr:"verstaut","sie/Sie":"verstauen", pt:"verstaute", pf:"hat verstaut"},
 };
 
 // Ударения: комбинирующая акута \u0301 ставится после ударной гласной
@@ -2327,6 +2418,7 @@ const STRESS_MARKS={
 "tadeln":"ta\u0301deln","loben":"lo\u0301ben","Zeile":"Zei\u0301le","Gast":"Ga\u0301st","bemalen":"bema\u0301len","ausmalen":"a\u0301usmalen",
 "Ausländeramt":"Au\u0301sländeramt","Kindergeldantrag":"Ki\u0301ndergeldantrag",
 "Meer":"Me\u0301er","Berg":"Be\u0301rg","Bauernhof":"Ba\u0301uernhof","Strand":"Stra\u0301nd","Wiese":"Wie\u0301se","See":"Se\u0301e","Landschaft":"La\u0301ndschaft","Urlaub":"U\u0301rlaub","wandern":"wa\u0301ndern","Klasse":"Kla\u0301sse","Reservierung":"Reservie\u0301rung","BahnCard":"Ba\u0301hnCard","Anzeigetafel":"A\u0301nzeigetafel","Verspätung":"Verspä\u0301tung","durchsagen":"Du\u0301rchsagen","Ankunft":"A\u0301nkunft","Tunnel":"Tu\u0301nnel","Aussicht":"A\u0301ussicht","zählen":"zä\u0301hlen","Höhe":"H\u00F6\u0301he","Pension":"Pensio\u0301n","übernachten":"\u00FCberna\u0301chten","ungefähr":"ungefä\u0301hr","aussteigen":"A\u0301ussteigen","losfahren":"Lo\u0301sfahren","Endstation":"E\u0301ndstation","Kuh":"Ku\u0301h","melken":"me\u0301lken","Ärger":"\u00C4\u0301rger","ärgerlich":"\u00E4\u0301rgerlich","verärgert":"verä\u0301rgert","sich irren":"sich i\u0301rren","Heiratstermin":"Hei\u0301ratstermin","Wohngeld":"Wo\u0301hngeld","Nummernschild":"Nu\u0301mmernschild","können":"k\u00F6\u0301nnen","sollen":"so\u0301llen","brauchen":"bra\u0301uchen",
+"Regen":"Re\u0301gen","Schnee":"Schne\u0301e","Sonne":"So\u0301nne","Wind":"Wi\u0301nd","Wolke":"Wo\u0301lke","schneien":"schne\u0301ien","regnen":"re\u0301gnen","nass":"na\u0301ss","heiß":"hei\u0301ß","bewölkt":"bew\u00F6\u0301lkt","windig":"wi\u0301ndig","Monat":"Mo\u0301nat","Grad":"Gra\u0301d","Frühling":"Fr\u00FC\u0301hling","Sommer":"So\u0301mmer","Herbst":"He\u0301rbst","Winter":"Wi\u0301nter","Januar":"Ja\u0301nuar","Februar":"Fe\u0301bruar","März":"M\u00E4\u0301rz","April":"Apri\u0301l","Mai":"Ma\u0301i","Juni":"Ju\u0301ni","Juli":"Ju\u0301li","August":"Augu\u0301st","September":"Septe\u0301mber","Oktober":"Okto\u0301ber","November":"Nove\u0301mber","Dezember":"Deze\u0301mber","vergleichen":"verglei\u0301chen","Unterschied":"U\u0301nterschied","genauso":"gena\u0301uso","durchschnittlich":"du\u0301rchschnittlich","deshalb":"desha\u0301lb","Sternzeichen":"Ste\u0301rnzeichen","Stern":"Ste\u0301rn","Eigenschaft":"Ei\u0301genschaft","kurz":"ku\u0301rz","gern":"ge\u0301rn","viel":"vie\u0301l","lang":"la\u0301ng","surfen":"su\u0301rfen","beladen":"bela\u0301den","entladen":"entla\u0301den","verstauen":"versta\u0301uen","Verdienst":"Verdie\u0301nst","verschlafen":"verschla\u0301fen","sich verspäten":"sich versp\u00E4\u0301ten","durchschlafen":"du\u0301rchschlafen","Armbanduhr":"A\u0301rmbanduhr","Leder":"Le\u0301der","Nordosten":"Nordo\u0301sten","Nordwesten":"Nordwe\u0301sten","Südosten":"S\u00FCdo\u0301sten","Südwesten":"S\u00FCdwe\u0301sten",
 "schick":"schi\u0301ck","altmodisch":"a\u0301ltmodisch","komisch":"ko\u0301misch","praktisch":"pra\u0301ktisch",
 "kompliziert":"komplizie\u0301rt","angenehm":"a\u0301ngenehm","gebraucht":"gebra\u0301ucht",
 "kariert":"karie\u0301rt","gestreift":"gestre\u0301ift","gemustert":"gemu\u0301stert","geblümt":"gebl\u00FC\u0301mt",
@@ -2667,6 +2759,7 @@ const IPA_DATA={
 "tadeln":"[ˈtaːdl̩n]","loben":"[ˈloːbn̩]","Zeile":"[ˈtsaɪlə]","Gast":"[ɡast]","bemalen":"[bəˈmaːlən]","ausmalen":"[ˈaʊsˌmaːlən]",
 "Ausländeramt":"[ˈaʊslɛndɐˌʔamt]","Kindergeldantrag":"[ˈkɪndɐɡɛltˌʔantʁaːk]",
 "Meer":"[meːɐ̯]","Berg":"[bɛʁk]","Bauernhof":"[ˈbaʊɐnhoːf]","Strand":"[ʃtʁant]","Wiese":"[ˈviːzə]","See":"[zeː]","Landschaft":"[ˈlantʃaft]","Urlaub":"[ˈuːɐ̯laʊp]","wandern":"[ˈvandɐn]","Klasse":"[ˈklasə]","Reservierung":"[ʁezɛʁˈviːʁʊŋ]","BahnCard":"[ˈbaːnkaːɐ̯t]","Anzeigetafel":"[ˈantsaɪɡəˌtaːfl̩]","Verspätung":"[fɛɐ̯ˈʃpɛːtʊŋ]","durchsagen":"[ˈdʊʁçˌzaːɡən]","Ankunft":"[ˈankʊnft]","Tunnel":"[ˈtʊnl̩]","Aussicht":"[ˈaʊszɪçt]","zählen":"[ˈtsɛːlən]","Höhe":"[ˈhøːə]","Pension":"[pɑ̃ˈzi̯oːn]","übernachten":"[yːbɐˈnaxtən]","ungefähr":"[ˈʊnɡəfɛːɐ̯]","aussteigen":"[ˈaʊsˌʃtaɪɡən]","losfahren":"[ˈloːsˌfaːʁən]","Endstation":"[ˈɛntʃtaˌtsi̯oːn]","Kuh":"[kuː]","melken":"[ˈmɛlkən]","Ärger":"[ˈɛʁɡɐ]","ärgerlich":"[ˈɛʁɡɐlɪç]","verärgert":"[fɛɐ̯ˈʔɛʁɡɐt]","sich irren":"[ˈɪʁən]","Heiratstermin":"[ˈhaɪʁaːtsˌtɛʁmiːn]","Wohngeld":"[ˈvoːnɡɛlt]","Nummernschild":"[ˈnʊmɐnˌʃɪlt]","können":"[ˈkœnən]","sollen":"[ˈzɔlən]","brauchen":"[ˈbʁaʊxən]",
+"Regen":"[ˈʁeːɡn̩]","Schnee":"[ʃneː]","Sonne":"[ˈzɔnə]","Wind":"[vɪnt]","Wolke":"[ˈvɔlkə]","schneien":"[ˈʃnaɪən]","regnen":"[ˈʁeːɡnən]","nass":"[nas]","heiß":"[haɪs]","bewölkt":"[bəˈvœlkt]","windig":"[ˈvɪndɪç]","Monat":"[ˈmoːnat]","Grad":"[ɡʁaːt]","Frühling":"[ˈfʁyːlɪŋ]","Sommer":"[ˈzɔmɐ]","Herbst":"[hɛʁpst]","Winter":"[ˈvɪntɐ]","Januar":"[ˈjanuaːɐ̯]","Februar":"[ˈfeːbʁuaːɐ̯]","März":"[mɛʁts]","April":"[aˈpʁɪl]","Mai":"[maɪ̯]","Juni":"[ˈjuːni]","Juli":"[ˈjuːli]","August":"[au̯ˈɡʊst]","September":"[zɛpˈtɛmbɐ]","Oktober":"[ɔkˈtoːbɐ]","November":"[noˈvɛmbɐ]","Dezember":"[deˈtsɛmbɐ]","vergleichen":"[fɛɐ̯ˈɡlaɪçən]","Unterschied":"[ˈʊntɐʃiːt]","genauso":"[ɡəˈnaʊzo]","durchschnittlich":"[ˈdʊʁçʃnɪtlɪç]","deshalb":"[dɛsˈhalp]","Sternzeichen":"[ˈʃtɛʁntsaɪçən]","Stern":"[ʃtɛʁn]","Eigenschaft":"[ˈaɪɡn̩ʃaft]","kurz":"[kʊʁts]","gern":"[ɡɛʁn]","viel":"[fiːl]","lang":"[laŋ]","surfen":"[ˈsœʁfn̩]","beladen":"[bəˈlaːdn̩]","entladen":"[ɛntˈlaːdn̩]","verstauen":"[fɛɐ̯ˈʃtaʊən]","Verdienst":"[fɛɐ̯ˈdiːnst]","verschlafen":"[fɛɐ̯ˈʃlaːfən]","sich verspäten":"[fɛɐ̯ˈʃpɛːtən]","durchschlafen":"[ˈdʊʁçˌʃlaːfən]","Armbanduhr":"[ˈaʁmbantˌʔuːɐ̯]","Leder":"[ˈleːdɐ]","Nordosten":"[nɔʁtˈʔɔstən]","Nordwesten":"[nɔʁtˈvɛstən]","Südosten":"[zyːtˈʔɔstən]","Südwesten":"[zyːtˈvɛstən]",
 "schick":"[ʃɪk]","altmodisch":"[ˈaltmoːdɪʃ]","komisch":"[ˈkoːmɪʃ]","praktisch":"[ˈpʁaktɪʃ]",
 "kompliziert":"[kɔmpliˈtsiːɐ̯t]","angenehm":"[ˈanɡəneːm]","gebraucht":"[ɡəˈbʁaʊxt]",
 "kariert":"[kaˈʁiːɐ̯t]","gestreift":"[ɡəˈʃtʁaɪft]","gemustert":"[ɡəˈmʊstɐt]","geblümt":"[ɡəˈblyːmt]",
@@ -3023,6 +3116,17 @@ const DIALOGE={
       {q:"Warst du schon auf einem Bauernhof?",              qRu:"Ты уже был(а) на ферме?",               a:"Ja, dort habe ich Kühe gesehen. Man hat sie gemolken.", aRu:"Да, там я видел(а) коров. Их доили.", note:"Kuh · melken"},
       {q:"Warum bist du verärgert?",                         qRu:"Почему ты раздражён(а)?",               a:"Der Zug ist ausgefallen und ich habe mich verlaufen!", aRu:"Поезд отменили, и я заблудился(лась)!", note:"verärgert · ausfallen · sich verlaufen"},
       {q:"Hast du dich vielleicht geirrt?",                  qRu:"Может, ты ошибся(лась)?",               a:"Nein, ich bin mir sicher.",                         aRu:"Нет, я уверен(а).", note:"sich irren"},
+    ]},
+    {tag:"Wetter & Vergleich",col:C.blue,pairs:[
+      {q:"Wie ist das Wetter heute bei Ihnen?",              qRu:"Какая у вас погода сегодня?",           a:"Heute regnet es. Es ist bewölkt und windig.",       aRu:"Сегодня идёт дождь. Облачно и ветрено.", note:"Es regnet/schneit/ist ..."},
+      {q:"Wie war das Wetter gestern?",                      qRu:"Какая была погода вчера?",              a:"Gestern war es sonnig und warm.",                   aRu:"Вчера было солнечно и тепло.", note:"war = Präteritum"},
+      {q:"Wie ist das Wetter vielleicht morgen?",            qRu:"Какая, возможно, будет погода завтра?", a:"Morgen ist es vielleicht kalt und es schneit.",     aRu:"Завтра, возможно, будет холодно и пойдёт снег.", note:"vielleicht = возможно"},
+      {q:"Wie viel Grad sind es in Berlin?",                 qRu:"Сколько градусов в Берлине?",           a:"In Berlin sind es 19 Grad Celsius.",                aRu:"В Берлине 19 градусов по Цельсию.", note:"das Grad"},
+      {q:"Wo möchten Sie jetzt gerne sein?",                 qRu:"Где бы вы хотели сейчас быть?",         a:"Ich möchte jetzt am Strand sein, es ist dort warm.",aRu:"Я хотел(а) бы сейчас быть на пляже, там тепло.", note:"möchte gerne sein"},
+      {q:"Welche Jahreszeit gefällt dir am besten?",         qRu:"Какое время года тебе нравится больше всего?", a:"Der Sommer, weil die Tage länger und wärmer sind.", aRu:"Лето, потому что дни длиннее и теплее.", note:"weil + Komparativ"},
+      {q:"Wann ist es in Ihrem Land wärmer als in Deutschland?", qRu:"Когда в вашей стране теплее, чем в Германии?", a:"Im Winter ist es bei uns wärmer als in Deutschland.", aRu:"Зимой у нас теплее, чем в Германии.", note:"wärmer als"},
+      {q:"Ist Freiburg genauso groß wie Lübeck?",            qRu:"Фрайбург такой же большой, как Любек?", a:"Ja, die beiden Städte sind genauso groß.",          aRu:"Да, оба города одинаково большие.", note:"genauso ... wie"},
+      {q:"Was findest du angenehmer: Sommer oder Winter?",   qRu:"Что тебе кажется приятнее: лето или зима?", a:"Ich finde den Sommer angenehmer, aber der Winter hat mehr Schnee.", aRu:"Мне лето кажется приятнее, но зимой больше снега.", note:"Komparativ + Ausnahme mehr"},
     ]},
   ],
 };
@@ -10336,6 +10440,7 @@ function T12A(){
     {icon:"👚",art:"die",w:"Bluse",ru:"блузка"},
     {icon:"👗",art:"das",w:"Kleid",ru:"платье"},
     {icon:"🧥",art:"der",w:"Mantel",ru:"пальто"},
+    {icon:"🧥",art:"die",w:"Jacke",ru:"куртка"},
     {icon:"🧶",art:"der",w:"Pullover",ru:"свитер"},
     {icon:"👖",art:"die",w:"Hose",ru:"брюки"},
     {icon:"👖",art:"die",w:"Jeans",ru:"джинсы"},
@@ -10806,6 +10911,172 @@ function T13A(){
   );
 }
 
+const Q_L13B=[
+  {q:"'Es regnet.' по-русски:",                        opts:["Идёт снег.","Идёт дождь.","Дует ветер.","Светит солнце."], ans:1, hint:"regnen = идти (о дожде)"},
+  {q:"'Es ist bewölkt.' по-русски:",                    opts:["Ветрено.","Жарко.","Облачно, пасмурно.","Мокро."], ans:2, hint:"bewölkt"},
+  {q:"Погода описывается с местоимением:",              opts:["er","sie","es","man"], ans:2, hint:"Es regnet. Es ist kalt."},
+  {q:"Порядок месяцев весны:",                          opts:["März, April, Mai","Juni, Juli, August","Dezember, Januar, Februar","September, Oktober, November"], ans:0, hint:"Frühling"},
+  {q:"'schön' → Komparativ:",                           opts:["schöner","schönnerer","mehr schön","schönst"], ans:0, hint:"Adjektiv + -er"},
+  {q:"'kalt' → Komparativ:",                             opts:["kalter","kälter","kalter als","kälterer"], ans:1, hint:"mit Umlaut: a→ä"},
+  {q:"'gut' → Komparativ:",                              opts:["guter","gutter","besser","güter"], ans:2, hint:"Ausnahme: gut-besser"},
+  {q:"'gern' → Komparativ:",                             opts:["gerner","lieber","gehrner","mehr gern"], ans:1, hint:"Ausnahme: gern-lieber"},
+  {q:"'viel' → Komparativ:",                             opts:["vieler","mehrer","mehr","violer"], ans:2, hint:"Ausnahme: viel-mehr"},
+  {q:"Как сказать 'такой же большой, как'?",             opts:["größer als","genauso groß wie","so groß als","viel größer"], ans:1, hint:"genauso ... wie = равенство"},
+  {q:"'Berlin ist größer ___ Lübeck.'",                  opts:["wie","als","dann","so"], ans:1, hint:"Komparativ + als"},
+];
+
+function T13B(){
+  const [tab,setTab]=useState("wetter");
+  const wetterVok=[
+    {icon:"🌧️",art:"der",w:"Regen",ru:"дождь"},
+    {icon:"❄️",art:"der",w:"Schnee",ru:"снег"},
+    {icon:"☀️",art:"die",w:"Sonne",ru:"солнце"},
+    {icon:"💨",art:"der",w:"Wind",ru:"ветер"},
+    {icon:"☁️",art:"die",w:"Wolke",ru:"облако"},
+  ];
+  const wetterPhrasen=[
+    ["Es regnet.","Идёт дождь."],
+    ["Es schneit.","Идёт снег."],
+    ["Die Sonne scheint. / Es ist sonnig.","Светит солнце. / Солнечно."],
+    ["Es ist bewölkt.","Облачно, пасмурно."],
+    ["Es ist windig.","Ветрено."],
+    ["Es ist heiß. / Es ist kalt.","Жарко. / Холодно."],
+    ["Es ist nass.","Мокро."],
+  ];
+  const himmelsrichtungen=[
+    {de:"der Norden",im:"im Norden",ru:"север"},
+    {de:"der Osten",im:"im Osten",ru:"восток"},
+    {de:"der Süden",im:"im Süden",ru:"юг"},
+    {de:"der Westen",im:"im Westen",ru:"запад"},
+    {de:"der Nordosten",im:"im Nordosten",ru:"северо-восток"},
+    {de:"der Südosten",im:"im Südosten",ru:"юго-восток"},
+    {de:"der Südwesten",im:"im Südwesten",ru:"юго-запад"},
+    {de:"der Nordwesten",im:"im Nordwesten",ru:"северо-запад"},
+  ];
+  const jahreszeiten=[
+    {icon:"🌸",de:"der Frühling",ru:"весна",monate:"März, April, Mai"},
+    {icon:"☀️",de:"der Sommer",ru:"лето",monate:"Juni, Juli, August"},
+    {icon:"🍂",de:"der Herbst",ru:"осень",monate:"September, Oktober, November"},
+    {icon:"❄️",de:"der Winter",ru:"зима",monate:"Dezember, Januar, Februar"},
+  ];
+  const komparativBeispiele=[
+    {a:"interessant",b:"interessanter",note:"+ -er"},
+    {a:"wenig",b:"weniger",note:"+ -er"},
+    {a:"kalt",b:"kälter",note:"mit Umlaut"},
+    {a:"groß",b:"größer",note:"mit Umlaut"},
+    {a:"warm",b:"wärmer",note:"mit Umlaut"},
+    {a:"kurz",b:"kürzer",note:"mit Umlaut"},
+    {a:"alt",b:"älter",note:"mit Umlaut"},
+    {a:"lang",b:"länger",note:"mit Umlaut"},
+  ];
+  const ausnahmen=[["viel","mehr"],["gut","besser"],["gern","lieber"]];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.blue}>
+        <H c={C.blue}>🌦️ L13B · Das Wetter & Die Jahreszeiten</H>
+        <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
+          {[["wetter","Wetter"],["jahreszeiten","Jahreszeiten"],["komparativ","Komparativ"],["vergleich","Vergleich"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,lineHeight:1.35,textAlign:"center",
+                border:`1px solid ${tab===key?C.blue+"55":C.border}`,
+                background:tab===key?C.blue+"22":C.ov3,
+                color:tab===key?C.blue:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="wetter"&&(
+          <div>
+            <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:6,marginBottom:12}}>
+              {wetterVok.map(k=>(
+                <div key={k.w} style={{background:C.ov4,borderRadius:8,padding:"7px 9px",display:"flex",alignItems:"center",gap:7}}>
+                  <span style={{fontSize:18}}>{k.icon}</span>
+                  <div style={{minWidth:0}}>
+                    <div style={{fontSize:13,fontWeight:700,color:C.text}}>{k.art} {k.w}</div>
+                    <div style={{fontSize:11,color:C.muted}}>{k.ru}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div style={{background:C.blue+"15",border:`1px solid ${C.blue}33`,borderRadius:10,padding:"11px 13px",marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.blue,marginBottom:6}}>Pronomen es</div>
+              <div style={{fontSize:13,color:C.text,lineHeight:1.7}}>
+                Погоду описывают с безличным местоимением <b style={{color:C.blue}}>es</b>: Es regnet. Es ist kalt.
+              </div>
+            </div>
+            {wetterPhrasen.map(([de,ru])=>(
+              <TapEx key={de} de={de} ru={ru} col={C.blue} style={{marginBottom:5}}/>
+            ))}
+            <div style={{fontSize:12,fontWeight:700,color:C.muted,margin:"12px 0 6px",textTransform:"uppercase",letterSpacing:0.5}}>Himmelsrichtungen (стороны света)</div>
+            <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:6,marginBottom:6}}>
+              {himmelsrichtungen.map(h=>(
+                <div key={h.de} style={{background:C.ov4,borderRadius:8,padding:"7px 9px"}}>
+                  <div style={{fontSize:13,fontWeight:700,color:C.text}}>{h.de}</div>
+                  <div style={{fontSize:11,color:C.blue}}>{h.im}</div>
+                  <div style={{fontSize:11,color:C.muted}}>{h.ru}</div>
+                </div>
+              ))}
+            </div>
+            <div style={{fontSize:12,fontWeight:700,color:C.muted,margin:"12px 0 6px",textTransform:"uppercase",letterSpacing:0.5}}>Wetterkarte-Dialog</div>
+            <TapEx de="Wie ist das Wetter im Nordwesten? — Im Nordwesten ist das Wetter schlecht. Es ist bewölkt und es regnet." ru="Как погода на северо-западе? — На северо-западе погода плохая. Облачно и идёт дождь." col={C.blue}/>
+          </div>
+        )}
+        {tab==="jahreszeiten"&&(
+          <div>
+            {jahreszeiten.map(j=>(
+              <div key={j.de} style={{background:C.ov4,borderRadius:9,padding:"9px 11px",marginBottom:6,borderLeft:`3px solid ${C.blue}`}}>
+                <div style={{fontWeight:800,fontSize:14,color:C.text,marginBottom:2}}>{j.icon} {j.de} <span style={{fontSize:12,color:C.muted,fontWeight:400}}>— {j.ru}</span></div>
+                <div style={{fontSize:12,color:C.muted}}>{j.monate}</div>
+              </div>
+            ))}
+            <div style={{fontSize:12,fontWeight:700,color:C.muted,margin:"12px 0 6px",textTransform:"uppercase",letterSpacing:0.5}}>Jahreszeiten vergleichen</div>
+            <TapEx de="Im Sommer sind die Tage länger als im Winter." ru="Летом дни длиннее, чем зимой." col={C.blue} style={{marginBottom:5}}/>
+            <TapEx de="Im Winter ist das Wetter kälter als im Herbst." ru="Зимой погода холоднее, чем осенью." col={C.blue}/>
+          </div>
+        )}
+        {tab==="komparativ"&&(
+          <div>
+            <div style={{background:C.blue+"15",border:`1px solid ${C.blue}33`,borderRadius:10,padding:"11px 13px",marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.blue,marginBottom:6}}>Komparativ (сравнительная степень)</div>
+              <div style={{fontSize:13,color:C.text,lineHeight:1.7}}>
+                <b style={{color:C.orange}}>Adjektiv + -er</b> (+ als, если сравниваем с чем-то другим).<br/>
+                Односложные с a/o/u часто получают <b style={{color:C.orange}}>Umlaut</b>.
+              </div>
+            </div>
+            {komparativBeispiele.map(k=>(
+              <div key={k.a} style={{background:C.ov4,borderRadius:8,padding:"7px 10px",marginBottom:5,display:"flex",justifyContent:"space-between",gap:8}}>
+                <span style={{fontSize:13,color:C.text}}>{k.a} → <b style={{color:C.orange}}>{k.b}</b></span>
+                <span style={{fontSize:11,color:C.muted}}>{k.note}</span>
+              </div>
+            ))}
+            <div style={{fontSize:12,fontWeight:700,color:C.muted,margin:"12px 0 6px",textTransform:"uppercase",letterSpacing:0.5}}>Ausnahmen (исключения)</div>
+            <div style={{display:"flex",gap:8,flexWrap:"wrap",marginBottom:10}}>
+              {ausnahmen.map(([a,b])=>(
+                <div key={a} style={{background:C.ov4,borderRadius:8,padding:"6px 12px",fontSize:13,color:C.text}}>{a} → <b style={{color:C.orange}}>{b}</b></div>
+              ))}
+            </div>
+            <TapEx de="Lübeck ist genauso groß wie Freiburg." ru="Любек такой же большой, как Фрайбург." col={C.green} style={{marginBottom:5}}/>
+            <TapEx de="Berlin ist größer als Lübeck." ru="Берлин больше, чем Любек." col={C.orange}/>
+          </div>
+        )}
+        {tab==="vergleich"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,marginBottom:10}}>
+              Lübeck oder Freiburg? Текст-сравнение двух городов (пример употребления Komparativ).
+            </div>
+            <TapEx de="Ich finde beide Städte sehr angenehm." ru="Я считаю оба города очень приятными." col={C.blue} style={{marginBottom:5}}/>
+            <TapEx de="Freiburg ist ungefähr genauso groß wie Lübeck." ru="Фрайбург примерно такой же большой, как Любек." col={C.blue} style={{marginBottom:5}}/>
+            <TapEx de="Im Sommer ist es in Freiburg wärmer als in Norddeutschland." ru="Летом во Фрайбурге теплее, чем в Северной Германии." col={C.blue} style={{marginBottom:5}}/>
+            <TapEx de="Aber Lübeck liegt 600 km nördlicher als Freiburg, deshalb sind die Tage im Sommer in Lübeck länger." ru="Но Любек лежит на 600 км севернее Фрайбурга, поэтому летом дни в Любеке длиннее." col={C.blue} style={{marginBottom:5}}/>
+            <TapEx de="Im Winter ist es in Lübeck etwas kälter als in Freiburg, aber es gibt in Freiburg mehr Schnee." ru="Зимой в Любеке немного холоднее, чем во Фрайбурге, но во Фрайбурге больше снега." col={C.blue}/>
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
 const Q_L6A=[
   {q:"Welcher Artikel hat 'Apfel'?",          opts:["der","die","das"],                                                                     ans:0, hint:"Artikel"},
   {q:"Welcher Artikel hat 'Milch'?",          opts:["der","die","das"],                                                                     ans:1, hint:"Artikel"},
@@ -11083,11 +11354,12 @@ const LEKTIONEN=[
   },
   {
     id:"L13",num:"13",title:"Auf Reisen",
-    sub:"A Unterwegs mit dem Zug (Fahrkarte, Gleis, durch/um+Akkusativ, Perfekt-Blog)",
-    date:"Seite 135–137",col:C.green,
+    sub:"A Unterwegs mit dem Zug (Fahrkarte, durch/um+Akk) · B Das Wetter & Jahreszeiten (Komparativ)",
+    date:"Seite 135–140",col:C.green,
     sections:[
       {id:"d13", icon:"💬",title:"Dialogfragen L13",            sub:"Фразы для диалога",                                    time:"∞",     col:C.green, hasT:false, th:null,           ex:()=><DialogCards lId="L13"/>},
       {id:"13a", icon:"🧳",title:"A · Unterwegs mit dem Zug",    sub:"Landschaft · Fahrkarte kaufen · durch/um + Akk · Blog",time:"8 мин", col:C.green, hasT:true, th:()=><T13A/>, ex:()=><Quiz questions={Q_L13A}/>},
+      {id:"13b", icon:"🌦️",title:"B · Das Wetter & Jahreszeiten",sub:"Wetter · Jahreszeiten/Monate · Komparativ",              time:"8 мин", col:C.blue,  hasT:true, th:()=><T13B/>, ex:()=><Quiz questions={Q_L13B}/>},
       {id:"wb13", icon:"📖",title:"Wörterbuch L13",              sub:"Слова этого урока",                                    time:"—",    col:C.teal,   hasT:false, ex:()=><LektWoerterbuch lekt="L13"/>},
       {id:"t13", icon:"🎯",title:"Großer Test L13",              sub:"Quiz · Lücken · Reisen · Wortstellung",         time:"20 мин",col:C.yellow, hasT:false, ex:()=><GrosserTest13/>},
       {id:"wt13", icon:"🧠",title:"Wortschatz-Test L13",         sub:"Перевод · Артикли · Обратный перевод",                 time:"10 мин",col:C.teal,   hasT:false, ex:()=><WortschatzTest lekt="L13"/>},
@@ -11298,6 +11570,10 @@ function TabellenPage(){
   const personalpron=[["ich","mich","mir"],["du","dich","dir"],["er","ihn","ihm"],["sie","sie","ihr"],
     ["es","es","ihm"],["wir","uns","uns"],["ihr","euch","euch"],["sie/Sie","sie/Sie","ihnen/Ihnen"]];
 
+  const komparativReg=[["interessant","interessanter"],["wenig","weniger"],["schön","schöner"],["schnell","schneller"]];
+  const komparativUml=[["kalt","kälter"],["groß","größer"],["warm","wärmer"],["kurz","kürzer"],["alt","älter"],["lang","länger"]];
+  const komparativAusn=[["viel","mehr"],["gut","besser"],["gern","lieber"]];
+
   const possessiv=[["ich","mein","meine"],["du","dein","deine"],["er/es","sein","seine"],["sie","ihr","ihre"],
     ["wir","unser","unsere"],["ihr","euer","eure"],["sie (Pl.)","ihr","ihre"],["Sie","Ihr","Ihre"]];
 
@@ -11359,6 +11635,31 @@ function TabellenPage(){
 
   return (
     <div style={{display:"flex",flexDirection:"column"}}>
+<TableAccordion icon="📈" title="Komparativ" col={C.blue} sub="Adjektiv + -er · mit Umlaut · Ausnahmen" open={open==="komparativ"} onToggle={()=>tg("komparativ")}>
+        <div style={{background:C.blue+"15",border:`1px solid ${C.blue}33`,borderRadius:10,padding:"11px 13px",marginBottom:10}}>
+          <div style={{fontSize:13,color:C.text,lineHeight:1.7}}>
+            <b style={{color:C.orange}}>Adjektiv + -er</b> (+ als при сравнении с чем-то другим).<br/>
+            Односложные с a/o/u часто получают <b style={{color:C.orange}}>Umlaut</b>.
+          </div>
+        </div>
+        <div style={{fontSize:12,fontWeight:700,color:C.muted,marginBottom:5}}>Regelmäßig</div>
+        {komparativReg.map(([a,b])=>(
+          <div key={a} style={{background:C.ov4,borderRadius:7,padding:"6px 10px",marginBottom:4,fontSize:13,color:C.text}}>{a} → <b style={{color:C.orange}}>{b}</b></div>
+        ))}
+        <div style={{fontSize:12,fontWeight:700,color:C.muted,margin:"10px 0 5px"}}>Mit Umlaut</div>
+        {komparativUml.map(([a,b])=>(
+          <div key={a} style={{background:C.ov4,borderRadius:7,padding:"6px 10px",marginBottom:4,fontSize:13,color:C.text}}>{a} → <b style={{color:C.orange}}>{b}</b></div>
+        ))}
+        <div style={{fontSize:12,fontWeight:700,color:C.muted,margin:"10px 0 5px"}}>Ausnahmen</div>
+        <div style={{display:"flex",gap:8,flexWrap:"wrap",marginBottom:8}}>
+          {komparativAusn.map(([a,b])=>(
+            <div key={a} style={{background:C.ov4,borderRadius:8,padding:"6px 12px",fontSize:13,color:C.text}}>{a} → <b style={{color:C.orange}}>{b}</b></div>
+          ))}
+        </div>
+        <TapEx de="Lübeck ist genauso groß wie Freiburg." ru="Любек такой же большой, как Фрайбург." col={C.green} style={{marginBottom:5}}/>
+        <TapEx de="Berlin ist größer als Lübeck." ru="Берлин больше, чем Любек." col={C.orange}/>
+      </TableAccordion>
+
 <TableAccordion icon="🧥" title="Adjektivdeklination & welch-" col={C.red} sub="Endungen nach der/das/die/die · Fragewort welch-" open={open==="adjdekl"} onToggle={()=>tg("adjdekl")}>
         <div style={{background:C.red+"15",border:`1px solid ${C.red}33`,
           borderRadius:10,padding:"11px 13px",marginBottom:10}}>
@@ -11787,7 +12088,7 @@ export default function App(){
             <span style={{fontSize:28}}>📊</span>
             <div style={{flex:1}}>
               <div style={{fontWeight:800,fontSize:16,color:C.green}}>Grammatiktabellen</div>
-              <div style={{fontSize:12,color:C.muted,marginTop:2}}>12 таблиц · вся грамматика в одном месте</div>
+              <div style={{fontSize:12,color:C.muted,marginTop:2}}>13 таблиц · вся грамматика в одном месте</div>
             </div>
             <span style={{color:C.green,fontSize:20}}>›</span>
           </button>
