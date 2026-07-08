@@ -473,6 +473,7 @@ const WBDATA=[
   {art:"der",de:"Spätabend",          pl:"Spätabende",ru:"поздний вечер",           tema:"Tageszeiten", lekt:"L5"},
   {art:"die",de:"Nacht",              pl:"Nächte",    ru:"ночь",                    tema:"Tageszeiten", lekt:"L5"},
   {art:"",   de:"lachen",             pl:"—",         ru:"смеяться",                tema:"Alltag", lekt:"L5"},
+  {art:"",   de:"laufen",ord:107,     pl:"—",         ru:"бежать, бегать · läuft · ist gelaufen", tema:"Alltag", lekt:"L5"},
   {art:"",   de:"hören",ord:50,              pl:"—",         ru:"слушать, слышать · hört · hat gehört", tema:"Alltag", lekt:"L5"},
   {art:"",   de:"lächeln",            pl:"—",         ru:"улыбаться",               tema:"Alltag", lekt:"L5"},
   {art:"",   de:"fröhlich",           pl:"—",         ru:"весёлый, радостный",      tema:"Adjektive", lekt:"L5"},
@@ -1002,6 +1003,9 @@ const WBDATA=[
   {art:"die", de:"Schule", pl:"-n",           ru:"школа",                                       tema:"InDerStadt", lekt:"L9"},
   {art:"der", de:"Bahnhof",         pl:"Bahnhöfe",     ru:"вокзал, железнодорожная станция",              tema:"InDerStadt", lekt:"L9"},
   {art:"",   de:"müssen",           pl:"—",            ru:"быть обязанным, должен · ich muss · Modalverb", lekt:"L7"},
+  {art:"",   de:"können",ord:143,   pl:"—",            ru:"мочь, уметь · ich kann · Modalverb",             tema:"Alltag", lekt:"L7"},
+  {art:"",   de:"sollen",ord:144,   pl:"—",            ru:"должен (по чужой воле/совету) · ich soll · Modalverb", tema:"Alltag", lekt:"L7"},
+  {art:"",   de:"brauchen",ord:145, pl:"—",            ru:"нуждаться, быть нужным",                          tema:"Alltag", lekt:"L3"},
   {art:"die", de:"Ampel", pl:"-n",           ru:"светофор",                                    tema:"InDerStadt", lekt:"L9"},
   {art:"die", de:"Ecke", pl:"-n",           ru:"угол; угол улицы · um die Ecke = за углом",  tema:"InDerStadt", lekt:"L8"},
   {art:"der", de:"Kreisverkehr", pl:"-e",           ru:"круговое движение, кольцо",                   tema:"InDerStadt", lekt:"L9"},
@@ -1290,6 +1294,42 @@ const WBDATA=[
   {art:"",   de:"sich über etwas lustig machen",ord:45, pl:"—", ru:"насмехаться, шутить над кем/чем-л. (+Akk.)", tema:"Alltag", lekt:"L12"},
   {art:"",   de:"locker",ord:46,           pl:"—",            ru:"непринуждённый, раскованный",                   tema:"Alltag",  lekt:"L12"},
   {art:"",   de:"bestellen",ord:47,        pl:"—",            ru:"заказывать",                                    tema:"Alltag",  lekt:"L12"},
+  // ── L13 · Auf Reisen — Landschaft, Zug, Gefühle ──────────────────────────────
+  {art:"das", de:"Meer",ord:108,          pl:"-e",           ru:"море",                                           tema:"Reisen", lekt:"L13"},
+  {art:"der", de:"Berg",ord:109,          pl:"-e",           ru:"гора",                                           tema:"Reisen", lekt:"L13"},
+  {art:"der", de:"Bauernhof",ord:110,     pl:'"-e',          ru:"крестьянское хозяйство, ферма",                  tema:"Reisen", lekt:"L13"},
+  {art:"der", de:"Strand",ord:111,        pl:'"-e',          ru:"пляж",                                           tema:"Reisen", lekt:"L13"},
+  {art:"die", de:"Wiese",ord:112,         pl:"-n",           ru:"луг",                                            tema:"Reisen", lekt:"L13"},
+  {art:"der", de:"See",ord:113,           pl:"-n",           ru:"озеро (der See) · ср. die See = море",           tema:"Reisen", lekt:"L13"},
+  {art:"die", de:"Landschaft",ord:114,    pl:"-en",          ru:"пейзаж, ландшафт",                                tema:"Reisen", lekt:"L13"},
+  {art:"der", de:"Urlaub",ord:115,        pl:"-e",           ru:"отпуск, каникулы",                                tema:"Reisen", lekt:"L13"},
+  {art:"",   de:"wandern",ord:116,        pl:"—",            ru:"ходить в поход, совершать пешую прогулку",       tema:"Reisen", lekt:"L13"},
+  {art:"die", de:"Klasse",ord:117,        pl:"-n",           ru:"класс (в поезде: erste/zweite Klasse)",          tema:"Reisen", lekt:"L13"},
+  {art:"die", de:"Reservierung",ord:118,  pl:"-en",          ru:"бронирование",                                   tema:"Reisen", lekt:"L13"},
+  {art:"die", de:"BahnCard",ord:119,      pl:"-s",           ru:"БанКарта (скидочная карта на поезд)",             tema:"Reisen", lekt:"L13"},
+  {art:"die", de:"Anzeigetafel",ord:120,  pl:"-n",           ru:"табло",                                          tema:"Reisen", lekt:"L13"},
+  {art:"die", de:"Verspätung",ord:121,    pl:"-en",          ru:"опоздание, задержка",                             tema:"Reisen", lekt:"L13"},
+  {art:"",   de:"durchsagen",ord:122,     pl:"—",            ru:"объявлять (по громкой связи)",                    tema:"Reisen", lekt:"L13"},
+  {art:"die", de:"Ankunft",ord:123,       pl:'"-e',          ru:"прибытие",                                       tema:"Reisen", lekt:"L13"},
+  {art:"der", de:"Tunnel",ord:124,        pl:"-",            ru:"туннель",                                        tema:"Reisen", lekt:"L13"},
+  {art:"die", de:"Aussicht",ord:125,      pl:"-en",          ru:"вид, панорама",                                   tema:"Reisen", lekt:"L13"},
+  {art:"",   de:"zählen",ord:126,         pl:"—",            ru:"считать · gezählt",                              tema:"Reisen", lekt:"L13"},
+  {art:"die", de:"Höhe",ord:127,          pl:"-n",           ru:"высота",                                         tema:"Reisen", lekt:"L13"},
+  {art:"die", de:"Pension",ord:128,       pl:"-en",          ru:"пансион, гостевой дом",                           tema:"Reisen", lekt:"L13"},
+  {art:"",   de:"übernachten",ord:129,    pl:"—",            ru:"ночевать",                                       tema:"Reisen", lekt:"L13"},
+  {art:"",   de:"ungefähr",ord:130,       pl:"—",            ru:"приблизительно",                                 tema:"Reisen", lekt:"L13"},
+  {art:"",   de:"aussteigen",ord:131,     pl:"—",            ru:"выходить (из транспорта) · ist ausgestiegen",    tema:"Reisen", lekt:"L13"},
+  {art:"",   de:"losfahren",ord:132,      pl:"—",            ru:"отправляться (в путь) · ist losgefahren",        tema:"Reisen", lekt:"L13"},
+  {art:"die", de:"Endstation",ord:133,    pl:"-en",          ru:"конечная станция",                                tema:"Reisen", lekt:"L13"},
+  {art:"die", de:"Kuh",ord:134,           pl:'"-e',          ru:"корова",                                         tema:"Reisen", lekt:"L13"},
+  {art:"",   de:"melken",ord:135,         pl:"—",            ru:"доить",                                          tema:"Reisen", lekt:"L13"},
+  {art:"der", de:"Ärger",ord:136,         pl:"—",            ru:"злость, раздражение (только Sg.)",                tema:"Alltag", lekt:"L13"},
+  {art:"",   de:"ärgerlich",ord:137,      pl:"—",            ru:"злой, раздражённый",                             tema:"Alltag", lekt:"L13"},
+  {art:"",   de:"verärgert",ord:138,      pl:"—",            ru:"раздражённый, разозлённый",                      tema:"Alltag", lekt:"L13"},
+  {art:"",   de:"sich irren",ord:139,     pl:"—",            ru:"ошибаться",                                      tema:"Alltag", lekt:"L13"},
+  {art:"der", de:"Heiratstermin",ord:140, pl:"-e",           ru:"дата регистрации брака",                          tema:"Ämter", lekt:"L11"},
+  {art:"das", de:"Wohngeld",ord:141,      pl:"—",            ru:"жилищное пособие (только Sg.)",                   tema:"Ämter", lekt:"L11"},
+  {art:"das", de:"Nummernschild",ord:142, pl:"-er",          ru:"номерной знак (автомобиля)",                      tema:"Ämter", lekt:"L11"},
 ];
 
 
@@ -1909,6 +1949,34 @@ const KONJ_ALL={
   ausmalen:    {pref:"aus", col:C.purple,bg:C.purpleBg,
     ich:"male … aus",  du:"malst … aus",  "er/sie/es":"malt … aus",
     wir:"malen … aus", ihr:"malt … aus",  "sie/Sie":"malen … aus", pt:"malte … aus", pf:"hat ausgemalt"},
+  // L13 (07.07.2026) — Auf Reisen
+  wandern:     {col:C.green,bg:C.greenBg,
+    ich:"wandere",du:"wanderst","er/sie/es":"wandert",
+    wir:"wandern",ihr:"wandert","sie/Sie":"wandern", pt:"wanderte", pf:"ist gewandert"},
+  durchsagen:  {pref:"durch",col:C.teal,bg:C.tealBg,
+    ich:"sage … durch",  du:"sagst … durch",  "er/sie/es":"sagt … durch",
+    wir:"sagen … durch", ihr:"sagt … durch",  "sie/Sie":"sagen … durch", pt:"sagte … durch", pf:"hat durchgesagt"},
+  zählen:      {col:C.teal,bg:C.tealBg,
+    ich:"zähle", du:"zählst", "er/sie/es":"zählt",
+    wir:"zählen",ihr:"zählt", "sie/Sie":"zählen", pt:"zählte", pf:"hat gezählt"},
+  übernachten: {col:C.purple,bg:C.purpleBg, note:"untrennbar: kein ge-",
+    ich:"übernachte",du:"übernachtest","er/sie/es":"übernachtet",
+    wir:"übernachten",ihr:"übernachtet","sie/Sie":"übernachten", pt:"übernachtete", pf:"hat übernachtet"},
+  aussteigen:  {pref:"aus", col:C.orange,bg:C.orangeBg,
+    ich:"steige … aus",  du:"steigst … aus",  "er/sie/es":"steigt … aus",
+    wir:"steigen … aus", ihr:"steigt … aus",  "sie/Sie":"steigen … aus", pt:"stieg … aus", ptc:{du:"stiegst … aus",wir:"stiegen … aus",ihr:"stiegt … aus",sie:"stiegen … aus"}, pf:"ist ausgestiegen"},
+  losfahren:   {pref:"los",  col:C.orange,bg:C.orangeBg, note:"a→ä",
+    ich:"fahre … los",  du:"fährst … los",  "er/sie/es":"fährt … los",
+    wir:"fahren … los", ihr:"fahrt … los",  "sie/Sie":"fahren … los", pt:"fuhr … los", ptc:{du:"fuhrst … los",wir:"fuhren … los",ihr:"fuhrt … los",sie:"fuhren … los"}, pf:"ist losgefahren"},
+  melken:      {col:C.green,bg:C.greenBg,
+    ich:"melke", du:"melkst", "er/sie/es":"melkt",
+    wir:"melken",ihr:"melkt", "sie/Sie":"melken", pt:"melkte", pf:"hat gemolken"},
+  "sich irren":{col:C.red,  bg:C.redBg, note:"Reflexiv",
+    ich:"irre mich",   du:"irrst dich",   "er/sie/es":"irrt sich",
+    wir:"irren uns",   ihr:"irrt euch",   "sie/Sie":"irren sich", pt:"irrte sich", pf:"hat sich geirrt"},
+  brauchen:    {col:C.blue, bg:C.blueBg,
+    ich:"brauche", du:"brauchst","er/sie/es":"braucht",
+    wir:"brauchen",ihr:"braucht","sie/Sie":"brauchen", pt:"brauchte", pf:"hat gebraucht"},
 };
 
 // Ударения: комбинирующая акута \u0301 ставится после ударной гласной
@@ -2148,7 +2216,7 @@ const STRESS_MARKS={
 "sehen":"se\u0301hen","nehmen":"ne\u0301hmen","treffen":"tre\u0301ffen","essen":"e\u0301ssen",
 "sprechen":"spre\u0301chen","schreiben":"schre\u0301iben","lernen":"le\u0301rnen",
 "grillen":"gri\u0301llen","tanzen":"ta\u0301nzen","schwimmen":"schwi\u0301mmen","joggen":"jo\u0301ggen",
-"lachen":"la\u0301chen","lächeln":"l\u00E4\u0301cheln","treiben":"tre\u0301iben","reiten":"re\u0301iten","hören":"h\u00F6\u0301ren",
+"lachen":"la\u0301chen","lächeln":"l\u00E4\u0301cheln","treiben":"tre\u0301iben","reiten":"re\u0301iten","hören":"h\u00F6\u0301ren","laufen":"la\u0301ufen",
 "spazieren":"spazi\u0301eren",
 // L10/L11 (01.07.2026)
 "heute":"he\u0301ute","unterwegs":"unterwe\u0301gs","Postkarte":"Po\u0301stkarte","aufwachen":"a\u0301ufwachen",
@@ -2258,6 +2326,7 @@ const STRESS_MARKS={
 "Sportartikel":"Spo\u0301rtartikel","Herrenbekleidung":"He\u0301rrenbekleidung","Modeschmuck":"Mo\u0301deschmuck","Babywäsche":"Ba\u0301bywäsche","Kinderbekleidung":"Ki\u0301nderbekleidung","Accessoire":"Accessoi\u0301re","Elektro-Kleingerät":"Elektro-Klei\u0301ngerät","Damenwäsche":"Da\u0301menwäsche","Strumpfwaren":"Stru\u0301mpfwaren","Lederwaren":"Le\u0301derwaren","Schirm":"Schi\u0301rm","Parfümerie":"Parfümeri\u0301e","Süßwaren":"S\u00FC\u0301ßwaren","Schreibwaren":"Schrei\u0301bwaren","Schlüsseldienst":"Schl\u00FC\u0301sseldienst","Schuhreparatur":"Schu\u0301hreparatur","Herrenhose":"He\u0301rrenhose","Damenmantel":"Da\u0301menmantel","Winterjacke":"Wi\u0301nterjacke","Sportschuh":"Spo\u0301rtschuh","Abendkleid":"A\u0301bendkleid","Multimedia-Abteilung":"Multime\u0301dia-Abteilung","Rolltreppe":"Ro\u0301lltreppe","Ausgang":"A\u0301usgang","Abteilung":"Abtei\u0301lung","Haushaltswaren":"Ha\u0301ushaltswaren","Heimtextilien":"Hei\u0301mtextilien","Bilderrahmen":"Bi\u0301lderrahmen","Fotoalbum":"Fo\u0301toalbum","Computerzubehör":"Compu\u0301terzubehör","Damenbekleidung":"Da\u0301menbekleidung","öffnen":"\u00F6\u0301ffnen",
 "tadeln":"ta\u0301deln","loben":"lo\u0301ben","Zeile":"Zei\u0301le","Gast":"Ga\u0301st","bemalen":"bema\u0301len","ausmalen":"a\u0301usmalen",
 "Ausländeramt":"Au\u0301sländeramt","Kindergeldantrag":"Ki\u0301ndergeldantrag",
+"Meer":"Me\u0301er","Berg":"Be\u0301rg","Bauernhof":"Ba\u0301uernhof","Strand":"Stra\u0301nd","Wiese":"Wie\u0301se","See":"Se\u0301e","Landschaft":"La\u0301ndschaft","Urlaub":"U\u0301rlaub","wandern":"wa\u0301ndern","Klasse":"Kla\u0301sse","Reservierung":"Reservie\u0301rung","BahnCard":"Ba\u0301hnCard","Anzeigetafel":"A\u0301nzeigetafel","Verspätung":"Verspä\u0301tung","durchsagen":"Du\u0301rchsagen","Ankunft":"A\u0301nkunft","Tunnel":"Tu\u0301nnel","Aussicht":"A\u0301ussicht","zählen":"zä\u0301hlen","Höhe":"H\u00F6\u0301he","Pension":"Pensio\u0301n","übernachten":"\u00FCberna\u0301chten","ungefähr":"ungefä\u0301hr","aussteigen":"A\u0301ussteigen","losfahren":"Lo\u0301sfahren","Endstation":"E\u0301ndstation","Kuh":"Ku\u0301h","melken":"me\u0301lken","Ärger":"\u00C4\u0301rger","ärgerlich":"\u00E4\u0301rgerlich","verärgert":"verä\u0301rgert","sich irren":"sich i\u0301rren","Heiratstermin":"Hei\u0301ratstermin","Wohngeld":"Wo\u0301hngeld","Nummernschild":"Nu\u0301mmernschild","können":"k\u00F6\u0301nnen","sollen":"so\u0301llen","brauchen":"bra\u0301uchen",
 "schick":"schi\u0301ck","altmodisch":"a\u0301ltmodisch","komisch":"ko\u0301misch","praktisch":"pra\u0301ktisch",
 "kompliziert":"komplizie\u0301rt","angenehm":"a\u0301ngenehm","gebraucht":"gebra\u0301ucht",
 "kariert":"karie\u0301rt","gestreift":"gestre\u0301ift","gemustert":"gemu\u0301stert","geblümt":"gebl\u00FC\u0301mt",
@@ -2539,7 +2608,7 @@ const IPA_DATA={
 "treffen":"[ˈtʁɛfən]","essen":"[ˈɛsən]","sprechen":"[ˈʃpʁɛçən]",
 "schreiben":"[ˈʃʁaɪbən]","lernen":"[ˈlɛʁnən]","grillen":"[ˈɡʁɪlən]",
 "tanzen":"[ˈtantsən]","schwimmen":"[ˈʃvɪmən]","joggen":"[ˈjɔɡən]",
-"lachen":"[ˈlaxən]","lächeln":"[ˈlɛçəln]","treiben":"[ˈtʁaɪbən]","reiten":"[ˈʁaɪtən]","hören":"[ˈhøːʁən]",
+"lachen":"[ˈlaxən]","lächeln":"[ˈlɛçəln]","treiben":"[ˈtʁaɪbən]","reiten":"[ˈʁaɪtən]","hören":"[ˈhøːʁən]","laufen":"[ˈlaʊfən]",
 "kochen":"[ˈkɔxən]","klingeln":"[ˈklɪŋəln]","starten":"[ˈʃtaʁtən]","wollen":"[ˈvɔlən]",
 "vermuten":"[fɛɐ̯ˈmuːtən]","reparieren":"[ʁepaˈʁiːʁən]","frühstücken":"[ˈfʁyːʃˌtʏkən]",
 "chillen":"[ˈtʃɪlən]","mögen":"[ˈmøːɡən]",
@@ -2597,6 +2666,7 @@ const IPA_DATA={
 "Sportartikel":"[ˈʃpɔʁtʔaʁˌtiːkl̩]","Herrenbekleidung":"[ˈhɛʁənbəˌklaɪdʊŋ]","Modeschmuck":"[ˈmoːdəʃmʊk]","Babywäsche":"[ˈbeːbiˌvɛʃə]","Kinderbekleidung":"[ˈkɪndɐbəˌklaɪdʊŋ]","Accessoire":"[akseˈsoːɐ̯]","Elektro-Kleingerät":"[eˈlɛktroˌklaɪnɡəˌʁɛːt]","Damenwäsche":"[ˈdaːmənˌvɛʃə]","Strumpfwaren":"[ˈʃtʁʊmpfˌvaːʁən]","Lederwaren":"[ˈleːdɐˌvaːʁən]","Schirm":"[ʃɪʁm]","Parfümerie":"[paʁfyməˈʁiː]","Süßwaren":"[ˈzyːsˌvaːʁən]","Schreibwaren":"[ˈʃʁaɪpˌvaːʁən]","Schlüsseldienst":"[ˈʃlʏsl̩ˌdiːnst]","Schuhreparatur":"[ˈʃuːʁepaʁaˌtuːɐ̯]","Herrenhose":"[ˈhɛʁənˌhoːzə]","Damenmantel":"[ˈdaːmənˌmantl̩]","Winterjacke":"[ˈvɪntɐˌjakə]","Sportschuh":"[ˈʃpɔʁtʃuː]","Abendkleid":"[ˈaːbn̩tˌklaɪt]","Multimedia-Abteilung":"[mʊltiˈmeːdi̯aʔapˌtaɪlʊŋ]","Rolltreppe":"[ˈʁɔlˌtʁɛpə]","Ausgang":"[ˈaʊsɡaŋ]","Abteilung":"[apˈtaɪlʊŋ]","Haushaltswaren":"[ˈhaʊshaltsˌvaːʁən]","Heimtextilien":"[ˈhaɪmtɛksˌtiːli̯ən]","Bilderrahmen":"[ˈbɪldɐˌʁaːmən]","Fotoalbum":"[ˈfoːtoˌʔalbʊm]","Computerzubehör":"[kɔmˈpjuːtɐtsuːbəˌhøːɐ̯]","Damenbekleidung":"[ˈdaːmənbəˌklaɪdʊŋ]","öffnen":"[ˈœfnən]",
 "tadeln":"[ˈtaːdl̩n]","loben":"[ˈloːbn̩]","Zeile":"[ˈtsaɪlə]","Gast":"[ɡast]","bemalen":"[bəˈmaːlən]","ausmalen":"[ˈaʊsˌmaːlən]",
 "Ausländeramt":"[ˈaʊslɛndɐˌʔamt]","Kindergeldantrag":"[ˈkɪndɐɡɛltˌʔantʁaːk]",
+"Meer":"[meːɐ̯]","Berg":"[bɛʁk]","Bauernhof":"[ˈbaʊɐnhoːf]","Strand":"[ʃtʁant]","Wiese":"[ˈviːzə]","See":"[zeː]","Landschaft":"[ˈlantʃaft]","Urlaub":"[ˈuːɐ̯laʊp]","wandern":"[ˈvandɐn]","Klasse":"[ˈklasə]","Reservierung":"[ʁezɛʁˈviːʁʊŋ]","BahnCard":"[ˈbaːnkaːɐ̯t]","Anzeigetafel":"[ˈantsaɪɡəˌtaːfl̩]","Verspätung":"[fɛɐ̯ˈʃpɛːtʊŋ]","durchsagen":"[ˈdʊʁçˌzaːɡən]","Ankunft":"[ˈankʊnft]","Tunnel":"[ˈtʊnl̩]","Aussicht":"[ˈaʊszɪçt]","zählen":"[ˈtsɛːlən]","Höhe":"[ˈhøːə]","Pension":"[pɑ̃ˈzi̯oːn]","übernachten":"[yːbɐˈnaxtən]","ungefähr":"[ˈʊnɡəfɛːɐ̯]","aussteigen":"[ˈaʊsˌʃtaɪɡən]","losfahren":"[ˈloːsˌfaːʁən]","Endstation":"[ˈɛntʃtaˌtsi̯oːn]","Kuh":"[kuː]","melken":"[ˈmɛlkən]","Ärger":"[ˈɛʁɡɐ]","ärgerlich":"[ˈɛʁɡɐlɪç]","verärgert":"[fɛɐ̯ˈʔɛʁɡɐt]","sich irren":"[ˈɪʁən]","Heiratstermin":"[ˈhaɪʁaːtsˌtɛʁmiːn]","Wohngeld":"[ˈvoːnɡɛlt]","Nummernschild":"[ˈnʊmɐnˌʃɪlt]","können":"[ˈkœnən]","sollen":"[ˈzɔlən]","brauchen":"[ˈbʁaʊxən]",
 "schick":"[ʃɪk]","altmodisch":"[ˈaltmoːdɪʃ]","komisch":"[ˈkoːmɪʃ]","praktisch":"[ˈpʁaktɪʃ]",
 "kompliziert":"[kɔmpliˈtsiːɐ̯t]","angenehm":"[ˈanɡəneːm]","gebraucht":"[ɡəˈbʁaʊxt]",
 "kariert":"[kaˈʁiːɐ̯t]","gestreift":"[ɡəˈʃtʁaɪft]","gemustert":"[ɡəˈmʊstɐt]","geblümt":"[ɡəˈblyːmt]",
@@ -2931,6 +3001,28 @@ const DIALOGE={
       {q:"Wie sieht das Hemd aus?",                          qRu:"Как смотрится эта рубашка?",             a:"Es sieht sehr schick aus, aber ein bisschen altmodisch.", aRu:"Она смотрится очень стильно, но немного старомодно.", note:"aussehen"},
       {q:"Worüber habt ihr euch unterhalten?",               qRu:"О чём вы разговаривали?",                a:"Wir haben uns über die neue Kleidung unterhalten.",aRu:"Мы разговаривали о новой одежде.", note:"sich unterhalten"},
       {q:"Was passt zusammen: die Dame + der Mantel?",       qRu:"Что получится: die Dame + der Mantel?",  a:"Der Damenmantel — der Artikel kommt vom 2. Wort.", aRu:"Женское пальто — артикль от второго слова.", note:"Komposita"},
+    ]},
+  ],
+  L13:[
+    {tag:"Основные",col:C.green,pairs:[
+      {q:"Wo waren Sie schon?",                              qRu:"Где вы уже были?",                      a:"Ich war einmal am Meer. Ich habe dort Urlaub gemacht.", aRu:"Я один раз был(а) на море. Я там отдыхал(а).", note:"war = Präteritum von sein"},
+      {q:"Was haben Sie dort gemacht?",                      qRu:"Что вы там делали?",                    a:"Ich war schon oft in München. Ich habe dort meine Tante besucht.", aRu:"Я уже часто был(а) в Мюнхене. Я там навещал(а) тётю.", note:"habe … besucht"},
+      {q:"Ich hätte gern eine Fahrkarte von Bremen nach Stuttgart.", qRu:"Я хотел(а) бы билет из Бремена в Штутгарт.", a:"Erste oder zweite Klasse?", aRu:"Первый или второй класс?", note:"von … nach + Dativ"},
+      {q:"Muss ich umsteigen?",                              qRu:"Мне нужна пересадка?",                  a:"Nein, der Zug fährt direkt.",                       aRu:"Нет, поезд идёт напрямую.", note:"umsteigen"},
+      {q:"Haben Sie eine BahnCard?",                         qRu:"У вас есть БанКарта?",                  a:"Ja, ich habe eine BahnCard 25.",                    aRu:"Да, у меня БанКарта 25.", note:"скидочная карта"},
+      {q:"Wann fährt der Zug nach München ab?",              qRu:"Когда отправляется поезд в Мюнхен?",    a:"Um 9.44 Uhr.",                                      aRu:"В 9:44.", note:"abfahren"},
+      {q:"Von welchem Gleis fährt er ab?",                   qRu:"С какого пути он отправляется?",        a:"Von Gleis 16.",                                     aRu:"С 16-го пути.", note:"das Gleis"},
+      {q:"Der Zug nach München fährt heute von Gleis drei ab.", qRu:"Поезд в Мюнхен сегодня отправляется с 3-го пути.", a:"Danke für die Durchsage!",                aRu:"Спасибо за объявление!", note:"durchsagen"},
+    ]},
+    {tag:"Дополнительные",col:C.orange,pairs:[
+      {q:"Wann sind Sie in Freiburg losgefahren?",           qRu:"Когда вы выехали из Фрайбурга?",        a:"Gestern Morgen sind wir losgefahren.",              aRu:"Мы выехали вчера утром.", note:"losfahren"},
+      {q:"Durch wie viele Tunnel sind Sie gefahren?",        qRu:"Через сколько туннелей вы проехали?",   a:"Wir sind durch sieben Tunnel gefahren.",            aRu:"Мы проехали через семь туннелей.", note:"durch + Akkusativ"},
+      {q:"Wo haben Sie übernachtet?",                        qRu:"Где вы ночевали?",                      a:"Wir haben in einer Pension übernachtet.",           aRu:"Мы ночевали в пансионе.", note:"übernachten"},
+      {q:"Sind Sie um den Schluchsee gegangen?",             qRu:"Вы обошли озеро Шлюхзе?",               a:"Ja, das waren ungefähr 18 Kilometer.",              aRu:"Да, это было примерно 18 километров.", note:"um + Akkusativ"},
+      {q:"Was machst du gern im Urlaub?",                    qRu:"Что ты любишь делать в отпуске?",       a:"Ich wandere gern und mache Ausflüge aufs Land.",    aRu:"Я люблю ходить в походы и ездить за город.", note:"wandern"},
+      {q:"Warst du schon auf einem Bauernhof?",              qRu:"Ты уже был(а) на ферме?",               a:"Ja, dort habe ich Kühe gesehen. Man hat sie gemolken.", aRu:"Да, там я видел(а) коров. Их доили.", note:"Kuh · melken"},
+      {q:"Warum bist du verärgert?",                         qRu:"Почему ты раздражён(а)?",               a:"Der Zug ist ausgefallen und ich habe mich verlaufen!", aRu:"Поезд отменили, и я заблудился(лась)!", note:"verärgert · ausfallen · sich verlaufen"},
+      {q:"Hast du dich vielleicht geirrt?",                  qRu:"Может, ты ошибся(лась)?",               a:"Nein, ich bin mir sicher.",                         aRu:"Нет, я уверен(а).", note:"sich irren"},
     ]},
   ],
 };
@@ -3493,6 +3585,7 @@ function Woerterbuch({words=WBDATA}={}){
     {id:"MeinLeben",      label:"👤 Mein Leben",            col:C.purple},
     {id:"Ämter",          label:"🏛️ Ämter",                 col:C.green},
     {id:"Kleidung",       label:"👗 Kleidung",               col:C.red},
+    {id:"Reisen",         label:"🧳 Reisen",                 col:C.green},
   ];
   const TYPEN=[
     {id:"all",     label:"Все",           col:C.teal},
@@ -5802,6 +5895,47 @@ const WSENTS_L12=[
   {w:["Wo","ist","die","Umkleidekabine","?"],                       ru:"Где примерочная?"},
 ];
 
+const Q_L13TEST=shuffle([
+  {q:"'das Meer' по-русски:",                          opts:["озеро","море","пляж","река"], ans:1, hint:"Meer"},
+  {q:"'der Bauernhof' по-русски:",                      opts:["лес","деревня","ферма","луг"], ans:2, hint:"Bauernhof"},
+  {q:"'Ich hätte gern eine Fahrkarte ___ Bremen ___ Stuttgart.'", opts:["von … nach","aus … zu","in … nach","von … zu"], ans:0, hint:"von … nach"},
+  {q:"'Muss ich ___?' (пересаживаться)",                opts:["aussteigen","umsteigen","ankommen","abfahren"], ans:1, hint:"umsteigen"},
+  {q:"'Der Zug fährt durch ___ Tunnel.' (m, Akk.)",     opts:["der","den","dem","das"], ans:1, hint:"durch + Akk."},
+  {q:"'Sie sind um ___ See gelaufen.' (m, Akk.)",       opts:["der","den","dem","das"], ans:1, hint:"um + Akk."},
+  {q:"'sind losgefahren' — от какого глагола?",         opts:["fahren","losfahren","vorfahren","ausfahren"], ans:1, hint:"losfahren"},
+  {q:"'haben übernachtet' — что значит?",               opts:["позавтракали","переночевали","заблудились","опоздали"], ans:1, hint:"übernachten"},
+  {q:"'Der Zug fällt aus.' по-русски:",                 opts:["поезд опаздывает","поезд отменяется","поезд прибыл","поезд идёт прямо"], ans:1, hint:"ausfallen"},
+  {q:"'sich verlaufen' по-русски:",                     opts:["опоздать","заблудиться","поторопиться","ошибиться"], ans:1, hint:"sich verlaufen"},
+]);
+
+const LUECKEN_L13=shuffle([
+  {sent:"Wir ___ gestern in Freiburg losgefahren.' (sein)",    opts:["haben","sind","hatten","waren"], ans:1,ru:"Мы вчера выехали из Фрайбурга.",     hint:"Perfekt mit sein"},
+  {sent:"Wir ___ eine tolle Aussicht gehabt.' (haben)",         opts:["sind","haben","hatten","waren"], ans:1,ru:"У нас был отличный вид.",           hint:"hatten = Präteritum, но здесь Perfekt"},
+  {sent:"Der Zug fährt ___ den Tunnel.' (durch/um)",            opts:["durch","um","für","gegen"], ans:0,ru:"Поезд едет через туннель.",             hint:"durch + Akk."},
+  {sent:"Sie sind ___ den See gelaufen.' (durch/um)",           opts:["durch","um","für","gegen"], ans:1,ru:"Они обошли озеро.",                     hint:"um + Akk."},
+  {sent:"Muss ich ___?' (пересадка)",                            opts:["umsteigen","aussteigen","einsteigen","losfahren"], ans:0,ru:"Мне нужна пересадка?", hint:"umsteigen"},
+  {sent:"Wir haben in einer Pension ___.' (übernachten)",       opts:["übernachtet","übergenachtet","genachtet","übernachten"], ans:0,ru:"Мы переночевали в пансионе.", hint:"Partizip II: übernachtet"},
+]);
+
+const ZUORD_L13=[
+  {de:"der Bauernhof",   ru:"крестьянское хозяйство, ферма"},
+  {de:"die Anzeigetafel",ru:"табло"},
+  {de:"die Verspätung",  ru:"опоздание, задержка"},
+  {de:"die Endstation",  ru:"конечная станция"},
+  {de:"die Pension",     ru:"пансион, гостевой дом"},
+  {de:"sich verlaufen",  ru:"заблудиться"},
+];
+
+const WSENTS_L13=[
+  {w:["Ich","war","einmal","am","Meer","."],                       ru:"Я был(а) один раз на море."},
+  {w:["Ich","hätte","gern","eine","Fahrkarte","nach","Stuttgart","."], ru:"Я хотел(а) бы билет в Штутгарт."},
+  {w:["Muss","ich","umsteigen","?"],                                ru:"Мне нужна пересадка?"},
+  {w:["Der","Zug","fährt","durch","den","Tunnel","."],              ru:"Поезд едет через туннель."},
+  {w:["Wir","sind","gestern","losgefahren","."],                    ru:"Мы выехали вчера."},
+  {w:["Wir","haben","in","einer","Pension","übernachtet","."],      ru:"Мы переночевали в пансионе."},
+  {w:["Der","Zug","fällt","heute","aus","."],                       ru:"Поезд сегодня отменяется."},
+];
+
 
 
 
@@ -6204,6 +6338,13 @@ function GrosserTest12(){return <GrosserTestContainer rounds={[
   {icon:"📝",label:"Lückentext",    col:C.blue,   component:()=><LueckenQuiz items={LUECKEN_L12}/>},
   {icon:"🔗",label:"Kleidung",      col:C.red,    component:()=><Zuordnung pairs={ZUORD_L12} leftLabel="Ort/Wort" rightLabel="Bedeutung"/>},
   {icon:"🔤",label:"Wortstellung",  col:C.orange, component:()=><WortstellungGame sents={WSENTS_L12}/>},
+]}/>;}
+
+function GrosserTest13(){return <GrosserTestContainer rounds={[
+  {icon:"🎯",label:"Quiz",          col:C.yellow, component:()=><Quiz questions={Q_L13TEST}/>},
+  {icon:"📝",label:"Lückentext",    col:C.blue,   component:()=><LueckenQuiz items={LUECKEN_L13}/>},
+  {icon:"🔗",label:"Reisen",        col:C.green,  component:()=><Zuordnung pairs={ZUORD_L13} leftLabel="Wort" rightLabel="Bedeutung"/>},
+  {icon:"🔤",label:"Wortstellung",  col:C.orange, component:()=><WortstellungGame sents={WSENTS_L13}/>},
 ]}/>;}
 
 // ─── L4C — PRÄTERITUM HABEN/SEIN ─────────────────────────────────────────────
@@ -8087,14 +8228,14 @@ const Q_L7C=[
 function T7C(){
   const [tab,setTab]=useState("artikel");
   const praeps=[
-    {p:"aus",   ru:"из (происхождение)",        bsp:["Er kommt aus der Ukraine.","Wir trinken Tee aus der Tasse."]},
-    {p:"bei",   ru:"у, при (место/работа)",     bsp:["Sara ist bei Lisa.","Mein Vater arbeitet bei Mercedes."]},
-    {p:"mit",   ru:"с (вместе/на чём)",         bsp:["Ich fahre mit dem Bus.","Ich spiele mit dem Ball."]},
-    {p:"nach",  ru:"в (гор/страну); после",     bsp:["Er fährt nach Deutschland.","Nach dem Unterricht gehe ich spazieren."]},
-    {p:"von",   ru:"от, из (принадлежность)",   bsp:["Ich komme vom Arzt.","Ein Freund von mir."]},
-    {p:"seit",  ru:"с (времени), уже…",         bsp:["Seit einem Jahr lerne ich Deutsch.","Seit Juni wohne ich hier."]},
-    {p:"zu",    ru:"к (человеку/месту)",        bsp:["Ich gehe zum Arzt.","Ich fahre zur Schule."]},
-    {p:"ab",    ru:"с (времени), начиная с",    bsp:["Ab Dienstag ist das Geschäft geöffnet.","Ab nächster Woche."]},
+    {p:"aus",   icon:"🌍",ru:"из (происхождение)",        bsp:[["Er kommt aus der Ukraine.","Он из Украины."],["Wir trinken Tee aus der Tasse.","Мы пьём чай из чашки."]]},
+    {p:"bei",   icon:"🏠",ru:"у, при (место/работа)",     bsp:[["Sara ist bei Lisa.","Сара у Лизы."],["Mein Vater arbeitet bei Mercedes.","Мой отец работает в Mercedes."]]},
+    {p:"mit",   icon:"👥",ru:"с (вместе/на чём)",         bsp:[["Ich fahre mit dem Bus.","Я еду на автобусе."],["Ich spiele mit dem Ball.","Я играю с мячом."]]},
+    {p:"nach",  icon:"📍",ru:"в (гор/страну); после",     bsp:[["Er fährt nach Deutschland.","Он едет в Германию."],["Nach dem Unterricht gehe ich spazieren.","После урока я иду гулять."]]},
+    {p:"von",   icon:"👋",ru:"от, из (принадлежность)",   bsp:[["Ich komme vom Arzt.","Я иду от врача."],["Ein Freund von mir.","Мой друг (один из моих друзей)."]]},
+    {p:"seit",  icon:"⏰",ru:"с (времени), уже…",         bsp:[["Seit einem Jahr lerne ich Deutsch.","Я учу немецкий уже год."],["Seit Juni wohne ich hier.","Я живу здесь с июня."]]},
+    {p:"zu",    icon:"🎯",ru:"к (человеку/месту)",        bsp:[["Ich gehe zum Arzt.","Я иду к врачу."],["Ich fahre zur Schule.","Я еду в школу."]]},
+    {p:"ab",    icon:"📅",ru:"с (времени), начиная с",    bsp:[["Ab Dienstag ist das Geschäft geöffnet.","Со вторника магазин открыт."],["Ab nächster Woche.","С следующей недели."]]},
   ];
   const kontr=[
     {long:"zu + dem",  short:"zum",  ex:"zum Bahnhof, zum Arzt"},
@@ -8155,17 +8296,20 @@ function T7C(){
           </div>
         )}
         {tab==="praep"&&(
-          <div style={{display:"flex",flexDirection:"column",gap:6}}>
+          <div style={{display:"flex",flexDirection:"column",gap:8}}>
             {praeps.map(p=>(
-              <div key={p.p} style={{background:C.card2,borderRadius:8,padding:"9px 11px"}}>
-                <div style={{display:"flex",gap:8,alignItems:"center",marginBottom:5}}>
-                  <span style={{background:C.purple+"33",color:C.purple,fontWeight:800,fontSize:14,
-                    borderRadius:6,padding:"2px 9px"}}>{p.p}</span>
-                  <span style={{color:C.muted,fontSize:12}}>{p.ru} + Dativ</span>
+              <div key={p.p} style={{background:C.card2,borderRadius:10,padding:"10px 12px",display:"flex",gap:10}}>
+                <div style={{fontSize:22,flexShrink:0,lineHeight:1}}>{p.icon}</div>
+                <div style={{flex:1,minWidth:0}}>
+                  <div style={{marginBottom:5}}>
+                    <span style={{background:C.purple+"33",color:C.purple,fontWeight:800,fontSize:14,
+                      borderRadius:6,padding:"2px 9px"}}>{p.p}</span>
+                    <span style={{color:C.muted,fontSize:12,marginLeft:6}}>{p.ru} + Dativ</span>
+                  </div>
+                  {p.bsp.map(([de,ru])=>(
+                    <TapEx key={de} de={de} ru={ru} col={C.purple} style={{marginBottom:4}}/>
+                  ))}
                 </div>
-                {p.bsp.map(b=>(
-                  <div key={b} style={{fontSize:13,color:C.text,paddingLeft:4,marginBottom:2}}>• {b}</div>
-                ))}
               </div>
             ))}
           </div>
@@ -10195,7 +10339,7 @@ function T12A(){
     {icon:"🧶",art:"der",w:"Pullover",ru:"свитер"},
     {icon:"👖",art:"die",w:"Hose",ru:"брюки"},
     {icon:"👖",art:"die",w:"Jeans",ru:"джинсы"},
-    {icon:"🩳",art:"der",w:"Rock",ru:"юбка"},
+    {icon:"👗",art:"der",w:"Rock",ru:"юбка"},
     {icon:"👕",art:"das",w:"T-Shirt",ru:"футболка"},
     {icon:"👔",art:"die",w:"Krawatte",ru:"галстук"},
     {icon:"🧦",art:"die",w:"Socke",ru:"носок"},
@@ -10502,6 +10646,166 @@ function T12B(){
   );
 }
 
+const Q_L13A=[
+  {q:"'das Meer' по-русски:",                          opts:["озеро","море","река","пляж"], ans:1, hint:"Meer = море"},
+  {q:"'der See' vs 'die See' — в чём разница?",        opts:["нет разницы","der See = озеро, die See = море","der See = море, die See = озеро","оба значат пляж"], ans:1, hint:"род меняет значение!"},
+  {q:"'Ich hätte gern eine Fahrkarte ___ Bremen ___ Stuttgart.' (откуда/куда)", opts:["von … nach","aus … zu","von … zu","in … nach"], ans:0, hint:"von + Dativ … nach + Dativ"},
+  {q:"'Erste oder zweite ___?' (класс в поезде)",       opts:["Stock","Klasse","Gleis","Wagen"], ans:1, hint:"die Klasse"},
+  {q:"'Muss ich ___?' (пересаживаться)",                opts:["abfahren","ankommen","umsteigen","aussteigen"], ans:2, hint:"umsteigen = делать пересадку"},
+  {q:"'Von welchem ___ fährt der Zug ab?' (платформа)", opts:["Gleis","Bahnhof","Zug","Wagen"], ans:0, hint:"das Gleis"},
+  {q:"'Der Zug fährt durch ___ Tunnel.' (Akkusativ, m)", opts:["der","dem","den","das"], ans:2, hint:"durch + Akkusativ"},
+  {q:"'Sie sind um ___ See gelaufen.' (Akkusativ, m)",  opts:["der","dem","den","das"], ans:2, hint:"um + Akkusativ"},
+  {q:"'sind losgefahren' — какой глагол?",              opts:["fahren","losfahren","ausfahren","vorfahren"], ans:1, hint:"losfahren = отправиться в путь"},
+  {q:"'sind ausgestiegen' — какой глагол?",             opts:["einsteigen","umsteigen","aussteigen","besteigen"], ans:2, hint:"aussteigen = выйти (из транспорта)"},
+  {q:"'haben übernachtet' — что значит?",               opts:["позавтракали","переночевали","опоздали","заблудились"], ans:1, hint:"übernachten = ночевать"},
+  {q:"'Der Zug fällt aus.' по-русски:",                 opts:["поезд опаздывает","поезд отменяется","поезд прибывает","поезд отправляется"], ans:1, hint:"ausfallen = отменяться"},
+];
+
+function T13A(){
+  const [tab,setTab]=useState("landschaft");
+  const landschaft=[
+    {icon:"🌊",art:"das",w:"Meer",ru:"море"},
+    {icon:"⛰️",art:"der",w:"Berg",ru:"гора"},
+    {icon:"🏞️",art:"der",w:"Fluss",ru:"река"},
+    {icon:"🏖️",art:"der",w:"Strand",ru:"пляж"},
+    {icon:"🌲",art:"der",w:"Wald",ru:"лес"},
+    {icon:"🌾",art:"die",w:"Wiese",ru:"луг"},
+    {icon:"🏘️",art:"das",w:"Dorf",ru:"деревня, село"},
+    {icon:"🏞️",art:"der",w:"See",ru:"озеро"},
+    {icon:"🐄",art:"der",w:"Bauernhof",ru:"ферма, крестьянское хозяйство"},
+  ];
+  const aktivitaeten=[
+    ["habe … besucht","навещал(а) (кого-то)"],
+    ["habe eingekauft","делал(а) покупки"],
+    ["bin gewandert","ходил(а) в поход"],
+    ["habe gefaulenzt","бездельничал(а)"],
+    ["bin geschwommen","плавал(а)"],
+    ["bin ausgegangen","выходил(а) гулять"],
+    ["habe viel gelesen","много читал(а)"],
+    ["bin spazieren gegangen","гулял(а)"],
+    ["bin Fahrrad gefahren","катался(лась) на велосипеде"],
+  ];
+  const zugVok=[
+    {w:"die Fahrkarte",ru:"билет (проездной)"},
+    {w:"die Klasse (1./2.)",ru:"класс (первый/второй)"},
+    {w:"die Reservierung",ru:"бронирование места"},
+    {w:"das Gleis",ru:"платформа, путь"},
+    {w:"die BahnCard",ru:"скидочная карта на поезд"},
+    {w:"die Anzeigetafel",ru:"табло"},
+    {w:"die Verspätung",ru:"опоздание, задержка"},
+    {w:"umsteigen",ru:"делать пересадку"},
+    {w:"ankommen / abfahren",ru:"прибывать / отправляться"},
+    {w:"der Zug fällt aus",ru:"поезд отменяется"},
+  ];
+  const durchUm=[
+    {p:"durch",bsp:"Der Zug fährt durch den Tunnel.",bspRu:"Поезд едет сквозь туннель.",icon:"➡️"},
+    {p:"um",   bsp:"Sie sind um den Schluchsee gelaufen.",bspRu:"Они обошли озеро Шлюхзе.",icon:"🔄"},
+  ];
+  const blog=[
+    {de:"Gestern Morgen sind wir in Freiburg losgefahren.",ru:"Вчера утром мы отправились из Фрайбурга."},
+    {de:"Wir sind über viele Brücken gefahren und hatten eine tolle Aussicht.",ru:"Мы проехали много мостов, и у нас был отличный вид."},
+    {de:"Immer wieder sind wir durch Tunnel gefahren.",ru:"Мы снова и снова проезжали через туннели."},
+    {de:"Am Bahnhof Titisee sind wir kurz ausgestiegen.",ru:"На станции Титизее мы ненадолго вышли."},
+    {de:"Dort haben wir in einer Pension übernachtet.",ru:"Там мы переночевали в пансионе."},
+    {de:"Wir sind einmal um den Schluchsee gelaufen. Das sind ungefähr 18 Kilometer.",ru:"Мы обошли озеро Шлюхзе. Это примерно 18 километров."},
+    {de:"Mittags sind wir im See geschwommen.",ru:"В обед мы плавали в озере."},
+  ];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.green}>
+        <H c={C.green}>🧳 L13A · Unterwegs mit dem Zug</H>
+        <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
+          {[["landschaft","Landschaft"],["zug","Zug fahren"],["durchum","durch/um + Akk"],["blog","Perfekt-Blog"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,lineHeight:1.35,textAlign:"center",
+                border:`1px solid ${tab===key?C.green+"55":C.border}`,
+                background:tab===key?C.green+"22":C.ov3,
+                color:tab===key?C.green:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="landschaft"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,marginBottom:10}}>
+              Landschaften — важно запомнить артикль каждого слова.
+            </div>
+            <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:6,marginBottom:12}}>
+              {landschaft.map(k=>(
+                <div key={k.w} style={{background:C.ov4,borderRadius:8,padding:"7px 9px",display:"flex",alignItems:"center",gap:7}}>
+                  <span style={{fontSize:18}}>{k.icon}</span>
+                  <div style={{minWidth:0}}>
+                    <div style={{fontSize:13,fontWeight:700,color:C.text}}>{k.art} {k.w}</div>
+                    <div style={{fontSize:11,color:C.muted}}>{k.ru}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div style={{fontSize:12,fontWeight:700,color:C.muted,marginBottom:6,textTransform:"uppercase",letterSpacing:0.5}}>Über Reisen und Urlaub sprechen</div>
+            {aktivitaeten.map(([de,ru])=>(
+              <TapEx key={de} de={de} ru={ru} col={C.green} style={{marginBottom:5}}/>
+            ))}
+          </div>
+        )}
+        {tab==="zug"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,marginBottom:10}}>
+              Слова для покупки билета и поездки на поезде.
+            </div>
+            {zugVok.map(z=>(
+              <div key={z.w} style={{background:C.ov4,borderRadius:8,padding:"7px 10px",marginBottom:5,display:"flex",justifyContent:"space-between",gap:8}}>
+                <span style={{fontSize:13,fontWeight:700,color:C.text}}>{z.w}</span>
+                <span style={{fontSize:12,color:C.muted}}>{z.ru}</span>
+              </div>
+            ))}
+            <div style={{fontSize:12,fontWeight:700,color:C.muted,margin:"12px 0 6px",textTransform:"uppercase",letterSpacing:0.5}}>Dialog: Fahrkarte kaufen</div>
+            <TapEx de="Ich hätte gern eine Fahrkarte von Bremen nach Stuttgart mit Reservierung." ru="Я хотел(а) бы билет из Бремена в Штутгарт с бронированием." col={C.teal} style={{marginBottom:5}}/>
+            <TapEx de="Erste oder zweite Klasse? — Zweite Klasse, bitte." ru="Первый или второй класс? — Второй класс, пожалуйста." col={C.teal} style={{marginBottom:5}}/>
+            <TapEx de="Muss ich umsteigen? — Nein, der Zug fährt direkt." ru="Мне нужна пересадка? — Нет, поезд идёт напрямую." col={C.teal} style={{marginBottom:5}}/>
+            <TapEx de="Haben Sie eine BahnCard? — Ja, ich habe eine BahnCard 25." ru="У вас есть БанКарта? — Да, у меня БанКарта 25." col={C.teal} style={{marginBottom:5}}/>
+            <div style={{fontSize:12,fontWeight:700,color:C.muted,margin:"12px 0 6px",textTransform:"uppercase",letterSpacing:0.5}}>Am Bahnhof: nach Abfahrt/Gleis fragen</div>
+            <TapEx de="Wann fährt der Zug nach München ab? — Um 9.44 Uhr." ru="Когда отправляется поезд в Мюнхен? — В 9:44." col={C.teal} style={{marginBottom:5}}/>
+            <TapEx de="Von welchem Gleis fährt er ab? — Von Gleis 16." ru="С какого пути он отправляется? — С 16-го пути." col={C.teal}/>
+          </div>
+        )}
+        {tab==="durchum"&&(
+          <div>
+            <div style={{background:C.green+"15",border:`1px solid ${C.green}33`,borderRadius:10,padding:"11px 13px",marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.green,marginBottom:6}}>durch / um + Akkusativ</div>
+              <div style={{fontSize:13,color:C.text,lineHeight:1.7}}>
+                Оба предлога направления/движения всегда требуют <b style={{color:C.orange}}>Akkusativ</b> (как für, ohne, gegen).
+              </div>
+            </div>
+            {durchUm.map(d=>(
+              <div key={d.p} style={{background:C.ov4,borderRadius:9,padding:"9px 11px",marginBottom:6,borderLeft:`3px solid ${C.green}`}}>
+                <div style={{fontWeight:800,fontSize:14,color:C.green,marginBottom:4}}>{d.icon} {d.p} + Akkusativ</div>
+                <TapEx de={d.bsp} ru={d.bspRu} col={C.green}/>
+              </div>
+            ))}
+            <div style={{background:C.ov4,borderRadius:8,padding:"8px 11px",marginTop:6,fontSize:12,color:C.text}}>
+              💡 durch den Tunnel (m), durch das Dorf (n), durch die Stadt (f) — во всех родах Akkusativ-окончание артикля.
+            </div>
+          </div>
+        )}
+        {tab==="blog"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,marginBottom:10}}>
+              Schwarzwald-Blog — рассказ о поездке на поезде (Perfekt с sein, много trennbare Verben).
+            </div>
+            {blog.map(b=>(
+              <TapEx key={b.de} de={b.de} ru={b.ru} col={C.orange} style={{marginBottom:5}}/>
+            ))}
+            <div style={{background:C.ov4,borderRadius:8,padding:"8px 11px",marginTop:6,fontSize:12,color:C.text}}>
+              💡 losfahren, aussteigen, weiterfahren, zurückkommen — почти все глаголы движения образуют Perfekt с <b>sein</b>.
+            </div>
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
 const Q_L6A=[
   {q:"Welcher Artikel hat 'Apfel'?",          opts:["der","die","das"],                                                                     ans:0, hint:"Artikel"},
   {q:"Welcher Artikel hat 'Milch'?",          opts:["der","die","das"],                                                                     ans:1, hint:"Artikel"},
@@ -10777,6 +11081,18 @@ const LEKTIONEN=[
       {id:"wt12", icon:"🧠",title:"Wortschatz-Test L12",         sub:"Перевод · Артикли · Обратный перевод",                 time:"10 мин",col:C.teal,   hasT:false, ex:()=><WortschatzTest lekt="L12"/>},
     ]
   },
+  {
+    id:"L13",num:"13",title:"Auf Reisen",
+    sub:"A Unterwegs mit dem Zug (Fahrkarte, Gleis, durch/um+Akkusativ, Perfekt-Blog)",
+    date:"Seite 135–137",col:C.green,
+    sections:[
+      {id:"d13", icon:"💬",title:"Dialogfragen L13",            sub:"Фразы для диалога",                                    time:"∞",     col:C.green, hasT:false, th:null,           ex:()=><DialogCards lId="L13"/>},
+      {id:"13a", icon:"🧳",title:"A · Unterwegs mit dem Zug",    sub:"Landschaft · Fahrkarte kaufen · durch/um + Akk · Blog",time:"8 мин", col:C.green, hasT:true, th:()=><T13A/>, ex:()=><Quiz questions={Q_L13A}/>},
+      {id:"wb13", icon:"📖",title:"Wörterbuch L13",              sub:"Слова этого урока",                                    time:"—",    col:C.teal,   hasT:false, ex:()=><LektWoerterbuch lekt="L13"/>},
+      {id:"t13", icon:"🎯",title:"Großer Test L13",              sub:"Quiz · Lücken · Reisen · Wortstellung",         time:"20 мин",col:C.yellow, hasT:false, ex:()=><GrosserTest13/>},
+      {id:"wt13", icon:"🧠",title:"Wortschatz-Test L13",         sub:"Перевод · Артикли · Обратный перевод",                 time:"10 мин",col:C.teal,   hasT:false, ex:()=><WortschatzTest lekt="L13"/>},
+    ]
+  },
 ];
 
 // ═══════════════════════════════ APP ══════════════════════════════════════════
@@ -10801,6 +11117,7 @@ function DialogFragenPage(){
     L10:{label:"L10 · Mein Leben",          col:C.purple},
     L11:{label:"L11 · Ämter und Behörden",  col:C.green},
     L12:{label:"L12 · Im Kaufhaus",         col:C.red},
+    L13:{label:"L13 · Auf Reisen",          col:C.green},
   };
   const filterFm=(pairs,lId)=>(lId==="L1"||lId==="L4")?pairs.filter(p=>!p.fm||p.fm===fm):pairs;
 
@@ -11003,9 +11320,16 @@ function TabellenPage(){
     ["möchten","möchte","möchtest","möchte","möchten"],
   ];
 
-  const praepDativ=[["aus","из (происхождение)"],["bei","у, при (место/работа)"],["mit","с (вместе/на чём)"],
-    ["nach","в (город/страну); после"],["von","от, из (принадлежность)"],["seit","с (времени)"],
-    ["zu","к (человеку/месту)"],["ab","с (времени), начиная с"]];
+  const praepDativ=[
+    {p:"aus", icon:"🌍",ru:"из (происхождение)",        bsp:"Er kommt aus der Ukraine.",              bspRu:"Он из Украины."},
+    {p:"bei", icon:"🏠",ru:"у, при (место/работа)",     bsp:"Mein Vater arbeitet bei Mercedes.",      bspRu:"Мой отец работает в Mercedes."},
+    {p:"mit", icon:"👥",ru:"с (вместе/на чём)",         bsp:"Ich fahre mit dem Bus.",                  bspRu:"Я еду на автобусе."},
+    {p:"nach",icon:"📍",ru:"в (город/страну); после",   bsp:"Er fährt nach Deutschland.",              bspRu:"Он едет в Германию."},
+    {p:"von", icon:"👋",ru:"от, из (принадлежность)",   bsp:"Ich komme vom Arzt.",                     bspRu:"Я иду от врача."},
+    {p:"seit",icon:"⏰",ru:"с (времени)",               bsp:"Seit einem Jahr lerne ich Deutsch.",      bspRu:"Я учу немецкий уже год."},
+    {p:"zu",  icon:"🎯",ru:"к (человеку/месту)",        bsp:"Ich gehe zum Arzt.",                      bspRu:"Я иду к врачу."},
+    {p:"ab",  icon:"📅",ru:"с (времени), начиная с",    bsp:"Ab Dienstag ist das Geschäft geöffnet.",  bspRu:"Со вторника магазин открыт."},
+  ];
 
   const wechsel=[["in","в"],["an","у, при"],["auf","на"],["unter","под"],["über","над"],
     ["vor","перед"],["hinter","за"],["neben","рядом с"],["zwischen","между"]];
@@ -11197,10 +11521,16 @@ function TabellenPage(){
       </TableAccordion>
 
       <TableAccordion icon="🗺️" title="Präpositionen mit Dativ" col={C.purple} sub="aus · bei · mit · nach · von · seit · zu · ab" open={open==="pdativ"} onToggle={()=>tg("pdativ")}>
-        {praepDativ.map(([p,ru])=>(
-          <div key={p} style={{display:"flex",gap:8,padding:"5px 0",borderBottom:`1px solid ${C.border}`}}>
-            <span style={{minWidth:44,color:C.purple,fontWeight:800,fontSize:13}}>{p}</span>
-            <span style={{fontSize:12,color:C.muted}}>{ru}</span>
+        {praepDativ.map(p=>(
+          <div key={p.p} style={{background:C.ov4,borderRadius:10,padding:"10px 12px",marginBottom:7,display:"flex",gap:10}}>
+            <div style={{fontSize:22,flexShrink:0,lineHeight:1}}>{p.icon}</div>
+            <div style={{flex:1,minWidth:0}}>
+              <div style={{marginBottom:5}}>
+                <span style={{color:C.purple,fontWeight:800,fontSize:14}}>{p.p}</span>
+                <span style={{color:C.muted,fontSize:12}}> — {p.ru}</span>
+              </div>
+              <TapEx de={p.bsp} ru={p.bspRu} col={C.purple}/>
+            </div>
           </div>
         ))}
       </TableAccordion>
