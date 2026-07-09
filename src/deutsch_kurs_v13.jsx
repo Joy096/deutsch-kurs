@@ -604,7 +604,7 @@ const WBDATA=[
   {art:"die",de:"Banane",            pl:"Bananen",      ru:"банан",                   tema:"Lebensmittel", lekt:"L6"},
   {art:"das",de:"Brot",              pl:"Brote",        ru:"хлеб",                    tema:"Lebensmittel", lekt:"L6"},
   {art:"die",de:"Butter",            pl:"—",            ru:"масло (сливочное)",       tema:"Lebensmittel", lekt:"L6"},
-  {art:"das",de:"Hähnchen",          pl:"Hähnchen",     ru:"курица (целая)",          tema:"Lebensmittel", lekt:"L6"},
+  {art:"das",de:"Hähnchen",          pl:"Hähnchen",     ru:"курица (мясо, целая тушка)", tema:"Lebensmittel", lekt:"L6"},
   {art:"der",de:"Joghurt",           pl:"Joghurts",     ru:"йогурт",                  tema:"Lebensmittel", lekt:"L6"},
   {art:"der",de:"Kaffee",            pl:"Kaffees",      ru:"кофе",                    tema:"Lebensmittel", lekt:"L4"},
   {art:"die",de:"Kartoffel",         pl:"Kartoffeln",   ru:"картофель",               tema:"Lebensmittel", lekt:"L6"},
@@ -1294,6 +1294,32 @@ const WBDATA=[
   {art:"",   de:"anprobieren",ord:36,      pl:"—",            ru:"примерять (одежду)",                            tema:"Kleidung", lekt:"L12"},
   {art:"",   de:"aussehen",ord:37,         pl:"—",            ru:"выглядеть · sieht aus · hat ausgesehen",        tema:"Kleidung", lekt:"L12"},
   {art:"",   de:"anziehen",ord:38,         pl:"—",            ru:"надевать (одежду), одеваться · hat angezogen", tema:"Kleidung", lekt:"L12"},
+  // ── L12 · Eine Bestellung im Internet ────────────────────────────────────────
+  {art:"die", de:"Bestellnummer",ord:250,  pl:"-n",           ru:"номер заказа",                                  tema:"Kleidung", lekt:"L12"},
+  {art:"der", de:"Gesamtpreis",ord:251,    pl:"-e",           ru:"итоговая цена, общая стоимость",                tema:"Kleidung", lekt:"L12"},
+  {art:"die", de:"Rechnungsadresse",ord:252,pl:"-n",          ru:"адрес для выставления счёта",                   tema:"Kleidung", lekt:"L12"},
+  {art:"die", de:"Rechnung",ord:253,       pl:"-en",          ru:"счёт, квитанция",                               tema:"Kleidung", lekt:"L12"},
+  {art:"die", de:"Bestellung",ord:254,     pl:"-en",          ru:"заказ",                                         tema:"Kleidung", lekt:"L12"},
+  {art:"die", de:"Menge",ord:255,          pl:"-n",           ru:"количество",                                    tema:"Kleidung", lekt:"L12"},
+  {art:"die", de:"Lieferzeit",ord:256,     pl:"-en",          ru:"срок доставки",                                 tema:"Kleidung", lekt:"L12"},
+  {art:"die", de:"Mehrwertsteuer",ord:257, pl:"Sg.",          ru:"НДС (сокращённо: MwSt.)",                       tema:"Kleidung", lekt:"L12"},
+  {art:"die", de:"Lieferung",ord:258,      pl:"-en",          ru:"доставка",                                      tema:"Kleidung", lekt:"L12"},
+  // ── L12 · Wichtige Wörter (S.150–151) — довесок ──────────────────────────────
+  {art:"",   de:"gar nicht",ord:259,       pl:"—",            ru:"совсем не, вовсе не",                           tema:"Kleidung", lekt:"L12"},
+  {art:"",   de:"überhaupt",ord:260,       pl:"—",            ru:"вообще · überhaupt nicht = вообще не, совсем не",tema:"Kleidung", lekt:"L12"},
+  {art:"",   de:"cool",ord:261,            pl:"—",            ru:"классный, крутой",                              tema:"Kleidung", lekt:"L12"},
+  {art:"",   de:"welcher",ord:262,         pl:"—",            ru:"который, какой (вопрос) · welcher/welches/welche/welche (m/n/f/Pl.)",tema:"Kleidung", lekt:"L12"},
+  {art:"das", de:"Computerspiel",ord:263,  pl:"-e",           ru:"компьютерная игра",                             tema:"Kleidung", lekt:"L12"},
+  {art:"",   de:"nachsehen",ord:264,       pl:"—",            ru:"проверять, смотреть · sieht nach · hat nachgesehen",tema:"Kleidung", lekt:"L12"},
+  {art:"",   de:"hinten",ord:265,          pl:"—",            ru:"сзади · dort hinten = там сзади",               tema:"Kleidung", lekt:"L12"},
+  {art:"",   de:"vorne",ord:266,           pl:"—",            ru:"спереди · da vorne = там впереди",              tema:"Kleidung", lekt:"L12"},
+  {art:"",   de:"direkt neben",ord:267,    pl:"—",            ru:"прямо рядом с",                                 tema:"Kleidung", lekt:"L12"},
+  {art:"das", de:"Mädchen",ord:268,        pl:"-",            ru:"девочка",                                       tema:"Kleidung", lekt:"L12"},
+  {art:"",   de:"der gleiche Preis",ord:269,pl:"—",           ru:"та же цена",                                    tema:"Kleidung", lekt:"L12"},
+  {art:"",   de:"Tut mir leid.",ord:270,   pl:"—",            ru:"мне жаль",                                      tema:"Kleidung", lekt:"L12"},
+  {art:"der", de:"Vorteil",ord:271,        pl:"-e",           ru:"преимущество",                                  tema:"Kleidung", lekt:"L12"},
+  {art:"der", de:"Nachteil",ord:272,       pl:"-e",           ru:"недостаток",                                    tema:"Kleidung", lekt:"L12"},
+  {art:"",   de:"tragen",ord:273,          pl:"—",            ru:"нести · носить (одежду) · trägt · hat getragen",tema:"Kleidung", lekt:"L12"},
   // ── L12 · доп. слова (беседа, официальные дела) ──────────────────────────────
   {art:"die", de:"Verantwortung",ord:39, pl:"-en",            ru:"ответственность",                               tema:"Alltag",  lekt:"L12"},
   {art:"",   de:"verlangen",ord:40,        pl:"—",            ru:"требовать, просить",                            tema:"Alltag",  lekt:"L12"},
@@ -1395,6 +1421,48 @@ const WBDATA=[
   {art:"",   de:"durchschlafen",ord:194,  pl:"—",            ru:"проспать всю ночь · hat durchgeschlafen",         tema:"Reisen", lekt:"L13"},
   {art:"die", de:"Armbanduhr",ord:195,    pl:"-en",          ru:"наручные часы",                                   tema:"Reisen", lekt:"L13"},
   {art:"das", de:"Leder",ord:196,         pl:"—",            ru:"кожа (материал)",                                 tema:"Reisen", lekt:"L13"},
+  // ── L13 · Urlaub — Freizeitaktivitäten, Sehenswürdigkeiten ───────────────────
+  {art:"das", de:"Reiseziel",ord:210,     pl:"-e",           ru:"цель поездки, место назначения",                  tema:"Urlaub", lekt:"L13"},
+  {art:"",   de:"einsetzen",ord:211,      pl:"—",            ru:"вписывать, вставлять (в текст, в пропуск)",       tema:"Urlaub", lekt:"L13"},
+  {art:"",   de:"sich fühlen",ord:212,    pl:"—",            ru:"чувствовать себя (как-л.)",                       tema:"Urlaub", lekt:"L13"},
+  {art:"",   de:"sich fit fühlen",ord:213,pl:"—",            ru:"чувствовать себя в форме",                        tema:"Urlaub", lekt:"L13"},
+  {art:"",   de:"schöner aussehen",ord:214,pl:"—",           ru:"выглядеть красивее, лучше",                       tema:"Urlaub", lekt:"L13"},
+  {art:"",   de:"sich an frischer Luft bewegen",ord:215,pl:"—",ru:"двигаться на свежем воздухе",                   tema:"Urlaub", lekt:"L13"},
+  {art:"",   de:"segeln",ord:216,         pl:"—",            ru:"заниматься парусным спортом, плавать под парусом",tema:"Urlaub", lekt:"L13"},
+  {art:"",   de:"Ski fahren",ord:217,     pl:"—",            ru:"кататься на лыжах",                                tema:"Urlaub", lekt:"L13"},
+  {art:"",   de:"springen",ord:218,       pl:"—",            ru:"прыгать",                                         tema:"Urlaub", lekt:"L13"},
+  {art:"",   de:"mit dem Fallschirm springen",ord:219,pl:"—",ru:"прыгать с парашютом",                             tema:"Urlaub", lekt:"L13"},
+  {art:"das", de:"Gebäude",ord:220,       pl:"-",            ru:"здание",                                          tema:"Urlaub", lekt:"L13"},
+  {art:"die", de:"Burg",ord:221,          pl:"-en",          ru:"крепость, замок (укреплённый)",                   tema:"Urlaub", lekt:"L13"},
+  {art:"das", de:"Schloss",ord:222,       pl:'"-er',         ru:"дворец, замок (для проживания) · ср. die Burg",   tema:"Urlaub", lekt:"L13"},
+  {art:"",   de:"körperlich",ord:223,     pl:"—",            ru:"физически, телесно",                              tema:"Urlaub", lekt:"L13"},
+  {art:"",   de:"geistig",ord:224,        pl:"—",            ru:"умственно, духовно",                              tema:"Urlaub", lekt:"L13"},
+  {art:"",   de:"in den Urlaub fliegen",ord:225,pl:"—",      ru:"лететь в отпуск",                                  tema:"Urlaub", lekt:"L13"},
+  {art:"die", de:"Party",ord:226,         pl:"-s",           ru:"вечеринка",                                       tema:"Urlaub", lekt:"L13"},
+  {art:"",   de:"Partys machen",ord:227,  pl:"—",            ru:"устраивать вечеринки",                            tema:"Urlaub", lekt:"L13"},
+  {art:"",   de:"kennenlernen",ord:228,   pl:"—",            ru:"знакомиться (с кем-л.)",                          tema:"Urlaub", lekt:"L13"},
+  {art:"",   de:"neue Menschen kennenlernen",ord:229,pl:"—", ru:"знакомиться с новыми людьми",                     tema:"Urlaub", lekt:"L13"},
+  {art:"die", de:"Diät",ord:230,          pl:"-en",          ru:"диета",                                           tema:"Urlaub", lekt:"L13"},
+  {art:"",   de:"halten",ord:231,         pl:"—",            ru:"держать",                                         tema:"Urlaub", lekt:"L13"},
+  {art:"",   de:"Diät halten",ord:232,    pl:"—",            ru:"соблюдать диету",                                 tema:"Urlaub", lekt:"L13"},
+  // ── L13 · Urlaub — слова из объявления (Kursbuch S.141) ──────────────────────
+  {art:"die", de:"Anreise",ord:233,       pl:"-n",           ru:"приезд, прибытие",                                tema:"Urlaub", lekt:"L13"},
+  {art:"",   de:"preiswert",ord:234,      pl:"—",            ru:"недорогой, выгодный по цене",                     tema:"Urlaub", lekt:"L13"},
+  {art:"die", de:"Übernachtung",ord:235,  pl:"-en",          ru:"ночёвка, проживание (в отеле)",                   tema:"Urlaub", lekt:"L13"},
+  {art:"der", de:"Spaß",ord:236,          pl:'"-e',          ru:"веселье, удовольствие",                           tema:"Urlaub", lekt:"L13"},
+  {art:"das", de:"Tier",ord:237,          pl:"-e",           ru:"животное",                                       tema:"Urlaub", lekt:"L13"},
+  {art:"der", de:"Wasserweg",ord:238,     pl:"-e",           ru:"водный путь",                                    tema:"Urlaub", lekt:"L13"},
+  {art:"",   de:"füttern",ord:239,        pl:"—",            ru:"кормить (животных)",                              tema:"Urlaub", lekt:"L13"},
+  {art:"",   de:"Tiere füttern",ord:240,  pl:"—",            ru:"кормить животных",                                tema:"Urlaub", lekt:"L13"},
+  {art:"die", de:"Kanutour",ord:241,      pl:"-en",          ru:"тур на каноэ",                                    tema:"Urlaub", lekt:"L13"},
+  {art:"",   de:"ganz",ord:242,           pl:"—",            ru:"весь, целый",                                     tema:"Urlaub", lekt:"L13"},
+  {art:"die", de:"Ferienwohnung",ord:243, pl:"-en",          ru:"квартира для отдыха, апартаменты",                tema:"Urlaub", lekt:"L13"},
+  {art:"",   de:"idyllisch",ord:244,      pl:"—",            ru:"идиллический",                                    tema:"Urlaub", lekt:"L13"},
+  {art:"",   de:"einzigartig",ord:245,    pl:"—",            ru:"уникальный, неповторимый",                        tema:"Urlaub", lekt:"L13"},
+  {art:"das", de:"Huhn",ord:246,          pl:'"-er',         ru:"курица (животное) · ср. Hähnchen = курица (мясо)",tema:"Urlaub", lekt:"L13"},
+  {art:"der", de:"Hahn",ord:247,          pl:'"-e',          ru:"петух",                                           tema:"Urlaub", lekt:"L13"},
+  {art:"das", de:"Museum",ord:248,        pl:"Museen",       ru:"музей",                                           tema:"Urlaub", lekt:"L13"},
+  {art:"",   de:"sich sonnen",ord:249,    pl:"—",            ru:"загорать",                                        tema:"Urlaub", lekt:"L13"},
 ];
 
 
@@ -2077,6 +2145,43 @@ const KONJ_ALL={
   verstauen:   {col:C.teal, bg:C.tealBg, note:"untrennbar: kein ge-",
     ich:"verstaue",du:"verstaust","er/sie/es":"verstaut",
     wir:"verstauen",ihr:"verstaut","sie/Sie":"verstauen", pt:"verstaute", pf:"hat verstaut"},
+  // L13 Urlaub — Freizeitaktivitäten
+  einsetzen:   {pref:"ein", col:C.blue, bg:C.blueBg,
+    ich:"setze … ein",  du:"setzt … ein",  "er/sie/es":"setzt … ein",
+    wir:"setzen … ein", ihr:"setzt … ein", "sie/Sie":"setzen … ein", pt:"setzte … ein", pf:"hat eingesetzt"},
+  segeln:      {col:C.teal, bg:C.tealBg,
+    ich:"segle",   du:"segelst",  "er/sie/es":"segelt",
+    wir:"segeln",  ihr:"segelt",  "sie/Sie":"segeln", pt:"segelte", pf:"ist gesegelt"},
+  springen:    {col:C.purple, bg:C.purpleBg,
+    ich:"springe", du:"springst", "er/sie/es":"springt",
+    wir:"springen",ihr:"springt", "sie/Sie":"springen",
+    pt:"sprang", ptc:{du:"sprangst",wir:"sprangen",ihr:"sprangt",sie:"sprangen"}, pf:"ist gesprungen"},
+  kennenlernen:{pref:"kennen", col:C.green, bg:C.greenBg,
+    ich:"lerne … kennen",  du:"lernst … kennen",  "er/sie/es":"lernt … kennen",
+    wir:"lernen … kennen", ihr:"lernt … kennen",  "sie/Sie":"lernen … kennen", pt:"lernte … kennen", pf:"hat kennengelernt"},
+  halten:      {col:C.orange, bg:C.orangeBg, note:"a→ä",
+    ich:"halte",   du:"hältst",   "er/sie/es":"hält",
+    wir:"halten",  ihr:"haltet",  "sie/Sie":"halten",
+    imp:{du:"Halt!", ihr:"Haltet!", Sie:"Halten Sie!"},
+    pt:"hielt", ptc:{du:"hieltest",wir:"hielten",ihr:"hieltet",sie:"hielten"}, pf:"hat gehalten"},
+  "sich fühlen":{col:C.teal, bg:C.tealBg, note:"Reflexiv",
+    ich:"fühle mich",  du:"fühlst dich",  "er/sie/es":"fühlt sich",
+    wir:"fühlen uns",  ihr:"fühlt euch",  "sie/Sie":"fühlen sich",
+    imp:{du:"Fühl dich!", ihr:"Fühlt euch!", Sie:"Fühlen Sie sich!"}, pt:"fühlte sich", pf:"hat sich gefühlt"},
+  füttern:     {col:C.green, bg:C.greenBg,
+    ich:"füttere", du:"fütterst", "er/sie/es":"füttert",
+    wir:"füttern", ihr:"füttert", "sie/Sie":"füttern", pt:"fütterte", pf:"hat gefüttert"},
+  "sich sonnen":{col:C.orange, bg:C.orangeBg, note:"Reflexiv",
+    ich:"sonne mich",  du:"sonnst dich",  "er/sie/es":"sonnt sich",
+    wir:"sonnen uns",  ihr:"sonnt euch",  "sie/Sie":"sonnen sich",
+    imp:{du:"Sonn dich!", ihr:"Sonnt euch!", Sie:"Sonnen Sie sich!"}, pt:"sonnte sich", pf:"hat sich gesonnt"},
+  nachsehen:   {pref:"nach", type:"e→ie", col:C.blue, bg:C.blueBg,
+    ich:"sehe … nach",  du:"siehst … nach",  "er/sie/es":"sieht … nach",
+    wir:"sehen … nach", ihr:"seht … nach",   "sie/Sie":"sehen … nach", pt:"sah … nach", pf:"hat nachgesehen"},
+  tragen:      {col:C.red, bg:C.redBg, note:"a→ä",
+    ich:"trage",   du:"trägst",   "er/sie/es":"trägt",
+    wir:"tragen",  ihr:"tragt",   "sie/Sie":"tragen",
+    pt:"trug", ptc:{du:"trugst",wir:"trugen",ihr:"trugt",sie:"trugen"}, pf:"hat getragen"},
 };
 
 // Ударения: комбинирующая акута \u0301 ставится после ударной гласной
@@ -2423,10 +2528,12 @@ const STRESS_MARKS={
 "Schuh":"Schu\u0301h","Socke":"So\u0301cke","Unterwäsche":"U\u0301nterwäsche","Kaufhaus":"Ka\u0301ufhaus",
 "Umkleidekabine":"U\u0301mkleidekabine","Größe":"Gr\u00F6\u0301ße","Flohmarkt":"Flo\u0301hmarkt",
 "Boutique":"Bouti\u0301que","Secondhandladen":"Se\u0301condhandladen","Anhänger":"A\u0301nhänger","Kleidung":"Kle\u0301idung","Mütze":"M\u00FC\u0301tze","Schmuck":"Schmu\u0301ck","Artikel":"Arti\u0301kel","Bekleidung":"Bekle\u0301idung","Geschenk":"Gesche\u0301nk","Ware":"Wa\u0301re","Geschenkwaren":"Gesche\u0301nkwaren",
-"Sportartikel":"Spo\u0301rtartikel","Herrenbekleidung":"He\u0301rrenbekleidung","Modeschmuck":"Mo\u0301deschmuck","Babywäsche":"Ba\u0301bywäsche","Kinderbekleidung":"Ki\u0301nderbekleidung","Accessoire":"Accessoi\u0301re","Elektro-Kleingerät":"Elektro-Klei\u0301ngerät","Damenwäsche":"Da\u0301menwäsche","Strumpfwaren":"Stru\u0301mpfwaren","Lederwaren":"Le\u0301derwaren","Schirm":"Schi\u0301rm","Parfümerie":"Parfümeri\u0301e","Süßwaren":"S\u00FC\u0301ßwaren","Schreibwaren":"Schrei\u0301bwaren","Schlüsseldienst":"Schl\u00FC\u0301sseldienst","Schuhreparatur":"Schu\u0301hreparatur","Herrenhose":"He\u0301rrenhose","Damenmantel":"Da\u0301menmantel","Winterjacke":"Wi\u0301nterjacke","Sportschuh":"Spo\u0301rtschuh","Abendkleid":"A\u0301bendkleid","Multimedia-Abteilung":"Multime\u0301dia-Abteilung","Rolltreppe":"Ro\u0301lltreppe","Ausgang":"A\u0301usgang","Abteilung":"Abtei\u0301lung","Haushaltswaren":"Ha\u0301ushaltswaren","Heimtextilien":"Hei\u0301mtextilien","Bilderrahmen":"Bi\u0301lderrahmen","Fotoalbum":"Fo\u0301toalbum","Computerzubehör":"Compu\u0301terzubehör","Damenbekleidung":"Da\u0301menbekleidung","öffnen":"\u00F6\u0301ffnen",
+"Sportartikel":"Spo\u0301rtartikel","Herrenbekleidung":"He\u0301rrenbekleidung","Modeschmuck":"Mo\u0301deschmuck","Babywäsche":"Ba\u0301bywäsche","Kinderbekleidung":"Ki\u0301nderbekleidung","Accessoire":"Accessoi\u0301re","Elektro-Kleingerät":"Elektro-Klei\u0301ngerät","Damenwäsche":"Da\u0301menwäsche","Strumpfwaren":"Stru\u0301mpfwaren","Lederwaren":"Le\u0301derwaren","Schirm":"Schi\u0301rm","Parfümerie":"Parfümeri\u0301e","Süßwaren":"S\u00FC\u0301ßwaren","Schreibwaren":"Schrei\u0301bwaren","Schlüsseldienst":"Schl\u00FC\u0301sseldienst","Schuhreparatur":"Schu\u0301hreparatur","Herrenhose":"He\u0301rrenhose","Damenmantel":"Da\u0301menmantel","Winterjacke":"Wi\u0301nterjacke","Sportschuh":"Spo\u0301rtschuh","Abendkleid":"A\u0301bendkleid","Multimedia-Abteilung":"Multime\u0301dia-Abteilung","Rolltreppe":"Ro\u0301lltreppe","Ausgang":"A\u0301usgang","Abteilung":"Abtei\u0301lung","Haushaltswaren":"Ha\u0301ushaltswaren","Heimtextilien":"Hei\u0301mtextilien","Bilderrahmen":"Bi\u0301lderrahmen","Fotoalbum":"Fo\u0301toalbum","Computerzubehör":"Compu\u0301terzubehör","Damenbekleidung":"Da\u0301menbekleidung","öffnen":"\u00F6\u0301ffnen","Bestellnummer":"Beste\u0301llnummer","Gesamtpreis":"Gesa\u0301mtpreis","Rechnungsadresse":"Re\u0301chnungsadresse","Rechnung":"Re\u0301chnung","Bestellung":"Beste\u0301llung","Menge":"Me\u0301nge","Lieferzeit":"Lie\u0301ferzeit","Mehrwertsteuer":"Me\u0301hrwertsteuer","Lieferung":"Lie\u0301ferung","überhaupt":"überha\u0301upt","cool":"co\u0301ol","welcher":"we\u0301lcher","Computerspiel":"Compu\u0301terspiel","nachsehen":"Na\u0301chsehen","hinten":"hi\u0301nten","vorne":"vo\u0301rne","Mädchen":"M\u00E4\u0301dchen","Vorteil":"Vo\u0301rteil","Nachteil":"Na\u0301chteil","tragen":"tra\u0301gen",
 "tadeln":"ta\u0301deln","loben":"lo\u0301ben","Zeile":"Zei\u0301le","Gast":"Ga\u0301st","bemalen":"bema\u0301len","ausmalen":"a\u0301usmalen",
 "Ausländeramt":"Au\u0301sländeramt","Kindergeldantrag":"Ki\u0301ndergeldantrag",
 "Meer":"Me\u0301er","Berg":"Be\u0301rg","Bauernhof":"Ba\u0301uernhof","Strand":"Stra\u0301nd","Wiese":"Wie\u0301se","See":"Se\u0301e","Landschaft":"La\u0301ndschaft","Urlaub":"U\u0301rlaub","wandern":"wa\u0301ndern","Klasse":"Kla\u0301sse","Reservierung":"Reservie\u0301rung","BahnCard":"Ba\u0301hnCard","Anzeigetafel":"A\u0301nzeigetafel","Verspätung":"Verspä\u0301tung","durchsagen":"Du\u0301rchsagen","Ankunft":"A\u0301nkunft","Tunnel":"Tu\u0301nnel","Aussicht":"A\u0301ussicht","zählen":"zä\u0301hlen","Höhe":"H\u00F6\u0301he","Pension":"Pensio\u0301n","übernachten":"\u00FCberna\u0301chten","ungefähr":"ungefä\u0301hr","aussteigen":"A\u0301ussteigen","losfahren":"Lo\u0301sfahren","Endstation":"E\u0301ndstation","Kuh":"Ku\u0301h","melken":"me\u0301lken","Ärger":"\u00C4\u0301rger","ärgerlich":"\u00E4\u0301rgerlich","verärgert":"verä\u0301rgert","sich irren":"sich i\u0301rren","Heiratstermin":"Hei\u0301ratstermin","Wohngeld":"Wo\u0301hngeld","Nummernschild":"Nu\u0301mmernschild","können":"k\u00F6\u0301nnen","sollen":"so\u0301llen","brauchen":"bra\u0301uchen",
+"Reiseziel":"Re\u0301iseziel","einsetzen":"E\u0301insetzen","segeln":"se\u0301geln","springen":"spri\u0301ngen","kennenlernen":"Ke\u0301nnenlernen","halten":"ha\u0301lten","Gebäude":"Geb\u00E4\u0301ude","Burg":"Bu\u0301rg","Schloss":"Schlo\u0301ss","körperlich":"k\u00F6\u0301rperlich","geistig":"ge\u0301istig","Party":"Pa\u0301rty","Diät":"Di\u00E4\u0301t",
+"Anreise":"A\u0301nreise","preiswert":"pre\u0301iswert","Übernachtung":"\u00DCberna\u0301chtung","Spaß":"Spa\u0301ß","Tier":"Tie\u0301r","Wasserweg":"Wa\u0301sserweg","füttern":"f\u00FC\u0301ttern","Kanutour":"Ka\u0301nutour","ganz":"ga\u0301nz","Ferienwohnung":"Fe\u0301rienwohnung","idyllisch":"idy\u0301llisch","einzigartig":"e\u0301inzigartig","Huhn":"Hu\u0301hn","Hahn":"Ha\u0301hn","Museum":"Muse\u0301um",
 "Regen":"Re\u0301gen","Schnee":"Schne\u0301e","Sonne":"So\u0301nne","Wind":"Wi\u0301nd","Wolke":"Wo\u0301lke","schneien":"schne\u0301ien","regnen":"re\u0301gnen","nass":"na\u0301ss","heiß":"hei\u0301ß","bewölkt":"bew\u00F6\u0301lkt","windig":"wi\u0301ndig","Monat":"Mo\u0301nat","Grad":"Gra\u0301d","Frühling":"Fr\u00FC\u0301hling","Sommer":"So\u0301mmer","Herbst":"He\u0301rbst","Winter":"Wi\u0301nter","Januar":"Ja\u0301nuar","Februar":"Fe\u0301bruar","März":"M\u00E4\u0301rz","April":"Apri\u0301l","Mai":"Ma\u0301i","Juni":"Ju\u0301ni","Juli":"Ju\u0301li","August":"Augu\u0301st","September":"Septe\u0301mber","Oktober":"Okto\u0301ber","November":"Nove\u0301mber","Dezember":"Deze\u0301mber","vergleichen":"verglei\u0301chen","Unterschied":"U\u0301nterschied","genauso":"gena\u0301uso","durchschnittlich":"du\u0301rchschnittlich","deshalb":"desha\u0301lb","Sternzeichen":"Ste\u0301rnzeichen","Stern":"Ste\u0301rn","Eigenschaft":"Ei\u0301genschaft","kurz":"ku\u0301rz","gern":"ge\u0301rn","viel":"vie\u0301l","lang":"la\u0301ng","surfen":"su\u0301rfen","beladen":"bela\u0301den","entladen":"entla\u0301den","verstauen":"versta\u0301uen","Verdienst":"Verdie\u0301nst","verschlafen":"verschla\u0301fen","sich verspäten":"sich versp\u00E4\u0301ten","durchschlafen":"du\u0301rchschlafen","Armbanduhr":"A\u0301rmbanduhr","Leder":"Le\u0301der","Nordosten":"Nordo\u0301sten","Nordwesten":"Nordwe\u0301sten","Südosten":"S\u00FCdo\u0301sten","Südwesten":"S\u00FCdwe\u0301sten","Herr":"He\u0301rr","Dame":"Da\u0301me","Familie":"Fami\u0301lie","Kind":"Ki\u0301nd","Nummer":"Nu\u0301mmer","Kurs":"Ku\u0301rs","Rest":"Re\u0301st","Kilometer":"Kilome\u0301ter",
 "schick":"schi\u0301ck","altmodisch":"a\u0301ltmodisch","komisch":"ko\u0301misch","praktisch":"pra\u0301ktisch",
 "kompliziert":"komplizie\u0301rt","angenehm":"a\u0301ngenehm","gebraucht":"gebra\u0301ucht",
@@ -2764,10 +2871,12 @@ const IPA_DATA={
 "Schuh":"[ʃuː]","Socke":"[ˈzɔkə]","Unterwäsche":"[ˈʊntɐˌvɛʃə]","Kaufhaus":"[ˈkaʊfhaʊs]",
 "Umkleidekabine":"[ˈʊmklaɪdəkaˌbiːnə]","Größe":"[ˈɡʁøːsə]","Flohmarkt":"[ˈfloːmaʁkt]",
 "Boutique":"[buˈtiːk]","Secondhandladen":"[ˈsɛkəntˌhɛntlaːdn̩]","Anhänger":"[ˈanhɛŋɐ]","Kleidung":"[ˈklaɪdʊŋ]","Mütze":"[ˈmʏtsə]","Schmuck":"[ʃmʊk]","Artikel":"[aʁˈtiːkl̩]","Bekleidung":"[bəˈklaɪdʊŋ]","Geschenk":"[ɡəˈʃɛŋk]","Ware":"[ˈvaːʁə]","Geschenkwaren":"[ɡəˈʃɛŋkˌvaːʁən]",
-"Sportartikel":"[ˈʃpɔʁtʔaʁˌtiːkl̩]","Herrenbekleidung":"[ˈhɛʁənbəˌklaɪdʊŋ]","Modeschmuck":"[ˈmoːdəʃmʊk]","Babywäsche":"[ˈbeːbiˌvɛʃə]","Kinderbekleidung":"[ˈkɪndɐbəˌklaɪdʊŋ]","Accessoire":"[akseˈsoːɐ̯]","Elektro-Kleingerät":"[eˈlɛktroˌklaɪnɡəˌʁɛːt]","Damenwäsche":"[ˈdaːmənˌvɛʃə]","Strumpfwaren":"[ˈʃtʁʊmpfˌvaːʁən]","Lederwaren":"[ˈleːdɐˌvaːʁən]","Schirm":"[ʃɪʁm]","Parfümerie":"[paʁfyməˈʁiː]","Süßwaren":"[ˈzyːsˌvaːʁən]","Schreibwaren":"[ˈʃʁaɪpˌvaːʁən]","Schlüsseldienst":"[ˈʃlʏsl̩ˌdiːnst]","Schuhreparatur":"[ˈʃuːʁepaʁaˌtuːɐ̯]","Herrenhose":"[ˈhɛʁənˌhoːzə]","Damenmantel":"[ˈdaːmənˌmantl̩]","Winterjacke":"[ˈvɪntɐˌjakə]","Sportschuh":"[ˈʃpɔʁtʃuː]","Abendkleid":"[ˈaːbn̩tˌklaɪt]","Multimedia-Abteilung":"[mʊltiˈmeːdi̯aʔapˌtaɪlʊŋ]","Rolltreppe":"[ˈʁɔlˌtʁɛpə]","Ausgang":"[ˈaʊsɡaŋ]","Abteilung":"[apˈtaɪlʊŋ]","Haushaltswaren":"[ˈhaʊshaltsˌvaːʁən]","Heimtextilien":"[ˈhaɪmtɛksˌtiːli̯ən]","Bilderrahmen":"[ˈbɪldɐˌʁaːmən]","Fotoalbum":"[ˈfoːtoˌʔalbʊm]","Computerzubehör":"[kɔmˈpjuːtɐtsuːbəˌhøːɐ̯]","Damenbekleidung":"[ˈdaːmənbəˌklaɪdʊŋ]","öffnen":"[ˈœfnən]",
+"Sportartikel":"[ˈʃpɔʁtʔaʁˌtiːkl̩]","Herrenbekleidung":"[ˈhɛʁənbəˌklaɪdʊŋ]","Modeschmuck":"[ˈmoːdəʃmʊk]","Babywäsche":"[ˈbeːbiˌvɛʃə]","Kinderbekleidung":"[ˈkɪndɐbəˌklaɪdʊŋ]","Accessoire":"[akseˈsoːɐ̯]","Elektro-Kleingerät":"[eˈlɛktroˌklaɪnɡəˌʁɛːt]","Damenwäsche":"[ˈdaːmənˌvɛʃə]","Strumpfwaren":"[ˈʃtʁʊmpfˌvaːʁən]","Lederwaren":"[ˈleːdɐˌvaːʁən]","Schirm":"[ʃɪʁm]","Parfümerie":"[paʁfyməˈʁiː]","Süßwaren":"[ˈzyːsˌvaːʁən]","Schreibwaren":"[ˈʃʁaɪpˌvaːʁən]","Schlüsseldienst":"[ˈʃlʏsl̩ˌdiːnst]","Schuhreparatur":"[ˈʃuːʁepaʁaˌtuːɐ̯]","Herrenhose":"[ˈhɛʁənˌhoːzə]","Damenmantel":"[ˈdaːmənˌmantl̩]","Winterjacke":"[ˈvɪntɐˌjakə]","Sportschuh":"[ˈʃpɔʁtʃuː]","Abendkleid":"[ˈaːbn̩tˌklaɪt]","Multimedia-Abteilung":"[mʊltiˈmeːdi̯aʔapˌtaɪlʊŋ]","Rolltreppe":"[ˈʁɔlˌtʁɛpə]","Ausgang":"[ˈaʊsɡaŋ]","Abteilung":"[apˈtaɪlʊŋ]","Haushaltswaren":"[ˈhaʊshaltsˌvaːʁən]","Heimtextilien":"[ˈhaɪmtɛksˌtiːli̯ən]","Bilderrahmen":"[ˈbɪldɐˌʁaːmən]","Fotoalbum":"[ˈfoːtoˌʔalbʊm]","Computerzubehör":"[kɔmˈpjuːtɐtsuːbəˌhøːɐ̯]","Damenbekleidung":"[ˈdaːmənbəˌklaɪdʊŋ]","öffnen":"[ˈœfnən]","Bestellnummer":"[bəˈʃtɛlˌnʊmɐ]","Gesamtpreis":"[ɡəˈzamtˌpʁaɪs]","Rechnungsadresse":"[ˈʁɛçnʊŋsʔaˌdʁɛsə]","Rechnung":"[ˈʁɛçnʊŋ]","Bestellung":"[bəˈʃtɛlʊŋ]","Menge":"[ˈmɛŋə]","Lieferzeit":"[ˈliːfɐˌtsaɪt]","Mehrwertsteuer":"[ˈmeːɐ̯veːɐ̯tˌʃtɔʏɐ]","Lieferung":"[ˈliːfəʁʊŋ]","überhaupt":"[yːbɐˈhaʊpt]","cool":"[kuːl]","welcher":"[ˈvɛlçɐ]","Computerspiel":"[kɔmˈpjuːtɐˌʃpiːl]","nachsehen":"[ˈnaːxˌzeːən]","hinten":"[ˈhɪntən]","vorne":"[ˈfɔʁnə]","Mädchen":"[ˈmɛːtçən]","Vorteil":"[ˈfoːɐ̯taɪl]","Nachteil":"[ˈnaxtaɪl]","tragen":"[ˈtʁaːɡən]",
 "tadeln":"[ˈtaːdl̩n]","loben":"[ˈloːbn̩]","Zeile":"[ˈtsaɪlə]","Gast":"[ɡast]","bemalen":"[bəˈmaːlən]","ausmalen":"[ˈaʊsˌmaːlən]",
 "Ausländeramt":"[ˈaʊslɛndɐˌʔamt]","Kindergeldantrag":"[ˈkɪndɐɡɛltˌʔantʁaːk]",
 "Meer":"[meːɐ̯]","Berg":"[bɛʁk]","Bauernhof":"[ˈbaʊɐnhoːf]","Strand":"[ʃtʁant]","Wiese":"[ˈviːzə]","See":"[zeː]","Landschaft":"[ˈlantʃaft]","Urlaub":"[ˈuːɐ̯laʊp]","wandern":"[ˈvandɐn]","Klasse":"[ˈklasə]","Reservierung":"[ʁezɛʁˈviːʁʊŋ]","BahnCard":"[ˈbaːnkaːɐ̯t]","Anzeigetafel":"[ˈantsaɪɡəˌtaːfl̩]","Verspätung":"[fɛɐ̯ˈʃpɛːtʊŋ]","durchsagen":"[ˈdʊʁçˌzaːɡən]","Ankunft":"[ˈankʊnft]","Tunnel":"[ˈtʊnl̩]","Aussicht":"[ˈaʊszɪçt]","zählen":"[ˈtsɛːlən]","Höhe":"[ˈhøːə]","Pension":"[pɑ̃ˈzi̯oːn]","übernachten":"[yːbɐˈnaxtən]","ungefähr":"[ˈʊnɡəfɛːɐ̯]","aussteigen":"[ˈaʊsˌʃtaɪɡən]","losfahren":"[ˈloːsˌfaːʁən]","Endstation":"[ˈɛntʃtaˌtsi̯oːn]","Kuh":"[kuː]","melken":"[ˈmɛlkən]","Ärger":"[ˈɛʁɡɐ]","ärgerlich":"[ˈɛʁɡɐlɪç]","verärgert":"[fɛɐ̯ˈʔɛʁɡɐt]","sich irren":"[ˈɪʁən]","Heiratstermin":"[ˈhaɪʁaːtsˌtɛʁmiːn]","Wohngeld":"[ˈvoːnɡɛlt]","Nummernschild":"[ˈnʊmɐnˌʃɪlt]","können":"[ˈkœnən]","sollen":"[ˈzɔlən]","brauchen":"[ˈbʁaʊxən]",
+"Reiseziel":"[ˈʁaɪzəˌtsiːl]","einsetzen":"[ˈaɪnzɛtsən]","segeln":"[ˈzeːɡəln]","springen":"[ˈʃpʁɪŋən]","kennenlernen":"[ˈkɛnənˌlɛʁnən]","halten":"[ˈhaltən]","Gebäude":"[ɡəˈbɔɪdə]","Burg":"[bʊʁk]","Schloss":"[ʃlɔs]","körperlich":"[ˈkœʁpɐlɪç]","geistig":"[ˈɡaɪstɪç]","Party":"[ˈpaːɐti]","Diät":"[diˈɛːt]",
+"Anreise":"[ˈanˌʁaɪzə]","preiswert":"[ˈpʁaɪsveːɐt]","Übernachtung":"[yːbɐˈnaxtʊŋ]","Spaß":"[ʃpaːs]","Tier":"[tiːɐ̯]","Wasserweg":"[ˈvasɐveːk]","füttern":"[ˈfʏtɐn]","Kanutour":"[ˈkaːnuːˌtuːɐ̯]","ganz":"[ɡants]","Ferienwohnung":"[ˈfeːʁi̯ənˌvoːnʊŋ]","idyllisch":"[iˈdʏlɪʃ]","einzigartig":"[ˈaɪntsɪçˌʔaʁtɪç]","Huhn":"[huːn]","Hahn":"[haːn]","Museum":"[muˈzeːʊm]",
 "Regen":"[ˈʁeːɡn̩]","Schnee":"[ʃneː]","Sonne":"[ˈzɔnə]","Wind":"[vɪnt]","Wolke":"[ˈvɔlkə]","schneien":"[ˈʃnaɪən]","regnen":"[ˈʁeːɡnən]","nass":"[nas]","heiß":"[haɪs]","bewölkt":"[bəˈvœlkt]","windig":"[ˈvɪndɪç]","Monat":"[ˈmoːnat]","Grad":"[ɡʁaːt]","Frühling":"[ˈfʁyːlɪŋ]","Sommer":"[ˈzɔmɐ]","Herbst":"[hɛʁpst]","Winter":"[ˈvɪntɐ]","Januar":"[ˈjanuaːɐ̯]","Februar":"[ˈfeːbʁuaːɐ̯]","März":"[mɛʁts]","April":"[aˈpʁɪl]","Mai":"[maɪ̯]","Juni":"[ˈjuːni]","Juli":"[ˈjuːli]","August":"[au̯ˈɡʊst]","September":"[zɛpˈtɛmbɐ]","Oktober":"[ɔkˈtoːbɐ]","November":"[noˈvɛmbɐ]","Dezember":"[deˈtsɛmbɐ]","vergleichen":"[fɛɐ̯ˈɡlaɪçən]","Unterschied":"[ˈʊntɐʃiːt]","genauso":"[ɡəˈnaʊzo]","durchschnittlich":"[ˈdʊʁçʃnɪtlɪç]","deshalb":"[dɛsˈhalp]","Sternzeichen":"[ˈʃtɛʁntsaɪçən]","Stern":"[ʃtɛʁn]","Eigenschaft":"[ˈaɪɡn̩ʃaft]","kurz":"[kʊʁts]","gern":"[ɡɛʁn]","viel":"[fiːl]","lang":"[laŋ]","surfen":"[ˈsœʁfn̩]","beladen":"[bəˈlaːdn̩]","entladen":"[ɛntˈlaːdn̩]","verstauen":"[fɛɐ̯ˈʃtaʊən]","Verdienst":"[fɛɐ̯ˈdiːnst]","verschlafen":"[fɛɐ̯ˈʃlaːfən]","sich verspäten":"[fɛɐ̯ˈʃpɛːtən]","durchschlafen":"[ˈdʊʁçˌʃlaːfən]","Armbanduhr":"[ˈaʁmbantˌʔuːɐ̯]","Leder":"[ˈleːdɐ]","Nordosten":"[nɔʁtˈʔɔstən]","Nordwesten":"[nɔʁtˈvɛstən]","Südosten":"[zyːtˈʔɔstən]","Südwesten":"[zyːtˈvɛstən]","Herr":"[hɛʁ]","Dame":"[ˈdaːmə]","Familie":"[faˈmiːli̯ə]","Kind":"[kɪnt]","Nummer":"[ˈnʊmɐ]","Kurs":"[kʊʁs]","Rest":"[ʁɛst]","Kilometer":"[kiloˈmeːtɐ]",
 "schick":"[ʃɪk]","altmodisch":"[ˈaltmoːdɪʃ]","komisch":"[ˈkoːmɪʃ]","praktisch":"[ˈpʁaktɪʃ]",
 "kompliziert":"[kɔmpliˈtsiːɐ̯t]","angenehm":"[ˈanɡəneːm]","gebraucht":"[ɡəˈbʁaʊxt]",
@@ -3138,6 +3247,16 @@ const DIALOGE={
       {q:"Was findest du angenehmer: Sommer oder Winter?",   qRu:"Что тебе кажется приятнее: лето или зима?", a:"Ich finde den Sommer angenehmer, aber der Winter hat mehr Schnee.", aRu:"Мне лето кажется приятнее, но зимой больше снега.", note:"Komparativ + Ausnahme mehr"},
       {q:"Wann bist du geboren?",                            qRu:"Когда ты родился(лась)?",               a:"Ich bin am 18. Mai im Frühling geboren.",           aRu:"Я родился(лась) 18 мая, весной.", note:"geboren sein · am + Datum"},
       {q:"Was suchst du?",                                   qRu:"Что ты ищешь?",                         a:"Ich suche nach meinem Rucksack.",                   aRu:"Я ищу свой рюкзак.", note:"suchen nach + Dativ"},
+    ]},
+    {tag:"Urlaub",col:C.teal,pairs:[
+      {q:"Was machst du gerne mit den Kindern im Urlaub?",   qRu:"Что ты любишь делать с детьми в отпуске?", a:"Ich mache gerne mit den Kindern Urlaub auf dem Bauernhof. Die Kinder füttern dort die Tiere.", aRu:"Я люблю проводить отпуск с детьми на ферме. Дети там кормят животных.", note:"Bauernhof · Tiere füttern"},
+      {q:"Wie war deine Anreise?",                           qRu:"Как прошла дорога?",                    a:"Die Anreise war etwas anstrengend, aber die Ferienwohnung war preiswert und idyllisch.", aRu:"Дорога была немного утомительной, но апартаменты были недорогими и идиллическими.", note:"Anreise · preiswert · idyllisch"},
+      {q:"Was ist für dich im Urlaub wichtig?",              qRu:"Что для тебя важно в отпуске?",         a:"Ich möchte mich erholen, keinen Stress haben und mich fit fühlen.", aRu:"Я хочу отдохнуть, не испытывать стресса и чувствовать себя в форме.", note:"sich erholen · keinen Stress haben · sich fit fühlen"},
+      {q:"Was für einen Urlaub möchtest du machen?",         qRu:"Какой отпуск ты хочешь провести?",      a:"Ich möchte einen aktiven Urlaub machen — wandern, segeln und Ski fahren.", aRu:"Я хочу активный отпуск — ходить в походы, заниматься парусным спортом и кататься на лыжах.", note:"aktiven Urlaub haben"},
+      {q:"Was möchtest du in der Stadt besichtigen?",        qRu:"Что ты хочешь осмотреть в городе?",     a:"Ich möchte Sehenswürdigkeiten wie Burgen, Schlösser und Museen besichtigen.", aRu:"Я хочу осмотреть достопримечательности — крепости, дворцы и музеи.", note:"Sehenswürdigkeiten · Burg · Schloss · Museum"},
+      {q:"Fliegst du gern in den Urlaub oder fährst du lieber?", qRu:"Ты любишь летать в отпуск или предпочитаешь ехать?", a:"Ich fliege gern in den Urlaub, aber mit dem Zug ist es umweltfreundlicher.", aRu:"Я люблю летать в отпуск, но поездом это экологичнее.", note:"in den Urlaub fliegen"},
+      {q:"Was machst du abends im Urlaub?",                  qRu:"Что ты делаешь вечером в отпуске?",     a:"Abends mache ich gern Partys und lerne neue Menschen kennen.", aRu:"Вечером я люблю устраивать вечеринки и знакомиться с новыми людьми.", note:"Partys machen · kennenlernen"},
+      {q:"Hältst du im Urlaub eine Diät?",                   qRu:"Ты соблюдаешь диету в отпуске?",       a:"Nein, im Urlaub halte ich keine Diät — ich genieße das Essen!", aRu:"Нет, в отпуске я не соблюдаю диету — я наслаждаюсь едой!", note:"Diät halten"},
     ]},
   ],
 };
@@ -3701,6 +3820,7 @@ function Woerterbuch({words=WBDATA}={}){
     {id:"Ämter",          label:"🏛️ Ämter",                 col:C.green},
     {id:"Kleidung",       label:"👗 Kleidung",               col:C.red},
     {id:"Reisen",         label:"🧳 Reisen",                 col:C.green},
+    {id:"Urlaub",         label:"🏖️ Urlaub",                 col:C.blue},
   ];
   const TYPEN=[
     {id:"all",     label:"Все",           col:C.teal},
@@ -11088,6 +11208,129 @@ function T13B(){
   );
 }
 
+const Q_L13D=[
+  {q:"'die Anreise' по-русски:",                        opts:["отъезд","приезд, прибытие","билет","маршрут"], ans:1, hint:"an- = сюда"},
+  {q:"'preiswert' по-русски:",                          opts:["дорогой","бесплатный","недорогой","роскошный"], ans:2, hint:"Preis + wert"},
+  {q:"'Tiere füttern' означает:",                       opts:["гладить животных","кормить животных","фотографировать животных","дрессировать животных"], ans:1, hint:"füttern = кормить"},
+  {q:"'einzigartig' по-русски:",                        opts:["обычный","уникальный, неповторимый","маленький","старый"], ans:1, hint:"einzig = единственный"},
+  {q:"'idyllisch' по-русски:",                          opts:["шумный","идиллический","дорогой","современный"], ans:1, hint:"Idylle"},
+  {q:"'die Ferienwohnung' — это:",                      opts:["гостиница","апартаменты для отдыха","кемпинг","хостел"], ans:1, hint:"Ferien + Wohnung"},
+  {q:"'körperlich' по-русски:",                         opts:["умственно","духовно","физически, телесно","эмоционально"], ans:2, hint:"der Körper"},
+  {q:"'geistig' по-русски:",                            opts:["физически","умственно, духовно","телесно","визуально"], ans:1, hint:"der Geist"},
+  {q:"Что НЕ относится к 'aktiven Urlaub haben'?",      opts:["wandern","Ski fahren","Diät halten","segeln"], ans:2, hint:"Diät halten = другая группа"},
+  {q:"'die Burg' и 'das Schloss' — это:",               opts:["виды транспорта","крепость и дворец/замок","типы жилья","времена года"], ans:1, hint:"Sehenswürdigkeiten"},
+];
+
+function T13D(){
+  const [tab,setTab]=useState("vokabeln");
+  const vokabeln=[
+    {icon:"🚗",art:"die",w:"Anreise",ru:"приезд, прибытие"},
+    {icon:"💶",art:"",   w:"preiswert",ru:"недорогой"},
+    {icon:"🏨",art:"die",w:"Übernachtung",ru:"ночёвка, проживание"},
+    {icon:"🎉",art:"der",w:"Spaß",ru:"веселье, удовольствие"},
+    {icon:"🐄",art:"das",w:"Tier",ru:"животное"},
+    {icon:"🌊",art:"der",w:"Wasserweg",ru:"водный путь"},
+    {icon:"🛶",art:"die",w:"Kanutour",ru:"тур на каноэ"},
+    {icon:"🏡",art:"die",w:"Ferienwohnung",ru:"апартаменты для отдыха"},
+    {icon:"🌟",art:"",   w:"einzigartig",ru:"уникальный, неповторимый"},
+    {icon:"🌿",art:"",   w:"idyllisch",ru:"идиллический"},
+    {icon:"◾",art:"",   w:"ganz",ru:"весь, целый"},
+  ];
+  const reisenGruppen=[
+    {title:"Das Reiseziel wählen",col:C.blue,items:[
+      {de:"das Reiseziel",ru:"цель поездки"},
+      {de:"mit Freunden / der Familie / mit Kindern",ru:"с друзьями / семьёй / детьми"},
+      {de:"in den Urlaub fahren / fliegen",ru:"ехать / лететь в отпуск"},
+    ]},
+    {title:"Sich erholen — körperlich & geistig",col:C.teal,items:[
+      {de:"keinen Stress haben",ru:"не испытывать стресса"},
+      {de:"sich erholen",ru:"восстанавливаться"},
+      {de:"sich ausruhen",ru:"отдыхать, передыхать"},
+      {de:"sich entspannen",ru:"расслабляться"},
+      {de:"schöner aussehen",ru:"выглядеть красивее, лучше"},
+      {de:"sich an frischer Luft bewegen",ru:"двигаться на свежем воздухе"},
+      {de:"sich fit fühlen",ru:"чувствовать себя в форме"},
+      {de:"sich sonnen",ru:"загорать"},
+    ]},
+    {title:"Aktiven Urlaub haben",col:C.purple,items:[
+      {de:"wandern",ru:"ходить в поход"},
+      {de:"schwimmen (im Meer / im See / im Fluss)",ru:"плавать (в море / озере / реке)"},
+      {de:"segeln",ru:"заниматься парусным спортом"},
+      {de:"Ski fahren",ru:"кататься на лыжах"},
+      {de:"joggen",ru:"бегать трусцой"},
+      {de:"mit dem Fallschirm springen",ru:"прыгать с парашютом"},
+    ]},
+    {title:"Sehenswürdigkeiten besichtigen",col:C.green,items:[
+      {de:"das Museum",ru:"музей"},
+      {de:"das Gebäude",ru:"здание"},
+      {de:"die Burg",ru:"крепость"},
+      {de:"das Schloss",ru:"дворец, замок"},
+    ]},
+    {title:"Sonstiges",col:C.orange,items:[
+      {de:"neue Menschen kennenlernen",ru:"знакомиться с новыми людьми"},
+      {de:"Diät halten",ru:"соблюдать диету"},
+      {de:"Partys machen",ru:"устраивать вечеринки"},
+    ]},
+  ];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.orange}>
+        <H c={C.orange}>🏖️ L13D · Urlaub</H>
+        <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
+          {[["vokabeln","Vokabeln"],["reisen","Reisen"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,lineHeight:1.35,textAlign:"center",
+                border:`1px solid ${tab===key?C.orange+"55":C.border}`,
+                background:tab===key?C.orange+"22":C.ov3,
+                color:tab===key?C.orange:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="vokabeln"&&(
+          <div>
+            <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:6,marginBottom:6}}>
+              {vokabeln.map(v=>(
+                <div key={v.w} style={{background:C.ov4,borderRadius:8,padding:"7px 9px",display:"flex",alignItems:"center",gap:7}}>
+                  <span style={{fontSize:18}}>{v.icon}</span>
+                  <div style={{minWidth:0}}>
+                    <div style={{fontSize:13,fontWeight:700,color:C.text}}>{v.art} {v.w}</div>
+                    <div style={{fontSize:11,color:C.muted}}>{v.ru}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,borderRadius:10,padding:"11px 13px",marginTop:10}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.orange,marginBottom:6}}>Tiere füttern</div>
+              <div style={{fontSize:13,color:C.text,lineHeight:1.7}}>
+                <b style={{color:C.orange}}>Tiere</b> = Plural von <b>das Tier</b>. <b style={{color:C.orange}}>füttern</b> — регулярный слабый глагол: füttert, fütterte, hat gefüttert.
+              </div>
+            </div>
+          </div>
+        )}
+        {tab==="reisen"&&(
+          <div>
+            {reisenGruppen.map(g=>(
+              <div key={g.title} style={{marginBottom:10}}>
+                <div style={{fontSize:12,fontWeight:700,color:g.col,margin:"0 0 6px",textTransform:"uppercase",letterSpacing:0.5}}>{g.title}</div>
+                <div style={{display:"flex",flexDirection:"column",gap:4}}>
+                  {g.items.map((it,i)=>(
+                    <div key={i} style={{background:C.ov4,borderRadius:8,padding:"7px 10px",borderLeft:`3px solid ${g.col}`}}>
+                      <div style={{fontSize:13,fontWeight:700,color:C.text}}>{it.de}</div>
+                      <div style={{fontSize:11,color:C.muted}}>{it.ru}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
 const Q_L6A=[
   {q:"Welcher Artikel hat 'Apfel'?",          opts:["der","die","das"],                                                                     ans:0, hint:"Artikel"},
   {q:"Welcher Artikel hat 'Milch'?",          opts:["der","die","das"],                                                                     ans:1, hint:"Artikel"},
@@ -11110,7 +11353,7 @@ function T6A(){
     {art:"die",de:"Banane",     pl:"Bananen",   ru:"банан"},
     {art:"das",de:"Brot",       pl:"Brote",     ru:"хлеб"},
     {art:"die",de:"Butter",     pl:"—",         ru:"масло"},
-    {art:"das",de:"Hähnchen",   pl:"Hähnchen",  ru:"курица"},
+    {art:"das",de:"Hähnchen",   pl:"Hähnchen",  ru:"курица (мясо)"},
     {art:"der",de:"Joghurt",    pl:"Joghurts",  ru:"йогурт"},
     {art:"der",de:"Kaffee",     pl:"Kaffees",   ru:"кофе"},
     {art:"die",de:"Kartoffel",  pl:"Kartoffeln",ru:"картофель"},
@@ -11365,12 +11608,13 @@ const LEKTIONEN=[
   },
   {
     id:"L13",num:"13",title:"Auf Reisen",
-    sub:"A Unterwegs mit dem Zug (Fahrkarte, durch/um+Akk) · B Das Wetter & Jahreszeiten (Komparativ)",
+    sub:"A Unterwegs mit dem Zug (Fahrkarte, durch/um+Akk) · B Das Wetter & Jahreszeiten (Komparativ) · D Urlaub",
     date:"Seite 135–140",col:C.green,
     sections:[
       {id:"d13", icon:"💬",title:"Dialogfragen L13",            sub:"Фразы для диалога",                                    time:"∞",     col:C.green, hasT:false, th:null,           ex:()=><DialogCards lId="L13"/>},
       {id:"13a", icon:"🧳",title:"A · Unterwegs mit dem Zug",    sub:"Landschaft · Fahrkarte kaufen · durch/um + Akk · Blog",time:"8 мин", col:C.green, hasT:true, th:()=><T13A/>, ex:()=><Quiz questions={Q_L13A}/>},
       {id:"13b", icon:"🌦️",title:"B · Das Wetter & Jahreszeiten",sub:"Wetter · Jahreszeiten/Monate · Komparativ",              time:"8 мин", col:C.blue,  hasT:true, th:()=><T13B/>, ex:()=><Quiz questions={Q_L13B}/>},
+      {id:"13d", icon:"🏖️",title:"D · Urlaub",                  sub:"Vokabeln · Reisen-Übersicht",                            time:"6 мин", col:C.orange,hasT:true, th:()=><T13D/>, ex:()=><Quiz questions={Q_L13D}/>},
       {id:"wb13", icon:"📖",title:"Wörterbuch L13",              sub:"Слова этого урока",                                    time:"—",    col:C.teal,   hasT:false, ex:()=><LektWoerterbuch lekt="L13"/>},
       {id:"t13", icon:"🎯",title:"Großer Test L13",              sub:"Quiz · Lücken · Reisen · Wortstellung",         time:"20 мин",col:C.yellow, hasT:false, ex:()=><GrosserTest13/>},
       {id:"wt13", icon:"🧠",title:"Wortschatz-Test L13",         sub:"Перевод · Артикли · Обратный перевод",                 time:"10 мин",col:C.teal,   hasT:false, ex:()=><WortschatzTest lekt="L13"/>},
