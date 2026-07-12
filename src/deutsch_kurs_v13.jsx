@@ -3746,6 +3746,76 @@ function getPluralEnd(de,pl){
   return[pl.slice(0,i),pl.slice(i)];
 }
 
+// ─── Умный поиск: формы множественного числа + формы глагола ────────────────
+function applyUmlaut(w){
+  const map={a:"ä",o:"ö",u:"ü"};
+  const lower=w.toLowerCase();
+  const iAu=lower.lastIndexOf("au");
+  if(iAu>=0){
+    const isUpper=w[iAu]===w[iAu].toUpperCase()&&w[iAu]!==w[iAu].toLowerCase();
+    return w.slice(0,iAu)+(isUpper?"Äu":"äu")+w.slice(iAu+2);
+  }
+  for(let j=w.length-1;j>=0;j--){
+    const c=w[j].toLowerCase();
+    if(map[c]){
+      const isUpper=w[j]===w[j].toUpperCase()&&w[j]!==w[j].toLowerCase();
+      const rep=isUpper?map[c].toUpperCase():map[c];
+      return w.slice(0,j)+rep+w.slice(j+1);
+    }
+  }
+  return w;
+}
+// Возвращает набор возможных форм множественного числа (в нижнем регистре) для поиска.
+// Не претендует на 100% орфографическую точность для редких нерегулярных случаев (напр. "-daten","-kräfte") —
+// для них генерируется несколько вариантов-кандидатов, этого достаточно для целей поиска (includes-совпадение).
+function getPluralForms(de,pl){
+  if(!pl||pl==="—")return[];
+  if(pl==="-"||pl===de)return[de.toLowerCase()];
+  let umlaut=false,code=pl;
+  if(code[0]==='"'){umlaut=true;code=code.slice(1);}
+  const suffix=code.startsWith("-")?code.slice(1):code;
+  const base=umlaut?applyUmlaut(de):de;
+  const forms=new Set([(base+suffix).toLowerCase()]);
+  if(suffix.length>=4){
+    for(let cut=2;cut<=5&&cut<de.length;cut++){
+      forms.add((de.slice(0,-cut)+suffix).toLowerCase());
+    }
+    forms.add(suffix.toLowerCase());
+  }
+  return[...forms];
+}
+// Собирает все словоформы глагола из KONJ_ALL (Präsens/Imperativ/Präteritum/Partizip II) для поиска.
+function getVerbFormSet(key){
+  const k=KONJ_ALL[key];
+  if(!k)return null;
+  const forms=new Set();
+  const addRaw=(s)=>{
+    if(!s)return;
+    s.split(/\s+/).forEach(tok=>{
+      tok=tok.replace(/[.,!?…]/g,"").trim();
+      if(tok&&tok!=="…")forms.add(tok.toLowerCase());
+    });
+  };
+  ["ich","du","er/sie/es","wir","ihr","sie/Sie","pt"].forEach(f=>addRaw(k[f]));
+  if(k.ptc)Object.values(k.ptc).forEach(addRaw);
+  if(k.pf)addRaw(k.pf);
+  if(k.imp)Object.values(k.imp).forEach(addRaw);
+  return forms;
+}
+// Главная функция сопоставления слова со строкой поиска: словарная форма, перевод, формы мн.ч., формы глагола.
+function wordMatchesSearch(w,searchLower){
+  if(!searchLower)return true;
+  if(w.de.toLowerCase().includes(searchLower))return true;
+  if(w.ru.toLowerCase().includes(searchLower))return true;
+  const plForms=getPluralForms(w.de,w.pl);
+  if(plForms.some(p=>p.includes(searchLower)||searchLower.includes(p)))return true;
+  const vf=getVerbFormSet(w.de);
+  if(vf){
+    for(const f of vf){if(f.includes(searchLower))return true;}
+  }
+  return false;
+}
+
 function BewertungBlock(){
   return(
     <div style={{display:"flex",flexDirection:"column",gap:8,padding:"8px 8px 4px"}}>
@@ -3979,8 +4049,9 @@ function Woerterbuch({words=WBDATA}={}){
 
   const RECENT_COUNT=words.length;
   const recentBase=sortNew?[...words].reverse():[...words];
+  const searchLower=search.toLowerCase();
   const recentWords=search
-    ?recentBase.filter(w=>w.de.toLowerCase().includes(search.toLowerCase())||w.ru.toLowerCase().includes(search.toLowerCase()))
+    ?recentBase.filter(w=>wordMatchesSearch(w,searchLower))
     :recentBase;
 
   // Доступные темы для текущего типа
@@ -3999,7 +4070,7 @@ function Woerterbuch({words=WBDATA}={}){
     (tema==="all"||w.tema===tema)&&
     (art==="all"||w.art===art)&&
     (selPref==="all"||getVerbPref(w.de)===selPref)&&
-    (!search||w.de.toLowerCase().includes(search.toLowerCase())||w.ru.toLowerCase().includes(search.toLowerCase()))
+    (!search||wordMatchesSearch(w,searchLower))
   );
   const sortKey=(w)=>w.ord?100000+w.ord:w._i;
   const list=[...listRaw].sort((a,b)=>sortNew?sortKey(b)-sortKey(a):sortKey(a)-sortKey(b));
