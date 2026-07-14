@@ -1525,6 +1525,61 @@ const WBDATA=[
   {art:"die", de:"Musik",ord:329,         pl:"Sg.",          ru:"музыка",                                          tema:"Wohnung", lekt:"L14"},
   {art:"",   de:"dauern",ord:330,         pl:"—",            ru:"длиться, продолжаться",                          tema:"Reisen", lekt:"L13"},
   {art:"",   de:"schwierig",ord:331,      pl:"—",            ru:"трудный, сложный",                               tema:"Reisen", lekt:"L13"},
+  {art:"das", de:"Licht",ord:332,         pl:'"-er',         ru:"свет",                                            tema:"Wohnung", lekt:"L14"},
+  {art:"der", de:"Aufzug",ord:333,        pl:'"-e',          ru:"лифт",                                            tema:"Wohnung", lekt:"L14"},
+  {art:"der", de:"Brief",ord:334,         pl:"-e",           ru:"письмо",                                          tema:"Wohnung", lekt:"L14"},
+  {art:"die", de:"Ferien",ord:335,        pl:"-",            ru:"каникулы, отпуск (обычно только мн.ч.)",         tema:"Urlaub", lekt:"L13"},
+  // ── L13 · Wichtige Wörter (Arbeitsbuch S.162) — пропуски A/B/C ───────────────
+  {art:"die", de:"Reise",ord:336,         pl:"-n",           ru:"путешествие, поездка",                           tema:"Reisen", lekt:"L13"},
+  {art:"",   de:"abfahren",ord:337,       pl:"—",            ru:"отправляться (о транспорте) · fährt ab · ist abgefahren",tema:"Reisen", lekt:"L13"},
+  {art:"",   de:"ankommen",ord:338,       pl:"—",            ru:"прибывать · kommt an · ist angekommen",           tema:"Reisen", lekt:"L13"},
+  {art:"",   de:"fantastisch",ord:339,    pl:"—",            ru:"фантастический, потрясающий",                    tema:"Reisen", lekt:"L13"},
+  {art:"",   de:"zurückkommen",ord:340,   pl:"—",            ru:"возвращаться · kommt zurück · ist zurückgekommen",tema:"Reisen", lekt:"L13"},
+  {art:"",   de:"durch",ord:341,          pl:"—",            ru:"сквозь, через (+Akkusativ)",                     tema:"Reisen", lekt:"L13"},
+  {art:"",   de:"um",ord:342,             pl:"—",            ru:"вокруг (+Akkusativ)",                            tema:"Reisen", lekt:"L13"},
+  {art:"das", de:"Wetter",ord:343,        pl:"Sg.",          ru:"погода",                                          tema:"Reisen", lekt:"L13"},
+  {art:"der", de:"Regentropfen",ord:344,  pl:"-",            ru:"капля дождя",                                    tema:"Reisen", lekt:"L13"},
+  {art:"der", de:"Nebel",ord:345,         pl:"Sg.",          ru:"туман",                                           tema:"Reisen", lekt:"L13"},
+  {art:"das", de:"Glatteis",ord:346,      pl:"Sg.",          ru:"гололёд",                                         tema:"Reisen", lekt:"L13"},
+  {art:"der", de:"Hagel",ord:347,         pl:"Sg.",          ru:"град",                                            tema:"Reisen", lekt:"L13"},
+  {art:"der", de:"Sturm",ord:348,         pl:'"-e',          ru:"шторм, буря",                                     tema:"Reisen", lekt:"L13"},
+  {art:"das", de:"Gewitter",ord:349,      pl:"-",            ru:"гроза",                                           tema:"Reisen", lekt:"L13"},
+  {art:"der", de:"Blitz",ord:350,         pl:"-e",           ru:"молния",                                          tema:"Reisen", lekt:"L13"},
+  {art:"der", de:"Donner",ord:351,        pl:"Sg.",          ru:"гром",                                            tema:"Reisen", lekt:"L13"},
+  {art:"die", de:"Kälte",ord:352,         pl:"Sg.",          ru:"холод",                                           tema:"Reisen", lekt:"L13"},
+  {art:"die", de:"Hitze",ord:353,         pl:"Sg.",          ru:"жара",                                            tema:"Reisen", lekt:"L13"},
+  {art:"",   de:"trocken",ord:354,        pl:"—",            ru:"сухой",                                           tema:"Reisen", lekt:"L13"},
+  {art:"die", de:"Jahreszeit",ord:355,    pl:"-en",          ru:"время года",                                      tema:"Reisen", lekt:"L13"},
+  // ── L13 · Urlaub — Wichtige Wörter (D) + конспект ────────────────────────────
+  {art:"die", de:"Stadtrundfahrt",ord:356,pl:"-en",          ru:"обзорная экскурсия по городу",                   tema:"Urlaub", lekt:"L13"},
+  {art:"der", de:"Wasserfall",ord:357,    pl:'"-e',          ru:"водопад",                                         tema:"Urlaub", lekt:"L13"},
+  {art:"",   de:"lebendig",ord:358,       pl:"—",            ru:"живой, оживлённый",                              tema:"Urlaub", lekt:"L13"},
+  {art:"",   de:"Das ergibt keinen Sinn.",ord:359,pl:"—",    ru:"это не имеет смысла",                             tema:"Urlaub", lekt:"L13"},
+  {art:"",   de:"lästern",ord:360,        pl:"—",            ru:"сплетничать (о ком-л.) · lästern über+Akk",       tema:"Urlaub", lekt:"L13"},
+  // ── L14 · Zusammen leben B — Probleme im Haus ────────────────────────────────
+  {art:"",   de:"erst",ord:361,           pl:"—",            ru:"сначала; только (о времени)",                    tema:"Wohnung", lekt:"L14"},
+  {art:"",   de:"wegwerfen",ord:362,      pl:"—",            ru:"выбрасывать · wirft weg · hat weggeworfen",       tema:"Wohnung", lekt:"L14"},
+  {art:"",   de:"wegschmeißen",ord:363,   pl:"—",            ru:"выбрасывать (разг.) · hat weggeschmissen",       tema:"Wohnung", lekt:"L14"},
+  {art:"der", de:"Absender",ord:364,      pl:"-",            ru:"отправитель",                                    tema:"Wohnung", lekt:"L14"},
+  {art:"die", de:"Unterschrift",ord:365,  pl:"-en",          ru:"подпись",                                        tema:"Wohnung", lekt:"L14"},
+  {art:"der", de:"Gruß",ord:366,          pl:'"-e',          ru:"приветствие / прощание (в письме)",              tema:"Wohnung", lekt:"L14"},
+  {art:"der", de:"Betreff",ord:367,       pl:"-e",           ru:"тема письма",                                    tema:"Wohnung", lekt:"L14"},
+  {art:"der", de:"Empfänger",ord:368,     pl:"-",            ru:"получатель",                                     tema:"Wohnung", lekt:"L14"},
+  {art:"",   de:"denn",ord:369,           pl:"—",            ru:"потому что, так как (союз)",                     tema:"Wohnung", lekt:"L14"},
+  {art:"",   de:"gefährlich",ord:370,     pl:"—",            ru:"опасный",                                        tema:"Wohnung", lekt:"L14"},
+  {art:"",   de:"wirklich",ord:371,       pl:"—",            ru:"действительно, на самом деле",                   tema:"Wohnung", lekt:"L14"},
+  {art:"das", de:"Blech",ord:372,         pl:"-e",           ru:"противень; листовой металл",                     tema:"Wohnung", lekt:"L14"},
+  {art:"",   de:"vorbeikommen",ord:373,   pl:"—",            ru:"заходить, заглядывать · vorbeikommen bei+Dativ",  tema:"Wohnung", lekt:"L14"},
+  {art:"die", de:"Heizung",ord:374,       pl:"-en",          ru:"отопление",                                      tema:"Wohnung", lekt:"L14"},
+  {art:"",   de:"kaputt",ord:375,         pl:"—",            ru:"сломанный",                                       tema:"Wohnung", lekt:"L14"},
+  {art:"",   de:"funktionieren",ord:376,  pl:"—",            ru:"функционировать, работать",                      tema:"Wohnung", lekt:"L14"},
+  {art:"die", de:"Hausverwaltung",ord:377,pl:"-en",          ru:"управление домом, ЖЭК",                          tema:"Wohnung", lekt:"L14"},
+  {art:"die", de:"Anrede",ord:378,        pl:"-n",           ru:"обращение (в письме)",                           tema:"Wohnung", lekt:"L14"},
+  {art:"",   de:"aufmachen",ord:379,      pl:"—",            ru:"открывать",                                       tema:"Wohnung", lekt:"L14"},
+  {art:"",   de:"riechen",ord:380,        pl:"—",            ru:"пахнуть",                                         tema:"Wohnung", lekt:"L14"},
+  {art:"",   de:"schmutzig",ord:381,      pl:"—",            ru:"грязный",                                         tema:"Wohnung", lekt:"L14"},
+  {art:"die", de:"Stadtreinigung",ord:382,pl:"Sg.",          ru:"городская служба уборки",                        tema:"Wohnung", lekt:"L14"},
+  {art:"der", de:"Vorschlag",ord:383,     pl:'"-e',          ru:"предложение",                                     tema:"Wohnung", lekt:"L14"},
 ];
 
 
@@ -2287,6 +2342,38 @@ const KONJ_ALL={
   dauern:      {col:C.blue, bg:C.blueBg,
     ich:"dauere",  du:"dauerst",  "er/sie/es":"dauert",
     wir:"dauern",  ihr:"dauert",  "sie/Sie":"dauern", pt:"dauerte", pf:"hat gedauert"},
+  abfahren:    {pref:"ab", col:C.green, bg:C.greenBg, note:"a→ä",
+    ich:"fahre … ab",  du:"fährst … ab",  "er/sie/es":"fährt … ab",
+    wir:"fahren … ab", ihr:"fahrt … ab",  "sie/Sie":"fahren … ab", pt:"fuhr … ab", pf:"ist abgefahren"},
+  ankommen:    {pref:"an", col:C.blue, bg:C.blueBg,
+    ich:"komme … an",  du:"kommst … an",  "er/sie/es":"kommt … an",
+    wir:"kommen … an", ihr:"kommt … an",  "sie/Sie":"kommen … an", pt:"kam … an", pf:"ist angekommen"},
+  zurückkommen:{pref:"zurück", col:C.purple, bg:C.purpleBg,
+    ich:"komme … zurück",  du:"kommst … zurück",  "er/sie/es":"kommt … zurück",
+    wir:"kommen … zurück", ihr:"kommt … zurück",  "sie/Sie":"kommen … zurück", pt:"kam … zurück", pf:"ist zurückgekommen"},
+  wegwerfen:   {pref:"weg", type:"e→i", col:C.red, bg:C.redBg,
+    ich:"werfe … weg",  du:"wirfst … weg",  "er/sie/es":"wirft … weg",
+    wir:"werfen … weg", ihr:"werft … weg",  "sie/Sie":"werfen … weg", pt:"warf … weg", pf:"hat weggeworfen"},
+  wegschmeißen:{pref:"weg", col:C.orange, bg:C.orangeBg,
+    ich:"schmeiße … weg",  du:"schmeißt … weg",  "er/sie/es":"schmeißt … weg",
+    wir:"schmeißen … weg", ihr:"schmeißt … weg",  "sie/Sie":"schmeißen … weg",
+    pt:"schmiss … weg", ptc:{du:"schmissest … weg",wir:"schmissen … weg",ihr:"schmisst … weg",sie:"schmissen … weg"}, pf:"hat weggeschmissen"},
+  lästern:     {col:C.purple, bg:C.purpleBg, note:"lästern über+Akk",
+    ich:"lästere",  du:"lästerst",  "er/sie/es":"lästert",
+    wir:"lästern",  ihr:"lästert",  "sie/Sie":"lästern", pt:"lästerte", pf:"hat gelästert"},
+  vorbeikommen:{pref:"vorbei", col:C.teal, bg:C.tealBg, note:"vorbeikommen bei+Dativ",
+    ich:"komme … vorbei",  du:"kommst … vorbei",  "er/sie/es":"kommt … vorbei",
+    wir:"kommen … vorbei", ihr:"kommt … vorbei",  "sie/Sie":"kommen … vorbei", pt:"kam … vorbei", pf:"ist vorbeigekommen"},
+  funktionieren:{col:C.blue, bg:C.blueBg, note:"-ieren: kein ge-",
+    ich:"funktioniere",  du:"funktionierst",  "er/sie/es":"funktioniert",
+    wir:"funktionieren", ihr:"funktioniert",  "sie/Sie":"funktionieren", pt:"funktionierte", pf:"hat funktioniert"},
+  aufmachen:   {pref:"auf", col:C.green, bg:C.greenBg,
+    ich:"mache … auf",  du:"machst … auf",  "er/sie/es":"macht … auf",
+    wir:"machen … auf", ihr:"macht … auf",  "sie/Sie":"machen … auf", pt:"machte … auf", pf:"hat aufgemacht"},
+  riechen:     {col:C.orange, bg:C.orangeBg,
+    ich:"rieche",  du:"riechst",  "er/sie/es":"riecht",
+    wir:"riechen", ihr:"riecht",  "sie/Sie":"riechen",
+    pt:"roch", ptc:{du:"rochst",wir:"rochen",ihr:"rocht",sie:"rochen"}, pf:"hat gerochen"},
 };
 
 // Ударения: комбинирующая акута \u0301 ставится после ударной гласной
@@ -2636,7 +2723,10 @@ const STRESS_MARKS={
 "Sportartikel":"Spo\u0301rtartikel","Herrenbekleidung":"He\u0301rrenbekleidung","Modeschmuck":"Mo\u0301deschmuck","Babywäsche":"Ba\u0301bywäsche","Kinderbekleidung":"Ki\u0301nderbekleidung","Accessoire":"Accessoi\u0301re","Elektro-Kleingerät":"Elektro-Klei\u0301ngerät","Damenwäsche":"Da\u0301menwäsche","Strumpfwaren":"Stru\u0301mpfwaren","Lederwaren":"Le\u0301derwaren","Schirm":"Schi\u0301rm","Parfümerie":"Parfümeri\u0301e","Süßwaren":"S\u00FC\u0301ßwaren","Schreibwaren":"Schrei\u0301bwaren","Schlüsseldienst":"Schl\u00FC\u0301sseldienst","Schuhreparatur":"Schu\u0301hreparatur","Herrenhose":"He\u0301rrenhose","Damenmantel":"Da\u0301menmantel","Winterjacke":"Wi\u0301nterjacke","Sportschuh":"Spo\u0301rtschuh","Abendkleid":"A\u0301bendkleid","Multimedia-Abteilung":"Multime\u0301dia-Abteilung","Rolltreppe":"Ro\u0301lltreppe","Ausgang":"A\u0301usgang","Abteilung":"Abtei\u0301lung","Haushaltswaren":"Ha\u0301ushaltswaren","Heimtextilien":"Hei\u0301mtextilien","Bilderrahmen":"Bi\u0301lderrahmen","Fotoalbum":"Fo\u0301toalbum","Computerzubehör":"Compu\u0301terzubehör","Damenbekleidung":"Da\u0301menbekleidung","öffnen":"\u00F6\u0301ffnen","Bestellnummer":"Beste\u0301llnummer","Gesamtpreis":"Gesa\u0301mtpreis","Rechnungsadresse":"Re\u0301chnungsadresse","Rechnung":"Re\u0301chnung","Bestellung":"Beste\u0301llung","Menge":"Me\u0301nge","Lieferzeit":"Lie\u0301ferzeit","Mehrwertsteuer":"Me\u0301hrwertsteuer","Lieferung":"Lie\u0301ferung","überhaupt":"überha\u0301upt","cool":"co\u0301ol","welcher":"we\u0301lcher","Computerspiel":"Compu\u0301terspiel","nachsehen":"Na\u0301chsehen","hinten":"hi\u0301nten","vorne":"vo\u0301rne","Mädchen":"M\u00E4\u0301dchen","Vorteil":"Vo\u0301rteil","Nachteil":"Na\u0301chteil","tragen":"tra\u0301gen","Jackett":"Jacke\u0301tt","Anorak":"A\u0301norak","Hut":"Hu\u0301t","Kappe":"Ka\u0301ppe","Stiefel":"Stie\u0301fel","Sandale":"Sanda\u0301le","Strumpf":"Stru\u0301mpf","Strumpfhose":"Stru\u0301mpfhose","Schal":"Scha\u0301l","Handschuh":"Ha\u0301ndschuh","Regenjacke":"Re\u0301genjacke","Regenschirm":"Re\u0301genschirm","Jogginghose":"Jo\u0301gginghose","Babyhose":"Ba\u0301byhose","Vorbereitung":"Vo\u0301rbereitung","stören":"stö\u0301ren","gießen":"gie\u0301ßen",
 "Mond":"Mo\u0301nd","Katze":"Ka\u0301tze","Sportplatz":"Spo\u0301rtplatz","Radfahrer":"Ra\u0301dfahrer","Wanderer":"Wa\u0301nderer",
 "Leistung":"Le\u0301istung","erleben":"erle\u0301ben","Festival":"Fe\u0301stival","Erinnerung":"Eri\u0301nnerung","sparen":"spa\u0301ren","Geld":"Ge\u0301ld","Foto":"Fo\u0301to","verbringen":"verbri\u0301ngen","Bootsfahrt":"Boo\u0301tsfahrt","campen":"ca\u0301mpen","Ding":"Di\u0301ng","ansehen":"A\u0301nsehen","Kultur":"Kultu\u0301r",
-"Treppe":"Tre\u0301ppe","Parkplatz":"Pa\u0301rkplatz","Hof":"Ho\u0301f","Klingel":"Kli\u0301ngel","Pflanze":"Pfla\u0301nze","Untergeschoss":"U\u0301ntergeschoss","leihen":"le\u0301ihen","abgeben":"A\u0301bgeben","Tagesmutter":"Ta\u0301gesmutter","bitten":"bi\u0301tten","reinkommen":"Re\u0301inkommen","Kinderwagen":"Ki\u0301nderwagen","Mülltonne":"M\u00FC\u0301lltonne","Treppenhaus":"Tre\u0301ppenhaus","Briefkasten":"Brie\u0301fkasten","Nachbar":"Na\u0301chbar","Paketdienst":"Pake\u0301tdienst","Problem":"Proble\u0301m","Grill":"Gri\u0301ll","Musik":"Musi\u0301k","dauern":"da\u0301uern","schwierig":"schwie\u0301rig",
+"Treppe":"Tre\u0301ppe","Parkplatz":"Pa\u0301rkplatz","Hof":"Ho\u0301f","Klingel":"Kli\u0301ngel","Pflanze":"Pfla\u0301nze","Untergeschoss":"U\u0301ntergeschoss","leihen":"le\u0301ihen","abgeben":"A\u0301bgeben","Tagesmutter":"Ta\u0301gesmutter","bitten":"bi\u0301tten","reinkommen":"Re\u0301inkommen","Kinderwagen":"Ki\u0301nderwagen","Mülltonne":"M\u00FC\u0301lltonne","Treppenhaus":"Tre\u0301ppenhaus","Briefkasten":"Brie\u0301fkasten","Nachbar":"Na\u0301chbar","Paketdienst":"Pake\u0301tdienst","Problem":"Proble\u0301m","Grill":"Gri\u0301ll","Musik":"Musi\u0301k","dauern":"da\u0301uern","schwierig":"schwie\u0301rig","Licht":"Li\u0301cht","Aufzug":"A\u0301ufzug","Brief":"Bre\u0301if","Ferien":"Fe\u0301rien",
+"Reise":"Re\u0301ise","abfahren":"A\u0301bfahren","ankommen":"A\u0301nkommen","fantastisch":"fanta\u0301stisch","zurückkommen":"Zur\u00FC\u0301ckkommen","durch":"du\u0301rch","um":"u\u0301m","Wetter":"We\u0301tter","Regentropfen":"Re\u0301gentropfen","Nebel":"Ne\u0301bel","Glatteis":"Gla\u0301tteis","Hagel":"Ha\u0301gel","Sturm":"Stu\u0301rm","Gewitter":"Gewi\u0301tter","Blitz":"Bli\u0301tz","Donner":"Do\u0301nner","Kälte":"K\u00E4\u0301lte","Hitze":"Hi\u0301tze","trocken":"tro\u0301cken","Jahreszeit":"Ja\u0301hreszeit",
+"Stadtrundfahrt":"Sta\u0301dtrundfahrt","Wasserfall":"Wa\u0301sserfall","lebendig":"lebe\u0301ndig","lästern":"l\u00E4\u0301stern",
+"erst":"e\u0301rst","wegwerfen":"We\u0301gwerfen","wegschmeißen":"We\u0301gschmeißen","Absender":"A\u0301bsender","Unterschrift":"U\u0301nterschrift","Gruß":"Gru\u0301ß","Betreff":"Betre\u0301ff","Empfänger":"Empf\u00E4\u0301nger","denn":"de\u0301nn","gefährlich":"gef\u00E4\u0301hrlich","wirklich":"wi\u0301rklich","Blech":"Ble\u0301ch","vorbeikommen":"Vorbe\u0301ikommen","Heizung":"He\u0301izung","kaputt":"kapu\u0301tt","funktionieren":"funktionie\u0301ren","Hausverwaltung":"Ha\u0301usverwaltung","Anrede":"A\u0301nrede","aufmachen":"A\u0301ufmachen","riechen":"rie\u0301chen","schmutzig":"schmu\u0301tzig","Stadtreinigung":"Sta\u0301dtreinigung","Vorschlag":"Vo\u0301rschlag",
 "tadeln":"ta\u0301deln","loben":"lo\u0301ben","Zeile":"Zei\u0301le","Gast":"Ga\u0301st","bemalen":"bema\u0301len","ausmalen":"a\u0301usmalen",
 "Ausländeramt":"Au\u0301sländeramt","Kindergeldantrag":"Ki\u0301ndergeldantrag",
 "Meer":"Me\u0301er","Berg":"Be\u0301rg","Bauernhof":"Ba\u0301uernhof","Strand":"Stra\u0301nd","Wiese":"Wie\u0301se","See":"Se\u0301e","Landschaft":"La\u0301ndschaft","Urlaub":"U\u0301rlaub","wandern":"wa\u0301ndern","Klasse":"Kla\u0301sse","Reservierung":"Reservie\u0301rung","BahnCard":"Ba\u0301hnCard","Anzeigetafel":"A\u0301nzeigetafel","Verspätung":"Verspä\u0301tung","durchsagen":"Du\u0301rchsagen","Ankunft":"A\u0301nkunft","Tunnel":"Tu\u0301nnel","Aussicht":"A\u0301ussicht","zählen":"zä\u0301hlen","Höhe":"H\u00F6\u0301he","Pension":"Pensio\u0301n","übernachten":"\u00FCberna\u0301chten","ungefähr":"ungefä\u0301hr","aussteigen":"A\u0301ussteigen","losfahren":"Lo\u0301sfahren","Endstation":"E\u0301ndstation","Kuh":"Ku\u0301h","melken":"me\u0301lken","Ärger":"\u00C4\u0301rger","ärgerlich":"\u00E4\u0301rgerlich","verärgert":"verä\u0301rgert","sich irren":"sich i\u0301rren","Heiratstermin":"Hei\u0301ratstermin","Wohngeld":"Wo\u0301hngeld","Nummernschild":"Nu\u0301mmernschild","können":"k\u00F6\u0301nnen","sollen":"so\u0301llen","brauchen":"bra\u0301uchen",
@@ -2982,7 +3072,10 @@ const IPA_DATA={
 "Sportartikel":"[ˈʃpɔʁtʔaʁˌtiːkl̩]","Herrenbekleidung":"[ˈhɛʁənbəˌklaɪdʊŋ]","Modeschmuck":"[ˈmoːdəʃmʊk]","Babywäsche":"[ˈbeːbiˌvɛʃə]","Kinderbekleidung":"[ˈkɪndɐbəˌklaɪdʊŋ]","Accessoire":"[akseˈsoːɐ̯]","Elektro-Kleingerät":"[eˈlɛktroˌklaɪnɡəˌʁɛːt]","Damenwäsche":"[ˈdaːmənˌvɛʃə]","Strumpfwaren":"[ˈʃtʁʊmpfˌvaːʁən]","Lederwaren":"[ˈleːdɐˌvaːʁən]","Schirm":"[ʃɪʁm]","Parfümerie":"[paʁfyməˈʁiː]","Süßwaren":"[ˈzyːsˌvaːʁən]","Schreibwaren":"[ˈʃʁaɪpˌvaːʁən]","Schlüsseldienst":"[ˈʃlʏsl̩ˌdiːnst]","Schuhreparatur":"[ˈʃuːʁepaʁaˌtuːɐ̯]","Herrenhose":"[ˈhɛʁənˌhoːzə]","Damenmantel":"[ˈdaːmənˌmantl̩]","Winterjacke":"[ˈvɪntɐˌjakə]","Sportschuh":"[ˈʃpɔʁtʃuː]","Abendkleid":"[ˈaːbn̩tˌklaɪt]","Multimedia-Abteilung":"[mʊltiˈmeːdi̯aʔapˌtaɪlʊŋ]","Rolltreppe":"[ˈʁɔlˌtʁɛpə]","Ausgang":"[ˈaʊsɡaŋ]","Abteilung":"[apˈtaɪlʊŋ]","Haushaltswaren":"[ˈhaʊshaltsˌvaːʁən]","Heimtextilien":"[ˈhaɪmtɛksˌtiːli̯ən]","Bilderrahmen":"[ˈbɪldɐˌʁaːmən]","Fotoalbum":"[ˈfoːtoˌʔalbʊm]","Computerzubehör":"[kɔmˈpjuːtɐtsuːbəˌhøːɐ̯]","Damenbekleidung":"[ˈdaːmənbəˌklaɪdʊŋ]","öffnen":"[ˈœfnən]","Bestellnummer":"[bəˈʃtɛlˌnʊmɐ]","Gesamtpreis":"[ɡəˈzamtˌpʁaɪs]","Rechnungsadresse":"[ˈʁɛçnʊŋsʔaˌdʁɛsə]","Rechnung":"[ˈʁɛçnʊŋ]","Bestellung":"[bəˈʃtɛlʊŋ]","Menge":"[ˈmɛŋə]","Lieferzeit":"[ˈliːfɐˌtsaɪt]","Mehrwertsteuer":"[ˈmeːɐ̯veːɐ̯tˌʃtɔʏɐ]","Lieferung":"[ˈliːfəʁʊŋ]","überhaupt":"[yːbɐˈhaʊpt]","cool":"[kuːl]","welcher":"[ˈvɛlçɐ]","Computerspiel":"[kɔmˈpjuːtɐˌʃpiːl]","nachsehen":"[ˈnaːxˌzeːən]","hinten":"[ˈhɪntən]","vorne":"[ˈfɔʁnə]","Mädchen":"[ˈmɛːtçən]","Vorteil":"[ˈfoːɐ̯taɪl]","Nachteil":"[ˈnaxtaɪl]","tragen":"[ˈtʁaːɡən]","Jackett":"[ʒaˈkɛt]","Anorak":"[ˈanoʁak]","Hut":"[huːt]","Kappe":"[ˈkapə]","Stiefel":"[ˈʃtiːfəl]","Sandale":"[zanˈdaːlə]","Strumpf":"[ʃtʁʊmpf]","Strumpfhose":"[ˈʃtʁʊmpfˌhoːzə]","Schal":"[ʃaːl]","Handschuh":"[ˈhantʃuː]","Regenjacke":"[ˈʁeːɡənˌjakə]","Regenschirm":"[ˈʁeːɡənʃɪʁm]","Jogginghose":"[ˈdʒɔɡɪŋˌhoːzə]","Babyhose":"[ˈbeːbiˌhoːzə]","Vorbereitung":"[ˈfoːɐ̯bəˌʁaɪtʊŋ]","stören":"[ˈʃtøːʁən]","gießen":"[ˈɡiːsən]",
 "Mond":"[moːnt]","Katze":"[ˈkatsə]","Sportplatz":"[ˈʃpɔʁtplats]","Radfahrer":"[ˈʁaːtfaːʁɐ]","Wanderer":"[ˈvandəʁɐ]",
 "Leistung":"[ˈlaɪstʊŋ]","erleben":"[ɛɐ̯ˈleːbən]","Festival":"[ˈfɛstival]","Erinnerung":"[ɛɐ̯ˈʔɪnəʁʊŋ]","sparen":"[ˈʃpaːʁən]","Geld":"[ɡɛlt]","Foto":"[ˈfoːto]","verbringen":"[fɛɐ̯ˈbʁɪŋən]","Bootsfahrt":"[ˈboːtsfaːɐ̯t]","campen":"[ˈkɛmpən]","Ding":"[dɪŋ]","ansehen":"[ˈanzeːən]","Kultur":"[kʊlˈtuːɐ̯]",
-"Treppe":"[ˈtʁɛpə]","Parkplatz":"[ˈpaʁkplats]","Hof":"[hoːf]","Klingel":"[ˈklɪŋəl]","Pflanze":"[ˈpflantsə]","Untergeschoss":"[ˈʊntɐɡəˌʃɔs]","leihen":"[ˈlaɪən]","abgeben":"[ˈapɡeːbən]","Tagesmutter":"[ˈtaːɡəsˌmʊtɐ]","bitten":"[ˈbɪtən]","reinkommen":"[ˈʁaɪnkɔmən]","Kinderwagen":"[ˈkɪndɐˌvaːɡən]","Mülltonne":"[ˈmʏltɔnə]","Treppenhaus":"[ˈtʁɛpənˌhaʊs]","Briefkasten":"[ˈbʁiːfˌkastən]","Nachbar":"[ˈnaxbaːɐ̯]","Paketdienst":"[paˈkeːtˌdiːnst]","Problem":"[pʁoˈbleːm]","Grill":"[ɡʁɪl]","Musik":"[muˈziːk]","dauern":"[ˈdaʊɐn]","schwierig":"[ˈʃviːʁɪç]",
+"Treppe":"[ˈtʁɛpə]","Parkplatz":"[ˈpaʁkplats]","Hof":"[hoːf]","Klingel":"[ˈklɪŋəl]","Pflanze":"[ˈpflantsə]","Untergeschoss":"[ˈʊntɐɡəˌʃɔs]","leihen":"[ˈlaɪən]","abgeben":"[ˈapɡeːbən]","Tagesmutter":"[ˈtaːɡəsˌmʊtɐ]","bitten":"[ˈbɪtən]","reinkommen":"[ˈʁaɪnkɔmən]","Kinderwagen":"[ˈkɪndɐˌvaːɡən]","Mülltonne":"[ˈmʏltɔnə]","Treppenhaus":"[ˈtʁɛpənˌhaʊs]","Briefkasten":"[ˈbʁiːfˌkastən]","Nachbar":"[ˈnaxbaːɐ̯]","Paketdienst":"[paˈkeːtˌdiːnst]","Problem":"[pʁoˈbleːm]","Grill":"[ɡʁɪl]","Musik":"[muˈziːk]","dauern":"[ˈdaʊɐn]","schwierig":"[ˈʃviːʁɪç]","Licht":"[lɪçt]","Aufzug":"[ˈaʊftsuːk]","Brief":"[bʁiːf]","Ferien":"[ˈfeːʁi̯ən]",
+"Reise":"[ˈʁaɪzə]","abfahren":"[ˈapfaːʁən]","ankommen":"[ˈankɔmən]","fantastisch":"[fanˈtastɪʃ]","zurückkommen":"[tsuˈʁʏkˌkɔmən]","durch":"[dʊʁç]","um":"[ʊm]","Wetter":"[ˈvɛtɐ]","Regentropfen":"[ˈʁeːɡənˌtʁɔpfən]","Nebel":"[ˈneːbəl]","Glatteis":"[ˈɡlataɪs]","Hagel":"[ˈhaːɡəl]","Sturm":"[ʃtʊʁm]","Gewitter":"[ɡəˈvɪtɐ]","Blitz":"[blɪts]","Donner":"[ˈdɔnɐ]","Kälte":"[ˈkɛltə]","Hitze":"[ˈhɪtsə]","trocken":"[ˈtʁɔkən]","Jahreszeit":"[ˈjaːʁəsˌtsaɪt]",
+"Stadtrundfahrt":"[ˈʃtatʁʊntˌfaːɐ̯t]","Wasserfall":"[ˈvasɐfal]","lebendig":"[leˈbɛndɪç]","lästern":"[ˈlɛstɐn]",
+"erst":"[eːɐ̯st]","wegwerfen":"[ˈveːkˌvɛʁfən]","wegschmeißen":"[ˈveːkˌʃmaɪsən]","Absender":"[ˈapzɛndɐ]","Unterschrift":"[ˈʊntɐˌʃʁɪft]","Gruß":"[ɡʁuːs]","Betreff":"[bəˈtʁɛf]","Empfänger":"[ɛmˈpfɛŋɐ]","denn":"[dɛn]","gefährlich":"[ɡəˈfɛːɐ̯lɪç]","wirklich":"[ˈvɪʁklɪç]","Blech":"[blɛç]","vorbeikommen":"[foːɐ̯ˈbaɪˌkɔmən]","Heizung":"[ˈhaɪtsʊŋ]","kaputt":"[kaˈpʊt]","funktionieren":"[fʊŋktsi̯oˈniːʁən]","Hausverwaltung":"[ˈhaʊsfɛɐ̯ˌvaltʊŋ]","Anrede":"[ˈanʁeːdə]","aufmachen":"[ˈaʊfˌmaxən]","riechen":"[ˈʁiːçən]","schmutzig":"[ˈʃmʊtsɪç]","Stadtreinigung":"[ˈʃtatˌʁaɪnɪɡʊŋ]","Vorschlag":"[ˈfoːɐ̯ʃlaːk]",
 "tadeln":"[ˈtaːdl̩n]","loben":"[ˈloːbn̩]","Zeile":"[ˈtsaɪlə]","Gast":"[ɡast]","bemalen":"[bəˈmaːlən]","ausmalen":"[ˈaʊsˌmaːlən]",
 "Ausländeramt":"[ˈaʊslɛndɐˌʔamt]","Kindergeldantrag":"[ˈkɪndɐɡɛltˌʔantʁaːk]",
 "Meer":"[meːɐ̯]","Berg":"[bɛʁk]","Bauernhof":"[ˈbaʊɐnhoːf]","Strand":"[ʃtʁant]","Wiese":"[ˈviːzə]","See":"[zeː]","Landschaft":"[ˈlantʃaft]","Urlaub":"[ˈuːɐ̯laʊp]","wandern":"[ˈvandɐn]","Klasse":"[ˈklasə]","Reservierung":"[ʁezɛʁˈviːʁʊŋ]","BahnCard":"[ˈbaːnkaːɐ̯t]","Anzeigetafel":"[ˈantsaɪɡəˌtaːfl̩]","Verspätung":"[fɛɐ̯ˈʃpɛːtʊŋ]","durchsagen":"[ˈdʊʁçˌzaːɡən]","Ankunft":"[ˈankʊnft]","Tunnel":"[ˈtʊnl̩]","Aussicht":"[ˈaʊszɪçt]","zählen":"[ˈtsɛːlən]","Höhe":"[ˈhøːə]","Pension":"[pɑ̃ˈzi̯oːn]","übernachten":"[yːbɐˈnaxtən]","ungefähr":"[ˈʊnɡəfɛːɐ̯]","aussteigen":"[ˈaʊsˌʃtaɪɡən]","losfahren":"[ˈloːsˌfaːʁən]","Endstation":"[ˈɛntʃtaˌtsi̯oːn]","Kuh":"[kuː]","melken":"[ˈmɛlkən]","Ärger":"[ˈɛʁɡɐ]","ärgerlich":"[ˈɛʁɡɐlɪç]","verärgert":"[fɛɐ̯ˈʔɛʁɡɐt]","sich irren":"[ˈɪʁən]","Heiratstermin":"[ˈhaɪʁaːtsˌtɛʁmiːn]","Wohngeld":"[ˈvoːnɡɛlt]","Nummernschild":"[ˈnʊmɐnˌʃɪlt]","können":"[ˈkœnən]","sollen":"[ˈzɔlən]","brauchen":"[ˈbʁaʊxən]",
@@ -3387,6 +3480,13 @@ const DIALOGE={
       {q:"Die Musik ist toll, wollen wir tanzen?",             qRu:"Музыка классная, потанцуем?",           a:"Ja, gerne!",                aRu:"Да, с удовольствием!", note:"Smalltalk"},
       {q:"Sind Sie auch neu hier in der Straße?",              qRu:"Вы тоже здесь новенькие, на этой улице?", a:"Ja, wir wohnen erst seit einem Monat hier.", aRu:"Да, мы живём здесь только месяц.", note:"Smalltalk"},
       {q:"Mhm, das schmeckt gut, haben Sie das selbst gemacht?", qRu:"Ммм, вкусно, вы сами это готовили?",  a:"Ja, das ist mein Familienrezept.", aRu:"Да, это семейный рецепт.", note:"Smalltalk"},
+    ]},
+    {tag:"Probleme im Haus",col:C.red,pairs:[
+      {q:"Guten Tag, Herr Meier, ich habe ein Problem. Die Klingel funktioniert nicht.", qRu:"Добрый день, господин Майер, у меня проблема. Звонок не работает.", a:"Tut mir leid, ich habe jetzt keine Zeit. Es geht erst morgen.", aRu:"Извините, у меня сейчас нет времени. Получится только завтра.", note:"Hausmeister"},
+      {q:"Wann kommt die Müllabfuhr das nächste Mal?",         qRu:"Когда в следующий раз приедет мусоровоз?",  a:"Nächste Woche Mittwoch.",   aRu:"На следующей неделе в среду.", note:"Hausmeister"},
+      {q:"Können Sie bitte noch eine Mülltonne bei der Stadtreinigung bestellen?", qRu:"Не могли бы вы заказать ещё один мусорный бак в городской службе уборки?", a:"Ja, kein Problem, das mache ich.", aRu:"Да, без проблем, я это сделаю.", note:"formeller Brief"},
+      {q:"Warum ist das nicht gut?",                            qRu:"Почему это плохо?",                     a:"Das ist nicht gut, denn der Hof ist immer schmutzig.", aRu:"Это нехорошо, так как двор всегда грязный.", note:"denn"},
+      {q:"Kommst du heute Abend vorbei?",                       qRu:"Ты зайдёшь сегодня вечером?",           a:"Ja, ich komme heute Abend bei dir vorbei.", aRu:"Да, я зайду к тебе сегодня вечером.", note:"vorbeikommen bei+Dativ"},
     ]},
   ],
 };
@@ -6352,6 +6452,13 @@ const Q_L13TEST=shuffle([
   {q:"'die Burg' и 'das Schloss' по-русски:",            opts:["озеро и река","крепость и дворец/замок","гора и лес","город и деревня"], ans:1, hint:"Sehenswürdigkeiten"},
   {q:"'Diät halten' означает:",                          opts:["готовить еду","соблюдать диету","покупать продукты","есть много"], ans:1, hint:"halten"},
   {q:"'neue Menschen kennenlernen' по-русски:",          opts:["забывать людей","знакомиться с новыми людьми","избегать людей","навещать друзей"], ans:1, hint:"kennenlernen"},
+  {q:"'der Nebel' по-русски:",                           opts:["туман","дождь","снег","гром"], ans:0, hint:"Es ist neblig"},
+  {q:"'das Gewitter' — это:",                            opts:["метель","гроза","гололёд","ветер"], ans:1, hint:"Blitz und Donner"},
+  {q:"'die Hitze' и 'die Kälte' по-русски:",             opts:["дождь и снег","жара и холод","ветер и туман","гром и молния"], ans:1, hint:"heiß/kalt"},
+  {q:"'trocken' по-русски:",                             opts:["мокрый","сухой","холодный","ветреный"], ans:1, hint:"nicht nass"},
+  {q:"'die Jahreszeit' по-русски:",                      opts:["месяц","время года","праздник","погода"], ans:1, hint:"Frühling, Sommer…"},
+  {q:"'Der Zug fährt um 9 Uhr ___.' (отправляется)",     opts:["ab","an","zurück","durch"], ans:0, hint:"abfahren"},
+  {q:"'Wann ___ wir in Berlin ___?' (прибываем)",         opts:["fahren … ab","kommen … an","gehen … aus","steigen … um"], ans:1, hint:"ankommen"},
 ]);
 
 const LUECKEN_L13=shuffle([
@@ -6378,6 +6485,11 @@ const ZUORD_L13=[
   {de:"die Ferienwohnung",ru:"апартаменты для отдыха"},
   {de:"einzigartig",     ru:"уникальный, неповторимый"},
   {de:"die Sehenswürdigkeit",ru:"достопримечательность"},
+  {de:"der Sturm",       ru:"шторм, буря"},
+  {de:"der Blitz",       ru:"молния"},
+  {de:"der Donner",      ru:"гром"},
+  {de:"das Glatteis",    ru:"гололёд"},
+  {de:"der Hagel",       ru:"град"},
 ];
 
 const WSENTS_L13=[
@@ -6391,6 +6503,8 @@ const WSENTS_L13=[
   {w:["Im","Winter","ist","es","kälter","als","im","Sommer","."],   ru:"Зимой холоднее, чем летом."},
   {w:["Wir","möchten","Urlaub","auf","dem","Bauernhof","machen","."],ru:"Мы хотим провести отпуск на ферме."},
   {w:["Ich","möchte","mich","erholen","und","keinen","Stress","haben","."],ru:"Я хочу отдохнуть и не испытывать стресса."},
+  {w:["Es","ist","neblig","und","kalt","heute","."],                       ru:"Сегодня туманно и холодно."},
+  {w:["Der","Zug","fährt","um","9","Uhr","ab","."],                       ru:"Поезд отправляется в 9 часов."},
 ];
 
 // ─── L14 — ZUSAMMEN LEBEN ────────────────────────────────────────────────────
@@ -6405,6 +6519,13 @@ const Q_L14TEST=shuffle([
   {q:"'die Tagesmutter' — это:",                        opts:["учительница","дневная няня","врач","соседка"], ans:1, hint:"Tages+Mutter"},
   {q:"'bitten um + Akk.' означает:",                    opts:["благодарить за","просить о","спрашивать про","жаловаться на"], ans:1, hint:"bitten um"},
   {q:"'Gern geschehen.' по-русски:",                    opts:["Не за что / Пожалуйста","Извините","До свидания","Конечно нет"], ans:0, hint:"ответ на Danke"},
+  {q:"'Die Heizung ist kaputt.' по-русски:",            opts:["Отопление работает","Отопление сломано","Свет не горит","Лифт сломан"], ans:1, hint:"kaputt"},
+  {q:"'funktionieren' по-русски:",                       opts:["ломаться","работать, функционировать","чиниться","выключаться"], ans:1, hint:"funktioniert"},
+  {q:"'der Absender' и 'der Empfänger' — это:",         opts:["адрес и телефон","отправитель и получатель","тема и текст","дата и место"], ans:1, hint:"Brief"},
+  {q:"'Sehr geehrte Frau …' — это:",                     opts:["Betreff","Anrede","Gruß","Unterschrift"], ans:1, hint:"обращение в письме"},
+  {q:"'denn' и 'aber' — оба союза:",                     opts:["меняют порядок слов","не меняют порядок слов","требуют Konjunktiv","только для вопросов"], ans:1, hint:"как und"},
+  {q:"'wegwerfen' по-русски:",                           opts:["собирать","выбрасывать","находить","чинить"], ans:1, hint:"weg = прочь"},
+  {q:"'vorbeikommen bei + Dativ' означает:",             opts:["звонить кому-то","заходить к кому-то","писать кому-то","ждать кого-то"], ans:1, hint:"Ich komme bei dir vorbei"},
 ]);
 
 const LUECKEN_L14=shuffle([
@@ -6414,6 +6535,9 @@ const LUECKEN_L14=shuffle([
   {sent:"Können Sie mir drei Eier ___?' (geben)",                          opts:["geben","gibt","gab","gegeben"], ans:0,ru:"Можете дать мне три яйца?", hint:"Infinitiv nach können"},
   {sent:"Ich ___ die Eier, warten Sie.' (holen)",                          opts:["hole","holst","geholt","holte"], ans:0,ru:"Я принесу яйца, подождите.", hint:"ich-Form Präsens"},
   {sent:"Wir ___ jedes Jahr im Juli zusammen.' (feiern)",                  opts:["feiern","feiert","gefeiert","feierte"], ans:0,ru:"Мы празднуем каждый год в июле вместе.", hint:"wir-Form Präsens"},
+  {sent:"Das ist nicht gut, ___ der Hof ist immer schmutzig.' (denn/aber)", opts:["denn","aber","und","oder"], ans:0,ru:"Это нехорошо, так как двор всегда грязный.", hint:"denn = причина"},
+  {sent:"Wir haben viel Müll, ___ die Mülltonnen sind sehr klein.' (denn/aber)", opts:["denn","aber","weil","dass"], ans:1,ru:"У нас много мусора, но баки маленькие.", hint:"aber = противопоставление"},
+  {sent:"Die Heizung ist ___.' (сломана)",                                opts:["kaputt","funktioniert","geöffnet","neu"], ans:0,ru:"Отопление сломано.", hint:"kaputt"},
 ]);
 
 const ZUORD_L14=[
@@ -6423,6 +6547,11 @@ const ZUORD_L14=[
   {de:"reinkommen",       ru:"заходить, входить"},
   {de:"sich begrüßen",    ru:"здороваться"},
   {de:"die Mülltonne",    ru:"мусорный бак"},
+  {de:"die Heizung",      ru:"отопление"},
+  {de:"der Absender",     ru:"отправитель"},
+  {de:"der Empfänger",    ru:"получатель"},
+  {de:"die Anrede",       ru:"обращение (в письме)"},
+  {de:"gefährlich",       ru:"опасный"},
 ];
 
 const WSENTS_L14=[
@@ -6432,6 +6561,8 @@ const WSENTS_L14=[
   {w:["Vielen","Dank","!"],                                         ru:"Большое спасибо!"},
   {w:["Gern","geschehen","."],                                      ru:"Не за что."},
   {w:["Wir","feiern","zusammen","im","Hof","."],                    ru:"Мы празднуем вместе во дворе."},
+  {w:["Die","Klingel","funktioniert","nicht","."],                  ru:"Звонок не работает."},
+  {w:["Das","ist","nicht","gut",",","denn","der","Hof","ist","schmutzig","."],ru:"Это нехорошо, так как двор грязный."},
 ];
 
 function GrosserTest14(){return <GrosserTestContainer rounds={[
@@ -11756,6 +11887,127 @@ function T14A(){
   );
 }
 
+const Q_L14B=[
+  {q:"'Die Klingel funktioniert nicht.' по-русски:",     opts:["Дверь не открывается","Звонок не работает","Свет не горит","Лифт сломан"], ans:1, hint:"funktionieren"},
+  {q:"'Der Strom ist ausgefallen.' означает:",            opts:["Отключили воду","Отключилось электричество","Сломался лифт","Пропал интернет"], ans:1, hint:"der Strom = электричество"},
+  {q:"Порядок частей официального письма — что идёт ПЕРВЫМ (сверху слева)?", opts:["Anrede","Absender","Betreff","Gruß und Unterschrift"], ans:1, hint:"кто пишет"},
+  {q:"'Sehr geehrte Frau Fröhlich,' — это:",              opts:["Betreff","Anrede","Gruß","Empfänger"], ans:1, hint:"обращение"},
+  {q:"'Mit freundlichen Grüßen' — это:",                  opts:["Anrede","Betreff","Gruß","Absender"], ans:2, hint:"прощание в письме"},
+  {q:"'denn' в предложении вводит:",                      opts:["условие","причину","цель","время"], ans:1, hint:"denn = потому что"},
+  {q:"После 'denn' порядок слов:",                        opts:["глагол на 2-м месте (как обычно)","глагол в конце","глагол на 1-м месте","без глагола"], ans:0, hint:"denn не меняет порядок слов"},
+  {q:"'Ich komme heute Abend bei Ihnen vorbei.' по-русски:", opts:["Я приеду к вам завтра","Я зайду к вам сегодня вечером","Я позвоню вам сегодня","Я уеду от вас сегодня"], ans:1, hint:"vorbeikommen bei+Dativ"},
+];
+
+function T14B(){
+  const [tab,setTab]=useState("probleme");
+  const probleme=[
+    {de:"Die Klingel funktioniert nicht.",ru:"Звонок не работает."},
+    {de:"Das Licht geht nicht.",ru:"Свет не горит."},
+    {de:"Der Aufzug ist kaputt.",ru:"Лифт сломан."},
+    {de:"Die Heizung ist kaputt.",ru:"Отопление сломано."},
+    {de:"Die Mülltonnen sind sehr klein.",ru:"Мусорные баки очень маленькие."},
+    {de:"Der Strom ist ausgefallen.",ru:"Отключилось электричество."},
+    {de:"Jemand ist ins Haus eingebrochen.",ru:"Кто-то вломился в дом."},
+    {de:"Die Nachbarn sind sehr laut.",ru:"Соседи очень шумные."},
+  ];
+  const briefTeile=[
+    {n:1,de:"Absender",ru:"отправитель (имя и адрес)"},
+    {n:2,de:"Empfänger",ru:"получатель (имя и адрес)"},
+    {n:3,de:"Ort und Datum",ru:"место и дата"},
+    {n:4,de:"Betreff",ru:"тема письма"},
+    {n:5,de:"Anrede",ru:"обращение: „Sehr geehrte(r) …“"},
+    {n:6,de:"Text",ru:"текст письма"},
+    {n:7,de:"Gruß und Unterschrift",ru:"прощание и подпись"},
+  ];
+  const briefBeispiel=[
+    {de:"Sehr geehrte Frau Fröhlich,",ru:"Уважаемая госпожа Фрёлих,"},
+    {de:"wir haben ein Problem: Wir alle im Haus haben viel Müll, aber die Mülltonnen sind sehr klein.",ru:"У нас проблема: у всех жильцов дома много мусора, но мусорные баки очень маленькие."},
+    {de:"Deshalb stellen einige Nachbarn den Müll neben die Tonnen. Das ist nicht gut, denn der Hof ist immer schmutzig.",ru:"Поэтому некоторые соседи ставят мусор рядом с баками. Это нехорошо, так как двор всегда грязный."},
+    {de:"Können Sie bitte noch eine Mülltonne bei der Stadtreinigung bestellen?",ru:"Не могли бы вы заказать ещё один мусорный бак в городской службе уборки?"},
+    {de:"Mit freundlichen Grüßen",ru:"С уважением"},
+  ];
+  const dennAber=[
+    {de:"Das ist nicht gut, denn der Hof ist immer schmutzig.",ru:"Это нехорошо, так как двор всегда грязный."},
+    {de:"Wir haben viel Müll, aber die Mülltonnen sind sehr klein.",ru:"У нас много мусора, но мусорные баки очень маленькие."},
+    {de:"Ich kann nicht kochen, denn ich habe keine Zutaten.",ru:"Я не могу готовить, потому что у меня нет продуктов."},
+    {de:"Es regnet, aber wir gehen trotzdem raus.",ru:"Идёт дождь, но мы всё равно идём гулять."},
+    {de:"Ich komme heute Abend bei Ihnen vorbei.",ru:"Я зайду к вам сегодня вечером."},
+  ];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.red}>
+        <H c={C.red}>🔧 L14B · Probleme im Haus</H>
+        <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
+          {[["probleme","Probleme"],["brief","Formeller Brief"],["denn","denn / aber"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,lineHeight:1.35,textAlign:"center",
+                border:`1px solid ${tab===key?C.red+"55":C.border}`,
+                background:tab===key?C.red+"22":C.ov3,
+                color:tab===key?C.red:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="probleme"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,marginBottom:10,lineHeight:1.6}}>
+              Типичные проблемы в доме (по конспекту и Kursbuch S.148):
+            </div>
+            <div style={{display:"flex",flexDirection:"column",gap:4}}>
+              {probleme.map((p,i)=>(
+                <div key={i} style={{background:C.ov4,borderRadius:8,padding:"7px 10px",borderLeft:`3px solid ${C.red}`}}>
+                  <div style={{fontSize:13,fontWeight:700,color:C.text}}>{p.de}</div>
+                  <div style={{fontSize:11,color:C.muted}}>{p.ru}</div>
+                </div>
+              ))}
+            </div>
+            <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,borderRadius:10,padding:"11px 13px",marginTop:10}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.orange,marginBottom:6}}>vorbeikommen bei + Dativ</div>
+              <TapEx de="Ich komme heute Abend bei Ihnen vorbei." ru="Я зайду к вам сегодня вечером." col={C.orange}/>
+            </div>
+          </div>
+        )}
+        {tab==="brief"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,marginBottom:10,lineHeight:1.6}}>
+              Порядок частей официального письма (сверху вниз):
+            </div>
+            <div style={{display:"flex",flexDirection:"column",gap:4,marginBottom:12}}>
+              {briefTeile.map(p=>(
+                <div key={p.n} style={{background:C.ov4,borderRadius:8,padding:"7px 10px",display:"flex",gap:8,alignItems:"center"}}>
+                  <div style={{width:20,height:20,borderRadius:"50%",background:C.red+"33",color:C.red,fontSize:11,fontWeight:800,display:"flex",alignItems:"center",justifyContent:"center",flexShrink:0}}>{p.n}</div>
+                  <div>
+                    <div style={{fontSize:13,fontWeight:700,color:C.text}}>{p.de}</div>
+                    <div style={{fontSize:11,color:C.muted}}>{p.ru}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div style={{fontSize:12,fontWeight:700,color:C.muted,margin:"0 0 6px",textTransform:"uppercase",letterSpacing:0.5}}>Beispiel (Kursbuch S.149)</div>
+            {briefBeispiel.map((s,i)=>(
+              <TapEx key={i} de={s.de} ru={s.ru} col={C.red} style={{marginBottom:5}}/>
+            ))}
+          </div>
+        )}
+        {tab==="denn"&&(
+          <div>
+            <div style={{background:C.blue+"15",border:`1px solid ${C.blue}33`,borderRadius:10,padding:"11px 13px",marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.blue,marginBottom:6}}>Satzverbindungen: denn, aber</div>
+              <div style={{fontSize:13,color:C.text,lineHeight:1.7}}>
+                <b style={{color:C.blue}}>denn</b> = потому что / так как (объясняет причину). <b style={{color:C.blue}}>aber</b> = но (противопоставление). Оба — как <b>und</b>: порядок слов НЕ меняется, глагол остаётся на 2-м месте в обеих частях.
+              </div>
+            </div>
+            {dennAber.map((s,i)=>(
+              <TapEx key={i} de={s.de} ru={s.ru} col={C.blue} style={{marginBottom:5}}/>
+            ))}
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
 const Q_L6A=[
   {q:"Welcher Artikel hat 'Apfel'?",          opts:["der","die","das"],                                                                     ans:0, hint:"Artikel"},
   {q:"Welcher Artikel hat 'Milch'?",          opts:["der","die","das"],                                                                     ans:1, hint:"Artikel"},
@@ -12047,11 +12299,12 @@ const LEKTIONEN=[
   },
   {
     id:"L14",num:"14",title:"Zusammen leben",
-    sub:"A Die Nachbarn — Das Haus, Smalltalk, Hilfe erbitten",
+    sub:"A Die Nachbarn — Das Haus, Smalltalk, Hilfe erbitten · B Probleme im Haus — formeller Brief, denn/aber",
     date:"Seite 145–147",col:C.orange,
     sections:[
       {id:"d14", icon:"💬",title:"Dialogfragen L14",            sub:"Фразы для диалога",                                    time:"∞",     col:C.orange,hasT:false, th:null,           ex:()=><DialogCards lId="L14"/>},
       {id:"14a", icon:"🏠",title:"A · Die Nachbarn",             sub:"Das Haus (Schema) · Hilfe erbitten · Smalltalk",       time:"7 мин", col:C.green, hasT:true, th:()=><T14A/>, ex:()=><Quiz questions={Q_L14A}/>},
+      {id:"14b", icon:"🔧",title:"B · Probleme im Haus",         sub:"Probleme (Schema) · Formeller Brief · denn/aber",      time:"7 мин", col:C.red,   hasT:true, th:()=><T14B/>, ex:()=><Quiz questions={Q_L14B}/>},
       {id:"wb14", icon:"📖",title:"Wörterbuch L14",              sub:"Слова этого урока",                                    time:"—",    col:C.teal,   hasT:false, ex:()=><LektWoerterbuch lekt="L14"/>},
       {id:"t14", icon:"🎯",title:"Großer Test L14",              sub:"Quiz · Lücken · Nachbarn · Wortstellung",       time:"20 мин",col:C.yellow, hasT:false, ex:()=><GrosserTest14/>},
       {id:"wt14", icon:"🧠",title:"Wortschatz-Test L14",         sub:"Перевод · Артикли · Обратный перевод",                 time:"10 мин",col:C.teal,   hasT:false, ex:()=><WortschatzTest lekt="L14"/>},
