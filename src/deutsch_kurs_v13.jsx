@@ -1580,6 +1580,57 @@ const WBDATA=[
   {art:"",   de:"schmutzig",ord:381,      pl:"—",            ru:"грязный",                                         tema:"Wohnung", lekt:"L14"},
   {art:"die", de:"Stadtreinigung",ord:382,pl:"Sg.",          ru:"городская служба уборки",                        tema:"Wohnung", lekt:"L14"},
   {art:"der", de:"Vorschlag",ord:383,     pl:'"-e',          ru:"предложение",                                     tema:"Wohnung", lekt:"L14"},
+  {art:"",   de:"über",ord:384,           pl:"—",            ru:"над, через, о (Wechselpräposition: Akk./Dat.)",  tema:"Reisen", lekt:"L13"},
+  // ── L13 · природа/урожай (конспект) ──────────────────────────────────────────
+  {art:"die", de:"Erde",ord:385,          pl:"Sg.",          ru:"земля; Земля (планета)",                        tema:"Reisen", lekt:"L13"},
+  {art:"der", de:"Boden",ord:386,         pl:'"-',           ru:"пол; почва, грунт",                             tema:"Reisen", lekt:"L13"},
+  {art:"",   de:"ernten",ord:387,         pl:"—",            ru:"собирать урожай",                               tema:"Reisen", lekt:"L13"},
+  {art:"",   de:"reif",ord:388,           pl:"—",            ru:"спелый, зрелый",                                 tema:"Reisen", lekt:"L13"},
+  // ── L14 · C Auf dem Spielplatz / Kinderbetreuung ─────────────────────────────
+  {art:"der", de:"Sandkasten",ord:389,    pl:'"-',           ru:"песочница",                                     tema:"Wohnung", lekt:"L14"},
+  {art:"die", de:"Rutsche",ord:390,       pl:"-n",           ru:"горка (для катания)",                           tema:"Wohnung", lekt:"L14"},
+  {art:"die", de:"Schaukel",ord:391,      pl:"-n",           ru:"качели",                                        tema:"Wohnung", lekt:"L14"},
+  {art:"",   de:"neugierig",ord:392,      pl:"—",            ru:"любопытный",                                     tema:"Wohnung", lekt:"L14"},
+  {art:"der", de:"Durst",ord:393,         pl:"Sg.",          ru:"жажда",                                          tema:"Wohnung", lekt:"L14"},
+  {art:"die", de:"Freundin",ord:394,      pl:"-nen",         ru:"подруга",                                       tema:"Wohnung", lekt:"L14"},
+  {art:"die", de:"Nähe",ord:395,          pl:"Sg.",          ru:"близость · in der Nähe = поблизости",           tema:"Wohnung", lekt:"L14"},
+  {art:"",   de:"streiten",ord:396,       pl:"—",            ru:"ссориться, спорить · stritt · hat gestritten",  tema:"Wohnung", lekt:"L14"},
+  {art:"die", de:"Kinderbetreuung",ord:397,pl:"Sg.",         ru:"уход за детьми",                                 tema:"Wohnung", lekt:"L14"},
+  {art:"",   de:"betreuen",ord:398,       pl:"—",            ru:"присматривать, ухаживать (за кем-л.)",          tema:"Wohnung", lekt:"L14"},
+  {art:"der", de:"Anspruch",ord:399,      pl:'"-e',          ru:"право, притязание · Anspruch auf+Akk",          tema:"Wohnung", lekt:"L14"},
+  {art:"die", de:"Kita",ord:400,          pl:"-s",           ru:"детский сад (сокр. от Kindertagesstätte)",      tema:"Wohnung", lekt:"L14"},
+  {art:"der", de:"Kindergartenplatz",ord:401,pl:'"-e',       ru:"место в детском саду",                          tema:"Wohnung", lekt:"L14"},
+  {art:"die", de:"Spezialität",ord:402,   pl:"-en",          ru:"фирменное блюдо, специалитет",                  tema:"Wohnung", lekt:"L14"},
+  {art:"die", de:"Heimat",ord:403,        pl:"Sg.",          ru:"родина",                                        tema:"Wohnung", lekt:"L14"},
+  {art:"",   de:"krank",ord:404,          pl:"—",            ru:"больной",                                        tema:"Wohnung", lekt:"L14"},
+  {art:"der", de:"Flug",ord:405,          pl:'"-e',          ru:"полёт, рейс",                                    tema:"Wohnung", lekt:"L14"},
+  {art:"das", de:"Flugticket",ord:406,    pl:"-s",           ru:"авиабилет",                                      tema:"Wohnung", lekt:"L14"},
+  {art:"",   de:"einfach",ord:407,        pl:"—",            ru:"простой; просто",                                tema:"Wohnung", lekt:"L14"},
+  {art:"das", de:"Mietshaus",ord:408,     pl:'"-er',         ru:"многоквартирный дом",                           tema:"Wohnung", lekt:"L14"},
+  {art:"",   de:"neben",ord:409,          pl:"—",            ru:"рядом с (Wechselpräposition: Akk./Dat.)",        tema:"Wohnung", lekt:"L14"},
+  {art:"die", de:"Einladung",ord:410,     pl:"-en",          ru:"приглашение",                                    tema:"Wohnung", lekt:"L14"},
+  {art:"das", de:"Spiel",ord:411,         pl:"-e",           ru:"игра",                                           tema:"Wohnung", lekt:"L14"},
+  {art:"der", de:"Wetterbericht",ord:412, pl:"-e",           ru:"прогноз погоды",                                 tema:"Wohnung", lekt:"L14"},
+  {art:"der", de:"Besuch",ord:413,        pl:"-e",           ru:"визит, посещение",                               tema:"Wohnung", lekt:"L14"},
+  {art:"",   de:"vorschlagen",ord:414,    pl:"—",            ru:"предлагать · schlägt vor · hat vorgeschlagen",  tema:"Wohnung", lekt:"L14"},
+  {art:"",   de:"miteinander",ord:415,    pl:"—",            ru:"друг с другом",                                  tema:"Wohnung", lekt:"L14"},
+  {art:"",   de:"Wer will, der kann.",ord:416,pl:"—",        ru:"кто хочет, тот может",                          tema:"Wohnung", lekt:"L14"},
+  // ── L14 · Diversität und Interkulturalität (Migration) ───────────────────────
+  {art:"die", de:"Migration",ord:417,     pl:"-en",          ru:"миграция",                                       tema:"Migration", lekt:"L14"},
+  {art:"die", de:"Diversität",ord:418,    pl:"Sg.",          ru:"разнообразие",                                   tema:"Migration", lekt:"L14"},
+  {art:"die", de:"Interkulturalität",ord:419,pl:"Sg.",       ru:"межкультурность",                                tema:"Migration", lekt:"L14"},
+  {art:"der", de:"Flüchtling",ord:420,    pl:"-e",           ru:"беженец",                                        tema:"Migration", lekt:"L14"},
+  {art:"",   de:"fliehen",ord:421,        pl:"—",            ru:"бежать, спасаться бегством · floh · ist geflohen",tema:"Migration", lekt:"L14"},
+  {art:"der", de:"Krieg",ord:422,         pl:"-e",           ru:"война",                                          tema:"Migration", lekt:"L14"},
+  {art:"der", de:"Frieden",ord:423,       pl:"Sg.",          ru:"мир (не война)",                                  tema:"Migration", lekt:"L14"},
+  {art:"der", de:"Asylantrag",ord:424,    pl:'"-e',          ru:"заявление на убежище",                           tema:"Migration", lekt:"L14"},
+  {art:"die", de:"Flucht",ord:425,        pl:"-en",          ru:"бегство, побег",                                 tema:"Migration", lekt:"L14"},
+  {art:"",   de:"schrecklich",ord:426,    pl:"—",            ru:"ужасный",                                        tema:"Migration", lekt:"L14"},
+  {art:"das", de:"Thema",ord:427,         pl:"Themen",       ru:"тема",                                           tema:"Migration", lekt:"L14"},
+  {art:"die", de:"Ausbildung",ord:428,    pl:"-en",          ru:"профессиональное обучение",                     tema:"Migration", lekt:"L14"},
+  {art:"die", de:"Erfahrung",ord:429,     pl:"-en",          ru:"опыт",                                           tema:"Migration", lekt:"L14"},
+  {art:"das", de:"Praktikum",ord:430,     pl:"Praktika",     ru:"стажировка",                                     tema:"Migration", lekt:"L14"},
+  {art:"die", de:"Zukunft",ord:431,       pl:"Sg.",          ru:"будущее",                                        tema:"Migration", lekt:"L14"},
 ];
 
 
@@ -2374,6 +2425,23 @@ const KONJ_ALL={
     ich:"rieche",  du:"riechst",  "er/sie/es":"riecht",
     wir:"riechen", ihr:"riecht",  "sie/Sie":"riechen",
     pt:"roch", ptc:{du:"rochst",wir:"rochen",ihr:"rocht",sie:"rochen"}, pf:"hat gerochen"},
+  streiten:    {col:C.red, bg:C.redBg,
+    ich:"streite",  du:"streitest",  "er/sie/es":"streitet",
+    wir:"streiten", ihr:"streitet",  "sie/Sie":"streiten",
+    pt:"stritt", ptc:{du:"strittst",wir:"stritten",ihr:"strittet",sie:"stritten"}, pf:"hat gestritten"},
+  betreuen:    {col:C.green, bg:C.greenBg, note:"untrennbar: kein ge-",
+    ich:"betreue",  du:"betreust",  "er/sie/es":"betreut",
+    wir:"betreuen", ihr:"betreut",  "sie/Sie":"betreuen", pt:"betreute", pf:"hat betreut"},
+  fliehen:     {col:C.purple, bg:C.purpleBg,
+    ich:"fliehe",  du:"fliehst",  "er/sie/es":"flieht",
+    wir:"fliehen", ihr:"flieht",  "sie/Sie":"fliehen",
+    pt:"floh", ptc:{du:"flohst",wir:"flohen",ihr:"floht",sie:"flohen"}, pf:"ist geflohen"},
+  vorschlagen: {pref:"vor", type:"a→ä", col:C.blue, bg:C.blueBg,
+    ich:"schlage … vor",  du:"schlägst … vor",  "er/sie/es":"schlägt … vor",
+    wir:"schlagen … vor", ihr:"schlagt … vor",  "sie/Sie":"schlagen … vor", pt:"schlug … vor", pf:"hat vorgeschlagen"},
+  ernten:      {col:C.orange, bg:C.orangeBg,
+    ich:"ernte",  du:"erntest",  "er/sie/es":"erntet",
+    wir:"ernten", ihr:"erntet",  "sie/Sie":"ernten", pt:"erntete", pf:"hat geerntet"},
 };
 
 // Ударения: комбинирующая акута \u0301 ставится после ударной гласной
@@ -2726,7 +2794,10 @@ const STRESS_MARKS={
 "Treppe":"Tre\u0301ppe","Parkplatz":"Pa\u0301rkplatz","Hof":"Ho\u0301f","Klingel":"Kli\u0301ngel","Pflanze":"Pfla\u0301nze","Untergeschoss":"U\u0301ntergeschoss","leihen":"le\u0301ihen","abgeben":"A\u0301bgeben","Tagesmutter":"Ta\u0301gesmutter","bitten":"bi\u0301tten","reinkommen":"Re\u0301inkommen","Kinderwagen":"Ki\u0301nderwagen","Mülltonne":"M\u00FC\u0301lltonne","Treppenhaus":"Tre\u0301ppenhaus","Briefkasten":"Brie\u0301fkasten","Nachbar":"Na\u0301chbar","Paketdienst":"Pake\u0301tdienst","Problem":"Proble\u0301m","Grill":"Gri\u0301ll","Musik":"Musi\u0301k","dauern":"da\u0301uern","schwierig":"schwie\u0301rig","Licht":"Li\u0301cht","Aufzug":"A\u0301ufzug","Brief":"Bre\u0301if","Ferien":"Fe\u0301rien",
 "Reise":"Re\u0301ise","abfahren":"A\u0301bfahren","ankommen":"A\u0301nkommen","fantastisch":"fanta\u0301stisch","zurückkommen":"Zur\u00FC\u0301ckkommen","durch":"du\u0301rch","um":"u\u0301m","Wetter":"We\u0301tter","Regentropfen":"Re\u0301gentropfen","Nebel":"Ne\u0301bel","Glatteis":"Gla\u0301tteis","Hagel":"Ha\u0301gel","Sturm":"Stu\u0301rm","Gewitter":"Gewi\u0301tter","Blitz":"Bli\u0301tz","Donner":"Do\u0301nner","Kälte":"K\u00E4\u0301lte","Hitze":"Hi\u0301tze","trocken":"tro\u0301cken","Jahreszeit":"Ja\u0301hreszeit",
 "Stadtrundfahrt":"Sta\u0301dtrundfahrt","Wasserfall":"Wa\u0301sserfall","lebendig":"lebe\u0301ndig","lästern":"l\u00E4\u0301stern",
-"erst":"e\u0301rst","wegwerfen":"We\u0301gwerfen","wegschmeißen":"We\u0301gschmeißen","Absender":"A\u0301bsender","Unterschrift":"U\u0301nterschrift","Gruß":"Gru\u0301ß","Betreff":"Betre\u0301ff","Empfänger":"Empf\u00E4\u0301nger","denn":"de\u0301nn","gefährlich":"gef\u00E4\u0301hrlich","wirklich":"wi\u0301rklich","Blech":"Ble\u0301ch","vorbeikommen":"Vorbe\u0301ikommen","Heizung":"He\u0301izung","kaputt":"kapu\u0301tt","funktionieren":"funktionie\u0301ren","Hausverwaltung":"Ha\u0301usverwaltung","Anrede":"A\u0301nrede","aufmachen":"A\u0301ufmachen","riechen":"rie\u0301chen","schmutzig":"schmu\u0301tzig","Stadtreinigung":"Sta\u0301dtreinigung","Vorschlag":"Vo\u0301rschlag",
+"erst":"e\u0301rst","wegwerfen":"We\u0301gwerfen","wegschmeißen":"We\u0301gschmeißen","Absender":"A\u0301bsender","Unterschrift":"U\u0301nterschrift","Gruß":"Gru\u0301ß","Betreff":"Betre\u0301ff","Empfänger":"Empf\u00E4\u0301nger","denn":"de\u0301nn","gefährlich":"gef\u00E4\u0301hrlich","wirklich":"wi\u0301rklich","Blech":"Ble\u0301ch","vorbeikommen":"Vorbe\u0301ikommen","Heizung":"He\u0301izung","kaputt":"kapu\u0301tt","funktionieren":"funktionie\u0301ren","Hausverwaltung":"Ha\u0301usverwaltung","Anrede":"A\u0301nrede","aufmachen":"A\u0301ufmachen","riechen":"rie\u0301chen","schmutzig":"schmu\u0301tzig","Stadtreinigung":"Sta\u0301dtreinigung","Vorschlag":"Vo\u0301rschlag","über":"\u00FC\u0301ber",
+"Erde":"E\u0301rde","Boden":"Bo\u0301den","ernten":"e\u0301rnten","reif":"re\u0301if",
+"Sandkasten":"Sa\u0301ndkasten","Rutsche":"Ru\u0301tsche","Schaukel":"Scha\u0301ukel","neugierig":"ne\u0301ugierig","Durst":"Du\u0301rst","Freundin":"Fre\u0301undin","Nähe":"N\u00E4\u0301he","streiten":"stre\u0301iten","Kinderbetreuung":"Ki\u0301nderbetreuung","betreuen":"betre\u0301uen","Anspruch":"A\u0301nspruch","Kita":"Ki\u0301ta","Kindergartenplatz":"Ki\u0301ndergartenplatz","Spezialität":"Spezialitä\u0301t","Heimat":"He\u0301imat","krank":"kra\u0301nk","Flug":"Flu\u0301g","Flugticket":"Flu\u0301gticket","einfach":"e\u0301infach","Mietshaus":"Mie\u0301tshaus","neben":"ne\u0301ben","Einladung":"E\u0301inladung","Spiel":"Spie\u0301l","Wetterbericht":"We\u0301tterbericht","Besuch":"Besu\u0301ch","vorschlagen":"Vo\u0301rschlagen","miteinander":"miteina\u0301nder",
+"Migration":"Migratio\u0301n","Diversität":"Diversitä\u0301t","Interkulturalität":"Interkulturalitä\u0301t","Flüchtling":"Fl\u00FC\u0301chtling","fliehen":"flie\u0301hen","Krieg":"Krie\u0301g","Frieden":"Frie\u0301den","Asylantrag":"Asy\u0301lantrag","Flucht":"Flu\u0301cht","schrecklich":"schre\u0301cklich","Thema":"The\u0301ma","Ausbildung":"A\u0301usbildung","Erfahrung":"erfa\u0301hrung","Praktikum":"Pra\u0301ktikum","Zukunft":"Zu\u0301kunft",
 "tadeln":"ta\u0301deln","loben":"lo\u0301ben","Zeile":"Zei\u0301le","Gast":"Ga\u0301st","bemalen":"bema\u0301len","ausmalen":"a\u0301usmalen",
 "Ausländeramt":"Au\u0301sländeramt","Kindergeldantrag":"Ki\u0301ndergeldantrag",
 "Meer":"Me\u0301er","Berg":"Be\u0301rg","Bauernhof":"Ba\u0301uernhof","Strand":"Stra\u0301nd","Wiese":"Wie\u0301se","See":"Se\u0301e","Landschaft":"La\u0301ndschaft","Urlaub":"U\u0301rlaub","wandern":"wa\u0301ndern","Klasse":"Kla\u0301sse","Reservierung":"Reservie\u0301rung","BahnCard":"Ba\u0301hnCard","Anzeigetafel":"A\u0301nzeigetafel","Verspätung":"Verspä\u0301tung","durchsagen":"Du\u0301rchsagen","Ankunft":"A\u0301nkunft","Tunnel":"Tu\u0301nnel","Aussicht":"A\u0301ussicht","zählen":"zä\u0301hlen","Höhe":"H\u00F6\u0301he","Pension":"Pensio\u0301n","übernachten":"\u00FCberna\u0301chten","ungefähr":"ungefä\u0301hr","aussteigen":"A\u0301ussteigen","losfahren":"Lo\u0301sfahren","Endstation":"E\u0301ndstation","Kuh":"Ku\u0301h","melken":"me\u0301lken","Ärger":"\u00C4\u0301rger","ärgerlich":"\u00E4\u0301rgerlich","verärgert":"verä\u0301rgert","sich irren":"sich i\u0301rren","Heiratstermin":"Hei\u0301ratstermin","Wohngeld":"Wo\u0301hngeld","Nummernschild":"Nu\u0301mmernschild","können":"k\u00F6\u0301nnen","sollen":"so\u0301llen","brauchen":"bra\u0301uchen",
@@ -3075,7 +3146,10 @@ const IPA_DATA={
 "Treppe":"[ˈtʁɛpə]","Parkplatz":"[ˈpaʁkplats]","Hof":"[hoːf]","Klingel":"[ˈklɪŋəl]","Pflanze":"[ˈpflantsə]","Untergeschoss":"[ˈʊntɐɡəˌʃɔs]","leihen":"[ˈlaɪən]","abgeben":"[ˈapɡeːbən]","Tagesmutter":"[ˈtaːɡəsˌmʊtɐ]","bitten":"[ˈbɪtən]","reinkommen":"[ˈʁaɪnkɔmən]","Kinderwagen":"[ˈkɪndɐˌvaːɡən]","Mülltonne":"[ˈmʏltɔnə]","Treppenhaus":"[ˈtʁɛpənˌhaʊs]","Briefkasten":"[ˈbʁiːfˌkastən]","Nachbar":"[ˈnaxbaːɐ̯]","Paketdienst":"[paˈkeːtˌdiːnst]","Problem":"[pʁoˈbleːm]","Grill":"[ɡʁɪl]","Musik":"[muˈziːk]","dauern":"[ˈdaʊɐn]","schwierig":"[ˈʃviːʁɪç]","Licht":"[lɪçt]","Aufzug":"[ˈaʊftsuːk]","Brief":"[bʁiːf]","Ferien":"[ˈfeːʁi̯ən]",
 "Reise":"[ˈʁaɪzə]","abfahren":"[ˈapfaːʁən]","ankommen":"[ˈankɔmən]","fantastisch":"[fanˈtastɪʃ]","zurückkommen":"[tsuˈʁʏkˌkɔmən]","durch":"[dʊʁç]","um":"[ʊm]","Wetter":"[ˈvɛtɐ]","Regentropfen":"[ˈʁeːɡənˌtʁɔpfən]","Nebel":"[ˈneːbəl]","Glatteis":"[ˈɡlataɪs]","Hagel":"[ˈhaːɡəl]","Sturm":"[ʃtʊʁm]","Gewitter":"[ɡəˈvɪtɐ]","Blitz":"[blɪts]","Donner":"[ˈdɔnɐ]","Kälte":"[ˈkɛltə]","Hitze":"[ˈhɪtsə]","trocken":"[ˈtʁɔkən]","Jahreszeit":"[ˈjaːʁəsˌtsaɪt]",
 "Stadtrundfahrt":"[ˈʃtatʁʊntˌfaːɐ̯t]","Wasserfall":"[ˈvasɐfal]","lebendig":"[leˈbɛndɪç]","lästern":"[ˈlɛstɐn]",
-"erst":"[eːɐ̯st]","wegwerfen":"[ˈveːkˌvɛʁfən]","wegschmeißen":"[ˈveːkˌʃmaɪsən]","Absender":"[ˈapzɛndɐ]","Unterschrift":"[ˈʊntɐˌʃʁɪft]","Gruß":"[ɡʁuːs]","Betreff":"[bəˈtʁɛf]","Empfänger":"[ɛmˈpfɛŋɐ]","denn":"[dɛn]","gefährlich":"[ɡəˈfɛːɐ̯lɪç]","wirklich":"[ˈvɪʁklɪç]","Blech":"[blɛç]","vorbeikommen":"[foːɐ̯ˈbaɪˌkɔmən]","Heizung":"[ˈhaɪtsʊŋ]","kaputt":"[kaˈpʊt]","funktionieren":"[fʊŋktsi̯oˈniːʁən]","Hausverwaltung":"[ˈhaʊsfɛɐ̯ˌvaltʊŋ]","Anrede":"[ˈanʁeːdə]","aufmachen":"[ˈaʊfˌmaxən]","riechen":"[ˈʁiːçən]","schmutzig":"[ˈʃmʊtsɪç]","Stadtreinigung":"[ˈʃtatˌʁaɪnɪɡʊŋ]","Vorschlag":"[ˈfoːɐ̯ʃlaːk]",
+"erst":"[eːɐ̯st]","wegwerfen":"[ˈveːkˌvɛʁfən]","wegschmeißen":"[ˈveːkˌʃmaɪsən]","Absender":"[ˈapzɛndɐ]","Unterschrift":"[ˈʊntɐˌʃʁɪft]","Gruß":"[ɡʁuːs]","Betreff":"[bəˈtʁɛf]","Empfänger":"[ɛmˈpfɛŋɐ]","denn":"[dɛn]","gefährlich":"[ɡəˈfɛːɐ̯lɪç]","wirklich":"[ˈvɪʁklɪç]","Blech":"[blɛç]","vorbeikommen":"[foːɐ̯ˈbaɪˌkɔmən]","Heizung":"[ˈhaɪtsʊŋ]","kaputt":"[kaˈpʊt]","funktionieren":"[fʊŋktsi̯oˈniːʁən]","Hausverwaltung":"[ˈhaʊsfɛɐ̯ˌvaltʊŋ]","Anrede":"[ˈanʁeːdə]","aufmachen":"[ˈaʊfˌmaxən]","riechen":"[ˈʁiːçən]","schmutzig":"[ˈʃmʊtsɪç]","Stadtreinigung":"[ˈʃtatˌʁaɪnɪɡʊŋ]","Vorschlag":"[ˈfoːɐ̯ʃlaːk]","über":"[ˈyːbɐ]",
+"Erde":"[ˈeːɐ̯də]","Boden":"[ˈboːdən]","ernten":"[ˈeːɐ̯ntən]","reif":"[ʁaɪf]",
+"Sandkasten":"[ˈzantkastən]","Rutsche":"[ˈʁʊtʃə]","Schaukel":"[ˈʃaʊkəl]","neugierig":"[ˈnɔʏɡiːʁɪç]","Durst":"[dʊʁst]","Freundin":"[ˈfʁɔʏndɪn]","Nähe":"[ˈnɛːə]","streiten":"[ˈʃtʁaɪtən]","Kinderbetreuung":"[ˈkɪndɐbəˌtʁɔɪʊŋ]","betreuen":"[bəˈtʁɔɪən]","Anspruch":"[ˈanʃpʁʊx]","Kita":"[ˈkiːta]","Kindergartenplatz":"[ˈkɪndɐˌɡaʁtənplats]","Spezialität":"[ʃpetsi̯aliˈtɛːt]","Heimat":"[ˈhaɪmaːt]","krank":"[kʁaŋk]","Flug":"[fluːk]","Flugticket":"[ˈfluːkˌtɪkət]","einfach":"[ˈaɪnfax]","Mietshaus":"[ˈmiːtshaʊs]","neben":"[ˈneːbən]","Einladung":"[ˈaɪnˌlaːdʊŋ]","Spiel":"[ʃpiːl]","Wetterbericht":"[ˈvɛtɐbəˌʁɪçt]","Besuch":"[bəˈzuːx]","vorschlagen":"[ˈfoːɐ̯ʃlaːɡən]","miteinander":"[mɪtʔaɪˈnandɐ]",
+"Migration":"[miɡʁaˈtsi̯oːn]","Diversität":"[divɛʁziˈtɛːt]","Interkulturalität":"[ˌɪntɐkʊltuʁaliˈtɛːt]","Flüchtling":"[ˈflʏçtlɪŋ]","fliehen":"[ˈfliːən]","Krieg":"[kʁiːk]","Frieden":"[ˈfʁiːdən]","Asylantrag":"[aˈzyːlˌantʁaːk]","Flucht":"[flʊxt]","schrecklich":"[ˈʃʁɛklɪç]","Thema":"[ˈteːma]","Ausbildung":"[ˈaʊsbɪldʊŋ]","Erfahrung":"[ɛɐ̯ˈfaːʁʊŋ]","Praktikum":"[ˈpʁaktikʊm]","Zukunft":"[ˈtsuːkʊnft]",
 "tadeln":"[ˈtaːdl̩n]","loben":"[ˈloːbn̩]","Zeile":"[ˈtsaɪlə]","Gast":"[ɡast]","bemalen":"[bəˈmaːlən]","ausmalen":"[ˈaʊsˌmaːlən]",
 "Ausländeramt":"[ˈaʊslɛndɐˌʔamt]","Kindergeldantrag":"[ˈkɪndɐɡɛltˌʔantʁaːk]",
 "Meer":"[meːɐ̯]","Berg":"[bɛʁk]","Bauernhof":"[ˈbaʊɐnhoːf]","Strand":"[ʃtʁant]","Wiese":"[ˈviːzə]","See":"[zeː]","Landschaft":"[ˈlantʃaft]","Urlaub":"[ˈuːɐ̯laʊp]","wandern":"[ˈvandɐn]","Klasse":"[ˈklasə]","Reservierung":"[ʁezɛʁˈviːʁʊŋ]","BahnCard":"[ˈbaːnkaːɐ̯t]","Anzeigetafel":"[ˈantsaɪɡəˌtaːfl̩]","Verspätung":"[fɛɐ̯ˈʃpɛːtʊŋ]","durchsagen":"[ˈdʊʁçˌzaːɡən]","Ankunft":"[ˈankʊnft]","Tunnel":"[ˈtʊnl̩]","Aussicht":"[ˈaʊszɪçt]","zählen":"[ˈtsɛːlən]","Höhe":"[ˈhøːə]","Pension":"[pɑ̃ˈzi̯oːn]","übernachten":"[yːbɐˈnaxtən]","ungefähr":"[ˈʊnɡəfɛːɐ̯]","aussteigen":"[ˈaʊsˌʃtaɪɡən]","losfahren":"[ˈloːsˌfaːʁən]","Endstation":"[ˈɛntʃtaˌtsi̯oːn]","Kuh":"[kuː]","melken":"[ˈmɛlkən]","Ärger":"[ˈɛʁɡɐ]","ärgerlich":"[ˈɛʁɡɐlɪç]","verärgert":"[fɛɐ̯ˈʔɛʁɡɐt]","sich irren":"[ˈɪʁən]","Heiratstermin":"[ˈhaɪʁaːtsˌtɛʁmiːn]","Wohngeld":"[ˈvoːnɡɛlt]","Nummernschild":"[ˈnʊmɐnˌʃɪlt]","können":"[ˈkœnən]","sollen":"[ˈzɔlən]","brauchen":"[ˈbʁaʊxən]",
@@ -3487,6 +3561,13 @@ const DIALOGE={
       {q:"Können Sie bitte noch eine Mülltonne bei der Stadtreinigung bestellen?", qRu:"Не могли бы вы заказать ещё один мусорный бак в городской службе уборки?", a:"Ja, kein Problem, das mache ich.", aRu:"Да, без проблем, я это сделаю.", note:"formeller Brief"},
       {q:"Warum ist das nicht gut?",                            qRu:"Почему это плохо?",                     a:"Das ist nicht gut, denn der Hof ist immer schmutzig.", aRu:"Это нехорошо, так как двор всегда грязный.", note:"denn"},
       {q:"Kommst du heute Abend vorbei?",                       qRu:"Ты зайдёшь сегодня вечером?",           a:"Ja, ich komme heute Abend bei dir vorbei.", aRu:"Да, я зайду к тебе сегодня вечером.", note:"vorbeikommen bei+Dativ"},
+    ]},
+    {tag:"Spielplatz & Kinderbetreuung",col:C.teal,pairs:[
+      {q:"Entschuldigung, ich möchte nicht stören. Aber ich habe eine Bitte.", qRu:"Извините, не хочу мешать. Но у меня просьба.", a:"Aber gern. Einen Moment bitte.", aRu:"Конечно. Минутку.", note:"um Hilfe bitten"},
+      {q:"Können Sie mir vielleicht ein bisschen Milch geben?", qRu:"Не могли бы вы дать мне немного молока?", a:"Ja, kein Problem. Hier bitte.", aRu:"Да, без проблем. Вот, пожалуйста.", note:"um Hilfe bitten"},
+      {q:"Wer kann Kinder betreuen?",                          qRu:"Кто может присматривать за детьми?",     a:"Kinder können in einer Kita oder bei einer Tagesmutter betreut werden.", aRu:"За детьми могут присматривать в детском саду или у дневной няни.", note:"Kinderbetreuung"},
+      {q:"Ab wie viel Jahren haben Kinder einen Anspruch auf einen Kindergartenplatz?", qRu:"С какого возраста у детей есть право на место в детском саду?", a:"Ab dem dritten Lebensjahr.", aRu:"С третьего года жизни.", note:"Kinderbetreuung"},
+      {q:"Was machen die Kinder auf dem Spielplatz gerade?",   qRu:"Что дети сейчас делают на площадке?",    a:"Ein Junge sitzt auf der Rutsche, ein Mädchen schaukelt.", aRu:"Мальчик сидит на горке, девочка качается на качелях.", note:"Spielplatz"},
     ]},
   ],
 };
@@ -4121,6 +4202,7 @@ function Woerterbuch({words=WBDATA}={}){
     {id:"Kleidung",       label:"👗 Kleidung",               col:C.red},
     {id:"Reisen",         label:"🧳 Reisen",                 col:C.green},
     {id:"Urlaub",         label:"🏖️ Urlaub",                 col:C.blue},
+    {id:"Migration",      label:"🌍 Migration",               col:C.purple},
   ];
   const TYPEN=[
     {id:"all",     label:"Все",           col:C.teal},
@@ -6526,6 +6608,12 @@ const Q_L14TEST=shuffle([
   {q:"'denn' и 'aber' — оба союза:",                     opts:["меняют порядок слов","не меняют порядок слов","требуют Konjunktiv","только для вопросов"], ans:1, hint:"как und"},
   {q:"'wegwerfen' по-русски:",                           opts:["собирать","выбрасывать","находить","чинить"], ans:1, hint:"weg = прочь"},
   {q:"'vorbeikommen bei + Dativ' означает:",             opts:["звонить кому-то","заходить к кому-то","писать кому-то","ждать кого-то"], ans:1, hint:"Ich komme bei dir vorbei"},
+  {q:"'die Schaukel' по-русски:",                        opts:["песочница","качели","горка","лестница"], ans:1, hint:"schaukeln"},
+  {q:"'der Flüchtling' по-русски:",                      opts:["мигрант (общее)","беженец","турист","студент"], ans:1, hint:"fliehen"},
+  {q:"'fliehen' по-русски:",                             opts:["путешествовать","бежать, спасаться","переезжать","возвращаться"], ans:1, hint:"floh, ist geflohen"},
+  {q:"'einen Asylantrag stellen' означает:",             opts:["подать заявление на убежище","получить визу","найти работу","снять квартиру"], ans:0, hint:"Antrag stellen"},
+  {q:"'die Ausbildung' по-русски:",                      opts:["отпуск","профессиональное обучение","образование в вузе","стажировка"], ans:1, hint:"Ausbildung machen"},
+  {q:"'das Praktikum' по-русски:",                       opts:["практика вождения","стажировка","экзамен","собеседование"], ans:1, hint:"ein Praktikum machen"},
 ]);
 
 const LUECKEN_L14=shuffle([
@@ -6552,6 +6640,11 @@ const ZUORD_L14=[
   {de:"der Empfänger",    ru:"получатель"},
   {de:"die Anrede",       ru:"обращение (в письме)"},
   {de:"gefährlich",       ru:"опасный"},
+  {de:"die Schaukel",     ru:"качели"},
+  {de:"der Sandkasten",   ru:"песочница"},
+  {de:"der Flüchtling",   ru:"беженец"},
+  {de:"der Krieg",        ru:"война"},
+  {de:"der Frieden",      ru:"мир (не война)"},
 ];
 
 const WSENTS_L14=[
@@ -6563,6 +6656,8 @@ const WSENTS_L14=[
   {w:["Wir","feiern","zusammen","im","Hof","."],                    ru:"Мы празднуем вместе во дворе."},
   {w:["Die","Klingel","funktioniert","nicht","."],                  ru:"Звонок не работает."},
   {w:["Das","ist","nicht","gut",",","denn","der","Hof","ist","schmutzig","."],ru:"Это нехорошо, так как двор грязный."},
+  {w:["Die","Kinder","spielen","gerade","im","Sandkasten","."],               ru:"Дети сейчас играют в песочнице."},
+  {w:["Wir","sind","zuerst","nach","Ägypten","geflohen","."],                 ru:"Мы сначала бежали в Египет."},
 ];
 
 function GrosserTest14(){return <GrosserTestContainer rounds={[
@@ -11993,13 +12088,127 @@ function T14B(){
         {tab==="denn"&&(
           <div>
             <div style={{background:C.blue+"15",border:`1px solid ${C.blue}33`,borderRadius:10,padding:"11px 13px",marginBottom:10}}>
-              <div style={{fontWeight:800,fontSize:13,color:C.blue,marginBottom:6}}>Satzverbindungen: denn, aber</div>
+              <div style={{fontWeight:800,fontSize:13,color:C.blue,marginBottom:6}}>Satzverbindungen: aber, denn, und, oder</div>
               <div style={{fontSize:13,color:C.text,lineHeight:1.7}}>
-                <b style={{color:C.blue}}>denn</b> = потому что / так как (объясняет причину). <b style={{color:C.blue}}>aber</b> = но (противопоставление). Оба — как <b>und</b>: порядок слов НЕ меняется, глагол остаётся на 2-м месте в обеих частях.
+                Все четыре — равноправные союзы: порядок слов НЕ меняется, глагол остаётся на 2-м месте в обеих частях (как при простом перечислении).
               </div>
             </div>
+            <div style={{display:"flex",flexDirection:"column",gap:4,marginBottom:10}}>
+              {[
+                {k:"aber",ru:"но (противопоставление)"},
+                {k:"denn",ru:"потому что, так как (причина)"},
+                {k:"und",ru:"и (перечисление)"},
+                {k:"oder",ru:"или (альтернатива)"},
+              ].map(c=>(
+                <div key={c.k} style={{background:C.ov4,borderRadius:8,padding:"7px 10px",display:"flex",gap:8,alignItems:"baseline"}}>
+                  <b style={{color:C.blue,fontSize:14,minWidth:44}}>{c.k}</b>
+                  <span style={{fontSize:12,color:C.muted}}>{c.ru}</span>
+                </div>
+              ))}
+            </div>
+            <div style={{fontSize:12,fontWeight:700,color:C.muted,margin:"0 0 6px",textTransform:"uppercase",letterSpacing:0.5}}>Примеры</div>
             {dennAber.map((s,i)=>(
               <TapEx key={i} de={s.de} ru={s.ru} col={C.blue} style={{marginBottom:5}}/>
+            ))}
+            <div style={{background:C.ov4,borderRadius:8,padding:"8px 11px",marginTop:8}}>
+              <div style={{fontSize:12,color:C.text,lineHeight:1.7}}>
+                <b style={{color:C.blue}}>Heute habe ich keine Zeit, aber morgen komme ich gern.</b><br/>
+                <b style={{color:C.blue}}>Ich möchte ins Kino gehen, denn ich möchte den Film sehen.</b><br/>
+                <b style={{color:C.blue}}>Wir gehen morgen ins Kino und (wir) sehen den neuen Film.</b><br/>
+                <b style={{color:C.blue}}>Kommst du mit oder musst du noch arbeiten?</b>
+              </div>
+            </div>
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
+const Q_L14C=[
+  {q:"'die Schaukel' по-русски:",                        opts:["песочница","качели","горка","лестница"], ans:1, hint:"schaukeln = качаться"},
+  {q:"'der Sandkasten' по-русски:",                      opts:["песочница","горка","качели","детская площадка"], ans:0, hint:"Sand+Kasten"},
+  {q:"'neugierig aussehen' означает:",                   opts:["выглядеть уставшим","выглядеть любопытным","выглядеть грустным","выглядеть довольным"], ans:1, hint:"neugierig"},
+  {q:"Ab каком возрасте у детей в Германии есть право на место в Kita?", opts:["с 1 года","со 2-го года жизни","с 4 лет","с 6 лет"], ans:1, hint:"ab dem zweiten Lebensjahr"},
+  {q:"'die Tagesmutter' отличается от 'die Kita' тем, что:", opts:["это детский сад","это няня, которая берёт 3-5 детей на дому","это ясли","это школа"], ans:1, hint:"betreut 3-5 Kinder"},
+  {q:"С какого возраста дети обычно идут в Kindergarten?", opts:["с 1 года","с 2 лет","с 3 лет","с 5 лет"], ans:2, hint:"meistens mit drei Jahren"},
+  {q:"'streiten' по-русски:",                            opts:["дружить","ссориться, спорить","играть","делиться"], ans:1, hint:"Die Kinder streiten"},
+  {q:"'Können Sie mir vielleicht ein bisschen Milch geben?' — это:", opts:["вопрос о цене","вежливая просьба к соседу","приказ","жалоба"], ans:1, hint:"Milch borgen"},
+];
+
+function T14C(){
+  const [tab,setTab]=useState("spielplatz");
+  const spielplatzVok=[
+    {de:"der Sandkasten",ru:"песочница"},
+    {de:"die Rutsche",ru:"горка"},
+    {de:"die Schaukel",ru:"качели"},
+    {de:"der Durst",ru:"жажда · Durst haben"},
+    {de:"neugierig",ru:"любопытный"},
+    {de:"streiten",ru:"ссориться, спорить"},
+    {de:"die Nähe",ru:"близость · in der Nähe"},
+  ];
+  const kinderbetreuung=[
+    {de:"Kinder haben ab dem zweiten Lebensjahr einen Anspruch auf eine ganztägige Betreuung.",ru:"Дети со второго года жизни имеют право на уход в течение всего дня."},
+    {de:"Die Betreuung kann in einer Kita oder bei einer Tagesmutter sein.",ru:"Уход может быть в детском саду (Kita) или у дневной няни."},
+    {de:"Eine Tagesmutter betreut drei bis fünf Kinder und bekommt dafür Geld.",ru:"Дневная няня присматривает за 3-5 детьми и получает за это деньги."},
+    {de:"Ab dem dritten Lebensjahr haben Kinder einen Anspruch auf einen Kindergartenplatz.",ru:"С третьего года жизни у детей есть право на место в детском саду."},
+    {de:"Die meisten Kinder gehen mit drei Jahren in den Kindergarten.",ru:"Большинство детей идут в детский сад в три года."},
+  ];
+  const smalltalk=[
+    {de:"Wohnen Sie auch hier im Haus?",ru:"Вы тоже живёте здесь, в этом доме?"},
+    {de:"Sind Sie auch neu hier in der Straße?",ru:"Вы тоже здесь новенькие, на этой улице?"},
+    {de:"Das schmeckt wirklich sehr gut. Haben Sie das selbst gemacht?",ru:"Это правда очень вкусно. Вы сами это готовили?"},
+    {de:"Es sind wirklich viele Nachbarn gekommen.",ru:"Правда, пришло много соседей."},
+    {de:"Die Musik ist wirklich sehr gut.",ru:"Музыка действительно очень хорошая."},
+  ];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.teal}>
+        <H c={C.teal}>🛝 L14C · Auf dem Spielplatz</H>
+        <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
+          {[["spielplatz","Spielplatz"],["betreuung","Kinderbetreuung"],["smalltalk","Smalltalk"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,lineHeight:1.35,textAlign:"center",
+                border:`1px solid ${tab===key?C.teal+"55":C.border}`,
+                background:tab===key?C.teal+"22":C.ov3,
+                color:tab===key?C.teal:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="spielplatz"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,marginBottom:10,lineHeight:1.6}}>
+              Лексика для описания детской площадки (Kursbuch S.150):
+            </div>
+            <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:6}}>
+              {spielplatzVok.map(v=>(
+                <div key={v.de} style={{background:C.ov4,borderRadius:8,padding:"7px 9px"}}>
+                  <div style={{fontSize:13,fontWeight:700,color:C.text}}>{v.de}</div>
+                  <div style={{fontSize:11,color:C.muted}}>{v.ru}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+        {tab==="betreuung"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,marginBottom:10,lineHeight:1.6}}>
+              Kinderbetreuung in Deutschland (Kursbuch S.151):
+            </div>
+            {kinderbetreuung.map((s,i)=>(
+              <TapEx key={i} de={s.de} ru={s.ru} col={C.teal} style={{marginBottom:5}}/>
+            ))}
+          </div>
+        )}
+        {tab==="smalltalk"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,marginBottom:10,lineHeight:1.6}}>
+              «wirklich» усиливает похвалу/впечатление в непринуждённой беседе (Sprechen aktiv S.152):
+            </div>
+            {smalltalk.map((s,i)=>(
+              <TapEx key={i} de={s.de} ru={s.ru} col={C.teal} style={{marginBottom:5}}/>
             ))}
           </div>
         )}
@@ -12299,12 +12508,13 @@ const LEKTIONEN=[
   },
   {
     id:"L14",num:"14",title:"Zusammen leben",
-    sub:"A Die Nachbarn — Das Haus, Smalltalk, Hilfe erbitten · B Probleme im Haus — formeller Brief, denn/aber",
+    sub:"A Die Nachbarn · B Probleme im Haus (formeller Brief, denn/aber) · C Auf dem Spielplatz (Kinderbetreuung)",
     date:"Seite 145–147",col:C.orange,
     sections:[
       {id:"d14", icon:"💬",title:"Dialogfragen L14",            sub:"Фразы для диалога",                                    time:"∞",     col:C.orange,hasT:false, th:null,           ex:()=><DialogCards lId="L14"/>},
       {id:"14a", icon:"🏠",title:"A · Die Nachbarn",             sub:"Das Haus (Schema) · Hilfe erbitten · Smalltalk",       time:"7 мин", col:C.green, hasT:true, th:()=><T14A/>, ex:()=><Quiz questions={Q_L14A}/>},
       {id:"14b", icon:"🔧",title:"B · Probleme im Haus",         sub:"Probleme (Schema) · Formeller Brief · denn/aber",      time:"7 мин", col:C.red,   hasT:true, th:()=><T14B/>, ex:()=><Quiz questions={Q_L14B}/>},
+      {id:"14c", icon:"🛝",title:"C · Auf dem Spielplatz",       sub:"Spielplatz-Vokabeln · Kinderbetreuung · Smalltalk",    time:"6 мин", col:C.teal,  hasT:true, th:()=><T14C/>, ex:()=><Quiz questions={Q_L14C}/>},
       {id:"wb14", icon:"📖",title:"Wörterbuch L14",              sub:"Слова этого урока",                                    time:"—",    col:C.teal,   hasT:false, ex:()=><LektWoerterbuch lekt="L14"/>},
       {id:"t14", icon:"🎯",title:"Großer Test L14",              sub:"Quiz · Lücken · Nachbarn · Wortstellung",       time:"20 мин",col:C.yellow, hasT:false, ex:()=><GrosserTest14/>},
       {id:"wt14", icon:"🧠",title:"Wortschatz-Test L14",         sub:"Перевод · Артикли · Обратный перевод",                 time:"10 мин",col:C.teal,   hasT:false, ex:()=><WortschatzTest lekt="L14"/>},
