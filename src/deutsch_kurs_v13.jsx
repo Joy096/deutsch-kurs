@@ -1631,6 +1631,53 @@ const WBDATA=[
   {art:"die", de:"Erfahrung",ord:429,     pl:"-en",          ru:"опыт",                                           tema:"Migration", lekt:"L14",niveau:"A1"},
   {art:"das", de:"Praktikum",ord:430,     pl:"Praktika",     ru:"стажировка",                                     tema:"Migration", lekt:"L14",niveau:"A1"},
   {art:"die", de:"Zukunft",ord:431,       pl:"Sg.",          ru:"будущее",                                        tema:"Migration", lekt:"L14",niveau:"A1"},
+  // ── L14 · Wichtige Wörter (доп., стр.174-175) ─────────────────────────────
+  {art:"",    de:"aber",ord:432,          pl:"—",            ru:"но (союз)",                                       tema:"Wohnung", lekt:"L14",niveau:"A1"},
+  {art:"",    de:"gerade",ord:433,        pl:"—",            ru:"как раз, именно сейчас",                          tema:"Wohnung", lekt:"L14",niveau:"A1"},
+  {art:"das", de:"Essen",ord:434,         pl:"Sg.",          ru:"еда",                                             tema:"Wohnung", lekt:"L14",niveau:"A1"},
+  {art:"das", de:"Glück",ord:435,         pl:"Sg.",          ru:"счастье, удача · Glück haben = везти",           tema:"Wohnung", lekt:"L14",niveau:"A1"},
+  {art:"der", de:"Junge",ord:436,         pl:"-n",           ru:"мальчик",                                         tema:"Wohnung", lekt:"L14",niveau:"A1"},
+  {art:"das", de:"Paket",ord:437,         pl:"-e",           ru:"посылка",                                         tema:"Wohnung", lekt:"L14",niveau:"A1"},
+  {art:"das", de:"Päckchen",ord:438,      pl:"-",            ru:"бандероль",                                       tema:"Wohnung", lekt:"L14",niveau:"A1"},
+  {art:"",    de:"feiern",ord:439,        pl:"—",            ru:"праздновать",                                    tema:"Wohnung", lekt:"L14",niveau:"A1"},
+  {art:"",    de:"abstellen",ord:440,     pl:"—",            ru:"ставить, парковать (велосипед)",                 tema:"Wohnung", lekt:"L14",niveau:"A1"},
+  {art:"das", de:"Hoffest",ord:441,       pl:"-e",           ru:"праздник во дворе",                               tema:"Wohnung", lekt:"L14",niveau:"A1"},
+  {art:"",    de:"wunderbar",ord:442,     pl:"—",            ru:"чудесный, замечательный",                         tema:"Wohnung", lekt:"L14",niveau:"A1"},
+  {art:"der", de:"Müll",ord:443,          pl:"Sg.",          ru:"мусор",                                           tema:"Wohnung", lekt:"L14",niveau:"A1"},
+  {art:"die", de:"Tonne",ord:444,         pl:"-n",           ru:"бак, бочка",                                     tema:"Wohnung", lekt:"L14",niveau:"A1"},
+  {art:"die", de:"Müllabfuhr",ord:445,    pl:"Sg.",          ru:"вывоз мусора",                                    tema:"Wohnung", lekt:"L14",niveau:"A1"},
+  {art:"die", de:"Bitte",ord:446,         pl:"-n",           ru:"просьба",                                         tema:"Wohnung", lekt:"L14",niveau:"A1"},
+  {art:"die", de:"Nachbarin",ord:447,     pl:"-nen",         ru:"соседка",                                         tema:"Wohnung", lekt:"L14",niveau:"A1"},
+  // ── L14 · Deutsch Plus — Internationales Straßenfest (стр.173) ───────────
+  {art:"die", de:"Musikveranstaltung",ord:471,pl:"-en",      ru:"музыкальное мероприятие",                        tema:"Wohnung", lekt:"L14",niveau:"A1"},
+  {art:"die", de:"Tanzveranstaltung",ord:472,pl:"-en",       ru:"танцевальное мероприятие",                       tema:"Wohnung", lekt:"L14",niveau:"A1"},
+  {art:"der", de:"Stand",ord:473,         pl:'"-e',          ru:"стенд, прилавок",                                tema:"Wohnung", lekt:"L14",niveau:"A1"},
+  {art:"die", de:"Tradition",ord:474,     pl:"-en",          ru:"традиция",                                       tema:"Wohnung", lekt:"L14",niveau:"A1"},
+  {art:"die", de:"Nationalität",ord:475,  pl:"-en",          ru:"национальность",                                 tema:"Wohnung", lekt:"L14",niveau:"A1"},
+  // ── A2-L1 · Meine Geschichte — Zuwanderer in Deutschland (Kursbuch+Konspekt) ──
+  {art:"die", de:"Schrift",ord:448,       pl:"-en",          ru:"письмо; шрифт, письменность",                    tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"die", de:"Handschrift",ord:449,   pl:"-en",          ru:"почерк",                                          tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"die", de:"Vorschrift",ord:450,    pl:"-en",          ru:"предписание, инструкция",                        tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"die", de:"Regel",ord:451,         pl:"-n",           ru:"правило",                                        tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"",    de:"schlau",ord:452,        pl:"—",            ru:"умный, хитрый",                                  tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"",    de:"aufnehmen",ord:453,     pl:"—",            ru:"принимать (кого-л.) · nimmt auf · hat aufgenommen",tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"die", de:"Tagesordnung",ord:454,  pl:"-en",          ru:"повестка дня",                                   tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"die", de:"Wahl",ord:455,          pl:"-en",          ru:"выбор; выборы",                                  tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"",    de:"sich verstecken",ord:456,pl:"—",           ru:"прятаться · vor+Dativ",                          tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"die", de:"Gesellschaft",ord:457,  pl:"-en",          ru:"общество",                                        tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"der", de:"Schutz",ord:458,        pl:"Sg.",          ru:"защита · vor+Dativ",                             tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"",    de:"erziehen",ord:459,      pl:"—",            ru:"воспитывать · erzog · hat erzogen",              tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"der", de:"Erzieher",ord:460,      pl:"-",            ru:"воспитатель",                                    tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"",    de:"meinen",ord:461,        pl:"—",            ru:"думать, полагать",                                tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"",    de:"Das ist nicht in Ordnung.",ord:462,pl:"—", ru:"это неправильно",                                tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"",    de:"Meiner Meinung nach",ord:463,pl:"—",       ru:"по моему мнению",                                tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"die", de:"Bühne",ord:464,         pl:"-n",           ru:"сцена",                                           tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"",    de:"zuwandern",ord:465,     pl:"—",            ru:"иммигрировать, переселяться · ist zugewandert", tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"",    de:"eigentlich",ord:466,    pl:"—",            ru:"собственно, вообще-то",                           tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"der", de:"Leiter",ord:467,        pl:"-",            ru:"руководитель",                                   tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"",    de:"schlimm",ord:468,       pl:"—",            ru:"тяжёлый, серьёзный (о ситуации)",                tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"",    de:"verlieren",ord:469,     pl:"—",            ru:"терять · verlor · hat verloren",                 tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"",    de:"aufgeben",ord:470,      pl:"—",            ru:"сдаваться; отказываться (от чего-л.) · gibt auf · hat aufgegeben",tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
 ];
 
 
@@ -2442,6 +2489,38 @@ const KONJ_ALL={
   ernten:      {col:C.orange, bg:C.orangeBg,
     ich:"ernte",  du:"erntest",  "er/sie/es":"erntet",
     wir:"ernten", ihr:"erntet",  "sie/Sie":"ernten", pt:"erntete", pf:"hat geerntet"},
+  // ── L14 · Wichtige Wörter (доп.) ──────────────────────────────────────────
+  feiern:      {col:C.teal, bg:C.tealBg,
+    ich:"feiere",  du:"feierst",  "er/sie/es":"feiert",
+    wir:"feiern", ihr:"feiert",  "sie/Sie":"feiern", pt:"feierte", pf:"hat gefeiert"},
+  abstellen:   {pref:"ab", col:C.teal, bg:C.tealBg,
+    ich:"stelle … ab",  du:"stellst … ab",  "er/sie/es":"stellt … ab",
+    wir:"stellen … ab", ihr:"stellt … ab",  "sie/Sie":"stellen … ab", pt:"stellte … ab", pf:"hat abgestellt"},
+  // ── A2-L1 · Meine Geschichte ───────────────────────────────────────────────
+  meinen:      {col:C.teal, bg:C.tealBg,
+    ich:"meine",  du:"meinst",  "er/sie/es":"meint",
+    wir:"meinen", ihr:"meint",  "sie/Sie":"meinen", pt:"meinte", pf:"hat gemeint"},
+  "sich verstecken":{col:C.teal, bg:C.tealBg, note:"Reflexiv | vor+Dativ",
+    ich:"verstecke mich",    du:"versteckst dich",    "er/sie/es":"versteckt sich",
+    wir:"verstecken uns",    ihr:"versteckt euch",    "sie/Sie":"verstecken sich",
+    imp:{du:"Versteck dich!",    ihr:"Versteckt euch!",    Sie:"Verstecken Sie sich!"}, pt:"versteckte sich", pf:"hat sich versteckt"},
+  aufnehmen:   {pref:"auf", type:"e→i", col:C.orange, bg:C.orangeBg,
+    ich:"nehme … auf",  du:"nimmst … auf",  "er/sie/es":"nimmt … auf",
+    wir:"nehmen … auf", ihr:"nehmt … auf",  "sie/Sie":"nehmen … auf", pt:"nahm … auf", pf:"hat aufgenommen"},
+  erziehen:    {col:C.teal, bg:C.tealBg, note:"untrennbar: kein ge-",
+    ich:"erziehe",  du:"erziehst",  "er/sie/es":"erzieht",
+    wir:"erziehen", ihr:"erzieht",  "sie/Sie":"erziehen",
+    pt:"erzog", ptc:{du:"erzogst",wir:"erzogen",ihr:"erzogt",sie:"erzogen"}, pf:"hat erzogen"},
+  zuwandern:   {pref:"zu", col:C.teal, bg:C.tealBg,
+    ich:"wandere … zu",  du:"wanderst … zu",  "er/sie/es":"wandert … zu",
+    wir:"wandern … zu", ihr:"wandert … zu",  "sie/Sie":"wandern … zu", pt:"wanderte … zu", pf:"ist zugewandert"},
+  verlieren:   {col:C.teal, bg:C.tealBg,
+    ich:"verliere",  du:"verlierst",  "er/sie/es":"verliert",
+    wir:"verlieren", ihr:"verliert",  "sie/Sie":"verlieren",
+    pt:"verlor", ptc:{du:"verlorst",wir:"verloren",ihr:"verlort",sie:"verloren"}, pf:"hat verloren"},
+  aufgeben:    {pref:"auf", type:"e→i", col:C.orange, bg:C.orangeBg,
+    ich:"gebe … auf",  du:"gibst … auf",  "er/sie/es":"gibt … auf",
+    wir:"geben … auf", ihr:"gebt … auf",  "sie/Sie":"geben … auf", pt:"gab … auf", pf:"hat aufgegeben"},
 };
 
 // Ударения: комбинирующая акута \u0301 ставится после ударной гласной
@@ -2812,6 +2891,11 @@ const STRESS_MARKS={
 "Verantwortung":"Vera\u0301ntwortung","verlangen":"verla\u0301ngen","verlängern":"verl\u00E4\u0301ngern",
 "sich unterhalten":"sich unterha\u0301lten","auslachen":"a\u0301uslachen","anlächeln":"a\u0301nlächeln",
 "locker":"lo\u0301cker","bestellen":"beste\u0301llen",
+// L14 Wichtige Wörter (доп.)
+"aber":"a\u0301ber","gerade":"gera\u0301de","Essen":"E\u0301ssen","Glück":"Gl\u00FC\u0301ck","Junge":"Ju\u0301nge","Paket":"Pake\u0301t","Päckchen":"P\u00E4\u0301ckchen","feiern":"fei\u0301ern","abstellen":"a\u0301bstellen","Hoffest":"Ho\u0301ffest","wunderbar":"wu\u0301nderbar","Müll":"M\u00FC\u0301ll","Tonne":"To\u0301nne","Müllabfuhr":"M\u00FC\u0301llabfuhr","Bitte":"Bi\u0301tte","Nachbarin":"Na\u0301chbarin",
+// A2-L1 Meine Geschichte
+"Schrift":"Schri\u0301ft","Handschrift":"Ha\u0301ndschrift","Vorschrift":"Vo\u0301rschrift","Regel":"Re\u0301gel","schlau":"schla\u0301u","aufnehmen":"au\u0301fnehmen","Tagesordnung":"Ta\u0301gesordnung","Wahl":"Wa\u0301hl","sich verstecken":"sich verste\u0301cken","Gesellschaft":"Gese\u0301llschaft","Schutz":"Schu\u0301tz","erziehen":"erzie\u0301hen","Erzieher":"Erzie\u0301her","meinen":"mei\u0301nen","Bühne":"B\u00FC\u0301hne","zuwandern":"zu\u0301wandern","eigentlich":"ei\u0301gentlich","Leiter":"Lei\u0301ter","schlimm":"schli\u0301mm","verlieren":"verlie\u0301ren","aufgeben":"au\u0301fgeben",
+"Musikveranstaltung":"Musi\u0301kveranstaltung","Tanzveranstaltung":"Ta\u0301nzveranstaltung","Stand":"Sta\u0301nd","Tradition":"Traditio\u0301n","Nationalität":"Nationalit\u00E4\u0301t",
 };
 
 // IPA-транскрипция для всего словаря (кроме фраз)
@@ -3164,6 +3248,11 @@ const IPA_DATA={
 "Verantwortung":"[fɛɐ̯ˈʔantvɔʁtʊŋ]","verlangen":"[fɛɐ̯ˈlaŋən]","verlängern":"[fɛɐ̯ˈlɛŋɐn]",
 "sich unterhalten":"[ʊntɐˈhaltən]","auslachen":"[ˈaʊsˌlaxən]","anlächeln":"[ˈanˌlɛçl̩n]",
 "locker":"[ˈlɔkɐ]","bestellen":"[bəˈʃtɛlən]",
+// L14 Wichtige Wörter (доп.)
+"aber":"[ˈaːbɐ]","gerade":"[ɡəˈʁaːdə]","Essen":"[ˈɛsn̩]","Glück":"[ɡlʏk]","Junge":"[ˈjʊŋə]","Paket":"[paˈkeːt]","Päckchen":"[ˈpɛkçən]","feiern":"[ˈfaɪɐn]","abstellen":"[ˈapˌʃtɛlən]","Hoffest":"[ˈhɔffɛst]","wunderbar":"[ˈvʊndɐbaːɐ̯]","Müll":"[mʏl]","Tonne":"[ˈtɔnə]","Müllabfuhr":"[ˈmʏlʔapfuːɐ̯]","Bitte":"[ˈbɪtə]","Nachbarin":"[ˈnaxbaːʁɪn]",
+// A2-L1 Meine Geschichte
+"Schrift":"[ʃʁɪft]","Handschrift":"[ˈhantʃʁɪft]","Vorschrift":"[ˈfoːɐ̯ʃʁɪft]","Regel":"[ˈʁeːɡl̩]","schlau":"[ʃlaʊ̯]","aufnehmen":"[ˈaʊ̯fneːmən]","Tagesordnung":"[ˈtaːɡəsˌʔɔʁdnʊŋ]","Wahl":"[vaːl]","sich verstecken":"[zɪç fɛɐ̯ˈʃtɛkn̩]","Gesellschaft":"[ɡəˈzɛlʃaft]","Schutz":"[ʃʊts]","erziehen":"[ɛɐ̯ˈtsiːən]","Erzieher":"[ɛɐ̯ˈtsiːɐ]","meinen":"[ˈmaɪ̯nən]","Bühne":"[ˈbyːnə]","zuwandern":"[ˈtsuːvandɐn]","eigentlich":"[ˈaɪ̯ɡn̩tlɪç]","Leiter":"[ˈlaɪ̯tɐ]","schlimm":"[ʃlɪm]","verlieren":"[fɛɐ̯ˈliːʁən]","aufgeben":"[ˈaʊ̯fɡeːbn̩]",
+"Musikveranstaltung":"[muˈziːkfɐˌʔanʃtaltʊŋ]","Tanzveranstaltung":"[ˈtantsfɐˌʔanʃtaltʊŋ]","Stand":"[ʃtant]","Tradition":"[tʁadiˈtsi̯oːn]","Nationalität":"[natsi̯onaliˈtɛːt]",
 };
 
 const DIALOGE={
@@ -3568,6 +3657,25 @@ const DIALOGE={
       {q:"Wer kann Kinder betreuen?",                          qRu:"Кто может присматривать за детьми?",     a:"Kinder können in einer Kita oder bei einer Tagesmutter betreut werden.", aRu:"За детьми могут присматривать в детском саду или у дневной няни.", note:"Kinderbetreuung"},
       {q:"Ab wie viel Jahren haben Kinder einen Anspruch auf einen Kindergartenplatz?", qRu:"С какого возраста у детей есть право на место в детском саду?", a:"Ab dem dritten Lebensjahr.", aRu:"С третьего года жизни.", note:"Kinderbetreuung"},
       {q:"Was machen die Kinder auf dem Spielplatz gerade?",   qRu:"Что дети сейчас делают на площадке?",    a:"Ein Junge sitzt auf der Rutsche, ein Mädchen schaukelt.", aRu:"Мальчик сидит на горке, девочка качается на качелях.", note:"Spielplatz"},
+    ]},
+    {tag:"Straßenfest",col:C.purple,pairs:[
+      {q:"Seit wann gibt es das Internationale Straßenfest?",  qRu:"С каких пор существует международный уличный праздник?", a:"Seit 1977. Das erste Fest hat nur einen Tag gedauert.", aRu:"С 1977 года. Первый праздник длился только один день.", note:"Deutsch Plus"},
+      {q:"Wie lange dauert das Straßenfest heute?",            qRu:"Сколько сегодня длится уличный праздник?", a:"Heute geht es von Freitag bis Sonntag.", aRu:"Сегодня он идёт с пятницы по воскресенье.", note:"Deutsch Plus"},
+      {q:"Was gibt es auf dem Straßenfest?",                   qRu:"Что есть на уличном празднике?", a:"Stände mit Spezialitäten, Musikveranstaltungen und Tanzveranstaltungen.", aRu:"Стенды с фирменными блюдами, музыкальные и танцевальные мероприятия.", note:"Deutsch Plus"},
+    ]},
+  ],
+  "A2-L1":[
+    {tag:"Interview zum Kennenlernen",col:C.blue,pairs:[
+      {q:"Welche Städte kennen Sie? Wie finden Sie die Städte?", qRu:"Какие города вы знаете? Как вы их находите?", a:"Ich kenne Köln, Hamburg und Leipzig. Ich finde Köln sehr schön.", aRu:"Я знаю Кёльн, Гамбург и Лейпциг. Кёльн мне очень нравится.", note:"Interview"},
+      {q:"Wo in Deutschland haben Sie schon gewohnt? Wie lange?", qRu:"Где в Германии вы уже жили? Как долго?", a:"Früher habe ich drei Jahre in Berlin gewohnt und gearbeitet.", aRu:"Раньше я три года жил(а) и работал(а) в Берлине.", note:"Interview"},
+      {q:"Wo wohnen Sie jetzt?",                                  qRu:"Где вы живёте сейчас?", a:"Eigentlich wohne ich ganz gerne hier in Buxtehude.", aRu:"Вообще-то мне здесь, в Букстехуде, нравится жить.", note:"Interview"},
+      {q:"Haben Sie Verwandte oder Freunde in Deutschland?",      qRu:"Есть ли у вас родственники или друзья в Германии?", a:"Meine Verwandten wohnen in München. Ich finde München interessant.", aRu:"Мои родственники живут в Мюнхене. Мюнхен мне интересен.", note:"Interview"},
+    ]},
+    {tag:"Zuwanderer in Deutschland",col:C.purple,pairs:[
+      {q:"Wann sind Martas Eltern nach Deutschland gekommen?",    qRu:"Когда родители Марты приехали в Германию?", a:"Meine Eltern sind 1970 nach Deutschland gekommen, ich bin 1977 hier geboren.", aRu:"Мои родители приехали в Германию в 1970-м, я родилась здесь в 1977-м.", note:"Marta Ascione"},
+      {q:"Warum ist Nabil nach Deutschland gekommen?",             qRu:"Почему Набиль приехал в Германию?", a:"Ich habe meine Heimat 2013 verlassen. Die Reise war nicht einfach.", aRu:"Я покинул родину в 2013-м. Путешествие было нелёгким.", note:"Nabil Al Khatib"},
+      {q:"Wie war die Arbeitssuche für Carlos in Deutschland?",    qRu:"Как проходил поиск работы у Карлоса в Германии?", a:"Ich habe lange Zeit Arbeit gesucht und war etwas enttäuscht und genervt.", aRu:"Я долго искал работу и был немного разочарован и раздражён.", note:"Carlos Álvares"},
+      {q:"Wie hat Linying ihren Mann kennengelernt?",              qRu:"Как Линьин познакомилась со своим мужем?", a:"Ich habe meinen Mann in Taiwan kennengelernt. 2011 haben wir geheiratet.", aRu:"Я познакомилась с мужем на Тайване. В 2011-м мы поженились.", note:"Linying Schmidt"},
     ]},
   ],
 };
@@ -6614,6 +6722,17 @@ const Q_L14TEST=shuffle([
   {q:"'einen Asylantrag stellen' означает:",             opts:["подать заявление на убежище","получить визу","найти работу","снять квартиру"], ans:0, hint:"Antrag stellen"},
   {q:"'die Ausbildung' по-русски:",                      opts:["отпуск","профессиональное обучение","образование в вузе","стажировка"], ans:1, hint:"Ausbildung machen"},
   {q:"'das Praktikum' по-русски:",                       opts:["практика вождения","стажировка","экзамен","собеседование"], ans:1, hint:"ein Praktikum machen"},
+  {q:"'der Müll' и 'die Müllabfuhr' — это:",             opts:["мусор и вывоз мусора","бак и подвал","сосед и служба доставки","праздник и гости"], ans:0, hint:"Müll"},
+  {q:"'ärgerlich' по-русски:",                            opts:["опасный","раздражённый","грязный","чудесный"], ans:1, hint:"sich ärgern"},
+  {q:"'der Keller' по-русски:",                           opts:["чердак","подвал","балкон","гараж"], ans:1, hint:"unter dem Haus"},
+  {q:"'Fahrräder abstellen' означает:",                   opts:["чинить велосипеды","ставить/парковать велосипеды","красть велосипеды","мыть велосипеды"], ans:1, hint:"abstellen"},
+  {q:"'die Nachbarin' — это:",                            opts:["сосед (м.)","соседка (ж.)","гостья","подруга"], ans:1, hint:"weiblich zu Nachbar"},
+  {q:"'das Hoffest' по-русски:",                          opts:["ремонт дома","праздник во дворе","собрание жильцов","уборка двора"], ans:1, hint:"Hof + Fest"},
+  {q:"'Glück haben' означает:",                            opts:["быть счастливым/удачливым","быть больным","быть занятым","быть уставшим"], ans:0, hint:"Glück"},
+  {q:"'der Spielplatz' по-русски:",                       opts:["детская площадка","спортзал","парк","стадион"], ans:0, hint:"spielen + Platz"},
+  {q:"'der Junge' и 'das Mädchen' — это:",                opts:["мальчик и девочка","мужчина и женщина","сын и дочь","друг и подруга"], ans:0, hint:"Kinder"},
+  {q:"'die Bühne' на Straßenfest — это:",                 opts:["стенд с едой","сцена для музыки и танцев","вход","касса"], ans:1, hint:"Musik- und Tanzveranstaltungen"},
+  {q:"'die Tradition' по-русски:",                        opts:["традиция","национальность","культура (общее)","фестиваль"], ans:0, hint:"eine lange Tradition"},
 ]);
 
 const LUECKEN_L14=shuffle([
@@ -6626,6 +6745,9 @@ const LUECKEN_L14=shuffle([
   {sent:"Das ist nicht gut, ___ der Hof ist immer schmutzig.' (denn/aber)", opts:["denn","aber","und","oder"], ans:0,ru:"Это нехорошо, так как двор всегда грязный.", hint:"denn = причина"},
   {sent:"Wir haben viel Müll, ___ die Mülltonnen sind sehr klein.' (denn/aber)", opts:["denn","aber","weil","dass"], ans:1,ru:"У нас много мусора, но баки маленькие.", hint:"aber = противопоставление"},
   {sent:"Die Heizung ist ___.' (сломана)",                                opts:["kaputt","funktioniert","geöffnet","neu"], ans:0,ru:"Отопление сломано.", hint:"kaputt"},
+  {sent:"Wir wollen unsere Fahrräder ___.' (abstellen)",                  opts:["abstellen","abgestellt","stellen ab","abstellte"], ans:0,ru:"Мы хотим припарковать велосипеды.", hint:"Infinitiv nach wollen"},
+  {sent:"Meine ___ wohnt seit zwei Jahren neben mir.' (соседка)",         opts:["Nachbarin","Nachbar","Freundin","Vermieterin"], ans:0,ru:"Моя соседка живёт рядом со мной уже два года.", hint:"weiblich"},
+  {sent:"Wir haben heute wirklich ___.' (Glück haben)",                  opts:["Glück","Zeit","Recht","Angst"], ans:0,ru:"Нам сегодня правда повезло.", hint:"Glück haben"},
 ]);
 
 const ZUORD_L14=[
@@ -6645,6 +6767,18 @@ const ZUORD_L14=[
   {de:"der Flüchtling",   ru:"беженец"},
   {de:"der Krieg",        ru:"война"},
   {de:"der Frieden",      ru:"мир (не война)"},
+  {de:"der Müll",         ru:"мусор"},
+  {de:"die Müllabfuhr",   ru:"вывоз мусора"},
+  {de:"der Keller",       ru:"подвал"},
+  {de:"die Bitte",        ru:"просьба"},
+  {de:"die Nachbarin",    ru:"соседка"},
+  {de:"das Hoffest",      ru:"праздник во дворе"},
+  {de:"wunderbar",        ru:"чудесный"},
+  {de:"der Spielplatz",   ru:"детская площадка"},
+  {de:"der Junge",        ru:"мальчик"},
+  {de:"die Bühne",        ru:"сцена"},
+  {de:"die Tradition",    ru:"традиция"},
+  {de:"die Nationalität", ru:"национальность"},
 ];
 
 const WSENTS_L14=[
@@ -6658,6 +6792,8 @@ const WSENTS_L14=[
   {w:["Das","ist","nicht","gut",",","denn","der","Hof","ist","schmutzig","."],ru:"Это нехорошо, так как двор грязный."},
   {w:["Die","Kinder","spielen","gerade","im","Sandkasten","."],               ru:"Дети сейчас играют в песочнице."},
   {w:["Wir","sind","zuerst","nach","Ägypten","geflohen","."],                 ru:"Мы сначала бежали в Египет."},
+  {w:["Wir","wollen","unsere","Fahrräder","abstellen","."],                   ru:"Мы хотим припарковать велосипеды."},
+  {w:["Das","Straßenfest","dauert","von","Freitag","bis","Sonntag","."],      ru:"Уличный праздник длится с пятницы по воскресенье."},
 ];
 
 function GrosserTest14(){return <GrosserTestContainer rounds={[
@@ -6665,6 +6801,75 @@ function GrosserTest14(){return <GrosserTestContainer rounds={[
   {icon:"📝",label:"Lückentext",    col:C.blue,   component:()=><LueckenQuiz items={LUECKEN_L14}/>},
   {icon:"🔗",label:"Nachbarn",      col:C.green,  component:()=><Zuordnung pairs={ZUORD_L14} leftLabel="Wort" rightLabel="Bedeutung"/>},
   {icon:"🔤",label:"Wortstellung",  col:C.orange, component:()=><WortstellungGame sents={WSENTS_L14}/>},
+]}/>;}
+
+const Q_A2L1TEST=shuffle([
+  {q:"'die Schrift' по-русски:",                          opts:["письмо, шрифт","почерк","правило","предписание"], ans:0, hint:"Schrift"},
+  {q:"'die Handschrift' по-русски:",                       opts:["письменность","почерк","подпись","правило"], ans:1, hint:"Hand+Schrift"},
+  {q:"'die Vorschrift' по-русски:",                        opts:["правило игры","предписание, инструкция","почерк","подпись"], ans:1, hint:"vorschreiben"},
+  {q:"'schlau' по-русски:",                                opts:["умный, хитрый","глупый","серьёзный","опасный"], ans:0, hint:"schlau sein"},
+  {q:"'aufnehmen' (Flüchtlinge aufnehmen) означает:",       opts:["отправлять","принимать (кого-л.)","терять","воспитывать"], ans:1, hint:"aufnehmen"},
+  {q:"'die Tagesordnung' по-русски:",                       opts:["распорядок дня","повестка дня (собрания)","расписание уроков","режим питания"], ans:1, hint:"Ordnung des Tages"},
+  {q:"'sich verstecken' по-русски:",                       opts:["показываться","прятаться","убегать","искать"], ans:1, hint:"vor+Dativ"},
+  {q:"'die Gesellschaft' по-русски:",                       opts:["компания (фирма)","общество","встреча","праздник"], ans:1, hint:"gesellschaftlich"},
+  {q:"'der Schutz' (vor + Dativ) по-русски:",               opts:["опасность","защита","правило","воспитание"], ans:1, hint:"schützen"},
+  {q:"'erziehen' по-русски:",                               opts:["учить (в школе)","воспитывать (ребёнка)","играть","заботиться (о больном)"], ans:1, hint:"der Erzieher"},
+  {q:"'Meiner Meinung nach' означает:",                     opts:["по моему мнению","по вашему мнению","как правило","в любом случае"], ans:0, hint:"meinen"},
+  {q:"'die Bühne' по-русски:",                               opts:["зал","сцена","вход","площадь"], ans:1, hint:"für Musik und Tanz"},
+  {q:"'zuwandern' по-русски:",                               opts:["уезжать","иммигрировать, переселяться","путешествовать","возвращаться"], ans:1, hint:"ist zugewandert"},
+  {q:"'eigentlich' по-русски:",                              opts:["никогда","собственно, вообще-то","точно","редко"], ans:1, hint:"Eigentlich wohne ich gerne hier"},
+  {q:"'der Leiter' по-русски:",                               opts:["сотрудник","руководитель","гость","новичок"], ans:1, hint:"leiten"},
+  {q:"'schlimm' по-русски:",                                  opts:["радостный","тяжёлый, серьёзный","быстрый","дешёвый"], ans:1, hint:"schlimme Sachen erlebt"},
+  {q:"'verlieren' — Partizip II:",                            opts:["verliert","verloren","verlor","verlierte"], ans:1, hint:"hat verloren"},
+  {q:"'aufgeben' в контексте 'die Arbeit aufgeben' означает:", opts:["найти работу","отказаться, сдать (работу)","получить повышение","поменять профессию"], ans:1, hint:"hat aufgegeben"},
+]);
+
+const LUECKEN_A2L1=shuffle([
+  {sent:"Ich bin in Deutschland ___.' (bleiben)",                        opts:["geblieben","bleiben","blieb","bleibt"], ans:0,ru:"Я остался/осталась в Германии.", hint:"Partizip II mit ge-"},
+  {sent:"Ich habe das Abitur ___.' (machen)",                            opts:["gemacht","machen","macht","machte"], ans:0,ru:"Я сдал(а) абитур.", hint:"Partizip II mit ge-"},
+  {sent:"Ich habe Maschinenbau ___.' (studieren)",                       opts:["studiert","gestudiert","studierte","studieren"], ans:0,ru:"Я изучал(а) машиностроение.", hint:"-ieren → ohne ge-"},
+  {sent:"Ich habe meine Heimat 2013 ___.' (verlassen)",                  opts:["verlassen","geverlassen","verließ","verlasst"], ans:0,ru:"Я покинул(а) родину в 2013 году.", hint:"ver- → ohne ge-"},
+  {sent:"Er hat eine Stelle in Deutschland ___.' (bekommen)",            opts:["bekommen","gebekommen","bekam","bekommte"], ans:0,ru:"Он получил место работы в Германии.", hint:"be- → ohne ge-"},
+  {sent:"Wir haben 2011 ___.' (heiraten)",                                opts:["geheiratet","heiraten","heiratete","heiratet"], ans:0,ru:"Мы поженились в 2011-м.", hint:"Partizip II mit ge-"},
+  {sent:"___ Verwandten wohnen in München. (его)",                       opts:["Seine","Ihre","Meine","Unsere"], ans:0,ru:"Его родственники живут в Мюнхене.", hint:"er → sein-"},
+  {sent:"Ich finde die Stadt zu ___.' (суетливой)",                       opts:["hektisch","sauber","angenehm","interessant"], ans:0,ru:"Я нахожу город слишком суетливым.", hint:"zu + Adjektiv"},
+]);
+
+const ZUORD_A2L1=[
+  {de:"die Schrift",       ru:"письмо, шрифт"},
+  {de:"die Handschrift",   ru:"почерк"},
+  {de:"die Vorschrift",    ru:"предписание"},
+  {de:"die Regel",         ru:"правило"},
+  {de:"schlau",            ru:"умный, хитрый"},
+  {de:"aufnehmen",         ru:"принимать (кого-л.)"},
+  {de:"die Tagesordnung",  ru:"повестка дня"},
+  {de:"die Wahl",          ru:"выбор"},
+  {de:"sich verstecken",   ru:"прятаться"},
+  {de:"die Gesellschaft",  ru:"общество"},
+  {de:"der Schutz",        ru:"защита"},
+  {de:"erziehen",          ru:"воспитывать"},
+  {de:"der Erzieher",      ru:"воспитатель"},
+  {de:"die Bühne",         ru:"сцена"},
+  {de:"zuwandern",         ru:"иммигрировать"},
+  {de:"der Leiter",        ru:"руководитель"},
+];
+
+const WSENTS_A2L1=[
+  {w:["Meine","Eltern","sind","1970","nach","Deutschland","gekommen","."],      ru:"Мои родители приехали в Германию в 1970-м."},
+  {w:["Ich","bin","1977","in","Deutschland","geboren","."],                     ru:"Я родился(-лась) в Германии в 1977-м."},
+  {w:["Ich","habe","das","Abitur","gemacht","."],                              ru:"Я сдал(а) абитур."},
+  {w:["Ich","habe","meine","Heimat","2013","verlassen","."],                   ru:"Я покинул(а) родину в 2013-м."},
+  {w:["Ich","habe","lange","Zeit","Arbeit","gesucht","."],                     ru:"Я долго искал(а) работу."},
+  {w:["Wir","haben","2011","geheiratet","."],                                  ru:"Мы поженились в 2011-м."},
+  {w:["Seine","Verwandten","wohnen","in","München","."],                       ru:"Его родственники живут в Мюнхене."},
+  {w:["Ich","finde","die","Stadt","zu","hektisch","."],                       ru:"Я нахожу город слишком суетливым."},
+];
+
+function GrosserTestA2L1(){return <GrosserTestContainer rounds={[
+  {icon:"🎯",label:"Quiz",          col:C.yellow, component:()=><Quiz questions={Q_A2L1TEST}/>},
+  {icon:"📝",label:"Lückentext",    col:C.blue,   component:()=><LueckenQuiz items={LUECKEN_A2L1}/>},
+  {icon:"🔗",label:"Wortschatz",    col:C.green,  component:()=><Zuordnung pairs={ZUORD_A2L1} leftLabel="Wort" rightLabel="Bedeutung"/>},
+  {icon:"🔤",label:"Wortstellung",  col:C.orange, component:()=><WortstellungGame sents={WSENTS_A2L1}/>},
 ]}/>;}
 
 
@@ -11991,6 +12196,8 @@ const Q_L14B=[
   {q:"'denn' в предложении вводит:",                      opts:["условие","причину","цель","время"], ans:1, hint:"denn = потому что"},
   {q:"После 'denn' порядок слов:",                        opts:["глагол на 2-м месте (как обычно)","глагол в конце","глагол на 1-м месте","без глагола"], ans:0, hint:"denn не меняет порядок слов"},
   {q:"'Ich komme heute Abend bei Ihnen vorbei.' по-русски:", opts:["Я приеду к вам завтра","Я зайду к вам сегодня вечером","Я позвоню вам сегодня","Я уеду от вас сегодня"], ans:1, hint:"vorbeikommen bei+Dativ"},
+  {q:"Правильный порядок даты в письме:",                  opts:["Fulda, den April 25. 2015","Fulda, den 25. April 2015","Fulda, 25 April, den 2015","den 25. Fulda April 2015"], ans:1, hint:"Ort, den Tag. Monat Jahr"},
+  {q:"В формальном письме к незнакомой госпоже Шмитц пишут:", opts:["Liebe Schmitz,","Sehr geehrte Frau Schmitz,","Liebe Frau Anne,","Hallo Schmitz,"], ans:1, hint:"формальная Anrede — по фамилии"},
 ];
 
 function T14B(){
@@ -12028,12 +12235,21 @@ function T14B(){
     {de:"Es regnet, aber wir gehen trotzdem raus.",ru:"Идёт дождь, но мы всё равно идём гулять."},
     {de:"Ich komme heute Abend bei Ihnen vorbei.",ru:"Я зайду к вам сегодня вечером."},
   ];
+  const anredeVergleich=[
+    {typ:"formell (Brief an Amt/Firma)",de:"Sehr geehrte Frau Schmitz,",ru:"уважаемая госпожа Шмитц (фамилия!)",col:C.red},
+    {typ:"formell, Name unbekannt",de:"Sehr geehrte Damen und Herren,",ru:"уважаемые дамы и господа",col:C.red},
+    {typ:"informell (an Freunde/Nachbarn)",de:"Liebe Anne,",ru:"дорогая Анна (имя)",col:C.green},
+  ];
+  const grussVergleich=[
+    {typ:"formell",de:"Mit freundlichen Grüßen",ru:"с уважением",col:C.red},
+    {typ:"informell",de:"Viele Grüße / Liebe Grüße",ru:"с наилучшими пожеланиями",col:C.green},
+  ];
   return (
     <div style={{display:"flex",flexDirection:"column",gap:10}}>
       <Box c={C.red}>
         <H c={C.red}>🔧 L14B · Probleme im Haus</H>
         <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
-          {[["probleme","Probleme"],["brief","Formeller Brief"],["denn","denn / aber"]].map(([key,lbl])=>(
+          {[["probleme","Probleme"],["brief","Formeller Brief"],["denn","denn / aber"],["datum","Datum & Anrede"]].map(([key,lbl])=>(
             <button key={key} onClick={()=>setTab(key)}
               style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
                 fontSize:12,fontWeight:700,lineHeight:1.35,textAlign:"center",
@@ -12116,6 +12332,46 @@ function T14B(){
                 <b style={{color:C.blue}}>Ich möchte ins Kino gehen, denn ich möchte den Film sehen.</b><br/>
                 <b style={{color:C.blue}}>Wir gehen morgen ins Kino und (wir) sehen den neuen Film.</b><br/>
                 <b style={{color:C.blue}}>Kommst du mit oder musst du noch arbeiten?</b>
+              </div>
+            </div>
+          </div>
+        )}
+        {tab==="datum"&&(
+          <div>
+            <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,borderRadius:10,padding:"11px 13px",marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.orange,marginBottom:6}}>Datum im Brief: Ort, den Tag. Monat Jahr</div>
+              <div style={{fontSize:13,color:C.text,lineHeight:1.7}}>
+                Порядок строго такой: <b>город</b> → запятая → <b>den</b> → <b>число с точкой</b> → <b>месяц</b> → <b>год</b>. Частая ошибка (Schreibtraining S.172) — переставить месяц перед числом.
+              </div>
+              <div style={{marginTop:8,display:"flex",flexDirection:"column",gap:4}}>
+                <div style={{background:C.redBg,borderRadius:8,padding:"6px 10px",fontSize:13}}><span style={{color:C.red}}>✗ Fulda, den April 25. 2015</span></div>
+                <div style={{background:C.greenBg,borderRadius:8,padding:"6px 10px",fontSize:13}}><span style={{color:C.green}}>✓ Fulda, den 25. April 2015</span></div>
+              </div>
+            </div>
+            <div style={{fontSize:12,fontWeight:700,color:C.muted,margin:"0 0 6px",textTransform:"uppercase",letterSpacing:0.5}}>Anrede: formell vs. informell</div>
+            <div style={{display:"flex",flexDirection:"column",gap:4,marginBottom:12}}>
+              {anredeVergleich.map((a,i)=>(
+                <div key={i} style={{background:C.ov4,borderRadius:8,padding:"7px 10px",borderLeft:`3px solid ${a.col}`}}>
+                  <div style={{fontSize:11,color:C.muted,marginBottom:2}}>{a.typ}</div>
+                  <div style={{fontSize:13,fontWeight:700,color:a.col}}>{a.de}</div>
+                  <div style={{fontSize:11,color:C.muted}}>{a.ru}</div>
+                </div>
+              ))}
+            </div>
+            <div style={{fontSize:12,fontWeight:700,color:C.muted,margin:"0 0 6px",textTransform:"uppercase",letterSpacing:0.5}}>Gruß am Ende</div>
+            <div style={{display:"flex",flexDirection:"column",gap:4,marginBottom:10}}>
+              {grussVergleich.map((g,i)=>(
+                <div key={i} style={{background:C.ov4,borderRadius:8,padding:"7px 10px",borderLeft:`3px solid ${g.col}`}}>
+                  <div style={{fontSize:11,color:C.muted,marginBottom:2}}>{g.typ}</div>
+                  <div style={{fontSize:13,fontWeight:700,color:g.col}}>{g.de}</div>
+                  <div style={{fontSize:11,color:C.muted}}>{g.ru}</div>
+                </div>
+              ))}
+            </div>
+            <div style={{background:C.blue+"15",border:`1px solid ${C.blue}33`,borderRadius:10,padding:"11px 13px"}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.blue,marginBottom:6}}>Wichtig</div>
+              <div style={{fontSize:13,color:C.text,lineHeight:1.7}}>
+                В формальном письме обращаются по <b>фамилии</b> (Frau Schmitz), а не по имени. В неформальном письме — по имени (Anne). Формальное закрытие всегда <b>без запятой перед именем отправителя</b> и без восклицательного знака.
               </div>
             </div>
           </div>
@@ -12210,6 +12466,273 @@ function T14C(){
             {smalltalk.map((s,i)=>(
               <TapEx key={i} de={s.de} ru={s.ru} col={C.teal} style={{marginBottom:5}}/>
             ))}
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
+const Q_L14D=[
+  {q:"Das Internationale Straßenfest Sindelfingen gibt es seit:", opts:["1977","1997","2007","2015"], ans:0, hint:"Früher und heute"},
+  {q:"Das erste Straßenfest 1977 hat gedauert:",                 opts:["einen Tag","zwei Tage","ein ganzes Wochenende","eine Woche"], ans:0, hint:"1977 hat es nur einen Tag gedauert"},
+  {q:"Heute dauert das Straßenfest:",                            opts:["nur einen Tag","von Freitag bis Sonntag","eine Woche","nur am Sonntag"], ans:1, hint:"Freitag – Sonntag"},
+  {q:"Das Fest findet jedes Jahr statt:",                        opts:["im Winter","im Sommer, am dritten Juniwochenende","im Herbst","im Frühling"], ans:1, hint:"drittes Juniwochenende"},
+  {q:"'die Bühne' по-русски:",                                   opts:["сцена","стенд","площадь","улица"], ans:0, hint:"für Musik und Tanz"},
+  {q:"'der Stand' (Stände mit Spezialitäten) — это:",           opts:["сцена","стенд/прилавок с едой","вход","парковка"], ans:1, hint:"Spezialitäten"},
+  {q:"'die Nationalität' по-русски:",                            opts:["традиция","национальность","праздник","культура"], ans:1, hint:"viele Nationalitäten"},
+  {q:"Beim ersten Straßenfest haben mitgemacht:",                opts:["nur Gruppen aus Deutschland","Menschen aus vielen Nationalitäten","nur Musiker","nur Kinder"], ans:1, hint:"Menschen aus vielen Nationalitäten"},
+];
+
+function T14D(){
+  const geschichte=[
+    {de:"Das Internationale Straßenfest Sindelfingen hat eine lange Tradition.",ru:"У Международного уличного праздника в Зиндельфингене длинная традиция."},
+    {de:"Das erste Fest in Sindelfingen war im September 1977.",ru:"Первый праздник в Зиндельфингене прошёл в сентябре 1977 года."},
+    {de:"An einem Samstag haben Menschen aus vielen Nationalitäten ein großes Straßenfest gefeiert.",ru:"В одну из суббот люди многих национальностей отпраздновали большой уличный праздник."},
+    {de:"Viele Gruppen haben ihre Kultur und Spezialitäten vorgestellt und eine Bühne für Musik und Tanzveranstaltungen organisiert.",ru:"Многие группы представили свою культуру и фирменные блюда и организовали сцену для музыкальных и танцевальных мероприятий."},
+    {de:"1977 hat es nur einen Tag gedauert.",ru:"В 1977 году он длился только один день."},
+    {de:"Von 1977 bis heute findet das Fest jedes Jahr im Sommer statt, immer am dritten Juniwochenende.",ru:"С 1977 года и по сей день праздник проходит каждый год летом, всегда в третьи выходные июня."},
+    {de:"Heute geht es von Freitag bis Sonntag.",ru:"Сегодня он идёт с пятницы по воскресенье."},
+  ];
+  const angebot=[
+    {de:"Stände mit Spezialitäten",ru:"стенды с фирменными блюдами"},
+    {de:"Musikveranstaltungen",ru:"музыкальные мероприятия"},
+    {de:"Tanzveranstaltungen",ru:"танцевальные мероприятия"},
+  ];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.purple}>
+        <H c={C.purple}>🎪 Deutsch Plus · Internationales Straßenfest</H>
+        <div style={{fontSize:13,color:C.muted,marginBottom:10,lineHeight:1.6}}>
+          Читательский текст «Das Internationale Straßenfest Sindelfingen — Früher und heute» (Kursbuch S.173).
+        </div>
+        <div style={{fontSize:12,fontWeight:700,color:C.muted,margin:"0 0 6px",textTransform:"uppercase",letterSpacing:0.5}}>Was gibt es auf dem Straßenfest?</div>
+        <div style={{display:"flex",flexDirection:"column",gap:4,marginBottom:12}}>
+          {angebot.map((a,i)=>(
+            <div key={i} style={{background:C.ov4,borderRadius:8,padding:"7px 10px",borderLeft:`3px solid ${C.purple}`}}>
+              <div style={{fontSize:13,fontWeight:700,color:C.text}}>{a.de}</div>
+              <div style={{fontSize:11,color:C.muted}}>{a.ru}</div>
+            </div>
+          ))}
+        </div>
+        <div style={{fontSize:12,fontWeight:700,color:C.muted,margin:"0 0 6px",textTransform:"uppercase",letterSpacing:0.5}}>Früher und heute</div>
+        {geschichte.map((s,i)=>(
+          <TapEx key={i} de={s.de} ru={s.ru} col={C.purple} style={{marginBottom:5}}/>
+        ))}
+        <div style={{background:C.blue+"15",border:`1px solid ${C.blue}33`,borderRadius:10,padding:"11px 13px",marginTop:10}}>
+          <div style={{fontWeight:800,fontSize:13,color:C.blue,marginBottom:6}}>Programm lesen: Bühne + Uhrzeit</div>
+          <div style={{fontSize:13,color:C.text,lineHeight:1.7}}>
+            В программе праздника у каждой сцены (<b>Bühne Schaffhauser Platz</b>, <b>Bühne Lange Straße</b>) — своё время выступлений. Вопрос «<b>Wo kann man … sehen/hören?</b>» → ответ: название сцены + время (например, <i>Schaffhauser Platz, 15 Uhr</i>).
+          </div>
+        </div>
+      </Box>
+    </div>
+  );
+}
+
+const Q_A2L1A=[
+  {q:"Er kommt aus Italien. ___ Eltern sind 1970 gekommen. (his)", opts:["Seine","Ihre","Meine","Deine"], ans:0, hint:"er → sein"},
+  {q:"Sie wohnt in Taiwan gewohnt. ___ Mann arbeitet dort. (her)", opts:["Ihr","Sein","Unser","Euer"], ans:0, hint:"sie → ihr"},
+  {q:"Wir wohnen zusammen. ___ Wohnung ist klein. (our)",         opts:["Unsere","Eure","Ihre","Seine"], ans:0, hint:"wir → unser + e (die Wohnung)"},
+  {q:"'Wo möchten Sie gerne wohnen (und arbeiten)?' — вопрос про:", opts:["прошлое","желаемое будущее","настоящее место","хобби"], ans:1, hint:"möchten = хотеть бы"},
+  {q:"'Wie lange haben Sie in Berlin gewohnt?' — спрашивают о:",  opts:["адресе","длительности","причине","стоимости"], ans:1, hint:"wie lange = как долго"},
+  {q:"'die Verwandten' по-русски:",                                opts:["друзья","родственники","соседи","коллеги"], ans:1, hint:"Verwandtschaft"},
+  {q:"'Er findet die Stadt zu hektisch.' означает:",               opts:["ему нравится город","город кажется ему слишком суетливым","город слишком маленький","он не знает город"], ans:1, hint:"zu + Adjektiv = слишком"},
+  {q:"'Seine Verwandten wohnen in München.' — Possessivartikel 'seine' указывает на:",opts:["женщину-обладателя","мужчину-обладателя","множ. число обладателей","говорящего"], ans:1, hint:"sein = его"},
+];
+
+function T_A2L1A(){
+  const [tab,setTab]=useState("interview");
+  const fragen=[
+    {de:"Welche Städte kennen Sie? Wie finden Sie die Städte?",ru:"Какие города вы знаете? Как вы их находите?"},
+    {de:"Wo in Deutschland haben Sie schon gewohnt (und gearbeitet)? Wie lange?",ru:"Где в Германии вы уже жили (и работали)? Как долго?"},
+    {de:"Wo wohnen Sie jetzt?",ru:"Где вы живёте сейчас?"},
+    {de:"Wo möchten Sie gerne wohnen (und arbeiten)?",ru:"Где бы вы хотели жить (и работать)?"},
+    {de:"Haben Sie Verwandte oder Freunde in Deutschland?",ru:"Есть ли у вас родственники или друзья в Германии?"},
+  ];
+  const vorstellen=[
+    {de:"Er/Sie kommt aus …",ru:"он/она родом из …"},
+    {de:"Er/Sie kennt …",ru:"он/она знает …"},
+    {de:"Er/Sie hat in … gewohnt/gearbeitet.",ru:"он/она жил(а)/работал(а) в …"},
+    {de:"Er/Sie möchte gerne in … wohnen.",ru:"он/она хотел(а) бы жить в …"},
+    {de:"Er/Sie findet … interessant/angenehm/sauber.",ru:"он/она находит … интересным/приятным/чистым"},
+    {de:"Er/Sie mag … nicht.",ru:"ему/ей не нравится …"},
+    {de:"Die Stadt ist zu groß/zu laut/zu hektisch.",ru:"город слишком большой/шумный/суетливый"},
+    {de:"Seine/Ihre Verwandten/Freunde wohnen in …",ru:"его/её родственники/друзья живут в …"},
+  ];
+  const possTab=[
+    {p:"ich",m:"mein",f:"meine"},{p:"du",m:"dein",f:"deine"},{p:"er/es",m:"sein",f:"seine"},
+    {p:"sie",m:"ihr",f:"ihre"},{p:"wir",m:"unser",f:"unsere"},{p:"ihr",m:"euer",f:"eure"},
+    {p:"sie/Sie",m:"ihr/Ihr",f:"ihre/Ihre"},
+  ];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.blue}>
+        <H c={C.blue}>🤝 A2-L1A · Interview zum Kennenlernen</H>
+        <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
+          {[["interview","Interview"],["vorstellen","Partner vorstellen"],["poss","Possessivartikel"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,lineHeight:1.35,textAlign:"center",
+                border:`1px solid ${tab===key?C.blue+"55":C.border}`,
+                background:tab===key?C.blue+"22":C.ov3,
+                color:tab===key?C.blue:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="interview"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,marginBottom:10,lineHeight:1.6}}>
+              Интервью с партнёром по учёбе — вопросы о городах и переезде (Kursbuch S.9):
+            </div>
+            {fragen.map((f,i)=>(
+              <TapEx key={i} de={f.de} ru={f.ru} col={C.blue} style={{marginBottom:5}}/>
+            ))}
+            <div style={{background:C.ov4,borderRadius:8,padding:"8px 11px",marginTop:8}}>
+              <div style={{fontSize:12,color:C.text,lineHeight:1.7}}>
+                <b style={{color:C.blue}}>Früher habe ich drei Jahre in Berlin gewohnt und gearbeitet. Jetzt …</b><br/>
+                <b style={{color:C.blue}}>Eigentlich wohne ich ganz gerne hier.</b><br/>
+                <b style={{color:C.blue}}>Buxtehude ist im Norden von Deutschland, in der Nähe von Hamburg.</b>
+              </div>
+            </div>
+          </div>
+        )}
+        {tab==="vorstellen"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,marginBottom:10,lineHeight:1.6}}>
+              Как рассказать о партнёре, используя Possessivartikel (er/sie):
+            </div>
+            {vorstellen.map((v,i)=>(
+              <TapEx key={i} de={v.de} ru={v.ru} col={C.blue} style={{marginBottom:5}}/>
+            ))}
+          </div>
+        )}
+        {tab==="poss"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,marginBottom:10,lineHeight:1.6}}>
+              Possessivartikel склоняются как <b>ein</b> — окончание зависит от рода существительного (для der/das-слов — без окончания, для die-слов — <b>+e</b>):
+            </div>
+            <div style={{display:"flex",flexDirection:"column",gap:4,marginBottom:10}}>
+              <div style={{display:"flex",gap:8,padding:"6px 10px",fontSize:11,fontWeight:800,color:C.muted,textTransform:"uppercase"}}>
+                <span style={{width:60}}>Person</span><span style={{flex:1}}>der/das</span><span style={{flex:1}}>die</span>
+              </div>
+              {possTab.map(r=>(
+                <div key={r.p} style={{background:C.ov4,borderRadius:8,padding:"7px 10px",display:"flex",gap:8,alignItems:"center"}}>
+                  <span style={{width:60,fontSize:13,fontWeight:700,color:C.muted}}>{r.p}</span>
+                  <span style={{flex:1,fontSize:14,fontWeight:700,color:C.blue}}>{r.m}</span>
+                  <span style={{flex:1,fontSize:14,fontWeight:700,color:C.blue}}>{r.f}</span>
+                </div>
+              ))}
+            </div>
+            <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,borderRadius:10,padding:"11px 13px"}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.orange,marginBottom:6}}>Beispiele</div>
+              <TapEx de="Seine Verwandten wohnen in München." ru="Его родственники живут в Мюнхене." col={C.orange} style={{marginBottom:5}}/>
+              <TapEx de="Ihre Freunde wohnen in Köln." ru="Её/их друзья живут в Кёльне." col={C.orange}/>
+            </div>
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
+const Q_A2L1B=[
+  {q:"Partizip II von 'gehen':",                          opts:["gegangen","gegeht","geganget","gehte"], ans:0, hint:"mit ge-, ist"},
+  {q:"Partizip II von 'studieren':",                       opts:["gestudiert","studiert","studierte","studieren"], ans:1, hint:"-ieren → ohne ge-"},
+  {q:"Partizip II von 'bekommen':",                        opts:["gebekommen","bekommt","bekommen","bekam"], ans:2, hint:"be- → ohne ge-"},
+  {q:"Partizip II von 'verlassen':",                       opts:["verlassen","geverlassen","verlasst","verließ"], ans:0, hint:"ver- → ohne ge-"},
+  {q:"Без 'ge-' образуют Partizip II глаголы с приставками:", opts:["ab-, an-, auf-, aus-","be-, er-, ge-, ver-","mit-, nach-, vor-, zu-","durch-, um-, wieder-"], ans:1, hint:"untrennbare Präfixe"},
+  {q:"Родители Марты Асционе приехали в Германию в:",       opts:["1970","1977","1997","2013"], ans:0, hint:"Kursbuch S.10"},
+  {q:"Кто из четырёх — врач (Arzt) и живёт в Flüchtlingsheim?", opts:["Marta Ascione","Nabil Al Khatib","Carlos Álvares","Linying Schmidt"], ans:1, hint:"Syrien"},
+  {q:"Carlos Álvares приехал из:",                          opts:["Italien","Syrien","Spanien","Taiwan"], ans:2, hint:"als Architekt gearbeitet"},
+];
+
+function T_A2L1B(){
+  const [tab,setTab]=useState("personen");
+  const personen=[
+    {name:"Marta Ascione",land:"Italien",text:"Eltern 1970 nach Deutschland gekommen, sie selbst 1977 in Deutschland geboren. Studium Maschinenbau, heute Abteilungsleiterin.",ru:"Родители приехали в 1970-м, сама родилась в Германии в 1977-м. Изучала машиностроение, сейчас руководитель отдела."},
+    {name:"Nabil Al Khatib",land:"Syrien",text:"Heimat 2013 verlassen, lebt im Flüchtlingsheim, lernt Deutsch. Ist Arzt, möchte wieder im Krankenhaus arbeiten.",ru:"Покинул родину в 2013-м, живёт в общежитии для беженцев, учит немецкий. Врач, хочет снова работать в больнице."},
+    {name:"Carlos Álvares",land:"Spanien",text:"Hat als Architekt in Spanien gearbeitet, Arbeit verloren, seit 2014 in Deutschland, hat lange Arbeit gesucht.",ru:"Работал архитектором в Испании, потерял работу, с 2014 года в Германии, долго искал работу."},
+    {name:"Linying Schmidt",land:"Taiwan",text:"Mann in Taiwan kennengelernt, 2011 geheiratet, 2014 nach Offenbach umgezogen.",ru:"Познакомилась с мужем на Тайване, поженились в 2011-м, в 2014-м переехали в Оффенбах."},
+  ];
+  const mitGe=[{de:"gehen",pf:"ist gegangen"},{de:"aufgeben",pf:"hat aufgegeben"},{de:"machen",pf:"hat gemacht"},{de:"einkaufen",pf:"hat eingekauft"}];
+  const ohneGeBEV=[{de:"bekommen",pf:"hat bekommen"},{de:"erzählen",pf:"hat erzählt"},{de:"gefallen",pf:"hat gefallen"},{de:"verlassen",pf:"hat verlassen"}];
+  const ohneGeIeren=[{de:"studieren",pf:"hat studiert"}];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.purple}>
+        <H c={C.purple}>🌍 A2-L1B · Zuwanderer in Deutschland</H>
+        <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
+          {[["personen","Die vier Personen"],["partizip","Partizip mit/ohne ge-"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,lineHeight:1.35,textAlign:"center",
+                border:`1px solid ${tab===key?C.purple+"55":C.border}`,
+                background:tab===key?C.purple+"22":C.ov3,
+                color:tab===key?C.purple:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="personen"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,marginBottom:10,lineHeight:1.6}}>
+              «Menschen aus aller Welt» — четыре истории переезда в Германию (Kursbuch S.10):
+            </div>
+            {personen.map((p,i)=>(
+              <div key={i} style={{background:C.ov4,borderRadius:8,padding:"9px 11px",marginBottom:6,borderLeft:`3px solid ${C.purple}`}}>
+                <div style={{fontSize:13,fontWeight:800,color:C.text}}>{p.name} <span style={{fontWeight:600,color:C.muted}}>· {p.land}</span></div>
+                <div style={{fontSize:12,color:C.text,marginTop:3,lineHeight:1.5}}>{p.text}</div>
+                <div style={{fontSize:11,color:C.muted,marginTop:3}}>{p.ru}</div>
+              </div>
+            ))}
+          </div>
+        )}
+        {tab==="partizip"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,marginBottom:10,lineHeight:1.6}}>
+              Partizip II бывает <b>с ge-</b> и <b>без ge-</b> — правило зависит от приставки/окончания глагола:
+            </div>
+            <div style={{marginBottom:10}}>
+              <div style={{fontSize:12,fontWeight:700,color:C.green,margin:"0 0 6px",textTransform:"uppercase",letterSpacing:0.5}}>Partizipien mit ge-</div>
+              <div style={{display:"flex",flexDirection:"column",gap:4}}>
+                {mitGe.map((v,i)=>(
+                  <div key={i} style={{background:C.ov4,borderRadius:8,padding:"6px 10px",display:"flex",justifyContent:"space-between"}}>
+                    <span style={{fontSize:13,fontWeight:700,color:C.text}}>{v.de}</span>
+                    <span style={{fontSize:13,color:C.green,fontWeight:700}}>{v.pf}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div style={{marginBottom:10}}>
+              <div style={{fontSize:12,fontWeight:700,color:C.red,margin:"0 0 6px",textTransform:"uppercase",letterSpacing:0.5}}>Partizipien ohne ge-: be-/er-/ge-/ver-</div>
+              <div style={{display:"flex",flexDirection:"column",gap:4}}>
+                {ohneGeBEV.map((v,i)=>(
+                  <div key={i} style={{background:C.ov4,borderRadius:8,padding:"6px 10px",display:"flex",justifyContent:"space-between"}}>
+                    <span style={{fontSize:13,fontWeight:700,color:C.text}}>{v.de}</span>
+                    <span style={{fontSize:13,color:C.red,fontWeight:700}}>{v.pf}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div style={{marginBottom:10}}>
+              <div style={{fontSize:12,fontWeight:700,color:C.orange,margin:"0 0 6px",textTransform:"uppercase",letterSpacing:0.5}}>Partizipien ohne ge-: -ieren</div>
+              <div style={{display:"flex",flexDirection:"column",gap:4}}>
+                {ohneGeIeren.map((v,i)=>(
+                  <div key={i} style={{background:C.ov4,borderRadius:8,padding:"6px 10px",display:"flex",justifyContent:"space-between"}}>
+                    <span style={{fontSize:13,fontWeight:700,color:C.text}}>{v.de}</span>
+                    <span style={{fontSize:13,color:C.orange,fontWeight:700}}>{v.pf}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div style={{background:C.blue+"15",border:`1px solid ${C.blue}33`,borderRadius:10,padding:"11px 13px"}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.blue,marginBottom:6}}>Правило одной фразой</div>
+              <div style={{fontSize:13,color:C.text,lineHeight:1.7}}>
+                <b>ge-</b> получают обычные глаголы с ударением на первом слоге. <b>НЕТ ge-</b>, если глагол уже начинается с безударной приставки <b>be-/er-/ge-/ent-/ver-/zer-</b>, или заканчивается на <b>-ieren</b>.
+              </div>
+            </div>
           </div>
         )}
       </Box>
@@ -12508,16 +13031,30 @@ const LEKTIONEN=[
   },
   {
     id:"L14",niveau:"A1",num:"14",title:"Zusammen leben",
-    sub:"A Die Nachbarn · B Probleme im Haus (formeller Brief, denn/aber) · C Auf dem Spielplatz (Kinderbetreuung)",
+    sub:"A Die Nachbarn · B Probleme im Haus (formeller Brief, denn/aber) · C Auf dem Spielplatz (Kinderbetreuung) · Deutsch Plus Straßenfest",
     date:"Seite 145–147",col:C.orange,
     sections:[
       {id:"d14", icon:"💬",title:"Dialogfragen L14",            sub:"Фразы для диалога",                                    time:"∞",     col:C.orange,hasT:false, th:null,           ex:()=><DialogCards lId="L14"/>},
       {id:"14a", icon:"🏠",title:"A · Die Nachbarn",             sub:"Das Haus (Schema) · Hilfe erbitten · Smalltalk",       time:"7 мин", col:C.green, hasT:true, th:()=><T14A/>, ex:()=><Quiz questions={Q_L14A}/>},
       {id:"14b", icon:"🔧",title:"B · Probleme im Haus",         sub:"Probleme (Schema) · Formeller Brief · denn/aber",      time:"7 мин", col:C.red,   hasT:true, th:()=><T14B/>, ex:()=><Quiz questions={Q_L14B}/>},
       {id:"14c", icon:"🛝",title:"C · Auf dem Spielplatz",       sub:"Spielplatz-Vokabeln · Kinderbetreuung · Smalltalk",    time:"6 мин", col:C.teal,  hasT:true, th:()=><T14C/>, ex:()=><Quiz questions={Q_L14C}/>},
+      {id:"14d", icon:"🎪",title:"Deutsch Plus · Straßenfest",   sub:"Internationales Straßenfest Sindelfingen",             time:"5 мин", col:C.purple,hasT:true, th:()=><T14D/>, ex:()=><Quiz questions={Q_L14D}/>},
       {id:"wb14", icon:"📖",title:"Wörterbuch L14",              sub:"Слова этого урока",                                    time:"—",    col:C.teal,   hasT:false, ex:()=><LektWoerterbuch lekt="L14"/>},
       {id:"t14", icon:"🎯",title:"Großer Test L14",              sub:"Quiz · Lücken · Nachbarn · Wortstellung",       time:"20 мин",col:C.yellow, hasT:false, ex:()=><GrosserTest14/>},
       {id:"wt14", icon:"🧠",title:"Wortschatz-Test L14",         sub:"Перевод · Артикли · Обратный перевод",                 time:"10 мин",col:C.teal,   hasT:false, ex:()=><WortschatzTest lekt="L14"/>},
+    ]
+  },
+  {
+    id:"A2-L1",niveau:"A2",num:"1",title:"Meine Geschichte",
+    sub:"A Interview zum Kennenlernen (Possessivartikel) · B Zuwanderer in Deutschland (Partizip mit/ohne ge-)",
+    date:"Seite 9–11",col:C.blue,
+    sections:[
+      {id:"dA2L1", icon:"💬",title:"Dialogfragen A2-L1",         sub:"Фразы для диалога",                                    time:"∞",     col:C.blue,  hasT:false, th:null,           ex:()=><DialogCards lId="A2-L1"/>},
+      {id:"a2l1a", icon:"🤝",title:"A · Interview zum Kennenlernen",sub:"Possessivartikel · Fragen zum Kennenlernen",         time:"7 мин", col:C.blue,  hasT:true, th:()=><T_A2L1A/>, ex:()=><Quiz questions={Q_A2L1A}/>},
+      {id:"a2l1b", icon:"🌍",title:"B · Zuwanderer in Deutschland",sub:"Partizip mit/ohne ge- · Lesetexte",                   time:"8 мин", col:C.purple,hasT:true, th:()=><T_A2L1B/>, ex:()=><Quiz questions={Q_A2L1B}/>},
+      {id:"wbA2L1", icon:"📖",title:"Wörterbuch A2-L1",          sub:"Слова этого урока",                                    time:"—",    col:C.teal,   hasT:false, ex:()=><LektWoerterbuch lekt="A2-L1"/>},
+      {id:"tA2L1", icon:"🎯",title:"Großer Test A2-L1",          sub:"Quiz · Lücken · Wortschatz · Wortstellung",     time:"20 мин",col:C.yellow, hasT:false, ex:()=><GrosserTestA2L1/>},
+      {id:"wtA2L1", icon:"🧠",title:"Wortschatz-Test A2-L1",     sub:"Перевод · Артикли · Обратный перевод",                 time:"10 мин",col:C.teal,   hasT:false, ex:()=><WortschatzTest lekt="A2-L1"/>},
     ]
   },
 ];
@@ -12546,6 +13083,7 @@ function DialogFragenPage(){
     L12:{label:"L12 · Im Kaufhaus",         col:C.red},
     L13:{label:"L13 · Auf Reisen",          col:C.green},
     L14:{label:"L14 · Zusammen leben",      col:C.orange},
+    "A2-L1":{label:"A2·L1 · Meine Geschichte", col:C.blue},
   };
   const filterFm=(pairs,lId)=>(lId==="L1"||lId==="L4")?pairs.filter(p=>!p.fm||p.fm===fm):pairs;
 
