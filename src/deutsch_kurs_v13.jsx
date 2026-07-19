@@ -368,6 +368,8 @@ const WBDATA=[
   {art:"",   de:"nur",          pl:"—",             ru:"только",                    tema:"Alltag", lekt:"L4",niveau:"A1"},
   {art:"",   de:"jetzt",        pl:"—",             ru:"сейчас, теперь",            tema:"Alltag", lekt:"L4",niveau:"A1"},
   {art:"",   de:"auch",         pl:"—",             ru:"тоже, также",               tema:"Alltag", lekt:"L1",niveau:"A1"},
+  {art:"",   de:"wieder",ord:478,pl:"—",            ru:"снова, опять",              tema:"Alltag", lekt:"L1",niveau:"A1"},
+  {art:"",   de:"schaffen",ord:480,pl:"—",          ru:"справляться, осиливать · schafft · hat geschafft · Geschafft! = Готово!/Получилось!", tema:"Alltag", lekt:"L1",niveau:"A1"},
   // ── L4-B · Verben mit Vokalwechsel ───────────────────────────────────────────
   {art:"",   de:"schlafen",     pl:"—",             ru:"спать",                     tema:"Alltag", lekt:"L1",niveau:"A1"},
   {art:"",   de:"fahren",       pl:"—",             ru:"ехать, ездить",             tema:"Alltag", lekt:"L1",niveau:"A1"},
@@ -1074,6 +1076,8 @@ const WBDATA=[
   {art:"",   de:"geben",            pl:"—",            ru:"давать · gibt · hat gegeben", lekt:"L8",niveau:"A1"},
   {art:"",   de:"helfen",           pl:"—",            ru:"помогать · hilft · hat geholfen", lekt:"L7",niveau:"A1"},
   {art:"",   de:"heißen",           pl:"—",            ru:"называться; звать · heißt · hat geheißen", lekt:"L1",niveau:"A1"},
+  {art:"der",de:"Vorname",ord:476,  pl:"-n",           ru:"имя",                                        tema:"Alltag", lekt:"L1",niveau:"A1"},
+  {art:"der",de:"Nachname",ord:477, pl:"-n",           ru:"фамилия",                                    tema:"Alltag", lekt:"L1",niveau:"A1"},
   {art:"",   de:"stehen",           pl:"—",            ru:"стоять · steht · hat gestanden · (Kleidung) идёт, подходит +Dativ", lekt:"L1",niveau:"A1"},
   {art:"",   de:"bringen",          pl:"—",            ru:"приносить, доставлять · bringt · hat gebracht", lekt:"L1",niveau:"A1"},
   {art:"",   de:"denken",           pl:"—",            ru:"думать · denkt · hat gedacht", lekt:"L1",niveau:"A1"},
@@ -1673,11 +1677,27 @@ const WBDATA=[
   {art:"",    de:"Meiner Meinung nach",ord:463,pl:"—",       ru:"по моему мнению",                                tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
   {art:"die", de:"Bühne",ord:464,         pl:"-n",           ru:"сцена",                                           tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
   {art:"",    de:"zuwandern",ord:465,     pl:"—",            ru:"иммигрировать, переселяться · ist zugewandert", tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"das", de:"Herkunftsland",ord:479, pl:'"-er',         ru:"страна происхождения",                          tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"die", de:"Geschichte",ord:481,    pl:"-n",           ru:"история; рассказ",                              tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
   {art:"",    de:"eigentlich",ord:466,    pl:"—",            ru:"собственно, вообще-то",                           tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
   {art:"der", de:"Leiter",ord:467,        pl:"-",            ru:"руководитель",                                   tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
   {art:"",    de:"schlimm",ord:468,       pl:"—",            ru:"тяжёлый, серьёзный (о ситуации)",                tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
   {art:"",    de:"verlieren",ord:469,     pl:"—",            ru:"терять · verlor · hat verloren",                 tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
   {art:"",    de:"aufgeben",ord:470,      pl:"—",            ru:"сдаваться; отказываться (от чего-л.) · gibt auf · hat aufgegeben",tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  // ── A2-L1 · Konspekt 17.07 (Medien, Wandern, Perfekt) ─────────────────────
+  {art:"der", de:"Weizen",ord:482,        pl:"Sg.",          ru:"пшеница",                                        tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"das", de:"Weizenbier",ord:483,    pl:"-e",           ru:"пшеничное пиво",                                 tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"",    de:"gültig",ord:484,        pl:"—",            ru:"действительный, действующий",                    tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"",    de:"gelten",ord:485,        pl:"—",            ru:"действовать, быть в силе · gilt · hat gegolten", tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"",    de:"bergauf",ord:486,       pl:"—",            ru:"в гору, вверх по склону",                        tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"",    de:"bergab",ord:487,        pl:"—",            ru:"под гору, вниз по склону",                       tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"",    de:"aufladen",ord:488,      pl:"—",            ru:"заряжать · lädt auf · hat aufgeladen",           tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"der", de:"Hintergrund",ord:489,   pl:'"-e',          ru:"задний план, фон · im Hintergrund",              tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"der", de:"Vordergrund",ord:490,   pl:'"-e',          ru:"передний план · im Vordergrund",                 tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"",    de:"verwandt",ord:491,      pl:"—",            ru:"родственный, родственник (сказ.)",               tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"die", de:"Angst",ord:492,         pl:'"-e',          ru:"страх",                                          tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"der", de:"Anfang",ord:493,        pl:'"-e',          ru:"начало",                                         tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"",    de:"besitzen",ord:494,      pl:"—",            ru:"владеть, обладать · besitzt · hat besessen",     tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
 ];
 
 
@@ -2521,6 +2541,19 @@ const KONJ_ALL={
   aufgeben:    {pref:"auf", type:"e→i", col:C.orange, bg:C.orangeBg,
     ich:"gebe … auf",  du:"gibst … auf",  "er/sie/es":"gibt … auf",
     wir:"geben … auf", ihr:"gebt … auf",  "sie/Sie":"geben … auf", pt:"gab … auf", pf:"hat aufgegeben"},
+  schaffen:    {col:C.teal, bg:C.tealBg,
+    ich:"schaffe",  du:"schaffst",  "er/sie/es":"schafft",
+    wir:"schaffen", ihr:"schafft",  "sie/Sie":"schaffen", pt:"schaffte", pf:"hat geschafft"},
+  gelten:      {type:"e→i", col:C.orange, bg:C.orangeBg,
+    ich:"gelte",  du:"giltst",  "er/sie/es":"gilt",
+    wir:"gelten", ihr:"geltet",  "sie/Sie":"gelten", pt:"galt", ptc:{du:"galtst",wir:"galten",ihr:"galtet",sie:"galten"}, pf:"hat gegolten"},
+  aufladen:    {pref:"auf", type:"a→ä", col:C.purple, bg:C.purpleBg,
+    ich:"lade … auf",  du:"lädst … auf",  "er/sie/es":"lädt … auf",
+    wir:"laden … auf", ihr:"ladet … auf",  "sie/Sie":"laden … auf", pt:"lud … auf", pf:"hat aufgeladen"},
+  besitzen:    {col:C.teal, bg:C.tealBg, note:"untrennbar: kein ge-",
+    ich:"besitze",  du:"besitzt",  "er/sie/es":"besitzt",
+    wir:"besitzen", ihr:"besitzt",  "sie/Sie":"besitzen",
+    pt:"besaß", ptc:{du:"besaßt",wir:"besaßen",ihr:"besaßt",sie:"besaßen"}, pf:"hat besessen"},
 };
 
 // Ударения: комбинирующая акута \u0301 ставится после ударной гласной
@@ -2896,6 +2929,9 @@ const STRESS_MARKS={
 // A2-L1 Meine Geschichte
 "Schrift":"Schri\u0301ft","Handschrift":"Ha\u0301ndschrift","Vorschrift":"Vo\u0301rschrift","Regel":"Re\u0301gel","schlau":"schla\u0301u","aufnehmen":"au\u0301fnehmen","Tagesordnung":"Ta\u0301gesordnung","Wahl":"Wa\u0301hl","sich verstecken":"sich verste\u0301cken","Gesellschaft":"Gese\u0301llschaft","Schutz":"Schu\u0301tz","erziehen":"erzie\u0301hen","Erzieher":"Erzie\u0301her","meinen":"mei\u0301nen","Bühne":"B\u00FC\u0301hne","zuwandern":"zu\u0301wandern","eigentlich":"ei\u0301gentlich","Leiter":"Lei\u0301ter","schlimm":"schli\u0301mm","verlieren":"verlie\u0301ren","aufgeben":"au\u0301fgeben",
 "Musikveranstaltung":"Musi\u0301kveranstaltung","Tanzveranstaltung":"Ta\u0301nzveranstaltung","Stand":"Sta\u0301nd","Tradition":"Traditio\u0301n","Nationalität":"Nationalit\u00E4\u0301t",
+"Vorname":"Vo\u0301rname","Nachname":"Na\u0301chname",
+"wieder":"wi\u0301eder","Herkunftsland":"He\u0301rkunftsland","schaffen":"scha\u0301ffen","Geschichte":"Geschi\u0301chte",
+"Weizen":"We\u0301izen","Weizenbier":"We\u0301izenbier","gültig":"gu\u0301ltig","gelten":"ge\u0301lten","bergauf":"bergau\u0301f","bergab":"berga\u0301b","aufladen":"au\u0301fladen","Hintergrund":"Hi\u0301ntergrund","Vordergrund":"Vo\u0301rdergrund","verwandt":"verwa\u0301ndt","Angst":"A\u0301ngst","Anfang":"A\u0301nfang","besitzen":"besi\u0301tzen",
 };
 
 // IPA-транскрипция для всего словаря (кроме фраз)
@@ -3253,6 +3289,9 @@ const IPA_DATA={
 // A2-L1 Meine Geschichte
 "Schrift":"[ʃʁɪft]","Handschrift":"[ˈhantʃʁɪft]","Vorschrift":"[ˈfoːɐ̯ʃʁɪft]","Regel":"[ˈʁeːɡl̩]","schlau":"[ʃlaʊ̯]","aufnehmen":"[ˈaʊ̯fneːmən]","Tagesordnung":"[ˈtaːɡəsˌʔɔʁdnʊŋ]","Wahl":"[vaːl]","sich verstecken":"[zɪç fɛɐ̯ˈʃtɛkn̩]","Gesellschaft":"[ɡəˈzɛlʃaft]","Schutz":"[ʃʊts]","erziehen":"[ɛɐ̯ˈtsiːən]","Erzieher":"[ɛɐ̯ˈtsiːɐ]","meinen":"[ˈmaɪ̯nən]","Bühne":"[ˈbyːnə]","zuwandern":"[ˈtsuːvandɐn]","eigentlich":"[ˈaɪ̯ɡn̩tlɪç]","Leiter":"[ˈlaɪ̯tɐ]","schlimm":"[ʃlɪm]","verlieren":"[fɛɐ̯ˈliːʁən]","aufgeben":"[ˈaʊ̯fɡeːbn̩]",
 "Musikveranstaltung":"[muˈziːkfɐˌʔanʃtaltʊŋ]","Tanzveranstaltung":"[ˈtantsfɐˌʔanʃtaltʊŋ]","Stand":"[ʃtant]","Tradition":"[tʁadiˈtsi̯oːn]","Nationalität":"[natsi̯onaliˈtɛːt]",
+"Vorname":"[ˈfoːɐ̯naːmə]","Nachname":"[ˈnaxnaːmə]",
+"wieder":"[ˈviːdɐ]","Herkunftsland":"[ˈhɛɐ̯kʊnftslant]","schaffen":"[ˈʃafən]","Geschichte":"[ɡəˈʃɪçtə]",
+"Weizen":"[ˈvaɪ̯tsn̩]","Weizenbier":"[ˈvaɪ̯tsn̩biːɐ̯]","gültig":"[ˈɡʏltɪç]","gelten":"[ˈɡɛltn̩]","bergauf":"[bɛɐ̯kˈʔaʊ̯f]","bergab":"[bɛɐ̯kˈʔap]","aufladen":"[ˈaʊ̯fˌlaːdn̩]","Hintergrund":"[ˈhɪntɐˌɡʁʊnt]","Vordergrund":"[ˈfɔʁdɐˌɡʁʊnt]","verwandt":"[fɛɐ̯ˈvant]","Angst":"[aŋst]","Anfang":"[ˈanfaŋ]","besitzen":"[bəˈzɪtsn̩]",
 };
 
 const DIALOGE={
@@ -3676,6 +3715,13 @@ const DIALOGE={
       {q:"Warum ist Nabil nach Deutschland gekommen?",             qRu:"Почему Набиль приехал в Германию?", a:"Ich habe meine Heimat 2013 verlassen. Die Reise war nicht einfach.", aRu:"Я покинул родину в 2013-м. Путешествие было нелёгким.", note:"Nabil Al Khatib"},
       {q:"Wie war die Arbeitssuche für Carlos in Deutschland?",    qRu:"Как проходил поиск работы у Карлоса в Германии?", a:"Ich habe lange Zeit Arbeit gesucht und war etwas enttäuscht und genervt.", aRu:"Я долго искал работу и был немного разочарован и раздражён.", note:"Carlos Álvares"},
       {q:"Wie hat Linying ihren Mann kennengelernt?",              qRu:"Как Линьин познакомилась со своим мужем?", a:"Ich habe meinen Mann in Taiwan kennengelernt. 2011 haben wir geheiratet.", aRu:"Я познакомилась с мужем на Тайване. В 2011-м мы поженились.", note:"Linying Schmidt"},
+    ]},
+    {tag:"Wie haben Sie das geschafft?",col:C.orange,pairs:[
+      {q:"Woher kommt Herr Taskin?",                               qRu:"Откуда родом господин Таскин?", a:"Herr Taskin kommt aus Afghanistan. Er hat Radiotechnik studiert.", aRu:"Господин Таскин родом из Афганистана. Он изучал радиотехнику.", note:"Familie Taskin"},
+      {q:"Wie war es am Anfang für Frau Taskin?",                  qRu:"Как было поначалу для госпожи Таскин?", a:"Am Anfang war sie mit den Kindern zu Hause.", aRu:"Поначалу она сидела дома с детьми.", note:"Familie Taskin"},
+      {q:"Was macht Frau Taskin jetzt?",                            qRu:"Что госпожа Таскин делает сейчас?", a:"Sie arbeitet als Russischlehrerin und ist aktiv in einem Verein.", aRu:"Она работает учителем русского и активна в объединении.", note:"Familie Taskin"},
+      {q:"Ist das euer Kind?",                                      qRu:"Это ваш (неформально, к нескольким) ребёнок?", a:"Ja, das ist unser Kind.", aRu:"Да, это наш ребёнок.", note:"Possessivartikel"},
+      {q:"Wie hat Herr Sorokin die Prüfung geschafft?",             qRu:"Как господин Сорокин сдал экзамен?", a:"Er hat die Prüfung erst beim zweiten Mal geschafft.", aRu:"Он сдал экзамен только со второй попытки.", note:"Herr Sorokin"},
     ]},
   ],
 };
@@ -6833,6 +6879,9 @@ const LUECKEN_A2L1=shuffle([
   {sent:"Wir haben 2011 ___.' (heiraten)",                                opts:["geheiratet","heiraten","heiratete","heiratet"], ans:0,ru:"Мы поженились в 2011-м.", hint:"Partizip II mit ge-"},
   {sent:"___ Verwandten wohnen in München. (его)",                       opts:["Seine","Ihre","Meine","Unsere"], ans:0,ru:"Его родственники живут в Мюнхене.", hint:"er → sein-"},
   {sent:"Ich finde die Stadt zu ___.' (суетливой)",                       opts:["hektisch","sauber","angenehm","interessant"], ans:0,ru:"Я нахожу город слишком суетливым.", hint:"zu + Adjektiv"},
+  {sent:"Sind das ___ Kinder? (к нескольким людям, неформально)",         opts:["eure","deine","Ihre","seine"], ans:0,ru:"Это ваши дети?", hint:"ihr → euer/eure"},
+  {sent:"Ja, das sind ___ Kinder. (наши)",                                opts:["unsere","eure","ihre","meine"], ans:0,ru:"Да, это наши дети.", hint:"wir → unser/unsere"},
+  {sent:"Herr Müller, ist das ___ Auto? (formell)",                       opts:["Ihr","dein","euer","sein"], ans:0,ru:"Господин Мюллер, это Ваша машина?", hint:"Sie → Ihr"},
 ]);
 
 const ZUORD_A2L1=[
@@ -12740,6 +12789,102 @@ function T_A2L1B(){
   );
 }
 
+const Q_A2L1C=[
+  {q:"Обращаетесь к ОДНОМУ человеку неформально (du): 'Ist das ___ Auto?'", opts:["dein","euer","Ihr","unser"], ans:0, hint:"du → dein (1 Person, informell)"},
+  {q:"Обращаетесь к НЕСКОЛЬКИМ людям неформально (ihr): 'Sind das ___ Kinder?'", opts:["dein","euer","Ihr","sein"], ans:1, hint:"ihr → euer (2+ Personen, informell)"},
+  {q:"Формально (Sie), и для одного, и для нескольких людей: 'Ist das ___ Auto?'", opts:["dein","euer","Ihr","unser"], ans:2, hint:"Sie → Ihr (formell, Sg. und Pl. gleich)"},
+  {q:"'Wir' → притяжательное местоимение:",                              opts:["unser","euer","ihr","sein"], ans:0, hint:"wir → unser/unsere"},
+  {q:"'Das ist Katjas Katze. Das ist ___ Katze.' (её)",                  opts:["seine","ihre","unsere","eure"], ans:1, hint:"sie (женщина) → ihre"},
+  {q:"Typ 2 (Sprachlerntyp) учит язык в основном через:",               opts:["говорение","чтение и письмо (Lernkarten)","угадывание, эксперименты","только правила"], ans:1, hint:"Yana: Schreiben ist wichtiger als Sprechen"},
+  {q:"Typ 4 (Sprachlerntyp) — это человек, который:",                    opts:["не любит ошибаться, сначала учит правила","любит сразу говорить","не делает домашние задания","учит только по карточкам"], ans:0, hint:"TOMXX: Ich mache nicht gern Fehler"},
+  {q:"'Wie haben Sie das geschafft?' по-русски:",                        opts:["Что вы будете делать?","Как вам это удалось?","Кто вам помог?","Когда это случилось?"], ans:1, hint:"schaffen = справиться"},
+];
+
+function T_A2L1C(){
+  const [tab,setTab]=useState("poss");
+  const possBeispiele=[
+    {de:"Das ist mein Vater. Das ist meine Mutter.",ru:"Это мой отец. Это моя мать."},
+    {de:"Ist das euer Kind? — Ja, das ist unser Kind.",ru:"Это ваш ребёнок (неформально, к нескольким)? — Да, это наш ребёнок."},
+    {de:"Sind das eure Kinder? — Ja, das sind unsere Kinder.",ru:"Это ваши дети? — Да, это наши дети."},
+    {de:"Ist das dein Hund? — Nein, das ist Pauls Hund, das ist sein Hund.",ru:"Это твоя собака? — Нет, это собака Пауля, это его собака."},
+    {de:"Ist das deine Katze? — Nein, das ist Katjas Katze, das ist ihre Katze.",ru:"Это твоя кошка? — Нет, это кошка Катьи, это её кошка."},
+    {de:"Sind das die Bücher von den Schülern? — Ja, das sind ihre Bücher.",ru:"Это книги учеников? — Да, это их книги."},
+  ];
+  const typen=[
+    {typ:"Typ 1",de:"lernt durch Sprechen",ru:"учит через говорение: слушает и повторяет вслух, проговаривает слова дома"},
+    {typ:"Typ 2",de:"lernt durch Schreiben",ru:"учит через письмо: пишет карточки, много читает — письмо важнее говорения"},
+    {typ:"Typ 3",de:"lernt durch Ausprobieren",ru:"учит через пробы: сразу использует новые слова в речи, не любит письменные задания"},
+    {typ:"Typ 4",de:"lernt durch Regeln",ru:"учит через правила: не любит ошибаться, сначала учит правило, потом делает упражнения"},
+  ];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.orange}>
+        <H c={C.orange}>💪 A2-L1C · Wie haben Sie das geschafft?</H>
+        <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
+          {[["poss","Possessivartikel"],["typen","Sprachlerntypen"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,lineHeight:1.35,textAlign:"center",
+                border:`1px solid ${tab===key?C.orange+"55":C.border}`,
+                background:tab===key?C.orange+"22":C.ov3,
+                color:tab===key?C.orange:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="poss"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,marginBottom:10,lineHeight:1.6}}>
+              Различие между <b>dein</b> и <b>euer</b> — это НЕ разные слова для «твой», а вопрос: к скольким людям вы обращаетесь:
+            </div>
+            <div style={{display:"flex",flexDirection:"column",gap:6,marginBottom:12}}>
+              <div style={{background:C.greenBg,borderRadius:8,padding:"8px 10px"}}>
+                <div style={{fontSize:12,fontWeight:800,color:C.green}}>informell · 1 Person</div>
+                <div style={{fontSize:13,color:C.text}}><b>dein/deine</b> — «твой» (обращение к одному человеку на «ты»)</div>
+              </div>
+              <div style={{background:C.greenBg,borderRadius:8,padding:"8px 10px"}}>
+                <div style={{fontSize:12,fontWeight:800,color:C.green}}>informell · 2+ Personen</div>
+                <div style={{fontSize:13,color:C.text}}><b>euer/eure</b> — «ваш» (обращение к нескольким людям на «ты»)</div>
+              </div>
+              <div style={{background:C.orangeBg,borderRadius:8,padding:"8px 10px"}}>
+                <div style={{fontSize:12,fontWeight:800,color:C.orange}}>formell · Sg. und Pl. gleich</div>
+                <div style={{fontSize:13,color:C.text}}><b>Ihr/Ihre</b> — «Ваш» (вежливое обращение — форма одна для одного и нескольких людей)</div>
+              </div>
+              <div style={{background:C.ov4,borderRadius:8,padding:"8px 10px"}}>
+                <div style={{fontSize:12,fontWeight:800,color:C.muted}}>говорим О людях (не к ним)</div>
+                <div style={{fontSize:13,color:C.text}}><b>sein/seine</b> — его, <b>ihr/ihre</b> — её/их</div>
+              </div>
+            </div>
+            <div style={{fontSize:12,fontWeight:700,color:C.muted,margin:"0 0 6px",textTransform:"uppercase",letterSpacing:0.5}}>Beispiele aus dem Dialog</div>
+            {possBeispiele.map((p,i)=>(
+              <TapEx key={i} de={p.de} ru={p.ru} col={C.orange} style={{marginBottom:5}}/>
+            ))}
+          </div>
+        )}
+        {tab==="typen"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,marginBottom:10,lineHeight:1.6}}>
+              «Wie lernt ihr Sprachen?» — четыре типа изучающих язык (Kursbuch S.14):
+            </div>
+            {typen.map((t,i)=>(
+              <div key={i} style={{background:C.ov4,borderRadius:8,padding:"9px 11px",marginBottom:6,borderLeft:`3px solid ${C.orange}`}}>
+                <div style={{fontSize:13,fontWeight:800,color:C.text}}>{t.typ} <span style={{fontWeight:600,color:C.muted}}>· {t.de}</span></div>
+                <div style={{fontSize:12,color:C.muted,marginTop:3,lineHeight:1.5}}>{t.ru}</div>
+              </div>
+            ))}
+            <div style={{background:C.blue+"15",border:`1px solid ${C.blue}33`,borderRadius:10,padding:"11px 13px",marginTop:8}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.blue,marginBottom:6}}>Wofür brauchen Sie Deutsch?</div>
+              <div style={{fontSize:13,color:C.text,lineHeight:1.7}}>
+                mit Nachbarn/Kollegen sprechen · mehr Kontakt zu Deutschen haben · mit der Familie vom Partner sprechen · Arbeit finden/suchen · Behördendeutsch verstehen · mit Mitarbeitern in Ämtern und Behörden sprechen
+              </div>
+            </div>
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
 const Q_L6A=[
   {q:"Welcher Artikel hat 'Apfel'?",          opts:["der","die","das"],                                                                     ans:0, hint:"Artikel"},
   {q:"Welcher Artikel hat 'Milch'?",          opts:["der","die","das"],                                                                     ans:1, hint:"Artikel"},
@@ -13046,12 +13191,13 @@ const LEKTIONEN=[
   },
   {
     id:"A2-L1",niveau:"A2",num:"1",title:"Meine Geschichte",
-    sub:"A Interview zum Kennenlernen (Possessivartikel) · B Zuwanderer in Deutschland (Partizip mit/ohne ge-)",
-    date:"Seite 9–11",col:C.blue,
+    sub:"Interview & Possessivartikel · A Zuwanderer in Deutschland · B Wie haben Sie das geschafft?",
+    date:"Kursbuch S.9–14 · Arbeitsbuch S.4–8",col:C.blue,
     sections:[
       {id:"dA2L1", icon:"💬",title:"Dialogfragen A2-L1",         sub:"Фразы для диалога",                                    time:"∞",     col:C.blue,  hasT:false, th:null,           ex:()=><DialogCards lId="A2-L1"/>},
-      {id:"a2l1a", icon:"🤝",title:"A · Interview zum Kennenlernen",sub:"Possessivartikel · Fragen zum Kennenlernen",         time:"7 мин", col:C.blue,  hasT:true, th:()=><T_A2L1A/>, ex:()=><Quiz questions={Q_A2L1A}/>},
-      {id:"a2l1b", icon:"🌍",title:"B · Zuwanderer in Deutschland",sub:"Partizip mit/ohne ge- · Lesetexte",                   time:"8 мин", col:C.purple,hasT:true, th:()=><T_A2L1B/>, ex:()=><Quiz questions={Q_A2L1B}/>},
+      {id:"a2l1a", icon:"🤝",title:"Interview zum Kennenlernen",sub:"Possessivartikel · Fragen zum Kennenlernen",         time:"7 мин", col:C.blue,  hasT:true, th:()=><T_A2L1A/>, ex:()=><Quiz questions={Q_A2L1A}/>},
+      {id:"a2l1b", icon:"🌍",title:"A · Zuwanderer in Deutschland",sub:"Partizip mit/ohne ge- · Lesetexte",                   time:"8 мин", col:C.purple,hasT:true, th:()=><T_A2L1B/>, ex:()=><Quiz questions={Q_A2L1B}/>},
+      {id:"a2l1c", icon:"💪",title:"B · Wie haben Sie das geschafft?",sub:"Possessivartikel Plural/formell · Sprachlerntypen",time:"8 мин", col:C.orange,hasT:true, th:()=><T_A2L1C/>, ex:()=><Quiz questions={Q_A2L1C}/>},
       {id:"wbA2L1", icon:"📖",title:"Wörterbuch A2-L1",          sub:"Слова этого урока",                                    time:"—",    col:C.teal,   hasT:false, ex:()=><LektWoerterbuch lekt="A2-L1"/>},
       {id:"tA2L1", icon:"🎯",title:"Großer Test A2-L1",          sub:"Quiz · Lücken · Wortschatz · Wortstellung",     time:"20 мин",col:C.yellow, hasT:false, ex:()=><GrosserTestA2L1/>},
       {id:"wtA2L1", icon:"🧠",title:"Wortschatz-Test A2-L1",     sub:"Перевод · Артикли · Обратный перевод",                 time:"10 мин",col:C.teal,   hasT:false, ex:()=><WortschatzTest lekt="A2-L1"/>},
@@ -13306,6 +13452,7 @@ function TabellenPage(){
 
   const seinPratT=[["ich","war"],["du","warst"],["er/sie/es","war"],["wir","waren"],["ihr","wart"],["sie/Sie","waren"]];
   const habenPratT=[["ich","hatte"],["du","hattest"],["er/sie/es","hatte"],["wir","hatten"],["ihr","hattet"],["sie/Sie","hatten"]];
+  const seinPras=[["ich","bin"],["du","bist"],["er/sie/es","ist"],["wir","sind"],["ihr","seid"],["sie/Sie","sind"]];
 
   const uhrzeit=[["9:00","neun Uhr"],["9:05","fünf nach neun"],["9:15","Viertel nach neun"],
     ["9:30","halb zehn ⚠️"],["9:45","Viertel vor zehn"],["9:55","fünf vor zehn"]];
@@ -13329,32 +13476,135 @@ function TabellenPage(){
 
   return (
     <div style={{display:"flex",flexDirection:"column"}}>
-<TableAccordion icon="📈" title="Komparativ" col={C.blue} sub="Adjektiv + -er · mit Umlaut · Ausnahmen" open={open==="komparativ"} onToggle={()=>tg("komparativ")}>
-        <div style={{background:C.blue+"15",border:`1px solid ${C.blue}33`,borderRadius:10,padding:"11px 13px",marginBottom:10}}>
-          <div style={{fontSize:13,color:C.text,lineHeight:1.7}}>
-            <b style={{color:C.orange}}>Adjektiv + -er</b> (+ als при сравнении с чем-то другим).<br/>
-            Односложные с a/o/u часто получают <b style={{color:C.orange}}>Umlaut</b>.
-          </div>
-        </div>
-        <div style={{fontSize:12,fontWeight:700,color:C.muted,marginBottom:5}}>Regelmäßig</div>
-        {komparativReg.map(([a,b])=>(
-          <div key={a} style={{background:C.ov4,borderRadius:7,padding:"6px 10px",marginBottom:4,fontSize:13,color:C.text}}>{a} → <b style={{color:C.orange}}>{b}</b></div>
-        ))}
-        <div style={{fontSize:12,fontWeight:700,color:C.muted,margin:"10px 0 5px"}}>Mit Umlaut</div>
-        {komparativUml.map(([a,b])=>(
-          <div key={a} style={{background:C.ov4,borderRadius:7,padding:"6px 10px",marginBottom:4,fontSize:13,color:C.text}}>{a} → <b style={{color:C.orange}}>{b}</b></div>
-        ))}
-        <div style={{fontSize:12,fontWeight:700,color:C.muted,margin:"10px 0 5px"}}>Ausnahmen</div>
-        <div style={{display:"flex",gap:8,flexWrap:"wrap",marginBottom:8}}>
-          {komparativAusn.map(([a,b])=>(
-            <div key={a} style={{background:C.ov4,borderRadius:8,padding:"6px 12px",fontSize:13,color:C.text}}>{a} → <b style={{color:C.orange}}>{b}</b></div>
+      <TableAccordion icon="📋" title="Starke Verben (A1 & A2)" col={C.purple} sub={`${STARKE_VERBEN.length} глаголов · Präteritum + Partizip II`} open={open==="stark"} onToggle={()=>tg("stark")}>
+        <div style={{display:"flex",gap:4,marginBottom:6,flexWrap:"wrap"}}>
+          {[["all","Все","purple"],
+            ["A1","A1","blue"],
+            ["A2","A2","teal"],
+            ["hat","haben","teal"],
+            ["ist","sein","orange"],
+          ].map(([f,lbl,col])=>(
+            <button key={f} onClick={()=>setStarkFil(f)}
+              style={{flex:1,minWidth:50,padding:"5px 3px",borderRadius:7,border:"none",cursor:"pointer",
+                fontSize:12,fontWeight:700,
+                background:starkFil===f?C[col]+"33":"transparent",
+                color:starkFil===f?C[col]:C.muted}}>
+              {lbl}
+            </button>
           ))}
         </div>
-        <TapEx de="Lübeck ist genauso groß wie Freiburg." ru="Любек такой же большой, как Фрайбург." col={C.green} style={{marginBottom:5}}/>
-        <TapEx de="Berlin ist größer als Lübeck." ru="Берлин больше, чем Любек." col={C.orange}/>
+        <div style={{display:"flex",gap:4,paddingLeft:4,marginBottom:5,fontSize:12,color:C.muted,fontWeight:700}}>
+          <span style={{flex:1}}>Infinitiv (Präsens)</span>
+          <span style={{minWidth:84}}>Partizip II</span>
+          <span style={{minWidth:30}}>+</span>
+          <span style={{minWidth:64,textAlign:"left"}}>Präteritum</span>
+        </div>
+        {(starkFil==="all"?STARKE_VERBEN
+          :starkFil==="A1"||starkFil==="A2"?STARKE_VERBEN.filter(v=>v.lv===starkFil)
+          :STARKE_VERBEN.filter(v=>v.h===starkFil)
+        ).map((v,i)=>(
+          <div key={v.inf}>
+            <div onClick={()=>setStarkIdx(starkIdx===i?null:i)}
+              style={{display:"flex",alignItems:"center",gap:4,padding:"6px 8px",
+                background:starkIdx===i?C.ov8:C.ov3,
+                borderRadius:7,marginBottom:3,cursor:"pointer",
+                borderLeft:`3px solid ${v.h==="ist"?C.orange:C.teal}`}}>
+              <div style={{flex:1,minWidth:0}}>
+                <span style={{fontWeight:700,color:C.text,fontSize:13}}>{v.inf}</span>
+                <span style={{color:C.muted,fontSize:12}}> ({v.pr})</span>
+                <span style={{marginLeft:4,background:v.lv==="A1"?C.blue+"22":C.teal+"22",
+                  color:v.lv==="A1"?C.blue:C.teal,borderRadius:3,
+                  padding:"0px 4px",fontSize:12,fontWeight:700}}>{v.lv}</span>
+              </div>
+              <div style={{minWidth:84,color:C.purple,fontWeight:700,fontSize:13}}>{v.pp}</div>
+              <div style={{minWidth:30,textAlign:"center"}}>
+                <span style={{background:v.h==="ist"?C.orange+"33":C.teal+"33",
+                  color:v.h==="ist"?C.orange:C.teal,
+                  borderRadius:4,padding:"1px 5px",fontSize:12,fontWeight:800}}>{v.h}</span>
+              </div>
+              <div style={{minWidth:64,color:C.blue,fontWeight:700,fontSize:12}}>{v.pt}</div>
+            </div>
+            {starkIdx===i&&(
+              <div style={{background:C.ov6,borderRadius:"0 0 7px 7px",
+                padding:"6px 10px",marginBottom:5,fontSize:12,
+                borderLeft:`3px solid ${v.h==="ist"?C.orange:C.teal}`}}>
+                <div style={{color:C.text,fontWeight:700,marginBottom:5}}>🔤 {v.ru}</div>
+                <TapEx de={v.bsp} ru={v.bspRu} col={v.h==="ist"?C.orange:C.teal}/>
+              </div>
+            )}
+          </div>
+        ))}
       </TableAccordion>
 
-<TableAccordion icon="🧥" title="Adjektivdeklination & welch-" col={C.red} sub="Endungen nach der/das/die/die · Fragewort welch-" open={open==="adjdekl"} onToggle={()=>tg("adjdekl")}>
+      <TableAccordion icon="👨‍👩‍👧" title="Possessivartikel" col={C.teal} sub="мой/твой/его/её… (Nominativ)" open={open==="poss"} onToggle={()=>tg("poss")}>
+        <GridT headers={["","m/n","f/Pl."]} cols={3} rows={possessiv}/>
+        <div style={{fontSize:11,color:C.muted,marginTop:8}}>n и Pl. добавляют -e к m-форме: mein→meine (f, Pl.)</div>
+      </TableAccordion>
+
+      <TableAccordion icon="⏮️" title="Präteritum: war / hatte" col={C.orange} sub="haben и sein в прошедшем" open={open==="praeteritum"} onToggle={()=>tg("praeteritum")}>
+        <div style={{display:"flex",gap:10}}>
+          <div style={{flex:1}}>
+            <div style={{fontWeight:700,color:C.purple,fontSize:12,marginBottom:5,textAlign:"center"}}>sein → war</div>
+            <GridT headers={["",""]} cols={2} rows={seinPratT}/>
+          </div>
+          <div style={{flex:1}}>
+            <div style={{fontWeight:700,color:C.blue,fontSize:12,marginBottom:5,textAlign:"center"}}>haben → hatte</div>
+            <GridT headers={["",""]} cols={2} rows={habenPratT}/>
+          </div>
+        </div>
+      </TableAccordion>
+
+      <TableAccordion icon="💪" title="Modalverben" col={C.green} sub="können · müssen · wollen · sollen · dürfen · möchten" open={open==="modal"} onToggle={()=>tg("modal")}>
+        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr 1fr",gap:4,marginBottom:4}}>
+          {["","ich","du","er/sie/es","wir/ihr/sie"].map(h=><div key={h} style={{fontSize:10,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>)}
+        </div>
+        {modalverben.map(([v,ich,du,er,pl])=>(
+          <div key={v} style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr 1fr",gap:4,marginBottom:3}}>
+            <div style={{fontSize:12,fontWeight:700,color:C.green}}>{v}</div>
+            {[ich,du,er,pl].map((f,i)=><div key={i} style={{background:C.ov4,borderRadius:5,padding:"4px",textAlign:"center",fontSize:12,color:C.text}}>{f}</div>)}
+          </div>
+        ))}
+        <div style={{background:C.ov4,borderRadius:8,padding:"8px 10px",marginTop:8,fontSize:11,color:C.muted}}>
+          ⚠️ möchten: ich = er/sie/es (möchte, без -t!)
+        </div>
+      </TableAccordion>
+
+      <TableAccordion icon="🧍" title="sein — Präsens" col={C.purple} sub="ich bin, du bist, er/sie/es ist…" open={open==="seinPras"} onToggle={()=>tg("seinPras")}>
+        <GridT headers={["",""]} cols={2} rows={seinPras}/>
+        <div style={{fontSize:11,color:C.muted,marginTop:8}}>sein — самый частый неправильный глагол, формы не образуются от инфинитива по правилам.</div>
+      </TableAccordion>
+
+      <TableAccordion icon="🧭" title="Wechselpräpositionen" col={C.blue} sub="Wo? = Dativ · Wohin? = Akkusativ" open={open==="wechsel"} onToggle={()=>tg("wechsel")}>
+        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:6}}>
+          {wechsel.map(([p,ru])=>(
+            <div key={p} style={{background:C.ov4,borderRadius:7,padding:"6px 4px",textAlign:"center"}}>
+              <div style={{color:C.blue,fontWeight:800,fontSize:13}}>{p}</div>
+              <div style={{color:C.muted,fontSize:10}}>{ru}</div>
+            </div>
+          ))}
+        </div>
+        <div style={{background:C.blue+"15",border:`1px solid ${C.blue}33`,borderRadius:8,padding:"8px 10px",marginTop:8,fontSize:12,color:C.text}}>
+          <b>Wo?</b> (место) → Dativ: <i>Das Buch liegt auf dem Tisch.</i><br/>
+          <b>Wohin?</b> (направление) → Akkusativ: <i>Ich lege das Buch auf den Tisch.</i>
+        </div>
+      </TableAccordion>
+
+      <TableAccordion icon="🗺️" title="Präpositionen mit Dativ" col={C.purple} sub="aus · bei · mit · nach · von · seit · zu · ab" open={open==="pdativ"} onToggle={()=>tg("pdativ")}>
+        {praepDativ.map(p=>(
+          <div key={p.p} style={{background:C.ov4,borderRadius:10,padding:"10px 12px",marginBottom:7,display:"flex",gap:10}}>
+            <div style={{fontSize:22,flexShrink:0,lineHeight:1}}>{p.icon}</div>
+            <div style={{flex:1,minWidth:0}}>
+              <div style={{marginBottom:5}}>
+                <span style={{color:C.purple,fontWeight:800,fontSize:14}}>{p.p}</span>
+                <span style={{color:C.muted,fontSize:12}}> — {p.ru}</span>
+              </div>
+              <TapEx de={p.bsp} ru={p.bspRu} col={C.purple}/>
+            </div>
+          </div>
+        ))}
+      </TableAccordion>
+
+      <TableAccordion icon="🧥" title="Adjektivdeklination & welch-" col={C.red} sub="Endungen nach der/das/die/die · Fragewort welch-" open={open==="adjdekl"} onToggle={()=>tg("adjdekl")}>
         <div style={{background:C.red+"15",border:`1px solid ${C.red}33`,
           borderRadius:10,padding:"11px 13px",marginBottom:10}}>
           <div style={{fontWeight:800,fontSize:13,color:C.red,marginBottom:6}}>После определённого артикля</div>
@@ -13397,7 +13647,76 @@ function TabellenPage(){
           ru="Какая юбка тебе нравится? — Какие брюки ты берёшь? — Какое это платье?" col={C.blue} style={{marginTop:6}}/>
       </TableAccordion>
 
-<TableAccordion icon="📅" title="Datum" col={C.green} sub="порядковые числительные" open={open==="datum"} onToggle={()=>tg("datum")}>
+      <TableAccordion icon="📈" title="Komparativ" col={C.blue} sub="Adjektiv + -er · mit Umlaut · Ausnahmen" open={open==="komparativ"} onToggle={()=>tg("komparativ")}>
+        <div style={{background:C.blue+"15",border:`1px solid ${C.blue}33`,borderRadius:10,padding:"11px 13px",marginBottom:10}}>
+          <div style={{fontSize:13,color:C.text,lineHeight:1.7}}>
+            <b style={{color:C.orange}}>Adjektiv + -er</b> (+ als при сравнении с чем-то другим).<br/>
+            Односложные с a/o/u часто получают <b style={{color:C.orange}}>Umlaut</b>.
+          </div>
+        </div>
+        <div style={{fontSize:12,fontWeight:700,color:C.muted,marginBottom:5}}>Regelmäßig</div>
+        {komparativReg.map(([a,b])=>(
+          <div key={a} style={{background:C.ov4,borderRadius:7,padding:"6px 10px",marginBottom:4,fontSize:13,color:C.text}}>{a} → <b style={{color:C.orange}}>{b}</b></div>
+        ))}
+        <div style={{fontSize:12,fontWeight:700,color:C.muted,margin:"10px 0 5px"}}>Mit Umlaut</div>
+        {komparativUml.map(([a,b])=>(
+          <div key={a} style={{background:C.ov4,borderRadius:7,padding:"6px 10px",marginBottom:4,fontSize:13,color:C.text}}>{a} → <b style={{color:C.orange}}>{b}</b></div>
+        ))}
+        <div style={{fontSize:12,fontWeight:700,color:C.muted,margin:"10px 0 5px"}}>Ausnahmen</div>
+        <div style={{display:"flex",gap:8,flexWrap:"wrap",marginBottom:8}}>
+          {komparativAusn.map(([a,b])=>(
+            <div key={a} style={{background:C.ov4,borderRadius:8,padding:"6px 12px",fontSize:13,color:C.text}}>{a} → <b style={{color:C.orange}}>{b}</b></div>
+          ))}
+        </div>
+        <TapEx de="Lübeck ist genauso groß wie Freiburg." ru="Любек такой же большой, как Фрайбург." col={C.green} style={{marginBottom:5}}/>
+        <TapEx de="Berlin ist größer als Lübeck." ru="Берлин больше, чем Любек." col={C.orange}/>
+      </TableAccordion>
+
+      <TableAccordion icon="📌" title="Artikel-Deklination" col={C.orange} sub="der/die/das по 4 падежам (Nom./Gen./Dat./Akk.)" open={open==="art"} onToggle={()=>tg("art")}>
+        {artikel.map(a=>(
+          <div key={a.kasus} style={{marginBottom:10}}>
+            <div style={{fontSize:12,fontWeight:700,color:C.orange,marginBottom:4}}>{a.kasus}</div>
+            <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr 1fr",gap:4,marginBottom:3}}>
+              {["","m","n","f","Pl."].map(h=><div key={h} style={{fontSize:10,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>)}
+            </div>
+            {[["bestimmt",a.bestimmt],["unbestimmt",a.unbestimmt],["kein-",a.kein]].map(([lbl,vals])=>(
+              <div key={lbl} style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr 1fr",gap:4,marginBottom:3}}>
+                <div style={{fontSize:10,color:C.muted,textAlign:"center",alignSelf:"center"}}>{lbl}</div>
+                {vals.map((v,i)=><div key={i} style={{background:C.ov4,borderRadius:5,padding:"4px",textAlign:"center",fontSize:12,color:C.text}}>{v}</div>)}
+              </div>
+            ))}
+          </div>
+        ))}
+      </TableAccordion>
+
+      <TableAccordion icon="🔄" title="Personalpronomen" col={C.blue} sub="Nominativ · Akkusativ · Dativ" open={open==="pron"} onToggle={()=>tg("pron")}>
+        <GridT headers={["Nom.","Akk.","Dat."]} cols={3} rows={personalpron}/>
+      </TableAccordion>
+
+      <TableAccordion icon="❓" title="W-Fragen" col={C.yellow} sub="вопросительные слова" open={open==="wf"} onToggle={()=>tg("wf")}>
+        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:6}}>
+          {wfragen.map(([w,ru])=>(
+            <div key={w} style={{background:C.ov4,borderRadius:7,padding:"6px 9px",display:"flex",justifyContent:"space-between"}}>
+              <span style={{color:C.yellow,fontWeight:700,fontSize:13}}>{w}</span>
+              <span style={{color:C.muted,fontSize:12}}>{ru}</span>
+            </div>
+          ))}
+        </div>
+      </TableAccordion>
+
+      <TableAccordion icon="🕐" title="Uhrzeit" col={C.teal} sub="как называть время" open={open==="uhr"} onToggle={()=>tg("uhr")}>
+        {uhrzeit.map(([t,de])=>(
+          <div key={t} style={{display:"flex",gap:10,padding:"5px 0",borderBottom:`1px solid ${C.border}`}}>
+            <span style={{minWidth:44,color:C.teal,fontWeight:800,fontSize:13}}>{t}</span>
+            <span style={{fontSize:13,color:C.text}}>{de}</span>
+          </div>
+        ))}
+        <div style={{background:C.ov4,borderRadius:8,padding:"8px 10px",marginTop:8,fontSize:11,color:C.muted}}>
+          ⚠️ halb смотрит вперёд: halb zehn = 9:30 (половина ДЕСЯТОГО)
+        </div>
+      </TableAccordion>
+
+      <TableAccordion icon="📅" title="Datum" col={C.green} sub="порядковые числительные" open={open==="datum"} onToggle={()=>tg("datum")}>
         <div style={{background:C.green+"15",border:`1px solid ${C.green}33`,
           borderRadius:10,padding:"11px 13px",marginBottom:10}}>
           <div style={{fontWeight:800,fontSize:13,color:C.green,marginBottom:6}}>Порядковые числительные (дата)</div>
@@ -13435,172 +13754,6 @@ function TabellenPage(){
         </div>
         <TapEx de="— Welcher Tag ist heute? — Heute ist der erste siebte. (01.07.) — Wann kommst du? — Ich komme am vierten sechsten. (04.06.)"
           ru="— Какое сегодня число? — Сегодня первое июля. — Когда ты приедешь? — Я приеду четвёртого июня." col={C.green} style={{marginTop:6}}/>
-      </TableAccordion>
-      <TableAccordion icon="🔄" title="Personalpronomen" col={C.blue} sub="Nominativ · Akkusativ · Dativ" open={open==="pron"} onToggle={()=>tg("pron")}>
-        <GridT headers={["Nom.","Akk.","Dat."]} cols={3} rows={personalpron}/>
-      </TableAccordion>
-
-      <TableAccordion icon="📋" title="Starke Verben (A1 & A2)" col={C.purple} sub={`${STARKE_VERBEN.length} глаголов · Präteritum + Partizip II`} open={open==="stark"} onToggle={()=>tg("stark")}>
-        <div style={{display:"flex",gap:4,marginBottom:6,flexWrap:"wrap"}}>
-          {[["all",`Все ${STARKE_VERBEN.length}`,"purple"],
-            ["A1",`A1 ${STARKE_VERBEN.filter(v=>v.lv==="A1").length}`,"blue"],
-            ["A2",`A2 ${STARKE_VERBEN.filter(v=>v.lv==="A2").length}`,"teal"],
-            ["hat",`haben ${STARKE_VERBEN.filter(v=>v.h==="hat").length}`,"teal"],
-            ["ist",`sein ${STARKE_VERBEN.filter(v=>v.h==="ist").length}`,"orange"],
-          ].map(([f,lbl,col])=>(
-            <button key={f} onClick={()=>setStarkFil(f)}
-              style={{flex:1,minWidth:50,padding:"5px 3px",borderRadius:7,border:"none",cursor:"pointer",
-                fontSize:12,fontWeight:700,
-                background:starkFil===f?C[col]+"33":"transparent",
-                color:starkFil===f?C[col]:C.muted}}>
-              {lbl}
-            </button>
-          ))}
-        </div>
-        <div style={{display:"flex",gap:4,paddingLeft:4,marginBottom:5,fontSize:12,color:C.muted,fontWeight:700}}>
-          <span style={{flex:1}}>Infinitiv (Präsens)</span>
-          <span style={{minWidth:64,textAlign:"left"}}>Präteritum</span>
-          <span style={{minWidth:84}}>Partizip II</span>
-          <span style={{minWidth:30}}>+</span>
-        </div>
-        {(starkFil==="all"?STARKE_VERBEN
-          :starkFil==="A1"||starkFil==="A2"?STARKE_VERBEN.filter(v=>v.lv===starkFil)
-          :STARKE_VERBEN.filter(v=>v.h===starkFil)
-        ).map((v,i)=>(
-          <div key={v.inf}>
-            <div onClick={()=>setStarkIdx(starkIdx===i?null:i)}
-              style={{display:"flex",alignItems:"center",gap:4,padding:"6px 8px",
-                background:starkIdx===i?C.ov8:C.ov3,
-                borderRadius:7,marginBottom:3,cursor:"pointer",
-                borderLeft:`3px solid ${v.h==="ist"?C.orange:C.teal}`}}>
-              <div style={{flex:1,minWidth:0}}>
-                <span style={{fontWeight:700,color:C.text,fontSize:13}}>{v.inf}</span>
-                <span style={{color:C.muted,fontSize:12}}> ({v.pr})</span>
-                <span style={{marginLeft:4,background:v.lv==="A1"?C.blue+"22":C.teal+"22",
-                  color:v.lv==="A1"?C.blue:C.teal,borderRadius:3,
-                  padding:"0px 4px",fontSize:12,fontWeight:700}}>{v.lv}</span>
-              </div>
-              <div style={{minWidth:64,color:C.blue,fontWeight:700,fontSize:12}}>{v.pt}</div>
-              <div style={{minWidth:84,color:C.purple,fontWeight:700,fontSize:13}}>{v.pp}</div>
-              <div style={{minWidth:30,textAlign:"center"}}>
-                <span style={{background:v.h==="ist"?C.orange+"33":C.teal+"33",
-                  color:v.h==="ist"?C.orange:C.teal,
-                  borderRadius:4,padding:"1px 5px",fontSize:12,fontWeight:800}}>{v.h}</span>
-              </div>
-            </div>
-            {starkIdx===i&&(
-              <div style={{background:C.ov6,borderRadius:"0 0 7px 7px",
-                padding:"6px 10px",marginBottom:5,fontSize:12,
-                borderLeft:`3px solid ${v.h==="ist"?C.orange:C.teal}`}}>
-                <div style={{color:C.text,fontWeight:700,marginBottom:5}}>🔤 {v.ru}</div>
-                <TapEx de={v.bsp} ru={v.bspRu} col={v.h==="ist"?C.orange:C.teal}/>
-              </div>
-            )}
-          </div>
-        ))}
-      </TableAccordion>
-
-      <TableAccordion icon="🧭" title="Wechselpräpositionen" col={C.blue} sub="Wo? = Dativ · Wohin? = Akkusativ" open={open==="wechsel"} onToggle={()=>tg("wechsel")}>
-        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:6}}>
-          {wechsel.map(([p,ru])=>(
-            <div key={p} style={{background:C.ov4,borderRadius:7,padding:"6px 4px",textAlign:"center"}}>
-              <div style={{color:C.blue,fontWeight:800,fontSize:13}}>{p}</div>
-              <div style={{color:C.muted,fontSize:10}}>{ru}</div>
-            </div>
-          ))}
-        </div>
-        <div style={{background:C.blue+"15",border:`1px solid ${C.blue}33`,borderRadius:8,padding:"8px 10px",marginTop:8,fontSize:12,color:C.text}}>
-          <b>Wo?</b> (место) → Dativ: <i>Das Buch liegt auf dem Tisch.</i><br/>
-          <b>Wohin?</b> (направление) → Akkusativ: <i>Ich lege das Buch auf den Tisch.</i>
-        </div>
-      </TableAccordion>
-
-      <TableAccordion icon="🗺️" title="Präpositionen mit Dativ" col={C.purple} sub="aus · bei · mit · nach · von · seit · zu · ab" open={open==="pdativ"} onToggle={()=>tg("pdativ")}>
-        {praepDativ.map(p=>(
-          <div key={p.p} style={{background:C.ov4,borderRadius:10,padding:"10px 12px",marginBottom:7,display:"flex",gap:10}}>
-            <div style={{fontSize:22,flexShrink:0,lineHeight:1}}>{p.icon}</div>
-            <div style={{flex:1,minWidth:0}}>
-              <div style={{marginBottom:5}}>
-                <span style={{color:C.purple,fontWeight:800,fontSize:14}}>{p.p}</span>
-                <span style={{color:C.muted,fontSize:12}}> — {p.ru}</span>
-              </div>
-              <TapEx de={p.bsp} ru={p.bspRu} col={C.purple}/>
-            </div>
-          </div>
-        ))}
-      </TableAccordion>
-
-      <TableAccordion icon="💪" title="Modalverben" col={C.green} sub="können · müssen · wollen · sollen · dürfen · möchten" open={open==="modal"} onToggle={()=>tg("modal")}>
-        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr 1fr",gap:4,marginBottom:4}}>
-          {["","ich","du","er/sie/es","wir/ihr/sie"].map(h=><div key={h} style={{fontSize:10,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>)}
-        </div>
-        {modalverben.map(([v,ich,du,er,pl])=>(
-          <div key={v} style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr 1fr",gap:4,marginBottom:3}}>
-            <div style={{fontSize:12,fontWeight:700,color:C.green}}>{v}</div>
-            {[ich,du,er,pl].map((f,i)=><div key={i} style={{background:C.ov4,borderRadius:5,padding:"4px",textAlign:"center",fontSize:12,color:C.text}}>{f}</div>)}
-          </div>
-        ))}
-        <div style={{background:C.ov4,borderRadius:8,padding:"8px 10px",marginTop:8,fontSize:11,color:C.muted}}>
-          ⚠️ möchten: ich = er/sie/es (möchte, без -t!)
-        </div>
-      </TableAccordion>
-
-      <TableAccordion icon="🕐" title="Uhrzeit" col={C.teal} sub="как называть время" open={open==="uhr"} onToggle={()=>tg("uhr")}>
-        {uhrzeit.map(([t,de])=>(
-          <div key={t} style={{display:"flex",gap:10,padding:"5px 0",borderBottom:`1px solid ${C.border}`}}>
-            <span style={{minWidth:44,color:C.teal,fontWeight:800,fontSize:13}}>{t}</span>
-            <span style={{fontSize:13,color:C.text}}>{de}</span>
-          </div>
-        ))}
-        <div style={{background:C.ov4,borderRadius:8,padding:"8px 10px",marginTop:8,fontSize:11,color:C.muted}}>
-          ⚠️ halb смотрит вперёд: halb zehn = 9:30 (половина ДЕСЯТОГО)
-        </div>
-      </TableAccordion>
-
-      <TableAccordion icon="⏮️" title="Präteritum: war / hatte" col={C.orange} sub="haben и sein в прошедшем" open={open==="praeteritum"} onToggle={()=>tg("praeteritum")}>
-        <div style={{display:"flex",gap:10}}>
-          <div style={{flex:1}}>
-            <div style={{fontWeight:700,color:C.purple,fontSize:12,marginBottom:5,textAlign:"center"}}>sein → war</div>
-            <GridT headers={["",""]} cols={2} rows={seinPratT}/>
-          </div>
-          <div style={{flex:1}}>
-            <div style={{fontWeight:700,color:C.blue,fontSize:12,marginBottom:5,textAlign:"center"}}>haben → hatte</div>
-            <GridT headers={["",""]} cols={2} rows={habenPratT}/>
-          </div>
-        </div>
-      </TableAccordion>
-
-      <TableAccordion icon="👨‍👩‍👧" title="Possessivartikel" col={C.teal} sub="мой/твой/его/её… (Nominativ)" open={open==="poss"} onToggle={()=>tg("poss")}>
-        <GridT headers={["","m/n","f/Pl."]} cols={3} rows={possessiv}/>
-        <div style={{fontSize:11,color:C.muted,marginTop:8}}>n и Pl. добавляют -e к m-форме: mein→meine (f, Pl.)</div>
-      </TableAccordion>
-
-      <TableAccordion icon="📌" title="Artikel-Deklination" col={C.orange} sub="der/die/das по 4 падежам (Nom./Gen./Dat./Akk.)" open={open==="art"} onToggle={()=>tg("art")}>
-        {artikel.map(a=>(
-          <div key={a.kasus} style={{marginBottom:10}}>
-            <div style={{fontSize:12,fontWeight:700,color:C.orange,marginBottom:4}}>{a.kasus}</div>
-            <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr 1fr",gap:4,marginBottom:3}}>
-              {["","m","n","f","Pl."].map(h=><div key={h} style={{fontSize:10,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>)}
-            </div>
-            {[["bestimmt",a.bestimmt],["unbestimmt",a.unbestimmt],["kein-",a.kein]].map(([lbl,vals])=>(
-              <div key={lbl} style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr 1fr",gap:4,marginBottom:3}}>
-                <div style={{fontSize:10,color:C.muted,textAlign:"center",alignSelf:"center"}}>{lbl}</div>
-                {vals.map((v,i)=><div key={i} style={{background:C.ov4,borderRadius:5,padding:"4px",textAlign:"center",fontSize:12,color:C.text}}>{v}</div>)}
-              </div>
-            ))}
-          </div>
-        ))}
-      </TableAccordion>
-
-      <TableAccordion icon="❓" title="W-Fragen" col={C.yellow} sub="вопросительные слова" open={open==="wf"} onToggle={()=>tg("wf")}>
-        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:6}}>
-          {wfragen.map(([w,ru])=>(
-            <div key={w} style={{background:C.ov4,borderRadius:7,padding:"6px 9px",display:"flex",justifyContent:"space-between"}}>
-              <span style={{color:C.yellow,fontWeight:700,fontSize:13}}>{w}</span>
-              <span style={{color:C.muted,fontSize:12}}>{ru}</span>
-            </div>
-          ))}
-        </div>
       </TableAccordion>
 
       
