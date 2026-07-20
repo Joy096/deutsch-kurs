@@ -10727,11 +10727,11 @@ function T10A(){
         {tab==="stark"&&(
           <div>
             <div style={{display:"flex",gap:4,marginBottom:6,flexWrap:"wrap"}}>
-              {[["all",`Все ${STARKE_VERBEN.length}`,"purple"],
-                ["A1",`A1 ${STARKE_VERBEN.filter(v=>v.lv==="A1").length}`,"blue"],
-                ["A2",`A2 ${STARKE_VERBEN.filter(v=>v.lv==="A2").length}`,"teal"],
-                ["hat",`haben ${STARKE_VERBEN.filter(v=>v.h==="hat").length}`,"teal"],
-                ["ist",`sein ${STARKE_VERBEN.filter(v=>v.h==="ist").length}`,"orange"],
+              {[["all","Все","purple"],
+                ["A1","A1","blue"],
+                ["A2","A2","teal"],
+                ["hat","haben","teal"],
+                ["ist","sein","orange"],
               ].map(([f,lbl,col])=>(
                 <button key={f} onClick={()=>setStarkFil(f)}
                   style={{flex:1,minWidth:50,padding:"5px 3px",borderRadius:7,border:"none",cursor:"pointer",
@@ -10744,9 +10744,9 @@ function T10A(){
             </div>
             <div style={{display:"flex",gap:4,paddingLeft:4,marginBottom:5,fontSize:12,color:C.muted,fontWeight:700}}>
               <span style={{flex:1}}>Infinitiv (Präsens)</span>
-              <span style={{minWidth:64,textAlign:"left"}}>Präteritum</span>
+              <span style={{minWidth:56,textAlign:"center"}}>Hilfsverb</span>
               <span style={{minWidth:84}}>Partizip II</span>
-              <span style={{minWidth:30}}>+</span>
+              <span style={{minWidth:64,textAlign:"left"}}>Präteritum</span>
             </div>
             {(starkFil==="all"?STARKE_VERBEN
               :starkFil==="A1"||starkFil==="A2"?STARKE_VERBEN.filter(v=>v.lv===starkFil)
@@ -10765,13 +10765,13 @@ function T10A(){
                       color:v.lv==="A1"?C.blue:C.teal,borderRadius:3,
                       padding:"0px 4px",fontSize:12,fontWeight:700}}>{v.lv}</span>
                   </div>
-                  <div style={{minWidth:64,color:C.blue,fontWeight:700,fontSize:12}}>{v.pt}</div>
-                  <div style={{minWidth:84,color:C.purple,fontWeight:700,fontSize:13}}>{v.pp}</div>
-                  <div style={{minWidth:30,textAlign:"center"}}>
+                  <div style={{minWidth:56,textAlign:"center"}}>
                     <span style={{background:v.h==="ist"?C.orange+"33":C.teal+"33",
                       color:v.h==="ist"?C.orange:C.teal,
                       borderRadius:4,padding:"1px 5px",fontSize:12,fontWeight:800}}>{v.h}</span>
                   </div>
+                  <div style={{minWidth:84,color:C.purple,fontWeight:700,fontSize:13}}>{v.pp}</div>
+                  <div style={{minWidth:64,color:C.blue,fontWeight:700,fontSize:12}}>{v.pt}</div>
                 </div>
                 {starkIdx===i&&(
                   <div style={{background:C.ov6,borderRadius:"0 0 7px 7px",
@@ -13476,7 +13476,7 @@ function TabellenPage(){
 
   return (
     <div style={{display:"flex",flexDirection:"column"}}>
-      <TableAccordion icon="📋" title="Starke Verben (A1 & A2)" col={C.purple} sub={`${STARKE_VERBEN.length} глаголов · Präteritum + Partizip II`} open={open==="stark"} onToggle={()=>tg("stark")}>
+            <TableAccordion icon="📋" title="Starke Verben (A1 & A2)" col={C.purple} sub={`${STARKE_VERBEN.length} глаголов · Präteritum + Partizip II`} open={open==="stark"} onToggle={()=>tg("stark")}>
         <div style={{display:"flex",gap:4,marginBottom:6,flexWrap:"wrap"}}>
           {[["all","Все","purple"],
             ["A1","A1","blue"],
@@ -13495,8 +13495,8 @@ function TabellenPage(){
         </div>
         <div style={{display:"flex",gap:4,paddingLeft:4,marginBottom:5,fontSize:12,color:C.muted,fontWeight:700}}>
           <span style={{flex:1}}>Infinitiv (Präsens)</span>
+          <span style={{minWidth:56,textAlign:"center"}}>Hilfsverb</span>
           <span style={{minWidth:84}}>Partizip II</span>
-          <span style={{minWidth:30}}>+</span>
           <span style={{minWidth:64,textAlign:"left"}}>Präteritum</span>
         </div>
         {(starkFil==="all"?STARKE_VERBEN
@@ -13516,12 +13516,12 @@ function TabellenPage(){
                   color:v.lv==="A1"?C.blue:C.teal,borderRadius:3,
                   padding:"0px 4px",fontSize:12,fontWeight:700}}>{v.lv}</span>
               </div>
-              <div style={{minWidth:84,color:C.purple,fontWeight:700,fontSize:13}}>{v.pp}</div>
-              <div style={{minWidth:30,textAlign:"center"}}>
+              <div style={{minWidth:56,textAlign:"center"}}>
                 <span style={{background:v.h==="ist"?C.orange+"33":C.teal+"33",
                   color:v.h==="ist"?C.orange:C.teal,
                   borderRadius:4,padding:"1px 5px",fontSize:12,fontWeight:800}}>{v.h}</span>
               </div>
+              <div style={{minWidth:84,color:C.purple,fontWeight:700,fontSize:13}}>{v.pp}</div>
               <div style={{minWidth:64,color:C.blue,fontWeight:700,fontSize:12}}>{v.pt}</div>
             </div>
             {starkIdx===i&&(
@@ -13539,6 +13539,40 @@ function TabellenPage(){
       <TableAccordion icon="👨‍👩‍👧" title="Possessivartikel" col={C.teal} sub="мой/твой/его/её… (Nominativ)" open={open==="poss"} onToggle={()=>tg("poss")}>
         <GridT headers={["","m/n","f/Pl."]} cols={3} rows={possessiv}/>
         <div style={{fontSize:11,color:C.muted,marginTop:8}}>n и Pl. добавляют -e к m-форме: mein→meine (f, Pl.)</div>
+      </TableAccordion>
+
+      <TableAccordion icon="🔄" title="Personalpronomen" col={C.blue} sub="Nominativ · Akkusativ · Dativ" open={open==="pron"} onToggle={()=>tg("pron")}>
+        <GridT headers={["Nom.","Akk.","Dat."]} cols={3} rows={personalpron}/>
+      </TableAccordion>
+
+      <TableAccordion icon="🧭" title="Wechselpräpositionen" col={C.blue} sub="Wo? = Dativ · Wohin? = Akkusativ" open={open==="wechsel"} onToggle={()=>tg("wechsel")}>
+        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:6}}>
+          {wechsel.map(([p,ru])=>(
+            <div key={p} style={{background:C.ov4,borderRadius:7,padding:"6px 4px",textAlign:"center"}}>
+              <div style={{color:C.blue,fontWeight:800,fontSize:13}}>{p}</div>
+              <div style={{color:C.muted,fontSize:10}}>{ru}</div>
+            </div>
+          ))}
+        </div>
+        <div style={{background:C.blue+"15",border:`1px solid ${C.blue}33`,borderRadius:8,padding:"8px 10px",marginTop:8,fontSize:12,color:C.text}}>
+          <b>Wo?</b> (место) → Dativ: <i>Das Buch liegt auf dem Tisch.</i><br/>
+          <b>Wohin?</b> (направление) → Akkusativ: <i>Ich lege das Buch auf den Tisch.</i>
+        </div>
+      </TableAccordion>
+
+      <TableAccordion icon="🗺️" title="Präpositionen mit Dativ" col={C.purple} sub="aus · bei · mit · nach · von · seit · zu · ab" open={open==="pdativ"} onToggle={()=>tg("pdativ")}>
+        {praepDativ.map(p=>(
+          <div key={p.p} style={{background:C.ov4,borderRadius:10,padding:"10px 12px",marginBottom:7,display:"flex",gap:10}}>
+            <div style={{fontSize:22,flexShrink:0,lineHeight:1}}>{p.icon}</div>
+            <div style={{flex:1,minWidth:0}}>
+              <div style={{marginBottom:5}}>
+                <span style={{color:C.purple,fontWeight:800,fontSize:14}}>{p.p}</span>
+                <span style={{color:C.muted,fontSize:12}}> — {p.ru}</span>
+              </div>
+              <TapEx de={p.bsp} ru={p.bspRu} col={C.purple}/>
+            </div>
+          </div>
+        ))}
       </TableAccordion>
 
       <TableAccordion icon="⏮️" title="Präteritum: war / hatte" col={C.orange} sub="haben и sein в прошедшем" open={open==="praeteritum"} onToggle={()=>tg("praeteritum")}>
@@ -13572,36 +13606,6 @@ function TabellenPage(){
       <TableAccordion icon="🧍" title="sein — Präsens" col={C.purple} sub="ich bin, du bist, er/sie/es ist…" open={open==="seinPras"} onToggle={()=>tg("seinPras")}>
         <GridT headers={["",""]} cols={2} rows={seinPras}/>
         <div style={{fontSize:11,color:C.muted,marginTop:8}}>sein — самый частый неправильный глагол, формы не образуются от инфинитива по правилам.</div>
-      </TableAccordion>
-
-      <TableAccordion icon="🧭" title="Wechselpräpositionen" col={C.blue} sub="Wo? = Dativ · Wohin? = Akkusativ" open={open==="wechsel"} onToggle={()=>tg("wechsel")}>
-        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:6}}>
-          {wechsel.map(([p,ru])=>(
-            <div key={p} style={{background:C.ov4,borderRadius:7,padding:"6px 4px",textAlign:"center"}}>
-              <div style={{color:C.blue,fontWeight:800,fontSize:13}}>{p}</div>
-              <div style={{color:C.muted,fontSize:10}}>{ru}</div>
-            </div>
-          ))}
-        </div>
-        <div style={{background:C.blue+"15",border:`1px solid ${C.blue}33`,borderRadius:8,padding:"8px 10px",marginTop:8,fontSize:12,color:C.text}}>
-          <b>Wo?</b> (место) → Dativ: <i>Das Buch liegt auf dem Tisch.</i><br/>
-          <b>Wohin?</b> (направление) → Akkusativ: <i>Ich lege das Buch auf den Tisch.</i>
-        </div>
-      </TableAccordion>
-
-      <TableAccordion icon="🗺️" title="Präpositionen mit Dativ" col={C.purple} sub="aus · bei · mit · nach · von · seit · zu · ab" open={open==="pdativ"} onToggle={()=>tg("pdativ")}>
-        {praepDativ.map(p=>(
-          <div key={p.p} style={{background:C.ov4,borderRadius:10,padding:"10px 12px",marginBottom:7,display:"flex",gap:10}}>
-            <div style={{fontSize:22,flexShrink:0,lineHeight:1}}>{p.icon}</div>
-            <div style={{flex:1,minWidth:0}}>
-              <div style={{marginBottom:5}}>
-                <span style={{color:C.purple,fontWeight:800,fontSize:14}}>{p.p}</span>
-                <span style={{color:C.muted,fontSize:12}}> — {p.ru}</span>
-              </div>
-              <TapEx de={p.bsp} ru={p.bspRu} col={C.purple}/>
-            </div>
-          </div>
-        ))}
       </TableAccordion>
 
       <TableAccordion icon="🧥" title="Adjektivdeklination & welch-" col={C.red} sub="Endungen nach der/das/die/die · Fragewort welch-" open={open==="adjdekl"} onToggle={()=>tg("adjdekl")}>
@@ -13687,10 +13691,6 @@ function TabellenPage(){
             ))}
           </div>
         ))}
-      </TableAccordion>
-
-      <TableAccordion icon="🔄" title="Personalpronomen" col={C.blue} sub="Nominativ · Akkusativ · Dativ" open={open==="pron"} onToggle={()=>tg("pron")}>
-        <GridT headers={["Nom.","Akk.","Dat."]} cols={3} rows={personalpron}/>
       </TableAccordion>
 
       <TableAccordion icon="❓" title="W-Fragen" col={C.yellow} sub="вопросительные слова" open={open==="wf"} onToggle={()=>tg("wf")}>
