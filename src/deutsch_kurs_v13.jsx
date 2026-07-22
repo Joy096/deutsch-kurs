@@ -1698,6 +1698,8 @@ const WBDATA=[
   {art:"die", de:"Angst",ord:492,         pl:'"-e',          ru:"страх",                                          tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
   {art:"der", de:"Anfang",ord:493,        pl:'"-e',          ru:"начало",                                         tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
   {art:"",    de:"besitzen",ord:494,      pl:"—",            ru:"владеть, обладать · besitzt · hat besessen",     tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"",    de:"leicht",ord:495,        pl:"—",            ru:"лёгкий (по весу); лёгкий, несложный",            tema:"Reisen", lekt:"L13",niveau:"A1"},
+  {art:"",    de:"behalten",ord:496,      pl:"—",            ru:"оставлять себе; запоминать · behält · hat behalten", tema:"Alltag", lekt:"L1",niveau:"A1"},
 ];
 
 
@@ -2554,6 +2556,10 @@ const KONJ_ALL={
     ich:"besitze",  du:"besitzt",  "er/sie/es":"besitzt",
     wir:"besitzen", ihr:"besitzt",  "sie/Sie":"besitzen",
     pt:"besaß", ptc:{du:"besaßt",wir:"besaßen",ihr:"besaßt",sie:"besaßen"}, pf:"hat besessen"},
+  behalten:    {type:"a→ä", col:C.purple, bg:C.purpleBg, note:"untrennbar: kein ge-",
+    ich:"behalte",  du:"behältst",  "er/sie/es":"behält",
+    wir:"behalten", ihr:"behaltet",  "sie/Sie":"behalten",
+    pt:"behielt", ptc:{du:"behieltst",wir:"behielten",ihr:"behieltet",sie:"behielten"}, pf:"hat behalten"},
 };
 
 // Ударения: комбинирующая акута \u0301 ставится после ударной гласной
@@ -2931,7 +2937,7 @@ const STRESS_MARKS={
 "Musikveranstaltung":"Musi\u0301kveranstaltung","Tanzveranstaltung":"Ta\u0301nzveranstaltung","Stand":"Sta\u0301nd","Tradition":"Traditio\u0301n","Nationalität":"Nationalit\u00E4\u0301t",
 "Vorname":"Vo\u0301rname","Nachname":"Na\u0301chname",
 "wieder":"wi\u0301eder","Herkunftsland":"He\u0301rkunftsland","schaffen":"scha\u0301ffen","Geschichte":"Geschi\u0301chte",
-"Weizen":"We\u0301izen","Weizenbier":"We\u0301izenbier","gültig":"gu\u0301ltig","gelten":"ge\u0301lten","bergauf":"bergau\u0301f","bergab":"berga\u0301b","aufladen":"au\u0301fladen","Hintergrund":"Hi\u0301ntergrund","Vordergrund":"Vo\u0301rdergrund","verwandt":"verwa\u0301ndt","Angst":"A\u0301ngst","Anfang":"A\u0301nfang","besitzen":"besi\u0301tzen",
+"Weizen":"We\u0301izen","Weizenbier":"We\u0301izenbier","gültig":"gu\u0301ltig","gelten":"ge\u0301lten","bergauf":"bergau\u0301f","bergab":"berga\u0301b","aufladen":"au\u0301fladen","Hintergrund":"Hi\u0301ntergrund","Vordergrund":"Vo\u0301rdergrund","verwandt":"verwa\u0301ndt","Angst":"A\u0301ngst","Anfang":"A\u0301nfang","besitzen":"besi\u0301tzen","leicht":"lei\u0301cht","behalten":"beha\u0301lten",
 };
 
 // IPA-транскрипция для всего словаря (кроме фраз)
@@ -3291,7 +3297,7 @@ const IPA_DATA={
 "Musikveranstaltung":"[muˈziːkfɐˌʔanʃtaltʊŋ]","Tanzveranstaltung":"[ˈtantsfɐˌʔanʃtaltʊŋ]","Stand":"[ʃtant]","Tradition":"[tʁadiˈtsi̯oːn]","Nationalität":"[natsi̯onaliˈtɛːt]",
 "Vorname":"[ˈfoːɐ̯naːmə]","Nachname":"[ˈnaxnaːmə]",
 "wieder":"[ˈviːdɐ]","Herkunftsland":"[ˈhɛɐ̯kʊnftslant]","schaffen":"[ˈʃafən]","Geschichte":"[ɡəˈʃɪçtə]",
-"Weizen":"[ˈvaɪ̯tsn̩]","Weizenbier":"[ˈvaɪ̯tsn̩biːɐ̯]","gültig":"[ˈɡʏltɪç]","gelten":"[ˈɡɛltn̩]","bergauf":"[bɛɐ̯kˈʔaʊ̯f]","bergab":"[bɛɐ̯kˈʔap]","aufladen":"[ˈaʊ̯fˌlaːdn̩]","Hintergrund":"[ˈhɪntɐˌɡʁʊnt]","Vordergrund":"[ˈfɔʁdɐˌɡʁʊnt]","verwandt":"[fɛɐ̯ˈvant]","Angst":"[aŋst]","Anfang":"[ˈanfaŋ]","besitzen":"[bəˈzɪtsn̩]",
+"Weizen":"[ˈvaɪ̯tsn̩]","Weizenbier":"[ˈvaɪ̯tsn̩biːɐ̯]","gültig":"[ˈɡʏltɪç]","gelten":"[ˈɡɛltn̩]","bergauf":"[bɛɐ̯kˈʔaʊ̯f]","bergab":"[bɛɐ̯kˈʔap]","aufladen":"[ˈaʊ̯fˌlaːdn̩]","Hintergrund":"[ˈhɪntɐˌɡʁʊnt]","Vordergrund":"[ˈfɔʁdɐˌɡʁʊnt]","verwandt":"[fɛɐ̯ˈvant]","Angst":"[aŋst]","Anfang":"[ˈanfaŋ]","besitzen":"[bəˈzɪtsn̩]","leicht":"[laɪ̯çt]","behalten":"[bəˈhaltn̩]",
 };
 
 const DIALOGE={
@@ -13406,6 +13412,21 @@ function TabellenPage(){
   const tg=(k)=>setOpen(open===k?null:k);
   const [starkFil,setStarkFil]=useState("all");
   const [starkIdx,setStarkIdx]=useState(null);
+  const [praepTab,setPraepTab]=useState("akk");
+  const [komparativTab,setKomparativTab]=useState("reg");
+  const [ortTab,setOrtTab]=useState("im");
+  const ortIm=[["im Krankenhaus","в больнице"],["im Haus","в доме"],["im Bett","в кровати"],["im Bad","в ванной"],
+    ["im Wasser","в воде"],["im Kino","в кино"],["im Auto","в машине"],["im Ausland","за границей"],
+    ["im Büro","в офисе"],["im Restaurant","в ресторане"]];
+  const ortAuf=[["auf dem Balkon","на балконе"],["auf der Terrasse","на террасе"],["auf der Bank","на скамейке"],
+    ["auf dem Sofa","на диване"],["auf der Straße","на улице"],["auf dem Stuhl","на стуле"],
+    ["auf dem Markt","на рынке"],["auf dem Spielplatz","на детской площадке"],["auf dem Tisch","на столе"],["auf dem Dach","на крыше"]];
+  const ortBei=[["bei der Arbeit","на работе"],["bei der Post","на почте"],["bei der Polizei","в полиции"],
+    ["bei den Eltern","у родителей"],["bei Oma","у бабушки"],["bei Anna","у Анны"],
+    ["bei Freunden","у друзей"],["bei Bekannten","у знакомых"],["beim Arzt","у врача"],["beim Friseur","у парикмахера"]];
+  const ortAm=[["am Bahnhof","на вокзале"],["am Flughafen","в аэропорту"],["am Strand","на пляже"],
+    ["am Meer","на море"],["am Fenster","у окна"],["am Tisch","за столом"],["am Computer","за компьютером"],
+    ["am Schreibtisch","за письменным столом"],["am See","на озере"],["am Eingang","у входа"]];
 
   const personalpron=[["ich","mich","mir"],["du","dich","dir"],["er","ihn","ihm"],["sie","sie","ihr"],
     ["es","es","ihm"],["wir","uns","uns"],["ihr","euch","euch"],["sie/Sie","sie/Sie","ihnen/Ihnen"]];
@@ -13436,6 +13457,13 @@ function TabellenPage(){
     ["möchten","möchte","möchtest","möchte","möchten"],
   ];
 
+  const praepAkk=[
+    {p:"durch",icon:"🌊",ru:"через",         bsp:"Ich gehe durch den Park.",         bspRu:"Я иду через парк."},
+    {p:"für",  icon:"🎁",ru:"для",           bsp:"Das Geschenk ist für dich.",       bspRu:"Подарок для тебя."},
+    {p:"ohne", icon:"🚫",ru:"без",           bsp:"Ich trinke Kaffee ohne Zucker.",   bspRu:"Я пью кофе без сахара."},
+    {p:"gegen",icon:"⚔️",ru:"против",        bsp:"Er spielt gegen den Nachbarn.",    bspRu:"Он играет против соседа."},
+    {p:"um",   icon:"🔄",ru:"вокруг; в (время)", bsp:"Wir sitzen um den Tisch.",     bspRu:"Мы сидим вокруг стола."},
+  ];
   const praepDativ=[
     {p:"aus", icon:"🌍",ru:"из (происхождение)",        bsp:"Er kommt aus der Ukraine.",              bspRu:"Он из Украины."},
     {p:"bei", icon:"🏠",ru:"у, при (место/работа)",     bsp:"Mein Vater arbeitet bei Mercedes.",      bspRu:"Мой отец работает в Mercedes."},
@@ -13445,6 +13473,7 @@ function TabellenPage(){
     {p:"seit",icon:"⏰",ru:"с (времени)",               bsp:"Seit einem Jahr lerne ich Deutsch.",      bspRu:"Я учу немецкий уже год."},
     {p:"zu",  icon:"🎯",ru:"к (человеку/месту)",        bsp:"Ich gehe zum Arzt.",                      bspRu:"Я иду к врачу."},
     {p:"ab",  icon:"📅",ru:"с (времени), начиная с",    bsp:"Ab Dienstag ist das Geschäft geöffnet.",  bspRu:"Со вторника магазин открыт."},
+    {p:"gegenüber",icon:"↔️",ru:"напротив",             bsp:"Das Café ist gegenüber der Bank.",        bspRu:"Кафе напротив банка."},
   ];
 
   const wechsel=[["in","в"],["an","у, при"],["auf","на"],["unter","под"],["über","над"],
@@ -13545,34 +13574,132 @@ function TabellenPage(){
         <GridT headers={["Nom.","Akk.","Dat."]} cols={3} rows={personalpron}/>
       </TableAccordion>
 
-      <TableAccordion icon="🧭" title="Wechselpräpositionen" col={C.blue} sub="Wo? = Dativ · Wohin? = Akkusativ" open={open==="wechsel"} onToggle={()=>tg("wechsel")}>
-        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:6}}>
-          {wechsel.map(([p,ru])=>(
-            <div key={p} style={{background:C.ov4,borderRadius:7,padding:"6px 4px",textAlign:"center"}}>
-              <div style={{color:C.blue,fontWeight:800,fontSize:13}}>{p}</div>
-              <div style={{color:C.muted,fontSize:10}}>{ru}</div>
-            </div>
+      <TableAccordion icon="🗂️" title="Präpositionen + Fälle" col={C.blue} sub="Akkusativ · Dativ · Wechselpräpositionen" open={open==="praep"} onToggle={()=>tg("praep")}>
+        <div style={{display:"flex",gap:4,marginBottom:10}}>
+          {[["akk","Akkusativ",C.blue],["dat","Dativ",C.red],["wechsel","Wechsel",C.yellow]].map(([f,lbl,col])=>(
+            <button key={f} onClick={()=>setPraepTab(f)}
+              style={{flex:1,padding:"7px 4px",borderRadius:8,border:"none",cursor:"pointer",
+                fontSize:12,fontWeight:800,
+                background:praepTab===f?col+"33":C.ov3,
+                color:praepTab===f?col:C.muted}}>
+              {lbl}
+            </button>
           ))}
         </div>
-        <div style={{background:C.blue+"15",border:`1px solid ${C.blue}33`,borderRadius:8,padding:"8px 10px",marginTop:8,fontSize:12,color:C.text}}>
-          <b>Wo?</b> (место) → Dativ: <i>Das Buch liegt auf dem Tisch.</i><br/>
-          <b>Wohin?</b> (направление) → Akkusativ: <i>Ich lege das Buch auf den Tisch.</i>
-        </div>
+        {praepTab==="akk"&&(
+          <div>
+            <div style={{fontSize:11,color:C.muted,marginBottom:8}}>immer Akkusativ / всегда Akkusativ</div>
+            {praepAkk.map(p=>(
+              <div key={p.p} style={{background:C.ov4,borderRadius:10,padding:"10px 12px",marginBottom:7,display:"flex",gap:10}}>
+                <div style={{fontSize:22,flexShrink:0,lineHeight:1}}>{p.icon}</div>
+                <div style={{flex:1,minWidth:0}}>
+                  <div style={{marginBottom:5}}>
+                    <span style={{color:C.blue,fontWeight:800,fontSize:14}}>{p.p}</span>
+                    <span style={{color:C.muted,fontSize:12}}> — {p.ru}</span>
+                  </div>
+                  <TapEx de={p.bsp} ru={p.bspRu} col={C.blue}/>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+        {praepTab==="dat"&&(
+          <div>
+            <div style={{fontSize:11,color:C.muted,marginBottom:8}}>immer Dativ / всегда Dativ</div>
+            {praepDativ.map(p=>(
+              <div key={p.p} style={{background:C.ov4,borderRadius:10,padding:"10px 12px",marginBottom:7,display:"flex",gap:10}}>
+                <div style={{fontSize:22,flexShrink:0,lineHeight:1}}>{p.icon}</div>
+                <div style={{flex:1,minWidth:0}}>
+                  <div style={{marginBottom:5}}>
+                    <span style={{color:C.red,fontWeight:800,fontSize:14}}>{p.p}</span>
+                    <span style={{color:C.muted,fontSize:12}}> — {p.ru}</span>
+                  </div>
+                  <TapEx de={p.bsp} ru={p.bspRu} col={C.red}/>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+        {praepTab==="wechsel"&&(
+          <div>
+            <div style={{fontSize:11,color:C.muted,marginBottom:8}}>двойные предлоги — падеж зависит от вопроса</div>
+            <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:6,marginBottom:10}}>
+              {wechsel.map(([p,ru])=>(
+                <div key={p} style={{background:C.ov4,borderRadius:7,padding:"6px 4px",textAlign:"center"}}>
+                  <div style={{color:C.yellow,fontWeight:800,fontSize:13}}>{p}</div>
+                  <div style={{color:C.muted,fontSize:10}}>{ru}</div>
+                </div>
+              ))}
+            </div>
+            <div style={{background:C.yellow+"15",border:`1px solid ${C.yellow}33`,borderRadius:8,padding:"8px 10px",marginBottom:8}}>
+              <div style={{fontWeight:800,fontSize:12,color:C.yellow,marginBottom:4}}>Regel / Правило</div>
+              <div style={{fontSize:12,color:C.text,lineHeight:1.6}}>
+                🏃 <b>Bewegung → Akkusativ</b> (движение → Akkusativ)<br/>
+                📍 <b>Ort → Dativ</b> (место → Dativ)
+              </div>
+            </div>
+            <TapEx de="Ich gehe in den Park." ru="Я иду в парк. (движение → Akkusativ)" col={C.yellow} style={{marginBottom:5}}/>
+            <TapEx de="Ich bin im Park." ru="Я в парке. (место → Dativ)" col={C.yellow}/>
+          </div>
+        )}
       </TableAccordion>
 
-      <TableAccordion icon="🗺️" title="Präpositionen mit Dativ" col={C.purple} sub="aus · bei · mit · nach · von · seit · zu · ab" open={open==="pdativ"} onToggle={()=>tg("pdativ")}>
-        {praepDativ.map(p=>(
-          <div key={p.p} style={{background:C.ov4,borderRadius:10,padding:"10px 12px",marginBottom:7,display:"flex",gap:10}}>
-            <div style={{fontSize:22,flexShrink:0,lineHeight:1}}>{p.icon}</div>
-            <div style={{flex:1,minWidth:0}}>
-              <div style={{marginBottom:5}}>
-                <span style={{color:C.purple,fontWeight:800,fontSize:14}}>{p.p}</span>
-                <span style={{color:C.muted,fontSize:12}}> — {p.ru}</span>
+      <TableAccordion icon="📍" title="im / auf / bei / am + Dativ" col={C.teal} sub="частые сочетания места" open={open==="ort"} onToggle={()=>tg("ort")}>
+        <div style={{display:"flex",gap:4,marginBottom:10,flexWrap:"wrap"}}>
+          {[["im","im",C.blue],["auf","auf",C.orange],["bei","bei",C.pink||C.red],["am","am",C.green]].map(([f,lbl,col])=>(
+            <button key={f} onClick={()=>setOrtTab(f)}
+              style={{flex:1,minWidth:56,padding:"7px 4px",borderRadius:8,border:"none",cursor:"pointer",
+                fontSize:13,fontWeight:800,
+                background:ortTab===f?col+"33":C.ov3,
+                color:ortTab===f?col:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {ortTab==="im"&&(
+          <div>
+            <div style={{fontSize:11,color:C.muted,marginBottom:8}}>im = in dem · «в»</div>
+            {ortIm.map(([de,ru])=>(
+              <div key={de} style={{background:C.ov4,borderRadius:7,padding:"7px 10px",marginBottom:4,display:"flex",justifyContent:"space-between",gap:8}}>
+                <span style={{fontSize:13,fontWeight:700,color:C.blue}}>{de}</span>
+                <span style={{fontSize:12,color:C.muted}}>{ru}</span>
               </div>
-              <TapEx de={p.bsp} ru={p.bspRu} col={C.purple}/>
-            </div>
+            ))}
           </div>
-        ))}
+        )}
+        {ortTab==="auf"&&(
+          <div>
+            <div style={{fontSize:11,color:C.muted,marginBottom:8}}>auf + Dativ · «на»</div>
+            {ortAuf.map(([de,ru])=>(
+              <div key={de} style={{background:C.ov4,borderRadius:7,padding:"7px 10px",marginBottom:4,display:"flex",justifyContent:"space-between",gap:8}}>
+                <span style={{fontSize:13,fontWeight:700,color:C.orange}}>{de}</span>
+                <span style={{fontSize:12,color:C.muted}}>{ru}</span>
+              </div>
+            ))}
+          </div>
+        )}
+        {ortTab==="bei"&&(
+          <div>
+            <div style={{fontSize:11,color:C.muted,marginBottom:8}}>bei + Dativ · «у, при»</div>
+            {ortBei.map(([de,ru])=>(
+              <div key={de} style={{background:C.ov4,borderRadius:7,padding:"7px 10px",marginBottom:4,display:"flex",justifyContent:"space-between",gap:8}}>
+                <span style={{fontSize:13,fontWeight:700,color:C.red}}>{de}</span>
+                <span style={{fontSize:12,color:C.muted}}>{ru}</span>
+              </div>
+            ))}
+          </div>
+        )}
+        {ortTab==="am"&&(
+          <div>
+            <div style={{fontSize:11,color:C.muted,marginBottom:8}}>am = an dem · «у, на, в» (для мест и времени)</div>
+            {ortAm.map(([de,ru])=>(
+              <div key={de} style={{background:C.ov4,borderRadius:7,padding:"7px 10px",marginBottom:4,display:"flex",justifyContent:"space-between",gap:8}}>
+                <span style={{fontSize:13,fontWeight:700,color:C.green}}>{de}</span>
+                <span style={{fontSize:12,color:C.muted}}>{ru}</span>
+              </div>
+            ))}
+          </div>
+        )}
       </TableAccordion>
 
       <TableAccordion icon="⏮️" title="Präteritum: war / hatte" col={C.orange} sub="haben и sein в прошедшем" open={open==="praeteritum"} onToggle={()=>tg("praeteritum")}>
@@ -13658,22 +13785,42 @@ function TabellenPage(){
             Односложные с a/o/u часто получают <b style={{color:C.orange}}>Umlaut</b>.
           </div>
         </div>
-        <div style={{fontSize:12,fontWeight:700,color:C.muted,marginBottom:5}}>Regelmäßig</div>
-        {komparativReg.map(([a,b])=>(
-          <div key={a} style={{background:C.ov4,borderRadius:7,padding:"6px 10px",marginBottom:4,fontSize:13,color:C.text}}>{a} → <b style={{color:C.orange}}>{b}</b></div>
-        ))}
-        <div style={{fontSize:12,fontWeight:700,color:C.muted,margin:"10px 0 5px"}}>Mit Umlaut</div>
-        {komparativUml.map(([a,b])=>(
-          <div key={a} style={{background:C.ov4,borderRadius:7,padding:"6px 10px",marginBottom:4,fontSize:13,color:C.text}}>{a} → <b style={{color:C.orange}}>{b}</b></div>
-        ))}
-        <div style={{fontSize:12,fontWeight:700,color:C.muted,margin:"10px 0 5px"}}>Ausnahmen</div>
-        <div style={{display:"flex",gap:8,flexWrap:"wrap",marginBottom:8}}>
-          {komparativAusn.map(([a,b])=>(
-            <div key={a} style={{background:C.ov4,borderRadius:8,padding:"6px 12px",fontSize:13,color:C.text}}>{a} → <b style={{color:C.orange}}>{b}</b></div>
+        <div style={{display:"flex",gap:4,marginBottom:10}}>
+          {[["reg","Regelmäßig",C.teal],["uml","mit Umlaut",C.purple],["ausn","Ausnahmen",C.orange]].map(([f,lbl,col])=>(
+            <button key={f} onClick={()=>setKomparativTab(f)}
+              style={{flex:1,padding:"7px 4px",borderRadius:8,border:"none",cursor:"pointer",
+                fontSize:12,fontWeight:800,
+                background:komparativTab===f?col+"33":C.ov3,
+                color:komparativTab===f?col:C.muted}}>
+              {lbl}
+            </button>
           ))}
         </div>
-        <TapEx de="Lübeck ist genauso groß wie Freiburg." ru="Любек такой же большой, как Фрайбург." col={C.green} style={{marginBottom:5}}/>
-        <TapEx de="Berlin ist größer als Lübeck." ru="Берлин больше, чем Любек." col={C.orange}/>
+        {komparativTab==="reg"&&(
+          <div>
+            {komparativReg.map(([a,b])=>(
+              <div key={a} style={{background:C.ov4,borderRadius:7,padding:"6px 10px",marginBottom:4,fontSize:13,color:C.text}}>{a} → <b style={{color:C.orange}}>{b}</b></div>
+            ))}
+          </div>
+        )}
+        {komparativTab==="uml"&&(
+          <div>
+            {komparativUml.map(([a,b])=>(
+              <div key={a} style={{background:C.ov4,borderRadius:7,padding:"6px 10px",marginBottom:4,fontSize:13,color:C.text}}>{a} → <b style={{color:C.orange}}>{b}</b></div>
+            ))}
+          </div>
+        )}
+        {komparativTab==="ausn"&&(
+          <div style={{display:"flex",gap:8,flexWrap:"wrap"}}>
+            {komparativAusn.map(([a,b])=>(
+              <div key={a} style={{background:C.ov4,borderRadius:8,padding:"6px 12px",fontSize:13,color:C.text}}>{a} → <b style={{color:C.orange}}>{b}</b></div>
+            ))}
+          </div>
+        )}
+        <div style={{marginTop:10}}>
+          <TapEx de="Lübeck ist genauso groß wie Freiburg." ru="Любек такой же большой, как Фрайбург." col={C.green} style={{marginBottom:5}}/>
+          <TapEx de="Berlin ist größer als Lübeck." ru="Берлин больше, чем Любек." col={C.orange}/>
+        </div>
       </TableAccordion>
 
       <TableAccordion icon="📌" title="Artikel-Deklination" col={C.orange} sub="der/die/das по 4 падежам (Nom./Gen./Dat./Akk.)" open={open==="art"} onToggle={()=>tg("art")}>
