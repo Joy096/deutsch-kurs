@@ -1231,7 +1231,7 @@ const WBDATA=[
   {art:"die", de:"Kleidung",        pl:"—",            ru:"одежда (только Sg.)",                           tema:"Kleidung", lekt:"L12",niveau:"A1"},
   {art:"die", de:"Mütze",ord:49, pl:"-n",           ru:"шапка",                                          tema:"Kleidung", lekt:"L12",niveau:"A1"},
   {art:"der", de:"Schmuck",ord:60,     pl:"—",            ru:"украшения, бижутерия (только Sg.)",             tema:"Kleidung", lekt:"L12",niveau:"A1"},
-  {art:"der", de:"Artikel",ord:61,     pl:"-",            ru:"товар, изделие",                                tema:"Kleidung", lekt:"L12",niveau:"A1"},
+  {art:"der", de:"Artikel",ord:61,     pl:"-",            ru:"товар, изделие; статья (в газете); артикль (der/die/das)", tema:"Kleidung", lekt:"L12",niveau:"A1"},
   {art:"die", de:"Bekleidung",ord:62,  pl:"—",            ru:"одежда (более официально, синоним Kleidung)",   tema:"Kleidung", lekt:"L12",niveau:"A1"},
   {art:"das", de:"Geschenk",ord:63,    pl:"-e",           ru:"подарок",                                        tema:"Kleidung", lekt:"L12",niveau:"A1"},
   {art:"die", de:"Ware",ord:64,        pl:"-n",           ru:"товар",                                          tema:"Kleidung", lekt:"L12",niveau:"A1"},
@@ -1700,6 +1700,167 @@ const WBDATA=[
   {art:"",    de:"besitzen",ord:494,      pl:"—",            ru:"владеть, обладать · besitzt · hat besessen",     tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
   {art:"",    de:"leicht",ord:495,        pl:"—",            ru:"лёгкий (по весу); лёгкий, несложный",            tema:"Reisen", lekt:"L13",niveau:"A1"},
   {art:"",    de:"behalten",ord:496,      pl:"—",            ru:"оставлять себе; запоминать · behält · hat behalten", tema:"Alltag", lekt:"L1",niveau:"A1"},
+  {art:"",    de:"auswählen",ord:497,     pl:"—",            ru:"выбирать · wählt aus · hat ausgewählt",          tema:"Alltag", lekt:"L1",niveau:"A1"},
+  {art:"",    de:"einschalten",ord:498,   pl:"—",            ru:"включать · schaltet ein · hat eingeschaltet",    tema:"Alltag", lekt:"L1",niveau:"A1"},
+  {art:"",    de:"schließen",ord:499,     pl:"—",            ru:"закрывать · schließt · hat geschlossen",         tema:"Alltag", lekt:"L1",niveau:"A1"},
+  {art:"der", de:"Spielfilm",ord:500,     pl:"-e",           ru:"художественный фильм",                           tema:"Medien", lekt:"L1",niveau:"A1"},
+  {art:"der", de:"Animationsfilm",ord:501,pl:"-e",           ru:"анимационный фильм, мультфильм",                 tema:"Medien", lekt:"L1",niveau:"A1"},
+  {art:"das", de:"Quiz",ord:502,          pl:"-",            ru:"викторина",                                      tema:"Medien", lekt:"L1",niveau:"A1"},
+  {art:"die", de:"Nachrichten",ord:503,   pl:"—",            ru:"новости (мн.ч.)",                                tema:"Medien", lekt:"L1",niveau:"A1"},
+  {art:"der", de:"Dokumentarfilm",ord:504,pl:"-e",           ru:"документальный фильм",                           tema:"Medien", lekt:"L1",niveau:"A1"},
+  {art:"die", de:"Sportsendung",ord:505,  pl:"-en",          ru:"спортивная передача",                            tema:"Medien", lekt:"L1",niveau:"A1"},
+  {art:"die", de:"Serie",ord:506,         pl:"-n",           ru:"сериал",                                         tema:"Medien", lekt:"L1",niveau:"A1"},
+  {art:"die", de:"Talkshow",ord:507,      pl:"-s",           ru:"ток-шоу",                                        tema:"Medien", lekt:"L1",niveau:"A1"},
+  {art:"",    de:"wünschen",ord:508,      pl:"—",            ru:"желать · wünscht · hat gewünscht",               tema:"Alltag", lekt:"L1",niveau:"A1"},
+  {art:"",    de:"unbedingt",ord:509,     pl:"—",            ru:"обязательно, непременно",                        tema:"Alltag", lekt:"L1",niveau:"A1"},
+  {art:"",    de:"unterstreichen",ord:510,pl:"—",            ru:"подчёркивать · unterstreicht · hat unterstrichen", tema:"Alltag", lekt:"L1",niveau:"A1"},
+  // ── A2-L2 · Medien — Konspekt 20-22.07 ────────────────────────────────────
+  {art:"",    de:"zuhören",ord:511,       pl:"—",            ru:"слушать (кого-л.) · +Dativ · hört zu · hat zugehört", tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"verhören",ord:512,      pl:"—",            ru:"допрашивать · verhört · hat verhört",            tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"abhören",ord:513,       pl:"—",            ru:"прослушивать · hört ab · hat abgehört",          tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"sich anhören",ord:514,  pl:"—",            ru:"звучать, восприниматься на слух · hört sich an · hat sich angehört", tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"die", de:"Tonaufnahme",ord:515,   pl:"-n",           ru:"звукозапись",                                    tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"zustimmen",ord:516,     pl:"—",            ru:"соглашаться · stimmt zu · hat zugestimmt",       tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"blind",ord:517,         pl:"—",            ru:"слепой",                                         tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"taub",ord:518,          pl:"—",            ru:"глухой",                                         tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"stumm",ord:519,         pl:"—",            ru:"немой",                                          tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"wohltuend",ord:520,     pl:"—",            ru:"приятный, успокаивающий",                        tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"genießen",ord:521,      pl:"—",            ru:"наслаждаться · genießt · genoss · hat genossen", tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"passieren",ord:522,     pl:"—",            ru:"случаться · passiert · ist passiert",            tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"zubereiten",ord:523,    pl:"—",            ru:"готовить (еду) · bereitet zu · hat zubereitet",  tema:"Alltag", lekt:"A2-L2",niveau:"A2"},
+  {art:"der", de:"Betrug",ord:524,        pl:"Sg.",          ru:"обман, мошенничество",                           tema:"Alltag", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"herzlich",ord:525,      pl:"—",            ru:"сердечный, тёплый · Herzliche Grüße",            tema:"Alltag", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"vermissen",ord:526,     pl:"—",            ru:"скучать (по кому-л.) · vermisst · hat vermisst", tema:"Alltag", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"sich lohnen",ord:527,   pl:"—",            ru:"окупаться, стоить того · lohnt sich · hat sich gelohnt", tema:"Alltag", lekt:"A2-L2",niveau:"A2"},
+  {art:"der", de:"Lohn",ord:528,          pl:'"-e',          ru:"зарплата",                                       tema:"Alltag", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"circa",ord:529,         pl:"—",            ru:"примерно",                                       tema:"Alltag", lekt:"A2-L2",niveau:"A2"},
+  {art:"die", de:"Angewohnheit",ord:530,  pl:"-en",          ru:"привычка",                                       tema:"Alltag", lekt:"A2-L2",niveau:"A2"},
+  {art:"das", de:"Rauchen",ord:531,       pl:"Sg.",          ru:"курение",                                        tema:"Alltag", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"ab und zu",ord:532,     pl:"—",            ru:"время от времени",                               tema:"Alltag", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"derselbe",ord:533,      pl:"—",            ru:"тот же самый (dieselbe/dasselbe/dieselben)",     tema:"Alltag", lekt:"A2-L2",niveau:"A2"},
+  {art:"das", de:"Zelt",ord:534,          pl:"-e",           ru:"палатка",                                        tema:"Alltag", lekt:"A2-L2",niveau:"A2"},
+  {art:"der", de:"Schlafsack",ord:535,    pl:'"-e',          ru:"спальный мешок",                                 tema:"Alltag", lekt:"A2-L2",niveau:"A2"},
+  {art:"die", de:"Qualität",ord:536,      pl:"-en",          ru:"качество",                                       tema:"Alltag", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"hart",ord:537,          pl:"—",            ru:"жёсткий, твёрдый · härter",                      tema:"Alltag", lekt:"A2-L2",niveau:"A2"},
+  // ── A2-L1 · Wichtige Wörter (Arbeitsbuch S.12) ────────────────────────────
+  {art:"",    de:"sauber",ord:538,        pl:"—",            ru:"чистый",                                         tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"",    de:"hektisch",ord:539,      pl:"—",            ru:"суетливый, беспокойный",                         tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"der", de:"Zuwanderer",ord:540,    pl:"-",            ru:"переселенец (die Zuwanderin — переселенка)",     tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"die", de:"Welt",ord:541,          pl:"Sg.",          ru:"мир, свет",                                      tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"der", de:"Grund",ord:542,         pl:'"-e',          ru:"причина",                                        tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"",    de:"unterschiedlich",ord:543,pl:"—",           ru:"разный, различный",                              tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"",    de:"motivieren",ord:544,    pl:"—",            ru:"мотивировать · motiviert · hat motiviert",       tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"",    de:"enttäuscht",ord:545,    pl:"—",            ru:"разочарованный",                                 tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"",    de:"genervt",ord:546,       pl:"—",            ru:"раздражённый",                                   tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"",    de:"endlich",ord:547,       pl:"—",            ru:"наконец",                                        tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"das", de:"Abitur",ord:548,        pl:"Sg.",          ru:"аттестат зрелости",                              tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"der", de:"Architekt",ord:549,     pl:"-en",          ru:"архитектор (die Architektin — архитектор ж.)",   tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"der", de:"Abteilungsleiter",ord:550,pl:"-",          ru:"руководитель отдела",                            tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"die", de:"Teilzeitarbeit",ord:551,pl:"Sg.",          ru:"работа на неполный день",                        tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"das", de:"Flüchtlingsheim",ord:552,pl:"-e",          ru:"общежитие для беженцев",                         tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"die", de:"Universität",ord:553,   pl:"-en",          ru:"университет",                                    tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"das", de:"Studium",ord:554,       pl:"Studien",      ru:"учёба (в вузе)",                                 tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"",    de:"jung",ord:555,          pl:"—",            ru:"молодой",                                        tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"",    de:"depressiv",ord:556,     pl:"—",            ru:"в депрессии, подавленный",                       tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"",    de:"aktiv",ord:557,         pl:"—",            ru:"активный",                                       tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"der", de:"Verein",ord:558,        pl:"-e",           ru:"объединение, клуб, союз",                        tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"",    de:"vorsprechen",ord:559,   pl:"—",            ru:"говорить вслух (образец) · spricht vor · hat vorgesprochen", tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"",    de:"nachsprechen",ord:560,  pl:"—",            ru:"повторять вслух · spricht nach · hat nachgesprochen", tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"",    de:"ausprobieren",ord:561,  pl:"—",            ru:"пробовать, испытывать · probiert aus · hat ausprobiert", tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"das", de:"Wort",ord:562,          pl:'"-er',         ru:"слово",                                          tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"der", de:"Satz",ord:563,          pl:'"-e',          ru:"предложение",                                    tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"",    de:"auswendig",ord:564,     pl:"—",            ru:"наизусть · auswendig lernen",                    tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"",    de:"schriftlich",ord:565,   pl:"—",            ru:"письменно",                                      tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"der", de:"Fehler",ord:566,        pl:"-",            ru:"ошибка",                                         tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"die", de:"Aussprache",ord:567,    pl:"Sg.",          ru:"произношение",                                   tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"der", de:"Mut",ord:568,           pl:"Sg.",          ru:"смелость, мужество · Mut haben",                 tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  {art:"die", de:"Volkshochschule",ord:569,pl:"-n",          ru:"народный университет (курсы допобразования)",   tema:"MeineGeschichte", lekt:"A2-L1",niveau:"A2"},
+  // ── A2-L2 · Medien (доп.) ──────────────────────────────────────────────────
+  {art:"",    de:"chatten",ord:570,       pl:"—",            ru:"общаться в чате · chattet · hat gechattet",      tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"recherchieren",ord:571, pl:"—",            ru:"искать информацию, исследовать · recherchiert · hat recherchiert", tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"putzen",ord:572,        pl:"—",            ru:"чистить, убирать · putzt · hat geputzt",         tema:"Alltag", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"rennen",ord:573,        pl:"—",            ru:"бежать, мчаться · rennt · rannte · ist gerannt", tema:"Alltag", lekt:"A2-L2",niveau:"A2"},
+  // ── A2-L3 · Wochenende — Konspekt 23-24.07 ────────────────────────────────
+  {art:"der", de:"Rand",ord:574,          pl:'"-er',         ru:"край, окраина",                                  tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"",    de:"verzichten",ord:575,    pl:"—",            ru:"отказываться (auf+Akk) · verzichtet · hat verzichtet", tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"",    de:"entstehen",ord:576,     pl:"—",            ru:"возникать · entsteht · entstand · ist entstanden", tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"",    de:"anschimpfen",ord:577,   pl:"—",            ru:"ругать · schimpft an · hat angeschimpft",        tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"",    de:"vorbeigehen",ord:578,   pl:"—",            ru:"проходить мимо (an+Dativ) · geht vorbei · ist vorbeigegangen", tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"",    de:"plötzlich",ord:579,     pl:"—",            ru:"вдруг, внезапно",                                tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"der", de:"Himmel",ord:580,        pl:"Sg.",          ru:"небо",                                           tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"",    de:"werden",ord:581,        pl:"—",            ru:"становиться · wird · wurde · ist geworden",      tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"",    de:"hoffentlich",ord:582,   pl:"—",            ru:"надеюсь",                                        tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"der", de:"Brunnen",ord:583,       pl:"-",            ru:"фонтан, колодец",                                tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"der", de:"Teich",ord:584,         pl:"-e",           ru:"пруд",                                           tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"das", de:"Blumenbeet",ord:585,    pl:"-e",           ru:"клумба",                                         tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"das", de:"Trampolin",ord:586,     pl:"-e",           ru:"батут",                                          tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"das", de:"Planschbecken",ord:587, pl:"-",            ru:"детский бассейн",                                tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"die", de:"Schubkarre",ord:588,    pl:"-n",           ru:"тачка",                                          tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"",    de:"sich befinden",ord:589, pl:"—",            ru:"находиться · befindet sich · befand sich · hat sich befunden", tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"",    de:"wertvoll",ord:590,      pl:"—",            ru:"ценный",                                         tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"",    de:"anstehen",ord:591,      pl:"—",            ru:"стоять в очереди · steht an · stand an · hat angestanden", tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"",    de:"süchtig",ord:592,       pl:"—",            ru:"зависимый",                                      tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"die", de:"Sucht",ord:593,         pl:'"-e',          ru:"зависимость",                                    tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"",    de:"sich immatrikulieren",ord:594,pl:"—",      ru:"записываться в вуз · immatrikuliert sich · hat sich immatrikuliert", tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"",    de:"fördern",ord:595,       pl:"—",            ru:"способствовать, поддерживать · fördert · hat gefördert", tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"",    de:"übermorgen",ord:596,    pl:"—",            ru:"послезавтра",                                    tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"",    de:"ehemalig",ord:597,      pl:"—",            ru:"бывший",                                         tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"",    de:"wegräumen",ord:598,     pl:"—",            ru:"убирать (с дороги) · räumt weg · hat weggeräumt", tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"",    de:"lahmlegen",ord:599,     pl:"—",            ru:"парализовать, останавливать (работу) · legt lahm · hat lahmgelegt", tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"",    de:"meistens",ord:600,      pl:"—",            ru:"чаще всего, обычно",                             tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"",    de:"bügeln",ord:601,        pl:"—",            ru:"гладить (утюгом) · bügelt · hat gebügelt",       tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"die", de:"Schwiegereltern",ord:602,pl:"—",           ru:"родители супруга/супруги",                       tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  // ── A2-L2 · Wichtige Wörter (Arbeitsbuch S.24-27) ─────────────────────────
+  {art:"das", de:"Medium",ord:603,        pl:"Medien",       ru:"СМИ, средство массовой информации",              tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"spannend",ord:604,      pl:"—",            ru:"захватывающий, увлекательный",                   tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"entspannend",ord:605,   pl:"—",            ru:"расслабляющий",                                  tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"erreichbar",ord:606,    pl:"—",            ru:"доступный · erreichbar sein = быть на связи",   tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"löschen",ord:607,       pl:"—",            ru:"удалять · löscht · hat gelöscht",                tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"beenden",ord:608,       pl:"—",            ru:"завершать · beendet · hat beendet",              tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"drucken",ord:609,       pl:"—",            ru:"печатать · druckt · hat gedruckt",               tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"senden",ord:610,        pl:"—",            ru:"отправлять · sendet · hat gesendet",             tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"abschicken",ord:611,    pl:"—",            ru:"отправлять (письмо) · schickt ab · hat abgeschickt", tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"der", de:"Anhang",ord:612,        pl:'"-e',          ru:"вложение (в письме)",                            tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"anhängen",ord:613,      pl:"—",            ru:"прикреплять (файл) · hängt an · hat angehängt",  tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"die", de:"Hilfe",ord:614,         pl:"-n",           ru:"помощь",                                         tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"die", de:"Option",ord:615,        pl:"-en",          ru:"опция, настройка",                               tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"das", de:"Adressbuch",ord:616,    pl:'"-er',         ru:"адресная книга (контакты)",                      tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"der", de:"Posteingang",ord:617,   pl:'"-e',          ru:"входящие (почта)",                               tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"nützlich",ord:618,      pl:"—",            ru:"полезный",                                       tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"das", de:"Online-Spiel",ord:619,  pl:"-e",           ru:"онлайн-игра",                                    tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"die", de:"Information",ord:620,   pl:"-en",          ru:"информация",                                     tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"mobil",ord:621,         pl:"—",            ru:"мобильный",                                      tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"unkompliziert",ord:622, pl:"—",            ru:"несложный, простой",                             tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"das", de:"Fernsehen",ord:623,     pl:"Sg.",          ru:"телевидение",                                    tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"die", de:"Sendung",ord:624,       pl:"-en",          ru:"передача (ТВ/радио)",                            tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"international",ord:625, pl:"—",            ru:"международный",                                  tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"die", de:"Werbung",ord:626,       pl:"-en",          ru:"реклама",                                        tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"die", de:"Internetseite",ord:627, pl:"-n",           ru:"интернет-страница",                              tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"die", de:"Verkehrsmeldung",ord:628,pl:"-en",         ru:"сообщение о дорожной обстановке",                tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"der", de:"Internetzugang",ord:629,pl:'"-e',          ru:"доступ в интернет",                              tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"die", de:"Software",ord:630,      pl:"Sg.",          ru:"софт, программное обеспечение",                  tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"die", de:"Datei",ord:631,         pl:"-en",          ru:"файл",                                           tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"speichern",ord:632,     pl:"—",            ru:"сохранять · speichert · hat gespeichert",        tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"der", de:"Durchschnitt",ord:633,  pl:"-e",           ru:"среднее (значение)",                             tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"dafür",ord:634,         pl:"—",            ru:"за (это), в пользу этого",                       tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"dagegen",ord:635,       pl:"—",            ru:"против (этого)",                                 tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"leise",ord:636,         pl:"—",            ru:"тихий",                                          tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"der", de:"Drucker",ord:637,       pl:"-",            ru:"принтер",                                        tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"der", de:"Bildschirm",ord:638,    pl:"-e",           ru:"экран, монитор",                                 tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"der", de:"Rechner",ord:639,       pl:"-",            ru:"компьютер",                                      tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"der", de:"Scanner",ord:640,       pl:"-",            ru:"сканер",                                         tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"das", de:"Laufwerk",ord:641,      pl:"-e",           ru:"дисковод",                                       tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"der", de:"USB-Anschluss",ord:642, pl:'"-e',          ru:"USB-порт",                                       tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"die", de:"Tastatur",ord:643,      pl:"-en",          ru:"клавиатура",                                     tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"das", de:"Ladekabel",ord:644,     pl:"-",            ru:"кабель для зарядки",                             tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"die", de:"Maus",ord:645,          pl:'"-e',          ru:"мышь (компьютерная)",                            tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"die", de:"DVD",ord:646,           pl:"-s",           ru:"DVD-диск",                                       tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"herunterladen",ord:647, pl:"—",            ru:"скачивать · lädt herunter · hat heruntergeladen", tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"scannen",ord:648,       pl:"—",            ru:"сканировать · scannt · hat gescannt",            tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"anschließen",ord:649,   pl:"—",            ru:"подключать · schließt an · hat angeschlossen",   tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"das", de:"Kabel",ord:650,         pl:"-",            ru:"кабель",                                        tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"eintragen",ord:651,     pl:"—",            ru:"записывать (в список/календарь) · trägt ein · hat eingetragen", tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"",    de:"bearbeiten",ord:652,    pl:"—",            ru:"редактировать, обрабатывать · bearbeitet · hat bearbeitet", tema:"Medien", lekt:"A2-L2",niveau:"A2"},
 ];
 
 
@@ -2560,6 +2721,156 @@ const KONJ_ALL={
     ich:"behalte",  du:"behältst",  "er/sie/es":"behält",
     wir:"behalten", ihr:"behaltet",  "sie/Sie":"behalten",
     pt:"behielt", ptc:{du:"behieltst",wir:"behielten",ihr:"behieltet",sie:"behielten"}, pf:"hat behalten"},
+  auswählen:   {pref:"aus", col:C.teal, bg:C.tealBg,
+    ich:"wähle … aus",  du:"wählst … aus",  "er/sie/es":"wählt … aus",
+    wir:"wählen … aus", ihr:"wählt … aus",  "sie/Sie":"wählen … aus", pt:"wählte … aus", pf:"hat ausgewählt"},
+  einschalten: {pref:"ein", col:C.teal, bg:C.tealBg,
+    ich:"schalte … ein",  du:"schaltest … ein",  "er/sie/es":"schaltet … ein",
+    wir:"schalten … ein", ihr:"schaltet … ein",  "sie/Sie":"schalten … ein", pt:"schaltete … ein", pf:"hat eingeschaltet"},
+  schließen:   {col:C.teal, bg:C.tealBg,
+    ich:"schließe",  du:"schließt",  "er/sie/es":"schließt",
+    wir:"schließen", ihr:"schließt",  "sie/Sie":"schließen",
+    pt:"schloss", ptc:{du:"schlossest",wir:"schlossen",ihr:"schlosst",sie:"schlossen"}, pf:"hat geschlossen"},
+  wünschen:    {col:C.teal, bg:C.tealBg,
+    ich:"wünsche",  du:"wünschst",  "er/sie/es":"wünscht",
+    wir:"wünschen", ihr:"wünscht",  "sie/Sie":"wünschen", pt:"wünschte", pf:"hat gewünscht"},
+  unterstreichen:{col:C.teal, bg:C.tealBg, note:"untrennbar: kein ge-",
+    ich:"unterstreiche",  du:"unterstreichst",  "er/sie/es":"unterstreicht",
+    wir:"unterstreichen", ihr:"unterstreicht",  "sie/Sie":"unterstreichen",
+    pt:"unterstrich", ptc:{du:"unterstrichst",wir:"unterstrichen",ihr:"unterstricht",sie:"unterstrichen"}, pf:"hat unterstrichen"},
+  zuhören:     {pref:"zu", col:C.teal, bg:C.tealBg,
+    ich:"höre … zu",  du:"hörst … zu",  "er/sie/es":"hört … zu",
+    wir:"hören … zu", ihr:"hört … zu",  "sie/Sie":"hören … zu", pt:"hörte … zu", pf:"hat zugehört"},
+  verhören:    {col:C.teal, bg:C.tealBg, note:"untrennbar: kein ge-",
+    ich:"verhöre",  du:"verhörst",  "er/sie/es":"verhört",
+    wir:"verhören", ihr:"verhört",  "sie/Sie":"verhören", pt:"verhörte", pf:"hat verhört"},
+  abhören:     {pref:"ab", col:C.teal, bg:C.tealBg,
+    ich:"höre … ab",  du:"hörst … ab",  "er/sie/es":"hört … ab",
+    wir:"hören … ab", ihr:"hört … ab",  "sie/Sie":"hören … ab", pt:"hörte … ab", pf:"hat abgehört"},
+  "sich anhören":{pref:"an", col:C.teal, bg:C.tealBg, note:"Reflexiv",
+    ich:"höre mich … an",    du:"hörst dich … an",    "er/sie/es":"hört sich … an",
+    wir:"hören uns … an",    ihr:"hört euch … an",    "sie/Sie":"hören sich … an",
+    pt:"hörte sich … an", pf:"hat sich angehört"},
+  zustimmen:   {pref:"zu", col:C.teal, bg:C.tealBg,
+    ich:"stimme … zu",  du:"stimmst … zu",  "er/sie/es":"stimmt … zu",
+    wir:"stimmen … zu", ihr:"stimmt … zu",  "sie/Sie":"stimmen … zu", pt:"stimmte … zu", pf:"hat zugestimmt"},
+  genießen:    {col:C.teal, bg:C.tealBg,
+    ich:"genieße",  du:"genießt",  "er/sie/es":"genießt",
+    wir:"genießen", ihr:"genießt",  "sie/Sie":"genießen",
+    pt:"genoss", ptc:{du:"genossest",wir:"genossen",ihr:"genosst",sie:"genossen"}, pf:"hat genossen"},
+  passieren:   {col:C.teal, bg:C.tealBg,
+    ich:"passiere",  du:"passierst",  "er/sie/es":"passiert",
+    wir:"passieren", ihr:"passiert",  "sie/Sie":"passieren", pt:"passierte", pf:"ist passiert"},
+  zubereiten:  {pref:"zu", col:C.teal, bg:C.tealBg,
+    ich:"bereite … zu",  du:"bereitest … zu",  "er/sie/es":"bereitet … zu",
+    wir:"bereiten … zu", ihr:"bereitet … zu",  "sie/Sie":"bereiten … zu", pt:"bereitete … zu", pf:"hat zubereitet"},
+  vermissen:   {col:C.teal, bg:C.tealBg, note:"untrennbar: kein ge-",
+    ich:"vermisse",  du:"vermisst",  "er/sie/es":"vermisst",
+    wir:"vermissen", ihr:"vermisst",  "sie/Sie":"vermissen", pt:"vermisste", pf:"hat vermisst"},
+  "sich lohnen":{col:C.teal, bg:C.tealBg, note:"Reflexiv, meist 3. Person",
+    ich:"lohne mich",    du:"lohnst dich",    "er/sie/es":"lohnt sich",
+    wir:"lohnen uns",    ihr:"lohnt euch",    "sie/Sie":"lohnen sich",
+    pt:"lohnte sich", pf:"hat sich gelohnt"},
+  motivieren:  {col:C.teal, bg:C.tealBg, note:"-ieren: kein ge-",
+    ich:"motiviere",  du:"motivierst",  "er/sie/es":"motiviert",
+    wir:"motivieren", ihr:"motiviert",  "sie/Sie":"motivieren", pt:"motivierte", pf:"hat motiviert"},
+  vorsprechen: {pref:"vor", type:"e→i", col:C.orange, bg:C.orangeBg,
+    ich:"spreche … vor",  du:"sprichst … vor",  "er/sie/es":"spricht … vor",
+    wir:"sprechen … vor", ihr:"sprecht … vor",  "sie/Sie":"sprechen … vor", pt:"sprach … vor", pf:"hat vorgesprochen"},
+  nachsprechen:{pref:"nach", type:"e→i", col:C.orange, bg:C.orangeBg,
+    ich:"spreche … nach",  du:"sprichst … nach",  "er/sie/es":"spricht … nach",
+    wir:"sprechen … nach", ihr:"sprecht … nach",  "sie/Sie":"sprechen … nach", pt:"sprach … nach", pf:"hat nachgesprochen"},
+  ausprobieren:{pref:"aus", col:C.teal, bg:C.tealBg, note:"-ieren: kein ge-",
+    ich:"probiere … aus",  du:"probierst … aus",  "er/sie/es":"probiert … aus",
+    wir:"probieren … aus", ihr:"probiert … aus",  "sie/Sie":"probieren … aus", pt:"probierte … aus", pf:"hat ausprobiert"},
+  chatten:     {col:C.teal, bg:C.tealBg,
+    ich:"chatte",  du:"chattest",  "er/sie/es":"chattet",
+    wir:"chatten", ihr:"chattet",  "sie/Sie":"chatten", pt:"chattete", pf:"hat gechattet"},
+  recherchieren:{col:C.teal, bg:C.tealBg, note:"-ieren: kein ge-",
+    ich:"recherchiere",  du:"recherchierst",  "er/sie/es":"recherchiert",
+    wir:"recherchieren", ihr:"recherchiert",  "sie/Sie":"recherchieren", pt:"recherchierte", pf:"hat recherchiert"},
+  putzen:      {col:C.teal, bg:C.tealBg,
+    ich:"putze",  du:"putzt",  "er/sie/es":"putzt",
+    wir:"putzen", ihr:"putzt",  "sie/Sie":"putzen", pt:"putzte", pf:"hat geputzt"},
+  rennen:      {col:C.red, bg:C.redBg, note:"gemischtes Verb",
+    ich:"renne",  du:"rennst",  "er/sie/es":"rennt",
+    wir:"rennen", ihr:"rennt",  "sie/Sie":"rennen", pt:"rannte", pf:"ist gerannt"},
+  verzichten:  {col:C.teal, bg:C.tealBg, note:"auf + Akkusativ",
+    ich:"verzichte",  du:"verzichtest",  "er/sie/es":"verzichtet",
+    wir:"verzichten", ihr:"verzichtet",  "sie/Sie":"verzichten", pt:"verzichtete", pf:"hat verzichtet"},
+  entstehen:   {col:C.orange, bg:C.orangeBg, note:"untrennbar: kein ge-",
+    ich:"entstehe",  du:"entstehst",  "er/sie/es":"entsteht",
+    wir:"entstehen", ihr:"entsteht",  "sie/Sie":"entstehen",
+    pt:"entstand", ptc:{du:"entstandst",wir:"entstanden",ihr:"entstandet",sie:"entstanden"}, pf:"ist entstanden"},
+  anschimpfen: {pref:"an", col:C.teal, bg:C.tealBg,
+    ich:"schimpfe … an",  du:"schimpfst … an",  "er/sie/es":"schimpft … an",
+    wir:"schimpfen … an", ihr:"schimpft … an",  "sie/Sie":"schimpfen … an", pt:"schimpfte … an", pf:"hat angeschimpft"},
+  vorbeigehen: {pref:"vorbei", col:C.orange, bg:C.orangeBg, note:"an + Dativ",
+    ich:"gehe … vorbei",  du:"gehst … vorbei",  "er/sie/es":"geht … vorbei",
+    wir:"gehen … vorbei", ihr:"geht … vorbei",  "sie/Sie":"gehen … vorbei", pt:"ging … vorbei", pf:"ist vorbeigegangen"},
+  werden:      {type:"e→i", col:C.red, bg:C.redBg, note:"sehr unregelmäßig",
+    ich:"werde",  du:"wirst",  "er/sie/es":"wird",
+    wir:"werden", ihr:"werdet",  "sie/Sie":"werden", pt:"wurde", pf:"ist geworden"},
+  "sich befinden":{col:C.orange, bg:C.orangeBg, note:"untrennbar: kein ge- | Reflexiv",
+    ich:"befinde mich",    du:"befindest dich",    "er/sie/es":"befindet sich",
+    wir:"befinden uns",    ihr:"befindet euch",    "sie/Sie":"befinden sich",
+    pt:"befand sich", ptc:{du:"befandst dich",wir:"befanden sich",ihr:"befandet euch",sie:"befanden sich"}, pf:"hat sich befunden"},
+  anstehen:    {pref:"an", col:C.orange, bg:C.orangeBg,
+    ich:"stehe … an",  du:"stehst … an",  "er/sie/es":"steht … an",
+    wir:"stehen … an", ihr:"steht … an",  "sie/Sie":"stehen … an", pt:"stand … an", pf:"hat angestanden"},
+  "sich immatrikulieren":{col:C.teal, bg:C.tealBg, note:"-ieren: kein ge- | Reflexiv",
+    ich:"immatrikuliere mich",    du:"immatrikulierst dich",    "er/sie/es":"immatrikuliert sich",
+    wir:"immatrikulieren uns",    ihr:"immatrikuliert euch",    "sie/Sie":"immatrikulieren sich",
+    pt:"immatrikulierte sich", pf:"hat sich immatrikuliert"},
+  fördern:     {col:C.teal, bg:C.tealBg,
+    ich:"fördere",  du:"förderst",  "er/sie/es":"fördert",
+    wir:"fördern", ihr:"fördert",  "sie/Sie":"fördern", pt:"förderte", pf:"hat gefördert"},
+  wegräumen:   {pref:"weg", col:C.teal, bg:C.tealBg,
+    ich:"räume … weg",  du:"räumst … weg",  "er/sie/es":"räumt … weg",
+    wir:"räumen … weg", ihr:"räumt … weg",  "sie/Sie":"räumen … weg", pt:"räumte … weg", pf:"hat weggeräumt"},
+  lahmlegen:   {pref:"lahm", col:C.teal, bg:C.tealBg,
+    ich:"lege … lahm",  du:"legst … lahm",  "er/sie/es":"legt … lahm",
+    wir:"legen … lahm", ihr:"legt … lahm",  "sie/Sie":"legen … lahm", pt:"legte … lahm", pf:"hat lahmgelegt"},
+  bügeln:      {col:C.teal, bg:C.tealBg,
+    ich:"bügele",  du:"bügelst",  "er/sie/es":"bügelt",
+    wir:"bügeln", ihr:"bügelt",  "sie/Sie":"bügeln", pt:"bügelte", pf:"hat gebügelt"},
+  löschen:     {col:C.teal, bg:C.tealBg,
+    ich:"lösche",  du:"löschst",  "er/sie/es":"löscht",
+    wir:"löschen", ihr:"löscht",  "sie/Sie":"löschen", pt:"löschte", pf:"hat gelöscht"},
+  beenden:     {col:C.teal, bg:C.tealBg,
+    ich:"beende",  du:"beendest",  "er/sie/es":"beendet",
+    wir:"beenden", ihr:"beendet",  "sie/Sie":"beenden", pt:"beendete", pf:"hat beendet"},
+  drucken:     {col:C.teal, bg:C.tealBg,
+    ich:"drucke",  du:"druckst",  "er/sie/es":"druckt",
+    wir:"drucken", ihr:"druckt",  "sie/Sie":"drucken", pt:"druckte", pf:"hat gedruckt"},
+  senden:      {col:C.teal, bg:C.tealBg,
+    ich:"sende",  du:"sendest",  "er/sie/es":"sendet",
+    wir:"senden", ihr:"sendet",  "sie/Sie":"senden", pt:"sendete", pf:"hat gesendet"},
+  abschicken:  {pref:"ab", col:C.teal, bg:C.tealBg,
+    ich:"schicke … ab",  du:"schickst … ab",  "er/sie/es":"schickt … ab",
+    wir:"schicken … ab", ihr:"schickt … ab",  "sie/Sie":"schicken … ab", pt:"schickte … ab", pf:"hat abgeschickt"},
+  anhängen:    {pref:"an", col:C.teal, bg:C.tealBg,
+    ich:"hänge … an",  du:"hängst … an",  "er/sie/es":"hängt … an",
+    wir:"hängen … an", ihr:"hängt … an",  "sie/Sie":"hängen … an", pt:"hängte … an", pf:"hat angehängt"},
+  speichern:   {col:C.teal, bg:C.tealBg,
+    ich:"speichere",  du:"speicherst",  "er/sie/es":"speichert",
+    wir:"speichern", ihr:"speichert",  "sie/Sie":"speichern", pt:"speicherte", pf:"hat gespeichert"},
+  herunterladen:{pref:"herunter", type:"a→ä", col:C.purple, bg:C.purpleBg,
+    ich:"lade … herunter",  du:"lädst … herunter",  "er/sie/es":"lädt … herunter",
+    wir:"laden … herunter", ihr:"ladet … herunter",  "sie/Sie":"laden … herunter", pt:"lud … herunter", pf:"hat heruntergeladen"},
+  scannen:     {col:C.teal, bg:C.tealBg,
+    ich:"scanne",  du:"scannst",  "er/sie/es":"scannt",
+    wir:"scannen", ihr:"scannt",  "sie/Sie":"scannen", pt:"scannte", pf:"hat gescannt"},
+  anschließen: {pref:"an", col:C.orange, bg:C.orangeBg,
+    ich:"schließe … an",  du:"schließt … an",  "er/sie/es":"schließt … an",
+    wir:"schließen … an", ihr:"schließt … an",  "sie/Sie":"schließen … an",
+    pt:"schloss … an", pf:"hat angeschlossen"},
+  eintragen:   {pref:"ein", type:"a→ä", col:C.purple, bg:C.purpleBg,
+    ich:"trage … ein",  du:"trägst … ein",  "er/sie/es":"trägt … ein",
+    wir:"tragen … ein", ihr:"tragt … ein",  "sie/Sie":"tragen … ein", pt:"trug … ein", pf:"hat eingetragen"},
+  bearbeiten:  {col:C.teal, bg:C.tealBg, note:"untrennbar: kein ge-",
+    ich:"bearbeite",  du:"bearbeitest",  "er/sie/es":"bearbeitet",
+    wir:"bearbeiten", ihr:"bearbeitet",  "sie/Sie":"bearbeiten", pt:"bearbeitete", pf:"hat bearbeitet"},
 };
 
 // Ударения: комбинирующая акута \u0301 ставится после ударной гласной
@@ -2937,7 +3248,12 @@ const STRESS_MARKS={
 "Musikveranstaltung":"Musi\u0301kveranstaltung","Tanzveranstaltung":"Ta\u0301nzveranstaltung","Stand":"Sta\u0301nd","Tradition":"Traditio\u0301n","Nationalität":"Nationalit\u00E4\u0301t",
 "Vorname":"Vo\u0301rname","Nachname":"Na\u0301chname",
 "wieder":"wi\u0301eder","Herkunftsland":"He\u0301rkunftsland","schaffen":"scha\u0301ffen","Geschichte":"Geschi\u0301chte",
-"Weizen":"We\u0301izen","Weizenbier":"We\u0301izenbier","gültig":"gu\u0301ltig","gelten":"ge\u0301lten","bergauf":"bergau\u0301f","bergab":"berga\u0301b","aufladen":"au\u0301fladen","Hintergrund":"Hi\u0301ntergrund","Vordergrund":"Vo\u0301rdergrund","verwandt":"verwa\u0301ndt","Angst":"A\u0301ngst","Anfang":"A\u0301nfang","besitzen":"besi\u0301tzen","leicht":"lei\u0301cht","behalten":"beha\u0301lten",
+"Weizen":"We\u0301izen","Weizenbier":"We\u0301izenbier","gültig":"gu\u0301ltig","gelten":"ge\u0301lten","bergauf":"bergau\u0301f","bergab":"berga\u0301b","aufladen":"au\u0301fladen","Hintergrund":"Hi\u0301ntergrund","Vordergrund":"Vo\u0301rdergrund","verwandt":"verwa\u0301ndt","Angst":"A\u0301ngst","Anfang":"A\u0301nfang","besitzen":"besi\u0301tzen","leicht":"lei\u0301cht","behalten":"beha\u0301lten","auswählen":"au\u0301swählen","einschalten":"ei\u0301nschalten","schließen":"schlie\u0301ßen",
+"Spielfilm":"Spie\u0301lfilm","Animationsfilm":"Animatio\u0301nsfilm","Quiz":"Qui\u0301z","Nachrichten":"Na\u0301chrichten","Dokumentarfilm":"Dokumenta\u0301rfilm","Sportsendung":"Spo\u0301rtsendung","Serie":"Se\u0301rie","Talkshow":"To\u0301lkshow","wünschen":"wu\u0301nschen","unbedingt":"u\u0301nbedingt","unterstreichen":"unterstrei\u0301chen",
+"zuhören":"zu\u0301hören","verhören":"verhö\u0301ren","abhören":"a\u0301bhören","sich anhören":"sich a\u0301nhören","Tonaufnahme":"To\u0301naufnahme","zustimmen":"zu\u0301stimmen","blind":"bli\u0301nd","taub":"ta\u0301ub","stumm":"stu\u0301mm","wohltuend":"wo\u0301hltuend","genießen":"geni\u0301eßen","passieren":"passi\u0301eren","zubereiten":"zu\u0301bereiten","Betrug":"Betru\u0301g","herzlich":"he\u0301rzlich","vermissen":"vermi\u0301ssen","sich lohnen":"sich lo\u0301hnen","Lohn":"Lo\u0301hn","circa":"ci\u0301rca","Angewohnheit":"A\u0301ngewohnheit","Rauchen":"Ra\u0301uchen","derselbe":"derse\u0301lbe","Zelt":"Ze\u0301lt","Schlafsack":"Schla\u0301fsack","Qualität":"Qualitä\u0301t","hart":"ha\u0301rt",
+"sauber":"sa\u0301uber","hektisch":"he\u0301ktisch","Zuwanderer":"Zu\u0301wanderer","Welt":"We\u0301lt","Grund":"Gru\u0301nd","unterschiedlich":"unterschi\u0301edlich","motivieren":"motivi\u0301eren","enttäuscht":"entt\u00E4\u0301uscht","genervt":"gene\u0301rvt","endlich":"e\u0301ndlich","Abitur":"Abitu\u0301r","Architekt":"Archite\u0301kt","Abteilungsleiter":"A\u0301bteilungsleiter","Teilzeitarbeit":"Te\u0301ilzeitarbeit","Flüchtlingsheim":"Flu\u0301chtlingsheim","Universität":"Universit\u00E4\u0301t","Studium":"Stu\u0301dium","jung":"ju\u0301ng","depressiv":"depressi\u0301v","aktiv":"akti\u0301v","Verein":"Vere\u0301in","vorsprechen":"vo\u0301rsprechen","nachsprechen":"na\u0301chsprechen","ausprobieren":"a\u0301usprobieren","Wort":"Wo\u0301rt","Satz":"Sa\u0301tz","auswendig":"auswe\u0301ndig","schriftlich":"schr\u0301iftlich","Fehler":"Fe\u0301hler","Aussprache":"A\u0301ussprache","Mut":"Mu\u0301t","Volkshochschule":"Vo\u0301lkshochschule","chatten":"cha\u0301tten","recherchieren":"recherchi\u0301eren","putzen":"pu\u0301tzen","rennen":"re\u0301nnen",
+"Rand":"Ra\u0301nd","verzichten":"verzi\u0301chten","entstehen":"entste\u0301hen","anschimpfen":"a\u0301nschimpfen","vorbeigehen":"vorbe\u0301igehen","plötzlich":"plö\u0301tzlich","Himmel":"Hi\u0301mmel","werden":"we\u0301rden","hoffentlich":"ho\u0301ffentlich","Brunnen":"Bru\u0301nnen","Teich":"Te\u0301ich","Blumenbeet":"Blu\u0301menbeet","Trampolin":"Trampoli\u0301n","Planschbecken":"Pla\u0301nschbecken","Schubkarre":"Schu\u0301bkarre","sich befinden":"sich befi\u0301nden","wertvoll":"we\u0301rtvoll","anstehen":"a\u0301nstehen","süchtig":"sü\u0301chtig","Sucht":"Su\u0301cht","sich immatrikulieren":"sich immatrikuli\u0301eren","fördern":"fö\u0301rdern","übermorgen":"ü\u0301bermorgen","ehemalig":"e\u0301hemalig","wegräumen":"we\u0301gräumen","lahmlegen":"la\u0301hmlegen","meistens":"me\u0301istens","bügeln":"bü\u0301geln","Schwiegereltern":"Schwi\u0301egereltern",
+"Medium":"Me\u0301dium","spannend":"spa\u0301nnend","entspannend":"entspa\u0301nnend","erreichbar":"errei\u0301chbar","löschen":"lö\u0301schen","beenden":"bee\u0301nden","drucken":"dru\u0301cken","senden":"se\u0301nden","abschicken":"a\u0301bschicken","Anhang":"A\u0301nhang","anhängen":"a\u0301nhängen","Hilfe":"Hi\u0301lfe","Option":"Optio\u0301n","Adressbuch":"Adre\u0301ssbuch","Posteingang":"Po\u0301steingang","nützlich":"nü\u0301tzlich","Online-Spiel":"O\u0301nline-Spiel","Information":"Informatio\u0301n","mobil":"mobi\u0301l","unkompliziert":"unkompli\u0301ziert","Fernsehen":"Fe\u0301rnsehen","Sendung":"Se\u0301ndung","international":"internatio\u0301nal","Werbung":"We\u0301rbung","Internetseite":"I\u0301nternetseite","Verkehrsmeldung":"Verke\u0301hrsmeldung","Internetzugang":"I\u0301nternetzugang","Software":"So\u0301ftware","Datei":"Date\u0301i","speichern":"spe\u0301ichern","Durchschnitt":"Du\u0301rchschnitt","dafür":"dafü\u0301r","dagegen":"dage\u0301gen","leise":"le\u0301ise","Drucker":"Dru\u0301cker","Bildschirm":"Bi\u0301ldschirm","Rechner":"Re\u0301chner","Scanner":"Sca\u0301nner","Laufwerk":"La\u0301ufwerk","USB-Anschluss":"USB-A\u0301nschluss","Tastatur":"Tastatu\u0301r","Ladekabel":"La\u0301dekabel","Maus":"Ma\u0301us","DVD":"DV\u0301D","herunterladen":"heru\u0301nterladen","scannen":"sca\u0301nnen","anschließen":"a\u0301nschließen","Kabel":"Ka\u0301bel","eintragen":"e\u0301intragen","bearbeiten":"bea\u0301rbeiten",
 };
 
 // IPA-транскрипция для всего словаря (кроме фраз)
@@ -3297,7 +3613,12 @@ const IPA_DATA={
 "Musikveranstaltung":"[muˈziːkfɐˌʔanʃtaltʊŋ]","Tanzveranstaltung":"[ˈtantsfɐˌʔanʃtaltʊŋ]","Stand":"[ʃtant]","Tradition":"[tʁadiˈtsi̯oːn]","Nationalität":"[natsi̯onaliˈtɛːt]",
 "Vorname":"[ˈfoːɐ̯naːmə]","Nachname":"[ˈnaxnaːmə]",
 "wieder":"[ˈviːdɐ]","Herkunftsland":"[ˈhɛɐ̯kʊnftslant]","schaffen":"[ˈʃafən]","Geschichte":"[ɡəˈʃɪçtə]",
-"Weizen":"[ˈvaɪ̯tsn̩]","Weizenbier":"[ˈvaɪ̯tsn̩biːɐ̯]","gültig":"[ˈɡʏltɪç]","gelten":"[ˈɡɛltn̩]","bergauf":"[bɛɐ̯kˈʔaʊ̯f]","bergab":"[bɛɐ̯kˈʔap]","aufladen":"[ˈaʊ̯fˌlaːdn̩]","Hintergrund":"[ˈhɪntɐˌɡʁʊnt]","Vordergrund":"[ˈfɔʁdɐˌɡʁʊnt]","verwandt":"[fɛɐ̯ˈvant]","Angst":"[aŋst]","Anfang":"[ˈanfaŋ]","besitzen":"[bəˈzɪtsn̩]","leicht":"[laɪ̯çt]","behalten":"[bəˈhaltn̩]",
+"Weizen":"[ˈvaɪ̯tsn̩]","Weizenbier":"[ˈvaɪ̯tsn̩biːɐ̯]","gültig":"[ˈɡʏltɪç]","gelten":"[ˈɡɛltn̩]","bergauf":"[bɛɐ̯kˈʔaʊ̯f]","bergab":"[bɛɐ̯kˈʔap]","aufladen":"[ˈaʊ̯fˌlaːdn̩]","Hintergrund":"[ˈhɪntɐˌɡʁʊnt]","Vordergrund":"[ˈfɔʁdɐˌɡʁʊnt]","verwandt":"[fɛɐ̯ˈvant]","Angst":"[aŋst]","Anfang":"[ˈanfaŋ]","besitzen":"[bəˈzɪtsn̩]","leicht":"[laɪ̯çt]","behalten":"[bəˈhaltn̩]","auswählen":"[ˈaʊ̯sˌvɛːlən]","einschalten":"[ˈaɪ̯nˌʃaltn̩]","schließen":"[ˈʃliːsn̩]",
+"Spielfilm":"[ˈʃpiːlfɪlm]","Animationsfilm":"[animaˈtsi̯oːnsfɪlm]","Quiz":"[kvɪs]","Nachrichten":"[ˈnaxrɪçtn̩]","Dokumentarfilm":"[dokumɛnˈtaːɐ̯fɪlm]","Sportsendung":"[ˈʃpɔrtˌzɛndʊŋ]","Serie":"[ˈzeːri̯ə]","Talkshow":"[ˈtɔːkʃoʊ̯]","wünschen":"[ˈvʏnʃn̩]","unbedingt":"[ˈʊnbədɪŋt]","unterstreichen":"[ʊntɐˈʃtʁaɪ̯çn̩]",
+"zuhören":"[ˈtsuːˌhøːʁən]","verhören":"[fɛɐ̯ˈhøːʁən]","abhören":"[ˈapˌhøːʁən]","sich anhören":"[zɪç ˈanˌhøːʁən]","Tonaufnahme":"[ˈtoːnˌʔaʊ̯fnaːmə]","zustimmen":"[ˈtsuːˌʃtɪmən]","blind":"[blɪnt]","taub":"[taʊ̯p]","stumm":"[ʃtʊm]","wohltuend":"[ˈvoːlˌtuːənt]","genießen":"[ɡəˈniːsn̩]","passieren":"[paˈsiːʁən]","zubereiten":"[ˈtsuːbəˌʁaɪ̯tn̩]","Betrug":"[bəˈtʁuːk]","herzlich":"[ˈhɛʁtslɪç]","vermissen":"[fɛɐ̯ˈmɪsn̩]","sich lohnen":"[zɪç ˈloːnən]","Lohn":"[loːn]","circa":"[ˈtsɪʁka]","Angewohnheit":"[ˈangəˌvoːnhaɪ̯t]","Rauchen":"[ˈʁaʊ̯xn̩]","derselbe":"[deːɐ̯ˈzɛlbə]","Zelt":"[tsɛlt]","Schlafsack":"[ˈʃlaːfzak]","Qualität":"[kvaliˈtɛːt]","hart":"[haʁt]",
+"sauber":"[ˈzaʊ̯bɐ]","hektisch":"[ˈhɛktɪʃ]","Zuwanderer":"[ˈtsuːvandɐʁɐ]","Welt":"[vɛlt]","Grund":"[ɡʁʊnt]","unterschiedlich":"[ˈʊntɐˌʃiːtlɪç]","motivieren":"[motiˈviːʁən]","enttäuscht":"[ɛntˈtɔɪ̯ʃt]","genervt":"[ɡəˈnɛʁft]","endlich":"[ˈɛntlɪç]","Abitur":"[abiˈtuːɐ̯]","Architekt":"[aʁçiˈtɛkt]","Abteilungsleiter":"[ˈapˌtaɪ̯lʊŋsˌlaɪ̯tɐ]","Teilzeitarbeit":"[ˈtaɪ̯lˌtsaɪ̯tˌʔaʁbaɪ̯t]","Flüchtlingsheim":"[ˈflʏçtlɪŋsˌhaɪ̯m]","Universität":"[univɛʁziˈtɛːt]","Studium":"[ˈʃtuːdi̯ʊm]","jung":"[jʊŋ]","depressiv":"[depʁɛˈsiːf]","aktiv":"[akˈtiːf]","Verein":"[fɛɐ̯ˈaɪ̯n]","vorsprechen":"[ˈfoːɐ̯ˌʃpʁɛçn̩]","nachsprechen":"[ˈnaːxˌʃpʁɛçn̩]","ausprobieren":"[ˈaʊ̯sˌpʁobiːʁən]","Wort":"[vɔʁt]","Satz":"[zats]","auswendig":"[ˈaʊ̯svɛndɪç]","schriftlich":"[ˈʃʁɪftlɪç]","Fehler":"[ˈfeːlɐ]","Aussprache":"[ˈaʊ̯sʃpʁaːxə]","Mut":"[muːt]","Volkshochschule":"[ˈfɔlksˌhoːxʃuːlə]","chatten":"[ˈtʃɛtn̩]","recherchieren":"[ʁeʃɛʁˈʃiːʁən]","putzen":"[ˈpʊtsn̩]","rennen":"[ˈʁɛnən]",
+"Rand":"[ʁant]","verzichten":"[fɛɐ̯ˈtsɪçtn̩]","entstehen":"[ɛntˈʃteːən]","anschimpfen":"[ˈanʃɪmpfən]","vorbeigehen":"[foɐ̯ˈbaɪ̯ˌɡeːən]","plötzlich":"[ˈplœtslɪç]","Himmel":"[ˈhɪml̩]","werden":"[ˈveːɐ̯dn̩]","hoffentlich":"[ˈhɔfntlɪç]","Brunnen":"[ˈbʁʊnən]","Teich":"[taɪ̯ç]","Blumenbeet":"[ˈbluːmənbeːt]","Trampolin":"[tʁampoˈliːn]","Planschbecken":"[ˈplanʃbɛkn̩]","Schubkarre":"[ˈʃuːpkaʁə]","sich befinden":"[zɪç bəˈfɪndn̩]","wertvoll":"[ˈveːɐ̯tfɔl]","anstehen":"[ˈanʃteːən]","süchtig":"[ˈzʏçtɪç]","Sucht":"[zʊxt]","sich immatrikulieren":"[zɪç ɪmatʁikuˈliːʁən]","fördern":"[ˈfœʁdɐn]","übermorgen":"[ˈyːbɐˌmɔʁɡn̩]","ehemalig":"[ˈeːəmaːlɪç]","wegräumen":"[ˈvɛkˌʁɔɪ̯mən]","lahmlegen":"[ˈlaːmˌleːɡn̩]","meistens":"[ˈmaɪ̯stns̩]","bügeln":"[ˈbyːɡl̩n]","Schwiegereltern":"[ˈʃviːɡɐˌʔɛltɐn]",
+"Medium":"[ˈmeːdi̯ʊm]","spannend":"[ˈʃpanənt]","entspannend":"[ɛntˈʃpanənt]","erreichbar":"[ɛɐ̯ˈʁaɪ̯çbaːɐ̯]","löschen":"[ˈlœʃn̩]","beenden":"[bəˈʔɛndn̩]","drucken":"[ˈdʁʊkn̩]","senden":"[ˈzɛndn̩]","abschicken":"[ˈapʃɪkn̩]","Anhang":"[ˈanhaŋ]","anhängen":"[ˈanˌhɛŋən]","Hilfe":"[ˈhɪlfə]","Option":"[ɔpˈtsi̯oːn]","Adressbuch":"[aˈdʁɛsbuːx]","Posteingang":"[ˈpɔstˌʔaɪ̯nɡaŋ]","nützlich":"[ˈnʏtslɪç]","Online-Spiel":"[ˈɔnlaɪ̯nʃpiːl]","Information":"[ɪnfɔʁmaˈtsi̯oːn]","mobil":"[moˈbiːl]","unkompliziert":"[ˈʊnkɔmpliˌtsiːɐ̯t]","Fernsehen":"[ˈfɛʁnzeːən]","Sendung":"[ˈzɛndʊŋ]","international":"[ɪntɐnatsi̯oˈnaːl]","Werbung":"[ˈvɛʁbʊŋ]","Internetseite":"[ˈɪntɐnɛtˌzaɪ̯tə]","Verkehrsmeldung":"[fɛɐ̯ˈkeːɐ̯sˌmɛldʊŋ]","Internetzugang":"[ˈɪntɐnɛtˌtsuːɡaŋ]","Software":"[ˈzɔftvɛːɐ̯]","Datei":"[daˈtaɪ̯]","speichern":"[ˈʃpaɪ̯çɐn]","Durchschnitt":"[ˈdʊʁçʃnɪt]","dafür":"[daˈfyːɐ̯]","dagegen":"[daˈɡeːɡn̩]","leise":"[ˈlaɪ̯zə]","Drucker":"[ˈdʁʊkɐ]","Bildschirm":"[ˈbɪltʃɪʁm]","Rechner":"[ˈʁɛçnɐ]","Scanner":"[ˈskɛnɐ]","Laufwerk":"[ˈlaʊ̯fvɛʁk]","USB-Anschluss":"[uːʔɛsˈbeːˌʔanʃlʊs]","Tastatur":"[tastaˈtuːɐ̯]","Ladekabel":"[ˈlaːdəkaːbl̩]","Maus":"[maʊ̯s]","DVD":"[deːfaʊ̯ˈdeː]","herunterladen":"[hɛˈʁʊntɐˌlaːdn̩]","scannen":"[ˈskɛnən]","anschließen":"[ˈanʃliːsn̩]","Kabel":"[ˈkaːbl̩]","eintragen":"[ˈaɪ̯nˌtʁaːɡn̩]","bearbeiten":"[bəˈʔaʁbaɪ̯tn̩]",
 };
 
 const DIALOGE={
@@ -3730,8 +4051,36 @@ const DIALOGE={
       {q:"Wie hat Herr Sorokin die Prüfung geschafft?",             qRu:"Как господин Сорокин сдал экзамен?", a:"Er hat die Prüfung erst beim zweiten Mal geschafft.", aRu:"Он сдал экзамен только со второй попытки.", note:"Herr Sorokin"},
     ]},
   ],
+  "A2-L2":[
+    {tag:"Rund ums Internet",col:C.blue,pairs:[
+      {q:"Warum muss Herr Merz nicht immer im Büro sitzen?", qRu:"Почему господину Мерцу не нужно всё время сидеть в офисе?", a:"Weil er mobiles Internet hat.", aRu:"Потому что у него мобильный интернет.", note:"weil-Satz"},
+      {q:"Warum recherchiert Julian im Internet?",           qRu:"Почему Юлиан ищет информацию в интернете?", a:"Weil man gute Informationen finden kann.", aRu:"Потому что можно найти хорошую информацию.", note:"weil-Satz"},
+      {q:"Was kann man im Internet machen?",                 qRu:"Что можно делать в интернете?", a:"Preise vergleichen, Online-Spiele spielen, chatten, Nachrichten schicken.", aRu:"Сравнивать цены, играть в онлайн-игры, общаться в чате, отправлять сообщения.", note:"Internet-Aktivitäten"},
+    ]},
+    {tag:"Mit dem Computer arbeiten",col:C.purple,pairs:[
+      {q:"Was macht man zuerst, wenn man eine E-Mail schreibt?", qRu:"Что делают в первую очередь при написании письма?", a:"Zuerst öffnet man das E-Mail-Programm. Dann wählt man den Empfänger aus.", aRu:"Сначала открывают почтовую программу. Потом выбирают получателя.", note:"E-Mail schreiben"},
+      {q:"Wie heißt 'сохранить' auf Deutsch?",                   qRu:"Как по-немецки «сохранить»?", a:"Speichern.", aRu:"Speichern.", note:"Computersymbole"},
+    ]},
+    {tag:"Fernsehen und Radio",col:C.green,pairs:[
+      {q:"Was sagt Frau Hegel über das Fernsehen?",            qRu:"Что говорит госпожа Хегель о телевидении?", a:"Ich finde, dass das Fernsehen gute Informationen bietet.", aRu:"Я считаю, что телевидение даёт хорошую информацию.", note:"dass-Satz"},
+      {q:"Was sagt Herr Arndt über das Fernsehen?",            qRu:"Что говорит господин Арндт о телевидении?", a:"Ich denke, dass es zu viel Werbung gibt.", aRu:"Я думаю, что слишком много рекламы.", note:"dass-Satz"},
+      {q:"Wie oft läuft der Tatort im deutschen Fernsehen?",   qRu:"Как часто идёт «Tatort» на немецком ТВ?", a:"Der Tatort kommt immer am Sonntagabend.", aRu:"«Tatort» идёт всегда в воскресенье вечером.", note:"Fernsehsendungen"},
+    ]},
+  ],
+  "A2-L3":[
+    {tag:"In der Einkaufsstraße",col:C.orange,pairs:[
+      {q:"Was ist im Café Einstein passiert?",              qRu:"Что случилось в кафе «Эйнштейн»?", a:"Plötzlich ist der Himmel dunkel geworden und es hat ein Gewitter gegeben.", aRu:"Вдруг небо потемнело, и разразилась гроза.", note:"Gewitter-Geschichte"},
+      {q:"Wo liegt das Messer?",                             qRu:"Где лежит нож?", a:"Das Messer liegt unter dem Tisch.", aRu:"Нож лежит под столом.", note:"Wo? + Dativ"},
+      {q:"Wohin fällt der Stuhl?",                           qRu:"Куда падает стул?", a:"Der Stuhl fällt unter den Tisch.", aRu:"Стул падает под стол.", note:"Wohin? + Akkusativ"},
+    ]},
+    {tag:"Was machen wir am Sonntag?",col:C.blue,pairs:[
+      {q:"Kommt Nina auch nicht?",                            qRu:"Нина тоже не придёт?", a:"Doch, sie kommt.", aRu:"Нет, она придёт.", note:"doch"},
+      {q:"Hast du keine Zeit?",                               qRu:"У тебя нет времени?", a:"Doch, ich habe Zeit. / Nein, ich habe keine Zeit.", aRu:"Есть время. / Нет, у меня нет времени.", note:"ja/nein/doch"},
+      {q:"Was macht ihr am Samstag?",                         qRu:"Что вы делаете в субботу?", a:"Wir machen den Haushalt, putzen und bügeln.", aRu:"Мы занимаемся хозяйством, убираемся и гладим.", note:"Wochenend-Aktivitäten"},
+    ]},
+  ],
 };
-const Box=({c,s={},children})=><div style={{background:c?c+"18":C.card,border:`1px solid ${c||C.border}`,borderRadius:14,padding:"14px 16px",...s}}>{children}</div>;
+const Box=({c,s={},children})=><div style={{background:c?c+"18":C.card,border:`1px solid ${c||C.border}`,padding:"14px 16px",borderRadius:14,...s}}>{children}</div>;
 const Pill=({c,children})=><span style={{background:c+"22",border:`1px solid ${c}55`,color:c,borderRadius:20,padding:"3px 10px",fontSize:13,fontWeight:700,display:"inline-block"}}>{children}</span>;
 const RuText=({ru,style={}})=>{
   if(!ru||!ru.includes("\n"))return <span style={style}>{ru}</span>;
@@ -4604,11 +4953,14 @@ function Woerterbuch({words=WBDATA}={}){
             )}
             {/* Präteritum */}
             {konjTab==="praet"&&konj.pt&&(()=>{
-              const ptStem=konj.pt.endsWith("te")?konj.pt.slice(0,-1):null;
+              const sepMatch=konj.pt.match(/^(.+?)( … .+)$/);
+              const ptBase=sepMatch?sepMatch[1]:konj.pt;
+              const ptSuffix=sepMatch?sepMatch[2]:"";
+              const ptStem=ptBase.endsWith("te")?ptBase.slice(0,-1):null;
               const forms=konj.ptc
                 ?[["ich",konj.pt],["wir",konj.ptc.wir],["du",konj.ptc.du],["ihr",konj.ptc.ihr],["er/sie/es",konj.pt],["sie/Sie",konj.ptc.sie]]
                 :ptStem
-                ?[["ich",konj.pt],["wir",ptStem+"en"],["du",ptStem+"est"],["ihr",ptStem+"et"],["er/sie/es",konj.pt],["sie/Sie",ptStem+"en"]]
+                ?[["ich",konj.pt],["wir",ptStem+"en"+ptSuffix],["du",ptStem+"est"+ptSuffix],["ihr",ptStem+"et"+ptSuffix],["er/sie/es",konj.pt],["sie/Sie",ptStem+"en"+ptSuffix]]
                 :[["ich",konj.pt],["wir",""],["du",""],["ihr",""],["er/sie/es",""],["sie/Sie",""]];
               return(
                 <div>
@@ -6874,6 +7226,27 @@ const Q_A2L1TEST=shuffle([
   {q:"'schlimm' по-русски:",                                  opts:["радостный","тяжёлый, серьёзный","быстрый","дешёвый"], ans:1, hint:"schlimme Sachen erlebt"},
   {q:"'verlieren' — Partizip II:",                            opts:["verliert","verloren","verlor","verlierte"], ans:1, hint:"hat verloren"},
   {q:"'aufgeben' в контексте 'die Arbeit aufgeben' означает:", opts:["найти работу","отказаться, сдать (работу)","получить повышение","поменять профессию"], ans:1, hint:"hat aufgegeben"},
+  {q:"'sauber' — антоним к:",                                 opts:["schmutzig","modern","laut","alt"], ans:0, hint:"чистый ≠ грязный"},
+  {q:"'der Grund' по-русски:",                                opts:["земля","причина","основание (здания)","почва"], ans:1, hint:"aus diesem Grund"},
+  {q:"'unterschiedlich' по-русски:",                           opts:["одинаковый","разный, различный","похожий","единственный"], ans:1, hint:"unterschiedliche Gründe"},
+  {q:"'motivieren' по-русски:",                                opts:["мотивировать","мешать","заставлять силой","разочаровывать"], ans:0, hint:"motiviert"},
+  {q:"'enttäuscht' по-русски:",                                opts:["воодушевлённый","разочарованный","удивлённый","испуганный"], ans:1, hint:"Enttäuschung"},
+  {q:"'genervt' по-русски:",                                   opts:["уставший","раздражённый","довольный","спокойный"], ans:1, hint:"nerven"},
+  {q:"'endlich' по-русски:",                                   opts:["никогда","наконец","опять","почти"], ans:1, hint:"endlich fertig"},
+  {q:"'das Abitur' — это:",                                    opts:["диплом вуза","аттестат зрелости","рабочая виза","вид на жительство"], ans:1, hint:"Schulabschluss"},
+  {q:"'die Teilzeitarbeit' по-русски:",                        opts:["работа на полный день","работа на неполный день","подработка вечером","стажировка"], ans:1, hint:"Teilzeit"},
+  {q:"'das Flüchtlingsheim' по-русски:",                        opts:["больница","общежитие для беженцев","детский сад","отель"], ans:1, hint:"Flüchtling + Heim"},
+  {q:"'das Studium' по-русски:",                                opts:["диплом","учёба (в вузе)","экзамен","стажировка"], ans:1, hint:"studieren → das Studium"},
+  {q:"'depressiv' по-русски:",                                  opts:["весёлый","в депрессии, подавленный","активный","энергичный"], ans:1, hint:"Depression"},
+  {q:"'der Verein' по-русски:",                                 opts:["объединение, клуб","предприятие","государство","семья"], ans:0, hint:"in einem Verein aktiv sein"},
+  {q:"'vorsprechen' по-русски:",                                opts:["говорить вслух (образец для учеников)","повторять за кем-то","молчать","перебивать"], ans:0, hint:"Der Lehrer soll vorsprechen."},
+  {q:"'nachsprechen' по-русски:",                                opts:["говорить вслух первым","повторять вслух за кем-то","молчать","переспрашивать"], ans:1, hint:"nach + sprechen"},
+  {q:"'ausprobieren' по-русски:",                                opts:["пробовать, испытывать","отказываться","заканчивать","выбрасывать"], ans:0, hint:"neue Sätze ausprobieren"},
+  {q:"'auswendig lernen' означает:",                             opts:["учить наизусть","писать письменно","переводить","повторять вслух"], ans:0, hint:"auswendig"},
+  {q:"'der Fehler' по-русски:",                                  opts:["правило","ошибка","упражнение","произношение"], ans:1, hint:"einen Fehler machen"},
+  {q:"'die Aussprache' по-русски:",                              opts:["письмо","произношение","чтение","перевод"], ans:1, hint:"gute Aussprache haben"},
+  {q:"'Mut haben' означает:",                                    opts:["бояться","иметь смелость","злиться","уставать"], ans:1, hint:"Mut"},
+  {q:"'die Volkshochschule' — это:",                             opts:["школа для детей","курсы допобразования для взрослых","университет","детский сад"], ans:1, hint:"VHS"},
 ]);
 
 const LUECKEN_A2L1=shuffle([
@@ -6888,6 +7261,8 @@ const LUECKEN_A2L1=shuffle([
   {sent:"Sind das ___ Kinder? (к нескольким людям, неформально)",         opts:["eure","deine","Ihre","seine"], ans:0,ru:"Это ваши дети?", hint:"ihr → euer/eure"},
   {sent:"Ja, das sind ___ Kinder. (наши)",                                opts:["unsere","eure","ihre","meine"], ans:0,ru:"Да, это наши дети.", hint:"wir → unser/unsere"},
   {sent:"Herr Müller, ist das ___ Auto? (formell)",                       opts:["Ihr","dein","euer","sein"], ans:0,ru:"Господин Мюллер, это Ваша машина?", hint:"Sie → Ihr"},
+  {sent:"Ich kann die neuen Wörter nicht ___.' (запомнить)",              opts:["behalten","vergessen","verlieren","verstehen"], ans:0,ru:"Я не могу запомнить новые слова.", hint:"behalten"},
+  {sent:"Ich lerne neue Sätze ___.' (наизусть)",                          opts:["auswendig","schriftlich","unterschiedlich","endlich"], ans:0,ru:"Я учу новые предложения наизусть.", hint:"auswendig lernen"},
 ]);
 
 const ZUORD_A2L1=[
@@ -6907,6 +7282,20 @@ const ZUORD_A2L1=[
   {de:"die Bühne",         ru:"сцена"},
   {de:"zuwandern",         ru:"иммигрировать"},
   {de:"der Leiter",        ru:"руководитель"},
+  {de:"sauber",            ru:"чистый"},
+  {de:"der Grund",         ru:"причина"},
+  {de:"unterschiedlich",   ru:"разный"},
+  {de:"enttäuscht",        ru:"разочарованный"},
+  {de:"genervt",           ru:"раздражённый"},
+  {de:"das Abitur",        ru:"аттестат зрелости"},
+  {de:"die Universität",   ru:"университет"},
+  {de:"das Studium",       ru:"учёба (в вузе)"},
+  {de:"der Verein",        ru:"клуб, объединение"},
+  {de:"das Wort",          ru:"слово"},
+  {de:"der Satz",          ru:"предложение"},
+  {de:"der Fehler",        ru:"ошибка"},
+  {de:"die Aussprache",    ru:"произношение"},
+  {de:"der Mut",           ru:"смелость"},
 ];
 
 const WSENTS_A2L1=[
@@ -6925,6 +7314,175 @@ function GrosserTestA2L1(){return <GrosserTestContainer rounds={[
   {icon:"📝",label:"Lückentext",    col:C.blue,   component:()=><LueckenQuiz items={LUECKEN_A2L1}/>},
   {icon:"🔗",label:"Wortschatz",    col:C.green,  component:()=><Zuordnung pairs={ZUORD_A2L1} leftLabel="Wort" rightLabel="Bedeutung"/>},
   {icon:"🔤",label:"Wortstellung",  col:C.orange, component:()=><WortstellungGame sents={WSENTS_A2L1}/>},
+]}/>;}
+
+const Q_A2L2TEST=shuffle([
+  {q:"'löschen' по-русски:",                                  opts:["удалять","сохранять","открывать","печатать"], ans:0, hint:"eine Datei löschen"},
+  {q:"'speichern' по-русски:",                                opts:["сохранять","удалять","скачивать","отправлять"], ans:0, hint:"speichert"},
+  {q:"'senden' / 'abschicken' — оба означают:",               opts:["отправлять","получать","удалять","редактировать"], ans:0, hint:"eine E-Mail senden/abschicken"},
+  {q:"'der Anhang' в письме — это:",                          opts:["тема","вложение","подпись","адресат"], ans:1, hint:"eine Datei anhängen"},
+  {q:"'erreichbar sein' означает:",                           opts:["быть на связи, быть доступным","быть занятым","быть в отпуске","быть далеко"], ans:0, hint:"immer erreichbar sein"},
+  {q:"'nützlich' по-русски:",                                 opts:["полезный","бесполезный","опасный","дорогой"], ans:0, hint:"nützlich"},
+  {q:"'die Software' по-русски:",                             opts:["железо (техника)","софт, программное обеспечение","интернет","файл"], ans:1, hint:"Software"},
+  {q:"'die Datei' по-русски:",                                 opts:["папка","файл","программа","диск"], ans:1, hint:"eine Datei speichern"},
+  {q:"'international' по-русски:",                            opts:["местный","международный","национальный","региональный"], ans:1, hint:"international"},
+  {q:"'die Werbung' по-русски:",                               opts:["новости","реклама","прогноз погоды","викторина"], ans:1, hint:"zu viel Werbung"},
+  {q:"'der Wetterbericht' и 'die Verkehrsmeldung' — это:",     opts:["прогноз погоды и сообщение о дорогах","реклама и новости","викторина и сериал","адрес и телефон"], ans:0, hint:"im Radio"},
+  {q:"'dafür' и 'dagegen' означают:",                          opts:["за и против","до и после","здесь и там","сейчас и потом"], ans:0, hint:"Ich bin dafür/dagegen"},
+  {q:"'leise' — антоним к:",                                   opts:["laut","schnell","hell","warm"], ans:0, hint:"leise ≠ laut"},
+  {q:"'der Drucker' по-русски:",                               opts:["принтер","сканер","монитор","компьютер"], ans:0, hint:"einen Text drucken"},
+  {q:"'der Bildschirm' по-русски:",                            opts:["клавиатура","экран, монитор","мышь","кабель"], ans:1, hint:"Bildschirm"},
+  {q:"'die Tastatur' по-русски:",                              opts:["клавиатура","мышь","экран","флешка"], ans:0, hint:"Tastatur"},
+  {q:"'die Maus' (компьютерная) по-русски:",                   opts:["мышь","клавиатура","дисковод","кабель"], ans:0, hint:"die Maus"},
+  {q:"'herunterladen' по-русски:",                             opts:["скачивать","загружать (в облако)","удалять","открывать"], ans:0, hint:"eine App herunterladen"},
+  {q:"'scannen' по-русски:",                                    opts:["печатать","сканировать","копировать","редактировать"], ans:1, hint:"einen Text scannen"},
+  {q:"'anschließen' по-русски:",                                opts:["подключать (кабель)","отключать","чинить","заряжать"], ans:0, hint:"ein Kabel anschließen"},
+  {q:"'eintragen' по-русски:",                                  opts:["записывать (в календарь)","стирать","печатать","сканировать"], ans:0, hint:"einen Termin eintragen"},
+  {q:"'bearbeiten' по-русски:",                                 opts:["редактировать, обрабатывать","удалять","печатать","отправлять"], ans:0, hint:"Bilder bearbeiten"},
+  {q:"'zuhören' (+Dativ) по-русски:",                       opts:["слушать (кого-л.)","допрашивать","прослушивать","звучать"], ans:0, hint:"zuhören"},
+  {q:"'abhören' по-русски:",                                 opts:["слушать","прослушивать (запись/разговор)","допрашивать","звучать"], ans:1, hint:"abhören"},
+  {q:"'sich anhören' по-русски:",                            opts:["слушать себя","звучать, восприниматься на слух","допрашивать себя","записывать"], ans:1, hint:"Das hört sich gut an."},
+  {q:"'zustimmen' по-русски:",                                opts:["соглашаться","спорить","отказываться","молчать"], ans:0, hint:"zustimmen"},
+  {q:"'blind' / 'taub' / 'stumm' — это:",                     opts:["слепой / глухой / немой","умный / глупый / хитрый","весёлый / грустный / злой","быстрый / медленный / тихий"], ans:0, hint:"körperliche Einschränkungen"},
+  {q:"'genießen' по-русски:",                                 opts:["терпеть","наслаждаться","избегать","бояться"], ans:1, hint:"genießt · genoss · hat genossen"},
+  {q:"'passieren' по-русски:",                                opts:["проезжать","случаться","пропускать","проходить мимо"], ans:1, hint:"ist passiert"},
+  {q:"'die Tonaufnahme' по-русски:",                          opts:["звукозапись","телепередача","радиостанция","наушники"], ans:0, hint:"Ton + Aufnahme"},
+  {q:"'vermissen' по-русски:",                                opts:["скучать (по кому-л.)","встречать","забывать","находить"], ans:0, hint:"Ich vermisse dich."},
+  {q:"'sich lohnen' по-русски:",                              opts:["окупаться, стоить того","терять смысл","стоить дорого","экономить"], ans:0, hint:"Das lohnt sich."},
+  {q:"'der Lohn' по-русски:",                                 opts:["зарплата","штраф","долг","налог"], ans:0, hint:"der Lohn"},
+  {q:"'die Angewohnheit' по-русски:",                         opts:["привычка","обычай","традиция","правило"], ans:0, hint:"eine Angewohnheit haben"},
+  {q:"'ab und zu' по-русски:",                                opts:["всегда","никогда","время от времени","редко"], ans:2, hint:"ab und zu"},
+  {q:"'die Qualität' по-русски:",                             opts:["количество","качество","цена","размер"], ans:1, hint:"Qualität"},
+  {q:"'hart' — сравнительная степень:",                        opts:["harter","härter","hartier","am hartesten"], ans:1, hint:"a→ä"},
+  {q:"'chatten' по-русски:",                                    opts:["звонить","общаться в чате","писать письмо","читать новости"], ans:1, hint:"mit Freunden chatten"},
+  {q:"'recherchieren' по-русски:",                               opts:["сохранять","искать информацию, исследовать","распечатывать","удалять"], ans:1, hint:"im Internet recherchieren"},
+  {q:"'Schüler brauchen oft Internet, weil sie Informationen für die Schule ___.'",opts:["recherchieren","recherchiert","recherchierst","recherchierte"],ans:0,hint:"weil + Verb am Ende, Präsens"},
+  {q:"'Viele Leute haben mobiles Internet, weil es sehr praktisch ___.'",opts:["ist","sind","war","sein"],ans:0,hint:"sein → ist"},
+]);
+
+const LUECKEN_A2L2=shuffle([
+  {sent:"Herr Merz findet das Internet praktisch, ___ man viele Informationen bekommt.",opts:["weil","dass","denn","ob"],ans:0,ru:"Господин Мерц считает интернет практичным, потому что можно получить много информации.",hint:"weil + Verb am Ende"},
+  {sent:"Ich finde, ___ das Fernsehen gute Informationen bietet.",opts:["dass","weil","denn","ob"],ans:0,ru:"Я считаю, что телевидение даёт хорошую информацию.",hint:"finden, dass"},
+  {sent:"Zuerst öffnet man das E-Mail-Programm. Dann ___ man den Empfänger aus.",opts:["wählt","wählen","gewählt","wähle"],ans:0,ru:"Сначала открывают почтовую программу. Потом выбирают получателя.",hint:"auswählen, trennbar"},
+  {sent:"Ich bin mir sicher, dass du besser schreiben ___.",opts:["kannst","kann","können","konntest"],ans:0,ru:"Я уверен, что ты можешь писать лучше.",hint:"Modalverb am Ende"},
+  {sent:"Das ___ sich gut an.' (звучит)",opts:["hört","höre","hörst","gehört"],ans:0,ru:"Это звучит хорошо.",hint:"sich anhören"},
+  {sent:"Ich ___ dich sehr!' (скучаю)",opts:["vermisse","vermisst","vermissen","vermisste"],ans:0,ru:"Я очень скучаю по тебе!",hint:"vermissen"},
+]);
+
+const ZUORD_A2L2=[
+  {de:"zuhören",ru:"слушать (кого-л.)"},
+  {de:"abhören",ru:"прослушивать"},
+  {de:"sich anhören",ru:"звучать"},
+  {de:"zustimmen",ru:"соглашаться"},
+  {de:"blind",ru:"слепой"},
+  {de:"taub",ru:"глухой"},
+  {de:"stumm",ru:"немой"},
+  {de:"genießen",ru:"наслаждаться"},
+  {de:"passieren",ru:"случаться"},
+  {de:"die Tonaufnahme",ru:"звукозапись"},
+  {de:"vermissen",ru:"скучать"},
+  {de:"sich lohnen",ru:"окупаться"},
+  {de:"der Lohn",ru:"зарплата"},
+  {de:"die Angewohnheit",ru:"привычка"},
+  {de:"die Qualität",ru:"качество"},
+  {de:"der Spielfilm",ru:"художественный фильм"},
+  {de:"die Talkshow",ru:"ток-шоу"},
+  {de:"chatten",ru:"общаться в чате"},
+  {de:"löschen",ru:"удалять"},
+  {de:"speichern",ru:"сохранять"},
+  {de:"der Anhang",ru:"вложение"},
+  {de:"erreichbar",ru:"доступный, на связи"},
+  {de:"die Software",ru:"программное обеспечение"},
+  {de:"die Werbung",ru:"реклама"},
+  {de:"der Drucker",ru:"принтер"},
+  {de:"der Bildschirm",ru:"экран"},
+  {de:"die Tastatur",ru:"клавиатура"},
+  {de:"die Maus",ru:"мышь (компьютерная)"},
+  {de:"herunterladen",ru:"скачивать"},
+  {de:"anschließen",ru:"подключать"},
+  {de:"eintragen",ru:"записывать (в календарь)"},
+  {de:"bearbeiten",ru:"редактировать"},
+  {de:"recherchieren",ru:"искать информацию"},
+];
+
+const WSENTS_A2L2=[
+  {w:["Herr","Merz","findet","das","Internet","praktisch",",","weil","man","viele","Informationen","bekommt","."], ru:"Господин Мерц считает интернет практичным, потому что можно получить много информации."},
+  {w:["Ich","finde",",","dass","das","Fernsehen","gute","Informationen","bietet","."], ru:"Я считаю, что телевидение даёт хорошую информацию."},
+  {w:["Zuerst","öffnet","man","das","E-Mail-Programm","."], ru:"Сначала открывают почтовую программу."},
+  {w:["Ich","bin","mir","sicher",",","dass","du","besser","schreiben","kannst","."], ru:"Я уверен, что ты можешь писать лучше."},
+  {w:["Julian","recherchiert","im","Internet",",","weil","man","gute","Informationen","finden","kann","."], ru:"Юлиан ищет в интернете, потому что можно найти хорошую информацию."},
+];
+
+function GrosserTestA2L2(){return <GrosserTestContainer rounds={[
+  {icon:"🎯",label:"Quiz",          col:C.yellow, component:()=><Quiz questions={Q_A2L2TEST}/>},
+  {icon:"📝",label:"Lückentext",    col:C.blue,   component:()=><LueckenQuiz items={LUECKEN_A2L2}/>},
+  {icon:"🔗",label:"Wortschatz",    col:C.green,  component:()=><Zuordnung pairs={ZUORD_A2L2} leftLabel="Wort" rightLabel="Bedeutung"/>},
+  {icon:"🔤",label:"Wortstellung",  col:C.orange, component:()=><WortstellungGame sents={WSENTS_A2L2}/>},
+]}/>;}
+
+const Q_A2L3TEST=shuffle([
+  {q:"'der Rand' по-русски:",                            opts:["край, окраина","центр","середина","угол"], ans:0, hint:"Rand"},
+  {q:"'verzichten' (auf+Akk) по-русски:",                 opts:["отказываться (от чего-л.)","требовать","получать","предлагать"], ans:0, hint:"verzichten auf"},
+  {q:"'entstehen' по-русски:",                             opts:["исчезать","возникать","разрушаться","заканчиваться"], ans:1, hint:"ist entstanden"},
+  {q:"'vorbeigehen an' (+Dativ) по-русски:",               opts:["заходить внутрь","проходить мимо","останавливаться перед","возвращаться к"], ans:1, hint:"vorbeigehen"},
+  {q:"'plötzlich' по-русски:",                             opts:["наконец","вдруг, внезапно","обычно","постепенно"], ans:1, hint:"plötzlich ist der Himmel dunkel geworden"},
+  {q:"'der Brunnen' по-русски:",                           opts:["фонтан, колодец","пруд","бассейн","ручей"], ans:0, hint:"Brunnen"},
+  {q:"'der Teich' по-русски:",                             opts:["фонтан","пруд","озеро","река"], ans:1, hint:"Teich"},
+  {q:"'sich befinden' по-русски:",                         opts:["находиться","искать","строить","переезжать"], ans:0, hint:"befindet sich"},
+  {q:"'wertvoll' по-русски:",                              opts:["дешёвый","ценный","бесполезный","старый"], ans:1, hint:"wertvoll"},
+  {q:"'anstehen' по-русски:",                              opts:["стоять в очереди","сидеть","лежать","убегать"], ans:0, hint:"an der Kasse anstehen"},
+  {q:"'süchtig' / 'die Sucht' — это:",                     opts:["зависимый / зависимость","здоровый / здоровье","активный / активность","умный / ум"], ans:0, hint:"süchtig sein"},
+  {q:"'sich immatrikulieren' по-русски:",                  opts:["записываться в вуз","заканчивать вуз","преподавать в вузе","поступать в школу"], ans:0, hint:"an der Universität"},
+  {q:"'fördern' по-русски:",                                opts:["мешать","способствовать, поддерживать","запрещать","игнорировать"], ans:1, hint:"fördert"},
+  {q:"'übermorgen' по-русски:",                             opts:["позавчера","завтра","послезавтра","на следующей неделе"], ans:2, hint:"übermorgen"},
+  {q:"'ehemalig' по-русски:",                               opts:["нынешний","будущий","бывший","временный"], ans:2, hint:"ehemaliger Schüler"},
+  {q:"'meistens' по-русски:",                               opts:["иногда","никогда","чаще всего, обычно","редко"], ans:2, hint:"meistens"},
+  {q:"'bügeln' по-русски:",                                 opts:["стирать","гладить (утюгом)","сушить","штопать"], ans:1, hint:"bügeln"},
+  {q:"'die Schwiegereltern' по-русски:",                    opts:["бабушка и дедушка","родители супруга/супруги","приёмные родители","соседи"], ans:1, hint:"Schwieger-"},
+]);
+
+const LUECKEN_A2L3=shuffle([
+  {sent:"Das Messer ___ unter dem Tisch.' (лежит)",                     opts:["liegt","legt","steht","stellt"], ans:0,ru:"Нож лежит под столом.", hint:"Wo? → liegen"},
+  {sent:"Ich ___ das Buch auf den Tisch.' (кладу)",                     opts:["lege","liege","stelle","stehe"], ans:0,ru:"Я кладу книгу на стол.", hint:"Wohin? → legen"},
+  {sent:"Der Stuhl ___ neben dem Fenster.' (стоит)",                    opts:["steht","stellt","liegt","legt"], ans:0,ru:"Стул стоит у окна.", hint:"Wo? → stehen"},
+  {sent:"Kommt Nina auch nicht? — ___, sie kommt.' (нет, придёт)",      opts:["Doch","Ja","Nein","Schon"], ans:0,ru:"Нина тоже не придёт? — Нет, она придёт.", hint:"опровержение отрицания → doch"},
+  {sent:"Hast du keine Zeit? — ___, ich habe keine Zeit.' (подтверждение)",opts:["Nein","Ja","Doch","Schon"], ans:0,ru:"У тебя нет времени? — Нет, у меня нет времени.", hint:"подтверждение отрицания → nein"},
+  {sent:"Aber plötzlich ist der Himmel dunkel ___.' (geworden)",        opts:["geworden","gewesen","gewurden","werden"], ans:0,ru:"Но вдруг небо потемнело.", hint:"werden → ist geworden"},
+]);
+
+const ZUORD_A2L3=[
+  {de:"der Rand",ru:"край, окраина"},
+  {de:"verzichten",ru:"отказываться"},
+  {de:"entstehen",ru:"возникать"},
+  {de:"plötzlich",ru:"вдруг"},
+  {de:"der Himmel",ru:"небо"},
+  {de:"werden",ru:"становиться"},
+  {de:"hoffentlich",ru:"надеюсь"},
+  {de:"der Brunnen",ru:"фонтан, колодец"},
+  {de:"der Teich",ru:"пруд"},
+  {de:"sich befinden",ru:"находиться"},
+  {de:"wertvoll",ru:"ценный"},
+  {de:"anstehen",ru:"стоять в очереди"},
+  {de:"süchtig",ru:"зависимый"},
+  {de:"übermorgen",ru:"послезавтра"},
+  {de:"ehemalig",ru:"бывший"},
+  {de:"meistens",ru:"чаще всего"},
+  {de:"bügeln",ru:"гладить"},
+];
+
+const WSENTS_A2L3=[
+  {w:["Das","Messer","liegt","unter","dem","Tisch","."],                    ru:"Нож лежит под столом."},
+  {w:["Der","Stuhl","fällt","unter","den","Tisch","."],                     ru:"Стул падает под стол."},
+  {w:["Doch",",","sie","kommt","."],                                       ru:"Нет, она придёт."},
+  {w:["Aber","plötzlich","ist","der","Himmel","dunkel","geworden","."],    ru:"Но вдруг небо потемнело."},
+  {w:["Wir","sind","ins","Café","gelaufen","."],                           ru:"Мы забежали в кафе."},
+];
+
+function GrosserTestA2L3(){return <GrosserTestContainer rounds={[
+  {icon:"🎯",label:"Quiz",          col:C.yellow, component:()=><Quiz questions={Q_A2L3TEST}/>},
+  {icon:"📝",label:"Lückentext",    col:C.blue,   component:()=><LueckenQuiz items={LUECKEN_A2L3}/>},
+  {icon:"🔗",label:"Wortschatz",    col:C.green,  component:()=><Zuordnung pairs={ZUORD_A2L3} leftLabel="Wort" rightLabel="Bedeutung"/>},
+  {icon:"🔤",label:"Wortstellung",  col:C.orange, component:()=><WortstellungGame sents={WSENTS_A2L3}/>},
 ]}/>;}
 
 
@@ -12891,6 +13449,531 @@ function T_A2L1C(){
   );
 }
 
+const Q_A2L1D=[
+  {q:"Perfekt von 'nehmen' (e→o):",              opts:["hat genehmt","hat genommen","hat genohmen","ist genommen"], ans:1, hint:"ich nehme – ich habe genommen"},
+  {q:"Perfekt von 'schreiben' (ei→ie):",          opts:["hat geschreibt","hat geschrieben","hat geschriben","ist geschrieben"], ans:1, hint:"ei→ie"},
+  {q:"Perfekt von 'trinken' (i→u):",              opts:["hat getrinkt","hat getrunken","hat getrenkt","ist getrunken"], ans:1, hint:"i→u"},
+  {q:"Perfekt von 'beginnen' (i→o):",             opts:["hat beginnt","hat begonnen","hat begunnen","ist begonnen"], ans:1, hint:"i→o"},
+  {q:"'Mit 6 Jahren ist Pia in die Schule gekommen.' — mit + Dativ указывает на:",opts:["место","возраст в момент события","способ","причину"], ans:1, hint:"mit 6 Jahren = в 6 лет"},
+  {q:"Possessivartikel для 'wir' + das Haus (n):", opts:["unser","unsere","unseren","unserem"], ans:0, hint:"n-Nomen → ohne -e"},
+  {q:"Possessivartikel для 'wir' + die Tochter (f):",opts:["unser","unsere","unseren","unserem"], ans:1, hint:"f-Nomen → +e"},
+  {q:"'sich Filme auf Deutsch anschauen' — это совет:",opts:["смотреть фильмы на немецком","читать книги","слушать музыку","писать карточки"], ans:0, hint:"Lerntipp"},
+];
+
+function T_A2L1D(){
+  const [tab,setTab]=useState("perfekt");
+  const perfektMuster=[
+    {typ:"a → a",verbs:[["fahren","ist gefahren"],["tragen","hat getragen"],["verlassen","hat verlassen"],["anfangen","hat angefangen"]]},
+    {typ:"e → e",verbs:[["essen","hat gegessen"],["vergessen","hat vergessen"],["lesen","hat gelesen"],["sehen","hat gesehen"],["geben","hat gegeben"],["aufgeben","hat aufgegeben"]]},
+    {typ:"i → u",verbs:[["trinken","hat getrunken"],["finden","hat gefunden"]]},
+    {typ:"e → o",verbs:[["nehmen","hat genommen"],["helfen","hat geholfen"],["sprechen","hat gesprochen"],["treffen","hat getroffen"]]},
+    {typ:"ei → ie",verbs:[["schreiben","hat geschrieben"],["überweisen","hat überwiesen"],["bleiben","ist geblieben"],["umsteigen","ist umgestiegen"]]},
+    {typ:"i → o",verbs:[["beginnen","hat begonnen"],["schwimmen","ist geschwommen"],["umziehen","ist umgezogen"],["verlieren","hat verloren"],["gewinnen","hat gewonnen"]]},
+  ];
+  const possFull=[
+    {p:"ich",m:"mein",n:"mein",f:"meine",pl:"meine"},
+    {p:"du",m:"dein",n:"dein",f:"deine",pl:"deine"},
+    {p:"er/es/man",m:"sein",n:"sein",f:"seine",pl:"seine"},
+    {p:"sie",m:"ihr",n:"ihr",f:"ihre",pl:"ihre"},
+    {p:"wir",m:"unser",n:"unser",f:"unsere",pl:"unsere"},
+    {p:"ihr",m:"euer",n:"euer",f:"eure",pl:"eure"},
+    {p:"sie (Pl.)",m:"ihr",n:"ihr",f:"ihre",pl:"ihre"},
+    {p:"Sie",m:"Ihr",n:"Ihr",f:"Ihre",pl:"Ihre"},
+  ];
+  const kommunikation=[
+    {tag:"eine Person vorstellen",items:[
+      {de:"Er/Sie kommt aus …",ru:"он/она родом из …"},
+      {de:"Er/Sie wohnt schon seit zwei Jahren in Oldenburg.",ru:"он/она уже два года живёт в Ольденбурге."},
+      {de:"Oldenburg liegt im Norden von Deutschland, in der Nähe von Bremen.",ru:"Ольденбург на севере Германии, рядом с Бременом."},
+      {de:"Seine/Ihre Freunde wohnen in Bremen.",ru:"его/её друзья живут в Бремене."},
+    ]},
+    {tag:"über Erfahrungen in Deutschland sprechen",items:[
+      {de:"Ich habe zuerst bei Verwandten in Düsseldorf gewohnt und dann bin ich nach Hamburg umgezogen.",ru:"Сначала я жил(а) у родственников в Дюссельдорфе, потом переехал(а) в Гамбург."},
+      {de:"Am Anfang war es schwer / nicht so schwer / leicht.",ru:"Поначалу было тяжело / не так тяжело / легко."},
+      {de:"Unsere Kinder sind in Deutschland zur Schule gegangen. Sie haben schneller Deutsch gelernt als wir.",ru:"Наши дети ходили в школу в Германии. Они выучили немецкий быстрее нас."},
+    ]},
+    {tag:"Lerntipps geben",items:[
+      {de:"Sie können sagen: Bitte sprechen Sie langsam.",ru:"Вы можете сказать: пожалуйста, говорите медленнее."},
+      {de:"Sie können vielleicht einen Kurs an der Volkshochschule besuchen, z. B. einen Tanzkurs oder einen Kochkurs.",ru:"Вы можете, например, посещать курс в народном университете — танцевальный или кулинарный."},
+    ]},
+  ];
+  const lerntipps=["Wörter lernen","Deutschsprache zuhören","Deutsche Musik hören","Bücher lesen","wiederholen","mit Nachbarn/Nachbarinnen sprechen","sich Filme auf Deutsch anschauen","mit Deutschen sprechen","Podcasts, Reels anschauen und hören"];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.teal}>
+        <H c={C.teal}>🗣️ A2-L1D · Sprechen aktiv & Gewusst wie</H>
+        <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
+          {[["perfekt","Perfekt-Muster"],["komm","Kommunikation & Tipps"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,lineHeight:1.35,textAlign:"center",
+                border:`1px solid ${tab===key?C.teal+"55":C.border}`,
+                background:tab===key?C.teal+"22":C.ov3,
+                color:tab===key?C.teal:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="perfekt"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,marginBottom:10,lineHeight:1.6}}>
+              Präsens и Perfekt неправильных глаголов группируются по замене гласной (Kursbuch S.16):
+            </div>
+            {perfektMuster.map((g,gi)=>(
+              <div key={gi} style={{marginBottom:10}}>
+                <div style={{fontSize:12,fontWeight:800,color:C.teal,marginBottom:5}}>{g.typ}</div>
+                <div style={{display:"flex",flexDirection:"column",gap:3}}>
+                  {g.verbs.map(([a,b])=>(
+                    <div key={a} style={{background:C.ov4,borderRadius:7,padding:"6px 10px",display:"flex",justifyContent:"space-between"}}>
+                      <span style={{fontSize:13,fontWeight:700,color:C.text}}>{a}</span>
+                      <span style={{fontSize:13,color:C.purple,fontWeight:700}}>{b}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+            <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,borderRadius:10,padding:"11px 13px"}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.orange,marginBottom:6}}>Lebensgeschichte von Pia</div>
+              <TapEx de="Mit 6 Jahren ist Pia in die Schule gekommen." ru="В 6 лет Пиа пошла в школу." col={C.orange} style={{marginBottom:5}}/>
+              <TapEx de="Mit 19 Jahren hat sie an der Universität studiert." ru="В 19 лет она училась в университете." col={C.orange} style={{marginBottom:5}}/>
+              <TapEx de="Mit 28 Jahren hat sie geheiratet." ru="В 28 лет она вышла замуж." col={C.orange}/>
+            </div>
+          </div>
+        )}
+        {tab==="komm"&&(
+          <div>
+            <div style={{fontSize:12,fontWeight:700,color:C.muted,margin:"0 0 6px",textTransform:"uppercase",letterSpacing:0.5}}>Possessivartikel — полная таблица</div>
+            <div style={{display:"flex",flexDirection:"column",gap:3,marginBottom:12}}>
+              <div style={{display:"flex",gap:6,padding:"5px 8px",fontSize:11,fontWeight:800,color:C.muted,textTransform:"uppercase"}}>
+                <span style={{width:70}}></span><span style={{flex:1,textAlign:"center"}}>m (Sohn)</span><span style={{flex:1,textAlign:"center"}}>n (Haus)</span><span style={{flex:1,textAlign:"center"}}>f (Tochter)</span><span style={{flex:1,textAlign:"center"}}>Pl. (Kinder)</span>
+              </div>
+              {possFull.map(r=>(
+                <div key={r.p} style={{background:C.ov4,borderRadius:7,padding:"6px 8px",display:"flex",gap:6,alignItems:"center"}}>
+                  <span style={{width:70,fontSize:12,fontWeight:700,color:C.muted}}>{r.p}</span>
+                  <span style={{flex:1,textAlign:"center",fontSize:13,fontWeight:700,color:C.teal}}>{r.m}</span>
+                  <span style={{flex:1,textAlign:"center",fontSize:13,fontWeight:700,color:C.teal}}>{r.n}</span>
+                  <span style={{flex:1,textAlign:"center",fontSize:13,fontWeight:700,color:C.teal}}>{r.f}</span>
+                  <span style={{flex:1,textAlign:"center",fontSize:13,fontWeight:700,color:C.teal}}>{r.pl}</span>
+                </div>
+              ))}
+            </div>
+            {kommunikation.map((k,ki)=>(
+              <div key={ki} style={{marginBottom:10}}>
+                <div style={{fontSize:12,fontWeight:800,color:C.blue,marginBottom:5}}>{k.tag}</div>
+                {k.items.map((it,ii)=>(
+                  <TapEx key={ii} de={it.de} ru={it.ru} col={C.blue} style={{marginBottom:4}}/>
+                ))}
+              </div>
+            ))}
+            <div style={{fontSize:12,fontWeight:700,color:C.muted,margin:"8px 0 6px",textTransform:"uppercase",letterSpacing:0.5}}>Lerntipps (Mindmap)</div>
+            <div style={{display:"flex",flexWrap:"wrap",gap:6}}>
+              {lerntipps.map((t,i)=>(
+                <span key={i} style={{background:C.greenBg,color:C.green,borderRadius:20,padding:"5px 11px",fontSize:12,fontWeight:600}}>{t}</span>
+              ))}
+            </div>
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
+const Q_A2L2A=[
+  {q:"'Herr Merz findet das Internet praktisch, ___ man viele Informationen bekommt.'",opts:["weil","dass","denn","und"],ans:0,hint:"weil + Nebensatz"},
+  {q:"В придаточном с 'weil' спрягаемый глагол стоит:",opts:["на 2-м месте","в конце предложения","на 1-м месте","перед подлежащим"],ans:1,hint:"Nebensatz-Wortstellung"},
+  {q:"'Warum arbeitet Herr Merz auch im Zug?' — 'Weil er dann keine Zeit ___.'",opts:["verliert","verlor","verlieren","hat verloren"],ans:0,hint:"Präsens im Nebensatz"},
+  {q:"'Warum geht Frau Tanner viel ins Internet?' — 'Weil sie das interessant ___.'",opts:["findet","find","gefunden","fand"],ans:0,hint:"finden → findet"},
+  {q:"'Preise vergleichen' по-русски:",opts:["сравнивать цены","менять цены","платить цены","повышать цены"],ans:0,hint:"vergleichen"},
+  {q:"'Online-Spiele spielen' — это:",opts:["играть в компьютерные игры","играть в шахматы","смотреть онлайн-фильмы","делать покупки онлайн"],ans:0,hint:"Online-Spiele"},
+  {q:"Michaela Tanner (71 Jahre) — по профессии:",opts:["Übersetzerin","Rentnerin","Schülerin","Lehrerin"],ans:1,hint:"Rentnerin"},
+  {q:"'Warum ist das Internet für Sie wichtig?' — 'Es ist wichtig für mich, weil ich ___.'",opts:["gute Informationen finden kann","gut informiert habe","interessant bin","viel Zeit habe gehabt"],ans:0,hint:"Modalverb+Infinitiv am Ende"},
+];
+
+function T_A2L2A(){
+  const [tab,setTab]=useState("weil");
+  const weilBsp=[
+    {q:"Warum muss Herr Merz nicht immer im Büro sitzen?",a:"Weil er mobiles Internet hat.",aRu:"Потому что у него мобильный интернет."},
+    {q:"Warum arbeitet Herr Merz auch im Zug?",a:"Weil er dann keine Zeit verliert.",aRu:"Потому что тогда он не теряет времени."},
+    {q:"Warum hat Frau Tanner im Beruf kein Internet gebraucht?",a:"Weil im Kindergarten keine Computer waren.",aRu:"Потому что в детском саду не было компьютеров."},
+    {q:"Warum geht Frau Tanner jetzt viel ins Internet?",a:"Weil sie das interessant findet.",aRu:"Потому что находит это интересным."},
+    {q:"Warum recherchiert Julian im Internet?",a:"Weil man gute Informationen finden kann.",aRu:"Потому что можно найти хорошую информацию."},
+    {q:"Warum hat Julian mobiles Internet?",a:"Weil er immer erreichbar sein möchte.",aRu:"Потому что он хочет всегда быть на связи."},
+    {q:"Warum brauchen Schüler oft Internet?",a:"Weil sie Informationen für die Schule recherchieren.",aRu:"Потому что они ищут информацию для школы."},
+    {q:"Warum gehen Kinder gern ins Internet?",a:"Weil es viele Online-Spiele für Kinder gibt.",aRu:"Потому что есть много онлайн-игр для детей."},
+    {q:"Warum braucht man bei der Arbeit Internet?",a:"Weil man E-Mails schicken muss.",aRu:"Потому что нужно отправлять электронные письма."},
+    {q:"Warum will Anja im Urlaub ihr Tablet mitnehmen?",a:"Weil sie im Urlaub Nachrichten sehen will.",aRu:"Потому что она хочет смотреть новости в отпуске."},
+  ];
+  const weilBsp2=[
+    {q:"Warum spielen die Kinder nicht im Garten?",a:"Weil es regnet und draußen schon dunkel ist.",aRu:"Потому что идёт дождь и на улице уже темно."},
+    {q:"Warum fährt Herr Hamidi zum Flughafen?",a:"Weil er seine Familie abholt.",aRu:"Потому что он встречает свою семью."},
+    {q:"Warum trinkt Herr Scholz heute kein Bier?",a:"Weil er heute mit dem Auto fährt.",aRu:"Потому что он сегодня за рулём."},
+    {q:"Warum geht Frau Santana heute früh ins Bett?",a:"Weil sie morgen früh aufsteht.",aRu:"Потому что она завтра рано встаёт."},
+  ];
+  const internetAktiv=["Preise vergleichen","Online-Spiele spielen","chatten","Nachrichten schicken"];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.blue}>
+        <H c={C.blue}>🌐 A2-L2A · Rund ums Internet</H>
+        <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
+          {[["weil","weil-Sätze"],["vokab","Internet-Aktivitäten"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,textAlign:"center",
+                border:`1px solid ${tab===key?C.blue+"55":C.border}`,
+                background:tab===key?C.blue+"22":C.ov3,
+                color:tab===key?C.blue:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="weil"&&(
+          <div>
+            <div style={{background:C.blue+"15",border:`1px solid ${C.blue}33`,borderRadius:10,padding:"11px 13px",marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.blue,marginBottom:6}}>Nebensätze mit weil</div>
+              <div style={{fontSize:13,color:C.text,lineHeight:1.7}}>
+                Herr Merz findet das Internet praktisch. <b>Man bekommt viele Informationen.</b><br/>
+                → Herr Merz findet das Internet praktisch, <b style={{color:C.blue}}>weil</b> man viele Informationen <b style={{color:C.orange}}>bekommt</b>.
+              </div>
+              <div style={{fontSize:12,color:C.muted,marginTop:6}}>Спрягаемый глагол уходит в самый конец придаточного предложения.</div>
+            </div>
+            <div style={{fontSize:12,fontWeight:700,color:C.muted,margin:"0 0 6px",textTransform:"uppercase",letterSpacing:0.5}}>Warum? — Beispiele</div>
+            {weilBsp.map((w,i)=>(
+              <div key={i} style={{background:C.ov4,borderRadius:8,padding:"8px 11px",marginBottom:5}}>
+                <div style={{fontSize:12,color:C.muted,marginBottom:2}}>{w.q}</div>
+                <div style={{fontSize:13,fontWeight:700,color:C.blue}}>{w.a}</div>
+                <div style={{fontSize:11,color:C.muted}}>{w.aRu}</div>
+              </div>
+            ))}
+            <div style={{fontSize:12,fontWeight:700,color:C.muted,margin:"10px 0 6px",textTransform:"uppercase",letterSpacing:0.5}}>Weitere Beispiele (Arbeitsbuch)</div>
+            {weilBsp2.map((w,i)=>(
+              <div key={i} style={{background:C.ov4,borderRadius:8,padding:"8px 11px",marginBottom:5}}>
+                <div style={{fontSize:12,color:C.muted,marginBottom:2}}>{w.q}</div>
+                <div style={{fontSize:13,fontWeight:700,color:C.blue}}>{w.a}</div>
+                <div style={{fontSize:11,color:C.muted}}>{w.aRu}</div>
+              </div>
+            ))}
+          </div>
+        )}
+        {tab==="vokab"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,marginBottom:10,lineHeight:1.6}}>
+              Was kann man im Internet machen? (Kursbuch S.20):
+            </div>
+            <div style={{display:"flex",flexWrap:"wrap",gap:6,marginBottom:12}}>
+              {internetAktiv.map((t,i)=>(
+                <span key={i} style={{background:C.blueBg,color:C.blue,borderRadius:20,padding:"6px 12px",fontSize:13,fontWeight:600}}>{t}</span>
+              ))}
+            </div>
+            <div style={{fontSize:12,fontWeight:700,color:C.muted,margin:"0 0 6px",textTransform:"uppercase",letterSpacing:0.5}}>Drei Personen</div>
+            <div style={{display:"flex",flexDirection:"column",gap:5}}>
+              <div style={{background:C.ov4,borderRadius:8,padding:"7px 10px",fontSize:13}}><b>Stefan Merz</b>, Übersetzer, 45 — nutzt Internet in Beruf <i>und</i> Freizeit</div>
+              <div style={{background:C.ov4,borderRadius:8,padding:"7px 10px",fontSize:13}}><b>Michaela Tanner</b>, Rentnerin, 71 — hat ein Tablet, geht gerne ins Internet</div>
+              <div style={{background:C.ov4,borderRadius:8,padding:"7px 10px",fontSize:13}}><b>Julian Demke</b>, Schüler, 16 — nutzt häufig das Internet für die Schule</div>
+            </div>
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
+const Q_A2L2B=[
+  {q:"'speichern' по-русски:",opts:["сохранить","открыть","закрыть","печатать"],ans:0,hint:"Diskette-Symbol"},
+  {q:"'drucken' по-русски:",opts:["сохранить","печатать (на принтере)","удалить","отправить"],ans:1,hint:"Drucker"},
+  {q:"'löschen' по-русски:",opts:["удалить","добавить","открыть","сохранить"],ans:0,hint:"Papierkorb-Symbol"},
+  {q:"'der Anhang' (E-Mail) — это:",opts:["тема письма","вложение (файл)","адресат","подпись"],ans:1,hint:"Büroklammer-Symbol"},
+  {q:"'der Posteingang' по-русски:",opts:["исходящие","входящие","черновики","спам"],ans:1,hint:"Post + Eingang"},
+  {q:"Правильный порядок написания E-Mail:",opts:["Empfänger auswählen → Betreff → Text → Anhängen → Abschicken","Text → Betreff → Empfänger → Abschicken → Anhängen","Abschicken → Text → Betreff → Empfänger","Anhängen → Abschicken → Text → Betreff"],ans:0,hint:"1b Reihenfolge"},
+  {q:"'das Adressbuch' по-русски:",opts:["адресная книга (контакты)","почтовый ящик","черновик","корзина"],ans:0,hint:"Adressbuch"},
+  {q:"'Optionen' и 'Beenden' в меню компьютера — это:",opts:["настройки и выход","сохранение и печать","помощь и справка","открыть и закрыть"],ans:0,hint:"Optionen/Beenden"},
+];
+
+function T_A2L2B(){
+  const symboleDatei=[["Speichern","сохранить"],["Öffnen","открыть"],["Schließen","закрыть"],["Neu","новый документ"],["Drucken","печатать"],["Hilfe","помощь"],["Optionen","настройки"],["Beenden","выйти из программы"]];
+  const symboleEmail=[["Adressbuch","адресная книга"],["Posteingang","входящие"],["Senden","отправить"],["Löschen","удалить"],["Anhang","вложение"]];
+  const reihenfolge=["das E-Mail-Programm öffnen","den Empfänger auswählen","den Betreff schreiben","den Text schreiben","Dateien anhängen","die E-Mail abschicken","das E-Mail-Programm schließen"];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.purple}>
+        <H c={C.purple}>💻 A2-L2B · Mit dem Computer arbeiten</H>
+        <div style={{fontSize:13,color:C.muted,marginBottom:10,lineHeight:1.6}}>
+          Computersymbole verstehen (Kursbuch S.22):
+        </div>
+        <div style={{fontSize:12,fontWeight:700,color:C.muted,margin:"0 0 6px",textTransform:"uppercase",letterSpacing:0.5}}>Datei-Menü</div>
+        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:5,marginBottom:12}}>
+          {symboleDatei.map(([de,ru])=>(
+            <div key={de} style={{background:C.ov4,borderRadius:7,padding:"6px 9px"}}>
+              <div style={{fontSize:13,fontWeight:700,color:C.purple}}>{de}</div>
+              <div style={{fontSize:11,color:C.muted}}>{ru}</div>
+            </div>
+          ))}
+        </div>
+        <div style={{fontSize:12,fontWeight:700,color:C.muted,margin:"0 0 6px",textTransform:"uppercase",letterSpacing:0.5}}>E-Mail-Fenster</div>
+        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:5,marginBottom:12}}>
+          {symboleEmail.map(([de,ru])=>(
+            <div key={de} style={{background:C.ov4,borderRadius:7,padding:"6px 9px"}}>
+              <div style={{fontSize:13,fontWeight:700,color:C.purple}}>{de}</div>
+              <div style={{fontSize:11,color:C.muted}}>{ru}</div>
+            </div>
+          ))}
+        </div>
+        <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,borderRadius:10,padding:"11px 13px"}}>
+          <div style={{fontWeight:800,fontSize:13,color:C.orange,marginBottom:6}}>Eine E-Mail schreiben — Reihenfolge</div>
+          <div style={{display:"flex",flexDirection:"column",gap:4}}>
+            {reihenfolge.map((s,i)=>(
+              <div key={i} style={{fontSize:13,color:C.text,display:"flex",gap:6}}>
+                <span style={{color:C.orange,fontWeight:800}}>{i+1}.</span><span>{s}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </Box>
+    </div>
+  );
+}
+
+const Q_A2L2C=[
+  {q:"'Ich finde, ___ das Fernsehen gute Informationen bietet.'",opts:["dass","weil","denn","ob"],ans:0,hint:"finden, dass"},
+  {q:"В придаточном с 'dass' спрягаемый глагол стоит:",opts:["на 2-м месте","в конце предложения","на 1-м месте","перед dass"],ans:1,hint:"Nebensatz-Wortstellung"},
+  {q:"'Ich bin dagegen, dass …' означает:",opts:["я за то, что…","я против того, что…","я не уверен, что…","я думаю, что…"],ans:1,hint:"dagegen sein"},
+  {q:"'der Spielfilm' — это сокращение категории:",opts:["документальный фильм","художественный фильм","новости","викторина"],ans:1,hint:"Spielfilm"},
+  {q:"'die Talkshow' по-русски:",opts:["ток-шоу","викторина","сериал","документалка"],ans:0,hint:"Talkshow"},
+  {q:"'Herr Arndt sagt, dass es zu viel ___ gibt.' (реклама)",opts:["Werbung","Nachrichten","Sendungen","Filme"],ans:0,hint:"zu viel Werbung"},
+  {q:"'Ich bin mir sicher, dass du besser schreiben kannst.' — здесь Modalverb стоит:",opts:["на 2-м месте","перед dass","в конце (после инфинитива)","в начале"],ans:2,hint:"kannst в конце"},
+  {q:"Средняя суточная продолжительность просмотра ТВ в Германии — примерно:",opts:["111 минут","192 минуты","240 минут","300 минут"],ans:2,hint:"Mediennutzung in Deutschland"},
+];
+
+function T_A2L2C(){
+  const [tab,setTab]=useState("dass");
+  const dassBsp=[
+    {p:"Frau Hegel",m:"Ich finde,",s:"dass das Fernsehen gute Informationen bietet.",ru:"Я считаю, что телевидение даёт хорошую информацию.",pos:"C"},
+    {p:"Herr Arndt",m:"Ich denke,",s:"dass es zu viel Werbung gibt.",ru:"Я думаю, что слишком много рекламы.",pos:"A"},
+    {p:"Frau Gül",m:"Ich meine,",s:"dass die guten Filme immer zu spät kommen.",ru:"Я считаю, что хорошие фильмы всегда идут слишком поздно.",pos:"B"},
+    {p:"Herr Mazur",m:"Es ist gut,",s:"dass Kinder in Kindersendungen viel lernen können.",ru:"Хорошо, что дети могут многому научиться из детских передач.",pos:"D"},
+  ];
+  const meinungPhrasen=[
+    {de:"Ich meine, dass …",ru:"я считаю, что…"},{de:"Ich denke, dass …",ru:"я думаю, что…"},
+    {de:"Ich finde, dass …",ru:"я нахожу, что…"},{de:"Ich bin dafür, dass …",ru:"я за то, что…"},
+    {de:"Ich bin dagegen, dass …",ru:"я против того, что…"},{de:"Ich finde es gut/schlecht, dass …",ru:"я считаю хорошим/плохим, что…"},
+    {de:"Es ist gut/schlecht, dass …",ru:"хорошо/плохо, что…"},
+  ];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.green}>
+        <H c={C.green}>📺 A2-L2C · Fernsehen und Radio</H>
+        <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
+          {[["dass","dass-Sätze"],["meinung","Meinung sagen"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,textAlign:"center",
+                border:`1px solid ${tab===key?C.green+"55":C.border}`,
+                background:tab===key?C.green+"22":C.ov3,
+                color:tab===key?C.green:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="dass"&&(
+          <div>
+            <div style={{background:C.green+"15",border:`1px solid ${C.green}33`,borderRadius:10,padding:"11px 13px",marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.green,marginBottom:6}}>Nebensätze mit dass</div>
+              <div style={{fontSize:13,color:C.text,lineHeight:1.7}}>
+                Das Fernsehen <b style={{color:C.orange}}>bietet</b> gute Informationen.<br/>
+                → Ich finde, <b style={{color:C.green}}>dass</b> das Fernsehen gute Informationen <b style={{color:C.orange}}>bietet</b>.
+              </div>
+              <div style={{fontSize:12,color:C.muted,marginTop:6}}>Как и в weil-Sätzen, глагол уходит в конец придаточного предложения.</div>
+            </div>
+            <div style={{fontSize:12,fontWeight:700,color:C.muted,margin:"0 0 6px",textTransform:"uppercase",letterSpacing:0.5}}>Talkshow-Diskussion</div>
+            {dassBsp.map((d,i)=>(
+              <div key={i} style={{background:C.ov4,borderRadius:8,padding:"8px 11px",marginBottom:5}}>
+                <div style={{fontSize:12,fontWeight:800,color:C.text}}>{d.p}: <span style={{fontWeight:400,color:C.muted}}>{d.m}</span> <b style={{color:C.green}}>{d.s}</b></div>
+                <div style={{fontSize:11,color:C.muted}}>{d.ru}</div>
+              </div>
+            ))}
+          </div>
+        )}
+        {tab==="meinung"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,marginBottom:10,lineHeight:1.6}}>
+              Die eigene Meinung sagen (Kursbuch S.24):
+            </div>
+            <div style={{display:"flex",flexDirection:"column",gap:4,marginBottom:12}}>
+              {meinungPhrasen.map((m,i)=>(
+                <div key={i} style={{background:C.ov4,borderRadius:7,padding:"6px 10px",display:"flex",justifyContent:"space-between",gap:8}}>
+                  <span style={{fontSize:13,fontWeight:700,color:C.green}}>{m.de}</span>
+                  <span style={{fontSize:11,color:C.muted}}>{m.ru}</span>
+                </div>
+              ))}
+            </div>
+            <div style={{background:C.blue+"15",border:`1px solid ${C.blue}33`,borderRadius:10,padding:"11px 13px"}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.blue,marginBottom:6}}>Mediennutzung in Deutschland (Minuten/Tag)</div>
+              <div style={{fontSize:13,color:C.text,lineHeight:1.8}}>
+                📺 Fernsehen — <b>240</b><br/>
+                📻 Radio — <b>192</b><br/>
+                🌐 Internet — <b>111</b>
+              </div>
+            </div>
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
+const Q_A2L3A=[
+  {q:"'Wo ist das Buch?' — 'Es liegt auf dem Tisch.' — какой падеж?",opts:["Dativ (место)","Akkusativ (направление)","Genitiv","Nominativ"],ans:0,hint:"Wo? = Dativ"},
+  {q:"'Wohin legst du das Buch?' — 'Ich lege es auf den Tisch.' — какой падеж?",opts:["Dativ","Akkusativ (направление)","Genitiv","Nominativ"],ans:1,hint:"Wohin? = Akkusativ"},
+  {q:"Пара 'находиться / класть (плашмя)':",opts:["stehen / stellen","liegen / legen","sitzen / sich setzen","hängen / hängen"],ans:1,hint:"liegen (Wo) → legen (Wohin)"},
+  {q:"Пара 'стоять / ставить (вертикально)':",opts:["stehen / stellen","liegen / legen","sitzen / sich setzen","hängen / hängen"],ans:0,hint:"stehen (Wo) → stellen (Wohin)"},
+  {q:"'Die Gabel fällt neben den Stuhl.' — глагол 'fallen' здесь с:",opts:["Dativ, т.к. место","Akkusativ, т.к. направление падения","Genitiv","без падежа"],ans:1,hint:"Wohin fällt sie? — neben den Stuhl"},
+  {q:"'plötzlich' по-русски:",opts:["вдруг, внезапно","наконец","обычно","редко"],ans:0,hint:"Aber plötzlich ist der Himmel dunkel geworden."},
+  {q:"'der Himmel' по-русски:",opts:["погода","небо","гроза","облако"],ans:1,hint:"der Himmel ist dunkel geworden"},
+  {q:"'werden' в 'der Himmel ist dunkel geworden' означает:",opts:["быть","становиться","идти","приходить"],ans:1,hint:"dunkel werden = темнеть"},
+];
+
+function T_A2L3A(){
+  const [tab,setTab]=useState("wechsel");
+  const positionMotion=[
+    {wo:"liegen",wohin:"legen",ru:"лежать / класть (плашмя)"},
+    {wo:"stehen",wohin:"stellen",ru:"стоять / ставить (вертикально)"},
+    {wo:"sitzen",wohin:"sich setzen",ru:"сидеть / садиться"},
+    {wo:"hängen",wohin:"hängen",ru:"висеть / вешать (форма одна)"},
+  ];
+  const gewitterBsp=[
+    {de:"Aber plötzlich ist der Himmel dunkel geworden, ein Sturm ist gekommen und es hat ein Gewitter gegeben.",ru:"Но вдруг небо потемнело, начался шторм, и разразилась гроза."},
+    {de:"Der Sonnenschirm ist auf den Boden gefallen.",ru:"Зонт от солнца упал на землю."},
+    {de:"Die Leute sind ganz schnell in die Geschäfte und in die Apotheke gerannt.",ru:"Люди быстро побежали в магазины и в аптеку."},
+    {de:"Wir sind ins Café gelaufen. Wir waren pitschnass.",ru:"Мы забежали в кафе. Мы промокли насквозь."},
+  ];
+  const cafeVokab=["die Kaffeekanne","die Gabel","die Tasse","der Löffel","der Teller","das Messer","die Serviette"];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.orange}>
+        <H c={C.orange}>🛍️ A2-L3A · In der Einkaufsstraße</H>
+        <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
+          {[["wechsel","Wo/Wohin: Verbpaare"],["gewitter","Das Gewitter (E-Mail)"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,textAlign:"center",
+                border:`1px solid ${tab===key?C.orange+"55":C.border}`,
+                background:tab===key?C.orange+"22":C.ov3,
+                color:tab===key?C.orange:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="wechsel"&&(
+          <div>
+            <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,borderRadius:10,padding:"11px 13px",marginBottom:10}}>
+              <div style={{fontSize:13,color:C.text,lineHeight:1.7}}>
+                Некоторые глаголы образуют пары: <b>Wo?</b> (положение, Dativ) ↔ <b>Wohin?</b> (действие, направление, Akkusativ).
+              </div>
+            </div>
+            <div style={{display:"flex",gap:6,paddingLeft:2,marginBottom:5,fontSize:11,color:C.muted,fontWeight:700,textTransform:"uppercase"}}>
+              <span style={{flex:1}}>Wo? (Dativ)</span><span style={{flex:1}}>Wohin? (Akkusativ)</span>
+            </div>
+            {positionMotion.map((p,i)=>(
+              <div key={i} style={{background:C.ov4,borderRadius:8,padding:"8px 10px",marginBottom:5}}>
+                <div style={{display:"flex",gap:6}}>
+                  <span style={{flex:1,fontWeight:800,color:C.blue,fontSize:14}}>{p.wo}</span>
+                  <span style={{flex:1,fontWeight:800,color:C.orange,fontSize:14}}>{p.wohin}</span>
+                </div>
+                <div style={{fontSize:11,color:C.muted,marginTop:2}}>{p.ru}</div>
+              </div>
+            ))}
+            <TapEx de="Der Stuhl fällt unter den Tisch. Das Messer liegt unter dem Tisch." ru="Стул падает под стол. Нож лежит под столом." col={C.orange} style={{marginTop:8,marginBottom:5}}/>
+            <TapEx de="Wohin rennt die schwarze Katze? — Die Katze rennt hinter den Vorhang." ru="Куда бежит чёрная кошка? — Кошка бежит за занавеску." col={C.orange}/>
+            <div style={{fontSize:12,fontWeight:700,color:C.muted,margin:"10px 0 6px",textTransform:"uppercase",letterSpacing:0.5}}>Café-Vokabular</div>
+            <div style={{display:"flex",flexWrap:"wrap",gap:6}}>
+              {cafeVokab.map((w,i)=><span key={i} style={{background:C.ov4,borderRadius:20,padding:"5px 11px",fontSize:12,color:C.text}}>{w}</span>)}
+            </div>
+          </div>
+        )}
+        {tab==="gewitter"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,marginBottom:10,lineHeight:1.6}}>
+              E-Mail von David an Niklas — was ist im Café Einstein passiert?
+            </div>
+            {gewitterBsp.map((g,i)=>(
+              <TapEx key={i} de={g.de} ru={g.ru} col={C.orange} style={{marginBottom:6}}/>
+            ))}
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
+const Q_A2L3B=[
+  {q:"'Hast du Zeit?' — да, есть время. Ответ:",opts:["Ja.","Nein.","Doch."],ans:0,hint:"положительный вопрос → Ja"},
+  {q:"'Hast du keine Zeit?' — нет времени нет (подтверждение). Ответ:",opts:["Ja.","Nein.","Doch."],ans:1,hint:"отрицательный вопрос, ответ 'нет' = Nein"},
+  {q:"'Kommst du nicht?' — но ты придёшь (опровергаешь отрицание). Ответ:",opts:["Ja.","Nein.","Doch."],ans:2,hint:"отрицательный вопрос, но ответ противоречит 'нет' → Doch"},
+  {q:"'doch' используется, когда:",opts:["отвечают 'да' на обычный вопрос","опровергают отрицательный вопрос положительным ответом","всегда вместо nein","это просто синоним ja"],ans:1,hint:"Kommt Nina auch nicht? — Doch, sie kommt."},
+  {q:"'Ich mag Kaffee. Und du?' — 'Ich auch nicht' vs 'Ich schon' — что здесь синоним doch по смыслу?",opts:["schon","auch","und","aber"],ans:0,hint:"противопоставление отрицанию"},
+  {q:"'die Wohnung putzen' встречается в контексте:",opts:["Wochenend-Aktivitäten","Café-Vokabular","E-Mail schreiben","Ferienplan"],ans:0,hint:"Was machen Sie samstags?"},
+  {q:"'ein Picknick machen' по-русски:",opts:["устроить пикник","готовить ужин","идти в поход","жарить мясо"],ans:0,hint:"Picknick"},
+  {q:"'die Schwiegereltern' по-русски:",opts:["бабушка и дедушка","родители супруга/супруги","крёстные родители","опекуны"],ans:1,hint:"Schwieger- = ...-in-law"},
+];
+
+function T_A2L3B(){
+  const [tab,setTab]=useState("janein");
+  const janeinTab=[
+    {q:"Hast du Zeit?",a:"Ja.",aNeg:"Nein.",typ:"positiver Frage"},
+    {q:"Hast du keine Zeit?",a:"Doch. (у меня есть время)",aNeg:"Nein. (у меня нет времени)",typ:"negativer Frage"},
+    {q:"Kommst du nicht?",a:"Doch, ich komme.",aNeg:"Nein, ich komme nicht.",typ:"negativer Frage"},
+  ];
+  const wochenendeAktiv=["einkaufen","Eis essen","schwimmen gehen","Sport machen","Freunde treffen","Kaffee trinken","ein Picknick machen","tanzen","grillen","lange frühstücken","spazieren gehen","etwas reparieren","Zeitung lesen","lange schlafen","die Wohnung/das Auto putzen","im Garten arbeiten","Ausflüge machen","Verwandte besuchen","in einen Club gehen"];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.blue}>
+        <H c={C.blue}>📅 A2-L3B · Was machen wir am Sonntag?</H>
+        <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
+          {[["janein","ja / nein / doch"],["aktiv","Wochenend-Aktivitäten"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,textAlign:"center",
+                border:`1px solid ${tab===key?C.blue+"55":C.border}`,
+                background:tab===key?C.blue+"22":C.ov3,
+                color:tab===key?C.blue:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="janein"&&(
+          <div>
+            <div style={{background:C.blue+"15",border:`1px solid ${C.blue}33`,borderRadius:10,padding:"11px 13px",marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.blue,marginBottom:6}}>Главное правило</div>
+              <div style={{fontSize:13,color:C.text,lineHeight:1.7}}>
+                На вопрос БЕЗ отрицания отвечаем <b style={{color:C.green}}>ja</b>/<b style={{color:C.red}}>nein</b> как обычно.<br/>
+                На вопрос С отрицанием (keine, nicht…): если хотим ОПРОВЕРГНУТЬ отрицание — говорим <b style={{color:C.orange}}>doch</b> (а не ja!). Если подтверждаем отрицание — говорим <b style={{color:C.red}}>nein</b>.
+              </div>
+            </div>
+            {janeinTab.map((j,i)=>(
+              <div key={i} style={{background:C.ov4,borderRadius:8,padding:"9px 11px",marginBottom:6}}>
+                <div style={{fontSize:11,color:C.muted,marginBottom:3}}>{j.typ}</div>
+                <div style={{fontSize:13,fontWeight:700,color:C.text,marginBottom:4}}>{j.q}</div>
+                <div style={{fontSize:12,color:C.green}}>🙂 {j.a}</div>
+                <div style={{fontSize:12,color:C.red}}>🙁 {j.aNeg}</div>
+              </div>
+            ))}
+            <TapEx de="Kommt Nina auch nicht? — Doch, sie kommt." ru="Нина тоже не придёт? — Нет, придёт (опровержение)." col={C.blue} style={{marginTop:6}}/>
+          </div>
+        )}
+        {tab==="aktiv"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,marginBottom:10,lineHeight:1.6}}>
+              Was machen Sie samstags und sonntags? (Kursbuch S.29):
+            </div>
+            <div style={{display:"flex",flexWrap:"wrap",gap:6}}>
+              {wochenendeAktiv.map((w,i)=><span key={i} style={{background:C.blueBg,color:C.blue,borderRadius:20,padding:"6px 12px",fontSize:12,fontWeight:600}}>{w}</span>)}
+            </div>
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
 const Q_L6A=[
   {q:"Welcher Artikel hat 'Apfel'?",          opts:["der","die","das"],                                                                     ans:0, hint:"Artikel"},
   {q:"Welcher Artikel hat 'Milch'?",          opts:["der","die","das"],                                                                     ans:1, hint:"Artikel"},
@@ -13204,9 +14287,37 @@ const LEKTIONEN=[
       {id:"a2l1a", icon:"🤝",title:"Interview zum Kennenlernen",sub:"Possessivartikel · Fragen zum Kennenlernen",         time:"7 мин", col:C.blue,  hasT:true, th:()=><T_A2L1A/>, ex:()=><Quiz questions={Q_A2L1A}/>},
       {id:"a2l1b", icon:"🌍",title:"A · Zuwanderer in Deutschland",sub:"Partizip mit/ohne ge- · Lesetexte",                   time:"8 мин", col:C.purple,hasT:true, th:()=><T_A2L1B/>, ex:()=><Quiz questions={Q_A2L1B}/>},
       {id:"a2l1c", icon:"💪",title:"B · Wie haben Sie das geschafft?",sub:"Possessivartikel Plural/formell · Sprachlerntypen",time:"8 мин", col:C.orange,hasT:true, th:()=><T_A2L1C/>, ex:()=><Quiz questions={Q_A2L1C}/>},
+      {id:"a2l1d", icon:"🗣️",title:"Sprechen aktiv · Gewusst wie",   sub:"Perfekt-Muster · Possessivartikel komplett · Kommunikation",time:"8 мин", col:C.teal,  hasT:true, th:()=><T_A2L1D/>, ex:()=><Quiz questions={Q_A2L1D}/>},
       {id:"wbA2L1", icon:"📖",title:"Wörterbuch A2-L1",          sub:"Слова этого урока",                                    time:"—",    col:C.teal,   hasT:false, ex:()=><LektWoerterbuch lekt="A2-L1"/>},
       {id:"tA2L1", icon:"🎯",title:"Großer Test A2-L1",          sub:"Quiz · Lücken · Wortschatz · Wortstellung",     time:"20 мин",col:C.yellow, hasT:false, ex:()=><GrosserTestA2L1/>},
       {id:"wtA2L1", icon:"🧠",title:"Wortschatz-Test A2-L1",     sub:"Перевод · Артикли · Обратный перевод",                 time:"10 мин",col:C.teal,   hasT:false, ex:()=><WortschatzTest lekt="A2-L1"/>},
+    ]
+  },
+  {
+    id:"A2-L2",niveau:"A2",num:"2",title:"Medien",
+    sub:"A Rund ums Internet (weil) · B Mit dem Computer arbeiten · C Fernsehen und Radio (dass)",
+    date:"Kursbuch S.19–25",col:C.green,
+    sections:[
+      {id:"dA2L2", icon:"💬",title:"Dialogfragen A2-L2",         sub:"Фразы для диалога",                                    time:"∞",     col:C.green, hasT:false, th:null,           ex:()=><DialogCards lId="A2-L2"/>},
+      {id:"a2l2a", icon:"🌐",title:"A · Rund ums Internet",      sub:"Nebensätze mit weil · Internet-Aktivitäten",           time:"8 мин", col:C.blue,  hasT:true, th:()=><T_A2L2A/>, ex:()=><Quiz questions={Q_A2L2A}/>},
+      {id:"a2l2b", icon:"💻",title:"B · Mit dem Computer arbeiten",sub:"Computersymbole · eine E-Mail schreiben",             time:"6 мин", col:C.purple,hasT:true, th:()=><T_A2L2B/>, ex:()=><Quiz questions={Q_A2L2B}/>},
+      {id:"a2l2c", icon:"📺",title:"C · Fernsehen und Radio",    sub:"Nebensätze mit dass · die eigene Meinung sagen",       time:"8 мин", col:C.green, hasT:true, th:()=><T_A2L2C/>, ex:()=><Quiz questions={Q_A2L2C}/>},
+      {id:"wbA2L2", icon:"📖",title:"Wörterbuch A2-L2",          sub:"Слова этого урока",                                    time:"—",    col:C.teal,   hasT:false, ex:()=><LektWoerterbuch lekt="A2-L2"/>},
+      {id:"tA2L2", icon:"🎯",title:"Großer Test A2-L2",          sub:"Quiz · Lücken · Wortschatz · Wortstellung",     time:"20 мин",col:C.yellow, hasT:false, ex:()=><GrosserTestA2L2/>},
+      {id:"wtA2L2", icon:"🧠",title:"Wortschatz-Test A2-L2",     sub:"Перевод · Артикли · Обратный перевод",                 time:"10 мин",col:C.teal,   hasT:false, ex:()=><WortschatzTest lekt="A2-L2"/>},
+    ]
+  },
+  {
+    id:"A2-L3",niveau:"A2",num:"3",title:"Wochenende",
+    sub:"A In der Einkaufsstraße (Wechselpräpositionen) · B Was machen wir am Sonntag? (ja/nein/doch)",
+    date:"Kursbuch S.29–33",col:C.orange,
+    sections:[
+      {id:"dA2L3", icon:"💬",title:"Dialogfragen A2-L3",         sub:"Фразы для диалога",                                    time:"∞",     col:C.orange,hasT:false, th:null,           ex:()=><DialogCards lId="A2-L3"/>},
+      {id:"a2l3a", icon:"🛍️",title:"A · In der Einkaufsstraße",  sub:"Wo/Wohin-Verbpaare · Café-Vokabular",                  time:"8 мин", col:C.orange,hasT:true, th:()=><T_A2L3A/>, ex:()=><Quiz questions={Q_A2L3A}/>},
+      {id:"a2l3b", icon:"📅",title:"B · Was machen wir am Sonntag?",sub:"ja/nein/doch · Wochenend-Aktivitäten",              time:"7 мин", col:C.blue,  hasT:true, th:()=><T_A2L3B/>, ex:()=><Quiz questions={Q_A2L3B}/>},
+      {id:"wbA2L3", icon:"📖",title:"Wörterbuch A2-L3",          sub:"Слова этого урока",                                    time:"—",    col:C.teal,   hasT:false, ex:()=><LektWoerterbuch lekt="A2-L3"/>},
+      {id:"tA2L3", icon:"🎯",title:"Großer Test A2-L3",          sub:"Quiz · Lücken · Wortschatz · Wortstellung",     time:"20 мин",col:C.yellow, hasT:false, ex:()=><GrosserTestA2L3/>},
+      {id:"wtA2L3", icon:"🧠",title:"Wortschatz-Test A2-L3",     sub:"Перевод · Артикли · Обратный перевод",                 time:"10 мин",col:C.teal,   hasT:false, ex:()=><WortschatzTest lekt="A2-L3"/>},
     ]
   },
 ];
@@ -13236,6 +14347,8 @@ function DialogFragenPage(){
     L13:{label:"L13 · Auf Reisen",          col:C.green},
     L14:{label:"L14 · Zusammen leben",      col:C.orange},
     "A2-L1":{label:"A2·L1 · Meine Geschichte", col:C.blue},
+    "A2-L2":{label:"A2·L2 · Medien", col:C.green},
+    "A2-L3":{label:"A2·L3 · Wochenende", col:C.orange},
   };
   const filterFm=(pairs,lId)=>(lId==="L1"||lId==="L4")?pairs.filter(p=>!p.fm||p.fm===fm):pairs;
 
@@ -13432,7 +14545,7 @@ function TabellenPage(){
     ["es","es","ihm"],["wir","uns","uns"],["ihr","euch","euch"],["sie/Sie","sie/Sie","ihnen/Ihnen"]];
 
   const komparativReg=[["interessant","interessanter"],["wenig","weniger"],["schön","schöner"],["schnell","schneller"]];
-  const komparativUml=[["kalt","kälter"],["groß","größer"],["warm","wärmer"],["kurz","kürzer"],["alt","älter"],["lang","länger"]];
+  const komparativUml=[["kalt","kälter"],["groß","größer"],["warm","wärmer"],["kurz","kürzer"],["alt","älter"],["lang","länger"],["hart","härter"]];
   const komparativAusn=[["viel","mehr"],["gut","besser"],["gern","lieber"]];
 
   const possessiv=[["ich","mein","meine"],["du","dein","deine"],["er/es","sein","seine"],["sie","ihr","ihre"],
@@ -13836,6 +14949,15 @@ function TabellenPage(){
                 {vals.map((v,i)=><div key={i} style={{background:C.ov4,borderRadius:5,padding:"4px",textAlign:"center",fontSize:12,color:C.text}}>{v}</div>)}
               </div>
             ))}
+            {a.kasus==="Dativ"&&(
+              <div style={{background:C.blue+"15",border:`1px solid ${C.blue}33`,borderRadius:8,padding:"8px 10px",marginTop:6}}>
+                <div style={{fontSize:12,color:C.text,lineHeight:1.6}}>
+                  ⚠️ В <b style={{color:C.blue}}>Dativ Plural</b> к существительному добавляется окончание <b style={{color:C.blue}}>-n</b>, если его там ещё нет:<br/>
+                  die Kinder → den Kinder<b style={{color:C.blue}}>n</b> · die Häuser → den Häuser<b style={{color:C.blue}}>n</b><br/>
+                  <span style={{color:C.muted,fontSize:11}}>Исключение: слова на -s не меняются — die Autos → den Autos.</span>
+                </div>
+              </div>
+            )}
           </div>
         ))}
       </TableAccordion>
