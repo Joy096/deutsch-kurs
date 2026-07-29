@@ -1861,6 +1861,97 @@ const WBDATA=[
   {art:"das", de:"Kabel",ord:650,         pl:"-",            ru:"кабель",                                        tema:"Medien", lekt:"A2-L2",niveau:"A2"},
   {art:"",    de:"eintragen",ord:651,     pl:"—",            ru:"записывать (в список/календарь) · trägt ein · hat eingetragen", tema:"Medien", lekt:"A2-L2",niveau:"A2"},
   {art:"",    de:"bearbeiten",ord:652,    pl:"—",            ru:"редактировать, обрабатывать · bearbeitet · hat bearbeitet", tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"die", de:"Schichtarbeit",ord:653, pl:"Sg.",          ru:"сменная работа, работа по сменам",               tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  // ── A2-L3 · Im Restaurant — Konspekt 27.07 ────────────────────────────────
+  {art:"",    de:"verkosten",ord:654,     pl:"—",            ru:"дегустировать, пробовать на вкус · verkostet · hat verkostet", tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"",    de:"lecker",ord:655,        pl:"—",            ru:"вкусный",                                        tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"",    de:"köstlich",ord:656,      pl:"—",            ru:"очень вкусный, изысканный",                      tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"",    de:"erlesen",ord:657,       pl:"—",            ru:"изысканный, отборный",                           tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"die", de:"Beilage",ord:658,       pl:"-n",           ru:"гарнир",                                         tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"die", de:"Kohlensäure",ord:659,   pl:"Sg.",          ru:"углекислый газ (газировка в напитке)",           tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"",    de:"zufrieden",ord:660,     pl:"—",            ru:"довольный",                                      tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"",    de:"ausgezeichnet",ord:661, pl:"—",            ru:"превосходный, отличный",                         tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"das", de:"Kartenlesegerät",ord:662,pl:"-e",          ru:"терминал для карт",                              tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"",    de:"streichen",ord:663,     pl:"—",            ru:"красить (стены) · streicht · strich · hat gestrichen", tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"der", de:"Mitbewohner",ord:664,   pl:"-",            ru:"сосед по квартире (die Mitbewohnerin — соседка)", tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"",    de:"vorbereiten",ord:665,  pl:"—",            ru:"готовить, подготавливать (заранее) · bereitet vor · hat vorbereitet", tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"",    de:"annehmen",ord:666,     pl:"—",            ru:"принимать; полагать, предполагать · nimmt an · nahm an · hat angenommen", tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"der", de:"Pflegedienst",ord:667, pl:"-e",           ru:"служба ухода (на дому)",                          tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"der", de:"Haushalt",ord:668,     pl:"-e",           ru:"домашнее хозяйство · den Haushalt machen — вести хозяйство", tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"die", de:"Reparatur",ord:669,    pl:"-en",          ru:"ремонт",                                          tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"",    de:"berichten",ord:670,    pl:"—",            ru:"сообщать, докладывать",                           tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"",    de:"viel los sein",ord:671,pl:"—",            ru:"быть оживлённым, много чего происходить · Hier ist viel los.", tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"die", de:"Einkaufsstraße",ord:672,pl:"-n",          ru:"торговая улица",                                  tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"",    de:"durcheinander",ord:673,pl:"—",            ru:"вперемешку, в беспорядке",                        tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"der", de:"Sonnenschirm",ord:674, pl:"-e",           ru:"зонт от солнца",                                  tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"",    de:"fallen",ord:675,       pl:"—",            ru:"падать",                                          tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"das", de:"Chaos",ord:676,        pl:"—",            ru:"хаос",                                            tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"die", de:"Gabel",ord:677,        pl:"-n",           ru:"вилка",                                           tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"der", de:"Löffel",ord:678,       pl:"-",            ru:"ложка",                                           tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"die", de:"Serviette",ord:679,    pl:"-n",           ru:"салфетка",                                        tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"das", de:"Stadtzentrum",ord:680, pl:"—",            ru:"центр города",                                    tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"der", de:"Job",ord:681,          pl:"-s",           ru:"работа",                                          tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"",    de:"Herzlichen Glückwunsch!",ord:682,pl:"—",  ru:"Сердечно поздравляю!",                            tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"",    de:"schade",ord:683,       pl:"—",            ru:"жаль",                                            tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"",    de:"sicher",ord:684,       pl:"—",            ru:"уверенный; наверняка · ganz sicher — совершенно точно", tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"das", de:"Gericht",ord:685,      pl:"-e",           ru:"блюдо",                                           tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"",    de:"typisch",ord:686,      pl:"—",            ru:"типичный",                                        tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"",    de:"reservieren",ord:687,  pl:"—",            ru:"резервировать, бронировать",                      tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"",    de:"stimmen",ord:688,      pl:"—",            ru:"быть верным, правильным · Stimmt so. — сдачи не нужно", tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"das", de:"Trinkgeld",ord:689,    pl:"-er",          ru:"чаевые",                                          tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"die", de:"Speisekarte",ord:690,  pl:"-n",           ru:"меню",                                            tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"die", de:"Hauptspeise",ord:691,  pl:"-n",           ru:"основное блюдо",                                  tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"der", de:"Teller",ord:692,       pl:"-",            ru:"тарелка",                                         tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"die", de:"Tischdecke",ord:693,   pl:"-n",           ru:"скатерть",                                        tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"die", de:"Kanne",ord:694,        pl:"-n",           ru:"чайник, кувшин (для чая/кофе)",                   tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"die", de:"Salatschüssel",ord:695,pl:"-n",           ru:"салатница",                                       tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"das", de:"Salatbesteck",ord:696, pl:"-e",           ru:"приборы для салата",                              tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"das", de:"Öl",ord:697,           pl:"-e",           ru:"масло (растительное)",                            tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"die", de:"Pfeffermühle",ord:698, pl:"-n",           ru:"мельница для перца",                              tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"der", de:"Zuckerstreuer",ord:699,pl:"-",            ru:"сахарница (с дырочками, для посыпания)",          tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"die", de:"Stäbchen",ord:700,     pl:"-",            ru:"палочки (для еды)",                               tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"der", de:"Eierbecher",ord:701,   pl:"-",            ru:"подставка для яйца",                              tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"der", de:"Flaschenöffner",ord:702,pl:"-",           ru:"открывалка для бутылок",                          tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
+  {art:"die", de:"Mathematik",ord:703,   pl:"Sg.",          ru:"математика",                                      tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"die", de:"Physik",ord:704,       pl:"Sg.",          ru:"физика",                                          tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"die", de:"Chemie",ord:705,       pl:"Sg.",          ru:"химия",                                          tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"die", de:"Biologie",ord:706,     pl:"Sg.",          ru:"биология",                                        tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"die", de:"Kunst",ord:707,        pl:"Sg.",          ru:"искусство (школьный предмет)",                    tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"die", de:"Erdkunde",ord:708,     pl:"Sg.",          ru:"география (школьный предмет)",                    tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"die", de:"Grundschule",ord:709,  pl:"-n",           ru:"начальная школа",                                 tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"die", de:"Förderschule",ord:710, pl:"-n",           ru:"коррекционная школа",                             tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"die", de:"Hauptschule",ord:711,  pl:"-n",           ru:"основная школа (5-9/10 класс)",                   tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"die", de:"Realschule",ord:712,   pl:"-n",           ru:"реальное училище (5-10 класс)",                   tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"die", de:"Gesamtschule",ord:713, pl:"-n",           ru:"общеобразовательная (комплексная) школа",        tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"das", de:"Gymnasium",ord:714,    pl:"Gymnasien",    ru:"гимназия",                                        tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"der", de:"Mittlerer Schulabschluss",ord:715,pl:"—", ru:"аттестат о среднем образовании (после 10 класса)", tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"die", de:"Berufsschule",ord:716, pl:"-n",           ru:"профессиональное училище",                        tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"die", de:"Fachhochschule",ord:717,pl:"-n",          ru:"университет прикладных наук",                     tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"das", de:"Klassenzimmer",ord:718,pl:"-",            ru:"классная комната",                                tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"die", de:"Schulferien",ord:719,  pl:"—",            ru:"школьные каникулы",                                tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"die", de:"Klassenaufsicht",ord:720,pl:"-en",        ru:"дежурство по классу (надзор)",                    tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"der", de:"Stundenplan",ord:721,  pl:'"-e',          ru:"расписание уроков",                               tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"das", de:"Lieblingsfach",ord:722,pl:'"-er',         ru:"любимый предмет",                                 tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"der", de:"Test",ord:723,         pl:"-s",           ru:"тест, контрольная",                                tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"die", de:"Probe",ord:724,        pl:"-n",           ru:"проверочная работа; репетиция",                   tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"der", de:"Unterricht",ord:725,   pl:"Sg.",          ru:"урок, занятия",                                    tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"der", de:"Schulhof",ord:726,     pl:'"-e',          ru:"школьный двор",                                    tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"die", de:"Gruppenarbeit",ord:727,pl:"-en",          ru:"групповая работа",                                tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"das", de:"Fach",ord:728,         pl:'"-er',         ru:"предмет (школьный)",                              tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"die", de:"Prüfung",ord:729,      pl:"-en",          ru:"экзамен, испытание · eine Prüfung bestehen — сдать экзамен", tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"",    de:"bestehen",ord:730,     pl:"—",            ru:"сдать (экзамен); существовать",                    tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"die", de:"Firma",ord:731,        pl:"Firmen",       ru:"фирма, компания",                                  tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"die", de:"Note",ord:732,         pl:"-n",           ru:"оценка (школьная)",                                tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"das", de:"Zeugnis",ord:733,      pl:"-se",          ru:"табель, свидетельство (об окончании)",             tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"die", de:"Bedingung",ord:734,    pl:"-en",          ru:"условие",                                          tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"",    de:"mangelhaft",ord:735,   pl:"—",            ru:"неудовлетворительно (оценка 5)",                  tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"",    de:"ausreichend",ord:736,  pl:"—",            ru:"достаточно, зачёт (оценка 4)",                    tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"",    de:"befriedigend",ord:737, pl:"—",            ru:"удовлетворительно (оценка 3)",                    tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"",    de:"ungenügend",ord:738,   pl:"—",            ru:"неудовлетворительно, незачёт (оценка 6, худшая)",  tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"die", de:"Nachhilfe",ord:739,    pl:"Sg.",          ru:"дополнительные занятия, репетиторство",           tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"",    de:"klappen",ord:740,      pl:"—",            ru:"получаться, срабатывать",                          tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"der", de:"Studienplatz",ord:741, pl:'"-e',          ru:"место в вузе (для обучения)",                     tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"die", de:"Entschuldigung",ord:742,pl:"-en",         ru:"извинение; объяснительная записка (в школу)",     tema:"Schule", lekt:"A2-L4",niveau:"A2"},
 ];
 
 
@@ -2871,6 +2962,37 @@ const KONJ_ALL={
   bearbeiten:  {col:C.teal, bg:C.tealBg, note:"untrennbar: kein ge-",
     ich:"bearbeite",  du:"bearbeitest",  "er/sie/es":"bearbeitet",
     wir:"bearbeiten", ihr:"bearbeitet",  "sie/Sie":"bearbeiten", pt:"bearbeitete", pf:"hat bearbeitet"},
+  verkosten:   {col:C.teal, bg:C.tealBg,
+    ich:"verkoste",  du:"verkostest",  "er/sie/es":"verkostet",
+    wir:"verkosten", ihr:"verkostet",  "sie/Sie":"verkosten", pt:"verkostete", pf:"hat verkostet"},
+  streichen:   {col:C.orange, bg:C.orangeBg,
+    ich:"streiche",  du:"streichst",  "er/sie/es":"streicht",
+    wir:"streichen", ihr:"streicht",  "sie/Sie":"streichen",
+    pt:"strich", ptc:{du:"strichst",wir:"strichen",ihr:"stricht",sie:"strichen"}, pf:"hat gestrichen"},
+  vorbereiten: {pref:"vor", col:C.orange, bg:C.orangeBg, note:"kein ge- (bereiten→bereitet)",
+    ich:"bereite … vor",  du:"bereitest … vor",  "er/sie/es":"bereitet … vor",
+    wir:"bereiten … vor", ihr:"bereitet … vor",  "sie/Sie":"bereiten … vor", pt:"bereitete … vor", pf:"hat vorbereitet"},
+  annehmen:    {pref:"an", type:"e→i", col:C.blue, bg:C.blueBg,
+    ich:"nehme … an",  du:"nimmst … an",  "er/sie/es":"nimmt … an",
+    wir:"nehmen … an", ihr:"nehmt … an",  "sie/Sie":"nehmen … an", pt:"nahm … an", pf:"hat angenommen"},
+  berichten:   {col:C.teal, bg:C.tealBg, note:"untrennbar: kein ge-",
+    ich:"berichte",  du:"berichtest",  "er/sie/es":"berichtet",
+    wir:"berichten", ihr:"berichtet",  "sie/Sie":"berichten", pt:"berichtete", pf:"hat berichtet"},
+  fallen:      {type:"a→ä", col:C.orange, bg:C.orangeBg,
+    ich:"falle",  du:"fällst",  "er/sie/es":"fällt",
+    wir:"fallen", ihr:"fallt",  "sie/Sie":"fallen", pt:"fiel", pf:"ist gefallen"},
+  reservieren: {col:C.teal, bg:C.tealBg, note:"-ieren: kein ge-",
+    ich:"reserviere",  du:"reservierst",  "er/sie/es":"reserviert",
+    wir:"reservieren", ihr:"reserviert",  "sie/Sie":"reservieren", pt:"reservierte", pf:"hat reserviert"},
+  stimmen:     {col:C.blue, bg:C.blueBg,
+    ich:"stimme",  du:"stimmst",  "er/sie/es":"stimmt",
+    wir:"stimmen", ihr:"stimmt",  "sie/Sie":"stimmen", pt:"stimmte", pf:"hat gestimmt"},
+  bestehen:    {col:C.teal, bg:C.tealBg, note:"untrennbar: kein ge-",
+    ich:"bestehe",  du:"bestehst",  "er/sie/es":"besteht",
+    wir:"bestehen", ihr:"besteht",  "sie/Sie":"bestehen", pt:"bestand", pf:"hat bestanden"},
+  klappen:     {col:C.green, bg:C.greenBg,
+    ich:"klappe",  du:"klappst",  "er/sie/es":"klappt",
+    wir:"klappen", ihr:"klappt",  "sie/Sie":"klappen", pt:"klappte", pf:"hat geklappt"},
 };
 
 // Ударения: комбинирующая акута \u0301 ставится после ударной гласной
@@ -3253,7 +3375,11 @@ const STRESS_MARKS={
 "zuhören":"zu\u0301hören","verhören":"verhö\u0301ren","abhören":"a\u0301bhören","sich anhören":"sich a\u0301nhören","Tonaufnahme":"To\u0301naufnahme","zustimmen":"zu\u0301stimmen","blind":"bli\u0301nd","taub":"ta\u0301ub","stumm":"stu\u0301mm","wohltuend":"wo\u0301hltuend","genießen":"geni\u0301eßen","passieren":"passi\u0301eren","zubereiten":"zu\u0301bereiten","Betrug":"Betru\u0301g","herzlich":"he\u0301rzlich","vermissen":"vermi\u0301ssen","sich lohnen":"sich lo\u0301hnen","Lohn":"Lo\u0301hn","circa":"ci\u0301rca","Angewohnheit":"A\u0301ngewohnheit","Rauchen":"Ra\u0301uchen","derselbe":"derse\u0301lbe","Zelt":"Ze\u0301lt","Schlafsack":"Schla\u0301fsack","Qualität":"Qualitä\u0301t","hart":"ha\u0301rt",
 "sauber":"sa\u0301uber","hektisch":"he\u0301ktisch","Zuwanderer":"Zu\u0301wanderer","Welt":"We\u0301lt","Grund":"Gru\u0301nd","unterschiedlich":"unterschi\u0301edlich","motivieren":"motivi\u0301eren","enttäuscht":"entt\u00E4\u0301uscht","genervt":"gene\u0301rvt","endlich":"e\u0301ndlich","Abitur":"Abitu\u0301r","Architekt":"Archite\u0301kt","Abteilungsleiter":"A\u0301bteilungsleiter","Teilzeitarbeit":"Te\u0301ilzeitarbeit","Flüchtlingsheim":"Flu\u0301chtlingsheim","Universität":"Universit\u00E4\u0301t","Studium":"Stu\u0301dium","jung":"ju\u0301ng","depressiv":"depressi\u0301v","aktiv":"akti\u0301v","Verein":"Vere\u0301in","vorsprechen":"vo\u0301rsprechen","nachsprechen":"na\u0301chsprechen","ausprobieren":"a\u0301usprobieren","Wort":"Wo\u0301rt","Satz":"Sa\u0301tz","auswendig":"auswe\u0301ndig","schriftlich":"schr\u0301iftlich","Fehler":"Fe\u0301hler","Aussprache":"A\u0301ussprache","Mut":"Mu\u0301t","Volkshochschule":"Vo\u0301lkshochschule","chatten":"cha\u0301tten","recherchieren":"recherchi\u0301eren","putzen":"pu\u0301tzen","rennen":"re\u0301nnen",
 "Rand":"Ra\u0301nd","verzichten":"verzi\u0301chten","entstehen":"entste\u0301hen","anschimpfen":"a\u0301nschimpfen","vorbeigehen":"vorbe\u0301igehen","plötzlich":"plö\u0301tzlich","Himmel":"Hi\u0301mmel","werden":"we\u0301rden","hoffentlich":"ho\u0301ffentlich","Brunnen":"Bru\u0301nnen","Teich":"Te\u0301ich","Blumenbeet":"Blu\u0301menbeet","Trampolin":"Trampoli\u0301n","Planschbecken":"Pla\u0301nschbecken","Schubkarre":"Schu\u0301bkarre","sich befinden":"sich befi\u0301nden","wertvoll":"we\u0301rtvoll","anstehen":"a\u0301nstehen","süchtig":"sü\u0301chtig","Sucht":"Su\u0301cht","sich immatrikulieren":"sich immatrikuli\u0301eren","fördern":"fö\u0301rdern","übermorgen":"ü\u0301bermorgen","ehemalig":"e\u0301hemalig","wegräumen":"we\u0301gräumen","lahmlegen":"la\u0301hmlegen","meistens":"me\u0301istens","bügeln":"bü\u0301geln","Schwiegereltern":"Schwi\u0301egereltern",
-"Medium":"Me\u0301dium","spannend":"spa\u0301nnend","entspannend":"entspa\u0301nnend","erreichbar":"errei\u0301chbar","löschen":"lö\u0301schen","beenden":"bee\u0301nden","drucken":"dru\u0301cken","senden":"se\u0301nden","abschicken":"a\u0301bschicken","Anhang":"A\u0301nhang","anhängen":"a\u0301nhängen","Hilfe":"Hi\u0301lfe","Option":"Optio\u0301n","Adressbuch":"Adre\u0301ssbuch","Posteingang":"Po\u0301steingang","nützlich":"nü\u0301tzlich","Online-Spiel":"O\u0301nline-Spiel","Information":"Informatio\u0301n","mobil":"mobi\u0301l","unkompliziert":"unkompli\u0301ziert","Fernsehen":"Fe\u0301rnsehen","Sendung":"Se\u0301ndung","international":"internatio\u0301nal","Werbung":"We\u0301rbung","Internetseite":"I\u0301nternetseite","Verkehrsmeldung":"Verke\u0301hrsmeldung","Internetzugang":"I\u0301nternetzugang","Software":"So\u0301ftware","Datei":"Date\u0301i","speichern":"spe\u0301ichern","Durchschnitt":"Du\u0301rchschnitt","dafür":"dafü\u0301r","dagegen":"dage\u0301gen","leise":"le\u0301ise","Drucker":"Dru\u0301cker","Bildschirm":"Bi\u0301ldschirm","Rechner":"Re\u0301chner","Scanner":"Sca\u0301nner","Laufwerk":"La\u0301ufwerk","USB-Anschluss":"USB-A\u0301nschluss","Tastatur":"Tastatu\u0301r","Ladekabel":"La\u0301dekabel","Maus":"Ma\u0301us","DVD":"DV\u0301D","herunterladen":"heru\u0301nterladen","scannen":"sca\u0301nnen","anschließen":"a\u0301nschließen","Kabel":"Ka\u0301bel","eintragen":"e\u0301intragen","bearbeiten":"bea\u0301rbeiten",
+"Medium":"Me\u0301dium","spannend":"spa\u0301nnend","entspannend":"entspa\u0301nnend","erreichbar":"errei\u0301chbar","löschen":"lö\u0301schen","beenden":"bee\u0301nden","drucken":"dru\u0301cken","senden":"se\u0301nden","abschicken":"a\u0301bschicken","Anhang":"A\u0301nhang","anhängen":"a\u0301nhängen","Hilfe":"Hi\u0301lfe","Option":"Optio\u0301n","Adressbuch":"Adre\u0301ssbuch","Posteingang":"Po\u0301steingang","nützlich":"nü\u0301tzlich","Online-Spiel":"O\u0301nline-Spiel","Information":"Informatio\u0301n","mobil":"mobi\u0301l","unkompliziert":"unkompli\u0301ziert","Fernsehen":"Fe\u0301rnsehen","Sendung":"Se\u0301ndung","international":"internatio\u0301nal","Werbung":"We\u0301rbung","Internetseite":"I\u0301nternetseite","Verkehrsmeldung":"Verke\u0301hrsmeldung","Internetzugang":"I\u0301nternetzugang","Software":"So\u0301ftware","Datei":"Date\u0301i","speichern":"spe\u0301ichern","Durchschnitt":"Du\u0301rchschnitt","dafür":"dafü\u0301r","dagegen":"dage\u0301gen","leise":"le\u0301ise","Drucker":"Dru\u0301cker","Bildschirm":"Bi\u0301ldschirm","Rechner":"Re\u0301chner","Scanner":"Sca\u0301nner","Laufwerk":"La\u0301ufwerk","USB-Anschluss":"USB-A\u0301nschluss","Tastatur":"Tastatu\u0301r","Ladekabel":"La\u0301dekabel","Maus":"Ma\u0301us","DVD":"DV\u0301D","herunterladen":"heru\u0301nterladen","scannen":"sca\u0301nnen","anschließen":"a\u0301nschließen","Kabel":"Ka\u0301bel","eintragen":"e\u0301intragen","bearbeiten":"bea\u0301rbeiten","Schichtarbeit":"Schi\u0301chtarbeit",
+"verkosten":"verko\u0301sten","lecker":"le\u0301cker","köstlich":"kö\u0301stlich","erlesen":"erle\u0301sen","Beilage":"Be\u0301ilage","Kohlensäure":"Ko\u0301hlensäure","zufrieden":"zufri\u0301eden","ausgezeichnet":"a\u0301usgezeichnet","Kartenlesegerät":"Ka\u0301rtenlesegerät","streichen":"stre\u0301ichen","Mitbewohner":"Mi\u0301tbewohner","vorbereiten":"vo\u0301rbereiten","annehmen":"a\u0301nnehmen",
+"Pflegedienst":"Pfle\u0301gedienst","Haushalt":"Hau\u0301shalt","Reparatur":"Reparatu\u0301r","berichten":"beri\u0301chten","Einkaufsstraße":"Ei\u0301nkaufsstraße","durcheinander":"durcheina\u0301nder","Sonnenschirm":"So\u0301nnenschirm","fallen":"fa\u0301llen","Chaos":"Cha\u0301os","Gabel":"Ga\u0301bel","Löffel":"Lö\u0301ffel","Serviette":"Servie\u0301tte","Stadtzentrum":"Sta\u0301dtzentrum","Job":"Jo\u0301b","schade":"scha\u0301de","sicher":"si\u0301cher","Gericht":"Geri\u0301cht","typisch":"ty\u0301pisch","reservieren":"reservi\u0301eren","stimmen":"sti\u0301mmen","Trinkgeld":"Tri\u0301nkgeld","Speisekarte":"Spe\u0301isekarte","Hauptspeise":"Ha\u0301uptspeise","Teller":"Te\u0301ller","Tischdecke":"Ti\u0301schdecke","Kanne":"Ka\u0301nne","Salatschüssel":"Sala\u0301tschüssel","Salatbesteck":"Sala\u0301tbesteck","Öl":"Ö\u0301l","Pfeffermühle":"Pfe\u0301ffermühle","Zuckerstreuer":"Zu\u0301ckerstreuer","Stäbchen":"Stä\u0301bchen","Eierbecher":"E\u0301ierbecher","Flaschenöffner":"Fla\u0301schenöffner",
+"Mathematik":"Mathemati\u0301k","Physik":"Physi\u0301k","Chemie":"Chemi\u0301e","Biologie":"Biologi\u0301e","Kunst":"Ku\u0301nst","Erdkunde":"E\u0301rdkunde","Grundschule":"Gru\u0301ndschule","Förderschule":"Fö\u0301rderschule","Hauptschule":"Ha\u0301uptschule","Realschule":"Rea\u0301lschule","Gesamtschule":"Gesa\u0301mtschule","Gymnasium":"Gymna\u0301sium","Berufsschule":"Beru\u0301fsschule","Fachhochschule":"Fachho\u0301chschule","Klassenzimmer":"Kla\u0301ssenzimmer","Schulferien":"Schu\u0301lferien","Klassenaufsicht":"Kla\u0301ssenaufsicht","Stundenplan":"Stu\u0301ndenplan","Lieblingsfach":"Lie\u0301blingsfach","Test":"Te\u0301st","Probe":"Pro\u0301be","Unterricht":"U\u0301nterricht","Schulhof":"Schu\u0301lhof","Gruppenarbeit":"Gru\u0301ppenarbeit","Fach":"Fa\u0301ch",
+"Prüfung":"Prü\u0301fung","bestehen":"beste\u0301hen","Firma":"Fi\u0301rma","Note":"No\u0301te","Zeugnis":"Ze\u0301ugnis","Bedingung":"Bedi\u0301ngung","mangelhaft":"ma\u0301ngelhaft","ausreichend":"a\u0301usreichend","befriedigend":"befrie\u0301digend","ungenügend":"u\u0301ngenügend","Nachhilfe":"Na\u0301chhilfe","klappen":"kla\u0301ppen","Studienplatz":"Stu\u0301dienplatz","Entschuldigung":"Entschu\u0301ldigung",
 };
 
 // IPA-транскрипция для всего словаря (кроме фраз)
@@ -3618,7 +3744,11 @@ const IPA_DATA={
 "zuhören":"[ˈtsuːˌhøːʁən]","verhören":"[fɛɐ̯ˈhøːʁən]","abhören":"[ˈapˌhøːʁən]","sich anhören":"[zɪç ˈanˌhøːʁən]","Tonaufnahme":"[ˈtoːnˌʔaʊ̯fnaːmə]","zustimmen":"[ˈtsuːˌʃtɪmən]","blind":"[blɪnt]","taub":"[taʊ̯p]","stumm":"[ʃtʊm]","wohltuend":"[ˈvoːlˌtuːənt]","genießen":"[ɡəˈniːsn̩]","passieren":"[paˈsiːʁən]","zubereiten":"[ˈtsuːbəˌʁaɪ̯tn̩]","Betrug":"[bəˈtʁuːk]","herzlich":"[ˈhɛʁtslɪç]","vermissen":"[fɛɐ̯ˈmɪsn̩]","sich lohnen":"[zɪç ˈloːnən]","Lohn":"[loːn]","circa":"[ˈtsɪʁka]","Angewohnheit":"[ˈangəˌvoːnhaɪ̯t]","Rauchen":"[ˈʁaʊ̯xn̩]","derselbe":"[deːɐ̯ˈzɛlbə]","Zelt":"[tsɛlt]","Schlafsack":"[ˈʃlaːfzak]","Qualität":"[kvaliˈtɛːt]","hart":"[haʁt]",
 "sauber":"[ˈzaʊ̯bɐ]","hektisch":"[ˈhɛktɪʃ]","Zuwanderer":"[ˈtsuːvandɐʁɐ]","Welt":"[vɛlt]","Grund":"[ɡʁʊnt]","unterschiedlich":"[ˈʊntɐˌʃiːtlɪç]","motivieren":"[motiˈviːʁən]","enttäuscht":"[ɛntˈtɔɪ̯ʃt]","genervt":"[ɡəˈnɛʁft]","endlich":"[ˈɛntlɪç]","Abitur":"[abiˈtuːɐ̯]","Architekt":"[aʁçiˈtɛkt]","Abteilungsleiter":"[ˈapˌtaɪ̯lʊŋsˌlaɪ̯tɐ]","Teilzeitarbeit":"[ˈtaɪ̯lˌtsaɪ̯tˌʔaʁbaɪ̯t]","Flüchtlingsheim":"[ˈflʏçtlɪŋsˌhaɪ̯m]","Universität":"[univɛʁziˈtɛːt]","Studium":"[ˈʃtuːdi̯ʊm]","jung":"[jʊŋ]","depressiv":"[depʁɛˈsiːf]","aktiv":"[akˈtiːf]","Verein":"[fɛɐ̯ˈaɪ̯n]","vorsprechen":"[ˈfoːɐ̯ˌʃpʁɛçn̩]","nachsprechen":"[ˈnaːxˌʃpʁɛçn̩]","ausprobieren":"[ˈaʊ̯sˌpʁobiːʁən]","Wort":"[vɔʁt]","Satz":"[zats]","auswendig":"[ˈaʊ̯svɛndɪç]","schriftlich":"[ˈʃʁɪftlɪç]","Fehler":"[ˈfeːlɐ]","Aussprache":"[ˈaʊ̯sʃpʁaːxə]","Mut":"[muːt]","Volkshochschule":"[ˈfɔlksˌhoːxʃuːlə]","chatten":"[ˈtʃɛtn̩]","recherchieren":"[ʁeʃɛʁˈʃiːʁən]","putzen":"[ˈpʊtsn̩]","rennen":"[ˈʁɛnən]",
 "Rand":"[ʁant]","verzichten":"[fɛɐ̯ˈtsɪçtn̩]","entstehen":"[ɛntˈʃteːən]","anschimpfen":"[ˈanʃɪmpfən]","vorbeigehen":"[foɐ̯ˈbaɪ̯ˌɡeːən]","plötzlich":"[ˈplœtslɪç]","Himmel":"[ˈhɪml̩]","werden":"[ˈveːɐ̯dn̩]","hoffentlich":"[ˈhɔfntlɪç]","Brunnen":"[ˈbʁʊnən]","Teich":"[taɪ̯ç]","Blumenbeet":"[ˈbluːmənbeːt]","Trampolin":"[tʁampoˈliːn]","Planschbecken":"[ˈplanʃbɛkn̩]","Schubkarre":"[ˈʃuːpkaʁə]","sich befinden":"[zɪç bəˈfɪndn̩]","wertvoll":"[ˈveːɐ̯tfɔl]","anstehen":"[ˈanʃteːən]","süchtig":"[ˈzʏçtɪç]","Sucht":"[zʊxt]","sich immatrikulieren":"[zɪç ɪmatʁikuˈliːʁən]","fördern":"[ˈfœʁdɐn]","übermorgen":"[ˈyːbɐˌmɔʁɡn̩]","ehemalig":"[ˈeːəmaːlɪç]","wegräumen":"[ˈvɛkˌʁɔɪ̯mən]","lahmlegen":"[ˈlaːmˌleːɡn̩]","meistens":"[ˈmaɪ̯stns̩]","bügeln":"[ˈbyːɡl̩n]","Schwiegereltern":"[ˈʃviːɡɐˌʔɛltɐn]",
-"Medium":"[ˈmeːdi̯ʊm]","spannend":"[ˈʃpanənt]","entspannend":"[ɛntˈʃpanənt]","erreichbar":"[ɛɐ̯ˈʁaɪ̯çbaːɐ̯]","löschen":"[ˈlœʃn̩]","beenden":"[bəˈʔɛndn̩]","drucken":"[ˈdʁʊkn̩]","senden":"[ˈzɛndn̩]","abschicken":"[ˈapʃɪkn̩]","Anhang":"[ˈanhaŋ]","anhängen":"[ˈanˌhɛŋən]","Hilfe":"[ˈhɪlfə]","Option":"[ɔpˈtsi̯oːn]","Adressbuch":"[aˈdʁɛsbuːx]","Posteingang":"[ˈpɔstˌʔaɪ̯nɡaŋ]","nützlich":"[ˈnʏtslɪç]","Online-Spiel":"[ˈɔnlaɪ̯nʃpiːl]","Information":"[ɪnfɔʁmaˈtsi̯oːn]","mobil":"[moˈbiːl]","unkompliziert":"[ˈʊnkɔmpliˌtsiːɐ̯t]","Fernsehen":"[ˈfɛʁnzeːən]","Sendung":"[ˈzɛndʊŋ]","international":"[ɪntɐnatsi̯oˈnaːl]","Werbung":"[ˈvɛʁbʊŋ]","Internetseite":"[ˈɪntɐnɛtˌzaɪ̯tə]","Verkehrsmeldung":"[fɛɐ̯ˈkeːɐ̯sˌmɛldʊŋ]","Internetzugang":"[ˈɪntɐnɛtˌtsuːɡaŋ]","Software":"[ˈzɔftvɛːɐ̯]","Datei":"[daˈtaɪ̯]","speichern":"[ˈʃpaɪ̯çɐn]","Durchschnitt":"[ˈdʊʁçʃnɪt]","dafür":"[daˈfyːɐ̯]","dagegen":"[daˈɡeːɡn̩]","leise":"[ˈlaɪ̯zə]","Drucker":"[ˈdʁʊkɐ]","Bildschirm":"[ˈbɪltʃɪʁm]","Rechner":"[ˈʁɛçnɐ]","Scanner":"[ˈskɛnɐ]","Laufwerk":"[ˈlaʊ̯fvɛʁk]","USB-Anschluss":"[uːʔɛsˈbeːˌʔanʃlʊs]","Tastatur":"[tastaˈtuːɐ̯]","Ladekabel":"[ˈlaːdəkaːbl̩]","Maus":"[maʊ̯s]","DVD":"[deːfaʊ̯ˈdeː]","herunterladen":"[hɛˈʁʊntɐˌlaːdn̩]","scannen":"[ˈskɛnən]","anschließen":"[ˈanʃliːsn̩]","Kabel":"[ˈkaːbl̩]","eintragen":"[ˈaɪ̯nˌtʁaːɡn̩]","bearbeiten":"[bəˈʔaʁbaɪ̯tn̩]",
+"Medium":"[ˈmeːdi̯ʊm]","spannend":"[ˈʃpanənt]","entspannend":"[ɛntˈʃpanənt]","erreichbar":"[ɛɐ̯ˈʁaɪ̯çbaːɐ̯]","löschen":"[ˈlœʃn̩]","beenden":"[bəˈʔɛndn̩]","drucken":"[ˈdʁʊkn̩]","senden":"[ˈzɛndn̩]","abschicken":"[ˈapʃɪkn̩]","Anhang":"[ˈanhaŋ]","anhängen":"[ˈanˌhɛŋən]","Hilfe":"[ˈhɪlfə]","Option":"[ɔpˈtsi̯oːn]","Adressbuch":"[aˈdʁɛsbuːx]","Posteingang":"[ˈpɔstˌʔaɪ̯nɡaŋ]","nützlich":"[ˈnʏtslɪç]","Online-Spiel":"[ˈɔnlaɪ̯nʃpiːl]","Information":"[ɪnfɔʁmaˈtsi̯oːn]","mobil":"[moˈbiːl]","unkompliziert":"[ˈʊnkɔmpliˌtsiːɐ̯t]","Fernsehen":"[ˈfɛʁnzeːən]","Sendung":"[ˈzɛndʊŋ]","international":"[ɪntɐnatsi̯oˈnaːl]","Werbung":"[ˈvɛʁbʊŋ]","Internetseite":"[ˈɪntɐnɛtˌzaɪ̯tə]","Verkehrsmeldung":"[fɛɐ̯ˈkeːɐ̯sˌmɛldʊŋ]","Internetzugang":"[ˈɪntɐnɛtˌtsuːɡaŋ]","Software":"[ˈzɔftvɛːɐ̯]","Datei":"[daˈtaɪ̯]","speichern":"[ˈʃpaɪ̯çɐn]","Durchschnitt":"[ˈdʊʁçʃnɪt]","dafür":"[daˈfyːɐ̯]","dagegen":"[daˈɡeːɡn̩]","leise":"[ˈlaɪ̯zə]","Drucker":"[ˈdʁʊkɐ]","Bildschirm":"[ˈbɪltʃɪʁm]","Rechner":"[ˈʁɛçnɐ]","Scanner":"[ˈskɛnɐ]","Laufwerk":"[ˈlaʊ̯fvɛʁk]","USB-Anschluss":"[uːʔɛsˈbeːˌʔanʃlʊs]","Tastatur":"[tastaˈtuːɐ̯]","Ladekabel":"[ˈlaːdəkaːbl̩]","Maus":"[maʊ̯s]","DVD":"[deːfaʊ̯ˈdeː]","herunterladen":"[hɛˈʁʊntɐˌlaːdn̩]","scannen":"[ˈskɛnən]","anschließen":"[ˈanʃliːsn̩]","Kabel":"[ˈkaːbl̩]","eintragen":"[ˈaɪ̯nˌtʁaːɡn̩]","bearbeiten":"[bəˈʔaʁbaɪ̯tn̩]","Schichtarbeit":"[ˈʃɪçtˌʔaʁbaɪ̯t]",
+"verkosten":"[fɛɐ̯ˈkɔstn̩]","lecker":"[ˈlɛkɐ]","köstlich":"[ˈkœstlɪç]","erlesen":"[ɛɐ̯ˈleːzn̩]","Beilage":"[ˈbaɪ̯laːɡə]","Kohlensäure":"[ˈkoːlənˌzɔɪ̯ʁə]","zufrieden":"[tsuˈfʁiːdn̩]","ausgezeichnet":"[ˈaʊ̯sɡəˌtsaɪ̯çnət]","Kartenlesegerät":"[ˈkaʁtn̩ˌleːzəɡəˌʁɛːt]","streichen":"[ˈʃtʁaɪ̯çn̩]","Mitbewohner":"[ˈmɪtbəˌvoːnɐ]","vorbereiten":"[ˈfoːɐ̯bəˌʁaɪ̯tn̩]","annehmen":"[ˈanˌneːmən]",
+"Pflegedienst":"[ˈpfleːɡəˌdiːnst]","Haushalt":"[ˈhaʊ̯sˌhalt]","Reparatur":"[ʁepaʁaˈtuːɐ̯]","berichten":"[bəˈʁɪçtn̩]","Einkaufsstraße":"[ˈaɪ̯nkaʊ̯fsˌʃtʁaːsə]","durcheinander":"[dʊʁçʔaɪ̯ˈnandɐ]","Sonnenschirm":"[ˈzɔnənˌʃɪʁm]","fallen":"[ˈfalən]","Chaos":"[ˈkaːɔs]","Gabel":"[ˈɡaːbl̩]","Löffel":"[ˈlœfl̩]","Serviette":"[zɛʁˈvi̯ɛtə]","Stadtzentrum":"[ˈʃtatˌtsɛntʁʊm]","Job":"[dʒɔp]","schade":"[ˈʃaːdə]","sicher":"[ˈzɪçɐ]","Gericht":"[ɡəˈʁɪçt]","typisch":"[ˈtyːpɪʃ]","reservieren":"[ʁezɛʁˈviːʁən]","stimmen":"[ˈʃtɪmən]","Trinkgeld":"[ˈtʁɪŋkˌɡɛlt]","Speisekarte":"[ˈʃpaɪ̯zəˌkaʁtə]","Hauptspeise":"[ˈhaʊ̯ptˌʃpaɪ̯zə]","Teller":"[ˈtɛlɐ]","Tischdecke":"[ˈtɪʃˌdɛkə]","Kanne":"[ˈkanə]","Salatschüssel":"[zaˈlaːtˌʃʏsl̩]","Salatbesteck":"[zaˈlaːtbəˌʃtɛk]","Öl":"[øːl]","Pfeffermühle":"[ˈpfɛfɐˌmyːlə]","Zuckerstreuer":"[ˈtsʊkɐˌʃtʁɔɪ̯ɐ]","Stäbchen":"[ˈʃtɛːpçən]","Eierbecher":"[ˈaɪ̯ɐˌbɛçɐ]","Flaschenöffner":"[ˈflaʃn̩ˌʔœfnɐ]",
+"Mathematik":"[matemaˈtiːk]","Physik":"[fyˈziːk]","Chemie":"[çeˈmiː]","Biologie":"[bioloˈɡiː]","Kunst":"[kʊnst]","Erdkunde":"[ˈeːɐ̯tˌkʊndə]","Grundschule":"[ˈɡʁʊntˌʃuːlə]","Förderschule":"[ˈfœʁdɐˌʃuːlə]","Hauptschule":"[ˈhaʊ̯ptˌʃuːlə]","Realschule":"[ʁeˈaːlˌʃuːlə]","Gesamtschule":"[ɡəˈzamtˌʃuːlə]","Gymnasium":"[ɡʏmˈnaːzi̯ʊm]","Berufsschule":"[bəˈʁuːfsˌʃuːlə]","Fachhochschule":"[ˈfaxˌhoːxˌʃuːlə]","Klassenzimmer":"[ˈklasn̩ˌtsɪmɐ]","Schulferien":"[ˈʃuːlˌfeːʁi̯ən]","Klassenaufsicht":"[ˈklasn̩ˌʔaʊ̯fzɪçt]","Stundenplan":"[ˈʃtʊndn̩ˌplaːn]","Lieblingsfach":"[ˈliːblɪŋsˌfax]","Test":"[tɛst]","Probe":"[ˈpʁoːbə]","Unterricht":"[ˈʊntɐˌʁɪçt]","Schulhof":"[ˈʃuːlˌhoːf]","Gruppenarbeit":"[ˈɡʁʊpn̩ˌʔaʁbaɪ̯t]","Fach":"[fax]",
+"Prüfung":"[ˈpʁyːfʊŋ]","bestehen":"[bəˈʃteːən]","Firma":"[ˈfɪʁma]","Note":"[ˈnoːtə]","Zeugnis":"[ˈtsɔɪ̯knɪs]","Bedingung":"[bəˈdɪŋʊŋ]","mangelhaft":"[ˈmaŋl̩haft]","ausreichend":"[ˈaʊ̯sʁaɪ̯çn̩t]","befriedigend":"[bəˈfʁiːdɪɡn̩t]","ungenügend":"[ˈʊnɡəˌnyːɡn̩t]","Nachhilfe":"[ˈnaːxˌhɪlfə]","klappen":"[ˈklapən]","Studienplatz":"[ˈʃtuːdi̯ənˌplats]","Entschuldigung":"[ɛntˈʃʊldɪɡʊŋ]",
 };
 
 const DIALOGE={
@@ -4077,6 +4207,23 @@ const DIALOGE={
       {q:"Kommt Nina auch nicht?",                            qRu:"Нина тоже не придёт?", a:"Doch, sie kommt.", aRu:"Нет, она придёт.", note:"doch"},
       {q:"Hast du keine Zeit?",                               qRu:"У тебя нет времени?", a:"Doch, ich habe Zeit. / Nein, ich habe keine Zeit.", aRu:"Есть время. / Нет, у меня нет времени.", note:"ja/nein/doch"},
       {q:"Was macht ihr am Samstag?",                         qRu:"Что вы делаете в субботу?", a:"Wir machen den Haushalt, putzen und bügeln.", aRu:"Мы занимаемся хозяйством, убираемся и гладим.", note:"Wochenend-Aktivitäten"},
+    ]},
+    {tag:"Im Restaurant",col:C.red,pairs:[
+      {q:"Ich möchte einen Tisch reservieren. Geht das?",       qRu:"Я хотел бы забронировать столик. Это возможно?", a:"Ja, das geht. Für wie viele Personen und wann?", aRu:"Да, возможно. На сколько человек и когда?", note:"reservieren"},
+      {q:"Was möchten Sie bestellen?",                          qRu:"Что вы хотите заказать?", a:"Ich hätte gerne das Hähnchen mit Reis und Gemüse.", aRu:"Я бы хотел(а) курицу с рисом и овощами.", note:"bestellen"},
+      {q:"Möchten Sie zusammen oder getrennt zahlen?",          qRu:"Вы хотите платить вместе или отдельно?", a:"Zusammen, bitte.", aRu:"Вместе, пожалуйста.", note:"bezahlen"},
+    ]},
+  ],
+  "A2-L4":[
+    {tag:"Schulen in Deutschland",col:C.green,pairs:[
+      {q:"Was kommt nach der Grundschule?",                      qRu:"Что следует после начальной школы?", a:"Förderschule, Hauptschule, Realschule, Gesamtschule oder Gymnasium.", aRu:"Коррекционная, основная, реальная, комплексная школа или гимназия.", note:"Schulsystem"},
+      {q:"Gibt es in Deutschland die Schulpflicht?",              qRu:"Есть ли в Германии обязательное образование?", a:"Ja, alle Kinder müssen ab dem 6. Lebensjahr zur Schule gehen.", aRu:"Да, все дети обязаны ходить в школу с 6 лет.", note:"Schulpflicht"},
+      {q:"Was braucht man für die Universität?",                  qRu:"Что нужно для университета?", a:"Man braucht das Abitur.", aRu:"Нужен аттестат зрелости (Abitur).", note:"Abitur"},
+    ]},
+    {tag:"Elternabend · wenn-Sätze",col:C.purple,pairs:[
+      {q:"Wann kann Can sehr gute Noten im Abitur bekommen?",     qRu:"Когда Джан сможет получить очень хорошие оценки на экзамене?", a:"Wenn er sehr viel lernt.", aRu:"Если он будет очень много учиться.", note:"Nebensatz mit wenn"},
+      {q:"Was passiert, wenn Paula fleißig ist und die Prüfung gut besteht?",qRu:"Что произойдёт, если Паула будет прилежной и хорошо сдаст экзамен?", a:"Sie kann nach der Ausbildung in der Firma bleiben.", aRu:"Она сможет остаться в фирме после обучения.", note:"Konditionalsatz"},
+      {q:"Was ist die beste Note in Deutschland?",                 qRu:"Какая лучшая оценка в Германии?", a:"Die 1, also 'sehr gut'.", aRu:"Единица, то есть «отлично».", note:"Noten"},
     ]},
   ],
 };
@@ -7439,6 +7586,31 @@ const Q_A2L3TEST=shuffle([
   {q:"'meistens' по-русски:",                               opts:["иногда","никогда","чаще всего, обычно","редко"], ans:2, hint:"meistens"},
   {q:"'bügeln' по-русски:",                                 opts:["стирать","гладить (утюгом)","сушить","штопать"], ans:1, hint:"bügeln"},
   {q:"'die Schwiegereltern' по-русски:",                    opts:["бабушка и дедушка","родители супруга/супруги","приёмные родители","соседи"], ans:1, hint:"Schwieger-"},
+  {q:"'verkosten' по-русски:",opts:["дегустировать, пробовать","готовить","заказывать","подавать"],ans:0,hint:"verkostet"},
+  {q:"'köstlich' и 'erlesen' — синонимы к:",opts:["очень вкусный/изысканный","очень дешёвый","очень острый","очень большой"],ans:0,hint:"das Essen war köstlich"},
+  {q:"'zufrieden' по-русски:",opts:["довольный","голодный","злой","уставший"],ans:0,hint:"Waren Sie zufrieden?"},
+  {q:"'die Kohlensäure' по-русски:",opts:["углекислый газ (в напитке)","сахар","алкоголь","витамины"],ans:0,hint:"mit/ohne Kohlensäure"},
+  {q:"'das Kartenlesegerät' по-русски:",opts:["терминал для карт","банкомат","кассовый аппарат","сейф"],ans:0,hint:"mit Karte bezahlen"},
+  {q:"'streichen' (стены) по-русски:",opts:["красить","мыть","чинить","строить"],ans:0,hint:"strich · hat gestrichen"},
+  {q:"'der Mitbewohner' / 'die Mitbewohnerin' по-русски:",opts:["сосед/соседка по квартире","хозяин/хозяйка квартиры","гость/гостья","родственник/родственница"],ans:0,hint:"Mitbewohner"},
+  {q:"'vorbereiten' по-русски:",opts:["готовить, подготавливать заранее","убирать","заказывать","чинить"],ans:0,hint:"bereitet vor · hat vorbereitet"},
+  {q:"'annehmen' по-русски:",opts:["принимать; полагать","отказываться","терять","дарить"],ans:0,hint:"nimmt an · hat angenommen"},
+  {q:"'der Pflegedienst' по-русски:",opts:["служба ухода (на дому)","детский сад","поликлиника","аптека"],ans:0,hint:"Pflegedienst"},
+  {q:"'den Haushalt machen' по-русски:",opts:["вести домашнее хозяйство","делать покупки","ходить на работу","готовить обед"],ans:0,hint:"der Haushalt"},
+  {q:"'die Reparatur' по-русски:",opts:["покупка","ремонт","уборка","доставка"],ans:1,hint:"Reparatur"},
+  {q:"'berichten' по-русски:",opts:["спрашивать","сообщать, докладывать","молчать","обещать"],ans:1,hint:"berichtet"},
+  {q:"'Hier ist viel los.' означает:",opts:["здесь тихо и пусто","здесь много всего происходит, оживлённо","здесь опасно","здесь дорого"],ans:1,hint:"viel los sein"},
+  {q:"'durcheinander' по-русски:",opts:["по порядку","вперемешку, в беспорядке","аккуратно","медленно"],ans:1,hint:"durcheinander"},
+  {q:"'der Sonnenschirm' по-русски:",opts:["зонт от солнца","солнцезащитные очки","крем от загара","шляпа"],ans:0,hint:"Sonnenschirm"},
+  {q:"'fallen' по-русски:",opts:["вставать","падать","бежать","прыгать"],ans:1,hint:"fällt · ist gefallen"},
+  {q:"'das Chaos' по-русски:",opts:["порядок","хаос","план","система"],ans:1,hint:"Chaos"},
+  {q:"'schade' по-русски:",opts:["жаль","отлично","всё равно","опасно"],ans:0,hint:"Schade!"},
+  {q:"'sicher' / 'ganz sicher' по-русски:",opts:["уверенный / совершенно точно","грустный / совсем немного","быстрый / очень быстро","злой / очень зло"],ans:0,hint:"sicher"},
+  {q:"'typisch' по-русски:",opts:["редкий","типичный","новый","странный"],ans:1,hint:"typisch für"},
+  {q:"'reservieren' по-русски:",opts:["резервировать, бронировать","отменять","искать","закрывать"],ans:0,hint:"einen Tisch reservieren"},
+  {q:"'Stimmt so.' означает:",opts:["сдачи не нужно, оставьте себе","это неправильно","повторите, пожалуйста","дайте счёт"],ans:0,hint:"stimmen"},
+  {q:"'das Trinkgeld' по-русски:",opts:["чаевые","напиток","счёт","заказ"],ans:0,hint:"Trinkgeld geben"},
+  {q:"'die Speisekarte' по-русски:",opts:["меню","счёт","рецепт","чек"],ans:0,hint:"Die Speisekarte, bitte."},
 ]);
 
 const LUECKEN_A2L3=shuffle([
@@ -7448,6 +7620,12 @@ const LUECKEN_A2L3=shuffle([
   {sent:"Kommt Nina auch nicht? — ___, sie kommt.' (нет, придёт)",      opts:["Doch","Ja","Nein","Schon"], ans:0,ru:"Нина тоже не придёт? — Нет, она придёт.", hint:"опровержение отрицания → doch"},
   {sent:"Hast du keine Zeit? — ___, ich habe keine Zeit.' (подтверждение)",opts:["Nein","Ja","Doch","Schon"], ans:0,ru:"У тебя нет времени? — Нет, у меня нет времени.", hint:"подтверждение отрицания → nein"},
   {sent:"Aber plötzlich ist der Himmel dunkel ___.' (geworden)",        opts:["geworden","gewesen","gewurden","werden"], ans:0,ru:"Но вдруг небо потемнело.", hint:"werden → ist geworden"},
+  {sent:"Das Essen war wirklich ___.' (превосходно)",                   opts:["ausgezeichnet","satt","zufrieden","erlesen"], ans:0,ru:"Еда была правда превосходной.", hint:"ausgezeichnet"},
+  {sent:"Ich hätte gerne das Hähnchen mit Reis und ___.' (гарнир)",     opts:["Beilage","Vorspeise","Nachspeise","Getränk"], ans:0,ru:"Я бы хотел курицу с рисом и гарниром.", hint:"die Beilage"},
+  {sent:"Ich habe einen Tisch für 19 Uhr ___.' (забронировал)",        opts:["reserviert","bestellt","bezahlt","gemacht"], ans:0,ru:"Я забронировал столик на 19 часов.", hint:"reservieren"},
+  {sent:"Der Rest ist für Sie. — ___ so!' (сдачи не нужно)",           opts:["Stimmt","Stimme","Gestimmt","Stimmen"], ans:0,ru:"Оставьте сдачу себе. — Хорошо!", hint:"stimmen"},
+  {sent:"Ich ___ das Geschenk gern an.' (принимаю)",                   opts:["nehme","bereite","gebe","mache"], ans:0,ru:"Я с радостью принимаю подарок.", hint:"annehmen"},
+  {sent:"Sie ___ das Essen für die Gäste vor.' (готовит заранее)",     opts:["bereitet","macht","kauft","kocht"], ans:0,ru:"Она готовит еду для гостей заранее.", hint:"vorbereiten"},
 ]);
 
 const ZUORD_A2L3=[
@@ -7468,6 +7646,50 @@ const ZUORD_A2L3=[
   {de:"ehemalig",ru:"бывший"},
   {de:"meistens",ru:"чаще всего"},
   {de:"bügeln",ru:"гладить"},
+  {de:"verkosten",ru:"дегустировать"},
+  {de:"lecker",ru:"вкусный"},
+  {de:"köstlich",ru:"очень вкусный"},
+  {de:"die Beilage",ru:"гарнир"},
+  {de:"zufrieden",ru:"довольный"},
+  {de:"ausgezeichnet",ru:"превосходный"},
+  {de:"streichen",ru:"красить (стены)"},
+  {de:"der Mitbewohner",ru:"сосед по квартире"},
+  {de:"vorbereiten",ru:"готовить, подготавливать заранее"},
+  {de:"annehmen",ru:"принимать; полагать"},
+  {de:"der Pflegedienst",ru:"служба ухода (на дому)"},
+  {de:"der Haushalt",ru:"домашнее хозяйство"},
+  {de:"die Reparatur",ru:"ремонт"},
+  {de:"berichten",ru:"сообщать, докладывать"},
+  {de:"die Einkaufsstraße",ru:"торговая улица"},
+  {de:"durcheinander",ru:"вперемешку"},
+  {de:"der Sonnenschirm",ru:"зонт от солнца"},
+  {de:"fallen",ru:"падать"},
+  {de:"das Chaos",ru:"хаос"},
+  {de:"die Gabel",ru:"вилка"},
+  {de:"der Löffel",ru:"ложка"},
+  {de:"die Serviette",ru:"салфетка"},
+  {de:"das Stadtzentrum",ru:"центр города"},
+  {de:"der Job",ru:"работа"},
+  {de:"schade",ru:"жаль"},
+  {de:"sicher",ru:"уверенный, точно"},
+  {de:"das Gericht",ru:"блюдо"},
+  {de:"typisch",ru:"типичный"},
+  {de:"reservieren",ru:"резервировать, бронировать"},
+  {de:"stimmen",ru:"быть верным, правильным"},
+  {de:"das Trinkgeld",ru:"чаевые"},
+  {de:"die Speisekarte",ru:"меню"},
+  {de:"die Hauptspeise",ru:"основное блюдо"},
+  {de:"der Teller",ru:"тарелка"},
+  {de:"die Tischdecke",ru:"скатерть"},
+  {de:"die Kanne",ru:"чайник, кувшин"},
+  {de:"die Salatschüssel",ru:"салатница"},
+  {de:"das Salatbesteck",ru:"приборы для салата"},
+  {de:"das Öl",ru:"масло (растительное)"},
+  {de:"die Pfeffermühle",ru:"мельница для перца"},
+  {de:"der Zuckerstreuer",ru:"сахарница"},
+  {de:"die Stäbchen",ru:"палочки (для еды)"},
+  {de:"der Eierbecher",ru:"подставка для яйца"},
+  {de:"der Flaschenöffner",ru:"открывалка для бутылок"},
 ];
 
 const WSENTS_A2L3=[
@@ -7476,6 +7698,9 @@ const WSENTS_A2L3=[
   {w:["Doch",",","sie","kommt","."],                                       ru:"Нет, она придёт."},
   {w:["Aber","plötzlich","ist","der","Himmel","dunkel","geworden","."],    ru:"Но вдруг небо потемнело."},
   {w:["Wir","sind","ins","Café","gelaufen","."],                           ru:"Мы забежали в кафе."},
+  {w:["Der","Ober","bringt","die","Speisekarte","."],                      ru:"Официант приносит меню."},
+  {w:["Ich","habe","einen","Tisch","reserviert","."],                      ru:"Я забронировал столик."},
+  {w:["Sie","hat","das","Essen","vorbereitet","."],                       ru:"Она приготовила еду заранее."},
 ];
 
 function GrosserTestA2L3(){return <GrosserTestContainer rounds={[
@@ -7483,6 +7708,102 @@ function GrosserTestA2L3(){return <GrosserTestContainer rounds={[
   {icon:"📝",label:"Lückentext",    col:C.blue,   component:()=><LueckenQuiz items={LUECKEN_A2L3}/>},
   {icon:"🔗",label:"Wortschatz",    col:C.green,  component:()=><Zuordnung pairs={ZUORD_A2L3} leftLabel="Wort" rightLabel="Bedeutung"/>},
   {icon:"🔤",label:"Wortstellung",  col:C.orange, component:()=><WortstellungGame sents={WSENTS_A2L3}/>},
+]}/>;}
+
+const Q_A2L4TEST=shuffle([
+  {q:"'die Mathematik' по-русски:",opts:["математика","физика","химия","биология"],ans:0,hint:"Mathe"},
+  {q:"'die Physik' по-русски:",opts:["химия","физика","биология","история"],ans:1,hint:"Physik"},
+  {q:"'die Chemie' по-русски:",opts:["химия","физика","география","искусство"],ans:0,hint:"Chemie"},
+  {q:"'die Biologie' по-русски:",opts:["биология","физика","химия","математика"],ans:0,hint:"Biologie"},
+  {q:"'die Kunst' (школьный предмет) по-русски:",opts:["искусство","музыка","спорт","труд"],ans:0,hint:"Kunst"},
+  {q:"'die Erdkunde' по-русски:",opts:["история","география","биология","физика"],ans:1,hint:"Erdkunde"},
+  {q:"'die Grundschule' по-русски:",opts:["начальная школа","гимназия","профучилище","университет"],ans:0,hint:"1.-4. Klasse"},
+  {q:"'die Förderschule' по-русски:",opts:["коррекционная школа","реальное училище","гимназия","вуз"],ans:0,hint:"besondere Bedürfnisse"},
+  {q:"'die Realschule' по-русски:",opts:["реальное училище (5-10 класс)","начальная школа","коррекционная школа","университет"],ans:0,hint:"→ Mittlerer Schulabschluss"},
+  {q:"'die Gesamtschule' по-русски:",opts:["общеобразовательная (комплексная) школа","начальная школа","профучилище","детский сад"],ans:0,hint:"Gesamtschule"},
+  {q:"'das Gymnasium' по-русски:",opts:["гимназия","профучилище","начальная школа","детский сад"],ans:0,hint:"→ Abitur"},
+  {q:"'die Berufsschule' по-русски:",opts:["профессиональное училище","университет","гимназия","детский сад"],ans:0,hint:"Ausbildung"},
+  {q:"'die Fachhochschule' по-русски:",opts:["университет прикладных наук","обычный университет","профучилище","гимназия"],ans:0,hint:"braucht Fachabitur/Abitur"},
+  {q:"'das Klassenzimmer' по-русски:",opts:["классная комната","школьный двор","расписание","учительская"],ans:0,hint:"Klasse+Zimmer"},
+  {q:"'die Schulferien' по-русски:",opts:["школьные каникулы","учебный год","расписание уроков","перемена"],ans:0,hint:"Ferien"},
+  {q:"'der Stundenplan' по-русски:",opts:["расписание уроков","дневник","табель","учебник"],ans:0,hint:"Stunde+Plan"},
+  {q:"'das Lieblingsfach' по-русски:",opts:["любимый предмет","классная комната","домашнее задание","контрольная"],ans:0,hint:"Lieblings-"},
+  {q:"'die Probe' (в школе) по-русски:",opts:["проверочная работа","перемена","расписание","каникулы"],ans:0,hint:"wie ein Test"},
+  {q:"'der Unterricht' по-русски:",opts:["урок, занятия","школьный двор","перемена","каникулы"],ans:0,hint:"Unterricht haben"},
+  {q:"'die Gruppenarbeit' по-русски:",opts:["групповая работа","домашнее задание","контрольная работа","экзамен"],ans:0,hint:"in Gruppen arbeiten"},
+  {q:"'das Fach' (школьное) по-русски:",opts:["предмет","класс","учитель","оценка"],ans:0,hint:"Mathematik ist ein Fach"},
+  {q:"'die Prüfung bestehen' по-русски:",opts:["сдать экзамен","провалить экзамен","отменить экзамен","готовиться к экзамену"],ans:0,hint:"bestehen = сдать"},
+  {q:"'das Zeugnis' по-русски:",opts:["табель, свидетельство","расписание","домашнее задание","учебник"],ans:0,hint:"Noten im Zeugnis"},
+  {q:"'die Bedingung' по-русски:",opts:["условие","причина","результат","вопрос"],ans:0,hint:"unter welcher Bedingung?"},
+  {q:"Die schlechteste Note in Deutschland heißt:",opts:["sehr gut","mangelhaft","ungenügend","befriedigend"],ans:2,hint:"6 = ungenügend"},
+  {q:"'die Nachhilfe' по-русски:",opts:["дополнительные занятия, репетиторство","каникулы","экзамен","табель"],ans:0,hint:"Nachhilfe bekommen"},
+  {q:"'klappen' (Ich hoffe, dass es klappt) означает:",opts:["получаться, срабатывать","заканчиваться","ломаться","начинаться"],ans:0,hint:"es klappt"},
+  {q:"'der Studienplatz' по-русски:",opts:["место в вузе","школьный класс","рабочее место","место в общежитии"],ans:0,hint:"einen Studienplatz bekommen"},
+]);
+
+const LUECKEN_A2L4=shuffle([
+  {sent:"Wenn Can sehr viel ___, kann er gute Noten bekommen.' (учится)",opts:["lernt","lernen","gelernt","lerne"],ans:0,ru:"Если Джан будет много учиться, он сможет получить хорошие оценки.",hint:"Nebensatz: Verb am Ende"},
+  {sent:"___ Paula fleißig ist, kann sie in der Firma bleiben.' (Если)",opts:["Wenn","Dann","Weil","Aber"],ans:0,ru:"Если Паула прилежна, она сможет остаться в фирме.",hint:"Konditionalsatz"},
+  {sent:"Er möchte Arzt ___, wenn er mit der Schule fertig ist.' (стать)",opts:["werden","sein","machen","haben"],ans:0,ru:"Он хочет стать врачом, когда закончит школу.",hint:"Arzt werden"},
+  {sent:"Wenn man an der Uni studieren will, braucht man das ___.' (аттестат зрелости)",opts:["Abitur","Zeugnis","Fach","Note"],ans:0,hint:"Abitur",ru:"Если хочешь учиться в университете, нужен аттестат зрелости."},
+  {sent:"Die beste Note in Deutschland ist die ___.' (единица)",opts:["Eins","Sechs","Vier","Drei"],ans:0,ru:"Лучшая оценка в Германии — единица.",hint:"1 = sehr gut"},
+]);
+
+const ZUORD_A2L4=[
+  {de:"die Mathematik",ru:"математика"},
+  {de:"die Physik",ru:"физика"},
+  {de:"die Chemie",ru:"химия"},
+  {de:"die Biologie",ru:"биология"},
+  {de:"die Kunst",ru:"искусство (предмет)"},
+  {de:"die Erdkunde",ru:"география (предмет)"},
+  {de:"die Grundschule",ru:"начальная школа"},
+  {de:"die Förderschule",ru:"коррекционная школа"},
+  {de:"die Hauptschule",ru:"основная школа"},
+  {de:"die Realschule",ru:"реальное училище"},
+  {de:"die Gesamtschule",ru:"общеобразовательная школа"},
+  {de:"das Gymnasium",ru:"гимназия"},
+  {de:"der Mittlere Schulabschluss",ru:"аттестат о среднем образовании"},
+  {de:"die Berufsschule",ru:"профессиональное училище"},
+  {de:"die Fachhochschule",ru:"университет прикладных наук"},
+  {de:"das Klassenzimmer",ru:"классная комната"},
+  {de:"die Schulferien",ru:"школьные каникулы"},
+  {de:"die Klassenaufsicht",ru:"дежурство по классу"},
+  {de:"der Stundenplan",ru:"расписание уроков"},
+  {de:"das Lieblingsfach",ru:"любимый предмет"},
+  {de:"der Test",ru:"тест, контрольная"},
+  {de:"die Probe",ru:"проверочная работа"},
+  {de:"der Unterricht",ru:"урок, занятия"},
+  {de:"der Schulhof",ru:"школьный двор"},
+  {de:"die Gruppenarbeit",ru:"групповая работа"},
+  {de:"das Fach",ru:"предмет (школьный)"},
+  {de:"die Prüfung",ru:"экзамен"},
+  {de:"bestehen",ru:"сдать (экзамен)"},
+  {de:"die Firma",ru:"фирма"},
+  {de:"die Note",ru:"оценка"},
+  {de:"das Zeugnis",ru:"табель"},
+  {de:"die Bedingung",ru:"условие"},
+  {de:"mangelhaft",ru:"неудовлетворительно (5)"},
+  {de:"ausreichend",ru:"достаточно (4)"},
+  {de:"befriedigend",ru:"удовлетворительно (3)"},
+  {de:"ungenügend",ru:"незачёт (6, худшая)"},
+  {de:"die Nachhilfe",ru:"репетиторство"},
+  {de:"klappen",ru:"получаться, срабатывать"},
+  {de:"der Studienplatz",ru:"место в вузе"},
+  {de:"die Entschuldigung",ru:"объяснительная записка"},
+];
+
+const WSENTS_A2L4=[
+  {w:["Wenn","Can","sehr","viel","lernt",",","kann","er","gute","Noten","bekommen","."],ru:"Если Джан будет много учиться, он сможет получить хорошие оценки."},
+  {w:["Er","kann","viel","Geld","verdienen",",","wenn","er","Arzt","ist","."],ru:"Он сможет много зарабатывать, когда станет врачом."},
+  {w:["Wenn","man","studieren","will",",","braucht","man","das","Abitur","."],ru:"Если хочешь учиться в университете, нужен аттестат зрелости."},
+  {w:["Sie","kann","in","der","Firma","bleiben",",","wenn","sie","die","Prüfung","besteht","."],ru:"Она сможет остаться в фирме, если сдаст экзамен."},
+];
+
+function GrosserTestA2L4(){return <GrosserTestContainer rounds={[
+  {icon:"🎯",label:"Quiz",          col:C.yellow, component:()=><Quiz questions={Q_A2L4TEST}/>},
+  {icon:"📝",label:"Lückentext",    col:C.blue,   component:()=><LueckenQuiz items={LUECKEN_A2L4}/>},
+  {icon:"🔗",label:"Wortschatz",    col:C.green,  component:()=><Zuordnung pairs={ZUORD_A2L4} leftLabel="Wort" rightLabel="Bedeutung"/>},
+  {icon:"🔤",label:"Wortstellung",  col:C.orange, component:()=><WortstellungGame sents={WSENTS_A2L4}/>},
 ]}/>;}
 
 
@@ -13974,6 +14295,266 @@ function T_A2L3B(){
   );
 }
 
+const Q_A2L3C=[
+  {q:"'Ich möchte einen Tisch reservieren.' говорит:",opts:["Gast","Bedienung"],ans:0,hint:"Gast-Phrase"},
+  {q:"'Was möchten Sie trinken?' говорит:",opts:["Gast","Bedienung"],ans:1,hint:"Bedienung-Phrase"},
+  {q:"'Ich hätte gerne …' используется, чтобы:",opts:["заказать что-то","попросить счёт","забронировать столик","пожаловаться"],ans:0,hint:"bestellen"},
+  {q:"'Zusammen oder getrennt?' спрашивают, когда:",opts:["заказывают еду","бронируют столик","хотят оплатить счёт","выбирают напиток"],ans:2,hint:"bezahlen"},
+  {q:"'die Beilage' по-русски:",opts:["гарнир","десерт","закуска","напиток"],ans:0,hint:"Hauptspeise mit Beilage"},
+  {q:"'köstlich' и 'ausgezeichnet' — это синонимы к:",opts:["очень вкусный/отличный","очень дорогой","очень острый","очень холодный"],ans:0,hint:"Das Essen war köstlich/ausgezeichnet."},
+  {q:"'zufrieden' по-русски:",opts:["довольный","голодный","сытый","усталый"],ans:0,hint:"Waren Sie zufrieden?"},
+  {q:"'die Kohlensäure' (в напитке) — это:",opts:["сахар","газ (углекислый)","алкоголь","сироп"],ans:1,hint:"mit/ohne Kohlensäure"},
+];
+
+function T_A2L3C(){
+  const [tab,setTab]=useState("dialog");
+  const gastPhrasen=[
+    {tag:"reservieren",items:["Ich möchte einen Tisch reservieren.","Um … Uhr.","Ja, das geht. / Wie spät?"]},
+    {tag:"bestellen",items:["Ich nehme …","Ich hätte gerne …","Ein/e … bitte."]},
+    {tag:"bezahlen",items:["Die Rechnung, bitte.","Zusammen, bitte. / Getrennt, bitte.","Ich hätte gern …","Stimmt so. (сдачи не нужно)"]},
+  ];
+  const bedienungPhrasen=[
+    "Wann möchten Sie kommen? Wie viele Personen?",
+    "Für welchen Tag und welche Uhrzeit?",
+    "Möchten Sie bestellen? Was möchten Sie trinken/essen?",
+    "Was darf ich Ihnen bringen?",
+    "Getrennt oder zusammen? Das macht … insgesamt.",
+    "Möchten Sie mit Karte bezahlen?",
+  ];
+  const speisekarte=[
+    {kat:"Vorspeisen",items:["Hühnersuppe","Tomatensuppe"]},
+    {kat:"Hauptspeisen",items:["Rindergeschnetzeltes mit Champignons und Reis","Hähnchen mit Nudeln und Gemüse","Spaghetti mit Basilikum-Pesto und Tomaten","Schweineschnitzel mit Pommes und Salat"]},
+    {kat:"Nachspeisen",items:["Vanilleeis mit Sahne","Obstsalat"]},
+    {kat:"Getränke",items:["Mineralwasser","Apfelsaft","Orangensaft","Fanta/Cola/Sprite","Bier","Wein","Tee/Kaffee"]},
+  ];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.red}>
+        <H c={C.red}>🍽️ A2-L3C · Im Restaurant</H>
+        <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
+          {[["dialog","Dialoge"],["speise","Speisekarte"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,textAlign:"center",
+                border:`1px solid ${tab===key?C.red+"55":C.border}`,
+                background:tab===key?C.red+"22":C.ov3,
+                color:tab===key?C.red:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="dialog"&&(
+          <div>
+            <div style={{fontSize:12,fontWeight:700,color:C.muted,margin:"0 0 6px",textTransform:"uppercase",letterSpacing:0.5}}>Gast (посетитель)</div>
+            {gastPhrasen.map((g,gi)=>(
+              <div key={gi} style={{marginBottom:8}}>
+                <div style={{fontSize:12,fontWeight:800,color:C.red,marginBottom:3}}>{g.tag}</div>
+                {g.items.map((it,i)=>(
+                  <div key={i} style={{background:C.ov4,borderRadius:7,padding:"6px 10px",marginBottom:3,fontSize:13,color:C.text}}>{it}</div>
+                ))}
+              </div>
+            ))}
+            <div style={{fontSize:12,fontWeight:700,color:C.muted,margin:"10px 0 6px",textTransform:"uppercase",letterSpacing:0.5}}>Bedienung (официант)</div>
+            {bedienungPhrasen.map((p,i)=>(
+              <div key={i} style={{background:C.ov4,borderRadius:7,padding:"6px 10px",marginBottom:3,fontSize:13,color:C.text}}>{p}</div>
+            ))}
+            <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,borderRadius:10,padding:"11px 13px",marginTop:8}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.orange,marginBottom:6}}>Оценка еды</div>
+              <div style={{fontSize:13,color:C.text,lineHeight:1.7}}>
+                Das Essen war <b>lecker / köstlich / erlesen / ausgezeichnet</b>.<br/>
+                Waren Sie <b>zufrieden</b>? — War alles in Ordnung?
+              </div>
+            </div>
+          </div>
+        )}
+        {tab==="speise"&&(
+          <div>
+            {speisekarte.map((s,si)=>(
+              <div key={si} style={{marginBottom:10}}>
+                <div style={{fontSize:12,fontWeight:800,color:C.red,marginBottom:4}}>{s.kat}</div>
+                <div style={{display:"flex",flexWrap:"wrap",gap:5}}>
+                  {s.items.map((it,i)=><span key={i} style={{background:C.ov4,borderRadius:20,padding:"5px 11px",fontSize:12,color:C.text}}>{it}</span>)}
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
+const Q_A2L4A=[
+  {q:"Was kommt vor der Grundschule?",opts:["Kita/Kindergarten","Hauptschule","Berufsschule","Gymnasium"],ans:0,hint:"bis 6 Jahre"},
+  {q:"Wie viele Jahre dauert die Grundschule normalerweise?",opts:["2 Jahre","4 Jahre","6 Jahre","10 Jahre"],ans:1,hint:"1.-4. Klasse"},
+  {q:"Nach der Grundschule gehen die Kinder:",opts:["alle in dieselbe Schule","in unterschiedliche Schularten","direkt zur Universität","direkt in die Ausbildung"],ans:1,hint:"Förderschule/Hauptschule/Realschule/Gesamtschule/Gymnasium"},
+  {q:"Den Mittleren Schulabschluss bekommt man z.B. nach:",opts:["der Grundschule","der Realschule oder Gesamtschule","der Kita","dem Abitur"],ans:1,hint:"10. Klasse, 16 Jahre"},
+  {q:"Um an der Universität zu studieren, braucht man:",opts:["das Abitur","den Mittleren Schulabschluss","nur die Berufsschule","nichts Besonderes"],ans:0,hint:"12./13. Klasse, 18 Jahre"},
+  {q:"Für die Fachhochschule braucht man:",opts:["das Abitur oder Fachabitur","nur die Hauptschule","die Förderschule","gar keinen Abschluss"],ans:0,hint:"Fachabitur = Fachoberschule"},
+  {q:"Gibt es in Deutschland die Schulpflicht?",opts:["Ja, für alle Kinder","Nein, Schule ist freiwillig","Nur für Jungen","Nur bis zur 4. Klasse"],ans:0,hint:"Die Schulpflicht"},
+  {q:"Ab welchem Lebensjahr müssen Kinder in Deutschland zur Schule?",opts:["ab dem 3.","ab dem 6.","ab dem 10.","ab dem 14."],ans:1,hint:"mindestens neun Schuljahre"},
+];
+
+function T_A2L4A(){
+  const [tab,setTab]=useState("diagramm");
+  const stufen=[
+    {tag:"Kita/Kindergarten",desc:"до 6 лет — необязательно, но большинство детей ходят",col:C.blue},
+    {tag:"Grundschule",desc:"1.-4. Klasse (6-10 лет) — ВСЕ дети учатся вместе",col:C.green},
+    {tag:"Förderschule",desc:"коррекционная школа — для детей с особыми потребностями",col:C.purple},
+    {tag:"Hauptschule",desc:"5.-9./10. Klasse — более практическое направление",col:C.purple},
+    {tag:"Realschule",desc:"5.-10. Klasse → Mittlerer Schulabschluss",col:C.purple},
+    {tag:"Gesamtschule",desc:"5.-10./12./13. Klasse (комплексная) → Mittlerer Schulabschluss или Abitur",col:C.purple},
+    {tag:"Gymnasium",desc:"5.-12./13. Klasse → Abitur",col:C.purple},
+    {tag:"Berufsschule / Fachoberschule",desc:"после Mittlerer Schulabschluss: Ausbildung в фирме + Berufsschule, или Fachoberschule → Fachabitur",col:C.orange},
+    {tag:"Abitur / Fachabitur",desc:"12./13. Klasse, 18 лет",col:C.red},
+    {tag:"Universität / Fachhochschule",desc:"Universität — нужен Abitur; Fachhochschule — Abitur или Fachabitur",col:C.red},
+  ];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.green}>
+        <H c={C.green}>🏫 A2-L4A · Schulen in Deutschland</H>
+        <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
+          {[["diagramm","Das Schulsystem"],["pflicht","Die Schulpflicht"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,textAlign:"center",
+                border:`1px solid ${tab===key?C.green+"55":C.border}`,
+                background:tab===key?C.green+"22":C.ov3,
+                color:tab===key?C.green:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="diagramm"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,marginBottom:10,lineHeight:1.6}}>
+              Путь ребёнка по немецкой школьной системе (снизу вверх):
+            </div>
+            {stufen.map((s,i)=>(
+              <div key={i} style={{display:"flex",gap:8,alignItems:"flex-start",marginBottom:6}}>
+                <div style={{width:20,textAlign:"center",fontSize:12,color:C.muted,fontWeight:700,paddingTop:8}}>{i+1}</div>
+                <div style={{flex:1,background:s.col+"15",border:`1px solid ${s.col}33`,borderRadius:8,padding:"7px 11px"}}>
+                  <div style={{fontWeight:800,fontSize:13,color:s.col}}>{s.tag}</div>
+                  <div style={{fontSize:12,color:C.muted,marginTop:2}}>{s.desc}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+        {tab==="pflicht"&&(
+          <div>
+            <div style={{background:C.red+"15",border:`1px solid ${C.red}33`,borderRadius:10,padding:"11px 13px"}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.red,marginBottom:6}}>Die Schulpflicht</div>
+              <div style={{fontSize:13,color:C.text,lineHeight:1.7}}>
+                В Германии есть обязательное школьное образование (Schulpflicht). Все родители обязаны записать детей в государственную или частную начальную школу с 6-летнего возраста. Schulpflicht длится минимум девять школьных лет.
+              </div>
+              <div style={{fontSize:12,color:C.muted,marginTop:8}}>Правила и школьная система немного отличаются от земли к земле (Bundesland). Например, в Берлине и Бранденбурге Grundschule длится 6 лет (а не 4).</div>
+            </div>
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
+const Q_A2L4B=[
+  {q:"'Wenn Can sehr viel lernt, kann er sehr gute Noten bekommen.' — где стоит спрягаемый глагол в wenn-предложении?",opts:["В конце придаточного (lernt)","В начале","На втором месте, как обычно","Глагола вообще нет"],ans:0,hint:"Nebensatz: Verb ans Ende"},
+  {q:"Wenn-предложение может стоять:",opts:["только перед главным","только после главного","и перед, и после главного предложения","только в вопросах"],ans:2,hint:"Wenn…, (dann)… / …, wenn…"},
+  {q:"'Wenn er die Prüfung besteht, (dann) kann er bleiben.' — что идёт сразу после запятой в главном предложении?",opts:["подлежащее","спрягаемый глагол","вопросительное слово","ничего особенного"],ans:1,hint:"Verb-Subjekt-Ergänzung"},
+  {q:"Ein Bedingungssatz (Nebensatz mit wenn) отвечает на вопросы:",opts:["Wer? Was?","Wann? Unter welcher Bedingung?","Warum?","Wie lange?"],ans:1,hint:"Konditionalsatz"},
+  {q:"'Wenn ich einen guten Abschluss haben möchte, muss ich auch am Wochenende lernen.' — по-русски:",opts:["Если я хочу получить хороший диплом, мне нужно учиться и по выходным","Я не хочу получать диплом","Я учусь только по выходным","Мне не нужно учиться"],ans:0,hint:"Paulas Text"},
+  {q:"'Ich hoffe, dass es klappt.' — 'klappen' означает:",opts:["получаться, срабатывать","заканчиваться","начинаться","ломаться"],ans:0,hint:"Cans Text"},
+  {q:"Die Note 'mangelhaft' в немецкой школе — это оценка:",opts:["отлично","хорошо","неудовлетворительно (5)","совершенно неудовлетворительно (6, худшая)"],ans:2,hint:"Noten 1-6"},
+  {q:"Die beste Note in Deutschland ist:",opts:["1 (sehr gut)","6 (ungenügend)","3 (befriedigend)","4 (ausreichend)"],ans:0,hint:"1=отлично, 6=худшая"},
+];
+
+function T_A2L4B(){
+  const [tab,setTab]=useState("wenn");
+  const wennBsp=[
+    {de:"Wenn Can sehr viel lernt, (dann) kann er sehr gute Noten im Abitur bekommen.",ru:"Если Джан будет много учиться, он сможет получить очень хорошие оценки на экзамене."},
+    {de:"Er kann sehr gute Noten im Abitur bekommen, wenn er sehr viel lernt.",ru:"Он сможет получить очень хорошие оценки на экзамене, если будет много учиться."},
+    {de:"Wenn sie einen guten Abschluss haben möchte, muss sie auch am Wochenende lernen.",ru:"Если она хочет получить хороший диплом, ей нужно учиться и по выходным."},
+    {de:"Wenn sie fleißig ist und die Prüfung gut besteht, kann sie nach der Ausbildung in der Firma bleiben.",ru:"Если она прилежна и хорошо сдаст экзамен, она сможет остаться в фирме после обучения."},
+  ];
+  const filipBsp=[
+    {de:"Wenn Filip eine Zwei in Mathe hat, dann kann er auf das Gymnasium gehen.",ru:"Если у Филиппа «двойка» (хорошая оценка!) по математике, он сможет пойти в гимназию."},
+    {de:"Wenn er mit der Schule fertig ist, möchte er Arzt werden.",ru:"Когда он закончит школу, он хочет стать врачом."},
+    {de:"Wenn er Arzt werden möchte, dann muss er an der Universität studieren.",ru:"Если он хочет стать врачом, ему нужно учиться в университете."},
+    {de:"Wenn er Arzt ist, kann er viel Geld verdienen.",ru:"Когда он станет врачом, он сможет много зарабатывать."},
+  ];
+  const noten=[
+    {n:"1",de:"sehr gut",ru:"отлично"},
+    {n:"2",de:"gut",ru:"хорошо"},
+    {n:"3",de:"befriedigend",ru:"удовлетворительно"},
+    {n:"4",de:"ausreichend",ru:"достаточно (зачёт)"},
+    {n:"5",de:"mangelhaft",ru:"неудовлетворительно"},
+    {n:"6",de:"ungenügend",ru:"совершенно неудовлетворительно"},
+  ];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.purple}>
+        <H c={C.purple}>👨‍👩‍👧 A2-L4B · Elternabend</H>
+        <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
+          {[["wenn","Nebensätze mit wenn"],["beispiele","Beispiele: Paula/Filip"],["noten","Noten in Deutschland"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,textAlign:"center",
+                border:`1px solid ${tab===key?C.purple+"55":C.border}`,
+                background:tab===key?C.purple+"22":C.ov3,
+                color:tab===key?C.purple:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="wenn"&&(
+          <div>
+            <div style={{background:C.purple+"15",border:`1px solid ${C.purple}33`,borderRadius:10,padding:"11px 13px",marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.purple,marginBottom:6}}>Satzstruktur</div>
+              <div style={{fontSize:13,color:C.text,lineHeight:1.9}}>
+                <b style={{color:C.orange}}>Wenn</b> + Subjekt + Ergänzung + <b style={{color:C.blue}}>Verb</b>, (dann) <b style={{color:C.blue}}>Verb</b> + Subjekt + Ergänzung.<br/>
+                Subjekt + Ergänzung + <b style={{color:C.blue}}>Verb</b>, <b style={{color:C.orange}}>wenn</b> + Subjekt + Ergänzung + <b style={{color:C.blue}}>Verb</b>.
+              </div>
+              <div style={{fontSize:12,color:C.muted,marginTop:8,lineHeight:1.6}}>
+                • Konditionalsätze (условные предложения) задают условие.<br/>
+                • Соответствующие вопросы: <b>Wann?</b> и <b>unter welcher Bedingung?</b><br/>
+                • Bedingungssatz (wenn-предложение) — это придаточное предложение (Nebensatz): спрягаемый глагол уходит в конец.<br/>
+                • Если wenn-предложение стоит первым, главное предложение может начинаться с <b>dann</b>, и сразу после него — глагол (Verb-Subjekt-Ergänzung).
+              </div>
+            </div>
+            {wennBsp.map((w,i)=>(
+              <TapEx key={i} de={w.de} ru={w.ru} col={C.purple} style={{marginBottom:6}}/>
+            ))}
+          </div>
+        )}
+        {tab==="beispiele"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,marginBottom:10,lineHeight:1.6}}>
+              Frau Palmira erzählt über ihre Tochter Paula (Ausbildung zur Kfz-Mechatronikerin) und über Filip (möchte Arzt werden):
+            </div>
+            {filipBsp.map((w,i)=>(
+              <TapEx key={i} de={w.de} ru={w.ru} col={C.purple} style={{marginBottom:6}}/>
+            ))}
+          </div>
+        )}
+        {tab==="noten"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,marginBottom:10,lineHeight:1.6}}>
+              Немецкая система оценок (Zeugnis) — от 1 (лучшая) до 6 (худшая):
+            </div>
+            {noten.map((n,i)=>(
+              <div key={i} style={{display:"flex",gap:10,alignItems:"center",background:C.ov4,borderRadius:8,padding:"7px 11px",marginBottom:4}}>
+                <div style={{width:22,height:22,borderRadius:6,background:i<2?C.green+"33":i<4?C.blue+"33":C.red+"33",color:i<2?C.green:i<4?C.blue:C.red,fontWeight:800,fontSize:13,display:"flex",alignItems:"center",justifyContent:"center"}}>{n.n}</div>
+                <div style={{flex:1,fontWeight:700,fontSize:13,color:C.text}}>{n.de}</div>
+                <div style={{fontSize:12,color:C.muted}}>{n.ru}</div>
+              </div>
+            ))}
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
 const Q_L6A=[
   {q:"Welcher Artikel hat 'Apfel'?",          opts:["der","die","das"],                                                                     ans:0, hint:"Artikel"},
   {q:"Welcher Artikel hat 'Milch'?",          opts:["der","die","das"],                                                                     ans:1, hint:"Artikel"},
@@ -14309,15 +14890,29 @@ const LEKTIONEN=[
   },
   {
     id:"A2-L3",niveau:"A2",num:"3",title:"Wochenende",
-    sub:"A In der Einkaufsstraße (Wechselpräpositionen) · B Was machen wir am Sonntag? (ja/nein/doch)",
-    date:"Kursbuch S.29–33",col:C.orange,
+    sub:"A In der Einkaufsstraße (Wechselpräpositionen) · B ja/nein/doch · C Im Restaurant",
+    date:"Kursbuch S.29–35",col:C.orange,
     sections:[
       {id:"dA2L3", icon:"💬",title:"Dialogfragen A2-L3",         sub:"Фразы для диалога",                                    time:"∞",     col:C.orange,hasT:false, th:null,           ex:()=><DialogCards lId="A2-L3"/>},
       {id:"a2l3a", icon:"🛍️",title:"A · In der Einkaufsstraße",  sub:"Wo/Wohin-Verbpaare · Café-Vokabular",                  time:"8 мин", col:C.orange,hasT:true, th:()=><T_A2L3A/>, ex:()=><Quiz questions={Q_A2L3A}/>},
       {id:"a2l3b", icon:"📅",title:"B · Was machen wir am Sonntag?",sub:"ja/nein/doch · Wochenend-Aktivitäten",              time:"7 мин", col:C.blue,  hasT:true, th:()=><T_A2L3B/>, ex:()=><Quiz questions={Q_A2L3B}/>},
+      {id:"a2l3c", icon:"🍽️",title:"C · Im Restaurant",           sub:"Reservieren · bestellen · bezahlen · Speisekarte", time:"7 мин", col:C.red,   hasT:true, th:()=><T_A2L3C/>, ex:()=><Quiz questions={Q_A2L3C}/>},
       {id:"wbA2L3", icon:"📖",title:"Wörterbuch A2-L3",          sub:"Слова этого урока",                                    time:"—",    col:C.teal,   hasT:false, ex:()=><LektWoerterbuch lekt="A2-L3"/>},
       {id:"tA2L3", icon:"🎯",title:"Großer Test A2-L3",          sub:"Quiz · Lücken · Wortschatz · Wortstellung",     time:"20 мин",col:C.yellow, hasT:false, ex:()=><GrosserTestA2L3/>},
       {id:"wtA2L3", icon:"🧠",title:"Wortschatz-Test A2-L3",     sub:"Перевод · Артикли · Обратный перевод",                 time:"10 мин",col:C.teal,   hasT:false, ex:()=><WortschatzTest lekt="A2-L3"/>},
+    ]
+  },
+  {
+    id:"A2-L4",niveau:"A2",num:"4",title:"Schule",
+    sub:"A Schulen in Deutschland (Schulsystem) · B Elternabend (Nebensätze mit wenn)",
+    date:"Kursbuch S.39–41",col:C.green,
+    sections:[
+      {id:"dA2L4", icon:"💬",title:"Dialogfragen A2-L4",         sub:"Фразы для диалога",                                    time:"∞",     col:C.green, hasT:false, th:null,           ex:()=><DialogCards lId="A2-L4"/>},
+      {id:"a2l4a", icon:"🏫",title:"A · Schulen in Deutschland",  sub:"Schulsystem · Schulpflicht",                           time:"8 мин", col:C.green, hasT:true, th:()=><T_A2L4A/>, ex:()=><Quiz questions={Q_A2L4A}/>},
+      {id:"a2l4b", icon:"👨‍👩‍👧",title:"B · Elternabend",           sub:"Nebensätze mit wenn · Noten in Deutschland",           time:"8 мин", col:C.purple,hasT:true, th:()=><T_A2L4B/>, ex:()=><Quiz questions={Q_A2L4B}/>},
+      {id:"wbA2L4", icon:"📖",title:"Wörterbuch A2-L4",          sub:"Слова этого урока",                                    time:"—",    col:C.teal,   hasT:false, ex:()=><LektWoerterbuch lekt="A2-L4"/>},
+      {id:"tA2L4", icon:"🎯",title:"Großer Test A2-L4",          sub:"Quiz · Lücken · Wortschatz · Wortstellung",     time:"20 мин",col:C.yellow, hasT:false, ex:()=><GrosserTestA2L4/>},
+      {id:"wtA2L4", icon:"🧠",title:"Wortschatz-Test A2-L4",     sub:"Перевод · Артикли · Обратный перевод",                 time:"10 мин",col:C.teal,   hasT:false, ex:()=><WortschatzTest lekt="A2-L4"/>},
     ]
   },
 ];
@@ -14349,6 +14944,7 @@ function DialogFragenPage(){
     "A2-L1":{label:"A2·L1 · Meine Geschichte", col:C.blue},
     "A2-L2":{label:"A2·L2 · Medien", col:C.green},
     "A2-L3":{label:"A2·L3 · Wochenende", col:C.orange},
+    "A2-L4":{label:"A2·L4 · Schule", col:C.green},
   };
   const filterFm=(pairs,lId)=>(lId==="L1"||lId==="L4")?pairs.filter(p=>!p.fm||p.fm===fm):pairs;
 
