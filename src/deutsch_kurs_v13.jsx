@@ -16944,54 +16944,56 @@ function T_PruefungTipps(){
   return (
     <div style={{display:"flex",flexDirection:"column",gap:10}}>
       <Box c={C.red}>
-        <H c={C.red}>💡 Allgemeine Ratschläge (B1/DTZ Schreiben)</H>
+        <H c={C.red}>💡 Общие советы (письменная часть B1/DTZ)</H>
         <div style={{fontSize:13,color:C.text,lineHeight:1.8}}>
-          <b>1. Bereiten Sie sich nicht auf bestimmte Aufgaben vor, sondern auf die Arten von Aufgaben.</b> Niveau B1 ist Alltagssprache, also sind alle Situationen typisch — da kann man nicht so viel erfinden, nur kleine Details ändern.
+          <b>1. Готовьтесь не к конкретным заданиям, а к типам заданий.</b> Уровень B1 — это повседневная речь, поэтому все ситуации типовые: тут особо нечего "придумывать", можно только менять мелкие детали.
         </div>
         <div style={{background:C.ov4,borderRadius:8,padding:"10px 12px",marginTop:8,fontSize:13,color:C.text,lineHeight:1.8}}>
-          Etwas ist im Haus oder in der Umgebung kaputt gegangen — Sie beschweren sich. Lärm machen, putzen, Hilfe von/für Nachbarn — das werden alles Nachbarn, Hausmeister und Hausverwaltung sein.<br/>
-          Geschäfte und Service — Beschwerden.<br/>
-          Behörde — Termine, Beschwerden.<br/>
-          Schule, Kindergärten — Termine, Ferien, Konflikte.
+          Что-то сломалось дома или во дворе — вы жалуетесь. Шум, уборка, помощь от/для соседей — здесь всегда фигурируют соседи, домоуправитель (Hausmeister) и управляющая компания (Hausverwaltung).<br/>
+          Магазины и сервис — жалобы.<br/>
+          Ведомство (Behörde) — записи на приём, жалобы.<br/>
+          Школа, детский сад — записи, каникулы, конфликты.
         </div>
         <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,borderRadius:10,padding:"11px 13px",marginTop:10}}>
-          <div style={{fontWeight:800,fontSize:13,color:C.orange,marginBottom:6}}>Wichtig</div>
+          <div style={{fontWeight:800,fontSize:13,color:C.orange,marginBottom:6}}>Важно</div>
           <div style={{fontSize:13,color:C.text,lineHeight:1.8}}>
-            Lernen Sie keine Briefe auswendig und kopieren Sie sie nicht, sondern schreiben Sie Ihre eigenen, basierend auf Ihren eigenen Lebensumständen. Jeder Mensch hat genug solche Situationen.<br/><br/>
-            1. Es ist viel leichter, Briefe aus eigener Erfahrung zu schreiben und zu merken. Dann können Sie in einer Prüfungssituation die Details für die Aufgabe leichter ändern.<br/>
-            2. Nur das eigene Schreiben bereitet Sie wirklich auf die Prüfung vor.<br/>
-            3. Andere Personen haben denselben (kopierten) Brief vielleicht schon benutzt, oder die Lehrer haben ihn schon gesehen.
+            Не учите письма наизусть и не копируйте их — пишите свои собственные, на основе своей реальной жизни. У каждого человека таких ситуаций достаточно.<br/><br/>
+            1. Гораздо легче писать и запоминать письма из собственного опыта. Тогда на экзамене вам будет легче поменять детали под конкретное задание.<br/>
+            2. Только собственное письмо по-настоящему готовит вас к экзамену.<br/>
+            3. Другие люди, возможно, уже использовали тот же (скопированный) готовый текст, или учителя уже видели его.
           </div>
         </div>
-        <div style={{background:C.ov4,borderRadius:8,padding:"10px 12px",marginTop:8,fontSize:13,color:C.text}}>
-          <b>2. Schreiben Sie keinen Entwurf</b> — Sie haben keine Zeit, ihn neu zu schreiben. Schreiben Sie nur Schlüsselwörter.
+        <div style={{background:C.ov4,borderRadius:8,padding:"10px 12px",marginTop:8,fontSize:13,color:C.text,lineHeight:1.8}}>
+          <b>2. Не пишите черновик целиком</b> — у вас не будет времени переписать его заново. Пишите только ключевые слова.
         </div>
       </Box>
       <Box c={C.blue}>
-        <H c={C.blue}>📋 Allgemeine Anforderungen</H>
+        <H c={C.blue}>📋 Общие требования к письму</H>
         <div style={{fontSize:13,color:C.text,lineHeight:1.8}}>
-          1. Sie bekommen den Betreff des Schreibens und vier Punkte. Empfehlung aller Lehrer: zu jedem Punkt zwei Sätze schreiben. Ein komplexer Satz mit Nebensatz kann als zwei einfache Sätze zählen. Korrekt geschriebene komplexe Sätze sind ein großes Plus. Wenn Sie jedoch nicht sicher sind, ist es besser, einfacher zu schreiben.
+          1. Вам дают тему письма и четыре пункта. Общая рекомендация всех преподавателей: на каждый пункт — два предложения. Сложное предложение с придаточным можно засчитать как два простых. Правильно составленные сложные предложения — большой плюс. Но если не уверены — лучше писать проще.
           <br/><br/>
-          2. Vor dem Schreiben sollten Ort und Datum (rechts) angegeben werden, dann die Anrede (links). Nach der Anrede ein Komma, und der nächste Satz beginnt in einer neuen Zeile mit Kleinbuchstaben.
+          2. Перед текстом письма указываются место и дата (справа), затем обращение (слева). После обращения — запятая, и следующее предложение начинается с новой строки с маленькой буквы.
         </div>
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:8,marginTop:10}}>
           <div style={{background:C.ov4,borderRadius:8,padding:"9px 11px"}}>
-            <div style={{fontSize:11,fontWeight:800,color:C.muted,marginBottom:4}}>FORMELL (gar nicht kennen)</div>
-            <div style={{fontSize:13,color:C.text}}>Sehr geehrte Damen und Herren,</div>
+            <div style={{fontSize:11,fontWeight:800,color:C.muted,marginBottom:4}}>FORMELL (совсем незнакомый человек)</div>
+            <RedeItem col={C.blue} de="Sehr geehrte Damen und Herren," ru="Уважаемые дамы и господа,"/>
           </div>
           <div style={{background:C.ov4,borderRadius:8,padding:"9px 11px"}}>
-            <div style={{fontSize:11,fontWeight:800,color:C.muted,marginBottom:4}}>FORMELL (Name bekannt, z.B. Beamter)</div>
-            <div style={{fontSize:13,color:C.text}}>Sehr geehrte Frau Sommer, / Sehr geehrter Herr Sommer,</div>
+            <div style={{fontSize:11,fontWeight:800,color:C.muted,marginBottom:4}}>FORMELL (имя известно, напр. чиновник)</div>
+            <RedeItem col={C.blue} de="Sehr geehrte Frau Sommer, / Sehr geehrter Herr Sommer," ru="Уважаемая госпожа Соммер, / Уважаемый господин Соммер,"/>
           </div>
           <div style={{background:C.ov4,borderRadius:8,padding:"9px 11px",gridColumn:"1 / -1"}}>
-            <div style={{fontSize:11,fontWeight:800,color:C.muted,marginBottom:4}}>HALBFORMELL (persönlich bekannt, aber per "Sie" — Lehrer, Nachbar)</div>
-            <div style={{fontSize:13,color:C.text}}>Liebe Frau Sommer, / Lieber Herr Sommer,</div>
+            <div style={{fontSize:11,fontWeight:800,color:C.muted,marginBottom:4}}>HALBFORMELL (лично знакомы, но на "Sie" — учитель, соседка)</div>
+            <RedeItem col={C.blue} de="Liebe Frau Sommer, / Lieber Herr Sommer," ru="Дорогая госпожа Соммер, / Дорогой господин Соммер,"/>
           </div>
         </div>
-        <div style={{fontSize:13,color:C.text,marginTop:10,lineHeight:1.8}}>
-          3. Am Ende schreiben Sie:<br/>
-          — bei formeller Anrede: <b>Mit freundlichen Grüßen</b> + Vorname Name<br/>
-          — bei halbformeller Anrede: <b>Viele Grüße</b> / <b>Freundliche Grüße</b>
+        <div style={{fontSize:13,color:C.text,marginTop:10,marginBottom:6,lineHeight:1.6}}>
+          3. В конце письма пишут:
+        </div>
+        <div style={{background:C.ov4,borderRadius:8,padding:"6px 6px"}}>
+          <RedeItem col={C.blue} de="Mit freundlichen Grüßen + Vorname Name" ru="С уважением (при формальном обращении) + Имя Фамилия"/>
+          <RedeItem col={C.blue} de="Viele Grüße / Freundliche Grüße" ru="С наилучшими пожеланиями (при полуформальном обращении)"/>
         </div>
       </Box>
     </div>
@@ -17286,6 +17288,7 @@ function T_PruefungWohnung(){
 // ═══ Prüfung: Musterbriefe Hausverwaltung ═══
 function MusterbriefBlock({title,situation,punkte,brief,col}){
   const [open,setOpen]=useState(false);
+  const [showRu,setShowRu]=useState(false);
   return (
     <div style={{border:`1px solid ${open?col+"55":C.border}`,borderRadius:12,marginBottom:8,overflow:"hidden"}}>
       <div onClick={()=>setOpen(s=>!s)} style={{cursor:"pointer",padding:"11px 13px",background:open?col+"15":C.ov4,display:"flex",alignItems:"center",gap:8}}>
@@ -17298,7 +17301,17 @@ function MusterbriefBlock({title,situation,punkte,brief,col}){
           <div style={{fontSize:12,color:C.muted,marginBottom:10}}>
             {punkte.map((p,i)=><div key={i}>— {p}</div>)}
           </div>
-          <div style={{background:C.ov4,borderRadius:8,padding:"10px 12px",fontSize:13,color:C.text,lineHeight:1.9,whiteSpace:"pre-line",fontStyle:"italic"}}>{brief}</div>
+          <div onClick={()=>setShowRu(s=>!s)}
+            style={{cursor:"pointer",background:showRu?col+"15":C.ov4,border:`1px solid ${showRu?col+"44":"transparent"}`,
+              borderRadius:8,padding:"10px 12px",fontSize:13,color:C.text,lineHeight:1.9,whiteSpace:"pre-line",fontStyle:"italic"}}>
+            {brief.de}
+          </div>
+          <div style={{textAlign:"center",fontSize:11,color:C.muted,margin:"4px 0"}}>{showRu?"▲ скрыть перевод":"▾ показать перевод письма"}</div>
+          {showRu&&(
+            <div style={{background:col+"0d",border:`1px solid ${col}33`,borderRadius:8,padding:"10px 12px",fontSize:13,color:C.text,lineHeight:1.9,whiteSpace:"pre-line"}}>
+              {brief.ru}
+            </div>
+          )}
         </div>
       )}
     </div>
@@ -17308,11 +17321,12 @@ function T_PruefungMusterbriefe(){
   const [tab,setTab]=useState("grund");
   const briefe=[
     {title:"1. Fernseher ist kaputt",
-     situation:"Der Fernseher in Ihrer Wohnung funktioniert nicht. Die Antenne ist kaputt. Sie haben bereits Ihren Hausverwalter, Herrn Müller, angerufen, aber es ist nichts passiert. Also schreiben Sie an die Hausverwaltung.",
-     punkte:["Grund für Ihr Schreiben","was soll passieren?","wann","was machen Sie, wenn Sie keine Antwort bekommen"],
-     brief:`Sehr geehrter Herr Müller,
+     situation:"Телевизор в вашей квартире не работает. Антенна сломана. Вы уже звонили домоуправителю, господину Мюллеру, но ничего не изменилось. Поэтому вы пишете в управляющую компанию.",
+     punkte:["причина обращения","что должно произойти?","когда","что вы сделаете, если не получите ответа"],
+     brief:{
+       de:`Sehr geehrter Herr Müller,
 
-ich habe am Montag mit Ihnen telefoniert und Sie wissen schon, dass mein Fernseher seit 2 Wochen nicht funktioniert. Aber Sie haben bisher nichts gemacht.
+Ich habe am Montag mit Ihnen telefoniert und Sie wissen schon, dass mein Fernseher seit 2 Wochen nicht funktioniert. Aber Sie haben bisher nichts gemacht.
 Ich habe den Fernseher bei meinem Kollegen geprüft und er ist nicht kaputt. Sie sollten mir unbedingt bis zum Ende der Woche einen Handwerker schicken, damit er die Antenne repariert.
 Es ist mir wichtig, jeden Tag die Nachrichten zu sehen.
 Ich bin bis 9 Uhr morgens und nach 17 Uhr abends zu Hause. Meine Nachbarin Frau Sommer hat den Schlüssel von der Wohnung, Ihr Handwerker kann also jederzeit kommen.
@@ -17321,13 +17335,27 @@ Wenn Sie auf meinen Brief nicht reagieren, rufe ich eine Firma an. Die Rechnung 
 Ich warte auf Ihre baldige Antwort. Vielen Dank im Voraus.
 
 Mit freundlichen Grüßen
-Vorname Name`},
-    {title:"2. Heizung ist kaputt",
-     situation:"Heizung funktioniert seit 2 Tagen nicht. Der Manager beantwortet keine Anrufe. Die Temperatur ist gesunken, Sie sind bereits krank.",
-     punkte:["warum schreiben Sie","was wollen Sie","wann","was Sie tun, wenn keine Antwort kommt"],
-     brief:`Sehr geehrte Damen und Herren,
+Vorname Name`,
+       ru:`Уважаемый господин Мюллер,
 
-ich habe Sie den ganzen Tag angerufen, aber konnte Sie nicht erreichen, deshalb schreibe ich Ihnen diesen Brief. Meine Adresse ist Hauptstraße 10. Seit zwei Tagen funktioniert die Heizung in meiner Wohnung nicht. Die Temperatur ist auf 10 Grad gesunken und ich bin schon richtig krank. Es gibt bereits Schimmel in der Ecke und alle Sachen sind nass.
+Я разговаривал(а) с Вами по телефону в понедельник, и Вы уже знаете, что мой телевизор не работает уже 2 недели. Но Вы до сих пор ничего не сделали.
+Я проверил(а) телевизор у своего коллеги, и он не сломан. Вам обязательно нужно прислать мне мастера до конца недели, чтобы он отремонтировал антенну.
+Для меня важно каждый день смотреть новости.
+Я дома до 9 утра и после 17 вечера. У моей соседки, госпожи Соммер, есть ключ от квартиры, так что Ваш мастер может прийти в любое время.
+Если Вы не отреагируете на моё письмо, я обращусь в другую фирму. Счёт я отправлю Вам.
+
+Жду Вашего скорого ответа. Заранее большое спасибо.
+
+С уважением
+Имя Фамилия`,
+     }},
+    {title:"2. Heizung ist kaputt",
+     situation:"Отопление не работает уже 2 дня. Менеджер не отвечает на звонки. Температура в квартире упала, вы уже заболели.",
+     punkte:["почему вы пишете","что вы хотите","когда","что вы сделаете, если ответа не будет"],
+     brief:{
+       de:`Sehr geehrte Damen und Herren,
+
+Ich habe Sie den ganzen Tag angerufen, aber konnte Sie nicht erreichen, deshalb schreibe ich Ihnen diesen Brief. Meine Adresse ist Hauptstraße 10. Seit zwei Tagen funktioniert die Heizung in meiner Wohnung nicht. Die Temperatur ist auf 10 Grad gesunken und ich bin schon richtig krank. Es gibt bereits Schimmel in der Ecke und alle Sachen sind nass.
 Rufen Sie mich bitte so schnell wie möglich an. Meine Handynummer ist 0717170000. Sie müssen sofort einen Handwerker zu mir schicken, damit er die Heizung repariert.
 Ich warte noch einen Tag auf Ihren Anruf. Danach suche ich mir ein Hotelzimmer und ziehe dort ein.
 Wenn ich von Ihnen keine Antwort bekomme, vereinbare ich einen Termin mit einer Heizungsfirma. Die Rechnungen vom Hotel und von der Heizungsfirma schicke ich Ihnen.
@@ -17335,26 +17363,51 @@ Wenn ich von Ihnen keine Antwort bekomme, vereinbare ich einen Termin mit einer 
 Ich hoffe auf Ihre baldige Antwort. Vielen Dank im Voraus.
 
 Mit freundlichen Grüßen
-Vorname Name`},
-    {title:"3. Fenster schließen nicht",
-     situation:"Ihre Fenster schließen in Ihrer Wohnung nicht richtig und kalte Luft dringt in Ihre Wohnung ein. Sie haben schon einmal angerufen, aber es kam keine Antwort.",
-     punkte:["Grund des Schreibens","Temperatur und Gesundheit","Heizkosten","was machen Sie, wenn Sie keine Antwort bekommen"],
-     brief:`Sehr geehrter Herr Huber,
+Vorname Name`,
+       ru:`Уважаемые дамы и господа,
 
-ich habe schon mit Ihnen telefoniert, dass man die Fenster im Wohnzimmer nicht schließen kann. Und Sie haben versprochen, dass die Fenster repariert werden. Aber Sie haben nichts gemacht.
+Я звонил(а) Вам весь день, но не смог(ла) до Вас дозвониться, поэтому пишу Вам это письмо. Мой адрес — Хауптштрассе 10. Уже два дня в моей квартире не работает отопление. Температура упала до 10 градусов, и я уже серьёзно заболел(а). В углу уже появилась плесень, и все вещи влажные.
+Пожалуйста, позвоните мне как можно скорее. Мой номер мобильного — 0717170000. Вам нужно немедленно прислать мне мастера, чтобы он отремонтировал отопление.
+Я подожду ещё один день Вашего звонка. После этого я найду себе номер в отеле и перееду туда.
+Если я не получу от Вас ответа, я договорюсь о встрече с фирмой по отоплению. Счета за отель и за услуги фирмы я отправлю Вам.
+
+Надеюсь на Ваш скорый ответ. Заранее большое спасибо.
+
+С уважением
+Имя Фамилия`,
+     }},
+    {title:"3. Fenster schließen nicht",
+     situation:"Окна в вашей квартире закрываются неплотно, и холодный воздух проникает в квартиру. Вы уже звонили один раз, но ответа не последовало.",
+     punkte:["причина обращения","температура и здоровье","расходы на отопление","что вы сделаете, если не получите ответа"],
+     brief:{
+       de:`Sehr geehrter Herr Huber,
+
+Ich habe schon mit Ihnen telefoniert, dass man die Fenster im Wohnzimmer nicht schließen kann. Und Sie haben versprochen, dass die Fenster repariert werden. Aber Sie haben nichts gemacht.
 Sie haben wahrscheinlich vergessen, dass es schon Dezember ist. Die kalte Luft kommt ins Zimmer und wir können dieses Zimmer nicht benutzen.
 Ich muss die Heizung auf die höchste Stufe stellen, damit kein Schimmel entsteht. Haben Sie wahrscheinlich vergessen, welche Preise für Warmwasser und Heizung wir letztes Jahr in der Jahresabrechnung hatten?
 Ich hoffe, dass Sie schnell einen Handwerker zu uns schicken. Ich bin fast den ganzen Tag zu Hause. Aber geben Sie mir bitte Bescheid, wann genau er kommt.
 Wenn Sie nicht auf meinen Brief reagieren, rufe ich eine Firma an und schicke Ihnen dann die Rechnung. (Oder: gehe ich zu meinem Anwalt.)
 
 Mit freundlichen Grüßen
-Vorname Name`},
-    {title:"4. Licht funktioniert nicht",
-     situation:"In Ihrem Hauseingang funktioniert das Licht nicht. Schreiben Sie einen Brief an die Hausverwaltung.",
-     punkte:["Warum schreiben Sie","wer soll es reparieren","wie gefährlich ist es","was wollen Sie"],
-     brief:`Sehr geehrte Damen und Herren,
+Vorname Name`,
+       ru:`Уважаемый господин Хубер,
 
-seit Montag funktioniert das Licht auf der Treppe in unserem Haus nicht. Es ist jetzt Dezember und schon um 17 Uhr ist es sehr dunkel. Im Haus wohnen alte Menschen. Sie sagen, dass sie abends zu Hause bleiben müssen, weil sie fürchten, die Treppe in der Dunkelheit hinunterzugehen. Ich habe ein kleines Kind und finde diese Situation auch sehr unbequem und gefährlich. Es ist leicht, hinzufallen und die Verletzungen zu bekommen.
+Я уже говорил(а) Вам по телефону, что окна в гостиной не закрываются. И Вы обещали, что окна отремонтируют. Но Вы ничего не сделали.
+Вы, наверное, забыли, что уже декабрь. Холодный воздух проникает в комнату, и мы не можем ею пользоваться.
+Мне приходится включать отопление на максимум, чтобы не появилась плесень. Вы, наверное, забыли, какие цены за горячую воду и отопление были у нас в прошлогоднем годовом расчёте?
+Надеюсь, что Вы быстро пришлёте к нам мастера. Я дома почти весь день. Но, пожалуйста, сообщите мне точно, когда он придёт.
+Если Вы не отреагируете на моё письмо, я вызову фирму и пришлю Вам счёт. (Или: обращусь к своему адвокату.)
+
+С уважением
+Имя Фамилия`,
+     }},
+    {title:"4. Licht funktioniert nicht",
+     situation:"В подъезде вашего дома не работает свет. Напишите письмо в управляющую компанию.",
+     punkte:["почему вы пишете","кто должен это отремонтировать","насколько это опасно","что вы хотите"],
+     brief:{
+       de:`Sehr geehrte Damen und Herren,
+
+Seit Montag funktioniert das Licht auf der Treppe in unserem Haus nicht. Es ist jetzt Dezember und schon um 17 Uhr ist es sehr dunkel. Im Haus wohnen alte Menschen. Sie sagen, dass sie abends zu Hause bleiben müssen, weil sie fürchten, die Treppe in der Dunkelheit hinunterzugehen. Ich habe ein kleines Kind und finde diese Situation auch sehr unbequem und gefährlich. Es ist leicht, hinzufallen und die Verletzungen zu bekommen.
 Wir bezahlen regelmäßig die Nebenkosten und solche Reparaturen gehören zu Ihren Aufgaben.
 Würden Sie uns bitte dringend einen Handwerker schicken. Sonst werden wir nächste Woche einen Handwerker suchen und die Nebenkosten entsprechend reduzieren.
 Frau Sommer ist fast immer zu Hause und öffnet die Tür (lässt Ihren Handwerker ins Haus), aber geben Sie bitte Bescheid, wann genau Ihr Handwerker kommt.
@@ -17362,27 +17415,57 @@ Frau Sommer ist fast immer zu Hause und öffnet die Tür (lässt Ihren Handwerke
 Vielen Dank im Voraus.
 
 Mit freundlichen Grüßen
-Vorname Name`},
-    {title:"5. Die Tür ist kaputt",
-     situation:"In Ihrem Haus wurden Bauarbeiten durchgeführt. Jetzt ist die Tür zum Keller beschädigt und Sie können sie nicht mehr abschließen. Schreiben Sie einen Brief an Frau XY von der Hausverwaltung.",
-     punkte:["Grund für Ihr Schreiben","Fahrräder können gestohlen werden","schnelle Reparatur erforderlich","bitte antworten"],
-     brief:`Sehr geehrte Frau XY,
+Vorname Name`,
+       ru:`Уважаемые дамы и господа,
 
-nachdem Ihre Handwerker Bauarbeiten in unserem Haus durchgeführt haben, wurde die Tür zum Fahrradraum beschädigt. Jetzt schließt sie nicht mehr richtig. Wir haben Angst, dass die Fahrräder gestohlen werden. Dort gibt es mehrere Elektrofahrräder. Der Zugang zum Raum ist relativ leicht, da das Garagentor fast immer geöffnet ist.
+С понедельника не работает свет на лестнице в нашем доме. Сейчас декабрь, и уже в 17 часов очень темно. В доме живут пожилые люди. Они говорят, что вечером им приходится оставаться дома, потому что они боятся спускаться по лестнице в темноте. У меня маленький ребёнок, и я тоже считаю эту ситуацию очень неудобной и опасной. Легко упасть и получить травму.
+Мы регулярно платим коммунальные платежи, и такой ремонт входит в Ваши обязанности.
+Не могли бы Вы срочно прислать нам мастера. Иначе на следующей неделе мы найдём мастера сами и соответственно уменьшим сумму коммунальных платежей.
+Госпожа Соммер почти всегда дома и откроет дверь (впустит Вашего мастера в дом), но, пожалуйста, сообщите точно, когда придёт Ваш мастер.
+
+Заранее большое спасибо.
+
+С уважением
+Имя Фамилия`,
+     }},
+    {title:"5. Die Tür ist kaputt",
+     situation:"В вашем доме проводились строительные работы. Теперь дверь в подвал повреждена, и вы не можете её запереть. Напишите письмо госпоже XY из управляющей компании.",
+     punkte:["причина обращения","велосипеды могут украсть","нужен быстрый ремонт","просьба ответить"],
+     brief:{
+       de:`Sehr geehrte Frau XY,
+
+Nachdem Ihre Handwerker Bauarbeiten in unserem Haus durchgeführt haben, wurde die Tür zum Fahrradraum beschädigt. Jetzt schließt sie nicht mehr richtig. Wir haben Angst, dass die Fahrräder gestohlen werden. Dort gibt es mehrere Elektrofahrräder. Der Zugang zum Raum ist relativ leicht, da das Garagentor fast immer geöffnet ist.
 Bitte schicken Sie dringend einen Handwerker, um die Tür zu reparieren. Andernfalls sind wir gezwungen, einen Handwerker selbst zu suchen und Ihnen die Rechnung zuzusenden.
 
 Mit freundlichen Grüßen
-Vorname Name`},
-    {title:"6. Der Aufzug ist kaputt",
-     situation:"Der Aufzug in dem Gebäude, in dem Sie eine Wohnung mieten, ist kaputt. Schreiben Sie an die Hausverwaltung.",
-     punkte:["warum es Ihnen so wichtig ist, dass der Aufzug repariert wird","was die Nachbarn sagen","Sie sind sehr verärgert","was passiert, wenn er nicht rechtzeitig repariert wird, wen können Sie kontaktieren"],
-     brief:`Sehr geehrter Herr Müller,
+Vorname Name`,
+       ru:`Уважаемая госпожа XY,
 
-in unserem Haus in der Lindenstraße 3 ist der Aufzug kaputt gegangen. Nachbarn sagen, dass sie Sie bereits angerufen haben, aber keine Antwort erhalten. Im dritten Stock wohnt ein Rollstuhlfahrer, im zweiten Stock wohnt eine Familie mit einem Baby. Sie können das Haus nicht verlassen, solange der Aufzug nicht funktioniert. Aus gesundheitlichen Gründen fällt es mir auch schwer, Lebensmittel nach oben zu heben. Ich bin sehr frustriert, weil ich mehr Medikamente nehmen muss.
+После того как Ваши мастера провели строительные работы в нашем доме, дверь в велосипедную комнату была повреждена. Теперь она не закрывается нормально. Мы боимся, что велосипеды украдут. Там стоит несколько электровелосипедов. Доступ в помещение довольно лёгкий, так как ворота гаража почти всегда открыты.
+Пожалуйста, срочно пришлите мастера, чтобы отремонтировать дверь. Иначе мы будем вынуждены найти мастера самостоятельно и отправить Вам счёт.
+
+С уважением
+Имя Фамилия`,
+     }},
+    {title:"6. Der Aufzug ist kaputt",
+     situation:"Лифт в доме, где вы снимаете квартиру, сломан. Напишите в управляющую компанию.",
+     punkte:["почему для вас так важно, чтобы лифт отремонтировали","что говорят соседи","вы очень раздражены","что будет, если его не отремонтируют вовремя, к кому можно обратиться"],
+     brief:{
+       de:`Sehr geehrter Herr Müller,
+
+In unserem Haus in der Lindenstraße 3 ist der Aufzug kaputt gegangen. Nachbarn sagen, dass sie Sie bereits angerufen haben, aber keine Antwort erhalten. Im dritten Stock wohnt ein Rollstuhlfahrer, im zweiten Stock wohnt eine Familie mit einem Baby. Sie können das Haus nicht verlassen, solange der Aufzug nicht funktioniert. Aus gesundheitlichen Gründen fällt es mir auch schwer, Lebensmittel nach oben zu heben. Ich bin sehr frustriert, weil ich mehr Medikamente nehmen muss.
 Wir bitten Sie, so schnell wie möglich Reparatur zu machen. Wir hoffen, spätestens morgen Ihre Handwerker zu sehen. Sonst suchen wir die Handwerker selbst und stellen Ihnen die Rechnung.
 
 Mit freundlichen Grüßen
-Vorname Name`},
+Vorname Name`,
+       ru:`Уважаемый господин Мюллер,
+
+В нашем доме на Линденштрассе 3 сломался лифт. Соседи говорят, что уже звонили Вам, но не получили ответа. На третьем этаже живёт человек в инвалидной коляске, на втором этаже — семья с младенцем. Они не могут выйти из дома, пока лифт не работает. По состоянию здоровья мне тоже тяжело поднимать продукты наверх. Я очень расстроен(а), потому что мне приходится принимать больше лекарств.
+Мы просим Вас произвести ремонт как можно скорее. Надеемся увидеть Ваших мастеров не позднее завтрашнего дня. Иначе мы найдём мастеров сами и выставим Вам счёт.
+
+С уважением
+Имя Фамилия`,
+     }},
   ];
   return (
     <div style={{display:"flex",flexDirection:"column",gap:10}}>
@@ -17403,7 +17486,7 @@ Vorname Name`},
         {tab==="grund"&&(
           <div>
             <div style={{fontSize:13,color:C.text,lineHeight:1.8,marginBottom:10}}>
-              Typ 1 der DTZ-Briefe: "In meinem Haus ist … kaputt" — Konflikte mit der Verwaltung. Themen: Heizung, Antenne, Sanitär, Beleuchtung, Fenster. Die Handlung: es ist kaputt, Sie haben sich an die Hausverwaltung gewandt, aber diese hat Ihre Bitte ignoriert oder ist außer Reichweite. Sie schreiben einen Brief, in dem Sie: den Grund des Schreibens, Ihre Anforderungen, die Frist zur Erfüllung der Anforderungen und eine Drohung nennen.
+              Тип 1 писем DTZ: "В моём доме сломано …" — конфликты с управляющей компанией. Темы: отопление, антенна, сантехника, освещение, окна. Сюжет: что-то сломано, вы обращались в управляющую компанию, но она игнорирует просьбу или недоступна. Вы пишете письмо, в котором указываете: причину обращения, свои требования, срок исполнения требований и угрозу (что вы сделаете, если требование не выполнят).
             </div>
             <RedeBlock col={C.red} title="Grundwortschatz" items={[
               {de:"telefonieren mit D (ich habe mit Ihnen telefoniert)",ru:"звонить по телефону кому-то (я разговаривал(а) с Вами по телефону)"},
