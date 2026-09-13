@@ -2052,6 +2052,99 @@ const WBDATA=[
   {art:"die", de:"Krankenversicherung",ord:840,pl:"-en",    ru:"медицинская страховка",                           tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
   {art:"",    de:"behindert",ord:841,    pl:"—",            ru:"с ограниченными возможностями, инвалид",         tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
   {art:"",    de:"anbraten",ord:842,     pl:"—",            ru:"обжаривать",                                      tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"die", de:"App",ord:843,          pl:"-s",           ru:"приложение",                                      tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"der", de:"Bescheid",ord:844,     pl:"-e",           ru:"весть, ответ · Bescheid sagen — дать знать",     tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"die", de:"Ahnung",ord:845,       pl:"-en",          ru:"понятие · Keine Ahnung! — без понятия!",         tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"",    de:"drüben",ord:846,       pl:"—",            ru:"там, по ту сторону · Hier drüben — вот здесь",    tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"",    de:"höflich",ord:847,      pl:"—",            ru:"вежливый",                                        tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"die", de:"Nachricht",ord:848,    pl:"-en",          ru:"сообщение",                                       tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"der", de:"Bericht",ord:849,      pl:"-e",           ru:"отчёт",                                           tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"der", de:"Arbeitskollege",ord:850,pl:"-n",          ru:"коллега по работе",                               tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"der", de:"Mitarbeiter",ord:851,  pl:"-",            ru:"сотрудник (f. die Mitarbeiterin)",               tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"das", de:"Computerprogramm",ord:852,pl:"-e",        ru:"компьютерная программа",                          tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"",    de:"installieren",ord:853, pl:"—",            ru:"устанавливать",                                    tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"",    de:"verschieben",ord:854,  pl:"—",            ru:"переносить (срок, встречу)",                      tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"der", de:"Anruf",ord:855,        pl:"-e",           ru:"звонок",                                          tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"",    de:"zurückrufen",ord:856,  pl:"—",            ru:"перезванивать",                                    tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"der", de:"Kaffeeautomat",ord:857,pl:"-en",          ru:"кофейный автомат",                                tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"die", de:"Pausenregel",ord:858,  pl:"-n",           ru:"правило перерыва",                                tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"der", de:"Arzttermin",ord:859,   pl:"-e",           ru:"запись к врачу",                                  tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"das", de:"Gerät",ord:860,        pl:"-e",           ru:"устройство, прибор",                              tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"der", de:"Getränkeautomat",ord:861,pl:"-en",        ru:"автомат с напитками",                             tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"der", de:"Kopierer",ord:862,     pl:"-",            ru:"копир",                                           tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"die", de:"Taste",ord:863,        pl:"-n",           ru:"кнопка, клавиша",                                 tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"",    de:"ausschalten",ord:864,  pl:"—",            ru:"выключать",                                       tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"",    de:"einwerfen",ord:865,    pl:"—",            ru:"бросать (монету)",                                tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"der", de:"Marktleiter",ord:866,  pl:"-",            ru:"директор магазина (f. -in)",                     tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"die", de:"Buchhaltung",ord:867,  pl:"Sg.",          ru:"бухгалтерия",                                     tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"die", de:"Technik",ord:868,      pl:"Sg.",          ru:"техника (отдел)",                                 tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"die", de:"Spedition",ord:869,    pl:"-en",          ru:"транспортная компания",                           tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"",    de:"einräumen",ord:870,    pl:"—",            ru:"расставлять, размещать",                          tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"",    de:"ausräumen",ord:871,    pl:"—",            ru:"разгружать, освобождать",                         tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"der", de:"Münzeinwurf",ord:872,  pl:'"-e',          ru:"монетоприёмник",                                  tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"die", de:"Bedienungsanleitung",ord:873,pl:"-en",    ru:"инструкция по эксплуатации",                      tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"der", de:"Kontakt",ord:874,      pl:"-e",           ru:"контакт",                                         tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"das", de:"Gespräch",ord:875,     pl:"-e",           ru:"разговор",                                        tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"",    de:"telefonieren",ord:876, pl:"—",            ru:"звонить по телефону",                              tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"das", de:"Satzzeichen",ord:877,  pl:"-",            ru:"знак пунктуации",                                 tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"der", de:"Betriebsausflug",ord:878,pl:'"-e',        ru:"корпоративная поездка",                           tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"",    de:"geschlossen",ord:879,  pl:"—",            ru:"закрытый",                                        tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"der", de:"Treffpunkt",ord:880,   pl:"-e",           ru:"место встречи",                                   tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"der", de:"Eintritt",ord:881,     pl:"-e",           ru:"вход, входной билет",                             tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"die", de:"Liste",ord:882,        pl:"-n",           ru:"список",                                          tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"der", de:"Polizist",ord:883,     pl:"-en",          ru:"полицейский (f. -in)",                            tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"der", de:"Maurer",ord:884,       pl:"-",            ru:"каменщик",                                        tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"der", de:"Dachdecker",ord:885,   pl:"-",            ru:"крышевщик",                                       tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"der", de:"Verputzer",ord:886,    pl:"-",            ru:"штукатур",                                        tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"der", de:"Fliesenleger",ord:887, pl:"-",            ru:"плиточник",                                       tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"der", de:"Schreiner",ord:888,    pl:"-",            ru:"столяр",                                          tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"der", de:"Gabelstaplerfahrer",ord:889,pl:"-",       ru:"водитель погрузчика",                             tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"der", de:"Installateur",ord:890, pl:"-e",           ru:"сантехник, монтажник",                            tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"der", de:"Baggerfahrer",ord:891, pl:"-",            ru:"экскаваторщик",                                   tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"der", de:"Lkw-Fahrer",ord:892,   pl:"-",            ru:"водитель грузовика",                              tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"der", de:"Bauingenieur",ord:893, pl:"-e",           ru:"инженер-строитель",                               tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"der", de:"Maler",ord:894,        pl:"-",            ru:"маляр",                                           tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"der", de:"Gepäckfahrer",ord:895, pl:"-",            ru:"работник багажной службы",                        tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"der", de:"Flugbegleiter",ord:896,pl:"-",            ru:"бортпроводник (f. -in)",                          tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"der", de:"Check-in-Schalter",ord:897,pl:"-",        ru:"стойка регистрации",                              tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"die", de:"Sicherheitskontrolle",ord:898,pl:"-n",    ru:"контроль безопасности",                           tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"der", de:"Busfahrer",ord:899,    pl:"-",            ru:"водитель автобуса",                               tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"das", de:"Bodenpersonal",ord:900,pl:"Sg.",          ru:"наземный персонал",                                tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"der", de:"Fluglotse",ord:901,    pl:"-n",           ru:"авиадиспетчер",                                   tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"der", de:"Vorort",ord:902,       pl:"-e",           ru:"предместье, окраина",                             tema:"Wohnung", lekt:"A2-L6",niveau:"A2"},
+  {art:"",    de:"außerhalb",ord:903,    pl:"—",            ru:"за пределами, вне (города)",                     tema:"Wohnung", lekt:"A2-L6",niveau:"A2"},
+  {art:"",    de:"verkehrsgünstig",ord:904,pl:"—",          ru:"удобно расположенный (для транспорта)",          tema:"Wohnung", lekt:"A2-L6",niveau:"A2"},
+  {art:"die", de:"Ruhe",ord:905,         pl:"Sg.",          ru:"тишина, покой",                                   tema:"Wohnung", lekt:"A2-L6",niveau:"A2"},
+  {art:"",    de:"lassen",ord:906,       pl:"—",            ru:"оставлять; поручать, давать возможность (+Inf.)", tema:"Wohnung", lekt:"A2-L6",niveau:"A2"},
+  {art:"die", de:"Kaltmiete",ord:907,    pl:"-n",           ru:"арендная плата без отопления",                    tema:"Wohnung", lekt:"A2-L6",niveau:"A2"},
+  {art:"die", de:"Warmmiete",ord:908,    pl:"-n",           ru:"арендная плата с отоплением",                    tema:"Wohnung", lekt:"A2-L6",niveau:"A2"},
+  {art:"das", de:"Obergeschoss",ord:909, pl:"-e",           ru:"верхний этаж",                                    tema:"Wohnung", lekt:"A2-L6",niveau:"A2"},
+  {art:"die", de:"Einbauküche",ord:910,  pl:"-n",           ru:"встроенная кухня",                                tema:"Wohnung", lekt:"A2-L6",niveau:"A2"},
+  {art:"die", de:"Kaution",ord:911,      pl:"-en",          ru:"залог",                                           tema:"Wohnung", lekt:"A2-L6",niveau:"A2"},
+  {art:"",    de:"abbauen",ord:912,      pl:"—",            ru:"демонтировать, разбирать",                        tema:"Wohnung", lekt:"A2-L6",niveau:"A2"},
+  {art:"",    de:"renovieren",ord:913,   pl:"—",            ru:"ремонтировать",                                    tema:"Wohnung", lekt:"A2-L6",niveau:"A2"},
+  {art:"",    de:"transportieren",ord:914,pl:"—",           ru:"перевозить",                                       tema:"Wohnung", lekt:"A2-L6",niveau:"A2"},
+  {art:"das", de:"Bauernhaus",ord:915,   pl:'"-er',         ru:"крестьянский дом",                                tema:"Wohnung", lekt:"A2-L6",niveau:"A2"},
+  {art:"die", de:"Öffnungszeiten",ord:916,pl:"—",           ru:"часы работы",                                     tema:"Wohnung", lekt:"A2-L6",niveau:"A2"},
+  {art:"die", de:"Sicherheit",ord:917,    pl:"-en",          ru:"безопасность",                                    tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"",    de:"verantwortlich",ord:918,pl:"—",            ru:"ответственный",                                    tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"",    de:"aufpassen",ord:919,     pl:"—",            ru:"присматривать, быть внимательным",                tema:"Kinderbetreuung", lekt:"A2-L5",niveau:"A2"},
+  {art:"",    de:"gratulieren",ord:920,   pl:"—",            ru:"поздравлять (+Dativ)",                            tema:"Kinderbetreuung", lekt:"A2-L5",niveau:"A2"},
+  {art:"",    de:"jammern",ord:921,       pl:"—",            ru:"жаловаться, ныть",                                tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"",    de:"plaudern",ord:922,      pl:"—",            ru:"болтать",                                          tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"die", de:"Freiheit",ord:923,      pl:"-en",          ru:"свобода",                                          tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"der", de:"TÜV",ord:924,           pl:"Sg.",          ru:"техосмотр (автомобиля)",                          tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"die", de:"Wartung",ord:925,       pl:"-en",          ru:"техобслуживание",                                  tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"",    de:"ablaufen",ord:926,      pl:"—",            ru:"истекать (о сроке)",                              tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"das", de:"Vorhaben",ord:927,      pl:"-",            ru:"план, замысел",                                    tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"die", de:"Ursache",ord:928,       pl:"-n",           ru:"причина · Keine Ursache! — не за что",           tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"",    de:"einstellen",ord:929,    pl:"—",            ru:"настраивать",                                      tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"die", de:"Wassermenge",ord:930,   pl:"-n",           ru:"количество воды",                                  tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"der", de:"Laden",ord:931,         pl:'"-',           ru:"магазин, лавка",                                  tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"der", de:"Betrieb",ord:932,       pl:"-e",           ru:"предприятие",                                      tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"das", de:"Unternehmen",ord:933,   pl:"-",            ru:"предприятие, компания",                            tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"die", de:"Schlüsselübergabe",ord:934,pl:"-n",        ru:"передача ключей",                                  tema:"Wohnung", lekt:"A2-L6",niveau:"A2"},
+  {art:"",    de:"weder",ord:935,         pl:"—",            ru:"ни... · weder … noch — ни…, ни…",                tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
 ];
 
 
@@ -3126,6 +3219,60 @@ const KONJ_ALL={
   anbraten:    {pref:"an", type:"a→ä", col:C.red, bg:C.redBg,
     ich:"brate … an",  du:"brätst … an",  "er/sie/es":"brät … an",
     wir:"braten … an", ihr:"bratet … an",  "sie/Sie":"braten … an", pt:"briet … an", pf:"hat angebraten"},
+  installieren:{col:C.teal, bg:C.tealBg, note:"-ieren: kein ge-",
+    ich:"installiere",  du:"installierst",  "er/sie/es":"installiert",
+    wir:"installieren", ihr:"installiert",  "sie/Sie":"installieren", pt:"installierte", pf:"hat installiert"},
+  verschieben: {col:C.orange, bg:C.orangeBg, note:"untrennbar: kein ge-",
+    ich:"verschiebe",  du:"verschiebst",  "er/sie/es":"verschiebt",
+    wir:"verschieben", ihr:"verschiebt",  "sie/Sie":"verschieben", pt:"verschob", pf:"hat verschoben"},
+  zurückrufen: {pref:"zurück", col:C.blue, bg:C.blueBg,
+    ich:"rufe … zurück",  du:"rufst … zurück",  "er/sie/es":"ruft … zurück",
+    wir:"rufen … zurück", ihr:"ruft … zurück",  "sie/Sie":"rufen … zurück", pt:"rief … zurück", pf:"hat zurückgerufen"},
+  ausschalten: {pref:"aus", col:C.red, bg:C.redBg,
+    ich:"schalte … aus",  du:"schaltest … aus",  "er/sie/es":"schaltet … aus",
+    wir:"schalten … aus", ihr:"schaltet … aus",  "sie/Sie":"schalten … aus", pt:"schaltete … aus", pf:"hat ausgeschaltet"},
+  einwerfen:   {pref:"ein", type:"e→i", col:C.green, bg:C.greenBg,
+    ich:"werfe … ein",  du:"wirfst … ein",  "er/sie/es":"wirft … ein",
+    wir:"werfen … ein", ihr:"werft … ein",  "sie/Sie":"werfen … ein", pt:"warf … ein", pf:"hat eingeworfen"},
+  einräumen:   {pref:"ein", col:C.purple, bg:C.purpleBg,
+    ich:"räume … ein",  du:"räumst … ein",  "er/sie/es":"räumt … ein",
+    wir:"räumen … ein", ihr:"räumt … ein",  "sie/Sie":"räumen … ein", pt:"räumte … ein", pf:"hat eingeräumt"},
+  ausräumen:   {pref:"aus", col:C.orange, bg:C.orangeBg,
+    ich:"räume … aus",  du:"räumst … aus",  "er/sie/es":"räumt … aus",
+    wir:"räumen … aus", ihr:"räumt … aus",  "sie/Sie":"räumen … aus", pt:"räumte … aus", pf:"hat ausgeräumt"},
+  telefonieren:{col:C.blue, bg:C.blueBg, note:"-ieren: kein ge-",
+    ich:"telefoniere",  du:"telefonierst",  "er/sie/es":"telefoniert",
+    wir:"telefonieren", ihr:"telefoniert",  "sie/Sie":"telefonieren", pt:"telefonierte", pf:"hat telefoniert"},
+  lassen:      {type:"a→ä", col:C.red, bg:C.redBg,
+    ich:"lasse",  du:"lässt",  "er/sie/es":"lässt",
+    wir:"lassen", ihr:"lasst",  "sie/Sie":"lassen", pt:"ließ", pf:"hat gelassen"},
+  abbauen:     {pref:"ab", col:C.teal, bg:C.tealBg,
+    ich:"baue … ab",  du:"baust … ab",  "er/sie/es":"baut … ab",
+    wir:"bauen … ab", ihr:"baut … ab",  "sie/Sie":"bauen … ab", pt:"baute … ab", pf:"hat abgebaut"},
+  renovieren:  {col:C.green, bg:C.greenBg, note:"-ieren: kein ge-",
+    ich:"renoviere",  du:"renovierst",  "er/sie/es":"renoviert",
+    wir:"renovieren", ihr:"renoviert",  "sie/Sie":"renovieren", pt:"renovierte", pf:"hat renoviert"},
+  transportieren:{col:C.purple, bg:C.purpleBg, note:"-ieren: kein ge-",
+    ich:"transportiere",  du:"transportierst",  "er/sie/es":"transportiert",
+    wir:"transportieren", ihr:"transportiert",  "sie/Sie":"transportieren", pt:"transportierte", pf:"hat transportiert"},
+  aufpassen:   {pref:"auf", col:C.blue, bg:C.blueBg,
+    ich:"passe … auf",  du:"passt … auf",  "er/sie/es":"passt … auf",
+    wir:"passen … auf", ihr:"passt … auf",  "sie/Sie":"passen … auf", pt:"passte … auf", pf:"hat aufgepasst"},
+  gratulieren: {col:C.orange, bg:C.orangeBg, note:"-ieren: kein ge- · +Dativ",
+    ich:"gratuliere",  du:"gratulierst",  "er/sie/es":"gratuliert",
+    wir:"gratulieren", ihr:"gratuliert",  "sie/Sie":"gratulieren", pt:"gratulierte", pf:"hat gratuliert"},
+  jammern:     {col:C.red, bg:C.redBg,
+    ich:"jammere",  du:"jammerst",  "er/sie/es":"jammert",
+    wir:"jammern", ihr:"jammert",  "sie/Sie":"jammern", pt:"jammerte", pf:"hat gejammert"},
+  plaudern:    {col:C.teal, bg:C.tealBg,
+    ich:"plaudere",  du:"plauderst",  "er/sie/es":"plaudert",
+    wir:"plaudern", ihr:"plaudert",  "sie/Sie":"plaudern", pt:"plauderte", pf:"hat geplaudert"},
+  ablaufen:    {pref:"ab", type:"a→äu", col:C.green, bg:C.greenBg,
+    ich:"laufe … ab",  du:"läufst … ab",  "er/sie/es":"läuft … ab",
+    wir:"laufen … ab", ihr:"lauft … ab",  "sie/Sie":"laufen … ab", pt:"lief … ab", pf:"ist abgelaufen"},
+  einstellen:  {pref:"ein", col:C.purple, bg:C.purpleBg,
+    ich:"stelle … ein",  du:"stellst … ein",  "er/sie/es":"stellt … ein",
+    wir:"stellen … ein", ihr:"stellt … ein",  "sie/Sie":"stellen … ein", pt:"stellte … ein", pf:"hat eingestellt"},
 };
 
 // Ударения: комбинирующая акута \u0301 ставится после ударной гласной
@@ -3515,6 +3662,8 @@ const STRESS_MARKS={
 "Prüfung":"Prü\u0301fung","bestehen":"beste\u0301hen","Firma":"Fi\u0301rma","Note":"No\u0301te","Zeugnis":"Ze\u0301ugnis","Bedingung":"Bedi\u0301ngung","mangelhaft":"ma\u0301ngelhaft","ausreichend":"a\u0301usreichend","befriedigend":"befrie\u0301digend","ungenügend":"u\u0301ngenügend","Nachhilfe":"Na\u0301chhilfe","klappen":"kla\u0301ppen","Studienplatz":"Stu\u0301dienplatz","Entschuldigung":"Entschu\u0301ldigung",
 "Klassenkasse":"Kla\u0301ssenkasse","Klassenfahrt":"Kla\u0301ssenfahrt","Klassenarbeit":"Kla\u0301ssenarbeit","Taschengeld":"Ta\u0301schengeld","einzahlen":"e\u0301inzahlen","Informatiker":"Informa\u0301tiker","Schuluniform":"Schu\u0301luniform","Komma":"Ko\u0301mma","Kosten":"Ko\u0301sten","Abschnitt":"A\u0301bschnitt","zurückbringen":"zurü\u0301ckbringen","streng":"stre\u0301ng","freundlich":"fre\u0301undlich","Schulpflicht":"Schu\u0301lpflicht","Schuljahr":"Schu\u0301ljahr","Abschluss":"A\u0301bschluss","Schulabschluss":"Schu\u0301labschluss","Autowerkstatt":"A\u0301utowerkstatt","Kfz-Mechatroniker":"Kfz-Mechatro\u0301niker","Abschlussprüfung":"A\u0301bschlussprüfung","hoffen":"ho\u0301ffen","Langeweile":"La\u0301ngeweile","Elternabend":"E\u0301lternabend","Raum":"Ra\u0301um","gemeinsam":"gemei\u0301nsam","besprechen":"bespre\u0301chen","Schwimmunterricht":"Schwi\u0301mmunterricht","pünktlich":"pü\u0301nktlich","nachsitzen":"na\u0301chsitzen","Klassenlehrer":"Kla\u0301ssenlehrer","Jugendliche":"Ju\u0301gendliche","Schulzeit":"Schu\u0301lzeit","Schulweg":"Schu\u0301lweg","Lehrerzimmer":"Le\u0301hrerzimmer","Sekretariat":"Sekretaria\u0301t","Schulkantine":"Schu\u0301lkantine","Schulbus":"Schu\u0301lbus","Schuldirektor":"Schu\u0301ldirektor","Schülerlotsen":"Schü\u0301lerlotsen","Schulranzen":"Schu\u0301lranzen","Brotdose":"Bro\u0301tdose","Turnbeutel":"Tu\u0301rnbeutel","Federmäppchen":"Fe\u0301dermäppchen","Schreibblock":"Schre\u0301ibblock","Hausaufgabenheft":"Ha\u0301usaufgabenheft","Klassenraum":"Kla\u0301ssenraum","Computerraum":"Compu\u0301terraum","Werkraum":"We\u0301rkraum","Chemieraum":"Chemi\u0301eraum","Turnhalle":"Tu\u0301rnhalle","Hort":"Ho\u0301rt","Schulchor":"Schu\u0301lchor","Theater-AG":"Thea\u0301ter-AG","Schultüte":"Schu\u0301ltüte","Schulfest":"Schu\u0301lfest","Abschlussfeier":"A\u0301bschlussfeier","Pilot":"Pilo\u0301t","Krankengymnast":"Krankengymna\u0301st","Ordner":"O\u0301rdner","Passwort":"Pa\u0301sswort","Mitteilung":"Mi\u0301tteilung","Prospekt":"Prospe\u0301kt",
 "Zimmermädchen":"Zi\u0301mmermädchen","Hotelmanager":"Hote\u0301lmanager","Hotelfachfrau":"Hote\u0301lfachfrau","empfangen":"empfa\u0301ngen","Dienstplan":"Die\u0301nstplan","Zimmerreservierung":"Zi\u0301mmerreservierung","Auszubildende":"A\u0301uszubildende","Fachstudium":"Fa\u0301chstudium","Nebenjob":"Ne\u0301benjob","Aufenthalt":"A\u0301ufenthalt","Raucherzimmer":"Ra\u0301ucherzimmer","Nichtraucherzimmer":"Ni\u0301chtraucherzimmer","Mineralwasser":"Minera\u0301lwasser","Zimmerservice":"Zi\u0301mmerservice","aussuchen":"a\u0301ussuchen","Handtuch":"Ha\u0301ndtuch","frei":"fre\u0301i","Fahrerin":"Fa\u0301hrerin","Patient":"Patie\u0301nt","vorlesen":"vo\u0301rlesen","Kunde":"Ku\u0301nde","Betriebsversammlung":"Betrie\u0301bsversammlung","Betriebsrat":"Betrie\u0301bsrat","Gehalt":"Geha\u0301lt","vormittags":"vo\u0301rmittags","nachmittags":"na\u0301chmittags","Musikschule":"Musi\u0301kschule","Einkaufszentrum":"E\u0301inkaufszentrum","sich langweilen":"la\u0301ngweilen","alleinerziehend":"allei\u0301nerziehend","Ganztagsbetreuung":"Ga\u0301nztagsbetreuung","übernehmen":"überne\u0301hmen","individuell":"individue\u0301ll","flexibel":"flexi\u0301bel","Verwandtschaft":"Verwa\u0301ndtschaft","Krankenversicherung":"Kra\u0301nkenversicherung","behindert":"behi\u0301ndert","anbraten":"a\u0301nbraten",
+"App":"A\u0301pp","Bescheid":"Besche\u0301id","Ahnung":"A\u0301hnung","drüben":"drü\u0301ben","höflich":"hö\u0301flich","Nachricht":"Na\u0301chricht","Bericht":"Beri\u0301cht","Arbeitskollege":"A\u0301rbeitskollege","Mitarbeiter":"Mi\u0301tarbeiter","Computerprogramm":"Compu\u0301terprogramm","installieren":"installi\u0301eren","verschieben":"verschie\u0301ben","Anruf":"A\u0301nruf","zurückrufen":"zurü\u0301ckrufen","Kaffeeautomat":"Kaffeeautoma\u0301t","Pausenregel":"Pa\u0301usenregel","Arzttermin":"A\u0301rzttermin","Gerät":"Gerä\u0301t","Getränkeautomat":"Getränkeautoma\u0301t","Kopierer":"Kopi\u0301erer","Taste":"Ta\u0301ste","ausschalten":"a\u0301usschalten","einwerfen":"e\u0301inwerfen","Marktleiter":"Ma\u0301rktleiter","Buchhaltung":"Bu\u0301chhaltung","Technik":"Te\u0301chnik","Spedition":"Speditio\u0301n","einräumen":"e\u0301inräumen","ausräumen":"a\u0301usräumen","Münzeinwurf":"Mü\u0301nzeinwurf","Bedienungsanleitung":"Bedi\u0301enungsanleitung","Kontakt":"Konta\u0301kt","Gespräch":"Gespr\u0301äch","telefonieren":"telefoni\u0301eren","Satzzeichen":"Sa\u0301tzzeichen","Betriebsausflug":"Betrie\u0301bsausflug","geschlossen":"geschlo\u0301ssen","Treffpunkt":"Tre\u0301ffpunkt","Eintritt":"E\u0301intritt","Liste":"Li\u0301ste","Polizist":"Polizi\u0301st","Maurer":"Ma\u0301urer","Dachdecker":"Da\u0301chdecker","Verputzer":"Verpu\u0301tzer","Fliesenleger":"Fli\u0301esenleger","Schreiner":"Schre\u0301iner","Gabelstaplerfahrer":"Ga\u0301belstaplerfahrer","Installateur":"Installate\u0301ur","Baggerfahrer":"Ba\u0301ggerfahrer","Lkw-Fahrer":"Lkw-Fa\u0301hrer","Bauingenieur":"Bauingenie\u0301ur","Maler":"Ma\u0301ler","Gepäckfahrer":"Gepä\u0301ckfahrer","Flugbegleiter":"Flu\u0301gbegleiter","Check-in-Schalter":"Che\u0301ck-in-Schalter","Sicherheitskontrolle":"Si\u0301cherheitskontrolle","Busfahrer":"Bu\u0301sfahrer","Bodenpersonal":"Bo\u0301denpersonal","Fluglotse":"Flu\u0301glotse","Vorort":"Vo\u0301rort","außerhalb":"a\u0301ußerhalb","verkehrsgünstig":"verke\u0301hrsgünstig","Ruhe":"Ru\u0301he","lassen":"la\u0301ssen","Kaltmiete":"Ka\u0301ltmiete","Warmmiete":"Wa\u0301rmmiete","Obergeschoss":"O\u0301bergeschoss","Einbauküche":"E\u0301inbauküche","Kaution":"Kautio\u0301n","abbauen":"a\u0301bbauen","renovieren":"renovi\u0301eren","transportieren":"transporti\u0301eren","Bauernhaus":"Ba\u0301uernhaus","Öffnungszeiten":"Ö\u0301ffnungszeiten",
+"Sicherheit":"Si\u0301cherheit","verantwortlich":"verantwo\u0301rtlich","aufpassen":"a\u0301ufpassen","gratulieren":"gratuli\u0301eren","jammern":"ja\u0301mmern","plaudern":"pla\u0301udern","Freiheit":"Fre\u0301iheit","TÜV":"TÜ\u0301V","Wartung":"Wa\u0301rtung","ablaufen":"a\u0301blaufen","Vorhaben":"Vo\u0301rhaben","Ursache":"U\u0301rsache","einstellen":"e\u0301instellen","Wassermenge":"Wa\u0301ssermenge","Laden":"La\u0301den","Betrieb":"Betrie\u0301b","Unternehmen":"Unterne\u0301hmen","Schlüsselübergabe":"Schlü\u0301sselübergabe","weder":"we\u0301der",
 };
 
 // IPA-транскрипция для всего словаря (кроме фраз)
@@ -3886,6 +4035,8 @@ const IPA_DATA={
 "Prüfung":"[ˈpʁyːfʊŋ]","bestehen":"[bəˈʃteːən]","Firma":"[ˈfɪʁma]","Note":"[ˈnoːtə]","Zeugnis":"[ˈtsɔɪ̯knɪs]","Bedingung":"[bəˈdɪŋʊŋ]","mangelhaft":"[ˈmaŋl̩haft]","ausreichend":"[ˈaʊ̯sʁaɪ̯çn̩t]","befriedigend":"[bəˈfʁiːdɪɡn̩t]","ungenügend":"[ˈʊnɡəˌnyːɡn̩t]","Nachhilfe":"[ˈnaːxˌhɪlfə]","klappen":"[ˈklapən]","Studienplatz":"[ˈʃtuːdi̯ənˌplats]","Entschuldigung":"[ɛntˈʃʊldɪɡʊŋ]",
 "Klassenkasse":"[ˈklasn̩ˌkasə]","Klassenfahrt":"[ˈklasn̩ˌfaːɐ̯t]","Klassenarbeit":"[ˈklasn̩ˌʔaʁbaɪ̯t]","Taschengeld":"[ˈtaʃn̩ˌɡɛlt]","einzahlen":"[ˈaɪ̯nˌtsaːlən]","Informatiker":"[ɪnfɔʁˈmaːtikɐ]","Schuluniform":"[ˈʃuːluniˌfɔʁm]","Komma":"[ˈkɔma]","Kosten":"[ˈkɔstn̩]","Abschnitt":"[ˈapʃnɪt]","zurückbringen":"[tsuˈʁʏkˌbʁɪŋən]","streng":"[ʃtʁɛŋ]","freundlich":"[ˈfʁɔɪ̯ntlɪç]","Schulpflicht":"[ˈʃuːlˌpflɪçt]","Schuljahr":"[ˈʃuːlˌjaːɐ̯]","Abschluss":"[ˈapʃlʊs]","Schulabschluss":"[ˈʃuːlˌʔapʃlʊs]","Autowerkstatt":"[ˈaʊ̯toˌvɛʁkʃtat]","Kfz-Mechatroniker":"[ˌkaːʔɛfˈtsɛt meçaˈtʁoːnikɐ]","Abschlussprüfung":"[ˈapʃlʊsˌpʁyːfʊŋ]","hoffen":"[ˈhɔfən]","Langeweile":"[ˈlaŋəˌvaɪ̯lə]","Elternabend":"[ˈɛltɛʁnˌʔaːbn̩t]","Raum":"[ʁaʊ̯m]","gemeinsam":"[ɡəˈmaɪ̯nzaːm]","besprechen":"[bəˈʃpʁɛçən]","Schwimmunterricht":"[ˈʃvɪmʊntɐˌʁɪçt]","pünktlich":"[ˈpʏŋktlɪç]","nachsitzen":"[ˈnaːxˌzɪtsən]","Klassenlehrer":"[ˈklasn̩ˌleːʁɐ]","Jugendliche":"[ˈjuːɡn̩tlɪçə]","Schulzeit":"[ˈʃuːlˌtsaɪ̯t]","Schulweg":"[ˈʃuːlˌveːk]","Lehrerzimmer":"[ˈleːʁɐˌtsɪmɐ]","Sekretariat":"[zekʁetaˈʁi̯aːt]","Schulkantine":"[ˈʃuːlkanˌtiːnə]","Schulbus":"[ˈʃuːlˌbʊs]","Schuldirektor":"[ˈʃuːldiˌʁɛktoːɐ̯]","Schülerlotsen":"[ˈʃyːlɐˌloːtsn̩]","Schulranzen":"[ˈʃuːlˌʁantsn̩]","Brotdose":"[ˈbʁoːtˌdoːzə]","Turnbeutel":"[ˈtʊʁnˌbɔɪ̯tl̩]","Federmäppchen":"[ˈfeːdɐˌmɛpçən]","Schreibblock":"[ˈʃʁaɪ̯pˌblɔk]","Hausaufgabenheft":"[ˈhaʊ̯sˌʔaʊ̯fɡaːbn̩ˌhɛft]","Klassenraum":"[ˈklasn̩ˌʁaʊ̯m]","Computerraum":"[kɔmˈpjuːtɐˌʁaʊ̯m]","Werkraum":"[ˈvɛʁkˌʁaʊ̯m]","Chemieraum":"[çeˈmiːˌʁaʊ̯m]","Turnhalle":"[ˈtʊʁnˌhalə]","Hort":"[hɔʁt]","Schulchor":"[ˈʃuːlˌkoːɐ̯]","Theater-AG":"[teˈaːtɐ ʔaːˈɡeː]","Schultüte":"[ˈʃuːlˌtyːtə]","Schulfest":"[ˈʃuːlˌfɛst]","Abschlussfeier":"[ˈapʃlʊsˌfaɪ̯ɐ]","Pilot":"[piˈloːt]","Krankengymnast":"[ˈkʁaŋkənɡʏmˌnast]","Ordner":"[ˈɔʁdnɐ]","Passwort":"[ˈpasˌvɔʁt]","Mitteilung":"[ˈmɪtˌtaɪ̯lʊŋ]","Prospekt":"[pʁɔsˈpɛkt]",
 "Zimmermädchen":"[ˈtsɪmɐˌmɛːtçən]","Hotelmanager":"[hoˈtɛlˌmɛnɪdʒɐ]","Hotelfachfrau":"[hoˈtɛlˌfaxfʁaʊ̯]","empfangen":"[ɛmˈpfaŋən]","Dienstplan":"[ˈdiːnstˌplaːn]","Zimmerreservierung":"[ˈtsɪmɐʁezɛʁˌviːʁʊŋ]","Auszubildende":"[ˈaʊ̯stsuˌbɪldn̩də]","Fachstudium":"[ˈfaxˌʃtuːdi̯ʊm]","Nebenjob":"[ˈneːbn̩ˌdʒɔp]","Aufenthalt":"[ˈaʊ̯fn̩thalt]","Raucherzimmer":"[ˈʁaʊ̯xɐˌtsɪmɐ]","Nichtraucherzimmer":"[ˈnɪçtˌʁaʊ̯xɐˌtsɪmɐ]","Mineralwasser":"[mineˈʁaːlˌvasɐ]","Zimmerservice":"[ˈtsɪmɐˌsœːɐ̯vɪs]","aussuchen":"[ˈaʊ̯sˌzuːxən]","Handtuch":"[ˈhantˌtuːx]","frei":"[fʁaɪ̯]","Fahrerin":"[ˈfaːʁəʁɪn]","Patient":"[paˈtsi̯ɛnt]","vorlesen":"[ˈfoːɐ̯ˌleːzən]","Kunde":"[ˈkʊndə]","Betriebsversammlung":"[bəˈtʁiːpsfɛɐ̯ˌzamlʊŋ]","Betriebsrat":"[bəˈtʁiːpsˌʁaːt]","Gehalt":"[ɡəˈhalt]","vormittags":"[ˈfoːɐ̯ˌmɪtaːks]","nachmittags":"[ˈnaːxˌmɪtaːks]","Musikschule":"[muˈziːkˌʃuːlə]","Einkaufszentrum":"[ˈaɪ̯nkaʊ̯fsˌtsɛntʁʊm]","sich langweilen":"[ˈlaŋˌvaɪ̯lən]","alleinerziehend":"[aˈlaɪ̯nɛɐ̯ˌtsiːənt]","Ganztagsbetreuung":"[ˈɡantsˌtaːksbəˌtʁɔɪ̯ʊŋ]","übernehmen":"[yːbɐˈneːmən]","individuell":"[ɪndiviˈdu̯ɛl]","flexibel":"[flɛˈksiːbl̩]","Verwandtschaft":"[fɛɐ̯ˈvantʃaft]","Krankenversicherung":"[ˈkʁaŋkənfɛɐ̯ˌzɪçəʁʊŋ]","behindert":"[bəˈhɪndɐt]","anbraten":"[ˈanˌbʁaːtn̩]",
+"App":"[ap]","Bescheid":"[bəˈʃaɪ̯t]","Ahnung":"[ˈaːnʊŋ]","drüben":"[ˈdʁyːbən]","höflich":"[ˈhøːflɪç]","Nachricht":"[ˈnaːxʁɪçt]","Bericht":"[bəˈʁɪçt]","Arbeitskollege":"[ˈaʁbaɪ̯tskɔˌleːɡə]","Mitarbeiter":"[ˈmɪtˌʔaʁbaɪ̯tɐ]","Computerprogramm":"[kɔmˈpjuːtɐpʁoˌɡʁam]","installieren":"[ɪnstaˈliːʁən]","verschieben":"[fɛɐ̯ˈʃiːbən]","Anruf":"[ˈanˌʁuːf]","zurückrufen":"[tsuˈʁʏkˌʁuːfən]","Kaffeeautomat":"[ˈkafeʔaʊ̯toˌmaːt]","Pausenregel":"[ˈpaʊ̯zn̩ˌʁeːɡl̩]","Arzttermin":"[ˈaːɐ̯tstɛɐ̯ˌmiːn]","Gerät":"[ɡəˈʁɛːt]","Getränkeautomat":"[ɡəˈtʁɛŋkəʔaʊ̯toˌmaːt]","Kopierer":"[koˈpiːʁɐ]","Taste":"[ˈtastə]","ausschalten":"[ˈaʊ̯sˌʃaltən]","einwerfen":"[ˈaɪ̯nˌvɛʁfən]","Marktleiter":"[ˈmaʁktˌlaɪ̯tɐ]","Buchhaltung":"[ˈbuːxˌhaltʊŋ]","Technik":"[ˈtɛçnɪk]","Spedition":"[ʃpediˈtsi̯oːn]","einräumen":"[ˈaɪ̯nˌʁɔɪ̯mən]","ausräumen":"[ˈaʊ̯sˌʁɔɪ̯mən]","Münzeinwurf":"[ˈmʏntsˌʔaɪ̯nvʊʁf]","Bedienungsanleitung":"[bəˈdiːnʊŋsˌʔanlaɪ̯tʊŋ]","Kontakt":"[kɔnˈtakt]","Gespräch":"[ɡəˈʃpʁɛːç]","telefonieren":"[telefoˈniːʁən]","Satzzeichen":"[ˈzatsˌtsaɪ̯çən]","Betriebsausflug":"[bəˈtʁiːpsˌʔaʊ̯sfluːk]","geschlossen":"[ɡəˈʃlɔsən]","Treffpunkt":"[ˈtʁɛfˌpʊŋkt]","Eintritt":"[ˈaɪ̯nˌtʁɪt]","Liste":"[ˈlɪstə]","Polizist":"[poliˈtsɪst]","Maurer":"[ˈmaʊ̯ʁɐ]","Dachdecker":"[ˈdaxˌdɛkɐ]","Verputzer":"[fɛɐ̯ˈpʊtsɐ]","Fliesenleger":"[ˈfliːzn̩ˌleːɡɐ]","Schreiner":"[ˈʃʁaɪ̯nɐ]","Gabelstaplerfahrer":"[ˈɡaːbl̩ˌʃtaːplɐˌfaːʁɐ]","Installateur":"[ɪnstalaˈtøːɐ̯]","Baggerfahrer":"[ˈbaɡɐˌfaːʁɐ]","Lkw-Fahrer":"[ˌɛlkaːˈveː ˌfaːʁɐ]","Bauingenieur":"[ˈbaʊ̯ʔɪnʒeˌni̯øːɐ̯]","Maler":"[ˈmaːlɐ]","Gepäckfahrer":"[ɡəˈpɛkˌfaːʁɐ]","Flugbegleiter":"[ˈfluːkbəˌɡlaɪ̯tɐ]","Check-in-Schalter":"[ˈtʃɛkɪnˌʃaltɐ]","Sicherheitskontrolle":"[ˈzɪçɐhaɪ̯tskɔnˌtʁɔlə]","Busfahrer":"[ˈbʊsˌfaːʁɐ]","Bodenpersonal":"[ˈboːdn̩pɛʁzoˌnaːl]","Fluglotse":"[ˈfluːkˌloːtsə]","Vorort":"[ˈfoːɐ̯ˌʔɔʁt]","außerhalb":"[ˈaʊ̯sɐhalp]","verkehrsgünstig":"[fɛɐ̯ˈkeːɐ̯sˌɡʏnstɪç]","Ruhe":"[ˈʁuːə]","lassen":"[ˈlasən]","Kaltmiete":"[ˈkaltˌmiːtə]","Warmmiete":"[ˈvaʁmˌmiːtə]","Obergeschoss":"[ˈoːbɐɡəˌʃɔs]","Einbauküche":"[ˈaɪ̯nbaʊ̯ˌkʏçə]","Kaution":"[kaʊ̯ˈtsi̯oːn]","abbauen":"[ˈapˌbaʊ̯ən]","renovieren":"[ʁenoˈviːʁən]","transportieren":"[tʁanspɔʁˈtiːʁən]","Bauernhaus":"[ˈbaʊ̯ɐnˌhaʊ̯s]","Öffnungszeiten":"[ˈœfnʊŋsˌtsaɪ̯tn̩]",
+"Sicherheit":"[ˈzɪçɐhaɪ̯t]","verantwortlich":"[fɛɐ̯ˈʔantvɔʁtlɪç]","aufpassen":"[ˈaʊ̯fˌpasən]","gratulieren":"[ɡʁatuˈliːʁən]","jammern":"[ˈjamɐn]","plaudern":"[ˈplaʊ̯dɐn]","Freiheit":"[ˈfʁaɪ̯haɪ̯t]","TÜV":"[tyːf]","Wartung":"[ˈvaʁtʊŋ]","ablaufen":"[ˈapˌlaʊ̯fən]","Vorhaben":"[ˈfoːɐ̯haːbən]","Ursache":"[ˈʔuːɐ̯zaːxə]","einstellen":"[ˈaɪ̯nˌʃtɛlən]","Wassermenge":"[ˈvasɐˌmɛŋə]","Laden":"[ˈlaːdən]","Betrieb":"[bəˈtʁiːp]","Unternehmen":"[ʊntɐˈneːmən]","Schlüsselübergabe":"[ˈʃlʏsl̩ʔyːbɐˌɡaːbə]","weder":"[ˈveːdɐ]",
 };
 
 const DIALOGE={
@@ -4377,6 +4528,23 @@ const DIALOGE={
     {tag:"Mitteilungen",col:C.orange,pairs:[
       {q:"Warum hat Herr Neumann wieder angerufen?",                qRu:"Почему господин Нойманн снова позвонил?", a:"Weil er morgen keine Zeit hat und einen neuen Termin braucht.", aRu:"Потому что у него завтра нет времени и нужна новая договорённость.", note:"Mitteilung"},
       {q:"Wann ruft Herr Neumann wieder an?",                       qRu:"Когда господин Нойманн позвонит снова?", a:"Am Donnerstag.", aRu:"В четверг.", note:"Mitteilung"},
+    ]},
+    {tag:"Wie funktioniert das?",col:C.teal,pairs:[
+      {q:"Welcher Kopierer ist neu?",                                qRu:"Какой копир новый?", a:"Dieser Kopierer.", aRu:"Этот копир.", note:"Demonstrativartikel dies-"},
+      {q:"Wie viel Geld muss man in den Getränkeautomaten einwerfen?",qRu:"Сколько денег нужно бросить в автомат с напитками?", a:"50 Cent.", aRu:"50 центов.", note:"einwerfen"},
+      {q:"Wo schaltet man das Gerät ein?",                            qRu:"Где включают прибор?", a:"Hier, auf diese Taste drücken.", aRu:"Здесь, нажать на эту кнопку.", note:"ein Gerät erklären"},
+    ]},
+  ],
+  "A2-L6":[
+    {tag:"Eine Wohnung suchen",col:C.green,pairs:[
+      {q:"Ist die Wohnung noch frei?",                              qRu:"Квартира ещё свободна?", a:"Tut mir leid, sie ist schon vermietet.", aRu:"Извините, она уже сдана.", note:"Wohnungssuche"},
+      {q:"Wie hoch ist die Kaution?",                                qRu:"Какой размер залога?", a:"Das sind zwei Monatsmieten.", aRu:"Это два месячных платежа.", note:"Kaution"},
+      {q:"Was bedeutet 'NK' in der Anzeige?",                        qRu:"Что значит 'NK' в объявлении?", a:"Das sind die Nebenkosten.", aRu:"Это коммунальные платежи.", note:"Abkürzungen"},
+    ]},
+    {tag:"Der Umzug",col:C.orange,pairs:[
+      {q:"Räumt Frau Meyer die Wohnung selbst auf?",                 qRu:"Фрау Мейер сама убирает квартиру?", a:"Nein, sie lässt sie aufräumen.", aRu:"Нет, она поручает это кому-то.", note:"Verb lassen"},
+      {q:"Wo liegt der Löffel?",                                     qRu:"Где лежит ложка?", a:"Der Löffel liegt auf dem Tisch.", aRu:"Ложка лежит на столе.", note:"legen/liegen"},
+      {q:"Wo steht der Stuhl?",                                      qRu:"Где стоит стул?", a:"Der Stuhl steht am Tisch.", aRu:"Стул стоит у стола.", note:"stellen/stehen"},
     ]},
   ],
 };
@@ -8074,6 +8242,40 @@ const Q_A2L5TEST=shuffle([
   {q:"'flexibel' по-русски:",opts:["гибкий","строгий","дорогой","медленный"],ans:0,hint:"individueller und flexibler als eine Kita"},
   {q:"'die Krankenversicherung' по-русски:",opts:["медицинская страховка","больница","аптека","рецепт"],ans:0,hint:"bezahlt Arztkosten"},
   {q:"'behindert' по-русски:",opts:["с ограниченными возможностями","болен","устал","занят"],ans:0,hint:"eine Behinderung haben"},
+  {q:"'Keine Ahnung!' означает:",opts:["без понятия!","конечно!","подожди!","отлично!"],ans:0,hint:"Ich weiß es nicht"},
+  {q:"'Bescheid sagen' означает:",opts:["дать знать, сообщить","молчать","ждать","отказаться"],ans:0,hint:"Sag mir Bescheid"},
+  {q:"'höflich' по-русски:",opts:["вежливый","грубый","строгий","весёлый"],ans:0,hint:"Gegenteil von unhöflich"},
+  {q:"'die Nachricht' по-русски:",opts:["сообщение","отчёт","договор","счёт"],ans:0,hint:"eine Nachricht bekommen"},
+  {q:"'der Bericht' по-русски:",opts:["отчёт","сообщение","звонок","список"],ans:0,hint:"einen Bericht besprechen"},
+  {q:"'installieren' означает:",opts:["устанавливать (программу)","удалять","открывать","закрывать"],ans:0,hint:"die Software installieren"},
+  {q:"'einen Termin verschieben' означает:",opts:["перенести встречу","отменить встречу","назначить встречу","забыть встречу"],ans:0,hint:"auf einen anderen Tag"},
+  {q:"'zurückrufen' означает:",opts:["перезвонить","позвонить впервые","повесить трубку","написать сообщение"],ans:0,hint:"Sie sollen zurückrufen"},
+  {q:"'der Kaffeeautomat' по-русски:",opts:["кофейный автомат","кофеварка","чайник","холодильник"],ans:0,hint:"Automat für Kaffee"},
+  {q:"'das Gerät' по-русски:",opts:["устройство, прибор","письмо","документ","ключ"],ans:0,hint:"ein Gerät erklären"},
+  {q:"'der Kopierer' по-русски:",opts:["копировальный аппарат","принтер","сканер","телефон"],ans:0,hint:"kopiert Papier"},
+  {q:"'die Taste' по-русски:",opts:["кнопка, клавиша","экран","провод","кабель"],ans:0,hint:"auf eine Taste drücken"},
+  {q:"'ausschalten' — противоположность:",opts:["einschalten","ausmachen","anschalten","abschalten"],ans:2,hint:"ein-/ausschalten"},
+  {q:"'die Buchhaltung' по-русски:",opts:["бухгалтерия","отдел кадров","техотдел","секретариат"],ans:0,hint:"Abteilung für Geld/Rechnungen"},
+  {q:"'die Spedition' по-русски:",opts:["транспортная компания","почта","банк","страховая компания"],ans:0,hint:"transportiert Waren"},
+  {q:"'einräumen' означает:",opts:["расставлять, размещать (на полке)","выбрасывать","терять","ломать"],ans:0,hint:"das Regal einräumen"},
+  {q:"'telefonieren' означает:",opts:["звонить по телефону","писать письмо","встречаться","опаздывать"],ans:0,hint:"mit jemandem telefonieren"},
+  {q:"'geschlossen' — противоположность:",opts:["offen","zu","kaputt","frei"],ans:0,hint:"geöffnet ↔ geschlossen"},
+  {q:"'der Treffpunkt' по-русски:",opts:["место встречи","место работы","место отдыха","место жительства"],ans:0,hint:"Treffpunkt ist der Bahnhof"},
+  {q:"'der Eintritt' по-русски:",opts:["вход, входной билет","выход","отдых","путешествие"],ans:0,hint:"Eintritt für das Museum"},
+  {q:"'der/die Polizist/in' по-русски:",opts:["полицейский","пожарный","врач","учитель"],ans:0,hint:"Polizei"},
+  {q:"'der Maurer' по-русски:",opts:["каменщик","плотник","маляр","сантехник"],ans:0,hint:"baut mit Steinen"},
+  {q:"'der Dachdecker' по-русски:",opts:["крышевщик","штукатур","плиточник","электрик"],ans:0,hint:"macht das Dach"},
+  {q:"'der Installateur' по-русски:",opts:["сантехник, монтажник","водитель","инженер","бухгалтер"],ans:0,hint:"installiert Wasserleitungen"},
+  {q:"'der Flugbegleiter' по-русски:",opts:["бортпроводник","пилот","диспетчер","механик"],ans:0,hint:"im Flugzeug, hilft den Passagieren"},
+  {q:"'der Fluglotse' по-русски:",opts:["авиадиспетчер","пилот","бортпроводник","механик"],ans:0,hint:"kontrolliert Flugzeuge vom Boden"},
+  {q:"'das Bodenpersonal' по-русски:",opts:["наземный персонал","летающий персонал","охрана","уборщики"],ans:0,hint:"am Flughafen, nicht im Flugzeug"},
+  {q:"'die Sicherheit' по-русски:",opts:["безопасность","опасность","страховка","зарплата"],ans:0,hint:"sicher sein"},
+  {q:"'verantwortlich' по-русски:",opts:["ответственный","безответственный","занятой","строгий"],ans:0,hint:"verantwortlich sein für"},
+  {q:"'jammern' означает:",opts:["жаловаться, ныть","радоваться","молчать","спорить"],ans:0,hint:"immer jammern"},
+  {q:"'plaudern' означает:",opts:["болтать","молчать","кричать","петь"],ans:0,hint:"gerne plaudern"},
+  {q:"'der TÜV' — это:",opts:["техосмотр автомобиля","автомастерская","автомагазин","страховка на авто"],ans:0,hint:"Technischer Überwachungsverein"},
+  {q:"'ablaufen' (Frist) означает:",opts:["истекать (о сроке)","начинаться","продлеваться","ускоряться"],ans:0,hint:"die Frist läuft ab"},
+  {q:"'Keine Ursache!' означает:",opts:["не за что!","конечно нет!","без причины!","обязательно!"],ans:0,hint:"Antwort auf 'Danke'"},
 ]);
 
 const LUECKEN_A2L5=shuffle([
@@ -8083,6 +8285,9 @@ const LUECKEN_A2L5=shuffle([
   {sent:"___ du mir bitte helfen?' (Не мог бы ты, вежливо)",opts:["Könntest","Kannst","Musst","Willst"],ans:0,ru:"Не мог бы ты мне помочь?",hint:"höfliche Bitte, Konjunktiv II"},
   {sent:"___ Sie Frau Abiska bitte einen Schlüssel geben?' (Не могли бы Вы)",opts:["Könnten","Können","Müssten","Sollen"],ans:0,ru:"Не могли бы Вы дать фрау Абиске ключ?",hint:"höfliche Bitte formell"},
   {sent:"Er arbeitet ___ Erzieher.' (в качестве, работает кем)",opts:["als","wie","für","bei"],ans:0,ru:"Он работает воспитателем.",hint:"Präposition als, без артикля"},
+  {sent:"Welcher Kopierer ist neu? — ___ Kopierer.' (Этот)",opts:["Dieser","Diese","Dieses","Diesen"],ans:0,ru:"Какой копир новый? — Этот копир.",hint:"m Nominativ: dieser"},
+  {sent:"Ich nehme ___ Kopierer.' (этот, Akkusativ)",opts:["diesen","dieser","dieses","diese"],ans:0,ru:"Я беру этот копир.",hint:"m Akkusativ: diesen"},
+  {sent:"Welche Taste ist die Start-Taste? — ___ hier.' (Эта)",opts:["Diese","Dieser","Dieses","Diesen"],ans:0,ru:"Какая кнопка стартовая? — Эта.",hint:"f: diese"},
 ]);
 
 const ZUORD_A2L5=[
@@ -8130,6 +8335,73 @@ const ZUORD_A2L5=[
   {de:"die Krankenversicherung",ru:"медицинская страховка"},
   {de:"behindert",ru:"с ограниченными возможностями"},
   {de:"anbraten",ru:"обжаривать"},
+  {de:"die App",ru:"приложение"},
+  {de:"der Bescheid",ru:"весть, ответ"},
+  {de:"die Ahnung",ru:"понятие"},
+  {de:"höflich",ru:"вежливый"},
+  {de:"die Nachricht",ru:"сообщение"},
+  {de:"der Bericht",ru:"отчёт"},
+  {de:"der Mitarbeiter",ru:"сотрудник"},
+  {de:"das Computerprogramm",ru:"компьютерная программа"},
+  {de:"installieren",ru:"устанавливать"},
+  {de:"verschieben",ru:"переносить (встречу)"},
+  {de:"der Anruf",ru:"звонок"},
+  {de:"zurückrufen",ru:"перезванивать"},
+  {de:"der Kaffeeautomat",ru:"кофейный автомат"},
+  {de:"der Arzttermin",ru:"запись к врачу"},
+  {de:"das Gerät",ru:"устройство, прибор"},
+  {de:"der Getränkeautomat",ru:"автомат с напитками"},
+  {de:"der Kopierer",ru:"копир"},
+  {de:"die Taste",ru:"кнопка, клавиша"},
+  {de:"ausschalten",ru:"выключать"},
+  {de:"einwerfen",ru:"бросать (монету)"},
+  {de:"der Marktleiter",ru:"директор магазина"},
+  {de:"die Buchhaltung",ru:"бухгалтерия"},
+  {de:"die Technik",ru:"техника (отдел)"},
+  {de:"die Spedition",ru:"транспортная компания"},
+  {de:"einräumen",ru:"расставлять"},
+  {de:"ausräumen",ru:"разгружать"},
+  {de:"der Kontakt",ru:"контакт"},
+  {de:"das Gespräch",ru:"разговор"},
+  {de:"telefonieren",ru:"звонить по телефону"},
+  {de:"geschlossen",ru:"закрытый"},
+  {de:"der Treffpunkt",ru:"место встречи"},
+  {de:"der Eintritt",ru:"вход, входной билет"},
+  {de:"die Liste",ru:"список"},
+  {de:"der Polizist",ru:"полицейский"},
+  {de:"der Maurer",ru:"каменщик"},
+  {de:"der Dachdecker",ru:"крышевщик"},
+  {de:"der Verputzer",ru:"штукатур"},
+  {de:"der Fliesenleger",ru:"плиточник"},
+  {de:"der Schreiner",ru:"столяр"},
+  {de:"der Installateur",ru:"сантехник, монтажник"},
+  {de:"der Baggerfahrer",ru:"экскаваторщик"},
+  {de:"der Lkw-Fahrer",ru:"водитель грузовика"},
+  {de:"der Bauingenieur",ru:"инженер-строитель"},
+  {de:"der Maler",ru:"маляр"},
+  {de:"der Flugbegleiter",ru:"бортпроводник"},
+  {de:"die Sicherheitskontrolle",ru:"контроль безопасности"},
+  {de:"der Busfahrer",ru:"водитель автобуса"},
+  {de:"das Bodenpersonal",ru:"наземный персонал"},
+  {de:"der Fluglotse",ru:"авиадиспетчер"},
+  {de:"die Sicherheit",ru:"безопасность"},
+  {de:"verantwortlich",ru:"ответственный"},
+  {de:"jammern",ru:"жаловаться, ныть"},
+  {de:"plaudern",ru:"болтать"},
+  {de:"die Freiheit",ru:"свобода"},
+  {de:"der TÜV",ru:"техосмотр"},
+  {de:"die Wartung",ru:"техобслуживание"},
+  {de:"ablaufen",ru:"истекать (о сроке)"},
+  {de:"das Vorhaben",ru:"план, замысел"},
+  {de:"die Ursache",ru:"причина"},
+  {de:"einstellen",ru:"настраивать"},
+  {de:"der Betrieb",ru:"предприятие"},
+  {de:"das Unternehmen",ru:"предприятие, компания"},
+  {de:"aufpassen",ru:"присматривать"},
+  {de:"gratulieren",ru:"поздравлять"},
+  {de:"die Wassermenge",ru:"количество воды"},
+  {de:"der Laden",ru:"магазин, лавка"},
+  {de:"weder",ru:"ни… (weder … noch)"},
 ];
 
 const WSENTS_A2L5=[
@@ -8138,6 +8410,8 @@ const WSENTS_A2L5=[
   {w:["Ich","weiß","es","nicht",",","aber","Frau","Fink","weiß","es","bestimmt","."],ru:"Я этого не знаю, но фрау Финк точно знает."},
   {w:["Könnten","Sie","mir","bitte","helfen","?"],ru:"Не могли бы Вы мне помочь?"},
   {w:["Er","arbeitet","als","Erzieher","."],ru:"Он работает воспитателем."},
+  {w:["Welcher","Kopierer","ist","neu","?"],ru:"Какой копир новый?"},
+  {w:["Drücken","Sie","auf","diese","Taste","."],ru:"Нажмите на эту кнопку."},
 ];
 
 function GrosserTestA2L5(){return <GrosserTestContainer rounds={[
@@ -8145,6 +8419,66 @@ function GrosserTestA2L5(){return <GrosserTestContainer rounds={[
   {icon:"📝",label:"Lückentext",    col:C.blue,   component:()=><LueckenQuiz items={LUECKEN_A2L5}/>},
   {icon:"🔗",label:"Wortschatz",    col:C.green,  component:()=><Zuordnung pairs={ZUORD_A2L5} leftLabel="Wort" rightLabel="Bedeutung"/>},
   {icon:"🔤",label:"Wortstellung",  col:C.orange, component:()=><WortstellungGame sents={WSENTS_A2L5}/>},
+]}/>;}
+
+const Q_A2L6TEST=shuffle([
+  {q:"'der Vorort' по-русски:",opts:["предместье, окраина","центр города","деревня","район"],ans:0,hint:"in einem Vorort wohnen"},
+  {q:"'außerhalb' по-русски:",opts:["за пределами, вне (города)","в центре","рядом","внутри"],ans:0,hint:"außerhalb wohnen"},
+  {q:"'verkehrsgünstig' по-русски:",opts:["удобно расположенный (для транспорта)","дорогой","тихий","новый"],ans:0,hint:"gute Verkehrsmittel in der Nähe"},
+  {q:"'die Ruhe' по-русски:",opts:["тишина, покой","шум","движение","работа"],ans:0,hint:"Ruhe haben"},
+  {q:"'lassen' (etwas machen lassen) означает:",opts:["поручать кому-то что-то сделать","делать самому","запрещать","забывать"],ans:0,hint:"sie lässt es machen"},
+  {q:"'die Kaltmiete' по-русски:",opts:["аренда без отопления","аренда с отоплением","залог","коммунальные платежи"],ans:0,hint:"KM"},
+  {q:"'die Warmmiete' по-русски:",opts:["аренда с отоплением и коммунальными","аренда без отопления","залог","ремонт"],ans:0,hint:"WM = KM + NK"},
+  {q:"'das Obergeschoss' по-русски:",opts:["верхний этаж","первый этаж","подвал","крыша"],ans:0,hint:"1. OG"},
+  {q:"'die Einbauküche' по-русски:",opts:["встроенная кухня","кухонная мебель","обычная кухня","маленькая кухня"],ans:0,hint:"EBK"},
+  {q:"'die Kaution' по-русски:",opts:["залог (депозит)","аренда","коммунальные платежи","страховка"],ans:0,hint:"meist 2-3 Monatsmieten"},
+  {q:"'abbauen' (Möbel) означает:",opts:["разбирать, демонтировать","собирать","покупать","ломать"],ans:0,hint:"das Gegenteil von aufbauen"},
+  {q:"'renovieren' по-русски:",opts:["ремонтировать","строить","продавать","красить только"],ans:0,hint:"die Wohnung renovieren"},
+  {q:"'transportieren' по-русски:",opts:["перевозить","покупать","чинить","убирать"],ans:0,hint:"die Möbel transportieren"},
+  {q:"'das Bauernhaus' по-русски:",opts:["крестьянский дом","многоэтажка","таунхаус","замок"],ans:0,hint:"auf dem Land"},
+  {q:"'die Öffnungszeiten' по-русски:",opts:["часы работы","выходные дни","расписание уроков","рабочие дни"],ans:0,hint:"von 8 bis 20 Uhr"},
+  {q:"'NK' в объявлении означает:",opts:["Nebenkosten","Nachtmiete","Neubau","Nachbarn"],ans:0,hint:"коммунальные платежи"},
+  {q:"'Der Löffel liegt auf dem Tisch.' — почему 'liegt', а не 'steht'?",opts:["ложка лежит горизонтально","ложка стоит вертикально","это ошибка","оба варианта верны"],ans:0,hint:"liegen = горизонтальное положение"},
+]);
+
+const LUECKEN_A2L6=shuffle([
+  {sent:"Ich wohne gern ___ der Stadt, weil es dort ruhiger ist.' (за пределами)",opts:["außerhalb","innerhalb","zentral","verkehrsgünstig"],ans:0,ru:"Я люблю жить за городом, там спокойнее.",hint:"außerhalb + Genitiv"},
+  {sent:"Frau Meyer bügelt ihre Hemden nicht selbst, sie ___ sie bügeln.' (поручает)",opts:["lässt","macht","lasst","ließ"],ans:0,ru:"Фрау Мейер не гладит рубашки сама, она поручает это.",hint:"lässt + Infinitiv"},
+  {sent:"Die ___ ist meist zwei oder drei Monatsmieten.' (залог)",opts:["Kaution","Miete","Nebenkosten","Anzahlung"],ans:0,ru:"Залог обычно составляет две-три месячных платы.",hint:"Kaution"},
+  {sent:"Ich stelle den Stuhl an den Tisch. Jetzt ___ der Stuhl am Tisch.' (стоит)",opts:["steht","liegt","hängt","sitzt"],ans:0,ru:"Я ставлю стул к столу. Теперь стул стоит у стола.",hint:"stellen → stehen"},
+]);
+
+const ZUORD_A2L6=[
+  {de:"der Vorort",ru:"предместье, окраина"},
+  {de:"außerhalb",ru:"за пределами (города)"},
+  {de:"verkehrsgünstig",ru:"удобно расположенный"},
+  {de:"die Ruhe",ru:"тишина, покой"},
+  {de:"lassen",ru:"поручать (что-то сделать)"},
+  {de:"die Kaltmiete",ru:"аренда без отопления"},
+  {de:"die Warmmiete",ru:"аренда с отоплением"},
+  {de:"das Obergeschoss",ru:"верхний этаж"},
+  {de:"die Einbauküche",ru:"встроенная кухня"},
+  {de:"die Kaution",ru:"залог"},
+  {de:"abbauen",ru:"демонтировать, разбирать"},
+  {de:"renovieren",ru:"ремонтировать"},
+  {de:"transportieren",ru:"перевозить"},
+  {de:"das Bauernhaus",ru:"крестьянский дом"},
+  {de:"die Öffnungszeiten",ru:"часы работы"},
+  {de:"die Schlüsselübergabe",ru:"передача ключей"},
+];
+
+const WSENTS_A2L6=[
+  {w:["Ist","die","Wohnung","noch","frei","?"],ru:"Квартира ещё свободна?"},
+  {w:["Sie","lässt","die","Kinder","vom","Kindergarten","abholen","."],ru:"Она поручает забрать детей из детского сада."},
+  {w:["Der","Löffel","liegt","auf","dem","Tisch","."],ru:"Ложка лежит на столе."},
+  {w:["Der","Stuhl","steht","am","Tisch","."],ru:"Стул стоит у стола."},
+];
+
+function GrosserTestA2L6(){return <GrosserTestContainer rounds={[
+  {icon:"🎯",label:"Quiz",          col:C.yellow, component:()=><Quiz questions={Q_A2L6TEST}/>},
+  {icon:"📝",label:"Lückentext",    col:C.blue,   component:()=><LueckenQuiz items={LUECKEN_A2L6}/>},
+  {icon:"🔗",label:"Wortschatz",    col:C.green,  component:()=><Zuordnung pairs={ZUORD_A2L6} leftLabel="Wort" rightLabel="Bedeutung"/>},
+  {icon:"🔤",label:"Wortstellung",  col:C.orange, component:()=><WortstellungGame sents={WSENTS_A2L6}/>},
 ]}/>;}
 
 
@@ -12541,6 +12875,24 @@ function TapEx({de,ru,col=C.text,style={}}){
   );
 }
 
+// Тапаемая "плитка" слова: иконка (замена картинки) + слово, по нажатию раскрывается перевод.
+function TapChip({icon,de,ru,col=C.blue}){
+  const [open,setOpen]=useState(false);
+  return (
+    <div onClick={()=>setOpen(s=>!s)}
+      style={{cursor:"pointer",borderRadius:14,padding:"8px 13px",display:"inline-flex",
+        flexDirection:"column",alignItems:"center",gap:3,minWidth:74,
+        background:open?col+"33":col+"15",
+        border:`1px solid ${open?col+"77":col+"33"}`,transition:"background .15s"}}>
+      <div style={{display:"flex",alignItems:"center",gap:6}}>
+        {icon&&<span style={{fontSize:17}}>{icon}</span>}
+        <span style={{fontSize:12,fontWeight:700,color:col}}>{de}</span>
+      </div>
+      <div style={{fontSize:11,color:C.muted,minHeight:13}}>{open?ru:""}</div>
+    </div>
+  );
+}
+
 function T12A(){
   const [tab,setTab]=useState("kleidung");
   const kleidung=[
@@ -15015,8 +15367,21 @@ function T_A2L5A(){
   ];
   const wissenKonj=[["ich","weiß"],["du","weißt"],["er/es/sie","weiß"],["wir","wissen"],["ihr","wisst"],["sie/Sie","wissen"]];
   const dativPron=[["ich","mir"],["du","dir"],["er/es","ihm"],["sie","ihr"],["wir","uns"],["ihr","euch"],["sie/Sie","ihnen/Ihnen"]];
-  const buroWort=["der Ordner","das Passwort","der Drucker","der Schlüssel","die Rechnung","die Überweisung"];
-  const berufe=["der Pilot / die Pilotin","der Ingenieur / die Ingenieurin","der/die Krankengymnast/in","der/die Erzieher/in","der/die Fahrer/in"];
+  const buroWort=[
+    {icon:"📁",de:"der Ordner",ru:"папка-скоросшиватель"},
+    {icon:"🔒",de:"das Passwort",ru:"пароль"},
+    {icon:"🖨️",de:"der Drucker",ru:"принтер"},
+    {icon:"🔑",de:"der Schlüssel",ru:"ключ"},
+    {icon:"🧾",de:"die Rechnung",ru:"счёт"},
+    {icon:"💸",de:"die Überweisung",ru:"банковский перевод"},
+  ];
+  const berufe=[
+    {icon:"✈️",de:"der Pilot / die Pilotin",ru:"пилот"},
+    {icon:"👷",de:"der Ingenieur / die Ingenieurin",ru:"инженер"},
+    {icon:"🏋️",de:"der/die Krankengymnast/in",ru:"физиотерапевт"},
+    {icon:"🧒",de:"der/die Erzieher/in",ru:"воспитатель"},
+    {icon:"🚗",de:"der/die Fahrer/in",ru:"водитель"},
+  ];
   return (
     <div style={{display:"flex",flexDirection:"column",gap:10}}>
       <Box c={C.blue}>
@@ -15073,13 +15438,14 @@ function T_A2L5A(){
         )}
         {tab==="wortschatz"&&(
           <div>
+            <div style={{fontSize:11,color:C.muted,marginBottom:8}}>Нажми на слово — появится перевод.</div>
             <div style={{fontSize:12,fontWeight:700,color:C.muted,margin:"0 0 6px",textTransform:"uppercase",letterSpacing:0.5}}>Im Büro</div>
-            <div style={{display:"flex",flexWrap:"wrap",gap:6,marginBottom:12}}>
-              {buroWort.map((w,i)=><span key={i} style={{background:C.blueBg,color:C.blue,borderRadius:20,padding:"6px 12px",fontSize:12,fontWeight:600}}>{w}</span>)}
+            <div style={{display:"flex",flexWrap:"wrap",gap:8,marginBottom:14}}>
+              {buroWort.map((w,i)=><TapChip key={i} icon={w.icon} de={w.de} ru={w.ru} col={C.blue}/>)}
             </div>
             <div style={{fontSize:12,fontWeight:700,color:C.muted,margin:"0 0 6px",textTransform:"uppercase",letterSpacing:0.5}}>Berufe (Beispiele)</div>
-            <div style={{display:"flex",flexWrap:"wrap",gap:6,marginBottom:12}}>
-              {berufe.map((w,i)=><span key={i} style={{background:C.ov4,borderRadius:20,padding:"6px 12px",fontSize:12,color:C.text}}>{w}</span>)}
+            <div style={{display:"flex",flexWrap:"wrap",gap:8,marginBottom:12}}>
+              {berufe.map((w,i)=><TapChip key={i} icon={w.icon} de={w.de} ru={w.ru} col={C.teal}/>)}
             </div>
             <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,borderRadius:10,padding:"11px 13px"}}>
               <div style={{fontWeight:800,fontSize:13,color:C.orange,marginBottom:6}}>Präposition als</div>
@@ -15125,7 +15491,7 @@ function T_A2L5B(){
       <Box c={C.orange}>
         <H c={C.orange}>📩 A2-L5B · Mitteilungen</H>
         <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
-          {[["formen","Formell/informell"],["bitten","Höfliche Bitten"],["beispiele","Beispiel-Mitteilungen"]].map(([key,lbl])=>(
+          {[["formen","Formell / informell"],["bitten","Höfliche Bitten"],["beispiele","Beispiel-Mitteilungen"]].map(([key,lbl])=>(
             <button key={key} onClick={()=>setTab(key)}
               style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
                 fontSize:12,fontWeight:700,textAlign:"center",
@@ -15176,6 +15542,255 @@ function T_A2L5B(){
               <div key={i} style={{background:C.ov4,borderRadius:8,padding:"9px 11px",marginBottom:6}}>
                 <div style={{fontSize:11,color:C.muted,marginBottom:3}}>Von {m.von} für {m.an}:</div>
                 <div style={{fontSize:13,color:C.text,lineHeight:1.6}}>{m.text}</div>
+              </div>
+            ))}
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
+const Q_A2L5C=[
+  {q:"'dieser Kopierer' — какой падеж/род?",opts:["Nominativ, maskulin","Akkusativ, maskulin","Nominativ, neutrum","Dativ, feminin"],ans:0,hint:"m: dieser"},
+  {q:"'dieses Fach' — какой род?",opts:["neutrum (das Fach)","maskulin","feminin","Plural"],ans:0,hint:"n: dieses"},
+  {q:"'diese Taste' — какой род?",opts:["feminin (die Taste)","maskulin","neutrum","Plural"],ans:0,hint:"f: diese"},
+  {q:"'Ich nehme diesen Kopierer.' — падеж 'diesen'?",opts:["Akkusativ","Nominativ","Dativ","Genitiv"],ans:0,hint:"m Akk: diesen"},
+  {q:"'Welche Taste ist die Start-Taste?' — 'Diese hier.' Здесь 'diese' заменяет:",opts:["die Taste","der Kopierer","das Fach","die Fächer"],ans:0,hint:"feminin"},
+  {q:"'Wo schaltet man das Gerät ein?' — это вопрос о том, как:",opts:["включить прибор","выключить прибор","объяснить работу","заплатить"],ans:0,hint:"einschalten"},
+  {q:"'Wie viel Geld muss man einwerfen?' — 'einwerfen' означает:",opts:["бросать (монету)","вынимать","считать","менять"],ans:0,hint:"Münzeinwurf"},
+  {q:"'der Getränkeautomat' по-русски:",opts:["автомат с напитками","кофемашина","холодильник","кассовый аппарат"],ans:0,hint:"Becher, Münzeinwurf, Taste"},
+];
+
+function T_A2L5C(){
+  const [tab,setTab]=useState("dies");
+  const diesTable=[
+    {kasus:"Nominativ",m:"dieser Kopierer",n:"dieses Fach",f:"diese Taste",pl:"diese Fächer"},
+    {kasus:"Akkusativ",m:"diesen Kopierer",n:"dieses Fach",f:"diese Taste",pl:"diese Fächer"},
+  ];
+  const geraetFragen=[
+    {q:"Wo schaltet man das Gerät ein/aus?",a:"Hier."},
+    {q:"Wohin muss man den Becher stellen?",a:"Hierhin."},
+    {q:"Wie viel Geld muss man einwerfen?",a:"… Euro."},
+    {q:"Wo muss man das Geld einwerfen?",a:"Man muss es hier einwerfen."},
+    {q:"Welche Taste muss man drücken, wenn man …?",a:"Diese hier."},
+  ];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.teal}>
+        <H c={C.teal}>⚙️ A2-L5C · Wie funktioniert das?</H>
+        <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
+          {[["dies","Demonstrativartikel dies-"],["geraet","Ein Gerät erklären"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,textAlign:"center",
+                border:`1px solid ${tab===key?C.teal+"55":C.border}`,
+                background:tab===key?C.teal+"22":C.ov3,
+                color:tab===key?C.teal:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="dies"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,marginBottom:10,lineHeight:1.6}}>
+              dies- склоняется как определённый артикль (der/das/die), но с окончанием -es у среднего рода в Nom./Akk.:
+            </div>
+            <div style={{overflowX:"auto",marginBottom:10}}>
+              <table style={{width:"100%",borderCollapse:"collapse",fontSize:12}}>
+                <thead>
+                  <tr style={{borderBottom:`1px solid ${C.border}`}}>
+                    <th style={{textAlign:"left",padding:"5px 4px",color:C.muted}}></th>
+                    <th style={{textAlign:"left",padding:"5px 4px",color:C.teal}}>m</th>
+                    <th style={{textAlign:"left",padding:"5px 4px",color:C.teal}}>n</th>
+                    <th style={{textAlign:"left",padding:"5px 4px",color:C.teal}}>f</th>
+                    <th style={{textAlign:"left",padding:"5px 4px",color:C.teal}}>Pl.</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {diesTable.map((d,i)=>(
+                    <tr key={i} style={{borderBottom:`1px solid ${C.border}`}}>
+                      <td style={{padding:"5px 4px",color:C.muted,fontWeight:700}}>{d.kasus}</td>
+                      <td style={{padding:"5px 4px",color:C.text}}>{d.m}</td>
+                      <td style={{padding:"5px 4px",color:C.text}}>{d.n}</td>
+                      <td style={{padding:"5px 4px",color:C.text}}>{d.f}</td>
+                      <td style={{padding:"5px 4px",color:C.text}}>{d.pl}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <TapEx de="Welcher Kopierer ist neu? — Dieser Kopierer." ru="Какой копир новый? — Этот копир." col={C.teal} style={{marginBottom:5}}/>
+            <TapEx de="Welche Taste ist die Start-Taste? — Diese Taste." ru="Какая кнопка стартовая? — Эта кнопка." col={C.teal}/>
+          </div>
+        )}
+        {tab==="geraet"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,marginBottom:10,lineHeight:1.6}}>
+              Устойчивые фразы, чтобы спросить и объяснить, как работает прибор:
+            </div>
+            {geraetFragen.map((g,i)=>(
+              <div key={i} style={{background:C.ov4,borderRadius:8,padding:"8px 11px",marginBottom:5}}>
+                <div style={{fontSize:13,fontWeight:700,color:C.teal}}>{g.q}</div>
+                <div style={{fontSize:12,color:C.muted,marginTop:2}}>— {g.a}</div>
+              </div>
+            ))}
+            <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,borderRadius:10,padding:"11px 13px",marginTop:8}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.orange,marginBottom:6}}>Beispiel: der Getränkeautomat</div>
+              <div style={{fontSize:12,color:C.text,lineHeight:1.7}}>Zuerst werfen Sie 50 Cent ein. Dann nehmen Sie diesen kleinen Becher. Danach drücken Sie auf diese Taste. Wenn Sie das Getränk mit Milch oder Zucker möchten, drücken Sie diese oder diese Taste. Stellen Sie den Becher hierhin.</div>
+            </div>
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
+const Q_A2L6A=[
+  {q:"'NK' в объявлении о квартире означает:",opts:["Nebenkosten (коммунальные платежи)","Neubau","Nachbarn","Nachtmiete"],ans:0,hint:"NK: Nebenkosten"},
+  {q:"'KM' означает:",opts:["Kaltmiete (аренда без отопления)","Kaution","Küchenmöbel","Kellermiete"],ans:0,hint:"KM: Kaltmiete"},
+  {q:"'WM' означает:",opts:["Warmmiete (аренда с отоплением)","Wohnungsmiete","Wochenmiete","Wandmalerei"],ans:0,hint:"WM: Warmmiete"},
+  {q:"'EG' означает:",opts:["Erdgeschoss (первый этаж)","Eingang","Einbauküche","Endgeschoss"],ans:0,hint:"EG: Erdgeschoss"},
+  {q:"'BLK' означает:",opts:["Balkon","Blockhaus","Bad und Klo","Bauklasse"],ans:0,hint:"BLK: Balkon"},
+  {q:"'EBK' означает:",opts:["Einbauküche (встроенная кухня)","Erdbeben-Klasse","Eingangsbereich","Erstbewohnerkosten"],ans:0,hint:"EBK: Einbauküche"},
+  {q:"'Zi.' означает:",opts:["Zimmer (комната)","Ziegel","Zinsen","Zielgruppe"],ans:0,hint:"Zi.: Zimmer"},
+  {q:"'qm' означает:",opts:["Quadratmeter","Quartal","Qualität","Quittung"],ans:0,hint:"qm: Quadratmeter"},
+  {q:"Разница между Kaltmiete и Warmmiete:",opts:["Warmmiete включает отопление и коммунальные платежи","они одинаковы","Kaltmiete дороже","Warmmiete только летом"],ans:0,hint:"KM + NK = WM"},
+  {q:"'die Kaution' по-русски:",opts:["залог (депозит)","аренда","коммунальные платежи","договор"],ans:0,hint:"meist 2-3 Monatsmieten"},
+  {q:"'Ist die Wohnung noch frei?' — ожидаемый ответ, если квартиру уже сняли:",opts:["Tut mir leid, sie ist schon vermietet.","Ja, kommen Sie morgen.","Nein, sie ist neu.","Ja, das ist die Kaution."],ans:0,hint:"vermietet = уже сдана"},
+];
+
+function T_A2L6A(){
+  const [tab,setTab]=useState("abk");
+  const abkuerzungen=[
+    {abk:"NK",voll:"Nebenkosten",ru:"коммунальные платежи"},
+    {abk:"KM",voll:"Kaltmiete",ru:"аренда без отопления"},
+    {abk:"WM",voll:"Warmmiete",ru:"аренда с отоплением"},
+    {abk:"MM",voll:"Monatsmieten",ru:"месячные платежи (Kaution)"},
+    {abk:"EG",voll:"Erdgeschoss",ru:"первый этаж"},
+    {abk:"1.OG",voll:"1. Obergeschoss",ru:"2-й этаж (1-й над первым)"},
+    {abk:"Zi.",voll:"Zimmer",ru:"комната"},
+    {abk:"qm",voll:"Quadratmeter",ru:"квадратный метр"},
+    {abk:"BLK",voll:"Balkon",ru:"балкон"},
+    {abk:"EBK",voll:"Einbauküche",ru:"встроенная кухня"},
+    {abk:"ZH",voll:"Zentralheizung",ru:"центральное отопление"},
+    {abk:"Kü.",voll:"Küche",ru:"кухня"},
+    {abk:"Tel.",voll:"Telefonnummer",ru:"номер телефона"},
+  ];
+  const anzeigen=[
+    {text:"3-Zi.-Wohnung in Haus mit 6 Parteien, 72 qm, 1. OG, BLK und EBK, KM 650 €, 150 € NK.",ru:"3-комнатная квартира в доме на 6 семей, 72 м², 2-й этаж, с балконом и встроенной кухней, аренда без отопления 650 €, коммунальные 150 €."},
+    {text:"4 Zimmer, Kü., Bad, im EG, Terrasse und Garten, 120 m², ZH, WM 940 €, 3 MM Kaution.",ru:"4 комнаты, кухня, ванная, на первом этаже, терраса и сад, 120 м², центральное отопление, аренда с отоплением 940 €, залог — 3 месячных платежа."},
+  ];
+  const besichtigen=[
+    {q:"Ist die Wohnung noch frei?",a:"Tut mir leid, sie ist schon vermietet."},
+    {q:"Wie hoch ist die Kaution?",a:"Das sind zwei Monatsmieten."},
+    {q:"Wann kann ich die Wohnung besichtigen?",a:"Am Freitag ab 14 Uhr bin ich in der Wohnung."},
+  ];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.green}>
+        <H c={C.green}>🏠 A2-L6A · Eine Wohnung suchen</H>
+        <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
+          {[["abk","Abkürzungen"],["anzeigen","Wohnungsanzeigen"],["besichtigen","Wohnung besichtigen"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,textAlign:"center",
+                border:`1px solid ${tab===key?C.green+"55":C.border}`,
+                background:tab===key?C.green+"22":C.ov3,
+                color:tab===key?C.green:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="abk"&&(
+          <div>
+            <div style={{fontSize:12,color:C.muted,marginBottom:10}}>В объявлениях о квартирах в Германии почти всё сокращают:</div>
+            {abkuerzungen.map((a,i)=>(
+              <div key={i} style={{display:"flex",gap:10,alignItems:"center",background:C.ov4,borderRadius:8,padding:"7px 11px",marginBottom:4}}>
+                <div style={{width:44,fontWeight:800,fontSize:13,color:C.green}}>{a.abk}</div>
+                <div style={{flex:1,fontWeight:700,fontSize:13,color:C.text}}>{a.voll}</div>
+                <div style={{fontSize:11,color:C.muted}}>{a.ru}</div>
+              </div>
+            ))}
+          </div>
+        )}
+        {tab==="anzeigen"&&(
+          <div>
+            {anzeigen.map((a,i)=>(
+              <TapEx key={i} de={a.text} ru={a.ru} col={C.green} style={{marginBottom:8}}/>
+            ))}
+          </div>
+        )}
+        {tab==="besichtigen"&&(
+          <div>
+            {besichtigen.map((b,i)=>(
+              <div key={i} style={{background:C.ov4,borderRadius:8,padding:"8px 11px",marginBottom:5}}>
+                <div style={{fontSize:13,fontWeight:700,color:C.green}}>{b.q}</div>
+                <div style={{fontSize:12,color:C.muted,marginTop:2}}>— {b.a}</div>
+              </div>
+            ))}
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
+const Q_A2L6B=[
+  {q:"'Frau Meyer lässt sie abholen.' — глагол 'lassen' здесь означает:",opts:["поручает кому-то сделать; не делает сама","запрещает","разрешает уйти","оставляет забытым"],ans:0,hint:"jemanden etwas machen lassen"},
+  {q:"Структура 'lassen': 'Sie lässt ihre Hemden bügeln.' Кто гладит рубашки?",opts:["кто-то другой (прачечная/помощник)","она сама","никто","её муж всегда"],ans:0,hint:"lassen + Infinitiv = поручить"},
+  {q:"'Der Löffel liegt auf dem Tisch.' — глагол 'liegen' используется, потому что ложка лежит:",opts:["горизонтально","вертикально","в воздухе","в шкафу"],ans:0,hint:"liegen = горизонтальное положение"},
+  {q:"'Die Lampe hängt über dem Tisch.' — 'stehen' здесь бы:",opts:["не подходил — лампа висит, не стоит","подходил бы одинаково","был бы правильнее","обязателен"],ans:0,hint:"hängen — отдельный глагол для висящих предметов"},
+  {q:"'Ich stelle den Stuhl an den Tisch.' — глагол 'stellen' — это:",opts:["действие (куда ставим — Akkusativ)","состояние (где стоит — Dativ)","прошедшее время","вопрос"],ans:0,hint:"stellen (действие) + Akkusativ, stehen (состояние) + Dativ"},
+];
+
+function T_A2L6B(){
+  const [tab,setTab]=useState("lassen");
+  const lassenBsp=[
+    {de:"Frau Meyer holt die Kinder nicht selbst vom Kindergarten ab, sie lässt sie abholen.",ru:"Фрау Мейер не забирает детей из детского сада сама, она поручает это кому-то другому."},
+    {de:"Sie bügelt ihre Hemden nicht selbst, sie lässt sie bügeln.",ru:"Она не гладит свои рубашки сама, она отдаёт их гладить."},
+    {de:"Sie kocht ihr Essen nicht selbst, sie lässt es kochen.",ru:"Она не готовит себе еду сама, ей готовят."},
+    {de:"Sie räumt die Wohnung nicht selbst auf, sie lässt sie aufräumen.",ru:"Она не убирает квартиру сама, ей убирают."},
+  ];
+  const legenStellen=[
+    {paar:"legen (класть) → liegen (лежать)",bsp:"Ich lege das Buch auf den Tisch. — Das Buch liegt auf dem Tisch."},
+    {paar:"stellen (ставить) → stehen (стоять)",bsp:"Ich stelle den Stuhl an den Tisch. — Der Stuhl steht am Tisch."},
+    {paar:"hängen (вешать/висеть — одно слово)",bsp:"Ich hänge die Lampe über den Tisch. — Die Lampe hängt über dem Tisch."},
+  ];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.orange}>
+        <H c={C.orange}>📦 A2-L6B · Der Umzug</H>
+        <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
+          {[["lassen","Verb lassen"],["legen","legen/liegen · stellen/stehen"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,textAlign:"center",
+                border:`1px solid ${tab===key?C.orange+"55":C.border}`,
+                background:tab===key?C.orange+"22":C.ov3,
+                color:tab===key?C.orange:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="lassen"&&(
+          <div>
+            <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,borderRadius:10,padding:"11px 13px",marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.orange,marginBottom:6}}>lassen + Infinitiv</div>
+              <div style={{fontSize:13,color:C.text,lineHeight:1.7}}>Подлежащее + <b>lassen</b> + дополнение + <b>Infinitiv</b> — я поручаю кому-то что-то сделать (сам не делаю).</div>
+            </div>
+            {lassenBsp.map((l,i)=>(
+              <TapEx key={i} de={l.de} ru={l.ru} col={C.orange} style={{marginBottom:6}}/>
+            ))}
+          </div>
+        )}
+        {tab==="legen"&&(
+          <div>
+            <div style={{fontSize:12,color:C.muted,marginBottom:10,lineHeight:1.6}}>Präpositionen mit Dativ: где что-то находится, зависит от того, как предмет расположен:</div>
+            {legenStellen.map((l,i)=>(
+              <div key={i} style={{background:C.ov4,borderRadius:8,padding:"8px 11px",marginBottom:6}}>
+                <div style={{fontSize:13,fontWeight:700,color:C.orange,marginBottom:3}}>{l.paar}</div>
+                <div style={{fontSize:12,color:C.muted}}>{l.bsp}</div>
               </div>
             ))}
           </div>
@@ -15276,6 +15891,16 @@ function T6A(){
     </div>
   );
 }
+
+// ═══ PRÜFUNG — материал от учителя для подготовки к экзамену (DTZ) ═══
+// Каждый элемент — отдельная тема: {id, icon, col, title, sub, th}. th() — теория/конспект (см. Box/H/TapEx).
+// Наполняется по мере поступления материала от учителя — не привязано к номеру урока.
+const PRUEFUNG=[
+  {id:"tipps", icon:"💡", col:C.red, title:"Allgemeine Tipps", sub:"Ratschläge zur Prüfung · Anforderungen", th:()=><T_PruefungTipps/>},
+  {id:"redemittel", icon:"✍️", col:C.orange, title:"Redemittel: Briefe/E-Mails", sub:"Formell · Halbformell · Persönlich · Gliederung", th:()=><T_PruefungRedemittel/>},
+  {id:"wohnung", icon:"🏠", col:C.green, title:"Wortschatz: Wohnungssuche", sub:"A1-A2 · Wohnungstypen, Räume, Lage", th:()=><T_PruefungWohnung/>},
+  {id:"musterbriefe", icon:"🏢", col:C.teal, title:"Musterbriefe: Hausverwaltung", sub:"Grundwortschatz + 6 Beispiel-Briefe", th:()=><T_PruefungMusterbriefe/>},
+];
 
 const LEKTIONEN=[
   {
@@ -15548,15 +16173,29 @@ const LEKTIONEN=[
   },
   {
     id:"A2-L5",niveau:"A2",num:"5",title:"Am Arbeitsplatz",
-    sub:"A Im Büro (indirekte Fragen · Dativpronomen) · B Mitteilungen",
-    date:"Arbeitsbuch S.56–59",col:C.blue,
+    sub:"A Im Büro · B Mitteilungen · C Wie funktioniert das? (dies-)",
+    date:"Kursbuch S.55–64 · Arbeitsbuch S.56–67",col:C.blue,
     sections:[
       {id:"dA2L5", icon:"💬",title:"Dialogfragen A2-L5",         sub:"Фразы для диалога",                                    time:"∞",     col:C.blue,  hasT:false, th:null,           ex:()=><DialogCards lId="A2-L5"/>},
       {id:"a2l5a", icon:"💼",title:"A · Im Büro",                sub:"Indirekte Fragen · Pronomen im Dativ",                 time:"8 мин", col:C.blue,  hasT:true, th:()=><T_A2L5A/>, ex:()=><Quiz questions={Q_A2L5A}/>},
       {id:"a2l5b", icon:"📩",title:"B · Mitteilungen",           sub:"Formell/informell · Beispiel-Mitteilungen",            time:"6 мин", col:C.orange,hasT:true, th:()=><T_A2L5B/>, ex:()=><Quiz questions={Q_A2L5B}/>},
+      {id:"a2l5c", icon:"⚙️",title:"C · Wie funktioniert das?",   sub:"Demonstrativartikel dies- · ein Gerät erklären",       time:"7 мин", col:C.teal,  hasT:true, th:()=><T_A2L5C/>, ex:()=><Quiz questions={Q_A2L5C}/>},
       {id:"wbA2L5", icon:"📖",title:"Wörterbuch A2-L5",          sub:"Слова этого урока",                                    time:"—",    col:C.teal,   hasT:false, ex:()=><LektWoerterbuch lekt="A2-L5"/>},
       {id:"tA2L5", icon:"🎯",title:"Großer Test A2-L5",          sub:"Quiz · Lücken · Wortschatz · Wortstellung",     time:"20 мин",col:C.yellow, hasT:false, ex:()=><GrosserTestA2L5/>},
       {id:"wtA2L5", icon:"🧠",title:"Wortschatz-Test A2-L5",     sub:"Перевод · Артикли · Обратный перевод",                 time:"10 мин",col:C.teal,   hasT:false, ex:()=><WortschatzTest lekt="A2-L5"/>},
+    ]
+  },
+  {
+    id:"A2-L6",niveau:"A2",num:"6",title:"Wohnen nach Wunsch",
+    sub:"A Eine Wohnung suchen (Abkürzungen) · B Der Umzug (Verb lassen · legen/liegen · stellen/stehen)",
+    date:"Kursbuch S.65–71 · Arbeitsbuch S.68–69",col:C.green,
+    sections:[
+      {id:"dA2L6", icon:"💬",title:"Dialogfragen A2-L6",         sub:"Фразы для диалога",                                    time:"∞",     col:C.green, hasT:false, th:null,           ex:()=><DialogCards lId="A2-L6"/>},
+      {id:"a2l6a", icon:"🏠",title:"A · Eine Wohnung suchen",    sub:"Abkürzungen · Wohnungsanzeigen · besichtigen",         time:"8 мин", col:C.green, hasT:true, th:()=><T_A2L6A/>, ex:()=><Quiz questions={Q_A2L6A}/>},
+      {id:"a2l6b", icon:"📦",title:"B · Der Umzug",              sub:"Verb lassen · legen/liegen · stellen/stehen",          time:"7 мин", col:C.orange,hasT:true, th:()=><T_A2L6B/>, ex:()=><Quiz questions={Q_A2L6B}/>},
+      {id:"wbA2L6", icon:"📖",title:"Wörterbuch A2-L6",          sub:"Слова этого урока",                                    time:"—",    col:C.teal,   hasT:false, ex:()=><LektWoerterbuch lekt="A2-L6"/>},
+      {id:"tA2L6", icon:"🎯",title:"Großer Test A2-L6",          sub:"Quiz · Lücken · Wortschatz · Wortstellung",     time:"20 мин",col:C.yellow, hasT:false, ex:()=><GrosserTestA2L6/>},
+      {id:"wtA2L6", icon:"🧠",title:"Wortschatz-Test A2-L6",     sub:"Перевод · Артикли · Обратный перевод",                 time:"10 мин",col:C.teal,   hasT:false, ex:()=><WortschatzTest lekt="A2-L6"/>},
     ]
   },
 ];
@@ -15590,6 +16229,7 @@ function DialogFragenPage(){
     "A2-L3":{label:"A2·L3 · Wochenende", col:C.orange},
     "A2-L4":{label:"A2·L4 · Schule", col:C.green},
     "A2-L5":{label:"A2·L5 · Am Arbeitsplatz", col:C.blue},
+    "A2-L6":{label:"A2·L6 · Wohnen nach Wunsch", col:C.green},
   };
   const filterFm=(pairs,lId)=>(lId==="L1"||lId==="L4")?pairs.filter(p=>!p.fm||p.fm===fm):pairs;
 
@@ -16271,6 +16911,533 @@ function TabellenPage(){
   );
 }
 
+// ═══ PRÜFUNG — список тем (материал от учителя) ═══
+function PruefungPage({onOpen}){
+  return (
+    <div>
+      {PRUEFUNG.length===0&&(
+        <div style={{textAlign:"center",color:C.muted,fontSize:13,padding:"40px 20px",lineHeight:1.6}}>
+          Здесь появятся материалы для подготовки к экзамену — по мере того, как их будет давать учитель.
+        </div>
+      )}
+      <div style={{display:"flex",flexDirection:"column",gap:8}}>
+        {PRUEFUNG.map((p,i)=>(
+          <button key={p.id} onClick={()=>onOpen(p.id)}
+            style={{background:(p.col||C.red)+"15",border:`1.5px solid ${p.col||C.red}55`,
+              borderRadius:13,padding:"12px 14px",display:"flex",alignItems:"center",gap:12,cursor:"pointer",textAlign:"left"}}>
+            <div style={{fontSize:12,color:C.muted,width:16,textAlign:"center"}}>{i+1}</div>
+            <span style={{fontSize:20}}>{p.icon}</span>
+            <div style={{flex:1,minWidth:0}}>
+              <div style={{fontWeight:700,fontSize:14,color:p.col||C.red}}>{p.title}</div>
+              <div style={{fontSize:12,color:C.muted,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{p.sub}</div>
+            </div>
+            <span style={{color:C.muted}}>›</span>
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// ═══ Prüfung: Allgemeine Tipps ═══
+function T_PruefungTipps(){
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.red}>
+        <H c={C.red}>💡 Allgemeine Ratschläge (B1/DTZ Schreiben)</H>
+        <div style={{fontSize:13,color:C.text,lineHeight:1.8}}>
+          <b>1. Bereiten Sie sich nicht auf bestimmte Aufgaben vor, sondern auf die Arten von Aufgaben.</b> Niveau B1 ist Alltagssprache, also sind alle Situationen typisch — da kann man nicht so viel erfinden, nur kleine Details ändern.
+        </div>
+        <div style={{background:C.ov4,borderRadius:8,padding:"10px 12px",marginTop:8,fontSize:13,color:C.text,lineHeight:1.8}}>
+          Etwas ist im Haus oder in der Umgebung kaputt gegangen — Sie beschweren sich. Lärm machen, putzen, Hilfe von/für Nachbarn — das werden alles Nachbarn, Hausmeister und Hausverwaltung sein.<br/>
+          Geschäfte und Service — Beschwerden.<br/>
+          Behörde — Termine, Beschwerden.<br/>
+          Schule, Kindergärten — Termine, Ferien, Konflikte.
+        </div>
+        <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,borderRadius:10,padding:"11px 13px",marginTop:10}}>
+          <div style={{fontWeight:800,fontSize:13,color:C.orange,marginBottom:6}}>Wichtig</div>
+          <div style={{fontSize:13,color:C.text,lineHeight:1.8}}>
+            Lernen Sie keine Briefe auswendig und kopieren Sie sie nicht, sondern schreiben Sie Ihre eigenen, basierend auf Ihren eigenen Lebensumständen. Jeder Mensch hat genug solche Situationen.<br/><br/>
+            1. Es ist viel leichter, Briefe aus eigener Erfahrung zu schreiben und zu merken. Dann können Sie in einer Prüfungssituation die Details für die Aufgabe leichter ändern.<br/>
+            2. Nur das eigene Schreiben bereitet Sie wirklich auf die Prüfung vor.<br/>
+            3. Andere Personen haben denselben (kopierten) Brief vielleicht schon benutzt, oder die Lehrer haben ihn schon gesehen.
+          </div>
+        </div>
+        <div style={{background:C.ov4,borderRadius:8,padding:"10px 12px",marginTop:8,fontSize:13,color:C.text}}>
+          <b>2. Schreiben Sie keinen Entwurf</b> — Sie haben keine Zeit, ihn neu zu schreiben. Schreiben Sie nur Schlüsselwörter.
+        </div>
+      </Box>
+      <Box c={C.blue}>
+        <H c={C.blue}>📋 Allgemeine Anforderungen</H>
+        <div style={{fontSize:13,color:C.text,lineHeight:1.8}}>
+          1. Sie bekommen den Betreff des Schreibens und vier Punkte. Empfehlung aller Lehrer: zu jedem Punkt zwei Sätze schreiben. Ein komplexer Satz mit Nebensatz kann als zwei einfache Sätze zählen. Korrekt geschriebene komplexe Sätze sind ein großes Plus. Wenn Sie jedoch nicht sicher sind, ist es besser, einfacher zu schreiben.
+          <br/><br/>
+          2. Vor dem Schreiben sollten Ort und Datum (rechts) angegeben werden, dann die Anrede (links). Nach der Anrede ein Komma, und der nächste Satz beginnt in einer neuen Zeile mit Kleinbuchstaben.
+        </div>
+        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:8,marginTop:10}}>
+          <div style={{background:C.ov4,borderRadius:8,padding:"9px 11px"}}>
+            <div style={{fontSize:11,fontWeight:800,color:C.muted,marginBottom:4}}>FORMELL (gar nicht kennen)</div>
+            <div style={{fontSize:13,color:C.text}}>Sehr geehrte Damen und Herren,</div>
+          </div>
+          <div style={{background:C.ov4,borderRadius:8,padding:"9px 11px"}}>
+            <div style={{fontSize:11,fontWeight:800,color:C.muted,marginBottom:4}}>FORMELL (Name bekannt, z.B. Beamter)</div>
+            <div style={{fontSize:13,color:C.text}}>Sehr geehrte Frau Sommer, / Sehr geehrter Herr Sommer,</div>
+          </div>
+          <div style={{background:C.ov4,borderRadius:8,padding:"9px 11px",gridColumn:"1 / -1"}}>
+            <div style={{fontSize:11,fontWeight:800,color:C.muted,marginBottom:4}}>HALBFORMELL (persönlich bekannt, aber per "Sie" — Lehrer, Nachbar)</div>
+            <div style={{fontSize:13,color:C.text}}>Liebe Frau Sommer, / Lieber Herr Sommer,</div>
+          </div>
+        </div>
+        <div style={{fontSize:13,color:C.text,marginTop:10,lineHeight:1.8}}>
+          3. Am Ende schreiben Sie:<br/>
+          — bei formeller Anrede: <b>Mit freundlichen Grüßen</b> + Vorname Name<br/>
+          — bei halbformeller Anrede: <b>Viele Grüße</b> / <b>Freundliche Grüße</b>
+        </div>
+      </Box>
+    </div>
+  );
+}
+
+// ═══ Prüfung: Redemittel Briefe/E-Mails ═══
+function RedeItem({de,ru,col}){
+  const [open,setOpen]=useState(false);
+  return (
+    <div onClick={()=>setOpen(s=>!s)}
+      style={{cursor:"pointer",borderRadius:6,padding:"6px 8px",marginBottom:2,
+        background:open?col+"1f":"transparent",transition:"background .15s"}}>
+      <div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-start",gap:6}}>
+        <span style={{fontSize:13,color:C.text,lineHeight:1.6,flex:1}}>{de}</span>
+        <span style={{fontSize:10,color:C.muted,flexShrink:0,marginTop:2}}>{open?"▲":"▾"}</span>
+      </div>
+      {open&&<div style={{fontSize:12,color:col,marginTop:3,lineHeight:1.5}}>{ru}</div>}
+    </div>
+  );
+}
+function RedeBlock({title,items,col}){
+  return (
+    <div style={{marginBottom:10}}>
+      <div style={{fontSize:12,fontWeight:800,color:col,textTransform:"uppercase",letterSpacing:0.4,marginBottom:5}}>{title}</div>
+      <div style={{background:C.ov4,borderRadius:8,padding:"6px 6px"}}>
+        {items.map((it,i)=><RedeItem key={i} de={it.de} ru={it.ru} col={col}/>)}
+      </div>
+    </div>
+  );
+}
+function T_PruefungRedemittel(){
+  const [tab,setTab]=useState("formell");
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.red}>
+        <H c={C.red}>✍️ Redemittel: Briefe / E-Mails</H>
+        <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
+          {[["formell","Formell (Sie)"],["halb","Halbformell / Informell"],["persoenlich","Persönliche E-Mail"],["gliederung","Gliederung"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,textAlign:"center",lineHeight:1.3,
+                border:`1px solid ${tab===key?C.red+"55":C.border}`,
+                background:tab===key?C.red+"22":C.ov3,
+                color:tab===key?C.red:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="formell"&&(
+          <div>
+            <RedeBlock col={C.red} title="Ort und Datum" items={[
+              {de:"Berlin, den 5. April 2024 (Beispiel)",ru:"Берлин, 5 апреля 2024 (пример)"},
+            ]}/>
+            <RedeBlock col={C.red} title="Anrede" items={[
+              {de:"Sehr geehrte Damen und Herren,",ru:"Уважаемые дамы и господа,"},
+              {de:"Sehr geehrter Herr …,",ru:"Уважаемый господин …,"},
+              {de:"Sehr geehrte Frau …,",ru:"Уважаемая госпожа …,"},
+              {de:"(nach der Anrede und dem Komma schreibt man meistens klein weiter)",ru:"(после обращения и запятой обычно продолжают с маленькой буквы)"},
+            ]}/>
+            <RedeBlock col={C.red} title="Anfangssatz / Grund für das Schreiben" items={[
+              {de:"Vielen Dank für …",ru:"Большое спасибо за …"},
+              {de:"Ich schreibe Ihnen, weil … (/wegen +Genitiv / um … zu …)",ru:"Я пишу Вам, потому что … (/из-за +Genitiv / чтобы …)"},
+              {de:"Vielen Dank für Ihr/Ihre … (+ Nomen)",ru:"Большое спасибо за Ваш/Вашу … (+существительное)"},
+            ]}/>
+            <RedeBlock col={C.red} title="Bitten und Vorschläge" items={[
+              {de:"Ich wäre Ihnen sehr dankbar, wenn … (Verb am Ende)",ru:"Я был(а) бы Вам очень благодарен(на), если … (глагол в конце)"},
+              {de:"Wie wäre es, wenn …?",ru:"Как насчёт того, если …?"},
+              {de:"Wäre es für Sie in Ordnung, wenn …?",ru:"Было бы для Вас нормально, если …?"},
+              {de:"Könnten Sie bitte …? (Infinitiv am Ende)",ru:"Не могли бы Вы, пожалуйста, …? (инфинитив в конце)"},
+              {de:"Ist es möglich, dass …? (Verb am Ende)",ru:"Возможно ли, что …? (глагол в конце)"},
+            ]}/>
+            <RedeBlock col={C.red} title="Indirekte Fragen" items={[
+              {de:"Ich hätte folgende Fragen:",ru:"У меня есть следующие вопросы:"},
+              {de:"Ich würde gern wissen, ob / w-Frage … (Verb am Ende)",ru:"Я хотел(а) бы знать, ли / вопрос с вопросительным словом … (глагол в конце)"},
+              {de:"Könnten Sie mir bitte sagen, ob / w-Frage … (Verb am Ende)",ru:"Не могли бы Вы сказать мне, ли / вопрос с вопросительным словом … (глагол в конце)"},
+            ]}/>
+            <RedeBlock col={C.red} title="Verständnis zeigen" items={[
+              {de:"Ich weiß, dass …",ru:"Я знаю, что …"},
+              {de:"Natürlich verstehe ich, dass …",ru:"Конечно, я понимаю, что …"},
+              {de:"Mir ist klar, dass …",ru:"Мне понятно, что …"},
+            ]}/>
+            <RedeBlock col={C.red} title="Etwas absagen" items={[
+              {de:"Leider muss ich … absagen.",ru:"К сожалению, я должен(на) отменить …"},
+              {de:"Leider kann ich nicht …",ru:"К сожалению, я не могу …"},
+              {de:"Leider muss ich … (Akk.) absagen, weil … (Verb am Ende)",ru:"К сожалению, я должен(на) отменить … (Akk.), потому что … (глагол в конце)"},
+              {de:"Leider kann ich nicht zu (+Dat.) kommen, weil … (Verb am Ende)",ru:"К сожалению, я не могу прийти на (+Dat.), потому что … (глагол в конце)"},
+              {de:"Es tut mir leid, dass ich den Termin absagen muss, aber … (Verb am Ende)",ru:"Мне жаль, что я должен(на) отменить встречу, но … (глагол в конце)"},
+            ]}/>
+            <RedeBlock col={C.red} title="Erreichbarkeit mitteilen" items={[
+              {de:"Sie können mich unter der Telefonnummer … erreichen.",ru:"Вы можете связаться со мной по номеру телефона …"},
+              {de:"Bitte antworten Sie mir per Email.",ru:"Пожалуйста, ответьте мне по электронной почте."},
+              {de:"Bitte rufen Sie mich unter der Telefonnummer 123456 zurück.",ru:"Пожалуйста, перезвоните мне по номеру 123456."},
+            ]}/>
+            <RedeBlock col={C.red} title="Schlusssatz" items={[
+              {de:"Über eine positive Rückmeldung würde ich mich sehr freuen.",ru:"Я был(а) бы очень рад(а) положительному ответу."},
+              {de:"Ich hoffe auf Ihr Verständnis.",ru:"Надеюсь на Ваше понимание."},
+              {de:"Ich freue mich darauf, von Ihnen zu hören.",ru:"Буду рад(а) услышать от Вас."},
+              {de:"Ich freue mich auf Ihre Antwort.",ru:"С радостью жду Вашего ответа."},
+            ]}/>
+            <RedeBlock col={C.red} title="Gruß" items={[
+              {de:"Mit freundlichen Grüßen (KEIN PUNKT)",ru:"С уважением (БЕЗ ТОЧКИ)"},
+              {de:"Vorname Nachname (KEIN PUNKT)",ru:"Имя Фамилия (БЕЗ ТОЧКИ)"},
+            ]}/>
+          </div>
+        )}
+        {tab==="halb"&&(
+          <div>
+            <RedeBlock col={C.orange} title="Anrede" items={[
+              {de:"Liebe …,",ru:"Дорогая …,"},
+              {de:"Lieber …,",ru:"Дорогой …,"},
+              {de:"Hallo …, (nur informell)",ru:"Привет …, (только неформально)"},
+            ]}/>
+            <RedeBlock col={C.orange} title="Anfangssatz / Grund" items={[
+              {de:"Vielen Dank für …",ru:"Большое спасибо за …"},
+              {de:"Ich schreibe Ihnen (/dir), weil … (/wegen / um … zu …)",ru:"Я пишу Вам (/тебе), потому что … (/из-за / чтобы …)"},
+            ]}/>
+            <RedeBlock col={C.orange} title="Bitten und Vorschläge" items={[
+              {de:"Könnten Sie (/Könntest du) bitte …?",ru:"Не могли бы Вы (/ты) пожалуйста …?"},
+              {de:"Wie wäre es, wenn …?",ru:"Как насчёт того, если …?"},
+              {de:"Ist es (/Wäre es) für Sie (/dich) in Ordnung, wenn …?",ru:"Нормально ли для Вас (/тебя), если …?"},
+            ]}/>
+            <RedeBlock col={C.orange} title="Verständnis zeigen" items={[
+              {de:"Ich weiß, dass …",ru:"Я знаю, что …"},
+              {de:"Natürlich verstehe ich, dass …",ru:"Конечно, я понимаю, что …"},
+            ]}/>
+            <RedeBlock col={C.orange} title="Etwas absagen" items={[
+              {de:"Leider muss ich … absagen.",ru:"К сожалению, я должен(на) отменить …"},
+              {de:"Leider kann ich nicht …",ru:"К сожалению, я не могу …"},
+            ]}/>
+            <RedeBlock col={C.orange} title="Erreichbarkeit mitteilen" items={[
+              {de:"Sie können (/Du kannst) mich unter der Telefonnummer … erreichen.",ru:"Вы можете (/Ты можешь) связаться со мной по номеру …"},
+              {de:"Bitte antworten Sie mir (/antworte mir) per Email.",ru:"Пожалуйста, ответьте (/ответь) мне по почте."},
+            ]}/>
+            <RedeBlock col={C.orange} title="Schlusssatz" items={[
+              {de:"Ich wäre Ihnen (/dir) sehr dankbar, wenn …",ru:"Я был(а) бы Вам (/тебе) очень благодарен(на), если …"},
+              {de:"Ich hoffe, …",ru:"Я надеюсь, …"},
+              {de:"Ich freue mich darauf, bald von Ihnen (/dir) zu hören.",ru:"Буду рад(а) скоро услышать от Вас (/тебя)."},
+              {de:"Ich wünsche Ihnen (/dir) einen schönen Tag.",ru:"Желаю Вам (/тебе) хорошего дня."},
+            ]}/>
+            <RedeBlock col={C.orange} title="Gruß" items={[
+              {de:"Viele Grüße",ru:"С наилучшими пожеланиями"},
+              {de:"Herzliche Grüße",ru:"Сердечный привет"},
+            ]}/>
+          </div>
+        )}
+        {tab==="persoenlich"&&(
+          <div>
+            <RedeBlock col={C.teal} title="Datum" items={[
+              {de:"Brief: Ort und Datum (z.B. Mainz, 18.04.2023)",ru:"Письмо: место и дата (напр. Майнц, 18.04.2023)"},
+              {de:"E-Mail: kein Datum nötig",ru:"E-Mail: дата не нужна"},
+            ]}/>
+            <RedeBlock col={C.teal} title="Anrede" items={[
+              {de:"Liebe(r) …, / Liebe (Plural) …,",ru:"Дорогой/дорогая …, / Дорогие …,"},
+              {de:"Hallo …,",ru:"Привет …,"},
+            ]}/>
+            <RedeBlock col={C.teal} title="Einleitung" items={[
+              {de:"Wie geht es dir/euch? Mir geht es (nicht so) gut.",ru:"Как у тебя/вас дела? У меня дела (не очень) хорошо."},
+              {de:"Danke für deine/eure E-Mail. / deinen Brief. Ich habe mich darüber sehr gefreut.",ru:"Спасибо за твоё/ваше письмо. Я очень этому обрадовался(лась)."},
+              {de:"Ich habe lange nichts von dir/euch gehört.",ru:"Я давно ничего не слышал(а) от тебя/вас."},
+              {de:"Stell dir/Stellt euch vor, was mir passiert ist.",ru:"Представь/представьте, что со мной случилось."},
+              {de:"Hoffentlich geht es dir gut!",ru:"Надеюсь, у тебя всё хорошо!"},
+              {de:"Ich möchte mich für die Einladung bedanken.",ru:"Я хочу поблагодарить за приглашение."},
+              {de:"Mir geht es zur Zeit super / leider nicht so gut, weil …",ru:"Сейчас у меня всё супер / к сожалению не очень хорошо, потому что …"},
+              {de:"Über deinen Brief habe ich mich sehr gefreut. Du schreibst, dass …",ru:"Я очень обрадовался(лась) твоему письму. Ты пишешь, что …"},
+              {de:"Schön, etwas von dir zu hören. Es ist schon lange her, dass wir uns gesehen haben.",ru:"Приятно услышать что-то от тебя. Прошло уже много времени с тех пор, как мы виделись."},
+              {de:"Es ist schon eine Weile her, dass wir telefoniert haben.",ru:"Уже прошло какое-то время с тех пор, как мы разговаривали по телефону."},
+              {de:"Endlich habe ich Zeit, dir zu schreiben. Ich hatte viel zu tun, aber jetzt möchte ich dir etwas erzählen / es gibt etwas Neues …",ru:"Наконец у меня есть время написать тебе. У меня было много дел, но теперь я хочу тебе кое-что рассказать / есть новости …"},
+            ]}/>
+            <RedeBlock col={C.teal} title="Situation erklären" items={[
+              {de:"Wie du weißt, …",ru:"Как ты знаешь, …"},
+              {de:"Hast du erfahren, dass …",ru:"Ты узнал(а), что …"},
+            ]}/>
+            <RedeBlock col={C.teal} title="Erzählen" items={[
+              {de:"Ich glaube, du kannst dir nicht vorstellen, …",ru:"Я думаю, ты не можешь себе представить, …"},
+              {de:"Das war ein sehr toller/wunderbarer Urlaub.",ru:"Это был очень классный/чудесный отпуск."},
+              {de:"Die Musik war ausgezeichnet. / Der Kurs gefällt mir sehr.",ru:"Музыка была отличной. / Курс мне очень нравится."},
+              {de:"Das ist das tollste Geschenk, das ich je bekommen habe.",ru:"Это самый крутой подарок, который я когда-либо получал(а)."},
+              {de:"Soll ich etwas Bestimmtes mitbringen? / Das klingt aufregend.",ru:"Стоит ли мне принести что-то конкретное? / Это звучит волнующе."},
+            ]}/>
+            <RedeBlock col={C.teal} title="Etwas begründen" items={[
+              {de:"Meiner Meinung nach …",ru:"По моему мнению …"},
+              {de:"Ich finde …, weil …",ru:"Я считаю …, потому что …"},
+            ]}/>
+            <RedeBlock col={C.teal} title="Danksagung" items={[
+              {de:"Vielen Dank für deine Einladung/dein Geschenk. Ich habe mich sehr darüber gefreut!",ru:"Большое спасибо за твоё приглашение/подарок. Я очень этому обрадовался(лась)!"},
+              {de:"Ich danke dir vielmals für deine wertvollen Ratschläge.",ru:"Я очень благодарен(на) тебе за твои ценные советы."},
+              {de:"Ich danke dir im Voraus für deine Hilfe/Unterstützung.",ru:"Заранее благодарю тебя за помощь/поддержку."},
+            ]}/>
+            <RedeBlock col={C.teal} title="Um Rat/Hilfe bitten" items={[
+              {de:"Ich weiß nicht, was ich tun soll.",ru:"Я не знаю, что мне делать."},
+              {de:"Ich brauche dringend deinen Rat. Bitte hilf mir!",ru:"Мне срочно нужен твой совет. Пожалуйста, помоги мне!"},
+              {de:"Kannst du mir beim Umzug helfen? / Hast du Zeit, mir dabei zu helfen?",ru:"Можешь помочь мне с переездом? / У тебя есть время помочь мне с этим?"},
+            ]}/>
+            <RedeBlock col={C.teal} title="Treffen vorschlagen" items={[
+              {de:"Was hältst du davon, wenn wir uns mal wieder auf einen Kaffee treffen?",ru:"Что скажешь, если мы снова встретимся на кофе?"},
+              {de:"Hast du am Dienstagnachmittag Zeit? Ich würde mich sehr auf unser Treffen freuen!",ru:"У тебя есть время во вторник после обеда? Я бы очень обрадовался(лась) нашей встрече!"},
+              {de:"Lange haben wir uns nicht gesehen. Ich möchte dich bald wiedersehen.",ru:"Мы давно не виделись. Я хочу скоро увидеть тебя снова."},
+              {de:"Möchtest du vielleicht am Wochenende zusammen mit mir ins Kino gehen?",ru:"Может, хочешь пойти со мной в кино на выходных?"},
+            ]}/>
+            <RedeBlock col={C.teal} title="Grüße senden" items={[
+              {de:"Wie geht es deinen Eltern? Richte ihnen bitte meine lieben Grüße aus!",ru:"Как дела у твоих родителей? Передай им, пожалуйста, мои тёплые приветы!"},
+              {de:"Grüß deine Eltern von mir!",ru:"Передай привет своим родителям от меня!"},
+            ]}/>
+            <RedeBlock col={C.teal} title="Antwort erwarten" items={[
+              {de:"Ich freue mich, bald wieder von dir zu hören!",ru:"Буду рад(а) скоро снова услышать от тебя!"},
+              {de:"Ich warte auf deine baldige Antwort! / Bitte schreib/antworte mir bald.",ru:"Жду твоего скорого ответа! / Пожалуйста, напиши/ответь мне скоро."},
+              {de:"Lass bald wieder von dir hören.",ru:"Дай знать о себе снова."},
+              {de:"Es wäre schön, wenn du kommen könntest / wenn es klappen würde / wenn …",ru:"Было бы прекрасно, если бы ты мог(ла) прийти / если бы получилось / если …"},
+              {de:"Sag mir Bescheid, ob …",ru:"Дай мне знать, ли …"},
+            ]}/>
+            <RedeBlock col={C.teal} title="Zusammenfassen / Entschuldigen" items={[
+              {de:"Zusammenfassend möchte ich betonen, dass … / Zu guter Letzt …",ru:"В заключение я хочу подчеркнуть, что … / И наконец …"},
+              {de:"Ich möchte mich dafür entschuldigen, dass …",ru:"Я хочу извиниться за то, что …"},
+            ]}/>
+            <RedeBlock col={C.teal} title="Schluss" items={[
+              {de:"Ich erwarte deine/eure Antwort.",ru:"Жду твоего/вашего ответа."},
+              {de:"Schreib(t) mir bald.",ru:"Напиши(те) мне скоро."},
+              {de:"Mit herzlichen Grüßen",ru:"С сердечным приветом"},
+              {de:"Ganz viel Glück und liebe Grüße",ru:"Много удачи и тёплые пожелания"},
+            ]}/>
+          </div>
+        )}
+        {tab==="gliederung"&&(
+          <div>
+            <div style={{fontSize:12,color:C.muted,marginBottom:8}}>Слова-связки, чтобы упорядочить рассказ по времени:</div>
+            <RedeBlock col={C.purple} title="Gliederung" items={[
+              {de:"erst / zuerst, zunächst einmal, als Erstes",ru:"сперва / сначала, прежде всего, во-первых"},
+              {de:"dann, danach",ru:"затем, после этого"},
+              {de:"zuletzt, schließlich, zum Schluss",ru:"напоследок, наконец, в конце"},
+              {de:"jetzt",ru:"сейчас"},
+              {de:"inzwischen",ru:"между тем, тем временем"},
+              {de:"vorher, nachher",ru:"до этого, после этого"},
+              {de:"während, bevor, nachdem",ru:"в то время как, перед тем как, после того как"},
+            ]}/>
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
+// ═══ Prüfung: Wortschatz Wohnungssuche ═══
+function T_PruefungWohnung(){
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.green}>
+        <H c={C.green}>🏠 Wortschatz: Wohnungssuche (A1-A2)</H>
+        <RedeBlock col={C.green} title="Wohnungstypen" items={[
+          {de:"eine Wohnung (eine 2-Zimmer-Wohnung, eine kleine eigene Wohnung)",ru:"квартира (2-комнатная квартира, маленькая собственная квартира)"},
+          {de:"eine Eigentumswohnung",ru:"квартира в собственности"},
+          {de:"ein Haus / ein Apartment",ru:"дом / апартаменты"},
+          {de:"ein Einfamilienhaus / ein Mehrfamilienhaus / ein Hochhaus",ru:"дом на одну семью / многоквартирный дом / высотка"},
+        ]}/>
+        <RedeBlock col={C.green} title="Räume" items={[
+          {de:"die Küche / das Bad, das Badezimmer / das Zimmer / der Raum",ru:"кухня / ванная, ванная комната / комната / помещение"},
+          {de:"der Flur / der Balkon, ein Südbalkon / das Treppenhaus",ru:"коридор / балкон, южный балкон / подъезд (лестничная клетка)"},
+        ]}/>
+        <RedeBlock col={C.green} title="Kosten und Ausstattung" items={[
+          {de:"die Nebenkosten / der Strom geht extra (= ist nicht im Preis enthalten)",ru:"коммунальные платежи / электричество отдельно (= не включено в цену)"},
+          {de:"der Fahrstuhl / die Garage",ru:"лифт / гараж"},
+          {de:"eine Kaution hinterlegen / eine Vermittlungsgebühr bezahlen",ru:"внести залог / оплатить комиссию агенту"},
+        ]}/>
+        <RedeBlock col={C.green} title="Handlungen" items={[
+          {de:"eine Wohnung kaufen / eine Wohnung mieten / zur Miete wohnen",ru:"купить квартиру / снять квартиру / жить в аренде"},
+          {de:"in (+D.) wohnen",ru:"жить в (+Dativ)"},
+          {de:"umziehen (ich bin … umgezogen) / in eine neue Wohnung ziehen / nach … ziehen",ru:"переезжать (я переехал(а)) / переехать в новую квартиру / переехать в …"},
+          {de:"renovieren / streichen / einrichten",ru:"делать ремонт / красить / обустраивать"},
+        ]}/>
+        <RedeBlock col={C.green} title="Suchen und finden" items={[
+          {de:"suchen/finden: im Internet / unter www…. / in einer Zeitung / über einen Makler / über Freunde",ru:"искать/находить: в интернете / на сайте www… / в газете / через агента / через друзей"},
+          {de:"eine Anzeige aufgeben",ru:"разместить объявление"},
+          {de:"ich habe in der Anzeige gelesen, dass …",ru:"я прочитал(а) в объявлении, что …"},
+        ]}/>
+        <RedeBlock col={C.green} title="Eigenschaften" items={[
+          {de:"groß / klein / eng / geräumig",ru:"большая / маленькая / тесная / просторная"},
+          {de:"hell / dunkel / hohe Decken / niedrige Decken",ru:"светлая / тёмная / высокие потолки / низкие потолки"},
+        ]}/>
+        <RedeBlock col={C.green} title="Lage und Stockwerk" items={[
+          {de:"im Erdgeschoss / im ersten (zweiten, dritten, vierten) Stock/Stockwerk / in der ersten Etage / im Keller / unter dem Dach",ru:"на первом этаже / на первом (втором, третьем, четвёртом) этаже / на втором этаже / в подвале / на чердаке"},
+          {de:"die Miete ist hoch/niedrig / die Wohnung ist teuer/günstig",ru:"аренда высокая/низкая / квартира дорогая/дешёвая"},
+          {de:"in der Nähe eines Parks / die Schule ist in der Nähe",ru:"рядом с парком / школа рядом"},
+          {de:"die Fenster gehen zum Hof / der Balkon ist zur Straße",ru:"окна выходят во двор / балкон выходит на улицу"},
+          {de:"nicht weit von … / 5 Min. zu Fuß zur U-Bahn",ru:"недалеко от … / 5 минут пешком до метро"},
+          {de:"am Stadtrand / im Zentrum = in der Innenstadt / die Wohnung ist zentral gelegen",ru:"на окраине города / в центре = в центре города / квартира расположена центрально"},
+        ]}/>
+      </Box>
+    </div>
+  );
+}
+
+// ═══ Prüfung: Musterbriefe Hausverwaltung ═══
+function MusterbriefBlock({title,situation,punkte,brief,col}){
+  const [open,setOpen]=useState(false);
+  return (
+    <div style={{border:`1px solid ${open?col+"55":C.border}`,borderRadius:12,marginBottom:8,overflow:"hidden"}}>
+      <div onClick={()=>setOpen(s=>!s)} style={{cursor:"pointer",padding:"11px 13px",background:open?col+"15":C.ov4,display:"flex",alignItems:"center",gap:8}}>
+        <span style={{fontWeight:800,fontSize:14,color:col,flex:1}}>{title}</span>
+        <span style={{fontSize:12,color:C.muted}}>{open?"▲":"▾"}</span>
+      </div>
+      {open&&(
+        <div style={{padding:"11px 13px"}}>
+          <div style={{fontSize:13,color:C.text,lineHeight:1.7,marginBottom:8}}>{situation}</div>
+          <div style={{fontSize:12,color:C.muted,marginBottom:10}}>
+            {punkte.map((p,i)=><div key={i}>— {p}</div>)}
+          </div>
+          <div style={{background:C.ov4,borderRadius:8,padding:"10px 12px",fontSize:13,color:C.text,lineHeight:1.9,whiteSpace:"pre-line",fontStyle:"italic"}}>{brief}</div>
+        </div>
+      )}
+    </div>
+  );
+}
+function T_PruefungMusterbriefe(){
+  const [tab,setTab]=useState("grund");
+  const briefe=[
+    {title:"1. Fernseher ist kaputt",
+     situation:"Der Fernseher in Ihrer Wohnung funktioniert nicht. Die Antenne ist kaputt. Sie haben bereits Ihren Hausverwalter, Herrn Müller, angerufen, aber es ist nichts passiert. Also schreiben Sie an die Hausverwaltung.",
+     punkte:["Grund für Ihr Schreiben","was soll passieren?","wann","was machen Sie, wenn Sie keine Antwort bekommen"],
+     brief:`Sehr geehrter Herr Müller,
+
+ich habe am Montag mit Ihnen telefoniert und Sie wissen schon, dass mein Fernseher seit 2 Wochen nicht funktioniert. Aber Sie haben bisher nichts gemacht.
+Ich habe den Fernseher bei meinem Kollegen geprüft und er ist nicht kaputt. Sie sollten mir unbedingt bis zum Ende der Woche einen Handwerker schicken, damit er die Antenne repariert.
+Es ist mir wichtig, jeden Tag die Nachrichten zu sehen.
+Ich bin bis 9 Uhr morgens und nach 17 Uhr abends zu Hause. Meine Nachbarin Frau Sommer hat den Schlüssel von der Wohnung, Ihr Handwerker kann also jederzeit kommen.
+Wenn Sie auf meinen Brief nicht reagieren, rufe ich eine Firma an. Die Rechnung schicke ich Ihnen.
+
+Ich warte auf Ihre baldige Antwort. Vielen Dank im Voraus.
+
+Mit freundlichen Grüßen
+Vorname Name`},
+    {title:"2. Heizung ist kaputt",
+     situation:"Heizung funktioniert seit 2 Tagen nicht. Der Manager beantwortet keine Anrufe. Die Temperatur ist gesunken, Sie sind bereits krank.",
+     punkte:["warum schreiben Sie","was wollen Sie","wann","was Sie tun, wenn keine Antwort kommt"],
+     brief:`Sehr geehrte Damen und Herren,
+
+ich habe Sie den ganzen Tag angerufen, aber konnte Sie nicht erreichen, deshalb schreibe ich Ihnen diesen Brief. Meine Adresse ist Hauptstraße 10. Seit zwei Tagen funktioniert die Heizung in meiner Wohnung nicht. Die Temperatur ist auf 10 Grad gesunken und ich bin schon richtig krank. Es gibt bereits Schimmel in der Ecke und alle Sachen sind nass.
+Rufen Sie mich bitte so schnell wie möglich an. Meine Handynummer ist 0717170000. Sie müssen sofort einen Handwerker zu mir schicken, damit er die Heizung repariert.
+Ich warte noch einen Tag auf Ihren Anruf. Danach suche ich mir ein Hotelzimmer und ziehe dort ein.
+Wenn ich von Ihnen keine Antwort bekomme, vereinbare ich einen Termin mit einer Heizungsfirma. Die Rechnungen vom Hotel und von der Heizungsfirma schicke ich Ihnen.
+
+Ich hoffe auf Ihre baldige Antwort. Vielen Dank im Voraus.
+
+Mit freundlichen Grüßen
+Vorname Name`},
+    {title:"3. Fenster schließen nicht",
+     situation:"Ihre Fenster schließen in Ihrer Wohnung nicht richtig und kalte Luft dringt in Ihre Wohnung ein. Sie haben schon einmal angerufen, aber es kam keine Antwort.",
+     punkte:["Grund des Schreibens","Temperatur und Gesundheit","Heizkosten","was machen Sie, wenn Sie keine Antwort bekommen"],
+     brief:`Sehr geehrter Herr Huber,
+
+ich habe schon mit Ihnen telefoniert, dass man die Fenster im Wohnzimmer nicht schließen kann. Und Sie haben versprochen, dass die Fenster repariert werden. Aber Sie haben nichts gemacht.
+Sie haben wahrscheinlich vergessen, dass es schon Dezember ist. Die kalte Luft kommt ins Zimmer und wir können dieses Zimmer nicht benutzen.
+Ich muss die Heizung auf die höchste Stufe stellen, damit kein Schimmel entsteht. Haben Sie wahrscheinlich vergessen, welche Preise für Warmwasser und Heizung wir letztes Jahr in der Jahresabrechnung hatten?
+Ich hoffe, dass Sie schnell einen Handwerker zu uns schicken. Ich bin fast den ganzen Tag zu Hause. Aber geben Sie mir bitte Bescheid, wann genau er kommt.
+Wenn Sie nicht auf meinen Brief reagieren, rufe ich eine Firma an und schicke Ihnen dann die Rechnung. (Oder: gehe ich zu meinem Anwalt.)
+
+Mit freundlichen Grüßen
+Vorname Name`},
+    {title:"4. Licht funktioniert nicht",
+     situation:"In Ihrem Hauseingang funktioniert das Licht nicht. Schreiben Sie einen Brief an die Hausverwaltung.",
+     punkte:["Warum schreiben Sie","wer soll es reparieren","wie gefährlich ist es","was wollen Sie"],
+     brief:`Sehr geehrte Damen und Herren,
+
+seit Montag funktioniert das Licht auf der Treppe in unserem Haus nicht. Es ist jetzt Dezember und schon um 17 Uhr ist es sehr dunkel. Im Haus wohnen alte Menschen. Sie sagen, dass sie abends zu Hause bleiben müssen, weil sie fürchten, die Treppe in der Dunkelheit hinunterzugehen. Ich habe ein kleines Kind und finde diese Situation auch sehr unbequem und gefährlich. Es ist leicht, hinzufallen und die Verletzungen zu bekommen.
+Wir bezahlen regelmäßig die Nebenkosten und solche Reparaturen gehören zu Ihren Aufgaben.
+Würden Sie uns bitte dringend einen Handwerker schicken. Sonst werden wir nächste Woche einen Handwerker suchen und die Nebenkosten entsprechend reduzieren.
+Frau Sommer ist fast immer zu Hause und öffnet die Tür (lässt Ihren Handwerker ins Haus), aber geben Sie bitte Bescheid, wann genau Ihr Handwerker kommt.
+
+Vielen Dank im Voraus.
+
+Mit freundlichen Grüßen
+Vorname Name`},
+    {title:"5. Die Tür ist kaputt",
+     situation:"In Ihrem Haus wurden Bauarbeiten durchgeführt. Jetzt ist die Tür zum Keller beschädigt und Sie können sie nicht mehr abschließen. Schreiben Sie einen Brief an Frau XY von der Hausverwaltung.",
+     punkte:["Grund für Ihr Schreiben","Fahrräder können gestohlen werden","schnelle Reparatur erforderlich","bitte antworten"],
+     brief:`Sehr geehrte Frau XY,
+
+nachdem Ihre Handwerker Bauarbeiten in unserem Haus durchgeführt haben, wurde die Tür zum Fahrradraum beschädigt. Jetzt schließt sie nicht mehr richtig. Wir haben Angst, dass die Fahrräder gestohlen werden. Dort gibt es mehrere Elektrofahrräder. Der Zugang zum Raum ist relativ leicht, da das Garagentor fast immer geöffnet ist.
+Bitte schicken Sie dringend einen Handwerker, um die Tür zu reparieren. Andernfalls sind wir gezwungen, einen Handwerker selbst zu suchen und Ihnen die Rechnung zuzusenden.
+
+Mit freundlichen Grüßen
+Vorname Name`},
+    {title:"6. Der Aufzug ist kaputt",
+     situation:"Der Aufzug in dem Gebäude, in dem Sie eine Wohnung mieten, ist kaputt. Schreiben Sie an die Hausverwaltung.",
+     punkte:["warum es Ihnen so wichtig ist, dass der Aufzug repariert wird","was die Nachbarn sagen","Sie sind sehr verärgert","was passiert, wenn er nicht rechtzeitig repariert wird, wen können Sie kontaktieren"],
+     brief:`Sehr geehrter Herr Müller,
+
+in unserem Haus in der Lindenstraße 3 ist der Aufzug kaputt gegangen. Nachbarn sagen, dass sie Sie bereits angerufen haben, aber keine Antwort erhalten. Im dritten Stock wohnt ein Rollstuhlfahrer, im zweiten Stock wohnt eine Familie mit einem Baby. Sie können das Haus nicht verlassen, solange der Aufzug nicht funktioniert. Aus gesundheitlichen Gründen fällt es mir auch schwer, Lebensmittel nach oben zu heben. Ich bin sehr frustriert, weil ich mehr Medikamente nehmen muss.
+Wir bitten Sie, so schnell wie möglich Reparatur zu machen. Wir hoffen, spätestens morgen Ihre Handwerker zu sehen. Sonst suchen wir die Handwerker selbst und stellen Ihnen die Rechnung.
+
+Mit freundlichen Grüßen
+Vorname Name`},
+  ];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.red}>
+        <H c={C.red}>🏢 Musterbriefe: Konflikte mit der Hausverwaltung</H>
+        <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
+          {[["grund","Grundlagen"],["briefe","6 Musterbriefe"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,textAlign:"center",
+                border:`1px solid ${tab===key?C.red+"55":C.border}`,
+                background:tab===key?C.red+"22":C.ov3,
+                color:tab===key?C.red:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="grund"&&(
+          <div>
+            <div style={{fontSize:13,color:C.text,lineHeight:1.8,marginBottom:10}}>
+              Typ 1 der DTZ-Briefe: "In meinem Haus ist … kaputt" — Konflikte mit der Verwaltung. Themen: Heizung, Antenne, Sanitär, Beleuchtung, Fenster. Die Handlung: es ist kaputt, Sie haben sich an die Hausverwaltung gewandt, aber diese hat Ihre Bitte ignoriert oder ist außer Reichweite. Sie schreiben einen Brief, in dem Sie: den Grund des Schreibens, Ihre Anforderungen, die Frist zur Erfüllung der Anforderungen und eine Drohung nennen.
+            </div>
+            <RedeBlock col={C.red} title="Grundwortschatz" items={[
+              {de:"telefonieren mit D (ich habe mit Ihnen telefoniert)",ru:"звонить по телефону кому-то (я разговаривал(а) с Вами по телефону)"},
+              {de:"anrufen Akk (ich habe Sie angerufen) / anrufen bei einer Firma",ru:"звонить кому-то (я позвонил(а) Вам) / звонить в фирму"},
+              {de:"Ich konnte Sie nicht erreichen. / Sie haben nichts gemacht, deshalb schreibe ich diesen Brief.",ru:"Я не смог(ла) до Вас дозвониться. / Вы ничего не сделали, поэтому я пишу это письмо."},
+              {de:"die Hausverwaltung / der Handwerker",ru:"управляющая компания / мастер (ремонтник)"},
+              {de:"einen Handwerker beauftragen / einen Handwerker ins Haus lassen",ru:"поручить мастеру / впустить мастера в дом"},
+              {de:"funktionieren / sein kaputt / reparieren / prüfen",ru:"работать (функционировать) / быть сломанным / ремонтировать / проверять"},
+              {de:"die Wasserleitung / der Briefkasten / das Licht / die Treppe / die Heizung / die Antenne",ru:"водопровод / почтовый ящик / свет / лестница / отопление / антенна"},
+              {de:"Ich gehe zu meinem Anwalt.",ru:"Я обращусь к своему адвокату."},
+              {de:"Wenn Sie auf meinen Brief nicht reagieren, …",ru:"Если Вы не отреагируете на моё письмо, …"},
+              {de:"ich bin von … bis … zu Hause",ru:"я дома с … до …"},
+              {de:"die Nebenkosten reduzieren",ru:"снизить коммунальные платежи"},
+            ]}/>
+            <RedeBlock col={C.red} title="Bedrohungen (was man androhen kann)" items={[
+              {de:"Sie kontaktieren ein anderes Unternehmen und senden eine Rechnung.",ru:"Вы обращаетесь в другую компанию и присылаете счёт."},
+              {de:"Sie wenden sich an einen Anwalt.",ru:"Вы обращаетесь к адвокату."},
+              {de:"Sie senken die Miete.",ru:"Вы снижаете (себе) арендную плату."},
+              {de:"Sie mieten eine andere Wohnung für die Dauer der Renovierung.",ru:"Вы снимаете другую квартиру на время ремонта."},
+            ]}/>
+          </div>
+        )}
+        {tab==="briefe"&&(
+          <div>
+            <div style={{fontSize:12,color:C.muted,marginBottom:10}}>Нажми на заголовок, чтобы раскрыть ситуацию и письмо-образец.</div>
+            {briefe.map((b,i)=><MusterbriefBlock key={i} col={C.red} {...b}/>)}
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
+
 export default function App(){
   const [lId,setLId]=useState(null);
   const [sId,setSId]=useState(null);
@@ -16278,6 +17445,8 @@ export default function App(){
   const [wbOpen,setWbOpen]=useState(false);
   const [tablesOpen,setTablesOpen]=useState(false);
   const [dialogOpen,setDialogOpen]=useState(false);
+  const [pruefungOpen,setPruefungOpen]=useState(false);
+  const [pId,setPId]=useState(null);
   const [niveauOpen,setNiveauOpen]=useState({A1:false,A2:true});
   const [theme,setTheme]=useState(()=>{
     try{return localStorage.getItem("dk_theme")||"dark";}catch{return "dark";}
@@ -16325,6 +17494,43 @@ export default function App(){
           </div>
         </div>
         <Woerterbuch/>
+      </div>
+    </div>
+  );
+
+  // Prüfung — детальный просмотр темы
+  const pruefungItem=pId?PRUEFUNG.find(p=>p.id===pId):null;
+  if(pruefungOpen&&pruefungItem)return(
+    <div style={root}>
+      <ThemeToggle theme={theme} onToggle={toggleTheme}/>
+      <div style={wrap}>
+        <button onClick={()=>setPId(null)} style={{background:"none",border:"none",color:C.muted,cursor:"pointer",fontSize:14,padding:"0 0 14px"}}>← Prüfung</button>
+        <div style={{display:"flex",alignItems:"center",gap:12,marginBottom:18}}>
+          <span style={{fontSize:26}}>{pruefungItem.icon}</span>
+          <div>
+            <div style={{fontWeight:900,fontSize:17,color:C.text}}>{pruefungItem.title}</div>
+            <div style={{fontSize:13,color:C.muted}}>{pruefungItem.sub}</div>
+          </div>
+        </div>
+        {pruefungItem.th&&pruefungItem.th()}
+      </div>
+    </div>
+  );
+
+  // Prüfung — список тем
+  if(pruefungOpen)return(
+    <div style={root}>
+      <ThemeToggle theme={theme} onToggle={toggleTheme}/>
+      <div style={wrap}>
+        <button onClick={()=>setPruefungOpen(false)} style={{background:"none",border:"none",color:C.muted,cursor:"pointer",fontSize:14,padding:"0 0 14px"}}>← Главная</button>
+        <div style={{display:"flex",alignItems:"center",gap:12,marginBottom:18}}>
+          <span style={{fontSize:26}}>🎓</span>
+          <div>
+            <div style={{fontWeight:900,fontSize:17,color:C.text}}>Prüfung</div>
+            <div style={{fontSize:13,color:C.muted}}>Материал для подготовки к экзамену</div>
+          </div>
+        </div>
+        <PruefungPage onOpen={setPId}/>
       </div>
     </div>
   );
@@ -16449,6 +17655,16 @@ export default function App(){
               <div style={{fontSize:12,color:C.muted,marginTop:2}}>13 таблиц · вся грамматика в одном месте</div>
             </div>
             <span style={{color:C.green,fontSize:20}}>›</span>
+          </button>
+          {/* Prüfung */}
+          <button onClick={()=>setPruefungOpen(true)}
+            style={{background:C.red+"15",border:`2px solid ${C.red}`,borderRadius:16,padding:"16px 18px",display:"flex",alignItems:"center",gap:14,cursor:"pointer",textAlign:"left"}}>
+            <span style={{fontSize:28}}>🎓</span>
+            <div style={{flex:1}}>
+              <div style={{fontWeight:800,fontSize:16,color:C.red}}>Prüfung</div>
+              <div style={{fontSize:12,color:C.muted,marginTop:2}}>{PRUEFUNG.length===0?"материал появится здесь":`${PRUEFUNG.length} тем · подготовка к экзамену`}</div>
+            </div>
+            <span style={{color:C.red,fontSize:20}}>›</span>
           </button>
           {["A1","A2"].map(niv=>{
             const items=LEKTIONEN.filter(l=>l.niveau===niv);
