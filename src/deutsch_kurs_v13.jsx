@@ -2241,6 +2241,40 @@ const WBDATA=[
   {art:"die", de:"Rakete",ord:1029,       pl:"-n",           ru:"ракета (фейерверк)",                               tema:"Feste", lekt:"A2-L7",niveau:"A2"},
   {art:"das", de:"Bleigießen",ord:1030,   pl:"—",            ru:"гадание на воске (новогодний обычай)",             tema:"Feste", lekt:"A2-L7",niveau:"A2"},
   {art:"der", de:"Böller",ord:1031,       pl:"-",            ru:"петарда, хлопушка",                                tema:"Feste", lekt:"A2-L7",niveau:"A2"},
+  {art:"",    de:"bescheren",ord:1032,    pl:"—",            ru:"дарить, преподносить (особенно на Рождество)",     tema:"Feste", lekt:"A2-L7",niveau:"A2"},
+  {art:"",    de:"Geschenke austeilen",ord:1033,pl:"—",      ru:"раздавать подарки",                                tema:"Phrase", lekt:"A2-L7",niveau:"A2"},
+  {art:"der", de:"Brauch",ord:1034,       pl:'"-e',          ru:"обычай, традиция",                                 tema:"Feste", lekt:"A2-L7",niveau:"A2"},
+  {art:"die", de:"Trauung",ord:1035,      pl:"-en",          ru:"бракосочетание, венчание (в загсе)",               tema:"Feste", lekt:"A2-L7",niveau:"A2"},
+  {art:"",    de:"Geld sammeln",ord:1036, pl:"—",            ru:"собирать деньги (напр. на общий подарок)",         tema:"Phrase", lekt:"A2-L7",niveau:"A2"},
+  {art:"",    de:"benötigen",ord:1037,    pl:"—",            ru:"нуждаться в чём-то, требовать · untrennbar",       tema:"Feste", lekt:"A2-L7",niveau:"A2"},
+  {art:"",    de:"sich überlegen",ord:1038,pl:"—",           ru:"обдумывать · überlegt sich · hat sich überlegt",   tema:"Feste", lekt:"A2-L7",niveau:"A2"},
+  {art:"",    de:"hinkriegen",ord:1039,   pl:"—",            ru:"справиться, суметь сделать · kriegt hin · hat hingekriegt", tema:"Feste", lekt:"A2-L7",niveau:"A2"},
+  {art:"",    de:"auf jeden Fall",ord:1040,pl:"—",           ru:"в любом случае",                                   tema:"Phrase", lekt:"A2-L7",niveau:"A2"},
+  {art:"",    de:"tauschen",ord:1041,     pl:"—",            ru:"обменивать(ся)",                                   tema:"Feste", lekt:"A2-L7",niveau:"A2"},
+  {art:"",    de:"werfen",ord:1042,       pl:"—",            ru:"бросать, кидать · wirft · warf · hat geworfen",    tema:"Feste", lekt:"A2-L7",niveau:"A2"},
+  {art:"das", de:"Pech",ord:1043,         pl:"—",            ru:"невезение, неудача (только ед.ч.)",                tema:"Feste", lekt:"A2-L7",niveau:"A2"},
+  {art:"",    de:"pitschnass",ord:1044,   pl:"—",            ru:"насквозь промокший",                               tema:"Feste", lekt:"A2-L7",niveau:"A2"},
+  {art:"",    de:"sich verlieben",ord:1045,pl:"—",           ru:"влюбляться · verliebt sich · hat sich verliebt",   tema:"Feste", lekt:"A2-L7",niveau:"A2"},
+  {art:"",    de:"sich freuen",ord:1046,  pl:"—",            ru:"радоваться · freut sich · hat sich gefreut",       tema:"Feste", lekt:"A2-L7",niveau:"A2"},
+  {art:"",    de:"aufstellen",ord:1047,   pl:"—",            ru:"расставлять, устанавливать (напр. мебель) · stellt auf · hat aufgestellt", tema:"Wohnung", lekt:"A2-L6",niveau:"A2"},
+  {art:"",    de:"sich kümmern um",ord:1048,pl:"—",          ru:"заботиться о ком-то/чём-то",                       tema:"Alltag", lekt:"A2-L7",niveau:"A2"},
+  {art:"",    de:"das Problem lösen",ord:1049,pl:"—",        ru:"решать проблему",                                  tema:"Phrase", lekt:"A2-L7",niveau:"A2"},
+  {art:"",    de:"sich sorgen um",ord:1050,pl:"—",           ru:"беспокоиться, тревожиться о ком-то/чём-то",        tema:"Alltag", lekt:"A2-L7",niveau:"A2"},
+  {art:"",    de:"hinfallen",ord:1052,    pl:"—",            ru:"падать, упасть · fällt hin · ist hingefallen",     tema:"Alltag", lekt:"A2-L7",niveau:"A2"},
+  {art:"",    de:"einfallen",ord:1053,    pl:"—",            ru:"приходить в голову (кому-л., Dativ) · fällt ein · ist eingefallen", tema:"Alltag", lekt:"A2-L7",niveau:"A2"},
+  {art:"",    de:"nett",ord:1054,         pl:"—",            ru:"милый, приятный",                                  tema:"Alltag", lekt:"A2-L7",niveau:"A2"},
+  {art:"",    de:"sich vorstellen",ord:1055,pl:"—",          ru:"представляться / представлять себе · stellt sich vor · hat sich vorgestellt", tema:"Wohnung", lekt:"A2-L6",niveau:"A2"},
+  {art:"",    de:"sich treffen",ord:1056, pl:"—",            ru:"встречаться (друг с другом) · trifft sich · hat sich getroffen", tema:"Feste", lekt:"A2-L7",niveau:"A2"},
+  {art:"",    de:"sich streiten",ord:1057,pl:"—",            ru:"ссориться · streitet sich · hat sich gestritten",  tema:"Feste", lekt:"A2-L7",niveau:"A2"},
+  {art:"",    de:"auf dem Weg",ord:1058,  pl:"—",            ru:"по пути, на пути",                                 tema:"Phrase", lekt:"A2-L7",niveau:"A2"},
+  {art:"",    de:"rechnen mit",ord:1059,  pl:"—",            ru:"рассчитывать на, считаться с (+ Dativ)",           tema:"Phrase", lekt:"A2-L7",niveau:"A2"},
+  {art:"",    de:"den Code eingeben",ord:1060,pl:"—",        ru:"вводить код",                                      tema:"Phrase", lekt:"A2-L7",niveau:"A2"},
+  {art:"",    de:"das Geld abheben",ord:1061,pl:"—",         ru:"снимать деньги (со счёта)",                        tema:"Phrase", lekt:"A2-L7",niveau:"A2"},
+  {art:"die", de:"Einrichtung",ord:1062,  pl:"-en",          ru:"обстановка, интерьер, мебель",                     tema:"Wohnung", lekt:"A2-L6",niveau:"A2"},
+  {art:"die", de:"Lichterkette",ord:1063, pl:"-n",           ru:"гирлянда (светящаяся)",                            tema:"Feste", lekt:"A2-L7",niveau:"A2"},
+  {art:"",    de:"sich versammeln",ord:1064,pl:"—",          ru:"собираться (группой)",                             tema:"Feste", lekt:"A2-L7",niveau:"A2"},
+  {art:"das", de:"Lächeln",ord:1066,      pl:"—",            ru:"улыбка (существительное; глагол см. lächeln)",     tema:"Alltag", lekt:"A2-L7",niveau:"A2"},
+  {art:"das", de:"Faultier",ord:1067,     pl:"-e",           ru:"ленивец (животное)",                               tema:"Alltag", lekt:"A2-L7",niveau:"A2"},
 ];
 
 
@@ -3382,6 +3416,60 @@ const KONJ_ALL={
   auffallen:   {pref:"auf", type:"a→ä", col:C.teal, bg:C.tealBg,
     ich:"falle … auf",  du:"fällst … auf",  "er/sie/es":"fällt … auf",
     wir:"fallen … auf", ihr:"fallt … auf",  "sie/Sie":"fallen … auf", pt:"fiel … auf", ptc:{du:"fielst … auf",wir:"fielen … auf",ihr:"fielt … auf",sie:"fielen … auf"}, pf:"ist aufgefallen"},
+  bescheren:   {col:C.orange, bg:C.orangeBg,
+    ich:"beschere",  du:"bescherst",  "er/sie/es":"beschert",
+    wir:"bescheren", ihr:"beschert",  "sie/Sie":"bescheren", pt:"bescherte", pf:"hat beschert"},
+  benötigen:   {col:C.teal, bg:C.tealBg, note:"untrennbar: kein ge-",
+    ich:"benötige",  du:"benötigst",  "er/sie/es":"benötigt",
+    wir:"benötigen", ihr:"benötigt",  "sie/Sie":"benötigen", pt:"benötigte", pf:"hat benötigt"},
+  "sich überlegen":{col:C.purple, bg:C.purpleBg, note:"Reflexiv (Dativ) | untrennbar: kein ge-",
+    ich:"überlege mir",  du:"überlegst dir",  "er/sie/es":"überlegt sich",
+    wir:"überlegen uns", ihr:"überlegt euch",  "sie/Sie":"überlegen sich", pt:"überlegte sich", pf:"hat sich überlegt"},
+  hinkriegen:  {pref:"hin", col:C.green, bg:C.greenBg,
+    ich:"kriege … hin",  du:"kriegst … hin",  "er/sie/es":"kriegt … hin",
+    wir:"kriegen … hin", ihr:"kriegt … hin",  "sie/Sie":"kriegen … hin", pt:"kriegte … hin", pf:"hat hingekriegt"},
+  tauschen:    {col:C.blue, bg:C.blueBg,
+    ich:"tausche",  du:"tauschst",  "er/sie/es":"tauscht",
+    wir:"tauschen", ihr:"tauscht",  "sie/Sie":"tauschen", pt:"tauschte", pf:"hat getauscht"},
+  werfen:      {type:"e→i", col:C.orange, bg:C.orangeBg,
+    ich:"werfe",  du:"wirfst",  "er/sie/es":"wirft",
+    wir:"werfen", ihr:"werft",  "sie/Sie":"werfen", pt:"warf", ptc:{du:"warfst",wir:"warfen",ihr:"warft",sie:"warfen"}, pf:"hat geworfen"},
+  "sich verlieben":{col:C.red, bg:C.redBg, note:"Reflexiv | untrennbar: kein ge-",
+    ich:"verliebe mich",  du:"verliebst dich",  "er/sie/es":"verliebt sich",
+    wir:"verlieben uns",  ihr:"verliebt euch",  "sie/Sie":"verlieben sich", pt:"verliebte sich", pf:"hat sich verliebt"},
+  "sich freuen":{col:C.yellow, bg:C.yellowBg, note:"Reflexiv",
+    ich:"freue mich",  du:"freust dich",  "er/sie/es":"freut sich",
+    wir:"freuen uns",  ihr:"freut euch",  "sie/Sie":"freuen sich", pt:"freute sich", pf:"hat sich gefreut"},
+  aufstellen:  {pref:"auf", col:C.blue, bg:C.blueBg,
+    ich:"stelle … auf",  du:"stellst … auf",  "er/sie/es":"stellt … auf",
+    wir:"stellen … auf", ihr:"stellt … auf",  "sie/Sie":"stellen … auf", pt:"stellte … auf", pf:"hat aufgestellt"},
+  "sich kümmern um":{col:C.green, bg:C.greenBg, note:"Reflexiv | +um Akk.",
+    ich:"kümmere mich",  du:"kümmerst dich",  "er/sie/es":"kümmert sich",
+    wir:"kümmern uns",   ihr:"kümmert euch",  "sie/Sie":"kümmern sich", pt:"kümmerte sich", pf:"hat sich gekümmert"},
+  "sich sorgen um":{col:C.red, bg:C.redBg, note:"Reflexiv | +um Akk.",
+    ich:"sorge mich",  du:"sorgst dich",  "er/sie/es":"sorgt sich",
+    wir:"sorgen uns",  ihr:"sorgt euch",  "sie/Sie":"sorgen sich", pt:"sorgte sich", pf:"hat sich gesorgt"},
+  hinfallen:   {pref:"hin", type:"a→ä", col:C.red, bg:C.redBg,
+    ich:"falle … hin",  du:"fällst … hin",  "er/sie/es":"fällt … hin",
+    wir:"fallen … hin", ihr:"fallt … hin",  "sie/Sie":"fallen … hin", pt:"fiel … hin", ptc:{du:"fielst … hin",wir:"fielen … hin",ihr:"fielt … hin",sie:"fielen … hin"}, pf:"ist hingefallen"},
+  einfallen:   {pref:"ein", type:"a→ä", col:C.teal, bg:C.tealBg, note:"+ Dativ: jemandem einfallen",
+    ich:"falle … ein",  du:"fällst … ein",  "er/sie/es":"fällt … ein",
+    wir:"fallen … ein", ihr:"fallt … ein",  "sie/Sie":"fallen … ein", pt:"fiel … ein", ptc:{du:"fielst … ein",wir:"fielen … ein",ihr:"fielt … ein",sie:"fielen … ein"}, pf:"ist eingefallen"},
+  "sich vorstellen":{col:C.blue, bg:C.blueBg, note:"Reflexiv (Akk.)",
+    ich:"stelle mich vor",  du:"stellst dich vor",  "er/sie/es":"stellt sich vor",
+    wir:"stellen uns vor",  ihr:"stellt euch vor",  "sie/Sie":"stellen sich vor", pt:"stellte sich vor", pf:"hat sich vorgestellt"},
+  "sich treffen":{type:"e→i", col:C.orange, bg:C.orangeBg, note:"Reflexiv",
+    ich:"treffe mich",  du:"triffst dich",  "er/sie/es":"trifft sich",
+    wir:"treffen uns",  ihr:"trefft euch",  "sie/Sie":"treffen sich", pt:"traf sich", ptc:{du:"trafst dich",wir:"trafen uns",ihr:"traft euch",sie:"trafen sich"}, pf:"hat sich getroffen"},
+  "sich streiten":{col:C.red, bg:C.redBg, note:"Reflexiv",
+    ich:"streite mich",  du:"streitest dich",  "er/sie/es":"streitet sich",
+    wir:"streiten uns",  ihr:"streitet euch",  "sie/Sie":"streiten sich", pt:"stritt sich", ptc:{du:"strittest dich",wir:"stritten uns",ihr:"strittet euch",sie:"stritten sich"}, pf:"hat sich gestritten"},
+  "rechnen mit":{col:C.purple, bg:C.purpleBg, note:"+ Dativ",
+    ich:"rechne",  du:"rechnest",  "er/sie/es":"rechnet",
+    wir:"rechnen", ihr:"rechnet",  "sie/Sie":"rechnen", pt:"rechnete", pf:"hat gerechnet"},
+  "sich versammeln":{col:C.green, bg:C.greenBg, note:"Reflexiv",
+    ich:"versammle mich",  du:"versammelst dich",  "er/sie/es":"versammelt sich",
+    wir:"versammeln uns",  ihr:"versammelt euch",  "sie/Sie":"versammeln sich", pt:"versammelte sich", pf:"hat sich versammelt"},
 };
 
 // Ударения: комбинирующая акута \u0301 ставится после ударной гласной
@@ -3773,7 +3861,7 @@ const STRESS_MARKS={
 "Zimmermädchen":"Zi\u0301mmermädchen","Hotelmanager":"Hote\u0301lmanager","Hotelfachfrau":"Hote\u0301lfachfrau","empfangen":"empfa\u0301ngen","Dienstplan":"Die\u0301nstplan","Zimmerreservierung":"Zi\u0301mmerreservierung","Auszubildende":"A\u0301uszubildende","Fachstudium":"Fa\u0301chstudium","Nebenjob":"Ne\u0301benjob","Aufenthalt":"A\u0301ufenthalt","Raucherzimmer":"Ra\u0301ucherzimmer","Nichtraucherzimmer":"Ni\u0301chtraucherzimmer","Mineralwasser":"Minera\u0301lwasser","Zimmerservice":"Zi\u0301mmerservice","aussuchen":"a\u0301ussuchen","Handtuch":"Ha\u0301ndtuch","frei":"fre\u0301i","Fahrerin":"Fa\u0301hrerin","Patient":"Patie\u0301nt","vorlesen":"vo\u0301rlesen","Kunde":"Ku\u0301nde","Betriebsversammlung":"Betrie\u0301bsversammlung","Betriebsrat":"Betrie\u0301bsrat","Gehalt":"Geha\u0301lt","vormittags":"vo\u0301rmittags","nachmittags":"na\u0301chmittags","Musikschule":"Musi\u0301kschule","Einkaufszentrum":"E\u0301inkaufszentrum","sich langweilen":"la\u0301ngweilen","alleinerziehend":"allei\u0301nerziehend","Ganztagsbetreuung":"Ga\u0301nztagsbetreuung","übernehmen":"überne\u0301hmen","individuell":"individue\u0301ll","flexibel":"flexi\u0301bel","Verwandtschaft":"Verwa\u0301ndtschaft","Krankenversicherung":"Kra\u0301nkenversicherung","behindert":"behi\u0301ndert","anbraten":"a\u0301nbraten",
 "App":"A\u0301pp","Bescheid":"Besche\u0301id","Ahnung":"A\u0301hnung","drüben":"drü\u0301ben","höflich":"hö\u0301flich","Nachricht":"Na\u0301chricht","Bericht":"Beri\u0301cht","Arbeitskollege":"A\u0301rbeitskollege","Mitarbeiter":"Mi\u0301tarbeiter","Computerprogramm":"Compu\u0301terprogramm","installieren":"installi\u0301eren","verschieben":"verschie\u0301ben","Anruf":"A\u0301nruf","zurückrufen":"zurü\u0301ckrufen","Kaffeeautomat":"Kaffeeautoma\u0301t","Pausenregel":"Pa\u0301usenregel","Arzttermin":"A\u0301rzttermin","Gerät":"Gerä\u0301t","Getränkeautomat":"Getränkeautoma\u0301t","Kopierer":"Kopi\u0301erer","Taste":"Ta\u0301ste","ausschalten":"a\u0301usschalten","einwerfen":"e\u0301inwerfen","Marktleiter":"Ma\u0301rktleiter","Buchhaltung":"Bu\u0301chhaltung","Technik":"Te\u0301chnik","Spedition":"Speditio\u0301n","einräumen":"e\u0301inräumen","ausräumen":"a\u0301usräumen","Münzeinwurf":"Mü\u0301nzeinwurf","Bedienungsanleitung":"Bedi\u0301enungsanleitung","Kontakt":"Konta\u0301kt","Gespräch":"Gespr\u0301äch","telefonieren":"telefoni\u0301eren","Satzzeichen":"Sa\u0301tzzeichen","Betriebsausflug":"Betrie\u0301bsausflug","geschlossen":"geschlo\u0301ssen","Treffpunkt":"Tre\u0301ffpunkt","Eintritt":"E\u0301intritt","Liste":"Li\u0301ste","Polizist":"Polizi\u0301st","Maurer":"Ma\u0301urer","Dachdecker":"Da\u0301chdecker","Verputzer":"Verpu\u0301tzer","Fliesenleger":"Fli\u0301esenleger","Schreiner":"Schre\u0301iner","Gabelstaplerfahrer":"Ga\u0301belstaplerfahrer","Installateur":"Installate\u0301ur","Baggerfahrer":"Ba\u0301ggerfahrer","Lkw-Fahrer":"Lkw-Fa\u0301hrer","Bauingenieur":"Bauingenie\u0301ur","Maler":"Ma\u0301ler","Gepäckfahrer":"Gepä\u0301ckfahrer","Flugbegleiter":"Flu\u0301gbegleiter","Check-in-Schalter":"Che\u0301ck-in-Schalter","Sicherheitskontrolle":"Si\u0301cherheitskontrolle","Busfahrer":"Bu\u0301sfahrer","Bodenpersonal":"Bo\u0301denpersonal","Fluglotse":"Flu\u0301glotse","Vorort":"Vo\u0301rort","außerhalb":"a\u0301ußerhalb","verkehrsgünstig":"verke\u0301hrsgünstig","Ruhe":"Ru\u0301he","lassen":"la\u0301ssen","Kaltmiete":"Ka\u0301ltmiete","Warmmiete":"Wa\u0301rmmiete","Obergeschoss":"O\u0301bergeschoss","Einbauküche":"E\u0301inbauküche","Kaution":"Kautio\u0301n","abbauen":"a\u0301bbauen","renovieren":"renovi\u0301eren","transportieren":"transporti\u0301eren","Bauernhaus":"Ba\u0301uernhaus","Öffnungszeiten":"Ö\u0301ffnungszeiten",
 "Sicherheit":"Si\u0301cherheit","verantwortlich":"verantwo\u0301rtlich","aufpassen":"a\u0301ufpassen","gratulieren":"gratuli\u0301eren","jammern":"ja\u0301mmern","plaudern":"pla\u0301udern","Freiheit":"Fre\u0301iheit","TÜV":"TÜ\u0301V","Wartung":"Wa\u0301rtung","ablaufen":"a\u0301blaufen","Vorhaben":"Vo\u0301rhaben","Ursache":"U\u0301rsache","einstellen":"e\u0301instellen","Wassermenge":"Wa\u0301ssermenge","Laden":"La\u0301den","Betrieb":"Betrie\u0301b","Unternehmen":"Unterne\u0301hmen","Schlüsselübergabe":"Schlü\u0301sselübergabe","weder":"we\u0301der",
-"Immobilie":"Immobi\u0301lie","Nachmieter":"Na\u0301chmieter","Kundenzentrum":"Ku\u0301ndenzentrum","Zwilling":"Zwi\u0301lling","Wandfarbe":"Wa\u0301ndfarbe","Pinsel":"Pi\u0301nsel","Farbroller":"Fa\u0301rbroller","Tapete":"Tape\u0301te","Schraube":"Schra\u0301ube","Dübel":"Dü\u0301bel","Nagel":"Na\u0301gel","Hammer":"Ha\u0301mmer","Akku-Bohrer":"A\u0301kku-Bohrer","tapezieren":"tapezi\u0301eren","einverstanden":"einver\u0301standen","sympathisch":"sympa\u0301thisch","unsympathisch":"unsympa\u0301thisch","Haustier":"Ha\u0301ustier","Auftrag":"A\u0301uftrag","Neubau":"Ne\u0301ubau","Nebenkostenabrechnung":"Ne\u0301benkostenabrechnung","Rückzahlung":"Rü\u0301ckzahlung","Abschlag":"A\u0301bschlag","gesamt":"gesa\u0301mt","Allgemeinstrom":"Allgemei\u0301nstrom","Straßenreinigung":"Stra\u0301ßenreinigung","Grundsteuer":"Gru\u0301ndsteuer","Gebäudeversicherung":"Gebä\u0301udeversicherung","Schornsteinfeger":"Scho\u0301rnsteinfeger","Anteil":"A\u0301nteil","Mieter":"Mi\u0301eter","Wohnort":"Wo\u0301hnort","Feuerwerk":"Fe\u0301uerwerk","schenken":"sche\u0301nken","sich verkleiden":"sich verkle\u0301iden","Verwandte":"Verwa\u0301ndte","Glückwunsch":"Glü\u0301ckwunsch","Kompliment":"Komplime\u0301nt","Feiertag":"Fe\u0301iertag","Weihnachten":"We\u0301ihnachten","Hochzeitstag":"Ho\u0301chzeitstag","Hochzeitsfeier":"Ho\u0301chzeitsfeier","Jubiläum":"Jubilä\u0301um","Gutschein":"Gu\u0301tschein","Kerze":"Ke\u0301rze","Kette":"Ke\u0301tte","Geschirr":"Geschi\u0301rr","Schachtel Pralinen":"Scha\u0301chtel Pralinen","Parfüm":"Parfü\u0301m","Blumenstrauß":"Blu\u0301menstrauß","Rose":"Ro\u0301se","Koffer":"Ko\u0301ffer","Decke":"De\u0301cke","normalerweise":"norma\u0301lerweise","Braut":"Bra\u0301ut","Bräutigam":"Brä\u0301utigam","Brautpaar":"Bra\u0301utpaar","Brautkleid":"Bra\u0301utkleid","Schleier":"Schle\u0301ier","Ohrring":"O\u0301hrring","eng":"e\u0301ng","wunderschön":"Wu\u0301nderschön","romantisch":"roma\u0301ntisch","Hochzeitstorte":"Ho\u0301chzeitstorte","Gastgeber":"Ga\u0301stgeber","auffallen":"a\u0301uffallen","dabei sein":"dabe\u0301i sein","vorgestern":"vo\u0301rgestern","Stimmung":"Sti\u0301mmung","normal":"norma\u0301l","Reis werfen":"Re\u0301is werfen","Ringe tauschen":"Ri\u0301nge tauschen","Alles Gute!":"Alles Gu\u0301te!","Frohe Ostern!":"Frohe O\u0301stern!","Prosit Neujahr!":"Pro\u0301sit Neuja\u0301hr!","Kostüm":"Kostü\u0301m","Konfetti":"Konfe\u0301tti","Luftschlangen":"Lu\u0301ftschlangen","Osterei":"O\u0301sterei","Osterhase":"O\u0301sterhase","Osterzopf":"O\u0301sterzopf","Osterstrauß":"O\u0301sterstrauß","Sankt Martin":"Sankt Ma\u0301rtin","Laterne":"Late\u0301rne","Laternenumzug":"Late\u0301rnenumzug","Pferd":"Pfe\u0301rd","Nikolaus":"Ni\u0301kolaus","Weihnachtsbaum":"We\u0301ihnachtsbaum","Weihnachtsgans":"We\u0301ihnachtsgans","Adventskalender":"Adve\u0301ntskalender","Rakete":"Rake\u0301te","Bleigießen":"Ble\u0301igießen","Böller":"Bö\u0301ller",
+"Immobilie":"Immobi\u0301lie","Nachmieter":"Na\u0301chmieter","Kundenzentrum":"Ku\u0301ndenzentrum","Zwilling":"Zwi\u0301lling","Wandfarbe":"Wa\u0301ndfarbe","Pinsel":"Pi\u0301nsel","Farbroller":"Fa\u0301rbroller","Tapete":"Tape\u0301te","Schraube":"Schra\u0301ube","Dübel":"Dü\u0301bel","Nagel":"Na\u0301gel","Hammer":"Ha\u0301mmer","Akku-Bohrer":"A\u0301kku-Bohrer","tapezieren":"tapezi\u0301eren","einverstanden":"einver\u0301standen","sympathisch":"sympa\u0301thisch","unsympathisch":"unsympa\u0301thisch","Haustier":"Ha\u0301ustier","Auftrag":"A\u0301uftrag","Neubau":"Ne\u0301ubau","Nebenkostenabrechnung":"Ne\u0301benkostenabrechnung","Rückzahlung":"Rü\u0301ckzahlung","Abschlag":"A\u0301bschlag","gesamt":"gesa\u0301mt","Allgemeinstrom":"Allgemei\u0301nstrom","Straßenreinigung":"Stra\u0301ßenreinigung","Grundsteuer":"Gru\u0301ndsteuer","Gebäudeversicherung":"Gebä\u0301udeversicherung","Schornsteinfeger":"Scho\u0301rnsteinfeger","Anteil":"A\u0301nteil","Mieter":"Mi\u0301eter","Wohnort":"Wo\u0301hnort","Feuerwerk":"Fe\u0301uerwerk","schenken":"sche\u0301nken","sich verkleiden":"sich verkle\u0301iden","Verwandte":"Verwa\u0301ndte","Glückwunsch":"Glü\u0301ckwunsch","Kompliment":"Komplime\u0301nt","Feiertag":"Fe\u0301iertag","Weihnachten":"We\u0301ihnachten","Hochzeitstag":"Ho\u0301chzeitstag","Hochzeitsfeier":"Ho\u0301chzeitsfeier","Jubiläum":"Jubilä\u0301um","Gutschein":"Gu\u0301tschein","Kerze":"Ke\u0301rze","Kette":"Ke\u0301tte","Geschirr":"Geschi\u0301rr","Schachtel Pralinen":"Scha\u0301chtel Pralinen","Parfüm":"Parfü\u0301m","Blumenstrauß":"Blu\u0301menstrauß","Rose":"Ro\u0301se","Koffer":"Ko\u0301ffer","Decke":"De\u0301cke","normalerweise":"norma\u0301lerweise","Braut":"Bra\u0301ut","Bräutigam":"Brä\u0301utigam","Brautpaar":"Bra\u0301utpaar","Brautkleid":"Bra\u0301utkleid","Schleier":"Schle\u0301ier","Ohrring":"O\u0301hrring","eng":"e\u0301ng","wunderschön":"Wu\u0301nderschön","romantisch":"roma\u0301ntisch","Hochzeitstorte":"Ho\u0301chzeitstorte","Gastgeber":"Ga\u0301stgeber","auffallen":"a\u0301uffallen","dabei sein":"dabe\u0301i sein","vorgestern":"vo\u0301rgestern","Stimmung":"Sti\u0301mmung","normal":"norma\u0301l","Reis werfen":"Re\u0301is werfen","Ringe tauschen":"Ri\u0301nge tauschen","Alles Gute!":"Alles Gu\u0301te!","Frohe Ostern!":"Frohe O\u0301stern!","Prosit Neujahr!":"Pro\u0301sit Neuja\u0301hr!","Kostüm":"Kostü\u0301m","Konfetti":"Konfe\u0301tti","Luftschlangen":"Lu\u0301ftschlangen","Osterei":"O\u0301sterei","Osterhase":"O\u0301sterhase","Osterzopf":"O\u0301sterzopf","Osterstrauß":"O\u0301sterstrauß","Sankt Martin":"Sankt Ma\u0301rtin","Laterne":"Late\u0301rne","Laternenumzug":"Late\u0301rnenumzug","Pferd":"Pfe\u0301rd","Nikolaus":"Ni\u0301kolaus","Weihnachtsbaum":"We\u0301ihnachtsbaum","Weihnachtsgans":"We\u0301ihnachtsgans","Adventskalender":"Adve\u0301ntskalender","Rakete":"Rake\u0301te","Bleigießen":"Ble\u0301igießen","Böller":"Bö\u0301ller","bescheren":"besche\u0301ren","Geschenke austeilen":"Gesche\u0301nke au\u0301steilen","Brauch":"Bra\u0301uch","Trauung":"Tra\u0301uung","Geld sammeln":"Geld sa\u0301mmeln","benötigen":"benö\u0301tigen","sich überlegen":"sich überle\u0301gen","hinkriegen":"hi\u0301nkriegen","auf jeden Fall":"auf jeden Fa\u0301ll","tauschen":"ta\u0301uschen","werfen":"we\u0301rfen","Pech":"Pe\u0301ch","pitschnass":"pi\u0301tschnass","sich verlieben":"sich verlie\u0301ben","sich freuen":"sich fre\u0301uen","aufstellen":"a\u0301ufstellen","sich kümmern um":"sich kü\u0301mmern um","das Problem lösen":"das Proble\u0301m lö\u0301sen","sich sorgen um":"sich so\u0301rgen um","hinfallen":"hi\u0301nfallen","einfallen":"ei\u0301nfallen","nett":"ne\u0301tt","sich vorstellen":"sich vo\u0301rstellen","sich treffen":"sich tre\u0301ffen","sich streiten":"sich stre\u0301iten","auf dem Weg":"auf dem We\u0301g","rechnen mit":"re\u0301chnen mit","den Code eingeben":"den Co\u0301de ei\u0301ngeben","das Geld abheben":"das Geld a\u0301bheben","Einrichtung":"Ei\u0301nrichtung","Lichterkette":"Li\u0301chterkette","sich versammeln":"sich versa\u0301mmeln","Lächeln":"Lä\u0301cheln","Faultier":"Fa\u0301ultier",
 };
 
 // IPA-транскрипция для всего словаря (кроме фраз)
@@ -4147,7 +4235,7 @@ const IPA_DATA={
 "Zimmermädchen":"[ˈtsɪmɐˌmɛːtçən]","Hotelmanager":"[hoˈtɛlˌmɛnɪdʒɐ]","Hotelfachfrau":"[hoˈtɛlˌfaxfʁaʊ̯]","empfangen":"[ɛmˈpfaŋən]","Dienstplan":"[ˈdiːnstˌplaːn]","Zimmerreservierung":"[ˈtsɪmɐʁezɛʁˌviːʁʊŋ]","Auszubildende":"[ˈaʊ̯stsuˌbɪldn̩də]","Fachstudium":"[ˈfaxˌʃtuːdi̯ʊm]","Nebenjob":"[ˈneːbn̩ˌdʒɔp]","Aufenthalt":"[ˈaʊ̯fn̩thalt]","Raucherzimmer":"[ˈʁaʊ̯xɐˌtsɪmɐ]","Nichtraucherzimmer":"[ˈnɪçtˌʁaʊ̯xɐˌtsɪmɐ]","Mineralwasser":"[mineˈʁaːlˌvasɐ]","Zimmerservice":"[ˈtsɪmɐˌsœːɐ̯vɪs]","aussuchen":"[ˈaʊ̯sˌzuːxən]","Handtuch":"[ˈhantˌtuːx]","frei":"[fʁaɪ̯]","Fahrerin":"[ˈfaːʁəʁɪn]","Patient":"[paˈtsi̯ɛnt]","vorlesen":"[ˈfoːɐ̯ˌleːzən]","Kunde":"[ˈkʊndə]","Betriebsversammlung":"[bəˈtʁiːpsfɛɐ̯ˌzamlʊŋ]","Betriebsrat":"[bəˈtʁiːpsˌʁaːt]","Gehalt":"[ɡəˈhalt]","vormittags":"[ˈfoːɐ̯ˌmɪtaːks]","nachmittags":"[ˈnaːxˌmɪtaːks]","Musikschule":"[muˈziːkˌʃuːlə]","Einkaufszentrum":"[ˈaɪ̯nkaʊ̯fsˌtsɛntʁʊm]","sich langweilen":"[ˈlaŋˌvaɪ̯lən]","alleinerziehend":"[aˈlaɪ̯nɛɐ̯ˌtsiːənt]","Ganztagsbetreuung":"[ˈɡantsˌtaːksbəˌtʁɔɪ̯ʊŋ]","übernehmen":"[yːbɐˈneːmən]","individuell":"[ɪndiviˈdu̯ɛl]","flexibel":"[flɛˈksiːbl̩]","Verwandtschaft":"[fɛɐ̯ˈvantʃaft]","Krankenversicherung":"[ˈkʁaŋkənfɛɐ̯ˌzɪçəʁʊŋ]","behindert":"[bəˈhɪndɐt]","anbraten":"[ˈanˌbʁaːtn̩]",
 "App":"[ap]","Bescheid":"[bəˈʃaɪ̯t]","Ahnung":"[ˈaːnʊŋ]","drüben":"[ˈdʁyːbən]","höflich":"[ˈhøːflɪç]","Nachricht":"[ˈnaːxʁɪçt]","Bericht":"[bəˈʁɪçt]","Arbeitskollege":"[ˈaʁbaɪ̯tskɔˌleːɡə]","Mitarbeiter":"[ˈmɪtˌʔaʁbaɪ̯tɐ]","Computerprogramm":"[kɔmˈpjuːtɐpʁoˌɡʁam]","installieren":"[ɪnstaˈliːʁən]","verschieben":"[fɛɐ̯ˈʃiːbən]","Anruf":"[ˈanˌʁuːf]","zurückrufen":"[tsuˈʁʏkˌʁuːfən]","Kaffeeautomat":"[ˈkafeʔaʊ̯toˌmaːt]","Pausenregel":"[ˈpaʊ̯zn̩ˌʁeːɡl̩]","Arzttermin":"[ˈaːɐ̯tstɛɐ̯ˌmiːn]","Gerät":"[ɡəˈʁɛːt]","Getränkeautomat":"[ɡəˈtʁɛŋkəʔaʊ̯toˌmaːt]","Kopierer":"[koˈpiːʁɐ]","Taste":"[ˈtastə]","ausschalten":"[ˈaʊ̯sˌʃaltən]","einwerfen":"[ˈaɪ̯nˌvɛʁfən]","Marktleiter":"[ˈmaʁktˌlaɪ̯tɐ]","Buchhaltung":"[ˈbuːxˌhaltʊŋ]","Technik":"[ˈtɛçnɪk]","Spedition":"[ʃpediˈtsi̯oːn]","einräumen":"[ˈaɪ̯nˌʁɔɪ̯mən]","ausräumen":"[ˈaʊ̯sˌʁɔɪ̯mən]","Münzeinwurf":"[ˈmʏntsˌʔaɪ̯nvʊʁf]","Bedienungsanleitung":"[bəˈdiːnʊŋsˌʔanlaɪ̯tʊŋ]","Kontakt":"[kɔnˈtakt]","Gespräch":"[ɡəˈʃpʁɛːç]","telefonieren":"[telefoˈniːʁən]","Satzzeichen":"[ˈzatsˌtsaɪ̯çən]","Betriebsausflug":"[bəˈtʁiːpsˌʔaʊ̯sfluːk]","geschlossen":"[ɡəˈʃlɔsən]","Treffpunkt":"[ˈtʁɛfˌpʊŋkt]","Eintritt":"[ˈaɪ̯nˌtʁɪt]","Liste":"[ˈlɪstə]","Polizist":"[poliˈtsɪst]","Maurer":"[ˈmaʊ̯ʁɐ]","Dachdecker":"[ˈdaxˌdɛkɐ]","Verputzer":"[fɛɐ̯ˈpʊtsɐ]","Fliesenleger":"[ˈfliːzn̩ˌleːɡɐ]","Schreiner":"[ˈʃʁaɪ̯nɐ]","Gabelstaplerfahrer":"[ˈɡaːbl̩ˌʃtaːplɐˌfaːʁɐ]","Installateur":"[ɪnstalaˈtøːɐ̯]","Baggerfahrer":"[ˈbaɡɐˌfaːʁɐ]","Lkw-Fahrer":"[ˌɛlkaːˈveː ˌfaːʁɐ]","Bauingenieur":"[ˈbaʊ̯ʔɪnʒeˌni̯øːɐ̯]","Maler":"[ˈmaːlɐ]","Gepäckfahrer":"[ɡəˈpɛkˌfaːʁɐ]","Flugbegleiter":"[ˈfluːkbəˌɡlaɪ̯tɐ]","Check-in-Schalter":"[ˈtʃɛkɪnˌʃaltɐ]","Sicherheitskontrolle":"[ˈzɪçɐhaɪ̯tskɔnˌtʁɔlə]","Busfahrer":"[ˈbʊsˌfaːʁɐ]","Bodenpersonal":"[ˈboːdn̩pɛʁzoˌnaːl]","Fluglotse":"[ˈfluːkˌloːtsə]","Vorort":"[ˈfoːɐ̯ˌʔɔʁt]","außerhalb":"[ˈaʊ̯sɐhalp]","verkehrsgünstig":"[fɛɐ̯ˈkeːɐ̯sˌɡʏnstɪç]","Ruhe":"[ˈʁuːə]","lassen":"[ˈlasən]","Kaltmiete":"[ˈkaltˌmiːtə]","Warmmiete":"[ˈvaʁmˌmiːtə]","Obergeschoss":"[ˈoːbɐɡəˌʃɔs]","Einbauküche":"[ˈaɪ̯nbaʊ̯ˌkʏçə]","Kaution":"[kaʊ̯ˈtsi̯oːn]","abbauen":"[ˈapˌbaʊ̯ən]","renovieren":"[ʁenoˈviːʁən]","transportieren":"[tʁanspɔʁˈtiːʁən]","Bauernhaus":"[ˈbaʊ̯ɐnˌhaʊ̯s]","Öffnungszeiten":"[ˈœfnʊŋsˌtsaɪ̯tn̩]",
 "Sicherheit":"[ˈzɪçɐhaɪ̯t]","verantwortlich":"[fɛɐ̯ˈʔantvɔʁtlɪç]","aufpassen":"[ˈaʊ̯fˌpasən]","gratulieren":"[ɡʁatuˈliːʁən]","jammern":"[ˈjamɐn]","plaudern":"[ˈplaʊ̯dɐn]","Freiheit":"[ˈfʁaɪ̯haɪ̯t]","TÜV":"[tyːf]","Wartung":"[ˈvaʁtʊŋ]","ablaufen":"[ˈapˌlaʊ̯fən]","Vorhaben":"[ˈfoːɐ̯haːbən]","Ursache":"[ˈʔuːɐ̯zaːxə]","einstellen":"[ˈaɪ̯nˌʃtɛlən]","Wassermenge":"[ˈvasɐˌmɛŋə]","Laden":"[ˈlaːdən]","Betrieb":"[bəˈtʁiːp]","Unternehmen":"[ʊntɐˈneːmən]","Schlüsselübergabe":"[ˈʃlʏsl̩ʔyːbɐˌɡaːbə]","weder":"[ˈveːdɐ]",
-"Immobilie":"[ɪmoˈbiːli̯ə]","Nachmieter":"[ˈnaːxˌmiːtɐ]","Kundenzentrum":"[ˈkʊndn̩ˌtsɛntʁʊm]","Zwilling":"[ˈtsvɪlɪŋ]","Wandfarbe":"[ˈvantˌfaʁbə]","Pinsel":"[ˈpɪnzl̩]","Farbroller":"[ˈfaʁpˌʁɔlɐ]","Tapete":"[taˈpeːtə]","Schraube":"[ˈʃʁaʊ̯bə]","Dübel":"[ˈdyːbl̩]","Nagel":"[ˈnaːɡl̩]","Hammer":"[ˈhamɐ]","Akku-Bohrer":"[ˈakuˌboːʁɐ]","tapezieren":"[tapeˈtsiːʁən]","einverstanden":"[ˈaɪ̯nfɛɐ̯ˌʃtandən]","sympathisch":"[zʏmˈpaːtɪʃ]","unsympathisch":"[ˈʊnzʏmˌpaːtɪʃ]","Haustier":"[ˈhaʊ̯sˌtiːɐ̯]","Auftrag":"[ˈaʊ̯ftʁaːk]","Neubau":"[ˈnɔɪ̯baʊ̯]","Nebenkostenabrechnung":"[ˈneːbn̩kɔstn̩ˌʔapʁɛçnʊŋ]","Rückzahlung":"[ˈʁʏktsaːlʊŋ]","Abschlag":"[ˈapʃlaːk]","gesamt":"[ɡəˈzamt]","Allgemeinstrom":"[alɡəˈmaɪ̯nˌʃtʁoːm]","Straßenreinigung":"[ˈʃtʁaːsn̩ˌʁaɪ̯nɪɡʊŋ]","Grundsteuer":"[ˈɡʁʊntˌʃtɔɪ̯ɐ]","Gebäudeversicherung":"[ɡəˈbɔɪ̯dəfɛɐ̯ˌzɪçəʁʊŋ]","Schornsteinfeger":"[ˈʃɔʁnʃtaɪ̯nˌfeːɡɐ]","Anteil":"[ˈantaɪ̯l]","Mieter":"[ˈmiːtɐ]","Wohnort":"[ˈvoːnˌʔɔʁt]","Feuerwerk":"[ˈfɔɪ̯ɐˌvɛʁk]","schenken":"[ˈʃɛŋkən]","sich verkleiden":"[zɪç fɛɐ̯ˈklaɪ̯dən]","Verwandte":"[fɛɐ̯ˈvantə]","Glückwunsch":"[ˈɡlʏkvʊnʃ]","Kompliment":"[kɔmpliˈmɛnt]","Feiertag":"[ˈfaɪ̯ɐˌtaːk]","Weihnachten":"[ˈvaɪ̯naxtn̩]","Hochzeitstag":"[ˈhɔxtsaɪ̯tsˌtaːk]","Hochzeitsfeier":"[ˈhɔxtsaɪ̯tsˌfaɪ̯ɐ]","Jubiläum":"[jubiˈlɛːʊ̯m]","Gutschein":"[ˈɡuːtʃaɪ̯n]","Kerze":"[ˈkɛʁtsə]","Kette":"[ˈkɛtə]","Geschirr":"[ɡəˈʃɪʁ]","Schachtel Pralinen":"[ˈʃaxtl̩ pʁaˈliːnən]","Parfüm":"[paʁˈfyːm]","Blumenstrauß":"[ˈbluːmənˌʃtʁaʊ̯s]","Rose":"[ˈʁoːzə]","Koffer":"[ˈkɔfɐ]","Decke":"[ˈdɛkə]","normalerweise":"[nɔʁˈmaːlɐˌvaɪ̯zə]","Braut":"[bʁaʊ̯t]","Bräutigam":"[ˈbʁɔɪ̯tɪɡam]","Brautpaar":"[ˈbʁaʊ̯tˌpaːɐ̯]","Brautkleid":"[ˈbʁaʊ̯tˌklaɪ̯t]","Schleier":"[ˈʃlaɪ̯ɐ]","Ohrring":"[ˈoːɐ̯ˌʁɪŋ]","eng":"[ɛŋ]","wunderschön":"[ˈvʊndɐˌʃøːn]","romantisch":"[ʁoˈmantɪʃ]","Hochzeitstorte":"[ˈhɔxtsaɪ̯tsˌtɔʁtə]","Gastgeber":"[ˈɡastˌɡeːbɐ]","auffallen":"[ˈaʊ̯fˌfalən]","dabei sein":"[daˈbaɪ̯ ˈzaɪ̯n]","vorgestern":"[ˈfoːɐ̯ˌɡɛstɐn]","Stimmung":"[ˈʃtɪmʊŋ]","normal":"[nɔʁˈmaːl]","Reis werfen":"[ʁaɪ̯s ˈvɛʁfn̩]","Ringe tauschen":"[ˈʁɪŋə ˈtaʊ̯ʃn̩]","Alles Gute!":"[ˈaləs ˈɡuːtə]","Frohe Ostern!":"[ˈfʁoːə ˈoːstɐn]","Prosit Neujahr!":"[ˈpʁoːzɪt ˈnɔɪ̯jaːɐ̯]","Kostüm":"[kɔsˈtyːm]","Konfetti":"[kɔnˈfɛti]","Luftschlangen":"[ˈlʊftˌʃlaŋən]","Osterei":"[ˈoːstɐˌʔaɪ̯]","Osterhase":"[ˈoːstɐˌhaːzə]","Osterzopf":"[ˈoːstɐˌtsɔpf]","Osterstrauß":"[ˈoːstɐˌʃtʁaʊ̯s]","Sankt Martin":"[zaŋkt ˈmaʁtiːn]","Laterne":"[laˈtɛʁnə]","Laternenumzug":"[laˈtɛʁnənˌʔʊmtsuːk]","Pferd":"[pfeːɐ̯t]","Nikolaus":"[ˈniːkolaʊ̯s]","Weihnachtsbaum":"[ˈvaɪ̯naxtsˌbaʊ̯m]","Weihnachtsgans":"[ˈvaɪ̯naxtsˌɡans]","Adventskalender":"[atˈvɛntskaˌlɛndɐ]","Rakete":"[ʁaˈkeːtə]","Bleigießen":"[ˈblaɪ̯ˌɡiːsn̩]","Böller":"[ˈbœlɐ]",
+"Immobilie":"[ɪmoˈbiːli̯ə]","Nachmieter":"[ˈnaːxˌmiːtɐ]","Kundenzentrum":"[ˈkʊndn̩ˌtsɛntʁʊm]","Zwilling":"[ˈtsvɪlɪŋ]","Wandfarbe":"[ˈvantˌfaʁbə]","Pinsel":"[ˈpɪnzl̩]","Farbroller":"[ˈfaʁpˌʁɔlɐ]","Tapete":"[taˈpeːtə]","Schraube":"[ˈʃʁaʊ̯bə]","Dübel":"[ˈdyːbl̩]","Nagel":"[ˈnaːɡl̩]","Hammer":"[ˈhamɐ]","Akku-Bohrer":"[ˈakuˌboːʁɐ]","tapezieren":"[tapeˈtsiːʁən]","einverstanden":"[ˈaɪ̯nfɛɐ̯ˌʃtandən]","sympathisch":"[zʏmˈpaːtɪʃ]","unsympathisch":"[ˈʊnzʏmˌpaːtɪʃ]","Haustier":"[ˈhaʊ̯sˌtiːɐ̯]","Auftrag":"[ˈaʊ̯ftʁaːk]","Neubau":"[ˈnɔɪ̯baʊ̯]","Nebenkostenabrechnung":"[ˈneːbn̩kɔstn̩ˌʔapʁɛçnʊŋ]","Rückzahlung":"[ˈʁʏktsaːlʊŋ]","Abschlag":"[ˈapʃlaːk]","gesamt":"[ɡəˈzamt]","Allgemeinstrom":"[alɡəˈmaɪ̯nˌʃtʁoːm]","Straßenreinigung":"[ˈʃtʁaːsn̩ˌʁaɪ̯nɪɡʊŋ]","Grundsteuer":"[ˈɡʁʊntˌʃtɔɪ̯ɐ]","Gebäudeversicherung":"[ɡəˈbɔɪ̯dəfɛɐ̯ˌzɪçəʁʊŋ]","Schornsteinfeger":"[ˈʃɔʁnʃtaɪ̯nˌfeːɡɐ]","Anteil":"[ˈantaɪ̯l]","Mieter":"[ˈmiːtɐ]","Wohnort":"[ˈvoːnˌʔɔʁt]","Feuerwerk":"[ˈfɔɪ̯ɐˌvɛʁk]","schenken":"[ˈʃɛŋkən]","sich verkleiden":"[zɪç fɛɐ̯ˈklaɪ̯dən]","Verwandte":"[fɛɐ̯ˈvantə]","Glückwunsch":"[ˈɡlʏkvʊnʃ]","Kompliment":"[kɔmpliˈmɛnt]","Feiertag":"[ˈfaɪ̯ɐˌtaːk]","Weihnachten":"[ˈvaɪ̯naxtn̩]","Hochzeitstag":"[ˈhɔxtsaɪ̯tsˌtaːk]","Hochzeitsfeier":"[ˈhɔxtsaɪ̯tsˌfaɪ̯ɐ]","Jubiläum":"[jubiˈlɛːʊ̯m]","Gutschein":"[ˈɡuːtʃaɪ̯n]","Kerze":"[ˈkɛʁtsə]","Kette":"[ˈkɛtə]","Geschirr":"[ɡəˈʃɪʁ]","Schachtel Pralinen":"[ˈʃaxtl̩ pʁaˈliːnən]","Parfüm":"[paʁˈfyːm]","Blumenstrauß":"[ˈbluːmənˌʃtʁaʊ̯s]","Rose":"[ˈʁoːzə]","Koffer":"[ˈkɔfɐ]","Decke":"[ˈdɛkə]","normalerweise":"[nɔʁˈmaːlɐˌvaɪ̯zə]","Braut":"[bʁaʊ̯t]","Bräutigam":"[ˈbʁɔɪ̯tɪɡam]","Brautpaar":"[ˈbʁaʊ̯tˌpaːɐ̯]","Brautkleid":"[ˈbʁaʊ̯tˌklaɪ̯t]","Schleier":"[ˈʃlaɪ̯ɐ]","Ohrring":"[ˈoːɐ̯ˌʁɪŋ]","eng":"[ɛŋ]","wunderschön":"[ˈvʊndɐˌʃøːn]","romantisch":"[ʁoˈmantɪʃ]","Hochzeitstorte":"[ˈhɔxtsaɪ̯tsˌtɔʁtə]","Gastgeber":"[ˈɡastˌɡeːbɐ]","auffallen":"[ˈaʊ̯fˌfalən]","dabei sein":"[daˈbaɪ̯ ˈzaɪ̯n]","vorgestern":"[ˈfoːɐ̯ˌɡɛstɐn]","Stimmung":"[ˈʃtɪmʊŋ]","normal":"[nɔʁˈmaːl]","Reis werfen":"[ʁaɪ̯s ˈvɛʁfn̩]","Ringe tauschen":"[ˈʁɪŋə ˈtaʊ̯ʃn̩]","Alles Gute!":"[ˈaləs ˈɡuːtə]","Frohe Ostern!":"[ˈfʁoːə ˈoːstɐn]","Prosit Neujahr!":"[ˈpʁoːzɪt ˈnɔɪ̯jaːɐ̯]","Kostüm":"[kɔsˈtyːm]","Konfetti":"[kɔnˈfɛti]","Luftschlangen":"[ˈlʊftˌʃlaŋən]","Osterei":"[ˈoːstɐˌʔaɪ̯]","Osterhase":"[ˈoːstɐˌhaːzə]","Osterzopf":"[ˈoːstɐˌtsɔpf]","Osterstrauß":"[ˈoːstɐˌʃtʁaʊ̯s]","Sankt Martin":"[zaŋkt ˈmaʁtiːn]","Laterne":"[laˈtɛʁnə]","Laternenumzug":"[laˈtɛʁnənˌʔʊmtsuːk]","Pferd":"[pfeːɐ̯t]","Nikolaus":"[ˈniːkolaʊ̯s]","Weihnachtsbaum":"[ˈvaɪ̯naxtsˌbaʊ̯m]","Weihnachtsgans":"[ˈvaɪ̯naxtsˌɡans]","Adventskalender":"[atˈvɛntskaˌlɛndɐ]","Rakete":"[ʁaˈkeːtə]","Bleigießen":"[ˈblaɪ̯ˌɡiːsn̩]","Böller":"[ˈbœlɐ]","bescheren":"[bəˈʃeːʁən]","Geschenke austeilen":"[ɡəˈʃɛŋkə ˈaʊ̯staɪ̯lən]","Brauch":"[bʁaʊ̯x]","Trauung":"[ˈtʁaʊ̯ʊŋ]","Geld sammeln":"[ɡɛlt ˈzaml̩n]","benötigen":"[bəˈnøːtɪɡən]","sich überlegen":"[zɪç yːbɐˈleːɡən]","hinkriegen":"[ˈhɪnˌkʁiːɡən]","auf jeden Fall":"[aʊ̯f ˈjeːdn̩ fal]","tauschen":"[ˈtaʊ̯ʃn̩]","werfen":"[ˈvɛʁfn̩]","Pech":"[pɛç]","pitschnass":"[ˈpɪtʃˌnas]","sich verlieben":"[zɪç fɛɐ̯ˈliːbən]","sich freuen":"[zɪç ˈfʁɔɪ̯ən]","aufstellen":"[ˈaʊ̯fˌʃtɛlən]","sich kümmern um":"[zɪç ˈkʏmɐn ʔʊm]","das Problem lösen":"[das pʁoˈbleːm ˈløːzn̩]","sich sorgen um":"[zɪç ˈzɔʁɡn̩ ʔʊm]","hinfallen":"[ˈhɪnˌfalən]","einfallen":"[ˈaɪ̯nˌfalən]","nett":"[nɛt]","sich vorstellen":"[zɪç ˈfoːɐ̯ˌʃtɛlən]","sich treffen":"[zɪç ˈtʁɛfn̩]","sich streiten":"[zɪç ˈʃtʁaɪ̯tn̩]","auf dem Weg":"[aʊ̯f deːm veːk]","rechnen mit":"[ˈʁɛçnən mɪt]","den Code eingeben":"[deːn koːt ˈaɪ̯nˌɡeːbən]","das Geld abheben":"[das ɡɛlt ˈapˌheːbən]","Einrichtung":"[ˈaɪ̯nˌʁɪçtʊŋ]","Lichterkette":"[ˈlɪçtɐˌkɛtə]","sich versammeln":"[zɪç fɛɐ̯ˈzaml̩n]","Lächeln":"[ˈlɛçl̩n]","Faultier":"[ˈfaʊ̯lˌtiːɐ̯]",
 };
 
 const DIALOGE={
@@ -4668,11 +4756,13 @@ const DIALOGE={
       {q:"Wie lädt man einen Freund zum Geburtstag ein?",             qRu:"Как пригласить друга на день рождения?", a:"Ich möchte dich gern zu meinem Geburtstag einladen. Hast du am Samstag Zeit?", aRu:"Я хочу пригласить тебя на день рождения. У тебя есть время в субботу?", note:"Am Telefon einladen"},
       {q:"Wie reagiert man, wenn man gern kommt?",                    qRu:"Как ответить, если хочешь прийти?", a:"Ja, vielen Dank für die Einladung, ich komme sehr gern.", aRu:"Да, спасибо большое за приглашение, я с удовольствием приду.", note:"positiv reagieren"},
       {q:"Wie reagiert man, wenn man nicht kommen kann?",             qRu:"Как ответить, если не можешь прийти?", a:"Schade, da kann ich leider nicht, ich muss arbeiten.", aRu:"Жаль, к сожалению не смогу, мне нужно работать.", note:"absagen"},
+      {q:"Was sagt man, wenn man sich auf eine Party freut?",         qRu:"Что говорят, когда радуются предстоящей вечеринке?", a:"Ich freue mich schon sehr auf deine Party!", aRu:"Я уже очень радуюсь твоей вечеринке!", note:"sich freuen auf+Akk"},
     ]},
     {tag:"Hochzeit",col:C.purple,pairs:[
       {q:"Was für ein Kleid trägt die Braut?",                        qRu:"Какое платье на невесте?", a:"Ein romantisches, weißes Kleid.", aRu:"Романтичное белое платье.", note:"Was für ein...?"},
       {q:"Was kann man Susanne schenken?",                            qRu:"Что можно подарить Сюзанне?", a:"Man kann ihr Blumen oder ein Parfüm schenken.", aRu:"Ей можно подарить цветы или духи.", note:"schenken: Dativ + Akkusativ"},
       {q:"Wie reagiert man auf ein Kompliment?",                      qRu:"Как реагировать на комплимент?", a:"Wirklich? Das ist nett von dir.", aRu:"Правда? Это мило с твоей стороны.", note:"Komplimente"},
+      {q:"Was macht das Brautpaar bei der Trauung?",                  qRu:"Что делают жених с невестой на церемонии?", a:"Sie tauschen die Ringe, und die Gäste werfen Reis.", aRu:"Они обмениваются кольцами, а гости кидают рис.", note:"der Brauch"},
     ]},
     {tag:"Feiern interkulturell",col:C.teal,pairs:[
       {q:"Was fällt Leyla an deutschen Einladungen auf?",             qRu:"Что удивляет Лейлу в немецких приглашениях?", a:"Die Deutschen kommen bei Einladungen immer pünktlich.", aRu:"Немцы на приглашения всегда приходят вовремя.", note:"Feiern in Deutschland"},
@@ -4682,6 +4772,7 @@ const DIALOGE={
       {q:"Was sagt man zum Geburtstag?",                              qRu:"Что говорят на день рождения?", a:"Herzlichen Glückwunsch zum Geburtstag!", aRu:"Сердечно поздравляю с днём рождения!", note:"Glückwünsche"},
       {q:"Was sagt man zur Hochzeit?",                                qRu:"Что говорят на свадьбу?", a:"Alles Gute zur Hochzeit!", aRu:"Всего наилучшего на свадьбе!", note:"Glückwünsche"},
       {q:"Wer besorgt die Getränke für die Kursparty?",               qRu:"Кто раздобудет напитки для вечеринки курса?", a:"Das müssen wir noch besprechen — wollen wir auch tanzen?", aRu:"Это нам ещё надо обсудить — хотим ли мы ещё и танцевать?", note:"Kursparty organisieren"},
+      {q:"Wie können wir das Geld für ein gemeinsames Geschenk hinkriegen?", qRu:"Как нам раздобыть деньги на общий подарок?", a:"Wir sollten uns überlegen: auf jeden Fall können wir Geld sammeln.", aRu:"Нам стоит обдумать: в любом случае мы можем собрать деньги.", note:"Probleme lösen"},
     ]},
   ],
 };
@@ -8609,6 +8700,9 @@ const LUECKEN_A2L6=shuffle([
 ]);
 
 const ZUORD_A2L6=[
+  {de:"aufstellen",ru:"расставлять, устанавливать"},
+  {de:"sich vorstellen",ru:"представляться"},
+  {de:"die Einrichtung",ru:"обстановка, интерьер"},
   {de:"der Vorort",ru:"предместье, окраина"},
   {de:"außerhalb",ru:"за пределами (города)"},
   {de:"verkehrsgünstig",ru:"удобно расположенный"},
@@ -8713,6 +8807,12 @@ const Q_A2L7TEST=shuffle([
   {q:"'Alles Gute zur Hochzeit!' говорят:",opts:["на свадьбу","на день рождения","на Пасху","на Новый год"],ans:0,hint:"zur Hochzeit"},
   {q:"В открытке 'Liebe …, / Lieber …,' — это:",opts:["обращение","подпись","дата","адрес"],ans:0,hint:"Anrede"},
   {q:"'dein/e …' в конце открытки — это:",opts:["подпись отправителя","имя получателя","дата","адрес"],ans:0,hint:"Schlussformel"},
+  {q:"'Das Brautpaar tauscht die Ringe.' — 'tauschen' означает:",opts:["обмениваться","бросать","дарить","терять"],ans:0,hint:"Hochzeitsbrauch"},
+  {q:"'Die Gäste werfen Reis.' — 'werfen' означает:",opts:["бросать, кидать","собирать","ловить","держать"],ans:0,hint:"warf · hat geworfen"},
+  {q:"'Wir hatten Pech: es hat geregnet.' — 'Pech haben' означает:",opts:["не повезти","обрадоваться","промокнуть","опоздать"],ans:0,hint:"Gegenteil: Glück haben"},
+  {q:"'sich verlieben' означает:",opts:["влюбляться","ссориться","знакомиться","расставаться"],ans:0,hint:"vor der Hochzeit"},
+  {q:"'Wir sollten uns überlegen, was wir kaufen.' — 'sich überlegen' означает:",opts:["обдумывать","покупать","забывать","спрашивать"],ans:0,hint:"nachdenken über etwas"},
+  {q:"'Keine Sorge, wir kriegen das schon hin!' означает:",opts:["мы справимся с этим","мы не сможем это сделать","нам это не нужно","мы уже сделали это"],ans:0,hint:"hinkriegen = schaffen"},
 ]);
 
 const LUECKEN_A2L7=shuffle([
@@ -8761,6 +8861,36 @@ const ZUORD_A2L7=[
   {de:"die Glückwunschkarte",ru:"открытка-поздравление"},
   {de:"das Neujahr",ru:"Новый год"},
   {de:"Ostern",ru:"Пасха"},
+  {de:"bescheren",ru:"дарить (на Рождество)"},
+  {de:"Geschenke austeilen",ru:"раздавать подарки"},
+  {de:"der Brauch",ru:"обычай, традиция"},
+  {de:"Geld sammeln",ru:"собирать деньги"},
+  {de:"benötigen",ru:"нуждаться в чём-то"},
+  {de:"sich überlegen",ru:"обдумывать"},
+  {de:"hinkriegen",ru:"справиться, суметь сделать"},
+  {de:"auf jeden Fall",ru:"в любом случае"},
+  {de:"tauschen",ru:"обменивать(ся)"},
+  {de:"werfen",ru:"бросать, кидать"},
+  {de:"das Pech",ru:"невезение, неудача"},
+  {de:"pitschnass",ru:"насквозь промокший"},
+  {de:"sich verlieben",ru:"влюбляться"},
+  {de:"sich freuen",ru:"радоваться"},
+  {de:"sich kümmern um",ru:"заботиться о"},
+  {de:"das Problem lösen",ru:"решать проблему"},
+  {de:"sich sorgen um",ru:"беспокоиться о"},
+  {de:"hinfallen",ru:"упасть"},
+  {de:"einfallen",ru:"приходить в голову"},
+  {de:"nett",ru:"милый, приятный"},
+  {de:"sich treffen",ru:"встречаться"},
+  {de:"sich streiten",ru:"ссориться"},
+  {de:"auf dem Weg",ru:"по пути"},
+  {de:"rechnen mit",ru:"рассчитывать на"},
+  {de:"den Code eingeben",ru:"вводить код"},
+  {de:"das Geld abheben",ru:"снимать деньги"},
+  {de:"die Lichterkette",ru:"гирлянда"},
+  {de:"sich versammeln",ru:"собираться"},
+  {de:"das Lächeln",ru:"улыбка"},
+  {de:"das Faultier",ru:"ленивец"},
 ];
 
 const WSENTS_A2L7=[
@@ -16343,6 +16473,7 @@ function T_A2L7A(){
             <RedeBlock col={C.green} title="🙂 Positiv" items={pos}/>
             <RedeBlock col={C.yellow} title="😐 Unsicher" items={unsicher}/>
             <RedeBlock col={C.red} title="🙁 Absagen" items={neg}/>
+            <TapEx de="Ich freue mich schon sehr auf deine Party!" ru="Я уже очень радуюсь твоей вечеринке!" col={C.green} style={{marginTop:6}}/>
           </div>
         )}
       </Box>
@@ -16401,6 +16532,7 @@ function T_A2L7B(){
     <div style={{display:"flex",flexDirection:"column",gap:10}}>
       <Box c={C.purple}>
         <H c={C.purple}>💍 A2-L7B · Hochzeit</H>
+        <div style={{fontSize:12,color:C.muted,marginBottom:10}}>Zwei Menschen <b style={{color:C.purple}}>verlieben sich</b> — und irgendwann heiraten sie.</div>
         <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
           {[["adj","Adjektive nach ein/kein"],["geschenke","Was schenkt man?"],["komplimente","Komplimente"]].map(([key,lbl])=>(
             <button key={key} onClick={()=>setTab(key)}
@@ -16440,6 +16572,13 @@ function T_A2L7B(){
               </div>
             ))}
             <TapEx de="Die Braut trägt ein romantisches, weißes Kleid, eine wunderschöne Kette, einen weißen Schleier und sehr elegante Schuhe." ru="Невеста в романтичном белом платье, красивом колье, белой фате и элегантных туфлях." col={C.purple} style={{marginTop:10}}/>
+            <div style={{background:C.purple+"15",border:`1px solid ${C.purple}33`,borderRadius:10,padding:"11px 13px",marginTop:10}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.purple,marginBottom:6}}>Hochzeitsbräuche</div>
+              <div style={{fontSize:13,color:C.text,lineHeight:1.7}}>
+                <b style={{color:C.orange}}>der Brauch</b> — обычай, традиция. Bei der Trauung <b style={{color:C.orange}}>tauschen</b> das Brautpaar die Ringe, und die Gäste <b style={{color:C.orange}}>werfen</b> Reis.
+              </div>
+            </div>
+            <TapEx de="Bei unserer Hochzeit hatten wir Pech: Es hat geregnet und wir waren alle pitschnass!" ru="На нашей свадьбе нам не повезло: пошёл дождь, и мы все промокли насквозь!" col={C.purple} style={{marginTop:6}}/>
           </div>
         )}
         {tab==="geschenke"&&(
@@ -16461,7 +16600,8 @@ function T_A2L7B(){
               </div>
             </div>
             <TapEx de="Man kann Susanne Blumen schenken. Man kann ihr auch ein Parfüm schenken." ru="Сюзанне можно подарить цветы. Можно также подарить ей духи." col={C.purple} style={{marginBottom:6}}/>
-            <TapEx de="Ich schenke meiner Frau Rosen zum Hochzeitstag." ru="Я дарю жене розы на годовщину свадьбы." col={C.purple}/>
+            <TapEx de="Ich schenke meiner Frau Rosen zum Hochzeitstag." ru="Я дарю жене розы на годовщину свадьбы." col={C.purple} style={{marginBottom:6}}/>
+            <TapEx de="Zu Weihnachten bescheren die Eltern den Kindern Geschenke, und man teilt die Geschenke unter dem Weihnachtsbaum aus." ru="На Рождество родители дарят детям подарки, и подарки раздают под ёлкой." col={C.purple}/>
           </div>
         )}
         {tab==="komplimente"&&(
@@ -16596,6 +16736,13 @@ function T_A2L7D(){
     {occ:"🐣 Ostern",de:"Frohe Ostern!"},
     {occ:"💍 Hochzeit",de:"Alles Gute zur Hochzeit!"},
   ];
+  const organisieren=[
+    {de:"Wie viel Geld benötigen wir für die Party?",ru:"сколько денег нам нужно на вечеринку?"},
+    {de:"Wir sollten uns überlegen, was wir kaufen.",ru:"нам стоит обдумать, что покупать"},
+    {de:"Wir können Geld sammeln und zusammen ein Geschenk kaufen.",ru:"мы можем собрать деньги и купить подарок вместе"},
+    {de:"Keine Sorge, wir kriegen das schon hin!",ru:"не волнуйся, мы справимся!"},
+    {de:"Auf jeden Fall sollten wir auch Musik organisieren.",ru:"в любом случае, нам стоит организовать ещё и музыку"},
+  ];
   return (
     <div style={{display:"flex",flexDirection:"column",gap:10}}>
       <Box c={C.orange}>
@@ -16616,6 +16763,7 @@ function T_A2L7D(){
           <div>
             <RedeBlock col={C.orange} title="Eine Kursparty planen" items={partyFragen}/>
             <TapEx de="Wollen wir übermorgen eine Party machen? — Ja, das ist eine gute Idee. Ich habe einen großen Garten." ru="Хотим устроить вечеринку послезавтра? — Да, отличная идея. У меня большой сад." col={C.orange}/>
+            <RedeBlock col={C.teal} title="Probleme lösen" items={organisieren}/>
           </div>
         )}
         {tab==="gluecke"&&(
@@ -16749,6 +16897,9 @@ const PRUEFUNG=[
   {id:"redemittel", icon:"✍️", col:C.orange, title:"Redemittel: Briefe/E-Mails", sub:"Formell · Halbformell · Persönlich · Gliederung", th:()=><T_PruefungRedemittel/>},
   {id:"wohnung", icon:"🏠", col:C.green, title:"Wortschatz: Wohnungssuche", sub:"A1-A2 · Wohnungstypen, Räume, Lage", th:()=><T_PruefungWohnung/>},
   {id:"musterbriefe", icon:"🏢", col:C.teal, title:"Musterbriefe: Hausverwaltung", sub:"Grundwortschatz + 6 Beispiel-Briefe", th:()=><T_PruefungMusterbriefe/>},
+  {id:"sprechen3", icon:"🗣️", col:C.blue, title:"Sprechen Teil 3: Gemeinsam planen", sub:"Vorschlagen · Zustimmen · Ablehnen · Termin vereinbaren · Übungsaufgaben", th:()=><T_PruefungSprechen3/>},
+  {id:"musterbriefe2", icon:"💌", col:C.purple, title:"Musterbriefe: Einladungen", sub:"Hochzeit · Einweihung · Einladung annehmen und beantworten", th:()=><T_PruefungMusterbriefe2/>},
+  {id:"praesentation", icon:"🎤", col:C.yellow, title:"Sprechen: Präsentation/Vortrag", sub:"Persönliche Erfahrung · Heimatland · Vor-/Nachteile · Meinung · Abschluss & Fragen", th:()=><T_PruefungPraesentation/>},
 ];
 
 const LEKTIONEN=[
@@ -18379,6 +18530,315 @@ Vorname Name`,
           <div>
             <div style={{fontSize:12,color:C.muted,marginBottom:10}}>Нажми на заголовок, чтобы раскрыть ситуацию и письмо-образец.</div>
             {briefe.map((b,i)=><MusterbriefBlock key={i} col={C.red} {...b}/>)}
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
+// ═══ Prüfung: Sprechen Teil 3 — Gemeinsam etwas planen ═══
+function T_PruefungSprechen3(){
+  const [tab,setTab]=useState("redemittel");
+  const vorschlagen=[
+    {de:"Ich habe eine Idee / einen Vorschlag: …",ru:"у меня есть идея / предложение: …"},
+    {de:"Ich schlage vor, dass … / Ich schlage vor, … zu + Infinitiv",ru:"я предлагаю, чтобы … / я предлагаю …"},
+    {de:"Mein Vorschlag ist/wäre …",ru:"моё предложение (было бы) …"},
+    {de:"Wollen wir …? / Sollen wir …?",ru:"хотим ли мы …? / нужно ли нам …?"},
+    {de:"Wir könnten (doch) …",ru:"мы могли бы …"},
+    {de:"Wie wäre es, wenn wir …? / Wie wäre es mit …?",ru:"как насчёт того, если мы …? / как насчёт …?"},
+    {de:"Was hältst du davon, wenn …?",ru:"что ты думаешь, если …?"},
+    {de:"Hast du Lust, … mitzukommen?",ru:"у тебя есть желание пойти со мной на …?"},
+    {de:"Warum fragen wir nicht … / sprechen wir nicht mit …?",ru:"почему бы нам не спросить … / не поговорить с …?"},
+  ];
+  const zeitOrt=[
+    {de:"Wann und wo könnten wir uns treffen?",ru:"когда и где мы могли бы встретиться?"},
+    {de:"Wann hast du Zeit? / Wann hättest du Zeit?",ru:"когда у тебя есть время? / когда у тебя было бы время?"},
+    {de:"Kannst du am (Samstag) um (15) Uhr?",ru:"сможешь в (субботу) в (15) часов?"},
+    {de:"Wie sieht es bei dir am … um … Uhr aus?",ru:"как у тебя со временем … в … часов?"},
+    {de:"Hast du am … um … Uhr Zeit/Lust?",ru:"у тебя есть время/желание … в … часов?"},
+    {de:"Können wir uns am … treffen?",ru:"можем мы встретиться в …?"},
+    {de:"Treffen wir uns um …! / Vereinbaren wir … um … Uhr!",ru:"давай встретимся в …! / договоримся на … в … часов!"},
+  ];
+  const meinungFragen=[
+    {de:"Was meinst du (dazu)? / Was denkst du?",ru:"что ты думаешь (об этом)?"},
+    {de:"Was hältst du davon? / Wie findest du das?",ru:"что ты об этом думаешь? / как тебе это?"},
+    {de:"Was sagst du dazu? / Wie siehst du das?",ru:"что ты на это скажешь? / как ты это видишь?"},
+    {de:"Hast du einen anderen Vorschlag/eine andere Idee?",ru:"у тебя есть другое предложение/идея?"},
+    {de:"Bist du einverstanden damit, wenn wir …?",ru:"ты согласен(на), если мы …?"},
+    {de:"Was brauchen/müssen wir noch (planen)?",ru:"что нам ещё нужно (спланировать)?"},
+  ];
+  const zustimmen=[
+    {de:"Ja, gern! / Ja klar, gern.",ru:"да, с удовольствием!"},
+    {de:"Das ist eine (sehr) gute Idee / ein guter Vorschlag!",ru:"это (очень) хорошая идея / хорошее предложение!"},
+    {de:"Okay, das machen wir. / Machen wir das so!",ru:"хорошо, так и сделаем!"},
+    {de:"Das klingt gut/toll. / Das gefällt mir.",ru:"звучит хорошо/отлично! / мне это нравится"},
+    {de:"Du hast/Sie haben Recht, so machen wir es.",ru:"ты прав(а)/вы правы, так и сделаем"},
+    {de:"Genau! Einverstanden! In Ordnung!",ru:"именно! согласен(на)! хорошо!"},
+    {de:"Ich bin dafür. / Damit bin ich einverstanden.",ru:"я за. / я с этим согласен(на)"},
+  ];
+  const ablehnenUnsicher=[
+    {de:"Ich weiß nicht. Vielleicht sollten wir lieber …?",ru:"я не знаю. может, нам лучше …?"},
+    {de:"Ich bin mir noch nicht (ganz) sicher.",ru:"я ещё не (совсем) уверен(а)"},
+    {de:"Das ist ein guter Vorschlag, aber …",ru:"это хорошее предложение, но …"},
+    {de:"Ich finde es besser, wenn …",ru:"я думаю, лучше, если …"},
+    {de:"Es tut mir leid, aber … / Da habe ich leider keine Zeit.",ru:"мне жаль, но … / к сожалению, у меня нет времени"},
+    {de:"Nein, das geht nicht. / Das kommt nicht in Frage.",ru:"нет, так не пойдёт / об этом не может быть и речи"},
+    {de:"Darüber muss ich noch nachdenken.",ru:"мне нужно ещё подумать об этом"},
+  ];
+  const problemLoesen=[
+    {de:"Wir haben (also) ein echtes Problem: …",ru:"у нас (итак) настоящая проблема: …"},
+    {de:"Die Situation ist leider so, dass …",ru:"ситуация, к сожалению, такова, что …"},
+    {de:"Was kann/könnte man da machen?",ru:"что можно/можно было бы тут сделать?"},
+    {de:"Wie könnte man hier am besten vorgehen?",ru:"как лучше всего тут действовать?"},
+    {de:"Am einfachsten wäre es, wenn …",ru:"проще всего было бы, если …"},
+    {de:"Ich befürchte (allerdings), dass …",ru:"боюсь (однако), что …"},
+    {de:"Dafür/Dagegen spricht, dass …",ru:"за/против говорит то, что …"},
+  ];
+  const aufgaben=[
+    {icon:"🎂",title:"Dialog 3: Einladung zum Geburtstag",situation:"Ваш знакомый приглашает вас на день рождения. Вы хотите пойти к нему вместе с партнёром по диалогу.",punkte:["место и время встречи","как добираться","какой подарок","брать ли с собой ещё кого-то","какая одежда","нужна ли помощь"]},
+    {icon:"💼",title:"Dialog 4: Einladung zum Vorstellungsgespräch",situation:"Вы и ваш партнёр по диалогу подавались на разные места стажировки. Вы оба получили приглашение на собеседование.",punkte:["какая фирма и какая профессия","когда собеседование","что надеть","что взять с собой","что ещё важно","как подготовиться"]},
+    {icon:"📦",title:"Dialog 5: Hilfe beim Umzug",situation:"У вас и вашего партнёра по диалогу есть друг, который на следующей неделе переезжает. Вы оба хотите ему помочь, так как он вас об этом попросил.",punkte:["что делать со старой квартирой","что делать с новой квартирой","крупногабаритный мусор","новая мебель","подарок","кто ещё может помочь"]},
+  ];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.blue}>
+        <H c={C.blue}>🗣️ Sprechen Teil 3 · Gemeinsam etwas planen</H>
+        <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
+          {[["redemittel","Redemittel"],["aufgaben","Übungsaufgaben"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,textAlign:"center",
+                border:`1px solid ${tab===key?C.blue+"55":C.border}`,
+                background:tab===key?C.blue+"22":C.ov3,
+                color:tab===key?C.blue:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="redemittel"&&(
+          <div>
+            <div style={{fontSize:13,color:C.text,lineHeight:1.7,marginBottom:10}}>
+              6 минут на двух участников (по 3 минуты на каждого). Два человека вместе планируют что-то (вечеринку, встречу, помощь кому-то и т.п.) — каждый делает предложения, спрашивает мнение партнёра и реагирует на его слова.
+            </div>
+            <RedeBlock col={C.blue} title="Vorschläge machen" items={vorschlagen}/>
+            <RedeBlock col={C.teal} title="Zeitpunkt und Treffpunkt vereinbaren" items={zeitOrt}/>
+            <RedeBlock col={C.purple} title="Nach der Meinung fragen / auf den Partner eingehen" items={meinungFragen}/>
+            <RedeBlock col={C.green} title="Zustimmen" items={zustimmen}/>
+            <RedeBlock col={C.red} title="Ablehnen / unsicher sein" items={ablehnenUnsicher}/>
+            <RedeBlock col={C.orange} title="B1-Variante: Problem lösen / um Rat bitten" items={problemLoesen}/>
+          </div>
+        )}
+        {tab==="aufgaben"&&(
+          <div>
+            <div style={{fontSize:12,color:C.muted,marginBottom:10}}>Типичные учебные ситуации (участники A и B вместе планируют по пунктам ниже):</div>
+            {aufgaben.map((a,i)=>(
+              <div key={i} style={{background:C.ov4,borderRadius:10,padding:"11px 13px",marginBottom:8}}>
+                <div style={{fontSize:13,fontWeight:800,color:C.blue,marginBottom:4}}>{a.icon} {a.title}</div>
+                <div style={{fontSize:12,color:C.muted,marginBottom:6,lineHeight:1.5}}>{a.situation}</div>
+                <div style={{display:"flex",flexWrap:"wrap",gap:5}}>
+                  {a.punkte.map((p,j)=><span key={j} style={{background:C.blue+"18",border:`1px solid ${C.blue}33`,borderRadius:7,padding:"3px 8px",fontSize:11,color:C.text}}>{p}</span>)}
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
+// ═══ Prüfung: Musterbriefe — Einladungen ═══
+function T_PruefungMusterbriefe2(){
+  const [tab,setTab]=useState("grund");
+  const briefe=[
+    {title:"1. Einladung zur Hochzeit",
+     situation:"Ваш знакомый Фабиан приглашает вас на свадьбу своего брата и пишет, что его брат Ганс в мае женится на итальянке. Ответьте и раскройте пункты: реакция на новость, согласие прийти на свадьбу, возможность ночлега, свадебный подарок.",
+     punkte:["реакция на новость","согласие прийти на свадьбу","возможность ночлега","свадебный подарок"],
+     brief:{
+       de:`Lieber Fabian,
+
+vielen Dank für deine E-Mail, über die ich mich riesig gefreut habe.
+
+Das ist doch eine tolle Neuigkeit, dass dein kleiner Bruder heiratet. Heute haben wir auch die offizielle Einladung erhalten.
+
+Auf jeden Fall kommen wir alle zur Hochzeit. Meine Frau und Kinder freuen sich schon darauf. Ich habe mir auch schon frei genommen.
+
+Wie sieht es mit der Übernachtung aus? Können wir bei euch übernachten? Oder sollen wir uns ein Hotel suchen? Kannst du uns vielleicht Hotels empfehlen, wo wir ein Zimmer preisgünstig buchen können?
+
+Und die letzte Frage: Was können wir dem Brautpaar als Geschenk mitbringen? Was wünschen sich dein Bruder und seine zukünftige Frau? Gib mir bitte Bescheid!
+
+Ich freue mich schon auf deine Antwort und auf die Hochzeit deines Bruders. Bis bald!
+
+Liebe Grüße
+Valentin`,
+       ru:`Дорогой Фабиан,
+
+большое спасибо за твоё письмо, я очень обрадовался(лась).
+
+Это же отличная новость, что твой младший брат женится. Сегодня мы тоже получили официальное приглашение.
+
+Мы точно все придём на свадьбу. Моя жена и дети уже очень рады. Я уже взял(а) отгул.
+
+Как обстоят дела с ночлегом? Можем мы переночевать у вас? Или нам поискать отель? Можешь ли ты порекомендовать нам отели, где можно забронировать номер по выгодной цене?
+
+И последний вопрос: что мы можем принести молодожёнам в подарок? Чего хотят твой брат и его будущая жена? Дай мне, пожалуйста, знать!
+
+Уже жду твоего ответа и свадьбы твоего брата. До скорого!
+
+С любовью
+Валентин`,
+     }},
+    {title:"2. Einladung zur Einweihungsparty",
+     situation:"Ваша знакомая Уте недавно переехала и приглашает вас на новоселье в субботу в 18 часов. Ответьте и раскройте пункты: принять приглашение, реакция на новую квартиру, что-то принести с собой, спросить, как добраться.",
+     punkte:["принять приглашение","реакция на новую квартиру","что-то принести с собой","спросить, как добраться"],
+     brief:{
+       de:`Liebe Ute,
+
+deine Einladung hat mich sehr gefreut und natürlich nehme ich sie mit Freude an. Da ich am nächsten Wochenende Zeit habe, passt das ja sehr gut. Wer kommt denn noch?
+
+Dass ihr endlich eine neue Wohnung gefunden habt und dazu noch mit einer Terrasse, finde ich toll. Wie viele Zimmer habt ihr? Könnte ich bei euch vielleicht übernachten, falls es am Samstag zu spät wird?
+
+Zu eurer Party würde ich am liebsten mit dem Bus kommen und brauche noch eure genaue Adresse. Kannst du mir bitte schreiben, wie ich eure Wohnung am schnellsten finde?
+
+Wie du weißt, esse ich sehr gern Grillfleisch und bringe welches mit. Ich kann auch noch einen Nudelsalat mitbringen.
+
+Ich freue mich schon sehr. Bis Samstag!
+
+Liebe Grüße
+Anton`,
+       ru:`Дорогая Уте,
+
+твоё приглашение меня очень обрадовало, и я, конечно, с радостью его принимаю. Так как у меня есть время в следующие выходные, это очень удачно. А кто ещё придёт?
+
+То, что вы наконец нашли новую квартиру, да ещё и с террасой, я считаю отличным. Сколько у вас комнат? Могу я, может быть, у вас переночевать, если в субботу станет слишком поздно?
+
+На вашу вечеринку я бы охотнее всего приехал(а) на автобусе, и мне ещё нужен ваш точный адрес. Можешь мне, пожалуйста, написать, как быстрее всего найти вашу квартиру?
+
+Как ты знаешь, я очень люблю мясо на гриле и что-нибудь принесу. Ещё я могу принести салат с макаронами.
+
+Уже очень радуюсь. До субботы!
+
+С любовью
+Антон`,
+     }},
+  ];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.purple}>
+        <H c={C.purple}>💌 Musterbriefe: Einladungen</H>
+        <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
+          {[["grund","Grundlagen"],["briefe","2 Musterbriefe"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,textAlign:"center",
+                border:`1px solid ${tab===key?C.purple+"55":C.border}`,
+                background:tab===key?C.purple+"22":C.ov3,
+                color:tab===key?C.purple:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="grund"&&(
+          <div>
+            <div style={{fontSize:13,color:C.text,lineHeight:1.8,marginBottom:10}}>
+              Тип 2 писем DTZ: ответ на приглашение (свадьба, новоселье и т.п.). Структура: (1) реакция на новость/благодарность за приглашение, (2) принятие приглашения, (3) уточняющий вопрос по теме письма (ночлег/дорога/что принести), (4) финальный вопрос или предложение. Всегда обрабатывать все 4 пункта из задания!
+            </div>
+            <RedeBlock col={C.purple} title="Grundwortschatz" items={[
+              {de:"sich riesig freuen über + Akk",ru:"очень обрадоваться чему-то"},
+              {de:"die Neuigkeit, -en",ru:"новость"},
+              {de:"auf jeden Fall kommen",ru:"точно прийти"},
+              {de:"sich frei nehmen",ru:"взять отгул, выходной"},
+              {de:"die Übernachtungsmöglichkeit, -en",ru:"возможность переночевать"},
+              {de:"ein Zimmer preisgünstig buchen",ru:"забронировать номер по выгодной цене"},
+              {de:"ein Geschenk mitbringen",ru:"принести подарок"},
+              {de:"Was wünschen sich (die Brautleute)?",ru:"чего бы хотели (молодожёны)?"},
+              {de:"eine Einladung mit Freude annehmen",ru:"с радостью принять приглашение"},
+              {de:"Wie viele Zimmer habt ihr?",ru:"сколько у вас комнат?"},
+              {de:"mit dem Bus/Auto kommen",ru:"приехать на автобусе/машине"},
+              {de:"die genaue Adresse",ru:"точный адрес"},
+              {de:"Wie finde ich eure Wohnung am schnellsten?",ru:"как быстрее всего найти вашу квартиру?"},
+              {de:"Bis Samstag! / Bis bald!",ru:"до субботы! / до скорого!"},
+            ]}/>
+          </div>
+        )}
+        {tab==="briefe"&&(
+          <div>
+            <div style={{fontSize:12,color:C.muted,marginBottom:10}}>Нажми на заголовок, чтобы раскрыть ситуацию и письмо-образец.</div>
+            {briefe.map((b,i)=><MusterbriefBlock key={i} col={C.purple} {...b}/>)}
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
+// ═══ Prüfung: Sprechen — Präsentation/Vortrag ═══
+function T_PruefungPraesentation(){
+  const [tab,setTab]=useState("aufbau");
+  const persErfahrung=[
+    {de:"Schon als Kind/Schüler/Student …",ru:"ещё будучи ребёнком/школьником/студентом …"},
+    {de:"Seit einem halben Jahr …",ru:"уже полгода …"},
+    {de:"In meiner Kindheit …",ru:"в моём детстве …"},
+    {de:"Aus persönlicher Erfahrung weiß ich, dass …",ru:"из личного опыта я знаю, что …"},
+    {de:"Durch ein persönliches Erlebnis kann ich zu diesem Thema etwas Wichtiges berichten.",ru:"благодаря личному опыту я могу рассказать кое-что важное по этой теме"},
+  ];
+  const heimatland=[
+    {de:"In meinem Heimatland spielt … keine/eine wichtige Rolle.",ru:"в моей родной стране … не играет/играет важную роль"},
+    {de:"Nun werde ich über die Situation in [Land] sprechen.",ru:"теперь я расскажу о ситуации в [стране]"},
+    {de:"Nun komme ich zu der Situation dieses Themas in meinem Heimatland.",ru:"теперь перейду к ситуации по этой теме в моей родной стране"},
+    {de:"Damit komme ich jetzt zu der Situation in meinem Heimatland.",ru:"этим я перехожу к ситуации в моей родной стране"},
+    {de:"Zur Situation in meinem Heimatland kann ich Ihnen sagen, dass …",ru:"о ситуации в моей родной стране я могу сказать, что …"},
+  ];
+  const vorNachteile=[
+    {de:"Jetzt werde ich über die Vor- und Nachteile sprechen.",ru:"теперь я расскажу о плюсах и минусах"},
+    {de:"Natürlich hat … eine wichtige Rolle.",ru:"конечно, … играет важную роль"},
+    {de:"Man kann natürlich verschiedene Meinungen haben, da es sowohl … als auch verschiedene Vor- und Nachteile gibt, über die ich jetzt sprechen werde.",ru:"конечно, можно иметь разные мнения, так как есть как …, так и разные плюсы и минусы, о которых я сейчас расскажу"},
+    {de:"Sehr positiv zu erwähnen ist … weniger gut ist …",ru:"очень положительно стоит отметить … менее хорошо то, что …"},
+    {de:"… ist vorteilhaft, aber … ist nachteilig.",ru:"… это преимущество, а … это недостаток"},
+  ];
+  const meinung=[
+    {de:"Meiner Meinung nach …",ru:"по моему мнению …"},
+    {de:"Ich bin der Meinung, dass …",ru:"я считаю, что …"},
+    {de:"Ich persönlich finde, dass …",ru:"лично я думаю, что …"},
+    {de:"Ich stehe auf dem Standpunkt, dass …",ru:"я придерживаюсь точки зрения, что …"},
+  ];
+  const abschluss=[
+    {de:"Ich bin mit meinem Vortrag am Ende. Ich bedanke mich bei Ihnen für Ihre Aufmerksamkeit. Gern dürfen Sie mir jetzt noch Fragen stellen.",ru:"на этом мой доклад окончен. Благодарю вас за внимание. С удовольствием отвечу на вопросы"},
+    {de:"Ich hoffe, dass Ihnen meine Präsentation gefallen hat, und bedanke mich fürs Zuhören. Sie haben jetzt die Möglichkeit, noch Fragen zu stellen.",ru:"надеюсь, вам понравилась моя презентация, спасибо за внимание. Теперь у вас есть возможность задать вопросы"},
+  ];
+  const fragen=[
+    {de:"Ich habe noch eine Frage.",ru:"у меня ещё есть вопрос"},
+    {de:"Ich möchte gern wissen, …",ru:"я хотел(а) бы знать, …"},
+    {de:"Können Sie mir erklären …?",ru:"можете мне объяснить …?"},
+  ];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.yellow}>
+        <H c={C.yellow}>🎤 Sprechen · Präsentation/Vortrag</H>
+        <div style={{fontSize:13,color:C.text,lineHeight:1.7,marginBottom:10}}>
+          Структурированный доклад на заданную тему (около 5 минут): личный опыт → ситуация на родине → плюсы и минусы → собственное мнение → завершение с благодарностью и вопросами слушателей.
+        </div>
+        <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
+          {[["aufbau","Aufbau (6 Schritte)"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,textAlign:"center",
+                border:`1px solid ${tab===key?C.yellow+"55":C.border}`,
+                background:tab===key?C.yellow+"22":C.ov3,
+                color:tab===key?C.yellow:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="aufbau"&&(
+          <div>
+            <RedeBlock col={C.yellow} title="1. Persönliche Erfahrungen (Einleitung)" items={persErfahrung}/>
+            <RedeBlock col={C.orange} title="2. In meinem Heimatland" items={heimatland}/>
+            <RedeBlock col={C.teal} title="3. Vor- und Nachteile" items={vorNachteile}/>
+            <RedeBlock col={C.blue} title="4. Meinung" items={meinung}/>
+            <RedeBlock col={C.red} title="5. Abschluss und Dank" items={abschluss}/>
+            <RedeBlock col={C.green} title="6. Fragen (von den Zuhörern beantworten)" items={fragen}/>
           </div>
         )}
       </Box>
