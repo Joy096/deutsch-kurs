@@ -33,8 +33,9 @@ function shuffle(a){const r=[...a];for(let i=r.length-1;i>0;i--){const j=Math.fl
 const LangContext=createContext("ru");
 
 function ThemeToggle({theme,onToggle}){
+  const lang=useContext(LangContext);
   return (
-    <button onClick={onToggle} title={theme==="dark"?"Светлая тема":"Тёмная тема"}
+    <button onClick={onToggle} title={lang==="uk"?(theme==="dark"?"Світла тема":"Темна тема"):(theme==="dark"?"Светлая тема":"Тёмная тема")}
       style={{position:"fixed",top:14,right:14,zIndex:50,
         background:C.card,border:`1.5px solid ${C.border}`,borderRadius:20,
         width:38,height:38,display:"flex",alignItems:"center",justifyContent:"center",
@@ -2269,26 +2270,26 @@ const WBDATA=[
 
 // ─── ADJEKTIV-PAARE ───────────────────────────────────────────────────────────
 const ADJEKTIV_PAARE=[
-  {a:"alt",        ra:"старый",      b:"neu",          rb:"новый"},
-  {a:"groß",       ra:"большой",     b:"klein",        rb:"маленький"},
-  {a:"schön",      ra:"красивый",    b:"hässlich",     rb:"некрасивый"},
-  {a:"bequem",     ra:"удобный",     b:"unbequem",     rb:"неудобный"},
-  {a:"ordentlich", ra:"аккуратный",  b:"unordentlich", rb:"неаккуратный"},
-  {a:"teuer",      ra:"дорогой",     b:"billig",       rb:"дешёвый"},
-  {a:"breit",      ra:"широкий",     b:"schmal",       rb:"узкий"},
-  {a:"hell",       ra:"светлый",     b:"dunkel",       rb:"тёмный"},
-  {a:"links",      ra:"слева",       b:"rechts",       rb:"справа"},
-  {a:"oben",       ra:"вверху",      b:"unten",        rb:"внизу"},
-  {a:"modern",     ra:"современный", b:"",             rb:""},
-  {a:"gemütlich",  ra:"уютный",      b:"ungemütlich",  rb:"неуютный"},
-  {a:"hoch",       ra:"высокий",     b:"niedrig",      rb:"низкий"},
-  {a:"gut",        ra:"хороший",     b:"schlecht",     rb:"плохой"},
-  {a:"ruhig",      ra:"тихий, спокойный", b:"laut",   rb:"громкий"},
-  {a:"kalt",       ra:"холодный",         b:"warm",   rb:"тёплый"},
-  {a:"interessant",ra:"интересный",       b:"langweilig",rb:"скучный"},
-  {a:"erst-",      ra:"первый",      b:"zweit-",       rb:"второй"},
-  {a:"dritt-",     ra:"третий",      b:"viert-",       rb:"четвёртый"},
-  {a:"fröhlich",   ra:"весёлый, радостный", b:"traurig", rb:"грустный, печальный"},
+  {a:"alt",        ra:"старый",      ua:"старий",      b:"neu",          rb:"новый",      ub:"новий"},
+  {a:"groß",       ra:"большой",     ua:"великий",     b:"klein",        rb:"маленький",  ub:"маленький"},
+  {a:"schön",      ra:"красивый",    ua:"красивий",    b:"hässlich",     rb:"некрасивый", ub:"некрасивий"},
+  {a:"bequem",     ra:"удобный",     ua:"зручний",     b:"unbequem",     rb:"неудобный",  ub:"незручний"},
+  {a:"ordentlich", ra:"аккуратный",  ua:"охайний",     b:"unordentlich", rb:"неаккуратный",ub:"неохайний"},
+  {a:"teuer",      ra:"дорогой",     ua:"дорогий",     b:"billig",       rb:"дешёвый",    ub:"дешевий"},
+  {a:"breit",      ra:"широкий",     ua:"широкий",     b:"schmal",       rb:"узкий",      ub:"вузький"},
+  {a:"hell",       ra:"светлый",     ua:"світлий",     b:"dunkel",       rb:"тёмный",     ub:"темний"},
+  {a:"links",      ra:"слева",       ua:"зліва",       b:"rechts",       rb:"справа",     ub:"справа"},
+  {a:"oben",       ra:"вверху",      ua:"вгорі",       b:"unten",        rb:"внизу",      ub:"внизу"},
+  {a:"modern",     ra:"современный", ua:"сучасний",    b:"",             rb:"",           ub:""},
+  {a:"gemütlich",  ra:"уютный",      ua:"затишний",    b:"ungemütlich",  rb:"неуютный",   ub:"незатишний"},
+  {a:"hoch",       ra:"высокий",     ua:"високий",     b:"niedrig",      rb:"низкий",     ub:"низький"},
+  {a:"gut",        ra:"хороший",     ua:"добрий",      b:"schlecht",     rb:"плохой",     ub:"поганий"},
+  {a:"ruhig",      ra:"тихий, спокойный", ua:"тихий, спокійний", b:"laut",   rb:"громкий", ub:"голосний"},
+  {a:"kalt",       ra:"холодный",         ua:"холодний",         b:"warm",   rb:"тёплый",  ub:"теплий"},
+  {a:"interessant",ra:"интересный",       ua:"цікавий",          b:"langweilig",rb:"скучный",ub:"нудний"},
+  {a:"erst-",      ra:"первый",      ua:"перший",      b:"zweit-",       rb:"второй",     ub:"другий"},
+  {a:"dritt-",     ra:"третий",      ua:"третій",      b:"viert-",       rb:"четвёртый",  ub:"четвертий"},
+  {a:"fröhlich",   ra:"весёлый, радостный", ua:"веселий, радісний", b:"traurig", rb:"грустный, печальный",ub:"сумний, печальний"},
 ];
 
 // ─── BEWERTUNG (оценки по эмодзи) ────────────────────────────────────────────
@@ -4811,11 +4812,11 @@ function Quiz({questions}){
       <div style={{textAlign:"center",padding:"24px 0"}}>
         <div style={{fontSize:52}}>{p===100?"🏆":p>=70?"👍":"💪"}</div>
         <div style={{fontSize:34,fontWeight:900,color:C.green,margin:"8px 0 4px"}}>{score}/{questions.length}</div>
-        <div style={{color:C.muted,marginBottom:14}}>{p===100?"Идеально!":p>=70?"Отлично!":p>=50?"Повтори ещё":"Нужно повторить"}</div>
+        <div style={{color:C.muted,marginBottom:14}}>{lang==="uk"?(p===100?"Ідеально!":p>=70?"Відмінно!":p>=50?"Повтори ще":"Потрібно повторити"):(p===100?"Идеально!":p>=70?"Отлично!":p>=50?"Повтори ещё":"Нужно повторить")}</div>
         <div style={{display:"flex",justifyContent:"center",gap:5,marginBottom:18}}>
           {log.map((r,i)=><span key={i} style={{width:10,height:10,borderRadius:"50%",background:r?C.green:C.red,display:"inline-block"}}/>)}
         </div>
-        <button onClick={reset} style={btnSt(C.green,C.greenBg)}>🔄 Повторить</button>
+        <button onClick={reset} style={btnSt(C.green,C.greenBg)}>{lang==="uk"?"🔄 Повторити":"🔄 Повторить"}</button>
       </div>
     );
   }
@@ -4884,13 +4885,13 @@ function DialogCards({lId}){
   return(
     <div style={{display:"flex",flexDirection:"column",gap:14}}>
       <Box c={C.teal}>
-        <H c={C.teal}>💬 Диалоговые фразы</H>
-        <div style={{fontSize:14,color:C.muted}}>Нажми на вопрос — увидишь ответ. Список пополняется с каждым уроком.</div>
+        <H c={C.teal}>💬 {lang==="uk"?"Діалогові фрази":"Диалоговые фразы"}</H>
+        <div style={{fontSize:14,color:C.muted}}>{lang==="uk"?"Натисни на питання — побачиш відповідь. Список поповнюється з кожним уроком.":"Нажми на вопрос — увидишь ответ. Список пополняется с каждым уроком."}</div>
       </Box>
 
       {/* ── Вопросы / Фразы табы ── */}
       <div style={{display:"flex",gap:6,background:C.card2,borderRadius:12,padding:4}}>
-        {[{id:"fragen",label:"❓ Вопросы"},{id:"phrasen",label:"📋 Фразы"}].map(t=>(
+        {(lang==="uk"?[{id:"fragen",label:"❓ Питання"},{id:"phrasen",label:"📋 Фрази"}]:[{id:"fragen",label:"❓ Вопросы"},{id:"phrasen",label:"📋 Фразы"}]).map(t=>(
           <button key={t.id} onClick={()=>setMode(t.id)} style={{
             flex:1,padding:"8px 0",borderRadius:9,border:"none",cursor:"pointer",fontSize:14,fontWeight:600,
             background:mode===t.id?C.teal:"transparent",
@@ -4907,7 +4908,7 @@ function DialogCards({lId}){
         return(
           <div key={gi}>
             <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:8}}>
-              <Pill c={g.col}>{g.tag}</Pill>
+              <Pill c={g.col}>{subText(g.tag,lang)}</Pill>
               {showFmHere&&(
                 <div style={{display:"flex",gap:4}}>
                   {[{id:"f",label:"Formell"},{id:"i",label:"Informell"}].map(t=>(
@@ -4935,7 +4936,7 @@ function DialogCards({lId}){
                       <div style={{marginTop:10,paddingTop:10,borderTop:`1px solid ${C.border}`}}>
                         {p.qRu&&<div style={{fontSize:12,color:C.muted,marginBottom:8,fontStyle:"italic"}}>🌐 {qru(p)}</div>}
                         <div style={{background:g.col+"15",border:`1px solid ${g.col}40`,borderRadius:8,padding:"10px 12px",marginBottom:p.note?8:0}}>
-                          <div style={{fontSize:12,color:g.col,fontWeight:700,marginBottom:3}}>ОТВЕТ</div>
+                          <div style={{fontSize:12,color:g.col,fontWeight:700,marginBottom:3}}>{lang==="uk"?"ВІДПОВІДЬ":"ОТВЕТ"}</div>
                           <div style={{fontSize:14,fontWeight:600,color:C.text}}>{p.a}</div>
                           {p.aRu&&<div style={{fontSize:12,color:C.muted,marginTop:4}}>{aru(p)}</div>}
                         </div>
@@ -4953,7 +4954,7 @@ function DialogCards({lId}){
       {/* ══ ФРАЗЫ — плоский список ══ */}
       {mode==="phrasen"&&(()=>{
         const all=groups.flatMap((g)=>filterFm(g.pairs).filter(p=>!p.q.includes("?")).map(p=>({...p,col:g.col})));
-        if(!all.length)return <div style={{color:C.muted,fontSize:14,textAlign:"center",padding:20}}>Нет фраз</div>;
+        if(!all.length)return <div style={{color:C.muted,fontSize:14,textAlign:"center",padding:20}}>{lang==="uk"?"Немає фраз":"Нет фраз"}</div>;
         return(
           <div style={{background:C.card,border:`1px solid ${C.border}`,borderRadius:14,overflow:"hidden"}}>
             {all.map((p,pi)=>{
@@ -5065,7 +5066,7 @@ function ZahlenTrainer1000(){
       {mode==="table"?(
         <div style={{display:"flex",flexDirection:"column",gap:10}}>
           <Box c={C.yellow}>
-            <H c={C.yellow} z={14}>📌 Правило составных чисел</H>
+            <H c={C.yellow} z={14}>{lang==="uk"?"📌 Правило складних чисел":"📌 Правило составных чисел"}</H>
             <div style={{fontSize:14,color:C.text,lineHeight:1.8}}>
               <b style={{color:C.orange}}>единицы + und + десятки</b><br/>
               45 = fünf<b style={{color:C.orange}}>und</b>vierzig<br/>
@@ -5105,7 +5106,7 @@ function ZahlenTrainer1000(){
             </div>
           </Box>
           <Box c={C.green} s={{marginTop:8}}>
-            <H c={C.green} z={13}>➕ Математика по-немецки</H>
+            <H c={C.green} z={13}>{lang==="uk"?"➕ Математика німецькою":"➕ Математика по-немецки"}</H>
             <div style={{fontSize:14,color:C.text,lineHeight:2}}>
               <b style={{color:C.green}}>plus</b> (+)     <b style={{color:C.red}}>minus</b> (-)     <b style={{color:C.yellow}}>ist / gleich</b> (=)<br/>
               17 <b style={{color:C.green}}>plus</b> 3 <b style={{color:C.yellow}}>ist</b> zwanzig.<br/>
@@ -5244,10 +5245,10 @@ function AbkBlock({standalone}){
     <div style={{display:"flex",flexDirection:"column",gap:12}}>
       <Box c={C.blue}>
         <H c={C.blue}>📋 Abkürzungen in Wohnungsanzeigen</H>
-        <div style={{fontSize:13,color:C.muted,marginBottom:10}}>Сокращения в объявлениях об аренде — упр. 22</div>
+        <div style={{fontSize:13,color:C.muted,marginBottom:10}}>{lang==="uk"?"Скорочення в оголошеннях про оренду — впр. 22":"Сокращения в объявлениях об аренде — упр. 22"}</div>
         <div style={{background:C.card2,borderRadius:10,overflow:"hidden"}}>
           <div style={{display:"grid",gridTemplateColumns:"auto 1fr auto",gap:0}}>
-            {["Кратко","Полностью","Перевод"].map(h=>(
+            {(lang==="uk"?["Скорочено","Повністю","Переклад"]:["Кратко","Полностью","Перевод"]).map(h=>(
               <div key={h} style={{fontSize:12,color:C.muted,fontWeight:700,padding:"6px 10px",background:C.card2,textTransform:"uppercase",letterSpacing:1}}>{h}</div>
             ))}
             {ABK.map(({short,full,ru,uk},i)=>[
@@ -5259,11 +5260,11 @@ function AbkBlock({standalone}){
         </div>
       </Box>
       <Box c={C.yellow}>
-        <H c={C.yellow} z={13}>📰 Пример объявления</H>
+        <H c={C.yellow} z={13}>📰 {lang==="uk"?"Приклад оголошення":"Пример объявления"}</H>
         <div style={{background:C.card2,borderRadius:8,padding:"10px 12px",fontSize:13,color:C.text,lineHeight:1.9}}>
           <b style={{color:C.blue}}>3 Zi.-Whg.</b>, 80 <b style={{color:C.blue}}>qm</b>, <b style={{color:C.blue}}>EBK</b>, Bad, <b style={{color:C.blue}}>ZH</b>,<br/>
           ruhige Lage, 850 € + 180 € <b style={{color:C.blue}}>NK</b><br/>
-          <span style={{color:C.muted,fontSize:12}}>= 3-комнатная квартира, 80 кв.м, встр. кухня, ванная, центр. отопление, тихое место, 850€ + 180€ коммунальные</span>
+          <span style={{color:C.muted,fontSize:12}}>{lang==="uk"?"= 3-кімнатна квартира, 80 кв.м, вбуд. кухня, ванна, центр. опалення, тихе місце, 850€ + 180€ комунальні":"= 3-комнатная квартира, 80 кв.м, встр. кухня, ванная, центр. отопление, тихое место, 850€ + 180€ коммунальные"}</span>
         </div>
       </Box>
     </div>
@@ -5271,13 +5272,14 @@ function AbkBlock({standalone}){
 }
 
 function WbRegeln(){
+  const lang=useContext(LangContext);
   const [open,setOpen]=useState(false);
   return(
     <div style={{marginBottom:10}}>
       <button onClick={()=>setOpen(o=>!o)}
         style={{width:"100%",background:C.card2,border:`1px solid ${C.border}`,borderRadius:10,
           padding:"9px 14px",display:"flex",justifyContent:"space-between",alignItems:"center",cursor:"pointer"}}>
-        <span style={{fontWeight:700,fontSize:14,color:C.yellow}}>📌 Правила: артикли & окончания множ. числа</span>
+        <span style={{fontWeight:700,fontSize:14,color:C.yellow}}>📌 {lang==="uk"?"Правила: артиклі & закінчення множ. числа":"Правила: артикли & окончания множ. числа"}</span>
         <span style={{color:C.muted,fontSize:14}}>{open?"▲":"▼"}</span>
       </button>
       {open&&(
@@ -5287,9 +5289,34 @@ function WbRegeln(){
           {/* Артикли */}
           <div>
             <div style={{fontWeight:700,fontSize:13,color:C.yellow,marginBottom:8,textTransform:"uppercase",letterSpacing:1}}>
-              🏷️ Как узнать артикль по окончанию слова
+              🏷️ {lang==="uk"?"Як визначити артикль за закінченням слова":"Как узнать артикль по окончанию слова"}
             </div>
-            {[
+            {(lang==="uk"?[
+              {art:"der",col:C.blue,tips:[
+                "-er → der Lehrer, der Wecker",
+                "-ling → der Frühling, der Lehrling",
+                "-or → der Motor, der Doktor",
+                "Дні тижня, місяці, сезони",
+                "Чоловіки, професії чол.р.",
+              ]},
+              {art:"die",col:C.purple,tips:[
+                "-ung → die Wohnung, die Zeitung",
+                "-heit/-keit → die Freiheit, die Möglichkeit",
+                "-schaft → die Mannschaft",
+                "-tät → die Universität, die Nationalität",
+                "-ion → die Station, die Lektion",
+                "-ie → die Energie, die Familie",
+                "-ik → die Musik, die Physik",
+                "Жінки, професії жін.р. (-in)",
+              ]},
+              {art:"das",col:C.orange,tips:[
+                "-chen/-lein → das Mädchen, das Häuslein",
+                "-ment → das Apartment, das Instrument",
+                "-tum → das Datum, das Zentrum",
+                "-um → das Museum, das Stadium",
+                "Дієслова як іменники → das Lernen, das Essen",
+              ]},
+            ]:[
               {art:"der",col:C.blue,tips:[
                 "-er → der Lehrer, der Wecker",
                 "-ling → der Frühling, der Lehrling",
@@ -5314,7 +5341,7 @@ function WbRegeln(){
                 "-um → das Museum, das Stadium",
                 "Глаголы как сущ. → das Lernen, das Essen",
               ]},
-            ].map(({art,col,tips})=>(
+            ]).map(({art,col,tips})=>(
               <div key={art} style={{background:col+"12",border:`1px solid ${col}30`,borderRadius:8,padding:"8px 10px",marginBottom:6}}>
                 <div style={{background:col+"22",border:`1px solid ${col}55`,color:col,borderRadius:6,
                   padding:"2px 8px",fontWeight:800,fontSize:14,display:"inline-block",marginBottom:6}}>{art}</div>
@@ -5346,9 +5373,17 @@ function WbRegeln(){
           {/* Окончания мн.числа */}
           <div>
             <div style={{fontWeight:700,fontSize:13,color:C.yellow,marginBottom:8,textTransform:"uppercase",letterSpacing:1}}>
-              📋 Типы окончаний множественного числа
+              📋 {lang==="uk"?"Типи закінчень множини":"Типы окончаний множественного числа"}
             </div>
-            {[
+            {(lang==="uk"?[
+              {tp:"-e",  col:C.blue,  ex:"Tisch→Tisch e, Heft→Heft e",     tip:"Багато слів m і n роду"},
+              {tp:'"-e', col:C.purple,ex:"Stuhl→Stühl e, Stadt→Städt e",   tip:"+e і умлаут (a→ä, u→ü, o→ö)"},
+              {tp:"-n",  col:C.green, ex:"Lampe→Lampe n, Straße→Straße n", tip:"Слово на -e → просто +n"},
+              {tp:"-en", col:C.teal,  ex:"Uhr→Uhr en, Tür→Tür en",         tip:"Не на -e → +en"},
+              {tp:"—",   col:C.yellow,ex:"Fenster→Fenster, Spiegel→Spiegel",tip:"Без змін (частіше -er, -en)"},
+              {tp:"-s",  col:C.orange,ex:"Handy→Handy s, Hotel→Hotel s",    tip:"Іноземні слова"},
+              {tp:'"-er',col:C.red,   ex:"Buch→Büch er, Haus→Häus er",     tip:"+er і умлаут"},
+            ]:[
               {tp:"-e",  col:C.blue,  ex:"Tisch→Tisch e, Heft→Heft e",     tip:"Много m и n слов"},
               {tp:'"-e', col:C.purple,ex:"Stuhl→Stühl e, Stadt→Städt e",   tip:"+e и умлаут (a→ä, u→ü, o→ö)"},
               {tp:"-n",  col:C.green, ex:"Lampe→Lampe n, Straße→Straße n", tip:"Слово на -e → просто +n"},
@@ -5356,7 +5391,7 @@ function WbRegeln(){
               {tp:"—",   col:C.yellow,ex:"Fenster→Fenster, Spiegel→Spiegel",tip:"Без изменений (чаще -er, -en)"},
               {tp:"-s",  col:C.orange,ex:"Handy→Handy s, Hotel→Hotel s",    tip:"Иностранные слова"},
               {tp:'"-er',col:C.red,   ex:"Buch→Büch er, Haus→Häus er",     tip:"+er и умлаут"},
-            ].map(({tp,col,ex,tip})=>(
+            ]).map(({tp,col,ex,tip})=>(
               <div key={tp} style={{display:"flex",gap:8,marginBottom:7,alignItems:"flex-start"}}>
                 <span style={{background:col+"22",border:`1px solid ${col}55`,color:col,
                   borderRadius:6,padding:"2px 9px",fontWeight:900,fontSize:13,flexShrink:0,minWidth:36,textAlign:"center"}}>{tp}</span>
@@ -5378,7 +5413,7 @@ function Woerterbuch({words=WBDATA}={}){
   const lang=useContext(LangContext);
   const wru=(w)=>(lang==="uk"&&w.uk)?w.uk:w.ru;
   const TEMEN=[
-    {id:"all",      label:"Все",           col:C.teal},
+    {id:"all",      label:"Все",  labelUk:"Усі",         col:C.teal},
     {id:"Tageszeiten",label:"🕐 Tageszeiten",col:C.orange},
     {id:"Kursraum", label:"🏫 Kursraum",   col:C.blue},
     {id:"Alltag",   label:"🛒 Alltag",     col:C.red},
@@ -5388,7 +5423,7 @@ function Woerterbuch({words=WBDATA}={}){
     {id:"Wohnung",  label:"🏠 Wohnung",    col:C.green},
     {id:"Familie",  label:"👨‍👩‍👧 Familie",   col:C.purple},
     {id:"Adjektive",label:"🎨 Adjektive",  col:C.red},
-    {id:"Phrase",   label:"💬 Фразы",      col:C.teal},
+    {id:"Phrase",   label:"💬 Фразы", labelUk:"💬 Фрази",      col:C.teal},
     {id:"Trennbare Verben",label:"✂️ Trennbare Verben",col:C.green},
     {id:"Lebensmittel",   label:"🍎 Lebensmittel",    col:C.green},
     {id:"Arbeit",         label:"💼 Arbeit",            col:C.blue},
@@ -5408,10 +5443,10 @@ function Woerterbuch({words=WBDATA}={}){
     {id:"Feste",          label:"🎉 Feste",                   col:C.yellow},
   ];
   const TYPEN=[
-    {id:"all",     label:"Все",           col:C.teal},
+    {id:"all",     label:"Все",  labelUk:"Усі",         col:C.teal},
     {id:"Nomen",   label:"📦 Nomen",      col:C.blue},
     {id:"Adjektiv",label:"🎨 Adjektiv",   col:C.red},
-    {id:"Phrase",  label:"💬 Фразы",      col:C.teal},
+    {id:"Phrase",  label:"💬 Фразы", labelUk:"💬 Фрази",      col:C.teal},
   ];
   const [typ,setTyp]=useState("all");
   const [tema,setTema]=useState("all");
@@ -5721,13 +5756,13 @@ function Woerterbuch({words=WBDATA}={}){
           gap:4,padding:"7px 8px",borderBottom:`1px solid ${C.border}22`,alignItems:"center"}}>
           <div style={{textAlign:"right"}}>
             <div style={{fontWeight:700,fontSize:13,color:C.text}}>{p.a}</div>
-            <div style={{fontSize:11,color:C.muted}}>{p.ra}</div>
+            <div style={{fontSize:11,color:C.muted}}>{(lang==="uk"&&p.ua)?p.ua:p.ra}</div>
           </div>
           <div style={{color:C.border,fontSize:12,padding:"0 4px"}}>↔</div>
           <div style={{textAlign:"left"}}>
             {p.b
               ?<><div style={{fontWeight:700,fontSize:13,color:C.text}}>{p.b}</div>
-                 <div style={{fontSize:11,color:C.muted}}>{p.rb}</div></>
+                 <div style={{fontSize:11,color:C.muted}}>{(lang==="uk"&&p.ub)?p.ub:p.rb}</div></>
               :<div style={{color:C.muted,fontSize:12}}>—</div>
             }
           </div>
@@ -5750,14 +5785,14 @@ function Woerterbuch({words=WBDATA}={}){
               border:`1.5px solid ${typ===t.id?t.col:C.border}`,
               background:typ===t.id?t.col+"22":C.card,
               color:typ===t.id?t.col:C.muted,whiteSpace:"nowrap"}}>
-            {t.label}
+            {(lang==="uk"&&t.labelUk)?t.labelUk:t.label}
           </button>
         ))}
       </div>
       {/* ── Поиск ── */}
       <div style={{position:"relative",marginBottom:8}}>
         <span style={{position:"absolute",left:12,top:"50%",transform:"translateY(-50%)",color:C.muted,fontSize:14}}>🔍</span>
-        <input value={search} onChange={e=>setSearch(e.target.value)} placeholder="Поиск: Tisch, стол..."
+        <input value={search} onChange={e=>setSearch(e.target.value)} placeholder={lang==="uk"?"Пошук: Tisch, стіл...":"Поиск: Tisch, стол..."}
           style={{width:"100%",background:C.card,border:`1px solid ${C.border}`,borderRadius:10,
             padding:"9px 12px 9px 36px",color:C.text,fontSize:14,boxSizing:"border-box",outline:"none"}}/>
       </div>
@@ -5770,7 +5805,7 @@ function Woerterbuch({words=WBDATA}={}){
               border:`1.5px solid ${tema===t.id?t.col:C.border}`,
               background:tema===t.id?t.col+"22":C.card,
               color:tema===t.id?t.col:C.muted,whiteSpace:"nowrap"}}>
-            {t.label}
+            {(lang==="uk"&&t.labelUk)?t.labelUk:t.label}
           </button>
         ))}
       </div>
@@ -5784,14 +5819,14 @@ function Woerterbuch({words=WBDATA}={}){
                 border:`1.5px solid ${art===f?(f==="all"?C.teal:AC(f)):C.border}`,
                 background:art===f?(f==="all"?C.tealBg:AB(f)):C.card,
                 color:art===f?(f==="all"?C.teal:AC(f)):C.muted}}>
-              {f==="all"?"Все":f}
+              {f==="all"?(lang==="uk"?"Усі":"Все"):f}
             </button>
           ))}
         </div>
       )}
       {isTrennbar&&typ!=="recent"&&(
         <div style={{display:"flex",gap:5,marginBottom:8,overflowX:"auto",paddingBottom:2,scrollbarWidth:"none"}}>
-          {[{id:"all",label:"Все",col:C.teal,bg:C.tealBg},
+          {[{id:"all",label:lang==="uk"?"Усі":"Все",col:C.teal,bg:C.tealBg},
             ...trennbarPrefs.map(p=>({id:p,label:p+"-",...PREF_COLORS[p]}))
           ].map(p=>(
             <button key={p.id} onClick={()=>setSelPref(p.id)}
@@ -5810,13 +5845,13 @@ function Woerterbuch({words=WBDATA}={}){
           style={{padding:"5px 12px",borderRadius:9,fontWeight:600,fontSize:12,cursor:"pointer",
             border:`1.5px solid ${C.border}`,background:sortNew?C.yellowBg:C.card,
             color:sortNew?C.yellow:C.muted,whiteSpace:"nowrap"}}>
-          {sortNew?"🆕 Новые":"🕐 Старые"}
+          {sortNew?(lang==="uk"?"🆕 Нові":"🆕 Новые"):(lang==="uk"?"🕐 Старі":"🕐 Старые")}
         </button>
       </div>
       {/* ── Заголовок колонок ── */}
       {!isAdj&&typ!=="Phrase"&&typ!=="recent"&&!search&&(
         <div style={{display:"grid",gridTemplateColumns:"minmax(min-content,1fr) 1fr",gap:8,padding:"4px 8px",marginBottom:2}}>
-          {["Слово","Перевод"].map(h=>(
+          {(lang==="uk"?["Слово","Переклад"]:["Слово","Перевод"]).map(h=>(
             <div key={h} style={{fontSize:11,color:C.muted,fontWeight:700,textTransform:"uppercase",letterSpacing:1}}>{h}</div>
           ))}
         </div>
@@ -5826,11 +5861,11 @@ function Woerterbuch({words=WBDATA}={}){
       {tema==="all"&&(
         <div style={{background:C.card,border:`1px solid ${C.teal}35`,borderRadius:12,overflow:"hidden"}}>
           <div style={{background:C.teal+"15",padding:"8px 12px",borderBottom:`1px solid ${C.teal}25`}}>
-            <span style={{fontSize:12,color:C.teal,fontWeight:700}}>{sortNew?"🆕 Новые сначала":"🕐 Старые сначала"}</span>
-            <span style={{fontSize:11,color:C.muted,marginLeft:8}}>{list.length} слов</span>
+            <span style={{fontSize:12,color:C.teal,fontWeight:700}}>{sortNew?(lang==="uk"?"🆕 Спочатку нові":"🆕 Новые сначала"):(lang==="uk"?"🕐 Спочатку старі":"🕐 Старые сначала")}</span>
+            <span style={{fontSize:11,color:C.muted,marginLeft:8}}>{list.length} {lang==="uk"?"слів":"слов"}</span>
           </div>
           <div style={{display:"grid",gridTemplateColumns:"minmax(min-content,1fr) 1fr",gap:8,padding:"4px 8px"}}>
-            {["Слово","Перевод"].map(h=>(
+            {(lang==="uk"?["Слово","Переклад"]:["Слово","Перевод"]).map(h=>(
               <div key={h} style={{fontSize:11,color:C.muted,fontWeight:700,textTransform:"uppercase",letterSpacing:1}}>{h}</div>
             ))}
           </div>
@@ -5843,9 +5878,9 @@ function Woerterbuch({words=WBDATA}={}){
             {(tema==="all"||(isTrennbar&&selPref==="all"))&&(
               <div style={{background:g.col+"15",padding:"6px 10px",borderBottom:`1px solid ${g.col}25`}}>
                 <span style={{fontSize:12,color:g.col,fontWeight:700}}>
-                  {tema==="all"?TEMEN.find(t=>t.id===g.id)?.label:g.label}
+                  {tema==="all"?((lang==="uk"&&TEMEN.find(t=>t.id===g.id)?.labelUk)?TEMEN.find(t=>t.id===g.id)?.labelUk:TEMEN.find(t=>t.id===g.id)?.label):g.label}
                 </span>
-                <span style={{fontSize:11,color:C.muted,marginLeft:8}}>{g.words.length} слов</span>
+                <span style={{fontSize:11,color:C.muted,marginLeft:8}}>{g.words.length} {lang==="uk"?"слів":"слов"}</span>
               </div>
             )}
             {g.id==="Adjektive"&&!search
@@ -5894,7 +5929,7 @@ function AdresseTrainer(){
             </div>
           </Box>
           <Box c={C.blue}>
-            <H c={C.blue} z={13}>📋 Пример адреса</H>
+            <H c={C.blue} z={13}>{lang==="uk"?"📋 Приклад адреси":"📋 Пример адреса"}</H>
             <div style={{fontSize:14,color:C.text,lineHeight:1.9}}>
               Thomas Schulz<br/>
               Juliusstraße <b style={{color:C.orange}}>15</b><br/>
@@ -5914,7 +5949,7 @@ function T1A(){
   return(
   <div style={{display:"flex",flexDirection:"column",gap:12}}>
     <Box c={C.blue}>
-      <H c={C.blue}>👋 Begrüßung — Приветствия</H>
+      <H c={C.blue}>{lang==="uk"?"👋 Begrüßung — Привітання":"👋 Begrüßung — Приветствия"}</H>
       {[["Guten Morgen","Доброе утро","Добрий ранок","до ~11:00"],["Guten Tag","Добрый день","Добрий день","~11:00–18:00"],["Guten Abend","Добрый вечер","Добрий вечір","после 18:00"],["Hallo","Привет","Привіт","неформально"],].map(([de,ru,uk,note])=>(
         <div key={de} style={{display:"flex",gap:8,marginBottom:8,alignItems:"center"}}>
           <span style={{fontWeight:700,fontSize:14,color:C.blue,minWidth:120}}>{de}</span>
@@ -5924,7 +5959,7 @@ function T1A(){
       ))}
     </Box>
     <Box c={C.purple}>
-      <H c={C.purple}>🙋 Sich vorstellen — Знакомство</H>
+      <H c={C.purple}>{lang==="uk"?"🙋 Sich vorstellen — Знайомство":"🙋 Sich vorstellen — Знакомство"}</H>
       {[["Ich heiße Vitalii.","Меня зовут Виталий.","Мене звуть Віталій."],["Mein Name ist Klymenko.","Моя фамилия Клименко.","Моє прізвище Клименко."],["Ich komme aus der Ukraine.","Я из Украины.","Я з України."],["Ich bin neu hier im Haus.","Я здесь новый (в доме).","Я тут новий (у будинку)."],["Ich wohne schon lange hier.","Я уже давно здесь живу.","Я вже давно тут живу."],].map(([de,ru,uk])=>(
         <div key={de} style={{background:C.card2,borderRadius:8,padding:"8px 10px",marginBottom:6}}>
           <div style={{fontWeight:600,fontSize:14,color:C.text,marginBottom:2}}>{de}</div>
@@ -5943,7 +5978,9 @@ function T1A(){
   </div>
 );}
 
-function T1B(){return(
+function T1B(){
+  const lang=useContext(LangContext);
+  return(
   <div style={{display:"flex",flexDirection:"column",gap:12}}>
     <Box c={C.blue}>
       <H c={C.blue}>🔤 Das Alphabet</H>
@@ -5969,7 +6006,7 @@ function T1B(){return(
       </div>
     </Box>
     <Box c={C.yellow}>
-      <H c={C.yellow} z={13}>✍️ Buchstabieren — Как произносить по буквам</H>
+      <H c={C.yellow} z={13}>{lang==="uk"?"✍️ Buchstabieren — Як вимовляти по буквах":"✍️ Buchstabieren — Как произносить по буквам"}</H>
       <div style={{fontSize:14,color:C.text,lineHeight:1.8}}>
         <b>Wie schreibt man das?</b> — Как это пишется?<br/>
         <b>Ich buchstabiere:</b> — Я произнесу по буквам:<br/>
@@ -5980,6 +6017,7 @@ function T1B(){return(
 );}
 
 function T1C(){
+  const lang=useContext(LangContext);
   const verbs=Object.keys(KONJ_L1);
   const [sel,setSel]=useState("kommen");
   const c=KONJ_L1[sel];
@@ -5991,14 +6029,14 @@ function T1C(){
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:8,marginBottom:8}}>
           <div style={{background:C.blueBg,border:`1px solid ${C.blue}`,borderRadius:10,padding:"10px"}}>
             <div style={{color:C.blue,fontWeight:800,fontSize:14,marginBottom:6}}>Formell — Sie</div>
-            {[["Frau + Familienname","Frau Schneider"],["Herr + Familienname","Herr Klein"],["Sie (с большой буквы)","= Вы"]].map(([k,v])=>(
-              <div key={k} style={{fontSize:13,color:C.text,marginBottom:3}}><span style={{color:C.muted}}>{k}:</span> {v}</div>
+            {[["Frau + Familienname","Frau Schneider","Frau Schneider"],["Herr + Familienname","Herr Klein","Herr Klein"],["Sie (с большой буквы)","= Вы","Sie (з великої букви)","= Ви"]].map(([k,v,ku,vu])=>(
+              <div key={k} style={{fontSize:13,color:C.text,marginBottom:3}}><span style={{color:C.muted}}>{(lang==="uk"&&ku)?ku:k}:</span> {(lang==="uk"&&vu)?vu:v}</div>
             ))}
           </div>
           <div style={{background:C.greenBg,border:`1px solid ${C.green}`,borderRadius:10,padding:"10px"}}>
             <div style={{color:C.green,fontWeight:800,fontSize:14,marginBottom:6}}>Informell — du</div>
-            {[["Vorname","Mario, Laura"],["du (с маленькой)","= ты"],["mit Freunden","с друзьями"]].map(([k,v])=>(
-              <div key={k} style={{fontSize:13,color:C.text,marginBottom:3}}><span style={{color:C.muted}}>{k}:</span> {v}</div>
+            {[["Vorname","Mario, Laura","Vorname","Mario, Laura"],["du (с маленькой)","= ты","du (з малої)","= ти"],["mit Freunden","с друзьями","mit Freunden","з друзями"]].map(([k,v,ku,vu])=>(
+              <div key={k} style={{fontSize:13,color:C.text,marginBottom:3}}><span style={{color:C.muted}}>{(lang==="uk"&&ku)?ku:k}:</span> {(lang==="uk"&&vu)?vu:v}</div>
             ))}
           </div>
         </div>
@@ -6031,7 +6069,9 @@ function T1C(){
   );
 }
 
-function T1D(){return(
+function T1D(){
+  const lang=useContext(LangContext);
+  return(
   <div style={{display:"flex",flexDirection:"column",gap:12}}>
     <Box c={C.orange}>
       <H c={C.orange}>🔢 Zahlen 0–20</H>
@@ -6090,7 +6130,7 @@ function T1D(){return(
       </div>
     </Box>
     <Box c={C.blue}>
-      <H c={C.blue} z={13}>📱 Handynummer — как называть цифры</H>
+      <H c={C.blue} z={13}>{lang==="uk"?"📱 Handynummer — як називати цифри":"📱 Handynummer — как называть цифры"}</H>
       <div style={{fontSize:14,color:C.text,lineHeight:1.8}}>
         Цифры называют <b>по одной</b> или парами:<br/>
         0176 458910 → null eins sieben sechs / vier fünf acht neun eins null<br/>
@@ -6105,7 +6145,7 @@ function T1E(){
   return(
   <div style={{display:"flex",flexDirection:"column",gap:12}}>
     <Box c={C.yellow}>
-      <H c={C.yellow}>💡 Главное правило</H>
+      <H c={C.yellow}>{lang==="uk"?"💡 Головне правило":"💡 Главное правило"}</H>
       <div style={{fontSize:14,color:C.text,lineHeight:1.8}}>
         Ich bin <b style={{color:C.green}}>Ingenieur</b>. ✓<br/>
         Ich bin <b style={{color:C.red}}>ein Ingenieur</b>. ✗ (без артикля!)<br/>
@@ -6125,7 +6165,7 @@ function T1E(){
       ))}
     </Box>
     <Box c={C.blue}>
-      <H c={C.blue} z={13}>➕ Правило образования f-формы</H>
+      <H c={C.blue} z={13}>{lang==="uk"?"➕ Правило утворення f-форми":"➕ Правило образования f-формы"}</H>
       <div style={{fontSize:14,color:C.text,lineHeight:1.8}}>
         m-форма + <b style={{color:C.green}}>-in</b> = f-форма<br/>
         Arzt → Ärz<b style={{color:C.green}}>t</b>in (+ умлаут)<br/>
@@ -6136,6 +6176,7 @@ function T1E(){
 );}
 
 function T2A(){
+  const lang=useContext(LangContext);
   const verbs=Object.keys(KONJ_L2);
   const [sel,setSel]=useState("kommen");
   const c=KONJ_L2[sel];
@@ -6143,14 +6184,14 @@ function T2A(){
   return(
     <div style={{display:"flex",flexDirection:"column",gap:12}}>
       <Box c={C.green}>
-        <H c={C.green}>🆕 Новое в L2: er / sie / es</H>
+        <H c={C.green}>{lang==="uk"?"🆕 Нове в L2: er / sie / es":"🆕 Новое в L2: er / sie / es"}</H>
         <div style={{fontSize:14,color:C.text,lineHeight:1.8}}>
           В Lektion 1 мы изучали без третьего лица. Теперь добавляется <b style={{color:C.green}}>er/sie/es</b> (он/она/оно).<br/>
           Окончание: обычно <b style={{color:C.green}}>-t</b> → komm<b style={{color:C.green}}>t</b>, lern<b style={{color:C.green}}>t</b>
         </div>
       </Box>
       <Box c={C.yellow}>
-        <H c={C.yellow}>📝 Verben im Präsens (L2 — полная таблица)</H>
+        <H c={C.yellow}>{lang==="uk"?"📝 Verben im Präsens (L2 — повна таблиця)":"📝 Verben im Präsens (L2 — полная таблица)"}</H>
         <div style={{display:"flex",gap:6,flexWrap:"wrap",marginBottom:10}}>
           {verbs.map(v=>(
             <button key={v} onClick={()=>setSel(v)} style={{padding:"6px 12px",borderRadius:10,border:`1px solid ${sel===v?C.blue:C.border}`,background:sel===v?C.blueBg:C.card,color:sel===v?C.blue:C.muted,fontWeight:600,fontSize:14,cursor:"pointer"}}>{v}</button>
@@ -6186,7 +6227,9 @@ function T2A(){
   );
 }
 
-function T2B(){return(
+function T2B(){
+  const lang=useContext(LangContext);
+  return(
   <div style={{display:"flex",flexDirection:"column",gap:12}}>
     <Box c={C.teal}>
       <H c={C.teal}>📋 Nomen und Artikel</H>
@@ -6224,7 +6267,7 @@ function T2B(){return(
       </Box>
     </Box>
     <Box c={C.orange}>
-      <H c={C.orange}>📚 Plural — типы окончаний</H>
+      <H c={C.orange}>{lang==="uk"?"📚 Plural — типи закінчень":"📚 Plural — типы окончаний"}</H>
       {[
         {tp:"-e",col:C.blue,ex:"Tisch→Tische, Heft→Hefte",w:"Просто +e"},
         {tp:'"-e',col:C.purple,ex:"Stuhl→Stühle",w:"+e и умлаут (a→ä, u→ü, o→ö)"},
@@ -6244,10 +6287,11 @@ function T2B(){return(
 );}
 
 function TGross(){
+  const lang=useContext(LangContext);
   return(
     <div style={{display:"flex",flexDirection:"column",gap:12}}>
       <Box c={C.yellow}>
-        <H c={C.yellow}>📝 Großschreibung — заглавные буквы</H>
+        <H c={C.yellow}>{lang==="uk"?"📝 Großschreibung — великі букви":"📝 Großschreibung — заглавные буквы"}</H>
         <div style={{fontSize:14,color:C.muted,marginBottom:10}}>В немецком заглавные буквы используются чаще, чем в русском!</div>
       </Box>
       {[
@@ -6268,7 +6312,7 @@ function TGross(){
         </div>
       ))}
       <Box c={C.blue}>
-        <H c={C.blue} z={13}>⚠️ Частая ошибка</H>
+        <H c={C.blue} z={13}>{lang==="uk"?"⚠️ Часта помилка":"⚠️ Частая ошибка"}</H>
         <div style={{fontSize:14,color:C.text,lineHeight:1.8}}>
           ✗ <span style={{color:C.red}}>wie heißen sie und woher kommen sie?</span><br/>
           ✓ <span style={{color:C.green}}>Wie heißen <b>S</b>ie und woher kommen <b>S</b>ie?</span><br/>
@@ -6296,7 +6340,7 @@ function TAbkuerzungen(){
   return(
     <div style={{display:"flex",flexDirection:"column",gap:12}}>
       <Box c={C.teal}>
-        <H c={C.teal}>🔤 Abkürzungen — Сокращения</H>
+        <H c={C.teal}>{lang==="uk"?"🔤 Abkürzungen — Скорочення":"🔤 Abkürzungen — Сокращения"}</H>
         <div style={{fontSize:14,color:C.muted}}>Часто встречаются в словарях и документах</div>
       </Box>
       <div style={{display:"flex",flexDirection:"column",gap:6}}>
@@ -6325,7 +6369,7 @@ function TWFragen(){
   return(
     <div style={{display:"flex",flexDirection:"column",gap:12}}>
       <Box c={C.blue}>
-        <H c={C.blue}>❓ W-Fragen — вопросительные слова</H>
+        <H c={C.blue}>{lang==="uk"?"❓ W-Fragen — питальні слова":"❓ W-Fragen — вопросительные слова"}</H>
         <div style={{fontSize:14,color:C.muted,marginBottom:10}}>
           Структура: <b style={{color:C.yellow}}>Fragewort</b> + <b style={{color:C.green}}>Verb</b> + остаток фразы
         </div>
@@ -6339,7 +6383,7 @@ function TWFragen(){
         </div>
       </Box>
       <Box>
-        <H c={C.text} z={14}>📋 Примеры из книги</H>
+        <H c={C.text} z={14}>{lang==="uk"?"📋 Приклади з книги":"📋 Примеры из книги"}</H>
         <div style={{display:"grid",gridTemplateColumns:"50px 80px 1fr",gap:5,marginBottom:6}}>
           {["Wort","Verb","Rest"].map(h=><div key={h} style={{fontSize:12,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>)}
         </div>
@@ -6356,7 +6400,7 @@ function TWFragen(){
         ))}
       </Box>
       <Box c={C.yellow}>
-        <H c={C.yellow} z={13}>💡 Правило порядка слов</H>
+        <H c={C.yellow} z={13}>{lang==="uk"?"💡 Правило порядку слів":"💡 Правило порядка слов"}</H>
         <div style={{fontSize:14,color:C.text,lineHeight:1.8}}>
           В немецком вопросе глагол стоит <b style={{color:C.green}}>всегда на 2-м месте</b>:<br/>
           <b style={{color:C.yellow}}>Wie</b> <b style={{color:C.green}}>heißen</b> Sie? ✓<br/>
@@ -6587,7 +6631,7 @@ function T3A(){
   return(
     <div style={{display:"flex",flexDirection:"column",gap:12}}>
       <Box c={C.yellow}>
-        <H c={C.yellow}>🏠 Möbel — Мебель</H>
+        <H c={C.yellow}>{lang==="uk"?"🏠 Möbel — Меблі":"🏠 Möbel — Мебель"}</H>
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:5,marginBottom:6}}>
           {["m (der)","n (das)","f (die)"].map(h=><div key={h} style={{fontSize:12,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>)}
         </div>
@@ -6664,7 +6708,7 @@ function T3Farben(){
   return(
     <div style={{display:"flex",flexDirection:"column",gap:12}}>
       <Box c={C.orange}>
-        <H c={C.orange}>🎨 Farben — Цвета</H>
+        <H c={C.orange}>{lang==="uk"?"🎨 Farben — Кольори":"🎨 Farben — Цвета"}</H>
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:6}}>
           {FARBEN.map(f=>(
             <div key={f.de} style={{background:C.card2,border:`1px solid ${C.border}`,borderRadius:10,padding:"10px 12px",display:"flex",justifyContent:"space-between",alignItems:"center"}}>
@@ -6675,7 +6719,7 @@ function T3Farben(){
         </div>
       </Box>
       <Box c={C.yellow}>
-        <H c={C.yellow} z={13}>💡 Как использовать</H>
+        <H c={C.yellow} z={13}>{lang==="uk"?"💡 Як використовувати":"💡 Как использовать"}</H>
         <TapEx de={<>Der Stuhl ist <b style={{color:C.blue}}>blau</b>. Ich finde das Sofa <b style={{color:C.orange}}>orange</b>.</>}
           ru="Стул синий. Я считаю, что диван оранжевый." uk="Стілець синій. Я вважаю, що диван помаранчевий." col={C.yellow}/>
         <div style={{fontSize:12,color:C.muted,marginTop:6}}>Цвета не меняются по родам!</div>
@@ -6698,7 +6742,7 @@ function T3Akkusativ(){
           ru="Учитель (подлежащее) пишет предложение (дополнение). Учительница (подлежащее) имеет диск (дополнение). Я (подлежащее) покупаю ноутбук (дополнение)." uk="Вчитель (підмет) пише речення (додаток). Вчителька (підмет) має диск (додаток). Я (підмет) купую ноутбук (додаток)." col={C.text}/>
       </Box>
       <Box c={C.red}>
-        <H c={C.red}>⚠️ Главное правило Akkusativ</H>
+        <H c={C.red}>{lang==="uk"?"⚠️ Головне правило Akkusativ":"⚠️ Главное правило Akkusativ"}</H>
         <div style={{fontSize:14,color:C.muted,marginBottom:10}}>Меняется только <b style={{color:C.red}}>maskulin (m)</b>!</div>
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr 1fr",gap:5,marginBottom:6}}>
           {["","m","n","f","Pl."].map(h=><div key={h} style={{fontSize:12,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>)}
@@ -6722,7 +6766,7 @@ function T3Akkusativ(){
         ))}
       </Box>
       <Box c={C.green}>
-        <H c={C.green} z={13}>✅ Глаголы, всегда требующие Akkusativ</H>
+        <H c={C.green} z={13}>{lang==="uk"?"✅ Дієслова, які завжди вимагають Akkusativ":"✅ Глаголы, всегда требующие Akkusativ"}</H>
         <div style={{fontSize:12,color:C.muted,marginBottom:8}}>После этих глаголов → всегда Wen? / Was? → Akkusativ:</div>
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:4}}>
           {[["haben","иметь","мати"],["kaufen","покупать","купувати"],["brauchen","нужен","потрібен"],["suchen","искать","шукати"],
@@ -6804,7 +6848,7 @@ function T3Intro(){
   return(
     <div style={{display:"flex",flexDirection:"column",gap:12}}>
       <Box c={C.yellow}>
-        <H c={C.yellow}>🏠 Zimmer — Комнаты</H>
+        <H c={C.yellow}>{lang==="uk"?"🏠 Zimmer — Кімнати":"🏠 Zimmer — Комнаты"}</H>
         <div style={{fontSize:14,color:C.muted,marginBottom:8}}>Pronomen: der→<b style={{color:C.blue}}>er</b> · das→<b style={{color:C.orange}}>es</b> · die→<b style={{color:C.purple}}>sie</b> · die(Pl.)→<b style={{color:C.green}}>sie</b></div>
         <div style={{fontSize:12,color:C.muted,marginBottom:8}}>👆 Нажми на слово — увидишь перевод</div>
         {ZIMMER.map(z=>(
@@ -6829,7 +6873,7 @@ function T3Intro(){
         </div>
       </Box>
       <Box c={C.teal}>
-        <H c={C.teal} z={13}>💬 Мнения (Meinungen)</H>
+        <H c={C.teal} z={13}>{lang==="uk"?"💬 Думки (Meinungen)":"💬 Мнения (Meinungen)"}</H>
         <div style={{fontSize:12,color:C.muted,marginBottom:6}}>👆 Нажми на слово — увидишь перевод</div>
         <div style={{display:"flex",flexDirection:"column",gap:6}}>
           {MEIN.map(({e,words,col})=>(
@@ -6945,7 +6989,7 @@ function T3Poss(){
   return(
     <div style={{display:"flex",flexDirection:"column",gap:12}}>
       <Box c={C.orange}>
-        <H c={C.orange}>👤 Possessivpronomen — Притяжательные местоимения</H>
+        <H c={C.orange}>{lang==="uk"?"👤 Possessivpronomen — Присвійні займенники":"👤 Possessivpronomen — Притяжательные местоимения"}</H>
         <div style={{fontSize:14,color:C.muted,marginBottom:10}}>Показывают принадлежность: <b style={{color:C.orange}}>чей? чья? чьё?</b></div>
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:5,marginBottom:6}}>
           {["Pronomen","Possessiv","Значение"].map(h=><div key={h} style={{fontSize:12,color:C.muted,fontWeight:700,textAlign:"center"}}>{h}</div>)}
@@ -6959,7 +7003,7 @@ function T3Poss(){
         ))}
       </Box>
       <Box c={C.yellow}>
-        <H c={C.yellow} z={13}>⚠️ Окончания — как у ein/kein</H>
+        <H c={C.yellow} z={13}>{lang==="uk"?"⚠️ Закінчення — як у ein/kein":"⚠️ Окончания — как у ein/kein"}</H>
         <div style={{fontSize:14,color:C.text,lineHeight:1.9}}>
           <b style={{color:C.blue}}>mein</b> Tisch (m, Nom.) &nbsp; <b style={{color:C.purple}}>meine</b> Lampe (f)<br/>
           <b style={{color:C.orange}}>mein</b> Heft (n) &nbsp; <b style={{color:C.red}}>meinen</b> Tisch (m, Akk.)<br/>
@@ -6967,7 +7011,7 @@ function T3Poss(){
         </div>
       </Box>
       <Box c={C.green}>
-        <H c={C.green} z={13}>📝 Примеры</H>
+        <H c={C.green} z={13}>{lang==="uk"?"📝 Приклади":"📝 Примеры"}</H>
         <div style={{display:"flex",flexDirection:"column",gap:6}}>
           <TapEx de={<>Das ist <b style={{color:C.orange}}>mein</b> Buch.</>} ru="Это моя книга." uk="Це моя книга." col={C.green}/>
           <TapEx de={<>Ist das <b style={{color:C.blue}}>dein</b> Laptop?</>} ru="Это твой ноутбук?" uk="Це твій ноутбук?" col={C.green}/>
@@ -6976,7 +7020,7 @@ function T3Poss(){
         </div>
       </Box>
       <Box c={C.blue}>
-        <H c={C.blue} z={13}>📊 Полная таблица: Nom. und Akk.</H>
+        <H c={C.blue} z={13}>{lang==="uk"?"📊 Повна таблиця: Nom. und Akk.":"📊 Полная таблица: Nom. und Akk."}</H>
         <div style={{fontSize:12,color:C.muted,marginBottom:8}}>Окончания как у ein/kein (пример: mein)</div>
         <div style={{display:"grid",gridTemplateColumns:"auto 1fr 1fr 1fr 1fr",gap:"3px 6px",alignItems:"center"}}>
           {["","m","n","f","Pl."].map(h=>(
@@ -7013,7 +7057,7 @@ function T3WohnVok(){
   return(
     <div style={{display:"flex",flexDirection:"column",gap:12}}>
       <Box c={C.blue}>
-        <H c={C.blue}>🚿 Das Bad — Ванная комната</H>
+        <H c={C.blue}>{lang==="uk"?"🚿 Das Bad — Ванна кімната":"🚿 Das Bad — Ванная комната"}</H>
         <TapEx de="Im Bad dusche ich mich." ru="В ванной я принимаю душ." uk="У ванній я приймаю душ." col={C.blue} style={{marginBottom:8}}/>
         {[
           {art:"die",de:"Dusche",ru:"душ",uk:"душ"},{art:"die",de:"Badewanne",ru:"ванна",uk:"ванна"},
@@ -8821,7 +8865,7 @@ function LueckenQuiz({items}){
       <div style={{display:"flex",justifyContent:"center",gap:5,marginBottom:18}}>
         {log.map((r,i)=><span key={i} style={{width:10,height:10,borderRadius:"50%",background:r?C.green:C.red,display:"inline-block"}}/>)}
       </div>
-      <button onClick={reset} style={btnSt(C.green,C.greenBg)}>🔄 Повторить</button>
+      <button onClick={reset} style={btnSt(C.green,C.greenBg)}>{lang==="uk"?"🔄 Повторити":"🔄 Повторить"}</button>
     </div>
   );
   return(
@@ -8907,20 +8951,20 @@ function Zuordnung({pairs,leftLabel="Deutsch",rightLabel="Übersetzung"}){
   if(allDone)return(
     <div style={{textAlign:"center",padding:"24px 0"}}>
       <div style={{fontSize:48}}>{attempts<=SHOW?"🏆":attempts<=SHOW*1.5?"👍":"💪"}</div>
-      <div style={{fontSize:26,fontWeight:900,color:C.green,margin:"8px 0 4px"}}>{SHOW}/{SHOW} совмещено!</div>
-      <div style={{color:C.muted,marginBottom:16}}>Попыток: {attempts}</div>
-      <button onClick={reset} style={btnSt(C.green,C.greenBg)}>🔄 Повторить</button>
+      <div style={{fontSize:26,fontWeight:900,color:C.green,margin:"8px 0 4px"}}>{SHOW}/{SHOW} {lang==="uk"?"поєднано!":"совмещено!"}</div>
+      <div style={{color:C.muted,marginBottom:16}}>{lang==="uk"?"Спроб":"Попыток"}: {attempts}</div>
+      <button onClick={reset} style={btnSt(C.green,C.greenBg)}>{lang==="uk"?"🔄 Повторити":"🔄 Повторить"}</button>
     </div>
   );
   return(
     <div>
       <div style={{display:"flex",justifyContent:"space-between",marginBottom:10}}>
-        <div style={{fontSize:13,color:C.muted}}>Совмести пары · нажми слева, потом справа</div>
+        <div style={{fontSize:13,color:C.muted}}>{lang==="uk"?"Поєднай пари · натисни зліва, потім справа":"Совмести пары · нажми слева, потом справа"}</div>
         <div style={{fontSize:13,color:C.green}}>✓ {Object.keys(matched).length}/{SHOW}</div>
       </div>
       <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:8}}>
         <div style={{display:"flex",flexDirection:"column",gap:6}}>
-          <div style={{fontSize:12,color:C.muted,fontWeight:700,textAlign:"center",marginBottom:2,textTransform:"uppercase",letterSpacing:1}}>{leftLabel}</div>
+          <div style={{fontSize:12,color:C.muted,fontWeight:700,textAlign:"center",marginBottom:2,textTransform:"uppercase",letterSpacing:1}}>{subText(leftLabel,lang)}</div>
           {items.map((item,i)=>{
             const isM=matched[i],isSel=selLeft===i,isW=wrongPair?.l===i;
             const col=isM?C.green:isSel?C.blue:isW?C.red:C.border;
@@ -8935,7 +8979,7 @@ function Zuordnung({pairs,leftLabel="Deutsch",rightLabel="Übersetzung"}){
           })}
         </div>
         <div style={{display:"flex",flexDirection:"column",gap:6}}>
-          <div style={{fontSize:12,color:C.muted,fontWeight:700,textAlign:"center",marginBottom:2,textTransform:"uppercase",letterSpacing:1}}>{rightLabel}</div>
+          <div style={{fontSize:12,color:C.muted,fontWeight:700,textAlign:"center",marginBottom:2,textTransform:"uppercase",letterSpacing:1}}>{subText(rightLabel,lang)}</div>
           {rightOrder.map((origIdx,ri)=>{
             const item=items[origIdx];
             const isM=doneRight.has(ri),isW=wrongPair?.r===ri;
@@ -8953,7 +8997,7 @@ function Zuordnung({pairs,leftLabel="Deutsch",rightLabel="Übersetzung"}){
       </div>
       {selLeft!==null&&!wrongPair&&(
         <div style={{marginTop:10,fontSize:13,color:C.blue,textAlign:"center"}}>
-          Выбрано: <b>{items[selLeft].de}</b> → нажми правую пару
+          {lang==="uk"?"Вибрано":"Выбрано"}: <b>{items[selLeft].de}</b> → {lang==="uk"?"натисни праву пару":"нажми правую пару"}
         </div>
       )}
     </div>
@@ -8984,7 +9028,7 @@ function WortstellungGame({sents}){
     <div style={{textAlign:"center",padding:"24px 0"}}>
       <div style={{fontSize:48}}>{sc/S.length>=.9?"🏆":sc/S.length>=.6?"👍":"💪"}</div>
       <div style={{fontSize:30,fontWeight:900,color:C.green}}>{sc}/{S.length}</div>
-      <button onClick={reset} style={{...btnSt(C.green,C.greenBg),marginTop:16}}>🔄 Повторить</button>
+      <button onClick={reset} style={{...btnSt(C.green,C.greenBg),marginTop:16}}>{lang==="uk"?"🔄 Повторити":"🔄 Повторить"}</button>
     </div>
   );
   return(
@@ -8994,13 +9038,13 @@ function WortstellungGame({sents}){
         <span style={{color:C.green,fontSize:14}}>✓{sc}</span>
       </div>
       <Box c={C.yellow} s={{marginBottom:12}}>
-        <div style={{fontSize:12,color:C.muted,marginBottom:3}}>Составь предложение:</div>
+        <div style={{fontSize:12,color:C.muted,marginBottom:3}}>{lang==="uk"?"Склади речення:":"Составь предложение:"}</div>
         <div style={{fontSize:16,fontWeight:700,color:C.yellow}}>{(lang==="uk"&&s.uk)?s.uk:s.ru}</div>
       </Box>
       <div style={{minHeight:48,background:C.card,border:`1.5px solid ${res==="ok"?C.green:res==="fail"?C.red:C.blue}`,
         borderRadius:12,padding:"10px 14px",marginBottom:10,display:"flex",flexWrap:"wrap",gap:8,alignItems:"center"}}>
         {chosen.length===0
-          ?<span style={{color:C.muted,fontSize:14}}>Нажимай слова снизу...</span>
+          ?<span style={{color:C.muted,fontSize:14}}>{lang==="uk"?"Натискай слова знизу...":"Нажимай слова снизу..."}</span>
           :chosen.map((w,i)=><button key={i} onClick={()=>unpick(i)}
               style={{background:C.blueBg,border:`1px solid ${C.blue}`,color:C.blue,borderRadius:8,padding:"5px 11px",fontSize:14,cursor:"pointer"}}>{w}</button>)}
       </div>
@@ -9013,7 +9057,7 @@ function WortstellungGame({sents}){
           ?<span style={{color:C.green,fontWeight:800}}>✓ Richtig!</span>
           :<span style={{color:C.red,fontWeight:800}}>✗ Richtig: <b style={{color:C.text}}>{tgt.join(" ")}.</b></span>}
       </Box>}
-      {!res&&chosen.length===tgt.length&&<button onClick={check} style={{...btnSt(C.yellow,C.yellowBg),width:"100%"}}>Проверить ✓</button>}
+      {!res&&chosen.length===tgt.length&&<button onClick={check} style={{...btnSt(C.yellow,C.yellowBg),width:"100%"}}>{lang==="uk"?"Перевірити ✓":"Проверить ✓"}</button>}
       {res&&<button onClick={next} style={{...btnSt(C.blue,C.blueBg),width:"100%"}}>{idx+1>=S.length?"Результат →":"Weiter →"}</button>}
     </div>
   );
@@ -9049,6 +9093,31 @@ function GrosserTestContainer({rounds}){
 // "Обманные" варианты берутся приоритетно из той же tema (тот же урок/тема),
 // поэтому угадать наугад сложнее — нужно реально знать слово, а не отличать
 // его от случайного, никак не связанного слова.
+const SUB_UK={
+  "Перевод":"Переклад",
+  "Основные":"Основні",
+  "Дополнительные":"Додаткові",
+  "Слова этого урока":"Слова цього уроку",
+  "Перевод · Артикли · Обратный перевод":"Переклад · Артиклі · Зворотний переклад",
+  "Фразы для диалога":"Фрази для діалогу",
+  "Все фразы для диалога":"Усі фрази для діалогу",
+  "Приветствия и знакомство":"Привітання і знайомство",
+  "Алфавит и правописание":"Алфавіт і правопис",
+  "Sie/du + глаголы без er/sie":"Sie/du + дієслова без er/sie",
+  "Числа 0–20 и телефон":"Числа 0–20 і телефон",
+  "Профессии m/f форма":"Професії m/f форма",
+  "Правила заглавных букв":"Правила великих літер",
+  "Страны + er/sie/es глаголы":"Країни + er/sie/es дієслова",
+  "Вопросительные слова + порядок слов":"Питальні слова + порядок слів",
+  "Числа 20–1000":"Числа 20–1000",
+  "Адрес, телефон, e-mail":"Адреса, телефон, e-mail",
+  "Мебель, комнаты, описание квартиры":"Меблі, кімнати, опис квартири",
+  "Цвета + как выразить мнение":"Кольори + як висловити думку",
+  "Ist das ein Tisch? + новая мебель":"Ist das ein Tisch? + нові меблі",
+  "Описание квартиры + диалог":"Опис квартири + діалог",
+  "Behörden в Германии · Порядковые числа · umziehen/einziehen/ausziehen":"Behörden у Німеччині · Порядкові числа · umziehen/einziehen/ausziehen",
+};
+const subText=(sub,lang)=>(lang==="uk"&&SUB_UK[sub])?SUB_UK[sub]:sub;
 const cleanRu=(ru)=>(ru||"").split("\n")[0].split(" · ")[0].split(" (")[0].trim();
 const cleanUk=(uk)=>(uk||"").split("\n")[0].split(" · ")[0].split(" (")[0].trim();
 const wordLabel=(w)=>w.art?`${w.art} ${w.de}`:w.de;
@@ -9111,19 +9180,20 @@ function LektWoerterbuch({lekt}){
   );
 }
 function WortschatzTest({lekt}){
+  const lang=useContext(LangContext);
   const pool=WBDATA.filter(w=>w.lekt===lekt);
   const nounCount=pool.filter(w=>["der","die","das"].includes(w.art)).length;
   const rounds=[
-    {icon:"📖",label:"Перевод",             col:C.blue,   component:()=><Quiz questions={genDeRuQuestions(lekt)}/>},
+    {icon:"📖",label:lang==="uk"?"Переклад":"Перевод",             col:C.blue,   component:()=><Quiz questions={genDeRuQuestions(lekt)}/>},
   ];
   if(nounCount>=4)rounds.push(
-    {icon:"📐",label:"Артикли",             col:C.orange, component:()=><Quiz questions={genArtikelQuestions(lekt)}/>});
+    {icon:"📐",label:lang==="uk"?"Артиклі":"Артикли",             col:C.orange, component:()=><Quiz questions={genArtikelQuestions(lekt)}/>});
   rounds.push(
-    {icon:"🔁",label:"Обратный перевод",    col:C.purple, component:()=><Quiz questions={genRuDeQuestions(lekt)}/>});
+    {icon:"🔁",label:lang==="uk"?"Зворотний переклад":"Обратный перевод",    col:C.purple, component:()=><Quiz questions={genRuDeQuestions(lekt)}/>});
   return(
     <div>
       <div style={{fontSize:12,color:C.muted,textAlign:"center",marginBottom:10}}>
-        {pool.length} слов в этом уроке · варианты подобраны специально похожими
+        {lang==="uk"?`${pool.length} слів у цьому уроці · варіанти підібрані спеціально схожими`:`${pool.length} слов в этом уроке · варианты подобраны специально похожими`}
       </div>
       <GrosserTestContainer rounds={rounds}/>
     </div>
@@ -9260,6 +9330,7 @@ const Q_L4A=[
 ];
 
 function T4A(){
+  const lang=useContext(LangContext);
   const poss=[
     {pr:"ich",      m:"mein", n:"mein", f:"meine", pl:"meine"},
     {pr:"du",       m:"dein", n:"dein", f:"deine", pl:"deine"},
@@ -9309,7 +9380,7 @@ function T4A(){
         </div>
       </Box>
       <Box c={C.orange}>
-        <H c={C.orange}>📐 Правило окончания</H>
+        <H c={C.orange}>{lang==="uk"?"📐 Правило закінчення":"📐 Правило окончания"}</H>
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:8}}>
           {[
             {label:"m / n",sub:"der · das",ex:"mein Bruder · mein Kind",col:C.blue,end:"без окончания"},
@@ -9317,7 +9388,7 @@ function T4A(){
           ].map(r=>(
             <div key={r.label} style={{background:C.card2,borderRadius:10,padding:"10px 12px",textAlign:"center"}}>
               <div style={{color:r.col,fontWeight:800,fontSize:15,marginBottom:2}}>{r.label}</div>
-              <div style={{color:C.muted,fontSize:12,marginBottom:4}}>{r.sub}</div>
+              <div style={{color:C.muted,fontSize:12,marginBottom:4}}>{subText(r.sub,lang)}</div>
               <div style={{color:C.orange,fontWeight:800,fontSize:14,marginBottom:4}}>{r.end}</div>
               <div style={{color:C.muted,fontSize:12}}>{r.ex}</div>
             </div>
@@ -9384,7 +9455,7 @@ function T4A(){
         </div>
       </Box>
       <Box c={C.green}>
-        <H c={C.green}>✏️ Примеры</H>
+        <H c={C.green}>{lang==="uk"?"✏️ Приклади":"✏️ Примеры"}</H>
         {[
           ["Ist das dein Buch?","Ja, das ist mein Buch."],
           ["Wo wohnen Ihre Eltern?","Meine Eltern wohnen in Kyiv."],
@@ -9547,7 +9618,7 @@ function T4B(){
         </div>
       </Box>
       <Box c={C.blue}>
-        <H c={C.blue} z={13}>🕐 Reihenfolge — Порядок действий</H>
+        <H c={C.blue} z={13}>{lang==="uk"?"🕐 Reihenfolge — Порядок дій":"🕐 Reihenfolge — Порядок действий"}</H>
         <div style={{display:"flex",gap:6,alignItems:"center",marginBottom:12,flexWrap:"wrap"}}>
           {[["zuerst","сначала","спочатку",C.green],["dann","потом","потім",C.yellow],["danach","после этого","після цього",C.orange]].map(([w,ru,uk,c])=>(
             <div key={w} style={{background:c+"22",border:`1px solid ${c}55`,borderRadius:9,padding:"6px 12px",textAlign:"center"}}>
@@ -9598,6 +9669,7 @@ function T4B(){
 }
 
 function T4C(){
+  const lang=useContext(LangContext);
   return(
     <div style={{display:"flex",flexDirection:"column",gap:12}}>
       <Box c={C.yellow}>
@@ -9662,7 +9734,7 @@ function T4C(){
         </div>
       </Box>
       <Box c={C.green}>
-        <H c={C.green} z={13}>📅 Zeitangaben — время</H>
+        <H c={C.green} z={13}>{lang==="uk"?"📅 Zeitangaben — час":"📅 Zeitangaben — время"}</H>
         <div style={{display:"grid",gridTemplateColumns:"repeat(5,1fr)",gap:4,marginBottom:8}}>
           {[["vorgestern","позавчера","позавчора",C.red],["gestern","вчера","вчора",C.orange],["heute","сегодня","сьогодні",C.green],["morgen","завтра","завтра",C.blue],["übermorgen","послезавтра","післязавтра",C.purple]].map(([w,ru,uk,col])=>(
             <div key={w} style={{background:col+"18",border:`1px solid ${col}40`,borderRadius:9,padding:"6px 4px",textAlign:"center"}}>
@@ -9963,6 +10035,7 @@ const Q_L5C=[
 ];
 
 function T5C(){
+  const lang=useContext(LangContext);
   return (
     <div>
       <Box icon="📅" title="C · Meine Woche" sub="Temporale Präpositionen: am · um · von...bis">
@@ -10221,6 +10294,7 @@ const Q_L6B=[
 ];
 
 function T6B(){
+  const lang=useContext(LangContext);
   const [selForm,setSelForm]=useState("du");
   const verbs=[
     {inf:"kaufen",   du:"Kauf!",    ihr:"Kauft!",    Sie:"Kaufen Sie!",    note:""},
@@ -10482,7 +10556,7 @@ function T6C(){
   return (
     <div style={{display:"flex",flexDirection:"column",gap:10}}>
       <Box c={C.teal}>
-        <H c={C.teal}>🛍️ B · Einkaufen — Где покупают?</H>
+        <H c={C.teal}>{lang==="uk"?"🛍️ B · Einkaufen — Де купують?":"🛍️ B · Einkaufen — Где покупают?"}</H>
 
         <div style={{fontSize:13,color:C.muted,marginBottom:8}}>
           📍 Einkaufsorte — места покупки (нажми для подробностей)
@@ -10632,6 +10706,7 @@ const Q_L6D=[
 ];
 
 function T6D(){
+  const lang=useContext(LangContext);
   const [tab,setTab]=useState("mögen");
   const moegen=[
     ["ich","mag"],["wir","mögen"],
@@ -10647,7 +10722,7 @@ function T6D(){
   return (
     <div style={{display:"flex",flexDirection:"column",gap:10}}>
       <Box c={C.purple}>
-        <H c={C.purple}>❤️ C · Das mag ich — Предпочтения</H>
+        <H c={C.purple}>{lang==="uk"?"❤️ C · Das mag ich — Уподобання":"❤️ C · Das mag ich — Предпочтения"}</H>
 
         <div style={{display:"flex",gap:6,marginBottom:12}}>
           {[["mögen","mögen"],["vs","mögen vs möchten"],["kein","kein- vs nicht"]].map(([key,lbl])=>(
@@ -11052,7 +11127,7 @@ function T7B(){
   return (
     <div style={{display:"flex",flexDirection:"column",gap:10}}>
       <Box c={C.orange}>
-        <H c={C.orange}>🏦 B · Rund ums Geld — Банк</H>
+        <H c={C.orange}>{lang==="uk"?"🏦 B · Rund ums Geld — Банк":"🏦 B · Rund ums Geld — Банк"}</H>
         <div style={{display:"flex",flexDirection:"column",gap:6}}>
           {bank.map(b=>(
             <div key={b.de} style={{background:C.card2,borderRadius:9,padding:"10px 12px"}}>
@@ -11529,7 +11604,7 @@ function T8A(){
   return (
     <div style={{display:"flex",flexDirection:"column",gap:10}}>
       <Box c={C.red}>
-        <H c={C.red}>🏥 A · Beim Arzt — Тело и здоровье</H>
+        <H c={C.red}>{lang==="uk"?"🏥 A · Beim Arzt — Тіло і здоров'я":"🏥 A · Beim Arzt — Тело и здоровье"}</H>
         <div style={{display:"flex",gap:6,marginBottom:12}}>
           {[["koerper","Körperteile"],["sollen","sollen & Symptome"],["dialog","Dialog"]].map(([key,lbl])=>(
             <button key={key} onClick={()=>setTab(key)}
@@ -11832,6 +11907,7 @@ const Q_L9A=[
   {q:"'Ich fahre mit ___ Auto.' (n, Dativ)",        opts:["dem","der","den","das"],                                       ans:0, hint:"mit + Dativ: n → dem"},
 ];
 function T9A(){
+  const lang=useContext(LangContext);
   const [tab,setTab]=useState("mittel");
   const mittel=[
     {icon:"🚗",de:"das Auto",        pl:"Autos",       mit:"mit dem Auto"},
@@ -12340,13 +12416,13 @@ function HabenSeinRegel(){
           → есть <b style={{color:C.teal}}>Akkusativ-объект</b> (кого/что?)<br/>
           → или не подходит под правила sein
         </div>
-        {[["Ich habe Musik gehört.","что? → Musik → haben"],
-          ["Er hat das Auto gekauft.","что? → Auto → haben"],
-          ["Wir haben gekocht.","нет движения → haben"]].map(([bsp,note])=>(
+        {[["Ich habe Musik gehört.","что? → Musik → haben","що? → Musik → haben"],
+          ["Er hat das Auto gekauft.","что? → Auto → haben","що? → Auto → haben"],
+          ["Wir haben gekocht.","нет движения → haben","немає руху → haben"]].map(([bsp,note,noteUk])=>(
           <div key={bsp} style={{marginBottom:4,background:C.ov5,
             borderRadius:6,padding:"5px 8px",fontSize:12}}>
             <div style={{color:C.text,fontWeight:600}}>{bsp}</div>
-            <div style={{color:C.muted}}>{note}</div>
+            <div style={{color:C.muted}}>{(lang==="uk"&&noteUk)?noteUk:note}</div>
           </div>
         ))}
       </div>
@@ -15192,6 +15268,7 @@ const Q_A2L3A=[
 ];
 
 function T_A2L3A(){
+  const lang=useContext(LangContext);
   const [tab,setTab]=useState("wechsel");
   const positionMotion=[
     {wo:"liegen",wohin:"legen",ru:"лежать / класть (плашмя)",uk:"лежати / класти (пласко)"},
@@ -17182,7 +17259,7 @@ function DialogFragenPage(){
 
       {/* ── Вопросы / Фразы ── */}
       <div style={{display:"flex",gap:6,background:C.card2,borderRadius:12,padding:4}}>
-        {[{id:"fragen",label:"❓ Вопросы"},{id:"phrasen",label:"📋 Фразы"}].map(t=>(
+        {(lang==="uk"?[{id:"fragen",label:"❓ Питання"},{id:"phrasen",label:"📋 Фрази"}]:[{id:"fragen",label:"❓ Вопросы"},{id:"phrasen",label:"📋 Фразы"}]).map(t=>(
           <button key={t.id} onClick={()=>setMode(t.id)} style={{
             flex:1,padding:"7px 0",borderRadius:9,border:"none",cursor:"pointer",fontSize:14,fontWeight:600,
             background:mode===t.id?C.teal:"transparent",
@@ -17197,7 +17274,7 @@ function DialogFragenPage(){
           style={{padding:"5px 12px",borderRadius:9,fontWeight:600,fontSize:13,cursor:"pointer",
             border:`1.5px solid ${C.border}`,background:sortNew?C.yellowBg:C.card,
             color:sortNew?C.yellow:C.muted,whiteSpace:"nowrap"}}>
-          {sortNew?"🆕 Новые":"🕐 Старые"}
+          {sortNew?(lang==="uk"?"🆕 Нові":"🆕 Новые"):(lang==="uk"?"🕐 Старі":"🕐 Старые")}
         </button>
       </div>
 
@@ -17233,7 +17310,7 @@ function DialogFragenPage(){
                 <div key={gi}>
                   {/* Пилл + fm-тогл для L1 Основные */}
                   <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:6}}>
-                    <Pill c={g.col}>{g.tag}</Pill>
+                    <Pill c={g.col}>{subText(g.tag,lang)}</Pill>
                     {isHauptGruppe&&(
                       <div style={{display:"flex",gap:4}}>
                         {[{id:"f",label:"Formell"},{id:"i",label:"Informell"}].map(t=>(
@@ -17260,7 +17337,7 @@ function DialogFragenPage(){
                             <div style={{marginTop:10,paddingTop:10,borderTop:`1px solid ${C.border}`}}>
                               {p.qRu&&<div style={{fontSize:12,color:C.muted,marginBottom:8,fontStyle:"italic"}}>🌐 {pqru(p)}</div>}
                               <div style={{background:g.col+"15",border:`1px solid ${g.col}40`,borderRadius:8,padding:"10px 12px",marginBottom:p.note?8:0}}>
-                                <div style={{fontSize:12,color:g.col,fontWeight:700,marginBottom:3}}>ОТВЕТ</div>
+                                <div style={{fontSize:12,color:g.col,fontWeight:700,marginBottom:3}}>{lang==="uk"?"ВІДПОВІДЬ":"ОТВЕТ"}</div>
                                 <div style={{fontSize:14,fontWeight:600,color:C.text}}>{p.a}</div>
                                 {p.aRu&&<div style={{fontSize:12,color:C.muted,marginTop:4}}>{paru(p)}</div>}
                               </div>
@@ -17343,6 +17420,7 @@ const GridT=({headers,rows,cols})=>(
 );
 
 function TabellenPage(){
+  const lang=useContext(LangContext);
   const [open,setOpen]=useState(null);
   const tg=(k)=>setOpen(open===k?null:k);
   const [starkFil,setStarkFil]=useState("all");
@@ -17854,6 +17932,7 @@ function TabellenPage(){
 
 // ═══ PRÜFUNG — список тем (материал от учителя) ═══
 function PruefungPage({onOpen}){
+  const lang=useContext(LangContext);
   return (
     <div>
       {PRUEFUNG.length===0&&(
@@ -17870,7 +17949,7 @@ function PruefungPage({onOpen}){
             <span style={{fontSize:20}}>{p.icon}</span>
             <div style={{flex:1,minWidth:0}}>
               <div style={{fontWeight:700,fontSize:14,color:p.col||C.red}}>{p.title}</div>
-              <div style={{fontSize:12,color:C.muted,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{p.sub}</div>
+              <div style={{fontSize:12,color:C.muted,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{subText(p.sub,lang)}</div>
             </div>
             <span style={{color:C.muted}}>›</span>
           </button>
@@ -17882,10 +17961,11 @@ function PruefungPage({onOpen}){
 
 // ═══ Prüfung: Allgemeine Tipps ═══
 function T_PruefungTipps(){
+  const lang=useContext(LangContext);
   return (
     <div style={{display:"flex",flexDirection:"column",gap:10}}>
       <Box c={C.red}>
-        <H c={C.red}>💡 Общие советы (письменная часть B1/DTZ)</H>
+        <H c={C.red}>{lang==="uk"?"💡 Загальні поради (письмова частина B1/DTZ)":"💡 Общие советы (письменная часть B1/DTZ)"}</H>
         <div style={{fontSize:13,color:C.text,lineHeight:1.8}}>
           <b>1. Готовьтесь не к конкретным заданиям, а к типам заданий.</b> Уровень B1 — это повседневная речь, поэтому все ситуации типовые: тут особо нечего "придумывать", можно только менять мелкие детали.
         </div>
@@ -17909,7 +17989,7 @@ function T_PruefungTipps(){
         </div>
       </Box>
       <Box c={C.blue}>
-        <H c={C.blue}>📋 Общие требования к письму</H>
+        <H c={C.blue}>{lang==="uk"?"📋 Загальні вимоги до листа":"📋 Общие требования к письму"}</H>
         <div style={{fontSize:13,color:C.text,lineHeight:1.8}}>
           1. Вам дают тему письма и четыре пункта. Общая рекомендация всех преподавателей: на каждый пункт — два предложения. Сложное предложение с придаточным можно засчитать как два простых. Правильно составленные сложные предложения — большой плюс. Но если не уверены — лучше писать проще.
           <br/><br/>
@@ -18252,7 +18332,7 @@ function MusterbriefBlock({title,situation,situationUk,punkte,punkteUk,brief,col
               borderRadius:8,padding:"10px 12px",fontSize:13,color:C.text,lineHeight:1.9,whiteSpace:"pre-line",fontStyle:"italic"}}>
             {brief.de}
           </div>
-          <div style={{textAlign:"center",fontSize:11,color:C.muted,margin:"4px 0"}}>{showRu?"▲ скрыть перевод":"▾ показать перевод письма"}</div>
+          <div style={{textAlign:"center",fontSize:11,color:C.muted,margin:"4px 0"}}>{lang==="uk"?(showRu?"▲ приховати переклад":"▾ показати переклад листа"):(showRu?"▲ скрыть перевод":"▾ показать перевод письма")}</div>
           {showRu&&(
             <div style={{background:col+"0d",border:`1px solid ${col}33`,borderRadius:8,padding:"10px 12px",fontSize:13,color:C.text,lineHeight:1.9,whiteSpace:"pre-line"}}>
               {(lang==="uk"&&brief.uk)?brief.uk:brief.ru}
@@ -18990,7 +19070,7 @@ export default function App(){
           <span style={{fontSize:26}}>{pruefungItem.icon}</span>
           <div>
             <div style={{fontWeight:900,fontSize:17,color:C.text}}>{pruefungItem.title}</div>
-            <div style={{fontSize:13,color:C.muted}}>{pruefungItem.sub}</div>
+            <div style={{fontSize:13,color:C.muted}}>{subText(pruefungItem.sub,lang)}</div>
           </div>
         </div>
         {pruefungItem.th&&pruefungItem.th()}
@@ -19053,7 +19133,7 @@ export default function App(){
           <span style={{fontSize:26}}>{sec.icon}</span>
           <div>
             <div style={{fontWeight:900,fontSize:17,color:C.text}}>{sec.title}</div>
-            <div style={{fontSize:13,color:C.muted}}>{sec.sub}</div>
+            <div style={{fontSize:13,color:C.muted}}>{subText(sec.sub,lang)}</div>
           </div>
         </div>
         {/* 2C и 2D объединяют теорию и задания в одном компоненте */}
@@ -19086,7 +19166,7 @@ export default function App(){
               <div style={{fontSize:13,color:C.muted}}>{lekt.date}</div>
             </div>
           </div>
-          <div style={{fontSize:13,color:C.muted}}>{lekt.sub}</div>
+          <div style={{fontSize:13,color:C.muted}}>{subText(lekt.sub,lang)}</div>
         </div>
         <div style={{display:"flex",flexDirection:"column",gap:8}}>
           {lekt.sections.map((s,i)=>(
@@ -19098,7 +19178,7 @@ export default function App(){
               <span style={{fontSize:20}}>{s.icon}</span>
               <div style={{flex:1,minWidth:0}}>
                 <div style={{fontWeight:700,fontSize:14,color:s.id.startsWith("t")&&!s.id.startsWith("tip")?C.yellow:s.id==="d1"||s.id==="d2"||s.id==="d3"||s.id==="wb"?C.teal:C.text}}>{s.title}</div>
-                <div style={{fontSize:12,color:C.muted,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{s.sub}</div>
+                <div style={{fontSize:12,color:C.muted,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{subText(s.sub,lang)}</div>
               </div>
               
               <span style={{color:C.muted}}>›</span>
@@ -19193,7 +19273,7 @@ export default function App(){
                         <div style={{background:l.col+"22",border:`2px solid ${l.col}`,color:l.col,borderRadius:12,padding:"8px 14px",fontWeight:900,fontSize:22,flexShrink:0}}>L{l.num}</div>
                         <div style={{flex:1}}>
                           <div style={{fontWeight:800,fontSize:17,color:C.text,marginBottom:3}}>{l.title}</div>
-                          <div style={{fontSize:12,color:C.muted,marginBottom:4}}>{l.sub}</div>
+                          <div style={{fontSize:12,color:C.muted,marginBottom:4}}>{subText(l.sub,lang)}</div>
                         </div>
                         <span style={{color:C.muted,fontSize:20}}>›</span>
                       </button>
