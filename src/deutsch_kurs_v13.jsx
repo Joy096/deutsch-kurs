@@ -4830,10 +4830,10 @@ function Quiz({questions}){
       </div>
       {ex.hint&&<div style={{marginBottom:8}}><Pill c={C.purple}>{(lang==="uk"&&ex.hintUk)?ex.hintUk:ex.hint}</Pill></div>}
       <Box s={{marginBottom:12}}>
-        <div style={{fontSize:16,fontWeight:700,color:C.text,lineHeight:1.5,whiteSpace:"pre-line"}}>{ex.q}</div>
+        <div style={{fontSize:16,fontWeight:700,color:C.text,lineHeight:1.5,whiteSpace:"pre-line"}}>{(lang==="uk"&&ex.qUk)?ex.qUk:ex.q}</div>
       </Box>
       <div style={{display:"flex",flexDirection:"column",gap:7,marginBottom:10}}>
-        {ex.opts.map((o,i)=>{
+        {((lang==="uk"&&ex.optsUk)?ex.optsUk:ex.opts).map((o,i)=>{
           let bc=C.border,bg=C.card,tc=C.text;
           if(sel!==null){if(i===ex.ans){bc=C.green;bg=C.greenBg;tc=C.green;}else if(i===sel){bc=C.red;bg=C.redBg;tc=C.red;}}
           return(
@@ -5864,14 +5864,14 @@ function AdresseTrainer(){
   const lang=useContext(LangContext);
   const [mode,setMode]=useState("table");
   const [qs]=useState(()=>shuffle([
-    {q:"Как сказать 'почтовый индекс'?",opts:["die Vorwahl","die Postleitzahl","die Hausnummer","die Telefonnummer"],ans:1,hint:"Adresse"},
-    {q:"Как сказать 'код города'?",opts:["die Telefonnummer","die Postleitzahl","die Vorwahl","die Handynummer"],ans:2,hint:"Adresse"},
-    {q:"Артикль слова 'Vorname' (имя)?",opts:["die","das","der","ein"],ans:2,exp:"der Vorname",hint:"Adresse"},
-    {q:"Как читают @ по-немецки?",opts:["at","arroba","ätt","email"],ans:2,exp:"@ = ätt",hint:"Adresse"},
+    {q:"Как сказать 'почтовый индекс'?",qUk:"Як сказати 'поштовий індекс'?",opts:["die Vorwahl","die Postleitzahl","die Hausnummer","die Telefonnummer"],ans:1,hint:"Adresse"},
+    {q:"Как сказать 'код города'?",qUk:"Як сказати 'код міста'?",opts:["die Telefonnummer","die Postleitzahl","die Vorwahl","die Handynummer"],ans:2,hint:"Adresse"},
+    {q:"Артикль слова 'Vorname' (имя)?",qUk:"Артикль слова 'Vorname' (ім'я)?",opts:["die","das","der","ein"],ans:2,exp:"der Vorname",hint:"Adresse"},
+    {q:"Как читают @ по-немецки?",qUk:"Як читають @ німецькою?",opts:["at","arroba","ätt","email"],ans:2,exp:"@ = ätt",hint:"Adresse"},
     {q:"Wie ist Ihre ___? → Meine Adresse ist...",opts:["Vorname","Adresse","Beruf","Nationalität"],ans:1,hint:"Adresse"},
-    {q:"Полный адрес по-немецки — какой порядок?",opts:["Hausnummer, Straße, PLZ, Stadt","Straße Hausnummer, PLZ Stadt","Stadt, Straße, PLZ","PLZ, Straße, Hausnummer"],ans:1,exp:"Juliusstraße 15, 22769 Hamburg",hint:"Adresse"},
-    {q:"'Mein Kind ist zwei Jahre alt.' — сколько лет ребёнку?",opts:["12","20","2","22"],ans:2,hint:"Adresse"},
-    {q:"Auf Wiederhören! — это...",opts:["До свидания (лично)","До свидания (по телефону)","Пока","Добрый день"],ans:1,exp:"Auf Wiederhören = До свидания по телефону",expUk:"Auf Wiederhören = До побачення по телефону",hint:"Adresse"},
+    {q:"Полный адрес по-немецки — какой порядок?",qUk:"Повна адреса німецькою — який порядок?",opts:["Hausnummer, Straße, PLZ, Stadt","Straße Hausnummer, PLZ Stadt","Stadt, Straße, PLZ","PLZ, Straße, Hausnummer"],ans:1,exp:"Juliusstraße 15, 22769 Hamburg",hint:"Adresse"},
+    {q:"'Mein Kind ist zwei Jahre alt.' — сколько лет ребёнку?",qUk:"'Mein Kind ist zwei Jahre alt.' — скільки років дитині?",opts:["12","20","2","22"],ans:2,hint:"Adresse"},
+    {q:"Auf Wiederhören! — это...",qUk:"Auf Wiederhören! — це...",opts:["До свидания (лично)","До свидания (по телефону)","Пока","Добрый день"],optsUk:["До побачення (особисто)","До побачення (по телефону)","Бувай","Добрий день"],ans:1,exp:"Auf Wiederhören = До свидания по телефону",expUk:"Auf Wiederhören = До побачення по телефону",hint:"Adresse"},
   ]));
   return(
     <div>
@@ -6374,19 +6374,19 @@ const Q_L1TEST=shuffle([
   {q:"Wie nennt man den Buchstaben «J»?",opts:["jah","jot","ji","jeh"],ans:1,hint:"Buchstaben"},
   {q:"5 auf Deutsch:",opts:["vier","sechs","fünf","sieben"],ans:2,hint:"Zahlen"},
   {q:"13 auf Deutsch:",opts:["dreizehn","dreizig","dreißig","vierzehn"],ans:0,hint:"Zahlen"},
-  {q:"Официальное 'До свидания':",opts:["Tschüss","Hallo","Auf Wiedersehen","Guten Morgen"],ans:2,hint:"Formell"},
-  {q:"Ich bin ___ (врач, m)?",opts:["der Arzt","ein Arzt","Arzt","Ärztin"],ans:2,hint:"Beruf"},
-  {q:"'продавщица' (f)?",opts:["Verkäufer","Verkäuferin","Verkäufers","Verkauferin"],ans:1,hint:"Beruf"},
+  {q:"Официальное 'До свидания':",qUk:"Офіційне 'До побачення':",opts:["Tschüss","Hallo","Auf Wiedersehen","Guten Morgen"],ans:2,hint:"Formell"},
+  {q:"Ich bin ___ (врач, m)?",qUk:"Ich bin ___ (лікар, m)?",opts:["der Arzt","ein Arzt","Arzt","Ärztin"],ans:2,hint:"Beruf"},
+  {q:"'продавщица' (f)?",qUk:"'продавчиня' (f)?",opts:["Verkäufer","Verkäuferin","Verkäufers","Verkauferin"],ans:1,hint:"Beruf"},
   {q:"Ich ___ nicht aus Spanien. (kommen)",opts:["komme","kommst","kommen","kommt"],ans:0,hint:"Verben"},
   {q:"Sie kommt aus ___ Ukraine.",opts:["aus Ukraine","aus der Ukraine","aus die Ukraine","von der Ukraine"],ans:1,hint:"Nationalität"},
 ]).slice(0,10);
 
 const Q_2B=[
-  {q:"'der Tisch' — какой род?",           opts:["maskulin","neutral","feminin","Plural"],    ans:0, hint:"Artikel"},
-  {q:"'das Heft' — какой род?",            opts:["maskulin","neutral","feminin","Plural"],    ans:1, hint:"Artikel"},
-  {q:"'die Tasche' — какой род?",          opts:["maskulin","neutral","feminin","Plural"],    ans:2, hint:"Artikel"},
-  {q:"'Das ist ___ Tasche.' (впервые)",    opts:["die","eine","ein","—"],                     ans:1, exp:"f → eine (unbestimmt, впервые)",expUk:"f → eine (unbestimmt, вперше)", hint:"Artikel"},
-  {q:"'___ Tasche ist schick.' (известна)",opts:["eine","ein","die","der"],                   ans:2, exp:"die Tasche (bestimmt, уже знаем)",expUk:"die Tasche (bestimmt, вже знаємо)", hint:"Artikel"},
+  {q:"'der Tisch' — какой род?",qUk:"'der Tisch' — який рід?",           opts:["maskulin","neutral","feminin","Plural"],    ans:0, hint:"Artikel"},
+  {q:"'das Heft' — какой род?",qUk:"'das Heft' — який рід?",            opts:["maskulin","neutral","feminin","Plural"],    ans:1, hint:"Artikel"},
+  {q:"'die Tasche' — какой род?",qUk:"'die Tasche' — який рід?",          opts:["maskulin","neutral","feminin","Plural"],    ans:2, hint:"Artikel"},
+  {q:"'Das ist ___ Tasche.' (впервые)",qUk:"'Das ist ___ Tasche.' (вперше)",    opts:["die","eine","ein","—"],                     ans:1, exp:"f → eine (unbestimmt, впервые)",expUk:"f → eine (unbestimmt, вперше)", hint:"Artikel"},
+  {q:"'___ Tasche ist schick.' (известна)",qUk:"'___ Tasche ist schick.' (відома)",opts:["eine","ein","die","der"],                   ans:2, exp:"die Tasche (bestimmt, уже знаем)",expUk:"die Tasche (bestimmt, вже знаємо)", hint:"Artikel"},
   {q:"Lampe → Plural:",                    opts:["Lampen","Lampes","Lampens","Lampe"],        ans:0, exp:"die Lampe, -n → Lampen",         hint:"Plural"},
   {q:"Tisch → Plural:",                    opts:["Tischen","Tischs","Tische","Tischa"],       ans:2, exp:"der Tisch, -e → Tische",         hint:"Plural"},
   {q:"Stuhl → Plural:",                    opts:["Stuhle","Stühle","Stühlen","Stuhls"],       ans:1, exp:'der Stuhl, "-e → Stühle',        hint:"Plural"},
@@ -6394,76 +6394,76 @@ const Q_2B=[
   {q:"Handy → Plural:",                    opts:["Handyen","Handis","Handys","Handies"],      ans:2, exp:"das Handy, -s → Handys",         hint:"Plural"},
 ];
 const Q_ABK=[
-  {q:"Что означает 'Pl.'?",  opts:["Plural","Platz","Plastik","Plakat"],       ans:0, hint:"Abkürzungen"},
-  {q:"Что означает 'm.'?",   opts:["maskulin","mittel","mehr","Moment"],       ans:0, hint:"Abkürzungen"},
-  {q:"Что означает 'f.'?",   opts:["fertig","feminin","frei","falsch"],        ans:1, hint:"Abkürzungen"},
-  {q:"Что означает 'n.'?",   opts:["neu","neutral","nicht","normal"],          ans:1, hint:"Abkürzungen"},
-  {q:"Что означает 'Str.'?", opts:["Stadt","Straße","Strich","Stock"],         ans:1, hint:"Abkürzungen"},
-  {q:"Что означает 'PLZ'?",  opts:["Polizei","Platz","Postleitzahl","Plan"],   ans:2, hint:"Abkürzungen"},
-  {q:"Что означает 'Tel.'?", opts:["Teil","Telefonnummer","Text","Termin"],    ans:1, hint:"Abkürzungen"},
-  {q:"Что означает 'Nr.'?",  opts:["Nummer","Normal","Norden","Nacht"],        ans:0, hint:"Abkürzungen"},
+  {q:"Что означает 'Pl.'?",qUk:"Що означає 'Pl.'?",  opts:["Plural","Platz","Plastik","Plakat"],       ans:0, hint:"Abkürzungen"},
+  {q:"Что означает 'm.'?",qUk:"Що означає 'm.'?",   opts:["maskulin","mittel","mehr","Moment"],       ans:0, hint:"Abkürzungen"},
+  {q:"Что означает 'f.'?",qUk:"Що означає 'f.'?",   opts:["fertig","feminin","frei","falsch"],        ans:1, hint:"Abkürzungen"},
+  {q:"Что означает 'n.'?",qUk:"Що означає 'n.'?",   opts:["neu","neutral","nicht","normal"],          ans:1, hint:"Abkürzungen"},
+  {q:"Что означает 'Str.'?",qUk:"Що означає 'Str.'?", opts:["Stadt","Straße","Strich","Stock"],         ans:1, hint:"Abkürzungen"},
+  {q:"Что означает 'PLZ'?",qUk:"Що означає 'PLZ'?",  opts:["Polizei","Platz","Postleitzahl","Plan"],   ans:2, hint:"Abkürzungen"},
+  {q:"Что означает 'Tel.'?",qUk:"Що означає 'Tel.'?", opts:["Teil","Telefonnummer","Text","Termin"],    ans:1, hint:"Abkürzungen"},
+  {q:"Что означает 'Nr.'?",qUk:"Що означає 'Nr.'?",  opts:["Nummer","Normal","Norden","Nacht"],        ans:0, hint:"Abkürzungen"},
 ];
 const Q_ABK_WOHN=[
-  {q:"Что означает 'Zi.'?",    opts:["Zimmer","Ziel","Zug","Zeit"],                        ans:0, hint:"Abkürzungen"},
-  {q:"Что означает 'EFH'?",    opts:["Einfamilienhaus","Erdgeschoss","Einheit","Etage"],   ans:0, hint:"Abkürzungen"},
-  {q:"Что означает 'EBK'?",    opts:["Einbauküche","Etagenbett","Eingang","Ende"],         ans:0, hint:"Abkürzungen"},
-  {q:"Что означает 'ZH'?",     opts:["Zentralheizung","Zwei-Haus","Zone","Zeit-Haus"],     ans:0, hint:"Abkürzungen"},
-  {q:"Что означает 'NK'?",     opts:["Nebenkosten","Neue Küche","Nord-Keller","Nacht"],    ans:0, hint:"Abkürzungen"},
-  {q:"Что означает 'qm'?",     opts:["Quadratmeter","Qualität","Quer","Querfläche"],       ans:0, hint:"Abkürzungen"},
-  {q:"Что означает 'EG'?",     opts:["Erdgeschoss","Eingang","Etage","Ende"],              ans:0, hint:"Abkürzungen"},
-  {q:"'3 Zi.-Whg.' — это:",    opts:["3-комнатная квартира","3-этажный дом","3 ванных","3 балкона"], ans:0, hint:"Anzeige"},
+  {q:"Что означает 'Zi.'?",qUk:"Що означає 'Zi.'?",    opts:["Zimmer","Ziel","Zug","Zeit"],                        ans:0, hint:"Abkürzungen"},
+  {q:"Что означает 'EFH'?",qUk:"Що означає 'EFH'?",    opts:["Einfamilienhaus","Erdgeschoss","Einheit","Etage"],   ans:0, hint:"Abkürzungen"},
+  {q:"Что означает 'EBK'?",qUk:"Що означає 'EBK'?",    opts:["Einbauküche","Etagenbett","Eingang","Ende"],         ans:0, hint:"Abkürzungen"},
+  {q:"Что означает 'ZH'?",qUk:"Що означає 'ZH'?",     opts:["Zentralheizung","Zwei-Haus","Zone","Zeit-Haus"],     ans:0, hint:"Abkürzungen"},
+  {q:"Что означает 'NK'?",qUk:"Що означає 'NK'?",     opts:["Nebenkosten","Neue Küche","Nord-Keller","Nacht"],    ans:0, hint:"Abkürzungen"},
+  {q:"Что означает 'qm'?",qUk:"Що означає 'qm'?",     opts:["Quadratmeter","Qualität","Quer","Querfläche"],       ans:0, hint:"Abkürzungen"},
+  {q:"Что означает 'EG'?",qUk:"Що означає 'EG'?",     opts:["Erdgeschoss","Eingang","Etage","Ende"],              ans:0, hint:"Abkürzungen"},
+  {q:"'3 Zi.-Whg.' — это:",qUk:"'3 Zi.-Whg.' — це:",    opts:["3-комнатная квартира","3-этажный дом","3 ванных","3 балкона"],optsUk:["3-кімнатна квартира","3-поверховий будинок","3 ванні","3 балкони"], ans:0, hint:"Anzeige"},
 ];
 const Q_L2TEST=shuffle([
-  {q:"Артикль: 'Tasche'",opts:["der","das","die","ein"],ans:2,hint:"Artikel"},
-  {q:"Артикль: 'Heft'",opts:["der","die","das","ein"],ans:2,hint:"Artikel"},
+  {q:"Артикль: 'Tasche'",qUk:"Артикль: 'Tasche'",opts:["der","das","die","ein"],ans:2,hint:"Artikel"},
+  {q:"Артикль: 'Heft'",qUk:"Артикль: 'Heft'",opts:["der","die","das","ein"],ans:2,hint:"Artikel"},
   {q:"das Buch → Plural:",opts:["Büchen","Buchern","Bücher","Buchs"],ans:2,hint:"Plural"},
   {q:"die Lampe → Plural:",opts:["Lampes","Lampen","Lampe","Lampens"],ans:1,hint:"Plural"},
   {q:"Er ___ aus der Türkei. (kommen)",opts:["komme","kommst","kommen","kommt"],ans:3,hint:"Verben L2"},
-  {q:"Sie (она) ___ Spanisch. (sprechen)",opts:["spreche","sprichst","spricht","sprechen"],ans:2,hint:"Verben L2"},
+  {q:"Sie (она) ___ Spanisch. (sprechen)",qUk:"Sie (вона) ___ Spanisch. (sprechen)",opts:["spreche","sprichst","spricht","sprechen"],ans:2,hint:"Verben L2"},
   {q:"50 auf Deutsch:",opts:["fünfzig","fünfzehn","fünfhundert","dreißig"],ans:0,hint:"Zahlen"},
   {q:"45 auf Deutsch:",opts:["vierzig","fünfundvierzig","vierundvierzig","sechsundvierzig"],ans:1,hint:"Zahlen"},
   {q:"Wie liest man @?",opts:["at","email","ätt","arr"],ans:2,hint:"Adresse"},
-  {q:"'почтовый индекс' auf Deutsch:",opts:["die Hausnummer","die Vorwahl","die Postleitzahl","die Straße"],ans:2,hint:"Adresse"},
+  {q:"'почтовый индекс' auf Deutsch:",qUk:"'поштовий індекс' auf Deutsch:",opts:["die Hausnummer","die Vorwahl","die Postleitzahl","die Straße"],ans:2,hint:"Adresse"},
   {q:"Das Heft ___ 2 Euro.",opts:["kosten","kosteten","kostet","koste"],ans:2,hint:"Preise"},
   {q:"Die Stühle ___ 50 Euro.",opts:["kostet","kosten","kostets","koste"],ans:1,hint:"Preise"},
   {q:"Das ist ein Buch. ___ ist interessant.",opts:["Er","Sie","Ihr","Es"],ans:3,hint:"Pronomen"},
-  {q:"Was bedeutet 'Kugelschreiber'?",opts:["карандаш","лампа","шариковая ручка","тетрадь"],ans:2,hint:"Vokabular"},
-  {q:"Auf Wiederhören! — это...",opts:["До свидания лично","До свидания по телефону","Привет","Пока"],ans:1,hint:"Adresse"},
+  {q:"Was bedeutet 'Kugelschreiber'?",opts:["карандаш","лампа","шариковая ручка","тетрадь"],optsUk:["олівець","лампа","кулькова ручка","зошит"],ans:2,hint:"Vokabular"},
+  {q:"Auf Wiederhören! — это...",qUk:"Auf Wiederhören! — це...",opts:["До свидания лично","До свидания по телефону","Привет","Пока"],optsUk:["До побачення особисто","До побачення по телефону","Привіт","Бувай"],ans:1,hint:"Adresse"},
 ]).slice(0,15);
 
 
 const Q_1A=[
-  {q:"Wie heißen Sie? — правильный ответ:",opts:["Ich komme aus...","Ich heiße Lisa. Und Sie?","Ich wohne in Berlin.","Auf Wiedersehen!"],ans:1,hint:"1A"},
+  {q:"Wie heißen Sie? — правильный ответ:",qUk:"Wie heißen Sie? — правильна відповідь:",opts:["Ich komme aus...","Ich heiße Lisa. Und Sie?","Ich wohne in Berlin.","Auf Wiedersehen!"],ans:1,hint:"1A"},
   {q:"Woher kommen Sie?",opts:["Ich heiße Paolo.","Ich wohne hier.","Ich komme aus Argentinien.","Ich bin neu."],ans:2,hint:"1A"},
-  {q:"Что значит 'Ich wohne schon lange hier'?",opts:["Я здесь новый","Я уже давно здесь живу","Я приехал из...","Я учу немецкий"],ans:1,hint:"1A"},
-  {q:"Как сказать 'Меня зовут'? (2 варианта)",opts:["Ich komme / Ich wohne","Ich heiße / Mein Name ist","Ich bin / Ich lerne","Ich heiße / Ich komme"],ans:1,hint:"1A"},
-  {q:"Wer ist das? — правильный ответ:",opts:["Ich komme aus Peru.","Das ist Manu Costa.","Ich heiße Paolo.","Guten Morgen!"],ans:1,hint:"1A"},
+  {q:"Что значит 'Ich wohne schon lange hier'?",qUk:"Що означає 'Ich wohne schon lange hier'?",opts:["Я здесь новый","Я уже давно здесь живу","Я приехал из...","Я учу немецкий"],optsUk:["Я тут новий","Я вже давно тут живу","Я приїхав з...","Я вчу німецьку"],ans:1,hint:"1A"},
+  {q:"Как сказать 'Меня зовут'? (2 варианта)",qUk:"Як сказати 'Мене звуть'? (2 варіанти)",opts:["Ich komme / Ich wohne","Ich heiße / Mein Name ist","Ich bin / Ich lerne","Ich heiße / Ich komme"],ans:1,hint:"1A"},
+  {q:"Wer ist das? — правильный ответ:",qUk:"Wer ist das? — правильна відповідь:",opts:["Ich komme aus Peru.","Das ist Manu Costa.","Ich heiße Paolo.","Guten Morgen!"],ans:1,hint:"1A"},
 ];
 const Q_1C=[
-  {q:"Официально спросить 'Как дела?':",opts:["Wie geht es dir?","Wie geht es Ihnen?","Wie heißt du?","Na ja, es geht so."],ans:1,hint:"1C"},
-  {q:"Неформально попрощаться:",opts:["Auf Wiedersehen","Guten Tag","Tschüss","Guten Morgen"],ans:2,hint:"1C"},
+  {q:"Официально спросить 'Как дела?':",qUk:"Офіційно запитати 'Як справи?':",opts:["Wie geht es dir?","Wie geht es Ihnen?","Wie heißt du?","Na ja, es geht so."],ans:1,hint:"1C"},
+  {q:"Неформально попрощаться:",qUk:"Неформально попрощатися:",opts:["Auf Wiedersehen","Guten Tag","Tschüss","Guten Morgen"],ans:2,hint:"1C"},
   {q:"Wir ___ aus Kanada. (kommen)",opts:["komme","kommst","kommt","kommen"],ans:3,hint:"1C"},
   {q:"Ihr ___ Deutsch. (lernen)",opts:["lerne","lernst","lernt","lernen"],ans:2,hint:"1C"},
-  {q:"'Ich lerne Deutsch. Und Paul?' → правильный ответ:",opts:["Er lernt auch Deutsch.","Ich lerne auch Deutsch.","Paul lerne Deutsch.","Wir lernen Deutsch."],ans:1,hint:"1C"},
-  {q:"Официальное обращение к незнакомцу:",opts:["du","ihr","Sie","dich"],ans:2,hint:"1C"},
+  {q:"'Ich lerne Deutsch. Und Paul?' → правильный ответ:",qUk:"'Ich lerne Deutsch. Und Paul?' → правильна відповідь:",opts:["Er lernt auch Deutsch.","Ich lerne auch Deutsch.","Paul lerne Deutsch.","Wir lernen Deutsch."],ans:1,hint:"1C"},
+  {q:"Официальное обращение к незнакомцу:",qUk:"Офіційне звертання до незнайомця:",opts:["du","ihr","Sie","dich"],ans:2,hint:"1C"},
 ];
 const Q_1E=[
-  {q:"Как сказать 'врач' (f)?",opts:["Arzt","Ärzter","Ärztin","Arztin"],ans:2,hint:"Berufe"},
-  {q:"Ich bin ___ (инженер, m)",opts:["der Ingenieur","ein Ingenieur","Ingenieur","Ingenieuren"],ans:2,hint:"Berufe"},
-  {q:"'парикмахер' (m)?",opts:["Friseurin","Friseur","Friserer","Friseuren"],ans:1,hint:"Berufe"},
-  {q:"Что значит 'Hausfrau'?",opts:["медсестра","домохозяйка","учительница","продавщица"],ans:1,hint:"Berufe"},
-  {q:"Was sind Sie von Beruf? → правильный ответ:",opts:["Ich bin ein Lehrer.","Ich bin der Lehrer.","Ich bin Lehrer.","Ich heiße Lehrer."],ans:2,hint:"Berufe"},
+  {q:"Как сказать 'врач' (f)?",qUk:"Як сказати 'лікар' (ж)?",opts:["Arzt","Ärzter","Ärztin","Arztin"],ans:2,hint:"Berufe"},
+  {q:"Ich bin ___ (инженер, m)",qUk:"Ich bin ___ (інженер, m)",opts:["der Ingenieur","ein Ingenieur","Ingenieur","Ingenieuren"],ans:2,hint:"Berufe"},
+  {q:"'парикмахер' (m)?",qUk:"'перукар' (m)?",opts:["Friseurin","Friseur","Friserer","Friseuren"],ans:1,hint:"Berufe"},
+  {q:"Что значит 'Hausfrau'?",qUk:"Що означає 'Hausfrau'?",opts:["медсестра","домохозяйка","учительница","продавщица"],optsUk:["медсестра","домогосподарка","вчителька","продавчиня"],ans:1,hint:"Berufe"},
+  {q:"Was sind Sie von Beruf? → правильный ответ:",qUk:"Was sind Sie von Beruf? → правильна відповідь:",opts:["Ich bin ein Lehrer.","Ich bin der Lehrer.","Ich bin Lehrer.","Ich heiße Lehrer."],ans:2,hint:"Berufe"},
 ];
 const Q_2A_S=[
   {q:"Er ___ aus der Türkei. (kommen)",opts:["komme","kommst","kommen","kommt"],ans:3,hint:"2A"},
-  {q:"Sie (она) ___ Spanisch. (sprechen)",opts:["spreche","sprichst","spricht","sprechen"],ans:2,hint:"2A"},
+  {q:"Sie (она) ___ Spanisch. (sprechen)",qUk:"Sie (вона) ___ Spanisch. (sprechen)",opts:["spreche","sprichst","spricht","sprechen"],ans:2,hint:"2A"},
   {q:"Woher kommt Rosa Navas?",opts:["aus der Türkei","aus Spanien","aus Polen","aus China"],ans:1,hint:"2A"},
-  {q:"'украинец' auf Deutsch?",opts:["Ukrainisch","Ukrainer","Ukrainian","Ukrainien"],ans:1,hint:"2A"},
+  {q:"'украинец' auf Deutsch?",qUk:"'українець' auf Deutsch?",opts:["Ukrainisch","Ukrainer","Ukrainian","Ukrainien"],ans:1,hint:"2A"},
   {q:"Er ist ___ (Griechenland → Nationalität).",opts:["Griechisch","Griechenland","Grieche","Griecheln"],ans:2,hint:"2A"},
-  {q:"Sie (она) ___ bei Siemens. (arbeiten)",opts:["arbeite","arbeitest","arbeitet","arbeiten"],ans:2,hint:"2A"},
+  {q:"Sie (она) ___ bei Siemens. (arbeiten)",qUk:"Sie (вона) ___ bei Siemens. (arbeiten)",opts:["arbeite","arbeitest","arbeitet","arbeiten"],ans:2,hint:"2A"},
 ];
 const Q_WF_S=[
-  {q:"Структура вопроса: ___ + Verb + ...",opts:["Verb + Fragewort","Fragewort + Verb","Subjekt + Verb","Verb + Subjekt"],ans:1,exp:"Fragewort → Verb → остаток",expUk:"Fragewort → Verb → залишок",hint:"W-Fragen"},
+  {q:"Структура вопроса: ___ + Verb + ...",qUk:"Структура питання: ___ + Verb + ...",opts:["Verb + Fragewort","Fragewort + Verb","Subjekt + Verb","Verb + Subjekt"],ans:1,exp:"Fragewort → Verb → остаток",expUk:"Fragewort → Verb → залишок",hint:"W-Fragen"},
   {q:"___ heißen Sie?",opts:["Wo","Was","Wie","Wer"],ans:2,hint:"W-Fragen"},
   {q:"___ wohnen Sie?",opts:["Wie","Was","Wer","Wo"],ans:3,hint:"W-Fragen"},
   {q:"___ sind Sie von Beruf?",opts:["Wer","Was","Wie","Wo"],ans:1,hint:"W-Fragen"},
@@ -6474,10 +6474,10 @@ const Q_WF_S=[
 ];
 
 const Q_GROSS=[
-  {q:"Какое слово написано ПРАВИЛЬНО?",opts:["wie heißen sie?","Wie heißen sie?","wie heißen Sie?","Wie heißen Sie?"],ans:3,exp:"Sie (официальное) — всегда с большой!",expUk:"Sie (офіційне) — завжди з великої!",hint:"Großschreibung"},
-  {q:"Что ВСЕГДА пишется с большой буквы в немецком?",opts:["Глаголы","Прилагательные","Все существительные","Наречия"],ans:2,exp:"Все Nomen (существительные) — с большой!",expUk:"Усі Nomen (іменники) — з великої!",hint:"Großschreibung"},
-  {q:"Правильное написание:",opts:["ich wohne in berlin","Ich wohne in Berlin.","ich Wohne in Berlin.","Ich wohne In berlin."],ans:1,exp:"Ich (начало), Berlin (город) — с большой",expUk:"Ich (початок), Berlin (місто) — з великої",hint:"Großschreibung"},
-  {q:"'der beruf' — что неправильно?",opts:["артикль der","слово beruf должно быть с большой","всё правильно","нет артикля"],ans:1,exp:"Все существительные с большой: der Beruf",expUk:"Усі іменники з великої: der Beruf",hint:"Großschreibung"},
+  {q:"Какое слово написано ПРАВИЛЬНО?",qUk:"Яке слово написано ПРАВИЛЬНО?",opts:["wie heißen sie?","Wie heißen sie?","wie heißen Sie?","Wie heißen Sie?"],ans:3,exp:"Sie (официальное) — всегда с большой!",expUk:"Sie (офіційне) — завжди з великої!",hint:"Großschreibung"},
+  {q:"Что ВСЕГДА пишется с большой буквы в немецком?",qUk:"Що ЗАВЖДИ пишеться з великої букви в німецькій?",opts:["Глаголы","Прилагательные","Все существительные","Наречия"],optsUk:["Дієслова","Прикметники","Усі іменники","Прислівники"],ans:2,exp:"Все Nomen (существительные) — с большой!",expUk:"Усі Nomen (іменники) — з великої!",hint:"Großschreibung"},
+  {q:"Правильное написание:",qUk:"Правильне написання:",opts:["ich wohne in berlin","Ich wohne in Berlin.","ich Wohne in Berlin.","Ich wohne In berlin."],ans:1,exp:"Ich (начало), Berlin (город) — с большой",expUk:"Ich (початок), Berlin (місто) — з великої",hint:"Großschreibung"},
+  {q:"'der beruf' — что неправильно?",qUk:"'der beruf' — що неправильно?",opts:["артикль der","слово beruf должно быть с большой","всё правильно","нет артикля"],optsUk:["артикль der","слово beruf повинне бути з великої","все правильно","немає артикля"],ans:1,exp:"Все существительные с большой: der Beruf",expUk:"Усі іменники з великої: der Beruf",hint:"Großschreibung"},
   {q:"Wie heißen ___ und woher kommen ___?",opts:["sie / sie","Sie / sie","sie / Sie","Sie / Sie"],ans:3,exp:"Официальное Sie — всегда с большой буквы",expUk:"Офіційне Sie — завжди з великої букви",hint:"Großschreibung"},
 ];
 
@@ -6560,18 +6560,18 @@ const Q_L3A=[
   {q:"Du ___ zwei Handys. (haben)",opts:["habe","hast","hat","haben"],ans:1,hint:"haben"},
   {q:"Er ___ einen Bleistift. (haben)",opts:["habe","hast","hat","haben"],ans:2,hint:"haben"},
   {q:"Wir ___ keinen Fernseher. (haben)",opts:["habe","habt","hat","haben"],ans:3,hint:"haben"},
-  {q:"'Da ist kein Schrank.' — что означает kein?",opts:["есть шкаф","нет шкафа","красивый шкаф","маленький шкаф"],ans:1,exp:"kein/keine = нет / не имеется",expUk:"kein/keine = ні / не є",hint:"kein"},
-  {q:"Da ist ___ Lampe. (отрицание, f)",opts:["kein","keine","nicht","keinen"],ans:1,exp:"die Lampe → keine Lampe",hint:"kein"},
-  {q:"Da ist ___ Tisch. (отрицание, m)",opts:["keine","keinen","kein","nicht"],ans:2,exp:"der Tisch → kein Tisch",hint:"kein"},
+  {q:"'Da ist kein Schrank.' — что означает kein?",qUk:"'Da ist kein Schrank.' — що означає kein?",opts:["есть шкаф","нет шкафа","красивый шкаф","маленький шкаф"],optsUk:["є шафа","немає шафи","красива шафа","маленька шафа"],ans:1,exp:"kein/keine = нет / не имеется",expUk:"kein/keine = ні / не є",hint:"kein"},
+  {q:"Da ist ___ Lampe. (отрицание, f)",qUk:"Da ist ___ Lampe. (заперечення, f)",opts:["kein","keine","nicht","keinen"],ans:1,exp:"die Lampe → keine Lampe",hint:"kein"},
+  {q:"Da ist ___ Tisch. (отрицание, m)",qUk:"Da ist ___ Tisch. (заперечення, m)",opts:["keine","keinen","kein","nicht"],ans:2,exp:"der Tisch → kein Tisch",hint:"kein"},
   {q:"Sie ___ einen Kühlschrank. (brauchen)",opts:["brauche","brauchst","braucht","brauchen"],ans:3,hint:"brauchen"},
 ];
 const Q_L3FARBE=[
-  {q:"Как сказать 'красный'?",opts:["blau","rot","gelb","grün"],ans:1,hint:"Farben"},
-  {q:"Как сказать 'белый'?",opts:["schwarz","grau","weiß","braun"],ans:2,hint:"Farben"},
-  {q:"Как сказать 'синий'?",opts:["blau","grün","lila","rosa"],ans:0,hint:"Farben"},
-  {q:"Как сказать 'жёлтый'?",opts:["grün","gelb","orange","grau"],ans:1,hint:"Farben"},
-  {q:"'schwarz' — это...",opts:["белый","серый","чёрный","коричневый"],ans:2,hint:"Farben"},
-  {q:"'lila' — это...",opts:["розовый","фиолетовый","оранжевый","голубой"],ans:1,hint:"Farben"},
+  {q:"Как сказать 'красный'?",qUk:"Як сказати 'червоний'?",opts:["blau","rot","gelb","grün"],ans:1,hint:"Farben"},
+  {q:"Как сказать 'белый'?",qUk:"Як сказати 'білий'?",opts:["schwarz","grau","weiß","braun"],ans:2,hint:"Farben"},
+  {q:"Как сказать 'синий'?",qUk:"Як сказати 'синій'?",opts:["blau","grün","lila","rosa"],ans:0,hint:"Farben"},
+  {q:"Как сказать 'жёлтый'?",qUk:"Як сказати 'жовтий'?",opts:["grün","gelb","orange","grau"],ans:1,hint:"Farben"},
+  {q:"'schwarz' — это...",qUk:"'schwarz' — це...",opts:["белый","серый","чёрный","коричневый"],optsUk:["білий","сірий","чорний","коричневий"],ans:2,hint:"Farben"},
+  {q:"'lila' — это...",qUk:"'lila' — це...",opts:["розовый","фиолетовый","оранжевый","голубой"],optsUk:["рожевий","фіолетовий","помаранчевий","голубий"],ans:1,hint:"Farben"},
 ];
 const Q_L3AKKU=[
   {q:"Der Stuhl ist schön. → Ich kaufe ___ Stuhl.",opts:["der","das","die","den"],ans:3,exp:"m Akkusativ: der → den",hint:"Akkusativ"},
@@ -6579,7 +6579,7 @@ const Q_L3AKKU=[
   {q:"Die Lampe ist neu. → Ich kaufe ___ Lampe.",opts:["den","das","die","dem"],ans:2,exp:"f Akkusativ: die bleibt die",hint:"Akkusativ"},
   {q:"Ich brauche ___ Laptop. (m, unbestimmt)",opts:["ein","eine","einen","kein"],ans:2,exp:"m Akkusativ unbestimmt: einen",hint:"Akkusativ"},
   {q:"Ich habe ___ Sofa. (n, unbestimmt)",opts:["einen","eine","ein","einem"],ans:2,exp:"n Akkusativ: ein bleibt ein",hint:"Akkusativ"},
-  {q:"Nur у какого рода меняется артикль в Akkusativ?",opts:["feminin (f)","neutral (n)","maskulin (m)","у всех"],ans:2,exp:"Nur m: der→den, ein→einen, kein→keinen",hint:"Akkusativ"},
+  {q:"Nur у какого рода меняется артикль в Akkusativ?",qUk:"Тільки у якого роду змінюється артикль в Akkusativ?",opts:["feminin (f)","neutral (n)","maskulin (m)","у всех"],optsUk:["feminin (f)","neutral (n)","maskulin (m)","у всіх"],ans:2,exp:"Nur m: der→den, ein→einen, kein→keinen",hint:"Akkusativ"},
 ];
 
 function T3A(){
@@ -7064,25 +7064,25 @@ function T3WohnVok(){
 const Q_L3B=[
   {q:"Ist das ein Tisch? → Nein...",opts:["Nein, das ist nicht Tisch.","Nein, das ist kein Tisch.","Nein, kein ein Tisch.","Nein, das ist nicht ein Tisch."],ans:1,exp:"kein/keine для отрицания существительных",expUk:"kein/keine для заперечення іменників",hint:"Ja/Nein"},
   {q:"Haben Sie eine Mikrowelle? → Ja...",opts:["Ja, ich habe eine Mikrowelle.","Ja, ich habe ein Mikrowelle.","Ja, ich habe einen Mikrowelle.","Ja, ich bin Mikrowelle."],ans:0,hint:"Ja/Nein"},
-  {q:"Порядок слов в Ja/Nein-Frage:",opts:["Subjekt + Verb","Verb + Subjekt","W-Wort + Verb","Verb + W-Wort"],ans:1,exp:"Ist das...? Haben Sie...? — Verb zuerst!",hint:"Ja/Nein"},
-  {q:"'Wirklich?' значит...",opts:["Правда?","Пожалуйста","Хорошо","Спасибо"],ans:0,hint:"Ausdrücke"},
-  {q:"'klasse' значит...",opts:["скучно","ужасно","здорово/отлично","серьёзно?"],ans:2,hint:"Ausdrücke"},
+  {q:"Порядок слов в Ja/Nein-Frage:",qUk:"Порядок слів у Ja/Nein-Frage:",opts:["Subjekt + Verb","Verb + Subjekt","W-Wort + Verb","Verb + W-Wort"],ans:1,exp:"Ist das...? Haben Sie...? — Verb zuerst!",hint:"Ja/Nein"},
+  {q:"'Wirklich?' значит...",qUk:"'Wirklich?' означає...",opts:["Правда?","Пожалуйста","Хорошо","Спасибо"],optsUk:["Справді?","Будь ласка","Добре","Дякую"],ans:0,hint:"Ausdrücke"},
+  {q:"'klasse' значит...",qUk:"'klasse' означає...",opts:["скучно","ужасно","здорово/отлично","серьёзно?"],optsUk:["нудно","жахливо","чудово/відмінно","серйозно?"],ans:2,hint:"Ausdrücke"},
 ];
 const Q_L3C=[
-  {q:"'Es gibt' + m → правильная форма:",opts:["Es gibt ein Laden.","Es gibt der Laden.","Es gibt einen Laden.","Es gibt einem Laden."],ans:2,exp:"es gibt + Akkusativ: m → einen",hint:"es gibt"},
-  {q:"Wo ist das Erdgeschoss?",opts:["самый верхний этаж","под крышей","нулевой этаж","2-й этаж"],ans:2,exp:"das Erdgeschoss = 0-й этаж (вход)",expUk:"das Erdgeschoss = 0-й поверх (вхід)",hint:"Etagen"},
-  {q:"'links' означает:",opts:["справа","вверху","слева","внизу"],ans:2,hint:"Richtung"},
+  {q:"'Es gibt' + m → правильная форма:",qUk:"'Es gibt' + m → правильна форма:",opts:["Es gibt ein Laden.","Es gibt der Laden.","Es gibt einen Laden.","Es gibt einem Laden."],ans:2,exp:"es gibt + Akkusativ: m → einen",hint:"es gibt"},
+  {q:"Wo ist das Erdgeschoss?",opts:["самый верхний этаж","под крышей","нулевой этаж","2-й этаж"],optsUk:["найвищий поверх","під дахом","нульовий поверх","2-й поверх"],ans:2,exp:"das Erdgeschoss = 0-й этаж (вход)",expUk:"das Erdgeschoss = 0-й поверх (вхід)",hint:"Etagen"},
+  {q:"'links' означает:",qUk:"'links' означає:",opts:["справа","вверху","слева","внизу"],optsUk:["справа","вгорі","зліва","внизу"],ans:2,hint:"Richtung"},
   {q:"Wo wohnt Familie Wang? → ___ 2. Stock.",opts:["auf dem","an den","im","in"],ans:2,exp:"im = in dem: im 1./2./3. Stock",hint:"Etagen"},
-  {q:"'Es gibt eine Kita.' — артикль после es gibt?",opts:["ein","eine","einen","—"],ans:1,exp:"f → eine (Akkusativ f = Nominativ f)",hint:"es gibt"},
+  {q:"'Es gibt eine Kita.' — артикль после es gibt?",qUk:"'Es gibt eine Kita.' — артикль після es gibt?",opts:["ein","eine","einen","—"],ans:1,exp:"f → eine (Akkusativ f = Nominativ f)",hint:"es gibt"},
 ];
 const Q_L3TEST=shuffle([
   {q:"Ich ___ kein Sofa. (haben)",opts:["hast","hat","habe","haben"],ans:2,hint:"haben"},
   {q:"Er ___ einen Bleistift. (haben)",opts:["habe","hast","hat","haben"],ans:2,hint:"haben"},
-  {q:"'keine Lampe' — почему keine?",opts:["m-форма","n-форма","f-форма","Plural"],ans:2,exp:"die Lampe → keine (f)",hint:"kein"},
-  {q:"Как сказать 'красный'?",opts:["blau","rot","gelb","grün"],ans:1,hint:"Farben"},
-  {q:"Как сказать 'чёрный'?",opts:["weiß","grau","braun","schwarz"],ans:3,hint:"Farben"},
-  {q:"Я покупаю стол (m). Ich kaufe ___ Tisch.",opts:["der","das","die","den"],ans:3,exp:"m Akkusativ: den",hint:"Akkusativ"},
-  {q:"Только у какого рода меняется артикль в Akkusativ?",opts:["f","n","m","у всех"],ans:2,exp:"Nur maskulin: der→den, ein→einen",hint:"Akkusativ"},
+  {q:"'keine Lampe' — почему keine?",qUk:"'keine Lampe' — чому keine?",opts:["m-форма","n-форма","f-форма","Plural"],optsUk:["m-форма","n-форма","f-форма","Plural"],ans:2,exp:"die Lampe → keine (f)",hint:"kein"},
+  {q:"Как сказать 'красный'?",qUk:"Як сказати 'червоний'?",opts:["blau","rot","gelb","grün"],ans:1,hint:"Farben"},
+  {q:"Как сказать 'чёрный'?",qUk:"Як сказати 'чорний'?",opts:["weiß","grau","braun","schwarz"],ans:3,hint:"Farben"},
+  {q:"Я покупаю стол (m). Ich kaufe ___ Tisch.",qUk:"Я купую стіл (m). Ich kaufe ___ Tisch.",opts:["der","das","die","den"],ans:3,exp:"m Akkusativ: den",hint:"Akkusativ"},
+  {q:"Только у какого рода меняется артикль в Akkusativ?",qUk:"Тільки у якого роду змінюється артикль в Akkusativ?",opts:["f","n","m","у всех"],optsUk:["f","n","m","у всіх"],ans:2,exp:"Nur maskulin: der→den, ein→einen",hint:"Akkusativ"},
   {q:"Ich brauche ___ Laptop. (m, unbestimmt)",opts:["ein","eine","einen","kein"],ans:2,hint:"Akkusativ"},
   {q:"Wie finden Sie das Sofa?",opts:["Ich bin Sofa.","Das Sofa ist schön!","Ja, Sofa.","Ich kaufe."],ans:1,hint:"Meinung"},
   {q:"'das Bett' → Plural:",opts:["die Betten","die Bette","die Bettern","die Betts"],ans:0,hint:"Plural"},
@@ -7090,7 +7090,7 @@ const Q_L3TEST=shuffle([
 const Q_L3POSS=shuffle([
   {q:"ich → ... Buch",opts:["sein Buch","ihr Buch","mein Buch","dein Buch"],ans:2,hint:"Possessiv"},
   {q:"er/es → ... Haus",opts:["ihr Haus","mein Haus","sein Haus","unser Haus"],ans:2,hint:"Possessiv"},
-  {q:"sie (она) → ... Tasche",opts:["sein Tasche","ihr Tasche","mein Tasche","dein Tasche"],ans:1,exp:"sie(она)→ihr",expUk:"sie(вона)→ihr",hint:"Possessiv"},
+  {q:"sie (она) → ... Tasche",qUk:"sie (вона) → ... Tasche",opts:["sein Tasche","ihr Tasche","mein Tasche","dein Tasche"],ans:1,exp:"sie(она)→ihr",expUk:"sie(вона)→ihr",hint:"Possessiv"},
   {q:"wir → ... Wohnung",opts:["eure","unsere","seine","ihre"],ans:1,exp:"wir → unser/unsere",hint:"Possessiv"},
   {q:"Ist das ___ Auto? (du-form)",opts:["sein Auto","mein Auto","dein Auto","unser Auto"],ans:2,exp:"du → dein",hint:"Possessiv"},
   {q:"Wie ist ___ Adresse? (Sie formell)",opts:["ihr","euer","Ihr","unser"],ans:2,exp:"Sie(Вы) → Ihr (с большой буквы!)",expUk:"Sie(Ви) → Ihr (з великої букви!)",hint:"Possessiv"},
@@ -7099,14 +7099,14 @@ const Q_L3POSS=shuffle([
 ]).slice(0,6);
 
 const Q_L3WOHN=shuffle([
-  {q:"'zu Hause' означает:",opts:["домой","дома (нахожусь)","в дом соседа","уходить"],ans:1,exp:"zu Hause = дома (состояние, нахожусь)",expUk:"zu Hause = вдома (стан, перебуваю)",hint:"Wohnen"},
-  {q:"'nach Hause' означает:",opts:["дома","из дома","домой (движение)","в дом соседа"],ans:2,exp:"nach Hause = домой (движение к дому)",expUk:"nach Hause = додому (рух до дому)",hint:"Wohnen"},
-  {q:"'die Miete' — это:",opts:["ночь","аренда/квартплата","улица","коридор"],ans:1,hint:"Wohnen"},
-  {q:"sp в начале слова произносится как:",opts:["сп","шп","сб","зп"],ans:1,exp:"sp = шп: sprechen, Spiegel, Spüle",expUk:"sp = шп: sprechen, Spiegel, Spüle",hint:"Aussprache"},
-  {q:"st в начале слова произносится как:",opts:["ст","шт","зд","сд"],ans:1,exp:"st = шт: Stadt, Stuhl, Straße",expUk:"st = шт: Stadt, Stuhl, Straße",hint:"Aussprache"},
-  {q:"'das Doppelzimmer' — это:",opts:["одноместный номер","двухместный номер","коридор","гостиная"],ans:1,hint:"Hotel"},
-  {q:"'übernachten' значит:",opts:["обедать","ночевать","уезжать","работать"],ans:1,hint:"Hotel"},
-  {q:"'der Urlaub' — это:",opts:["работа","урок","отпуск/каникулы","улица"],ans:2,hint:"Urlaub"},
+  {q:"'zu Hause' означает:",qUk:"'zu Hause' означає:",opts:["домой","дома (нахожусь)","в дом соседа","уходить"],optsUk:["додому","вдома (перебуваю)","у будинок сусіда","йти геть"],ans:1,exp:"zu Hause = дома (состояние, нахожусь)",expUk:"zu Hause = вдома (стан, перебуваю)",hint:"Wohnen"},
+  {q:"'nach Hause' означает:",qUk:"'nach Hause' означає:",opts:["дома","из дома","домой (движение)","в дом соседа"],optsUk:["вдома","з дому","додому (рух)","у будинок сусіда"],ans:2,exp:"nach Hause = домой (движение к дому)",expUk:"nach Hause = додому (рух до дому)",hint:"Wohnen"},
+  {q:"'die Miete' — это:",qUk:"'die Miete' — це:",opts:["ночь","аренда/квартплата","улица","коридор"],optsUk:["ніч","оренда/квартплата","вулиця","коридор"],ans:1,hint:"Wohnen"},
+  {q:"sp в начале слова произносится как:",qUk:"sp на початку слова вимовляється як:",opts:["сп","шп","сб","зп"],optsUk:["сп","шп","сб","зп"],ans:1,exp:"sp = шп: sprechen, Spiegel, Spüle",expUk:"sp = шп: sprechen, Spiegel, Spüle",hint:"Aussprache"},
+  {q:"st в начале слова произносится как:",qUk:"st на початку слова вимовляється як:",opts:["ст","шт","зд","сд"],optsUk:["ст","шт","зд","сд"],ans:1,exp:"st = шт: Stadt, Stuhl, Straße",expUk:"st = шт: Stadt, Stuhl, Straße",hint:"Aussprache"},
+  {q:"'das Doppelzimmer' — это:",qUk:"'das Doppelzimmer' — це:",opts:["одноместный номер","двухместный номер","коридор","гостиная"],optsUk:["одномісний номер","двомісний номер","коридор","вітальня"],ans:1,hint:"Hotel"},
+  {q:"'übernachten' значит:",qUk:"'übernachten' означає:",opts:["обедать","ночевать","уезжать","работать"],optsUk:["обідати","ночувати","їхати геть","працювати"],ans:1,hint:"Hotel"},
+  {q:"'der Urlaub' — это:",qUk:"'der Urlaub' — це:",opts:["работа","урок","отпуск/каникулы","улица"],optsUk:["робота","урок","відпустка/канікули","вулиця"],ans:2,hint:"Urlaub"},
   {q:"das Dorf → Plural:",opts:["Dorfe","Dörfer","Dorfen","Dorfes"],ans:1,exp:'das Dorf, "-er → die Dörfer',hint:"Plural"},
   {q:"die Stadt → Plural:",opts:["Städten","Stadtse","Städte","Stadts"],ans:2,exp:'die Stadt, "-e → die Städte',hint:"Plural"},
 ]).slice(0,8);
@@ -7272,16 +7272,16 @@ const WSENTS_L4=[
   {w:["Isst","du","gern","Obst","?"],                            ru:"Ты любишь фрукты?",uk:"Ти любиш фрукти?"},
 ];
 const Q_L5TEST=shuffle([
-  {q:"'Es ist halb zehn.' — сколько времени?",   opts:["10:30","9:30","9:15","10:15"],          ans:1, hint:"halb смотрит вперёд",hintUk:"halb дивиться вперед"},
-  {q:"'Viertel vor sieben' — это:",              opts:["7:15","6:45","6:15","7:45"],            ans:1, hint:"vor = без",hintUk:"vor = без"},
-  {q:"'Viertel nach acht' — это:",               opts:["8:15","7:45","8:45","8:30"],            ans:0, hint:"nach = после",hintUk:"nach = після"},
+  {q:"'Es ist halb zehn.' — сколько времени?",qUk:"'Es ist halb zehn.' — скільки часу?",   opts:["10:30","9:30","9:15","10:15"],          ans:1, hint:"halb смотрит вперёд",hintUk:"halb дивиться вперед"},
+  {q:"'Viertel vor sieben' — это:",qUk:"'Viertel vor sieben' — це:",              opts:["7:15","6:45","6:15","7:45"],            ans:1, hint:"vor = без",hintUk:"vor = без"},
+  {q:"'Viertel nach acht' — это:",qUk:"'Viertel nach acht' — це:",               opts:["8:15","7:45","8:45","8:30"],            ans:0, hint:"nach = после",hintUk:"nach = після"},
   {q:"'Ich ___ um 7 Uhr ___.' (aufstehen)",      opts:["stehe … auf","aufstehe","stehe auf …","stehen … auf"],ans:0, hint:"trennbares Verb"},
   {q:"Infinitiv von 'Er ruft an'?",              opts:["rufen an","anrufen","rufen","anruft"],  ans:1, hint:"Infinitiv"},
   {q:"'Wir ___ heute Abend ___.' (ausgehen)",    opts:["ausgehen","gehen … aus","geht … aus","gehen … auf"],ans:1, hint:"wir-Form"},
   {q:"'Der Kurs ___ um 20 Uhr ___.' (anfangen, a→ä)",opts:["fängt … an","fangt … an","fange … an","fangen … an"],ans:0, hint:"a→ä + trennbar"},
   {q:"'___ Montag habe ich Deutschkurs.'",        opts:["Am","Um","In","Im"],                    ans:0, hint:"am + Wochentag"},
   {q:"'Der Kurs ist ___ 9 ___ 12 Uhr.'",          opts:["von … bis","um … Uhr","am … Uhr","seit … bis"],ans:0, hint:"von...bis"},
-  {q:"'Hast du morgen Zeit?' — вежливый ответ, если нет:",opts:["Ja, klar!","Nein, ich habe keine Zeit.","Tut mir leid, ich kann nicht.","Vielleicht."],ans:2, hint:"вежливый отказ",hintUk:"ввічлива відмова"},
+  {q:"'Hast du morgen Zeit?' — вежливый ответ, если нет:",qUk:"'Hast du morgen Zeit?' — ввічлива відповідь, якщо немає:",opts:["Ja, klar!","Nein, ich habe keine Zeit.","Tut mir leid, ich kann nicht.","Vielleicht."],ans:2, hint:"вежливый отказ",hintUk:"ввічлива відмова"},
 ]);
 
 const LUECKEN_L5=shuffle([
@@ -7318,12 +7318,12 @@ const Q_L6TEST=shuffle([
   {q:"'___ bitte leise!' (Imperativ ihr, sein)", opts:["Sei","Seid","Seien","Bist"],             ans:1, hint:"sein: Seid!"},
   {q:"'___ Sie bitte Platz!' (Imperativ Sie, nehmen)",opts:["Nehmt","Nimm","Nehmen","Nehme"],    ans:2, hint:"Infinitiv + Sie"},
   {q:"'Ich ___ gern Kaffee.' (möchten)",         opts:["mag","möchte","mögt","möchtest"],       ans:1, hint:"möchten = хотеть бы",hintUk:"möchten = хотіти б"},
-  {q:"'Ich ___ keinen Fisch.' (mögen, отрицание)",opts:["mag nicht","mag kein","mag keinen","möchte kein"],ans:2, hint:"mögen + Akkusativ kein-"},
+  {q:"'Ich ___ keinen Fisch.' (mögen, отрицание)",qUk:"'Ich ___ keinen Fisch.' (mögen, заперечення)",opts:["mag nicht","mag kein","mag keinen","möchte kein"],ans:2, hint:"mögen + Akkusativ kein-"},
   {q:"'Das ___ nicht gut.' (schmecken)",         opts:["schmeckt","schmecke","schmecken","schmeckst"],ans:0, hint:"es schmeckt"},
   {q:"'Ich hätte gern ___ Kilo Äpfel.'",         opts:["ein","eine","einen","—"],               ans:3, hint:"единицы измерения без артикля",hintUk:"одиниці вимірювання без артикля"},
-  {q:"Кто такой 'der Kunde'?",                   opts:["продавец","покупатель","повар","официант"],ans:1, hint:"словарь",hintUk:"словник"},
+  {q:"Кто такой 'der Kunde'?",qUk:"Хто такий 'der Kunde'?",                   opts:["продавец","покупатель","повар","официант"],optsUk:["продавець","покупець","кухар","офіціант"],ans:1, hint:"словарь",hintUk:"словник"},
   {q:"'Man isst in Deutschland ___ Frühstück meistens Brot.'",opts:["beim","zum","am","im"],    ans:1, hint:"zum Frühstück"},
-  {q:"Что значит 'man'?",                        opts:["мужчина","безличное 'вы/люди'","он","она"],ans:1, hint:"man isst = едят/принято есть",hintUk:"man isst = їдять/прийнято їсти"},
+  {q:"Что значит 'man'?",qUk:"Що означає 'man'?",                        opts:["мужчина","безличное 'вы/люди'","он","она"],optsUk:["чоловік","безособове 'ви/люди'","він","вона"],ans:1, hint:"man isst = едят/принято есть",hintUk:"man isst = їдять/прийнято їсти"},
 ]);
 
 const LUECKEN_L6=shuffle([
@@ -7359,11 +7359,11 @@ const Q_L7TEST=shuffle([
   {q:"'Ich ___ gut kochen.' (können)",           opts:["kann","kannst","könnt","können"],       ans:0, hint:"ich kann"},
   {q:"'Du ___ heute arbeiten.' (müssen)",        opts:["muss","musst","müsst","müssen"],        ans:1, hint:"du musst"},
   {q:"'Er ___ Arzt werden.' (wollen)",           opts:["will","willst","wollt","wollen"],       ans:0, hint:"er will"},
-  {q:"'Wo stehen Modalverb + Infinitiv im Satz?'",opts:["оба в начале","Modalverb 2, Infinitiv в конце","оба в конце","Infinitiv 2, Modalverb в конце"],ans:1, hint:"Satzklammer"},
+  {q:"'Wo stehen Modalverb + Infinitiv im Satz?'",opts:["оба в начале","Modalverb 2, Infinitiv в конце","оба в конце","Infinitiv 2, Modalverb в конце"],optsUk:["обидва на початку","Modalverb 2, Infinitiv в кінці","обидва в кінці","Infinitiv 2, Modalverb в кінці"],ans:1, hint:"Satzklammer"},
   {q:"'Ich hole Geld ___ Geldautomaten.'",       opts:["im","am","vom","zum"],                  ans:2, hint:"vom = von + dem"},
-  {q:"Что такое 'die IBAN'?",                    opts:["код банка","номер банковского счёта","карта","чек"],ans:1, hint:"словарь L7B",hintUk:"словник L7B"},
+  {q:"Что такое 'die IBAN'?",qUk:"Що таке 'die IBAN'?",                    opts:["код банка","номер банковского счёта","карта","чек"],optsUk:["код банку","номер банківського рахунку","карта","чек"],ans:1, hint:"словарь L7B",hintUk:"словник L7B"},
   {q:"'Er kommt ___ der Arbeit.'",               opts:["aus","von","bei","zu"],                 ans:1, hint:"von = от (источник)",hintUk:"von = від (джерело)"},
-  {q:"'Sara ist ___ Lisa.' (у Лизы, в гостях)",  opts:["bei","mit","zu","für"],                 ans:0, hint:"bei = у кого-то",hintUk:"bei = у когось"},
+  {q:"'Sara ist ___ Lisa.' (у Лизы, в гостях)",qUk:"'Sara ist ___ Lisa.' (у Лізи, в гостях)",  opts:["bei","mit","zu","für"],                 ans:0, hint:"bei = у кого-то",hintUk:"bei = у когось"},
   {q:"'___ einem Jahr lerne ich Deutsch.'",      opts:["Vor","Seit","Ab","Bei"],                ans:1, hint:"seit = уже как…",hintUk:"seit = вже як…"},
   {q:"'Ich fahre ___ Bus zur Arbeit.'",          opts:["mit dem","mit den","mit der","im"],     ans:0, hint:"mit + Dativ (m)"},
 ]);
@@ -7401,13 +7401,13 @@ const Q_L8TEST=shuffle([
   {q:"'Der Arzt untersucht ___.' (mich)",        opts:["ich","mich","mir","meiner"],            ans:1, hint:"Akkusativ: ich→mich"},
   {q:"'Ruf ___ an!' (ihn = er)",                 opts:["er","ihn","ihm","es"],                  ans:1, hint:"Akkusativ: er→ihn"},
   {q:"'Holst du ___ ab?' (uns)",                 opts:["wir","uns","unser","euch"],             ans:1, hint:"Akkusativ: wir→uns"},
-  {q:"'Was fehlt Ihnen?' — что это значит?",     opts:["Что вы забыли?","Что вас беспокоит?","Где вы?","Как дела?"],ans:1, hint:"У врача",hintUk:"У лікаря"},
+  {q:"'Was fehlt Ihnen?' — что это значит?",qUk:"'Was fehlt Ihnen?' — що це означає?",     opts:["Что вы забыли?","Что вас беспокоит?","Где вы?","Как дела?"],optsUk:["Що ви забули?","Що вас турбує?","Де ви?","Як справи?"],ans:1, hint:"У врача",hintUk:"У лікаря"},
   {q:"'Du ___ mehr schlafen.' (sollte)",         opts:["solltest","sollte","solltet","sollten"],ans:0, hint:"Konjunktiv II: du solltest"},
-  {q:"Номер экстренной помощи в Германии:",       opts:["911","102","112","103"],                ans:2, hint:"Notruf"},
-  {q:"'Ich habe Kopfschmerzen.' — что болит?",   opts:["живот","голова","горло","спина"],       ans:1, hint:"der Kopf = голова",hintUk:"der Kopf = голова"},
-  {q:"'Er ist erkältet.' — что с ним?",          opts:["устал","простужен","болен животом","здоров"],ans:1, hint:"erkältet = простужен",hintUk:"erkältet = застуджений"},
+  {q:"Номер экстренной помощи в Германии:",qUk:"Номер екстреної допомоги в Німеччині:",       opts:["911","102","112","103"],                ans:2, hint:"Notruf"},
+  {q:"'Ich habe Kopfschmerzen.' — что болит?",qUk:"'Ich habe Kopfschmerzen.' — що болить?",   opts:["живот","голова","горло","спина"],optsUk:["живіт","голова","горло","спина"],       ans:1, hint:"der Kopf = голова",hintUk:"der Kopf = голова"},
+  {q:"'Er ist erkältet.' — что с ним?",qUk:"'Er ist erkältet.' — що з ним?",          opts:["устал","простужен","болен животом","здоров"],optsUk:["втомився","застуджений","хворий на живіт","здоровий"],ans:1, hint:"erkältet = простужен",hintUk:"erkältet = застуджений"},
   {q:"'Machen Sie bitte den Mund ___.' (aufmachen)",opts:["auf","zu","an","ein"],                ans:0, hint:"aufmachen"},
-  {q:"'Ich habe seit gestern Fieber.' — с каких пор?",opts:["с завтра","со вчера","сейчас","никогда"],ans:1, hint:"seit gestern"},
+  {q:"'Ich habe seit gestern Fieber.' — с каких пор?",qUk:"'Ich habe seit gestern Fieber.' — з яких пір?",opts:["с завтра","со вчера","сейчас","никогда"],optsUk:["з завтра","з учора","зараз","ніколи"],ans:1, hint:"seit gestern"},
 ]);
 
 const LUECKEN_L8=shuffle([
@@ -7442,13 +7442,13 @@ const WSENTS_L8=[
 const Q_L9TEST=shuffle([
   {q:"'Ich fahre mit ___ Bus.' (m, Dativ)",       opts:["der","dem","den","das"],                ans:1, hint:"mit + Dativ m"},
   {q:"'Ich fahre mit ___ Straßenbahn.' (f, Dativ)",opts:["der","dem","den","die"],                ans:0, hint:"mit + Dativ f"},
-  {q:"Entschuldigung, wie komme ich zum Bahnhof? — ответ:",opts:["Ja, gerne.","Gehen Sie geradeaus.","Um 9 Uhr.","Das ist teuer."],ans:1, hint:"Wegbeschreibung"},
+  {q:"Entschuldigung, wie komme ich zum Bahnhof? — ответ:",qUk:"Entschuldigung, wie komme ich zum Bahnhof? — відповідь:",opts:["Ja, gerne.","Gehen Sie geradeaus.","Um 9 Uhr.","Das ist teuer."],ans:1, hint:"Wegbeschreibung"},
   {q:"'Biegen Sie rechts ___!'",                  opts:["ab","an","auf","aus"],                  ans:0, hint:"abbiegen"},
   {q:"'Sie ___ hier nicht parken.' (dürfen)",     opts:["darf","dürfen","dürft","darfst"],       ans:1, hint:"Sie dürfen"},
-  {q:"'Ich ___ hier fotografieren.' (dürfen, отрицание)",opts:["darf nicht","dürfe nicht","darfst nicht","dürft nicht"],ans:0, hint:"ich darf nicht"},
-  {q:"Что нужно для вождения авто в Германии?",    opts:["Personalausweis","Führerschein","Reisepass","Visum"],ans:1, hint:"словарь L9C",hintUk:"словник L9C"},
-  {q:"'Das Geschäft ist ___ dem Bahnhof.' (напротив)",opts:["neben","gegenüber","zwischen","hinter"],ans:1, hint:"gegenüber"},
-  {q:"'Wie oft fährst du mit dem Auto?' — 'Ich fahre es ___.'",opts:["täglich","niemals danke","gestern","морген"],ans:0, hint:"Häufigkeit"},
+  {q:"'Ich ___ hier fotografieren.' (dürfen, отрицание)",qUk:"'Ich ___ hier fotografieren.' (dürfen, заперечення)",opts:["darf nicht","dürfe nicht","darfst nicht","dürft nicht"],ans:0, hint:"ich darf nicht"},
+  {q:"Что нужно для вождения авто в Германии?",qUk:"Що потрібно для водіння авто в Німеччині?",    opts:["Personalausweis","Führerschein","Reisepass","Visum"],ans:1, hint:"словарь L9C",hintUk:"словник L9C"},
+  {q:"'Das Geschäft ist ___ dem Bahnhof.' (напротив)",qUk:"'Das Geschäft ist ___ dem Bahnhof.' (навпроти)",opts:["neben","gegenüber","zwischen","hinter"],ans:1, hint:"gegenüber"},
+  {q:"'Wie oft fährst du mit dem Auto?' — 'Ich fahre es ___.'",opts:["täglich","niemals danke","gestern","морген"],optsUk:["täglich","niemals danke","gestern","морген"],ans:0, hint:"Häufigkeit"},
   {q:"'Gehen Sie ___ zur Ampel.'",                opts:["bis","zu","nach","bei"],                ans:0, hint:"bis zur Ampel"},
 ]);
 
@@ -7489,9 +7489,9 @@ const Q_L10TEST=shuffle([
   {q:"Präteritum von 'sein' (ich)?",              opts:["war","hatte","bin","habe"],             ans:0, hint:"ich war"},
   {q:"Präteritum von 'haben' (wir)?",             opts:["waren","hatten","haben","sind"],        ans:1, hint:"wir hatten"},
   {q:"'Er ist ___ 2020 in Deutschland.' (seit + Präsens)",opts:["seit","vor","ab","für"],        ans:0, hint:"seit + Dativ"},
-  {q:"Как читается 1989?",                        opts:["eins-neun-acht-neun","neunzehnhundertneunundachtzig","neunzehn-neunundachtzig","tausend"],ans:1, hint:"19|89"},
-  {q:"Как читается 2015?",                        opts:["zwanzig-fünfzehn","zweitausendfünfzehn","zwei tausend fünfzehn Jahre","zweitausend und fünfzehn"],ans:1, hint:"2015"},
-  {q:"'Was haben Sie gestern gemacht?' — правильный ответ:",opts:["Ich mache Musik hören.","Ich habe Musik gehört.","Ich höre Musik gemacht.","Ich bin Musik gehört."],ans:1, hint:"Perfekt"},
+  {q:"Как читается 1989?",qUk:"Як читається 1989?",                        opts:["eins-neun-acht-neun","neunzehnhundertneunundachtzig","neunzehn-neunundachtzig","tausend"],ans:1, hint:"19|89"},
+  {q:"Как читается 2015?",qUk:"Як читається 2015?",                        opts:["zwanzig-fünfzehn","zweitausendfünfzehn","zwei tausend fünfzehn Jahre","zweitausend und fünfzehn"],ans:1, hint:"2015"},
+  {q:"'Was haben Sie gestern gemacht?' — правильный ответ:",qUk:"'Was haben Sie gestern gemacht?' — правильна відповідь:",opts:["Ich mache Musik hören.","Ich habe Musik gehört.","Ich höre Musik gemacht.","Ich bin Musik gehört."],ans:1, hint:"Perfekt"},
 ]);
 
 const LUECKEN_L10=shuffle([
@@ -7529,10 +7529,10 @@ const Q_L11TEST=shuffle([
   {q:"Wo meldet man das Auto an?",                opts:["Meldestelle","Kfz-Zulassungsstelle","Standesamt","Jobcenter"],ans:1, hint:"Kfz-Zulassungsstelle"},
   {q:"'Kannst du ___ helfen?' (mir)",             opts:["ich","mich","mir","mein"],              ans:2, hint:"helfen + Dativ"},
   {q:"'Das Buch gehört ___.' (ihr, Sg.)",         opts:["sie","ihr","sie/Sie","ihn"],            ans:1, hint:"gehören + Dativ"},
-  {q:"'Ich danke ___.' (Ihnen, формально)",       opts:["Sie","Ihnen","dich","dir"],             ans:1, hint:"danken + Dativ"},
-  {q:"'09.05.' — как прочитать день?",            opts:["der neunte","neun","der neunzehnte","neunter"],ans:0, hint:"der neunte"},
+  {q:"'Ich danke ___.' (Ihnen, формально)",qUk:"'Ich danke ___.' (Ihnen, формально)",       opts:["Sie","Ihnen","dich","dir"],             ans:1, hint:"danken + Dativ"},
+  {q:"'09.05.' — как прочитать день?",qUk:"'09.05.' — як прочитати день?",            opts:["der neunte","neun","der neunzehnte","neunter"],ans:0, hint:"der neunte"},
   {q:"'Für die Kfz-Zulassung braucht man ___.' (das Autokennzeichen)",opts:["für den","für die","für das","für dem"],ans:2, hint:"für + Akk. n"},
-  {q:"'въезжать в новую квартиру' — какой глагол?",opts:["ausziehen","einziehen","umziehen","verlassen"],ans:1, hint:"ein = внутрь",hintUk:"ein = всередину"},
+  {q:"'въезжать в новую квартиру' — какой глагол?",qUk:"'в'їжджати в нову квартиру' — яке дієслово?",opts:["ausziehen","einziehen","umziehen","verlassen"],ans:1, hint:"ein = внутрь",hintUk:"ein = всередину"},
   {q:"Perfekt von 'umziehen'?",                   opts:["hat umgezogen","ist umgezogen","hat umziehen","ist umziehen"],ans:1, hint:"движение → sein",hintUk:"рух → sein"},
 ]);
 
@@ -7576,7 +7576,7 @@ const Q_L12TEST=shuffle([
   {q:"'___ Rock gefällt dir?' (m, Nom.)",             opts:["Welcher","Welchen","Welche","Welches"], ans:0, hint:"welch- wie der/das/die"},
   {q:"'___ Hose nimmst du?' (f, Akk.)",               opts:["Welcher","Welchen","Welche","Welches"], ans:2, hint:"f Akk. → welche"},
   {q:"Wo kauft man günstig gebrauchte Kleidung?",     opts:["Boutique","Kaufhaus","Flohmarkt","Bank"], ans:2, hint:"gebraucht = б/у",hintUk:"gebraucht = вживаний"},
-  {q:"'kariert' по-русски:",                          opts:["полосатый","клетчатый","цветочный","однотонный"], ans:1, hint:"Karo = клетка",hintUk:"Karo = клітинка"},
+  {q:"'kariert' по-русски:",qUk:"'kariert' українською:",                          opts:["полосатый","клетчатый","цветочный","однотонный"],optsUk:["смугастий","клітчастий","квітковий","однотонний"], ans:1, hint:"Karo = клетка",hintUk:"Karo = клітинка"},
 ]);
 
 const LUECKEN_L12=shuffle([
@@ -7608,33 +7608,33 @@ const WSENTS_L12=[
 ];
 
 const Q_L13TEST=shuffle([
-  {q:"'das Meer' по-русски:",                          opts:["озеро","море","пляж","река"], ans:1, hint:"Meer"},
-  {q:"'der Bauernhof' по-русски:",                      opts:["лес","деревня","ферма","луг"], ans:2, hint:"Bauernhof"},
+  {q:"'das Meer' по-русски:",qUk:"'das Meer' українською:",                          opts:["озеро","море","пляж","река"],optsUk:["озеро","море","пляж","річка"], ans:1, hint:"Meer"},
+  {q:"'der Bauernhof' по-русски:",qUk:"'der Bauernhof' українською:",                      opts:["лес","деревня","ферма","луг"],optsUk:["ліс","село","ферма","луг"], ans:2, hint:"Bauernhof"},
   {q:"'Ich hätte gern eine Fahrkarte ___ Bremen ___ Stuttgart.'", opts:["von … nach","aus … zu","in … nach","von … zu"], ans:0, hint:"von … nach"},
-  {q:"'Muss ich ___?' (пересаживаться)",                opts:["aussteigen","umsteigen","ankommen","abfahren"], ans:1, hint:"umsteigen"},
+  {q:"'Muss ich ___?' (пересаживаться)",qUk:"'Muss ich ___?' (робити пересадку)",                opts:["aussteigen","umsteigen","ankommen","abfahren"], ans:1, hint:"umsteigen"},
   {q:"'Der Zug fährt durch ___ Tunnel.' (m, Akk.)",     opts:["der","den","dem","das"], ans:1, hint:"durch + Akk."},
   {q:"'Sie sind um ___ See gelaufen.' (m, Akk.)",       opts:["der","den","dem","das"], ans:1, hint:"um + Akk."},
-  {q:"'sind losgefahren' — от какого глагола?",         opts:["fahren","losfahren","vorfahren","ausfahren"], ans:1, hint:"losfahren"},
-  {q:"'haben übernachtet' — что значит?",               opts:["позавтракали","переночевали","заблудились","опоздали"], ans:1, hint:"übernachten"},
-  {q:"'Der Zug fällt aus.' по-русски:",                 opts:["поезд опаздывает","поезд отменяется","поезд прибыл","поезд идёт прямо"], ans:1, hint:"ausfallen"},
-  {q:"'sich verlaufen' по-русски:",                     opts:["опоздать","заблудиться","поторопиться","ошибиться"], ans:1, hint:"sich verlaufen"},
+  {q:"'sind losgefahren' — от какого глагола?",qUk:"'sind losgefahren' — від якого дієслова?",         opts:["fahren","losfahren","vorfahren","ausfahren"], ans:1, hint:"losfahren"},
+  {q:"'haben übernachtet' — что значит?",qUk:"'haben übernachtet' — що означає?",               opts:["позавтракали","переночевали","заблудились","опоздали"],optsUk:["поснідали","переночували","заблукали","спізнилися"], ans:1, hint:"übernachten"},
+  {q:"'Der Zug fällt aus.' по-русски:",qUk:"'Der Zug fällt aus.' українською:",                 opts:["поезд опаздывает","поезд отменяется","поезд прибыл","поезд идёт прямо"],optsUk:["потяг спізнюється","потяг скасовується","потяг прибув","потяг їде прямо"], ans:1, hint:"ausfallen"},
+  {q:"'sich verlaufen' по-русски:",qUk:"'sich verlaufen' українською:",                     opts:["опоздать","заблудиться","поторопиться","ошибиться"],optsUk:["спізнитися","заблукати","поспішити","помилитися"], ans:1, hint:"sich verlaufen"},
   {q:"'Im Winter ist es ___ als im Sommer.' (kalt)",    opts:["kalt","kälter","kaltes","am kältesten"], ans:1, hint:"Komparativ: kalt→kälter"},
   {q:"'gut' → Komparativ:",                              opts:["guter","gutter","besser","gutär"], ans:2, hint:"Ausnahme: gut→besser"},
   {q:"Welche Jahreszeit kommt nach dem Winter?",         opts:["Herbst","Frühling","Sommer","wieder Winter"], ans:1, hint:"Frühling"},
-  {q:"'Es ist bewölkt.' по-русски:",                     opts:["Идёт дождь","Облачно","Солнечно","Ветрено"], ans:1, hint:"Wolke"},
-  {q:"'Nordosten' — это направление:",                   opts:["между севером и западом","между севером и востоком","юг","между югом и востоком"], ans:1, hint:"Himmelsrichtung"},
-  {q:"'die Übernachtung' по-русски:",                    opts:["отъезд","ночёвка, проживание","завтрак","поездка"], ans:1, hint:"übernachten"},
-  {q:"'Tiere füttern' означает:",                        opts:["гладить животных","кормить животных","фотографировать животных","продавать животных"], ans:1, hint:"füttern"},
-  {q:"'die Burg' и 'das Schloss' по-русски:",            opts:["озеро и река","крепость и дворец/замок","гора и лес","город и деревня"], ans:1, hint:"Sehenswürdigkeiten"},
-  {q:"'Diät halten' означает:",                          opts:["готовить еду","соблюдать диету","покупать продукты","есть много"], ans:1, hint:"halten"},
-  {q:"'neue Menschen kennenlernen' по-русски:",          opts:["забывать людей","знакомиться с новыми людьми","избегать людей","навещать друзей"], ans:1, hint:"kennenlernen"},
-  {q:"'der Nebel' по-русски:",                           opts:["туман","дождь","снег","гром"], ans:0, hint:"Es ist neblig"},
-  {q:"'das Gewitter' — это:",                            opts:["метель","гроза","гололёд","ветер"], ans:1, hint:"Blitz und Donner"},
-  {q:"'die Hitze' и 'die Kälte' по-русски:",             opts:["дождь и снег","жара и холод","ветер и туман","гром и молния"], ans:1, hint:"heiß/kalt"},
-  {q:"'trocken' по-русски:",                             opts:["мокрый","сухой","холодный","ветреный"], ans:1, hint:"nicht nass"},
-  {q:"'die Jahreszeit' по-русски:",                      opts:["месяц","время года","праздник","погода"], ans:1, hint:"Frühling, Sommer…"},
-  {q:"'Der Zug fährt um 9 Uhr ___.' (отправляется)",     opts:["ab","an","zurück","durch"], ans:0, hint:"abfahren"},
-  {q:"'Wann ___ wir in Berlin ___?' (прибываем)",         opts:["fahren … ab","kommen … an","gehen … aus","steigen … um"], ans:1, hint:"ankommen"},
+  {q:"'Es ist bewölkt.' по-русски:",qUk:"'Es ist bewölkt.' українською:",                     opts:["Идёт дождь","Облачно","Солнечно","Ветрено"],optsUk:["Йде дощ","Хмарно","Сонячно","Вітряно"], ans:1, hint:"Wolke"},
+  {q:"'Nordosten' — это направление:",qUk:"'Nordosten' — це напрямок:",                   opts:["между севером и западом","между севером и востоком","юг","между югом и востоком"],optsUk:["між північчю і заходом","між північчю і сходом","південь","між півднем і сходом"], ans:1, hint:"Himmelsrichtung"},
+  {q:"'die Übernachtung' по-русски:",qUk:"'die Übernachtung' українською:",                    opts:["отъезд","ночёвка, проживание","завтрак","поездка"],optsUk:["відїзд","ночівля, проживання","сніданок","поїздка"], ans:1, hint:"übernachten"},
+  {q:"'Tiere füttern' означает:",qUk:"'Tiere füttern' означає:",                        opts:["гладить животных","кормить животных","фотографировать животных","продавать животных"],optsUk:["гладити тварин","годувати тварин","фотографувати тварин","продавати тварин"], ans:1, hint:"füttern"},
+  {q:"'die Burg' и 'das Schloss' по-русски:",qUk:"'die Burg' и 'das Schloss' українською:",            opts:["озеро и река","крепость и дворец/замок","гора и лес","город и деревня"],optsUk:["озеро і річка","фортеця і палац/замок","гора і ліс","місто і село"], ans:1, hint:"Sehenswürdigkeiten"},
+  {q:"'Diät halten' означает:",qUk:"'Diät halten' означає:",                          opts:["готовить еду","соблюдать диету","покупать продукты","есть много"],optsUk:["готувати їжу","дотримуватися дієти","купувати продукти","їсти багато"], ans:1, hint:"halten"},
+  {q:"'neue Menschen kennenlernen' по-русски:",qUk:"'neue Menschen kennenlernen' українською:",          opts:["забывать людей","знакомиться с новыми людьми","избегать людей","навещать друзей"],optsUk:["забувати людей","знайомитися з новими людьми","уникати людей","відвідувати друзів"], ans:1, hint:"kennenlernen"},
+  {q:"'der Nebel' по-русски:",qUk:"'der Nebel' українською:",                           opts:["туман","дождь","снег","гром"],optsUk:["туман","дощ","сніг","грім"], ans:0, hint:"Es ist neblig"},
+  {q:"'das Gewitter' — это:",qUk:"'das Gewitter' — це:",                            opts:["метель","гроза","гололёд","ветер"],optsUk:["метелиця","гроза","ожеледиця","вітер"], ans:1, hint:"Blitz und Donner"},
+  {q:"'die Hitze' и 'die Kälte' по-русски:",qUk:"'die Hitze' и 'die Kälte' українською:",             opts:["дождь и снег","жара и холод","ветер и туман","гром и молния"],optsUk:["дощ і снiг","спека і холод","вітер і туман","грім і блискавка"], ans:1, hint:"heiß/kalt"},
+  {q:"'trocken' по-русски:",qUk:"'trocken' українською:",                             opts:["мокрый","сухой","холодный","ветреный"],optsUk:["мокрий","сухий","холодний","вітряний"], ans:1, hint:"nicht nass"},
+  {q:"'die Jahreszeit' по-русски:",qUk:"'die Jahreszeit' українською:",                      opts:["месяц","время года","праздник","погода"],optsUk:["місяць","пора року","свято","погода"], ans:1, hint:"Frühling, Sommer…"},
+  {q:"'Der Zug fährt um 9 Uhr ___.' (отправляется)",qUk:"'Der Zug fährt um 9 Uhr ___.' (відправляється)",     opts:["ab","an","zurück","durch"], ans:0, hint:"abfahren"},
+  {q:"'Wann ___ wir in Berlin ___?' (прибываем)",qUk:"'Wann ___ wir in Berlin ___?' (прибуваємо)",         opts:["fahren … ab","kommen … an","gehen … aus","steigen … um"], ans:1, hint:"ankommen"},
 ]);
 
 const LUECKEN_L13=shuffle([
@@ -7685,40 +7685,40 @@ const WSENTS_L13=[
 
 // ─── L14 — ZUSAMMEN LEBEN ────────────────────────────────────────────────────
 const Q_L14TEST=shuffle([
-  {q:"'die Klingel' по-русски:",                        opts:["дверь","звонок","лестница","почтовый ящик"], ans:1, hint:"Klingel"},
-  {q:"'der Nachbar' по-русски:",                        opts:["хозяин","сосед","гость","друг"], ans:1, hint:"Nachbar"},
-  {q:"'das Paket abgeben' означает:",                   opts:["забрать посылку","оставить/передать посылку","отправить посылку","потерять посылку"], ans:1, hint:"abgeben"},
-  {q:"'Ich möchte nicht stören.' по-русски:",           opts:["Я хочу помочь","Я не хочу мешать","Я хочу зайти","Я не хочу уходить"], ans:1, hint:"stören"},
-  {q:"'reinkommen' по-русски:",                         opts:["выходить","заходить, входить","подниматься","спускаться"], ans:1, hint:"rein=herein"},
-  {q:"'sich begrüßen' означает:",                       opts:["прощаться","здороваться (друг с другом)","ссориться","знакомиться"], ans:1, hint:"begrüßen"},
-  {q:"'Können Sie mir vielleicht drei Eier geben?' — это:", opts:["приказ","вежливая просьба","вопрос о цене","жалоба"], ans:1, hint:"Können Sie…?"},
-  {q:"'die Tagesmutter' — это:",                        opts:["учительница","дневная няня","врач","соседка"], ans:1, hint:"Tages+Mutter"},
-  {q:"'bitten um + Akk.' означает:",                    opts:["благодарить за","просить о","спрашивать про","жаловаться на"], ans:1, hint:"bitten um"},
-  {q:"'Gern geschehen.' по-русски:",                    opts:["Не за что / Пожалуйста","Извините","До свидания","Конечно нет"], ans:0, hint:"ответ на Danke",hintUk:"відповідь на Danke"},
-  {q:"'Die Heizung ist kaputt.' по-русски:",            opts:["Отопление работает","Отопление сломано","Свет не горит","Лифт сломан"], ans:1, hint:"kaputt"},
-  {q:"'funktionieren' по-русски:",                       opts:["ломаться","работать, функционировать","чиниться","выключаться"], ans:1, hint:"funktioniert"},
-  {q:"'der Absender' и 'der Empfänger' — это:",         opts:["адрес и телефон","отправитель и получатель","тема и текст","дата и место"], ans:1, hint:"Brief"},
-  {q:"'Sehr geehrte Frau …' — это:",                     opts:["Betreff","Anrede","Gruß","Unterschrift"], ans:1, hint:"обращение в письме",hintUk:"звертання в листі"},
-  {q:"'denn' и 'aber' — оба союза:",                     opts:["меняют порядок слов","не меняют порядок слов","требуют Konjunktiv","только для вопросов"], ans:1, hint:"как und",hintUk:"як und"},
-  {q:"'wegwerfen' по-русски:",                           opts:["собирать","выбрасывать","находить","чинить"], ans:1, hint:"weg = прочь",hintUk:"weg = геть"},
-  {q:"'vorbeikommen bei + Dativ' означает:",             opts:["звонить кому-то","заходить к кому-то","писать кому-то","ждать кого-то"], ans:1, hint:"Ich komme bei dir vorbei"},
-  {q:"'die Schaukel' по-русски:",                        opts:["песочница","качели","горка","лестница"], ans:1, hint:"schaukeln"},
-  {q:"'der Flüchtling' по-русски:",                      opts:["мигрант (общее)","беженец","турист","студент"], ans:1, hint:"fliehen"},
-  {q:"'fliehen' по-русски:",                             opts:["путешествовать","бежать, спасаться","переезжать","возвращаться"], ans:1, hint:"floh, ist geflohen"},
-  {q:"'einen Asylantrag stellen' означает:",             opts:["подать заявление на убежище","получить визу","найти работу","снять квартиру"], ans:0, hint:"Antrag stellen"},
-  {q:"'die Ausbildung' по-русски:",                      opts:["отпуск","профессиональное обучение","образование в вузе","стажировка"], ans:1, hint:"Ausbildung machen"},
-  {q:"'das Praktikum' по-русски:",                       opts:["практика вождения","стажировка","экзамен","собеседование"], ans:1, hint:"ein Praktikum machen"},
-  {q:"'der Müll' и 'die Müllabfuhr' — это:",             opts:["мусор и вывоз мусора","бак и подвал","сосед и служба доставки","праздник и гости"], ans:0, hint:"Müll"},
-  {q:"'ärgerlich' по-русски:",                            opts:["опасный","раздражённый","грязный","чудесный"], ans:1, hint:"sich ärgern"},
-  {q:"'der Keller' по-русски:",                           opts:["чердак","подвал","балкон","гараж"], ans:1, hint:"unter dem Haus"},
-  {q:"'Fahrräder abstellen' означает:",                   opts:["чинить велосипеды","ставить/парковать велосипеды","красть велосипеды","мыть велосипеды"], ans:1, hint:"abstellen"},
-  {q:"'die Nachbarin' — это:",                            opts:["сосед (м.)","соседка (ж.)","гостья","подруга"], ans:1, hint:"weiblich zu Nachbar"},
-  {q:"'das Hoffest' по-русски:",                          opts:["ремонт дома","праздник во дворе","собрание жильцов","уборка двора"], ans:1, hint:"Hof + Fest"},
-  {q:"'Glück haben' означает:",                            opts:["быть счастливым/удачливым","быть больным","быть занятым","быть уставшим"], ans:0, hint:"Glück"},
-  {q:"'der Spielplatz' по-русски:",                       opts:["детская площадка","спортзал","парк","стадион"], ans:0, hint:"spielen + Platz"},
-  {q:"'der Junge' и 'das Mädchen' — это:",                opts:["мальчик и девочка","мужчина и женщина","сын и дочь","друг и подруга"], ans:0, hint:"Kinder"},
-  {q:"'die Bühne' на Straßenfest — это:",                 opts:["стенд с едой","сцена для музыки и танцев","вход","касса"], ans:1, hint:"Musik- und Tanzveranstaltungen"},
-  {q:"'die Tradition' по-русски:",                        opts:["традиция","национальность","культура (общее)","фестиваль"], ans:0, hint:"eine lange Tradition"},
+  {q:"'die Klingel' по-русски:",qUk:"'die Klingel' українською:",                        opts:["дверь","звонок","лестница","почтовый ящик"],optsUk:["двері","дзвінок","сходи","поштова скринька"], ans:1, hint:"Klingel"},
+  {q:"'der Nachbar' по-русски:",qUk:"'der Nachbar' українською:",                        opts:["хозяин","сосед","гость","друг"],optsUk:["господар","сусід","гість","друг"], ans:1, hint:"Nachbar"},
+  {q:"'das Paket abgeben' означает:",qUk:"'das Paket abgeben' означає:",                   opts:["забрать посылку","оставить/передать посылку","отправить посылку","потерять посылку"],optsUk:["забрати посилку","залишити/передати посилку","відправити посилку","втратити посилку"], ans:1, hint:"abgeben"},
+  {q:"'Ich möchte nicht stören.' по-русски:",qUk:"'Ich möchte nicht stören.' українською:",           opts:["Я хочу помочь","Я не хочу мешать","Я хочу зайти","Я не хочу уходить"],optsUk:["Я хочу допомогти","Я не хочу заважати","Я хочу зайти","Я не хочу йти"], ans:1, hint:"stören"},
+  {q:"'reinkommen' по-русски:",qUk:"'reinkommen' українською:",                         opts:["выходить","заходить, входить","подниматься","спускаться"],optsUk:["виходити","заходити, входити","підійматися","спускатися"], ans:1, hint:"rein=herein"},
+  {q:"'sich begrüßen' означает:",qUk:"'sich begrüßen' означає:",                       opts:["прощаться","здороваться (друг с другом)","ссориться","знакомиться"],optsUk:["прощатися","вітатися (одне з одним)","сваритися","знайомитися"], ans:1, hint:"begrüßen"},
+  {q:"'Können Sie mir vielleicht drei Eier geben?' — это:",qUk:"'Können Sie mir vielleicht drei Eier geben?' — це:", opts:["приказ","вежливая просьба","вопрос о цене","жалоба"],optsUk:["наказ","ввічливе прохання","питання про ціну","жалоба"], ans:1, hint:"Können Sie…?"},
+  {q:"'die Tagesmutter' — это:",qUk:"'die Tagesmutter' — це:",                        opts:["учительница","дневная няня","врач","соседка"],optsUk:["вчителька","денна нянька","лікар","сусідка"], ans:1, hint:"Tages+Mutter"},
+  {q:"'bitten um + Akk.' означает:",qUk:"'bitten um + Akk.' означає:",                    opts:["благодарить за","просить о","спрашивать про","жаловаться на"],optsUk:["дякувати за","просити про","запитувати про","скаржитися на"], ans:1, hint:"bitten um"},
+  {q:"'Gern geschehen.' по-русски:",qUk:"'Gern geschehen.' українською:",                    opts:["Не за что / Пожалуйста","Извините","До свидания","Конечно нет"],optsUk:["Нема за що / Будь ласка","Вибачте","До побачення","Звісно ні"], ans:0, hint:"ответ на Danke",hintUk:"відповідь на Danke"},
+  {q:"'Die Heizung ist kaputt.' по-русски:",qUk:"'Die Heizung ist kaputt.' українською:",            opts:["Отопление работает","Отопление сломано","Свет не горит","Лифт сломан"],optsUk:["Опалення працює","Опалення зламане","Світло не горить","Ліфт зламаний"], ans:1, hint:"kaputt"},
+  {q:"'funktionieren' по-русски:",qUk:"'funktionieren' українською:",                       opts:["ломаться","работать, функционировать","чиниться","выключаться"],optsUk:["ламатися","працювати, функціонувати","ремонтуватися","вимикатися"], ans:1, hint:"funktioniert"},
+  {q:"'der Absender' и 'der Empfänger' — это:",qUk:"'der Absender' и 'der Empfänger' — це:",         opts:["адрес и телефон","отправитель и получатель","тема и текст","дата и место"],optsUk:["адреса і телефон","відправник і отримувач","тема і текст","дата і місце"], ans:1, hint:"Brief"},
+  {q:"'Sehr geehrte Frau …' — это:",qUk:"'Sehr geehrte Frau …' — це:",                     opts:["Betreff","Anrede","Gruß","Unterschrift"], ans:1, hint:"обращение в письме",hintUk:"звертання в листі"},
+  {q:"'denn' и 'aber' — оба союза:",qUk:"'denn' і 'aber' — обидва сполучники:",                     opts:["меняют порядок слов","не меняют порядок слов","требуют Konjunktiv","только для вопросов"],optsUk:["змінюють порядок слів","не змінюють порядок слів","вимагають Konjunktiv","тільки для питань"], ans:1, hint:"как und",hintUk:"як und"},
+  {q:"'wegwerfen' по-русски:",qUk:"'wegwerfen' українською:",                           opts:["собирать","выбрасывать","находить","чинить"],optsUk:["збирати","викидати","знаходити","ремонтувати"], ans:1, hint:"weg = прочь",hintUk:"weg = геть"},
+  {q:"'vorbeikommen bei + Dativ' означает:",qUk:"'vorbeikommen bei + Dativ' означає:",             opts:["звонить кому-то","заходить к кому-то","писать кому-то","ждать кого-то"],optsUk:["телефонувати комусь","заходити до когось","писати комусь","чекати когось"], ans:1, hint:"Ich komme bei dir vorbei"},
+  {q:"'die Schaukel' по-русски:",qUk:"'die Schaukel' українською:",                        opts:["песочница","качели","горка","лестница"],optsUk:["пісочниця","гойдалка","гірка","сходи"], ans:1, hint:"schaukeln"},
+  {q:"'der Flüchtling' по-русски:",qUk:"'der Flüchtling' українською:",                      opts:["мигрант (общее)","беженец","турист","студент"],optsUk:["мігрант (загальне)","біженець","турист","студент"], ans:1, hint:"fliehen"},
+  {q:"'fliehen' по-русски:",qUk:"'fliehen' українською:",                             opts:["путешествовать","бежать, спасаться","переезжать","возвращаться"],optsUk:["подорожувати","бігти, рятуватися","переїжджати","повертатися"], ans:1, hint:"floh, ist geflohen"},
+  {q:"'einen Asylantrag stellen' означает:",qUk:"'einen Asylantrag stellen' означає:",             opts:["подать заявление на убежище","получить визу","найти работу","снять квартиру"],optsUk:["подати заяву на притулок","отримати візу","знайти роботу","знімати квартиру"], ans:0, hint:"Antrag stellen"},
+  {q:"'die Ausbildung' по-русски:",qUk:"'die Ausbildung' українською:",                      opts:["отпуск","профессиональное обучение","образование в вузе","стажировка"],optsUk:["відпустка","професійне навчання","освіта у виші","стажування"], ans:1, hint:"Ausbildung machen"},
+  {q:"'das Praktikum' по-русски:",qUk:"'das Praktikum' українською:",                       opts:["практика вождения","стажировка","экзамен","собеседование"],optsUk:["практика водіння","стажування","екзамен","співбесіда"], ans:1, hint:"ein Praktikum machen"},
+  {q:"'der Müll' и 'die Müllabfuhr' — это:",qUk:"'der Müll' и 'die Müllabfuhr' — це:",             opts:["мусор и вывоз мусора","бак и подвал","сосед и служба доставки","праздник и гости"],optsUk:["сміття і вивезення сміття","бак і підвал","сусід і служба доставки","свято і гості"], ans:0, hint:"Müll"},
+  {q:"'ärgerlich' по-русски:",qUk:"'ärgerlich' українською:",                            opts:["опасный","раздражённый","грязный","чудесный"],optsUk:["небезпечний","роздратований","брудний","чудовий"], ans:1, hint:"sich ärgern"},
+  {q:"'der Keller' по-русски:",qUk:"'der Keller' українською:",                           opts:["чердак","подвал","балкон","гараж"],optsUk:["чердак","підвал","балкон","гараж"], ans:1, hint:"unter dem Haus"},
+  {q:"'Fahrräder abstellen' означает:",qUk:"'Fahrräder abstellen' означає:",                   opts:["чинить велосипеды","ставить/парковать велосипеды","красть велосипеды","мыть велосипеды"],optsUk:["ремонтувати велосипеди","ставити/паркувати велосипеди","красти велосипеди","мити велосипеди"], ans:1, hint:"abstellen"},
+  {q:"'die Nachbarin' — это:",qUk:"'die Nachbarin' — це:",                            opts:["сосед (м.)","соседка (ж.)","гостья","подруга"],optsUk:["сусід (ч.)","сусідка (ж.)","гостя","подруга"], ans:1, hint:"weiblich zu Nachbar"},
+  {q:"'das Hoffest' по-русски:",qUk:"'das Hoffest' українською:",                          opts:["ремонт дома","праздник во дворе","собрание жильцов","уборка двора"],optsUk:["ремонт будинку","свято у дворі","зібрання мешканців","прибирання двору"], ans:1, hint:"Hof + Fest"},
+  {q:"'Glück haben' означает:",qUk:"'Glück haben' означає:",                            opts:["быть счастливым/удачливым","быть больным","быть занятым","быть уставшим"],optsUk:["бути щасливим/успішним","бути хворим","бути зайнятим","бути втомленим"], ans:0, hint:"Glück"},
+  {q:"'der Spielplatz' по-русски:",qUk:"'der Spielplatz' українською:",                       opts:["детская площадка","спортзал","парк","стадион"],optsUk:["дитячий майданчик","спортзал","парк","стадіон"], ans:0, hint:"spielen + Platz"},
+  {q:"'der Junge' и 'das Mädchen' — это:",qUk:"'der Junge' и 'das Mädchen' — це:",                opts:["мальчик и девочка","мужчина и женщина","сын и дочь","друг и подруга"],optsUk:["хлопчик і дівчинка","чоловік і жінка","син і дочка","друг і подруга"], ans:0, hint:"Kinder"},
+  {q:"'die Bühne' на Straßenfest — это:",qUk:"'die Bühne' на Straßenfest — це:",                 opts:["стенд с едой","сцена для музыки и танцев","вход","касса"],optsUk:["стенд з їжею","сцена для музики і танців","вхід","каса"], ans:1, hint:"Musik- und Tanzveranstaltungen"},
+  {q:"'die Tradition' по-русски:",qUk:"'die Tradition' українською:",                        opts:["традиция","национальность","культура (общее)","фестиваль"],optsUk:["традиція","національність","культура (загальне)","фестиваль"], ans:0, hint:"eine lange Tradition"},
 ]);
 
 const LUECKEN_L14=shuffle([
@@ -7790,45 +7790,45 @@ function GrosserTest14(){return <GrosserTestContainer rounds={[
 ]}/>;}
 
 const Q_A2L1TEST=shuffle([
-  {q:"'die Schrift' по-русски:",                          opts:["письмо, шрифт","почерк","правило","предписание"], ans:0, hint:"Schrift"},
-  {q:"'die Handschrift' по-русски:",                       opts:["письменность","почерк","подпись","правило"], ans:1, hint:"Hand+Schrift"},
-  {q:"'die Vorschrift' по-русски:",                        opts:["правило игры","предписание, инструкция","почерк","подпись"], ans:1, hint:"vorschreiben"},
-  {q:"'schlau' по-русски:",                                opts:["умный, хитрый","глупый","серьёзный","опасный"], ans:0, hint:"schlau sein"},
-  {q:"'aufnehmen' (Flüchtlinge aufnehmen) означает:",       opts:["отправлять","принимать (кого-л.)","терять","воспитывать"], ans:1, hint:"aufnehmen"},
-  {q:"'die Tagesordnung' по-русски:",                       opts:["распорядок дня","повестка дня (собрания)","расписание уроков","режим питания"], ans:1, hint:"Ordnung des Tages"},
-  {q:"'sich verstecken' по-русски:",                       opts:["показываться","прятаться","убегать","искать"], ans:1, hint:"vor+Dativ"},
-  {q:"'die Gesellschaft' по-русски:",                       opts:["компания (фирма)","общество","встреча","праздник"], ans:1, hint:"gesellschaftlich"},
-  {q:"'der Schutz' (vor + Dativ) по-русски:",               opts:["опасность","защита","правило","воспитание"], ans:1, hint:"schützen"},
-  {q:"'erziehen' по-русски:",                               opts:["учить (в школе)","воспитывать (ребёнка)","играть","заботиться (о больном)"], ans:1, hint:"der Erzieher"},
-  {q:"'Meiner Meinung nach' означает:",                     opts:["по моему мнению","по вашему мнению","как правило","в любом случае"], ans:0, hint:"meinen"},
-  {q:"'die Bühne' по-русски:",                               opts:["зал","сцена","вход","площадь"], ans:1, hint:"für Musik und Tanz"},
-  {q:"'zuwandern' по-русски:",                               opts:["уезжать","иммигрировать, переселяться","путешествовать","возвращаться"], ans:1, hint:"ist zugewandert"},
-  {q:"'eigentlich' по-русски:",                              opts:["никогда","собственно, вообще-то","точно","редко"], ans:1, hint:"Eigentlich wohne ich gerne hier"},
-  {q:"'der Leiter' по-русски:",                               opts:["сотрудник","руководитель","гость","новичок"], ans:1, hint:"leiten"},
-  {q:"'schlimm' по-русски:",                                  opts:["радостный","тяжёлый, серьёзный","быстрый","дешёвый"], ans:1, hint:"schlimme Sachen erlebt"},
+  {q:"'die Schrift' по-русски:",qUk:"'die Schrift' українською:",                          opts:["письмо, шрифт","почерк","правило","предписание"],optsUk:["письмо, шрифт","почерк","правило","припис"], ans:0, hint:"Schrift"},
+  {q:"'die Handschrift' по-русски:",qUk:"'die Handschrift' українською:",                       opts:["письменность","почерк","подпись","правило"],optsUk:["писемність","почерк","підпис","правило"], ans:1, hint:"Hand+Schrift"},
+  {q:"'die Vorschrift' по-русски:",qUk:"'die Vorschrift' українською:",                        opts:["правило игры","предписание, инструкция","почерк","подпись"],optsUk:["правило гри","припис, інструкція","почерк","підпис"], ans:1, hint:"vorschreiben"},
+  {q:"'schlau' по-русски:",qUk:"'schlau' українською:",                                opts:["умный, хитрый","глупый","серьёзный","опасный"],optsUk:["розумний, хитрий","глупий","серйозний","небезпечний"], ans:0, hint:"schlau sein"},
+  {q:"'aufnehmen' (Flüchtlinge aufnehmen) означает:",qUk:"'aufnehmen' (Flüchtlinge aufnehmen) означає:",       opts:["отправлять","принимать (кого-л.)","терять","воспитывать"],optsUk:["відправляти","приймати (когось)","втрачати","виховувати"], ans:1, hint:"aufnehmen"},
+  {q:"'die Tagesordnung' по-русски:",qUk:"'die Tagesordnung' українською:",                       opts:["распорядок дня","повестка дня (собрания)","расписание уроков","режим питания"],optsUk:["розпорядок дня","порядок денний (зборів)","розклад уроків","режим харчування"], ans:1, hint:"Ordnung des Tages"},
+  {q:"'sich verstecken' по-русски:",qUk:"'sich verstecken' українською:",                       opts:["показываться","прятаться","убегать","искать"],optsUk:["показуватися","ховатися","тікати","шукати"], ans:1, hint:"vor+Dativ"},
+  {q:"'die Gesellschaft' по-русски:",qUk:"'die Gesellschaft' українською:",                       opts:["компания (фирма)","общество","встреча","праздник"],optsUk:["компанія (фірма)","суспільство","зустріч","свято"], ans:1, hint:"gesellschaftlich"},
+  {q:"'der Schutz' (vor + Dativ) по-русски:",qUk:"'der Schutz' (vor + Dativ) українською:",               opts:["опасность","защита","правило","воспитание"],optsUk:["небезпека","захист","правило","виховання"], ans:1, hint:"schützen"},
+  {q:"'erziehen' по-русски:",qUk:"'erziehen' українською:",                               opts:["учить (в школе)","воспитывать (ребёнка)","играть","заботиться (о больном)"],optsUk:["вчити (в школі)","виховувати (дитину)","грати","дбати (про хворого)"], ans:1, hint:"der Erzieher"},
+  {q:"'Meiner Meinung nach' означает:",qUk:"'Meiner Meinung nach' означає:",                     opts:["по моему мнению","по вашему мнению","как правило","в любом случае"],optsUk:["на мою думку","на вашу думку","як правило","в будь-якому разі"], ans:0, hint:"meinen"},
+  {q:"'die Bühne' по-русски:",qUk:"'die Bühne' українською:",                               opts:["зал","сцена","вход","площадь"],optsUk:["зал","сцена","вхід","площа"], ans:1, hint:"für Musik und Tanz"},
+  {q:"'zuwandern' по-русски:",qUk:"'zuwandern' українською:",                               opts:["уезжать","иммигрировать, переселяться","путешествовать","возвращаться"],optsUk:["їхати геть","іммігрувати, переселятися","подорожувати","повертатися"], ans:1, hint:"ist zugewandert"},
+  {q:"'eigentlich' по-русски:",qUk:"'eigentlich' українською:",                              opts:["никогда","собственно, вообще-то","точно","редко"],optsUk:["ніколи","власне, взагалі-то","точно","рідко"], ans:1, hint:"Eigentlich wohne ich gerne hier"},
+  {q:"'der Leiter' по-русски:",qUk:"'der Leiter' українською:",                               opts:["сотрудник","руководитель","гость","новичок"],optsUk:["співробітник","керівник","гість","новачок"], ans:1, hint:"leiten"},
+  {q:"'schlimm' по-русски:",qUk:"'schlimm' українською:",                                  opts:["радостный","тяжёлый, серьёзный","быстрый","дешёвый"],optsUk:["радісний","важкий, серйозний","швидкий","дешевий"], ans:1, hint:"schlimme Sachen erlebt"},
   {q:"'verlieren' — Partizip II:",                            opts:["verliert","verloren","verlor","verlierte"], ans:1, hint:"hat verloren"},
-  {q:"'aufgeben' в контексте 'die Arbeit aufgeben' означает:", opts:["найти работу","отказаться, сдать (работу)","получить повышение","поменять профессию"], ans:1, hint:"hat aufgegeben"},
-  {q:"'sauber' — антоним к:",                                 opts:["schmutzig","modern","laut","alt"], ans:0, hint:"чистый ≠ грязный",hintUk:"чистий ≠ брудний"},
-  {q:"'der Grund' по-русски:",                                opts:["земля","причина","основание (здания)","почва"], ans:1, hint:"aus diesem Grund"},
-  {q:"'unterschiedlich' по-русски:",                           opts:["одинаковый","разный, различный","похожий","единственный"], ans:1, hint:"unterschiedliche Gründe"},
-  {q:"'motivieren' по-русски:",                                opts:["мотивировать","мешать","заставлять силой","разочаровывать"], ans:0, hint:"motiviert"},
-  {q:"'enttäuscht' по-русски:",                                opts:["воодушевлённый","разочарованный","удивлённый","испуганный"], ans:1, hint:"Enttäuschung"},
-  {q:"'genervt' по-русски:",                                   opts:["уставший","раздражённый","довольный","спокойный"], ans:1, hint:"nerven"},
-  {q:"'endlich' по-русски:",                                   opts:["никогда","наконец","опять","почти"], ans:1, hint:"endlich fertig"},
-  {q:"'das Abitur' — это:",                                    opts:["диплом вуза","аттестат зрелости","рабочая виза","вид на жительство"], ans:1, hint:"Schulabschluss"},
-  {q:"'die Teilzeitarbeit' по-русски:",                        opts:["работа на полный день","работа на неполный день","подработка вечером","стажировка"], ans:1, hint:"Teilzeit"},
-  {q:"'das Flüchtlingsheim' по-русски:",                        opts:["больница","общежитие для беженцев","детский сад","отель"], ans:1, hint:"Flüchtling + Heim"},
-  {q:"'das Studium' по-русски:",                                opts:["диплом","учёба (в вузе)","экзамен","стажировка"], ans:1, hint:"studieren → das Studium"},
-  {q:"'depressiv' по-русски:",                                  opts:["весёлый","в депрессии, подавленный","активный","энергичный"], ans:1, hint:"Depression"},
-  {q:"'der Verein' по-русски:",                                 opts:["объединение, клуб","предприятие","государство","семья"], ans:0, hint:"in einem Verein aktiv sein"},
-  {q:"'vorsprechen' по-русски:",                                opts:["говорить вслух (образец для учеников)","повторять за кем-то","молчать","перебивать"], ans:0, hint:"Der Lehrer soll vorsprechen."},
-  {q:"'nachsprechen' по-русски:",                                opts:["говорить вслух первым","повторять вслух за кем-то","молчать","переспрашивать"], ans:1, hint:"nach + sprechen"},
-  {q:"'ausprobieren' по-русски:",                                opts:["пробовать, испытывать","отказываться","заканчивать","выбрасывать"], ans:0, hint:"neue Sätze ausprobieren"},
-  {q:"'auswendig lernen' означает:",                             opts:["учить наизусть","писать письменно","переводить","повторять вслух"], ans:0, hint:"auswendig"},
-  {q:"'der Fehler' по-русски:",                                  opts:["правило","ошибка","упражнение","произношение"], ans:1, hint:"einen Fehler machen"},
-  {q:"'die Aussprache' по-русски:",                              opts:["письмо","произношение","чтение","перевод"], ans:1, hint:"gute Aussprache haben"},
-  {q:"'Mut haben' означает:",                                    opts:["бояться","иметь смелость","злиться","уставать"], ans:1, hint:"Mut"},
-  {q:"'die Volkshochschule' — это:",                             opts:["школа для детей","курсы допобразования для взрослых","университет","детский сад"], ans:1, hint:"VHS"},
+  {q:"'aufgeben' в контексте 'die Arbeit aufgeben' означает:",qUk:"'aufgeben' в контексте 'die Arbeit aufgeben' означає:", opts:["найти работу","отказаться, сдать (работу)","получить повышение","поменять профессию"],optsUk:["знайти роботу","відмовитися, здати (роботу)","отримати підвищення","змінити професію"], ans:1, hint:"hat aufgegeben"},
+  {q:"'sauber' — антоним к:",qUk:"'sauber' — антонім до:",                                 opts:["schmutzig","modern","laut","alt"], ans:0, hint:"чистый ≠ грязный",hintUk:"чистий ≠ брудний"},
+  {q:"'der Grund' по-русски:",qUk:"'der Grund' українською:",                                opts:["земля","причина","основание (здания)","почва"],optsUk:["земля","причина","фундамент (будівлі)","грунт"], ans:1, hint:"aus diesem Grund"},
+  {q:"'unterschiedlich' по-русски:",qUk:"'unterschiedlich' українською:",                           opts:["одинаковый","разный, различный","похожий","единственный"],optsUk:["однаковий","різний, відмінний","схожий","єдиний"], ans:1, hint:"unterschiedliche Gründe"},
+  {q:"'motivieren' по-русски:",qUk:"'motivieren' українською:",                                opts:["мотивировать","мешать","заставлять силой","разочаровывать"],optsUk:["мотивувати","заважати","примушувати силою","розчаровувати"], ans:0, hint:"motiviert"},
+  {q:"'enttäuscht' по-русски:",qUk:"'enttäuscht' українською:",                                opts:["воодушевлённый","разочарованный","удивлённый","испуганный"],optsUk:["натхненний","розчарований","здивований","зляканий"], ans:1, hint:"Enttäuschung"},
+  {q:"'genervt' по-русски:",qUk:"'genervt' українською:",                                   opts:["уставший","раздражённый","довольный","спокойный"],optsUk:["втомлений","роздратований","задоволений","спокійний"], ans:1, hint:"nerven"},
+  {q:"'endlich' по-русски:",qUk:"'endlich' українською:",                                   opts:["никогда","наконец","опять","почти"],optsUk:["ніколи","нарешті","знову","майже"], ans:1, hint:"endlich fertig"},
+  {q:"'das Abitur' — это:",qUk:"'das Abitur' — це:",                                    opts:["диплом вуза","аттестат зрелости","рабочая виза","вид на жительство"],optsUk:["диплом вишу","атестат зрілості","робоча віза","дозвіл на проживання"], ans:1, hint:"Schulabschluss"},
+  {q:"'die Teilzeitarbeit' по-русски:",qUk:"'die Teilzeitarbeit' українською:",                        opts:["работа на полный день","работа на неполный день","подработка вечером","стажировка"],optsUk:["робота на повний день","робота на неповний день","підробіток увечері","стажування"], ans:1, hint:"Teilzeit"},
+  {q:"'das Flüchtlingsheim' по-русски:",qUk:"'das Flüchtlingsheim' українською:",                        opts:["больница","общежитие для беженцев","детский сад","отель"],optsUk:["лікарня","гуртожиток для біженців","дитячий садок","готель"], ans:1, hint:"Flüchtling + Heim"},
+  {q:"'das Studium' по-русски:",qUk:"'das Studium' українською:",                                opts:["диплом","учёба (в вузе)","экзамен","стажировка"],optsUk:["диплом","навчання (у виші)","екзамен","стажування"], ans:1, hint:"studieren → das Studium"},
+  {q:"'depressiv' по-русски:",qUk:"'depressiv' українською:",                                  opts:["весёлый","в депрессии, подавленный","активный","энергичный"],optsUk:["веселий","у депресії, пригнічений","активний","енергійний"], ans:1, hint:"Depression"},
+  {q:"'der Verein' по-русски:",qUk:"'der Verein' українською:",                                 opts:["объединение, клуб","предприятие","государство","семья"],optsUk:["об'єднання, клуб","підприємство","держава","сім'я"], ans:0, hint:"in einem Verein aktiv sein"},
+  {q:"'vorsprechen' по-русски:",qUk:"'vorsprechen' українською:",                                opts:["говорить вслух (образец для учеников)","повторять за кем-то","молчать","перебивать"],optsUk:["говорити вголос (зразок для учнів)","повторювати за кимось","мовчати","перебивати"], ans:0, hint:"Der Lehrer soll vorsprechen."},
+  {q:"'nachsprechen' по-русски:",qUk:"'nachsprechen' українською:",                                opts:["говорить вслух первым","повторять вслух за кем-то","молчать","переспрашивать"],optsUk:["говорити вголос першим","повторювати вголос за кимось","мовчати","перепитувати"], ans:1, hint:"nach + sprechen"},
+  {q:"'ausprobieren' по-русски:",qUk:"'ausprobieren' українською:",                                opts:["пробовать, испытывать","отказываться","заканчивать","выбрасывать"],optsUk:["пробувати, випробовувати","відмовлятися","закінчувати","викидати"], ans:0, hint:"neue Sätze ausprobieren"},
+  {q:"'auswendig lernen' означает:",qUk:"'auswendig lernen' означає:",                             opts:["учить наизусть","писать письменно","переводить","повторять вслух"],optsUk:["вчити напам'ять","писати письмово","перекладати","повторювати вголос"], ans:0, hint:"auswendig"},
+  {q:"'der Fehler' по-русски:",qUk:"'der Fehler' українською:",                                  opts:["правило","ошибка","упражнение","произношение"],optsUk:["правило","помилка","вправа","вимова"], ans:1, hint:"einen Fehler machen"},
+  {q:"'die Aussprache' по-русски:",qUk:"'die Aussprache' українською:",                              opts:["письмо","произношение","чтение","перевод"],optsUk:["лист","вимова","читання","переклад"], ans:1, hint:"gute Aussprache haben"},
+  {q:"'Mut haben' означает:",qUk:"'Mut haben' означає:",                                    opts:["бояться","иметь смелость","злиться","уставать"],optsUk:["боятися","мати сміливість","злитися","втомлюватися"], ans:1, hint:"Mut"},
+  {q:"'die Volkshochschule' — это:",qUk:"'die Volkshochschule' — це:",                             opts:["школа для детей","курсы допобразования для взрослых","университет","детский сад"],optsUk:["школа для дітей","курси додаткової освіти для дорослих","університет","дитячий садок"], ans:1, hint:"VHS"},
 ]);
 
 const LUECKEN_A2L1=shuffle([
@@ -7899,45 +7899,45 @@ function GrosserTestA2L1(){return <GrosserTestContainer rounds={[
 ]}/>;}
 
 const Q_A2L2TEST=shuffle([
-  {q:"'löschen' по-русски:",                                  opts:["удалять","сохранять","открывать","печатать"], ans:0, hint:"eine Datei löschen"},
-  {q:"'speichern' по-русски:",                                opts:["сохранять","удалять","скачивать","отправлять"], ans:0, hint:"speichert"},
-  {q:"'senden' / 'abschicken' — оба означают:",               opts:["отправлять","получать","удалять","редактировать"], ans:0, hint:"eine E-Mail senden/abschicken"},
-  {q:"'der Anhang' в письме — это:",                          opts:["тема","вложение","подпись","адресат"], ans:1, hint:"eine Datei anhängen"},
-  {q:"'erreichbar sein' означает:",                           opts:["быть на связи, быть доступным","быть занятым","быть в отпуске","быть далеко"], ans:0, hint:"immer erreichbar sein"},
-  {q:"'nützlich' по-русски:",                                 opts:["полезный","бесполезный","опасный","дорогой"], ans:0, hint:"nützlich"},
-  {q:"'die Software' по-русски:",                             opts:["железо (техника)","софт, программное обеспечение","интернет","файл"], ans:1, hint:"Software"},
-  {q:"'die Datei' по-русски:",                                 opts:["папка","файл","программа","диск"], ans:1, hint:"eine Datei speichern"},
-  {q:"'international' по-русски:",                            opts:["местный","международный","национальный","региональный"], ans:1, hint:"international"},
-  {q:"'die Werbung' по-русски:",                               opts:["новости","реклама","прогноз погоды","викторина"], ans:1, hint:"zu viel Werbung"},
-  {q:"'der Wetterbericht' и 'die Verkehrsmeldung' — это:",     opts:["прогноз погоды и сообщение о дорогах","реклама и новости","викторина и сериал","адрес и телефон"], ans:0, hint:"im Radio"},
-  {q:"'dafür' и 'dagegen' означают:",                          opts:["за и против","до и после","здесь и там","сейчас и потом"], ans:0, hint:"Ich bin dafür/dagegen"},
-  {q:"'leise' — антоним к:",                                   opts:["laut","schnell","hell","warm"], ans:0, hint:"leise ≠ laut"},
-  {q:"'der Drucker' по-русски:",                               opts:["принтер","сканер","монитор","компьютер"], ans:0, hint:"einen Text drucken"},
-  {q:"'der Bildschirm' по-русски:",                            opts:["клавиатура","экран, монитор","мышь","кабель"], ans:1, hint:"Bildschirm"},
-  {q:"'die Tastatur' по-русски:",                              opts:["клавиатура","мышь","экран","флешка"], ans:0, hint:"Tastatur"},
-  {q:"'die Maus' (компьютерная) по-русски:",                   opts:["мышь","клавиатура","дисковод","кабель"], ans:0, hint:"die Maus"},
-  {q:"'herunterladen' по-русски:",                             opts:["скачивать","загружать (в облако)","удалять","открывать"], ans:0, hint:"eine App herunterladen"},
-  {q:"'scannen' по-русски:",                                    opts:["печатать","сканировать","копировать","редактировать"], ans:1, hint:"einen Text scannen"},
-  {q:"'anschließen' по-русски:",                                opts:["подключать (кабель)","отключать","чинить","заряжать"], ans:0, hint:"ein Kabel anschließen"},
-  {q:"'eintragen' по-русски:",                                  opts:["записывать (в календарь)","стирать","печатать","сканировать"], ans:0, hint:"einen Termin eintragen"},
-  {q:"'bearbeiten' по-русски:",                                 opts:["редактировать, обрабатывать","удалять","печатать","отправлять"], ans:0, hint:"Bilder bearbeiten"},
-  {q:"'zuhören' (+Dativ) по-русски:",                       opts:["слушать (кого-л.)","допрашивать","прослушивать","звучать"], ans:0, hint:"zuhören"},
-  {q:"'abhören' по-русски:",                                 opts:["слушать","прослушивать (запись/разговор)","допрашивать","звучать"], ans:1, hint:"abhören"},
-  {q:"'sich anhören' по-русски:",                            opts:["слушать себя","звучать, восприниматься на слух","допрашивать себя","записывать"], ans:1, hint:"Das hört sich gut an."},
-  {q:"'zustimmen' по-русски:",                                opts:["соглашаться","спорить","отказываться","молчать"], ans:0, hint:"zustimmen"},
-  {q:"'blind' / 'taub' / 'stumm' — это:",                     opts:["слепой / глухой / немой","умный / глупый / хитрый","весёлый / грустный / злой","быстрый / медленный / тихий"], ans:0, hint:"körperliche Einschränkungen"},
-  {q:"'genießen' по-русски:",                                 opts:["терпеть","наслаждаться","избегать","бояться"], ans:1, hint:"genießt · genoss · hat genossen"},
-  {q:"'passieren' по-русски:",                                opts:["проезжать","случаться","пропускать","проходить мимо"], ans:1, hint:"ist passiert"},
-  {q:"'die Tonaufnahme' по-русски:",                          opts:["звукозапись","телепередача","радиостанция","наушники"], ans:0, hint:"Ton + Aufnahme"},
-  {q:"'vermissen' по-русски:",                                opts:["скучать (по кому-л.)","встречать","забывать","находить"], ans:0, hint:"Ich vermisse dich."},
-  {q:"'sich lohnen' по-русски:",                              opts:["окупаться, стоить того","терять смысл","стоить дорого","экономить"], ans:0, hint:"Das lohnt sich."},
-  {q:"'der Lohn' по-русски:",                                 opts:["зарплата","штраф","долг","налог"], ans:0, hint:"der Lohn"},
-  {q:"'die Angewohnheit' по-русски:",                         opts:["привычка","обычай","традиция","правило"], ans:0, hint:"eine Angewohnheit haben"},
-  {q:"'ab und zu' по-русски:",                                opts:["всегда","никогда","время от времени","редко"], ans:2, hint:"ab und zu"},
-  {q:"'die Qualität' по-русски:",                             opts:["количество","качество","цена","размер"], ans:1, hint:"Qualität"},
-  {q:"'hart' — сравнительная степень:",                        opts:["harter","härter","hartier","am hartesten"], ans:1, hint:"a→ä"},
-  {q:"'chatten' по-русски:",                                    opts:["звонить","общаться в чате","писать письмо","читать новости"], ans:1, hint:"mit Freunden chatten"},
-  {q:"'recherchieren' по-русски:",                               opts:["сохранять","искать информацию, исследовать","распечатывать","удалять"], ans:1, hint:"im Internet recherchieren"},
+  {q:"'löschen' по-русски:",qUk:"'löschen' українською:",                                  opts:["удалять","сохранять","открывать","печатать"],optsUk:["видаляти","зберігати","відкривати","друкувати"], ans:0, hint:"eine Datei löschen"},
+  {q:"'speichern' по-русски:",qUk:"'speichern' українською:",                                opts:["сохранять","удалять","скачивать","отправлять"],optsUk:["зберігати","видаляти","завантажувати","відправляти"], ans:0, hint:"speichert"},
+  {q:"'senden' / 'abschicken' — оба означают:",qUk:"'senden' / 'abschicken' — обидва означають:",               opts:["отправлять","получать","удалять","редактировать"],optsUk:["відправляти","отримувати","видаляти","редагувати"], ans:0, hint:"eine E-Mail senden/abschicken"},
+  {q:"'der Anhang' в письме — это:",qUk:"'der Anhang' в письме — це:",                          opts:["тема","вложение","подпись","адресат"],optsUk:["тема","вкладення","підпис","адресат"], ans:1, hint:"eine Datei anhängen"},
+  {q:"'erreichbar sein' означает:",qUk:"'erreichbar sein' означає:",                           opts:["быть на связи, быть доступным","быть занятым","быть в отпуске","быть далеко"],optsUk:["бути на зв'язку, бути доступним","бути зайнятим","бути у відпустці","бути далеко"], ans:0, hint:"immer erreichbar sein"},
+  {q:"'nützlich' по-русски:",qUk:"'nützlich' українською:",                                 opts:["полезный","бесполезный","опасный","дорогой"],optsUk:["корисний","некорисний","небезпечний","дорогий"], ans:0, hint:"nützlich"},
+  {q:"'die Software' по-русски:",qUk:"'die Software' українською:",                             opts:["железо (техника)","софт, программное обеспечение","интернет","файл"],optsUk:["залізо (техніка)","софт, програмне забезпечення","інтернет","файл"], ans:1, hint:"Software"},
+  {q:"'die Datei' по-русски:",qUk:"'die Datei' українською:",                                 opts:["папка","файл","программа","диск"],optsUk:["папка","файл","програма","диск"], ans:1, hint:"eine Datei speichern"},
+  {q:"'international' по-русски:",qUk:"'international' українською:",                            opts:["местный","международный","национальный","региональный"],optsUk:["місцевий","міжнародний","національний","регіональний"], ans:1, hint:"international"},
+  {q:"'die Werbung' по-русски:",qUk:"'die Werbung' українською:",                               opts:["новости","реклама","прогноз погоды","викторина"],optsUk:["новини","реклама","прогноз погоди","вікторина"], ans:1, hint:"zu viel Werbung"},
+  {q:"'der Wetterbericht' и 'die Verkehrsmeldung' — это:",qUk:"'der Wetterbericht' и 'die Verkehrsmeldung' — це:",     opts:["прогноз погоды и сообщение о дорогах","реклама и новости","викторина и сериал","адрес и телефон"],optsUk:["прогноз погоди і повідомлення про дороги","реклама і новини","вікторина і серіал","адреса і телефон"], ans:0, hint:"im Radio"},
+  {q:"'dafür' и 'dagegen' означают:",qUk:"'dafür' і 'dagegen' означають:",                          opts:["за и против","до и после","здесь и там","сейчас и потом"],optsUk:["за і проти","до і після","тут і там","зараз і потім"], ans:0, hint:"Ich bin dafür/dagegen"},
+  {q:"'leise' — антоним к:",qUk:"'leise' — антонім до:",                                   opts:["laut","schnell","hell","warm"], ans:0, hint:"leise ≠ laut"},
+  {q:"'der Drucker' по-русски:",qUk:"'der Drucker' українською:",                               opts:["принтер","сканер","монитор","компьютер"],optsUk:["принтер","сканер","монітор","комп'ютер"], ans:0, hint:"einen Text drucken"},
+  {q:"'der Bildschirm' по-русски:",qUk:"'der Bildschirm' українською:",                            opts:["клавиатура","экран, монитор","мышь","кабель"],optsUk:["клавіатура","екран, монітор","миша","кабель"], ans:1, hint:"Bildschirm"},
+  {q:"'die Tastatur' по-русски:",qUk:"'die Tastatur' українською:",                              opts:["клавиатура","мышь","экран","флешка"],optsUk:["клавіатура","миша","екран","флешка"], ans:0, hint:"Tastatur"},
+  {q:"'die Maus' (компьютерная) по-русски:",qUk:"'die Maus' (компьютерная) українською:",                   opts:["мышь","клавиатура","дисковод","кабель"],optsUk:["миша","клавіатура","дисковод","кабель"], ans:0, hint:"die Maus"},
+  {q:"'herunterladen' по-русски:",qUk:"'herunterladen' українською:",                             opts:["скачивать","загружать (в облако)","удалять","открывать"],optsUk:["завантажувати","завантажувати (в хмару)","видаляти","відкривати"], ans:0, hint:"eine App herunterladen"},
+  {q:"'scannen' по-русски:",qUk:"'scannen' українською:",                                    opts:["печатать","сканировать","копировать","редактировать"],optsUk:["друкувати","сканувати","копіювати","редагувати"], ans:1, hint:"einen Text scannen"},
+  {q:"'anschließen' по-русски:",qUk:"'anschließen' українською:",                                opts:["подключать (кабель)","отключать","чинить","заряжать"],optsUk:["підключати (кабель)","вимикати","ремонтувати","заряджати"], ans:0, hint:"ein Kabel anschließen"},
+  {q:"'eintragen' по-русски:",qUk:"'eintragen' українською:",                                  opts:["записывать (в календарь)","стирать","печатать","сканировать"],optsUk:["записувати (в календар)","прати","друкувати","сканувати"], ans:0, hint:"einen Termin eintragen"},
+  {q:"'bearbeiten' по-русски:",qUk:"'bearbeiten' українською:",                                 opts:["редактировать, обрабатывать","удалять","печатать","отправлять"],optsUk:["редагувати, обробляти","видаляти","друкувати","відправляти"], ans:0, hint:"Bilder bearbeiten"},
+  {q:"'zuhören' (+Dativ) по-русски:",qUk:"'zuhören' (+Dativ) українською:",                       opts:["слушать (кого-л.)","допрашивать","прослушивать","звучать"],optsUk:["слухати (когось)","допитувати","прослуховувати","звучати"], ans:0, hint:"zuhören"},
+  {q:"'abhören' по-русски:",qUk:"'abhören' українською:",                                 opts:["слушать","прослушивать (запись/разговор)","допрашивать","звучать"],optsUk:["слухати","прослуховувати (запис/розмову)","допитувати","звучати"], ans:1, hint:"abhören"},
+  {q:"'sich anhören' по-русски:",qUk:"'sich anhören' українською:",                            opts:["слушать себя","звучать, восприниматься на слух","допрашивать себя","записывать"],optsUk:["слухати себе","звучати, сприйматися на слух","запитувати себе","записувати"], ans:1, hint:"Das hört sich gut an."},
+  {q:"'zustimmen' по-русски:",qUk:"'zustimmen' українською:",                                opts:["соглашаться","спорить","отказываться","молчать"],optsUk:["погоджуватися","сперечатися","відмовлятися","мовчати"], ans:0, hint:"zustimmen"},
+  {q:"'blind' / 'taub' / 'stumm' — это:",qUk:"'blind' / 'taub' / 'stumm' — це:",                     opts:["слепой / глухой / немой","умный / глупый / хитрый","весёлый / грустный / злой","быстрый / медленный / тихий"],optsUk:["слiпий / глухий / німий","умний / глупий / хитрий","веселий / сумний / злий","швидкий / повільний / тихий"], ans:0, hint:"körperliche Einschränkungen"},
+  {q:"'genießen' по-русски:",qUk:"'genießen' українською:",                                 opts:["терпеть","наслаждаться","избегать","бояться"],optsUk:["терпіти","насолоджуватися","уникати","боятися"], ans:1, hint:"genießt · genoss · hat genossen"},
+  {q:"'passieren' по-русски:",qUk:"'passieren' українською:",                                opts:["проезжать","случаться","пропускать","проходить мимо"],optsUk:["проїжджати","траплятися","пропускати","проходити повз"], ans:1, hint:"ist passiert"},
+  {q:"'die Tonaufnahme' по-русски:",qUk:"'die Tonaufnahme' українською:",                          opts:["звукозапись","телепередача","радиостанция","наушники"],optsUk:["звукозапис","телепередача","радіостанція","навушники"], ans:0, hint:"Ton + Aufnahme"},
+  {q:"'vermissen' по-русски:",qUk:"'vermissen' українською:",                                opts:["скучать (по кому-л.)","встречать","забывать","находить"],optsUk:["сумувати (за кимось)","зустрічати","забувати","знаходити"], ans:0, hint:"Ich vermisse dich."},
+  {q:"'sich lohnen' по-русски:",qUk:"'sich lohnen' українською:",                              opts:["окупаться, стоить того","терять смысл","стоить дорого","экономить"],optsUk:["окупатися, бути вартим того","втрачати сенс","коштувати дорого","економити"], ans:0, hint:"Das lohnt sich."},
+  {q:"'der Lohn' по-русски:",qUk:"'der Lohn' українською:",                                 opts:["зарплата","штраф","долг","налог"],optsUk:["зарплата","штраф","борг","податок"], ans:0, hint:"der Lohn"},
+  {q:"'die Angewohnheit' по-русски:",qUk:"'die Angewohnheit' українською:",                         opts:["привычка","обычай","традиция","правило"],optsUk:["звичка","звичай","традиція","правило"], ans:0, hint:"eine Angewohnheit haben"},
+  {q:"'ab und zu' по-русски:",qUk:"'ab und zu' українською:",                                opts:["всегда","никогда","время от времени","редко"],optsUk:["завжди","ніколи","час від часу","рідко"], ans:2, hint:"ab und zu"},
+  {q:"'die Qualität' по-русски:",qUk:"'die Qualität' українською:",                             opts:["количество","качество","цена","размер"],optsUk:["кількість","якість","ціна","розмір"], ans:1, hint:"Qualität"},
+  {q:"'hart' — сравнительная степень:",qUk:"'hart' — порівняльний ступінь:",                        opts:["harter","härter","hartier","am hartesten"], ans:1, hint:"a→ä"},
+  {q:"'chatten' по-русски:",qUk:"'chatten' українською:",                                    opts:["звонить","общаться в чате","писать письмо","читать новости"],optsUk:["телефонувати","спілкуватися в чаті","писати листа","читати новини"], ans:1, hint:"mit Freunden chatten"},
+  {q:"'recherchieren' по-русски:",qUk:"'recherchieren' українською:",                               opts:["сохранять","искать информацию, исследовать","распечатывать","удалять"],optsUk:["зберігати","шукати інформацію, досліджувати","роздруковувати","видаляти"], ans:1, hint:"im Internet recherchieren"},
   {q:"'Schüler brauchen oft Internet, weil sie Informationen für die Schule ___.'",opts:["recherchieren","recherchiert","recherchierst","recherchierte"],ans:0,hint:"weil + Verb am Ende, Präsens"},
   {q:"'Viele Leute haben mobiles Internet, weil es sehr praktisch ___.'",opts:["ist","sind","war","sein"],ans:0,hint:"sein → ist"},
 ]);
@@ -8003,49 +8003,49 @@ function GrosserTestA2L2(){return <GrosserTestContainer rounds={[
 ]}/>;}
 
 const Q_A2L3TEST=shuffle([
-  {q:"'der Rand' по-русски:",                            opts:["край, окраина","центр","середина","угол"], ans:0, hint:"Rand"},
-  {q:"'verzichten' (auf+Akk) по-русски:",                 opts:["отказываться (от чего-л.)","требовать","получать","предлагать"], ans:0, hint:"verzichten auf"},
-  {q:"'entstehen' по-русски:",                             opts:["исчезать","возникать","разрушаться","заканчиваться"], ans:1, hint:"ist entstanden"},
-  {q:"'vorbeigehen an' (+Dativ) по-русски:",               opts:["заходить внутрь","проходить мимо","останавливаться перед","возвращаться к"], ans:1, hint:"vorbeigehen"},
-  {q:"'plötzlich' по-русски:",                             opts:["наконец","вдруг, внезапно","обычно","постепенно"], ans:1, hint:"plötzlich ist der Himmel dunkel geworden"},
-  {q:"'der Brunnen' по-русски:",                           opts:["фонтан, колодец","пруд","бассейн","ручей"], ans:0, hint:"Brunnen"},
-  {q:"'der Teich' по-русски:",                             opts:["фонтан","пруд","озеро","река"], ans:1, hint:"Teich"},
-  {q:"'sich befinden' по-русски:",                         opts:["находиться","искать","строить","переезжать"], ans:0, hint:"befindet sich"},
-  {q:"'wertvoll' по-русски:",                              opts:["дешёвый","ценный","бесполезный","старый"], ans:1, hint:"wertvoll"},
-  {q:"'anstehen' по-русски:",                              opts:["стоять в очереди","сидеть","лежать","убегать"], ans:0, hint:"an der Kasse anstehen"},
-  {q:"'süchtig' / 'die Sucht' — это:",                     opts:["зависимый / зависимость","здоровый / здоровье","активный / активность","умный / ум"], ans:0, hint:"süchtig sein"},
-  {q:"'sich immatrikulieren' по-русски:",                  opts:["записываться в вуз","заканчивать вуз","преподавать в вузе","поступать в школу"], ans:0, hint:"an der Universität"},
-  {q:"'fördern' по-русски:",                                opts:["мешать","способствовать, поддерживать","запрещать","игнорировать"], ans:1, hint:"fördert"},
-  {q:"'übermorgen' по-русски:",                             opts:["позавчера","завтра","послезавтра","на следующей неделе"], ans:2, hint:"übermorgen"},
-  {q:"'ehemalig' по-русски:",                               opts:["нынешний","будущий","бывший","временный"], ans:2, hint:"ehemaliger Schüler"},
-  {q:"'meistens' по-русски:",                               opts:["иногда","никогда","чаще всего, обычно","редко"], ans:2, hint:"meistens"},
-  {q:"'bügeln' по-русски:",                                 opts:["стирать","гладить (утюгом)","сушить","штопать"], ans:1, hint:"bügeln"},
-  {q:"'die Schwiegereltern' по-русски:",                    opts:["бабушка и дедушка","родители супруга/супруги","приёмные родители","соседи"], ans:1, hint:"Schwieger-"},
-  {q:"'verkosten' по-русски:",opts:["дегустировать, пробовать","готовить","заказывать","подавать"],ans:0,hint:"verkostet"},
-  {q:"'köstlich' и 'erlesen' — синонимы к:",opts:["очень вкусный/изысканный","очень дешёвый","очень острый","очень большой"],ans:0,hint:"das Essen war köstlich"},
-  {q:"'zufrieden' по-русски:",opts:["довольный","голодный","злой","уставший"],ans:0,hint:"Waren Sie zufrieden?"},
-  {q:"'die Kohlensäure' по-русски:",opts:["углекислый газ (в напитке)","сахар","алкоголь","витамины"],ans:0,hint:"mit/ohne Kohlensäure"},
-  {q:"'das Kartenlesegerät' по-русски:",opts:["терминал для карт","банкомат","кассовый аппарат","сейф"],ans:0,hint:"mit Karte bezahlen"},
-  {q:"'streichen' (стены) по-русски:",opts:["красить","мыть","чинить","строить"],ans:0,hint:"strich · hat gestrichen"},
-  {q:"'der Mitbewohner' / 'die Mitbewohnerin' по-русски:",opts:["сосед/соседка по квартире","хозяин/хозяйка квартиры","гость/гостья","родственник/родственница"],ans:0,hint:"Mitbewohner"},
-  {q:"'vorbereiten' по-русски:",opts:["готовить, подготавливать заранее","убирать","заказывать","чинить"],ans:0,hint:"bereitet vor · hat vorbereitet"},
-  {q:"'annehmen' по-русски:",opts:["принимать; полагать","отказываться","терять","дарить"],ans:0,hint:"nimmt an · hat angenommen"},
-  {q:"'der Pflegedienst' по-русски:",opts:["служба ухода (на дому)","детский сад","поликлиника","аптека"],ans:0,hint:"Pflegedienst"},
-  {q:"'den Haushalt machen' по-русски:",opts:["вести домашнее хозяйство","делать покупки","ходить на работу","готовить обед"],ans:0,hint:"der Haushalt"},
-  {q:"'die Reparatur' по-русски:",opts:["покупка","ремонт","уборка","доставка"],ans:1,hint:"Reparatur"},
-  {q:"'berichten' по-русски:",opts:["спрашивать","сообщать, докладывать","молчать","обещать"],ans:1,hint:"berichtet"},
-  {q:"'Hier ist viel los.' означает:",opts:["здесь тихо и пусто","здесь много всего происходит, оживлённо","здесь опасно","здесь дорого"],ans:1,hint:"viel los sein"},
-  {q:"'durcheinander' по-русски:",opts:["по порядку","вперемешку, в беспорядке","аккуратно","медленно"],ans:1,hint:"durcheinander"},
-  {q:"'der Sonnenschirm' по-русски:",opts:["зонт от солнца","солнцезащитные очки","крем от загара","шляпа"],ans:0,hint:"Sonnenschirm"},
-  {q:"'fallen' по-русски:",opts:["вставать","падать","бежать","прыгать"],ans:1,hint:"fällt · ist gefallen"},
-  {q:"'das Chaos' по-русски:",opts:["порядок","хаос","план","система"],ans:1,hint:"Chaos"},
-  {q:"'schade' по-русски:",opts:["жаль","отлично","всё равно","опасно"],ans:0,hint:"Schade!"},
-  {q:"'sicher' / 'ganz sicher' по-русски:",opts:["уверенный / совершенно точно","грустный / совсем немного","быстрый / очень быстро","злой / очень зло"],ans:0,hint:"sicher"},
-  {q:"'typisch' по-русски:",opts:["редкий","типичный","новый","странный"],ans:1,hint:"typisch für"},
-  {q:"'reservieren' по-русски:",opts:["резервировать, бронировать","отменять","искать","закрывать"],ans:0,hint:"einen Tisch reservieren"},
-  {q:"'Stimmt so.' означает:",opts:["сдачи не нужно, оставьте себе","это неправильно","повторите, пожалуйста","дайте счёт"],ans:0,hint:"stimmen"},
-  {q:"'das Trinkgeld' по-русски:",opts:["чаевые","напиток","счёт","заказ"],ans:0,hint:"Trinkgeld geben"},
-  {q:"'die Speisekarte' по-русски:",opts:["меню","счёт","рецепт","чек"],ans:0,hint:"Die Speisekarte, bitte."},
+  {q:"'der Rand' по-русски:",qUk:"'der Rand' українською:",                            opts:["край, окраина","центр","середина","угол"],optsUk:["край, околиця","центр","середина","кут"], ans:0, hint:"Rand"},
+  {q:"'verzichten' (auf+Akk) по-русски:",qUk:"'verzichten' (auf+Akk) українською:",                 opts:["отказываться (от чего-л.)","требовать","получать","предлагать"],optsUk:["відмовлятися (від чогось)","вимагати","отримувати","пропонувати"], ans:0, hint:"verzichten auf"},
+  {q:"'entstehen' по-русски:",qUk:"'entstehen' українською:",                             opts:["исчезать","возникать","разрушаться","заканчиваться"],optsUk:["зникати","виникати","руйнуватися","закінчуватися"], ans:1, hint:"ist entstanden"},
+  {q:"'vorbeigehen an' (+Dativ) по-русски:",qUk:"'vorbeigehen an' (+Dativ) українською:",               opts:["заходить внутрь","проходить мимо","останавливаться перед","возвращаться к"],optsUk:["заходити всередину","проходити повз","зупинятися перед","повертатися до"], ans:1, hint:"vorbeigehen"},
+  {q:"'plötzlich' по-русски:",qUk:"'plötzlich' українською:",                             opts:["наконец","вдруг, внезапно","обычно","постепенно"],optsUk:["нарешті","раптом, несподівано","зазвичай","поступово"], ans:1, hint:"plötzlich ist der Himmel dunkel geworden"},
+  {q:"'der Brunnen' по-русски:",qUk:"'der Brunnen' українською:",                           opts:["фонтан, колодец","пруд","бассейн","ручей"],optsUk:["фонтан, криниця","ставок","басейн","струмок"], ans:0, hint:"Brunnen"},
+  {q:"'der Teich' по-русски:",qUk:"'der Teich' українською:",                             opts:["фонтан","пруд","озеро","река"],optsUk:["фонтан","ставок","озеро","річка"], ans:1, hint:"Teich"},
+  {q:"'sich befinden' по-русски:",qUk:"'sich befinden' українською:",                         opts:["находиться","искать","строить","переезжать"],optsUk:["знаходитися","шукати","будувати","переїжджати"], ans:0, hint:"befindet sich"},
+  {q:"'wertvoll' по-русски:",qUk:"'wertvoll' українською:",                              opts:["дешёвый","ценный","бесполезный","старый"],optsUk:["дешевий","цінний","некорисний","старий"], ans:1, hint:"wertvoll"},
+  {q:"'anstehen' по-русски:",qUk:"'anstehen' українською:",                              opts:["стоять в очереди","сидеть","лежать","убегать"],optsUk:["стояти в черзі","сидіти","лежати","тікати"], ans:0, hint:"an der Kasse anstehen"},
+  {q:"'süchtig' / 'die Sucht' — это:",qUk:"'süchtig' / 'die Sucht' — це:",                     opts:["зависимый / зависимость","здоровый / здоровье","активный / активность","умный / ум"],optsUk:["залежний / залежність","здоровий / здоров'я","активний / активність","умний / розум"], ans:0, hint:"süchtig sein"},
+  {q:"'sich immatrikulieren' по-русски:",qUk:"'sich immatrikulieren' українською:",                  opts:["записываться в вуз","заканчивать вуз","преподавать в вузе","поступать в школу"],optsUk:["записуватися до вишу","закінчувати виш","викладати у виші","вступати до школи"], ans:0, hint:"an der Universität"},
+  {q:"'fördern' по-русски:",qUk:"'fördern' українською:",                                opts:["мешать","способствовать, поддерживать","запрещать","игнорировать"],optsUk:["заважати","сприяти, підтримувати","забороняти","ігнорувати"], ans:1, hint:"fördert"},
+  {q:"'übermorgen' по-русски:",qUk:"'übermorgen' українською:",                             opts:["позавчера","завтра","послезавтра","на следующей неделе"],optsUk:["позавчора","завтра","післязавтра","наступного тижня"], ans:2, hint:"übermorgen"},
+  {q:"'ehemalig' по-русски:",qUk:"'ehemalig' українською:",                               opts:["нынешний","будущий","бывший","временный"],optsUk:["теперішній","майбутній","колишній","тимчасовий"], ans:2, hint:"ehemaliger Schüler"},
+  {q:"'meistens' по-русски:",qUk:"'meistens' українською:",                               opts:["иногда","никогда","чаще всего, обычно","редко"],optsUk:["іноді","ніколи","найчастіше, зазвичай","рідко"], ans:2, hint:"meistens"},
+  {q:"'bügeln' по-русски:",qUk:"'bügeln' українською:",                                 opts:["стирать","гладить (утюгом)","сушить","штопать"],optsUk:["прати","прасувати (утюгом)","сушити","латати"], ans:1, hint:"bügeln"},
+  {q:"'die Schwiegereltern' по-русски:",qUk:"'die Schwiegereltern' українською:",                    opts:["бабушка и дедушка","родители супруга/супруги","приёмные родители","соседи"],optsUk:["бабуся і дідусь","батьки чоловіка/дружини","прийомні батьки","сусіди"], ans:1, hint:"Schwieger-"},
+  {q:"'verkosten' по-русски:",qUk:"'verkosten' українською:",opts:["дегустировать, пробовать","готовить","заказывать","подавать"],optsUk:["дегустувати, пробувати","готувати","замовляти","подавати"],ans:0,hint:"verkostet"},
+  {q:"'köstlich' и 'erlesen' — синонимы к:",qUk:"'köstlich' і 'erlesen' — синоніми до:",opts:["очень вкусный/изысканный","очень дешёвый","очень острый","очень большой"],optsUk:["дуже смачний/вишуканий","дуже дешевий","дуже гострий","дуже великий"],ans:0,hint:"das Essen war köstlich"},
+  {q:"'zufrieden' по-русски:",qUk:"'zufrieden' українською:",opts:["довольный","голодный","злой","уставший"],optsUk:["задоволений","голодний","злий","втомлений"],ans:0,hint:"Waren Sie zufrieden?"},
+  {q:"'die Kohlensäure' по-русски:",qUk:"'die Kohlensäure' українською:",opts:["углекислый газ (в напитке)","сахар","алкоголь","витамины"],optsUk:["вуглекислий газ (у напої)","цукор","алкоголь","вітаміни"],ans:0,hint:"mit/ohne Kohlensäure"},
+  {q:"'das Kartenlesegerät' по-русски:",qUk:"'das Kartenlesegerät' українською:",opts:["терминал для карт","банкомат","кассовый аппарат","сейф"],optsUk:["термінал для карток","банкомат","касовий апарат","сейф"],ans:0,hint:"mit Karte bezahlen"},
+  {q:"'streichen' (стены) по-русски:",qUk:"'streichen' (стены) українською:",opts:["красить","мыть","чинить","строить"],optsUk:["фарбувати","мити","ремонтувати","будувати"],ans:0,hint:"strich · hat gestrichen"},
+  {q:"'der Mitbewohner' / 'die Mitbewohnerin' по-русски:",qUk:"'der Mitbewohner' / 'die Mitbewohnerin' українською:",opts:["сосед/соседка по квартире","хозяин/хозяйка квартиры","гость/гостья","родственник/родственница"],optsUk:["сусід/сусідка по квартирі","господар/господиня квартири","гість/гостя","родич/родичка"],ans:0,hint:"Mitbewohner"},
+  {q:"'vorbereiten' по-русски:",qUk:"'vorbereiten' українською:",opts:["готовить, подготавливать заранее","убирать","заказывать","чинить"],optsUk:["готувати, готуватися заздалегідь","прибирати","замовляти","ремонтувати"],ans:0,hint:"bereitet vor · hat vorbereitet"},
+  {q:"'annehmen' по-русски:",qUk:"'annehmen' українською:",opts:["принимать; полагать","отказываться","терять","дарить"],optsUk:["приймати; вважати","відмовлятися","втрачати","дарувати"],ans:0,hint:"nimmt an · hat angenommen"},
+  {q:"'der Pflegedienst' по-русски:",qUk:"'der Pflegedienst' українською:",opts:["служба ухода (на дому)","детский сад","поликлиника","аптека"],optsUk:["служба догляду (вдома)","дитячий садок","поліклініка","аптека"],ans:0,hint:"Pflegedienst"},
+  {q:"'den Haushalt machen' по-русски:",qUk:"'den Haushalt machen' українською:",opts:["вести домашнее хозяйство","делать покупки","ходить на работу","готовить обед"],optsUk:["вести домашнє господарство","робити покупки","ходити на роботу","готувати обід"],ans:0,hint:"der Haushalt"},
+  {q:"'die Reparatur' по-русски:",qUk:"'die Reparatur' українською:",opts:["покупка","ремонт","уборка","доставка"],optsUk:["покупка","ремонт","прибирання","доставка"],ans:1,hint:"Reparatur"},
+  {q:"'berichten' по-русски:",qUk:"'berichten' українською:",opts:["спрашивать","сообщать, докладывать","молчать","обещать"],optsUk:["питати","повідомляти, доповідати","мовчати","обіцяти"],ans:1,hint:"berichtet"},
+  {q:"'Hier ist viel los.' означает:",qUk:"'Hier ist viel los.' означає:",opts:["здесь тихо и пусто","здесь много всего происходит, оживлённо","здесь опасно","здесь дорого"],optsUk:["тут тихо і порожньо","тут багато що відбувається, жваво","тут небезпечно","тут дорого"],ans:1,hint:"viel los sein"},
+  {q:"'durcheinander' по-русски:",qUk:"'durcheinander' українською:",opts:["по порядку","вперемешку, в беспорядке","аккуратно","медленно"],optsUk:["по порядку","упереміш, в безладі","охайно","повільно"],ans:1,hint:"durcheinander"},
+  {q:"'der Sonnenschirm' по-русски:",qUk:"'der Sonnenschirm' українською:",opts:["зонт от солнца","солнцезащитные очки","крем от загара","шляпа"],optsUk:["парасолька від сонця","сонцезахисні окуляри","крем від загару","капелюх"],ans:0,hint:"Sonnenschirm"},
+  {q:"'fallen' по-русски:",qUk:"'fallen' українською:",opts:["вставать","падать","бежать","прыгать"],optsUk:["вставати","падати","бігти","стрибати"],ans:1,hint:"fällt · ist gefallen"},
+  {q:"'das Chaos' по-русски:",qUk:"'das Chaos' українською:",opts:["порядок","хаос","план","система"],optsUk:["порядок","хаос","план","система"],ans:1,hint:"Chaos"},
+  {q:"'schade' по-русски:",qUk:"'schade' українською:",opts:["жаль","отлично","всё равно","опасно"],optsUk:["шкода","відмінно","все одно","небезпечно"],ans:0,hint:"Schade!"},
+  {q:"'sicher' / 'ganz sicher' по-русски:",qUk:"'sicher' / 'ganz sicher' українською:",opts:["уверенный / совершенно точно","грустный / совсем немного","быстрый / очень быстро","злой / очень зло"],optsUk:["впевнений / абсолютно точно","сумний / зовсім небагато","швидкий / дуже швидко","злий / дуже зло"],ans:0,hint:"sicher"},
+  {q:"'typisch' по-русски:",qUk:"'typisch' українською:",opts:["редкий","типичный","новый","странный"],optsUk:["рідкий","типовий","новий","дивний"],ans:1,hint:"typisch für"},
+  {q:"'reservieren' по-русски:",qUk:"'reservieren' українською:",opts:["резервировать, бронировать","отменять","искать","закрывать"],optsUk:["резервувати, бронювати","відміняти","шукати","закривати"],ans:0,hint:"einen Tisch reservieren"},
+  {q:"'Stimmt so.' означает:",qUk:"'Stimmt so.' означає:",opts:["сдачи не нужно, оставьте себе","это неправильно","повторите, пожалуйста","дайте счёт"],optsUk:["решти не потрібно, залиште собі","це неправильно","повторіть, будь ласка","дайте рахунок"],ans:0,hint:"stimmen"},
+  {q:"'das Trinkgeld' по-русски:",qUk:"'das Trinkgeld' українською:",opts:["чаевые","напиток","счёт","заказ"],optsUk:["чайові","напій","рахунок","замовлення"],ans:0,hint:"Trinkgeld geben"},
+  {q:"'die Speisekarte' по-русски:",qUk:"'die Speisekarte' українською:",opts:["меню","счёт","рецепт","чек"],optsUk:["меню","рахунок","рецепт","чек"],ans:0,hint:"Die Speisekarte, bitte."},
 ]);
 
 const LUECKEN_A2L3=shuffle([
@@ -8146,58 +8146,58 @@ function GrosserTestA2L3(){return <GrosserTestContainer rounds={[
 ]}/>;}
 
 const Q_A2L4TEST=shuffle([
-  {q:"'die Mathematik' по-русски:",opts:["математика","физика","химия","биология"],ans:0,hint:"Mathe"},
-  {q:"'die Physik' по-русски:",opts:["химия","физика","биология","история"],ans:1,hint:"Physik"},
-  {q:"'die Chemie' по-русски:",opts:["химия","физика","география","искусство"],ans:0,hint:"Chemie"},
-  {q:"'die Biologie' по-русски:",opts:["биология","физика","химия","математика"],ans:0,hint:"Biologie"},
-  {q:"'die Kunst' (школьный предмет) по-русски:",opts:["искусство","музыка","спорт","труд"],ans:0,hint:"Kunst"},
-  {q:"'die Erdkunde' по-русски:",opts:["история","география","биология","физика"],ans:1,hint:"Erdkunde"},
-  {q:"'die Grundschule' по-русски:",opts:["начальная школа","гимназия","профучилище","университет"],ans:0,hint:"1.-4. Klasse"},
-  {q:"'die Förderschule' по-русски:",opts:["коррекционная школа","реальное училище","гимназия","вуз"],ans:0,hint:"besondere Bedürfnisse"},
-  {q:"'die Realschule' по-русски:",opts:["реальное училище (5-10 класс)","начальная школа","коррекционная школа","университет"],ans:0,hint:"→ Mittlerer Schulabschluss"},
-  {q:"'die Gesamtschule' по-русски:",opts:["общеобразовательная (комплексная) школа","начальная школа","профучилище","детский сад"],ans:0,hint:"Gesamtschule"},
-  {q:"'das Gymnasium' по-русски:",opts:["гимназия","профучилище","начальная школа","детский сад"],ans:0,hint:"→ Abitur"},
-  {q:"'die Berufsschule' по-русски:",opts:["профессиональное училище","университет","гимназия","детский сад"],ans:0,hint:"Ausbildung"},
-  {q:"'die Fachhochschule' по-русски:",opts:["университет прикладных наук","обычный университет","профучилище","гимназия"],ans:0,hint:"braucht Fachabitur/Abitur"},
-  {q:"'das Klassenzimmer' по-русски:",opts:["классная комната","школьный двор","расписание","учительская"],ans:0,hint:"Klasse+Zimmer"},
-  {q:"'die Schulferien' по-русски:",opts:["школьные каникулы","учебный год","расписание уроков","перемена"],ans:0,hint:"Ferien"},
-  {q:"'der Stundenplan' по-русски:",opts:["расписание уроков","дневник","табель","учебник"],ans:0,hint:"Stunde+Plan"},
-  {q:"'das Lieblingsfach' по-русски:",opts:["любимый предмет","классная комната","домашнее задание","контрольная"],ans:0,hint:"Lieblings-"},
-  {q:"'die Probe' (в школе) по-русски:",opts:["проверочная работа","перемена","расписание","каникулы"],ans:0,hint:"wie ein Test"},
-  {q:"'der Unterricht' по-русски:",opts:["урок, занятия","школьный двор","перемена","каникулы"],ans:0,hint:"Unterricht haben"},
-  {q:"'die Gruppenarbeit' по-русски:",opts:["групповая работа","домашнее задание","контрольная работа","экзамен"],ans:0,hint:"in Gruppen arbeiten"},
-  {q:"'das Fach' (школьное) по-русски:",opts:["предмет","класс","учитель","оценка"],ans:0,hint:"Mathematik ist ein Fach"},
-  {q:"'die Prüfung bestehen' по-русски:",opts:["сдать экзамен","провалить экзамен","отменить экзамен","готовиться к экзамену"],ans:0,hint:"bestehen = сдать",hintUk:"bestehen = скласти"},
-  {q:"'das Zeugnis' по-русски:",opts:["табель, свидетельство","расписание","домашнее задание","учебник"],ans:0,hint:"Noten im Zeugnis"},
-  {q:"'die Bedingung' по-русски:",opts:["условие","причина","результат","вопрос"],ans:0,hint:"unter welcher Bedingung?"},
+  {q:"'die Mathematik' по-русски:",qUk:"'die Mathematik' українською:",opts:["математика","физика","химия","биология"],optsUk:["математика","фізика","хімія","біологія"],ans:0,hint:"Mathe"},
+  {q:"'die Physik' по-русски:",qUk:"'die Physik' українською:",opts:["химия","физика","биология","история"],optsUk:["хімія","фізика","біологія","історія"],ans:1,hint:"Physik"},
+  {q:"'die Chemie' по-русски:",qUk:"'die Chemie' українською:",opts:["химия","физика","география","искусство"],optsUk:["хімія","фізика","географія","мистецтво"],ans:0,hint:"Chemie"},
+  {q:"'die Biologie' по-русски:",qUk:"'die Biologie' українською:",opts:["биология","физика","химия","математика"],optsUk:["біологія","фізика","хімія","математика"],ans:0,hint:"Biologie"},
+  {q:"'die Kunst' (школьный предмет) по-русски:",qUk:"'die Kunst' (школьный предмет) українською:",opts:["искусство","музыка","спорт","труд"],optsUk:["мистецтво","музика","спорт","праця"],ans:0,hint:"Kunst"},
+  {q:"'die Erdkunde' по-русски:",qUk:"'die Erdkunde' українською:",opts:["история","география","биология","физика"],optsUk:["історія","географія","біологія","фізика"],ans:1,hint:"Erdkunde"},
+  {q:"'die Grundschule' по-русски:",qUk:"'die Grundschule' українською:",opts:["начальная школа","гимназия","профучилище","университет"],optsUk:["початкова школа","гімназія","профтехучилище","університет"],ans:0,hint:"1.-4. Klasse"},
+  {q:"'die Förderschule' по-русски:",qUk:"'die Förderschule' українською:",opts:["коррекционная школа","реальное училище","гимназия","вуз"],optsUk:["корекційна школа","реальне училище","гімназія","виш"],ans:0,hint:"besondere Bedürfnisse"},
+  {q:"'die Realschule' по-русски:",qUk:"'die Realschule' українською:",opts:["реальное училище (5-10 класс)","начальная школа","коррекционная школа","университет"],optsUk:["реальне училище (5-10 клас)","початкова школа","корекційна школа","університет"],ans:0,hint:"→ Mittlerer Schulabschluss"},
+  {q:"'die Gesamtschule' по-русски:",qUk:"'die Gesamtschule' українською:",opts:["общеобразовательная (комплексная) школа","начальная школа","профучилище","детский сад"],optsUk:["загальноосвітня (комплексна) школа","початкова школа","профтехучилище","дитячий садок"],ans:0,hint:"Gesamtschule"},
+  {q:"'das Gymnasium' по-русски:",qUk:"'das Gymnasium' українською:",opts:["гимназия","профучилище","начальная школа","детский сад"],optsUk:["гімназія","профтехучилище","початкова школа","дитячий садок"],ans:0,hint:"→ Abitur"},
+  {q:"'die Berufsschule' по-русски:",qUk:"'die Berufsschule' українською:",opts:["профессиональное училище","университет","гимназия","детский сад"],optsUk:["професійне училище","університет","гімназія","дитячий садок"],ans:0,hint:"Ausbildung"},
+  {q:"'die Fachhochschule' по-русски:",qUk:"'die Fachhochschule' українською:",opts:["университет прикладных наук","обычный университет","профучилище","гимназия"],optsUk:["університет прикладних наук","звичайний університет","профтехучилище","гімназія"],ans:0,hint:"braucht Fachabitur/Abitur"},
+  {q:"'das Klassenzimmer' по-русски:",qUk:"'das Klassenzimmer' українською:",opts:["классная комната","школьный двор","расписание","учительская"],optsUk:["класна кімната","шкільний двір","розклад","вчительська"],ans:0,hint:"Klasse+Zimmer"},
+  {q:"'die Schulferien' по-русски:",qUk:"'die Schulferien' українською:",opts:["школьные каникулы","учебный год","расписание уроков","перемена"],optsUk:["шкільні канікули","навчальний рік","розклад уроків","перерва"],ans:0,hint:"Ferien"},
+  {q:"'der Stundenplan' по-русски:",qUk:"'der Stundenplan' українською:",opts:["расписание уроков","дневник","табель","учебник"],optsUk:["розклад уроків","щоденник","табель","підручник"],ans:0,hint:"Stunde+Plan"},
+  {q:"'das Lieblingsfach' по-русски:",qUk:"'das Lieblingsfach' українською:",opts:["любимый предмет","классная комната","домашнее задание","контрольная"],optsUk:["улюблений предмет","класна кімната","домашнє завдання","контрольна"],ans:0,hint:"Lieblings-"},
+  {q:"'die Probe' (в школе) по-русски:",qUk:"'die Probe' (в школе) українською:",opts:["проверочная работа","перемена","расписание","каникулы"],optsUk:["перевірочна робота","перерва","розклад","канікули"],ans:0,hint:"wie ein Test"},
+  {q:"'der Unterricht' по-русски:",qUk:"'der Unterricht' українською:",opts:["урок, занятия","школьный двор","перемена","каникулы"],optsUk:["урок, заняття","шкільний двір","перерва","канікули"],ans:0,hint:"Unterricht haben"},
+  {q:"'die Gruppenarbeit' по-русски:",qUk:"'die Gruppenarbeit' українською:",opts:["групповая работа","домашнее задание","контрольная работа","экзамен"],optsUk:["групова робота","домашнє завдання","контрольна робота","екзамен"],ans:0,hint:"in Gruppen arbeiten"},
+  {q:"'das Fach' (школьное) по-русски:",qUk:"'das Fach' (школьное) українською:",opts:["предмет","класс","учитель","оценка"],optsUk:["предмет","клас","вчитель","оцінка"],ans:0,hint:"Mathematik ist ein Fach"},
+  {q:"'die Prüfung bestehen' по-русски:",qUk:"'die Prüfung bestehen' українською:",opts:["сдать экзамен","провалить экзамен","отменить экзамен","готовиться к экзамену"],optsUk:["скласти іспит","провалити іспит","відмінити іспит","готуватися до іспиту"],ans:0,hint:"bestehen = сдать",hintUk:"bestehen = скласти"},
+  {q:"'das Zeugnis' по-русски:",qUk:"'das Zeugnis' українською:",opts:["табель, свидетельство","расписание","домашнее задание","учебник"],optsUk:["табель, свідоцтво","розклад","домашнє завдання","підручник"],ans:0,hint:"Noten im Zeugnis"},
+  {q:"'die Bedingung' по-русски:",qUk:"'die Bedingung' українською:",opts:["условие","причина","результат","вопрос"],optsUk:["умова","причина","результат","питання"],ans:0,hint:"unter welcher Bedingung?"},
   {q:"Die schlechteste Note in Deutschland heißt:",opts:["sehr gut","mangelhaft","ungenügend","befriedigend"],ans:2,hint:"6 = ungenügend"},
-  {q:"'die Nachhilfe' по-русски:",opts:["дополнительные занятия, репетиторство","каникулы","экзамен","табель"],ans:0,hint:"Nachhilfe bekommen"},
-  {q:"'klappen' (Ich hoffe, dass es klappt) означает:",opts:["получаться, срабатывать","заканчиваться","ломаться","начинаться"],ans:0,hint:"es klappt"},
-  {q:"'der Studienplatz' по-русски:",opts:["место в вузе","школьный класс","рабочее место","место в общежитии"],ans:0,hint:"einen Studienplatz bekommen"},
-  {q:"'die Klassenkasse' по-русски:",opts:["касса класса","классная работа","классный журнал","классная комната"],ans:0,hint:"Geld für die Klasse"},
-  {q:"'die Klassenfahrt' по-русски:",opts:["поездка класса","классная работа","расписание","дежурство"],ans:0,hint:"für ein paar Tage wegfahren"},
-  {q:"'das Taschengeld' по-русски:",opts:["карманные деньги","стипендия","зарплата","чаевые"],ans:0,hint:"Geld von den Eltern"},
-  {q:"'die Schuluniform' по-русски:",opts:["школьная форма","школьный ранец","классный журнал","школьное расписание"],ans:0,hint:"tragen"},
-  {q:"'der Schulabschluss' по-русски:",opts:["школьный аттестат","школьный двор","школьный автобус","школьный праздник"],ans:0,hint:"Abitur ist ein Schulabschluss"},
-  {q:"'die Autowerkstatt' по-русски:",opts:["автомастерская","автобус","автопарк","автошкола"],ans:0,hint:"Kfz-Mechatroniker arbeitet dort"},
-  {q:"'der Elternabend' по-русски:",opts:["родительское собрание","выпускной вечер","школьный праздник","день открытых дверей"],ans:0,hint:"Eltern + Abend"},
-  {q:"'gemeinsam' по-русски:",opts:["совместно, вместе","отдельно","редко","всегда"],ans:0,hint:"gemeinsam besprechen"},
-  {q:"'besprechen' по-русски:",opts:["обсуждать","решать","забывать","писать"],ans:0,hint:"Fragen besprechen"},
-  {q:"'pünktlich' по-русски:",opts:["пунктуальный, точно в срок","строгий","дружелюбный","скучный"],ans:0,hint:"pünktlich kommen"},
-  {q:"'nachsitzen' означает:",opts:["оставаться после уроков (наказание)","приходить рано","пропускать урок","делать домашнее задание"],ans:0,hint:"Strafe"},
-  {q:"'der Klassenlehrer' по-русски:",opts:["классный руководитель","директор школы","завуч","одноклассник"],ans:0,hint:"Klassenlehrer/in"},
-  {q:"'der/die Jugendliche' по-русски:",opts:["подросток","ребёнок","взрослый","пенсионер"],ans:0,hint:"nicht mehr Kind, noch nicht erwachsen"},
-  {q:"'der Schulweg' по-русски:",opts:["дорога в школу","школьный двор","расписание","учебный год"],ans:0,hint:"Weg zur Schule"},
-  {q:"'das Lehrerzimmer' по-русски:",opts:["учительская","классная комната","библиотека","секретариат"],ans:0,hint:"Raum für Lehrer"},
-  {q:"'der Hausmeister' работает в:",opts:["школе (техническое обслуживание)","только в больнице","только в банке","только дома"],ans:0,hint:"repariert, putzt"},
-  {q:"'der Schulranzen' по-русски:",opts:["школьный ранец","школьная форма","классный журнал","дневник"],ans:0,hint:"für kleine Kinder"},
-  {q:"'die Brotdose' по-русски:",opts:["контейнер для бутербродов","портфель","пенал","тетрадь"],ans:0,hint:"für das Pausenbrot"},
-  {q:"'der Turnbeutel' по-русски:",opts:["мешок для спортивной формы","портфель","пенал","рюкзак"],ans:0,hint:"für Sportsachen"},
-  {q:"'das Federmäppchen' по-русски:",opts:["пенал","портфель","дневник","блокнот"],ans:0,hint:"für Stifte"},
-  {q:"'die Turnhalle' по-русски:",opts:["спортзал","бассейн","стадион","игровая площадка"],ans:0,hint:"Sportunterricht"},
-  {q:"'der Hort' по-русски:",opts:["продлёнка (группа продлённого дня)","детский сад","начальная школа","интернат"],ans:0,hint:"nach der Schule"},
-  {q:"'die Schultüte' — это:",opts:["традиционный кулёк для первоклассника","школьная сумка","школьная тетрадь","школьный праздник"],ans:0,hint:"1. Schultag"},
-  {q:"'die Abschlussfeier' по-русски:",opts:["выпускной вечер","родительское собрание","школьный праздник","экскурсия"],ans:0,hint:"am Ende der Schulzeit"},
+  {q:"'die Nachhilfe' по-русски:",qUk:"'die Nachhilfe' українською:",opts:["дополнительные занятия, репетиторство","каникулы","экзамен","табель"],optsUk:["додаткові заняття, репетиторство","канікули","екзамен","табель"],ans:0,hint:"Nachhilfe bekommen"},
+  {q:"'klappen' (Ich hoffe, dass es klappt) означает:",qUk:"'klappen' (Ich hoffe, dass es klappt) означає:",opts:["получаться, срабатывать","заканчиваться","ломаться","начинаться"],optsUk:["виходити, вдаватися","закінчуватися","ламатися","починатися"],ans:0,hint:"es klappt"},
+  {q:"'der Studienplatz' по-русски:",qUk:"'der Studienplatz' українською:",opts:["место в вузе","школьный класс","рабочее место","место в общежитии"],optsUk:["місце у виші","шкільний клас","робоче місце","місце в гуртожитку"],ans:0,hint:"einen Studienplatz bekommen"},
+  {q:"'die Klassenkasse' по-русски:",qUk:"'die Klassenkasse' українською:",opts:["касса класса","классная работа","классный журнал","классная комната"],optsUk:["каса класу","класна робота","класний журнал","класна кімната"],ans:0,hint:"Geld für die Klasse"},
+  {q:"'die Klassenfahrt' по-русски:",qUk:"'die Klassenfahrt' українською:",opts:["поездка класса","классная работа","расписание","дежурство"],optsUk:["поїздка класу","класна робота","розклад","дежурство"],ans:0,hint:"für ein paar Tage wegfahren"},
+  {q:"'das Taschengeld' по-русски:",qUk:"'das Taschengeld' українською:",opts:["карманные деньги","стипендия","зарплата","чаевые"],optsUk:["кишенькові гроші","стипендія","зарплата","чайові"],ans:0,hint:"Geld von den Eltern"},
+  {q:"'die Schuluniform' по-русски:",qUk:"'die Schuluniform' українською:",opts:["школьная форма","школьный ранец","классный журнал","школьное расписание"],optsUk:["шкільна форма","шкільний ранець","класний журнал","шкільний розклад"],ans:0,hint:"tragen"},
+  {q:"'der Schulabschluss' по-русски:",qUk:"'der Schulabschluss' українською:",opts:["школьный аттестат","школьный двор","школьный автобус","школьный праздник"],optsUk:["шкільний атестат","шкільний двір","шкільний автобус","шкільне свято"],ans:0,hint:"Abitur ist ein Schulabschluss"},
+  {q:"'die Autowerkstatt' по-русски:",qUk:"'die Autowerkstatt' українською:",opts:["автомастерская","автобус","автопарк","автошкола"],optsUk:["автомайстерня","автобус","автопарк","автошкола"],ans:0,hint:"Kfz-Mechatroniker arbeitet dort"},
+  {q:"'der Elternabend' по-русски:",qUk:"'der Elternabend' українською:",opts:["родительское собрание","выпускной вечер","школьный праздник","день открытых дверей"],optsUk:["батьківські збори","випускний вечір","шкільне свято","день відкритих дверей"],ans:0,hint:"Eltern + Abend"},
+  {q:"'gemeinsam' по-русски:",qUk:"'gemeinsam' українською:",opts:["совместно, вместе","отдельно","редко","всегда"],optsUk:["спільно, разом","окремо","рідко","завжди"],ans:0,hint:"gemeinsam besprechen"},
+  {q:"'besprechen' по-русски:",qUk:"'besprechen' українською:",opts:["обсуждать","решать","забывать","писать"],optsUk:["обговорювати","вирішувати","забувати","писати"],ans:0,hint:"Fragen besprechen"},
+  {q:"'pünktlich' по-русски:",qUk:"'pünktlich' українською:",opts:["пунктуальный, точно в срок","строгий","дружелюбный","скучный"],optsUk:["пунктуальний, точно в строк","суворий","дружелюбний","нудний"],ans:0,hint:"pünktlich kommen"},
+  {q:"'nachsitzen' означает:",qUk:"'nachsitzen' означає:",opts:["оставаться после уроков (наказание)","приходить рано","пропускать урок","делать домашнее задание"],optsUk:["залишатися після уроків (покарання)","приходити рано","пропускати урок","робити домашнє завдання"],ans:0,hint:"Strafe"},
+  {q:"'der Klassenlehrer' по-русски:",qUk:"'der Klassenlehrer' українською:",opts:["классный руководитель","директор школы","завуч","одноклассник"],optsUk:["класний керівник","директор школи","завуч","однокласник"],ans:0,hint:"Klassenlehrer/in"},
+  {q:"'der/die Jugendliche' по-русски:",qUk:"'der/die Jugendliche' українською:",opts:["подросток","ребёнок","взрослый","пенсионер"],optsUk:["підліток","дитина","дорослий","пенсіонер"],ans:0,hint:"nicht mehr Kind, noch nicht erwachsen"},
+  {q:"'der Schulweg' по-русски:",qUk:"'der Schulweg' українською:",opts:["дорога в школу","школьный двор","расписание","учебный год"],optsUk:["дорога до школи","шкільний двір","розклад","навчальний рік"],ans:0,hint:"Weg zur Schule"},
+  {q:"'das Lehrerzimmer' по-русски:",qUk:"'das Lehrerzimmer' українською:",opts:["учительская","классная комната","библиотека","секретариат"],optsUk:["вчительська","класна кімната","бібліотека","секретаріат"],ans:0,hint:"Raum für Lehrer"},
+  {q:"'der Hausmeister' работает в:",qUk:"'der Hausmeister' працює в:",opts:["школе (техническое обслуживание)","только в больнице","только в банке","только дома"],optsUk:["школі (технічне обслуговування)","тільки в лікарні","тільки в банку","тільки вдома"],ans:0,hint:"repariert, putzt"},
+  {q:"'der Schulranzen' по-русски:",qUk:"'der Schulranzen' українською:",opts:["школьный ранец","школьная форма","классный журнал","дневник"],optsUk:["шкільний ранець","шкільна форма","класний журнал","щоденник"],ans:0,hint:"für kleine Kinder"},
+  {q:"'die Brotdose' по-русски:",qUk:"'die Brotdose' українською:",opts:["контейнер для бутербродов","портфель","пенал","тетрадь"],optsUk:["контейнер для бутербродів","портфель","пенал","зошит"],ans:0,hint:"für das Pausenbrot"},
+  {q:"'der Turnbeutel' по-русски:",qUk:"'der Turnbeutel' українською:",opts:["мешок для спортивной формы","портфель","пенал","рюкзак"],optsUk:["мішок для спортивної форми","портфель","пенал","рюкзак"],ans:0,hint:"für Sportsachen"},
+  {q:"'das Federmäppchen' по-русски:",qUk:"'das Federmäppchen' українською:",opts:["пенал","портфель","дневник","блокнот"],optsUk:["пенал","портфель","щоденник","блокнот"],ans:0,hint:"für Stifte"},
+  {q:"'die Turnhalle' по-русски:",qUk:"'die Turnhalle' українською:",opts:["спортзал","бассейн","стадион","игровая площадка"],optsUk:["спортзал","басейн","стадіон","ігровий майданчик"],ans:0,hint:"Sportunterricht"},
+  {q:"'der Hort' по-русски:",qUk:"'der Hort' українською:",opts:["продлёнка (группа продлённого дня)","детский сад","начальная школа","интернат"],optsUk:["продовжений день (група продовженого дня)","дитячий садок","початкова школа","інтернат"],ans:0,hint:"nach der Schule"},
+  {q:"'die Schultüte' — это:",qUk:"'die Schultüte' — це:",opts:["традиционный кулёк для первоклассника","школьная сумка","школьная тетрадь","школьный праздник"],optsUk:["традиційний кулечок для першокласника","шкільна сумка","шкільний зошит","шкільне свято"],ans:0,hint:"1. Schultag"},
+  {q:"'die Abschlussfeier' по-русски:",qUk:"'die Abschlussfeier' українською:",opts:["выпускной вечер","родительское собрание","школьный праздник","экскурсия"],optsUk:["випускний вечір","батьківські збори","шкільне свято","екскурсія"],ans:0,hint:"am Ende der Schulzeit"},
 ]);
 
 const LUECKEN_A2L4=shuffle([
@@ -8327,69 +8327,69 @@ function GrosserTestA2L4(){return <GrosserTestContainer rounds={[
 ]}/>;}
 
 const Q_A2L5TEST=shuffle([
-  {q:"'der Pilot' по-русски:",opts:["пилот","инженер","врач","воспитатель"],ans:0,hint:"fliegt ein Flugzeug"},
-  {q:"'der/die Krankengymnast/in' по-русски:",opts:["физиотерапевт","медсестра","врач","фармацевт"],ans:0,hint:"Krankengymnastik"},
-  {q:"'der Ordner' по-русски:",opts:["папка-скоросшиватель","ключ","пароль","принтер"],ans:0,hint:"für Dokumente"},
-  {q:"'das Passwort' по-русски:",opts:["пароль","логин","адрес","файл"],ans:0,hint:"für den Computer"},
-  {q:"'die Mitteilung' по-русски:",opts:["сообщение, записка","письмо","открытка","договор"],ans:0,hint:"kurze Nachricht"},
-  {q:"'der Prospekt' по-русски:",opts:["брошюра, буклет","письмо","счёт","журнал"],ans:0,hint:"Werbematerial"},
-  {q:"Dativ-Pronomen для 'er':",opts:["ihm","ihn","ihr","es"],ans:0,hint:"Personalpronomen im Dativ"},
-  {q:"Dativ-Pronomen для 'sie' (мн.ч. и Sie):",opts:["ihnen/Ihnen","ihr/Ihr","sie/Sie","ihre"],ans:0,hint:"ihnen/Ihnen"},
-  {q:"'Wissen Sie, wann der Kollege kommt?' — здесь спрягаемый глагол 'kommt' стоит:",opts:["в конце (как в придаточном)","на первом месте","на втором месте","глагола нет"],ans:0,hint:"indirekte Frage"},
-  {q:"'Können Sie mir sagen, ...' — это:",opts:["formell","informell","Imperativ","Perfekt"],ans:0,hint:"Sie-Form"},
-  {q:"'das Zimmermädchen' по-русски:",opts:["горничная","администратор","повар","швейцар"],ans:0,hint:"macht die Betten, putzt"},
-  {q:"'der Hotelmanager' по-русски:",opts:["менеджер отеля","горничная","повар","гость"],ans:0,hint:"kontrolliert die Arbeiten im Hotel"},
-  {q:"'empfangen' (die Gäste) означает:",opts:["принимать, встречать","провожать","звонить","готовить"],ans:0,hint:"an der Rezeption"},
-  {q:"'der Dienstplan' по-русски:",opts:["график дежурств","меню","прайс-лист","список гостей"],ans:0,hint:"wer wann arbeitet"},
-  {q:"'der Auszubildende' (Azubi) по-русски:",opts:["ученик, практикант","директор","гость","клиент"],ans:0,hint:"macht eine Ausbildung"},
-  {q:"'der Nebenjob' по-русски:",opts:["подработка","основная работа","отпуск","стажировка"],ans:0,hint:"zusätzliche Arbeit"},
-  {q:"'der Aufenthalt' по-русски:",opts:["пребывание","отъезд","номер","счёт"],ans:0,hint:"einen angenehmen Aufenthalt wünschen"},
-  {q:"'das Handtuch' по-русски:",opts:["полотенце","одеяло","подушка","простыня"],ans:0,hint:"im Zimmer fehlen Handtücher"},
-  {q:"'frei' (kein Zimmer frei) по-русски:",opts:["свободный","занятый","дорогой","новый"],ans:0,hint:"nicht besetzt"},
-  {q:"'der Kunde' по-русски:",opts:["клиент","коллега","начальник","гость"],ans:0,hint:"wann kommt der Kunde?"},
-  {q:"'das Gehalt' по-русски:",opts:["оклад, зарплата","счёт","договор","график"],ans:0,hint:"Geld für die Arbeit"},
-  {q:"'die Betriebsversammlung' по-русски:",opts:["собрание коллектива","производственная травма","отпуск","обучение"],ans:0,hint:"alle Kollegen kommen zusammen"},
-  {q:"'vormittags' по-русски:",opts:["по утрам, в первой половине дня","вечером","ночью","всегда"],ans:0,hint:"von 8 bis 12 Uhr"},
-  {q:"'sich langweilen' означает:",opts:["скучать","веселиться","уставать","бояться"],ans:0,hint:"nichts Interessantes zu tun haben"},
-  {q:"'alleinerziehend' по-русски:",opts:["воспитывающий ребёнка один/одна","многодетный","приёмный","молодой"],ans:0,hint:"Jens ist alleinerziehend"},
-  {q:"'übernehmen' (die Kosten) означает:",opts:["брать на себя, покрывать (расходы)","отказываться","считать","терять"],ans:0,hint:"Die Bundesagentur übernimmt manchmal die Kosten"},
-  {q:"'flexibel' по-русски:",opts:["гибкий","строгий","дорогой","медленный"],ans:0,hint:"individueller und flexibler als eine Kita"},
-  {q:"'die Krankenversicherung' по-русски:",opts:["медицинская страховка","больница","аптека","рецепт"],ans:0,hint:"bezahlt Arztkosten"},
-  {q:"'behindert' по-русски:",opts:["с ограниченными возможностями","болен","устал","занят"],ans:0,hint:"eine Behinderung haben"},
-  {q:"'Keine Ahnung!' означает:",opts:["без понятия!","конечно!","подожди!","отлично!"],ans:0,hint:"Ich weiß es nicht"},
-  {q:"'Bescheid sagen' означает:",opts:["дать знать, сообщить","молчать","ждать","отказаться"],ans:0,hint:"Sag mir Bescheid"},
-  {q:"'höflich' по-русски:",opts:["вежливый","грубый","строгий","весёлый"],ans:0,hint:"Gegenteil von unhöflich"},
-  {q:"'die Nachricht' по-русски:",opts:["сообщение","отчёт","договор","счёт"],ans:0,hint:"eine Nachricht bekommen"},
-  {q:"'der Bericht' по-русски:",opts:["отчёт","сообщение","звонок","список"],ans:0,hint:"einen Bericht besprechen"},
-  {q:"'installieren' означает:",opts:["устанавливать (программу)","удалять","открывать","закрывать"],ans:0,hint:"die Software installieren"},
-  {q:"'einen Termin verschieben' означает:",opts:["перенести встречу","отменить встречу","назначить встречу","забыть встречу"],ans:0,hint:"auf einen anderen Tag"},
-  {q:"'zurückrufen' означает:",opts:["перезвонить","позвонить впервые","повесить трубку","написать сообщение"],ans:0,hint:"Sie sollen zurückrufen"},
-  {q:"'der Kaffeeautomat' по-русски:",opts:["кофейный автомат","кофеварка","чайник","холодильник"],ans:0,hint:"Automat für Kaffee"},
-  {q:"'das Gerät' по-русски:",opts:["устройство, прибор","письмо","документ","ключ"],ans:0,hint:"ein Gerät erklären"},
-  {q:"'der Kopierer' по-русски:",opts:["копировальный аппарат","принтер","сканер","телефон"],ans:0,hint:"kopiert Papier"},
-  {q:"'die Taste' по-русски:",opts:["кнопка, клавиша","экран","провод","кабель"],ans:0,hint:"auf eine Taste drücken"},
-  {q:"'ausschalten' — противоположность:",opts:["einschalten","ausmachen","anschalten","abschalten"],ans:2,hint:"ein-/ausschalten"},
-  {q:"'die Buchhaltung' по-русски:",opts:["бухгалтерия","отдел кадров","техотдел","секретариат"],ans:0,hint:"Abteilung für Geld/Rechnungen"},
-  {q:"'die Spedition' по-русски:",opts:["транспортная компания","почта","банк","страховая компания"],ans:0,hint:"transportiert Waren"},
-  {q:"'einräumen' означает:",opts:["расставлять, размещать (на полке)","выбрасывать","терять","ломать"],ans:0,hint:"das Regal einräumen"},
-  {q:"'telefonieren' означает:",opts:["звонить по телефону","писать письмо","встречаться","опаздывать"],ans:0,hint:"mit jemandem telefonieren"},
-  {q:"'geschlossen' — противоположность:",opts:["offen","zu","kaputt","frei"],ans:0,hint:"geöffnet ↔ geschlossen"},
-  {q:"'der Treffpunkt' по-русски:",opts:["место встречи","место работы","место отдыха","место жительства"],ans:0,hint:"Treffpunkt ist der Bahnhof"},
-  {q:"'der Eintritt' по-русски:",opts:["вход, входной билет","выход","отдых","путешествие"],ans:0,hint:"Eintritt für das Museum"},
-  {q:"'der/die Polizist/in' по-русски:",opts:["полицейский","пожарный","врач","учитель"],ans:0,hint:"Polizei"},
-  {q:"'der Maurer' по-русски:",opts:["каменщик","плотник","маляр","сантехник"],ans:0,hint:"baut mit Steinen"},
-  {q:"'der Dachdecker' по-русски:",opts:["крышевщик","штукатур","плиточник","электрик"],ans:0,hint:"macht das Dach"},
-  {q:"'der Installateur' по-русски:",opts:["сантехник, монтажник","водитель","инженер","бухгалтер"],ans:0,hint:"installiert Wasserleitungen"},
-  {q:"'der Flugbegleiter' по-русски:",opts:["бортпроводник","пилот","диспетчер","механик"],ans:0,hint:"im Flugzeug, hilft den Passagieren"},
-  {q:"'der Fluglotse' по-русски:",opts:["авиадиспетчер","пилот","бортпроводник","механик"],ans:0,hint:"kontrolliert Flugzeuge vom Boden"},
-  {q:"'das Bodenpersonal' по-русски:",opts:["наземный персонал","летающий персонал","охрана","уборщики"],ans:0,hint:"am Flughafen, nicht im Flugzeug"},
-  {q:"'die Sicherheit' по-русски:",opts:["безопасность","опасность","страховка","зарплата"],ans:0,hint:"sicher sein"},
-  {q:"'verantwortlich' по-русски:",opts:["ответственный","безответственный","занятой","строгий"],ans:0,hint:"verantwortlich sein für"},
-  {q:"'jammern' означает:",opts:["жаловаться, ныть","радоваться","молчать","спорить"],ans:0,hint:"immer jammern"},
-  {q:"'plaudern' означает:",opts:["болтать","молчать","кричать","петь"],ans:0,hint:"gerne plaudern"},
-  {q:"'der TÜV' — это:",opts:["техосмотр автомобиля","автомастерская","автомагазин","страховка на авто"],ans:0,hint:"Technischer Überwachungsverein"},
-  {q:"'ablaufen' (Frist) означает:",opts:["истекать (о сроке)","начинаться","продлеваться","ускоряться"],ans:0,hint:"die Frist läuft ab"},
-  {q:"'Keine Ursache!' означает:",opts:["не за что!","конечно нет!","без причины!","обязательно!"],ans:0,hint:"Antwort auf 'Danke'"},
+  {q:"'der Pilot' по-русски:",qUk:"'der Pilot' українською:",opts:["пилот","инженер","врач","воспитатель"],optsUk:["пілот","інженер","лікар","вихователь"],ans:0,hint:"fliegt ein Flugzeug"},
+  {q:"'der/die Krankengymnast/in' по-русски:",qUk:"'der/die Krankengymnast/in' українською:",opts:["физиотерапевт","медсестра","врач","фармацевт"],optsUk:["фізіотерапевт","медсестра","лікар","фармацевт"],ans:0,hint:"Krankengymnastik"},
+  {q:"'der Ordner' по-русски:",qUk:"'der Ordner' українською:",opts:["папка-скоросшиватель","ключ","пароль","принтер"],optsUk:["папка-реєстратор","ключ","пароль","принтер"],ans:0,hint:"für Dokumente"},
+  {q:"'das Passwort' по-русски:",qUk:"'das Passwort' українською:",opts:["пароль","логин","адрес","файл"],optsUk:["пароль","логін","адреса","файл"],ans:0,hint:"für den Computer"},
+  {q:"'die Mitteilung' по-русски:",qUk:"'die Mitteilung' українською:",opts:["сообщение, записка","письмо","открытка","договор"],optsUk:["повідомлення, записка","лист","листівка","договір"],ans:0,hint:"kurze Nachricht"},
+  {q:"'der Prospekt' по-русски:",qUk:"'der Prospekt' українською:",opts:["брошюра, буклет","письмо","счёт","журнал"],optsUk:["брошура, буклет","лист","рахунок","журнал"],ans:0,hint:"Werbematerial"},
+  {q:"Dativ-Pronomen для 'er':",qUk:"Dativ-Pronomen для 'er':",opts:["ihm","ihn","ihr","es"],ans:0,hint:"Personalpronomen im Dativ"},
+  {q:"Dativ-Pronomen для 'sie' (мн.ч. и Sie):",qUk:"Dativ-Pronomen для 'sie' (мн.ч. и Sie):",opts:["ihnen/Ihnen","ihr/Ihr","sie/Sie","ihre"],ans:0,hint:"ihnen/Ihnen"},
+  {q:"'Wissen Sie, wann der Kollege kommt?' — здесь спрягаемый глагол 'kommt' стоит:",qUk:"'Wissen Sie, wann der Kollege kommt?' — тут дієслово 'kommt' стоїть:",opts:["в конце (как в придаточном)","на первом месте","на втором месте","глагола нет"],optsUk:["в кінці (як у підрядному)","на першому місці","на другому місці","дієслова немає"],ans:0,hint:"indirekte Frage"},
+  {q:"'Können Sie mir sagen, ...' — это:",qUk:"'Können Sie mir sagen, ...' — це:",opts:["formell","informell","Imperativ","Perfekt"],ans:0,hint:"Sie-Form"},
+  {q:"'das Zimmermädchen' по-русски:",qUk:"'das Zimmermädchen' українською:",opts:["горничная","администратор","повар","швейцар"],optsUk:["покоївка","адміністратор","кухар","швейцар"],ans:0,hint:"macht die Betten, putzt"},
+  {q:"'der Hotelmanager' по-русски:",qUk:"'der Hotelmanager' українською:",opts:["менеджер отеля","горничная","повар","гость"],optsUk:["менеджер готелю","покоївка","кухар","гість"],ans:0,hint:"kontrolliert die Arbeiten im Hotel"},
+  {q:"'empfangen' (die Gäste) означает:",qUk:"'empfangen' (die Gäste) означає:",opts:["принимать, встречать","провожать","звонить","готовить"],optsUk:["приймати, зустрічати","провожати","телефонувати","готувати"],ans:0,hint:"an der Rezeption"},
+  {q:"'der Dienstplan' по-русски:",qUk:"'der Dienstplan' українською:",opts:["график дежурств","меню","прайс-лист","список гостей"],optsUk:["графік чергувань","меню","прайс-лист","список гостей"],ans:0,hint:"wer wann arbeitet"},
+  {q:"'der Auszubildende' (Azubi) по-русски:",qUk:"'der Auszubildende' (Azubi) українською:",opts:["ученик, практикант","директор","гость","клиент"],optsUk:["учень, практикант","директор","гість","клієнт"],ans:0,hint:"macht eine Ausbildung"},
+  {q:"'der Nebenjob' по-русски:",qUk:"'der Nebenjob' українською:",opts:["подработка","основная работа","отпуск","стажировка"],optsUk:["підробіток","основна робота","відпустка","стажування"],ans:0,hint:"zusätzliche Arbeit"},
+  {q:"'der Aufenthalt' по-русски:",qUk:"'der Aufenthalt' українською:",opts:["пребывание","отъезд","номер","счёт"],optsUk:["перебування","відїзд","номер","рахунок"],ans:0,hint:"einen angenehmen Aufenthalt wünschen"},
+  {q:"'das Handtuch' по-русски:",qUk:"'das Handtuch' українською:",opts:["полотенце","одеяло","подушка","простыня"],optsUk:["рушник","ковдра","подушка","простирадло"],ans:0,hint:"im Zimmer fehlen Handtücher"},
+  {q:"'frei' (kein Zimmer frei) по-русски:",qUk:"'frei' (kein Zimmer frei) українською:",opts:["свободный","занятый","дорогой","новый"],optsUk:["вільний","зайнятий","дорогий","новий"],ans:0,hint:"nicht besetzt"},
+  {q:"'der Kunde' по-русски:",qUk:"'der Kunde' українською:",opts:["клиент","коллега","начальник","гость"],optsUk:["клієнт","колега","начальник","гість"],ans:0,hint:"wann kommt der Kunde?"},
+  {q:"'das Gehalt' по-русски:",qUk:"'das Gehalt' українською:",opts:["оклад, зарплата","счёт","договор","график"],optsUk:["оклад, зарплата","рахунок","договір","графік"],ans:0,hint:"Geld für die Arbeit"},
+  {q:"'die Betriebsversammlung' по-русски:",qUk:"'die Betriebsversammlung' українською:",opts:["собрание коллектива","производственная травма","отпуск","обучение"],optsUk:["збори колективу","виробнича травма","відпустка","навчання"],ans:0,hint:"alle Kollegen kommen zusammen"},
+  {q:"'vormittags' по-русски:",qUk:"'vormittags' українською:",opts:["по утрам, в первой половине дня","вечером","ночью","всегда"],optsUk:["зранку, у першій половині дня","увечері","вночі","завжди"],ans:0,hint:"von 8 bis 12 Uhr"},
+  {q:"'sich langweilen' означает:",qUk:"'sich langweilen' означає:",opts:["скучать","веселиться","уставать","бояться"],optsUk:["нудьгувати","веселитися","втомлюватися","боятися"],ans:0,hint:"nichts Interessantes zu tun haben"},
+  {q:"'alleinerziehend' по-русски:",qUk:"'alleinerziehend' українською:",opts:["воспитывающий ребёнка один/одна","многодетный","приёмный","молодой"],optsUk:["той/та, хто виховує дитину самостійно","багатодітний","прийомний","молодий"],ans:0,hint:"Jens ist alleinerziehend"},
+  {q:"'übernehmen' (die Kosten) означает:",qUk:"'übernehmen' (die Kosten) означає:",opts:["брать на себя, покрывать (расходы)","отказываться","считать","терять"],optsUk:["брати на себе, покривати (витрати)","відмовлятися","рахувати","втрачати"],ans:0,hint:"Die Bundesagentur übernimmt manchmal die Kosten"},
+  {q:"'flexibel' по-русски:",qUk:"'flexibel' українською:",opts:["гибкий","строгий","дорогой","медленный"],optsUk:["гнучкий","суворий","дорогий","повільний"],ans:0,hint:"individueller und flexibler als eine Kita"},
+  {q:"'die Krankenversicherung' по-русски:",qUk:"'die Krankenversicherung' українською:",opts:["медицинская страховка","больница","аптека","рецепт"],optsUk:["медичне страхування","лікарня","аптека","рецепт"],ans:0,hint:"bezahlt Arztkosten"},
+  {q:"'behindert' по-русски:",qUk:"'behindert' українською:",opts:["с ограниченными возможностями","болен","устал","занят"],optsUk:["з обмеженими можливостями","хворий","втомився","зайнятий"],ans:0,hint:"eine Behinderung haben"},
+  {q:"'Keine Ahnung!' означает:",qUk:"'Keine Ahnung!' означає:",opts:["без понятия!","конечно!","подожди!","отлично!"],optsUk:["без гадки!","звісно!","зачекай!","відмінно!"],ans:0,hint:"Ich weiß es nicht"},
+  {q:"'Bescheid sagen' означает:",qUk:"'Bescheid sagen' означає:",opts:["дать знать, сообщить","молчать","ждать","отказаться"],optsUk:["дати знати, повідомити","мовчати","чекати","відмовитися"],ans:0,hint:"Sag mir Bescheid"},
+  {q:"'höflich' по-русски:",qUk:"'höflich' українською:",opts:["вежливый","грубый","строгий","весёлый"],optsUk:["ввічливий","грубий","суворий","веселий"],ans:0,hint:"Gegenteil von unhöflich"},
+  {q:"'die Nachricht' по-русски:",qUk:"'die Nachricht' українською:",opts:["сообщение","отчёт","договор","счёт"],optsUk:["повідомлення","звіт","договір","рахунок"],ans:0,hint:"eine Nachricht bekommen"},
+  {q:"'der Bericht' по-русски:",qUk:"'der Bericht' українською:",opts:["отчёт","сообщение","звонок","список"],optsUk:["звіт","повідомлення","дзвінок","список"],ans:0,hint:"einen Bericht besprechen"},
+  {q:"'installieren' означает:",qUk:"'installieren' означає:",opts:["устанавливать (программу)","удалять","открывать","закрывать"],optsUk:["встановлювати (програму)","видаляти","відкривати","закривати"],ans:0,hint:"die Software installieren"},
+  {q:"'einen Termin verschieben' означает:",qUk:"'einen Termin verschieben' означає:",opts:["перенести встречу","отменить встречу","назначить встречу","забыть встречу"],optsUk:["перенести зустріч","відмінити зустріч","призначити зустріч","забути зустріч"],ans:0,hint:"auf einen anderen Tag"},
+  {q:"'zurückrufen' означает:",qUk:"'zurückrufen' означає:",opts:["перезвонить","позвонить впервые","повесить трубку","написать сообщение"],optsUk:["перетелефонувати","зателефонувати вперше","покласти слухавку","написати повідомлення"],ans:0,hint:"Sie sollen zurückrufen"},
+  {q:"'der Kaffeeautomat' по-русски:",qUk:"'der Kaffeeautomat' українською:",opts:["кофейный автомат","кофеварка","чайник","холодильник"],optsUk:["кавовий автомат","кавоварка","чайник","холодильник"],ans:0,hint:"Automat für Kaffee"},
+  {q:"'das Gerät' по-русски:",qUk:"'das Gerät' українською:",opts:["устройство, прибор","письмо","документ","ключ"],optsUk:["пристрій, прилад","лист","документ","ключ"],ans:0,hint:"ein Gerät erklären"},
+  {q:"'der Kopierer' по-русски:",qUk:"'der Kopierer' українською:",opts:["копировальный аппарат","принтер","сканер","телефон"],optsUk:["копіювальний апарат","принтер","сканер","телефон"],ans:0,hint:"kopiert Papier"},
+  {q:"'die Taste' по-русски:",qUk:"'die Taste' українською:",opts:["кнопка, клавиша","экран","провод","кабель"],optsUk:["кнопка, клавіша","екран","провід","кабель"],ans:0,hint:"auf eine Taste drücken"},
+  {q:"'ausschalten' — противоположность:",qUk:"'ausschalten' — протилежність:",opts:["einschalten","ausmachen","anschalten","abschalten"],ans:2,hint:"ein-/ausschalten"},
+  {q:"'die Buchhaltung' по-русски:",qUk:"'die Buchhaltung' українською:",opts:["бухгалтерия","отдел кадров","техотдел","секретариат"],optsUk:["бухгалтерія","відділ кадрів","техвідділ","секретаріат"],ans:0,hint:"Abteilung für Geld/Rechnungen"},
+  {q:"'die Spedition' по-русски:",qUk:"'die Spedition' українською:",opts:["транспортная компания","почта","банк","страховая компания"],optsUk:["транспортна компанія","пошта","банк","страхова компанія"],ans:0,hint:"transportiert Waren"},
+  {q:"'einräumen' означает:",qUk:"'einräumen' означає:",opts:["расставлять, размещать (на полке)","выбрасывать","терять","ломать"],optsUk:["розставляти, розміщувати (на полиці)","викидати","втрачати","ламати"],ans:0,hint:"das Regal einräumen"},
+  {q:"'telefonieren' означает:",qUk:"'telefonieren' означає:",opts:["звонить по телефону","писать письмо","встречаться","опаздывать"],optsUk:["телефонувати","писати листа","зустрічатися","запізнюватися"],ans:0,hint:"mit jemandem telefonieren"},
+  {q:"'geschlossen' — противоположность:",qUk:"'geschlossen' — протилежність:",opts:["offen","zu","kaputt","frei"],ans:0,hint:"geöffnet ↔ geschlossen"},
+  {q:"'der Treffpunkt' по-русски:",qUk:"'der Treffpunkt' українською:",opts:["место встречи","место работы","место отдыха","место жительства"],optsUk:["місце зустрічі","місце роботи","місце відпочинку","місце проживання"],ans:0,hint:"Treffpunkt ist der Bahnhof"},
+  {q:"'der Eintritt' по-русски:",qUk:"'der Eintritt' українською:",opts:["вход, входной билет","выход","отдых","путешествие"],optsUk:["вхід, вхідний квиток","вихід","відпочинок","подорож"],ans:0,hint:"Eintritt für das Museum"},
+  {q:"'der/die Polizist/in' по-русски:",qUk:"'der/die Polizist/in' українською:",opts:["полицейский","пожарный","врач","учитель"],optsUk:["поліцейський","пожежник","лікар","вчитель"],ans:0,hint:"Polizei"},
+  {q:"'der Maurer' по-русски:",qUk:"'der Maurer' українською:",opts:["каменщик","плотник","маляр","сантехник"],optsUk:["муляр","тесляр","маляр","сантехнік"],ans:0,hint:"baut mit Steinen"},
+  {q:"'der Dachdecker' по-русски:",qUk:"'der Dachdecker' українською:",opts:["крышевщик","штукатур","плиточник","электрик"],optsUk:["покрівельник","штукатур","плиточник","електрик"],ans:0,hint:"macht das Dach"},
+  {q:"'der Installateur' по-русски:",qUk:"'der Installateur' українською:",opts:["сантехник, монтажник","водитель","инженер","бухгалтер"],optsUk:["сантехнік, монтажник","водійка","інженер","бухгалтер"],ans:0,hint:"installiert Wasserleitungen"},
+  {q:"'der Flugbegleiter' по-русски:",qUk:"'der Flugbegleiter' українською:",opts:["бортпроводник","пилот","диспетчер","механик"],optsUk:["бортпровідник","пілот","диспетчер","механік"],ans:0,hint:"im Flugzeug, hilft den Passagieren"},
+  {q:"'der Fluglotse' по-русски:",qUk:"'der Fluglotse' українською:",opts:["авиадиспетчер","пилот","бортпроводник","механик"],optsUk:["авіадиспетчер","пілот","бортпровідник","механік"],ans:0,hint:"kontrolliert Flugzeuge vom Boden"},
+  {q:"'das Bodenpersonal' по-русски:",qUk:"'das Bodenpersonal' українською:",opts:["наземный персонал","летающий персонал","охрана","уборщики"],optsUk:["наземний персонал","льотний персонал","охорона","прибиральники"],ans:0,hint:"am Flughafen, nicht im Flugzeug"},
+  {q:"'die Sicherheit' по-русски:",qUk:"'die Sicherheit' українською:",opts:["безопасность","опасность","страховка","зарплата"],optsUk:["безпека","небезпека","страховка","зарплата"],ans:0,hint:"sicher sein"},
+  {q:"'verantwortlich' по-русски:",qUk:"'verantwortlich' українською:",opts:["ответственный","безответственный","занятой","строгий"],optsUk:["відповідальний","безвідповідальний","зайнятий","суворий"],ans:0,hint:"verantwortlich sein für"},
+  {q:"'jammern' означает:",qUk:"'jammern' означає:",opts:["жаловаться, ныть","радоваться","молчать","спорить"],optsUk:["скаржитися, нити","радіти","мовчати","сперечатися"],ans:0,hint:"immer jammern"},
+  {q:"'plaudern' означает:",qUk:"'plaudern' означає:",opts:["болтать","молчать","кричать","петь"],optsUk:["балакати","мовчати","кричати","співати"],ans:0,hint:"gerne plaudern"},
+  {q:"'der TÜV' — это:",qUk:"'der TÜV' — це:",opts:["техосмотр автомобиля","автомастерская","автомагазин","страховка на авто"],optsUk:["техогляд автомобіля","автомайстерня","автомагазин","страховка на авто"],ans:0,hint:"Technischer Überwachungsverein"},
+  {q:"'ablaufen' (Frist) означает:",qUk:"'ablaufen' (Frist) означає:",opts:["истекать (о сроке)","начинаться","продлеваться","ускоряться"],optsUk:["спливати (про термін)","починатися","продовжуватися","прискорюватися"],ans:0,hint:"die Frist läuft ab"},
+  {q:"'Keine Ursache!' означает:",qUk:"'Keine Ursache!' означає:",opts:["не за что!","конечно нет!","без причины!","обязательно!"],optsUk:["нема за що!","звісно ні!","без причини!","обов'язково!"],ans:0,hint:"Antwort auf 'Danke'"},
 ]);
 
 const LUECKEN_A2L5=shuffle([
@@ -8536,42 +8536,42 @@ function GrosserTestA2L5(){return <GrosserTestContainer rounds={[
 ]}/>;}
 
 const Q_A2L6TEST=shuffle([
-  {q:"'der Vorort' по-русски:",opts:["предместье, окраина","центр города","деревня","район"],ans:0,hint:"in einem Vorort wohnen"},
-  {q:"'außerhalb' по-русски:",opts:["за пределами, вне (города)","в центре","рядом","внутри"],ans:0,hint:"außerhalb wohnen"},
-  {q:"'verkehrsgünstig' по-русски:",opts:["удобно расположенный (для транспорта)","дорогой","тихий","новый"],ans:0,hint:"gute Verkehrsmittel in der Nähe"},
-  {q:"'die Ruhe' по-русски:",opts:["тишина, покой","шум","движение","работа"],ans:0,hint:"Ruhe haben"},
-  {q:"'lassen' (etwas machen lassen) означает:",opts:["поручать кому-то что-то сделать","делать самому","запрещать","забывать"],ans:0,hint:"sie lässt es machen"},
-  {q:"'die Kaltmiete' по-русски:",opts:["аренда без отопления","аренда с отоплением","залог","коммунальные платежи"],ans:0,hint:"KM"},
-  {q:"'die Warmmiete' по-русски:",opts:["аренда с отоплением и коммунальными","аренда без отопления","залог","ремонт"],ans:0,hint:"WM = KM + NK"},
-  {q:"'das Obergeschoss' по-русски:",opts:["верхний этаж","первый этаж","подвал","крыша"],ans:0,hint:"1. OG"},
-  {q:"'die Einbauküche' по-русски:",opts:["встроенная кухня","кухонная мебель","обычная кухня","маленькая кухня"],ans:0,hint:"EBK"},
-  {q:"'die Kaution' по-русски:",opts:["залог (депозит)","аренда","коммунальные платежи","страховка"],ans:0,hint:"meist 2-3 Monatsmieten"},
-  {q:"'abbauen' (Möbel) означает:",opts:["разбирать, демонтировать","собирать","покупать","ломать"],ans:0,hint:"das Gegenteil von aufbauen"},
-  {q:"'renovieren' по-русски:",opts:["ремонтировать","строить","продавать","красить только"],ans:0,hint:"die Wohnung renovieren"},
-  {q:"'transportieren' по-русски:",opts:["перевозить","покупать","чинить","убирать"],ans:0,hint:"die Möbel transportieren"},
-  {q:"'das Bauernhaus' по-русски:",opts:["крестьянский дом","многоэтажка","таунхаус","замок"],ans:0,hint:"auf dem Land"},
-  {q:"'die Öffnungszeiten' по-русски:",opts:["часы работы","выходные дни","расписание уроков","рабочие дни"],ans:0,hint:"von 8 bis 20 Uhr"},
-  {q:"'NK' в объявлении означает:",opts:["Nebenkosten","Nachtmiete","Neubau","Nachbarn"],ans:0,hint:"коммунальные платежи",hintUk:"комунальні платежі"},
-  {q:"'Der Löffel liegt auf dem Tisch.' — почему 'liegt', а не 'steht'?",opts:["ложка лежит горизонтально","ложка стоит вертикально","это ошибка","оба варианта верны"],ans:0,hint:"liegen = горизонтальное положение",hintUk:"liegen = горизонтальне положення"},
-  {q:"'die Immobilie' по-русски:",opts:["объект недвижимости","мебель","инструмент","страховка"],ans:0,hint:"Immobilien Franz"},
-  {q:"'der/die Nachmieter/in' по-русски:",opts:["следующий съёмщик","домовладелец","соседи","мастер"],ans:0,hint:"Nachmieter gesucht"},
-  {q:"'der Zwilling' по-русски:",opts:["близнец","сосед","родственник","ребёнок"],ans:0,hint:"Die Jungen sind Zwillinge"},
-  {q:"'die Tapete' по-русски:",opts:["обои","краска","кисть","стремянка"],ans:0,hint:"die Wohnung tapezieren"},
-  {q:"'tapezieren' означает:",opts:["клеить обои","красить стены","чинить мебель","убирать"],ans:0,hint:"die Tapete"},
-  {q:"'die Leiter' (feminin) по-русски:",opts:["стремянка, лестница","директор","провод","краска"],ans:0,hint:"не путать с der Leiter — руководитель",hintUk:"не плутати з der Leiter — керівник"},
-  {q:"'der Hammer' по-русски:",opts:["молоток","дрель","гвоздь","шуруп"],ans:0,hint:"im Baumarkt"},
-  {q:"'einverstanden' означает:",opts:["согласен","несогласен","непонятно","всё равно"],ans:0,hint:"Das ist eine gute Idee. Einverstanden."},
-  {q:"'sympathisch' по-русски:",opts:["симпатичный, приятный","несимпатичный","знакомый","незнакомый"],ans:0,hint:"противоположно unsympathisch",hintUk:"протилежне до unsympathisch"},
-  {q:"'das Haustier' по-русски:",opts:["домашнее животное","дом","мебель","сад"],ans:0,hint:"keine Haustiere"},
-  {q:"'der Auftrag' по-русски:",opts:["поручение, заказ","подарок","договор","счёт"],ans:0,hint:"Ich habe einer Firma den Auftrag gegeben"},
-  {q:"'der Mieter' по-русски:",opts:["квартиросъёмщик","арендодатель","сосед","мастер"],ans:0,hint:"противоположно der Vermieter",hintUk:"протилежне до der Vermieter"},
-  {q:"'die Nebenkostenabrechnung' по-русски:",opts:["расчёт коммунальных платежей","договор аренды","счёт за ремонт","страховка дома"],ans:0,hint:"Deutsch Plus"},
-  {q:"'die Rückzahlung' по-русски:",opts:["возврат (денег)","доплата","залог","штраф"],ans:0,hint:"Herr Piontek bekommt Geld zurück"},
-  {q:"'der Schornsteinfeger' по-русски:",opts:["трубочист","мастер","электрик","сантехник"],ans:0,hint:"Nebenkosten-Position"},
+  {q:"'der Vorort' по-русски:",qUk:"'der Vorort' українською:",opts:["предместье, окраина","центр города","деревня","район"],optsUk:["передмістя, околиця","центр міста","село","район"],ans:0,hint:"in einem Vorort wohnen"},
+  {q:"'außerhalb' по-русски:",qUk:"'außerhalb' українською:",opts:["за пределами, вне (города)","в центре","рядом","внутри"],optsUk:["за межами, поза (містом)","в центрі","поруч","всередині"],ans:0,hint:"außerhalb wohnen"},
+  {q:"'verkehrsgünstig' по-русски:",qUk:"'verkehrsgünstig' українською:",opts:["удобно расположенный (для транспорта)","дорогой","тихий","новый"],optsUk:["зручно розташований (для транспорту)","дорогий","тихий","новий"],ans:0,hint:"gute Verkehrsmittel in der Nähe"},
+  {q:"'die Ruhe' по-русски:",qUk:"'die Ruhe' українською:",opts:["тишина, покой","шум","движение","работа"],optsUk:["тиша, спокій","шум","рух","робота"],ans:0,hint:"Ruhe haben"},
+  {q:"'lassen' (etwas machen lassen) означает:",qUk:"'lassen' (etwas machen lassen) означає:",opts:["поручать кому-то что-то сделать","делать самому","запрещать","забывать"],optsUk:["доручати комусь щось зробити","робити самому","забороняти","забувати"],ans:0,hint:"sie lässt es machen"},
+  {q:"'die Kaltmiete' по-русски:",qUk:"'die Kaltmiete' українською:",opts:["аренда без отопления","аренда с отоплением","залог","коммунальные платежи"],optsUk:["оренда без опалення","оренда з опаленням","застава","комунальні платежі"],ans:0,hint:"KM"},
+  {q:"'die Warmmiete' по-русски:",qUk:"'die Warmmiete' українською:",opts:["аренда с отоплением и коммунальными","аренда без отопления","залог","ремонт"],optsUk:["оренда з опаленням і комунальними","оренда без опалення","застава","ремонт"],ans:0,hint:"WM = KM + NK"},
+  {q:"'das Obergeschoss' по-русски:",qUk:"'das Obergeschoss' українською:",opts:["верхний этаж","первый этаж","подвал","крыша"],optsUk:["верхній поверх","перший поверх","підвал","дах"],ans:0,hint:"1. OG"},
+  {q:"'die Einbauküche' по-русски:",qUk:"'die Einbauküche' українською:",opts:["встроенная кухня","кухонная мебель","обычная кухня","маленькая кухня"],optsUk:["вбудована кухня","кухонні меблі","звичайна кухня","маленька кухня"],ans:0,hint:"EBK"},
+  {q:"'die Kaution' по-русски:",qUk:"'die Kaution' українською:",opts:["залог (депозит)","аренда","коммунальные платежи","страховка"],optsUk:["застава (депозит)","оренда","комунальні платежі","страховка"],ans:0,hint:"meist 2-3 Monatsmieten"},
+  {q:"'abbauen' (Möbel) означает:",qUk:"'abbauen' (Möbel) означає:",opts:["разбирать, демонтировать","собирать","покупать","ломать"],optsUk:["розбирати, демонтувати","збирати","купувати","ламати"],ans:0,hint:"das Gegenteil von aufbauen"},
+  {q:"'renovieren' по-русски:",qUk:"'renovieren' українською:",opts:["ремонтировать","строить","продавать","красить только"],optsUk:["ремонтувати","будувати","продавати","фарбувати тільки"],ans:0,hint:"die Wohnung renovieren"},
+  {q:"'transportieren' по-русски:",qUk:"'transportieren' українською:",opts:["перевозить","покупать","чинить","убирать"],optsUk:["перевозити","купувати","ремонтувати","прибирати"],ans:0,hint:"die Möbel transportieren"},
+  {q:"'das Bauernhaus' по-русски:",qUk:"'das Bauernhaus' українською:",opts:["крестьянский дом","многоэтажка","таунхаус","замок"],optsUk:["селянський будинок","багатоповерхівка","таунхаус","замок"],ans:0,hint:"auf dem Land"},
+  {q:"'die Öffnungszeiten' по-русски:",qUk:"'die Öffnungszeiten' українською:",opts:["часы работы","выходные дни","расписание уроков","рабочие дни"],optsUk:["години роботи","вихідні дні","розклад уроків","робочі дні"],ans:0,hint:"von 8 bis 20 Uhr"},
+  {q:"'NK' в объявлении означает:",qUk:"'NK' в объявлении означає:",opts:["Nebenkosten","Nachtmiete","Neubau","Nachbarn"],ans:0,hint:"коммунальные платежи",hintUk:"комунальні платежі"},
+  {q:"'Der Löffel liegt auf dem Tisch.' — почему 'liegt', а не 'steht'?",qUk:"'Der Löffel liegt auf dem Tisch.' — чому 'liegt', а не 'steht'?",opts:["ложка лежит горизонтально","ложка стоит вертикально","это ошибка","оба варианта верны"],optsUk:["ложка лежить горизонтально","ложка стоїть вертикально","це помилка","обидва варіанти правильні"],ans:0,hint:"liegen = горизонтальное положение",hintUk:"liegen = горизонтальне положення"},
+  {q:"'die Immobilie' по-русски:",qUk:"'die Immobilie' українською:",opts:["объект недвижимости","мебель","инструмент","страховка"],optsUk:["об'єкт нерухомості","меблі","інструмент","страховка"],ans:0,hint:"Immobilien Franz"},
+  {q:"'der/die Nachmieter/in' по-русски:",qUk:"'der/die Nachmieter/in' українською:",opts:["следующий съёмщик","домовладелец","соседи","мастер"],optsUk:["наступний орендар","домовласник","сусіди","майстер"],ans:0,hint:"Nachmieter gesucht"},
+  {q:"'der Zwilling' по-русски:",qUk:"'der Zwilling' українською:",opts:["близнец","сосед","родственник","ребёнок"],optsUk:["близнюк","сусід","родич","дитина"],ans:0,hint:"Die Jungen sind Zwillinge"},
+  {q:"'die Tapete' по-русски:",qUk:"'die Tapete' українською:",opts:["обои","краска","кисть","стремянка"],optsUk:["шпалери","фарба","пензель","драбина"],ans:0,hint:"die Wohnung tapezieren"},
+  {q:"'tapezieren' означает:",qUk:"'tapezieren' означає:",opts:["клеить обои","красить стены","чинить мебель","убирать"],optsUk:["клеїти шпалери","фарбувати стіни","ремонтувати меблі","прибирати"],ans:0,hint:"die Tapete"},
+  {q:"'die Leiter' (feminin) по-русски:",qUk:"'die Leiter' (feminin) українською:",opts:["стремянка, лестница","директор","провод","краска"],optsUk:["драбина, сходи","директор","провід","фарба"],ans:0,hint:"не путать с der Leiter — руководитель",hintUk:"не плутати з der Leiter — керівник"},
+  {q:"'der Hammer' по-русски:",qUk:"'der Hammer' українською:",opts:["молоток","дрель","гвоздь","шуруп"],optsUk:["молоток","дриль","цвях","шуруп"],ans:0,hint:"im Baumarkt"},
+  {q:"'einverstanden' означает:",qUk:"'einverstanden' означає:",opts:["согласен","несогласен","непонятно","всё равно"],optsUk:["згоден","незгодний","незрозуміло","все одно"],ans:0,hint:"Das ist eine gute Idee. Einverstanden."},
+  {q:"'sympathisch' по-русски:",qUk:"'sympathisch' українською:",opts:["симпатичный, приятный","несимпатичный","знакомый","незнакомый"],optsUk:["симпатичний, приємний","несимпатичний","знайомий","незнайомий"],ans:0,hint:"противоположно unsympathisch",hintUk:"протилежне до unsympathisch"},
+  {q:"'das Haustier' по-русски:",qUk:"'das Haustier' українською:",opts:["домашнее животное","дом","мебель","сад"],optsUk:["домашня тварина","будинок","меблі","сад"],ans:0,hint:"keine Haustiere"},
+  {q:"'der Auftrag' по-русски:",qUk:"'der Auftrag' українською:",opts:["поручение, заказ","подарок","договор","счёт"],optsUk:["доручення, замовлення","подарунок","договір","рахунок"],ans:0,hint:"Ich habe einer Firma den Auftrag gegeben"},
+  {q:"'der Mieter' по-русски:",qUk:"'der Mieter' українською:",opts:["квартиросъёмщик","арендодатель","сосед","мастер"],optsUk:["орендар","орендодавець","сусід","майстер"],ans:0,hint:"противоположно der Vermieter",hintUk:"протилежне до der Vermieter"},
+  {q:"'die Nebenkostenabrechnung' по-русски:",qUk:"'die Nebenkostenabrechnung' українською:",opts:["расчёт коммунальных платежей","договор аренды","счёт за ремонт","страховка дома"],optsUk:["розрахунок комунальних платежів","договір оренди","рахунок за ремонт","страховка будинку"],ans:0,hint:"Deutsch Plus"},
+  {q:"'die Rückzahlung' по-русски:",qUk:"'die Rückzahlung' українською:",opts:["возврат (денег)","доплата","залог","штраф"],optsUk:["повернення (грошей)","доплата","застава","штраф"],ans:0,hint:"Herr Piontek bekommt Geld zurück"},
+  {q:"'der Schornsteinfeger' по-русски:",qUk:"'der Schornsteinfeger' українською:",opts:["трубочист","мастер","электрик","сантехник"],optsUk:["сажотрус","майстер","електрик","сантехнік"],ans:0,hint:"Nebenkosten-Position"},
   {q:"'sich freuen' — 'ich ___ mich'",opts:["freue","freust","freut","freuen"],ans:0,hint:"ich freue mich"},
-  {q:"'sich verlieben' по-русски:",opts:["влюбляться","ссориться","знакомиться","расставаться"],ans:0,hint:"Pavel und Luise"},
-  {q:"'sich entschuldigen' по-русски:",opts:["извиняться","обижаться","мириться","прощать"],ans:0,hint:"Er hat sich entschuldigt"},
-  {q:"'erschöpft' по-русски:",opts:["измученный, обессиленный","весёлый","сильный","одинокий"],ans:0,hint:"negativ-Gruppe"},
+  {q:"'sich verlieben' по-русски:",qUk:"'sich verlieben' українською:",opts:["влюбляться","ссориться","знакомиться","расставаться"],optsUk:["закохуватися","сваритися","знайомитися","розлучатися"],ans:0,hint:"Pavel und Luise"},
+  {q:"'sich entschuldigen' по-русски:",qUk:"'sich entschuldigen' українською:",opts:["извиняться","обижаться","мириться","прощать"],optsUk:["вибачатися","ображатися","миритися","прощати"],ans:0,hint:"Er hat sich entschuldigt"},
+  {q:"'erschöpft' по-русски:",qUk:"'erschöpft' українською:",opts:["измученный, обессиленный","весёлый","сильный","одинокий"],optsUk:["виснажений, знесилений","веселий","сильний","самотній"],ans:0,hint:"negativ-Gruppe"},
 ]);
 
 const LUECKEN_A2L6=shuffle([
@@ -8664,40 +8664,40 @@ function GrosserTestA2L6(){return <GrosserTestContainer rounds={[
 ]}/>;}
 
 const Q_A2L7TEST=shuffle([
-  {q:"'das Feuerwerk' по-русски:",opts:["фейерверк","праздник","подарок","свеча"],ans:0,hint:"an Silvester"},
-  {q:"'schenken' означает:",opts:["дарить","получать","покупать","заворачивать"],ans:0,hint:"+ Dativ + Akkusativ"},
-  {q:"'sich verkleiden' означает:",opts:["переодеваться в костюм","раздеваться","одеваться тепло","краситься"],ans:0,hint:"z.B. an Karneval"},
-  {q:"'der/die Verwandte' по-русски:",opts:["родственник(ца)","сосед(ка)","гость","друг"],ans:0,hint:"Familie"},
-  {q:"'der Glückwunsch' по-русски:",opts:["поздравление","подарок","приглашение","открытка"],ans:0,hint:"Herzlichen Glückwunsch!"},
-  {q:"'das Kompliment' по-русски:",opts:["комплимент","критика","вопрос","извинение"],ans:0,hint:"ein Kompliment machen"},
-  {q:"'der Feiertag' по-русски:",opts:["праздничный (нерабочий) день","будний день","выходной без повода","рабочий день"],ans:0,hint:"gesetzlicher Feiertag"},
-  {q:"'Um Antwort wird gebeten bis...' означает:",opts:["просьба ответить до определённой даты","адрес неверен","подарки не нужны","вход свободный"],ans:0,hint:"R.S.V.P."},
-  {q:"'Ich komme ganz bestimmt.' — это ответ:",opts:["уверенное согласие","отказ","вопрос","неуверенность"],ans:0,hint:"positiv reagieren"},
-  {q:"'Schade, da kann ich nicht.' — это:",opts:["вежливый отказ","согласие","вопрос о дате","комплимент"],ans:0,hint:"absagen"},
-  {q:"'ein grauer Anzug' (m., Nominativ) — окончание:",opts:["-er","-es","-e","-en"],ans:0,hint:"nach ein/kein"},
-  {q:"'ein weißes Kleid' (n., Nominativ) — окончание:",opts:["-es","-er","-e","-en"],ans:0,hint:"nach ein/kein"},
-  {q:"'einen grauen Anzug' — это:",opts:["Akkusativ, m.","Nominativ, m.","Dativ","Nominativ, n."],ans:0,hint:"einen = Akk. m."},
-  {q:"Во множественном числе (kein Artikel) прилагательное берёт окончание:",opts:["-e","-er","-es","-en"],ans:0,hint:"kleine Ohrringe"},
-  {q:"'Was für ein Kleid?' — ответ:",opts:["Ein weißes.","Der weiße.","Einen weißen.","Weißes Kleid der."],ans:0,hint:"n., Nom."},
-  {q:"'Ich schenke meinem Vater ein Buch.' — падеж 'meinem Vater':",opts:["Dativ","Akkusativ","Nominativ","Genitiv"],ans:0,hint:"Person = Dativ"},
-  {q:"Ещё глаголы, как 'schenken' (Dativ+Akkusativ):",opts:["geben, mitbringen, zeigen","gehen, kommen, fahren","können, müssen, wollen","sein, haben, werden"],ans:0,hint:"ebenso: ..."},
-  {q:"'Wirklich? Das ist nett von dir.' — реакция на:",opts:["комплимент","приглашение","отказ","дату"],ans:0,hint:"auf Komplimente reagieren"},
-  {q:"Что удивляет Лейлу (Türkei) в немецких приглашениях?",opts:["немцы всегда приходят вовремя","немцы опаздывают","детей не приглашают","подарки не приносят"],ans:0,hint:"pünktlich"},
-  {q:"'dass' — куда встаёт спрягаемый глагол?",opts:["в конец придаточного предложения","на второе место","в начало","не нужен глагол"],ans:0,hint:"dass-Satz"},
-  {q:"'Er sagt, dass er auf einer Party war.' — это:",opts:["косвенная речь","прямая речь","вопрос","императив"],ans:0,hint:"indirekte Rede"},
-  {q:"Интеркультурный календарь показывает праздники:",opts:["разных религий и культур","только государственные","только детские","только спортивные"],ans:0,hint:"christlich/jüdisch/muslimisch/..."},
-  {q:"'Wer besorgt die Getränke?' звучит при:",opts:["планировании вечеринки курса","написании открытки","чтении приглашения","знакомстве с соседями"],ans:0,hint:"Kursparty organisieren"},
-  {q:"'Herzlichen Glückwunsch zum Geburtstag!' говорят на:",opts:["день рождения","Пасху","Новый год","свадьбу"],ans:0,hint:"zum Geburtstag"},
-  {q:"'Frohe Ostern!' говорят на:",opts:["Пасху","Рождество","юбилей","Новый год"],ans:0,hint:"Ostern"},
-  {q:"'Alles Gute zur Hochzeit!' говорят:",opts:["на свадьбу","на день рождения","на Пасху","на Новый год"],ans:0,hint:"zur Hochzeit"},
-  {q:"В открытке 'Liebe …, / Lieber …,' — это:",opts:["обращение","подпись","дата","адрес"],ans:0,hint:"Anrede"},
-  {q:"'dein/e …' в конце открытки — это:",opts:["подпись отправителя","имя получателя","дата","адрес"],ans:0,hint:"Schlussformel"},
-  {q:"'Das Brautpaar tauscht die Ringe.' — 'tauschen' означает:",opts:["обмениваться","бросать","дарить","терять"],ans:0,hint:"Hochzeitsbrauch"},
-  {q:"'Die Gäste werfen Reis.' — 'werfen' означает:",opts:["бросать, кидать","собирать","ловить","держать"],ans:0,hint:"warf · hat geworfen"},
-  {q:"'Wir hatten Pech: es hat geregnet.' — 'Pech haben' означает:",opts:["не повезти","обрадоваться","промокнуть","опоздать"],ans:0,hint:"Gegenteil: Glück haben"},
-  {q:"'sich verlieben' означает:",opts:["влюбляться","ссориться","знакомиться","расставаться"],ans:0,hint:"vor der Hochzeit"},
-  {q:"'Wir sollten uns überlegen, was wir kaufen.' — 'sich überlegen' означает:",opts:["обдумывать","покупать","забывать","спрашивать"],ans:0,hint:"nachdenken über etwas"},
-  {q:"'Keine Sorge, wir kriegen das schon hin!' означает:",opts:["мы справимся с этим","мы не сможем это сделать","нам это не нужно","мы уже сделали это"],ans:0,hint:"hinkriegen = schaffen"},
+  {q:"'das Feuerwerk' по-русски:",qUk:"'das Feuerwerk' українською:",opts:["фейерверк","праздник","подарок","свеча"],optsUk:["феєрверк","свято","подарунок","свічка"],ans:0,hint:"an Silvester"},
+  {q:"'schenken' означает:",qUk:"'schenken' означає:",opts:["дарить","получать","покупать","заворачивать"],optsUk:["дарувати","отримувати","купувати","загортати"],ans:0,hint:"+ Dativ + Akkusativ"},
+  {q:"'sich verkleiden' означает:",qUk:"'sich verkleiden' означає:",opts:["переодеваться в костюм","раздеваться","одеваться тепло","краситься"],optsUk:["переодягатися в костюм","роздягатися","одягатися тепло","фарбуватися"],ans:0,hint:"z.B. an Karneval"},
+  {q:"'der/die Verwandte' по-русски:",qUk:"'der/die Verwandte' українською:",opts:["родственник(ца)","сосед(ка)","гость","друг"],optsUk:["родич(ка)","сусід(ка)","гість","друг"],ans:0,hint:"Familie"},
+  {q:"'der Glückwunsch' по-русски:",qUk:"'der Glückwunsch' українською:",opts:["поздравление","подарок","приглашение","открытка"],optsUk:["поздоровлення","подарунок","запрошення","листівка"],ans:0,hint:"Herzlichen Glückwunsch!"},
+  {q:"'das Kompliment' по-русски:",qUk:"'das Kompliment' українською:",opts:["комплимент","критика","вопрос","извинение"],optsUk:["комплімент","критика","питання","вибачення"],ans:0,hint:"ein Kompliment machen"},
+  {q:"'der Feiertag' по-русски:",qUk:"'der Feiertag' українською:",opts:["праздничный (нерабочий) день","будний день","выходной без повода","рабочий день"],optsUk:["святковий (неробочий) день","буденний день","вихідний без приводу","робочий день"],ans:0,hint:"gesetzlicher Feiertag"},
+  {q:"'Um Antwort wird gebeten bis...' означает:",qUk:"'Um Antwort wird gebeten bis...' означає:",opts:["просьба ответить до определённой даты","адрес неверен","подарки не нужны","вход свободный"],optsUk:["прохання відповісти до певної дати","адреса невірна","подарунки не потрібні","вхід вільний"],ans:0,hint:"R.S.V.P."},
+  {q:"'Ich komme ganz bestimmt.' — это ответ:",qUk:"'Ich komme ganz bestimmt.' — це відповідь:",opts:["уверенное согласие","отказ","вопрос","неуверенность"],optsUk:["впевнена згода","відмова","питання","невпевненість"],ans:0,hint:"positiv reagieren"},
+  {q:"'Schade, da kann ich nicht.' — это:",qUk:"'Schade, da kann ich nicht.' — це:",opts:["вежливый отказ","согласие","вопрос о дате","комплимент"],optsUk:["ввічлива відмова","згода","питання про дату","комплімент"],ans:0,hint:"absagen"},
+  {q:"'ein grauer Anzug' (m., Nominativ) — окончание:",qUk:"'ein grauer Anzug' (m., Nominativ) — закінчення:",opts:["-er","-es","-e","-en"],ans:0,hint:"nach ein/kein"},
+  {q:"'ein weißes Kleid' (n., Nominativ) — окончание:",qUk:"'ein weißes Kleid' (n., Nominativ) — закінчення:",opts:["-es","-er","-e","-en"],ans:0,hint:"nach ein/kein"},
+  {q:"'einen grauen Anzug' — это:",qUk:"'einen grauen Anzug' — це:",opts:["Akkusativ, m.","Nominativ, m.","Dativ","Nominativ, n."],ans:0,hint:"einen = Akk. m."},
+  {q:"Во множественном числе (kein Artikel) прилагательное берёт окончание:",qUk:"У множині (kein Artikel) прикметник бере закінчення:",opts:["-e","-er","-es","-en"],ans:0,hint:"kleine Ohrringe"},
+  {q:"'Was für ein Kleid?' — ответ:",qUk:"'Was für ein Kleid?' — відповідь:",opts:["Ein weißes.","Der weiße.","Einen weißen.","Weißes Kleid der."],ans:0,hint:"n., Nom."},
+  {q:"'Ich schenke meinem Vater ein Buch.' — падеж 'meinem Vater':",qUk:"'Ich schenke meinem Vater ein Buch.' — відмінок 'meinem Vater':",opts:["Dativ","Akkusativ","Nominativ","Genitiv"],ans:0,hint:"Person = Dativ"},
+  {q:"Ещё глаголы, как 'schenken' (Dativ+Akkusativ):",qUk:"Ще дієслова, як 'schenken' (Dativ+Akkusativ):",opts:["geben, mitbringen, zeigen","gehen, kommen, fahren","können, müssen, wollen","sein, haben, werden"],ans:0,hint:"ebenso: ..."},
+  {q:"'Wirklich? Das ist nett von dir.' — реакция на:",qUk:"'Wirklich? Das ist nett von dir.' — реакція на:",opts:["комплимент","приглашение","отказ","дату"],optsUk:["комплімент","запрошення","відмова","дату"],ans:0,hint:"auf Komplimente reagieren"},
+  {q:"Что удивляет Лейлу (Türkei) в немецких приглашениях?",qUk:"Що дивує Лейлу (Türkei) у німецьких запрошеннях?",opts:["немцы всегда приходят вовремя","немцы опаздывают","детей не приглашают","подарки не приносят"],optsUk:["німці завжди приходять вчасно","німці спізнюються","дітей не запрошують","подарунки не приносять"],ans:0,hint:"pünktlich"},
+  {q:"'dass' — куда встаёт спрягаемый глагол?",qUk:"'dass' — куди стає дієслово?",opts:["в конец придаточного предложения","на второе место","в начало","не нужен глагол"],optsUk:["в кінець підрядного речення","на друге місце","на початок","не потрібне дієслово"],ans:0,hint:"dass-Satz"},
+  {q:"'Er sagt, dass er auf einer Party war.' — это:",qUk:"'Er sagt, dass er auf einer Party war.' — це:",opts:["косвенная речь","прямая речь","вопрос","императив"],optsUk:["непряма мова","пряма мова","питання","імператив"],ans:0,hint:"indirekte Rede"},
+  {q:"Интеркультурный календарь показывает праздники:",qUk:"Інтеркультурний календар показує свята:",opts:["разных религий и культур","только государственные","только детские","только спортивные"],optsUk:["різних релігій і культур","тільки державні","тільки дитячі","тільки спортивні"],ans:0,hint:"christlich/jüdisch/muslimisch/..."},
+  {q:"'Wer besorgt die Getränke?' звучит при:",qUk:"'Wer besorgt die Getränke?' звучить при:",opts:["планировании вечеринки курса","написании открытки","чтении приглашения","знакомстве с соседями"],optsUk:["плануванні вечірки курсу","написанні листівки","читанні запрошення","знайомстві з сусідами"],ans:0,hint:"Kursparty organisieren"},
+  {q:"'Herzlichen Glückwunsch zum Geburtstag!' говорят на:",qUk:"'Herzlichen Glückwunsch zum Geburtstag!' кажуть на:",opts:["день рождения","Пасху","Новый год","свадьбу"],optsUk:["день народження","Пасху","Новий рік","весілля"],ans:0,hint:"zum Geburtstag"},
+  {q:"'Frohe Ostern!' говорят на:",qUk:"'Frohe Ostern!' кажуть на:",opts:["Пасху","Рождество","юбилей","Новый год"],optsUk:["Пасху","Різдво","ювілей","Новий рік"],ans:0,hint:"Ostern"},
+  {q:"'Alles Gute zur Hochzeit!' говорят:",qUk:"'Alles Gute zur Hochzeit!' кажуть:",opts:["на свадьбу","на день рождения","на Пасху","на Новый год"],optsUk:["на весілля","на день народження","на Пасху","на Новий рік"],ans:0,hint:"zur Hochzeit"},
+  {q:"В открытке 'Liebe …, / Lieber …,' — это:",qUk:"В открытке 'Liebe …, / Lieber …,' — це:",opts:["обращение","подпись","дата","адрес"],optsUk:["звертання","підпис","дата","адреса"],ans:0,hint:"Anrede"},
+  {q:"'dein/e …' в конце открытки — это:",qUk:"'dein/e …' в конце открытки — це:",opts:["подпись отправителя","имя получателя","дата","адрес"],optsUk:["підпис відправника","ім'я отримувача","дата","адреса"],ans:0,hint:"Schlussformel"},
+  {q:"'Das Brautpaar tauscht die Ringe.' — 'tauschen' означает:",qUk:"'Das Brautpaar tauscht die Ringe.' — 'tauschen' означає:",opts:["обмениваться","бросать","дарить","терять"],optsUk:["обмінюватися","кидати","дарувати","втрачати"],ans:0,hint:"Hochzeitsbrauch"},
+  {q:"'Die Gäste werfen Reis.' — 'werfen' означает:",qUk:"'Die Gäste werfen Reis.' — 'werfen' означає:",opts:["бросать, кидать","собирать","ловить","держать"],optsUk:["кидати","збирати","ловити","тримати"],ans:0,hint:"warf · hat geworfen"},
+  {q:"'Wir hatten Pech: es hat geregnet.' — 'Pech haben' означает:",qUk:"'Wir hatten Pech: es hat geregnet.' — 'Pech haben' означає:",opts:["не повезти","обрадоваться","промокнуть","опоздать"],optsUk:["не повезло","зрадіти","промокнути","спізнитися"],ans:0,hint:"Gegenteil: Glück haben"},
+  {q:"'sich verlieben' означает:",qUk:"'sich verlieben' означає:",opts:["влюбляться","ссориться","знакомиться","расставаться"],optsUk:["закохуватися","сваритися","знайомитися","розлучатися"],ans:0,hint:"vor der Hochzeit"},
+  {q:"'Wir sollten uns überlegen, was wir kaufen.' — 'sich überlegen' означает:",qUk:"'Wir sollten uns überlegen, was wir kaufen.' — 'sich überlegen' означає:",opts:["обдумывать","покупать","забывать","спрашивать"],optsUk:["обдумувати","купувати","забувати","питати"],ans:0,hint:"nachdenken über etwas"},
+  {q:"'Keine Sorge, wir kriegen das schon hin!' означает:",qUk:"'Keine Sorge, wir kriegen das schon hin!' означає:",opts:["мы справимся с этим","мы не сможем это сделать","нам это не нужно","мы уже сделали это"],optsUk:["ми впораємося з цим","ми не зможемо це зробити","нам це не потрібно","ми вже зробили це"],ans:0,hint:"hinkriegen = schaffen"},
 ]);
 
 const LUECKEN_A2L7=shuffle([
@@ -9050,6 +9050,7 @@ function GrosserTestContainer({rounds}){
 // поэтому угадать наугад сложнее — нужно реально знать слово, а не отличать
 // его от случайного, никак не связанного слова.
 const cleanRu=(ru)=>(ru||"").split("\n")[0].split(" · ")[0].split(" (")[0].trim();
+const cleanUk=(uk)=>(uk||"").split("\n")[0].split(" · ")[0].split(" (")[0].trim();
 const wordLabel=(w)=>w.art?`${w.art} ${w.de}`:w.de;
 
 function pickDistractors(pool,exclude,valueFn,n=3){
@@ -9061,12 +9062,12 @@ function pickDistractors(pool,exclude,valueFn,n=3){
   const out=[];
   for(const x of shuffle(primary)){
     const v=valueFn(x);
-    if(!seen.has(v)){seen.add(v);out.push(v);}
+    if(!seen.has(v)){seen.add(v);out.push(x);}
     if(out.length>=n)break;
   }
   if(out.length<n)for(const x of shuffle(others)){
     const v=valueFn(x);
-    if(!seen.has(v)){seen.add(v);out.push(v);}
+    if(!seen.has(v)){seen.add(v);out.push(x);}
     if(out.length>=n)break;
   }
   return out;
@@ -9074,24 +9075,27 @@ function pickDistractors(pool,exclude,valueFn,n=3){
 function genDeRuQuestions(lekt,count=12){
   const pool=WBDATA.filter(w=>w.lekt===lekt&&w.de&&w.ru);
   return shuffle(pool).slice(0,Math.min(count,pool.length)).map(w=>{
-    const correct=cleanRu(w.ru);
-    const opts=shuffle([correct,...pickDistractors(pool,w,x=>cleanRu(x.ru))]);
-    return{q:wordLabel(w),opts,ans:opts.indexOf(correct),hint:w.tema||""};
+    const distractors=pickDistractors(pool,w,x=>cleanRu(x.ru));
+    const pairs=shuffle([w,...distractors]);
+    const opts=pairs.map(x=>cleanRu(x.ru));
+    const optsUk=pairs.map(x=>cleanUk(x.uk||x.ru));
+    return{q:wordLabel(w),opts,optsUk,ans:pairs.indexOf(w),hint:w.tema||""};
   });
 }
 function genArtikelQuestions(lekt,count=10){
   const pool=WBDATA.filter(w=>w.lekt===lekt&&["der","die","das"].includes(w.art));
   return shuffle(pool).slice(0,Math.min(count,pool.length)).map(w=>{
     const opts=["der","die","das"];
-    return{q:w.de,opts,ans:opts.indexOf(w.art),hint:cleanRu(w.ru)};
+    return{q:w.de,opts,ans:opts.indexOf(w.art),hint:cleanRu(w.ru),hintUk:cleanUk(w.uk||w.ru)};
   });
 }
 function genRuDeQuestions(lekt,count=12){
   const pool=WBDATA.filter(w=>w.lekt===lekt&&w.de&&w.ru);
   return shuffle(pool).slice(0,Math.min(count,pool.length)).map(w=>{
-    const correct=wordLabel(w);
-    const opts=shuffle([correct,...pickDistractors(pool,w,wordLabel)]);
-    return{q:cleanRu(w.ru),opts,ans:opts.indexOf(correct),hint:w.tema||""};
+    const distractors=pickDistractors(pool,w,wordLabel);
+    const pairs=shuffle([w,...distractors]);
+    const opts=pairs.map(wordLabel);
+    return{q:cleanRu(w.ru),qUk:cleanUk(w.uk||w.ru),opts,ans:pairs.indexOf(w),hint:w.tema||""};
   });
 }
 // ─── МИНИ-СЛОВАРЬ УРОКА — те же слова, тот же формат, что в Wörterbuch ─────────
@@ -9237,8 +9241,8 @@ const Q_L4B=[
   {q:"treffen → er/sie/es ...",         opts:["trefft","triffst","trifft","treffe"],       ans:2, exp:"e→i: treffen → trifft",                hint:"Vokalwechsel"},
   {q:"Katharina ___ ein Buch. (lesen)", opts:["lest","liest","lese","lesst"],              ans:1, exp:"lesen → sie liest",                    hint:"Satz"},
   {q:"Herr Fischer ___ einen Film. (sehen)", opts:["seht","sieht","sehe","sehst"],         ans:1, exp:"sehen → er sieht",                     hint:"Satz"},
-  {q:"'Ich fahre nach Berlin.' → nach Berlin = ...", opts:["где я","куда я еду","когда","с кем"], ans:1, exp:"Wohin? → nach + Stadt (движение)",expUk:"Wohin? → nach + Stadt (рух)", hint:"Wo/Wohin"},
-  {q:"'Sie ist in Berlin.' → in Berlin = ...",       opts:["куда она идёт","где она находится","когда","зачем"], ans:1, exp:"Wo? → in + Stadt (нахождение)",expUk:"Wo? → in + Stadt (перебування)", hint:"Wo/Wohin"},
+  {q:"'Ich fahre nach Berlin.' → nach Berlin = ...", opts:["где я","куда я еду","когда","с кем"],optsUk:["де я","куди я їду","коли","з ким"], ans:1, exp:"Wohin? → nach + Stadt (движение)",expUk:"Wohin? → nach + Stadt (рух)", hint:"Wo/Wohin"},
+  {q:"'Sie ist in Berlin.' → in Berlin = ...",       opts:["куда она идёт","где она находится","когда","зачем"],optsUk:["куди вона йде","де вона знаходиться","коли","навіщо"], ans:1, exp:"Wo? → in + Stadt (нахождение)",expUk:"Wo? → in + Stadt (перебування)", hint:"Wo/Wohin"},
 ];
 
 // ─── L4 — POSSESSIVARTIKEL ───────────────────────────────────────────────────
@@ -9249,10 +9253,10 @@ const Q_L4A=[
   {q:"___ Eltern wohnen in Berlin. (ich)",   opts:["Mein","Meine","Seine"],  ans:"Meine", note:"Plural → meine (+e)"},
   {q:"Das ist ___ Frau. (er)",               opts:["sein","seine","ihr"],    ans:"seine", note:"f → seine (+e)"},
   {q:"Wie heißen ___ Kinder? (Sie/formell)", opts:["Ihr","Ihre","Sein"],     ans:"Ihre",  note:"Plural (formell) → Ihre (+e)"},
-  {q:"Das ist ___ Sohn. (sie/она)",          opts:["ihr","ihre","sein"],     ans:"ihr",   note:"m → ihr (без окончания)"},
+  {q:"Das ist ___ Sohn. (sie/она)",qUk:"Das ist ___ Sohn. (sie/вона)",          opts:["ihr","ihre","sein"],     ans:"ihr",   note:"m → ihr (без окончания)"},
   {q:"Wo wohnt ___ Bruder? (du)",            opts:["dein","deine","mein"],   ans:"dein",  note:"m → dein (без окончания)"},
   {q:"Das ist ___ Schwester. (ich)",         opts:["mein","meine","ihre"],   ans:"meine", note:"f → meine (+e)"},
-  {q:"___ Kind ist zwei Jahre alt. (sie/она)",opts:["Ihr","Ihre","Sein"],    ans:"Ihr",   note:"n → ihr (без окончания)"},
+  {q:"___ Kind ist zwei Jahre alt. (sie/она)",qUk:"___ Kind ist zwei Jahre alt. (sie/вона)",opts:["Ihr","Ihre","Sein"],    ans:"Ihr",   note:"n → ihr (без окончания)"},
 ];
 
 function T4A(){
@@ -9950,12 +9954,12 @@ const Q_L5C=[
   {q:"'Ich arbeite ___ Montag.'",                           opts:["um","an","am","im"],                                                                 ans:2, hint:"am"},
   {q:"'Der Kurs beginnt ___ 9 Uhr.'",                       opts:["am","im","um","an"],                                                                 ans:2, hint:"um"},
   {q:"'Er arbeitet ___ 9 ___ 17 Uhr.'",                     opts:["am...bis","von...bis","um...bis","in...am"],                                         ans:1, hint:"von...bis"},
-  {q:"Wie sagt man 'ночью' с предлогом?",                   opts:["am Nacht","im Nacht","in der Nacht","an der Nacht"],                                  ans:2, hint:"in der Nacht"},
+  {q:"Wie sagt man 'ночью' с предлогом?",qUk:"Wie sagt man 'вночі' з прийменником?",                   opts:["am Nacht","im Nacht","in der Nacht","an der Nacht"],                                  ans:2, hint:"in der Nacht"},
   {q:"Welche Reihenfolge ist richtig?",                     opts:["um 9 Uhr am Montag lernt er","er lernt am Montag um 9 Uhr","er lernt um Montag 9 Uhr","am um 9 Uhr Montag lernt er"], ans:1, hint:"Wortstellung"},
   {q:"Was bedeutet 'am Montagvormittag'?",                  opts:["Montagnachmittag","Montagabend","Montagmorgen","am Vormittag des Montags"],           ans:3, hint:"Zusammengesetzt"},
   {q:"'Sie sieht am Abend ___.' (fernsehen)",               opts:["fernsehen","fern","fernsiehst","sieht fern"],                                         ans:1, hint:"Trennbar"},
   {q:"'Von' benutzt man ...",                               opts:["nur mit Uhrzeiten","nur mit Wochentagen","mit Anfangspunkt einer Zeitspanne","mit Tageszeiten"], ans:2, hint:"von"},
-  {q:"'Wann gehst du schlafen?' — типичный ответ:",         opts:["Am Nacht.","In der Nacht um 23 Uhr.","Um Mitternacht am Nacht.","Am Abend um 22 Uhr."], ans:3, hint:"am/um"},
+  {q:"'Wann gehst du schlafen?' — типичный ответ:",qUk:"'Wann gehst du schlafen?' — типова відповідь:",         opts:["Am Nacht.","In der Nacht um 23 Uhr.","Um Mitternacht am Nacht.","Am Abend um 22 Uhr."], ans:3, hint:"am/um"},
 ];
 
 function T5C(){
@@ -10047,7 +10051,7 @@ function T5C(){
 
 const Q_L5D=[
   {q:"Wie antwortet man positiv auf 'Gehen wir schwimmen?'",  opts:["Nein, leider nicht.","Ja, gerne!","Das geht nicht.","Ich habe keine Lust."],          ans:1, hint:"Согласие",hintUk:"Згода"},
-  {q:"Wie sagt man 'Нет, не хочу'?",                         opts:["Nein, leider nicht.","Das geht nicht.","Ich habe keine Lust.","Es tut mir leid."],      ans:2, hint:"Отказ",hintUk:"Відмова"},
+  {q:"Wie sagt man 'Нет, не хочу'?",qUk:"Wie sagt man 'Ні, не хочу'?",                         opts:["Nein, leider nicht.","Das geht nicht.","Ich habe keine Lust.","Es tut mir leid."],      ans:2, hint:"Отказ",hintUk:"Відмова"},
   {q:"'Er ___ später essen.' (gehen + Infinitiv)",            opts:["geht später essen","essen geht später","geht essen später","später geht essen"],         ans:0, hint:"gehen + Inf."},
   {q:"Wo steht der Infinitiv bei 'gehen + Infinitiv'?",      opts:["Position 2","am Satzanfang","am Satzende","nach dem Subjekt"],                           ans:2, hint:"Wortstellung"},
   {q:"'Gehen wir heute Abend ___.' (tanzen)",                 opts:["tanzen","tanze","tanzt","zu tanzen"],                                                    ans:0, hint:"gehen + Inf."},
@@ -10210,7 +10214,7 @@ const Q_L6B=[
   {q:"Imperativ (Sie) von 'kaufen'?",                       opts:["Kaufst Sie!","Kauf Sie!","Kaufen Sie!","Sie kaufen!"],ans:2, hint:"Imperativ Sie"},
   {q:"Imperativ (du) von 'holen'?\n(du holst → ...)",      opts:["Holt!","Hole!","Hol!","Holen!"],                ans:2, hint:"Imperativ du"},
   {q:"Imperativ (ihr) von 'vergessen'?\n(ihr vergesst → ...)",opts:["Vergess!","Vergisst!","Vergesst!","Vergessen!"],ans:2, hint:"Imperativ ihr"},
-  {q:"Как сделать Imperativ вежливее?",                     opts:["Kauf Milch!","Kauf doch bitte Milch!","Du kaufst Milch!","Sie kaufen Milch!"],ans:1, hint:"doch bitte"},
+  {q:"Как сделать Imperativ вежливее?",qUk:"Як зробити Imperativ ввічливішим?",                     opts:["Kauf Milch!","Kauf doch bitte Milch!","Du kaufst Milch!","Sie kaufen Milch!"],ans:1, hint:"doch bitte"},
   {q:"Imperativ (du) von 'essen'?\n(du isst → ...)",        opts:["Esst!","Esse!","Iss!","Essen!"],                ans:2, hint:"Imperativ du ⚡"},
   {q:"Imperativ (du) von 'gehen'?\n(du gehst → ...)",       opts:["Gehe!","Geht!","Geh!","Gehen!"],                ans:2, hint:"Imperativ du"},
   {q:"Welcher Imperativ ist formell?",                       opts:["Kauf doch Brot!","Kauft Brot!","Kaufen Sie Brot!","Kaufst du Brot?"],ans:2, hint:"formell = Sie"},
@@ -10419,18 +10423,18 @@ function T6B(){
 }
 
 const Q_L6C=[
-  {q:"'Ich möchte Brot.' — форма глагола?",        opts:["mag","möchte","mögen","möchtest"],                                           ans:1, hint:"möchten"},
-  {q:"Ich ___ gerne ein Kilo Äpfel. (вежл. просьба)",opts:["möchte","mag","will","habe"],                                              ans:0, hint:"möchten"},
-  {q:"'Ich hätte gerne...' = ?",                    opts:["У меня есть...","Я хотел(а) бы...","Мне нравится...","Мне нужно..."],       ans:1, hint:"hätte gerne"},
-  {q:"Wo kauft man Wurst? (мясная лавка)",          opts:["am Kiosk","im Supermarkt","in der Metzgerei","in der Bäckerei"],            ans:2, hint:"Einkaufsorte"},
+  {q:"'Ich möchte Brot.' — форма глагола?",qUk:"'Ich möchte Brot.' — форма дієслова?",        opts:["mag","möchte","mögen","möchtest"],                                           ans:1, hint:"möchten"},
+  {q:"Ich ___ gerne ein Kilo Äpfel. (вежл. просьба)",qUk:"Ich ___ gerne ein Kilo Äpfel. (ввічл. прохання)",opts:["möchte","mag","will","habe"],                                              ans:0, hint:"möchten"},
+  {q:"'Ich hätte gerne...' = ?",                    opts:["У меня есть...","Я хотел(а) бы...","Мне нравится...","Мне нужно..."],optsUk:["У мене є...","Я хотів(ла) би...","Мені подобається...","Мені потрібно..."],       ans:1, hint:"hätte gerne"},
+  {q:"Wo kauft man Wurst? (мясная лавка)",qUk:"Wo kauft man Wurst? (м'ясна лавка)",          opts:["am Kiosk","im Supermarkt","in der Metzgerei","in der Bäckerei"],            ans:2, hint:"Einkaufsorte"},
   {q:"Wo kauft man Brötchen?",                      opts:["auf dem Markt","in der Bäckerei","am Kiosk","an der Tankstelle"],           ans:1, hint:"Einkaufsorte"},
-  {q:"'Das macht zusammen 5€.' — что это значит?",  opts:["Это стоит 5€","Итого 5€","Скидка 5€","Сдача 5€"],                          ans:1, hint:"Einkauf"},
-  {q:"'Haben Sie es passend?' — что спрашивают?",   opts:["Вам нравится?","У вас есть точная сумма?","Что желаете?","Всё?"],           ans:1, hint:"passend"},
-  {q:"Предлог для: im Supermarkt, in der Bäckerei?",opts:["auf","an","im / in der","bei"],                                            ans:2, hint:"Präpositionen"},
-  {q:"'auf dem Markt' — предлог + артикль?",         opts:["auf dem","in dem","an der","bei dem"],                                     ans:0, hint:"auf dem Markt"},
+  {q:"'Das macht zusammen 5€.' — что это значит?",qUk:"'Das macht zusammen 5€.' — що це означає?",  opts:["Это стоит 5€","Итого 5€","Скидка 5€","Сдача 5€"],optsUk:["Це коштує 5€","Разом 5€","Знижка 5€","Решта 5€"],                          ans:1, hint:"Einkauf"},
+  {q:"'Haben Sie es passend?' — что спрашивают?",qUk:"'Haben Sie es passend?' — що запитують?",   opts:["Вам нравится?","У вас есть точная сумма?","Что желаете?","Всё?"],optsUk:["Вам подобається?","У вас є точна сума?","Що бажаєте?","Все?"],           ans:1, hint:"passend"},
+  {q:"Предлог для: im Supermarkt, in der Bäckerei?",qUk:"Прийменник для: im Supermarkt, in der Bäckerei?",opts:["auf","an","im / in der","bei"],                                            ans:2, hint:"Präpositionen"},
+  {q:"'auf dem Markt' — предлог + артикль?",qUk:"'auf dem Markt' — прийменник + артикль?",         opts:["auf dem","in dem","an der","bei dem"],                                     ans:0, hint:"auf dem Markt"},
   {q:"Wie lautet die Sie-Form von möchten?",         opts:["möchtet","möchten","möchte","mag"],                                        ans:1, hint:"möchten"},
-  {q:"'an der Tankstelle' — где это?",               opts:["рынок","заправка","булочная","супермаркет"],                               ans:1, hint:"Tankstelle"},
-  {q:"'Ich nehme drei Stück, bitte.' — Stück = ?",   opts:["штука, кусок","литр","пачка","стаканчик"],                                ans:0, hint:"Mengen"},
+  {q:"'an der Tankstelle' — где это?",qUk:"'an der Tankstelle' — де це?",               opts:["рынок","заправка","булочная","супермаркет"],optsUk:["ринок","заправка","булочна","супермаркет"],                               ans:1, hint:"Tankstelle"},
+  {q:"'Ich nehme drei Stück, bitte.' — Stück = ?",   opts:["штука, кусок","литр","пачка","стаканчик"],optsUk:["штука, кусок","літр","пачка","склянка"],                                ans:0, hint:"Mengen"},
 ];
 
 function T6C(){
@@ -10613,17 +10617,17 @@ function T6C(){
 }
 
 const Q_L6D=[
-  {q:"'Sie mag Schokolade.' — форма mögen?",          opts:["mögt","mag","mögen","magst"],                                             ans:1, hint:"mögen er/sie"},
+  {q:"'Sie mag Schokolade.' — форма mögen?",qUk:"'Sie mag Schokolade.' — форма mögen?",          opts:["mögt","mag","mögen","magst"],                                             ans:1, hint:"mögen er/sie"},
   {q:"Ich ___ Wurst, aber ich ___ keinen Käse.",      opts:["mag / mag","mögen / mögen","mag / magst","möchte / möchte"],             ans:0, hint:"mögen ich=er"},
-  {q:"kein- + ___ (что ставится после kein-)?",       opts:["Adjektiv","Nomen","Verb","Adverb"],                                      ans:1, hint:"kein + Nomen"},
-  {q:"'Ich mag keinen Kaffee.' → keinen потому что:", opts:["f-форма","n-форма","m Akkusativ","pl-форма"],                            ans:2, hint:"Akkusativ m"},
+  {q:"kein- + ___ (что ставится после kein-)?",qUk:"kein- + ___ (що ставиться після kein-)?",       opts:["Adjektiv","Nomen","Verb","Adverb"],                                      ans:1, hint:"kein + Nomen"},
+  {q:"'Ich mag keinen Kaffee.' → keinen потому что:",qUk:"'Ich mag keinen Kaffee.' → keinen тому що:", opts:["f-форма","n-форма","m Akkusativ","pl-форма"],optsUk:["f-форма","n-форма","m Akkusativ","pl-форма"],                            ans:2, hint:"Akkusativ m"},
   {q:"'Ich trinke nicht gern Kaffee.' → nicht + ?",   opts:["Nomen","Verb/Adverb","Artikel","Adjektiv"],                             ans:1, hint:"nicht + Verb"},
-  {q:"Отрицание: 'Ich mag ___ Fisch.' (m Akk.)",      opts:["keine","kein","keinen","nicht"],                                        ans:2, hint:"kein Akkusativ m"},
-  {q:"Отрицание: 'Ich mag ___ Milch.' (f)",           opts:["keinen","kein","keine","nicht"],                                        ans:2, hint:"kein f"},
-  {q:"Отрицание: 'Ich mag ___ Brot.' (n)",            opts:["keine","keinen","kein","nicht"],                                        ans:2, hint:"kein n"},
-  {q:"mögen vs möchten: 'Ich ___ heute Pizza.' (хочу сейчас)", opts:["mag","möchte","mögen","magst"],                               ans:1, hint:"möchten = сейчас",hintUk:"möchten = зараз"},
-  {q:"mögen vs möchten: 'Ich ___ Pasta.' (люблю вообще)",      opts:["möchte","möchten","mag","magst"],                             ans:2, hint:"mögen = вообще",hintUk:"mögen = взагалі"},
-  {q:"Отрицание Pl.: 'Ich mag ___ Bratkartoffeln.'",  opts:["keinen","kein","keiner","keine"],                                       ans:3, hint:"kein Plural"},
+  {q:"Отрицание: 'Ich mag ___ Fisch.' (m Akk.)",qUk:"Заперечення: 'Ich mag ___ Fisch.' (m Akk.)",      opts:["keine","kein","keinen","nicht"],                                        ans:2, hint:"kein Akkusativ m"},
+  {q:"Отрицание: 'Ich mag ___ Milch.' (f)",qUk:"Заперечення: 'Ich mag ___ Milch.' (f)",           opts:["keinen","kein","keine","nicht"],                                        ans:2, hint:"kein f"},
+  {q:"Отрицание: 'Ich mag ___ Brot.' (n)",qUk:"Заперечення: 'Ich mag ___ Brot.' (n)",            opts:["keine","keinen","kein","nicht"],                                        ans:2, hint:"kein n"},
+  {q:"mögen vs möchten: 'Ich ___ heute Pizza.' (хочу сейчас)",qUk:"mögen vs möchten: 'Ich ___ heute Pizza.' (хочу зараз)", opts:["mag","möchte","mögen","magst"],                               ans:1, hint:"möchten = сейчас",hintUk:"möchten = зараз"},
+  {q:"mögen vs möchten: 'Ich ___ Pasta.' (люблю вообще)",qUk:"mögen vs möchten: 'Ich ___ Pasta.' (люблю взагалі)",      opts:["möchte","möchten","mag","magst"],                             ans:2, hint:"mögen = вообще",hintUk:"mögen = взагалі"},
+  {q:"Отрицание Pl.: 'Ich mag ___ Bratkartoffeln.'",qUk:"Заперечення Pl.: 'Ich mag ___ Bratkartoffeln.'",  opts:["keinen","kein","keiner","keine"],                                       ans:3, hint:"kein Plural"},
   {q:"'Sie isst nicht gerne Käse.' = ?",              opts:["Sie mag keinen Käse.","Sie isst Käse.","Sie kauft keinen Käse.","Sie mag Käse."], ans:0, hint:"kein = nicht gerne"},
 ];
 
@@ -10783,14 +10787,14 @@ function T6D(){
 }
 
 const Q_L6E=[
-  {q:"'Man' спрягается как:",                       opts:["ich","du","er/sie/es","wir"],                                              ans:2, hint:"man = er"},
-  {q:"'Man isst' = ?",                               opts:["Я ем","Ты ешь","Едят / принято есть","Мы едим"],                         ans:2, hint:"man = viele"},
+  {q:"'Man' спрягается как:",qUk:"'Man' відмінюється як:",                       opts:["ich","du","er/sie/es","wir"],                                              ans:2, hint:"man = er"},
+  {q:"'Man isst' = ?",                               opts:["Я ем","Ты ешь","Едят / принято есть","Мы едим"],optsUk:["Я їм","Ти їси","Їдять / прийнято їсти","Ми їмо"],                         ans:2, hint:"man = viele"},
   {q:"Wann isst man in Deutschland zu Mittag?",      opts:["8–10 Uhr","12–14 Uhr","15–17 Uhr","18–20 Uhr"],                         ans:1, hint:"Mittagessen"},
   {q:"Was isst man zum Frühstück in Deutschland?",   opts:["Fleisch und Kartoffeln","Brot mit Käse/Wurst, Kaffee","Pizza","Suppe"], ans:1, hint:"Frühstück"},
-  {q:"'Das Abendessen ist oft kalt.' — когда?",      opts:["morgens","mittags","abends","nachts"],                                    ans:2, hint:"Abendessen"},
+  {q:"'Das Abendessen ist oft kalt.' — когда?",qUk:"'Das Abendessen ist oft kalt.' — коли?",      opts:["morgens","mittags","abends","nachts"],                                    ans:2, hint:"Abendessen"},
   {q:"'Kaffee und Kuchen' — wann?",                  opts:["zum Frühstück","zum Mittagessen","am Sonntagnachmittag","abends"],       ans:2, hint:"Kaffee und Kuchen"},
   {q:"Wo essen viele Deutsche zu Mittag?",           opts:["zu Hause","in der Bäckerei","in der Kantine / am Imbiss","im Supermarkt"], ans:2, hint:"Kantine"},
-  {q:"'Man backt den Kuchen selbst.' — Man = ?",     opts:["я","он","люди / принято","мы"],                                          ans:2, hint:"man"},
+  {q:"'Man backt den Kuchen selbst.' — Man = ?",     opts:["я","он","люди / принято","мы"],optsUk:["я","він","люди / прийнято","ми"],                                          ans:2, hint:"man"},
 ];
 
 function T6E(){
@@ -10895,18 +10899,18 @@ function T6E(){
 }
 
 const Q_L7A=[
-  {q:"'Ich ___ früh aufstehen.' (обязан)",       opts:["will","kann","muss","soll"],                                      ans:2, hint:"müssen"},
-  {q:"'Er ___ gut Klavier spielen.' (умеет)",    opts:["muss","will","soll","kann"],                                      ans:3, hint:"können"},
-  {q:"'Ich ___ heute ins Kino gehen.' (хочу)",   opts:["muss","soll","will","kann"],                                      ans:2, hint:"wollen"},
-  {q:"'Du ___ mehr Wasser trinken.' (совет врача)",opts:["musst","willst","kannst","sollst"],                             ans:3, hint:"sollen"},
-  {q:"Где Infinitiv в предложении с Modalverb?", opts:["на 2-м месте","в конце","на 1-м месте","перед Modalverb"],        ans:1, hint:"Satzklammer"},
+  {q:"'Ich ___ früh aufstehen.' (обязан)",qUk:"'Ich ___ früh aufstehen.' (зобов'язаний)",       opts:["will","kann","muss","soll"],                                      ans:2, hint:"müssen"},
+  {q:"'Er ___ gut Klavier spielen.' (умеет)",qUk:"'Er ___ gut Klavier spielen.' (вміє)",    opts:["muss","will","soll","kann"],                                      ans:3, hint:"können"},
+  {q:"'Ich ___ heute ins Kino gehen.' (хочу)",qUk:"'Ich ___ heute ins Kino gehen.' (хочу)",   opts:["muss","soll","will","kann"],                                      ans:2, hint:"wollen"},
+  {q:"'Du ___ mehr Wasser trinken.' (совет врача)",qUk:"'Du ___ mehr Wasser trinken.' (порада лікаря)",opts:["musst","willst","kannst","sollst"],                             ans:3, hint:"sollen"},
+  {q:"Где Infinitiv в предложении с Modalverb?",qUk:"Де Infinitiv у реченні з Modalverb?", opts:["на 2-м месте","в конце","на 1-м месте","перед Modalverb"],optsUk:["на 2-му місці","в кінці","на 1-му місці","перед Modalverb"],        ans:1, hint:"Satzklammer"},
   {q:"Ich ___ morgen arbeiten. (ich/müssen)",     opts:["muss","musse","musst","müsse"],                                   ans:0, hint:"ich muss"},
   {q:"Er ___ gut Deutsch. (können, er)",          opts:["kannst","können","könnt","kann"],                                 ans:3, hint:"er kann"},
   {q:"Wir ___ viel reisen. (wollen)",             opts:["wollt","wollen","will","willst"],                                 ans:1, hint:"wir wollen"},
   {q:"Ich ___ als Kellner arbeiten. (Beruf)",     opts:["bin","arbeite","heiße","lerne"],                                  ans:1, hint:"arbeiten als"},
-  {q:"'Ich bin Arzt von Beruf.' → артикль?",     opts:["ein Arzt","der Arzt","Arzt","einen Arzt"],                        ans:2, hint:"Berufe ohne Artikel"},
+  {q:"'Ich bin Arzt von Beruf.' → артикль?",qUk:"'Ich bin Arzt von Beruf.' → артикль?",     opts:["ein Arzt","der Arzt","Arzt","einen Arzt"],                        ans:2, hint:"Berufe ohne Artikel"},
   {q:"Ich ___ morgen nicht kommen. (können, neg)",opts:["kann nicht","nicht kann","kannst nicht","muss nicht"],           ans:0, hint:"Satzklammer"},
-  {q:"'Sie soll viel schlafen.' — soll от?",     opts:["wollen","können","sollen","müssen"],                              ans:2, hint:"sollen"},
+  {q:"'Sie soll viel schlafen.' — soll от?",qUk:"'Sie soll viel schlafen.' — soll від?",     opts:["wollen","können","sollen","müssen"],                              ans:2, hint:"sollen"},
 ];
 function T7A(){
   const lang=useContext(LangContext);
@@ -11026,12 +11030,12 @@ function T7A(){
 }
 
 const Q_L7B=[
-  {q:"Geldautomat = ?",                        opts:["банкомат","кассир","квитанция","переводной бланк"],           ans:0, hint:"Geldautomat"},
-  {q:"'überweisen' = ?",                       opts:["снять деньги","оплатить наличными","перевести деньги","открыть счёт"],ans:2,hint:"überweisen"},
-  {q:"IBAN — что это?",                        opts:["международный номер счёта","выписка","номер карты","PIN-код"],  ans:0, hint:"IBAN"},
-  {q:"'Kontoauszug' = ?",                      opts:["бланк перевода","выписка со счёта","кредитная карта","номер счёта"],ans:1,hint:"Kontoauszug"},
+  {q:"Geldautomat = ?",                        opts:["банкомат","кассир","квитанция","переводной бланк"],optsUk:["банкомат","касир","квитанція","бланк переказу"],           ans:0, hint:"Geldautomat"},
+  {q:"'überweisen' = ?",                       opts:["снять деньги","оплатить наличными","перевести деньги","открыть счёт"],optsUk:["знімати гроші","оплатити готівкою","перевести гроші","відкрити рахунок"],ans:2,hint:"überweisen"},
+  {q:"IBAN — что это?",qUk:"IBAN — що це?",                        opts:["международный номер счёта","выписка","номер карты","PIN-код"],optsUk:["міжнародний номер рахунку","виписка","номер картки","PIN-код"],  ans:0, hint:"IBAN"},
+  {q:"'Kontoauszug' = ?",                      opts:["бланк перевода","выписка со счёта","кредитная карта","номер счёта"],optsUk:["бланк переказу","виписка з рахунку","кредитна картка","номер рахунку"],ans:1,hint:"Kontoauszug"},
   {q:"'Ich möchte Geld überweisen.' + ___",    opts:["Geldautomat","Überweisungsformular","Kontonummer","EC-Karte"],  ans:1, hint:"formular"},
-  {q:"'das Konto, Konten' — что это?",         opts:["квитанция","банковская карта","банковский счёт","перевод"],    ans:2, hint:"Konto"},
+  {q:"'das Konto, Konten' — что это?",qUk:"'das Konto, Konten' — що це?",         opts:["квитанция","банковская карта","банковский счёт","перевод"],optsUk:["квитанція","банківська картка","банківський рахунок","переклад"],    ans:2, hint:"Konto"},
 ];
 function T7B(){
   const lang=useContext(LangContext);
@@ -11071,9 +11075,9 @@ function T7B(){
 }
 
 const Q_L7C=[
-  {q:"'mit + Dativ' — артикль m/n?",            opts:["der","dem","den","die"],                                       ans:1, hint:"Dativ m/n = dem"},
-  {q:"'bei + Dativ' — артикль f?",              opts:["dem","den","der","die"],                                       ans:2, hint:"Dativ f = der"},
-  {q:"'mit den Kindern' — Dativ Plural на?",    opts:["-en","-er","-n","-em"],                                        ans:2, hint:"Plural Dativ = den + -n"},
+  {q:"'mit + Dativ' — артикль m/n?",qUk:"'mit + Dativ' — артикль m/n?",            opts:["der","dem","den","die"],                                       ans:1, hint:"Dativ m/n = dem"},
+  {q:"'bei + Dativ' — артикль f?",qUk:"'bei + Dativ' — артикль f?",              opts:["dem","den","der","die"],                                       ans:2, hint:"Dativ f = der"},
+  {q:"'mit den Kindern' — Dativ Plural на?",qUk:"'mit den Kindern' — Dativ Plural на?",    opts:["-en","-er","-n","-em"],                                        ans:2, hint:"Plural Dativ = den + -n"},
   {q:"zu + dem = ?",                            opts:["zum","zur","beim","vom"],                                       ans:0, hint:"Kontraktion"},
   {q:"bei + dem = ?",                           opts:["zum","zur","beim","vom"],                                       ans:2, hint:"Kontraktion"},
   {q:"von + dem = ?",                           opts:["zum","zur","beim","vom"],                                       ans:3, hint:"Kontraktion"},
@@ -11300,18 +11304,18 @@ function T8B(){
 }
 
 const Q_L8C=[
-  {q:"'Du solltest mehr schlafen.' sollte = ?",   opts:["Imperativ","Konjunktiv II (совет)","Futur","Modalverb Präsens"],ans:1,hint:"sollte"},
-  {q:"sollte vs soll: 'Du ___ Tabletten nehmen.' (врач назначил)", opts:["sollte","sollst","soll","willst"],            ans:1, hint:"sollen Präsens"},
-  {q:"'Du solltest mehr trinken.' = ?",            opts:["Ты должен пить","Тебе следует пить больше","Ты хочешь пить","Тебе можно пить"], ans:1, hint:"sollte = совет",hintUk:"sollte = порада"},
-  {q:"Windpocken = ?",                             opts:["свинка","ветрянка","корь","скарлатина"],                       ans:1, hint:"Windpocken"},
-  {q:"Masern = ?",                                 opts:["свинка","ветрянка","корь","скарлатина"],                       ans:2, hint:"Masern"},
-  {q:"Scharlach = ?",                              opts:["свинка","ветрянка","корь","скарлатина"],                       ans:3, hint:"Scharlach"},
-  {q:"Mumps = ?",                                  opts:["свинка","ветрянка","корь","скарлатина"],                       ans:0, hint:"Mumps"},
-  {q:"'Die Krankenkasse zahlt.' = ?",              opts:["рецепт оплачивает","страховая касса платит","касса аптеки","банк платит"], ans:1, hint:"Krankenkasse"},
-  {q:"'Der Arzt schreibt eine Krankschreibung.' = ?", opts:["выписку","рецепт","направление","больничный лист"],         ans:3, hint:"Krankschreibung"},
+  {q:"'Du solltest mehr schlafen.' sollte = ?",   opts:["Imperativ","Konjunktiv II (совет)","Futur","Modalverb Präsens"],optsUk:["Imperativ","Konjunktiv II (порада)","Futur","Modalverb Präsens"],ans:1,hint:"sollte"},
+  {q:"sollte vs soll: 'Du ___ Tabletten nehmen.' (врач назначил)",qUk:"sollte vs soll: 'Du ___ Tabletten nehmen.' (лікар призначив)", opts:["sollte","sollst","soll","willst"],            ans:1, hint:"sollen Präsens"},
+  {q:"'Du solltest mehr trinken.' = ?",            opts:["Ты должен пить","Тебе следует пить больше","Ты хочешь пить","Тебе можно пить"],optsUk:["Ти повинен пити","Тобі варто пити більше","Ти хочеш пити","Тобі можна пити"], ans:1, hint:"sollte = совет",hintUk:"sollte = порада"},
+  {q:"Windpocken = ?",                             opts:["свинка","ветрянка","корь","скарлатина"],optsUk:["свинка","вітрянка","кір","скарлатина"],                       ans:1, hint:"Windpocken"},
+  {q:"Masern = ?",                                 opts:["свинка","ветрянка","корь","скарлатина"],optsUk:["свинка","вітрянка","кір","скарлатина"],                       ans:2, hint:"Masern"},
+  {q:"Scharlach = ?",                              opts:["свинка","ветрянка","корь","скарлатина"],optsUk:["свинка","вітрянка","кір","скарлатина"],                       ans:3, hint:"Scharlach"},
+  {q:"Mumps = ?",                                  opts:["свинка","ветрянка","корь","скарлатина"],optsUk:["свинка","вітрянка","кір","скарлатина"],                       ans:0, hint:"Mumps"},
+  {q:"'Die Krankenkasse zahlt.' = ?",              opts:["рецепт оплачивает","страховая касса платит","касса аптеки","банк платит"],optsUk:["рецепт оплачує","страхова каса платить","каса аптеки","банк платить"], ans:1, hint:"Krankenkasse"},
+  {q:"'Der Arzt schreibt eine Krankschreibung.' = ?", opts:["выписку","рецепт","направление","больничный лист"],optsUk:["виписку","рецепт","напрямок","лікарняний лист"],         ans:3, hint:"Krankschreibung"},
   {q:"messen (er) = ?",                            opts:["mässt","messst","misst","messt"],                              ans:2, hint:"e→i: misst"},
-  {q:"anmachen = ?",                               opts:["надевать","включать","выключать","открывать"],                 ans:1, hint:"anmachen"},
-  {q:"ausmachen = ?",                              opts:["надевать","включать","выключать","договориться"],              ans:2, hint:"ausmachen"},
+  {q:"anmachen = ?",                               opts:["надевать","включать","выключать","открывать"],optsUk:["одягати","включати","вимикати","відкривати"],                 ans:1, hint:"anmachen"},
+  {q:"ausmachen = ?",                              opts:["надевать","включать","выключать","договориться"],optsUk:["одягати","включати","вимикати","домовитися"],              ans:2, hint:"ausmachen"},
 ];
 function T8C(){
   const lang=useContext(LangContext);
@@ -11445,16 +11449,16 @@ function T8C(){
 }
 
 const Q_L8A=[
-  {q:"'Was fehlt Ihnen?' — что спрашивают?",   opts:["Что вам нужно?","Что вас беспокоит?","Где болит?","Как вас зовут?"],ans:1,hint:"fehlen"},
-  {q:"Erkältung = ?",                           opts:["грипп","аллергия","простуда","кашель"],                       ans:2, hint:"Erkältung"},
-  {q:"'Ich bin erkältet.' = ?",                 opts:["У меня грипп","У меня простуда","Я устал","У меня жар"],     ans:1, hint:"erkältet"},
+  {q:"'Was fehlt Ihnen?' — что спрашивают?",qUk:"'Was fehlt Ihnen?' — що запитують?",   opts:["Что вам нужно?","Что вас беспокоит?","Где болит?","Как вас зовут?"],optsUk:["Що вам потрібно?","Що вас турбує?","Де болить?","Як вас звати?"],ans:1,hint:"fehlen"},
+  {q:"Erkältung = ?",                           opts:["грипп","аллергия","простуда","кашель"],optsUk:["грип","алергія","застуда","кашель"],                       ans:2, hint:"Erkältung"},
+  {q:"'Ich bin erkältet.' = ?",                 opts:["У меня грипп","У меня простуда","Я устал","У меня жар"],optsUk:["У мене грип","У мене простуда","Я втомився","У мене жар"],     ans:1, hint:"erkältet"},
   {q:"sollen (ich/er) = ?",                     opts:["soll","sollst","sollen","sollt"],                              ans:0, hint:"sollen"},
-  {q:"'Sie soll viel trinken.' — soll от?",     opts:["müssen","wollen","sollen","können"],                          ans:2, hint:"sollen"},
-  {q:"rezeptpflichtig = ?",                     opts:["без рецепта","по рецепту","дорогое","натуральное"],            ans:1, hint:"Rezept"},
-  {q:"'Mir geht es schlecht.' = ?",             opts:["Мне плохо","Мне скучно","Мне жарко","Я устал"],               ans:0, hint:"gut/schlecht"},
+  {q:"'Sie soll viel trinken.' — soll от?",qUk:"'Sie soll viel trinken.' — soll від?",     opts:["müssen","wollen","sollen","können"],                          ans:2, hint:"sollen"},
+  {q:"rezeptpflichtig = ?",                     opts:["без рецепта","по рецепту","дорогое","натуральное"],optsUk:["без рецепта","за рецептом","дороге","натуральне"],            ans:1, hint:"Rezept"},
+  {q:"'Mir geht es schlecht.' = ?",             opts:["Мне плохо","Мне скучно","Мне жарко","Я устал"],optsUk:["Мені погано","Мені нудно","Мені жарко","Я втомився"],               ans:0, hint:"gut/schlecht"},
   {q:"Wo tut es weh? → 'Mein ___ tut weh.'",   opts:["Kopf","Kopfs","Kopfe","Köpfe"],                               ans:0, hint:"wehtun"},
-  {q:"Dativ Pl. от: Kinder, Eltern, Zähne:",   opts:["Kindern/Eltern/Zähnen","Kinder/Eltern/Zähne","Kindes/Elterne","keine Änderung"],ans:0,hint:"Plural Dativ -n"},
-  {q:"'nach Vereinbarung' = ?",                 opts:["после встречи","по предварительной записи","по рецепту","по расписанию"],ans:1,hint:"Vereinbarung"},
+  {q:"Dativ Pl. от: Kinder, Eltern, Zähne:",qUk:"Dativ Pl. від: Kinder, Eltern, Zähne:",   opts:["Kindern/Eltern/Zähnen","Kinder/Eltern/Zähne","Kindes/Elterne","keine Änderung"],ans:0,hint:"Plural Dativ -n"},
+  {q:"'nach Vereinbarung' = ?",                 opts:["после встречи","по предварительной записи","по рецепту","по расписанию"],optsUk:["після зустрічі","за попереднім записом","за рецептом","за розкладом"],ans:1,hint:"Vereinbarung"},
 ];
 function T8A(){
   const lang=useContext(LangContext);
@@ -11653,17 +11657,17 @@ function T8A(){
 
 const Q_L8D=[
   {q:"Notruf-Nummer in Deutschland?",              opts:["119","110","112","115"],                                          ans:2, hint:"112 = EU-Notruf"},
-  {q:"verletzt = ?",                               opts:["раненый","мёртвый","больной","усталый"],                         ans:0, hint:"verletzt"},
-  {q:"dringend = ?",                               opts:["слишком","срочно","дорого","медленно"],                          ans:1, hint:"dringend"},
-  {q:"auflegen = ?",                               opts:["класть трубку","открыть дверь","ложиться","уходить"],            ans:0, hint:"auflegen"},
-  {q:"vorbeifahren = ?",                           opts:["заехать","остановиться","проехать мимо","ехать быстро"],         ans:2, hint:"vorbeifahren"},
-  {q:"anhalten = ?",                               opts:["позвонить","остановиться","уехать","помочь"],                    ans:1, hint:"anhalten"},
-  {q:"erste Hilfe leisten = ?",                    opts:["прибыть первым","оказывать первую помощь","звонить","бежать"],   ans:1, hint:"Erste Hilfe"},
-  {q:"der Notarzt = ?",                            opts:["врач скорой помощи","медсестра","участковый врач","специалист"], ans:0, hint:"Notarzt"},
-  {q:"1. вопрос Notruf-Schema = ?",               opts:["Was ist passiert?","Wo ist der Notfall?","Wer ruft an?","Wann?"],ans:2, hint:"Wer ruft an?"},
-  {q:"erschöpft = ?",                              opts:["скучный","изможденный","усталый (слегка)","стрессовый"],         ans:1, hint:"erschöpft"},
-  {q:"sich erholen = ?",                           opts:["устать","восстанавливаться","заболеть","беспокоиться"],          ans:1, hint:"sich erholen"},
-  {q:"'Es ist dringend!' — как перевести?",        opts:["Это дорого!","Это срочно!","Это опасно!","Это далеко!"],         ans:1, hint:"dringend"},
+  {q:"verletzt = ?",                               opts:["раненый","мёртвый","больной","усталый"],optsUk:["ранений","мертвий","хворий","втомлений"],                         ans:0, hint:"verletzt"},
+  {q:"dringend = ?",                               opts:["слишком","срочно","дорого","медленно"],optsUk:["занадто","терміново","дорого","повільно"],                          ans:1, hint:"dringend"},
+  {q:"auflegen = ?",                               opts:["класть трубку","открыть дверь","ложиться","уходить"],optsUk:["класти слухавку","відкрити двері","лягати","йти геть"],            ans:0, hint:"auflegen"},
+  {q:"vorbeifahren = ?",                           opts:["заехать","остановиться","проехать мимо","ехать быстро"],optsUk:["заїхати","зупинитися","проїхати повз","їхати швидко"],         ans:2, hint:"vorbeifahren"},
+  {q:"anhalten = ?",                               opts:["позвонить","остановиться","уехать","помочь"],optsUk:["зателефонувати","зупинитися","поїхати","допомогти"],                    ans:1, hint:"anhalten"},
+  {q:"erste Hilfe leisten = ?",                    opts:["прибыть первым","оказывать первую помощь","звонить","бежать"],optsUk:["прибути першим","надавати першу допомогу","телефонувати","бігти"],   ans:1, hint:"Erste Hilfe"},
+  {q:"der Notarzt = ?",                            opts:["врач скорой помощи","медсестра","участковый врач","специалист"],optsUk:["лікар швидкої допомоги","медсестра","дільничний лікар","спеціаліст"], ans:0, hint:"Notarzt"},
+  {q:"1. вопрос Notruf-Schema = ?",qUk:"1. питання Notruf-Schema = ?",               opts:["Was ist passiert?","Wo ist der Notfall?","Wer ruft an?","Wann?"],ans:2, hint:"Wer ruft an?"},
+  {q:"erschöpft = ?",                              opts:["скучный","изможденный","усталый (слегка)","стрессовый"],optsUk:["нудний","виснажений","втомлений (трохи)","стресовий"],         ans:1, hint:"erschöpft"},
+  {q:"sich erholen = ?",                           opts:["устать","восстанавливаться","заболеть","беспокоиться"],optsUk:["втомитися","відновлюватися","захворіти","турбуватися"],          ans:1, hint:"sich erholen"},
+  {q:"'Es ist dringend!' — как перевести?",qUk:"'Es ist dringend!' — як перекласти?",        opts:["Это дорого!","Это срочно!","Это опасно!","Это далеко!"],optsUk:["Це дорого!","Це терміново!","Це небезпечно!","Це далеко!"],         ans:1, hint:"dringend"},
 ];
 function T8D(){
   const lang=useContext(LangContext);
@@ -11816,15 +11820,15 @@ function T8D(){
 const Q_L9A=[
   {q:"'Ich fahre mit ___ Zug.' (m, Dativ)",        opts:["der","dem","den","das"],                                        ans:1, hint:"mit + Dativ: m/n → dem"},
   {q:"'Ich fahre mit ___ Straßenbahn.' (f, Dativ)", opts:["der","dem","den","die"],                                       ans:0, hint:"mit + Dativ: f → der"},
-  {q:"Пешком = ?",                                  opts:["mit dem Fuß","zu Fuß","mit Fuß","per Fuß"],                    ans:1, hint:"zu Fuß — исключение!",hintUk:"zu Fuß — виняток!"},
+  {q:"Пешком = ?",qUk:"Пішки = ?",                                  opts:["mit dem Fuß","zu Fuß","mit Fuß","per Fuß"],                    ans:1, hint:"zu Fuß — исключение!",hintUk:"zu Fuß — виняток!"},
   {q:"das Fahrrad, Plural = ?",                     opts:["Fahrrades","Fahrräder","Fahrräde","Fahrrads"],                 ans:1, hint:"Fahrrad → Fahrräder"},
-  {q:"die S-Bahn = ?",                              opts:["метро","трамвай","городская электричка","автобус"],             ans:2, hint:"S-Bahn"},
-  {q:"die U-Bahn = ?",                              opts:["трамвай","метро","автобус","электричка"],                      ans:1, hint:"U-Bahn"},
-  {q:"benutzen = ?",                                opts:["покупать","использовать","ехать","останавливаться"],           ans:1, hint:"benutzen"},
+  {q:"die S-Bahn = ?",                              opts:["метро","трамвай","городская электричка","автобус"],optsUk:["метро","трамвай","міська електричка","автобус"],             ans:2, hint:"S-Bahn"},
+  {q:"die U-Bahn = ?",                              opts:["трамвай","метро","автобус","электричка"],optsUk:["трамвай","метро","автобус","електричка"],                      ans:1, hint:"U-Bahn"},
+  {q:"benutzen = ?",                                opts:["покупать","использовать","ехать","останавливаться"],optsUk:["купувати","використовувати","їхати","зупинятися"],           ans:1, hint:"benutzen"},
   {q:"teuer ↔ ?",                                   opts:["schnell","bequem","billig","langsam"],                         ans:2, hint:"teuer ↔ billig"},
   {q:"bequem ↔ ?",                                  opts:["teuer","langsam","gesund","unbequem"],                         ans:3, hint:"bequem ↔ unbequem"},
-  {q:"'Das Fahrrad ist ___.' (полезный для здоровья)", opts:["teuer","schnell","gesund","praktisch"],                    ans:2, hint:"gesund"},
-  {q:"der Bürgersteig = ?",                         opts:["проезжая часть","автострада","тротуар","велодорожка"],         ans:2, hint:"Bürgersteig"},
+  {q:"'Das Fahrrad ist ___.' (полезный для здоровья)",qUk:"'Das Fahrrad ist ___.' (корисний для здоров'я)", opts:["teuer","schnell","gesund","praktisch"],                    ans:2, hint:"gesund"},
+  {q:"der Bürgersteig = ?",                         opts:["проезжая часть","автострада","тротуар","велодорожка"],optsUk:["проїжджа частина","автострада","тротуар","велодоріжка"],         ans:2, hint:"Bürgersteig"},
   {q:"'Ich fahre mit ___ Auto.' (n, Dativ)",        opts:["dem","der","den","das"],                                       ans:0, hint:"mit + Dativ: n → dem"},
 ];
 function T9A(){
@@ -11963,17 +11967,17 @@ function T9A(){
 }
 
 const Q_L9B=[
-  {q:"geradeaus = ?",                                  opts:["направо","налево","прямо","назад"],                          ans:2, hint:"geradeaus"},
+  {q:"geradeaus = ?",                                  opts:["направо","налево","прямо","назад"],optsUk:["праворуч","ліворуч","прямо","назад"],                          ans:2, hint:"geradeaus"},
   {q:"'Biegen Sie rechts ___!' (abbiegen)",            opts:["ab","auf","an","aus"],                                       ans:0, hint:"abbiegen = отделяемый",hintUk:"abbiegen = віддільний"},
-  {q:"die Kreuzung = ?",                               opts:["светофор","остановка","кольцо","перекрёсток"],               ans:3, hint:"Kreuzung"},
-  {q:"die Ampel = ?",                                  opts:["светофор","знак","кольцо","остановка"],                      ans:0, hint:"Ampel"},
-  {q:"gegenüber = ?",                                  opts:["рядом","напротив","за углом","между"],
+  {q:"die Kreuzung = ?",                               opts:["светофор","остановка","кольцо","перекрёсток"],optsUk:["світлофор","зупинка","кільце","перехрестя"],               ans:3, hint:"Kreuzung"},
+  {q:"die Ampel = ?",                                  opts:["светофор","знак","кольцо","остановка"],optsUk:["світлофор","знак","кільце","зупинка"],                      ans:0, hint:"Ampel"},
+  {q:"gegenüber = ?",                                  opts:["рядом","напротив","за углом","между"],optsUk:["поруч","навпроти","за рогом","між"],
                                                                                                                             ans:1, hint:"gegenüber dem Bahnhof"},
   {q:"'Nehmen Sie die U2 ___!' (Richtung Zoo)",        opts:["Richtung","Seite","Kreuzung","Linie"],                       ans:0, hint:"Richtung = направление",hintUk:"Richtung = напрямок"},
-  {q:"'Ich habe mich ___.' (заблудился пешком)",       opts:["verfahren","verlaufen","verloren","verboten"],               ans:1, hint:"sich verlaufen = пешком",hintUk:"sich verlaufen = пішки"},
-  {q:"'Ich habe mich ___.' (заблудился на машине)",    opts:["verlaufen","verfahren","verloren","verboten"],               ans:1, hint:"sich verfahren = на транспорте",hintUk:"sich verfahren = на транспорті"},
-  {q:"im Kreisverkehr = ?",                            opts:["на кольце","на перекрёстке","у светофора","на остановке"],   ans:0, hint:"Kreisverkehr"},
-  {q:"umsteigen = ?",                                  opts:["садиться","выходить","пересаживаться","ехать дальше"],       ans:2, hint:"umsteigen"},
+  {q:"'Ich habe mich ___.' (заблудился пешком)",qUk:"'Ich habe mich ___.' (заблукав пішки)",       opts:["verfahren","verlaufen","verloren","verboten"],               ans:1, hint:"sich verlaufen = пешком",hintUk:"sich verlaufen = пішки"},
+  {q:"'Ich habe mich ___.' (заблудился на машине)",qUk:"'Ich habe mich ___.' (заблукав на машині)",    opts:["verlaufen","verfahren","verloren","verboten"],               ans:1, hint:"sich verfahren = на транспорте",hintUk:"sich verfahren = на транспорті"},
+  {q:"im Kreisverkehr = ?",                            opts:["на кольце","на перекрёстке","у светофора","на остановке"],optsUk:["на кільці","на перехресті","біля світлофора","на зупинці"],   ans:0, hint:"Kreisverkehr"},
+  {q:"umsteigen = ?",                                  opts:["садиться","выходить","пересаживаться","ехать дальше"],optsUk:["сідати","виходити","робити пересадку","їхати далі"],       ans:2, hint:"umsteigen"},
 ];
 function T9B(){
   const lang=useContext(LangContext);
@@ -12089,18 +12093,18 @@ function T9B(){
 }
 
 const Q_L9C=[
-  {q:"dürfen = ?",                                     opts:["должен","хотеть","мочь","иметь право/разрешено"],           ans:3, hint:"dürfen"},
+  {q:"dürfen = ?",                                     opts:["должен","хотеть","мочь","иметь право/разрешено"],optsUk:["повинен","хотіти","могти","мати право/дозволено"],           ans:3, hint:"dürfen"},
   {q:"'ich ___' (dürfen, 1. Person Sg.)",              opts:["dürfe","darf","dürft","darfst"],                            ans:1, hint:"ich darf"},
   {q:"'er/sie/man ___' (dürfen)",                      opts:["dürfen","dürft","darf","darfst"],                           ans:2, hint:"er/sie/man darf"},
-  {q:"'Das Parken ist ___.' (разрешено)",              opts:["verboten","erlaubt","dringend","dürfen"],                   ans:1, hint:"erlaubt"},
-  {q:"'Das Parken ist ___.' (запрещено)",              opts:["erlaubt","dürfen","verboten","erkennen"],                   ans:2, hint:"verboten"},
-  {q:"erlauben = ?",                                   opts:["запрещать","разрешать","требовать","признавать"],           ans:1, hint:"erlauben"},
-  {q:"verbieten = ?",                                  opts:["разрешать","запрещать","признавать","требовать"],           ans:1, hint:"verbieten"},
-  {q:"der Führerschein = ?",                           opts:["паспорт","водительские права","страховка","виза"],          ans:1, hint:"Führerschein"},
-  {q:"ausländisch = ?",                                opts:["немецкий","иностранный","местный","официальный"],           ans:1, hint:"ausländisch"},
-  {q:"die Behörde = ?",                                opts:["школа","орган власти","страховка","ведомство"],             ans:1, hint:"Behörde"},
+  {q:"'Das Parken ist ___.' (разрешено)",qUk:"'Das Parken ist ___.' (дозволено)",              opts:["verboten","erlaubt","dringend","dürfen"],                   ans:1, hint:"erlaubt"},
+  {q:"'Das Parken ist ___.' (запрещено)",qUk:"'Das Parken ist ___.' (заборонено)",              opts:["erlaubt","dürfen","verboten","erkennen"],                   ans:2, hint:"verboten"},
+  {q:"erlauben = ?",                                   opts:["запрещать","разрешать","требовать","признавать"],optsUk:["забороняти","дозволяти","вимагати","визнавати"],           ans:1, hint:"erlauben"},
+  {q:"verbieten = ?",                                  opts:["разрешать","запрещать","признавать","требовать"],optsUk:["дозволяти","забороняти","визнавати","вимагати"],           ans:1, hint:"verbieten"},
+  {q:"der Führerschein = ?",                           opts:["паспорт","водительские права","страховка","виза"],optsUk:["паспорт","водійські права","страховка","віза"],          ans:1, hint:"Führerschein"},
+  {q:"ausländisch = ?",                                opts:["немецкий","иностранный","местный","официальный"],optsUk:["німецький","іноземний","місцевий","офіційний"],           ans:1, hint:"ausländisch"},
+  {q:"die Behörde = ?",                                opts:["школа","орган власти","страховка","ведомство"],optsUk:["школа","орган влади","страховка","відомство"],             ans:1, hint:"Behörde"},
   {q:"'Man ___ hier nicht parken.' (dürfen, Negation)",opts:["muss","darf","soll","kann"],                                ans:1, hint:"Man darf nicht parken."},
-  {q:"die Vorfahrt = ?",                               opts:["поворот","приоритет на дороге","парковка","скорость"],      ans:1, hint:"Vorfahrt"},
+  {q:"die Vorfahrt = ?",                               opts:["поворот","приоритет на дороге","парковка","скорость"],optsUk:["поворот","пріоритет на дорозі","парковка","швидкість"],      ans:1, hint:"Vorfahrt"},
 ];
 function T9C(){
   const lang=useContext(LangContext);
@@ -12245,12 +12249,12 @@ const Q_L10A=[
   {q:"Partizip II von 'arbeiten' = ?",                opts:["gearbeitet","gearbeit","arbeitete","gearbeite"],              ans:0, hint:"ge + arbeit + et (e-Einfügung!)"},
   {q:"Partizip II von 'aufräumen' (trennbar) = ?",    opts:["geaufräumt","aufgeräumt","aufräumt","aufräumte"],            ans:1, hint:"auf + ge + räum + t"},
   {q:"Partizip II von 'studieren' (-ieren) = ?",      opts:["gestudiert","studierte","studiert","gestudieren"],           ans:2, hint:"-ieren → kein ge-! nur -t"},
-  {q:"Partizip II von 'verkaufen' (ver-) = ?",        opts:["geverkauft","verkauft","vergeкauft","verkauftet"],           ans:1, hint:"ver- untrennbar → kein ge-!"},
+  {q:"Partizip II von 'verkaufen' (ver-) = ?",        opts:["geverkauft","verkauft","vergeкauft","verkauftet"],optsUk:["geverkauft","verkauft","verkauft","verkauftet"],           ans:1, hint:"ver- untrennbar → kein ge-!"},
   {q:"Partizip II von 'fahren' (stark) = ?",          opts:["gefahrt","gefahren","gefährt","fahren"],                    ans:1, hint:"stark: fahren → gefahren"},
   {q:"'Er ist nach Wien ___.' (fahren)",              opts:["gefahrt","gefahren","gefahren ist","fahrt"],                 ans:1, hint:"sein + gefahren (Bewegung A→B)"},
   {q:"'Gestern ___ Frau Schmidt gekocht.'",           opts:["ist","hat","habe","haben"],                                  ans:1, hint:"kochen hat Akkusativ → haben"},
   {q:"'Ich ___ gestern eingeschlafen.'",              opts:["habe","ist","bin","haben"],                                  ans:2, hint:"einschlafen = Zustandswechsel → sein"},
-  {q:"Perfekt mit sein: движение А→Б — пример?",     opts:["hat geschlafen","hat gegessen","ist gegangen","hat gekauft"],ans:2, hint:"gehen → ist gegangen"},
+  {q:"Perfekt mit sein: движение А→Б — пример?",qUk:"Perfekt mit sein: рух А→Б — приклад?",     opts:["hat geschlafen","hat gegessen","ist gegangen","hat gekauft"],ans:2, hint:"gehen → ist gegangen"},
   {q:"Partizip II von 'bleiben' = ?",                 opts:["geblieben","gebliebt","gebleibt","blieben"],                 ans:0, hint:"bleiben → ist geblieben (исключение!)",hintUk:"bleiben → ist geblieben (виняток!)"},
   {q:"'Sie ___ im Hotel geblieben.'",                 opts:["hat","haben","ist","habe"],                                  ans:2, hint:"bleiben → sein (исключение)",hintUk:"bleiben → sein (виняток)"},
   {q:"'Haben Sie gestern Musik ___?'",                opts:["gehören","gehört","hören","hörte"],                          ans:1, hint:"hören → gehört"},
@@ -12694,7 +12698,7 @@ const Q_L10C=[
   {q:"Präteritum von 'sein' für 'wir'?",                opts:["waren","hatten","sind","haben"],                       ans:0, hint:"wir waren"},
   {q:"Präteritum von 'haben' für 'sie' (Pl.)?",         opts:["waren","hatten","sind","haben"],                       ans:1, hint:"sie hatten"},
   {q:"'Er ___ seit 2004 in Deutschland.'",              opts:["ist","war","hat","hatte"],                            ans:0, hint:"seit + Präsens = действие длится до сейчас",hintUk:"seit + Präsens = дія триває до зараз"},
-  {q:"'seit' требует какого падежа?",                   opts:["Nominativ","Akkusativ","Dativ","Genitiv"],            ans:2, hint:"seit + Dativ"},
+  {q:"'seit' требует какого падежа?",qUk:"'seit' потребує якого відмінка?",                   opts:["Nominativ","Akkusativ","Dativ","Genitiv"],            ans:2, hint:"seit + Dativ"},
   {q:"'Ich bin seit ___ Jahr in Deutschland.' (ein, Dat. n)", opts:["ein","einem","einen","eines"],                  ans:1, hint:"seit + Dativ: n → einem"},
   {q:"Wie liest man 1989?",                             opts:["eins-neun-acht-neun","neunzehnhundertneunundachtzig","neunzehn-neunundachtzig","tausend neunhundert"], ans:1, hint:"19|89 → neunzehnhundert + neunundachtzig"},
   {q:"Wie liest man 2001?",                             opts:["zweitausendeins","zwanzig-null-eins","zwei tausend und eins","zweitausend und ein"], ans:0, hint:"2001 → zweitausendeins"},
@@ -12881,18 +12885,18 @@ function T10C(){
 }
 
 const Q_L11A=[
-  {q:"Где можно heiraten (пожениться)?",                opts:["Standesamt","Familienkasse","Kfz-Zulassungsstelle","Bundesagentur für Arbeit"], ans:0, hint:"Standesamt = ЗАГС",hintUk:"Standesamt = РАЦС"},
-  {q:"Где beantragt man Kindergeld?",                   opts:["Standesamt","Familienkasse","Meldestelle","Bürgeramt"],                        ans:1, hint:"Familienkasse платит Kindergeld",hintUk:"Familienkasse платить Kindergeld"},
-  {q:"Где meldet man das Auto an?",                     opts:["Kfz-Zulassungsstelle","Standesamt","Warteraum","Familienkasse"],               ans:0, hint:"Kfz = Kraftfahrzeug (автомобиль)",hintUk:"Kfz = Kraftfahrzeug (автомобіль)"},
+  {q:"Где можно heiraten (пожениться)?",qUk:"Де можна heiraten (одружитися)?",                opts:["Standesamt","Familienkasse","Kfz-Zulassungsstelle","Bundesagentur für Arbeit"], ans:0, hint:"Standesamt = ЗАГС",hintUk:"Standesamt = РАЦС"},
+  {q:"Где beantragt man Kindergeld?",qUk:"Де beantragt man Kindergeld?",                   opts:["Standesamt","Familienkasse","Meldestelle","Bürgeramt"],                        ans:1, hint:"Familienkasse платит Kindergeld",hintUk:"Familienkasse платить Kindergeld"},
+  {q:"Где meldet man das Auto an?",qUk:"Де meldet man das Auto an?",                     opts:["Kfz-Zulassungsstelle","Standesamt","Warteraum","Familienkasse"],               ans:0, hint:"Kfz = Kraftfahrzeug (автомобиль)",hintUk:"Kfz = Kraftfahrzeug (автомобіль)"},
   {q:"'Heute ist ___ erste Juli.' (Nominativ)",         opts:["der","den","dem","am"],                                                        ans:0, hint:"Heute ist der erste."},
   {q:"'Ich komme ___ ersten Juli.' (Dativ)",            opts:["der","am","den","im"],                                                         ans:1, hint:"am = an + dem → Dativ"},
-  {q:"1–19: какой суффикс у порядковых числительных?",  opts:["-ten","-sten","-er","-e"],                                                     ans:0, hint:"der erste, der zweite … der neunzehnte"},
-  {q:"20 и больше: какой суффикс?",                     opts:["-ten","-sten","-er","-e"],                                                     ans:1, hint:"der zwanzigste, der dreißigste"},
+  {q:"1–19: какой суффикс у порядковых числительных?",qUk:"1–19: який суфікс у порядкових числівників?",  opts:["-ten","-sten","-er","-e"],                                                     ans:0, hint:"der erste, der zweite … der neunzehnte"},
+  {q:"20 и больше: какой суффикс?",qUk:"20 і більше: який суфікс?",                     opts:["-ten","-sten","-er","-e"],                                                     ans:1, hint:"der zwanzigste, der dreißigste"},
   {q:"09.05 = 'der ___ fünfte'",                        opts:["neunte","neun","neunzehnte","neunter"],                                        ans:0, hint:"9. = der neunte"},
-  {q:"'въезжать в новую квартиру' — какой глагол?",     opts:["einziehen","ausziehen","umziehen","verlassen"],                                ans:0, hint:"ein = внутрь",hintUk:"ein = всередину"},
-  {q:"'выезжать из старой квартиры' — какой глагол?",   opts:["einziehen","ausziehen","umziehen","erwischen"],                                ans:1, hint:"aus = наружу",hintUk:"aus = назовні"},
+  {q:"'въезжать в новую квартиру' — какой глагол?",qUk:"'в'їжджати в нову квартиру' — яке дієслово?",     opts:["einziehen","ausziehen","umziehen","verlassen"],                                ans:0, hint:"ein = внутрь",hintUk:"ein = всередину"},
+  {q:"'выезжать из старой квартиры' — какой глагол?",qUk:"'виїжджати зі старої квартири' — яке дієслово?",   opts:["einziehen","ausziehen","umziehen","erwischen"],                                ans:1, hint:"aus = наружу",hintUk:"aus = назовні"},
   {q:"Perfekt von 'umziehen'?",                         opts:["hat umgezogen","ist umgezogen","hat umziehen","ist umziehen"],                 ans:1, hint:"движение → sein: ist umgezogen",hintUk:"рух → sein: ist umgezogen"},
-  {q:"'родиться' по-немецки:",                          opts:["zur Welt kommen","zur Welt bringen","zur Welt gehen","auf die Welt sein"],     ans:0, hint:"kommen = родиться, bringen = родить",hintUk:"kommen = народитися, bringen = народити"},
+  {q:"'родиться' по-немецки:",qUk:"'народитися' німецькою:",                          opts:["zur Welt kommen","zur Welt bringen","zur Welt gehen","auf die Welt sein"],     ans:0, hint:"kommen = родиться, bringen = родить",hintUk:"kommen = народитися, bringen = народити"},
 ];
 
 function T11A(){
@@ -13024,17 +13028,17 @@ function T11A(){
 const Q_L11B=[
   {q:"'Kannst du ___ helfen?' (mir)",             opts:["ich","mich","mir","mein"],                     ans:2, hint:"helfen + Dativ → mir"},
   {q:"'Das Buch gehört ___.' (ihr, Sg.)",         opts:["sie","ihr","sie","ihn"],                       ans:1, hint:"gehören + Dativ → ihr"},
-  {q:"'Ich danke ___.' (Sie, формально)",         opts:["Sie","Ihnen","Ihr","dich"],                    ans:1, hint:"danken + Dativ → Ihnen"},
+  {q:"'Ich danke ___.' (Sie, формально)",qUk:"'Ich danke ___.' (Sie, формально)",         opts:["Sie","Ihnen","Ihr","dich"],                    ans:1, hint:"danken + Dativ → Ihnen"},
   {q:"Nominativ 'wir' → Dativ?",                  opts:["uns","unser","euch","wir"],                    ans:0, hint:"wir → uns"},
   {q:"Nominativ 'ihr' → Dativ?",                  opts:["euch","ihr","Ihnen","uns"],                    ans:0, hint:"ihr → euch"},
-  {q:"Nominativ 'Sie' (формально) → Dativ?",      opts:["dir","Sie","Ihnen","sie"],                     ans:2, hint:"Sie → Ihnen"},
-  {q:"Nominativ 'sie' (она) → Dativ?",            opts:["ihr","ihm","sie","ihn"],                       ans:0, hint:"sie → ihr"},
+  {q:"Nominativ 'Sie' (формально) → Dativ?",qUk:"Nominativ 'Sie' (формально) → Dativ?",      opts:["dir","Sie","Ihnen","sie"],                     ans:2, hint:"Sie → Ihnen"},
+  {q:"Nominativ 'sie' (она) → Dativ?",qUk:"Nominativ 'sie' (вона) → Dativ?",            opts:["ihr","ihm","sie","ihn"],                       ans:0, hint:"sie → ihr"},
   {q:"Nominativ 'er' → Dativ?",                   opts:["ihr","ihm","ihn","es"],                        ans:1, hint:"er → ihm"},
   {q:"'Das Formular braucht man ___ Kfz-Zulassung.' (für + Akk., f)", opts:["für den","für die","für das","für dem"], ans:1, hint:"für + Akkusativ: f → die"},
   {q:"'Wir brauchen den Pass ___ Auslandsreise.' (für + ein, f)",     opts:["für einen","für eine","für ein","für einem"], ans:1, hint:"für eine (f, Akk.)"},
-  {q:"Как вежливо попросить о помощи?",           opts:["Hilf mir!","Verzeihung, können Sie mir helfen?","Was?","Nein danke"], ans:1, hint:"формальная просьба о помощи",hintUk:"формальне прохання про допомогу"},
-  {q:"Как ответить 'да, с радостью' на просьбу о помощи?",opts:["Nein danke","Ja, gern.","Vielleicht","Tut mir leid"], ans:1, hint:"Ja, gern. / Ja, gerne."},
-  {q:"'Ich ___ Ihnen.' (благодарить)",            opts:["danke","helfe","gehöre","bringe"],             ans:0, hint:"Ich danke Ihnen."},
+  {q:"Как вежливо попросить о помощи?",qUk:"Як ввічливо попросити про допомогу?",           opts:["Hilf mir!","Verzeihung, können Sie mir helfen?","Was?","Nein danke"], ans:1, hint:"формальная просьба о помощи",hintUk:"формальне прохання про допомогу"},
+  {q:"Как ответить 'да, с радостью' на просьбу о помощи?",qUk:"Як відповісти 'так, залюбки' на прохання про допомогу?",opts:["Nein danke","Ja, gern.","Vielleicht","Tut mir leid"], ans:1, hint:"Ja, gern. / Ja, gerne."},
+  {q:"'Ich ___ Ihnen.' (благодарить)",qUk:"'Ich ___ Ihnen.' (дякувати)",            opts:["danke","helfe","gehöre","bringe"],             ans:0, hint:"Ich danke Ihnen."},
   {q:"Wem gehört das Auto? — Es gehört ___. (ich)",opts:["ich","mich","mir","mein"],                    ans:2, hint:"gehören + Dativ → mir"},
 ];
 
@@ -13173,14 +13177,14 @@ const Q_L12A=[
   {q:"'das ___ Hemd' (neu, Akkusativ n)",             opts:["neue","neuen","neuer","neues"], ans:0, hint:"Akkusativ n → -e (wie Nom.)"},
   {q:"'die ___ Schuhe' (neu, Plural, egal welcher Kasus außer Nom./Akk.)",opts:["neue","neuen","neuer","neu"], ans:1, hint:"Plural fast immer → -en"},
   {q:"gefallen: 'Der Rock ___ mir sehr gut.' (er)",   opts:["gefalle","gefällst","gefällt","gefallt"], ans:2, hint:"a→ä: er/sie/es gefällt"},
-  {q:"'Die Farbe steht dir gut.' — steht = ?",        opts:["стоит","идёт, подходит (о внешности)","стоит на месте","останавливается"], ans:1, hint:"stehen + Dativ = об одежде",hintUk:"stehen + Dativ = про одяг"},
-  {q:"'Die Hose passt mir nicht.' — passen = ?",      opts:["нравиться","идти (о внешности)","подходить по размеру","стоить"], ans:2, hint:"passen = размер",hintUk:"passen = розмір"},
-  {q:"Welches Verb braucht immer Dativ: gefallen, stehen, passen — сколько из них?", opts:["0","1","2","3"], ans:3, hint:"все три требуют Dativ",hintUk:"усі три вимагають Dativ"},
+  {q:"'Die Farbe steht dir gut.' — steht = ?",        opts:["стоит","идёт, подходит (о внешности)","стоит на месте","останавливается"],optsUk:["коштує","личить, пасує (про зовнішність)","стоїть на місці","зупиняється"], ans:1, hint:"stehen + Dativ = об одежде",hintUk:"stehen + Dativ = про одяг"},
+  {q:"'Die Hose passt mir nicht.' — passen = ?",      opts:["нравиться","идти (о внешности)","подходить по размеру","стоить"],optsUk:["подобатися","личити (про зовнішність)","підходити за розміром","коштувати"], ans:2, hint:"passen = размер",hintUk:"passen = розмір"},
+  {q:"Welches Verb braucht immer Dativ: gefallen, stehen, passen — сколько из них?",qUk:"Welches Verb braucht immer Dativ: gefallen, stehen, passen — скільки з них?", opts:["0","1","2","3"], ans:3, hint:"все три требуют Dativ",hintUk:"усі три вимагають Dativ"},
   {q:"'Wie ___ dir das Kleid?' (gefallen, du)",       opts:["gefällst","gefällt","gefalle","gefallt"], ans:1, hint:"es → gefällt"},
-  {q:"'gestreift' по-русски:",                        opts:["клетчатый","в горошек","полосатый","однотонный"], ans:2, hint:"Streifen = полоса",hintUk:"Streifen = смуга"},
-  {q:"'kariert' по-русски:",                          opts:["клетчатый","полосатый","цветочный","узорчатый"], ans:0, hint:"Karo = клетка",hintUk:"Karo = клітинка"},
-  {q:"'Das Kleid ist ___.' (weiß, Prädikativ — после sein)", opts:["weiße","weißen","weißes","weiß"], ans:3, hint:"Prädikativ = без окончания",hintUk:"Prädikativ = без закінчення"},
-  {q:"'Mir gefällt das ___ Kleid.' (weiß, Attributiv — перед Nomen)", opts:["weiß","weißes","weiße","weißen"], ans:2, hint:"Attributiv nach 'das' → -e"},
+  {q:"'gestreift' по-русски:",qUk:"'gestreift' українською:",                        opts:["клетчатый","в горошек","полосатый","однотонный"],optsUk:["клітчастий","у горошок","смугастий","однотонний"], ans:2, hint:"Streifen = полоса",hintUk:"Streifen = смуга"},
+  {q:"'kariert' по-русски:",qUk:"'kariert' українською:",                          opts:["клетчатый","полосатый","цветочный","узорчатый"],optsUk:["клітчастий","смугастий","квітковий","візерунчастий"], ans:0, hint:"Karo = клетка",hintUk:"Karo = клітинка"},
+  {q:"'Das Kleid ist ___.' (weiß, Prädikativ — после sein)",qUk:"'Das Kleid ist ___.' (weiß, Prädikativ — після sein)", opts:["weiße","weißen","weißes","weiß"], ans:3, hint:"Prädikativ = без окончания",hintUk:"Prädikativ = без закінчення"},
+  {q:"'Mir gefällt das ___ Kleid.' (weiß, Attributiv — перед Nomen)",qUk:"'Mir gefällt das ___ Kleid.' (weiß, Attributiv — перед Nomen)", opts:["weiß","weißes","weiße","weißen"], ans:2, hint:"Attributiv nach 'das' → -e"},
 ];
 
 // TapEx — пример-предложение с переводом по нажатию
@@ -13402,15 +13406,15 @@ function T12A(){
 
 const Q_L12B=[
   {q:"Wo kauft man oft gebrauchte Kleidung günstig?",  opts:["Boutique","Flohmarkt / Secondhandladen","Kaufhaus","Bank"], ans:1, hint:"gebraucht = б/у",hintUk:"gebraucht = вживаний"},
-  {q:"'Welcher' — вопрос к роду 'der' (m). А к 'die' (f)?", opts:["welcher","welches","welche","welchem"], ans:2, hint:"f → welche"},
+  {q:"'Welcher' — вопрос к роду 'der' (m). А к 'die' (f)?",qUk:"'Welcher' — питання до роду 'der' (m). А до 'die' (f)?", opts:["welcher","welches","welche","welchem"], ans:2, hint:"f → welche"},
   {q:"'___ Rock gefällt dir?' (m, Nom.)",              opts:["Welcher","Welches","Welche","Welchem"], ans:0, hint:"welch- как der/das/die",hintUk:"welch- як der/das/die"},
   {q:"'___ Hose nimmst du?' (f, Akk.)",                opts:["Welcher","Welchen","Welche","Welches"], ans:2, hint:"f Akk. = welche"},
   {q:"'___ Anzug nimmst du?' (m, Akk.)",               opts:["Welcher","Welchen","Welche","Welches"], ans:1, hint:"m Akk. = welchen"},
-  {q:"'Kann ich das anprobieren?' — anprobieren = ?",  opts:["купить","примерить","заказать","вернуть"], ans:1, hint:"probieren = пробовать",hintUk:"probieren = пробувати"},
-  {q:"'Die Hose ist mir zu klein.' — что нужно попросить?", opts:["eine kleinere Größe","eine größere Größe","eine andere Farbe","einen Rabatt"], ans:1, hint:"zu klein → größer"},
-  {q:"'praktisch' по-русски:",                          opts:["сложный","практичный","приятный","стрессовый"], ans:1, hint:"praktisch"},
-  {q:"'kompliziert' по-русски:",                        opts:["простой","практичный","сложный, запутанный","приятный"], ans:2, hint:"kompliziert"},
-  {q:"Где обычно находится 'die Umkleidekabine'?",     opts:["в Kaufhaus","на Flohmarkt","дома","в банке"], ans:0, hint:"примерочная в магазине",hintUk:"примірочна в магазині"},
+  {q:"'Kann ich das anprobieren?' — anprobieren = ?",  opts:["купить","примерить","заказать","вернуть"],optsUk:["купити","приміряти","замовити","повернути"], ans:1, hint:"probieren = пробовать",hintUk:"probieren = пробувати"},
+  {q:"'Die Hose ist mir zu klein.' — что нужно попросить?",qUk:"'Die Hose ist mir zu klein.' — що потрібно попросити?", opts:["eine kleinere Größe","eine größere Größe","eine andere Farbe","einen Rabatt"], ans:1, hint:"zu klein → größer"},
+  {q:"'praktisch' по-русски:",qUk:"'praktisch' українською:",                          opts:["сложный","практичный","приятный","стрессовый"],optsUk:["складний","практичний","приємний","стресовий"], ans:1, hint:"praktisch"},
+  {q:"'kompliziert' по-русски:",qUk:"'kompliziert' українською:",                        opts:["простой","практичный","сложный, запутанный","приятный"],optsUk:["простий","практичний","складний, заплутаний","приємний"], ans:2, hint:"kompliziert"},
+  {q:"Где обычно находится 'die Umkleidekabine'?",qUk:"Де зазвичай знаходиться 'die Umkleidekabine'?",     opts:["в Kaufhaus","на Flohmarkt","дома","в банке"],optsUk:["в Kaufhaus","на Flohmarkt","вдома","в банку"], ans:0, hint:"примерочная в магазине",hintUk:"примірочна в магазині"},
 ];
 
 function T12B(){
@@ -13571,18 +13575,18 @@ function T12B(){
 }
 
 const Q_L13A=[
-  {q:"'das Meer' по-русски:",                          opts:["озеро","море","река","пляж"], ans:1, hint:"Meer = море",hintUk:"Meer = море"},
-  {q:"'der See' vs 'die See' — в чём разница?",        opts:["нет разницы","der See = озеро, die See = море","der See = море, die See = озеро","оба значат пляж"], ans:1, hint:"род меняет значение!",hintUk:"рід змінює значення!"},
-  {q:"'Ich hätte gern eine Fahrkarte ___ Bremen ___ Stuttgart.' (откуда/куда)", opts:["von … nach","aus … zu","von … zu","in … nach"], ans:0, hint:"von + Dativ … nach + Dativ"},
-  {q:"'Erste oder zweite ___?' (класс в поезде)",       opts:["Stock","Klasse","Gleis","Wagen"], ans:1, hint:"die Klasse"},
-  {q:"'Muss ich ___?' (пересаживаться)",                opts:["abfahren","ankommen","umsteigen","aussteigen"], ans:2, hint:"umsteigen = делать пересадку",hintUk:"umsteigen = робити пересадку"},
-  {q:"'Von welchem ___ fährt der Zug ab?' (платформа)", opts:["Gleis","Bahnhof","Zug","Wagen"], ans:0, hint:"das Gleis"},
+  {q:"'das Meer' по-русски:",qUk:"'das Meer' українською:",                          opts:["озеро","море","река","пляж"],optsUk:["озеро","море","річка","пляж"], ans:1, hint:"Meer = море",hintUk:"Meer = море"},
+  {q:"'der See' vs 'die See' — в чём разница?",qUk:"'der See' vs 'die See' — яка різниця?",        opts:["нет разницы","der See = озеро, die See = море","der See = море, die See = озеро","оба значат пляж"],optsUk:["немає різниці","der See = озеро, die See = море","der See = море, die See = озеро","обидва означають пляж"], ans:1, hint:"род меняет значение!",hintUk:"рід змінює значення!"},
+  {q:"'Ich hätte gern eine Fahrkarte ___ Bremen ___ Stuttgart.' (откуда/куда)",qUk:"'Ich hätte gern eine Fahrkarte ___ Bremen ___ Stuttgart.' (звідки/куди)", opts:["von … nach","aus … zu","von … zu","in … nach"], ans:0, hint:"von + Dativ … nach + Dativ"},
+  {q:"'Erste oder zweite ___?' (класс в поезде)",qUk:"'Erste oder zweite ___?' (клас у потязі)",       opts:["Stock","Klasse","Gleis","Wagen"], ans:1, hint:"die Klasse"},
+  {q:"'Muss ich ___?' (пересаживаться)",qUk:"'Muss ich ___?' (робити пересадку)",                opts:["abfahren","ankommen","umsteigen","aussteigen"], ans:2, hint:"umsteigen = делать пересадку",hintUk:"umsteigen = робити пересадку"},
+  {q:"'Von welchem ___ fährt der Zug ab?' (платформа)",qUk:"'Von welchem ___ fährt der Zug ab?' (платформа)", opts:["Gleis","Bahnhof","Zug","Wagen"], ans:0, hint:"das Gleis"},
   {q:"'Der Zug fährt durch ___ Tunnel.' (Akkusativ, m)", opts:["der","dem","den","das"], ans:2, hint:"durch + Akkusativ"},
   {q:"'Sie sind um ___ See gelaufen.' (Akkusativ, m)",  opts:["der","dem","den","das"], ans:2, hint:"um + Akkusativ"},
-  {q:"'sind losgefahren' — какой глагол?",              opts:["fahren","losfahren","ausfahren","vorfahren"], ans:1, hint:"losfahren = отправиться в путь",hintUk:"losfahren = вирушити в дорогу"},
-  {q:"'sind ausgestiegen' — какой глагол?",             opts:["einsteigen","umsteigen","aussteigen","besteigen"], ans:2, hint:"aussteigen = выйти (из транспорта)",hintUk:"aussteigen = вийти (з транспорту)"},
-  {q:"'haben übernachtet' — что значит?",               opts:["позавтракали","переночевали","опоздали","заблудились"], ans:1, hint:"übernachten = ночевать",hintUk:"übernachten = ночувати"},
-  {q:"'Der Zug fällt aus.' по-русски:",                 opts:["поезд опаздывает","поезд отменяется","поезд прибывает","поезд отправляется"], ans:1, hint:"ausfallen = отменяться",hintUk:"ausfallen = скасовуватися"},
+  {q:"'sind losgefahren' — какой глагол?",qUk:"'sind losgefahren' — яке дієслово?",              opts:["fahren","losfahren","ausfahren","vorfahren"], ans:1, hint:"losfahren = отправиться в путь",hintUk:"losfahren = вирушити в дорогу"},
+  {q:"'sind ausgestiegen' — какой глагол?",qUk:"'sind ausgestiegen' — яке дієслово?",             opts:["einsteigen","umsteigen","aussteigen","besteigen"], ans:2, hint:"aussteigen = выйти (из транспорта)",hintUk:"aussteigen = вийти (з транспорту)"},
+  {q:"'haben übernachtet' — что значит?",qUk:"'haben übernachtet' — що означає?",               opts:["позавтракали","переночевали","опоздали","заблудились"],optsUk:["поснідали","переночували","спізнилися","заблукали"], ans:1, hint:"übernachten = ночевать",hintUk:"übernachten = ночувати"},
+  {q:"'Der Zug fällt aus.' по-русски:",qUk:"'Der Zug fällt aus.' українською:",                 opts:["поезд опаздывает","поезд отменяется","поезд прибывает","поезд отправляется"],optsUk:["потяг спізнюється","потяг скасовується","потяг прибуває","потяг відправляється"], ans:1, hint:"ausfallen = отменяться",hintUk:"ausfallen = скасовуватися"},
 ];
 
 function T13A(){
@@ -13732,16 +13736,16 @@ function T13A(){
 }
 
 const Q_L13B=[
-  {q:"'Es regnet.' по-русски:",                        opts:["Идёт снег.","Идёт дождь.","Дует ветер.","Светит солнце."], ans:1, hint:"regnen = идти (о дожде)",hintUk:"regnen = йти (про дощ)"},
-  {q:"'Es ist bewölkt.' по-русски:",                    opts:["Ветрено.","Жарко.","Облачно, пасмурно.","Мокро."], ans:2, hint:"bewölkt"},
-  {q:"Погода описывается с местоимением:",              opts:["er","sie","es","man"], ans:2, hint:"Es regnet. Es ist kalt."},
-  {q:"Порядок месяцев весны:",                          opts:["März, April, Mai","Juni, Juli, August","Dezember, Januar, Februar","September, Oktober, November"], ans:0, hint:"Frühling"},
+  {q:"'Es regnet.' по-русски:",qUk:"'Es regnet.' українською:",                        opts:["Идёт снег.","Идёт дождь.","Дует ветер.","Светит солнце."],optsUk:["Йде сніг.","Йде дощ.","Дує вітер.","Світить сонце."], ans:1, hint:"regnen = идти (о дожде)",hintUk:"regnen = йти (про дощ)"},
+  {q:"'Es ist bewölkt.' по-русски:",qUk:"'Es ist bewölkt.' українською:",                    opts:["Ветрено.","Жарко.","Облачно, пасмурно.","Мокро."],optsUk:["Вітряно.","Спекотно.","Хмарно, похмуро.","Мокро."], ans:2, hint:"bewölkt"},
+  {q:"Погода описывается с местоимением:",qUk:"Погода описується з займенником:",              opts:["er","sie","es","man"], ans:2, hint:"Es regnet. Es ist kalt."},
+  {q:"Порядок месяцев весны:",qUk:"Порядок весняних місяців:",                          opts:["März, April, Mai","Juni, Juli, August","Dezember, Januar, Februar","September, Oktober, November"], ans:0, hint:"Frühling"},
   {q:"'schön' → Komparativ:",                           opts:["schöner","schönnerer","mehr schön","schönst"], ans:0, hint:"Adjektiv + -er"},
   {q:"'kalt' → Komparativ:",                             opts:["kalter","kälter","kalter als","kälterer"], ans:1, hint:"mit Umlaut: a→ä"},
   {q:"'gut' → Komparativ:",                              opts:["guter","gutter","besser","güter"], ans:2, hint:"Ausnahme: gut-besser"},
   {q:"'gern' → Komparativ:",                             opts:["gerner","lieber","gehrner","mehr gern"], ans:1, hint:"Ausnahme: gern-lieber"},
   {q:"'viel' → Komparativ:",                             opts:["vieler","mehrer","mehr","violer"], ans:2, hint:"Ausnahme: viel-mehr"},
-  {q:"Как сказать 'такой же большой, как'?",             opts:["größer als","genauso groß wie","so groß als","viel größer"], ans:1, hint:"genauso ... wie = равенство",hintUk:"genauso ... wie = рівність"},
+  {q:"Как сказать 'такой же большой, как'?",qUk:"Як сказати 'такий самий великий, як'?",             opts:["größer als","genauso groß wie","so groß als","viel größer"], ans:1, hint:"genauso ... wie = равенство",hintUk:"genauso ... wie = рівність"},
   {q:"'Berlin ist größer ___ Lübeck.'",                  opts:["wie","als","dann","so"], ans:1, hint:"Komparativ + als"},
 ];
 
@@ -13899,16 +13903,16 @@ function T13B(){
 }
 
 const Q_L13D=[
-  {q:"'die Anreise' по-русски:",                        opts:["отъезд","приезд, прибытие","билет","маршрут"], ans:1, hint:"an- = сюда",hintUk:"an- = сюди"},
-  {q:"'preiswert' по-русски:",                          opts:["дорогой","бесплатный","недорогой","роскошный"], ans:2, hint:"Preis + wert"},
-  {q:"'Tiere füttern' означает:",                       opts:["гладить животных","кормить животных","фотографировать животных","дрессировать животных"], ans:1, hint:"füttern = кормить",hintUk:"füttern = годувати"},
-  {q:"'einzigartig' по-русски:",                        opts:["обычный","уникальный, неповторимый","маленький","старый"], ans:1, hint:"einzig = единственный",hintUk:"einzig = єдиний"},
-  {q:"'idyllisch' по-русски:",                          opts:["шумный","идиллический","дорогой","современный"], ans:1, hint:"Idylle"},
-  {q:"'die Ferienwohnung' — это:",                      opts:["гостиница","апартаменты для отдыха","кемпинг","хостел"], ans:1, hint:"Ferien + Wohnung"},
-  {q:"'körperlich' по-русски:",                         opts:["умственно","духовно","физически, телесно","эмоционально"], ans:2, hint:"der Körper"},
-  {q:"'geistig' по-русски:",                            opts:["физически","умственно, духовно","телесно","визуально"], ans:1, hint:"der Geist"},
-  {q:"Что НЕ относится к 'aktiven Urlaub haben'?",      opts:["wandern","Ski fahren","Diät halten","segeln"], ans:2, hint:"Diät halten = другая группа",hintUk:"Diät halten = інша група"},
-  {q:"'die Burg' и 'das Schloss' — это:",               opts:["виды транспорта","крепость и дворец/замок","типы жилья","времена года"], ans:1, hint:"Sehenswürdigkeiten"},
+  {q:"'die Anreise' по-русски:",qUk:"'die Anreise' українською:",                        opts:["отъезд","приезд, прибытие","билет","маршрут"],optsUk:["відїзд","приїзд, прибуття","квиток","маршрут"], ans:1, hint:"an- = сюда",hintUk:"an- = сюди"},
+  {q:"'preiswert' по-русски:",qUk:"'preiswert' українською:",                          opts:["дорогой","бесплатный","недорогой","роскошный"],optsUk:["дорогий","безкоштовний","недорогий","розкішний"], ans:2, hint:"Preis + wert"},
+  {q:"'Tiere füttern' означает:",qUk:"'Tiere füttern' означає:",                       opts:["гладить животных","кормить животных","фотографировать животных","дрессировать животных"],optsUk:["гладити тварин","годувати тварин","фотографувати тварин","тренувати тварин"], ans:1, hint:"füttern = кормить",hintUk:"füttern = годувати"},
+  {q:"'einzigartig' по-русски:",qUk:"'einzigartig' українською:",                        opts:["обычный","уникальный, неповторимый","маленький","старый"],optsUk:["звичайний","унікальний, неповторний","маленький","старий"], ans:1, hint:"einzig = единственный",hintUk:"einzig = єдиний"},
+  {q:"'idyllisch' по-русски:",qUk:"'idyllisch' українською:",                          opts:["шумный","идиллический","дорогой","современный"],optsUk:["шумний","ідилічний","дорогий","сучасний"], ans:1, hint:"Idylle"},
+  {q:"'die Ferienwohnung' — это:",qUk:"'die Ferienwohnung' — це:",                      opts:["гостиница","апартаменты для отдыха","кемпинг","хостел"],optsUk:["готель","апартаменти для відпочинку","кемпінг","хостел"], ans:1, hint:"Ferien + Wohnung"},
+  {q:"'körperlich' по-русски:",qUk:"'körperlich' українською:",                         opts:["умственно","духовно","физически, телесно","эмоционально"],optsUk:["розумово","духовно","фізично, тілесно","емоційно"], ans:2, hint:"der Körper"},
+  {q:"'geistig' по-русски:",qUk:"'geistig' українською:",                            opts:["физически","умственно, духовно","телесно","визуально"],optsUk:["фізично","розумово, духовно","тілесно","візуально"], ans:1, hint:"der Geist"},
+  {q:"Что НЕ относится к 'aktiven Urlaub haben'?",qUk:"Що НЕ стосується 'aktiven Urlaub haben'?",      opts:["wandern","Ski fahren","Diät halten","segeln"], ans:2, hint:"Diät halten = другая группа",hintUk:"Diät halten = інша група"},
+  {q:"'die Burg' и 'das Schloss' — это:",qUk:"'die Burg' и 'das Schloss' — це:",               opts:["виды транспорта","крепость и дворец/замок","типы жилья","времена года"],optsUk:["види транспорту","фортеця і палац/замок","типи житла","пори року"], ans:1, hint:"Sehenswürdigkeiten"},
 ];
 
 function T13D(){
@@ -14041,14 +14045,14 @@ function T13D(){
 }
 
 const Q_L14A=[
-  {q:"'die Garage' находится:",                         opts:["hinter dem Haus","vor dem Haus","im Garten","im Keller"], ans:1, hint:"vor dem Haus"},
-  {q:"'der Garten' находится:",                         opts:["vor dem Haus","hinter dem Haus","im Treppenhaus","auf dem Dach"], ans:1, hint:"hinter dem Haus"},
-  {q:"'das Untergeschoss' по-русски:",                  opts:["чердак","цокольный этаж","балкон","крыша"], ans:1, hint:"unter = под",hintUk:"unter = під"},
-  {q:"'die Klingel' находится:",                        opts:["im Garten","vor dem Haus, an der Tür","im Keller","auf der Treppe"], ans:1, hint:"an der Tür"},
-  {q:"'der Aufzug' по-русски:",                         opts:["лестница","лифт","гараж","подвал"], ans:1, hint:"Aufzug"},
-  {q:"'die Pflanzen' — это:",                           opts:["животные","растения","мебель","инструменты"], ans:1, hint:"Pflanze"},
-  {q:"'Ich möchte nicht stören, aber ich habe eine Bitte.' — так говорят, когда:", opts:["прощаются","вежливо о чём-то просят","благодарят","жалуются"], ans:1, hint:"eine Bitte haben"},
-  {q:"'Können Sie mir vielleicht drei Eier geben?' по-русски:", opts:["Вы дадите мне три яйца?","Можете дать мне, пожалуйста, три яйца?","Продайте мне три яйца","У вас есть яйца?"], ans:1, hint:"vielleicht = смягчение просьбы",hintUk:"vielleicht = пом'якшення прохання"},
+  {q:"'die Garage' находится:",qUk:"'die Garage' знаходиться:",                         opts:["hinter dem Haus","vor dem Haus","im Garten","im Keller"], ans:1, hint:"vor dem Haus"},
+  {q:"'der Garten' находится:",qUk:"'der Garten' знаходиться:",                         opts:["vor dem Haus","hinter dem Haus","im Treppenhaus","auf dem Dach"], ans:1, hint:"hinter dem Haus"},
+  {q:"'das Untergeschoss' по-русски:",qUk:"'das Untergeschoss' українською:",                  opts:["чердак","цокольный этаж","балкон","крыша"],optsUk:["чердак","цокольний поверх","балкон","дах"], ans:1, hint:"unter = под",hintUk:"unter = під"},
+  {q:"'die Klingel' находится:",qUk:"'die Klingel' знаходиться:",                        opts:["im Garten","vor dem Haus, an der Tür","im Keller","auf der Treppe"], ans:1, hint:"an der Tür"},
+  {q:"'der Aufzug' по-русски:",qUk:"'der Aufzug' українською:",                         opts:["лестница","лифт","гараж","подвал"],optsUk:["сходи","ліфт","гараж","підвал"], ans:1, hint:"Aufzug"},
+  {q:"'die Pflanzen' — это:",qUk:"'die Pflanzen' — це:",                           opts:["животные","растения","мебель","инструменты"],optsUk:["тварини","рослини","меблі","інструменти"], ans:1, hint:"Pflanze"},
+  {q:"'Ich möchte nicht stören, aber ich habe eine Bitte.' — так говорят, когда:",qUk:"'Ich möchte nicht stören, aber ich habe eine Bitte.' — так кажуть, коли:", opts:["прощаются","вежливо о чём-то просят","благодарят","жалуются"],optsUk:["прощаються","ввічливо про щось просять","дякують","скаржаться"], ans:1, hint:"eine Bitte haben"},
+  {q:"'Können Sie mir vielleicht drei Eier geben?' по-русски:",qUk:"'Können Sie mir vielleicht drei Eier geben?' українською:", opts:["Вы дадите мне три яйца?","Можете дать мне, пожалуйста, три яйца?","Продайте мне три яйца","У вас есть яйца?"],optsUk:["Ви дасте мені три яйця?","Можете дати мені, будь ласка, три яйця?","Продайте мені три яйця","У вас є яйця?"], ans:1, hint:"vielleicht = смягчение просьбы",hintUk:"vielleicht = пом'якшення прохання"},
 ];
 
 function T14A(){
@@ -14150,16 +14154,16 @@ function T14A(){
 }
 
 const Q_L14B=[
-  {q:"'Die Klingel funktioniert nicht.' по-русски:",     opts:["Дверь не открывается","Звонок не работает","Свет не горит","Лифт сломан"], ans:1, hint:"funktionieren"},
-  {q:"'Der Strom ist ausgefallen.' означает:",            opts:["Отключили воду","Отключилось электричество","Сломался лифт","Пропал интернет"], ans:1, hint:"der Strom = электричество",hintUk:"der Strom = електрика"},
-  {q:"Порядок частей официального письма — что идёт ПЕРВЫМ (сверху слева)?", opts:["Anrede","Absender","Betreff","Gruß und Unterschrift"], ans:1, hint:"кто пишет",hintUk:"хто пише"},
-  {q:"'Sehr geehrte Frau Fröhlich,' — это:",              opts:["Betreff","Anrede","Gruß","Empfänger"], ans:1, hint:"обращение",hintUk:"звертання"},
-  {q:"'Mit freundlichen Grüßen' — это:",                  opts:["Anrede","Betreff","Gruß","Absender"], ans:2, hint:"прощание в письме",hintUk:"прощання в листі"},
-  {q:"'denn' в предложении вводит:",                      opts:["условие","причину","цель","время"], ans:1, hint:"denn = потому что",hintUk:"denn = тому що"},
-  {q:"После 'denn' порядок слов:",                        opts:["глагол на 2-м месте (как обычно)","глагол в конце","глагол на 1-м месте","без глагола"], ans:0, hint:"denn не меняет порядок слов",hintUk:"denn не змінює порядок слів"},
-  {q:"'Ich komme heute Abend bei Ihnen vorbei.' по-русски:", opts:["Я приеду к вам завтра","Я зайду к вам сегодня вечером","Я позвоню вам сегодня","Я уеду от вас сегодня"], ans:1, hint:"vorbeikommen bei+Dativ"},
-  {q:"Правильный порядок даты в письме:",                  opts:["Fulda, den April 25. 2015","Fulda, den 25. April 2015","Fulda, 25 April, den 2015","den 25. Fulda April 2015"], ans:1, hint:"Ort, den Tag. Monat Jahr"},
-  {q:"В формальном письме к незнакомой госпоже Шмитц пишут:", opts:["Liebe Schmitz,","Sehr geehrte Frau Schmitz,","Liebe Frau Anne,","Hallo Schmitz,"], ans:1, hint:"формальная Anrede — по фамилии",hintUk:"формальне Anrede — за прізвищем"},
+  {q:"'Die Klingel funktioniert nicht.' по-русски:",qUk:"'Die Klingel funktioniert nicht.' українською:",     opts:["Дверь не открывается","Звонок не работает","Свет не горит","Лифт сломан"],optsUk:["Двері не відчиняються","Дзвінок не працює","Світло не горить","Ліфт зламаний"], ans:1, hint:"funktionieren"},
+  {q:"'Der Strom ist ausgefallen.' означает:",qUk:"'Der Strom ist ausgefallen.' означає:",            opts:["Отключили воду","Отключилось электричество","Сломался лифт","Пропал интернет"],optsUk:["Вимкнули воду","Вимкнули електрику","Зламався ліфт","Зник інтернет"], ans:1, hint:"der Strom = электричество",hintUk:"der Strom = електрика"},
+  {q:"Порядок частей официального письма — что идёт ПЕРВЫМ (сверху слева)?",qUk:"Порядок частин офіційного листа — що йде ПЕРШИМ (зверху зліва)?", opts:["Anrede","Absender","Betreff","Gruß und Unterschrift"], ans:1, hint:"кто пишет",hintUk:"хто пише"},
+  {q:"'Sehr geehrte Frau Fröhlich,' — это:",qUk:"'Sehr geehrte Frau Fröhlich,' — це:",              opts:["Betreff","Anrede","Gruß","Empfänger"], ans:1, hint:"обращение",hintUk:"звертання"},
+  {q:"'Mit freundlichen Grüßen' — это:",qUk:"'Mit freundlichen Grüßen' — це:",                  opts:["Anrede","Betreff","Gruß","Absender"], ans:2, hint:"прощание в письме",hintUk:"прощання в листі"},
+  {q:"'denn' в предложении вводит:",qUk:"'denn' у реченні вводить:",                      opts:["условие","причину","цель","время"],optsUk:["умова","причину","ціль","час"], ans:1, hint:"denn = потому что",hintUk:"denn = тому що"},
+  {q:"После 'denn' порядок слов:",qUk:"Після 'denn' порядок слів:",                        opts:["глагол на 2-м месте (как обычно)","глагол в конце","глагол на 1-м месте","без глагола"],optsUk:["дієслово на 2-му місці (як звичайно)","дієслово в кінці","дієслово на 1-му місці","без дієслова"], ans:0, hint:"denn не меняет порядок слов",hintUk:"denn не змінює порядок слів"},
+  {q:"'Ich komme heute Abend bei Ihnen vorbei.' по-русски:",qUk:"'Ich komme heute Abend bei Ihnen vorbei.' українською:", opts:["Я приеду к вам завтра","Я зайду к вам сегодня вечером","Я позвоню вам сегодня","Я уеду от вас сегодня"],optsUk:["Я приїду до вас завтра","Я зайду до вас сьогодні ввечері","Я зателефоную вам сьогодні","Я поїду від вас сьогодні"], ans:1, hint:"vorbeikommen bei+Dativ"},
+  {q:"Правильный порядок даты в письме:",qUk:"Правильний порядок дати в листі:",                  opts:["Fulda, den April 25. 2015","Fulda, den 25. April 2015","Fulda, 25 April, den 2015","den 25. Fulda April 2015"], ans:1, hint:"Ort, den Tag. Monat Jahr"},
+  {q:"В формальном письме к незнакомой госпоже Шмитц пишут:",qUk:"У формальному листі до незнайомої пані Шміц пишуть:", opts:["Liebe Schmitz,","Sehr geehrte Frau Schmitz,","Liebe Frau Anne,","Hallo Schmitz,"], ans:1, hint:"формальная Anrede — по фамилии",hintUk:"формальне Anrede — за прізвищем"},
 ];
 
 function T14B(){
@@ -14345,14 +14349,14 @@ function T14B(){
 }
 
 const Q_L14C=[
-  {q:"'die Schaukel' по-русски:",                        opts:["песочница","качели","горка","лестница"], ans:1, hint:"schaukeln = качаться",hintUk:"schaukeln = хитатися"},
-  {q:"'der Sandkasten' по-русски:",                      opts:["песочница","горка","качели","детская площадка"], ans:0, hint:"Sand+Kasten"},
-  {q:"'neugierig aussehen' означает:",                   opts:["выглядеть уставшим","выглядеть любопытным","выглядеть грустным","выглядеть довольным"], ans:1, hint:"neugierig"},
-  {q:"Ab каком возрасте у детей в Германии есть право на место в Kita?", opts:["с 1 года","со 2-го года жизни","с 4 лет","с 6 лет"], ans:1, hint:"ab dem zweiten Lebensjahr"},
-  {q:"'die Tagesmutter' отличается от 'die Kita' тем, что:", opts:["это детский сад","это няня, которая берёт 3-5 детей на дому","это ясли","это школа"], ans:1, hint:"betreut 3-5 Kinder"},
-  {q:"С какого возраста дети обычно идут в Kindergarten?", opts:["с 1 года","с 2 лет","с 3 лет","с 5 лет"], ans:2, hint:"meistens mit drei Jahren"},
-  {q:"'streiten' по-русски:",                            opts:["дружить","ссориться, спорить","играть","делиться"], ans:1, hint:"Die Kinder streiten"},
-  {q:"'Können Sie mir vielleicht ein bisschen Milch geben?' — это:", opts:["вопрос о цене","вежливая просьба к соседу","приказ","жалоба"], ans:1, hint:"Milch borgen"},
+  {q:"'die Schaukel' по-русски:",qUk:"'die Schaukel' українською:",                        opts:["песочница","качели","горка","лестница"],optsUk:["пісочниця","гойдалка","гірка","сходи"], ans:1, hint:"schaukeln = качаться",hintUk:"schaukeln = хитатися"},
+  {q:"'der Sandkasten' по-русски:",qUk:"'der Sandkasten' українською:",                      opts:["песочница","горка","качели","детская площадка"],optsUk:["пісочниця","гірка","гойдалка","дитячий майданчик"], ans:0, hint:"Sand+Kasten"},
+  {q:"'neugierig aussehen' означает:",qUk:"'neugierig aussehen' означає:",                   opts:["выглядеть уставшим","выглядеть любопытным","выглядеть грустным","выглядеть довольным"],optsUk:["виглядати втомленим","виглядати допитливим","виглядати сумним","виглядати задоволеним"], ans:1, hint:"neugierig"},
+  {q:"Ab каком возрасте у детей в Германии есть право на место в Kita?",qUk:"З якого віку діти в Німеччині мають право на місце в Kita?", opts:["с 1 года","со 2-го года жизни","с 4 лет","с 6 лет"],optsUk:["з 1 року","з 2-го року життя","з 4 років","з 6 років"], ans:1, hint:"ab dem zweiten Lebensjahr"},
+  {q:"'die Tagesmutter' отличается от 'die Kita' тем, что:",qUk:"'die Tagesmutter' відрізняється від 'die Kita' тим, що:", opts:["это детский сад","это няня, которая берёт 3-5 детей на дому","это ясли","это школа"],optsUk:["це дитячий садок","це нянька, яка бере 3-5 дітей вдома","це ясла","це школа"], ans:1, hint:"betreut 3-5 Kinder"},
+  {q:"С какого возраста дети обычно идут в Kindergarten?",qUk:"З якого віку діти зазвичай ідуть у Kindergarten?", opts:["с 1 года","с 2 лет","с 3 лет","с 5 лет"],optsUk:["з 1 року","з 2 років","з 3 років","з 5 років"], ans:2, hint:"meistens mit drei Jahren"},
+  {q:"'streiten' по-русски:",qUk:"'streiten' українською:",                            opts:["дружить","ссориться, спорить","играть","делиться"],optsUk:["дружити","сваритися, сперечатися","грати","ділитися"], ans:1, hint:"Die Kinder streiten"},
+  {q:"'Können Sie mir vielleicht ein bisschen Milch geben?' — это:",qUk:"'Können Sie mir vielleicht ein bisschen Milch geben?' — це:", opts:["вопрос о цене","вежливая просьба к соседу","приказ","жалоба"],optsUk:["питання про ціну","ввічливе прохання до сусіда","наказ","жалоба"], ans:1, hint:"Milch borgen"},
 ];
 
 function T14C(){
@@ -14442,9 +14446,9 @@ const Q_L14D=[
   {q:"Das erste Straßenfest 1977 hat gedauert:",                 opts:["einen Tag","zwei Tage","ein ganzes Wochenende","eine Woche"], ans:0, hint:"1977 hat es nur einen Tag gedauert"},
   {q:"Heute dauert das Straßenfest:",                            opts:["nur einen Tag","von Freitag bis Sonntag","eine Woche","nur am Sonntag"], ans:1, hint:"Freitag – Sonntag"},
   {q:"Das Fest findet jedes Jahr statt:",                        opts:["im Winter","im Sommer, am dritten Juniwochenende","im Herbst","im Frühling"], ans:1, hint:"drittes Juniwochenende"},
-  {q:"'die Bühne' по-русски:",                                   opts:["сцена","стенд","площадь","улица"], ans:0, hint:"für Musik und Tanz"},
-  {q:"'der Stand' (Stände mit Spezialitäten) — это:",           opts:["сцена","стенд/прилавок с едой","вход","парковка"], ans:1, hint:"Spezialitäten"},
-  {q:"'die Nationalität' по-русски:",                            opts:["традиция","национальность","праздник","культура"], ans:1, hint:"viele Nationalitäten"},
+  {q:"'die Bühne' по-русски:",qUk:"'die Bühne' українською:",                                   opts:["сцена","стенд","площадь","улица"],optsUk:["сцена","стенд","площа","вулиця"], ans:0, hint:"für Musik und Tanz"},
+  {q:"'der Stand' (Stände mit Spezialitäten) — это:",qUk:"'der Stand' (Stände mit Spezialitäten) — це:",           opts:["сцена","стенд/прилавок с едой","вход","парковка"],optsUk:["сцена","стенд/прилавок з їжею","вхід","парковка"], ans:1, hint:"Spezialitäten"},
+  {q:"'die Nationalität' по-русски:",qUk:"'die Nationalität' українською:",                            opts:["традиция","национальность","праздник","культура"],optsUk:["традиція","національність","свято","культура"], ans:1, hint:"viele Nationalitäten"},
   {q:"Beim ersten Straßenfest haben mitgemacht:",                opts:["nur Gruppen aus Deutschland","Menschen aus vielen Nationalitäten","nur Musiker","nur Kinder"], ans:1, hint:"Menschen aus vielen Nationalitäten"},
 ];
 
@@ -14499,11 +14503,11 @@ const Q_A2L1A=[
   {q:"Er kommt aus Italien. ___ Eltern sind 1970 gekommen. (his)", opts:["Seine","Ihre","Meine","Deine"], ans:0, hint:"er → sein"},
   {q:"Sie wohnt in Taiwan gewohnt. ___ Mann arbeitet dort. (her)", opts:["Ihr","Sein","Unser","Euer"], ans:0, hint:"sie → ihr"},
   {q:"Wir wohnen zusammen. ___ Wohnung ist klein. (our)",         opts:["Unsere","Eure","Ihre","Seine"], ans:0, hint:"wir → unser + e (die Wohnung)"},
-  {q:"'Wo möchten Sie gerne wohnen (und arbeiten)?' — вопрос про:", opts:["прошлое","желаемое будущее","настоящее место","хобби"], ans:1, hint:"möchten = хотеть бы",hintUk:"möchten = хотіти б"},
-  {q:"'Wie lange haben Sie in Berlin gewohnt?' — спрашивают о:",  opts:["адресе","длительности","причине","стоимости"], ans:1, hint:"wie lange = как долго",hintUk:"wie lange = як довго"},
-  {q:"'die Verwandten' по-русски:",                                opts:["друзья","родственники","соседи","коллеги"], ans:1, hint:"Verwandtschaft"},
-  {q:"'Er findet die Stadt zu hektisch.' означает:",               opts:["ему нравится город","город кажется ему слишком суетливым","город слишком маленький","он не знает город"], ans:1, hint:"zu + Adjektiv = слишком",hintUk:"zu + Adjektiv = занадто"},
-  {q:"'Seine Verwandten wohnen in München.' — Possessivartikel 'seine' указывает на:",opts:["женщину-обладателя","мужчину-обладателя","множ. число обладателей","говорящего"], ans:1, hint:"sein = его",hintUk:"sein = його"},
+  {q:"'Wo möchten Sie gerne wohnen (und arbeiten)?' — вопрос про:",qUk:"'Wo möchten Sie gerne wohnen (und arbeiten)?' — питання про:", opts:["прошлое","желаемое будущее","настоящее место","хобби"],optsUk:["минуле","бажане майбутнє","справжнє місце","хобі"], ans:1, hint:"möchten = хотеть бы",hintUk:"möchten = хотіти б"},
+  {q:"'Wie lange haben Sie in Berlin gewohnt?' — спрашивают о:",qUk:"'Wie lange haben Sie in Berlin gewohnt?' — запитують про:",  opts:["адресе","длительности","причине","стоимости"],optsUk:["адресі","тривалості","причині","вартості"], ans:1, hint:"wie lange = как долго",hintUk:"wie lange = як довго"},
+  {q:"'die Verwandten' по-русски:",qUk:"'die Verwandten' українською:",                                opts:["друзья","родственники","соседи","коллеги"],optsUk:["друзі","родичі","сусіди","колеги"], ans:1, hint:"Verwandtschaft"},
+  {q:"'Er findet die Stadt zu hektisch.' означает:",qUk:"'Er findet die Stadt zu hektisch.' означає:",               opts:["ему нравится город","город кажется ему слишком суетливым","город слишком маленький","он не знает город"],optsUk:["йому подобається місто","місто здається йому занадто метушливим","місто занадто мале","він не знає місто"], ans:1, hint:"zu + Adjektiv = слишком",hintUk:"zu + Adjektiv = занадто"},
+  {q:"'Seine Verwandten wohnen in München.' — Possessivartikel 'seine' указывает на:",qUk:"'Seine Verwandten wohnen in München.' — Possessivartikel 'seine' вказує на:",opts:["женщину-обладателя","мужчину-обладателя","множ. число обладателей","говорящего"],optsUk:["жінку-власницю","чоловіка-власника","мн. число власників","того, хто говорить"], ans:1, hint:"sein = его",hintUk:"sein = його"},
 ];
 
 function T_A2L1A(){
@@ -14607,10 +14611,10 @@ const Q_A2L1B=[
   {q:"Partizip II von 'studieren':",                       opts:["gestudiert","studiert","studierte","studieren"], ans:1, hint:"-ieren → ohne ge-"},
   {q:"Partizip II von 'bekommen':",                        opts:["gebekommen","bekommt","bekommen","bekam"], ans:2, hint:"be- → ohne ge-"},
   {q:"Partizip II von 'verlassen':",                       opts:["verlassen","geverlassen","verlasst","verließ"], ans:0, hint:"ver- → ohne ge-"},
-  {q:"Без 'ge-' образуют Partizip II глаголы с приставками:", opts:["ab-, an-, auf-, aus-","be-, er-, ge-, ver-","mit-, nach-, vor-, zu-","durch-, um-, wieder-"], ans:1, hint:"untrennbare Präfixe"},
-  {q:"Родители Марты Асционе приехали в Германию в:",       opts:["1970","1977","1997","2013"], ans:0, hint:"Kursbuch S.10"},
-  {q:"Кто из четырёх — врач (Arzt) и живёт в Flüchtlingsheim?", opts:["Marta Ascione","Nabil Al Khatib","Carlos Álvares","Linying Schmidt"], ans:1, hint:"Syrien"},
-  {q:"Carlos Álvares приехал из:",                          opts:["Italien","Syrien","Spanien","Taiwan"], ans:2, hint:"als Architekt gearbeitet"},
+  {q:"Без 'ge-' образуют Partizip II глаголы с приставками:",qUk:"Без 'ge-' утворюють Partizip II дієслова з префіксами:", opts:["ab-, an-, auf-, aus-","be-, er-, ge-, ver-","mit-, nach-, vor-, zu-","durch-, um-, wieder-"], ans:1, hint:"untrennbare Präfixe"},
+  {q:"Родители Марты Асционе приехали в Германию в:",qUk:"Батьки Марти Асціоне приїхали до Німеччини у:",       opts:["1970","1977","1997","2013"], ans:0, hint:"Kursbuch S.10"},
+  {q:"Кто из четырёх — врач (Arzt) и живёт в Flüchtlingsheim?",qUk:"Хто з чотирьох — лікар (Arzt) і живе в Flüchtlingsheim?", opts:["Marta Ascione","Nabil Al Khatib","Carlos Álvares","Linying Schmidt"], ans:1, hint:"Syrien"},
+  {q:"Carlos Álvares приехал из:",qUk:"Carlos Álvares приїхав з:",                          opts:["Italien","Syrien","Spanien","Taiwan"], ans:2, hint:"als Architekt gearbeitet"},
 ];
 
 function T_A2L1B(){
@@ -14707,14 +14711,14 @@ function T_A2L1B(){
 }
 
 const Q_A2L1C=[
-  {q:"Обращаетесь к ОДНОМУ человеку неформально (du): 'Ist das ___ Auto?'", opts:["dein","euer","Ihr","unser"], ans:0, hint:"du → dein (1 Person, informell)"},
-  {q:"Обращаетесь к НЕСКОЛЬКИМ людям неформально (ihr): 'Sind das ___ Kinder?'", opts:["dein","euer","Ihr","sein"], ans:1, hint:"ihr → euer (2+ Personen, informell)"},
-  {q:"Формально (Sie), и для одного, и для нескольких людей: 'Ist das ___ Auto?'", opts:["dein","euer","Ihr","unser"], ans:2, hint:"Sie → Ihr (formell, Sg. und Pl. gleich)"},
-  {q:"'Wir' → притяжательное местоимение:",                              opts:["unser","euer","ihr","sein"], ans:0, hint:"wir → unser/unsere"},
-  {q:"'Das ist Katjas Katze. Das ist ___ Katze.' (её)",                  opts:["seine","ihre","unsere","eure"], ans:1, hint:"sie (женщина) → ihre",hintUk:"sie (жінка) → ihre"},
-  {q:"Typ 2 (Sprachlerntyp) учит язык в основном через:",               opts:["говорение","чтение и письмо (Lernkarten)","угадывание, эксперименты","только правила"], ans:1, hint:"Yana: Schreiben ist wichtiger als Sprechen"},
-  {q:"Typ 4 (Sprachlerntyp) — это человек, который:",                    opts:["не любит ошибаться, сначала учит правила","любит сразу говорить","не делает домашние задания","учит только по карточкам"], ans:0, hint:"TOMXX: Ich mache nicht gern Fehler"},
-  {q:"'Wie haben Sie das geschafft?' по-русски:",                        opts:["Что вы будете делать?","Как вам это удалось?","Кто вам помог?","Когда это случилось?"], ans:1, hint:"schaffen = справиться",hintUk:"schaffen = впоратися"},
+  {q:"Обращаетесь к ОДНОМУ человеку неформально (du): 'Ist das ___ Auto?'",qUk:"Звертаєтеся до ОДНІЄЇ людини неформально (du): 'Ist das ___ Auto?'", opts:["dein","euer","Ihr","unser"], ans:0, hint:"du → dein (1 Person, informell)"},
+  {q:"Обращаетесь к НЕСКОЛЬКИМ людям неформально (ihr): 'Sind das ___ Kinder?'",qUk:"Звертаєтеся до КІЛЬКОХ людей неформально (ihr): 'Sind das ___ Kinder?'", opts:["dein","euer","Ihr","sein"], ans:1, hint:"ihr → euer (2+ Personen, informell)"},
+  {q:"Формально (Sie), и для одного, и для нескольких людей: 'Ist das ___ Auto?'",qUk:"Формально (Sie), і для однієї, і для кількох людей: 'Ist das ___ Auto?'", opts:["dein","euer","Ihr","unser"], ans:2, hint:"Sie → Ihr (formell, Sg. und Pl. gleich)"},
+  {q:"'Wir' → притяжательное местоимение:",qUk:"'Wir' → присвійний займенник:",                              opts:["unser","euer","ihr","sein"], ans:0, hint:"wir → unser/unsere"},
+  {q:"'Das ist Katjas Katze. Das ist ___ Katze.' (её)",qUk:"'Das ist Katjas Katze. Das ist ___ Katze.' (її)",                  opts:["seine","ihre","unsere","eure"], ans:1, hint:"sie (женщина) → ihre",hintUk:"sie (жінка) → ihre"},
+  {q:"Typ 2 (Sprachlerntyp) учит язык в основном через:",qUk:"Typ 2 (Sprachlerntyp) вчить мову переважно через:",               opts:["говорение","чтение и письмо (Lernkarten)","угадывание, эксперименты","только правила"],optsUk:["говоріння","читання і письмо (Lernkarten)","вгадування, експерименти","тільки правила"], ans:1, hint:"Yana: Schreiben ist wichtiger als Sprechen"},
+  {q:"Typ 4 (Sprachlerntyp) — это человек, который:",qUk:"Typ 4 (Sprachlerntyp) — це людина, яка:",                    opts:["не любит ошибаться, сначала учит правила","любит сразу говорить","не делает домашние задания","учит только по карточкам"],optsUk:["не любить помилятися, спочатку вчить правила","любить одразу говорити","не робить домашні завдання","вчить тільки за картками"], ans:0, hint:"TOMXX: Ich mache nicht gern Fehler"},
+  {q:"'Wie haben Sie das geschafft?' по-русски:",qUk:"'Wie haben Sie das geschafft?' українською:",                        opts:["Что вы будете делать?","Как вам это удалось?","Кто вам помог?","Когда это случилось?"],optsUk:["Що ви будете робити?","Як вам це вдалося?","Хто вам допоміг?","Коли це сталося?"], ans:1, hint:"schaffen = справиться",hintUk:"schaffen = впоратися"},
 ];
 
 function T_A2L1C(){
@@ -14808,10 +14812,10 @@ const Q_A2L1D=[
   {q:"Perfekt von 'schreiben' (ei→ie):",          opts:["hat geschreibt","hat geschrieben","hat geschriben","ist geschrieben"], ans:1, hint:"ei→ie"},
   {q:"Perfekt von 'trinken' (i→u):",              opts:["hat getrinkt","hat getrunken","hat getrenkt","ist getrunken"], ans:1, hint:"i→u"},
   {q:"Perfekt von 'beginnen' (i→o):",             opts:["hat beginnt","hat begonnen","hat begunnen","ist begonnen"], ans:1, hint:"i→o"},
-  {q:"'Mit 6 Jahren ist Pia in die Schule gekommen.' — mit + Dativ указывает на:",opts:["место","возраст в момент события","способ","причину"], ans:1, hint:"mit 6 Jahren = в 6 лет",hintUk:"mit 6 Jahren = у 6 років"},
-  {q:"Possessivartikel для 'wir' + das Haus (n):", opts:["unser","unsere","unseren","unserem"], ans:0, hint:"n-Nomen → ohne -e"},
-  {q:"Possessivartikel для 'wir' + die Tochter (f):",opts:["unser","unsere","unseren","unserem"], ans:1, hint:"f-Nomen → +e"},
-  {q:"'sich Filme auf Deutsch anschauen' — это совет:",opts:["смотреть фильмы на немецком","читать книги","слушать музыку","писать карточки"], ans:0, hint:"Lerntipp"},
+  {q:"'Mit 6 Jahren ist Pia in die Schule gekommen.' — mit + Dativ указывает на:",qUk:"'Mit 6 Jahren ist Pia in die Schule gekommen.' — mit + Dativ вказує на:",opts:["место","возраст в момент события","способ","причину"],optsUk:["місце","вік на момент події","спосіб","причину"], ans:1, hint:"mit 6 Jahren = в 6 лет",hintUk:"mit 6 Jahren = у 6 років"},
+  {q:"Possessivartikel для 'wir' + das Haus (n):",qUk:"Possessivartikel для 'wir' + das Haus (n):", opts:["unser","unsere","unseren","unserem"], ans:0, hint:"n-Nomen → ohne -e"},
+  {q:"Possessivartikel для 'wir' + die Tochter (f):",qUk:"Possessivartikel для 'wir' + die Tochter (f):",opts:["unser","unsere","unseren","unserem"], ans:1, hint:"f-Nomen → +e"},
+  {q:"'sich Filme auf Deutsch anschauen' — это совет:",qUk:"'sich Filme auf Deutsch anschauen' — це порада:",opts:["смотреть фильмы на немецком","читать книги","слушать музыку","писать карточки"],optsUk:["дивитися фільми німецькою","читати книги","слухати музику","писати картки"], ans:0, hint:"Lerntipp"},
 ];
 
 function T_A2L1D(){
@@ -14934,12 +14938,12 @@ function T_A2L1D(){
 
 const Q_A2L2A=[
   {q:"'Herr Merz findet das Internet praktisch, ___ man viele Informationen bekommt.'",opts:["weil","dass","denn","und"],ans:0,hint:"weil + Nebensatz"},
-  {q:"В придаточном с 'weil' спрягаемый глагол стоит:",opts:["на 2-м месте","в конце предложения","на 1-м месте","перед подлежащим"],ans:1,hint:"Nebensatz-Wortstellung"},
+  {q:"В придаточном с 'weil' спрягаемый глагол стоит:",qUk:"У підрядному реченні з 'weil' дієслово стоїть:",opts:["на 2-м месте","в конце предложения","на 1-м месте","перед подлежащим"],optsUk:["на 2-му місці","в кінці речення","на 1-му місці","перед підметом"],ans:1,hint:"Nebensatz-Wortstellung"},
   {q:"'Warum arbeitet Herr Merz auch im Zug?' — 'Weil er dann keine Zeit ___.'",opts:["verliert","verlor","verlieren","hat verloren"],ans:0,hint:"Präsens im Nebensatz"},
   {q:"'Warum geht Frau Tanner viel ins Internet?' — 'Weil sie das interessant ___.'",opts:["findet","find","gefunden","fand"],ans:0,hint:"finden → findet"},
-  {q:"'Preise vergleichen' по-русски:",opts:["сравнивать цены","менять цены","платить цены","повышать цены"],ans:0,hint:"vergleichen"},
-  {q:"'Online-Spiele spielen' — это:",opts:["играть в компьютерные игры","играть в шахматы","смотреть онлайн-фильмы","делать покупки онлайн"],ans:0,hint:"Online-Spiele"},
-  {q:"Michaela Tanner (71 Jahre) — по профессии:",opts:["Übersetzerin","Rentnerin","Schülerin","Lehrerin"],ans:1,hint:"Rentnerin"},
+  {q:"'Preise vergleichen' по-русски:",qUk:"'Preise vergleichen' українською:",opts:["сравнивать цены","менять цены","платить цены","повышать цены"],optsUk:["порівнювати ціни","змінювати ціни","платити ціни","підвищувати ціни"],ans:0,hint:"vergleichen"},
+  {q:"'Online-Spiele spielen' — это:",qUk:"'Online-Spiele spielen' — це:",opts:["играть в компьютерные игры","играть в шахматы","смотреть онлайн-фильмы","делать покупки онлайн"],optsUk:["грати в комп'ютерні ігри","грати в шахи","дивитися онлайн-фільми","робити покупки онлайн"],ans:0,hint:"Online-Spiele"},
+  {q:"Michaela Tanner (71 Jahre) — по профессии:",qUk:"Michaela Tanner (71 Jahre) — за професією:",opts:["Übersetzerin","Rentnerin","Schülerin","Lehrerin"],ans:1,hint:"Rentnerin"},
   {q:"'Warum ist das Internet für Sie wichtig?' — 'Es ist wichtig für mich, weil ich ___.'",opts:["gute Informationen finden kann","gut informiert habe","interessant bin","viel Zeit habe gehabt"],ans:0,hint:"Modalverb+Infinitiv am Ende"},
 ];
 
@@ -15032,14 +15036,14 @@ function T_A2L2A(){
 }
 
 const Q_A2L2B=[
-  {q:"'speichern' по-русски:",opts:["сохранить","открыть","закрыть","печатать"],ans:0,hint:"Diskette-Symbol"},
-  {q:"'drucken' по-русски:",opts:["сохранить","печатать (на принтере)","удалить","отправить"],ans:1,hint:"Drucker"},
-  {q:"'löschen' по-русски:",opts:["удалить","добавить","открыть","сохранить"],ans:0,hint:"Papierkorb-Symbol"},
-  {q:"'der Anhang' (E-Mail) — это:",opts:["тема письма","вложение (файл)","адресат","подпись"],ans:1,hint:"Büroklammer-Symbol"},
-  {q:"'der Posteingang' по-русски:",opts:["исходящие","входящие","черновики","спам"],ans:1,hint:"Post + Eingang"},
-  {q:"Правильный порядок написания E-Mail:",opts:["Empfänger auswählen → Betreff → Text → Anhängen → Abschicken","Text → Betreff → Empfänger → Abschicken → Anhängen","Abschicken → Text → Betreff → Empfänger","Anhängen → Abschicken → Text → Betreff"],ans:0,hint:"1b Reihenfolge"},
-  {q:"'das Adressbuch' по-русски:",opts:["адресная книга (контакты)","почтовый ящик","черновик","корзина"],ans:0,hint:"Adressbuch"},
-  {q:"'Optionen' и 'Beenden' в меню компьютера — это:",opts:["настройки и выход","сохранение и печать","помощь и справка","открыть и закрыть"],ans:0,hint:"Optionen/Beenden"},
+  {q:"'speichern' по-русски:",qUk:"'speichern' українською:",opts:["сохранить","открыть","закрыть","печатать"],optsUk:["зберегти","відкрити","закрити","друкувати"],ans:0,hint:"Diskette-Symbol"},
+  {q:"'drucken' по-русски:",qUk:"'drucken' українською:",opts:["сохранить","печатать (на принтере)","удалить","отправить"],optsUk:["зберегти","друкувати (на принтері)","видалити","відправити"],ans:1,hint:"Drucker"},
+  {q:"'löschen' по-русски:",qUk:"'löschen' українською:",opts:["удалить","добавить","открыть","сохранить"],optsUk:["видалити","додати","відкрити","зберегти"],ans:0,hint:"Papierkorb-Symbol"},
+  {q:"'der Anhang' (E-Mail) — это:",qUk:"'der Anhang' (E-Mail) — це:",opts:["тема письма","вложение (файл)","адресат","подпись"],optsUk:["тема листа","вкладення (файл)","адресат","підпис"],ans:1,hint:"Büroklammer-Symbol"},
+  {q:"'der Posteingang' по-русски:",qUk:"'der Posteingang' українською:",opts:["исходящие","входящие","черновики","спам"],optsUk:["вихідні","вхідні","чернетки","спам"],ans:1,hint:"Post + Eingang"},
+  {q:"Правильный порядок написания E-Mail:",qUk:"Правильний порядок написання E-Mail:",opts:["Empfänger auswählen → Betreff → Text → Anhängen → Abschicken","Text → Betreff → Empfänger → Abschicken → Anhängen","Abschicken → Text → Betreff → Empfänger","Anhängen → Abschicken → Text → Betreff"],ans:0,hint:"1b Reihenfolge"},
+  {q:"'das Adressbuch' по-русски:",qUk:"'das Adressbuch' українською:",opts:["адресная книга (контакты)","почтовый ящик","черновик","корзина"],optsUk:["адресна книга (контакти)","поштова скринька","чернетка","корзина"],ans:0,hint:"Adressbuch"},
+  {q:"'Optionen' и 'Beenden' в меню компьютера — это:",qUk:"'Optionen' и 'Beenden' в меню компьютера — це:",opts:["настройки и выход","сохранение и печать","помощь и справка","открыть и закрыть"],optsUk:["налаштування і вихід","збереження і друк","допомога і довідка","відкрити і закрити"],ans:0,hint:"Optionen/Beenden"},
 ];
 
 function T_A2L2B(){
@@ -15089,13 +15093,13 @@ function T_A2L2B(){
 
 const Q_A2L2C=[
   {q:"'Ich finde, ___ das Fernsehen gute Informationen bietet.'",opts:["dass","weil","denn","ob"],ans:0,hint:"finden, dass"},
-  {q:"В придаточном с 'dass' спрягаемый глагол стоит:",opts:["на 2-м месте","в конце предложения","на 1-м месте","перед dass"],ans:1,hint:"Nebensatz-Wortstellung"},
-  {q:"'Ich bin dagegen, dass …' означает:",opts:["я за то, что…","я против того, что…","я не уверен, что…","я думаю, что…"],ans:1,hint:"dagegen sein"},
-  {q:"'der Spielfilm' — это сокращение категории:",opts:["документальный фильм","художественный фильм","новости","викторина"],ans:1,hint:"Spielfilm"},
-  {q:"'die Talkshow' по-русски:",opts:["ток-шоу","викторина","сериал","документалка"],ans:0,hint:"Talkshow"},
-  {q:"'Herr Arndt sagt, dass es zu viel ___ gibt.' (реклама)",opts:["Werbung","Nachrichten","Sendungen","Filme"],ans:0,hint:"zu viel Werbung"},
-  {q:"'Ich bin mir sicher, dass du besser schreiben kannst.' — здесь Modalverb стоит:",opts:["на 2-м месте","перед dass","в конце (после инфинитива)","в начале"],ans:2,hint:"kannst в конце",hintUk:"kannst в кінці"},
-  {q:"Средняя суточная продолжительность просмотра ТВ в Германии — примерно:",opts:["111 минут","192 минуты","240 минут","300 минут"],ans:2,hint:"Mediennutzung in Deutschland"},
+  {q:"В придаточном с 'dass' спрягаемый глагол стоит:",qUk:"У підрядному реченні з 'dass' дієслово стоїть:",opts:["на 2-м месте","в конце предложения","на 1-м месте","перед dass"],optsUk:["на 2-му місці","в кінці речення","на 1-му місці","перед dass"],ans:1,hint:"Nebensatz-Wortstellung"},
+  {q:"'Ich bin dagegen, dass …' означает:",qUk:"'Ich bin dagegen, dass …' означає:",opts:["я за то, что…","я против того, что…","я не уверен, что…","я думаю, что…"],optsUk:["я за те, що…","я проти того, що…","я не впевнений, що…","я думаю, що…"],ans:1,hint:"dagegen sein"},
+  {q:"'der Spielfilm' — это сокращение категории:",qUk:"'der Spielfilm' — це скорочення категорії:",opts:["документальный фильм","художественный фильм","новости","викторина"],optsUk:["документальний фільм","художній фільм","новини","вікторина"],ans:1,hint:"Spielfilm"},
+  {q:"'die Talkshow' по-русски:",qUk:"'die Talkshow' українською:",opts:["ток-шоу","викторина","сериал","документалка"],optsUk:["ток-шоу","вікторина","серіал","документалка"],ans:0,hint:"Talkshow"},
+  {q:"'Herr Arndt sagt, dass es zu viel ___ gibt.' (реклама)",qUk:"'Herr Arndt sagt, dass es zu viel ___ gibt.' (реклама)",opts:["Werbung","Nachrichten","Sendungen","Filme"],ans:0,hint:"zu viel Werbung"},
+  {q:"'Ich bin mir sicher, dass du besser schreiben kannst.' — здесь Modalverb стоит:",qUk:"'Ich bin mir sicher, dass du besser schreiben kannst.' — тут Modalverb стоїть:",opts:["на 2-м месте","перед dass","в конце (после инфинитива)","в начале"],optsUk:["на 2-му місці","перед dass","в кінці (після інфінітива)","на початку"],ans:2,hint:"kannst в конце",hintUk:"kannst в кінці"},
+  {q:"Средняя суточная продолжительность просмотра ТВ в Германии — примерно:",qUk:"Середня добова тривалість перегляду ТВ у Німеччині — приблизно:",opts:["111 минут","192 минуты","240 минут","300 минут"],optsUk:["111 хвилин","192 хвилини","240 хвилин","300 хвилин"],ans:2,hint:"Mediennutzung in Deutschland"},
 ];
 
 function T_A2L2C(){
@@ -15177,14 +15181,14 @@ function T_A2L2C(){
 }
 
 const Q_A2L3A=[
-  {q:"'Wo ist das Buch?' — 'Es liegt auf dem Tisch.' — какой падеж?",opts:["Dativ (место)","Akkusativ (направление)","Genitiv","Nominativ"],ans:0,hint:"Wo? = Dativ"},
-  {q:"'Wohin legst du das Buch?' — 'Ich lege es auf den Tisch.' — какой падеж?",opts:["Dativ","Akkusativ (направление)","Genitiv","Nominativ"],ans:1,hint:"Wohin? = Akkusativ"},
-  {q:"Пара 'находиться / класть (плашмя)':",opts:["stehen / stellen","liegen / legen","sitzen / sich setzen","hängen / hängen"],ans:1,hint:"liegen (Wo) → legen (Wohin)"},
-  {q:"Пара 'стоять / ставить (вертикально)':",opts:["stehen / stellen","liegen / legen","sitzen / sich setzen","hängen / hängen"],ans:0,hint:"stehen (Wo) → stellen (Wohin)"},
-  {q:"'Die Gabel fällt neben den Stuhl.' — глагол 'fallen' здесь с:",opts:["Dativ, т.к. место","Akkusativ, т.к. направление падения","Genitiv","без падежа"],ans:1,hint:"Wohin fällt sie? — neben den Stuhl"},
-  {q:"'plötzlich' по-русски:",opts:["вдруг, внезапно","наконец","обычно","редко"],ans:0,hint:"Aber plötzlich ist der Himmel dunkel geworden."},
-  {q:"'der Himmel' по-русски:",opts:["погода","небо","гроза","облако"],ans:1,hint:"der Himmel ist dunkel geworden"},
-  {q:"'werden' в 'der Himmel ist dunkel geworden' означает:",opts:["быть","становиться","идти","приходить"],ans:1,hint:"dunkel werden = темнеть",hintUk:"dunkel werden = темніти"},
+  {q:"'Wo ist das Buch?' — 'Es liegt auf dem Tisch.' — какой падеж?",qUk:"'Wo ist das Buch?' — 'Es liegt auf dem Tisch.' — який відмінок?",opts:["Dativ (место)","Akkusativ (направление)","Genitiv","Nominativ"],optsUk:["Dativ (місце)","Akkusativ (напрямок)","Genitiv","Nominativ"],ans:0,hint:"Wo? = Dativ"},
+  {q:"'Wohin legst du das Buch?' — 'Ich lege es auf den Tisch.' — какой падеж?",qUk:"'Wohin legst du das Buch?' — 'Ich lege es auf den Tisch.' — який відмінок?",opts:["Dativ","Akkusativ (направление)","Genitiv","Nominativ"],optsUk:["Dativ","Akkusativ (напрямок)","Genitiv","Nominativ"],ans:1,hint:"Wohin? = Akkusativ"},
+  {q:"Пара 'находиться / класть (плашмя)':",qUk:"Пара 'лежати / класти (пласко)':",opts:["stehen / stellen","liegen / legen","sitzen / sich setzen","hängen / hängen"],ans:1,hint:"liegen (Wo) → legen (Wohin)"},
+  {q:"Пара 'стоять / ставить (вертикально)':",qUk:"Пара 'стояти / ставити (вертикально)':",opts:["stehen / stellen","liegen / legen","sitzen / sich setzen","hängen / hängen"],ans:0,hint:"stehen (Wo) → stellen (Wohin)"},
+  {q:"'Die Gabel fällt neben den Stuhl.' — глагол 'fallen' здесь с:",qUk:"'Die Gabel fällt neben den Stuhl.' — дієслово 'fallen' тут з:",opts:["Dativ, т.к. место","Akkusativ, т.к. направление падения","Genitiv","без падежа"],optsUk:["Dativ, оскільки місце","Akkusativ, оскільки напрямок падіння","Genitiv","без відмінка"],ans:1,hint:"Wohin fällt sie? — neben den Stuhl"},
+  {q:"'plötzlich' по-русски:",qUk:"'plötzlich' українською:",opts:["вдруг, внезапно","наконец","обычно","редко"],optsUk:["раптом, несподівано","нарешті","зазвичай","рідко"],ans:0,hint:"Aber plötzlich ist der Himmel dunkel geworden."},
+  {q:"'der Himmel' по-русски:",qUk:"'der Himmel' українською:",opts:["погода","небо","гроза","облако"],optsUk:["погода","небо","гроза","хмара"],ans:1,hint:"der Himmel ist dunkel geworden"},
+  {q:"'werden' в 'der Himmel ist dunkel geworden' означает:",qUk:"'werden' в 'der Himmel ist dunkel geworden' означає:",opts:["быть","становиться","идти","приходить"],optsUk:["бути","ставати","йти","приходити"],ans:1,hint:"dunkel werden = темнеть",hintUk:"dunkel werden = темніти"},
 ];
 
 function T_A2L3A(){
@@ -15261,14 +15265,14 @@ function T_A2L3A(){
 }
 
 const Q_A2L3B=[
-  {q:"'Hast du Zeit?' — да, есть время. Ответ:",opts:["Ja.","Nein.","Doch."],ans:0,hint:"положительный вопрос → Ja",hintUk:"стверджувальне питання → Ja"},
-  {q:"'Hast du keine Zeit?' — нет времени нет (подтверждение). Ответ:",opts:["Ja.","Nein.","Doch."],ans:1,hint:"отрицательный вопрос, ответ 'нет' = Nein",hintUk:"заперечне питання, відповідь 'ні' = Nein"},
-  {q:"'Kommst du nicht?' — но ты придёшь (опровергаешь отрицание). Ответ:",opts:["Ja.","Nein.","Doch."],ans:2,hint:"отрицательный вопрос, но ответ противоречит 'нет' → Doch",hintUk:"заперечне питання, але відповідь протирічить 'ні' → Doch"},
-  {q:"'doch' используется, когда:",opts:["отвечают 'да' на обычный вопрос","опровергают отрицательный вопрос положительным ответом","всегда вместо nein","это просто синоним ja"],ans:1,hint:"Kommt Nina auch nicht? — Doch, sie kommt."},
-  {q:"'Ich mag Kaffee. Und du?' — 'Ich auch nicht' vs 'Ich schon' — что здесь синоним doch по смыслу?",opts:["schon","auch","und","aber"],ans:0,hint:"противопоставление отрицанию",hintUk:"протиставлення запереченню"},
-  {q:"'die Wohnung putzen' встречается в контексте:",opts:["Wochenend-Aktivitäten","Café-Vokabular","E-Mail schreiben","Ferienplan"],ans:0,hint:"Was machen Sie samstags?"},
-  {q:"'ein Picknick machen' по-русски:",opts:["устроить пикник","готовить ужин","идти в поход","жарить мясо"],ans:0,hint:"Picknick"},
-  {q:"'die Schwiegereltern' по-русски:",opts:["бабушка и дедушка","родители супруга/супруги","крёстные родители","опекуны"],ans:1,hint:"Schwieger- = ...-in-law"},
+  {q:"'Hast du Zeit?' — да, есть время. Ответ:",qUk:"'Hast du Zeit?' — так, є час. Відповідь:",opts:["Ja.","Nein.","Doch."],ans:0,hint:"положительный вопрос → Ja",hintUk:"стверджувальне питання → Ja"},
+  {q:"'Hast du keine Zeit?' — нет времени нет (подтверждение). Ответ:",qUk:"'Hast du keine Zeit?' — часу немає (підтвердження). Відповідь:",opts:["Ja.","Nein.","Doch."],ans:1,hint:"отрицательный вопрос, ответ 'нет' = Nein",hintUk:"заперечне питання, відповідь 'ні' = Nein"},
+  {q:"'Kommst du nicht?' — но ты придёшь (опровергаешь отрицание). Ответ:",qUk:"'Kommst du nicht?' — але ти прийдеш (спростовуєш заперечення). Відповідь:",opts:["Ja.","Nein.","Doch."],ans:2,hint:"отрицательный вопрос, но ответ противоречит 'нет' → Doch",hintUk:"заперечне питання, але відповідь протирічить 'ні' → Doch"},
+  {q:"'doch' используется, когда:",qUk:"'doch' використовується, коли:",opts:["отвечают 'да' на обычный вопрос","опровергают отрицательный вопрос положительным ответом","всегда вместо nein","это просто синоним ja"],optsUk:["відповідають 'так' на звичайне питання","спростовують заперечне питання позитивною відповіддю","завжди замість nein","це просто синонім ja"],ans:1,hint:"Kommt Nina auch nicht? — Doch, sie kommt."},
+  {q:"'Ich mag Kaffee. Und du?' — 'Ich auch nicht' vs 'Ich schon' — что здесь синоним doch по смыслу?",qUk:"'Ich mag Kaffee. Und du?' — 'Ich auch nicht' vs 'Ich schon' — що тут синонім doch за змістом?",opts:["schon","auch","und","aber"],ans:0,hint:"противопоставление отрицанию",hintUk:"протиставлення запереченню"},
+  {q:"'die Wohnung putzen' встречается в контексте:",qUk:"'die Wohnung putzen' зустрічається в контексті:",opts:["Wochenend-Aktivitäten","Café-Vokabular","E-Mail schreiben","Ferienplan"],ans:0,hint:"Was machen Sie samstags?"},
+  {q:"'ein Picknick machen' по-русски:",qUk:"'ein Picknick machen' українською:",opts:["устроить пикник","готовить ужин","идти в поход","жарить мясо"],optsUk:["влаштувати пікнік","готувати вечерю","йти в похід","смажити м'ясо"],ans:0,hint:"Picknick"},
+  {q:"'die Schwiegereltern' по-русски:",qUk:"'die Schwiegereltern' українською:",opts:["бабушка и дедушка","родители супруга/супруги","крёстные родители","опекуны"],optsUk:["бабуся і дідусь","батьки чоловіка/дружини","хресні батьки","опікуни"],ans:1,hint:"Schwieger- = ...-in-law"},
 ];
 
 function T_A2L3B(){
@@ -15331,14 +15335,14 @@ function T_A2L3B(){
 }
 
 const Q_A2L3C=[
-  {q:"'Ich möchte einen Tisch reservieren.' говорит:",opts:["Gast","Bedienung"],ans:0,hint:"Gast-Phrase"},
-  {q:"'Was möchten Sie trinken?' говорит:",opts:["Gast","Bedienung"],ans:1,hint:"Bedienung-Phrase"},
-  {q:"'Ich hätte gerne …' используется, чтобы:",opts:["заказать что-то","попросить счёт","забронировать столик","пожаловаться"],ans:0,hint:"bestellen"},
-  {q:"'Zusammen oder getrennt?' спрашивают, когда:",opts:["заказывают еду","бронируют столик","хотят оплатить счёт","выбирают напиток"],ans:2,hint:"bezahlen"},
-  {q:"'die Beilage' по-русски:",opts:["гарнир","десерт","закуска","напиток"],ans:0,hint:"Hauptspeise mit Beilage"},
-  {q:"'köstlich' и 'ausgezeichnet' — это синонимы к:",opts:["очень вкусный/отличный","очень дорогой","очень острый","очень холодный"],ans:0,hint:"Das Essen war köstlich/ausgezeichnet."},
-  {q:"'zufrieden' по-русски:",opts:["довольный","голодный","сытый","усталый"],ans:0,hint:"Waren Sie zufrieden?"},
-  {q:"'die Kohlensäure' (в напитке) — это:",opts:["сахар","газ (углекислый)","алкоголь","сироп"],ans:1,hint:"mit/ohne Kohlensäure"},
+  {q:"'Ich möchte einen Tisch reservieren.' говорит:",qUk:"'Ich möchte einen Tisch reservieren.' каже:",opts:["Gast","Bedienung"],ans:0,hint:"Gast-Phrase"},
+  {q:"'Was möchten Sie trinken?' говорит:",qUk:"'Was möchten Sie trinken?' каже:",opts:["Gast","Bedienung"],ans:1,hint:"Bedienung-Phrase"},
+  {q:"'Ich hätte gerne …' используется, чтобы:",qUk:"'Ich hätte gerne …' використовується, щоб:",opts:["заказать что-то","попросить счёт","забронировать столик","пожаловаться"],optsUk:["замовити щось","попросити рахунок","забронювати столик","поскаржитися"],ans:0,hint:"bestellen"},
+  {q:"'Zusammen oder getrennt?' спрашивают, когда:",qUk:"'Zusammen oder getrennt?' запитують, коли:",opts:["заказывают еду","бронируют столик","хотят оплатить счёт","выбирают напиток"],optsUk:["замовляють їжу","бронюють столик","хочуть оплатити рахунок","вибирають напій"],ans:2,hint:"bezahlen"},
+  {q:"'die Beilage' по-русски:",qUk:"'die Beilage' українською:",opts:["гарнир","десерт","закуска","напиток"],optsUk:["гарнір","десерт","закуска","напій"],ans:0,hint:"Hauptspeise mit Beilage"},
+  {q:"'köstlich' и 'ausgezeichnet' — это синонимы к:",qUk:"'köstlich' і 'ausgezeichnet' — це синоніми до:",opts:["очень вкусный/отличный","очень дорогой","очень острый","очень холодный"],optsUk:["дуже смачний/відмінний","дуже дорогий","дуже гострий","дуже холодний"],ans:0,hint:"Das Essen war köstlich/ausgezeichnet."},
+  {q:"'zufrieden' по-русски:",qUk:"'zufrieden' українською:",opts:["довольный","голодный","сытый","усталый"],optsUk:["задоволений","голодний","ситий","втомлений"],ans:0,hint:"Waren Sie zufrieden?"},
+  {q:"'die Kohlensäure' (в напитке) — это:",qUk:"'die Kohlensäure' (в напитке) — це:",opts:["сахар","газ (углекислый)","алкоголь","сироп"],optsUk:["цукор","газ (вуглекислий)","алкоголь","сироп"],ans:1,hint:"mit/ohne Kohlensäure"},
 ];
 
 function T_A2L3C(){
@@ -15493,13 +15497,13 @@ function T_A2L4A(){
 }
 
 const Q_A2L4B=[
-  {q:"'Wenn Can sehr viel lernt, kann er sehr gute Noten bekommen.' — где стоит спрягаемый глагол в wenn-предложении?",opts:["В конце придаточного (lernt)","В начале","На втором месте, как обычно","Глагола вообще нет"],ans:0,hint:"Nebensatz: Verb ans Ende"},
-  {q:"Wenn-предложение может стоять:",opts:["только перед главным","только после главного","и перед, и после главного предложения","только в вопросах"],ans:2,hint:"Wenn…, (dann)… / …, wenn…"},
-  {q:"'Wenn er die Prüfung besteht, (dann) kann er bleiben.' — что идёт сразу после запятой в главном предложении?",opts:["подлежащее","спрягаемый глагол","вопросительное слово","ничего особенного"],ans:1,hint:"Verb-Subjekt-Ergänzung"},
-  {q:"Ein Bedingungssatz (Nebensatz mit wenn) отвечает на вопросы:",opts:["Wer? Was?","Wann? Unter welcher Bedingung?","Warum?","Wie lange?"],ans:1,hint:"Konditionalsatz"},
-  {q:"'Wenn ich einen guten Abschluss haben möchte, muss ich auch am Wochenende lernen.' — по-русски:",opts:["Если я хочу получить хороший диплом, мне нужно учиться и по выходным","Я не хочу получать диплом","Я учусь только по выходным","Мне не нужно учиться"],ans:0,hint:"Paulas Text"},
-  {q:"'Ich hoffe, dass es klappt.' — 'klappen' означает:",opts:["получаться, срабатывать","заканчиваться","начинаться","ломаться"],ans:0,hint:"Cans Text"},
-  {q:"Die Note 'mangelhaft' в немецкой школе — это оценка:",opts:["отлично","хорошо","неудовлетворительно (5)","совершенно неудовлетворительно (6, худшая)"],ans:2,hint:"Noten 1-6"},
+  {q:"'Wenn Can sehr viel lernt, kann er sehr gute Noten bekommen.' — где стоит спрягаемый глагол в wenn-предложении?",qUk:"'Wenn Can sehr viel lernt, kann er sehr gute Noten bekommen.' — де стоїть дієслово у wenn-реченні?",opts:["В конце придаточного (lernt)","В начале","На втором месте, как обычно","Глагола вообще нет"],optsUk:["У кінці підрядного (lernt)","На початку","На другому місці, як звичайно","Дієслова взагалі немає"],ans:0,hint:"Nebensatz: Verb ans Ende"},
+  {q:"Wenn-предложение может стоять:",qUk:"Wenn-речення може стояти:",opts:["только перед главным","только после главного","и перед, и после главного предложения","только в вопросах"],optsUk:["тільки перед головним","тільки після головного","і перед, і після головного речення","тільки в питаннях"],ans:2,hint:"Wenn…, (dann)… / …, wenn…"},
+  {q:"'Wenn er die Prüfung besteht, (dann) kann er bleiben.' — что идёт сразу после запятой в главном предложении?",qUk:"'Wenn er die Prüfung besteht, (dann) kann er bleiben.' — що йде відразу після коми в головному реченні?",opts:["подлежащее","спрягаемый глагол","вопросительное слово","ничего особенного"],optsUk:["підмет","дієслово","питальне слово","нічого особливого"],ans:1,hint:"Verb-Subjekt-Ergänzung"},
+  {q:"Ein Bedingungssatz (Nebensatz mit wenn) отвечает на вопросы:",qUk:"Ein Bedingungssatz (Nebensatz mit wenn) відповідає на питання:",opts:["Wer? Was?","Wann? Unter welcher Bedingung?","Warum?","Wie lange?"],ans:1,hint:"Konditionalsatz"},
+  {q:"'Wenn ich einen guten Abschluss haben möchte, muss ich auch am Wochenende lernen.' — по-русски:",qUk:"'Wenn ich einen guten Abschluss haben möchte, muss ich auch am Wochenende lernen.' — українською:",opts:["Если я хочу получить хороший диплом, мне нужно учиться и по выходным","Я не хочу получать диплом","Я учусь только по выходным","Мне не нужно учиться"],optsUk:["Якщо я хочу отримати хороший диплом, мені потрібно вчитися і у вихідні","Я не хочу отримувати диплом","Я вчуся лише у вихідні","Мені не потрібно вчитися"],ans:0,hint:"Paulas Text"},
+  {q:"'Ich hoffe, dass es klappt.' — 'klappen' означает:",qUk:"'Ich hoffe, dass es klappt.' — 'klappen' означає:",opts:["получаться, срабатывать","заканчиваться","начинаться","ломаться"],optsUk:["виходити, вдаватися","закінчуватися","починатися","ламатися"],ans:0,hint:"Cans Text"},
+  {q:"Die Note 'mangelhaft' в немецкой школе — это оценка:",qUk:"Die Note 'mangelhaft' у німецькій школі — це оцінка:",opts:["отлично","хорошо","неудовлетворительно (5)","совершенно неудовлетворительно (6, худшая)"],optsUk:["відмінно","добре","незадовільно (5)","абсолютно незадовільно (6, найгірша)"],ans:2,hint:"Noten 1-6"},
   {q:"Die beste Note in Deutschland ist:",opts:["1 (sehr gut)","6 (ungenügend)","3 (befriedigend)","4 (ausreichend)"],ans:0,hint:"1=отлично, 6=худшая",hintUk:"1=відмінно, 6=найгірша"},
 ];
 
@@ -15596,10 +15600,10 @@ const Q_A2L4C=[
   {q:"Präteritum von 'können', du-Form:",opts:["du konntest","du kannst","du könntest","du gekonnt"],ans:0,hint:"konntest"},
   {q:"Präteritum von 'müssen', wir-Form:",opts:["wir mussten","wir müssen","wir müssten","wir gemusst"],ans:0,hint:"mussten"},
   {q:"Präteritum von 'dürfen', er-Form:",opts:["er durfte","er darf","er dürfte","er gedurft"],ans:0,hint:"durfte"},
-  {q:"'Wir durften früher nicht im Klassenzimmer spielen.' — по-русски:",opts:["Раньше нам нельзя было играть в классе","Раньше мы должны были играть в классе","Раньше мы хотели играть в классе","Раньше мы могли играть в классе"],ans:0,hint:"durften nicht = было нельзя",hintUk:"durften nicht = було не можна"},
-  {q:"'streng' по-русски:",opts:["строгий","дружелюбный","пунктуальный","скучный"],ans:0,hint:"Die Lehrer waren streng."},
-  {q:"'nachsitzen' означает:",opts:["оставаться после уроков (в наказание)","приходить рано","делать домашнее задание","опаздывать"],ans:0,hint:"Strafe in der Schule"},
-  {q:"'der Klassenlehrer' по-русски:",opts:["классный руководитель","директор школы","завуч","одноклассник"],ans:0,hint:"Klassenlehrer/in"},
+  {q:"'Wir durften früher nicht im Klassenzimmer spielen.' — по-русски:",qUk:"'Wir durften früher nicht im Klassenzimmer spielen.' — українською:",opts:["Раньше нам нельзя было играть в классе","Раньше мы должны были играть в классе","Раньше мы хотели играть в классе","Раньше мы могли играть в классе"],optsUk:["Раніше нам не можна було грати в класі","Раніше ми повинні були грати в класі","Раніше ми хотіли грати в класі","Раніше ми могли грати в класі"],ans:0,hint:"durften nicht = было нельзя",hintUk:"durften nicht = було не можна"},
+  {q:"'streng' по-русски:",qUk:"'streng' українською:",opts:["строгий","дружелюбный","пунктуальный","скучный"],optsUk:["суворий","дружелюбний","пунктуальний","нудний"],ans:0,hint:"Die Lehrer waren streng."},
+  {q:"'nachsitzen' означает:",qUk:"'nachsitzen' означає:",opts:["оставаться после уроков (в наказание)","приходить рано","делать домашнее задание","опаздывать"],optsUk:["залишатися після уроків (у покарання)","приходити рано","робити домашнє завдання","запізнюватися"],ans:0,hint:"Strafe in der Schule"},
+  {q:"'der Klassenlehrer' по-русски:",qUk:"'der Klassenlehrer' українською:",opts:["классный руководитель","директор школы","завуч","одноклассник"],optsUk:["класний керівник","директор школи","завуч","однокласник"],ans:0,hint:"Klassenlehrer/in"},
 ];
 
 function T_A2L4C(){
@@ -15683,18 +15687,18 @@ function T_A2L4C(){
 }
 
 const Q_A2L5A=[
-  {q:"'Wissen Sie, wann der Kollege kommt?' — это:",opts:["indirekte Frage","direkte Frage","Imperativ","Perfekt"],ans:0,hint:"Wissen Sie, + W-Wort ... Verb am Ende"},
-  {q:"В indirekte Frage спрягаемый глагол стоит:",opts:["в конце придаточного предложения","на первом месте","на втором месте, как обычно","глагола вообще нет"],ans:0,hint:"wie im Nebensatz"},
-  {q:"'Können Sie mir sagen, wo ich einen Bürostüssel bekomme?' — вежливая форма вопроса:",opts:["Wo bekomme ich einen Büroschlüssel?","Können Sie mir sagen, ...","оба варианта одинаково вежливы","никакой из вариантов не вопрос"],ans:1,hint:"höflicher: indirekte Frage"},
+  {q:"'Wissen Sie, wann der Kollege kommt?' — это:",qUk:"'Wissen Sie, wann der Kollege kommt?' — це:",opts:["indirekte Frage","direkte Frage","Imperativ","Perfekt"],ans:0,hint:"Wissen Sie, + W-Wort ... Verb am Ende"},
+  {q:"В indirekte Frage спрягаемый глагол стоит:",qUk:"В indirekte Frage дієслово стоїть:",opts:["в конце придаточного предложения","на первом месте","на втором месте, как обычно","глагола вообще нет"],optsUk:["в кінці підрядного речення","на першому місці","на другому місці, як звичайно","дієслова взагалі немає"],ans:0,hint:"wie im Nebensatz"},
+  {q:"'Können Sie mir sagen, wo ich einen Bürostüssel bekomme?' — вежливая форма вопроса:",qUk:"'Können Sie mir sagen, wo ich einen Bürostüssel bekomme?' — ввічлива форма питання:",opts:["Wo bekomme ich einen Büroschlüssel?","Können Sie mir sagen, ...","оба варианта одинаково вежливы","никакой из вариантов не вопрос"],optsUk:["Wo bekomme ich einen Büroschlüssel?","Können Sie mir sagen, ...","обидва варіанти однаково ввічливі","жоден з варіантів не питання"],ans:1,hint:"höflicher: indirekte Frage"},
   {q:"Präsens von 'wissen', ich-Form:",opts:["ich weiß","ich wisse","ich weißt","ich wisst"],ans:0,hint:"unregelmäßig wie können"},
   {q:"Präsens von 'wissen', du-Form:",opts:["du weißt","du weiß","du wisst","du weißen"],ans:0,hint:"weißt"},
   {q:"Dativ-Pronomen für 'ich':",opts:["mir","mich","mein","meiner"],ans:0,hint:"Personalpronomen im Dativ"},
-  {q:"Dativ-Pronomen для 'wir':",opts:["uns","unser","wir","unseren"],ans:0,hint:"uns"},
-  {q:"'Kannst du mir helfen?' — 'mir' здесь в падеже:",opts:["Dativ","Akkusativ","Genitiv","Nominativ"],ans:0,hint:"helfen + Dativ"},
-  {q:"'der Ordner' по-русски:",opts:["папка-скоросшиватель","ключ","пароль","принтер"],ans:0,hint:"für Dokumente"},
-  {q:"'das Passwort' по-русски:",opts:["пароль","адрес","логин","файл"],ans:0,hint:"für den Computer"},
-  {q:"'Er arbeitet als Erzieher.' — после 'als' перед профессией:",opts:["артикль не нужен","всегда der","всегда ein","нужен Dativ-Artikel"],ans:0,hint:"Präposition als"},
-  {q:"'Wissen Sie, wie der neue Kollege heißt?' — какое W-слово используется?",opts:["wie","wo","wann","warum"],ans:0,hint:"Wie heißt...?"},
+  {q:"Dativ-Pronomen для 'wir':",qUk:"Dativ-Pronomen для 'wir':",opts:["uns","unser","wir","unseren"],ans:0,hint:"uns"},
+  {q:"'Kannst du mir helfen?' — 'mir' здесь в падеже:",qUk:"'Kannst du mir helfen?' — 'mir' тут у відмінку:",opts:["Dativ","Akkusativ","Genitiv","Nominativ"],ans:0,hint:"helfen + Dativ"},
+  {q:"'der Ordner' по-русски:",qUk:"'der Ordner' українською:",opts:["папка-скоросшиватель","ключ","пароль","принтер"],optsUk:["папка-реєстратор","ключ","пароль","принтер"],ans:0,hint:"für Dokumente"},
+  {q:"'das Passwort' по-русски:",qUk:"'das Passwort' українською:",opts:["пароль","адрес","логин","файл"],optsUk:["пароль","адреса","логін","файл"],ans:0,hint:"für den Computer"},
+  {q:"'Er arbeitet als Erzieher.' — после 'als' перед профессией:",qUk:"'Er arbeitet als Erzieher.' — після 'als' перед професією:",opts:["артикль не нужен","всегда der","всегда ein","нужен Dativ-Artikel"],optsUk:["артикль не потрібен","завжди der","завжди ein","потрібен Dativ-Artikel"],ans:0,hint:"Präposition als"},
+  {q:"'Wissen Sie, wie der neue Kollege heißt?' — какое W-слово используется?",qUk:"'Wissen Sie, wie der neue Kollege heißt?' — яке W-слово використовується?",opts:["wie","wo","wann","warum"],ans:0,hint:"Wie heißt...?"},
 ];
 
 function T_A2L5A(){
@@ -15802,13 +15806,13 @@ function T_A2L5A(){
 }
 
 const Q_A2L5B=[
-  {q:"'Kannst du mir sagen, ...' — это форма:",opts:["informell","formell","Imperativ","Perfekt"],ans:0,hint:"du-Form = informell"},
-  {q:"'Können Sie mir sagen, ...' — это форма:",opts:["formell","informell","Präteritum","Konjunktiv"],ans:0,hint:"Sie-Form = formell"},
-  {q:"'die Mitteilung' по-русски:",opts:["сообщение, записка","письмо","открытка","телефонный звонок"],ans:0,hint:"kurze Nachricht"},
-  {q:"'der Prospekt' по-русски:",opts:["брошюра, буклет","письмо","счёт","договор"],ans:0,hint:"Werbematerial"},
+  {q:"'Kannst du mir sagen, ...' — это форма:",qUk:"'Kannst du mir sagen, ...' — це форма:",opts:["informell","formell","Imperativ","Perfekt"],ans:0,hint:"du-Form = informell"},
+  {q:"'Können Sie mir sagen, ...' — это форма:",qUk:"'Können Sie mir sagen, ...' — це форма:",opts:["formell","informell","Präteritum","Konjunktiv"],ans:0,hint:"Sie-Form = formell"},
+  {q:"'die Mitteilung' по-русски:",qUk:"'die Mitteilung' українською:",opts:["сообщение, записка","письмо","открытка","телефонный звонок"],optsUk:["повідомлення, записка","лист","листівка","телефонний дзвінок"],ans:0,hint:"kurze Nachricht"},
+  {q:"'der Prospekt' по-русски:",qUk:"'der Prospekt' українською:",opts:["брошюра, буклет","письмо","счёт","договор"],optsUk:["брошура, буклет","лист","рахунок","договір"],ans:0,hint:"Werbematerial"},
   {q:"Herr Neumann hat angerufen, aber Frau García hat keine Zeit für morgen. Was soll sie tun?",opts:["ihn zurückrufen und einen neuen Termin vereinbaren","nichts tun","ihm eine E-Mail schreiben","zur Firma gehen"],ans:0,hint:"Mitteilung lesen"},
-  {q:"'Könntest du mir bitte helfen?' — это:",opts:["höfliche Bitte","Befehl","direkte Frage","Vergangenheit"],ans:0,hint:"Konjunktiv II von können"},
-  {q:"'Könnten Sie mir bitte helfen?' — форма 'könnten' звучит:",opts:["мягче и вежливее, чем 'können'","грубее, чем 'können'","это Präteritum","это ошибка"],ans:0,hint:"höfliche Bitten"},
+  {q:"'Könntest du mir bitte helfen?' — это:",qUk:"'Könntest du mir bitte helfen?' — це:",opts:["höfliche Bitte","Befehl","direkte Frage","Vergangenheit"],ans:0,hint:"Konjunktiv II von können"},
+  {q:"'Könnten Sie mir bitte helfen?' — форма 'könnten' звучит:",qUk:"'Könnten Sie mir bitte helfen?' — форма 'könnten' звучить:",opts:["мягче и вежливее, чем 'können'","грубее, чем 'können'","это Präteritum","это ошибка"],optsUk:["м'якше і ввічливіше, ніж 'können'","грубіше, ніж 'können'","це Präteritum","це помилка"],ans:0,hint:"höfliche Bitten"},
 ];
 
 function T_A2L5B(){
@@ -15895,14 +15899,14 @@ function T_A2L5B(){
 }
 
 const Q_A2L5C=[
-  {q:"'dieser Kopierer' — какой падеж/род?",opts:["Nominativ, maskulin","Akkusativ, maskulin","Nominativ, neutrum","Dativ, feminin"],ans:0,hint:"m: dieser"},
-  {q:"'dieses Fach' — какой род?",opts:["neutrum (das Fach)","maskulin","feminin","Plural"],ans:0,hint:"n: dieses"},
-  {q:"'diese Taste' — какой род?",opts:["feminin (die Taste)","maskulin","neutrum","Plural"],ans:0,hint:"f: diese"},
-  {q:"'Ich nehme diesen Kopierer.' — падеж 'diesen'?",opts:["Akkusativ","Nominativ","Dativ","Genitiv"],ans:0,hint:"m Akk: diesen"},
-  {q:"'Welche Taste ist die Start-Taste?' — 'Diese hier.' Здесь 'diese' заменяет:",opts:["die Taste","der Kopierer","das Fach","die Fächer"],ans:0,hint:"feminin"},
-  {q:"'Wo schaltet man das Gerät ein?' — это вопрос о том, как:",opts:["включить прибор","выключить прибор","объяснить работу","заплатить"],ans:0,hint:"einschalten"},
-  {q:"'Wie viel Geld muss man einwerfen?' — 'einwerfen' означает:",opts:["бросать (монету)","вынимать","считать","менять"],ans:0,hint:"Münzeinwurf"},
-  {q:"'der Getränkeautomat' по-русски:",opts:["автомат с напитками","кофемашина","холодильник","кассовый аппарат"],ans:0,hint:"Becher, Münzeinwurf, Taste"},
+  {q:"'dieser Kopierer' — какой падеж/род?",qUk:"'dieser Kopierer' — який відмінок/рід?",opts:["Nominativ, maskulin","Akkusativ, maskulin","Nominativ, neutrum","Dativ, feminin"],ans:0,hint:"m: dieser"},
+  {q:"'dieses Fach' — какой род?",qUk:"'dieses Fach' — який рід?",opts:["neutrum (das Fach)","maskulin","feminin","Plural"],ans:0,hint:"n: dieses"},
+  {q:"'diese Taste' — какой род?",qUk:"'diese Taste' — який рід?",opts:["feminin (die Taste)","maskulin","neutrum","Plural"],ans:0,hint:"f: diese"},
+  {q:"'Ich nehme diesen Kopierer.' — падеж 'diesen'?",qUk:"'Ich nehme diesen Kopierer.' — відмінок 'diesen'?",opts:["Akkusativ","Nominativ","Dativ","Genitiv"],ans:0,hint:"m Akk: diesen"},
+  {q:"'Welche Taste ist die Start-Taste?' — 'Diese hier.' Здесь 'diese' заменяет:",qUk:"'Welche Taste ist die Start-Taste?' — 'Diese hier.' Тут 'diese' замінює:",opts:["die Taste","der Kopierer","das Fach","die Fächer"],ans:0,hint:"feminin"},
+  {q:"'Wo schaltet man das Gerät ein?' — это вопрос о том, как:",qUk:"'Wo schaltet man das Gerät ein?' — це питання про те, як:",opts:["включить прибор","выключить прибор","объяснить работу","заплатить"],optsUk:["включити прилад","вимкнути прилад","пояснити роботу","заплатити"],ans:0,hint:"einschalten"},
+  {q:"'Wie viel Geld muss man einwerfen?' — 'einwerfen' означает:",qUk:"'Wie viel Geld muss man einwerfen?' — 'einwerfen' означає:",opts:["бросать (монету)","вынимать","считать","менять"],optsUk:["кидати (монету)","виймати","рахувати","змінювати"],ans:0,hint:"Münzeinwurf"},
+  {q:"'der Getränkeautomat' по-русски:",qUk:"'der Getränkeautomat' українською:",opts:["автомат с напитками","кофемашина","холодильник","кассовый аппарат"],optsUk:["автомат з напоями","кавомашина","холодильник","касовий апарат"],ans:0,hint:"Becher, Münzeinwurf, Taste"},
 ];
 
 function T_A2L5C(){
@@ -15990,17 +15994,17 @@ function T_A2L5C(){
 }
 
 const Q_A2L6A=[
-  {q:"'NK' в объявлении о квартире означает:",opts:["Nebenkosten (коммунальные платежи)","Neubau","Nachbarn","Nachtmiete"],ans:0,hint:"NK: Nebenkosten"},
-  {q:"'KM' означает:",opts:["Kaltmiete (аренда без отопления)","Kaution","Küchenmöbel","Kellermiete"],ans:0,hint:"KM: Kaltmiete"},
-  {q:"'WM' означает:",opts:["Warmmiete (аренда с отоплением)","Wohnungsmiete","Wochenmiete","Wandmalerei"],ans:0,hint:"WM: Warmmiete"},
-  {q:"'EG' означает:",opts:["Erdgeschoss (первый этаж)","Eingang","Einbauküche","Endgeschoss"],ans:0,hint:"EG: Erdgeschoss"},
-  {q:"'BLK' означает:",opts:["Balkon","Blockhaus","Bad und Klo","Bauklasse"],ans:0,hint:"BLK: Balkon"},
-  {q:"'EBK' означает:",opts:["Einbauküche (встроенная кухня)","Erdbeben-Klasse","Eingangsbereich","Erstbewohnerkosten"],ans:0,hint:"EBK: Einbauküche"},
-  {q:"'Zi.' означает:",opts:["Zimmer (комната)","Ziegel","Zinsen","Zielgruppe"],ans:0,hint:"Zi.: Zimmer"},
-  {q:"'qm' означает:",opts:["Quadratmeter","Quartal","Qualität","Quittung"],ans:0,hint:"qm: Quadratmeter"},
-  {q:"Разница между Kaltmiete и Warmmiete:",opts:["Warmmiete включает отопление и коммунальные платежи","они одинаковы","Kaltmiete дороже","Warmmiete только летом"],ans:0,hint:"KM + NK = WM"},
-  {q:"'die Kaution' по-русски:",opts:["залог (депозит)","аренда","коммунальные платежи","договор"],ans:0,hint:"meist 2-3 Monatsmieten"},
-  {q:"'Ist die Wohnung noch frei?' — ожидаемый ответ, если квартиру уже сняли:",opts:["Tut mir leid, sie ist schon vermietet.","Ja, kommen Sie morgen.","Nein, sie ist neu.","Ja, das ist die Kaution."],ans:0,hint:"vermietet = уже сдана",hintUk:"vermietet = вже здана"},
+  {q:"'NK' в объявлении о квартире означает:",qUk:"'NK' в объявлении о квартире означає:",opts:["Nebenkosten (коммунальные платежи)","Neubau","Nachbarn","Nachtmiete"],optsUk:["Nebenkosten (комунальні платежі)","Neubau","Nachbarn","Nachtmiete"],ans:0,hint:"NK: Nebenkosten"},
+  {q:"'KM' означает:",qUk:"'KM' означає:",opts:["Kaltmiete (аренда без отопления)","Kaution","Küchenmöbel","Kellermiete"],optsUk:["Kaltmiete (оренда без опалення)","Kaution","Küchenmöbel","Kellermiete"],ans:0,hint:"KM: Kaltmiete"},
+  {q:"'WM' означает:",qUk:"'WM' означає:",opts:["Warmmiete (аренда с отоплением)","Wohnungsmiete","Wochenmiete","Wandmalerei"],optsUk:["Warmmiete (оренда з опаленням)","Wohnungsmiete","Wochenmiete","Wandmalerei"],ans:0,hint:"WM: Warmmiete"},
+  {q:"'EG' означает:",qUk:"'EG' означає:",opts:["Erdgeschoss (первый этаж)","Eingang","Einbauküche","Endgeschoss"],optsUk:["Erdgeschoss (перший поверх)","Eingang","Einbauküche","Endgeschoss"],ans:0,hint:"EG: Erdgeschoss"},
+  {q:"'BLK' означает:",qUk:"'BLK' означає:",opts:["Balkon","Blockhaus","Bad und Klo","Bauklasse"],ans:0,hint:"BLK: Balkon"},
+  {q:"'EBK' означает:",qUk:"'EBK' означає:",opts:["Einbauküche (встроенная кухня)","Erdbeben-Klasse","Eingangsbereich","Erstbewohnerkosten"],optsUk:["Einbauküche (вбудована кухня)","Erdbeben-Klasse","Eingangsbereich","Erstbewohnerkosten"],ans:0,hint:"EBK: Einbauküche"},
+  {q:"'Zi.' означает:",qUk:"'Zi.' означає:",opts:["Zimmer (комната)","Ziegel","Zinsen","Zielgruppe"],optsUk:["Zimmer (кімната)","Ziegel","Zinsen","Zielgruppe"],ans:0,hint:"Zi.: Zimmer"},
+  {q:"'qm' означает:",qUk:"'qm' означає:",opts:["Quadratmeter","Quartal","Qualität","Quittung"],ans:0,hint:"qm: Quadratmeter"},
+  {q:"Разница между Kaltmiete и Warmmiete:",qUk:"Різниця між Kaltmiete і Warmmiete:",opts:["Warmmiete включает отопление и коммунальные платежи","они одинаковы","Kaltmiete дороже","Warmmiete только летом"],optsUk:["Warmmiete включає опалення і комунальні платежі","вони однакові","Kaltmiete дорожче","Warmmiete лише влітку"],ans:0,hint:"KM + NK = WM"},
+  {q:"'die Kaution' по-русски:",qUk:"'die Kaution' українською:",opts:["залог (депозит)","аренда","коммунальные платежи","договор"],optsUk:["застава (депозит)","оренда","комунальні платежі","договір"],ans:0,hint:"meist 2-3 Monatsmieten"},
+  {q:"'Ist die Wohnung noch frei?' — ожидаемый ответ, если квартиру уже сняли:",qUk:"'Ist die Wohnung noch frei?' — очікувана відповідь, якщо квартиру вже здали:",opts:["Tut mir leid, sie ist schon vermietet.","Ja, kommen Sie morgen.","Nein, sie ist neu.","Ja, das ist die Kaution."],ans:0,hint:"vermietet = уже сдана",hintUk:"vermietet = вже здана"},
 ];
 
 function T_A2L6A(){
@@ -16081,11 +16085,11 @@ function T_A2L6A(){
 }
 
 const Q_A2L6B=[
-  {q:"'Frau Meyer lässt sie abholen.' — глагол 'lassen' здесь означает:",opts:["поручает кому-то сделать; не делает сама","запрещает","разрешает уйти","оставляет забытым"],ans:0,hint:"jemanden etwas machen lassen"},
-  {q:"Структура 'lassen': 'Sie lässt ihre Hemden bügeln.' Кто гладит рубашки?",opts:["кто-то другой (прачечная/помощник)","она сама","никто","её муж всегда"],ans:0,hint:"lassen + Infinitiv = поручить",hintUk:"lassen + Infinitiv = доручити"},
-  {q:"'Der Löffel liegt auf dem Tisch.' — глагол 'liegen' используется, потому что ложка лежит:",opts:["горизонтально","вертикально","в воздухе","в шкафу"],ans:0,hint:"liegen = горизонтальное положение",hintUk:"liegen = горизонтальне положення"},
-  {q:"'Die Lampe hängt über dem Tisch.' — 'stehen' здесь бы:",opts:["не подходил — лампа висит, не стоит","подходил бы одинаково","был бы правильнее","обязателен"],ans:0,hint:"hängen — отдельный глагол для висящих предметов",hintUk:"hängen — окреме дієслово для предметів, що висять"},
-  {q:"'Ich stelle den Stuhl an den Tisch.' — глагол 'stellen' — это:",opts:["действие (куда ставим — Akkusativ)","состояние (где стоит — Dativ)","прошедшее время","вопрос"],ans:0,hint:"stellen (действие) + Akkusativ, stehen (состояние) + Dativ",hintUk:"stellen (дія) + Akkusativ, stehen (стан) + Dativ"},
+  {q:"'Frau Meyer lässt sie abholen.' — глагол 'lassen' здесь означает:",qUk:"'Frau Meyer lässt sie abholen.' — глагол 'lassen' здесь означає:",opts:["поручает кому-то сделать; не делает сама","запрещает","разрешает уйти","оставляет забытым"],optsUk:["доручає комусь зробити; не робить сама","забороняє","дозволяє піти","залишає забутим"],ans:0,hint:"jemanden etwas machen lassen"},
+  {q:"Структура 'lassen': 'Sie lässt ihre Hemden bügeln.' Кто гладит рубашки?",qUk:"Структура 'lassen': 'Sie lässt ihre Hemden bügeln.' Хто прасує сорочки?",opts:["кто-то другой (прачечная/помощник)","она сама","никто","её муж всегда"],optsUk:["хтось інший (пральня/помічник)","вона сама","ніхто","її чоловік завжди"],ans:0,hint:"lassen + Infinitiv = поручить",hintUk:"lassen + Infinitiv = доручити"},
+  {q:"'Der Löffel liegt auf dem Tisch.' — глагол 'liegen' используется, потому что ложка лежит:",qUk:"'Der Löffel liegt auf dem Tisch.' — дієслово 'liegen' використовується, тому що ложка лежить:",opts:["горизонтально","вертикально","в воздухе","в шкафу"],optsUk:["горизонтально","вертикально","у повітрі","в шафі"],ans:0,hint:"liegen = горизонтальное положение",hintUk:"liegen = горизонтальне положення"},
+  {q:"'Die Lampe hängt über dem Tisch.' — 'stehen' здесь бы:",qUk:"'Die Lampe hängt über dem Tisch.' — 'stehen' тут би:",opts:["не подходил — лампа висит, не стоит","подходил бы одинаково","был бы правильнее","обязателен"],optsUk:["не підходив би — лампа висить, не стоїть","підходив би однаково","був би правильнішим","обов'язковий"],ans:0,hint:"hängen — отдельный глагол для висящих предметов",hintUk:"hängen — окреме дієслово для предметів, що висять"},
+  {q:"'Ich stelle den Stuhl an den Tisch.' — глагол 'stellen' — это:",qUk:"'Ich stelle den Stuhl an den Tisch.' — глагол 'stellen' — це:",opts:["действие (куда ставим — Akkusativ)","состояние (где стоит — Dativ)","прошедшее время","вопрос"],optsUk:["дія (куди ставимо — Akkusativ)","стан (де стоїть — Dativ)","минулий час","питання"],ans:0,hint:"stellen (действие) + Akkusativ, stehen (состояние) + Dativ",hintUk:"stellen (дія) + Akkusativ, stehen (стан) + Dativ"},
 ];
 
 function T_A2L6B(){
@@ -16185,16 +16189,16 @@ function T_A2L6B(){
 }
 
 const Q_A2L6C=[
-  {q:"'sich freuen' — 'ich freue ___'. Какое местоимение?",opts:["mich","dich","sich","uns"],ans:0,hint:"ich freue mich"},
+  {q:"'sich freuen' — 'ich freue ___'. Какое местоимение?",qUk:"'sich freuen' — 'ich freue ___'. Який займенник?",opts:["mich","dich","sich","uns"],ans:0,hint:"ich freue mich"},
   {q:"'Wir freuen ___, dass wir diese Wohnung bekommen haben.'",opts:["uns","euch","sich","mich"],ans:0,hint:"wir freuen uns"},
   {q:"'Hoffentlich fühlen Sie ___ hier wohl!' (formell, Sie)",opts:["sich","dich","euch","uns"],ans:0,hint:"Sie fühlen sich"},
-  {q:"'sich verlieben' означает:",opts:["влюбиться","поссориться","расстаться","познакомиться"],ans:0,hint:"противоположно sich trennen",hintUk:"протилежне до sich trennen"},
-  {q:"'sich streiten' означает:",opts:["ссориться","мириться","целоваться","влюбляться"],ans:0,hint:"Pavel und Luise streiten sich"},
-  {q:"'sich entschuldigen' означает:",opts:["извиняться","обижаться","прощать","забывать"],ans:0,hint:"Er hat sich entschuldigt"},
-  {q:"Порядок романтической истории: sich kennenlernen → sich verlieben → ... → sich streiten → sich entschuldigen. Что пропущено?",opts:["sich küssen","sich trennen","sich vorstellen","sich freuen"],ans:0,hint:"после влюблённости — поцелуй",hintUk:"після закохання — поцілунок"},
-  {q:"'Ich fühle mich stark.' — 'stark' здесь означает:",opts:["сильным","слабым","одиноким","измученным"],ans:0,hint:"positiv: prima, fit, stark"},
-  {q:"'erschöpft' по-русски:",opts:["измученный, обессиленный","сильный","одинокий","больной"],ans:0,hint:"negativ: erschöpft, matt, schwach"},
-  {q:"'einsam' по-русски:",opts:["одинокий","чужой","слабый","усталый"],ans:0,hint:"negativ группа",hintUk:"negativ група"},
+  {q:"'sich verlieben' означает:",qUk:"'sich verlieben' означає:",opts:["влюбиться","поссориться","расстаться","познакомиться"],optsUk:["закохатися","посваритися","розлучитися","познайомитися"],ans:0,hint:"противоположно sich trennen",hintUk:"протилежне до sich trennen"},
+  {q:"'sich streiten' означает:",qUk:"'sich streiten' означає:",opts:["ссориться","мириться","целоваться","влюбляться"],optsUk:["сваритися","миритися","цілуватися","закохуватися"],ans:0,hint:"Pavel und Luise streiten sich"},
+  {q:"'sich entschuldigen' означает:",qUk:"'sich entschuldigen' означає:",opts:["извиняться","обижаться","прощать","забывать"],optsUk:["вибачатися","ображатися","прощати","забувати"],ans:0,hint:"Er hat sich entschuldigt"},
+  {q:"Порядок романтической истории: sich kennenlernen → sich verlieben → ... → sich streiten → sich entschuldigen. Что пропущено?",qUk:"Порядок романтичної історії: sich kennenlernen → sich verlieben → ... → sich streiten → sich entschuldigen. Що пропущено?",opts:["sich küssen","sich trennen","sich vorstellen","sich freuen"],ans:0,hint:"после влюблённости — поцелуй",hintUk:"після закохання — поцілунок"},
+  {q:"'Ich fühle mich stark.' — 'stark' здесь означает:",qUk:"'Ich fühle mich stark.' — 'stark' здесь означає:",opts:["сильным","слабым","одиноким","измученным"],optsUk:["сильним","слабким","самотнім","виснаженим"],ans:0,hint:"positiv: prima, fit, stark"},
+  {q:"'erschöpft' по-русски:",qUk:"'erschöpft' українською:",opts:["измученный, обессиленный","сильный","одинокий","больной"],optsUk:["виснажений, знесилений","сильний","самотній","хворий"],ans:0,hint:"negativ: erschöpft, matt, schwach"},
+  {q:"'einsam' по-русски:",qUk:"'einsam' українською:",opts:["одинокий","чужой","слабый","усталый"],optsUk:["самотній","чужий","слабкий","втомлений"],ans:0,hint:"negativ группа",hintUk:"negativ група"},
 ];
 
 function T_A2L6C(){
@@ -16311,16 +16315,16 @@ function T_A2L6C(){
 
 // ═══ A2-L7 · Feste feiern ═══
 const Q_A2L7A=[
-  {q:"'Um Antwort wird gebeten bis...' означает:",opts:["просьба ответить до определённой даты","приходить можно в любое время","подарки не нужны","адрес указан неверно"],ans:0,hint:"R.S.V.P."},
-  {q:"'Die Trauung' по-русски:",opts:["бракосочетание (в загсе)","свадебный банкет","обручение","медовый месяц"],ans:0,hint:"findet im Standesamt statt"},
-  {q:"'Wenn ihr nicht kommt, sagt bitte Bescheid!' означает:",opts:["если не придёте — сообщите, пожалуйста","приходите обязательно","подарки не нужны","начало в 16 часов"],ans:0,hint:"Bescheid sagen = сообщить",hintUk:"Bescheid sagen = повідомити"},
-  {q:"'Ist das der achte Oktober?' — это вопрос:",opts:["Welcher Tag — Nominativ","Wann — Dativ (am)","оба варианта одинаковы","это не вопрос о дате"],ans:0,hint:"der achte = Nominativ"},
-  {q:"'Ich komme gern, aber vielleicht etwas später.' — это:",opts:["неуверенный/условный ответ","чёткий отказ","чёткое согласие","вопрос"],ans:0,hint:"vielleicht = может быть",hintUk:"vielleicht = можливо"},
-  {q:"'Vielen Dank für die Einladung!' означает:",opts:["большое спасибо за приглашение","извините, не приду","когда начало?","где это будет?"],ans:0,hint:"positiv reagieren"},
-  {q:"'Ich muss noch ... fragen.' используется, когда:",opts:["пока не уверен, нужно у кого-то спросить","точно придёшь","точно не придёшь","уже спросил"],ans:0,hint:"unsicher reagieren"},
-  {q:"'Schade, da kann ich nicht.' означает:",opts:["жаль, не смогу","отлично, приду","когда это будет?","спасибо большое"],ans:0,hint:"absagen"},
-  {q:"Wer? Was? Wann? Wo? — это:",opts:["W-Fragen для чтения приглашений","формы глагола sein","артикли","падежи"],ans:0,hint:"beim Lesen von Einladungen"},
-  {q:"'Von wann bis wann geht der Kurs? — Vom 18.3. bis zum 15.4.' — 'vom' и 'zum' здесь стоят перед:",opts:["порядковым числительным в Dativ","существительным без артикля","глаголом","прилагательным"],ans:0,hint:"vom = von+dem, zum = zu+dem"},
+  {q:"'Um Antwort wird gebeten bis...' означает:",qUk:"'Um Antwort wird gebeten bis...' означає:",opts:["просьба ответить до определённой даты","приходить можно в любое время","подарки не нужны","адрес указан неверно"],optsUk:["прохання відповісти до певної дати","приходити можна будь-коли","подарунки не потрібні","адреса вказана невірно"],ans:0,hint:"R.S.V.P."},
+  {q:"'Die Trauung' по-русски:",qUk:"'Die Trauung' українською:",opts:["бракосочетание (в загсе)","свадебный банкет","обручение","медовый месяц"],optsUk:["одруження (в РАЦСі)","весільний банкет","заручини","медовий місяць"],ans:0,hint:"findet im Standesamt statt"},
+  {q:"'Wenn ihr nicht kommt, sagt bitte Bescheid!' означает:",qUk:"'Wenn ihr nicht kommt, sagt bitte Bescheid!' означає:",opts:["если не придёте — сообщите, пожалуйста","приходите обязательно","подарки не нужны","начало в 16 часов"],optsUk:["якщо не прийдете — повідомте, будь ласка","приходьте обов'язково","подарунки не потрібні","початок о 16 годині"],ans:0,hint:"Bescheid sagen = сообщить",hintUk:"Bescheid sagen = повідомити"},
+  {q:"'Ist das der achte Oktober?' — это вопрос:",qUk:"'Ist das der achte Oktober?' — це питання:",opts:["Welcher Tag — Nominativ","Wann — Dativ (am)","оба варианта одинаковы","это не вопрос о дате"],optsUk:["Welcher Tag — Nominativ","Wann — Dativ (am)","обидва варіанти однакові","це не питання про дату"],ans:0,hint:"der achte = Nominativ"},
+  {q:"'Ich komme gern, aber vielleicht etwas später.' — это:",qUk:"'Ich komme gern, aber vielleicht etwas später.' — це:",opts:["неуверенный/условный ответ","чёткий отказ","чёткое согласие","вопрос"],optsUk:["невпевнена/умовна відповідь","чітка відмова","чітка згода","питання"],ans:0,hint:"vielleicht = может быть",hintUk:"vielleicht = можливо"},
+  {q:"'Vielen Dank für die Einladung!' означает:",qUk:"'Vielen Dank für die Einladung!' означає:",opts:["большое спасибо за приглашение","извините, не приду","когда начало?","где это будет?"],optsUk:["щиро дякую за запрошення","вибачте, не прийду","коли початок?","де це буде?"],ans:0,hint:"positiv reagieren"},
+  {q:"'Ich muss noch ... fragen.' используется, когда:",qUk:"'Ich muss noch ... fragen.' використовується, коли:",opts:["пока не уверен, нужно у кого-то спросить","точно придёшь","точно не придёшь","уже спросил"],optsUk:["поки не впевнений, потрібно у когось спитати","точно прийдеш","точно не прийдеш","вже запитав"],ans:0,hint:"unsicher reagieren"},
+  {q:"'Schade, da kann ich nicht.' означает:",qUk:"'Schade, da kann ich nicht.' означає:",opts:["жаль, не смогу","отлично, приду","когда это будет?","спасибо большое"],optsUk:["шкода, не зможу","відмінно, прийду","коли це буде?","дуже дякую"],ans:0,hint:"absagen"},
+  {q:"Wer? Was? Wann? Wo? — это:",qUk:"Wer? Was? Wann? Wo? — це:",opts:["W-Fragen для чтения приглашений","формы глагола sein","артикли","падежи"],optsUk:["W-Fragen для читання запрошень","форми дієслова sein","артиклі","відмінки"],ans:0,hint:"beim Lesen von Einladungen"},
+  {q:"'Von wann bis wann geht der Kurs? — Vom 18.3. bis zum 15.4.' — 'vom' и 'zum' здесь стоят перед:",qUk:"'Von wann bis wann geht der Kurs? — Vom 18.3. bis zum 15.4.' — 'vom' і 'zum' тут стоять перед:",opts:["порядковым числительным в Dativ","существительным без артикля","глаголом","прилагательным"],optsUk:["порядковим числівником у Dativ","іменником без артикля","дієсловом","прикметником"],ans:0,hint:"vom = von+dem, zum = zu+dem"},
 ];
 
 function T_A2L7A(){
@@ -16397,16 +16401,16 @@ function T_A2L7A(){
 }
 
 const Q_A2L7B=[
-  {q:"'ein grauer Anzug' (m., Nominativ) — окончание прилагательного:",opts:["-er","-es","-e","-en"],ans:0,hint:"m., Nom. nach ein/kein"},
-  {q:"'ein weißes Kleid' (n., Nominativ) — окончание:",opts:["-es","-er","-e","-en"],ans:0,hint:"n., Nom. nach ein/kein"},
-  {q:"'eine graue Hose' (f., Nominativ) — окончание:",opts:["-e","-er","-es","-en"],ans:0,hint:"f., Nom."},
-  {q:"'einen grauen Anzug' — это:",opts:["Akkusativ, m.","Nominativ, m.","Dativ, m.","Nominativ, n."],ans:0,hint:"einen = Akk. m."},
-  {q:"Во множественном числе (kein Artikel) прилагательное берёт окончание:",opts:["-e","-er","-es","-en"],ans:0,hint:"kleine Ohrringe"},
-  {q:"'Was für ein Kleid?' — ожидаемый ответ:",opts:["Ein weißes (Kleid).","Der weiße Kleid.","Einen weißen Kleid.","Weißes."],ans:0,hint:"n., Nom."},
-  {q:"'Ich schenke meinem Vater ein Buch.' — 'meinem Vater' в каком падеже?",opts:["Dativ","Akkusativ","Nominativ","Genitiv"],ans:0,hint:"Person = Dativ"},
-  {q:"'Ich schenke ihm ein Buch.' — 'ihm' заменяет:",opts:["meinem Vater (Dativ)","ein Buch (Akkusativ)","der Vater (Nominativ)","die Bücher (Plural)"],ans:0,hint:"Dativ-Pronomen"},
-  {q:"Какие ещё глаголы работают как 'schenken' (Dativ+Akkusativ)?",opts:["geben, mitbringen, zeigen","gehen, kommen, fahren","sein, haben, werden","können, müssen, wollen"],ans:0,hint:"ebenso: ..."},
-  {q:"'Wirklich? Das ist nett von dir.' — это реакция на:",opts:["комплимент","приглашение","подарок","извинение"],ans:0,hint:"auf Komplimente reagieren"},
+  {q:"'ein grauer Anzug' (m., Nominativ) — окончание прилагательного:",qUk:"'ein grauer Anzug' (m., Nominativ) — закінчення прикметника:",opts:["-er","-es","-e","-en"],ans:0,hint:"m., Nom. nach ein/kein"},
+  {q:"'ein weißes Kleid' (n., Nominativ) — окончание:",qUk:"'ein weißes Kleid' (n., Nominativ) — закінчення:",opts:["-es","-er","-e","-en"],ans:0,hint:"n., Nom. nach ein/kein"},
+  {q:"'eine graue Hose' (f., Nominativ) — окончание:",qUk:"'eine graue Hose' (f., Nominativ) — закінчення:",opts:["-e","-er","-es","-en"],ans:0,hint:"f., Nom."},
+  {q:"'einen grauen Anzug' — это:",qUk:"'einen grauen Anzug' — це:",opts:["Akkusativ, m.","Nominativ, m.","Dativ, m.","Nominativ, n."],ans:0,hint:"einen = Akk. m."},
+  {q:"Во множественном числе (kein Artikel) прилагательное берёт окончание:",qUk:"У множині (kein Artikel) прикметник бере закінчення:",opts:["-e","-er","-es","-en"],ans:0,hint:"kleine Ohrringe"},
+  {q:"'Was für ein Kleid?' — ожидаемый ответ:",qUk:"'Was für ein Kleid?' — очікувана відповідь:",opts:["Ein weißes (Kleid).","Der weiße Kleid.","Einen weißen Kleid.","Weißes."],ans:0,hint:"n., Nom."},
+  {q:"'Ich schenke meinem Vater ein Buch.' — 'meinem Vater' в каком падеже?",qUk:"'Ich schenke meinem Vater ein Buch.' — 'meinem Vater' у якому відмінку?",opts:["Dativ","Akkusativ","Nominativ","Genitiv"],ans:0,hint:"Person = Dativ"},
+  {q:"'Ich schenke ihm ein Buch.' — 'ihm' заменяет:",qUk:"'Ich schenke ihm ein Buch.' — 'ihm' замінює:",opts:["meinem Vater (Dativ)","ein Buch (Akkusativ)","der Vater (Nominativ)","die Bücher (Plural)"],ans:0,hint:"Dativ-Pronomen"},
+  {q:"Какие ещё глаголы работают как 'schenken' (Dativ+Akkusativ)?",qUk:"Які ще дієслова працюють як 'schenken' (Dativ+Akkusativ)?",opts:["geben, mitbringen, zeigen","gehen, kommen, fahren","sein, haben, werden","können, müssen, wollen"],ans:0,hint:"ebenso: ..."},
+  {q:"'Wirklich? Das ist nett von dir.' — это реакция на:",qUk:"'Wirklich? Das ist nett von dir.' — це реакція на:",opts:["комплимент","приглашение","подарок","извинение"],optsUk:["комплімент","запрошення","подарунок","вибачення"],ans:0,hint:"auf Komplimente reagieren"},
 ];
 
 function T_A2L7B(){
@@ -16532,15 +16536,15 @@ function T_A2L7B(){
 }
 
 const Q_A2L7C=[
-  {q:"Что удивляет Лейлу (Türkei) в немецких приглашениях?",opts:["немцы приходят точно вовремя","немцы всегда опаздывают","немцы не приглашают детей","немцы не приносят подарков"],ans:0,hint:"pünktlich"},
-  {q:"Что Луиз (Brasilien) часто приносит на вечеринку?",opts:["национальное блюдо или вино","только цветы","ничего не приносит","только подарок для хозяев"],ans:0,hint:"Party-Mitbringsel"},
-  {q:"'dass' — куда встаёт спрягаемый глагол в придаточном?",opts:["в конец предложения","на второе место","в начало","глагол не нужен"],ans:0,hint:"dass-Satz: Verb ans Ende"},
-  {q:"'Er sagt, dass er vorgestern auf einer Party war.' — это:",opts:["косвенная речь (indirekte Rede)","прямая речь","вопрос","повелительное наклонение"],ans:0,hint:"indirekte Rede"},
-  {q:"Прямая речь 'Ich war auf einer Party.' → косвенная (dass):",opts:["..., dass er auf einer Party war.","..., dass war er auf einer Party.","..., er war auf einer Party, dass.","..., dass er ist auf einer Party."],ans:0,hint:"Verb ans Ende"},
-  {q:"В интеркультурном календаре учебника отмечены праздники:",opts:["разных религий и культур в Германии","только христианские","только государственные","только для детей"],ans:0,hint:"christlich/jüdisch/muslimisch/hinduistisch/buddhistisch"},
-  {q:"'Wann beginnt das Pessachfest?' — ожидаемый тип ответа:",opts:["дата (am vierten April)","место","имя","цена"],ans:0,hint:"Wann? → Datum"},
-  {q:"'erzählen, dass...' переводится:",opts:["рассказывать, что...","спрашивать, ли...","думать, будто...","бояться, что..."],ans:0,hint:"berichten/erzählen + dass"},
-  {q:"Karneval der Kulturen в Берлине проводится:",opts:["с 1996 года, 4 дня","с 2015 года, 1 день","только для детей","только зимой"],ans:0,hint:"Deutsch Plus"},
+  {q:"Что удивляет Лейлу (Türkei) в немецких приглашениях?",qUk:"Що дивує Лейлу (Türkei) у німецьких запрошеннях?",opts:["немцы приходят точно вовремя","немцы всегда опаздывают","немцы не приглашают детей","немцы не приносят подарков"],optsUk:["німці приходять точно вчасно","німці завжди спізнюються","німці не запрошують дітей","німці не приносять подарунків"],ans:0,hint:"pünktlich"},
+  {q:"Что Луиз (Brasilien) часто приносит на вечеринку?",qUk:"Що Луїз (Brasilien) часто приносить на вечірку?",opts:["национальное блюдо или вино","только цветы","ничего не приносит","только подарок для хозяев"],optsUk:["національна страва або вино","тільки квіти","нічого не приносить","тільки подарунок для господарів"],ans:0,hint:"Party-Mitbringsel"},
+  {q:"'dass' — куда встаёт спрягаемый глагол в придаточном?",qUk:"'dass' — куди стає дієслово у підрядному реченні?",opts:["в конец предложения","на второе место","в начало","глагол не нужен"],optsUk:["в кінець речення","на друге місце","на початок","дієслово не потрібне"],ans:0,hint:"dass-Satz: Verb ans Ende"},
+  {q:"'Er sagt, dass er vorgestern auf einer Party war.' — это:",qUk:"'Er sagt, dass er vorgestern auf einer Party war.' — це:",opts:["косвенная речь (indirekte Rede)","прямая речь","вопрос","повелительное наклонение"],optsUk:["непряма мова (indirekte Rede)","пряма мова","питання","наказовий спосіб"],ans:0,hint:"indirekte Rede"},
+  {q:"Прямая речь 'Ich war auf einer Party.' → косвенная (dass):",qUk:"Пряма мова 'Ich war auf einer Party.' → непряма (dass):",opts:["..., dass er auf einer Party war.","..., dass war er auf einer Party.","..., er war auf einer Party, dass.","..., dass er ist auf einer Party."],ans:0,hint:"Verb ans Ende"},
+  {q:"В интеркультурном календаре учебника отмечены праздники:",qUk:"В інтеркультурному календарі підручника позначені свята:",opts:["разных религий и культур в Германии","только христианские","только государственные","только для детей"],optsUk:["різних релігій і культур у Німеччині","тільки християнські","тільки державні","тільки для дітей"],ans:0,hint:"christlich/jüdisch/muslimisch/hinduistisch/buddhistisch"},
+  {q:"'Wann beginnt das Pessachfest?' — ожидаемый тип ответа:",qUk:"'Wann beginnt das Pessachfest?' — очікуваний тип відповіді:",opts:["дата (am vierten April)","место","имя","цена"],optsUk:["дата (am vierten April)","місце","ім'я","ціна"],ans:0,hint:"Wann? → Datum"},
+  {q:"'erzählen, dass...' переводится:",qUk:"'erzählen, dass...' перекладається:",opts:["рассказывать, что...","спрашивать, ли...","думать, будто...","бояться, что..."],optsUk:["розповідати, що...","запитувати, чи...","думати, ніби...","боятися, що..."],ans:0,hint:"berichten/erzählen + dass"},
+  {q:"Karneval der Kulturen в Берлине проводится:",qUk:"Karneval der Kulturen у Берліні проводиться:",opts:["с 1996 года, 4 дня","с 2015 года, 1 день","только для детей","только зимой"],optsUk:["з 1996 року, 4 дні","з 2015 року, 1 день","тільки для дітей","тільки взимку"],ans:0,hint:"Deutsch Plus"},
 ];
 
 function T_A2L7C(){
@@ -16625,14 +16629,14 @@ function T_A2L7C(){
 }
 
 const Q_A2L7D=[
-  {q:"'Wer besorgt die Getränke?' — вопрос при:",opts:["организации вечеринки курса","чтении приглашения","заказе такси","написании открытки"],ans:0,hint:"Kursparty organisieren"},
-  {q:"'Herzlichen Glückwunsch zum Geburtstag!' говорят на:",opts:["день рождения","Пасху","Новый год","свадьбу"],ans:0,hint:"zum Geburtstag"},
-  {q:"'Alles Gute zum neuen Jahr!' — это поздравление с:",opts:["Новым годом","днём рождения","Пасхой","свадьбой"],ans:0,hint:"Prosit Neujahr!"},
-  {q:"'Frohe Ostern!' говорят на:",opts:["Пасху","Рождество","день рождения","юбилей"],ans:0,hint:"Ostern"},
-  {q:"'Alles Gute zur Hochzeit!' говорят:",opts:["на свадьбу","на день рождения","на Пасху","на Новый год"],ans:0,hint:"zur Hochzeit"},
-  {q:"В открытке-поздравлении после обращения ('Liebe Eva, lieber Tobias,') пишут:",opts:["сами поздравления и пожелания","только дату","только подпись","адрес отправителя"],ans:0,hint:"herzlichen Glückwunsch zum/zur..."},
-  {q:"'Ich wünsche dir/euch viel Glück!' используется в:",opts:["открытке-поздравлении","приглашении","резюме","жалобе"],ans:0,hint:"Glückwunschkarte"},
-  {q:"'dein/e ...' в конце открытки означает:",opts:["подпись отправителя","дату","адрес","имя получателя"],ans:0,hint:"Schlussformel"},
+  {q:"'Wer besorgt die Getränke?' — вопрос при:",qUk:"'Wer besorgt die Getränke?' — питання при:",opts:["организации вечеринки курса","чтении приглашения","заказе такси","написании открытки"],optsUk:["організації вечірки курсу","читанні запрошення","замовленні таксі","написанні листівки"],ans:0,hint:"Kursparty organisieren"},
+  {q:"'Herzlichen Glückwunsch zum Geburtstag!' говорят на:",qUk:"'Herzlichen Glückwunsch zum Geburtstag!' кажуть на:",opts:["день рождения","Пасху","Новый год","свадьбу"],optsUk:["день народження","Пасху","Новий рік","весілля"],ans:0,hint:"zum Geburtstag"},
+  {q:"'Alles Gute zum neuen Jahr!' — это поздравление с:",qUk:"'Alles Gute zum neuen Jahr!' — це вітання з:",opts:["Новым годом","днём рождения","Пасхой","свадьбой"],optsUk:["Новим роком","днем народження","Пасхою","весіллям"],ans:0,hint:"Prosit Neujahr!"},
+  {q:"'Frohe Ostern!' говорят на:",qUk:"'Frohe Ostern!' кажуть на:",opts:["Пасху","Рождество","день рождения","юбилей"],optsUk:["Пасху","Різдво","день народження","ювілей"],ans:0,hint:"Ostern"},
+  {q:"'Alles Gute zur Hochzeit!' говорят:",qUk:"'Alles Gute zur Hochzeit!' кажуть:",opts:["на свадьбу","на день рождения","на Пасху","на Новый год"],optsUk:["на весілля","на день народження","на Пасху","на Новий рік"],ans:0,hint:"zur Hochzeit"},
+  {q:"В открытке-поздравлении после обращения ('Liebe Eva, lieber Tobias,') пишут:",qUk:"У вітальній картці після звертання ('Liebe Eva, lieber Tobias,') пишуть:",opts:["сами поздравления и пожелания","только дату","только подпись","адрес отправителя"],optsUk:["самі вітання і бажання","тільки дату","тільки підпис","адреса відправника"],ans:0,hint:"herzlichen Glückwunsch zum/zur..."},
+  {q:"'Ich wünsche dir/euch viel Glück!' используется в:",qUk:"'Ich wünsche dir/euch viel Glück!' використовується в:",opts:["открытке-поздравлении","приглашении","резюме","жалобе"],optsUk:["вітальній картці","запрошенні","резюме","скарзі"],ans:0,hint:"Glückwunschkarte"},
+  {q:"'dein/e ...' в конце открытки означает:",qUk:"'dein/e ...' в конце открытки означає:",opts:["подпись отправителя","дату","адрес","имя получателя"],optsUk:["підпис відправника","дату","адреса","ім'я отримувача"],ans:0,hint:"Schlussformel"},
 ];
 
 function T_A2L7D(){
@@ -16722,8 +16726,8 @@ const Q_L6A=[
   {q:"Welcher Artikel hat 'Käse'?",           opts:["der","die","das"],                                                                     ans:0, hint:"Artikel"},
   {q:"Wie lautet der Plural von 'Wurst'?",    opts:["Wursts","Würste","Wursten","Würster"],                                                  ans:1, hint:"Plural"},
   {q:"Welcher Artikel hat 'Kartoffel'?",      opts:["der","die","das"],                                                                     ans:1, hint:"Artikel"},
-  {q:"Was bedeutet 'oft' bei Häufigkeit?",   opts:["никогда","иногда","редко","часто"],                                                     ans:3, hint:"Häufigkeit"},
-  {q:"'Ich esse ___ Fisch.' (никогда)",       opts:["oft","manchmal","nie","selten"],                                                       ans:2, hint:"Häufigkeit"},
+  {q:"Was bedeutet 'oft' bei Häufigkeit?",   opts:["никогда","иногда","редко","часто"],optsUk:["ніколи","іноді","рідко","часто"],                                                     ans:3, hint:"Häufigkeit"},
+  {q:"'Ich esse ___ Fisch.' (никогда)",qUk:"'Ich esse ___ Fisch.' (ніколи)",       opts:["oft","manchmal","nie","selten"],                                                       ans:2, hint:"Häufigkeit"},
   {q:"Welcher Artikel hat 'Wein'?",           opts:["der","die","das"],                                                                     ans:0, hint:"Artikel"},
   {q:"Wie lautet der Plural von 'Tomate'?",   opts:["Tomaten","Tomats","Tomäte","Tomates"],                                                  ans:0, hint:"Plural"},
 ];
