@@ -2412,45 +2412,45 @@ const WBDATA=[
   {art:"die", de:"Zuzahlung",ord:1202,       pl:"-en",          ru:"доплата, соплатёж",                                tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
   {art:"der", de:"Hustensaft",ord:1203,      pl:"Hustensäfte",  ru:"сироп от кашля",                                   tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
   {art:"der", de:"Honig",ord:1204,           pl:"—",            ru:"мёд",                                             tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
-  {art:"der", de:"Handwerker",ord:1205,      pl:"-",            ru:"ремесленник (f. die Handwerkerin)",               tema:"Berufe", lekt:"A2-L8",niveau:"A2"},
-  {art:"der", de:"Handwerksberuf",ord:1206,  pl:"-e",           ru:"ремесленная профессия",                           tema:"Berufe", lekt:"A2-L8",niveau:"A2"},
-  {art:"der", de:"Tischler",ord:1207,        pl:"-",            ru:"столяр",                                          tema:"Berufe", lekt:"A2-L8",niveau:"A2"},
-  {art:"der", de:"Klempner",ord:1208,        pl:"-",            ru:"сантехник",                                       tema:"Berufe", lekt:"A2-L8",niveau:"A2"},
-  {art:"der", de:"Schlosser",ord:1209,       pl:"-",            ru:"слесарь",                                         tema:"Berufe", lekt:"A2-L8",niveau:"A2"},
-  {art:"der", de:"Zimmermann",ord:1211,      pl:"Zimmerleute",  ru:"плотник",                                         tema:"Berufe", lekt:"A2-L8",niveau:"A2"},
-  {art:"der", de:"Schweißer",ord:1212,       pl:"-",            ru:"сварщик",                                         tema:"Berufe", lekt:"A2-L8",niveau:"A2"},
-  {art:"der", de:"Gärtner",ord:1214,         pl:"-",            ru:"садовник (f. die Gärtnerin)",                     tema:"Berufe", lekt:"A2-L8",niveau:"A2"},
-  {art:"der", de:"Lehrling",ord:1215,        pl:"-e",           ru:"ученик, подмастерье (= Azubi)",                   tema:"Berufe", lekt:"A2-L8",niveau:"A2"},
-  {art:"der", de:"Geselle",ord:1217,         pl:"-n",           ru:"подмастерье",                                     tema:"Berufe", lekt:"A2-L8",niveau:"A2"},
-  {art:"der", de:"Vorfall",ord:1219,         pl:"Vorfälle",     ru:"инцидент, происшествие",                          tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
-  {art:"",    de:"sich beschweren",ord:1221, pl:"—",            ru:"жаловаться (bei/über) · beschwert sich · hat sich beschwert", tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
-  {art:"",    de:"sich benehmen",ord:1222,   pl:"—",            ru:"вести себя · benimmt sich · hat sich benommen",   tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
-  {art:"das", de:"Verhältnis",ord:1223,      pl:"-se",          ru:"отношение (zu jemandem)",                         tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
-  {art:"",    de:"sich auskennen",ord:1225,  pl:"—",            ru:"хорошо разбираться (mit+Dat) · kennt sich aus · hat sich ausgekannt", tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
-  {art:"",    de:"auffordern zu",ord:1226,   pl:"—",            ru:"призывать к (+Dat) · fordert auf · hat aufgefordert", tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
-  {art:"",    de:"schnellstmöglich",ord:1227,pl:"—",            ru:"как можно быстрее",                               tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
-  {art:"die", de:"Überschreitung",ord:1228,  pl:"-en",          ru:"превышение",                                      tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
-  {art:"",    de:"abgemacht",ord:1229,       pl:"—",            ru:"договорились, решено",                            tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
-  {art:"",    de:"sich aussuchen",ord:1230,  pl:"—",            ru:"выбирать себе (что-то) · sucht sich aus · hat sich ausgesucht", tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
-  {art:"das", de:"Sehvermögen",ord:1231,     pl:"—",            ru:"зрение, острота зрения (= die Sehkraft)",         tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
-  {art:"das", de:"BAMF",ord:1232,            pl:"—",            ru:"Федеральное ведомство по делам миграции и беженцев", tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
-  {art:"der", de:"Traum",ord:1233,           pl:"Träume",       ru:"сон, мечта",                                      tema:"Alltag", lekt:"A2-L8",niveau:"A2"},
-  {art:"der", de:"Albtraum",ord:1234,        pl:"Albträume",    ru:"кошмар (сон)",                                    tema:"Alltag", lekt:"A2-L8",niveau:"A2"},
-  {art:"der", de:"Sprit",ord:1235,           pl:"—",            ru:"бензин, топливо (разговорное)",                   tema:"Alltag", lekt:"A2-L8",niveau:"A2"},
-  {art:"",    de:"zweifeln an",ord:1237,     pl:"—",            ru:"сомневаться в (+Dativ)",                          tema:"Alltag", lekt:"A2-L8",niveau:"A2"},
-  {art:"das", de:"Volk",ord:1238,            pl:"Völker",       ru:"народ, нация",                                    tema:"Alltag", lekt:"A2-L8",niveau:"A2"},
-  {art:"",    de:"anspruchsvoll",ord:1239,   pl:"—",            ru:"требовательный, взыскательный",                   tema:"Alltag", lekt:"A2-L8",niveau:"A2"},
-  {art:"",    de:"loswerden",ord:1240,       pl:"—",            ru:"избавляться от (чего-то) · wird los · wurde los · ist losgeworden", tema:"Alltag", lekt:"A2-L8",niveau:"A2"},
-  {art:"der", de:"Wertstoffhof",ord:1241,    pl:"Wertstoffhöfe",ru:"пункт приёма вторсырья",                          tema:"Alltag", lekt:"A2-L8",niveau:"A2"},
-  {art:"",    de:"sich trennen von",ord:1242,pl:"—",            ru:"расставаться с (+Dativ)",                         tema:"Alltag", lekt:"A2-L8",niveau:"A2"},
-  {art:"der", de:"Umzugskarton",ord:1243,    pl:"-s",           ru:"коробка для переезда",                            tema:"Alltag", lekt:"A2-L8",niveau:"A2"},
-  {art:"die", de:"Unordnung",ord:1244,       pl:"—",            ru:"беспорядок, хаос",                                tema:"Alltag", lekt:"A2-L8",niveau:"A2"},
-  {art:"",    de:"auf keinen Fall",ord:1245, pl:"—",            ru:"ни в коем случае",                                tema:"Alltag", lekt:"A2-L8",niveau:"A2"},
-  {art:"",    de:"vorbeifahren an",ord:1246, pl:"—",            ru:"проезжать мимо (+Dativ) · fährt vorbei · fuhr vorbei · ist vorbeigefahren", tema:"Alltag", lekt:"A2-L8",niveau:"A2"},
-  {art:"",    de:"ausnutzen",ord:1247,       pl:"—",            ru:"использовать (в своих интересах) · nutzt aus · hat ausgenutzt", tema:"Alltag", lekt:"A2-L8",niveau:"A2"},
-  {art:"",    de:"unterbrechen",ord:1248,    pl:"—",            ru:"прерывать · unterbricht · unterbrach · hat unterbrochen", tema:"Alltag", lekt:"A2-L8",niveau:"A2"},
-  {art:"",    de:"was mich angeht",ord:1249, pl:"—",            ru:"что касается меня",                               tema:"Alltag", lekt:"A2-L8",niveau:"A2"},
-  {art:"",    de:"etwas fallen lassen",ord:1250,pl:"—",         ru:"уронить что-то",                                  tema:"Alltag", lekt:"A2-L8",niveau:"A2"},
+  {art:"der", de:"Handwerker",ord:1205,      pl:"-",            ru:"ремесленник (f. die Handwerkerin)",               tema:"Berufe", lekt:"A2-L8",niveau:"A2",extra:true},
+  {art:"der", de:"Handwerksberuf",ord:1206,  pl:"-e",           ru:"ремесленная профессия",                           tema:"Berufe", lekt:"A2-L8",niveau:"A2",extra:true},
+  {art:"der", de:"Tischler",ord:1207,        pl:"-",            ru:"столяр",                                          tema:"Berufe", lekt:"A2-L8",niveau:"A2",extra:true},
+  {art:"der", de:"Klempner",ord:1208,        pl:"-",            ru:"сантехник",                                       tema:"Berufe", lekt:"A2-L8",niveau:"A2",extra:true},
+  {art:"der", de:"Schlosser",ord:1209,       pl:"-",            ru:"слесарь",                                         tema:"Berufe", lekt:"A2-L8",niveau:"A2",extra:true},
+  {art:"der", de:"Zimmermann",ord:1211,      pl:"Zimmerleute",  ru:"плотник",                                         tema:"Berufe", lekt:"A2-L8",niveau:"A2",extra:true},
+  {art:"der", de:"Schweißer",ord:1212,       pl:"-",            ru:"сварщик",                                         tema:"Berufe", lekt:"A2-L8",niveau:"A2",extra:true},
+  {art:"der", de:"Gärtner",ord:1214,         pl:"-",            ru:"садовник (f. die Gärtnerin)",                     tema:"Berufe", lekt:"A2-L8",niveau:"A2",extra:true},
+  {art:"der", de:"Lehrling",ord:1215,        pl:"-e",           ru:"ученик, подмастерье (= Azubi)",                   tema:"Berufe", lekt:"A2-L8",niveau:"A2",extra:true},
+  {art:"der", de:"Geselle",ord:1217,         pl:"-n",           ru:"подмастерье",                                     tema:"Berufe", lekt:"A2-L8",niveau:"A2",extra:true},
+  {art:"der", de:"Vorfall",ord:1219,         pl:"Vorfälle",     ru:"инцидент, происшествие",                          tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2",extra:true},
+  {art:"",    de:"sich beschweren",ord:1221, pl:"—",            ru:"жаловаться (bei/über) · beschwert sich · hat sich beschwert", tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2",extra:true},
+  {art:"",    de:"sich benehmen",ord:1222,   pl:"—",            ru:"вести себя · benimmt sich · hat sich benommen",   tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2",extra:true},
+  {art:"das", de:"Verhältnis",ord:1223,      pl:"-se",          ru:"отношение (zu jemandem)",                         tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2",extra:true},
+  {art:"",    de:"sich auskennen",ord:1225,  pl:"—",            ru:"хорошо разбираться (mit+Dat) · kennt sich aus · hat sich ausgekannt", tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2",extra:true},
+  {art:"",    de:"auffordern zu",ord:1226,   pl:"—",            ru:"призывать к (+Dat) · fordert auf · hat aufgefordert", tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2",extra:true},
+  {art:"",    de:"schnellstmöglich",ord:1227,pl:"—",            ru:"как можно быстрее",                               tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2",extra:true},
+  {art:"die", de:"Überschreitung",ord:1228,  pl:"-en",          ru:"превышение",                                      tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2",extra:true},
+  {art:"",    de:"abgemacht",ord:1229,       pl:"—",            ru:"договорились, решено",                            tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2",extra:true},
+  {art:"",    de:"sich aussuchen",ord:1230,  pl:"—",            ru:"выбирать себе (что-то) · sucht sich aus · hat sich ausgesucht", tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2",extra:true},
+  {art:"das", de:"Sehvermögen",ord:1231,     pl:"—",            ru:"зрение, острота зрения (= die Sehkraft)",         tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2",extra:true},
+  {art:"das", de:"BAMF",ord:1232,            pl:"—",            ru:"Федеральное ведомство по делам миграции и беженцев", tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2",extra:true},
+  {art:"der", de:"Traum",ord:1233,           pl:"Träume",       ru:"сон, мечта",                                      tema:"Alltag", lekt:"A2-L8",niveau:"A2",extra:true},
+  {art:"der", de:"Albtraum",ord:1234,        pl:"Albträume",    ru:"кошмар (сон)",                                    tema:"Alltag", lekt:"A2-L8",niveau:"A2",extra:true},
+  {art:"der", de:"Sprit",ord:1235,           pl:"—",            ru:"бензин, топливо (разговорное)",                   tema:"Alltag", lekt:"A2-L8",niveau:"A2",extra:true},
+  {art:"",    de:"zweifeln an",ord:1237,     pl:"—",            ru:"сомневаться в (+Dativ)",                          tema:"Alltag", lekt:"A2-L8",niveau:"A2",extra:true},
+  {art:"das", de:"Volk",ord:1238,            pl:"Völker",       ru:"народ, нация",                                    tema:"Alltag", lekt:"A2-L8",niveau:"A2",extra:true},
+  {art:"",    de:"anspruchsvoll",ord:1239,   pl:"—",            ru:"требовательный, взыскательный",                   tema:"Alltag", lekt:"A2-L8",niveau:"A2",extra:true},
+  {art:"",    de:"loswerden",ord:1240,       pl:"—",            ru:"избавляться от (чего-то) · wird los · wurde los · ist losgeworden", tema:"Alltag", lekt:"A2-L8",niveau:"A2",extra:true},
+  {art:"der", de:"Wertstoffhof",ord:1241,    pl:"Wertstoffhöfe",ru:"пункт приёма вторсырья",                          tema:"Alltag", lekt:"A2-L8",niveau:"A2",extra:true},
+  {art:"",    de:"sich trennen von",ord:1242,pl:"—",            ru:"расставаться с (+Dativ)",                         tema:"Alltag", lekt:"A2-L8",niveau:"A2",extra:true},
+  {art:"der", de:"Umzugskarton",ord:1243,    pl:"-s",           ru:"коробка для переезда",                            tema:"Alltag", lekt:"A2-L8",niveau:"A2",extra:true},
+  {art:"die", de:"Unordnung",ord:1244,       pl:"—",            ru:"беспорядок, хаос",                                tema:"Alltag", lekt:"A2-L8",niveau:"A2",extra:true},
+  {art:"",    de:"auf keinen Fall",ord:1245, pl:"—",            ru:"ни в коем случае",                                tema:"Alltag", lekt:"A2-L8",niveau:"A2",extra:true},
+  {art:"",    de:"vorbeifahren an",ord:1246, pl:"—",            ru:"проезжать мимо (+Dativ) · fährt vorbei · fuhr vorbei · ist vorbeigefahren", tema:"Alltag", lekt:"A2-L8",niveau:"A2",extra:true},
+  {art:"",    de:"ausnutzen",ord:1247,       pl:"—",            ru:"использовать (в своих интересах) · nutzt aus · hat ausgenutzt", tema:"Alltag", lekt:"A2-L8",niveau:"A2",extra:true},
+  {art:"",    de:"unterbrechen",ord:1248,    pl:"—",            ru:"прерывать · unterbricht · unterbrach · hat unterbrochen", tema:"Alltag", lekt:"A2-L8",niveau:"A2",extra:true},
+  {art:"",    de:"was mich angeht",ord:1249, pl:"—",            ru:"что касается меня",                               tema:"Alltag", lekt:"A2-L8",niveau:"A2",extra:true},
+  {art:"",    de:"etwas fallen lassen",ord:1250,pl:"—",         ru:"уронить что-то",                                  tema:"Alltag", lekt:"A2-L8",niveau:"A2",extra:true},
   {art:"",    de:"abhängen von",ord:1251,    pl:"—",            ru:"зависеть от (+Dativ) · hängt ab · hing ab · hat abgehangen", tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
   {art:"die", de:"Behandlung",ord:1252,      pl:"-en",          ru:"лечение",                                         tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
   {art:"",    de:"ausgewogen",ord:1253,      pl:"—",            ru:"сбалансированный",                                tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
@@ -5807,14 +5807,22 @@ function Woerterbuch({words=WBDATA}={}){
     (!search||wordMatchesSearch(w,searchLower))
   );
   const sortKey=(w)=>w.ord?100000+w.ord:w._i;
-  const list=[...listRaw].sort((a,b)=>sortNew?sortKey(b)-sortKey(a):sortKey(a)-sortKey(b));
+  const list=[...listRaw].sort((a,b)=>{
+    const ae=a.extra?1:0, be=b.extra?1:0;
+    if(ae!==be) return ae-be; // слова-«довесок» (extra:true, не по теме урока) всегда после основных
+    return sortNew?sortKey(b)-sortKey(a):sortKey(a)-sortKey(b);
+  });
 
   const temenOrder=[...TEMEN.slice(1)].reverse();
-  const groups=tema==="all"
+  const groupsRaw=tema==="all"
     ?temenOrder.map(t=>({...t,words:list.filter(w=>w.tema===t.id)})).filter(g=>g.words.length>0)
     :isTrennbar&&selPref==="all"
       ?PREF_LIST.filter(p=>trennbarPrefs.includes(p)).map(p=>({id:p,col:PREF_COLORS[p].col,bg:PREF_COLORS[p].bg,label:p+"-",words:list.filter(w=>getVerbPref(w.de)===p)})).filter(g=>g.words.length>0)
       :[{id:tema,words:list,col:TEMEN.find(t=>t.id===tema)?.col||C.teal}];
+  // группы, где все слова — «довесок» (extra:true), уходят в конец списка групп
+  const groups=tema==="all"
+    ?[...groupsRaw.filter(g=>g.words.some(w=>!w.extra)),...groupsRaw.filter(g=>g.words.every(w=>w.extra))]
+    :groupsRaw;
 
   const oppMap={};
   const oppTransMap={};
