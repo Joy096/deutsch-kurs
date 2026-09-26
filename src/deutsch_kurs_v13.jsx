@@ -2275,6 +2275,195 @@ const WBDATA=[
   {art:"",    de:"sich versammeln",ord:1064,pl:"—",          ru:"собираться (группой)",                             tema:"Feste", lekt:"A2-L7",niveau:"A2"},
   {art:"das", de:"Lächeln",ord:1066,      pl:"—",            ru:"улыбка (существительное; глагол см. lächeln)",     tema:"Alltag", lekt:"A2-L7",niveau:"A2"},
   {art:"das", de:"Faultier",ord:1067,     pl:"-e",           ru:"ленивец (животное)",                               tema:"Alltag", lekt:"A2-L7",niveau:"A2"},
+  {art:"der", de:"Obstkorb",ord:1068,     pl:"Obstkörbe",    ru:"корзина фруктов",                                  tema:"Feste", lekt:"A2-L7",niveau:"A2"},
+  {art:"",    de:"sich interessieren für",ord:1069,pl:"—",   ru:"интересоваться (+Akk) · interessiert sich · hat sich interessiert", tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"",    de:"sich bewerben um",ord:1070,pl:"—",         ru:"подавать заявку, претендовать на (+Akk) · bewirbt sich · bewarb sich · hat sich beworben", tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"",    de:"teilnehmen an",ord:1071,pl:"—",            ru:"участвовать в (+Dativ) · nimmt teil · nahm teil · hat teilgenommen", tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"",    de:"warten auf",ord:1072,   pl:"—",            ru:"ждать (+Akk) · wartet · wartete · hat gewartet",   tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"",    de:"sich informieren über",ord:1073,pl:"—",    ru:"узнавать информацию о (+Akk) · informiert sich · hat sich informiert", tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"",    de:"sich ärgern über",ord:1074,pl:"—",         ru:"злиться из-за (+Akk) · ärgert sich · hat sich geärgert", tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"das", de:"Berufsinformationszentrum",ord:1075,pl:"-zentren", ru:"центр профориентации (BiZ)",               tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"die", de:"Weiterbildung",ord:1076,pl:"-en",          ru:"повышение квалификации",                           tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"die", de:"Fortbildung",ord:1077,  pl:"-en",          ru:"курс повышения квалификации",                      tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"die", de:"Förderung",ord:1078,    pl:"-en",          ru:"(государственное) финансирование, субсидия",       tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"die", de:"Babypause",ord:1079,    pl:"-n",           ru:"перерыв в работе по уходу за ребёнком",            tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"",    de:"aktuell",ord:1080,      pl:"—",            ru:"актуальный, современный",                          tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"der", de:"Berufsabschluss",ord:1081,pl:"Berufsabschlüsse",ru:"диплом/квалификация по профессии",            tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"die", de:"Selbstständigkeit",ord:1082,pl:"—",        ru:"самостоятельная деятельность, собственное дело",   tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"die", de:"Existenzgründung",ord:1083,pl:"-en",       ru:"открытие собственного дела",                       tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"die", de:"Finanzierung",ord:1084, pl:"-en",          ru:"финансирование",                                   tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"die", de:"Einnahmen",ord:1085,    pl:"—",            ru:"доходы (только мн.ч.)",                            tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"die", de:"Ausgaben",ord:1086,     pl:"—",            ru:"расходы (только мн.ч.)",                           tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"der", de:"Heimwerkerkurs",ord:1087,pl:"-e",          ru:"курс \"сделай сам\" (ремонт своими руками)",         tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"die", de:"Reparaturarbeiten",ord:1088,pl:"—",        ru:"ремонтные работы (только мн.ч.)",                  tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"",    de:"bohren",ord:1089,       pl:"—",            ru:"сверлить",                                         tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"",    de:"befestigen",ord:1090,   pl:"—",            ru:"крепить, закреплять",                              tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"die", de:"Fliese",ord:1091,       pl:"-n",           ru:"плитка (кафель)",                                  tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"das", de:"Laminat",ord:1092,      pl:"—",            ru:"ламинат",                                          tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"",    de:"verlegen",ord:1093,     pl:"—",            ru:"укладывать (пол, плитку)",                         tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"",    de:"nähen",ord:1094,        pl:"—",            ru:"шить",                                             tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"der", de:"Nähabend",ord:1095,     pl:"-e",           ru:"вечер шитья (курс)",                               tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"der", de:"Anfänger",ord:1096,     pl:"-",            ru:"начинающий (f. die Anfängerin)",                   tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"der", de:"Fortgeschrittene",ord:1097,pl:"-n",        ru:"продвинутый уровень (f. die Fortgeschrittene)",    tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"die", de:"Präsentation",ord:1098, pl:"-en",          ru:"презентация",                                      tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"die", de:"Tabellenkalkulation",ord:1099,pl:"—",      ru:"табличный процессор (напр. Excel)",                tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"die", de:"Besprechung",ord:1100,  pl:"-en",          ru:"совещание, встреча",                               tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"die", de:"Dauer",ord:1101,        pl:"—",            ru:"продолжительность",                                tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"die", de:"Voraussetzung",ord:1102,pl:"-en",          ru:"предпосылка, необходимое условие",                 tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"die", de:"Zielgruppe",ord:1103,   pl:"-n",           ru:"целевая группа",                                   tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"der", de:"Babysitter",ord:1104,   pl:"-",            ru:"няня (почасовая, приходящая)",                     tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"",    de:"damit",ord:1105,        pl:"—",            ru:"чтобы (союз, придаточное цели)",                   tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"die", de:"Erste Hilfe",ord:1106,  pl:"—",            ru:"первая помощь",                                    tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"der", de:"Ersthelfer",ord:1107,   pl:"-",            ru:"оказывающий первую помощь на предприятии",         tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"die", de:"Doppelstunde",ord:1108, pl:"-n",           ru:"сдвоенный урок (2 академчаса подряд)",             tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"der", de:"Kindernotfall",ord:1109,pl:"Kindernotfälle",ru:"экстренный случай с ребёнком",                    tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"der", de:"Arbeitsberater",ord:1110,pl:"-",            ru:"консультант по трудоустройству (f. die Arbeitsberaterin)", tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"",    de:"Sorgen haben",ord:1111,   pl:"—",            ru:"иметь заботы, беспокоиться",                       tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"das", de:"Muskeltraining",ord:1112, pl:"—",            ru:"тренировка мышц",                                  tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"",    de:"abnehmen",ord:1113,       pl:"—",            ru:"худеть · nimmt ab · nahm ab · hat abgenommen",     tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"",    de:"zunehmen",ord:1114,       pl:"—",            ru:"поправляться (в весе) · nimmt zu · nahm zu · hat zugenommen", tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"",    de:"schlank",ord:1115,        pl:"—",            ru:"стройный",                                         tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"",    de:"impfen",ord:1116,         pl:"—",            ru:"делать прививку (gegen+Akk)",                      tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"der", de:"Blutdruck",ord:1117,      pl:"—",            ru:"кровяное давление",                                tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"",    de:"verschreiben",ord:1118,   pl:"—",            ru:"выписывать (рецепт) · verschreibt · verschrieb · hat verschrieben", tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"die", de:"Beschwerden",ord:1119,    pl:"—",            ru:"жалобы, недомогания (обычно мн.ч.)",               tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"",    de:"vereinbaren",ord:1120,    pl:"—",            ru:"договариваться (о встрече) · einen Termin vereinbaren", tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"",    de:"vernünftig",ord:1121,     pl:"—",            ru:"разумный",                                         tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"der", de:"Gesundheits-Check",ord:1122,pl:"-s",         ru:"медицинский осмотр (профилактический)",            tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"der", de:"Oberkörper",ord:1123,     pl:"—",            ru:"верхняя часть тела, торс",                         tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"die", de:"Laboruntersuchung",ord:1124,pl:"-en",        ru:"лабораторное исследование (анализ)",               tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"der", de:"Urin",ord:1125,           pl:"—",            ru:"моча",                                             tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"die", de:"Blutwerte",ord:1126,      pl:"—",            ru:"показатели крови (мн.ч.)",                         tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"der", de:"Cholesterinwert",ord:1127,pl:"-e",           ru:"уровень холестерина",                              tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"der", de:"Facharzt",ord:1128,       pl:"Fachärzte",    ru:"врач-специалист (f. die Fachärztin)",              tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"die", de:"Vorsorgeuntersuchung",ord:1129,pl:"-en",     ru:"профилактический осмотр",                          tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"die", de:"Früherkennung",ord:1130,  pl:"—",            ru:"раннее выявление (болезней)",                      tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"die", de:"Krankheit",ord:1131,      pl:"-en",          ru:"болезнь",                                          tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"die", de:"Nebenwirkung",ord:1132,   pl:"-en",          ru:"побочный эффект",                                  tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"der", de:"Beipackzettel",ord:1133,  pl:"-",            ru:"инструкция-вкладыш (к лекарству)",                 tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"",    de:"empfindlich",ord:1134,    pl:"—",            ru:"чувствительный",                                   tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"die", de:"Rezeptgebühr",ord:1135,   pl:"-en",          ru:"плата за рецепт (в аптеке)",                       tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"",    de:"gebührenfrei",ord:1136,   pl:"—",            ru:"без оплаты (сбора), бесплатный",                   tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"die", de:"Hausapotheke",ord:1137,   pl:"-n",           ru:"домашняя аптечка",                                 tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"",    de:"haltbar",ord:1138,        pl:"—",            ru:"годный к хранению (lange haltbar bleiben)",        tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"",    de:"entsorgen",ord:1139,      pl:"—",            ru:"утилизировать, выбрасывать (отходы/лекарства)",    tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"der", de:"Verband",ord:1140,        pl:"Verbände",     ru:"повязка, бинт",                                    tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"das", de:"Schmerzmittel",ord:1141,  pl:"-",            ru:"обезболивающее",                                   tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"das", de:"Desinfektionsmittel",ord:1142,pl:"-",        ru:"дезинфицирующее средство",                         tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"der", de:"Durchfall",ord:1143,      pl:"—",            ru:"диарея",                                           tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"die", de:"Salbe",ord:1144,          pl:"-n",           ru:"мазь",                                             tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"der", de:"Mückenstich",ord:1145,    pl:"-e",           ru:"укус комара",                                      tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"die", de:"Brandsalbe",ord:1146,     pl:"-n",           ru:"мазь от ожогов",                                   tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"die", de:"Nasentropfen",ord:1147,   pl:"—",            ru:"капли в нос (мн.ч.)",                              tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"die", de:"Spritze",ord:1148,        pl:"-n",           ru:"шприц; укол",                                      tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"die", de:"Pinzette",ord:1149,       pl:"-n",           ru:"пинцет",                                           tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"das", de:"Fieberthermometer",ord:1150,pl:"-",          ru:"градусник",                                        tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"das", de:"Pflaster",ord:1151,       pl:"-",            ru:"пластырь",                                         tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"",    de:"sich ernähren",ord:1152,  pl:"—",            ru:"питаться · ernährt sich · hat sich ernährt",       tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"der", de:"Vegetarier",ord:1153,     pl:"-",            ru:"вегетарианец (f. die Vegetarierin)",               tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"der", de:"Veganer",ord:1154,        pl:"-",            ru:"веган (f. die Veganerin)",                         tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"",    de:"vermeiden",ord:1155,      pl:"—",            ru:"избегать · vermeidet · vermied · hat vermieden",   tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"die", de:"Tierhaltung",ord:1156,    pl:"—",            ru:"содержание животных (на убой/для еды)",            tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"",    de:"ablehnen",ord:1157,       pl:"—",            ru:"отвергать, быть против",                           tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"",    de:"fettarm",ord:1158,        pl:"—",            ru:"с низким содержанием жира",                        tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"das", de:"Fett",ord:1159,           pl:"-e",           ru:"жир",                                              tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"die", de:"Vitamine",ord:1160,       pl:"—",            ru:"витамины (мн.ч.)",                                 tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"der", de:"Marathon",ord:1161,       pl:"-s",           ru:"марафон",                                          tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"",    de:"trainieren",ord:1162,     pl:"—",            ru:"тренировать(ся)",                                  tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"",    de:"schaden",ord:1163,        pl:"—",            ru:"вредить (+Dativ) · Stress schadet der Gesundheit", tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"die", de:"Möglichkeit",ord:1164,     pl:"-en",          ru:"возможность",                                     tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"die", de:"Computerkenntnisse",ord:1165,pl:"—",          ru:"знания/навыки работы на компьютере (мн.ч.)",       tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"",    de:"finanzieren",ord:1166,     pl:"—",            ru:"финансировать",                                   tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"die", de:"Grundkenntnisse",ord:1167, pl:"—",            ru:"базовые знания (мн.ч.)",                          tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"der", de:"Schwerpunkt",ord:1168,     pl:"-e",           ru:"основной акцент, направление",                    tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"der", de:"Existenzgründerkurs",ord:1169,pl:"-e",        ru:"курс для начинающих предпринимателей",            tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"",    de:"unsicher",ord:1170,        pl:"—",            ru:"неуверенный",                                     tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"der", de:"Arbeitsmarkt",ord:1171,    pl:"—",            ru:"рынок труда",                                     tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"",    de:"beruflich",ord:1172,       pl:"—",            ru:"профессиональный",                                tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"",    de:"handwerklich",ord:1173,    pl:"—",            ru:"ремесленный, ручного труда",                      tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"die", de:"Materialkosten",ord:1174,  pl:"—",            ru:"расходы на материалы (мн.ч.)",                    tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"die", de:"Online-Anmeldung",ord:1175,pl:"-en",          ru:"онлайн-регистрация",                              tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"die", de:"Privatschule",ord:1176,    pl:"-n",           ru:"частная школа",                                   tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"das", de:"Schwarze Brett",ord:1177,  pl:"—",            ru:"доска объявлений",                                tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"die", de:"Kenntnisse",ord:1178,      pl:"—",            ru:"знания (мн.ч.)",                                  tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"die", de:"Fähigkeit",ord:1179,       pl:"-en",          ru:"способность, умение",                             tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"",    de:"sich anmelden für",ord:1180,pl:"—",           ru:"записываться на (+Akk) · meldet sich an · hat sich angemeldet", tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"das", de:"Kursangebot",ord:1181,     pl:"-e",           ru:"предложение курсов",                              tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"",    de:"jederzeit",ord:1182,       pl:"—",            ru:"в любое время",                                   tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"",    de:"Gern geschehen!",ord:1183, pl:"—",            ru:"пожалуйста, не за что (ответ на благодарность)",  tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"der", de:"Malkurs",ord:1184,         pl:"-e",           ru:"курс рисования, живописи",                        tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"der", de:"Gymnastikkurs",ord:1185,   pl:"-e",           ru:"курс гимнастики",                                 tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"der", de:"Nähkurs",ord:1186,         pl:"-e",           ru:"курс шитья",                                      tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"die", de:"Stadtführung",ord:1187,    pl:"-en",          ru:"экскурсия по городу",                             tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"der", de:"Mountainbike-Kurs",ord:1188,pl:"-e",          ru:"курс горного велоспорта",                         tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"der", de:"Schauspielkurs",ord:1189,  pl:"-e",           ru:"курс актёрского мастерства",                      tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"der", de:"Kochkurs",ord:1190,        pl:"-e",           ru:"кулинарный курс",                                 tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"die", de:"Fahrschule",ord:1191,      pl:"-n",           ru:"автошкола",                                       tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"der", de:"Fotografie-Kurs",ord:1192, pl:"-e",           ru:"курс фотографии",                                  tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"der", de:"Yoga-Kurs",ord:1193,       pl:"-e",           ru:"курс йоги",                                       tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"der", de:"Schwimmkurs",ord:1194,     pl:"-e",           ru:"курс плавания",                                   tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"der", de:"Kosmetikkurs",ord:1195,    pl:"-e",           ru:"курс косметологии",                               tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"der", de:"Stau",ord:1196,            pl:"-s",           ru:"дорожная пробка · im Stau stehen",                tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"die", de:"Gymnastik",ord:1197,       pl:"—",            ru:"гимнастика",                                      tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"die", de:"Arzthelferin",ord:1198,    pl:"-nen",         ru:"медсестра, помощница врача (m. der Arzthelfer)",  tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"das", de:"Bonusheft",ord:1199,       pl:"-e",           ru:"бонусная книжка (стоматологическая)",             tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"die", de:"Gesundheitsuntersuchung",ord:1200,pl:"-en",   ru:"медицинское обследование",                        tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"die", de:"Spielsachen",ord:1201,     pl:"—",            ru:"игрушки (мн.ч.)",                                 tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"die", de:"Zuzahlung",ord:1202,       pl:"-en",          ru:"доплата, соплатёж",                                tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"der", de:"Hustensaft",ord:1203,      pl:"Hustensäfte",  ru:"сироп от кашля",                                   tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"der", de:"Honig",ord:1204,           pl:"—",            ru:"мёд",                                             tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"der", de:"Handwerker",ord:1205,      pl:"-",            ru:"ремесленник (f. die Handwerkerin)",               tema:"Berufe", lekt:"A2-L8",niveau:"A2"},
+  {art:"der", de:"Handwerksberuf",ord:1206,  pl:"-e",           ru:"ремесленная профессия",                           tema:"Berufe", lekt:"A2-L8",niveau:"A2"},
+  {art:"der", de:"Tischler",ord:1207,        pl:"-",            ru:"столяр",                                          tema:"Berufe", lekt:"A2-L8",niveau:"A2"},
+  {art:"der", de:"Klempner",ord:1208,        pl:"-",            ru:"сантехник",                                       tema:"Berufe", lekt:"A2-L8",niveau:"A2"},
+  {art:"der", de:"Schlosser",ord:1209,       pl:"-",            ru:"слесарь",                                         tema:"Berufe", lekt:"A2-L8",niveau:"A2"},
+  {art:"der", de:"Zimmermann",ord:1211,      pl:"Zimmerleute",  ru:"плотник",                                         tema:"Berufe", lekt:"A2-L8",niveau:"A2"},
+  {art:"der", de:"Schweißer",ord:1212,       pl:"-",            ru:"сварщик",                                         tema:"Berufe", lekt:"A2-L8",niveau:"A2"},
+  {art:"der", de:"Gärtner",ord:1214,         pl:"-",            ru:"садовник (f. die Gärtnerin)",                     tema:"Berufe", lekt:"A2-L8",niveau:"A2"},
+  {art:"der", de:"Lehrling",ord:1215,        pl:"-e",           ru:"ученик, подмастерье (= Azubi)",                   tema:"Berufe", lekt:"A2-L8",niveau:"A2"},
+  {art:"der", de:"Geselle",ord:1217,         pl:"-n",           ru:"подмастерье",                                     tema:"Berufe", lekt:"A2-L8",niveau:"A2"},
+  {art:"der", de:"Vorfall",ord:1219,         pl:"Vorfälle",     ru:"инцидент, происшествие",                          tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"",    de:"sich beschweren",ord:1221, pl:"—",            ru:"жаловаться (bei/über) · beschwert sich · hat sich beschwert", tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"",    de:"sich benehmen",ord:1222,   pl:"—",            ru:"вести себя · benimmt sich · hat sich benommen",   tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"das", de:"Verhältnis",ord:1223,      pl:"-se",          ru:"отношение (zu jemandem)",                         tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"",    de:"sich auskennen",ord:1225,  pl:"—",            ru:"хорошо разбираться (mit+Dat) · kennt sich aus · hat sich ausgekannt", tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"",    de:"auffordern zu",ord:1226,   pl:"—",            ru:"призывать к (+Dat) · fordert auf · hat aufgefordert", tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"",    de:"schnellstmöglich",ord:1227,pl:"—",            ru:"как можно быстрее",                               tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"die", de:"Überschreitung",ord:1228,  pl:"-en",          ru:"превышение",                                      tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"",    de:"abgemacht",ord:1229,       pl:"—",            ru:"договорились, решено",                            tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"",    de:"sich aussuchen",ord:1230,  pl:"—",            ru:"выбирать себе (что-то) · sucht sich aus · hat sich ausgesucht", tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"das", de:"Sehvermögen",ord:1231,     pl:"—",            ru:"зрение, острота зрения (= die Sehkraft)",         tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"das", de:"BAMF",ord:1232,            pl:"—",            ru:"Федеральное ведомство по делам миграции и беженцев", tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"der", de:"Traum",ord:1233,           pl:"Träume",       ru:"сон, мечта",                                      tema:"Alltag", lekt:"A2-L8",niveau:"A2"},
+  {art:"der", de:"Albtraum",ord:1234,        pl:"Albträume",    ru:"кошмар (сон)",                                    tema:"Alltag", lekt:"A2-L8",niveau:"A2"},
+  {art:"der", de:"Sprit",ord:1235,           pl:"—",            ru:"бензин, топливо (разговорное)",                   tema:"Alltag", lekt:"A2-L8",niveau:"A2"},
+  {art:"",    de:"zweifeln an",ord:1237,     pl:"—",            ru:"сомневаться в (+Dativ)",                          tema:"Alltag", lekt:"A2-L8",niveau:"A2"},
+  {art:"das", de:"Volk",ord:1238,            pl:"Völker",       ru:"народ, нация",                                    tema:"Alltag", lekt:"A2-L8",niveau:"A2"},
+  {art:"",    de:"anspruchsvoll",ord:1239,   pl:"—",            ru:"требовательный, взыскательный",                   tema:"Alltag", lekt:"A2-L8",niveau:"A2"},
+  {art:"",    de:"loswerden",ord:1240,       pl:"—",            ru:"избавляться от (чего-то) · wird los · wurde los · ist losgeworden", tema:"Alltag", lekt:"A2-L8",niveau:"A2"},
+  {art:"der", de:"Wertstoffhof",ord:1241,    pl:"Wertstoffhöfe",ru:"пункт приёма вторсырья",                          tema:"Alltag", lekt:"A2-L8",niveau:"A2"},
+  {art:"",    de:"sich trennen von",ord:1242,pl:"—",            ru:"расставаться с (+Dativ)",                         tema:"Alltag", lekt:"A2-L8",niveau:"A2"},
+  {art:"der", de:"Umzugskarton",ord:1243,    pl:"-s",           ru:"коробка для переезда",                            tema:"Alltag", lekt:"A2-L8",niveau:"A2"},
+  {art:"die", de:"Unordnung",ord:1244,       pl:"—",            ru:"беспорядок, хаос",                                tema:"Alltag", lekt:"A2-L8",niveau:"A2"},
+  {art:"",    de:"auf keinen Fall",ord:1245, pl:"—",            ru:"ни в коем случае",                                tema:"Alltag", lekt:"A2-L8",niveau:"A2"},
+  {art:"",    de:"vorbeifahren an",ord:1246, pl:"—",            ru:"проезжать мимо (+Dativ) · fährt vorbei · fuhr vorbei · ist vorbeigefahren", tema:"Alltag", lekt:"A2-L8",niveau:"A2"},
+  {art:"",    de:"ausnutzen",ord:1247,       pl:"—",            ru:"использовать (в своих интересах) · nutzt aus · hat ausgenutzt", tema:"Alltag", lekt:"A2-L8",niveau:"A2"},
+  {art:"",    de:"unterbrechen",ord:1248,    pl:"—",            ru:"прерывать · unterbricht · unterbrach · hat unterbrochen", tema:"Alltag", lekt:"A2-L8",niveau:"A2"},
+  {art:"",    de:"was mich angeht",ord:1249, pl:"—",            ru:"что касается меня",                               tema:"Alltag", lekt:"A2-L8",niveau:"A2"},
+  {art:"",    de:"etwas fallen lassen",ord:1250,pl:"—",         ru:"уронить что-то",                                  tema:"Alltag", lekt:"A2-L8",niveau:"A2"},
+  {art:"",    de:"abhängen von",ord:1251,    pl:"—",            ru:"зависеть от (+Dativ) · hängt ab · hing ab · hat abgehangen", tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"die", de:"Behandlung",ord:1252,      pl:"-en",          ru:"лечение",                                         tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"",    de:"ausgewogen",ord:1253,      pl:"—",            ru:"сбалансированный",                                tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"",    de:"abwechslungsreich",ord:1254,pl:"—",           ru:"разнообразный",                                   tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"",    de:"sich stressen",ord:1255,   pl:"—",            ru:"нервничать, испытывать стресс · stresst sich · hat sich gestresst", tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"",    de:"in Stress geraten",ord:1256,pl:"—",           ru:"впадать в стресс",                                tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"",    de:"wirken",ord:1257,          pl:"—",            ru:"действовать, оказывать эффект · wirkt · wirkte · hat gewirkt", tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"die", de:"Auskunft",ord:1258,        pl:"Auskünfte",    ru:"справка, информация",                             tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"",    de:"einnehmen",ord:1259,       pl:"—",            ru:"принимать (лекарство) · nimmt ein · nahm ein · hat eingenommen", tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"der", de:"Ratschlag",ord:1261,       pl:"Ratschläge",   ru:"совет, рекомендация",                             tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"das", de:"Nahrungsmittel",ord:1262,  pl:"-",            ru:"продукт питания",                                 tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"",    de:"sich beruhigen",ord:1264,  pl:"—",            ru:"успокаиваться · beruhigt sich · hat sich beruhigt", tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"",    de:"eine Rolle spielen",ord:1265,pl:"—",          ru:"играть роль",                                     tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
 ];
 
 
@@ -3470,6 +3659,111 @@ const KONJ_ALL={
   "sich versammeln":{col:C.green, bg:C.greenBg, note:"Reflexiv",
     ich:"versammle mich",  du:"versammelst dich",  "er/sie/es":"versammelt sich",
     wir:"versammeln uns",  ihr:"versammelt euch",  "sie/Sie":"versammeln sich", pt:"versammelte sich", pf:"hat sich versammelt"},
+  "sich interessieren für":{col:C.blue, bg:C.blueBg, note:"Reflexiv + für (Akk)",
+    ich:"interessiere mich",  du:"interessierst dich",  "er/sie/es":"interessiert sich",
+    wir:"interessieren uns",  ihr:"interessiert euch",  "sie/Sie":"interessieren sich", pt:"interessierte sich", pf:"hat sich interessiert"},
+  "sich bewerben um":{type:"e→i", col:C.orange, bg:C.orangeBg, note:"Reflexiv + um (Akk)",
+    ich:"bewerbe mich",  du:"bewirbst dich",  "er/sie/es":"bewirbt sich",
+    wir:"bewerben uns",  ihr:"bewerbt euch",  "sie/Sie":"bewerben sich", pt:"bewarb sich", ptc:{du:"bewarbst dich",wir:"bewarben uns",ihr:"bewarbt euch",sie:"bewarben sich"}, pf:"hat sich beworben"},
+  "teilnehmen an":{type:"e→i", col:C.purple, bg:C.purpleBg, note:"Trennbar + an (Dativ)",
+    ich:"nehme teil",  du:"nimmst teil",  "er/sie/es":"nimmt teil",
+    wir:"nehmen teil",  ihr:"nehmt teil",  "sie/Sie":"nehmen teil", pt:"nahm teil", ptc:{du:"nahmst teil",wir:"nahmen teil",ihr:"nahmt teil",sie:"nahmen teil"}, pf:"hat teilgenommen"},
+  "warten auf":{col:C.teal, bg:C.tealBg, note:"+ auf (Akk)",
+    ich:"warte",  du:"wartest",  "er/sie/es":"wartet",
+    wir:"warten",  ihr:"wartet",  "sie/Sie":"warten", pt:"wartete", pf:"hat gewartet"},
+  "sich informieren über":{col:C.green, bg:C.greenBg, note:"Reflexiv + über (Akk)",
+    ich:"informiere mich",  du:"informierst dich",  "er/sie/es":"informiert sich",
+    wir:"informieren uns",  ihr:"informiert euch",  "sie/Sie":"informieren sich", pt:"informierte sich", pf:"hat sich informiert"},
+  "sich ärgern über":{col:C.red, bg:C.redBg, note:"Reflexiv + über (Akk)",
+    ich:"ärgere mich",  du:"ärgerst dich",  "er/sie/es":"ärgert sich",
+    wir:"ärgern uns",  ihr:"ärgert euch",  "sie/Sie":"ärgern sich", pt:"ärgerte sich", pf:"hat sich geärgert"},
+  "abnehmen":{type:"e→i", col:C.green, bg:C.greenBg, note:"Trennbar",
+    ich:"nehme ab",  du:"nimmst ab",  "er/sie/es":"nimmt ab",
+    wir:"nehmen ab",  ihr:"nehmt ab",  "sie/Sie":"nehmen ab", pt:"nahm ab", ptc:{du:"nahmst ab",wir:"nahmen ab",ihr:"nahmt ab",sie:"nahmen ab"}, pf:"hat abgenommen"},
+  "zunehmen":{type:"e→i", col:C.orange, bg:C.orangeBg, note:"Trennbar",
+    ich:"nehme zu",  du:"nimmst zu",  "er/sie/es":"nimmt zu",
+    wir:"nehmen zu",  ihr:"nehmt zu",  "sie/Sie":"nehmen zu", pt:"nahm zu", ptc:{du:"nahmst zu",wir:"nahmen zu",ihr:"nahmt zu",sie:"nahmen zu"}, pf:"hat zugenommen"},
+  "impfen":{col:C.blue, bg:C.blueBg,
+    ich:"impfe",  du:"impfst",  "er/sie/es":"impft",
+    wir:"impfen", ihr:"impft",  "sie/Sie":"impfen", pt:"impfte", pf:"hat geimpft"},
+  "verschreiben":{col:C.purple, bg:C.purpleBg,
+    ich:"verschreibe",  du:"verschreibst",  "er/sie/es":"verschreibt",
+    wir:"verschreiben", ihr:"verschreibt",  "sie/Sie":"verschreiben", pt:"verschrieb", pf:"hat verschrieben"},
+  "vereinbaren":{col:C.teal, bg:C.tealBg, note:"einen Termin vereinbaren",
+    ich:"vereinbare",  du:"vereinbarst",  "er/sie/es":"vereinbart",
+    wir:"vereinbaren", ihr:"vereinbart",  "sie/Sie":"vereinbaren", pt:"vereinbarte", pf:"hat vereinbart"},
+  "sich ernähren":{col:C.green, bg:C.greenBg, note:"Reflexiv",
+    ich:"ernähre mich",  du:"ernährst dich",  "er/sie/es":"ernährt sich",
+    wir:"ernähren uns",  ihr:"ernährt euch",  "sie/Sie":"ernähren sich", pt:"ernährte sich", pf:"hat sich ernährt"},
+  "vermeiden":{col:C.red, bg:C.redBg,
+    ich:"vermeide",  du:"vermeidest",  "er/sie/es":"vermeidet",
+    wir:"vermeiden", ihr:"vermeidet",  "sie/Sie":"vermeiden", pt:"vermied", pf:"hat vermieden"},
+  "ablehnen":{col:C.orange, bg:C.orangeBg, note:"Trennbar",
+    ich:"lehne ab",  du:"lehnst ab",  "er/sie/es":"lehnt ab",
+    wir:"lehnen ab", ihr:"lehnt ab",  "sie/Sie":"lehnen ab", pt:"lehnte ab", pf:"hat abgelehnt"},
+  "trainieren":{col:C.blue, bg:C.blueBg,
+    ich:"trainiere",  du:"trainierst",  "er/sie/es":"trainiert",
+    wir:"trainieren", ihr:"trainiert",  "sie/Sie":"trainieren", pt:"trainierte", pf:"hat trainiert"},
+  "schaden":{col:C.purple, bg:C.purpleBg, note:"+ Dativ",
+    ich:"schade",  du:"schadest",  "er/sie/es":"schadet",
+    wir:"schaden", ihr:"schadet",  "sie/Sie":"schaden", pt:"schadete", pf:"hat geschadet"},
+  "entsorgen":{col:C.teal, bg:C.tealBg,
+    ich:"entsorge",  du:"entsorgst",  "er/sie/es":"entsorgt",
+    wir:"entsorgen", ihr:"entsorgt",  "sie/Sie":"entsorgen", pt:"entsorgte", pf:"hat entsorgt"},
+  "sich anmelden für":{col:C.blue, bg:C.blueBg, note:"Reflexiv, trennbar + für (Akk)",
+    ich:"melde mich an",  du:"meldest dich an",  "er/sie/es":"meldet sich an",
+    wir:"melden uns an",  ihr:"meldet euch an",  "sie/Sie":"melden sich an", pt:"meldete sich an", pf:"hat sich angemeldet"},
+  "finanzieren":{col:C.purple, bg:C.purpleBg,
+    ich:"finanziere",  du:"finanzierst",  "er/sie/es":"finanziert",
+    wir:"finanzieren", ihr:"finanziert",  "sie/Sie":"finanzieren", pt:"finanzierte", pf:"hat finanziert"},
+  "sich beschweren":{col:C.red, bg:C.redBg, note:"Reflexiv, bei/über",
+    ich:"beschwere mich",  du:"beschwerst dich",  "er/sie/es":"beschwert sich",
+    wir:"beschweren uns",  ihr:"beschwert euch",  "sie/Sie":"beschweren sich", pt:"beschwerte sich", pf:"hat sich beschwert"},
+  "sich benehmen":{type:"e→i", col:C.orange, bg:C.orangeBg, note:"Reflexiv",
+    ich:"benehme mich",  du:"benimmst dich",  "er/sie/es":"benimmt sich",
+    wir:"benehmen uns",  ihr:"benehmt euch",  "sie/Sie":"benehmen sich", pt:"benahm sich", ptc:{du:"benahmst dich",wir:"benahmen uns",ihr:"benahmt euch",sie:"benahmen sich"}, pf:"hat sich benommen"},
+  "sich auskennen":{col:C.teal, bg:C.tealBg, note:"Reflexiv, trennbar + mit (Dativ)",
+    ich:"kenne mich aus",  du:"kennst dich aus",  "er/sie/es":"kennt sich aus",
+    wir:"kennen uns aus",  ihr:"kennt euch aus",  "sie/Sie":"kennen sich aus", pt:"kannte sich aus", pf:"hat sich ausgekannt"},
+  "auffordern zu":{col:C.blue, bg:C.blueBg, note:"Trennbar + zu (Dativ)",
+    ich:"fordere auf",  du:"forderst auf",  "er/sie/es":"fordert auf",
+    wir:"fordern auf",  ihr:"fordert auf",  "sie/Sie":"fordern auf", pt:"forderte auf", pf:"hat aufgefordert"},
+  "sich aussuchen":{col:C.green, bg:C.greenBg, note:"Reflexiv (Dativ), trennbar",
+    ich:"suche mir aus",  du:"suchst dir aus",  "er/sie/es":"sucht sich aus",
+    wir:"suchen uns aus",  ihr:"sucht euch aus",  "sie/Sie":"suchen sich aus", pt:"suchte sich aus", pf:"hat sich ausgesucht"},
+  "ausnutzen":{col:C.orange, bg:C.orangeBg, note:"Trennbar",
+    ich:"nutze aus",  du:"nutzt aus",  "er/sie/es":"nutzt aus",
+    wir:"nutzen aus", ihr:"nutzt aus",  "sie/Sie":"nutzen aus", pt:"nutzte aus", pf:"hat ausgenutzt"},
+  "unterbrechen":{type:"e→i", col:C.red, bg:C.redBg,
+    ich:"unterbreche",  du:"unterbrichst",  "er/sie/es":"unterbricht",
+    wir:"unterbrechen", ihr:"unterbrecht",  "sie/Sie":"unterbrechen", pt:"unterbrach", ptc:{du:"unterbrachst",wir:"unterbrachen",ihr:"unterbracht",sie:"unterbrachen"}, pf:"hat unterbrochen"},
+  "zweifeln an":{col:C.purple, bg:C.purpleBg, note:"+ an (Dativ)",
+    ich:"zweifle",  du:"zweifelst",  "er/sie/es":"zweifelt",
+    wir:"zweifeln", ihr:"zweifelt",  "sie/Sie":"zweifeln", pt:"zweifelte", pf:"hat gezweifelt"},
+  "sich trennen von":{col:C.blue, bg:C.blueBg, note:"Reflexiv + von (Dativ)",
+    ich:"trenne mich",  du:"trennst dich",  "er/sie/es":"trennt sich",
+    wir:"trennen uns",  ihr:"trennt euch",  "sie/Sie":"trennen sich", pt:"trennte sich", pf:"hat sich getrennt"},
+  "loswerden":{col:C.teal, bg:C.tealBg, note:"Trennbar, mit sein",
+    ich:"werde los",  du:"wirst los",  "er/sie/es":"wird los",
+    wir:"werden los", ihr:"werdet los",  "sie/Sie":"werden los", pt:"wurde los", pf:"ist losgeworden"},
+  "vorbeifahren an":{type:"a→ä", col:C.green, bg:C.greenBg, note:"Trennbar + an (Dativ), mit sein",
+    ich:"fahre vorbei",  du:"fährst vorbei",  "er/sie/es":"fährt vorbei",
+    wir:"fahren vorbei", ihr:"fahrt vorbei",  "sie/Sie":"fahren vorbei", pt:"fuhr vorbei", ptc:{du:"fuhrst vorbei",wir:"fuhren vorbei",ihr:"fuhrt vorbei",sie:"fuhren vorbei"}, pf:"ist vorbeigefahren"},
+  "einnehmen":{type:"e→i", col:C.orange, bg:C.orangeBg, note:"Trennbar",
+    ich:"nehme ein",  du:"nimmst ein",  "er/sie/es":"nimmt ein",
+    wir:"nehmen ein", ihr:"nehmt ein",  "sie/Sie":"nehmen ein", pt:"nahm ein", ptc:{du:"nahmst ein",wir:"nahmen ein",ihr:"nahmt ein",sie:"nahmen ein"}, pf:"hat eingenommen"},
+  "wirken":{col:C.red, bg:C.redBg,
+    ich:"wirke",  du:"wirkst",  "er/sie/es":"wirkt",
+    wir:"wirken", ihr:"wirkt",  "sie/Sie":"wirken", pt:"wirkte", pf:"hat gewirkt"},
+  "sich stressen":{col:C.purple, bg:C.purpleBg, note:"Reflexiv",
+    ich:"stresse mich",  du:"stresst dich",  "er/sie/es":"stresst sich",
+    wir:"stressen uns",  ihr:"stresst euch",  "sie/Sie":"stressen sich", pt:"stresste sich", pf:"hat sich gestresst"},
+  "sich beruhigen":{col:C.blue, bg:C.blueBg, note:"Reflexiv",
+    ich:"beruhige mich",  du:"beruhigst dich",  "er/sie/es":"beruhigt sich",
+    wir:"beruhigen uns",  ihr:"beruhigt euch",  "sie/Sie":"beruhigen sich", pt:"beruhigte sich", pf:"hat sich beruhigt"},
+  "abhängen von":{col:C.teal, bg:C.tealBg, note:"Trennbar + von (Dativ)",
+    ich:"hänge ab",  du:"hängst ab",  "er/sie/es":"hängt ab",
+    wir:"hängen ab", ihr:"hängt ab",  "sie/Sie":"hängen ab", pt:"hing ab", ptc:{du:"hingst ab",wir:"hingen ab",ihr:"hingt ab",sie:"hingen ab"}, pf:"hat abgehangen"},
 };
 
 // Ударения: комбинирующая акута \u0301 ставится после ударной гласной
@@ -3862,6 +4156,11 @@ const STRESS_MARKS={
 "App":"A\u0301pp","Bescheid":"Besche\u0301id","Ahnung":"A\u0301hnung","drüben":"drü\u0301ben","höflich":"hö\u0301flich","Nachricht":"Na\u0301chricht","Bericht":"Beri\u0301cht","Arbeitskollege":"A\u0301rbeitskollege","Mitarbeiter":"Mi\u0301tarbeiter","Computerprogramm":"Compu\u0301terprogramm","installieren":"installi\u0301eren","verschieben":"verschie\u0301ben","Anruf":"A\u0301nruf","zurückrufen":"zurü\u0301ckrufen","Kaffeeautomat":"Kaffeeautoma\u0301t","Pausenregel":"Pa\u0301usenregel","Arzttermin":"A\u0301rzttermin","Gerät":"Gerä\u0301t","Getränkeautomat":"Getränkeautoma\u0301t","Kopierer":"Kopi\u0301erer","Taste":"Ta\u0301ste","ausschalten":"a\u0301usschalten","einwerfen":"e\u0301inwerfen","Marktleiter":"Ma\u0301rktleiter","Buchhaltung":"Bu\u0301chhaltung","Technik":"Te\u0301chnik","Spedition":"Speditio\u0301n","einräumen":"e\u0301inräumen","ausräumen":"a\u0301usräumen","Münzeinwurf":"Mü\u0301nzeinwurf","Bedienungsanleitung":"Bedi\u0301enungsanleitung","Kontakt":"Konta\u0301kt","Gespräch":"Gespr\u0301äch","telefonieren":"telefoni\u0301eren","Satzzeichen":"Sa\u0301tzzeichen","Betriebsausflug":"Betrie\u0301bsausflug","geschlossen":"geschlo\u0301ssen","Treffpunkt":"Tre\u0301ffpunkt","Eintritt":"E\u0301intritt","Liste":"Li\u0301ste","Polizist":"Polizi\u0301st","Maurer":"Ma\u0301urer","Dachdecker":"Da\u0301chdecker","Verputzer":"Verpu\u0301tzer","Fliesenleger":"Fli\u0301esenleger","Schreiner":"Schre\u0301iner","Gabelstaplerfahrer":"Ga\u0301belstaplerfahrer","Installateur":"Installate\u0301ur","Baggerfahrer":"Ba\u0301ggerfahrer","Lkw-Fahrer":"Lkw-Fa\u0301hrer","Bauingenieur":"Bauingenie\u0301ur","Maler":"Ma\u0301ler","Gepäckfahrer":"Gepä\u0301ckfahrer","Flugbegleiter":"Flu\u0301gbegleiter","Check-in-Schalter":"Che\u0301ck-in-Schalter","Sicherheitskontrolle":"Si\u0301cherheitskontrolle","Busfahrer":"Bu\u0301sfahrer","Bodenpersonal":"Bo\u0301denpersonal","Fluglotse":"Flu\u0301glotse","Vorort":"Vo\u0301rort","außerhalb":"a\u0301ußerhalb","verkehrsgünstig":"verke\u0301hrsgünstig","Ruhe":"Ru\u0301he","lassen":"la\u0301ssen","Kaltmiete":"Ka\u0301ltmiete","Warmmiete":"Wa\u0301rmmiete","Obergeschoss":"O\u0301bergeschoss","Einbauküche":"E\u0301inbauküche","Kaution":"Kautio\u0301n","abbauen":"a\u0301bbauen","renovieren":"renovi\u0301eren","transportieren":"transporti\u0301eren","Bauernhaus":"Ba\u0301uernhaus","Öffnungszeiten":"Ö\u0301ffnungszeiten",
 "Sicherheit":"Si\u0301cherheit","verantwortlich":"verantwo\u0301rtlich","aufpassen":"a\u0301ufpassen","gratulieren":"gratuli\u0301eren","jammern":"ja\u0301mmern","plaudern":"pla\u0301udern","Freiheit":"Fre\u0301iheit","TÜV":"TÜ\u0301V","Wartung":"Wa\u0301rtung","ablaufen":"a\u0301blaufen","Vorhaben":"Vo\u0301rhaben","Ursache":"U\u0301rsache","einstellen":"e\u0301instellen","Wassermenge":"Wa\u0301ssermenge","Laden":"La\u0301den","Betrieb":"Betrie\u0301b","Unternehmen":"Unterne\u0301hmen","Schlüsselübergabe":"Schlü\u0301sselübergabe","weder":"we\u0301der",
 "Immobilie":"Immobi\u0301lie","Nachmieter":"Na\u0301chmieter","Kundenzentrum":"Ku\u0301ndenzentrum","Zwilling":"Zwi\u0301lling","Wandfarbe":"Wa\u0301ndfarbe","Pinsel":"Pi\u0301nsel","Farbroller":"Fa\u0301rbroller","Tapete":"Tape\u0301te","Schraube":"Schra\u0301ube","Dübel":"Dü\u0301bel","Nagel":"Na\u0301gel","Hammer":"Ha\u0301mmer","Akku-Bohrer":"A\u0301kku-Bohrer","tapezieren":"tapezi\u0301eren","einverstanden":"einver\u0301standen","sympathisch":"sympa\u0301thisch","unsympathisch":"unsympa\u0301thisch","Haustier":"Ha\u0301ustier","Auftrag":"A\u0301uftrag","Neubau":"Ne\u0301ubau","Nebenkostenabrechnung":"Ne\u0301benkostenabrechnung","Rückzahlung":"Rü\u0301ckzahlung","Abschlag":"A\u0301bschlag","gesamt":"gesa\u0301mt","Allgemeinstrom":"Allgemei\u0301nstrom","Straßenreinigung":"Stra\u0301ßenreinigung","Grundsteuer":"Gru\u0301ndsteuer","Gebäudeversicherung":"Gebä\u0301udeversicherung","Schornsteinfeger":"Scho\u0301rnsteinfeger","Anteil":"A\u0301nteil","Mieter":"Mi\u0301eter","Wohnort":"Wo\u0301hnort","Feuerwerk":"Fe\u0301uerwerk","schenken":"sche\u0301nken","sich verkleiden":"sich verkle\u0301iden","Verwandte":"Verwa\u0301ndte","Glückwunsch":"Glü\u0301ckwunsch","Kompliment":"Komplime\u0301nt","Feiertag":"Fe\u0301iertag","Weihnachten":"We\u0301ihnachten","Hochzeitstag":"Ho\u0301chzeitstag","Hochzeitsfeier":"Ho\u0301chzeitsfeier","Jubiläum":"Jubilä\u0301um","Gutschein":"Gu\u0301tschein","Kerze":"Ke\u0301rze","Kette":"Ke\u0301tte","Geschirr":"Geschi\u0301rr","Schachtel Pralinen":"Scha\u0301chtel Pralinen","Parfüm":"Parfü\u0301m","Blumenstrauß":"Blu\u0301menstrauß","Rose":"Ro\u0301se","Koffer":"Ko\u0301ffer","Decke":"De\u0301cke","normalerweise":"norma\u0301lerweise","Braut":"Bra\u0301ut","Bräutigam":"Brä\u0301utigam","Brautpaar":"Bra\u0301utpaar","Brautkleid":"Bra\u0301utkleid","Schleier":"Schle\u0301ier","Ohrring":"O\u0301hrring","eng":"e\u0301ng","wunderschön":"Wu\u0301nderschön","romantisch":"roma\u0301ntisch","Hochzeitstorte":"Ho\u0301chzeitstorte","Gastgeber":"Ga\u0301stgeber","auffallen":"a\u0301uffallen","dabei sein":"dabe\u0301i sein","vorgestern":"vo\u0301rgestern","Stimmung":"Sti\u0301mmung","normal":"norma\u0301l","Reis werfen":"Re\u0301is werfen","Ringe tauschen":"Ri\u0301nge tauschen","Alles Gute!":"Alles Gu\u0301te!","Frohe Ostern!":"Frohe O\u0301stern!","Prosit Neujahr!":"Pro\u0301sit Neuja\u0301hr!","Kostüm":"Kostü\u0301m","Konfetti":"Konfe\u0301tti","Luftschlangen":"Lu\u0301ftschlangen","Osterei":"O\u0301sterei","Osterhase":"O\u0301sterhase","Osterzopf":"O\u0301sterzopf","Osterstrauß":"O\u0301sterstrauß","Sankt Martin":"Sankt Ma\u0301rtin","Laterne":"Late\u0301rne","Laternenumzug":"Late\u0301rnenumzug","Pferd":"Pfe\u0301rd","Nikolaus":"Ni\u0301kolaus","Weihnachtsbaum":"We\u0301ihnachtsbaum","Weihnachtsgans":"We\u0301ihnachtsgans","Adventskalender":"Adve\u0301ntskalender","Rakete":"Rake\u0301te","Bleigießen":"Ble\u0301igießen","Böller":"Bö\u0301ller","bescheren":"besche\u0301ren","Geschenke austeilen":"Gesche\u0301nke au\u0301steilen","Brauch":"Bra\u0301uch","Trauung":"Tra\u0301uung","Geld sammeln":"Geld sa\u0301mmeln","benötigen":"benö\u0301tigen","sich überlegen":"sich überle\u0301gen","hinkriegen":"hi\u0301nkriegen","auf jeden Fall":"auf jeden Fa\u0301ll","tauschen":"ta\u0301uschen","werfen":"we\u0301rfen","Pech":"Pe\u0301ch","pitschnass":"pi\u0301tschnass","sich verlieben":"sich verlie\u0301ben","sich freuen":"sich fre\u0301uen","aufstellen":"a\u0301ufstellen","sich kümmern um":"sich kü\u0301mmern um","das Problem lösen":"das Proble\u0301m lö\u0301sen","sich sorgen um":"sich so\u0301rgen um","hinfallen":"hi\u0301nfallen","einfallen":"ei\u0301nfallen","nett":"ne\u0301tt","sich vorstellen":"sich vo\u0301rstellen","sich treffen":"sich tre\u0301ffen","sich streiten":"sich stre\u0301iten","auf dem Weg":"auf dem We\u0301g","rechnen mit":"re\u0301chnen mit","den Code eingeben":"den Co\u0301de ei\u0301ngeben","das Geld abheben":"das Geld a\u0301bheben","Einrichtung":"Ei\u0301nrichtung","Lichterkette":"Li\u0301chterkette","sich versammeln":"sich versa\u0301mmeln","Lächeln":"Lä\u0301cheln","Faultier":"Fa\u0301ultier",
+"Obstkorb":"O\u0301bstkorb","sich interessieren für":"sich interessi\u0301eren für","sich bewerben um":"sich bewe\u0301rben um","teilnehmen an":"te\u0301ilnehmen an","warten auf":"wa\u0301rten auf","sich informieren über":"sich informi\u0301eren über","sich ärgern über":"sich ä\u0301rgern über","Berufsinformationszentrum":"Beru\u0301fsinformationszentrum","Weiterbildung":"We\u0301iterbildung","Fortbildung":"Fo\u0301rtbildung","Förderung":"Fö\u0301rderung","Babypause":"Ba\u0301bypause","aktuell":"aktue\u0301ll","Berufsabschluss":"Beru\u0301fsabschluss","Selbstständigkeit":"Se\u0301lbstständigkeit","Existenzgründung":"Existe\u0301nzgründung","Finanzierung":"Finanzi\u0301erung","Einnahmen":"E\u0301innahmen","Ausgaben":"A\u0301usgaben","Heimwerkerkurs":"He\u0301imwerkerkurs","Reparaturarbeiten":"Reparatu\u0301rarbeiten","bohren":"bo\u0301hren","befestigen":"befe\u0301stigen","Fliese":"Fli\u0301ese","Laminat":"Lamina\u0301t","verlegen":"verle\u0301gen","nähen":"nä\u0301hen","Nähabend":"Nä\u0301habend","Anfänger":"A\u0301nfänger","Fortgeschrittene":"Fo\u0301rtgeschrittene","Präsentation":"Präsentatio\u0301n","Tabellenkalkulation":"Tabellenkalkulatio\u0301n","Besprechung":"Bespre\u0301chung","Dauer":"Da\u0301uer","Voraussetzung":"Vora\u0301ussetzung","Zielgruppe":"Zi\u0301elgruppe","Babysitter":"Ba\u0301bysitter","damit":"dami\u0301t","Erste Hilfe":"Erste Hi\u0301lfe","Ersthelfer":"E\u0301rsthelfer","Doppelstunde":"Do\u0301ppelstunde","Kindernotfall":"Ki\u0301ndernotfall","Arbeitsberater":"A\u0301rbeitsberater",
+"Möglichkeit":"Mö\u0301glichkeit","Computerkenntnisse":"Compu\u0301terkenntnisse","finanzieren":"finanzi\u0301eren","Grundkenntnisse":"Gru\u0301ndkenntnisse","Schwerpunkt":"Schwe\u0301rpunkt","Existenzgründerkurs":"Existe\u0301nzgründerkurs","unsicher":"u\u0301nsicher","Arbeitsmarkt":"A\u0301rbeitsmarkt","beruflich":"beru\u0301flich","handwerklich":"ha\u0301ndwerklich","Materialkosten":"Materia\u0301lkosten","Online-Anmeldung":"O\u0301nline-Anmeldung","Privatschule":"Priva\u0301tschule","Schwarze Brett":"Schwa\u0301rze Brett","Kenntnisse":"Ke\u0301nntnisse","Fähigkeit":"Fä\u0301higkeit","sich anmelden für":"sich a\u0301nmelden für","Kursangebot":"Ku\u0301rsangebot","jederzeit":"je\u0301derzeit","Gern geschehen!":"Gern gesche\u0301hen!",
+"Malkurs":"Ma\u0301lkurs","Gymnastikkurs":"Gymna\u0301stikkurs","Nähkurs":"Nä\u0301hkurs","Stadtführung":"Sta\u0301dtführung","Mountainbike-Kurs":"Mo\u0301untainbike-Kurs","Schauspielkurs":"Scha\u0301uspielkurs","Kochkurs":"Ko\u0301chkurs","Fahrschule":"Fa\u0301hrschule","Fotografie-Kurs":"Fotografi\u0301e-Kurs","Yoga-Kurs":"Yo\u0301ga-Kurs","Schwimmkurs":"Schwi\u0301mmkurs","Kosmetikkurs":"Kosme\u0301tikkurs","Stau":"Sta\u0301u","Gymnastik":"Gymna\u0301stik","Arzthelferin":"A\u0301rzthelferin","Bonusheft":"Bo\u0301nusheft","Gesundheitsuntersuchung":"Gesu\u0301ndheitsuntersuchung","Spielsachen":"Spi\u0301elsachen","Zuzahlung":"Zu\u0301zahlung","Hustensaft":"Hu\u0301stensaft","Honig":"Ho\u0301nig",
+"Handwerker":"Ha\u0301ndwerker","Handwerksberuf":"Ha\u0301ndwerksberuf","Tischler":"Ti\u0301schler","Klempner":"Kle\u0301mpner","Schlosser":"Schlo\u0301sser","Zimmermann":"Zi\u0301mmermann","Schweißer":"Schwe\u0301ißer","Gärtner":"Gä\u0301rtner","Lehrling":"Le\u0301hrling","Geselle":"Gese\u0301lle","Vorfall":"Vo\u0301rfall","sich beschweren":"sich beschwe\u0301ren","sich benehmen":"sich bene\u0301hmen","Verhältnis":"Verhä\u0301ltnis","sich auskennen":"sich a\u0301uskennen","auffordern zu":"a\u0301uffordern zu","schnellstmöglich":"schne\u0301llstmöglich","Überschreitung":"Ü\u0301berschreitung","abgemacht":"a\u0301bgemacht","sich aussuchen":"sich a\u0301ussuchen","Sehvermögen":"Se\u0301hvermögen","BAMF":"BAMF","Traum":"Tra\u0301um","Albtraum":"A\u0301lbtraum","Sprit":"Spri\u0301t","zweifeln an":"zwe\u0301ifeln an","Volk":"Vo\u0301lk","anspruchsvoll":"a\u0301nspruchsvoll","loswerden":"lo\u0301swerden","Wertstoffhof":"We\u0301rtstoffhof","sich trennen von":"sich tre\u0301nnen von","Umzugskarton":"U\u0301mzugskarton","Unordnung":"U\u0301nordnung","auf keinen Fall":"auf keinen Fa\u0301ll","vorbeifahren an":"vorbe\u0301ifahren an","ausnutzen":"a\u0301usnutzen","unterbrechen":"unterbre\u0301chen","was mich angeht":"was mich a\u0301ngeht","etwas fallen lassen":"etwas fa\u0301llen lassen","abhängen von":"a\u0301bhängen von","Behandlung":"Beha\u0301ndlung","ausgewogen":"a\u0301usgewogen","abwechslungsreich":"abwe\u0301chslungsreich","sich stressen":"sich stre\u0301ssen","in Stress geraten":"in Stress gera\u0301ten","wirken":"wi\u0301rken","Auskunft":"A\u0301uskunft","einnehmen":"e\u0301innehmen","Ratschlag":"Ra\u0301tschlag","Nahrungsmittel":"Na\u0301hrungsmittel","sich beruhigen":"sich beru\u0301higen","eine Rolle spielen":"eine Ro\u0301lle spielen",
+"Sorgen haben":"So\u0301rgen haben","Muskeltraining":"Mu\u0301skeltraining","abnehmen":"a\u0301bnehmen","zunehmen":"zu\u0301nehmen","schlank":"schla\u0301nk","impfen":"i\u0301mpfen","Blutdruck":"Blu\u0301tdruck","verschreiben":"verschre\u0301iben","Beschwerden":"Beschwe\u0301rden","vereinbaren":"vereinba\u0301ren","vernünftig":"vernü\u0301nftig","Gesundheits-Check":"Gesu\u0301ndheits-Check","Oberkörper":"O\u0301berkörper","Laboruntersuchung":"Labo\u0301runtersuchung","Urin":"Uri\u0301n","Blutwerte":"Blu\u0301twerte","Cholesterinwert":"Cholesteri\u0301nwert","Facharzt":"Fa\u0301charzt","Vorsorgeuntersuchung":"Vo\u0301rsorgeuntersuchung","Früherkennung":"Frü\u0301herkennung","Krankheit":"Kra\u0301nkheit","Nebenwirkung":"Ne\u0301benwirkung","Beipackzettel":"Be\u0301ipackzettel","empfindlich":"empfi\u0301ndlich","Rezeptgebühr":"Reze\u0301ptgebühr","gebührenfrei":"gebü\u0301hrenfrei","Hausapotheke":"Ha\u0301usapotheke","haltbar":"ha\u0301ltbar","entsorgen":"entso\u0301rgen","Verband":"Verba\u0301nd","Schmerzmittel":"Schme\u0301rzmittel","Desinfektionsmittel":"Desinfektio\u0301nsmittel","Durchfall":"Du\u0301rchfall","Salbe":"Sa\u0301lbe","Mückenstich":"Mü\u0301ckenstich","Brandsalbe":"Bra\u0301ndsalbe","Nasentropfen":"Na\u0301sentropfen","Spritze":"Spri\u0301tze","Pinzette":"Pinze\u0301tte","Fieberthermometer":"Fi\u0301eberthermometer","Pflaster":"Pfla\u0301ster","sich ernähren":"sich ernä\u0301hren","Vegetarier":"Vegeta\u0301rier","Veganer":"Vega\u0301ner","vermeiden":"vermei\u0301den","Tierhaltung":"Ti\u0301erhaltung","ablehnen":"a\u0301blehnen","fettarm":"fe\u0301ttarm","Fett":"Fe\u0301tt","Vitamine":"Vitami\u0301ne","Marathon":"Ma\u0301rathon","trainieren":"traini\u0301eren","schaden":"scha\u0301den",
 };
 
 // IPA-транскрипция для всего словаря (кроме фраз)
@@ -4236,6 +4535,11 @@ const IPA_DATA={
 "App":"[ap]","Bescheid":"[bəˈʃaɪ̯t]","Ahnung":"[ˈaːnʊŋ]","drüben":"[ˈdʁyːbən]","höflich":"[ˈhøːflɪç]","Nachricht":"[ˈnaːxʁɪçt]","Bericht":"[bəˈʁɪçt]","Arbeitskollege":"[ˈaʁbaɪ̯tskɔˌleːɡə]","Mitarbeiter":"[ˈmɪtˌʔaʁbaɪ̯tɐ]","Computerprogramm":"[kɔmˈpjuːtɐpʁoˌɡʁam]","installieren":"[ɪnstaˈliːʁən]","verschieben":"[fɛɐ̯ˈʃiːbən]","Anruf":"[ˈanˌʁuːf]","zurückrufen":"[tsuˈʁʏkˌʁuːfən]","Kaffeeautomat":"[ˈkafeʔaʊ̯toˌmaːt]","Pausenregel":"[ˈpaʊ̯zn̩ˌʁeːɡl̩]","Arzttermin":"[ˈaːɐ̯tstɛɐ̯ˌmiːn]","Gerät":"[ɡəˈʁɛːt]","Getränkeautomat":"[ɡəˈtʁɛŋkəʔaʊ̯toˌmaːt]","Kopierer":"[koˈpiːʁɐ]","Taste":"[ˈtastə]","ausschalten":"[ˈaʊ̯sˌʃaltən]","einwerfen":"[ˈaɪ̯nˌvɛʁfən]","Marktleiter":"[ˈmaʁktˌlaɪ̯tɐ]","Buchhaltung":"[ˈbuːxˌhaltʊŋ]","Technik":"[ˈtɛçnɪk]","Spedition":"[ʃpediˈtsi̯oːn]","einräumen":"[ˈaɪ̯nˌʁɔɪ̯mən]","ausräumen":"[ˈaʊ̯sˌʁɔɪ̯mən]","Münzeinwurf":"[ˈmʏntsˌʔaɪ̯nvʊʁf]","Bedienungsanleitung":"[bəˈdiːnʊŋsˌʔanlaɪ̯tʊŋ]","Kontakt":"[kɔnˈtakt]","Gespräch":"[ɡəˈʃpʁɛːç]","telefonieren":"[telefoˈniːʁən]","Satzzeichen":"[ˈzatsˌtsaɪ̯çən]","Betriebsausflug":"[bəˈtʁiːpsˌʔaʊ̯sfluːk]","geschlossen":"[ɡəˈʃlɔsən]","Treffpunkt":"[ˈtʁɛfˌpʊŋkt]","Eintritt":"[ˈaɪ̯nˌtʁɪt]","Liste":"[ˈlɪstə]","Polizist":"[poliˈtsɪst]","Maurer":"[ˈmaʊ̯ʁɐ]","Dachdecker":"[ˈdaxˌdɛkɐ]","Verputzer":"[fɛɐ̯ˈpʊtsɐ]","Fliesenleger":"[ˈfliːzn̩ˌleːɡɐ]","Schreiner":"[ˈʃʁaɪ̯nɐ]","Gabelstaplerfahrer":"[ˈɡaːbl̩ˌʃtaːplɐˌfaːʁɐ]","Installateur":"[ɪnstalaˈtøːɐ̯]","Baggerfahrer":"[ˈbaɡɐˌfaːʁɐ]","Lkw-Fahrer":"[ˌɛlkaːˈveː ˌfaːʁɐ]","Bauingenieur":"[ˈbaʊ̯ʔɪnʒeˌni̯øːɐ̯]","Maler":"[ˈmaːlɐ]","Gepäckfahrer":"[ɡəˈpɛkˌfaːʁɐ]","Flugbegleiter":"[ˈfluːkbəˌɡlaɪ̯tɐ]","Check-in-Schalter":"[ˈtʃɛkɪnˌʃaltɐ]","Sicherheitskontrolle":"[ˈzɪçɐhaɪ̯tskɔnˌtʁɔlə]","Busfahrer":"[ˈbʊsˌfaːʁɐ]","Bodenpersonal":"[ˈboːdn̩pɛʁzoˌnaːl]","Fluglotse":"[ˈfluːkˌloːtsə]","Vorort":"[ˈfoːɐ̯ˌʔɔʁt]","außerhalb":"[ˈaʊ̯sɐhalp]","verkehrsgünstig":"[fɛɐ̯ˈkeːɐ̯sˌɡʏnstɪç]","Ruhe":"[ˈʁuːə]","lassen":"[ˈlasən]","Kaltmiete":"[ˈkaltˌmiːtə]","Warmmiete":"[ˈvaʁmˌmiːtə]","Obergeschoss":"[ˈoːbɐɡəˌʃɔs]","Einbauküche":"[ˈaɪ̯nbaʊ̯ˌkʏçə]","Kaution":"[kaʊ̯ˈtsi̯oːn]","abbauen":"[ˈapˌbaʊ̯ən]","renovieren":"[ʁenoˈviːʁən]","transportieren":"[tʁanspɔʁˈtiːʁən]","Bauernhaus":"[ˈbaʊ̯ɐnˌhaʊ̯s]","Öffnungszeiten":"[ˈœfnʊŋsˌtsaɪ̯tn̩]",
 "Sicherheit":"[ˈzɪçɐhaɪ̯t]","verantwortlich":"[fɛɐ̯ˈʔantvɔʁtlɪç]","aufpassen":"[ˈaʊ̯fˌpasən]","gratulieren":"[ɡʁatuˈliːʁən]","jammern":"[ˈjamɐn]","plaudern":"[ˈplaʊ̯dɐn]","Freiheit":"[ˈfʁaɪ̯haɪ̯t]","TÜV":"[tyːf]","Wartung":"[ˈvaʁtʊŋ]","ablaufen":"[ˈapˌlaʊ̯fən]","Vorhaben":"[ˈfoːɐ̯haːbən]","Ursache":"[ˈʔuːɐ̯zaːxə]","einstellen":"[ˈaɪ̯nˌʃtɛlən]","Wassermenge":"[ˈvasɐˌmɛŋə]","Laden":"[ˈlaːdən]","Betrieb":"[bəˈtʁiːp]","Unternehmen":"[ʊntɐˈneːmən]","Schlüsselübergabe":"[ˈʃlʏsl̩ʔyːbɐˌɡaːbə]","weder":"[ˈveːdɐ]",
 "Immobilie":"[ɪmoˈbiːli̯ə]","Nachmieter":"[ˈnaːxˌmiːtɐ]","Kundenzentrum":"[ˈkʊndn̩ˌtsɛntʁʊm]","Zwilling":"[ˈtsvɪlɪŋ]","Wandfarbe":"[ˈvantˌfaʁbə]","Pinsel":"[ˈpɪnzl̩]","Farbroller":"[ˈfaʁpˌʁɔlɐ]","Tapete":"[taˈpeːtə]","Schraube":"[ˈʃʁaʊ̯bə]","Dübel":"[ˈdyːbl̩]","Nagel":"[ˈnaːɡl̩]","Hammer":"[ˈhamɐ]","Akku-Bohrer":"[ˈakuˌboːʁɐ]","tapezieren":"[tapeˈtsiːʁən]","einverstanden":"[ˈaɪ̯nfɛɐ̯ˌʃtandən]","sympathisch":"[zʏmˈpaːtɪʃ]","unsympathisch":"[ˈʊnzʏmˌpaːtɪʃ]","Haustier":"[ˈhaʊ̯sˌtiːɐ̯]","Auftrag":"[ˈaʊ̯ftʁaːk]","Neubau":"[ˈnɔɪ̯baʊ̯]","Nebenkostenabrechnung":"[ˈneːbn̩kɔstn̩ˌʔapʁɛçnʊŋ]","Rückzahlung":"[ˈʁʏktsaːlʊŋ]","Abschlag":"[ˈapʃlaːk]","gesamt":"[ɡəˈzamt]","Allgemeinstrom":"[alɡəˈmaɪ̯nˌʃtʁoːm]","Straßenreinigung":"[ˈʃtʁaːsn̩ˌʁaɪ̯nɪɡʊŋ]","Grundsteuer":"[ˈɡʁʊntˌʃtɔɪ̯ɐ]","Gebäudeversicherung":"[ɡəˈbɔɪ̯dəfɛɐ̯ˌzɪçəʁʊŋ]","Schornsteinfeger":"[ˈʃɔʁnʃtaɪ̯nˌfeːɡɐ]","Anteil":"[ˈantaɪ̯l]","Mieter":"[ˈmiːtɐ]","Wohnort":"[ˈvoːnˌʔɔʁt]","Feuerwerk":"[ˈfɔɪ̯ɐˌvɛʁk]","schenken":"[ˈʃɛŋkən]","sich verkleiden":"[zɪç fɛɐ̯ˈklaɪ̯dən]","Verwandte":"[fɛɐ̯ˈvantə]","Glückwunsch":"[ˈɡlʏkvʊnʃ]","Kompliment":"[kɔmpliˈmɛnt]","Feiertag":"[ˈfaɪ̯ɐˌtaːk]","Weihnachten":"[ˈvaɪ̯naxtn̩]","Hochzeitstag":"[ˈhɔxtsaɪ̯tsˌtaːk]","Hochzeitsfeier":"[ˈhɔxtsaɪ̯tsˌfaɪ̯ɐ]","Jubiläum":"[jubiˈlɛːʊ̯m]","Gutschein":"[ˈɡuːtʃaɪ̯n]","Kerze":"[ˈkɛʁtsə]","Kette":"[ˈkɛtə]","Geschirr":"[ɡəˈʃɪʁ]","Schachtel Pralinen":"[ˈʃaxtl̩ pʁaˈliːnən]","Parfüm":"[paʁˈfyːm]","Blumenstrauß":"[ˈbluːmənˌʃtʁaʊ̯s]","Rose":"[ˈʁoːzə]","Koffer":"[ˈkɔfɐ]","Decke":"[ˈdɛkə]","normalerweise":"[nɔʁˈmaːlɐˌvaɪ̯zə]","Braut":"[bʁaʊ̯t]","Bräutigam":"[ˈbʁɔɪ̯tɪɡam]","Brautpaar":"[ˈbʁaʊ̯tˌpaːɐ̯]","Brautkleid":"[ˈbʁaʊ̯tˌklaɪ̯t]","Schleier":"[ˈʃlaɪ̯ɐ]","Ohrring":"[ˈoːɐ̯ˌʁɪŋ]","eng":"[ɛŋ]","wunderschön":"[ˈvʊndɐˌʃøːn]","romantisch":"[ʁoˈmantɪʃ]","Hochzeitstorte":"[ˈhɔxtsaɪ̯tsˌtɔʁtə]","Gastgeber":"[ˈɡastˌɡeːbɐ]","auffallen":"[ˈaʊ̯fˌfalən]","dabei sein":"[daˈbaɪ̯ ˈzaɪ̯n]","vorgestern":"[ˈfoːɐ̯ˌɡɛstɐn]","Stimmung":"[ˈʃtɪmʊŋ]","normal":"[nɔʁˈmaːl]","Reis werfen":"[ʁaɪ̯s ˈvɛʁfn̩]","Ringe tauschen":"[ˈʁɪŋə ˈtaʊ̯ʃn̩]","Alles Gute!":"[ˈaləs ˈɡuːtə]","Frohe Ostern!":"[ˈfʁoːə ˈoːstɐn]","Prosit Neujahr!":"[ˈpʁoːzɪt ˈnɔɪ̯jaːɐ̯]","Kostüm":"[kɔsˈtyːm]","Konfetti":"[kɔnˈfɛti]","Luftschlangen":"[ˈlʊftˌʃlaŋən]","Osterei":"[ˈoːstɐˌʔaɪ̯]","Osterhase":"[ˈoːstɐˌhaːzə]","Osterzopf":"[ˈoːstɐˌtsɔpf]","Osterstrauß":"[ˈoːstɐˌʃtʁaʊ̯s]","Sankt Martin":"[zaŋkt ˈmaʁtiːn]","Laterne":"[laˈtɛʁnə]","Laternenumzug":"[laˈtɛʁnənˌʔʊmtsuːk]","Pferd":"[pfeːɐ̯t]","Nikolaus":"[ˈniːkolaʊ̯s]","Weihnachtsbaum":"[ˈvaɪ̯naxtsˌbaʊ̯m]","Weihnachtsgans":"[ˈvaɪ̯naxtsˌɡans]","Adventskalender":"[atˈvɛntskaˌlɛndɐ]","Rakete":"[ʁaˈkeːtə]","Bleigießen":"[ˈblaɪ̯ˌɡiːsn̩]","Böller":"[ˈbœlɐ]","bescheren":"[bəˈʃeːʁən]","Geschenke austeilen":"[ɡəˈʃɛŋkə ˈaʊ̯staɪ̯lən]","Brauch":"[bʁaʊ̯x]","Trauung":"[ˈtʁaʊ̯ʊŋ]","Geld sammeln":"[ɡɛlt ˈzaml̩n]","benötigen":"[bəˈnøːtɪɡən]","sich überlegen":"[zɪç yːbɐˈleːɡən]","hinkriegen":"[ˈhɪnˌkʁiːɡən]","auf jeden Fall":"[aʊ̯f ˈjeːdn̩ fal]","tauschen":"[ˈtaʊ̯ʃn̩]","werfen":"[ˈvɛʁfn̩]","Pech":"[pɛç]","pitschnass":"[ˈpɪtʃˌnas]","sich verlieben":"[zɪç fɛɐ̯ˈliːbən]","sich freuen":"[zɪç ˈfʁɔɪ̯ən]","aufstellen":"[ˈaʊ̯fˌʃtɛlən]","sich kümmern um":"[zɪç ˈkʏmɐn ʔʊm]","das Problem lösen":"[das pʁoˈbleːm ˈløːzn̩]","sich sorgen um":"[zɪç ˈzɔʁɡn̩ ʔʊm]","hinfallen":"[ˈhɪnˌfalən]","einfallen":"[ˈaɪ̯nˌfalən]","nett":"[nɛt]","sich vorstellen":"[zɪç ˈfoːɐ̯ˌʃtɛlən]","sich treffen":"[zɪç ˈtʁɛfn̩]","sich streiten":"[zɪç ˈʃtʁaɪ̯tn̩]","auf dem Weg":"[aʊ̯f deːm veːk]","rechnen mit":"[ˈʁɛçnən mɪt]","den Code eingeben":"[deːn koːt ˈaɪ̯nˌɡeːbən]","das Geld abheben":"[das ɡɛlt ˈapˌheːbən]","Einrichtung":"[ˈaɪ̯nˌʁɪçtʊŋ]","Lichterkette":"[ˈlɪçtɐˌkɛtə]","sich versammeln":"[zɪç fɛɐ̯ˈzaml̩n]","Lächeln":"[ˈlɛçl̩n]","Faultier":"[ˈfaʊ̯lˌtiːɐ̯]",
+"Obstkorb":"[ˈoːpstkɔʁp]","sich interessieren für":"[zɪç ɪntəʁɛˈsiːʁən fyːɐ̯]","sich bewerben um":"[zɪç bəˈvɛʁbən ʊm]","teilnehmen an":"[ˈtaɪ̯lˌneːmən an]","warten auf":"[ˈvaʁtən aʊ̯f]","sich informieren über":"[zɪç ɪnfɔʁˈmiːʁən yːbɐ]","sich ärgern über":"[zɪç ˈɛʁɡɐn yːbɐ]","Berufsinformationszentrum":"[bəˈʁuːfsʔɪnfɔʁmatsi̯oːnsˌtsɛntʁʊm]","Weiterbildung":"[ˈvaɪ̯tɐˌbɪldʊŋ]","Fortbildung":"[ˈfɔʁtˌbɪldʊŋ]","Förderung":"[ˈfœʁdəʁʊŋ]","Babypause":"[ˈbeːbiˌpaʊ̯zə]","aktuell":"[akˈtu̯ɛl]","Berufsabschluss":"[bəˈʁuːfsˌʔapʃlʊs]","Selbstständigkeit":"[ˈzɛlpstˌʃtɛndɪçkaɪ̯t]","Existenzgründung":"[ɛksɪsˈtɛntsˌɡʁʏndʊŋ]","Finanzierung":"[finanˈtsiːʁʊŋ]","Einnahmen":"[ˈaɪ̯nˌnaːmən]","Ausgaben":"[ˈaʊ̯sˌɡaːbən]","Heimwerkerkurs":"[ˈhaɪ̯mˌvɛʁkɐkʊʁs]","Reparaturarbeiten":"[ʁepaʁaˈtuːɐ̯ˌʔaʁbaɪ̯tn̩]","bohren":"[ˈboːʁən]","befestigen":"[bəˈfɛstɪɡən]","Fliese":"[ˈfliːzə]","Laminat":"[lamiˈnaːt]","verlegen":"[fɛɐ̯ˈleːɡən]","nähen":"[ˈnɛːən]","Nähabend":"[ˈnɛːʔaːbənt]","Anfänger":"[ˈanfɛŋɐ]","Fortgeschrittene":"[ˈfɔʁtɡəˌʃʁɪtənə]","Präsentation":"[pʁezɛntaˈtsi̯oːn]","Tabellenkalkulation":"[taˈbɛlənkalkulaˌtsi̯oːn]","Besprechung":"[bəˈʃpʁɛçʊŋ]","Dauer":"[ˈdaʊ̯ɐ]","Voraussetzung":"[ˈfoːɐ̯aʊ̯sˌzɛtsʊŋ]","Zielgruppe":"[ˈtsiːlˌɡʁʊpə]","Babysitter":"[ˈbeːbiˌzɪtɐ]","damit":"[daˈmɪt]","Erste Hilfe":"[ˈeːɐ̯stə ˈhɪlfə]","Ersthelfer":"[ˈeːɐ̯stˌhɛlfɐ]","Doppelstunde":"[ˈdɔpl̩ˌʃtʊndə]","Kindernotfall":"[ˈkɪndɐˌnoːtfal]","Arbeitsberater":"[ˈaʁbaɪ̯tsbəˌʁaːtɐ]",
+"Möglichkeit":"[ˈmøːklɪçkaɪ̯t]","Computerkenntnisse":"[kɔmˈpjuːtɐˌkɛntnɪsə]","finanzieren":"[finanˈtsiːʁən]","Grundkenntnisse":"[ˈɡʁʊntˌkɛntnɪsə]","Schwerpunkt":"[ˈʃveːɐ̯pʊŋkt]","Existenzgründerkurs":"[ɛksɪsˈtɛntsˌɡʁʏndɐkʊʁs]","unsicher":"[ˈʊnzɪçɐ]","Arbeitsmarkt":"[ˈaʁbaɪ̯tsmaʁkt]","beruflich":"[bəˈʁuːflɪç]","handwerklich":"[ˈhantvɛʁklɪç]","Materialkosten":"[mateˈʁi̯aːlˌkɔstən]","Online-Anmeldung":"[ˈɔnlaɪ̯nˌʔanmɛldʊŋ]","Privatschule":"[pʁiˈvaːtˌʃuːlə]","Schwarze Brett":"[ˈʃvaʁtsə bʁɛt]","Kenntnisse":"[ˈkɛntnɪsə]","Fähigkeit":"[ˈfɛːɪçkaɪ̯t]","sich anmelden für":"[zɪç ˈanˌmɛldn̩ fyːɐ̯]","Kursangebot":"[ˈkʊʁsˌʔanɡəboːt]","jederzeit":"[ˈjeːdɐˌtsaɪ̯t]","Gern geschehen!":"[ɡɛʁn ɡəˈʃeːən]",
+"Malkurs":"[ˈmaːlkʊʁs]","Gymnastikkurs":"[ɡʏmˈnastɪkkʊʁs]","Nähkurs":"[ˈnɛːkʊʁs]","Stadtführung":"[ˈʃtatfyːʁʊŋ]","Mountainbike-Kurs":"[ˈmaʊntɪnbaɪkkʊʁs]","Schauspielkurs":"[ˈʃaʊʃpiːlkʊʁs]","Kochkurs":"[ˈkɔxkʊʁs]","Fahrschule":"[ˈfaːɐ̯ʃuːlə]","Fotografie-Kurs":"[fotoɡʁaˈfiːkʊʁs]","Yoga-Kurs":"[ˈjoːɡakʊʁs]","Schwimmkurs":"[ˈʃvɪmkʊʁs]","Kosmetikkurs":"[kɔsˈmeːtɪkkʊʁs]","Stau":"[ʃtaʊ̯]","Gymnastik":"[ɡʏmˈnastɪk]","Arzthelferin":"[ˈaːɐ̯tsthɛlfəʁɪn]","Bonusheft":"[ˈboːnʊshɛft]","Gesundheitsuntersuchung":"[ɡəˈzʊnthaɪ̯tsʔʊntɐˌzuːxʊŋ]","Spielsachen":"[ˈʃpiːlzaxn̩]","Zuzahlung":"[ˈtsuːtsaːlʊŋ]","Hustensaft":"[ˈhuːstn̩zaft]","Honig":"[ˈhoːnɪç]",
+"Handwerker":"[ˈhantvɛʁkɐ]","Handwerksberuf":"[ˈhantvɛʁksbəˌʁuːf]","Tischler":"[ˈtɪʃlɐ]","Klempner":"[ˈklɛmpnɐ]","Schlosser":"[ˈʃlɔsɐ]","Zimmermann":"[ˈtsɪmɐman]","Schweißer":"[ˈʃvaɪ̯sɐ]","Gärtner":"[ˈɡɛʁtnɐ]","Lehrling":"[ˈleːɐ̯lɪŋ]","Geselle":"[ɡəˈzɛlə]","Vorfall":"[ˈfoːɐ̯fal]","sich beschweren":"[zɪç bəˈʃveːʁən]","sich benehmen":"[zɪç bəˈneːmən]","Verhältnis":"[fɛɐ̯ˈhɛltnɪs]","sich auskennen":"[zɪç ˈaʊ̯sˌkɛnən]","auffordern zu":"[ˈaʊ̯fˌfɔʁdɐn tsuː]","schnellstmöglich":"[ˈʃnɛlstˌmøːklɪç]","Überschreitung":"[yːbɐˈʃʁaɪ̯tʊŋ]","abgemacht":"[ˈapɡəmaxt]","sich aussuchen":"[zɪç ˈaʊ̯sˌzuːxən]","Sehvermögen":"[ˈzeːfɛɐ̯ˌmøːɡn̩]","BAMF":"[bamf]","Traum":"[tʁaʊ̯m]","Albtraum":"[ˈalptʁaʊ̯m]","Sprit":"[ʃpʁɪt]","zweifeln an":"[ˈtsvaɪ̯fl̩n an]","Volk":"[fɔlk]","anspruchsvoll":"[ˈanʃpʁʊxsfɔl]","loswerden":"[ˈloːsˌveːɐ̯dn̩]","Wertstoffhof":"[ˈveːɐ̯tʃtɔfˌhoːf]","sich trennen von":"[zɪç ˈtʁɛnən fɔn]","Umzugskarton":"[ˈʊmtsuːkskaʁˌtɔŋ]","Unordnung":"[ˈʊnʔɔʁdnʊŋ]","auf keinen Fall":"[aʊ̯f ˈkaɪ̯nən fal]","vorbeifahren an":"[fɔɐ̯ˈbaɪ̯faːʁən an]","ausnutzen":"[ˈaʊ̯sˌnʊtsn̩]","unterbrechen":"[ʊntɐˈbʁɛçn̩]","was mich angeht":"[vas mɪç ˈanɡeːt]","etwas fallen lassen":"[ˈɛtvas ˈfalən ˈlasn̩]","abhängen von":"[ˈapˌhɛŋən fɔn]","Behandlung":"[bəˈhandlʊŋ]","ausgewogen":"[ˈaʊ̯sɡəˌvoːɡn̩]","abwechslungsreich":"[ˈapvɛkslʊŋsˌʁaɪ̯ç]","sich stressen":"[zɪç ˈʃtʁɛsn̩]","in Stress geraten":"[ɪn ʃtʁɛs ɡəˈʁaːtn̩]","wirken":"[ˈvɪʁkn̩]","Auskunft":"[ˈaʊ̯skʊnft]","einnehmen":"[ˈaɪ̯nˌneːmən]","Ratschlag":"[ˈʁaːtʃlaːk]","Nahrungsmittel":"[ˈnaːʁʊŋsˌmɪtl̩]","sich beruhigen":"[zɪç bəˈʁuːɪɡən]","eine Rolle spielen":"[ˈaɪ̯nə ˈʁɔlə ˈʃpiːlən]",
+"Sorgen haben":"[ˈzɔʁɡən ˈhaːbən]","Muskeltraining":"[ˈmʊskl̩ˌtʁeːnɪŋ]","abnehmen":"[ˈapˌneːmən]","zunehmen":"[ˈtsuːˌneːmən]","schlank":"[ʃlaŋk]","impfen":"[ˈɪmpfn̩]","Blutdruck":"[ˈbluːtdʁʊk]","verschreiben":"[fɛɐ̯ˈʃʁaɪ̯bən]","Beschwerden":"[bəˈʃveːɐ̯dn̩]","vereinbaren":"[fɛɐ̯ˈʔaɪ̯nbaːʁən]","vernünftig":"[fɛɐ̯ˈnʏnftɪç]","Gesundheits-Check":"[ɡəˈzʊnthaɪ̯tsˌtʃɛk]","Oberkörper":"[ˈoːbɐˌkœʁpɐ]","Laboruntersuchung":"[laˈboːɐ̯ʔʊntɐˌzuːxʊŋ]","Urin":"[uˈʁiːn]","Blutwerte":"[ˈbluːtˌveːɐ̯tə]","Cholesterinwert":"[koleste'ʁiːnveːɐ̯t]","Facharzt":"[ˈfaxˌʔaːɐ̯tst]","Vorsorgeuntersuchung":"[ˈfoːɐ̯zɔʁɡəʔʊntɐˌzuːxʊŋ]","Früherkennung":"[ˈfʁyːɐ̯kɛnʊŋ]","Krankheit":"[ˈkʁaŋkhaɪ̯t]","Nebenwirkung":"[ˈneːbn̩ˌvɪʁkʊŋ]","Beipackzettel":"[ˈbaɪ̯pakˌtsɛtl̩]","empfindlich":"[ɛmˈpfɪntlɪç]","Rezeptgebühr":"[ʁeˈtsɛptɡəˌbyːɐ̯]","gebührenfrei":"[ɡəˈbyːʁənˌfʁaɪ̯]","Hausapotheke":"[ˈhaʊ̯sʔapoˌteːkə]","haltbar":"[ˈhaltbaːɐ̯]","entsorgen":"[ɛntˈzɔʁɡən]","Verband":"[fɛɐ̯ˈbant]","Schmerzmittel":"[ˈʃmɛʁtsˌmɪtl̩]","Desinfektionsmittel":"[dezɪnfɛkˈtsi̯oːnsˌmɪtl̩]","Durchfall":"[ˈdʊʁçfal]","Salbe":"[ˈzalbə]","Mückenstich":"[ˈmʏkn̩ˌʃtɪç]","Brandsalbe":"[ˈbʁantˌzalbə]","Nasentropfen":"[ˈnaːzn̩ˌtʁɔpfn̩]","Spritze":"[ˈʃpʁɪtsə]","Pinzette":"[pɪnˈtsɛtə]","Fieberthermometer":"[ˈfiːbɐtɛʁmoˌmeːtɐ]","Pflaster":"[ˈpflastɐ]","sich ernähren":"[zɪç ɛɐ̯ˈnɛːʁən]","Vegetarier":"[veɡeˈtaːʁiːɐ̯]","Veganer":"[veˈɡaːnɐ]","vermeiden":"[fɛɐ̯ˈmaɪ̯dn̩]","Tierhaltung":"[ˈtiːɐ̯ˌhaltʊŋ]","ablehnen":"[ˈapˌleːnən]","fettarm":"[ˈfɛtʔaʁm]","Fett":"[fɛt]","Vitamine":"[vitaˈmiːnə]","Marathon":"[ˈmaʁatɔn]","trainieren":"[tʁɛˈniːʁən]","schaden":"[ˈʃaːdn̩]",
 };
 
 const DIALOGE={
@@ -4773,6 +5077,42 @@ const DIALOGE={
       {q:"Was sagt man zur Hochzeit?",                                qRu:"Что говорят на свадьбу?", a:"Alles Gute zur Hochzeit!", aRu:"Всего наилучшего на свадьбе!", note:"Glückwünsche"},
       {q:"Wer besorgt die Getränke für die Kursparty?",               qRu:"Кто раздобудет напитки для вечеринки курса?", a:"Das müssen wir noch besprechen — wollen wir auch tanzen?", aRu:"Это нам ещё надо обсудить — хотим ли мы ещё и танцевать?", note:"Kursparty organisieren"},
       {q:"Wie können wir das Geld für ein gemeinsames Geschenk hinkriegen?", qRu:"Как нам раздобыть деньги на общий подарок?", a:"Wir sollten uns überlegen: auf jeden Fall können wir Geld sammeln.", aRu:"Нам стоит обдумать: в любом случае мы можем собрать деньги.", note:"Probleme lösen"},
+    ]},
+  ],
+  "A2-L8":[
+    {tag:"Ich interessiere mich für...",col:C.blue,pairs:[
+      {q:"Was bietet das BiZ an?",                                    qRu:"Что предлагает BiZ?", a:"Informationen rund um Bildung, Beruf und Arbeitsmarkt, auch online.", aRu:"Информацию об образовании, профессии и рынке труда, тоже онлайн.", note:"Berufsinformationszentrum"},
+      {q:"Wofür interessiert sich Ibolya?",                           qRu:"Чем интересуется Ибоя?", a:"Sie interessiert sich für die neuen Softwareprogramme.", aRu:"Она интересуется новыми программами.", note:"sich interessieren für"},
+      {q:"Wer finanziert Ibolyas Fortbildung?",                       qRu:"Кто финансирует курс Ибои?", a:"Sie hat eine Förderung von der Bundesagentur für Arbeit bekommen.", aRu:"Она получила финансирование от Агентства по труду.", note:"die Förderung"},
+      {q:"Warum ist Doreens Arbeit bei Elektro-Müller langweilig?",    qRu:"Почему работа Дорин в Elektro-Müller скучная?", a:"Sie muss den ganzen Tag mit Kunden telefonieren.", aRu:"Ей приходится весь день созваниваться с клиентами.", note:"telefonieren mit"},
+    ]},
+    {tag:"Etwas Neues lernen",col:C.orange,pairs:[
+      {q:"Was lernt man im Heimwerkerkurs?",                          qRu:"Чему учатся на курсе «сделай сам»?", a:"Tapezieren, streichen, bohren und befestigen, Fliesen und Laminat verlegen.", aRu:"Клеить обои, красить, сверлить и крепить, укладывать плитку и ламинат.", note:"Freizeit und Hobby"},
+      {q:"Wozu macht Herr Thabit einen Computerkurs?",                qRu:"Зачем г-н Табит проходит компьютерный курс?", a:"Damit er bessere Chancen auf dem Arbeitsmarkt hat.", aRu:"Чтобы у него было больше шансов на рынке труда.", note:"Nebensätze mit damit"},
+      {q:"Wo unterrichtet Herr Yang Tai-Chi?",                        qRu:"Где преподаёт тай-чи г-н Ян?", a:"In der Volkshochschule, einmal pro Woche.", aRu:"В Volkshochschule, раз в неделю.", note:"Herr Yang"},
+      {q:"Warum kann Frau Sosso nicht mehr Kochkurse anbieten?",      qRu:"Почему г-жа Соссо не может предлагать больше курсов?", a:"Pro Kurs ist nur Platz für acht Personen, und an Wochentagen ist keine Zeit im Küchenstudio.", aRu:"На курс всего 8 мест, а по будням в студии нет времени.", note:"Frau Sosso"},
+    ]},
+    {tag:"Sich für einen Kurs anmelden",col:C.teal,pairs:[
+      {q:"Wofür ist der klassische Erste-Hilfe-Kurs Voraussetzung?",  qRu:"Для чего обязателен классический курс первой помощи?", a:"Für den Führerschein der Klassen A, A1, B, BE, L, M, S und T.", aRu:"Для прав категорий A, A1, B, BE, L, M, S и T.", note:"Führerscheinbewerber"},
+      {q:"Für wen sind die Kurse für Kindernotfälle?",                qRu:"Для кого курсы по неотложной помощи детям?", a:"Für interessierte Eltern und Babysitter, Einstieg jederzeit möglich.", aRu:"Для родителей и нянь, начать можно в любое время.", note:"Zielgruppe"},
+      {q:"Wie kann man sich für einen Kurs anmelden?",                qRu:"Как записаться на курс?", a:"Man kann sich im Internet anmelden oder vorbeikommen.", aRu:"Можно записаться в интернете или зайти лично.", note:"sich anmelden"},
+    ]},
+  ],
+  "A2-L9":[
+    {tag:"In der Arztpraxis",col:C.red,pairs:[
+      {q:"Wie oft bezahlt die Krankenkasse einen Gesundheits-Check?",  qRu:"Как часто страховая касса оплачивает медосмотр?", a:"Ab 35 Jahren alle zwei Jahre.", aRu:"С 35 лет — раз в два года.", note:"Vorsorgeuntersuchungen"},
+      {q:"Was macht der Arzt, wenn die Cholesterinwerte zu hoch sind?", qRu:"Что делает врач, если холестерин повышен?", a:"Er gibt eine Überweisung zum Facharzt.", aRu:"Он даёт направление к специалисту.", note:"untersuchen lassen"},
+      {q:"Wie viele Vorsorgeuntersuchungen gibt es für Kinder?",       qRu:"Сколько профосмотров положено детям?", a:"Neun, von direkt nach der Geburt bis zum Alter von 5-6 Jahren.", aRu:"Девять, с рождения до 5-6 лет.", note:"U1-U9"},
+    ]},
+    {tag:"Medikamente",col:C.purple,pairs:[
+      {q:"Muss man für ein Kassenrezept in der Apotheke bezahlen?",    qRu:"Нужно ли платить в аптеке за рецепт по страховке?", a:"Nein, dafür bezahlt man in der Apotheke nichts.", aRu:"Нет, за это в аптеке ничего не платят.", note:"Rezeptgebühr"},
+      {q:"Wie viel kostet die Rezeptgebühr für Erwachsene?",           qRu:"Сколько стоит плата за рецепт для взрослых?", a:"Zwischen fünf und zehn Euro. Für Kinder ist es gebührenfrei.", aRu:"От 5 до 10 евро. Для детей — бесплатно.", note:"Rezeptgebühr"},
+      {q:"Wann sollte man die Tabletten bei empfindlichem Magen nehmen?", qRu:"Когда принимать таблетки при чувствительном желудке?", a:"Nach dem Essen.", aRu:"После еды.", note:"Beipackzettel"},
+    ]},
+    {tag:"Hausapotheke & Ernährung",col:C.green,pairs:[
+      {q:"Wo sollte die Hausapotheke sein?",                          qRu:"Где должна храниться домашняя аптечка?", a:"In einem trockenen Raum, damit die Medikamente lange haltbar bleiben.", aRu:"В сухом помещении, чтобы лекарства долго не портились.", note:"Tipps für die Hausapotheke"},
+      {q:"Was macht man mit alten Medikamenten?",                     qRu:"Что делают со старыми лекарствами?", a:"Man bringt sie zur Apotheke zurück oder entsorgt sie im Hausmüll.", aRu:"Возвращают в аптеку или выбрасывают с бытовым мусором.", note:"nicht ins Waschbecken"},
+      {q:"Worauf verzichten Veganer?",                                qRu:"От чего отказываются веганы?", a:"Auch auf Milchprodukte und Eier, nicht nur auf Fleisch und Fisch.", aRu:"Также от молочных продуктов и яиц, не только от мяса и рыбы.", note:"vegan"},
     ]},
   ],
 };
@@ -5409,6 +5749,7 @@ function Woerterbuch({words=WBDATA}={}){
     {id:"Urlaub",         label:"🏖️ Urlaub",                 col:C.blue},
     {id:"Migration",      label:"🌍 Migration",               col:C.purple},
     {id:"Feste",          label:"🎉 Feste",                   col:C.yellow},
+    {id:"Weiterbildung",  label:"💼 Weiterbildung",           col:C.blue},
   ];
   const TYPEN=[
     {id:"all",     label:"Все",           col:C.teal},
@@ -8908,6 +9249,311 @@ function GrosserTestA2L7(){return <GrosserTestContainer rounds={[
   {icon:"📝",label:"Lückentext",    col:C.blue,   component:()=><LueckenQuiz items={LUECKEN_A2L7}/>},
   {icon:"🔗",label:"Wortschatz",    col:C.green,  component:()=><Zuordnung pairs={ZUORD_A2L7} leftLabel="Wort" rightLabel="Bedeutung"/>},
   {icon:"🔤",label:"Wortstellung",  col:C.orange, component:()=><WortstellungGame sents={WSENTS_A2L7}/>},
+]}/>;}
+
+const Q_A2L8TEST=shuffle([
+  {q:"'sich interessieren für' — после этого глагола нужен падеж:",opts:["Akkusativ","Dativ","Nominativ","Genitiv"],ans:0,hint:"für + Akk"},
+  {q:"'sich bewerben um' — после этого глагола нужен падеж:",opts:["Akkusativ","Dativ","Nominativ","Genitiv"],ans:0,hint:"um + Akk"},
+  {q:"'teilnehmen an' — после этого глагола нужен падеж:",opts:["Dativ","Akkusativ","Nominativ","Genitiv"],ans:0,hint:"an + Dat"},
+  {q:"'telefonieren mit' — после этого глагола нужен падеж:",opts:["Dativ","Akkusativ","Nominativ","Genitiv"],ans:0,hint:"mit + Dat"},
+  {q:"'träumen von' — после этого глагола нужен падеж:",opts:["Dativ","Akkusativ","Nominativ","Genitiv"],ans:0,hint:"von + Dat"},
+  {q:"Разница между 'sich freuen auf' и 'sich freuen über':",opts:["auf = ещё не получил(а), über = уже получил(а)","разницы нет","auf для людей, über для вещей","über только в Perfekt"],ans:0,hint:"Sie freut sich auf/über das Geschenk"},
+  {q:"'BiZ' — это сокращение от:",opts:["Berufsinformationszentrum","Bildungszentrum","Bürgerinformationszentrum","Berufszentrum"],ans:0,hint:"Zentrum für Bildung, Beruf, Arbeitsmarkt"},
+  {q:"'der Arbeitsberater' — это человек, который:",opts:["помогает найти работу и даёт советы","финансирует Fortbildung","преподаёт язык","проверяет документы"],ans:0,hint:"beim Arbeitsamt"},
+  {q:"'die Förderung' в контексте курсов означает:",opts:["институция/ведомство даёт деньги на курс","штраф за пропуск курса","диплом об окончании","сам курс бесплатный от начала"],ans:0,hint:"z.B. von der Bundesagentur für Arbeit"},
+  {q:"'die Babypause' означает:",opts:["перерыв в работе по уходу за ребёнком","обеденный перерыв","отпуск по болезни","перерыв между курсами"],ans:0,hint:"nach der Geburt"},
+  {q:"'Meine Computerkenntnisse sind nicht mehr aktuell.' — 'aktuell' означает:",opts:["актуальный, современный","старый","бесполезный","секретный"],ans:0,hint:"nicht mehr aktuell = устарели"},
+  {q:"'der Berufsabschluss' означает:",opts:["диплом/квалификация по профессии","место работы","резюме","рабочий график"],ans:0,hint:"aus Kenia anerkannt"},
+  {q:"'Nebensätze mit damit' отвечают на вопрос:",opts:["Wozu? — Was ist das Ziel?","Wann?","Wo?","Warum? (Ursache)"],ans:0,hint:"Ziel-Satz"},
+  {q:"'Er macht einen Computerkurs, damit er bessere Chancen hat.' — где стоит спрягаемый глагол в damit-предложении?",opts:["в конце придаточного","на втором месте","в начале","глагол не нужен"],ans:0,hint:"Nebensatz-Wortstellung"},
+  {q:"'der Heimwerkerkurs' учит, как:",opts:["делать ремонт в квартире своими руками","готовить еду","водить машину","работать на компьютере"],ans:0,hint:"tapezieren, streichen, bohren"},
+  {q:"'Fliesen und Laminat verlegen' означает:",opts:["укладывать плитку и ламинат","красить стены","собирать мебель","чинить проводку"],ans:0,hint:"Bodenbeläge"},
+  {q:"'nähen' означает:",opts:["шить","вязать","гладить","стирать"],ans:0,hint:"der Nähabend"},
+  {q:"'für Anfänger und Fortgeschrittene' означает курс:",opts:["для начинающих и продвинутых","только для новичков","только для профессионалов","только для детей"],ans:0,hint:"alle Niveaus"},
+  {q:"'die Tabellenkalkulation' — это программа типа:",opts:["Excel","PowerPoint","Word","E-Mail"],ans:0,hint:"MS Office für Anfänger"},
+  {q:"'die Besprechung' по-русски:",opts:["совещание, встреча","переговоры по телефону","письмо","резюме"],ans:0,hint:"an Besprechungen teilnehmen"},
+  {q:"'Existenz gründen' означает:",opts:["открыть собственное дело","найти работу по найму","уволиться","переехать в другой город"],ans:0,hint:"Selbstständigkeit"},
+  {q:"'die Einnahmen' и 'die Ausgaben' — это:",opts:["доходы и расходы","доходы и налоги","прибыль и убыток","зарплата и премия"],ans:0,hint:"berechnen"},
+  {q:"Herr Yang научился Tai-Chi:",opts:["ещё подростком, от своего отца","в Германии, в школе","самостоятельно по видео","в университете"],ans:0,hint:"als Jugendlicher"},
+  {q:"Frau Sosso в Камеруне работала:",opts:["поваром (Köchin)","учительницей","бухгалтером","медсестрой"],ans:0,hint:"Heimatland Kamerun"},
+  {q:"Почему Frau Sosso не может предлагать больше курсов?",opts:["в студии всего 8 мест, и в будни студия занята","ей не хватает рецептов","никто не записывается","у неё нет времени готовить"],ans:0,hint:"Küchenstudio"},
+  {q:"'der Ersthelfer' — это человек, который:",opts:["оказывает первую помощь (напр. на предприятии)","водит скорую помощь","работает врачом","учит Erste Hilfe в школе"],ans:0,hint:"in Betrieben"},
+  {q:"'die Doppelstunde' означает:",opts:["сдвоенный урок (2 академчаса подряд)","повторный курс","удвоенная плата","два преподавателя"],ans:0,hint:"z.B. 8 Doppelstunden"},
+  {q:"Курс 'Erste Hilfe' с 4 Doppelstunden нужен для:",opts:["Führerscheinbewerber (lebensrettende Sofortmaßnahmen)","детей","Babysitter","только для врачей"],ans:0,hint:"Voraussetzung für den Führerschein"},
+  {q:"'Kurse für Kindernotfälle' предназначены для:",opts:["родителей и нянь (Babysitter)","только для врачей","только для учителей","только для подростков"],ans:0,hint:"Zielgruppe: Eltern, Babysitter"},
+  {q:"'Einstieg jederzeit möglich' означает:",opts:["можно начать курс в любое время","курс идёт только один день","нужна запись за месяц","мест больше нет"],ans:0,hint:"kein fester Starttermin"},
+  {q:"'Sie können sich im Internet anmelden oder hier vorbeikommen.' — сколько способов записи предложено?",opts:["два — онлайн или лично","только онлайн","только по телефону","только лично"],ans:0,hint:"Online-Anmeldung / vorbeikommen"},
+]);
+
+const LUECKEN_A2L8=shuffle([
+  {sent:"Ich interessiere mich ___ Musik.' (для)",opts:["für","auf","um","an"],ans:0,ru:"Я интересуюсь музыкой.",hint:"sich interessieren für"},
+  {sent:"Er wartet ___ die Straßenbahn.' (ждать)",opts:["auf","für","um","über"],ans:0,ru:"Он ждёт трамвай.",hint:"warten auf"},
+  {sent:"Wir nehmen ___ dem Ausflug teil.' (участвовать в, Dativ)",opts:["an","auf","für","um"],ans:0,ru:"Мы участвуем в поездке.",hint:"teilnehmen an + Dat"},
+  {sent:"Ich habe mich ___ viele Stellen beworben.' (подавать заявку на)",opts:["um","für","an","auf"],ans:0,ru:"Я подавала заявки на многие места.",hint:"sich bewerben um"},
+  {sent:"Der Arbeitsberater kann dich ___ deine Möglichkeiten informieren.' (о)",opts:["über","für","um","auf"],ans:0,ru:"Консультант может рассказать тебе о твоих возможностях.",hint:"informieren über"},
+  {sent:"Er macht einen Computerkurs, ___ er bessere Chancen hat.' (чтобы)",opts:["damit","dass","weil","ob"],ans:0,ru:"Он проходит компьютерный курс, чтобы иметь больше шансов.",hint:"Nebensatz mit damit"},
+  {sent:"Sie freut sich schon ___ das Geschenk.' (радуется заранее, ещё нет)",opts:["auf","über","für","an"],ans:0,ru:"Она уже радуется подарку (которого у неё пока нет).",hint:"sich freuen auf"},
+]);
+
+const ZUORD_A2L8=[
+  {de:"sich interessieren für",ru:"интересоваться"},
+  {de:"sich bewerben um",ru:"подавать заявку на"},
+  {de:"teilnehmen an",ru:"участвовать в"},
+  {de:"warten auf",ru:"ждать"},
+  {de:"sich informieren über",ru:"узнавать о"},
+  {de:"sich ärgern über",ru:"злиться из-за"},
+  {de:"der Arbeitsberater",ru:"консультант по трудоустройству"},
+  {de:"die Möglichkeit",ru:"возможность"},
+  {de:"die Computerkenntnisse",ru:"знания/навыки работы на компьютере"},
+  {de:"finanzieren",ru:"финансировать"},
+  {de:"die Grundkenntnisse",ru:"базовые знания"},
+  {de:"der Schwerpunkt",ru:"основной акцент, направление"},
+  {de:"der Existenzgründerkurs",ru:"курс для начинающих предпринимателей"},
+  {de:"unsicher",ru:"неуверенный"},
+  {de:"der Arbeitsmarkt",ru:"рынок труда"},
+  {de:"beruflich",ru:"профессиональный"},
+  {de:"handwerklich",ru:"ремесленный, ручного труда"},
+  {de:"die Materialkosten",ru:"расходы на материалы"},
+  {de:"die Online-Anmeldung",ru:"онлайн-регистрация"},
+  {de:"die Privatschule",ru:"частная школа"},
+  {de:"das Schwarze Brett",ru:"доска объявлений"},
+  {de:"die Kenntnisse",ru:"знания"},
+  {de:"die Fähigkeit",ru:"способность, умение"},
+  {de:"sich anmelden für",ru:"записываться на"},
+  {de:"das Kursangebot",ru:"предложение курсов"},
+  {de:"jederzeit",ru:"в любое время"},
+  {de:"Gern geschehen!",ru:"пожалуйста, не за что"},
+  {de:"das Berufsinformationszentrum",ru:"центр профориентации"},
+  {de:"die Weiterbildung",ru:"повышение квалификации"},
+  {de:"die Fortbildung",ru:"курс повышения квалификации"},
+  {de:"die Förderung",ru:"финансирование, субсидия"},
+  {de:"die Babypause",ru:"перерыв по уходу за ребёнком"},
+  {de:"aktuell",ru:"актуальный, современный"},
+  {de:"der Berufsabschluss",ru:"диплом по профессии"},
+  {de:"die Selbstständigkeit",ru:"собственное дело"},
+  {de:"die Existenzgründung",ru:"открытие собственного дела"},
+  {de:"die Finanzierung",ru:"финансирование"},
+  {de:"die Einnahmen",ru:"доходы"},
+  {de:"die Ausgaben",ru:"расходы"},
+  {de:"der Heimwerkerkurs",ru:"курс \"сделай сам\""},
+  {de:"der Malkurs",ru:"курс рисования"},
+  {de:"der Gymnastikkurs",ru:"курс гимнастики"},
+  {de:"der Nähkurs",ru:"курс шитья"},
+  {de:"die Stadtführung",ru:"экскурсия по городу"},
+  {de:"der Mountainbike-Kurs",ru:"курс горного велоспорта"},
+  {de:"der Schauspielkurs",ru:"курс актёрского мастерства"},
+  {de:"der Kochkurs",ru:"кулинарный курс"},
+  {de:"die Fahrschule",ru:"автошкола"},
+  {de:"der Fotografie-Kurs",ru:"курс фотографии"},
+  {de:"der Yoga-Kurs",ru:"курс йоги"},
+  {de:"der Schwimmkurs",ru:"курс плавания"},
+  {de:"der Kosmetikkurs",ru:"курс косметологии"},
+  {de:"die Reparaturarbeiten",ru:"ремонтные работы"},
+  {de:"bohren",ru:"сверлить"},
+  {de:"befestigen",ru:"крепить"},
+  {de:"die Fliese",ru:"плитка (кафель)"},
+  {de:"das Laminat",ru:"ламинат"},
+  {de:"verlegen",ru:"укладывать (пол)"},
+  {de:"nähen",ru:"шить"},
+  {de:"der Nähabend",ru:"вечер шитья"},
+  {de:"der Anfänger",ru:"начинающий"},
+  {de:"der Fortgeschrittene",ru:"продвинутый уровень"},
+  {de:"die Präsentation",ru:"презентация"},
+  {de:"die Tabellenkalkulation",ru:"табличный процессор"},
+  {de:"die Besprechung",ru:"совещание"},
+  {de:"die Dauer",ru:"продолжительность"},
+  {de:"die Voraussetzung",ru:"необходимое условие"},
+  {de:"die Zielgruppe",ru:"целевая группа"},
+  {de:"der Babysitter",ru:"няня"},
+  {de:"damit",ru:"чтобы (союз цели)"},
+  {de:"die Erste Hilfe",ru:"первая помощь"},
+  {de:"der Ersthelfer",ru:"оказывающий первую помощь"},
+  {de:"die Doppelstunde",ru:"сдвоенный урок"},
+  {de:"der Kindernotfall",ru:"экстренный случай с ребёнком"},
+  {de:"der Handwerker",ru:"ремесленник"},
+  {de:"der Handwerksberuf",ru:"ремесленная профессия"},
+  {de:"der Tischler",ru:"столяр"},
+  {de:"der Klempner",ru:"сантехник"},
+  {de:"der Schlosser",ru:"слесарь"},
+  {de:"der Zimmermann",ru:"плотник"},
+  {de:"der Schweißer",ru:"сварщик"},
+  {de:"der Gärtner",ru:"садовник"},
+  {de:"der Lehrling",ru:"ученик, подмастерье"},
+  {de:"der Geselle",ru:"подмастерье"},
+  {de:"der Vorfall",ru:"инцидент, происшествие"},
+  {de:"sich beschweren",ru:"жаловаться"},
+  {de:"sich benehmen",ru:"вести себя"},
+  {de:"das Verhältnis",ru:"отношение"},
+  {de:"sich auskennen",ru:"хорошо разбираться"},
+  {de:"auffordern zu",ru:"призывать к"},
+  {de:"schnellstmöglich",ru:"как можно быстрее"},
+  {de:"die Überschreitung",ru:"превышение"},
+  {de:"abgemacht",ru:"договорились"},
+  {de:"sich aussuchen",ru:"выбирать себе"},
+  {de:"das Sehvermögen",ru:"зрение"},
+  {de:"BAMF",ru:"Федеральное ведомство по делам миграции"},
+  {de:"der Traum",ru:"сон, мечта"},
+  {de:"der Albtraum",ru:"кошмар"},
+  {de:"der Sprit",ru:"бензин (разг.)"},
+  {de:"zweifeln an",ru:"сомневаться в"},
+  {de:"das Volk",ru:"народ"},
+  {de:"anspruchsvoll",ru:"требовательный"},
+  {de:"loswerden",ru:"избавляться от"},
+  {de:"der Wertstoffhof",ru:"пункт приёма вторсырья"},
+  {de:"sich trennen von",ru:"расставаться с"},
+  {de:"der Umzugskarton",ru:"коробка для переезда"},
+  {de:"die Unordnung",ru:"беспорядок"},
+  {de:"auf keinen Fall",ru:"ни в коем случае"},
+  {de:"vorbeifahren an",ru:"проезжать мимо"},
+  {de:"ausnutzen",ru:"использовать в своих интересах"},
+  {de:"unterbrechen",ru:"прерывать"},
+  {de:"was mich angeht",ru:"что касается меня"},
+  {de:"etwas fallen lassen",ru:"уронить что-то"},
+];
+
+const WSENTS_A2L8=[
+  {w:["Ich","interessiere","mich","für","die","neuen","Softwareprogramme","."],ru:"Меня интересуют новые программы."},
+  {w:["Er","macht","einen","Computerkurs",",","damit","er","bessere","Chancen","hat","."],ru:"Он проходит компьютерный курс, чтобы иметь больше шансов."},
+  {w:["Ich","habe","mich","um","viele","Stellen","beworben","."],ru:"Я подавала заявки на многие места."},
+  {w:["Wir","nehmen","an","dem","Ausflug","teil","."],ru:"Мы участвуем в поездке."},
+  {w:["Der","Arbeitsberater","kann","dich","über","deine","Möglichkeiten","informieren","."],ru:"Консультант может рассказать тебе о твоих возможностях."},
+  {w:["Sie","können","sich","im","Internet","anmelden","."],ru:"Вы можете записаться в интернете."},
+];
+
+function GrosserTestA2L8(){return <GrosserTestContainer rounds={[
+  {icon:"🎯",label:"Quiz",          col:C.yellow, component:()=><Quiz questions={Q_A2L8TEST}/>},
+  {icon:"📝",label:"Lückentext",    col:C.blue,   component:()=><LueckenQuiz items={LUECKEN_A2L8}/>},
+  {icon:"🔗",label:"Wortschatz",    col:C.green,  component:()=><Zuordnung pairs={ZUORD_A2L8} leftLabel="Wort" rightLabel="Bedeutung"/>},
+  {icon:"🔤",label:"Wortstellung",  col:C.orange, component:()=><WortstellungGame sents={WSENTS_A2L8}/>},
+]}/>;}
+
+const Q_A2L9TEST=shuffle([
+  {q:"'einen Termin vereinbaren' означает:",opts:["договориться о встрече (записаться)","отменить встречу","прийти без записи","опоздать на приём"],ans:0,hint:"beim Arzt"},
+  {q:"'ein Gespräch über die Beschwerden führen' означает:",opts:["рассказать врачу о жалобах","заплатить за лечение","отменить рецепт","сделать укол"],ans:0,hint:"beim Hausarzt"},
+  {q:"'Das ist sehr vernünftig.' означает:",opts:["это очень разумно","это очень странно","это очень дорого","это очень срочно"],ans:0,hint:"Reaktion der Ärztin"},
+  {q:"Krankenkasse bezahlt Gesundheits-Check:",opts:["раз в два года, начиная с 35 лет","каждый год всем","только больным","никогда бесплатно"],ans:0,hint:"ab 35 Jahren"},
+  {q:"'den Oberkörper frei machen' означает:",opts:["раздеться до пояса","снять обувь","показать руку","закрыть глаза"],ans:0,hint:"beim Abhören"},
+  {q:"'die Cholesterinwerte sind zu hoch' означает:",opts:["показатель холестерина выше нормы","давление слишком высокое","температура повышена","анализ мочи плохой"],ans:0,hint:"Laboruntersuchung"},
+  {q:"'Wir müssen das einmal untersuchen lassen.' — что дальше?",opts:["направление к специалисту (Facharzt)","больничный лист","отправляют домой","операция"],ans:0,hint:"Überweisung zum Facharzt"},
+  {q:"Сколько Vorsorgeuntersuchungen положено детям?",opts:["девять (U1–U9)","одна в год","только при болезни","пять"],ans:0,hint:"von der Geburt bis 5-6 Jahre"},
+  {q:"'die Nebenwirkung' означает:",opts:["побочный эффект","главное действие лекарства","дозировка","срок годности"],ans:0,hint:"Kopf- oder Magenschmerzen"},
+  {q:"'der Beipackzettel' — это:",opts:["инструкция-вкладыш в упаковке лекарства","рецепт врача","чек из аптеки","этикетка с ценой"],ans:0,hint:"empfindlicher Magen"},
+  {q:"Сколько стоит Rezeptgebühr для взрослых?",opts:["от 5 до 10 евро","всегда бесплатно","от 50 до 100 евро","без ограничений"],ans:0,hint:"für die Rezepte"},
+  {q:"Rezepte для детей:",opts:["gebührenfrei","в два раза дороже","только по записи","нельзя получить"],ans:0,hint:"Rezepte für Kinder sind..."},
+  {q:"'empfindlicher Magen' означает:",opts:["чувствительный желудок","больной желудок","пустой желудок","сытый желудок"],ans:0,hint:"Wenn Sie einen empfindlichen Magen haben"},
+  {q:"Где должна храниться Hausapotheke?",opts:["в сухом помещении","в холодильнике","на кухне у плиты","в ванной"],ans:0,hint:"damit die Medikamente lange haltbar bleiben"},
+  {q:"Куда деть старые лекарства?",opts:["вернуть в аптеку или выбросить с бытовым мусором","вылить в раковину","отдать соседям","сжечь дома"],ans:0,hint:"nicht ins Waschbecken"},
+  {q:"'In einer Hausapotheke sollten Pflaster sein.' — 'sollten' это:",opts:["Konjunktiv II от sollen (совет)","Präteritum","Imperativ","Futur"],ans:0,hint:"Empfehlungen mit sollte"},
+  {q:"Что едят Vegetarier?",opts:["не едят мясо и рыбу, но могут есть молочное","вообще ничего животного","только рыбу","только мясо"],ans:0,hint:"kein Fleisch, viele auch keinen Fisch"},
+  {q:"Чем Veganer отличаются от Vegetarier?",opts:["также отказываются от молочных продуктов и яиц","едят больше мяса","едят только рыбу","разницы нет"],ans:0,hint:"verzichten auf Milchprodukte und Eier"},
+  {q:"'Vermeiden Sie Stress, denn Stress schadet der Gesundheit.' — 'schaden' требует падежа:",opts:["Dativ","Akkusativ","Genitiv","Nominativ"],ans:0,hint:"schaden + Dativ"},
+  {q:"'..., damit der Körper genug Vitamine bekommt.' — какая здесь грамматика?",opts:["Nebensatz mit damit (Ziel)","dass-Satz","Relativsatz","Konditionalsatz mit wenn"],ans:0,hint:"Wozu?"},
+  {q:"'abnehmen' означает:",opts:["худеть","поправляться","тренироваться","болеть"],ans:0,hint:"Gegenteil: zunehmen"},
+  {q:"'impfen' означает:",opts:["делать прививку","измерять давление","брать кровь","выписывать рецепт"],ans:0,hint:"gegen Tetanus impfen"},
+  {q:"'verschreiben' означает:",opts:["выписывать (лекарство)","принимать (лекарство)","покупать (лекарство)","хранить (лекарство)"],ans:0,hint:"ein Medikament verschreiben"},
+]);
+
+const LUECKEN_A2L9=shuffle([
+  {sent:"Ich muss einen Termin ___.' (договориться о встрече)",opts:["vereinbaren","verschreiben","abnehmen","impfen"],ans:0,ru:"Мне нужно договориться о записи.",hint:"einen Termin vereinbaren"},
+  {sent:"In einer Hausapotheke ___ ein Fieberthermometer sein.' (следовало бы)",opts:["sollte","sollten","soll","sollen"],ans:0,ru:"В аптечке должен быть градусник.",hint:"sollte + Infinitiv, Singular"},
+  {sent:"Sie sollten viel Obst essen, ___ der Körper genug Vitamine bekommt.' (чтобы)",opts:["damit","dass","weil","wenn"],ans:0,ru:"Вам следует есть много фруктов, чтобы организм получал витамины.",hint:"Nebensatz mit damit"},
+  {sent:"Stress ___ der Gesundheit.' (вредит, +Dativ)",opts:["schadet","schaden","schadest","geschadet"],ans:0,ru:"Стресс вредит здоровью.",hint:"schaden + Dativ, er/sie/es"},
+  {sent:"Für Kinder sind die Rezepte ___.' (бесплатны)",opts:["gebührenfrei","kostenlos","teuer","günstig"],ans:0,ru:"Для детей рецепты бесплатны.",hint:"keine Rezeptgebühr"},
+  {sent:"Ich habe einen empfindlichen Magen, deshalb nehme ich die Tabletten ___ dem Essen.' (после)",opts:["nach","vor","bei","ohne"],ans:0,ru:"У меня чувствительный желудок, поэтому я принимаю таблетки после еды.",hint:"nach dem Essen"},
+]);
+
+const ZUORD_A2L9=[
+  {de:"Sorgen haben",ru:"иметь заботы"},
+  {de:"das Muskeltraining",ru:"тренировка мышц"},
+  {de:"abnehmen",ru:"худеть"},
+  {de:"zunehmen",ru:"поправляться"},
+  {de:"schlank",ru:"стройный"},
+  {de:"impfen",ru:"делать прививку"},
+  {de:"der Blutdruck",ru:"кровяное давление"},
+  {de:"verschreiben",ru:"выписывать (лекарство)"},
+  {de:"die Beschwerden",ru:"жалобы, недомогания"},
+  {de:"vereinbaren",ru:"договариваться о встрече"},
+  {de:"vernünftig",ru:"разумный"},
+  {de:"der Gesundheits-Check",ru:"медицинский осмотр"},
+  {de:"der Oberkörper",ru:"верхняя часть тела"},
+  {de:"die Laboruntersuchung",ru:"лабораторное исследование"},
+  {de:"der Urin",ru:"моча"},
+  {de:"die Blutwerte",ru:"показатели крови"},
+  {de:"der Cholesterinwert",ru:"уровень холестерина"},
+  {de:"der Facharzt",ru:"врач-специалист"},
+  {de:"die Vorsorgeuntersuchung",ru:"профилактический осмотр"},
+  {de:"die Früherkennung",ru:"раннее выявление"},
+  {de:"die Krankheit",ru:"болезнь"},
+  {de:"die Nebenwirkung",ru:"побочный эффект"},
+  {de:"der Beipackzettel",ru:"инструкция-вкладыш"},
+  {de:"empfindlich",ru:"чувствительный"},
+  {de:"die Rezeptgebühr",ru:"плата за рецепт"},
+  {de:"gebührenfrei",ru:"без оплаты"},
+  {de:"die Hausapotheke",ru:"домашняя аптечка"},
+  {de:"haltbar",ru:"годный к хранению"},
+  {de:"entsorgen",ru:"утилизировать"},
+  {de:"der Verband",ru:"повязка, бинт"},
+  {de:"das Schmerzmittel",ru:"обезболивающее"},
+  {de:"das Desinfektionsmittel",ru:"дезинфицирующее средство"},
+  {de:"der Durchfall",ru:"диарея"},
+  {de:"die Salbe",ru:"мазь"},
+  {de:"der Mückenstich",ru:"укус комара"},
+  {de:"die Brandsalbe",ru:"мазь от ожогов"},
+  {de:"die Nasentropfen",ru:"капли в нос"},
+  {de:"die Spritze",ru:"шприц"},
+  {de:"die Pinzette",ru:"пинцет"},
+  {de:"das Fieberthermometer",ru:"градусник"},
+  {de:"das Pflaster",ru:"пластырь"},
+  {de:"sich ernähren",ru:"питаться"},
+  {de:"der Vegetarier",ru:"вегетарианец"},
+  {de:"der Veganer",ru:"веган"},
+  {de:"vermeiden",ru:"избегать"},
+  {de:"die Tierhaltung",ru:"содержание животных"},
+  {de:"ablehnen",ru:"отвергать"},
+  {de:"fettarm",ru:"с низким содержанием жира"},
+  {de:"das Fett",ru:"жир"},
+  {de:"die Vitamine",ru:"витамины"},
+  {de:"der Marathon",ru:"марафон"},
+  {de:"trainieren",ru:"тренировать(ся)"},
+  {de:"schaden",ru:"вредить"},
+  {de:"der Stau",ru:"дорожная пробка"},
+  {de:"die Gymnastik",ru:"гимнастика"},
+  {de:"die Arzthelferin",ru:"медсестра, помощница врача"},
+  {de:"das Bonusheft",ru:"бонусная книжка (стоматологическая)"},
+  {de:"die Gesundheitsuntersuchung",ru:"медицинское обследование"},
+  {de:"die Spielsachen",ru:"игрушки"},
+  {de:"die Zuzahlung",ru:"доплата, соплатёж"},
+  {de:"der Hustensaft",ru:"сироп от кашля"},
+  {de:"der Honig",ru:"мёд"},
+  {de:"abhängen von",ru:"зависеть от"},
+  {de:"die Behandlung",ru:"лечение"},
+  {de:"ausgewogen",ru:"сбалансированный"},
+  {de:"abwechslungsreich",ru:"разнообразный"},
+  {de:"sich stressen",ru:"нервничать, испытывать стресс"},
+  {de:"in Stress geraten",ru:"впадать в стресс"},
+  {de:"wirken",ru:"действовать, оказывать эффект"},
+  {de:"die Auskunft",ru:"справка, информация"},
+  {de:"einnehmen",ru:"принимать (лекарство)"},
+  {de:"der Ratschlag",ru:"совет, рекомендация"},
+  {de:"das Nahrungsmittel",ru:"продукт питания"},
+  {de:"sich beruhigen",ru:"успокаиваться"},
+  {de:"eine Rolle spielen",ru:"играть роль"},
+];
+
+const WSENTS_A2L9=[
+  {w:["Ich","muss","einen","Termin","vereinbaren","."],ru:"Мне нужно договориться о записи."},
+  {w:["Sie","sollten","viel","Obst","und","Gemüse","essen","."],ru:"Вам следует есть много фруктов и овощей."},
+  {w:["Stress","schadet","der","Gesundheit","."],ru:"Стресс вредит здоровью."},
+  {w:["Ich","gebe","Ihnen","eine","Überweisung","zum","Facharzt","."],ru:"Я дам вам направление к специалисту."},
+  {w:["Die","Tabletten","haben","meistens","Kopfschmerzen","als","Nebenwirkung","."],ru:"У таблеток обычно головная боль как побочный эффект."},
+  {w:["Vermeiden","Sie","jeden","Stress","."],ru:"Избегайте любого стресса."},
+];
+
+function GrosserTestA2L9(){return <GrosserTestContainer rounds={[
+  {icon:"🎯",label:"Quiz",          col:C.yellow, component:()=><Quiz questions={Q_A2L9TEST}/>},
+  {icon:"📝",label:"Lückentext",    col:C.blue,   component:()=><LueckenQuiz items={LUECKEN_A2L9}/>},
+  {icon:"🔗",label:"Wortschatz",    col:C.green,  component:()=><Zuordnung pairs={ZUORD_A2L9} leftLabel="Wort" rightLabel="Bedeutung"/>},
+  {icon:"🔤",label:"Wortstellung",  col:C.orange, component:()=><WortstellungGame sents={WSENTS_A2L9}/>},
 ]}/>;}
 
 
@@ -16320,7 +16966,7 @@ function T_A2L6C(){
           {[["reflexiv","Reflexive Verben"],["fuehlen","Wie fühlst du dich?"],["geschichte","Eine romantische Geschichte"]].map(([key,lbl])=>(
             <button key={key} onClick={()=>setTab(key)}
               style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
-                fontSize:12,fontWeight:700,textAlign:"center",lineHeight:1.3,
+                fontSize:12,fontWeight:700,textAlign:"center",lineHeight:1.3,wordBreak:"break-word",
                 border:`1px solid ${tab===key?C.purple+"55":C.border}`,
                 background:tab===key?C.purple+"22":C.ov3,
                 color:tab===key?C.purple:C.muted}}>
@@ -16433,7 +17079,7 @@ function T_A2L7A(){
           {[["lesen","Einladungen lesen"],["telefon","Am Telefon einladen"],["reagieren","Auf Einladungen reagieren"]].map(([key,lbl])=>(
             <button key={key} onClick={()=>setTab(key)}
               style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
-                fontSize:12,fontWeight:700,textAlign:"center",lineHeight:1.3,
+                fontSize:12,fontWeight:700,textAlign:"center",lineHeight:1.3,wordBreak:"break-word",
                 border:`1px solid ${tab===key?C.green+"55":C.border}`,
                 background:tab===key?C.green+"22":C.ov3,
                 color:tab===key?C.green:C.muted}}>
@@ -16537,7 +17183,7 @@ function T_A2L7B(){
           {[["adj","Adjektive nach ein/kein"],["geschenke","Was schenkt man?"],["komplimente","Komplimente"]].map(([key,lbl])=>(
             <button key={key} onClick={()=>setTab(key)}
               style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
-                fontSize:12,fontWeight:700,textAlign:"center",lineHeight:1.3,
+                fontSize:12,fontWeight:700,textAlign:"center",lineHeight:1.3,wordBreak:"break-word",
                 border:`1px solid ${tab===key?C.purple+"55":C.border}`,
                 background:tab===key?C.purple+"22":C.ov3,
                 color:tab===key?C.purple:C.muted}}>
@@ -16654,7 +17300,7 @@ function T_A2L7C(){
           {[["laender","Drei Länder + Karneval"],["dass","Indirekte Rede (dass)"],["kalender","Interkultureller Kalender"]].map(([key,lbl])=>(
             <button key={key} onClick={()=>setTab(key)}
               style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
-                fontSize:12,fontWeight:700,textAlign:"center",lineHeight:1.3,
+                fontSize:12,fontWeight:700,textAlign:"center",lineHeight:1.3,wordBreak:"break-word",
                 border:`1px solid ${tab===key?C.teal+"55":C.border}`,
                 background:tab===key?C.teal+"22":C.ov3,
                 color:tab===key?C.teal:C.muted}}>
@@ -16751,7 +17397,7 @@ function T_A2L7D(){
           {[["party","Kursparty organisieren"],["gluecke","Glückwünsche"],["karte","Glückwunschkarte"]].map(([key,lbl])=>(
             <button key={key} onClick={()=>setTab(key)}
               style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
-                fontSize:12,fontWeight:700,textAlign:"center",lineHeight:1.3,
+                fontSize:12,fontWeight:700,textAlign:"center",lineHeight:1.3,wordBreak:"break-word",
                 border:`1px solid ${tab===key?C.orange+"55":C.border}`,
                 background:tab===key?C.orange+"22":C.ov3,
                 color:tab===key?C.orange:C.muted}}>
@@ -16790,6 +17436,500 @@ function T_A2L7D(){
               </div>
             </div>
             <TapEx de="Liebe Eva, lieber Tobias, herzlichen Glückwunsch zur Hochzeit. Ich wünsche euch alles Gute für euer gemeinsames Leben!" ru="Дорогая Ева, дорогой Тобиас, сердечно поздравляю со свадьбой. Желаю вам всего наилучшего в совместной жизни!" col={C.orange}/>
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
+// ═══ A2-L8 · Neue Chancen ═══
+const Q_A2L8A=[
+  {q:"'sich interessieren für' — после этого глагола нужен падеж:",opts:["Akkusativ","Dativ","Nominativ","Genitiv"],ans:0,hint:"für + Akk"},
+  {q:"'BiZ' — это сокращение от:",opts:["Berufsinformationszentrum","Bildungszentrum","Bürgerinformationszentrum","Berufszentrum"],ans:0,hint:"Zentrum für Bildung, Beruf, Arbeitsmarkt"},
+  {q:"'sich um eine Stelle bewerben' означает:",opts:["подавать заявку на место работы","получить работу","уволиться с работы","искать коллег"],ans:0,hint:"sich bewerben um + Akk"},
+  {q:"'die Förderung' в контексте курсов означает:",opts:["институция/ведомство даёт деньги на курс","сам курс бесплатный от начала","штраф за пропуск курса","диплом об окончании"],ans:0,hint:"z.B. von der Bundesagentur für Arbeit"},
+  {q:"'die Babypause' означает:",opts:["перерыв в работе по уходу за ребёнком","обеденный перерыв","отпуск по болезни","перерыв между курсами"],ans:0,hint:"nach der Geburt"},
+  {q:"'teilnehmen an' — после этого глагола нужен падеж:",opts:["Dativ","Akkusativ","Nominativ","Genitiv"],ans:0,hint:"an + Dat"},
+  {q:"'Ich interessiere mich für die neuen Softwareprogramme.' — что такое 'mich'?",opts:["возвратное местоимение (Akkusativ)","личное местоимение (Dativ)","притяжательное местоимение","артикль"],ans:0,hint:"Reflexivpronomen"},
+  {q:"Разница между 'sich freuen auf' и 'sich freuen über':",opts:["auf = ещё не получил(а), über = уже получил(а)","разницы нет","auf для людей, über для вещей","über только в Perfekt"],ans:0,hint:"Sie freut sich auf/über das Geschenk"},
+  {q:"'der Arbeitsberater' — это человек, который:",opts:["помогает найти работу и даёт советы","финансирует Fortbildung","преподаёт язык","проверяет документы"],ans:0,hint:"beim Arbeitsamt"},
+  {q:"'Meine Computerkenntnisse sind nicht mehr aktuell.' — 'aktuell' означает:",opts:["актуальный, современный","старый","бесполезный","секретный"],ans:0,hint:"nicht mehr aktuell = устарели"},
+];
+
+const Q_A2L8B=[
+  {q:"'Nebensätze mit damit' отвечают на вопрос:",opts:["Wozu? — Was ist das Ziel?","Wann?","Wo?","Warum? (Ursache)"],ans:0,hint:"Ziel-Satz"},
+  {q:"'Er macht einen Computerkurs, damit er bessere Chancen hat.' — где стоит спрягаемый глагол в damit-предложении?",opts:["в конце придаточного","на втором месте","в начале","глагол не нужен"],ans:0,hint:"Nebensatz-Wortstellung"},
+  {q:"'der Heimwerkerkurs' учит, как:",opts:["делать ремонт в квартире своими руками","готовить еду","водить машину","работать на компьютере"],ans:0,hint:"tapezieren, streichen, bohren"},
+  {q:"'Fliesen und Laminat verlegen' означает:",opts:["укладывать плитку и ламинат","красить стены","собирать мебель","чинить проводку"],ans:0,hint:"Bodenbeläge"},
+  {q:"'für Anfänger und Fortgeschrittene' означает курс:",opts:["для начинающих и продвинутых","только для новичков","только для профессионалов","только для детей"],ans:0,hint:"alle Niveaus"},
+  {q:"'die Tabellenkalkulation' — это программа типа:",opts:["Excel","PowerPoint","Word","E-Mail"],ans:0,hint:"MS Office für Anfänger"},
+  {q:"'Existenz gründen' означает:",opts:["открыть собственное дело","найти работу по найму","уволиться","переехать в другой город"],ans:0,hint:"Selbstständigkeit"},
+  {q:"Herr Yang научился Tai-Chi:",opts:["ещё подростком, от своего отца","в Германии, в школе","самостоятельно по видео","в университете"],ans:0,hint:"als Jugendlicher"},
+  {q:"Frau Sosso в Камеруне работала:",opts:["поваром (Köchin)","учительницей","бухгалтером","медсестрой"],ans:0,hint:"Heimatland Kamerun"},
+  {q:"Почему Frau Sosso не может предлагать больше курсов?",opts:["в студии всего 8 мест, и в будни студия занята","ей не хватает рецептов","никто не записывается","у неё нет времени готовить"],ans:0,hint:"Küchenstudio"},
+];
+
+const Q_A2L8C=[
+  {q:"'sich für einen Kurs anmelden' означает:",opts:["записаться на курс","отменить курс","провести курс","оплатить курс"],ans:0,hint:"Anmeldung"},
+  {q:"'der Ersthelfer' — это человек, который:",opts:["оказывает первую помощь (напр. на предприятии)","водит скорую помощь","работает врачом","учит Erste Hilfe в школе"],ans:0,hint:"in Betrieben"},
+  {q:"'die Doppelstunde' означает:",opts:["сдвоенный урок (2 академчаса подряд)","повторный курс","удвоенная плата","два преподавателя"],ans:0,hint:"z.B. 8 Doppelstunden"},
+  {q:"Курс 'Erste Hilfe' с 4 Doppelstunden нужен для:",opts:["Führerscheinbewerber (lebensrettende Sofortmaßnahmen)","детей","Babysitter","только для врачей"],ans:0,hint:"Voraussetzung für den Führerschein"},
+  {q:"'Kurse für Kindernotfälle' предназначены для:",opts:["родителей и нянь (Babysitter)","только для врачей","только для учителей","только для подростков"],ans:0,hint:"Zielgruppe: Eltern, Babysitter"},
+  {q:"'Einstieg jederzeit möglich' означает:",opts:["можно начать курс в любое время","курс идёт только один день","нужна запись за месяц","мест больше нет"],ans:0,hint:"kein fester Starttermin"},
+  {q:"'Wann ist der nächste Termin?' — это вопрос при:",opts:["записи на курс","поиске квартиры","заказе такси","подаче жалобы"],ans:0,hint:"sich anmelden"},
+  {q:"'Sie können sich im Internet anmelden oder hier vorbeikommen.' — сколько способов записи предложено?",opts:["два — онлайн или лично","только онлайн","только по телефону","только лично"],ans:0,hint:"Online-Anmeldung / vorbeikommen"},
+];
+
+function T_A2L8A(){
+  const [tab,setTab]=useState("biz");
+  const praep=[
+    {de:"sich ärgern über",ru:"злиться из-за"},{de:"sich bewerben um",ru:"подавать заявку на"},
+    {de:"denken an",ru:"думать о"},{de:"sich informieren über",ru:"узнавать о"},
+    {de:"sich interessieren für",ru:"интересоваться"},{de:"sprechen über",ru:"говорить о"},
+    {de:"warten auf",ru:"ждать"},
+  ];
+  const praepDat=[
+    {de:"teilnehmen an",ru:"участвовать в"},{de:"telefonieren mit",ru:"звонить по телефону кому-то"},
+    {de:"träumen von",ru:"мечтать о"},
+  ];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.blue}>
+        <H c={C.blue}>💼 A2-L8A · Ich interessiere mich für ...</H>
+        <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
+          {[["biz","BiZ"],["dialog","Ibolya & Doreen"],["verben","Verben mit Präpositionen"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,textAlign:"center",lineHeight:1.3,wordBreak:"break-word",
+                border:`1px solid ${tab===key?C.blue+"55":C.border}`,
+                background:tab===key?C.blue+"22":C.ov3,
+                color:tab===key?C.blue:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="biz"&&(
+          <div>
+            <div style={{background:C.blue+"15",border:`1px solid ${C.blue}33`,borderRadius:10,padding:"11px 13px",marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.blue,marginBottom:6}}>! BiZ — Berufsinformationszentrum</div>
+              <TapEx de="Das Berufsinformationszentrum (BiZ) bietet allen Bürgerinnen und Bürgern Informationen rund um Bildung, Beruf und Arbeitsmarkt. Sie können auch online nach Ausbildungs- oder Arbeitsstellen suchen und Sie können Hilfe beim Schreiben professioneller Bewerbungsunterlagen bekommen." ru="Центр профориентации (BiZ) предлагает всем гражданам информацию о сферах образования, профессии и рынка труда. Там же можно онлайн искать места учёбы или работы и получить помощь в составлении резюме и сопроводительного письма." col={C.blue}/>
+            </div>
+            <div style={{fontSize:12,color:C.muted,marginBottom:8}}>Что можно делать в BiZ:</div>
+            <RedeBlock col={C.blue} title="Im BiZ" items={[
+              {de:"sich informieren · Broschüren lesen",ru:"узнавать информацию · читать брошюры"},
+              {de:"am Computer recherchieren",ru:"искать информацию за компьютером"},
+              {de:"sich beraten lassen",ru:"проконсультироваться"},
+              {de:"nach Fortbildungsmöglichkeiten fragen",ru:"спрашивать о возможностях повышения квалификации"},
+              {de:"Stellen · Ausbildungsangebote suchen",ru:"искать вакансии · предложения по обучению"},
+            ]}/>
+            <div style={{fontSize:12,color:C.muted,marginTop:10,marginBottom:6}}>Über eigene Erfahrungen sprechen:</div>
+            <TapEx de="Ich war schon einmal im BiZ in Bremen. Das war sehr interessant, aber ..." ru="Я уже был(а) один раз в BiZ в Бремене. Это было очень интересно, но ..." col={C.blue}/>
+          </div>
+        )}
+        {tab==="dialog"&&(
+          <div>
+            <div style={{fontSize:12,color:C.muted,marginBottom:10}}>Ibolya (Informatiklehrerin aus Ungarn) und Doreen (Buchhalterin aus Kenia) sprechen über ihre Situation:</div>
+            <div style={{background:C.ov4,borderRadius:10,padding:"10px 12px",marginBottom:8}}>
+              <div style={{fontSize:12,fontWeight:800,color:C.blue,marginBottom:4}}>Ibolya</div>
+              <TapEx de="Ich wollte nach der Babypause wieder arbeiten. Ich war Informatiklehrerin. Ich habe mich um viele Stellen beworben, aber meine Computerkenntnisse sind nicht mehr aktuell." ru="Я хотела снова начать работать после декретной паузы. Я была учительницей информатики. Я подавала заявки на многие места, но мои знания компьютера уже не актуальны." col={C.blue} style={{marginBottom:6}}/>
+              <TapEx de="Ich interessiere mich für die neuen Softwareprogramme, und jetzt habe ich eine Förderung von der Bundesagentur für Arbeit bekommen und nehme an einer Fortbildung teil." ru="Меня интересуют новые программы, и сейчас я получила финансирование от Агентства по труду и участвую в курсе повышения квалификации." col={C.blue} style={{marginBottom:6}}/>
+              <TapEx de="Die Fortbildung ist beim IB in Münster, jeden Tag von 9 bis 15 Uhr. Ich war beim Arbeitsberater. Der hat mir geholfen, aber ich musste lange auf den Kurs warten." ru="Курс проходит в IB в Мюнстере, каждый день с 9 до 15. Я была у консультанта по трудоустройству. Он мне помог, но мне пришлось долго ждать курса." col={C.blue}/>
+            </div>
+            <div style={{background:C.ov4,borderRadius:10,padding:"10px 12px",marginBottom:8}}>
+              <div style={{fontSize:12,fontWeight:800,color:C.purple,marginBottom:4}}>Doreen</div>
+              <TapEx de="Ich bin Buchhalterin von Beruf, aber die Arbeit bei Elektro-Müller ist langweilig. Ich muss den ganzen Tag mit Kunden telefonieren. Ich will schon lange eine andere Stelle suchen." ru="По профессии я бухгалтер, но работа в Elektro-Müller скучная. Мне приходится весь день созваниваться с клиентами. Я уже давно хочу найти другое место." col={C.purple} style={{marginBottom:6}}/>
+              <TapEx de="Geh doch mal zum Arbeitsberater. Der kann dich über die Möglichkeiten informieren, und vielleicht wird dann auch dein Berufsabschluss aus Kenia anerkannt." ru="Сходи-ка к консультанту по трудоустройству. Он может рассказать тебе о возможностях, и, может быть, тогда признают и твой диплом из Кении." col={C.purple}/>
+            </div>
+          </div>
+        )}
+        {tab==="verben"&&(
+          <div>
+            <RedeBlock col={C.blue} title="Verben mit Präposition + Akkusativ" items={praep}/>
+            <RedeBlock col={C.teal} title="Verben mit Präposition + Dativ" items={praepDat}/>
+            <div style={{background:C.yellow+"15",border:`1px solid ${C.yellow}33`,borderRadius:10,padding:"11px 13px",marginTop:10}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.yellow,marginBottom:6}}>sich freuen auf vs. sich freuen über</div>
+              <TapEx de="Sie freut sich auf das Geschenk. (= Sie hat es noch nicht.)" ru="Она радуется подарку заранее. (= у неё его ещё нет.)" col={C.yellow} style={{marginBottom:4}}/>
+              <TapEx de="Sie freut sich über das Geschenk. (= Sie hat es schon.)" ru="Она радуется подарку. (= у неё он уже есть.)" col={C.yellow}/>
+            </div>
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
+function T_A2L8B(){
+  const [tab,setTab]=useState("kurse");
+  const yang="Ich habe schon als Jugendlicher Tai-Chi gemacht. Ich habe das von meinem Vater gelernt. Hier in Deutschland habe ich es zuerst meinen Freunden gezeigt. Sie wollten dann gern mehr Tai-Chi lernen. Erst habe ich privat einen Kurs angeboten und dann habe ich in der Volkshochschule als Lehrer angefangen. Ich unterrichte einmal pro Woche. Das macht mir Spaß, ich habe Kontakt mit anderen Menschen und ich verdiene ein bisschen Geld.";
+  const yangRu="Я занимался тай-чи ещё подростком. Я научился этому у своего отца. Здесь, в Германии, я сначала показал это друзьям. Они захотели узнать больше о тай-чи. Сначала я вёл частный курс, а потом начал преподавать в Volkshochschule. Я преподаю раз в неделю. Мне это нравится, я общаюсь с другими людьми и немного зарабатываю.";
+  const sosso="In meinem Heimatland Kamerun habe ich als Köchin gearbeitet. Heute biete ich in einem Küchenstudio in Frankfurt Kochkurse für afrikanische Gerichte an. Die Kochkurse kommen sehr gut an. Ich kann sie an fast jedem Samstag anbieten. Leider kann ich nicht mehr Kurse in dem Küchenstudio machen, weil pro Kurs nur Platz für acht Personen ist und an den normalen Wochentagen, wenn Kunden in das Küchenstudio kommen, keine Kurse möglich sind.";
+  const sossoRu="У себя на родине, в Камеруне, я работала поваром. Сегодня я предлагаю в кулинарной студии во Франкфурте кулинарные курсы по африканской кухне. Курсы пользуются большим успехом. Я могу проводить их почти каждую субботу. К сожалению, больше курсов в этой студии я проводить не могу, потому что на каждый курс всего 8 мест, а по будням, когда в студию приходят обычные клиенты, курсы невозможны.";
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.orange}>
+        <H c={C.orange}>📚 A2-L8B · Etwas Neues lernen</H>
+        <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
+          {[["kurse","Kursprogramm"],["damit","Nebensätze mit damit"],["beispiele","Yang & Sosso"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,textAlign:"center",lineHeight:1.3,wordBreak:"break-word",
+                border:`1px solid ${tab===key?C.orange+"55":C.border}`,
+                background:tab===key?C.orange+"22":C.ov3,
+                color:tab===key?C.orange:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="kurse"&&(
+          <div>
+            <div style={{fontSize:12,fontWeight:800,color:C.orange,marginBottom:6}}>🕺 Freizeit und Hobby</div>
+            <div style={{background:C.ov4,borderRadius:10,padding:"10px 12px",marginBottom:8}}>
+              <div style={{fontSize:12,fontWeight:800,marginBottom:2}}>Heimwerken – Grundkurs</div>
+              <TapEx de="Sie möchten Ihre Wohnung renovieren? In diesem Heimwerkerkurs lernen Sie z. B. tapezieren, streichen, bohren und befestigen, Fliesen und Laminat verlegen." ru="Хотите отремонтировать квартиру? На этом курсе «сделай сам» вы научитесь, например, клеить обои, красить, сверлить и крепить, укладывать плитку и ламинат." col={C.orange} style={{marginBottom:4}}/>
+              <div style={{fontSize:11,color:C.muted}}>5 Termine · 112,50 Euro plus Materialkosten</div>
+            </div>
+            <div style={{background:C.ov4,borderRadius:10,padding:"10px 12px",marginBottom:8}}>
+              <div style={{fontSize:12,fontWeight:800,marginBottom:2}}>Modische Kleidung selbst genäht</div>
+              <TapEx de="Sie möchten Kleidung für Erwachsene und Kinder mit Kreativität selbst nähen? Nähabend für Anfänger und Fortgeschrittene." ru="Хотите сами шить одежду для взрослых и детей? Вечер шитья для начинающих и продвинутых." col={C.orange} style={{marginBottom:4}}/>
+              <div style={{fontSize:11,color:C.muted}}>7 Termine · 59 Euro</div>
+            </div>
+            <div style={{fontSize:12,fontWeight:800,color:C.blue,marginBottom:6,marginTop:10}}>💼 Berufliche Weiterbildung</div>
+            <div style={{background:C.ov4,borderRadius:10,padding:"10px 12px",marginBottom:8}}>
+              <div style={{fontSize:12,fontWeight:800,marginBottom:2}}>MS Office für Anfänger</div>
+              <TapEx de="Professionelle Präsentationen für Freizeit und Beruf mit PowerPoint und Tabellenkalkulation mit Excel." ru="Профессиональные презентации для досуга и работы с PowerPoint и таблицы в Excel." col={C.blue} style={{marginBottom:4}}/>
+              <div style={{fontSize:11,color:C.muted}}>8 Termine · 160 Euro</div>
+            </div>
+            <div style={{background:C.ov4,borderRadius:10,padding:"10px 12px",marginBottom:8}}>
+              <div style={{fontSize:12,fontWeight:800,marginBottom:2}}>Gutes Deutsch – gute Briefe</div>
+              <TapEx de="Lernen Sie Deutsch für den Beruf: telefonieren, Briefe schreiben und an Besprechungen teilnehmen. Voraussetzung: Niveau B1." ru="Изучите немецкий для работы: звонить по телефону, писать письма и участвовать в совещаниях. Требование: уровень B1." col={C.blue} style={{marginBottom:4}}/>
+              <div style={{fontSize:11,color:C.muted}}>8 Termine · 64 Euro</div>
+            </div>
+            <div style={{background:C.ov4,borderRadius:10,padding:"10px 12px"}}>
+              <div style={{fontSize:12,fontWeight:800,marginBottom:2}}>Existenz gründen — der Schritt in die Selbstständigkeit</div>
+              <TapEx de="Sie möchten ein eigenes Geschäft eröffnen? Sie lernen, welche Möglichkeiten es für die Finanzierung gibt und wie Sie Einnahmen und Ausgaben berechnen." ru="Хотите открыть своё дело? Вы узнаете, какие есть возможности финансирования и как рассчитывать доходы и расходы." col={C.blue}/>
+            </div>
+          </div>
+        )}
+        {tab==="damit"&&(
+          <div>
+            <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,borderRadius:10,padding:"11px 13px",marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.orange,marginBottom:6}}>Nebensätze mit damit — Wozu? Was ist das Ziel?</div>
+              <div style={{fontSize:13,color:C.text,lineHeight:1.8}}>
+                Er macht einen Computerkurs. → Er hat bessere Chancen auf dem Arbeitsmarkt.<br/>
+                Er macht einen Computerkurs, <b style={{color:C.orange}}>damit</b> er bessere Chancen auf dem Arbeitsmarkt <b style={{color:C.orange}}>hat</b>.
+              </div>
+            </div>
+            <TapEx de="Herr Thabit möchte einen Computerkurs machen, damit er bessere Chancen auf dem Arbeitsmarkt hat." ru="Господин Табит хочет пройти компьютерный курс, чтобы у него было больше шансов на рынке труда." col={C.orange} style={{marginBottom:6}}/>
+            <TapEx de="Frau Kutskowa möchte einen Heimwerkerkurs machen, damit sie Handwerkerkosten spart." ru="Госпожа Куцкова хочет пройти курс «сделай сам», чтобы сэкономить на мастерах." col={C.orange} style={{marginBottom:6}}/>
+            <TapEx de="Frau Finke möchte einen Nähkurs machen, damit sie sich schicke Kleidung nähen kann." ru="Госпожа Финке хочет пройти курс шитья, чтобы уметь шить себе модную одежду." col={C.orange} style={{marginBottom:6}}/>
+            <TapEx de="Ich mache Sport, damit ich gesund bleibe." ru="Я занимаюсь спортом, чтобы оставаться здоровым(ой)." col={C.orange}/>
+          </div>
+        )}
+        {tab==="beispiele"&&(
+          <div>
+            <div style={{background:C.ov4,borderRadius:10,padding:"10px 12px",marginBottom:8}}>
+              <div style={{fontSize:12,fontWeight:800,color:C.orange,marginBottom:4}}>🥋 Hongxiang Yang</div>
+              <TapEx de={yang} ru={yangRu} col={C.orange}/>
+            </div>
+            <div style={{background:C.ov4,borderRadius:10,padding:"10px 12px"}}>
+              <div style={{fontSize:12,fontWeight:800,color:C.purple,marginBottom:4}}>👩‍🍳 Anna Sosso</div>
+              <TapEx de={sosso} ru={sossoRu} col={C.purple}/>
+            </div>
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
+function T_A2L8C(){
+  const [tab,setTab]=useState("website");
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.teal}>
+        <H c={C.teal}>📝 A2-L8C · Sich für einen Kurs anmelden</H>
+        <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
+          {[["website","Erste-Hilfe"],["telefon","Am Telefon"],["anmelden","Sich anmelden"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,textAlign:"center",lineHeight:1.3,wordBreak:"break-word",
+                border:`1px solid ${tab===key?C.teal+"55":C.border}`,
+                background:tab===key?C.teal+"22":C.ov3,
+                color:tab===key?C.teal:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="website"&&(
+          <div>
+            <div style={{fontSize:12,color:C.muted,marginBottom:10}}>Erste-Hilfe-Zentrum Unterrode — unsere Kursangebote:</div>
+            <div style={{background:C.ov4,borderRadius:10,padding:"10px 12px",marginBottom:6}}>
+              <div style={{fontSize:12,fontWeight:800,marginBottom:2}}>Der klassische Kurs für Führerscheinbewerber</div>
+              <TapEx de="Lebensrettende Sofortmaßnahmen. Der Kurs ist Voraussetzung für den Führerschein der Klassen A, A1, B, BE, L, M, S und T." ru="Спасающие жизнь неотложные меры. Курс — обязательное условие для получения прав категорий A, A1, B, BE, L, M, S и T." col={C.teal} style={{marginBottom:4}}/>
+              <div style={{fontSize:11,color:C.muted}}>4 Doppelstunden</div>
+            </div>
+            <div style={{background:C.ov4,borderRadius:10,padding:"10px 12px",marginBottom:6}}>
+              <div style={{fontSize:12,fontWeight:800,marginBottom:2}}>Erste-Hilfe-Kurs</div>
+              <TapEx de="Der Kurs ist für Ersthelfer in Betrieben. Er ist Voraussetzung für z. B. den Lkw-Führerschein und den Personenbeförderungsschein." ru="Курс для тех, кто оказывает первую помощь на предприятии. Он — обязательное условие, например, для прав на грузовик и на перевозку пассажиров." col={C.teal} style={{marginBottom:4}}/>
+              <div style={{fontSize:11,color:C.muted}}>8 Doppelstunden</div>
+            </div>
+            <div style={{background:C.ov4,borderRadius:10,padding:"10px 12px",marginBottom:6}}>
+              <div style={{fontSize:12,fontWeight:800,marginBottom:2}}>Kurse für Kindernotfälle</div>
+              <TapEx de="Zielgruppen sind u. a. interessierte Eltern und Babysitter. Einstieg jederzeit möglich." ru="Целевая группа — в первую очередь родители и няни. Начать можно в любое время." col={C.teal} style={{marginBottom:4}}/>
+              <div style={{fontSize:11,color:C.muted}}>2 Doppelstunden</div>
+            </div>
+            <div style={{fontSize:12,color:C.muted}}>Öffnungszeiten: Montag–Freitag, 9.00–18.00 Uhr</div>
+          </div>
+        )}
+        {tab==="telefon"&&(
+          <div>
+            <div style={{fontSize:12,color:C.muted,marginBottom:10}}>Herr Labaki ruft im Erste-Hilfe-Zentrum an und fragt nach dem Kurs:</div>
+            <RedeBlock col={C.teal} title="sich für einen Kurs anmelden" items={[
+              {de:"Ich interessiere mich für ...",ru:"меня интересует ..."},
+              {de:"Wann ist der nächste Termin?",ru:"когда следующий срок?"},
+              {de:"Wann findet der Kurs statt?",ru:"когда проходит курс?"},
+              {de:"Wie kann ich mich anmelden?",ru:"как мне записаться?"},
+              {de:"Vielen Dank für Ihre Informationen.",ru:"большое спасибо за информацию"},
+            ]}/>
+            <RedeBlock col={C.blue} title="Antworten" items={[
+              {de:"Sind Sie Anfänger oder Fortgeschrittener?",ru:"вы начинающий или продвинутый?"},
+              {de:"Der nächste Kurs beginnt Anfang Mai.",ru:"следующий курс начинается в начале мая"},
+              {de:"Sie können jederzeit anfangen.",ru:"вы можете начать в любое время"},
+              {de:"Sie können sich im Internet anmelden oder hier vorbeikommen.",ru:"вы можете записаться в интернете или зайти лично"},
+              {de:"Gern geschehen.",ru:"пожалуйста, не за что"},
+            ]}/>
+          </div>
+        )}
+        {tab==="anmelden"&&(
+          <div>
+            <div style={{fontSize:12,color:C.muted,marginBottom:10}}>Weitere Fragen beim Anmelden:</div>
+            <TapEx de="Wie viele Termine hat der Computerkurs?" ru="Сколько занятий в компьютерном курсе?" col={C.teal} style={{marginBottom:6}}/>
+            <TapEx de="Wie viel kostet der Kurs?" ru="Сколько стоит курс?" col={C.teal} style={{marginBottom:6}}/>
+            <TapEx de="Wann beginnt der Kurs?" ru="Когда начинается курс?" col={C.teal} style={{marginBottom:6}}/>
+            <TapEx de="Was macht man in dem Kurs?" ru="Что делают на этом курсе?" col={C.teal}/>
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
+// ═══ A2-L9 · Gesund leben ═══
+const Q_A2L9A=[
+  {q:"'einen Termin vereinbaren' означает:",opts:["договориться о встрече (записаться)","отменить встречу","прийти без записи","опоздать на приём"],ans:0,hint:"beim Arzt"},
+  {q:"'ein Gespräch über die Beschwerden führen' означает:",opts:["рассказать врачу о жалобах/недомоганиях","заплатить за лечение","отменить рецепт","сделать укол"],ans:0,hint:"beim Hausarzt"},
+  {q:"'Das ist sehr vernünftig.' означает:",opts:["это очень разумно","это очень странно","это очень дорого","это очень срочно"],ans:0,hint:"Reaktion der Ärztin"},
+  {q:"Krankenkasse bezahlt Gesundheits-Check:",opts:["раз в два года, начиная с 35 лет","каждый год всем","только больным","никогда бесплатно"],ans:0,hint:"ab 35 Jahren"},
+  {q:"'den Oberkörper frei machen' означает при осмотре:",opts:["раздеться до пояса","снять обувь","показать руку","закрыть глаза"],ans:0,hint:"beim Abhören"},
+  {q:"'die Cholesterinwerte sind zu hoch' означает:",opts:["показатель холестерина выше нормы","давление слишком высокое","температура повышена","анализ мочи плохой"],ans:0,hint:"Laboruntersuchung"},
+  {q:"'Wir müssen das einmal untersuchen lassen.' — что делает врач дальше?",opts:["даёт направление к специалисту (Facharzt)","выписывает больничный","отправляет домой","назначает операцию"],ans:0,hint:"Überweisung zum Facharzt"},
+  {q:"Сколько всего профилактических осмотров (Vorsorgeuntersuchungen) положено детям в Германии?",opts:["девять (U1–U9)","одна в год","только при болезни","пять"],ans:0,hint:"von der Geburt bis 5-6 Jahre"},
+  {q:"Кто оплачивает Vorsorgeuntersuchungen?",opts:["Krankenkasse (регулярно)","сам пациент","только для детей — бесплатно, взрослым — платно","работодатель"],ans:0,hint:"regelmäßig"},
+];
+
+const Q_A2L9B=[
+  {q:"'ein Rezept' — это:",opts:["рецепт врача на лекарство","счёт из аптеки","инструкция к лекарству","страховой полис"],ans:0,hint:"in der Apotheke"},
+  {q:"'die Nebenwirkung' означает:",opts:["побочный эффект","главное действие лекарства","дозировка","срок годности"],ans:0,hint:"Kopf- oder Magenschmerzen als Nebenwirkung"},
+  {q:"'der Beipackzettel' — это:",opts:["инструкция-вкладыш в упаковке лекарства","рецепт врача","чек из аптеки","этикетка с ценой"],ans:0,hint:"Wenn Sie einen empfindlichen Magen haben..."},
+  {q:"Сколько стоит Rezeptgebühr для взрослых?",opts:["от 5 до 10 евро","всегда бесплатно","от 50 до 100 евро","зависит от лекарства без ограничений"],ans:0,hint:"für die Rezepte"},
+  {q:"Rezepte для детей:",opts:["gebührenfrei (бесплатны)","в два раза дороже","только по записи","нельзя получить"],ans:0,hint:"Rezepte für Kinder sind..."},
+  {q:"'Die Tabletten dreimal täglich nach dem Essen nehmen.' — 'einnehmen' означает:",opts:["принимать (лекарство)","покупать","хранить","выбрасывать"],ans:0,hint:"Tabletten einnehmen"},
+  {q:"'empfindlicher Magen' означает:",opts:["чувствительный желудок","больной желудок","пустой желудок","сытый желудок"],ans:0,hint:"Wenn Sie einen empfindlichen Magen haben"},
+];
+
+const Q_A2L9C=[
+  {q:"Где должна храниться Hausapotheke?",opts:["в сухом помещении","в холодильнике всегда","на кухне у плиты","в ванной у душа"],ans:0,hint:"damit die Medikamente lange haltbar bleiben"},
+  {q:"Куда деть старые лекарства?",opts:["вернуть в аптеку или выбросить с бытовым мусором","вылить в раковину","отдать соседям","сжечь дома"],ans:0,hint:"nicht ins Waschbecken oder in die Toilette"},
+  {q:"'In einer Hausapotheke sollten Pflaster sein.' — 'sollten' это:",opts:["Konjunktiv II от sollen (совет)","Präteritum от sollen","Imperativ","Futur"],ans:0,hint:"Empfehlungen mit sollte"},
+  {q:"Что едят Vegetarier?",opts:["не едят мясо и рыбу, но могут есть молочное","вообще ничего животного","только рыбу","только мясо"],ans:0,hint:"kein Fleisch, viele auch keinen Fisch"},
+  {q:"Чем Veganer отличаются от Vegetarier?",opts:["веганы также отказываются от молочных продуктов и яиц","веганы едят больше мяса","веганы едят только рыбу","разницы нет"],ans:0,hint:"verzichten auf Milchprodukte und Eier"},
+  {q:"'Fett ist wichtig für den Körper.' — какой совет из текста этому противоречит по смыслу?",opts:["'Sie sollten fettarm essen, damit Sie nicht dick werden.'","'Kaffee ist nicht gut für die Gesundheit.'","'Gehen Sie nicht zu oft ins Fitnesscenter.'","никакой не противоречит"],ans:0,hint:"widersprüchliche Ratschläge im Text"},
+  {q:"'Vermeiden Sie Stress, denn Stress schadet der Gesundheit.' — 'schaden' требует падежа:",opts:["Dativ","Akkusativ","Genitiv","Nominativ"],ans:0,hint:"schaden + Dativ"},
+  {q:"'Sie sollten viel Obst und Gemüse essen, damit der Körper genug Vitamine bekommt.' — какая здесь грамматика?",opts:["Nebensatz mit damit (Ziel)","dass-Satz","Relativsatz","Konditionalsatz mit wenn"],ans:0,hint:"Wozu?"},
+];
+
+function T_A2L9A(){
+  const [tab,setTab]=useState("praxis");
+  const kowalsky=[
+    {de:"Guten Tag, Frau Kowalsky. Nehmen Sie doch bitte Platz. Sie kommen für den Gesundheits-Check. Haben Sie gesundheitliche Probleme?",ru:"Добрый день, фрау Ковальски. Присаживайтесь, пожалуйста. Вы пришли на медосмотр. Есть проблемы со здоровьем?"},
+    {de:"Nein, ich fühle mich ganz gesund. Ich möchte nur einmal alles kontrollieren lassen.",ru:"Нет, я чувствую себя вполне здоровой. Просто хочу всё проверить."},
+    {de:"Das ist sehr vernünftig. Sie sind jetzt 36 Jahre alt, da bezahlt die Krankenkasse alle zwei Jahre einen Gesundheits-Check. Ich muss Sie jetzt einmal abhören. Bitte machen Sie den Oberkörper frei.",ru:"Это очень разумно. Вам сейчас 36 лет, страховая касса оплачивает медосмотр раз в два года. Мне нужно вас прослушать. Пожалуйста, разденьтесь до пояса."},
+    {de:"Ja, es ist alles in Ordnung. Mit dem Rücken haben Sie keine Probleme? Machen Sie Sport?",ru:"Да, всё в порядке. Со спиной проблем нет? Вы занимаетесь спортом?"},
+    {de:"Ja, ich gehe ins Fitnesscenter. Ich fühle mich ganz fit. Wie ist das Ergebnis der Laboruntersuchung?",ru:"Да, хожу в фитнес-центр. Чувствую себя в форме. Каков результат лабораторного анализа?"},
+    {de:"Der Urin ist in Ordnung, der Blutdruck und die Blutwerte auch. Hm, die Cholesterinwerte sind zu hoch.",ru:"С мочой всё в порядке, давление и показатели крови тоже. Хм, холестерин повышен."},
+    {de:"Ja, das habe ich schon länger. Ich habe auch schon Medikamente bekommen. Aber das hat nicht geholfen.",ru:"Да, это у меня уже давно. Я уже принимала лекарства. Но это не помогло."},
+    {de:"Dann müssen wir das einmal untersuchen lassen. Ich gebe Ihnen eine Überweisung zum Facharzt.",ru:"Тогда нам нужно это обследовать. Я дам вам направление к специалисту."},
+  ];
+  const praxis=[
+    {de:"(gegen Tetanus) impfen",ru:"делать прививку (от столбняка)"},
+    {de:"den Blutdruck messen",ru:"измерять давление"},
+    {de:"die Augen kontrollieren",ru:"проверять зрение"},
+    {de:"Blut abnehmen",ru:"брать кровь (на анализ)"},
+    {de:"ein Medikament verschreiben",ru:"выписывать лекарство"},
+    {de:"ein Gespräch über die Beschwerden führen",ru:"беседовать о жалобах"},
+    {de:"die Zähne kontrollieren",ru:"проверять зубы"},
+    {de:"einen Termin vereinbaren",ru:"договориться о записи на приём"},
+  ];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.red}>
+        <H c={C.red}>🩺 A2-L9A · In der Arztpraxis</H>
+        <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
+          {[["praxis","Beim Arzt"],["checkup","Gesundheits-Check"],["vorsorge","Vorsorge"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,textAlign:"center",lineHeight:1.3,wordBreak:"break-word",
+                border:`1px solid ${tab===key?C.red+"55":C.border}`,
+                background:tab===key?C.red+"22":C.ov3,
+                color:tab===key?C.red:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="praxis"&&(
+          <div>
+            <div style={{fontSize:12,color:C.muted,marginBottom:10}}>Was macht der Arzt / die Ärztin, der Arzthelfer / die Arzthelferin:</div>
+            {praxis.map((p,i)=><TapEx key={i} de={p.de} ru={p.ru} col={C.red} style={{marginBottom:6}}/>)}
+          </div>
+        )}
+        {tab==="checkup"&&(
+          <div>
+            <div style={{fontSize:12,color:C.muted,marginBottom:10}}>Frau Kowalsky beim Gesundheits-Check bei Frau Doktor Westhoff:</div>
+            {kowalsky.map((k,i)=><TapEx key={i} de={k.de} ru={k.ru} col={C.red} style={{marginBottom:6}}/>)}
+          </div>
+        )}
+        {tab==="vorsorge"&&(
+          <div>
+            <div style={{background:C.red+"15",border:`1px solid ${C.red}33`,borderRadius:10,padding:"11px 13px",marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.red,marginBottom:6}}>Vorsorgeuntersuchungen</div>
+              <TapEx de="Die Krankenkassen zahlen regelmäßige Vorsorgeuntersuchungen, einmal pro Jahr die Kontrolle beim Zahnarzt und ab dem Alter von 35 Jahren eine Gesundheitsuntersuchung zur Früherkennung von Krankheiten (Gesundheits-Check)." ru="Страховые кассы оплачивают регулярные профилактические осмотры: раз в год — контроль у стоматолога, а с 35 лет — обследование для раннего выявления болезней (Gesundheits-Check)." col={C.red} style={{marginBottom:6}}/>
+              <TapEx de="Außerdem gibt es Vorsorgeuntersuchungen für spezielle Krankheiten und auch für einige Berufe. Für Kinder gibt es neun Vorsorgeuntersuchungen. Die erste ist direkt nach der Geburt, die neunte ist im Alter von fünf bis sechs Jahren." ru="Кроме того, есть осмотры для отдельных болезней и некоторых профессий. Для детей существует девять профилактических осмотров: первый — сразу после рождения, девятый — в 5–6 лет." col={C.red}/>
+            </div>
+            <TapEx de="Wie oft lassen Sie bei Ihrem Kind eine Vorsorgeuntersuchung machen? — Ich lasse alle Vorsorgeuntersuchungen machen. Die nächste ist nächstes Jahr, die U5." ru="Как часто вы водите ребёнка на профосмотр? — Я хожу на все осмотры. Следующий — в будущем году, U5." col={C.red}/>
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
+function T_A2L9B(){
+  const [tab,setTab]=useState("apotheke");
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.purple}>
+        <H c={C.purple}>💊 A2-L9B · Medikamente</H>
+        <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
+          {[["apotheke","In der Apotheke"],["rezept","Rezept & Nebenwirkungen"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,textAlign:"center",lineHeight:1.3,wordBreak:"break-word",
+                border:`1px solid ${tab===key?C.purple+"55":C.border}`,
+                background:tab===key?C.purple+"22":C.ov3,
+                color:tab===key?C.purple:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="apotheke"&&(
+          <div>
+            <div style={{fontSize:12,color:C.muted,marginBottom:10}}>Vier typische Situationen in der Apotheke:</div>
+            <TapEx de="Für das Rezept müssen Sie in der Apotheke nichts bezahlen — das übernimmt die Krankenkasse." ru="За рецепт по страховке в аптеке платить не нужно — это оплачивает страховая касса." col={C.purple} style={{marginBottom:6}}/>
+            <TapEx de="Der Mann kann das Medikament in der Apotheke bestellen, es ist gerade nicht da." ru="Мужчина может заказать лекарство в аптеке — его сейчас нет в наличии." col={C.purple} style={{marginBottom:6}}/>
+            <TapEx de="Die Frau muss erst zum Arzt gehen, bevor sie das Medikament bekommt." ru="Женщине сначала нужно сходить к врачу, прежде чем получить лекарство." col={C.purple} style={{marginBottom:6}}/>
+            <TapEx de="Die Tabletten haben meistens Kopf- und Magenschmerzen als Nebenwirkungen." ru="Обычно побочные эффекты таблеток — головная боль и боль в желудке." col={C.purple}/>
+          </div>
+        )}
+        {tab==="rezept"&&(
+          <div>
+            <RedeBlock col={C.purple} title="Im Gespräch mit dem Apotheker" items={[
+              {de:"Haben Sie dieses Medikament?",ru:"есть ли у вас это лекарство?"},
+              {de:"Wie oft muss ich die Tabletten einnehmen?",ru:"как часто мне принимать таблетки?"},
+              {de:"Welche Nebenwirkungen haben die Tabletten?",ru:"какие у таблеток побочные эффекты?"},
+              {de:"Wie viel kostet das?",ru:"сколько это стоит?"},
+            ]}/>
+            <TapEx de="Wenn Sie einen empfindlichen Magen haben, empfehle ich Ihnen, dass Sie die Tabletten nach dem Essen nehmen." ru="Если у вас чувствительный желудок, я рекомендую принимать таблетки после еды." col={C.purple} style={{marginTop:6}}/>
+            <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,borderRadius:10,padding:"11px 13px",marginTop:10}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.orange,marginBottom:6}}>! Rezeptgebühr</div>
+              <div style={{fontSize:13,color:C.text,lineHeight:1.7}}>Für die Rezepte muss man in der Apotheke zwischen fünf und zehn Euro zahlen. Rezepte für Kinder sind gebührenfrei.</div>
+            </div>
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
+function T_A2L9C(){
+  const [tab,setTab]=useState("hausapotheke");
+  const items=[
+    {icon:"🩹",de:"der Verband",ru:"повязка, бинт"},{icon:"💊",de:"das Schmerzmittel",ru:"обезболивающее"},
+    {icon:"🧴",de:"das Desinfektionsmittel",ru:"дезинфицирующее средство"},{icon:"💊",de:"das Medikament gegen Durchfall",ru:"лекарство от диареи"},
+    {icon:"✂️",de:"die Schere",ru:"ножницы"},{icon:"🧴",de:"die Salbe gegen Mückenstiche",ru:"мазь от укусов комаров"},
+    {icon:"🧴",de:"die Brandsalbe",ru:"мазь от ожогов"},{icon:"💧",de:"die Nasentropfen",ru:"капли в нос"},
+    {icon:"💉",de:"die Spritze",ru:"шприц"},{icon:"🔧",de:"die Pinzette",ru:"пинцет"},
+    {icon:"🌡️",de:"das Fieberthermometer",ru:"градусник"},{icon:"🩹",de:"das Pflaster",ru:"пластырь"},
+  ];
+  const ratschlaege=[
+    {de:"Sie sollten regelmäßig joggen gehen und für einen Marathon trainieren.",ru:"вам следует регулярно бегать трусцой и тренироваться к марафону"},
+    {de:"Muskeltraining im Fitnesscenter ist gut für die Gesundheit.",ru:"тренировка мышц в фитнес-центре полезна для здоровья"},
+    {de:"Sie sollten viel Obst und Gemüse essen, damit der Körper genug Vitamine bekommt.",ru:"вам следует есть много фруктов и овощей, чтобы организм получал достаточно витаминов"},
+    {de:"Sie sollten fettarm essen, damit Sie nicht dick werden.",ru:"вам следует есть с низким содержанием жира, чтобы не набрать вес"},
+    {de:"Vermeiden Sie jeden Stress, denn Stress schadet der Gesundheit.",ru:"избегайте любого стресса, ведь стресс вредит здоровью"},
+    {de:"Sie sollten zum Frühstück viel essen, mittags weniger und abends noch weniger.",ru:"на завтрак следует есть много, в обед — меньше, а вечером ещё меньше"},
+    {de:"Ein bisschen Stress macht aktiv.",ru:"немного стресса делает активнее"},
+    {de:"Kaffee ist nicht gut für die Gesundheit.",ru:"кофе не полезен для здоровья"},
+  ];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.green}>
+        <H c={C.green}>🥗 A2-L9C · Ernährung und Gesundheit</H>
+        <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
+          {[["hausapotheke","Die Hausapotheke"],["ernaehrung","Vegetarisch/Vegan"],["ratschlaege","Gesundheitstipps"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,textAlign:"center",lineHeight:1.3,wordBreak:"break-word",
+                border:`1px solid ${tab===key?C.green+"55":C.border}`,
+                background:tab===key?C.green+"22":C.ov3,
+                color:tab===key?C.green:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="hausapotheke"&&(
+          <div>
+            <div style={{background:C.green+"15",border:`1px solid ${C.green}33`,borderRadius:10,padding:"11px 13px",marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.green,marginBottom:6}}>Tipps für die Hausapotheke</div>
+              <TapEx de="Jeder sollte zu Hause eine Hausapotheke haben. In der Hausapotheke sollten die wichtigsten Medikamente sein. Die Hausapotheke sollte in einem trockenen Raum sein, damit die Medikamente lange haltbar bleiben." ru="У каждого дома должна быть аптечка. В ней должны быть самые важные лекарства. Аптечка должна храниться в сухом помещении, чтобы лекарства долго не портились." col={C.green} style={{marginBottom:6}}/>
+              <TapEx de="Sie sollten die Hausapotheke einmal pro Jahr kontrollieren und dann alte Medikamente zur Apotheke zurückbringen oder im Hausmüll entsorgen. Sie dürfen die Medikamente nicht ins Waschbecken oder in die Toilette geben." ru="Аптечку нужно проверять раз в год и относить старые лекарства обратно в аптеку или выбрасывать с бытовым мусором. Нельзя выливать лекарства в раковину или в унитаз." col={C.green}/>
+            </div>
+            <div style={{fontSize:12,fontWeight:800,color:C.green,marginBottom:6}}>Was sollte in einer Hausapotheke sein?</div>
+            <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:5}}>
+              {items.map((it,i)=>(
+                <div key={i} style={{background:C.ov4,borderRadius:8,padding:"7px 10px",fontSize:12}}>
+                  {it.icon} <b>{it.de}</b><br/><span style={{color:C.muted}}>{it.ru}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+        {tab==="ernaehrung"&&(
+          <div>
+            <div style={{fontSize:12,color:C.muted,marginBottom:8}}>Lebensmittelgruppen: Milchprodukte und Eier · Fleisch und Fisch · Obst · Gemüse · Getreideprodukte und Kartoffeln · Süßigkeiten · Getränke</div>
+            <div style={{background:C.ov4,borderRadius:10,padding:"10px 12px",marginBottom:8}}>
+              <div style={{fontSize:12,fontWeight:800,color:C.green,marginBottom:4}}>Der neue Trend: Vegetarisch essen</div>
+              <TapEx de="Immer mehr Menschen in Deutschland essen vegetarisch. Sie essen kein Fleisch, viele auch keinen Fisch." ru="Всё больше людей в Германии питаются вегетариански. Они не едят мясо, многие также не едят рыбу." col={C.green} style={{marginBottom:4}}/>
+              <TapEx de="Bei der veganen Ernährung verzichten die Leute auch auf Milchprodukte und Eier. Sie vermeiden alle tierischen Nahrungsmittel." ru="При веганском питании люди отказываются также от молочных продуктов и яиц. Они избегают всех продуктов животного происхождения." col={C.green} style={{marginBottom:4}}/>
+              <TapEx de="Viele essen kein Fleisch, weil es ihnen nicht schmeckt, andere essen kein Fleisch, weil sie es nicht gesund finden, und eine dritte Gruppe isst kein Fleisch, weil sie die Tierhaltung ablehnen und Tiere nicht töten möchten." ru="Многие не едят мясо, потому что оно им не нравится, другие — потому что считают это нездоровым, а третья группа — потому что отвергают содержание животных на убой и не хотят их убивать." col={C.green}/>
+            </div>
+          </div>
+        )}
+        {tab==="ratschlaege"&&(
+          <div>
+            <div style={{fontSize:12,color:C.muted,marginBottom:10}}>Ratschläge zur Gesundheit — nicht alle sind gleich sinnvoll, diskutieren Sie im Kurs:</div>
+            {ratschlaege.map((r,i)=><TapEx key={i} de={r.de} ru={r.ru} col={C.green} style={{marginBottom:6}}/>)}
+            <TapEx de="Ich denke, dass man jeden Tag eine Tasse Kaffee trinken sollte. Und du? — Nein, das denke ich nicht. Ich finde wichtiger, dass man regelmäßig ins Fitnesscenter geht." ru="Я думаю, что каждый день нужно пить чашку кофе. А ты? — Нет, я так не думаю. Я считаю важнее регулярно ходить в фитнес-центр." col={C.green} style={{marginTop:6}}/>
           </div>
         )}
       </Box>
@@ -17214,6 +18354,34 @@ const LEKTIONEN=[
       {id:"wtA2L7", icon:"🧠",title:"Wortschatz-Test A2-L7",     sub:"Перевод · Артикли · Обратный перевод",                 time:"10 мин",col:C.teal,   hasT:false, ex:()=><WortschatzTest lekt="A2-L7"/>},
     ]
   },
+  {
+    id:"A2-L8",niveau:"A2",num:"8",title:"Neue Chancen",
+    sub:"A Ich interessiere mich für... (Verben mit Präpositionen) · B Etwas Neues lernen (damit) · C Sich für einen Kurs anmelden",
+    date:"Kursbuch S.93–102",col:C.blue,
+    sections:[
+      {id:"dA2L8", icon:"💬",title:"Dialogfragen A2-L8",         sub:"Фразы для диалога",                                    time:"∞",     col:C.blue,  hasT:false, th:null,           ex:()=><DialogCards lId="A2-L8"/>},
+      {id:"a2l8a", icon:"💼",title:"A · Ich interessiere mich für...",sub:"Verben mit Präpositionen · BiZ · Ibolya & Doreen", time:"8 мин", col:C.blue,  hasT:true, th:()=><T_A2L8A/>, ex:()=><Quiz questions={Q_A2L8A}/>},
+      {id:"a2l8b", icon:"📚",title:"B · Etwas Neues lernen",     sub:"Kursprogramm · Nebensätze mit damit · Yang & Sosso",    time:"9 мин", col:C.orange,hasT:true, th:()=><T_A2L8B/>, ex:()=><Quiz questions={Q_A2L8B}/>},
+      {id:"a2l8c", icon:"📝",title:"C · Sich für einen Kurs anmelden",sub:"Erste-Hilfe-Zentrum · am Telefon · sich anmelden", time:"7 мин", col:C.teal,  hasT:true, th:()=><T_A2L8C/>, ex:()=><Quiz questions={Q_A2L8C}/>},
+      {id:"wbA2L8", icon:"📖",title:"Wörterbuch A2-L8",          sub:"Слова этого урока",                                    time:"—",    col:C.teal,   hasT:false, ex:()=><LektWoerterbuch lekt="A2-L8"/>},
+      {id:"tA2L8", icon:"🎯",title:"Großer Test A2-L8",          sub:"Quiz · Lücken · Wortschatz · Wortstellung",     time:"20 мин",col:C.yellow, hasT:false, ex:()=><GrosserTestA2L8/>},
+      {id:"wtA2L8", icon:"🧠",title:"Wortschatz-Test A2-L8",     sub:"Перевод · Артикли · Обратный перевод",                 time:"10 мин",col:C.teal,   hasT:false, ex:()=><WortschatzTest lekt="A2-L8"/>},
+    ]
+  },
+  {
+    id:"A2-L9",niveau:"A2",num:"9",title:"Gesund leben",
+    sub:"A In der Arztpraxis (Vorsorgeuntersuchungen) · B Medikamente (Rezept, Nebenwirkungen) · C Ernährung und Gesundheit (Hausapotheke, vegan/vegetarisch)",
+    date:"Kursbuch S.103–112",col:C.red,
+    sections:[
+      {id:"dA2L9", icon:"💬",title:"Dialogfragen A2-L9",         sub:"Фразы для диалога",                                    time:"∞",     col:C.red,   hasT:false, th:null,           ex:()=><DialogCards lId="A2-L9"/>},
+      {id:"a2l9a", icon:"🩺",title:"A · In der Arztpraxis",      sub:"Gesundheits-Check · Vorsorgeuntersuchungen",           time:"8 мин", col:C.red,   hasT:true, th:()=><T_A2L9A/>, ex:()=><Quiz questions={Q_A2L9A}/>},
+      {id:"a2l9b", icon:"💊",title:"B · Medikamente",            sub:"In der Apotheke · Rezept · Nebenwirkungen",            time:"7 мин", col:C.purple,hasT:true, th:()=><T_A2L9B/>, ex:()=><Quiz questions={Q_A2L9B}/>},
+      {id:"a2l9c", icon:"🥗",title:"C · Ernährung und Gesundheit",sub:"Hausapotheke · sollte + Infinitiv · vegan/vegetarisch",time:"9 мин", col:C.green, hasT:true, th:()=><T_A2L9C/>, ex:()=><Quiz questions={Q_A2L9C}/>},
+      {id:"wbA2L9", icon:"📖",title:"Wörterbuch A2-L9",          sub:"Слова этого урока",                                    time:"—",    col:C.teal,   hasT:false, ex:()=><LektWoerterbuch lekt="A2-L9"/>},
+      {id:"tA2L9", icon:"🎯",title:"Großer Test A2-L9",          sub:"Quiz · Lücken · Wortschatz · Wortstellung",     time:"20 мин",col:C.yellow, hasT:false, ex:()=><GrosserTestA2L9/>},
+      {id:"wtA2L9", icon:"🧠",title:"Wortschatz-Test A2-L9",     sub:"Перевод · Артикли · Обратный перевод",                 time:"10 мин",col:C.teal,   hasT:false, ex:()=><WortschatzTest lekt="A2-L9"/>},
+    ]
+  },
 ];
 
 // ═══════════════════════════════ APP ══════════════════════════════════════════
@@ -17247,6 +18415,8 @@ function DialogFragenPage(){
     "A2-L5":{label:"A2·L5 · Am Arbeitsplatz", col:C.blue},
     "A2-L6":{label:"A2·L6 · Wohnen nach Wunsch", col:C.green},
     "A2-L7":{label:"A2·L7 · Feste feiern", col:C.red},
+    "A2-L8":{label:"A2·L8 · Neue Chancen", col:C.blue},
+    "A2-L9":{label:"A2·L9 · Gesund leben", col:C.red},
   };
   const filterFm=(pairs,lId)=>(lId==="L1"||lId==="L4")?pairs.filter(p=>!p.fm||p.fm===fm):pairs;
 
@@ -18052,7 +19222,7 @@ function T_PruefungRedemittel(){
           {[["formell","Formell (Sie)"],["halb","Halbformell / Informell"],["persoenlich","Persönliche E-Mail"],["gliederung","Gliederung"]].map(([key,lbl])=>(
             <button key={key} onClick={()=>setTab(key)}
               style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
-                fontSize:12,fontWeight:700,textAlign:"center",lineHeight:1.3,
+                fontSize:12,fontWeight:700,textAlign:"center",lineHeight:1.3,wordBreak:"break-word",
                 border:`1px solid ${tab===key?C.red+"55":C.border}`,
                 background:tab===key?C.red+"22":C.ov3,
                 color:tab===key?C.red:C.muted}}>
