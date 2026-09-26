@@ -41,6 +41,48 @@ function ThemeToggle({theme,onToggle}){
   );
 }
 
+function FaqButton({onOpen}){
+  return (
+    <button onClick={onOpen} title="Как пользоваться приложением?"
+      style={{position:"fixed",top:14,left:14,zIndex:50,
+        background:C.card,border:`1.5px solid ${C.border}`,borderRadius:20,
+        width:38,height:38,display:"flex",alignItems:"center",justifyContent:"center",
+        cursor:"pointer",fontSize:17,boxShadow:"0 2px 8px rgba(0,0,0,.18)"}}>
+      ❓
+    </button>
+  );
+}
+function FaqPage(){
+  const items=[
+    {icon:"📖",col:C.orange,title:"Урок и разделы внутри",text:"Урок в приложении — это целая Lektion учебника, пронумерована как в книге (L6, L7, L8...). Внутри — разделы A, B, C: те же, что и в самом учебнике, у каждого своя тема. В конце каждого Lektion добавлены: словарь этого урока (Wörterbuch), большой тест (Großer Test) и тест на знание слов (Wortschatz-Test)."},
+    {icon:"🇩🇪",col:C.teal,title:"Клик на текст — перевод",text:"Немецкие предложения, фразы и диалоги кликабельны: нажал — появился русский перевод, нажал ещё раз — скрылся."},
+    {icon:"🎯",col:C.yellow,title:"Großer Test — тест урока",text:"В конце каждого урока (кнопка «🎯 Großer Test») — большой тест из нескольких раундов: Quiz (выбор ответа), Lückentext (вставить пропущенное слово), Wortschatz (сопоставить слово и перевод), Wortstellung (собрать предложение из слов по порядку)."},
+    {icon:"🧠",col:C.teal,title:"Wortschatz-Test — тест по словам урока",text:"Отдельный тест только по словам конкретного урока: перевод слова, определение артикля (der/die/das) и обратный перевод — с русского на немецкий."},
+    {icon:"📖",col:C.teal,title:"Wörterbuch — общий словарь",text:"Все слова курса в одном месте, по темам. Можно искать словом, фильтровать по артиклю или типу слова (существительные/прилагательные/фразы). Клик на глагол раскрывает таблицу его спряжения во всех временах (настоящее, повелительное, прошедшее, перфект)."},
+    {icon:"💬",col:C.blue,title:"Dialoge — быстрые карточки",text:"Ключевые вопросы и ответы по темам курса — удобно для быстрого повторения перед разговорной практикой. Нажал на вопрос — открылся ответ с переводом."},
+    {icon:"📊",col:C.green,title:"Grammatiktabellen",text:"Вся грамматика курса собрана в сводные таблицы на одном экране — удобно, когда нужно быстро что-то вспомнить, не пересматривая уроки."},
+    {icon:"🎓",col:C.red,title:"Prüfung",text:"Материалы для подготовки к экзамену, которые преподаватель даёт отдельно от учебника, — появляются здесь по мере поступления."},
+    {icon:"✅",col:C.orange,title:"Niveau A1 / Niveau A2",text:"Уроки сгруппированы по уровню и пронумерованы как в учебнике. Внутри урока — несколько разделов (секций), а в конце списка разделов — Großer Test и Wortschatz-Test по всему уроку."},
+    {icon:"☀️",col:C.muted,title:"Тёмная / светлая тема",text:"Кнопка в правом верхнем углу главного экрана переключает оформление приложения."},
+  ];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <div style={{fontSize:13,color:C.muted,marginBottom:2,lineHeight:1.5}}>
+        Приложение для изучения немецкого по учебнику Pluspunkt Deutsch. Коротко о том, что внутри и как этим пользоваться:
+      </div>
+      {items.map((it,i)=>(
+        <div key={i} style={{background:C.card,border:`1.5px solid ${it.col}35`,borderRadius:14,padding:"13px 15px",display:"flex",gap:12,alignItems:"flex-start"}}>
+          <span style={{fontSize:22,flexShrink:0}}>{it.icon}</span>
+          <div>
+            <div style={{fontWeight:800,fontSize:14,color:it.col,marginBottom:3}}>{it.title}</div>
+            <div style={{fontSize:13,color:C.text,lineHeight:1.5}}>{it.text}</div>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 // ═══════════════════════════════════ DATA ════════════════════════════════════
 
 // ─── ALPHABET ────────────────────────────────────────────────────────────────
@@ -20034,6 +20076,7 @@ export default function App(){
   const [dialogOpen,setDialogOpen]=useState(false);
   const [pruefungOpen,setPruefungOpen]=useState(false);
   const [pId,setPId]=useState(null);
+  const [faqOpen,setFaqOpen]=useState(false);
   const [niveauOpen,setNiveauOpen]=useState({A1:false,A2:true});
   const [theme,setTheme]=useState(()=>{
     try{return localStorage.getItem("dk_theme")||"dark";}catch{return "dark";}
@@ -20049,6 +20092,23 @@ export default function App(){
 
   const lekt=lId?LEKTIONEN.find(l=>l.id===lId):null;
   const sec=sId&&lekt?lekt.sections.find(s=>s.id===sId):null;
+
+  if(faqOpen)return(
+    <div style={root}>
+      <ThemeToggle theme={theme} onToggle={toggleTheme}/>
+      <div style={wrap}>
+        <button onClick={()=>setFaqOpen(false)} style={{background:"none",border:"none",color:C.muted,cursor:"pointer",fontSize:14,padding:"0 0 14px"}}>← Главная</button>
+        <div style={{display:"flex",alignItems:"center",gap:12,marginBottom:18}}>
+          <span style={{fontSize:26}}>❓</span>
+          <div>
+            <div style={{fontWeight:900,fontSize:17,color:C.text}}>FAQ</div>
+            <div style={{fontSize:13,color:C.muted}}>Как пользоваться приложением</div>
+          </div>
+        </div>
+        <FaqPage/>
+      </div>
+    </div>
+  );
 
   if(dialogOpen)return(
     <div style={root}>
@@ -20207,6 +20267,7 @@ export default function App(){
   return(
     <div style={root}>
       <ThemeToggle theme={theme} onToggle={toggleTheme}/>
+      <FaqButton onOpen={()=>setFaqOpen(true)}/>
       <div style={wrap}>
         <div style={{textAlign:"center",padding:"12px 0 24px"}}>
           <div style={{fontSize:48,marginBottom:8}}>🇩🇪</div>
