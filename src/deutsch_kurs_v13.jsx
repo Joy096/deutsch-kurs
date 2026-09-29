@@ -5892,7 +5892,10 @@ function Woerterbuch({words=WBDATA}={}){
     (selPref==="all"||getVerbPref(w.de)===selPref)&&
     (!search||wordMatchesSearch(w,searchLower))
   );
-  const sortKey=(w)=>w.ord?100000+w.ord:w._i;
+  // «Новые сначала»: слова A2 сортируются сначала по номеру урока (A2-L10 выше A2-L9), потом по ord —
+  // так слова, добавленные позже к более раннему уроку (Wichtige Wörter), не перебивают слова самого нового урока
+  const a2Rank=(w)=>{const m=/^A2-L(\d+)$/.exec(w.lekt||"");return m?parseInt(m[1],10):0;};
+  const sortKey=(w)=>a2Rank(w)?1000000+a2Rank(w)*10000+(w.ord||0):(w.ord?100000+w.ord:w._i);
   const list=[...listRaw].sort((a,b)=>{
     const ae=a.extra?1:0, be=b.extra?1:0;
     if(ae!==be) return ae-be; // слова-«довесок» (extra:true, не по теме урока) всегда после основных
