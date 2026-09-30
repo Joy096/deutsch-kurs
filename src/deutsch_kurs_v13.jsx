@@ -2562,6 +2562,13 @@ const WBDATA=[
   {art:"", de:"einen Termin machen",ord:1314, pl:"—", ru:"назначить приём, записаться на приём", tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
   {art:"", de:"die Ohren untersuchen",ord:1315, pl:"—", ru:"осматривать уши", tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
   {art:"", de:"eine Spritze geben",ord:1316, pl:"—", ru:"делать укол", tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"der", de:"Posten",ord:1317, pl:"-", ru:"должность, место (работы)", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"", de:"Ich gehe davon aus, …",ord:1318, pl:"—", ru:"я исхожу из того, что …; я полагаю, что …", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"", de:"sich wichtig machen",ord:1319, pl:"—", ru:"важничать, задаваться (также: sich groß machen) · macht sich wichtig · machte sich wichtig · hat sich wichtig gemacht", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"", de:"ausreden lassen",ord:1320, pl:"—", ru:"давать договорить (не перебивать) · lässt ausreden", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"", de:"gelassen bleiben",ord:1321, pl:"—", ru:"сохранять спокойствие (= ruhig bleiben)", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"", de:"Es wäre besser, wenn …",ord:1322, pl:"—", ru:"было бы лучше, если бы …", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2",extra:true},
+  {art:"das", de:"Schweigen",ord:1323, pl:"—", ru:"молчание", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2",extra:true},
 ];
 
 
@@ -3472,6 +3479,10 @@ const KONJ_ALL={
     ich:"lohne mich",    du:"lohnst dich",    "er/sie/es":"lohnt sich",
     wir:"lohnen uns",    ihr:"lohnt euch",    "sie/Sie":"lohnen sich",
     pt:"lohnte sich", pf:"hat sich gelohnt"},
+  "sich wichtig machen":{col:C.teal, bg:C.tealBg, note:"Reflexiv",
+    ich:"mache mich wichtig", du:"machst dich wichtig", "er/sie/es":"macht sich wichtig",
+    wir:"machen uns wichtig", ihr:"macht euch wichtig", "sie/Sie":"machen sich wichtig",
+    imp:{du:"Mach dich wichtig!", ihr:"Macht euch wichtig!", Sie:"Machen Sie sich wichtig!"}, pt:"machte sich wichtig", pf:"hat sich wichtig gemacht"},
   motivieren:  {col:C.teal, bg:C.tealBg, note:"-ieren: kein ge-",
     ich:"motiviere",  du:"motivierst",  "er/sie/es":"motiviert",
     wir:"motivieren", ihr:"motiviert",  "sie/Sie":"motivieren", pt:"motivierte", pf:"hat motiviert"},
@@ -3875,6 +3886,7 @@ const KONJ_ALL={
 
 // Ударения: комбинирующая акута \u0301 ставится после ударной гласной
 const STRESS_MARKS={
+"Posten":"Po\u0301sten","Schweigen":"Schwe\u0301igen",
 // Числа
 "null":"nu\u0301ll","eins":"ei\u0301ns","zwei":"zwe\u0301i","drei":"dre\u0301i","vier":"vi\u0301er",
 "fünf":"f\u00FC\u0301nf","sechs":"se\u0301chs","sieben":"si\u0301eben","acht":"a\u0301cht","neun":"ne\u0301un",
@@ -4272,6 +4284,7 @@ const STRESS_MARKS={
 
 // IPA-транскрипция для всего словаря (кроме фраз)
 const IPA_DATA={
+"Posten":"[ˈpɔstn̩]","Schweigen":"[ˈʃvaɪ̯ɡn̩]",
 // Числа
 "null":"[nʊl]","eins":"[aɪns]","zwei":"[tsvaɪ]","drei":"[dʁaɪ]","vier":"[fiːɐ̯]",
 "fünf":"[fʏnf]","sechs":"[zɛks]","sieben":"[ˈziːbən]","acht":"[axt]","neun":"[nɔɪn]",
@@ -5237,11 +5250,50 @@ const DIALOGE={
       {q:"Wie sind denn die Arbeitszeiten?",                         qRu:"А какой у вас график работы?", a:"Sie arbeiten in Schichten, auch am Wochenende.", aRu:"Вы работаете посменно, в том числе по выходным.", note:"Arbeitszeiten"},
       {q:"Gibt es einen festen Stundenlohn?",                        qRu:"Есть ли фиксированная почасовая оплата?", a:"Ja, es gibt einen festen Stundenlohn.", aRu:"Да, есть фиксированная почасовая оплата.", note:"Stundenlohn"},
       {q:"Ich würde gerne wissen, ob es einen festen Stundenlohn gibt.", qRu:"Я хотел(а) бы знать, есть ли фиксированная почасовая оплата.", a:"Ja, den gibt es.", aRu:"Да, такая есть.", note:"ob + Verb am Ende"},
+      {q:"Können Sie mir sagen, ob die Stelle noch frei ist?", qRu:"Можете сказать, свободна ли ещё вакансия?", a:"Ja, sie ist noch frei.", aRu:"Да, она ещё свободна.", note:"ob + Verb am Ende"},
+      {q:"In der Anzeige steht: Arbeitszeit ... Was heißt das genau?", qRu:"В объявлении написано: график работы ... Что это значит точно?", a:"Sie arbeiten von 18 Uhr bis 23 Uhr.", aRu:"Вы работаете с 18 до 23 часов.", note:"Arbeitszeit"},
+      {q:"Ich würde gerne wissen, wie die Bezahlung ist.", qRu:"Я хотел(а) бы знать, какая оплата.", a:"Das besprechen wir am besten hier.", aRu:"Это лучше всего обсудить у нас.", note:"wie + Verb am Ende"},
+      {q:"Ja, da kann ich kommen. Wie ist Ihre Adresse?", qRu:"Да, я могу прийти. Какой у вас адрес?", a:"Haben Sie morgen um 10 Uhr Zeit? Die Adresse ist Bahnhofstraße 5.", aRu:"У вас есть завтра время в 10 часов? Адрес: Bahnhofstraße 5.", note:"Anschrift"},
+    ]},
+    {tag:"Im Bewerbungsgespräch",col:C.green,pairs:[
+      {q:"Wie gut sind Ihre Deutschkenntnisse?", qRu:"Насколько хороши ваши знания немецкого?", a:"Ich kann Deutsch auf dem Niveau B1.", aRu:"Я владею немецким на уровне B1.", note:"Deutschkenntnisse"},
+      {q:"Sind Sie Teamarbeit gewohnt?", qRu:"Вы привыкли к командной работе?", a:"Ja, ich habe immer mit Kollegen zusammengearbeitet.", aRu:"Да, я всегда работал(а) с коллегами.", note:"gewohnt sein"},
+      {q:"Ist Stress bei der Arbeit ein Problem für Sie?", qRu:"Стресс на работе для вас проблема?", a:"Ich bin sicher, dass ich das schaffe. Stress kenne ich auch von früher.", aRu:"Я уверен(а), что справлюсь. Стресс мне знаком и по прошлому.", note:"dass-Satz"},
+      {q:"Sind Sie flexibel?", qRu:"Вы гибки (можете работать в разное время)?", a:"Ja, ich kann auch abends und am Wochenende arbeiten.", aRu:"Да, я могу работать и по вечерам, и по выходным.", note:"flexibel"},
+      {q:"Arbeite ich allein oder im Team?", qRu:"Я работаю один (одна) или в команде?", a:"Sie arbeiten im Team.", aRu:"Вы работаете в команде.", note:"Arbeitnehmerfrage"},
+      {q:"Gibt es Fortbildungen für Mitarbeiter?", qRu:"Есть ли повышение квалификации для сотрудников?", a:"Ja, wir bieten Fortbildungen an.", aRu:"Да, мы предлагаем курсы повышения квалификации.", note:"Fortbildung"},
+      {q:"Kann ich später auch in Vollzeit arbeiten?", qRu:"Смогу ли я позже работать на полную ставку?", a:"Ja, das ist später möglich.", aRu:"Да, позже это возможно.", note:"Vollzeit"},
+    ]},
+    {tag:"Man sollte ...",col:C.teal,pairs:[
+      {q:"Was denken Sie, was sollte man beim Bewerbungsgespräch beachten?", qRu:"Как вы думаете, на что следует обратить внимание на собеседовании?", a:"Ich denke, man sollte pünktlich sein.", aRu:"Я думаю, нужно быть пунктуальным.", note:"man sollte + Infinitiv"},
+      {q:"Und was noch?", qRu:"А что ещё?", a:"Man sollte sich vorher über die Firma informieren.", aRu:"Стоит заранее узнать о фирме.", note:"sich informieren"},
+      {q:"Was denken Sie noch?", qRu:"Что ещё вы думаете?", a:"Ich denke, man sollte passend gekleidet sein.", aRu:"Я думаю, нужно быть подобающе одетым.", note:"gekleidet sein"},
     ]},
     {tag:"Berufliche Wünsche",col:C.purple,pairs:[
       {q:"Was würden Sie gern machen?",                              qRu:"Что бы вы хотели делать?", a:"Ich würde gern in einer IT-Firma arbeiten.", aRu:"Я бы хотел(а) работать в IT-фирме.", note:"würde gern + Infinitiv"},
       {q:"Welche Wünsche hat Maria Pérez?",                          qRu:"Какие желания у Марии Перес?", a:"Sie würde gern einen Ausbildungsplatz in einem Reisebüro finden.", aRu:"Она хотела бы найти место для обучения в туристическом бюро.", note:"Maria Pérez"},
       {q:"Und später?",                                              qRu:"А позже?", a:"Später würde sie gern ein eigenes Reisebüro haben.", aRu:"Позже она хотела бы иметь собственное туристическое бюро.", note:"Wunsch"},
+    ]},
+    {tag:"Im Gespräch",col:C.blue,pairs:[
+      {q:"Kann ich bei Ihnen auch von zu Hause aus arbeiten?", qRu:"Могу ли я у вас работать и из дома?", a:"Ja, das ist möglich. Sie können von zu Hause aus arbeiten.", aRu:"Да, это возможно. Вы можете работать из дома.", note:"von zu Hause aus — из дома"},
+      {q:"Haben Sie noch Fragen?", qRu:"У вас ещё есть вопросы?", a:"Ja, ich hätte noch eine Frage. Ich möchte wissen, ob es bei Ihnen Fortbildungen gibt.", aRu:"Да, у меня был бы ещё один вопрос. Я хотел(а) бы знать, есть ли у вас курсы повышения квалификации.", note:"Ich hätte noch eine Frage · ob es ... gibt"},
+      {q:"Kann ich Ihnen noch helfen?", qRu:"Могу я вам ещё чем-то помочь?", a:"Ich hätte noch eine Bitte. Schicken Sie mir bitte die Stellenanzeige per E-Mail.", aRu:"У меня была бы ещё одна просьба. Пришлите мне, пожалуйста, объявление по электронной почте.", note:"Ich hätte noch eine Bitte"},
+      {q:"Wie ist Ihre Anschrift?", qRu:"Какой у вас адрес?", a:"Unsere Anschrift lautet: Wallnerstraße 19 in München.", aRu:"Наш адрес: Валльнерштрассе 19 в Мюнхене.", note:"Unsere Anschrift lautet ..."},
+      {q:"Was gehört zur Körpersprache beim Bewerbungsgespräch?", qRu:"Что относится к языку тела на собеседовании?", a:"Man sollte eine aufrechte Haltung haben, Blickkontakt halten und die Arme nicht verschränken.", aRu:"Нужно держаться прямо, поддерживать зрительный контакт и не скрещивать руки.", note:"die Körpersprache"},
+      {q:"Was gehört zum aktiven Zuhören?", qRu:"Что относится к активному слушанию?", a:"Man lässt den anderen ausreden, unterbricht nicht und antwortet auf die Fragen.", aRu:"Дают другому договорить, не перебивают и отвечают на вопросы.", note:"ausreden lassen"},
+      {q:"Was sagst du noch dazu?", qRu:"Что ты ещё скажешь об этом?", a:"Ich denke, man sollte gelassen bleiben und sich nicht wichtig machen.", aRu:"Я думаю, нужно сохранять спокойствие и не важничать.", note:"gelassen bleiben · sich wichtig machen"},
+      {q:"Worüber sprechen Sie mit der Personalchefin?", qRu:"О чём вы говорите с начальницей отдела кадров?", a:"Wir sprechen über den Arbeitsvertrag.", aRu:"Мы говорим о трудовом договоре.", note:"sprechen über + Akkusativ"},
+    ]},
+  ],
+  "A2-L11":[
+    {tag:"Fotos beschreiben",col:C.blue,pairs:[
+      {q:"Was sieht man auf dem Foto rechts oben?", qRu:"Что видно на фото справа вверху?", a:"Auf dem Foto rechts oben sieht man viele Reisende. Sie stehen auf der Autobahn.", aRu:"На фото справа вверху видно много путешественников. Они стоят на автобане."},
+      {q:"Warum reisen sie? Was denken Sie?", qRu:"Почему они путешествуют? Как вы думаете?", a:"Ich glaube, sie wollen in den Urlaub fahren. Vielleicht stehen sie im Stau.", aRu:"Я думаю, они хотят поехать в отпуск. Возможно, они стоят в пробке.", note:"Ich glaube, ... · Vielleicht ..."},
+    ]},
+    {tag:"Meine letzte Reise",col:C.green,pairs:[
+      {q:"Wo waren Sie? Wie sind Sie dorthin gekommen?", qRu:"Где вы были? Как вы туда добрались?", a:"Ich bin nach Wien geflogen.", aRu:"Я летел(а) в Вену.", note:"Perfekt mit sein"},
+      {q:"Mit wem sind Sie gefahren?", qRu:"С кем вы ехали?", a:"Ich bin mit meinem Bruder mit dem Auto nach Wien gefahren.", aRu:"Я ехал(а) с братом на машине в Вену."},
+      {q:"Wie war die Reise für Sie?", qRu:"Как была для вас эта поездка?", a:"Ich habe mich gefreut, weil ich meine Verwandten besucht habe.", aRu:"Я обрадовался(лась), потому что навестил(а) родственников.", note:"sich freuen → haben"},
     ]},
   ],
 };
@@ -18146,6 +18198,28 @@ const Q_A2L10B=[
   {q:"'gastfreundlich' означает:",opts:["гостеприимный","дружелюбный к детям","требовательный","осторожный"],ans:0,hint:"Wörter"},
 ];
 
+const Q_A2L10C=[
+  {q:"Was gehört zu einer Bewerbung?",opts:["Bewerbungsschreiben, Lebenslauf, Bewerbungsfoto, Kopien von den Zeugnissen","nur ein Anruf","der Mietvertrag und die Rechnung","nur das Bewerbungsfoto"],ans:0,hint:"Bewerbung"},
+  {q:"'die Berufserfahrung' im Lebenslauf — это:",opts:["опыт работы","школьное образование","дата рождения","адрес"],ans:0,hint:"Lebenslauf"},
+  {q:"Где в резюме стоит адрес (die Anschrift)?",opts:["Persönliche Daten","Kenntnisse","Berufserfahrung","Schulbildung"],ans:0,hint:"Lebenslauf"},
+  {q:"Wo hat Frau Matei gearbeitet?",opts:["An der Floreasca-Klinik in Bukarest.","In einer Schule in Deva.","In einem Restaurant in Dortmund.","In einer Wäscherei in Berlin."],ans:0,hint:"Lebenslauf von Frau Matei"},
+  {q:"Frau Matei ist von Beruf ...",opts:["Gesundheits- und Krankenpflegerin","Köchin","Fahrerin","Ingenieurin"],ans:0,hint:"Lebenslauf von Frau Matei"},
+  {q:"Man ___ sich vorher über die Firma informieren. (стоит)",opts:["sollte","sollst","sollten","solltet"],ans:0,hint:"Ratschläge"},
+  {q:"Как правильно? «Я думаю, надо быть пунктуальным.»",opts:["Ich denke, man sollte pünktlich sein.","Ich denke, man sollte sein pünktlich.","Ich denke, man pünktlich sollte sein.","Ich denke, sollte man pünktlich sein."],ans:0,hint:"Wortstellung"},
+  {q:"«Sind Sie Teamarbeit gewohnt?» означает:",opts:["Вы привыкли к командной работе?","Вы любите одиночество?","Вы умеете водить?","Вы знаете немецкий?"],ans:0,hint:"Bewerbungsgespräch"},
+  {q:"«Ist es möglich, dass ich bei Ihnen nach Weihnachten weiterarbeiten kann?» — кто это спрашивает?",opts:["кандидат (Arbeitnehmerfrage)","работодатель (Arbeitgeberfrage)","клиент фирмы","врач"],ans:0,hint:"Bewerbungsgespräch"},
+  {q:"Haben Sie schon einmal einen Lebenslauf geschrieben? — Ja, ...",opts:["ich habe schon oft einen Lebenslauf geschrieben.","ich bin schon oft einen Lebenslauf geschrieben.","ich habe schon oft einen Lebenslauf schreiben.","ich schon oft einen Lebenslauf geschrieben habe."],ans:0,hint:"schon einmal"},
+  {q:"Hast du heute Abend Zeit? → Er hat gefragt, ___ du heute Abend Zeit hast.",opts:["ob","dass","wann","wie"],ans:0,hint:"indirekte Frage"},
+  {q:"Frau Matei ___ in Deva geboren.",opts:["ist","hat","wird","sind"],ans:0,hint:"Perfekt"},
+  {q:"Was gehört zur Körpersprache im Bewerbungsgespräch?",opts:["eine aufrechte Haltung und Blickkontakt","die Arme verschränken","auf das Handy schauen","nicht antworten"],ans:0,hint:"Körpersprache"},
+  {q:"Aktives Zuhören bedeutet:",opts:["den anderen ausreden lassen","den anderen oft unterbrechen","das Handy laut schalten","nur nicken"],ans:0,hint:"Bewerbungsgespräch"},
+  {q:"«gelassen bleiben» означает:",opts:["сохранять спокойствие","говорить быстро","громко смеяться","отказываться"],ans:0,hint:"Bewerbungsgespräch"},
+  {q:"«Ich gehe davon aus, dass ...» означает:",opts:["я исхожу из того, что ...","я выхожу из дома, что ...","я надеюсь только на ...","мне всё равно, что ..."],ans:0,hint:"Redemittel"},
+  {q:"«der Posten» — это:",opts:["должность, место (работы)","почта","пост (в соцсети)","посылка"],ans:0,hint:"Arbeit"},
+  {q:"Auf die Frage «Warum?» antwortet man mit einem ...-Satz.",opts:["weil","dass","ob","wo"],ans:0,hint:"Nebensatz"},
+  {q:"«Die Antwort» mit weil oder dass ist ein ...",opts:["Nebensatz","Hauptsatz","Fragesatz","Imperativ"],ans:0,hint:"Satzarten"},
+];
+
 function T_A2L10A(){
   const [tab,setTab]=useState("arbeit");
   const wege=[
@@ -18165,10 +18239,12 @@ function T_A2L10A(){
     {de:"belastbar",ru:"выносливый, устойчивый к нагрузкам",erk:"Man bleibt auch in Situationen mit Stress ruhig.",erkRu:"Человек сохраняет спокойствие даже в стрессовых ситуациях."},
     {de:"engagiert",ru:"заинтересованный, увлечённый",erk:"Man interessiert sich für die Arbeit und nimmt sie wichtig.",erkRu:"Человек интересуется работой и относится к ней серьёзно."},
     {de:"teamfähig",ru:"умеющий работать в команде",erk:"Man kann gut mit Kollegen zusammenarbeiten.",erkRu:"Человек хорошо сотрудничает с коллегами."},
+    {de:"fleißig",ru:"трудолюбивый",erk:"Man arbeitet sehr viel.",erkRu:"Человек очень много работает."},
+    {de:"geduldig",ru:"терпеливый",erk:"Auch wenn man etwas wiederholen muss, ärgert man sich nicht.",erkRu:"Даже если что-то нужно повторять, человек не сердится."},
   ];
   const mehr=[
-    {de:"fleißig",ru:"трудолюбивый"},{de:"ehrlich",ru:"честный"},{de:"geduldig",ru:"терпеливый"},
-    {de:"freundlich",ru:"дружелюбный"},{de:"kreativ",ru:"творческий"},{de:"aufdringlich",ru:"навязчивый (минус)"},
+    {de:"ehrlich",ru:"честный"},{de:"freundlich",ru:"дружелюбный"},
+    {de:"kreativ",ru:"творческий"},{de:"aufdringlich",ru:"навязчивый (минус)"},
   ];
   const anz=[
     {t:"Koch / Köchin — Restaurant Goldstern (Iserlohn)",de:"Wir suchen engagierten Koch (m/w) mit Berufserfahrung für unser Restaurant. 5-Tage-Woche, Schichtarbeit, Wochenendarbeit. Sie sind belastbar und können gut im Team arbeiten? Dann schicken Sie uns Ihre Bewerbung.",ru:"Мы ищем увлечённого повара (м/ж) с опытом работы для нашего ресторана. 5-дневная рабочая неделя, сменная работа, работа по выходным. Вы выносливы и умеете хорошо работать в команде? Тогда пришлите нам своё заявление."},
@@ -18206,6 +18282,9 @@ function T_A2L10A(){
           <div>
             <TapEx de="Wie kann man Arbeit finden? — Man kann durch eine Anzeige in der Zeitung Arbeit finden." ru="Как можно найти работу? — Можно найти работу через объявление в газете." col={C.orange} style={{marginBottom:6}}/>
             <TapEx de="Man kann durch die Arbeitsagentur Arbeit finden." ru="Можно найти работу через агентство по труду." col={C.orange} style={{marginBottom:10}}/>
+            <TapEx de="Ich habe meine Arbeit durch Freunde gefunden." ru="Я нашёл(нашла) свою работу через друзей." col={C.orange} style={{marginBottom:6}}/>
+            <TapEx de="Am Wochenende gibt es in der Zeitung viele Stellenangebote." ru="По выходным в газете много предложений о работе." col={C.orange} style={{marginBottom:6}}/>
+            <TapEx de="Auch durch ein Praktikum kann man eine Arbeit finden." ru="Работу можно найти и через практику (стажировку)." col={C.orange} style={{marginBottom:10}}/>
             <RedeBlock col={C.orange} title="Wie kann man Arbeit finden?" items={wege}/>
             <div style={{background:C.yellow+"15",border:`1px solid ${C.yellow}33`,borderRadius:10,padding:"11px 13px",marginTop:10}}>
               <div style={{fontWeight:800,fontSize:13,color:C.yellow,marginBottom:4}}>durch + Akkusativ</div>
@@ -18230,6 +18309,9 @@ function T_A2L10A(){
             </div>
             <div style={{fontSize:12,fontWeight:800,color:C.orange,marginBottom:6}}>Welche Eigenschaften braucht man in diesem Beruf?</div>
             <TapEx de="Ich denke, dass eine Altenpflegerin belastbar und freundlich sein muss, weil die Arbeit mit älteren Menschen Geduld und Belastbarkeit erfordert." ru="Я думаю, что гериатрическая медсестра должна быть выносливой и дружелюбной, потому что работа со старшими людьми требует терпения и выносливости." col={C.orange} style={{marginBottom:6}}/>
+            <TapEx de="Ein Lehrer muss belastbar sein." ru="Учитель должен быть выносливым (устойчивым к нагрузкам)." col={C.orange} style={{marginBottom:6}}/>
+            <TapEx de="Wenn man mit Kollegen zusammenarbeitet, sollte man teamfähig sein." ru="Если работаешь с коллегами, стоит быть командным игроком." col={C.orange} style={{marginBottom:6}}/>
+            <TapEx de="Wenn man Erzieher ist, sollte man kreativ und freundlich sein." ru="Если ты воспитатель, стоит быть творческим и дружелюбным." col={C.orange} style={{marginBottom:6}}/>
             <TapEx de="Ich denke, dass ein Mechaniker zuverlässig, engagiert und fleißig sein muss, weil die Arbeit als Mechaniker Konzentration und Genauigkeit erfordert." ru="Я думаю, что механик должен быть надёжным, увлечённым и трудолюбивым, потому что работа механика требует концентрации и точности." col={C.orange} style={{marginBottom:12}}/>
             <div style={{fontSize:12,fontWeight:800,color:C.orange,marginBottom:6}}>Stellenanzeigen in Dortmund und Umgebung</div>
             {anz.map((a,i)=>(
@@ -18268,20 +18350,49 @@ function T_A2L10A(){
 
 function T_A2L10B(){
   const [tab,setTab]=useState("telefon");
-  const frageTel=[
-    {de:"Ist die Stelle noch frei?",ru:"Вакансия ещё свободна?"},
-    {de:"Wie sind denn die Arbeitszeiten?",ru:"А какой у вас график работы?"},
-    {de:"Gibt es einen festen Stundenlohn?",ru:"Есть ли фиксированная почасовая оплата?"},
+  const dialog=[
+    {who:"P",de:"Pizzaservice Napoli. Guten Tag.",ru:"Пиццерия «Наполи». Добрый день."},
+    {who:"M",de:"Guten Tag, mein Name ist Milo Botev. Ich habe Ihre Stellenanzeige in der BZ gelesen. Sie suchen einen Pizzafahrer. Ist die Stelle noch frei?",ru:"Добрый день, меня зовут Мило Ботев. Я прочитал ваше объявление о вакансии в газете BZ. Вы ищете водителя для доставки пиццы. Вакансия ещё свободна?"},
+    {who:"P",de:"Ja, sie ist noch frei. Wir suchen vor allem Fahrer für den Abend.",ru:"Да, она ещё свободна. Мы ищем прежде всего водителей на вечер."},
+    {who:"M",de:"Für den Abend? Wie sind denn die Arbeitszeiten?",ru:"На вечер? А какой у вас график работы?"},
+    {who:"P",de:"Sie beginnen um 18 Uhr und arbeiten bis ungefähr 23 Uhr.",ru:"Вы начинаете в 18 часов и работаете примерно до 23 часов."},
+    {who:"M",de:"Ja, das geht. Gibt es einen festen Stundenlohn?",ru:"Да, это подходит. Есть ли фиксированная почасовая оплата?"},
+    {who:"P",de:"Das besprechen wir am besten hier im Restaurant ...",ru:"Это лучше всего обсудить у нас здесь, в ресторане ..."},
+  ];
+  const skript=[
+    {de:"Guten Tag, hier spricht ...",ru:"Добрый день, говорит ..."},
+    {de:"Ich habe Ihre Anzeige gelesen. Sie suchen ...",ru:"Я прочитал(а) ваше объявление. Вы ищете ..."},
+    {de:"Können Sie mir sagen, ob die Stelle noch frei ist?",ru:"Можете сказать, свободна ли ещё вакансия?"},
+    {de:"In der Anzeige steht: Arbeitszeit ... Was heißt das genau?",ru:"В объявлении написано: график работы ... Что это значит точно?"},
+    {de:"Ich würde gerne wissen, wie die Bezahlung ist.",ru:"Я хотел(а) бы знать, какая оплата."},
+    {de:"Ja, da kann ich kommen. Wie ist Ihre Adresse?",ru:"Да, туда я могу прийти. Какой у вас адрес?"},
+    {de:"Vielen Dank. Dann bis morgen.",ru:"Большое спасибо. Тогда до завтра."},
+  ];
+  const antw=[
+    {de:"Ja, sie ist noch frei.",ru:"Да, она ещё свободна."},
+    {de:"Sie arbeiten von ... Uhr bis ... Uhr.",ru:"Вы работаете с ... часов до ... часов."},
+    {de:"Das besprechen wir am besten hier.",ru:"Это лучше всего обсудить у нас."},
+    {de:"Haben Sie morgen um ... Uhr Zeit?",ru:"У вас есть завтра время в ... часов?"},
+    {de:"Die Adresse ist ...",ru:"Адрес: ..."},
+  ];
+  const anz=[
+    {de:"Fahrer/in mit Führerschein Klasse C1 (leichte Lkw) gesucht. Wäscherei Singler.",ru:"Требуется водитель (м/ж) с правами категории C1 (лёгкие грузовики). Прачечная Singler."},
+    {de:"Zwei Küchenhilfen für das Restaurant Bayrischer Hof gesucht. Arbeitszeit: mittags oder abends.",ru:"Требуются два помощника на кухню для ресторана «Bayrischer Hof». График: в обед или вечером."},
+    {de:"IT-Mitarbeiter/in für den Support gesucht.",ru:"Требуется IT-сотрудник (м/ж) в службу поддержки."},
+    {de:"Gesucht: zuverlässige/r Fahrer/in. Voraussetzung: Führerschein Klasse B. Pizzaservice Luna.",ru:"Требуется: надёжный водитель (м/ж). Условие: права категории B. Пиццерия с доставкой «Луна»."},
   ];
   const einl=[
     {de:"Ich weiß nicht, ...",ru:"Я не знаю, ..."},
     {de:"Ich würde gerne wissen, ...",ru:"Я хотел(а) бы знать, ..."},
+    {de:"Ich möchte gerne wissen, ...",ru:"Я хотел(а) бы узнать, ..."},
+    {de:"Können Sie mir sagen, ...?",ru:"Можете ли вы мне сказать, ...?"},
     {de:"Wissen Sie, ...?",ru:"Знаете ли вы, ...?"},
     {de:"Er kann nicht sagen, ...",ru:"Он не может сказать, ..."},
     {de:"Er ist noch nicht sicher, ...",ru:"Он ещё не уверен, ..."},
     {de:"Er weiß noch nicht, ...",ru:"Он ещё не знает, ..."},
   ];
   const janein=[
+    {de:"Können Sie mir sagen, ob die Stelle noch frei ist?",ru:"Можете ли вы сказать мне, свободна ли ещё вакансия?"},
     {de:"Du weißt nicht, ob du die Stelle annimmst.",ru:"Ты не знаешь, примешь ли ты это место."},
     {de:"Wissen Sie, ob George immer abends arbeiten möchte?",ru:"Знаете ли вы, хочет ли Георг всегда работать по вечерам?"},
     {de:"Er ist noch nicht sicher, ob er sich auch bei einer anderen Firma bewerben kann.",ru:"Он ещё не уверен, может ли он подать заявку и в другую фирму."},
@@ -18289,8 +18400,21 @@ function T_A2L10B(){
     {de:"Ich würde gerne wissen, ob es einen festen Stundenlohn gibt.",ru:"Я хотел(а) бы знать, есть ли фиксированная почасовая оплата."},
   ];
   const wfrage=[
+    {de:"Ich möchte gerne wissen, wo die Pizzeria ist.",ru:"Я хотел(а) бы знать, где находится пиццерия."},
     {de:"Ich weiß nicht, wie lange ich mit dem Bus zur Arbeit brauche.",ru:"Я не знаю, сколько мне ехать на автобусе до работы."},
     {de:"Er kann nicht sagen, wann ich einen Arbeitsvertrag bekomme.",ru:"Он не может сказать, когда я получу трудовой договор."},
+  ];
+  const milo=[
+    {d:"Nehme ich die Stelle an?",i:"Er weiß noch nicht, ob er die Stelle annehmen will.",ru:"Он ещё не знает, хочет ли он принять это место."},
+    {d:"Möchte ich immer abends arbeiten?",i:"Er ist noch nicht sicher, ob er immer abends arbeiten möchte.",ru:"Он ещё не уверен, хочет ли он всегда работать по вечерам."},
+    {d:"Wie lange brauche ich mit dem Bus zur Arbeit?",i:"Er weiß nicht, wie lange er mit dem Bus zur Arbeit braucht.",ru:"Он не знает, сколько ему ехать на автобусе до работы."},
+    {d:"Verdiene ich genug?",i:"Er kann nicht sagen, ob er genug verdient.",ru:"Он не может сказать, достаточно ли он зарабатывает."},
+    {d:"Kann ich dann noch meine Freunde treffen?",i:"Er weiß nicht, ob er dann noch seine Freunde treffen kann.",ru:"Он не знает, сможет ли он тогда ещё встречаться с друзьями."},
+    {d:"Kann ich mich auch bei einer anderen Firma bewerben?",i:"Er ist nicht sicher, ob er sich auch bei einer anderen Firma bewerben kann.",ru:"Он не уверен, может ли он подать заявку и в другую фирму."},
+    {d:"Wie viele Pausen kann ich machen?",i:"Er weiß nicht, wie viele Pausen er machen kann.",ru:"Он не знает, сколько перерывов он может делать."},
+    {d:"Muss ich mit meinem eigenen Auto fahren?",i:"Er weiß nicht, ob er mit seinem eigenen Auto fahren muss.",ru:"Он не знает, нужно ли ему ездить на собственной машине."},
+    {d:"Wann bekomme ich einen Arbeitsvertrag?",i:"Er kann nicht sagen, wann er einen Arbeitsvertrag bekommt.",ru:"Он не может сказать, когда он получит трудовой договор."},
+    {d:"Muss ich Überstunden machen?",i:"Er weiß nicht, ob er Überstunden machen muss.",ru:"Он не знает, придётся ли ему работать сверхурочно."},
   ];
   const woerter=[
     {de:"die Fähigkeit, -en",ru:"навык, умение"},
@@ -18312,7 +18436,7 @@ function T_A2L10B(){
       <Box c={C.blue}>
         <H c={C.blue}>📞 A2-L10B · Der erste Kontakt</H>
         <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
-          {[["telefon","Am Telefon"],["indirekt","Indirekte Fragen"],["woerter","Wörter"]].map(([key,lbl])=>(
+          {[["telefon","Am Telefon"],["indirekt","Indirekte Fragen"],["milo","Milo Botev"],["woerter","Wörter"]].map(([key,lbl])=>(
             <button key={key} onClick={()=>setTab(key)}
               style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
                 fontSize:12,fontWeight:700,textAlign:"center",lineHeight:1.3,wordBreak:"break-word",
@@ -18325,13 +18449,18 @@ function T_A2L10B(){
         </div>
         {tab==="telefon"&&(
           <div>
-            <div style={{fontSize:13,color:C.muted,lineHeight:1.6,marginBottom:10}}>Так можно спросить о вакансии по телефону:</div>
-            <RedeBlock col={C.blue} title="Fragen am Telefon" items={frageTel}/>
-            <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,borderRadius:10,padding:"11px 13px",marginTop:10}}>
-              <div style={{fontWeight:800,fontSize:13,color:C.orange,marginBottom:6}}>Вежливее — косвенным вопросом</div>
-              <TapEx de="Gibt es einen festen Stundenlohn?" ru="Есть ли фиксированная почасовая оплата? (прямой вопрос)" col={C.orange} style={{marginBottom:6}}/>
-              <TapEx de="Ich würde gerne wissen, ob es einen festen Stundenlohn gibt." ru="Я хотел(а) бы знать, есть ли фиксированная почасовая оплата. (косвенный вопрос, вежливее)" col={C.orange}/>
-            </div>
+            <div style={{fontSize:13,color:C.muted,lineHeight:1.6,marginBottom:8}}>Мило Ботев звонит в пиццерию по объявлению. <span style={{color:C.blue,fontWeight:700}}>Синим</span> — пиццерия, <span style={{color:C.orange,fontWeight:700}}>оранжевым</span> — Мило. Нажми на реплику — увидишь перевод.</div>
+            {dialog.map((l,i)=><TapEx key={i} de={l.de} ru={l.ru} col={l.who==="M"?C.orange:C.blue} style={{marginBottom:6}}/>)}
+            <div style={{height:8}}/>
+            <RedeBlock col={C.blue} title="Fragen am Telefon" items={[
+              {de:"Ist die Stelle noch frei?",ru:"Вакансия ещё свободна?"},
+              {de:"Wie sind denn die Arbeitszeiten?",ru:"А какой у вас график работы?"},
+              {de:"Gibt es einen festen Stundenlohn?",ru:"Есть ли фиксированная почасовая оплата?"},
+            ]}/>
+            <RedeBlock col={C.blue} title="Sich am Telefon über eine Stelle informieren" items={skript}/>
+            <RedeBlock col={C.green} title="Antworten des Arbeitgebers" items={antw}/>
+            <div style={{fontSize:12,fontWeight:800,color:C.blue,margin:"12px 0 6px"}}>Anzeigen zum Üben (Kursbuch S.117)</div>
+            {anz.map((a,i)=><TapEx key={i} de={a.de} ru={a.ru} col={C.blue} style={{marginBottom:6}}/>)}
           </div>
         )}
         {tab==="indirekt"&&(
@@ -18343,6 +18472,10 @@ function T_A2L10B(){
                 Ja/Nein-вопрос → <b style={{color:C.orange}}>ob</b><br/>
                 W-вопрос → тот же вопросительный слово (<b style={{color:C.orange}}>wie, wann, wo</b> ...)
               </div>
+            </div>
+            <div style={{background:C.ov4,borderRadius:10,padding:"10px 12px",marginBottom:10,fontSize:13,color:C.text,lineHeight:1.9}}>
+              Ist die Stelle noch frei? <span style={{color:C.muted}}>→</span> Können Sie mir sagen, <b style={{color:C.orange}}>ob</b> die Stelle noch frei <b style={{color:C.orange}}>ist</b>?<br/>
+              Wo ist die Pizzeria? <span style={{color:C.muted}}>→</span> Ich möchte gerne wissen, <b style={{color:C.orange}}>wo</b> die Pizzeria <b style={{color:C.orange}}>ist</b>.
             </div>
             <RedeBlock col={C.blue} title="Einleitung — как начать" items={einl}/>
             <div style={{fontSize:12,fontWeight:800,color:C.blue,margin:"12px 0 6px"}}>Ja/Nein-Fragen → ob</div>
@@ -18356,6 +18489,21 @@ function T_A2L10B(){
                 Er weiß noch nicht, <b>ob</b> er Überstunden machen <b>muss</b>. — модальный глагол стоит самым последним.
               </div>
             </div>
+            <div style={{fontSize:12,fontWeight:800,color:C.blue,margin:"12px 0 6px"}}>Передать чужой вопрос</div>
+            <TapEx de="Hast du heute Abend Zeit? — Was hat er gefragt? — Er hat gefragt, ob du heute Abend Zeit hast." ru="У тебя есть время сегодня вечером? — Что он спросил? — Он спросил, есть ли у тебя сегодня вечером время." col={C.blue} style={{marginBottom:6}}/>
+            <TapEx de="Wo ist mein Handy? — Er hat gefragt, wo sein Handy ist." ru="Где мой телефон? — Он спросил, где его телефон. (mein → sein)" col={C.blue} style={{marginBottom:6}}/>
+            <TapEx de="Nimmt er die Stelle an? — Er ist noch nicht sicher, ob er die Stelle annimmt. — Ach so, er ist noch nicht sicher, ob er die Stelle annimmt. Okay." ru="Он принимает это место? — Он ещё не уверен, примет ли он это место. — А, понятно, он ещё не уверен, примет ли он это место. Хорошо." col={C.blue}/>
+          </div>
+        )}
+        {tab==="milo"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,lineHeight:1.6,marginBottom:10}}>Мило Ботев думает о новой работе. Его вопросы к самому себе → косвенные вопросы. Обрати внимание: <b style={{color:C.text}}>ich → er</b>, <b style={{color:C.text}}>mein → sein</b>.</div>
+            {milo.map((m,i)=>(
+              <div key={i} style={{marginBottom:8}}>
+                <div style={{fontSize:12,color:C.muted,margin:"0 0 3px 4px"}}>{m.d}</div>
+                <TapEx de={m.i} ru={m.ru} col={C.blue}/>
+              </div>
+            ))}
           </div>
         )}
         {tab==="woerter"&&(
@@ -18378,7 +18526,197 @@ function T_A2L10B(){
   );
 }
 
-const Q_A2L10TEST=shuffle([...Q_A2L10A,...Q_A2L10B]);
+function T_A2L10C(){
+  const [tab,setTab]=useState("lebenslauf");
+  const cv=[
+    {de:"der Lebenslauf",ru:"резюме (CV)"},
+    {de:"Persönliche Daten",ru:"личные данные"},
+    {de:"Vor- und Nachname",ru:"имя и фамилия"},
+    {de:"Anschrift",ru:"адрес"},
+    {de:"Geburtsdatum/-ort",ru:"дата и место рождения"},
+    {de:"Schulbildung",ru:"школьное образование"},
+    {de:"Aus-/Weiterbildung",ru:"профессиональное образование, повышение квалификации"},
+    {de:"Berufserfahrung",ru:"опыт работы"},
+    {de:"Kenntnisse",ru:"знания и навыки (например, языки)"},
+    {de:"Muttersprache",ru:"родной язык"},
+  ];
+  const bew=[
+    {de:"das Bewerbungsschreiben",ru:"сопроводительное письмо"},
+    {de:"der Lebenslauf",ru:"резюме"},
+    {de:"das Bewerbungsfoto",ru:"фото для заявки"},
+    {de:"Kopien von den Zeugnissen",ru:"копии дипломов и аттестатов"},
+  ];
+  const matei=[
+    {de:"Wo ist Frau Matei geboren? — In Deva in Rumänien.",ru:"Где родилась госпожа Матей? — В Деве, в Румынии."},
+    {de:"Wo ist sie zur Schule gegangen? — In Deva.",ru:"Где она ходила в школу? — В Деве."},
+    {de:"Was ist sie von Beruf? — Sie ist Gesundheits- und Krankenpflegerin.",ru:"Кто она по профессии? — Она дипломированная медсестра."},
+    {de:"Wo hat sie gearbeitet? — An der Floreasca-Klinik in Bukarest.",ru:"Где она работала? — В клинике Floreasca в Бухаресте."},
+    {de:"Wie lange hat sie dort gearbeitet? — Von 2009 bis 2014, also fünf Jahre.",ru:"Как долго она там работала? — С 2009 по 2014 год, то есть пять лет."},
+    {de:"Welche weiteren Kenntnisse hat sie? — Sie spricht Deutsch (B2) und Englisch (B1).",ru:"Какие ещё знания у неё? — Она говорит по-немецки (B2) и по-английски (B1)."},
+  ];
+  const themen=[
+    {de:"die Arbeitszeiten",ru:"график работы"},{de:"das Gehalt",ru:"зарплата"},
+    {de:"die Aufgaben",ru:"задачи, обязанности"},{de:"die Fremdsprachen",ru:"иностранные языки"},
+    {de:"die Freizeit",ru:"свободное время"},{de:"die Arbeitspausen",ru:"перерывы на работе"},
+    {de:"die Überstunden",ru:"сверхурочные"},{de:"die Arbeitskleidung",ru:"рабочая одежда"},
+  ];
+  const ratschlag=[
+    {de:"Man sollte sich vorher über die Firma informieren.",ru:"Стоит заранее узнать о фирме."},
+    {de:"Ich denke, man sollte passend gekleidet sein.",ru:"Я думаю, нужно быть подобающе одетым."},
+    {de:"Ich denke, man sollte pünktlich sein. Und du? Was denkst du?",ru:"Я думаю, нужно быть пунктуальным. А ты? Что ты думаешь?"},
+  ];
+  const geber=[
+    {de:"Sind Sie flexibel?",ru:"Вы гибки (можете работать в разное время)?"},
+    {de:"Haben Sie schon als Aushilfe in einem Supermarkt gearbeitet?",ru:"Вы уже работали подсобным работником в супермаркете?"},
+    {de:"Sind Sie Teamarbeit gewohnt?",ru:"Вы привыкли к командной работе?"},
+    {de:"Wo haben Sie schon als Reinigungskraft gearbeitet?",ru:"Где вы уже работали уборщиком (уборщицей)?"},
+    {de:"Warum interessieren Sie sich für die Stelle?",ru:"Почему вас интересует эта вакансия?"},
+    {de:"Ist Stress bei der Arbeit ein Problem für Sie?",ru:"Стресс на работе для вас проблема?"},
+    {de:"Haben Sie schon einmal in Schichtarbeit gearbeitet?",ru:"Вы уже работали посменно?"},
+    {de:"Wie gut sind Ihre Deutschkenntnisse?",ru:"Насколько хороши ваши знания немецкого?"},
+  ];
+  const nehmer=[
+    {de:"Arbeite ich allein oder im Team?",ru:"Я работаю один (одна) или в команде?"},
+    {de:"Gibt es Fortbildungen für Mitarbeiter?",ru:"Есть ли повышение квалификации для сотрудников?"},
+    {de:"Ist es möglich, dass ich bei Ihnen nach Weihnachten weiterarbeiten kann?",ru:"Возможно ли, что я смогу продолжить работать у вас после Рождества?"},
+    {de:"Kann ich später auch in Vollzeit arbeiten?",ru:"Смогу ли я позже работать на полную ставку?"},
+  ];
+  const einmal=[
+    {de:"Haben Sie schon einmal einen Lebenslauf geschrieben?",ru:"Вы когда-нибудь писали резюме?"},
+    {de:"Haben Sie schon einmal eine Stellenanzeige beantwortet?",ru:"Вы когда-нибудь отвечали на объявление о вакансии?"},
+    {de:"Haben Sie schon einmal einen Arbeitsvertrag unterschrieben?",ru:"Вы когда-нибудь подписывали трудовой договор?"},
+    {de:"Haben Sie schon einmal Überstunden gemacht?",ru:"Вы когда-нибудь работали сверхурочно?"},
+    {de:"Sind Sie schon einmal zu einem Vorstellungsgespräch gegangen?",ru:"Вы когда-нибудь ходили на собеседование?"},
+  ];
+  const dialog=[
+    {de:"Ich würde euch gern etwas fragen. Ich habe am Wochenende eine spannende Stellenanzeige im Internet gefunden. Eine große Internetfirma sucht jemanden für ihr Team. Sie wollen einen Online-Shop aufbauen.",ru:"Я хотел бы вас кое о чём спросить. На выходных я нашёл в интернете интересное объявление о вакансии. Большая интернет-фирма ищет человека в свою команду. Они хотят создать интернет-магазин."},
+    {de:"Das ist dein Job, Ismail!",ru:"Это твоя работа, Исмаил!"},
+    {de:"Ja und nein. Ich hatte noch nie einen Chef oder Kollegen. Ich bin Teamarbeit nicht gewohnt. Ich weiß nicht, ob ich das kann.",ru:"Да и нет. У меня ещё никогда не было начальника или коллег. Я не привык к командной работе. Я не знаю, смогу ли я это."},
+    {de:"Aber du kannst es versuchen. Du bist doch jung und flexibel.",ru:"Но ты можешь попробовать. Ты же молод и гибок."},
+    {de:"Ja, genau! Und du hast viel Erfahrung mit Online-Shops.",ru:"Да, точно! И у тебя большой опыт с интернет-магазинами."},
+    {de:"Was machst du denn dann mit deinem eigenen Online-Shop? Verkaufen?",ru:"А что ты тогда будешь делать со своим собственным интернет-магазином? Продашь?"},
+    {de:"Das weiß ich noch nicht.",ru:"Этого я ещё не знаю."},
+    {de:"Ja, verkaufen ist eine gute Idee. So geht das doch heute: Man gründet eine Firma, baut sie auf und verkauft sie dann teuer. Für eine Million Euro oder Dollar oder so. Super!",ru:"Да, продать — хорошая идея. Сегодня ведь так и делается: основывают фирму, развивают её и потом дорого продают. За миллион евро или долларов или около того. Супер!"},
+    {de:"Ja, klar! Ich würde einfach gern mehr Zeit für meine Familie haben. Als Angestellter ist das einfacher, denke ich. Ich möchte nicht mehr jedes Wochenende arbeiten. Eine eigene Firma ist nur Stress.",ru:"Да, конечно! Я бы просто хотел больше времени для семьи. Как наёмному работнику это проще, думаю. Я не хочу больше работать каждые выходные. Собственная фирма — сплошной стресс."},
+    {de:"Und hast du dich schon beworben?",ru:"А ты уже подал заявку?"},
+    {de:"Nein. Ich muss noch meinen Lebenslauf schreiben. Und ein Bewerbungsfoto habe ich auch noch nicht. Ich weiß ja auch gar nicht, ob die Stelle noch frei ist.",ru:"Нет. Мне ещё нужно написать резюме. И фото для заявки у меня тоже ещё нет. Я ведь даже не знаю, свободна ли ещё вакансия."},
+    {de:"Warum rufst du nicht schon mal in der Firma an? Fragen kostet doch nichts.",ru:"Почему бы тебе уже сейчас не позвонить в фирму? Спросить ведь ничего не стоит."},
+  ];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.green}>
+        <H c={C.green}>📄 A2-L10C · Die Bewerbung</H>
+        <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
+          {[["lebenslauf","Lebenslauf"],["gespraech","Gespräch"],["koerper","Körpersprache"],["fragen","Fragen"],["dialog","Dialog"]].map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,textAlign:"center",lineHeight:1.3,wordBreak:"break-word",
+                border:`1px solid ${tab===key?C.green+"55":C.border}`,
+                background:tab===key?C.green+"22":C.ov3,
+                color:tab===key?C.green:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+        {tab==="lebenslauf"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,lineHeight:1.6,marginBottom:10}}>Из чего состоит немецкое резюме (на примере Daniela Matei, медсестра из Румынии, которая подаётся на место Altenpflegerin):</div>
+            <RedeBlock col={C.green} title="Der Lebenslauf" items={cv}/>
+            <RedeBlock col={C.green} title="Was gehört zu einer Bewerbung?" items={bew}/>
+            <div style={{fontSize:12,fontWeight:800,color:C.green,margin:"12px 0 6px"}}>Fragen zum Lebenslauf von Frau Matei</div>
+            {matei.map((e,i)=><TapEx key={i} de={e.de} ru={e.ru} col={C.green} style={{marginBottom:6}}/>)}
+            <div style={{background:C.yellow+"15",border:`1px solid ${C.yellow}33`,borderRadius:10,padding:"11px 13px",marginTop:10}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.yellow,marginBottom:4}}>Perfekt в этих ответах</div>
+              <div style={{fontSize:13,color:C.text,lineHeight:1.7}}>Frau Matei <b>ist</b> in Deva <b>geboren</b>. Sie <b>ist</b> zur Schule <b>gegangen</b>. — sein: рождение, движение.<br/>Sie <b>hat</b> dort <b>gearbeitet</b>. — haben: большинство остальных глаголов.</div>
+            </div>
+          </div>
+        )}
+        {tab==="gespraech"&&(
+          <div>
+            <div style={{background:C.green+"15",border:`1px solid ${C.green}33`,borderRadius:10,padding:"11px 13px",marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.green,marginBottom:4}}>Ratschläge: man sollte + Infinitiv</div>
+              <div style={{fontSize:13,color:C.text,lineHeight:1.7}}>Что стоит сделать перед собеседованием и на нём. <b>sollte</b> стоит на втором месте, смысловой глагол — в конце: ich sollte, du solltest, er/sie/es/man sollte, wir sollten, ihr solltet, sie/Sie sollten. Мы уже встречали sollte в разделе Gesund leben C.</div>
+            </div>
+            <TapEx de="Was denken Sie, was sollte man beim Bewerbungsgespräch beachten?" ru="Как вы думаете, на что следует обратить внимание на собеседовании?" col={C.green} style={{marginBottom:6}}/>
+            {ratschlag.map((e,i)=><TapEx key={i} de={e.de} ru={e.ru} col={C.green} style={{marginBottom:6}}/>)}
+            <div style={{height:6}}/>
+            <RedeBlock col={C.green} title="Themen im Bewerbungsgespräch" items={themen}/>
+            <div style={{fontSize:12,fontWeight:800,color:C.green,margin:"12px 0 6px"}}>Ответы кандидата</div>
+            <TapEx de="Ich kann Deutsch auf dem Niveau B1." ru="Я владею немецким на уровне B1." col={C.green} style={{marginBottom:6}}/>
+            <TapEx de="Ja, ich habe immer mit Kollegen zusammengearbeitet." ru="Да, я всегда работал(а) с коллегами." col={C.green} style={{marginBottom:6}}/>
+            <TapEx de="Ich bin sicher, dass ich das schaffe. Stress kenne ich auch von früher." ru="Я уверен(а), что справлюсь. Стресс мне знаком и по прошлому." col={C.green}/>
+          </div>
+        )}
+        {tab==="koerper"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,lineHeight:1.6,marginBottom:10}}>Bewerbungsgespräch: как вести себя на собеседовании. Нажми на фразу — увидишь перевод.</div>
+            <RedeBlock col={C.green} title="die Körpersprache — язык тела" items={[
+              {de:"eine aufrechte Haltung haben",ru:"держаться прямо (иметь прямую осанку)"},
+              {de:"einen Blickkontakt haben",ru:"поддерживать зрительный контакт"},
+              {de:"Arme nicht verschränken",ru:"не скрещивать руки на груди"},
+            ]}/>
+            <RedeBlock col={C.blue} title="aktives Zuhören — активное слушание" items={[
+              {de:"ausreden lassen",ru:"давать договорить"},
+              {de:"nicht unterbrechen",ru:"не перебивать"},
+              {de:"auf die Frage(n) antworten",ru:"отвечать на вопрос(ы)"},
+            ]}/>
+            <RedeBlock col={C.orange} title="Vor dem Gespräch" items={[
+              {de:"das Handy lautlos schalten",ru:"перевести телефон в беззвучный режим"},
+            ]}/>
+            <RedeBlock col={C.purple} title="Eigenschaften — качества" items={[
+              {de:"sicher",ru:"уверенный"},
+              {de:"zuversichtlich",ru:"полный уверенности, настроенный оптимистично"},
+              {de:"selbstsicher sein",ru:"быть уверенным в себе"},
+            ]}/>
+            <div style={{fontSize:12,fontWeight:800,color:C.green,margin:"12px 0 6px"}}>Nützliche Wendungen</div>
+            <TapEx de="Ich gehe davon aus, dass das Gespräch um zehn Uhr beginnt." ru="Я исхожу из того, что собеседование начнётся в десять часов." col={C.green} style={{marginBottom:6}}/>
+            <TapEx de="Es wäre besser, wenn Sie das Handy lautlos schalten." ru="Было бы лучше, если бы вы перевели телефон в беззвучный режим." col={C.green} style={{marginBottom:6}}/>
+            <TapEx de="Man sollte gelassen bleiben, auch wenn die Frage schwierig ist." ru="Нужно сохранять спокойствие, даже если вопрос трудный." col={C.green} style={{marginBottom:6}}/>
+            <TapEx de="Man sollte sich nicht wichtig machen." ru="Не стоит важничать." col={C.green} style={{marginBottom:6}}/>
+            <TapEx de="Nach der Frage gab es ein kurzes Schweigen." ru="После вопроса наступило короткое молчание." col={C.green} style={{marginBottom:10}}/>
+            <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,borderRadius:10,padding:"11px 13px",marginBottom:10}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.orange,marginBottom:4}}>Управление: sagen / sprechen</div>
+              <div style={{fontSize:13,color:C.text,lineHeight:1.7}}><b>sagen von + Dativ</b> — сказать о чём-то.<br/><b>sprechen über + Akkusativ</b> — говорить о чём-то.</div>
+            </div>
+            <TapEx de="Was sagst du noch dazu?" ru="Что ты ещё скажешь об этом?" col={C.orange} style={{marginBottom:6}}/>
+            <TapEx de="Wir sprechen über den Arbeitsvertrag." ru="Мы говорим о трудовом договоре." col={C.orange} style={{marginBottom:10}}/>
+            <div style={{background:C.yellow+"15",border:`1px solid ${C.yellow}33`,borderRadius:10,padding:"11px 13px"}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.yellow,marginBottom:4}}>Вопрос → Hauptsatz, ответ → Nebensatz</div>
+              <div style={{fontSize:13,color:C.text,lineHeight:1.8}}>
+                <b>Die Frage → Hauptsatz.</b> <b>Die Antwort → Nebensatz.</b><br/>
+                <b>weil-Sätze</b> отвечают на вопрос <b>Warum?</b><br/>
+                <b>dass-Sätze</b> отвечают на вопрос <b>Was?</b><br/>
+                В Nebensatz глагол стоит в конце.
+              </div>
+              <TapEx de="Warum soll man pünktlich sein? — Weil man sonst einen schlechten Eindruck macht." ru="Почему нужно быть пунктуальным? — Потому что иначе производишь плохое впечатление." col={C.yellow} style={{marginTop:8,marginBottom:6}}/>
+              <TapEx de="Was denkst du? — Ich denke, dass man die Arme nicht verschränken sollte." ru="Что ты думаешь? — Я думаю, что не стоит скрещивать руки." col={C.yellow}/>
+            </div>
+          </div>
+        )}
+        {tab==="fragen"&&(
+          <div>
+            <RedeBlock col={C.green} title="Arbeitgeberfragen — спрашивает работодатель" items={geber}/>
+            <RedeBlock col={C.blue} title="Arbeitnehmerfragen — спрашивает кандидат" items={nehmer}/>
+            <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,borderRadius:10,padding:"11px 13px",margin:"10px 0"}}>
+              <div style={{fontWeight:800,fontSize:13,color:C.orange,marginBottom:4}}>schon einmal — когда-нибудь</div>
+              <div style={{fontSize:13,color:C.text,lineHeight:1.7}}>Вопрос о жизненном опыте: Haben Sie <b>schon einmal</b> ... + Partizip II? Ответить можно так: schon oft (уже часто), schon ein paarmal (уже несколько раз), noch nie (ещё никогда).</div>
+            </div>
+            {einmal.map((e,i)=><TapEx key={i} de={e.de} ru={e.ru} col={C.orange} style={{marginBottom:6}}/>)}
+            <TapEx de="Ja, ich habe schon oft einen Lebenslauf geschrieben. Und Sie?" ru="Да, я уже часто писал(а) резюме. А вы?" col={C.orange}/>
+          </div>
+        )}
+        {tab==="dialog"&&(
+          <div>
+            <div style={{fontSize:13,color:C.muted,lineHeight:1.6,marginBottom:10}}>Dialogtraining: Исмаил рассказывает Анне и Тобиасу об объявлении о вакансии. Реплики идут по порядку — нажми, чтобы увидеть перевод.</div>
+            {dialog.map((l,i)=><TapEx key={i} de={l.de} ru={l.ru} col={C.green} style={{marginBottom:6}}/>)}
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
+
+const Q_A2L10TEST=shuffle([...Q_A2L10A,...Q_A2L10B,...Q_A2L10C]);
 
 const LUECKEN_A2L10=shuffle([
   {sent:"Ich ___ gern in einer IT-Firma arbeiten. (хотел(а) бы)",opts:["würde","werde","wurde","wird"],ans:0,ru:"Я бы хотел(а) работать в IT-фирме.",hint:"würde gern + Infinitiv"},
@@ -18389,6 +18727,14 @@ const LUECKEN_A2L10=shuffle([
   {sent:"Ich weiß nicht, ___ ich die Stelle annehmen soll. (ли)",opts:["ob","dass","wann","weil"],ans:0,ru:"Я не знаю, стоит ли мне принять это место.",hint:"indirekte Frage"},
   {sent:"Ich würde gerne wissen, ob es einen festen Stundenlohn ___.",opts:["gibt","gab","geben","gegeben"],ans:0,ru:"Я хотел(а) бы знать, есть ли фиксированная почасовая оплата.",hint:"Verb am Ende"},
   {sent:"Er kann nicht sagen, ___ ich einen Arbeitsvertrag bekomme. (когда)",opts:["wann","ob","dass","weil"],ans:0,ru:"Он не может сказать, когда я получу трудовой договор.",hint:"W-Frage"},
+  {sent:"Man ___ sich vorher über die Firma informieren. (стоит)",opts:["sollte","sollst","solltet","sollten"],ans:0,ru:"Стоит заранее узнать о фирме.",hint:"man sollte + Infinitiv"},
+  {sent:"Sind Sie Teamarbeit ___? (привыкли)",opts:["gewohnt","gewöhnt","gewusst","gewollt"],ans:0,ru:"Вы привыкли к командной работе?",hint:"gewohnt sein"},
+  {sent:"Es wäre besser, ___ Sie das Handy lautlos schalten. (если бы)",opts:["wenn","dass","ob","weil"],ans:0,ru:"Было бы лучше, если бы вы перевели телефон в беззвучный режим.",hint:"es wäre besser, wenn"},
+  {sent:"Man sollte den anderen ___ lassen. (договорить)",opts:["ausreden","aussprechen","ausgeredet","auszureden"],ans:0,ru:"Нужно дать другому договорить.",hint:"lassen + Infinitiv"},
+  {sent:"Bleiben Sie bitte ___! (спокойным)",opts:["gelassen","gelassene","gelasst","lassen"],ans:0,ru:"Сохраняйте, пожалуйста, спокойствие!",hint:"bleiben + Adjektiv"},
+  {sent:"Ich gehe ___ aus, dass das Gespräch um zehn Uhr beginnt.",opts:["davon","dafür","dabei","damit"],ans:0,ru:"Я исхожу из того, что собеседование начнётся в десять часов.",hint:"ausgehen von"},
+  {sent:"Wir sprechen ___ den Arbeitsvertrag. (о)",opts:["über","von","zu","für"],ans:0,ru:"Мы говорим о трудовом договоре.",hint:"sprechen über + Akkusativ"},
+  {sent:"Warum soll man pünktlich sein? — ___ man sonst einen schlechten Eindruck macht.",opts:["Weil","Dass","Ob","Wenn"],ans:0,ru:"Потому что иначе производишь плохое впечатление.",hint:"Antwort auf Warum"},
 ]);
 
 const ZUORD_A2L10=[
@@ -18415,6 +18761,13 @@ const ZUORD_A2L10=[
   {de:"die Aufmerksamkeit",ru:"внимание"},
   {de:"bestimmen",ru:"решать, назначать"},
   {de:"die Anschrift",ru:"адрес"},
+  {de:"der Posten",ru:"должность, место (работы)"},
+  {de:"ausreden lassen",ru:"давать договорить"},
+  {de:"gelassen bleiben",ru:"сохранять спокойствие"},
+  {de:"sich wichtig machen",ru:"важничать"},
+  {de:"Ich gehe davon aus, …",ru:"я исхожу из того, что …"},
+  {de:"das Schweigen",ru:"молчание"},
+  {de:"Es wäre besser, wenn …",ru:"было бы лучше, если бы …"},
 ];
 
 const WSENTS_A2L10=[
@@ -18424,6 +18777,12 @@ const WSENTS_A2L10=[
   {w:["Ein","Mechaniker","muss","zuverlässig","und","fleißig","sein","."],ru:"Механик должен быть надёжным и трудолюбивым."},
   {w:["Ich","würde","gerne","wissen,","ob","es","einen","festen","Stundenlohn","gibt","."],ru:"Я хотел(а) бы знать, есть ли фиксированная почасовая оплата."},
   {w:["Er","weiß","noch","nicht,","ob","er","Überstunden","machen","muss","."],ru:"Он ещё не знает, придётся ли ему работать сверхурочно."},
+  {w:["Man","sollte","sich","vorher","über","die","Firma","informieren","."],ru:"Стоит заранее узнать о фирме."},
+  {w:["Haben","Sie","schon","einmal","einen","Lebenslauf","geschrieben","?"],ru:"Вы когда-нибудь писали резюме?"},
+  {w:["Man","sollte","die","Arme","nicht","verschränken","."],ru:"Не стоит скрещивать руки."},
+  {w:["Es","wäre","besser,","wenn","Sie","das","Handy","lautlos","schalten","."],ru:"Было бы лучше, если бы вы перевели телефон в беззвучный режим."},
+  {w:["Ich","gehe","davon","aus,","dass","das","Gespräch","um","zehn","Uhr","beginnt","."],ru:"Я исхожу из того, что собеседование начнётся в десять часов."},
+  {w:["Man","sollte","den","anderen","ausreden","lassen","."],ru:"Нужно дать другому договорить."},
 ];
 
 function GrosserTestA2L10(){return <GrosserTestContainer rounds={[
@@ -18431,6 +18790,105 @@ function GrosserTestA2L10(){return <GrosserTestContainer rounds={[
   {icon:"📝",label:"Lückentext",    col:C.blue,   component:()=><LueckenQuiz items={LUECKEN_A2L10}/>},
   {icon:"🔗",label:"Wortschatz",    col:C.green,  component:()=><Zuordnung pairs={ZUORD_A2L10} leftLabel="Wort" rightLabel="Bedeutung"/>},
   {icon:"🔤",label:"Wortstellung",  col:C.orange, component:()=><WortstellungGame sents={WSENTS_A2L10}/>},
+]}/>;}
+
+// ═══ A2-L11 · Von Ort zu Ort ═══
+const Q_A2L11A=[
+  {q:"Was bedeutet «im Stau stehen»?",opts:["стоять в пробке","стоять на остановке","стоять в очереди","стоять на границе"],ans:0,hint:"Reisen"},
+  {q:"«eine Geschäftsreise machen» — это:",opts:["совершать командировку","ехать в отпуск","навещать родственников","встречать друзей"],ans:0,hint:"Reisen"},
+  {q:"«einchecken» — am Flughafen:",opts:["регистрироваться на рейс","покупать билет","выходить из самолёта","терять багаж"],ans:0,hint:"Am Flughafen"},
+  {q:"Ich ___ nach Wien geflogen.",opts:["bin","habe","werde","hatte"],ans:0,hint:"Perfekt"},
+  {q:"Ich ___ mich gefreut, weil ich meine Verwandten besucht habe.",opts:["habe","bin","wurde","war"],ans:0,hint:"Perfekt"},
+  {q:"Auf dem Foto rechts oben sieht ___ viele Reisende.",opts:["man","ich","du","wir"],ans:0,hint:"Fotos beschreiben"},
+  {q:"Was bedeutet «oben»?",opts:["вверху","внизу","слева","справа"],ans:0,hint:"Richtungen"},
+];
+function T_A2L11A(){
+  const lernen=[
+    {de:"eine Reise im Reisebüro buchen",ru:"забронировать поездку в турагентстве"},
+    {de:"die Notrufzentrale anrufen",ru:"позвонить в центр экстренных вызовов"},
+    {de:"Dialoge auf der Reise",ru:"диалоги в путешествии"},
+    {de:"über interessante Reiseziele sprechen",ru:"говорить об интересных направлениях поездок"},
+    {de:"eine Reise planen",ru:"планировать поездку"},
+    {de:"Relativsätze im Nominativ und Akkusativ",ru:"относительные придаточные в Nominativ и Akkusativ"},
+  ];
+  const reisen=[
+    {de:"Verwandte besuchen",ru:"навещать родственников"},
+    {de:"in die Heimat fliegen/fahren",ru:"лететь/ехать на родину"},
+    {de:"zur Arbeit fahren",ru:"ехать на работу"},
+    {de:"eine Geschäftsreise machen",ru:"совершать командировку"},
+    {de:"eine Urlaubsreise machen",ru:"отправляться в отпускную поездку"},
+    {de:"im Stau stehen",ru:"стоять в пробке"},
+    {de:"einchecken",ru:"регистрироваться (на рейс)"},
+    {de:"in den Urlaub fahren/fliegen",ru:"ехать/лететь в отпуск"},
+    {de:"Freunde abholen",ru:"встречать друзей"},
+  ];
+  const dirs=[["←","links","слева"],["↑","oben","вверху"],["↓","unten","внизу"],["→","rechts","справа"]];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.blue}>
+        <H c={C.blue}>🧳 A2-L11A · Einstieg: Von Ort zu Ort</H>
+        <div style={{fontSize:13,color:C.muted,lineHeight:1.6,marginBottom:10}}>Вводная страница урока 11 (Kursbuch S.123): путешествия, поездки, фото и рассказ о своей последней поездке.</div>
+        <RedeBlock col={C.blue} title="Sie lernen — чему вы научитесь" items={lernen}/>
+        <RedeBlock col={C.blue} title="Warum reisen die Leute? — зачем люди ездят" items={reisen}/>
+        <div style={{fontSize:12,fontWeight:800,color:C.blue,margin:"12px 0 6px",textTransform:"uppercase",letterSpacing:0.4}}>Richtungen — направления на фото</div>
+        <div style={{display:"grid",gridTemplateColumns:"repeat(4,minmax(0,1fr))",gap:6}}>
+          {dirs.map(([ar,de,ru])=>(
+            <div key={de} style={{background:C.green+"15",border:`1px solid ${C.green}44`,borderRadius:9,padding:"8px 2px",textAlign:"center"}}>
+              <div style={{fontSize:20,color:C.green,fontWeight:900,lineHeight:1.1}}>{ar}</div>
+              <div style={{fontSize:13,fontWeight:800,color:C.text}}>{de}</div>
+              <div style={{fontSize:11,color:C.muted}}>{ru}</div>
+            </div>
+          ))}
+        </div>
+      </Box>
+      <Box c={C.green}>
+        <H c={C.green}>📷 Aufgabe 1 · Fotos beschreiben</H>
+        <div style={{fontSize:13,color:C.text,lineHeight:1.8,marginBottom:8}}>Опишите фото: <b>Was machen die Leute? Warum reisen sie?</b> (Что делают люди? Как вы думаете, почему они путешествуют?)</div>
+        <TapEx de="Auf dem Foto rechts oben sieht man viele Reisende. Sie stehen auf der Autobahn." ru="На фото справа вверху видно много путешественников. Они стоят на автобане." col={C.green} style={{marginBottom:6}}/>
+        <TapEx de="Ich glaube, sie wollen … Vielleicht …" ru="Я думаю, они хотят … Возможно …" col={C.green}/>
+      </Box>
+      <Box c={C.orange}>
+        <H c={C.orange}>🗺️ Aufgabe 2 · Meine letzte Reise</H>
+        <div style={{fontSize:13,color:C.text,lineHeight:1.8,marginBottom:8}}>Расскажите о своей последней поездке: <b>Wo waren Sie? Wie sind Sie dorthin gekommen? Wie war die Reise für Sie?</b></div>
+        <TapEx de="Ich bin nach … geflogen." ru="Я летел(а) в …" col={C.orange} style={{marginBottom:6}}/>
+        <TapEx de="Ich bin mit meinem Bruder mit dem Auto nach … gefahren." ru="Я ехал(а) с моим братом на машине в …" col={C.orange} style={{marginBottom:6}}/>
+        <TapEx de="Ich habe mich gefreut, weil …" ru="Я обрадовался (обрадовалась), потому что …" col={C.orange} style={{marginBottom:10}}/>
+        <div style={{background:C.yellow+"15",border:`1px solid ${C.yellow}33`,borderRadius:10,padding:"11px 13px"}}>
+          <div style={{fontWeight:800,fontSize:13,color:C.yellow,marginBottom:4}}>Perfekt: sein или haben?</div>
+          <div style={{fontSize:13,color:C.text,lineHeight:1.7}}>Движение из места в место → <b>sein</b>: ich <b>bin</b> geflogen, ich <b>bin</b> gefahren.<br/>Рефлексивный глагол → <b>haben</b>: ich <b>habe</b> mich gefreut.</div>
+        </div>
+      </Box>
+    </div>
+  );
+}
+
+const Q_A2L11TEST=shuffle([...Q_A2L11A]);
+const LUECKEN_A2L11=shuffle([
+  {sent:"Die Leute stehen auf der ___ im Stau. (автобан)",opts:["Autobahn","Autobus","Automat","Autofahrt"],ans:0,ru:"Люди стоят в пробке на автобане.",hint:"Foto beschreiben"},
+  {sent:"Sie fahren in den ___. (отпуск)",opts:["Urlaub","Reise","Stau","Flug"],ans:0,ru:"Они едут в отпуск.",hint:"in den + der-Wort"},
+  {sent:"Ich ___ mit meinem Bruder mit dem Auto nach Wien gefahren.",opts:["bin","habe","werde","hatte"],ans:0,ru:"Я ехал(а) с братом на машине в Вену.",hint:"Perfekt mit sein"},
+  {sent:"Ich habe ___ gefreut, weil ich meine Freunde besucht habe. (себя)",opts:["mich","mir","sich","dich"],ans:0,ru:"Я обрадовался, потому что навестил друзей.",hint:"sich freuen"},
+]);
+const ZUORD_A2L11=[
+  {de:"im Stau stehen",ru:"стоять в пробке"},
+  {de:"eine Geschäftsreise machen",ru:"совершать командировку"},
+  {de:"eine Urlaubsreise machen",ru:"отправляться в отпускную поездку"},
+  {de:"Verwandte besuchen",ru:"навещать родственников"},
+  {de:"einchecken",ru:"регистрироваться (на рейс)"},
+  {de:"Freunde abholen",ru:"встречать друзей"},
+  {de:"zur Arbeit fahren",ru:"ехать на работу"},
+  {de:"in die Heimat fliegen/fahren",ru:"лететь/ехать на родину"},
+];
+const WSENTS_A2L11=[
+  {w:["Auf","dem","Foto","sieht","man","viele","Reisende","."],ru:"На фото видно много путешественников."},
+  {w:["Ich","bin","mit","meinem","Bruder","mit","dem","Auto","nach","Wien","gefahren","."],ru:"Я ехал(а) с братом на машине в Вену."},
+  {w:["Ich","habe","mich","gefreut,","weil","ich","meine","Verwandten","besucht","habe","."],ru:"Я обрадовался(лась), потому что навестил(а) родственников."},
+];
+function GrosserTestA2L11(){return <GrosserTestContainer rounds={[
+  {icon:"🎯",label:"Quiz",          col:C.yellow, component:()=><Quiz questions={Q_A2L11TEST}/>},
+  {icon:"📝",label:"Lückentext",    col:C.blue,   component:()=><LueckenQuiz items={LUECKEN_A2L11}/>},
+  {icon:"🔗",label:"Wortschatz",    col:C.green,  component:()=><Zuordnung pairs={ZUORD_A2L11} leftLabel="Wort" rightLabel="Bedeutung"/>},
+  {icon:"🔤",label:"Wortstellung",  col:C.orange, component:()=><WortstellungGame sents={WSENTS_A2L11}/>},
 ]}/>;}
 
 const Q_L6A=[
@@ -18536,6 +18994,7 @@ const PRUEFUNG=[
   {id:"sprechen3", icon:"🗣️", col:C.blue, title:"Sprechen Teil 3: Gemeinsam planen", sub:"Vorschlagen · Zustimmen · Ablehnen · Termin vereinbaren · Übungsaufgaben", th:()=><T_PruefungSprechen3/>},
   {id:"musterbriefe2", icon:"💌", col:C.purple, title:"Musterbriefe: Einladungen", sub:"Hochzeit · Einweihung · Einladung annehmen und beantworten", th:()=><T_PruefungMusterbriefe2/>},
   {id:"praesentation", icon:"🎤", col:C.yellow, title:"Sprechen: Präsentation/Vortrag", sub:"Persönliche Erfahrung · Heimatland · Vor-/Nachteile · Meinung · Abschluss & Fragen", th:()=><T_PruefungPraesentation/>},
+  {id:"punkte", icon:"📊", col:C.teal, title:"Punkteverteilung", sub:"Hören/Lesen · Schreiben · Sprechen · A2 oder B1?", th:()=><T_PruefungPunkte/>},
 ];
 
 const LEKTIONEN=[
@@ -18880,15 +19339,26 @@ const LEKTIONEN=[
   },
   {
     id:"A2-L10",niveau:"A2",num:"10",title:"Arbeitssuche",
-    sub:"A Stellenanzeigen lesen · B Der erste Kontakt",
-    date:"Kursbuch S.113–118",col:C.yellow,
+    sub:"A Stellenanzeigen lesen · B Der erste Kontakt · C Die Bewerbung",
+    date:"Kursbuch S.113–122",col:C.yellow,
     sections:[
       {id:"dA2L10", icon:"💬",title:"Dialogfragen A2-L10",         sub:"Фразы для диалога",                                    time:"∞",     col:C.yellow, hasT:false, th:null,           ex:()=><DialogCards lId="A2-L10"/>},
       {id:"a2l10a", icon:"📰",title:"A · Stellenanzeigen lesen",   sub:"Arbeit finden · Eigenschaften · würde gern",           time:"9 мин", col:C.orange, hasT:true, th:()=><T_A2L10A/>, ex:()=><Quiz questions={Q_A2L10A}/>},
       {id:"a2l10b", icon:"📞",title:"B · Der erste Kontakt",       sub:"Am Telefon · indirekte Fragen mit ob",                 time:"9 мин", col:C.blue,   hasT:true, th:()=><T_A2L10B/>, ex:()=><Quiz questions={Q_A2L10B}/>},
+      {id:"a2l10c", icon:"📄",title:"C · Die Bewerbung",           sub:"Lebenslauf · Bewerbungsgespräch · Körpersprache",         time:"10 мин",col:C.green,  hasT:true, th:()=><T_A2L10C/>, ex:()=><Quiz questions={Q_A2L10C}/>},
       {id:"wbA2L10", icon:"📖",title:"Wörterbuch A2-L10",          sub:"Слова этого урока",                                    time:"—",    col:C.teal,   hasT:false, ex:()=><LektWoerterbuch lekt="A2-L10"/>},
       {id:"tA2L10", icon:"🎯",title:"Großer Test A2-L10",          sub:"Quiz · Lücken · Wortschatz · Wortstellung",     time:"20 мин",col:C.yellow, hasT:false, ex:()=><GrosserTestA2L10/>},
       {id:"wtA2L10", icon:"🧠",title:"Wortschatz-Test A2-L10",     sub:"Перевод · Артикли · Обратный перевод",                 time:"10 мин",col:C.teal,   hasT:false, ex:()=><WortschatzTest lekt="A2-L10"/>},
+    ]
+  },
+  {
+    id:"A2-L11",niveau:"A2",num:"11",title:"Von Ort zu Ort",
+    sub:"A Einstieg: Reisen",
+    date:"Kursbuch S.123",col:C.blue,
+    sections:[
+      {id:"dA2L11", icon:"💬",title:"Dialogfragen A2-L11",         sub:"Фразы для диалога",                                    time:"∞",     col:C.blue,   hasT:false, th:null, ex:()=><DialogCards lId="A2-L11"/>},
+      {id:"a2l11a", icon:"🧳",title:"A · Einstieg: Reisen",        sub:"Reisegründe · Fotos beschreiben · letzte Reise",        time:"6 мин", col:C.blue,   hasT:true, th:()=><T_A2L11A/>, ex:()=><Quiz questions={Q_A2L11A}/>},
+      {id:"tA2L11", icon:"🎯",title:"Großer Test A2-L11",          sub:"Quiz · Lücken · Wortschatz · Wortstellung",     time:"10 мин",col:C.yellow, hasT:false, ex:()=><GrosserTestA2L11/>},
     ]
   },
 ];
@@ -18927,6 +19397,7 @@ function DialogFragenPage(){
     "A2-L8":{label:"A2·L8 · Neue Chancen", col:C.blue},
     "A2-L9":{label:"A2·L9 · Gesund leben", col:C.red},
     "A2-L10":{label:"A2·L10 · Arbeitssuche", col:C.yellow},
+    "A2-L11":{label:"A2·L11 · Von Ort zu Ort", col:C.blue},
   };
   const filterFm=(pairs,lId)=>(lId==="L1"||lId==="L4")?pairs.filter(p=>!p.fm||p.fm===fm):pairs;
 
@@ -20541,6 +21012,227 @@ function T_PruefungPraesentation(){
   );
 }
 
+
+// ═══ Prüfung: Punkteverteilung ═══
+function PktTabelle({rows}){
+  const lc=[C.green,C.green,C.blue,C.blue,C.orange,C.red];
+  const grid={display:"grid",gridTemplateColumns:"minmax(0,1.9fr) repeat(6,minmax(0,1fr))",gap:2,alignItems:"center"};
+  const hd=(t,c,span,z)=>(
+    <div style={{gridColumn:span?`span ${span}`:undefined,textAlign:"center",fontSize:z||11,fontWeight:800,color:c,
+      background:c+"22",borderRadius:5,padding:"3px 1px",lineHeight:1.15,wordBreak:"break-word"}}>{t}</div>
+  );
+  return (
+    <div style={{overflowX:"auto"}}>
+      <div style={{minWidth:320,display:"flex",flexDirection:"column",gap:2}}>
+        <div style={grid}>
+          <div/>{hd("B1",C.green,2)}{hd("A2",C.blue,2)}{hd("A1",C.orange)}{hd("0",C.red)}
+        </div>
+        <div style={grid}>
+          <div/>{hd("gut erfüllt",C.green,0,9)}{hd("erfüllt",C.green,0,9)}{hd("gut erfüllt",C.blue,0,9)}{hd("erfüllt",C.blue,0,9)}{hd("erfüllt",C.orange,0,9)}<div/>
+        </div>
+        {rows.map((r,i)=>(
+          <div key={i} style={{...grid,background:r.sum?C.ov5:(i%2?C.ov3:"transparent"),
+            borderTop:r.sum?`1px solid ${C.border}`:"none",borderRadius:5,padding:"3px 0"}}>
+            <div style={{paddingLeft:4}}>
+              <div style={{fontSize:12,fontWeight:r.sum?800:700,color:C.text,lineHeight:1.2,wordBreak:"break-word"}}>{r.de}</div>
+              {r.ru&&<div style={{fontSize:10,color:C.muted,lineHeight:1.2}}>{r.ru}</div>}
+            </div>
+            {r.v.map((x,j)=>(
+              <div key={j} style={{textAlign:"center",fontSize:13,fontWeight:r.sum?900:700,color:lc[j]}}>{x}</div>
+            ))}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+function PktStufen({items}){
+  return (
+    <div style={{display:"flex",gap:6,marginTop:6}}>
+      {items.map(([lbl,rng,c])=>(
+        <div key={lbl} style={{flex:1,minWidth:0,background:c+"18",border:`1px solid ${c}55`,borderRadius:9,padding:"7px 4px",textAlign:"center"}}>
+          <div style={{fontSize:11,fontWeight:800,color:c}}>{lbl}</div>
+          <div style={{fontSize:14,fontWeight:900,color:C.text,marginTop:2}}>{rng}</div>
+        </div>
+      ))}
+    </div>
+  );
+}
+function PktKombi({opts}){
+  const col=l=>l==="B1"?C.green:l==="A2"?C.blue:C.red;
+  const grid={display:"grid",gridTemplateColumns:"minmax(0,0.9fr) repeat(3,minmax(0,1fr))",gap:3,alignItems:"center"};
+  const head=t=>(<div style={{textAlign:"center",fontSize:11,fontWeight:800,color:C.muted,lineHeight:1.2,wordBreak:"break-word"}}>{t}</div>);
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:3}}>
+      <div style={grid}><div/>{head("Hören/ Lesen")}{head("Schreiben")}{head("Sprechen")}</div>
+      {opts.map((o,i)=>(
+        <div key={i} style={{...grid,background:i%2?C.ov3:"transparent",borderRadius:6,padding:"4px 0"}}>
+          <div style={{fontSize:11,fontWeight:800,color:C.muted,paddingLeft:6}}>Option {i+1}</div>
+          {o.map((l,j)=>(
+            <div key={j} style={{textAlign:"center",fontSize:12,fontWeight:800,color:col(l),
+              background:col(l)+"18",borderRadius:6,padding:"4px 2px"}}>{l}</div>
+          ))}
+        </div>
+      ))}
+    </div>
+  );
+}
+function T_PruefungPunkte(){
+  const [tab,setTab]=useState("hl");
+  const tabs=[["hl","Hören/Lesen"],["schreiben","Schreiben"],["sprechen","Sprechen"],["a2b1","A2 oder B1?"]];
+  const stufen=(a,b,c)=>[["B1",a,C.green],["A2",b,C.blue],["unter A2",c,C.red]];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.teal}>
+        <H c={C.teal}>📊 Punkteverteilung — как считаются баллы</H>
+        <div style={{fontSize:13,color:C.text,lineHeight:1.8}}>
+          Экзамен состоит из трёх частей: <b>Hören/Lesen</b> (аудирование/чтение) – <b>Schreiben</b> (письмо) – <b>Sprechen</b> (говорение). В каждой части набираются баллы; из них складывается результат по части и общий результат.
+        </div>
+        <div style={{display:"grid",gridTemplateColumns:"repeat(3,minmax(0,1fr))",gap:6,marginTop:10}}>
+          {[["Hören/Lesen","45",C.blue],["Schreiben","20",C.orange],["Sprechen","100",C.purple]].map(([t,p,c])=>(
+            <div key={t} style={{background:c+"18",border:`1px solid ${c}55`,borderRadius:9,padding:"8px 4px",textAlign:"center"}}>
+              <div style={{fontSize:11,fontWeight:800,color:c,wordBreak:"break-word"}}>{t}</div>
+              <div style={{fontSize:20,fontWeight:900,color:C.text}}>{p}</div>
+              <div style={{fontSize:10,color:C.muted}}>макс. баллов</div>
+            </div>
+          ))}
+        </div>
+      </Box>
+      <Box c={C.teal}>
+        <div style={{display:"flex",gap:6,marginBottom:12,flexWrap:"wrap"}}>
+          {tabs.map(([key,lbl])=>(
+            <button key={key} onClick={()=>setTab(key)}
+              style={{flex:1,minWidth:70,padding:"9px 6px",borderRadius:9,cursor:"pointer",
+                fontSize:12,fontWeight:700,textAlign:"center",lineHeight:1.3,wordBreak:"break-word",
+                border:`1px solid ${tab===key?C.teal+"55":C.border}`,
+                background:tab===key?C.teal+"22":C.ov3,
+                color:tab===key?C.teal:C.muted}}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+
+        {tab==="hl"&&(
+          <div>
+            <H c={C.blue}>🎧📖 Teilergebnis Hören und Lesen</H>
+            <div style={{fontSize:13,color:C.text,lineHeight:1.8}}>
+              В частях Hören и Lesen вместе <b>45 заданий</b>. За каждое правильно решённое — <b>1 балл</b>. Если решить все правильно, получится максимум <b>45 баллов</b>.
+            </div>
+            <div style={{fontSize:12,fontWeight:800,color:C.muted,margin:"12px 0 0",textTransform:"uppercase",letterSpacing:0.4}}>Niveaustufe · Punkte</div>
+            <PktStufen items={stufen("33 – 45","20 – 32","0 – 19")}/>
+            <div style={{background:C.ov4,borderRadius:8,padding:"9px 12px",marginTop:10,fontSize:12,color:C.muted,lineHeight:1.7}}>
+              Для ориентира: B1 — это примерно <b>3/4</b> заданий (33 из 45 ≈ 73%), A2 — от 20 из 45 (≈ 44%).
+            </div>
+          </div>
+        )}
+
+        {tab==="schreiben"&&(
+          <div>
+            <H c={C.orange}>✍️ Teilergebnis Schreiben</H>
+            <div style={{fontSize:13,color:C.text,lineHeight:1.8,marginBottom:10}}>
+              Эту часть проверяет <b>один проверяющий</b> (Bewerter/in). Оцениваются 4 критерия. За каждый — <b>от 0 до 5 баллов</b>, всего <b>20 баллов</b>.
+            </div>
+            <PktTabelle rows={[
+              {de:"Inhalt",ru:"Содержание",v:[5,4,3,2,1,0]},
+              {de:"Kommunikative Gestaltung",ru:"Коммуник. оформление",v:[5,4,3,2,1,0]},
+              {de:"Korrektheit",ru:"Правильность",v:[5,4,3,2,1,0]},
+              {de:"Wortschatz",ru:"Словарный запас",v:[5,4,3,2,1,0]},
+              {de:"Summe",ru:"Сумма",v:[20,16,12,8,4,0],sum:true},
+              {de:"Anteil",ru:"Доля",v:["100%","80%","60%","40%","20%","0%"],sum:true},
+            ]}/>
+            <div style={{fontSize:12,fontWeight:800,color:C.muted,margin:"14px 0 0",textTransform:"uppercase",letterSpacing:0.4}}>Niveaustufe · Punkte</div>
+            <PktStufen items={stufen("15 – 20","7 – 14","0 – 6")}/>
+            <div style={{background:C.ov4,borderRadius:8,padding:"9px 12px",marginTop:10,fontSize:12,color:C.muted,lineHeight:1.7}}>
+              Как читать таблицу: если по всем 4 критериям «gut erfüllt» на уровне B1 — 20 баллов; «erfüllt» на B1 — 16 баллов (80%). Порог B1 — 15 из 20 (75%).
+            </div>
+            <div style={{marginTop:12}}>
+              <RedeBlock col={C.orange} title="Kriterien und Begriffe" items={[
+                {de:"Inhalt",ru:"Содержание (раскрыты ли пункты задания)"},
+                {de:"Kommunikative Gestaltung",ru:"Коммуникативное оформление (структура и стиль письма)"},
+                {de:"Korrektheit",ru:"Правильность (грамматика, орфография)"},
+                {de:"Wortschatz",ru:"Словарный запас"},
+                {de:"gut erfüllt",ru:"хорошо выполнено"},
+                {de:"erfüllt",ru:"выполнено"},
+                {de:"Niveaustufe",ru:"уровень"},
+                {de:"Summe / Anteil",ru:"сумма / доля"},
+              ]}/>
+            </div>
+          </div>
+        )}
+
+        {tab==="sprechen"&&(
+          <div>
+            <H c={C.purple}>🗣️ Teilergebnis Sprechen</H>
+            <div style={{fontSize:13,color:C.text,lineHeight:1.8,marginBottom:10}}>
+              Эту часть оценивают <b>двое экзаменаторов</b> (Prüfer/innen). Всего можно набрать <b>100 баллов</b>. Оцениваются: выполнение заданий, произношение/интонация, беглость, правильность речи и словарный запас.
+            </div>
+            <div style={{fontSize:12,fontWeight:800,color:C.purple,marginBottom:4,textTransform:"uppercase",letterSpacing:0.4}}>Summe 1 · Aufgabenbewältigung (50)</div>
+            <PktTabelle rows={[
+              {de:"Teil 1A",v:[5,4,3,2,1,0]},
+              {de:"Teil 1B",v:[5,4,3,2,1,0]},
+              {de:"Teil 2A",v:[10,8,6,4,2,0]},
+              {de:"Teil 2B",v:[10,8,6,4,2,0]},
+              {de:"Teil 3",v:[20,16,12,8,4,0]},
+              {de:"Summe 1",ru:"Сумма 1",v:[50,40,30,20,10,0],sum:true},
+            ]}/>
+            <div style={{fontSize:12,fontWeight:800,color:C.purple,margin:"14px 0 4px",textTransform:"uppercase",letterSpacing:0.4}}>Summe 2 · Sprachliche Mittel (50)</div>
+            <PktTabelle rows={[
+              {de:"Aussprache/ Intonation",ru:"Произношение",v:[10,8,6,4,2,0]},
+              {de:"Flüssigkeit",ru:"Беглость",v:[10,8,6,4,2,0]},
+              {de:"Korrektheit",ru:"Правильность",v:[15,12,9,6,3,0]},
+              {de:"Wortschatz",ru:"Словарный запас",v:[15,12,9,6,3,0]},
+              {de:"Summe 2",ru:"Сумма 2",v:[50,40,30,20,10,0],sum:true},
+              {de:"Gesamtergebnis (Summe 1 + 2)",ru:"Итог",v:[100,80,60,40,20,0],sum:true},
+            ]}/>
+            <div style={{fontSize:12,fontWeight:800,color:C.muted,margin:"14px 0 0",textTransform:"uppercase",letterSpacing:0.4}}>Niveaustufe · Punkte</div>
+            <PktStufen items={stufen("75 – 100","35 – 74,5","0 – 34,5")}/>
+            <div style={{background:C.ov4,borderRadius:8,padding:"9px 12px",marginTop:10,fontSize:12,color:C.muted,lineHeight:1.7}}>
+              Самая «тяжёлая» задача — <b>Teil 3</b> (gemeinsam planen): за неё до 20 баллов из 100. Порог B1 — 75 из 100.
+            </div>
+            <div style={{marginTop:12}}>
+              <RedeBlock col={C.purple} title="Kriterien und Begriffe" items={[
+                {de:"Aufgabenbewältigung (Wie gut können Sie die Aufgaben lösen?)",ru:"Выполнение заданий (насколько хорошо вы справились с заданиями)"},
+                {de:"Aussprache/Intonation",ru:"Произношение/интонация"},
+                {de:"Flüssigkeit",ru:"Беглость речи"},
+                {de:"Korrektheit",ru:"Правильность речи"},
+                {de:"Wortschatz",ru:"Словарный запас"},
+                {de:"Gesamtergebnis",ru:"общий результат"},
+                {de:"Prüferin / Prüfer",ru:"экзаменатор(ша)"},
+              ]}/>
+            </div>
+          </div>
+        )}
+
+        {tab==="a2b1"&&(
+          <div>
+            <H c={C.teal}>🎓 A2 oder B1? — какой сертификат вы получите</H>
+            <div style={{fontSize:13,color:C.text,lineHeight:1.8}}>
+              В итоге важны результаты <b>во всех трёх частях</b>. Но чтобы получить сертификат, часть <b>Sprechen</b> в любом случае нужно сдать <b>на A2 или B1</b>.
+            </div>
+            <div style={{background:C.green+"15",border:`1px solid ${C.green}33`,borderRadius:10,padding:"10px 13px",marginTop:10,fontSize:13,color:C.text,lineHeight:1.8}}>
+              <b style={{color:C.green}}>Wann bekomme ich B1?</b><br/>
+              Сертификат B1 — если вы достигли B1 в части <b>Sprechen</b> и в части <b>Hören/Lesen</b> или <b>Schreiben</b>.
+            </div>
+            <div style={{fontSize:12,fontWeight:800,color:C.green,margin:"12px 0 6px",textTransform:"uppercase",letterSpacing:0.4}}>B1 · 5 Kombinationen</div>
+            <PktKombi opts={[["B1","B1","B1"],["B1","A2","B1"],["A2","B1","B1"],["B1","unter A2","B1"],["unter A2","B1","B1"]]}/>
+            <div style={{background:C.blue+"15",border:`1px solid ${C.blue}33`,borderRadius:10,padding:"10px 13px",marginTop:14,fontSize:13,color:C.text,lineHeight:1.8}}>
+              <b style={{color:C.blue}}>Wann bekomme ich A2?</b><br/>
+              Сертификат A2 — если вы достигли A2 в части <b>Sprechen</b> и в части <b>Hören/Lesen</b> или <b>Schreiben</b>.
+            </div>
+            <div style={{fontSize:12,fontWeight:800,color:C.blue,margin:"12px 0 6px",textTransform:"uppercase",letterSpacing:0.4}}>A2 · 9 Kombinationen</div>
+            <PktKombi opts={[["A2","A2","A2"],["unter A2","A2","A2"],["A2","unter A2","A2"],["B1","A2","A2"],["A2","B1","A2"],["B1","B1","A2"],["A2","A2","B1"],["A2","unter A2","B1"],["unter A2","A2","B1"]]}/>
+            <div style={{background:C.ov4,borderRadius:8,padding:"10px 12px",marginTop:14,fontSize:12,color:C.text,lineHeight:1.8}}>
+              <b>Что видно по таблицам:</b><br/>
+              • <b>Sprechen — главная часть.</b> Даже B1 в Hören/Lesen и в Schreiben не даст B1-сертификат, если Sprechen только на A2 (A2, Option 6).<br/>
+              • Если Sprechen на B1, а в остальных частях только A2 — сертификат будет A2 (Option 7–9).<br/>
+              • Одна из двух частей (Hören/Lesen или Schreiben) может быть «unter A2» — если другая на нужном уровне.
+            </div>
+          </div>
+        )}
+      </Box>
+    </div>
+  );
+}
 
 export default function App(){
   const [lId,setLId]=useState(null);
