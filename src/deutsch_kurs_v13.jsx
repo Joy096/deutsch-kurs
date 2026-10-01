@@ -1201,7 +1201,7 @@ const WBDATA=[
   {art:"die", de:"Fiktionsbescheinigung", pl:"-en",     ru:"временное удостоверение (пока оформляется ВНЖ)",tema:"Ämter", lekt:"L11",niveau:"A1"},
   {art:"das", de:"Jobcenter", pl:"-",            ru:"центр занятости (для получателей Bürgergeld)", tema:"Ämter", lekt:"L11",niveau:"A1"},
   {art:"das", de:"Bürgergeld",      pl:"—",            ru:"пособие по безработице (базовое)",             tema:"Ämter", lekt:"L11",niveau:"A1"},
-  {art:"die", de:"Arbeitssuche",    pl:"—",            ru:"поиск работы",                                 tema:"Ämter", lekt:"L11",niveau:"A1"},
+  {art:"die", de:"Arbeitssuche",    pl:"—",            ru:"поиск работы",                                 tema:"Ämter", lekt:"L11",niveau:"A1",also:["A2-L10"]},
   {art:"die", de:"Ausbildungssuche",pl:"—",            ru:"поиск учебного места (Ausbildung)",            tema:"Ämter", lekt:"L11",niveau:"A1"},
   {art:"die", de:"Berufsberatung", pl:"-en",          ru:"консультация по профессии",                    tema:"Ämter", lekt:"L11",niveau:"A1"},
   {art:"die", de:"Arbeitslosigkeit",pl:"—",            ru:"безработица",                                  tema:"Ämter", lekt:"L11",niveau:"A1"},
@@ -1237,7 +1237,7 @@ const WBDATA=[
   {art:"die", de:"Mietwohnung", pl:"-en",          ru:"съёмное жильё",                                tema:"Wohnung", lekt:"L11",niveau:"A1"},
   {art:"der", de:"Mietvertrag", pl:'"-e',          ru:"договор аренды",                               tema:"Wohnung", lekt:"L11",niveau:"A1"},
   {art:"die", de:"Eigentumswohnung", pl:"-en",          ru:"собственная квартира (в личной собственности)",tema:"Wohnung", lekt:"L11",niveau:"A1"},
-  {art:"der", de:"Arbeitsvertrag", pl:'"-e',          ru:"трудовой договор",                             tema:"Arbeit", lekt:"L11",niveau:"A1"},
+  {art:"der", de:"Arbeitsvertrag", pl:'"-e',          ru:"трудовой договор",                             tema:"Arbeit", lekt:"L11",niveau:"A1",also:["A2-L10"]},
   {art:"der", de:"Kompass", pl:"-e",           ru:"компас",                                       tema:"Alltag", lekt:"L11",niveau:"A1"},
   {art:"das", de:"Mäppchen", pl:"-",            ru:"пенал",                                        tema:"Alltag", lekt:"L11",niveau:"A1"},
   {art:"das", de:"Brillenetui", pl:"-s",           ru:"футляр для очков",                             tema:"Alltag", lekt:"L11",niveau:"A1"},
@@ -1475,7 +1475,7 @@ const WBDATA=[
   {art:"",   de:"deshalb",ord:179,        pl:"—",            ru:"поэтому",                                         tema:"Reisen", lekt:"L13",niveau:"A1"},
   {art:"das", de:"Sternzeichen",ord:180,  pl:"-",            ru:"знак зодиака",                                    tema:"Reisen", lekt:"L13",niveau:"A1"},
   {art:"der", de:"Stern",ord:181,         pl:"-e",           ru:"звезда",                                          tema:"Reisen", lekt:"L13",niveau:"A1"},
-  {art:"die", de:"Eigenschaft",ord:182,   pl:"-en",          ru:"свойство, качество, черта характера",             tema:"Reisen", lekt:"L13",niveau:"A1"},
+  {art:"die", de:"Eigenschaft",ord:182,   pl:"-en",          ru:"свойство, качество, черта характера",             tema:"Reisen", lekt:"L13",niveau:"A1",also:["A2-L10"]},
   {art:"",   de:"kurz",ord:183,           pl:"—",            ru:"короткий",                                        tema:"Reisen", lekt:"L13",niveau:"A1"},
   {art:"",   de:"gern",ord:184,           pl:"—",            ru:"охотно, с удовольствием",                         tema:"Reisen", lekt:"L13",niveau:"A1"},
   {art:"",   de:"viel",ord:185,           pl:"—",            ru:"много",                                           tema:"Reisen", lekt:"L13",niveau:"A1"},
@@ -1680,7 +1680,7 @@ const WBDATA=[
   {art:"das", de:"Thema",ord:427,         pl:"Themen",       ru:"тема",                                           tema:"Migration", lekt:"L14",niveau:"A1"},
   {art:"die", de:"Ausbildung",ord:428,    pl:"-en",          ru:"профессиональное обучение",                     tema:"Migration", lekt:"L14",niveau:"A1"},
   {art:"die", de:"Erfahrung",ord:429,     pl:"-en",          ru:"опыт",                                           tema:"Migration", lekt:"L14",niveau:"A1"},
-  {art:"das", de:"Praktikum",ord:430,     pl:"Praktika",     ru:"стажировка",                                     tema:"Migration", lekt:"L14",niveau:"A1"},
+  {art:"das", de:"Praktikum",ord:430,     pl:"Praktika",     ru:"стажировка",                                     tema:"Migration", lekt:"L14",niveau:"A1",also:["A2-L10"]},
   {art:"die", de:"Zukunft",ord:431,       pl:"Sg.",          ru:"будущее",                                        tema:"Migration", lekt:"L14",niveau:"A1"},
   // ── L14 · Wichtige Wörter (доп., стр.174-175) ─────────────────────────────
   {art:"",    de:"aber",ord:432,          pl:"—",            ru:"но (союз)",                                       tema:"Wohnung", lekt:"L14",niveau:"A1"},
@@ -1908,7 +1908,7 @@ const WBDATA=[
   {art:"das", de:"Kabel",ord:650,         pl:"-",            ru:"кабель",                                        tema:"Medien", lekt:"A2-L2",niveau:"A2"},
   {art:"",    de:"eintragen",ord:651,     pl:"—",            ru:"записывать (в список/календарь) · trägt ein · hat eingetragen", tema:"Medien", lekt:"A2-L2",niveau:"A2"},
   {art:"",    de:"bearbeiten",ord:652,    pl:"—",            ru:"редактировать, обрабатывать · bearbeitet · hat bearbeitet", tema:"Medien", lekt:"A2-L2",niveau:"A2"},
-  {art:"die", de:"Schichtarbeit",ord:653, pl:"Sg.",          ru:"сменная работа, работа по сменам",               tema:"Medien", lekt:"A2-L2",niveau:"A2"},
+  {art:"die", de:"Schichtarbeit",ord:653, pl:"Sg.",          ru:"сменная работа, работа по сменам",               tema:"Medien", lekt:"A2-L2",niveau:"A2",also:["A2-L10"]},
   // ── A2-L3 · Im Restaurant — Konspekt 27.07 ────────────────────────────────
   {art:"",    de:"verkosten",ord:654,     pl:"—",            ru:"дегустировать, пробовать на вкус · verkostet · hat verkostet", tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
   {art:"",    de:"lecker",ord:655,        pl:"—",            ru:"вкусный",                                        tema:"Wochenende", lekt:"A2-L3",niveau:"A2"},
@@ -1990,7 +1990,7 @@ const WBDATA=[
   {art:"die", de:"Firma",ord:731,        pl:"Firmen",       ru:"фирма, компания",                                  tema:"Schule", lekt:"A2-L4",niveau:"A2"},
   {art:"die", de:"Note",ord:732,         pl:"-n",           ru:"оценка (школьная)",                                tema:"Schule", lekt:"A2-L4",niveau:"A2"},
   {art:"das", de:"Zeugnis",ord:733,      pl:"-se",          ru:"табель, свидетельство (об окончании)",             tema:"Schule", lekt:"A2-L4",niveau:"A2"},
-  {art:"die", de:"Bedingung",ord:734,    pl:"-en",          ru:"условие",                                          tema:"Schule", lekt:"A2-L4",niveau:"A2"},
+  {art:"die", de:"Bedingung",ord:734,    pl:"-en",          ru:"условие",                                          tema:"Schule", lekt:"A2-L4",niveau:"A2",also:["A2-L10"]},
   {art:"",    de:"mangelhaft",ord:735,   pl:"—",            ru:"неудовлетворительно (оценка 5)",                  tema:"Schule", lekt:"A2-L4",niveau:"A2"},
   {art:"",    de:"ausreichend",ord:736,  pl:"—",            ru:"достаточно, зачёт (оценка 4)",                    tema:"Schule", lekt:"A2-L4",niveau:"A2"},
   {art:"",    de:"befriedigend",ord:737, pl:"—",            ru:"удовлетворительно (оценка 3)",                    tema:"Schule", lekt:"A2-L4",niveau:"A2"},
@@ -2084,7 +2084,7 @@ const WBDATA=[
   {art:"der", de:"Kunde",ord:825,        pl:"-n",           ru:"клиент",                                          tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
   {art:"die", de:"Betriebsversammlung",ord:826,pl:"-en",    ru:"собрание коллектива",                             tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
   {art:"der", de:"Betriebsrat",ord:827,  pl:'"-e',          ru:"производственный совет",                          tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
-  {art:"das", de:"Gehalt",ord:828,       pl:'"-er',         ru:"оклад, зарплата",                                 tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2"},
+  {art:"das", de:"Gehalt",ord:828,       pl:'"-er',         ru:"оклад, зарплата",                                 tema:"Arbeitsplatz", lekt:"A2-L5",niveau:"A2",also:["A2-L10"]},
   {art:"",    de:"vormittags",ord:829,   pl:"—",            ru:"по утрам, в первой половине дня",                 tema:"Kinderbetreuung", lekt:"A2-L5",niveau:"A2"},
   {art:"",    de:"nachmittags",ord:830,  pl:"—",            ru:"днём, во второй половине дня",                    tema:"Kinderbetreuung", lekt:"A2-L5",niveau:"A2"},
   {art:"die", de:"Musikschule",ord:831,  pl:"-n",           ru:"музыкальная школа",                               tema:"Kinderbetreuung", lekt:"A2-L5",niveau:"A2"},
@@ -2330,7 +2330,7 @@ const WBDATA=[
   {art:"",    de:"sich informieren über",ord:1073,pl:"—",    ru:"узнавать информацию о (+Akk) · informiert sich · hat sich informiert", tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
   {art:"",    de:"sich ärgern über",ord:1074,pl:"—",         ru:"злиться из-за (+Akk) · ärgert sich · hat sich geärgert", tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
   {art:"das", de:"Berufsinformationszentrum",ord:1075,pl:"-zentren", ru:"центр профориентации (BiZ)",               tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
-  {art:"die", de:"Weiterbildung",ord:1076,pl:"-en",          ru:"повышение квалификации",                           tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
+  {art:"die", de:"Weiterbildung",ord:1076,pl:"-en",          ru:"повышение квалификации",                           tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2",also:["A2-L10"]},
   {art:"die", de:"Fortbildung",ord:1077,  pl:"-en",          ru:"курс повышения квалификации",                      tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
   {art:"die", de:"Förderung",ord:1078,    pl:"-en",          ru:"(государственное) финансирование, субсидия",       tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
   {art:"die", de:"Babypause",ord:1079,    pl:"-n",           ru:"перерыв в работе по уходу за ребёнком",            tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2"},
@@ -2481,7 +2481,7 @@ const WBDATA=[
   {art:"",    de:"sich aussuchen",ord:1230,  pl:"—",            ru:"выбирать себе (что-то) · sucht sich aus · hat sich ausgesucht", tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2",extra:true},
   {art:"das", de:"Sehvermögen",ord:1231,     pl:"—",            ru:"зрение, острота зрения (= die Sehkraft)",         tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2",extra:true},
   {art:"das", de:"BAMF",ord:1232,            pl:"—",            ru:"Федеральное ведомство по делам миграции и беженцев", tema:"Weiterbildung", lekt:"A2-L8",niveau:"A2",extra:true},
-  {art:"der", de:"Traum",ord:1233,           pl:"Träume",       ru:"сон, мечта",                                      tema:"Alltag", lekt:"A2-L8",niveau:"A2",extra:true},
+  {art:"der", de:"Traum",ord:1233,           pl:"Träume",       ru:"сон, мечта",                                      tema:"Alltag", lekt:"A2-L8",niveau:"A2",extra:true,also:["A2-L10"]},
   {art:"der", de:"Albtraum",ord:1234,        pl:"Albträume",    ru:"кошмар (сон)",                                    tema:"Alltag", lekt:"A2-L8",niveau:"A2",extra:true},
   {art:"der", de:"Sprit",ord:1235,           pl:"—",            ru:"бензин, топливо (разговорное)",                   tema:"Alltag", lekt:"A2-L8",niveau:"A2",extra:true},
   {art:"",    de:"zweifeln an",ord:1237,     pl:"—",            ru:"сомневаться в (+Dativ)",                          tema:"Alltag", lekt:"A2-L8",niveau:"A2",extra:true},
@@ -2505,7 +2505,7 @@ const WBDATA=[
   {art:"",    de:"sich stressen",ord:1255,   pl:"—",            ru:"нервничать, испытывать стресс · stresst sich · hat sich gestresst", tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
   {art:"",    de:"in Stress geraten",ord:1256,pl:"—",           ru:"впадать в стресс",                                tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
   {art:"",    de:"wirken",ord:1257,          pl:"—",            ru:"действовать, оказывать эффект · wirkt · wirkte · hat gewirkt", tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
-  {art:"die", de:"Auskunft",ord:1258,        pl:"Auskünfte",    ru:"справка, информация",                             tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
+  {art:"die", de:"Auskunft",ord:1258,        pl:"Auskünfte",    ru:"справка, информация",                             tema:"Gesundheit", lekt:"A2-L9",niveau:"A2",also:["A2-L10"]},
   {art:"",    de:"einnehmen",ord:1259,       pl:"—",            ru:"принимать (лекарство) · nimmt ein · nahm ein · hat eingenommen", tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
   {art:"der", de:"Ratschlag",ord:1261,       pl:"Ratschläge",   ru:"совет, рекомендация",                             tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
   {art:"das", de:"Nahrungsmittel",ord:1262,  pl:"-",            ru:"продукт питания",                                 tema:"Gesundheit", lekt:"A2-L9",niveau:"A2"},
@@ -2569,6 +2569,46 @@ const WBDATA=[
   {art:"", de:"gelassen bleiben",ord:1321, pl:"—", ru:"сохранять спокойствие (= ruhig bleiben)", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
   {art:"", de:"Es wäre besser, wenn …",ord:1322, pl:"—", ru:"было бы лучше, если бы …", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2",extra:true},
   {art:"das", de:"Schweigen",ord:1323, pl:"—", ru:"молчание", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2",extra:true},
+  {art:"", de:"verfault",ord:1324, pl:"—", ru:"гнилой, испорченный (от verfaulen — гнить)", tema:"Adjektive", lekt:"A2-L11",niveau:"A2"},
+  {art:"", de:"zurückhalten",ord:1325, pl:"—", ru:"сдерживать, удерживать · hält zurück · hielt zurück · hat zurückgehalten", tema:"Alltag", lekt:"A2-L11",niveau:"A2"},
+  {art:"", de:"zwingen",ord:1326, pl:"—", ru:"заставлять · zwingt · zwang · hat gezwungen", tema:"Alltag", lekt:"A2-L11",niveau:"A2"},
+  {art:"", de:"umwerfend",ord:1327, pl:"—", ru:"потрясающий, сногсшибательный, невероятный", tema:"Adjektive", lekt:"A2-L11",niveau:"A2"},
+  {art:"die", de:"Bewerbung",ord:1328, pl:"-en", ru:"заявление о приёме на работу, заявка (на вакансию)", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"die", de:"Initiativbewerbung",ord:1329, pl:"-en", ru:"инициативное заявление (без объявления о вакансии)", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"der", de:"Aushang",ord:1330, pl:'"-e', ru:"объявление (на доске, на двери)", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"die", de:"Zeitarbeitsfirma",ord:1331, pl:"-firmen", ru:"фирма временного трудоустройства", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"der/die", de:"Bekannte",ord:1332, pl:"-n", ru:"знакомый / знакомая", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"der", de:"Tourismus",ord:1333, pl:"—", ru:"туризм", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"die", de:"Stellenanzeige",ord:1334, pl:"-n", ru:"объявление о вакансии", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"das", de:"Stellenangebot",ord:1335, pl:"-e", ru:"предложение о работе, вакансия", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"die", de:"Berufserfahrung",ord:1336, pl:"-en", ru:"профессиональный опыт", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"die", de:"Bezahlung",ord:1337, pl:"—", ru:"оплата (труда)", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"", de:"in Teilzeit arbeiten",ord:1338, pl:"—", ru:"работать на неполный день", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"", de:"in Vollzeit arbeiten",ord:1339, pl:"—", ru:"работать на полный день", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"", de:"eine feste Stelle",ord:1340, pl:"—", ru:"постоянное место работы", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"der", de:"Ausbildungsplatz",ord:1341, pl:'"-e', ru:"место для профессионального обучения", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"die", de:"Aushilfe",ord:1342, pl:"-n", ru:"временный работник; подработка", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"der/die", de:"Personalberater/in",ord:1343, pl:"-/-nen", ru:"кадровый консультант", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"die", de:"Bewerbungsunterlagen",ord:1344, pl:"Pl.", ru:"документы для приёма на работу", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"die", de:"Tätigkeit",ord:1345, pl:"-en", ru:"деятельность, занятие", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"", de:"zusammenarbeiten",ord:1346, pl:"—", ru:"сотрудничать, работать вместе · arbeitet zusammen · arbeitete zusammen · hat zusammengearbeitet", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"", de:"kreativ",ord:1347, pl:"—", ru:"творческий", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"", de:"geduldig",ord:1348, pl:"—", ru:"терпеливый", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"der", de:"Stundenlohn",ord:1349, pl:'"-e', ru:"почасовая оплата", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"die", de:"Überstunde",ord:1350, pl:"-n", ru:"сверхурочный час", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"", de:"vor allem",ord:1351, pl:"—", ru:"прежде всего, в первую очередь", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"", de:"ob",ord:1352, pl:"—", ru:"ли (союз в косвенном вопросе)", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"der", de:"Lebenslauf",ord:1353, pl:'"-e', ru:"резюме, биография", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"", de:"persönliche Daten",ord:1354, pl:"—", ru:"личные данные", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"die", de:"Schulbildung",ord:1355, pl:"—", ru:"школьное образование", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"das", de:"Diplom",ord:1356, pl:"-e", ru:"диплом", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"das", de:"Bewerbungsschreiben",ord:1357, pl:"-", ru:"сопроводительное письмо", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"das", de:"Bewerbungsfoto",ord:1358, pl:"-s", ru:"фото для резюме", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"das", de:"Bewerbungsgespräch",ord:1359, pl:"-e", ru:"собеседование", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"das", de:"Vorstellungsgespräch",ord:1360, pl:"-e", ru:"собеседование (знакомство с работодателем)", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"die", de:"Arbeitspause",ord:1361, pl:"-n", ru:"перерыв в работе", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"die", de:"Teamarbeit",ord:1362, pl:"—", ru:"работа в команде", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
+  {art:"die", de:"Fremdsprache",ord:1363, pl:"-n", ru:"иностранный язык", tema:"Arbeitssuche", lekt:"A2-L10",niveau:"A2"},
 ];
 
 
@@ -3479,6 +3519,14 @@ const KONJ_ALL={
     ich:"lohne mich",    du:"lohnst dich",    "er/sie/es":"lohnt sich",
     wir:"lohnen uns",    ihr:"lohnt euch",    "sie/Sie":"lohnen sich",
     pt:"lohnte sich", pf:"hat sich gelohnt"},
+  zusammenarbeiten:{pref:"zusammen", col:C.green, bg:C.greenBg,
+    ich:"arbeite … zusammen", du:"arbeitest … zusammen", "er/sie/es":"arbeitet … zusammen",
+    wir:"arbeiten … zusammen", ihr:"arbeitet … zusammen", "sie/Sie":"arbeiten … zusammen", pt:"arbeitete … zusammen", pf:"hat zusammengearbeitet"},
+  "zurückhalten":{pref:"zurück", col:C.green, bg:C.greenBg, note:"a→ä",
+    ich:"halte … zurück", du:"hältst … zurück", "er/sie/es":"hält … zurück",
+    wir:"halten … zurück", ihr:"haltet … zurück", "sie/Sie":"halten … zurück", pt:"hielt … zurück", ptc:{du:"hieltst … zurück",wir:"hielten … zurück",ihr:"hieltet … zurück",sie:"hielten … zurück"}, pf:"hat zurückgehalten"},
+  zwingen:    {col:C.blue, bg:C.blueBg,
+    ich:"zwinge", du:"zwingst", "er/sie/es":"zwingt", wir:"zwingen", ihr:"zwingt", "sie/Sie":"zwingen", pt:"zwang", ptc:{du:"zwangst",wir:"zwangen",ihr:"zwangt",sie:"zwangen"}, pf:"hat gezwungen"},
   "sich wichtig machen":{col:C.teal, bg:C.tealBg, note:"Reflexiv",
     ich:"mache mich wichtig", du:"machst dich wichtig", "er/sie/es":"macht sich wichtig",
     wir:"machen uns wichtig", ihr:"macht euch wichtig", "sie/Sie":"machen sich wichtig",
@@ -3886,7 +3934,9 @@ const KONJ_ALL={
 
 // Ударения: комбинирующая акута \u0301 ставится после ударной гласной
 const STRESS_MARKS={
+"Bewerbung":"Bewe\u0301rbung","Initiativbewerbung":"Initiati\u0301vbewerbung","Aushang":"A\u0301ushang","Zeitarbeitsfirma":"Ze\u0301itarbeitsfirma","Bekannte":"Beka\u0301nnte","Tourismus":"Touri\u0301smus","Stellenanzeige":"Ste\u0301llenanzeige","Stellenangebot":"Ste\u0301llenangebot","Berufserfahrung":"Beru\u0301fserfahrung","Bezahlung":"Beza\u0301hlung","Ausbildungsplatz":"A\u0301usbildungsplatz","Aushilfe":"A\u0301ushilfe","Personalberater":"Personalbera\u0301ter","Bewerbungsunterlagen":"Bewe\u0301rbungsunterlagen","Tätigkeit":"Tä\u0301tigkeit","zusammenarbeiten":"zusa\u0301mmenarbeiten","kreativ":"kreati\u0301v","geduldig":"gedu\u0301ldig","Stundenlohn":"Stu\u0301ndenlohn","Überstunde":"U\u0308\u0301berstunde","Lebenslauf":"Le\u0301benslauf","Schulbildung":"Schu\u0301lbildung","Diplom":"Diplo\u0301m","Bewerbungsschreiben":"Bewe\u0301rbungsschreiben","Bewerbungsfoto":"Bewe\u0301rbungsfoto","Bewerbungsgespräch":"Bewe\u0301rbungsgespräch","Vorstellungsgespräch":"Vo\u0301rstellungsgespräch","Arbeitspause":"A\u0301rbeitspause","Teamarbeit":"Te\u0301amarbeit","Fremdsprache":"Fre\u0301mdsprache","ob":"o\u0301b",
 "Posten":"Po\u0301sten","Schweigen":"Schwe\u0301igen",
+"verfault":"verfa\u0301ult","zurückhalten":"zuru\u0308\u0301ckhalten","zwingen":"zwi\u0301ngen","umwerfend":"u\u0301mwerfend",
 // Числа
 "null":"nu\u0301ll","eins":"ei\u0301ns","zwei":"zwe\u0301i","drei":"dre\u0301i","vier":"vi\u0301er",
 "fünf":"f\u00FC\u0301nf","sechs":"se\u0301chs","sieben":"si\u0301eben","acht":"a\u0301cht","neun":"ne\u0301un",
@@ -4284,7 +4334,9 @@ const STRESS_MARKS={
 
 // IPA-транскрипция для всего словаря (кроме фраз)
 const IPA_DATA={
+"Bewerbung":"[bəˈvɛʁbʊŋ]","Initiativbewerbung":"[ɪnitsiaˈtiːfbəˌvɛʁbʊŋ]","Aushang":"[ˈaʊ̯sˌhaŋ]","Zeitarbeitsfirma":"[ˈtsaɪ̯tʔaʁbaɪ̯tsˌfɪʁma]","Bekannte":"[bəˈkantə]","Tourismus":"[tuˈʁɪsmʊs]","Stellenanzeige":"[ˈʃtɛlənˌʔantsaɪ̯ɡə]","Stellenangebot":"[ˈʃtɛlənˌʔanɡəboːt]","Berufserfahrung":"[bəˈʁuːfsʔɛɐ̯ˌfaːʁʊŋ]","Bezahlung":"[bəˈtsaːlʊŋ]","Ausbildungsplatz":"[ˈaʊ̯sbɪldʊŋsˌplats]","Aushilfe":"[ˈaʊ̯sˌhɪlfə]","Personalberater":"[pɛʁzoˈnaːlbəˌʁaːtɐ]","Bewerbungsunterlagen":"[bəˈvɛʁbʊŋsˌʔʊntɐlaːɡn̩]","Tätigkeit":"[ˈtɛːtɪçkaɪ̯t]","zusammenarbeiten":"[tsuˈzamənˌʔaʁbaɪ̯tn̩]","kreativ":"[kʁeaˈtiːf]","geduldig":"[ɡəˈdʊldɪç]","Stundenlohn":"[ˈʃtʊndn̩ˌloːn]","Überstunde":"[ˈyːbɐˌʃtʊndə]","Lebenslauf":"[ˈleːbn̩sˌlaʊ̯f]","Schulbildung":"[ˈʃuːlˌbɪldʊŋ]","Diplom":"[diˈploːm]","Bewerbungsschreiben":"[bəˈvɛʁbʊŋsˌʃʁaɪ̯bn̩]","Bewerbungsfoto":"[bəˈvɛʁbʊŋsˌfoːto]","Bewerbungsgespräch":"[bəˈvɛʁbʊŋsɡəˌʃpʁɛːç]","Vorstellungsgespräch":"[ˈfoːɐ̯ʃtɛlʊŋsɡəˌʃpʁɛːç]","Arbeitspause":"[ˈaʁbaɪ̯tsˌpaʊ̯zə]","Teamarbeit":"[ˈtiːmˌʔaʁbaɪ̯t]","Fremdsprache":"[ˈfʁɛmtˌʃpʁaːxə]","ob":"[ɔp]",
 "Posten":"[ˈpɔstn̩]","Schweigen":"[ˈʃvaɪ̯ɡn̩]",
+"verfault":"[fɛɐ̯ˈfaʊ̯lt]","zurückhalten":"[tsuˈʁʏkhaltn̩]","zwingen":"[ˈtsvɪŋən]","umwerfend":"[ˈʊmvɛʁfn̩t]",
 // Числа
 "null":"[nʊl]","eins":"[aɪns]","zwei":"[tsvaɪ]","drei":"[dʁaɪ]","vier":"[fiːɐ̯]",
 "fünf":"[fʏnf]","sechs":"[zɛks]","sieben":"[ˈziːbən]","acht":"[axt]","neun":"[nɔɪn]",
@@ -5294,6 +5346,22 @@ const DIALOGE={
       {q:"Wo waren Sie? Wie sind Sie dorthin gekommen?", qRu:"Где вы были? Как вы туда добрались?", a:"Ich bin nach Wien geflogen.", aRu:"Я летел(а) в Вену.", note:"Perfekt mit sein"},
       {q:"Mit wem sind Sie gefahren?", qRu:"С кем вы ехали?", a:"Ich bin mit meinem Bruder mit dem Auto nach Wien gefahren.", aRu:"Я ехал(а) с братом на машине в Вену."},
       {q:"Wie war die Reise für Sie?", qRu:"Как была для вас эта поездка?", a:"Ich habe mich gefreut, weil ich meine Verwandten besucht habe.", aRu:"Я обрадовался(лась), потому что навестил(а) родственников.", note:"sich freuen → haben"},
+    ]},
+    {tag:"Kennst du / Kennen Sie …?",col:C.green,pairs:[
+      {q:"Kennst du einen Campingplatz, der auch für Kinder interessant ist?", qRu:"Ты знаешь кемпинг, который интересен и для детей?", a:"Ja, natürlich kenne ich einen Campingplatz, der auch für Kinder interessant ist. Er ist in Bayern.", aRu:"Да, конечно, я знаю кемпинг, который интересен и для детей. Он в Баварии.", note:"Relativsatz: der / das / die + Verb am Ende"},
+      {q:"Kennen Sie ein Restaurant, das gemütlich ist?", qRu:"Вы знаете ресторан, в котором уютно?", a:"Ja, ich kenne ein Restaurant, das gemütlich ist.", aRu:"Да, я знаю ресторан, в котором уютно."},
+      {q:"Kennst du einen Strand, der sauber ist?", qRu:"Ты знаешь пляж, который чистый?", a:"Ja, ich kenne einen Strand, der sauber ist und feinen Sand hat.", aRu:"Да, я знаю чистый пляж с мелким песком."},
+    ]},
+    {tag:"Im Reisebüro",col:C.orange,pairs:[
+      {q:"Guten Tag, was kann ich für Sie tun?", qRu:"Здравствуйте, чем могу вам помочь?", a:"Guten Tag, ich möchte einen Flug von Frankfurt nach Tunis buchen.", aRu:"Здравствуйте, я хотел(а) бы забронировать рейс из Франкфурта в Тунис."},
+      {q:"Wann wollen Sie reisen?", qRu:"Когда вы хотите поехать?", a:"Der Hinflug soll am 3. Oktober und der Rückflug am 2. November sein.", aRu:"Рейс туда должен быть 3 октября, а обратный — 2 ноября.", note:"der Hinflug · der Rückflug"},
+      {q:"Von wo möchten Sie abfliegen?", qRu:"Откуда вы хотите вылететь?", a:"Ich möchte von Frankfurt abfliegen.", aRu:"Я хотел(а) бы вылететь из Франкфурта."},
+      {q:"Ich kann Ihnen einen Flug ab Frankfurt anbieten.", qRu:"Я могу предложить вам рейс из Франкфурта.", a:"Gut. Gibt es Hotels, die direkt am Strand liegen?", aRu:"Хорошо. Есть ли отели, которые находятся прямо на пляже?"},
+      {q:"Das ist kein Problem. Es gibt viele Hotels, die direkt am Strand liegen.", qRu:"Это не проблема. Есть много отелей прямо на пляже.", a:"Haben Sie Angebote, die günstig sind?", aRu:"У вас есть предложения, которые недороги?"},
+    ]},
+    {tag:"Kurze Wendungen",col:C.yellow,pairs:[
+      {q:"Treffen wir uns am Samstag?", qRu:"Встретимся в субботу?", a:"Abgemacht! Bis Samstag!", aRu:"Договорились! До субботы!", note:"Abgemacht! — договорились"},
+      {q:"Bist du noch böse auf mich?", qRu:"Ты всё ещё злишься на меня?", a:"Nein, ich bin nicht mehr böse auf dich.", aRu:"Нет, я больше не злюсь на тебя.", note:"böse auf + Akkusativ — злиться на кого-то"},
     ]},
   ],
 };
@@ -18629,6 +18697,26 @@ function T_A2L10C(){
               <div style={{fontWeight:800,fontSize:13,color:C.yellow,marginBottom:4}}>Perfekt в этих ответах</div>
               <div style={{fontSize:13,color:C.text,lineHeight:1.7}}>Frau Matei <b>ist</b> in Deva <b>geboren</b>. Sie <b>ist</b> zur Schule <b>gegangen</b>. — sein: рождение, движение.<br/>Sie <b>hat</b> dort <b>gearbeitet</b>. — haben: большинство остальных глаголов.</div>
             </div>
+            <div style={{marginTop:12}}>
+              <RedeBlock col={C.orange} title="Der Bewerbungsbrief — образец (Jamal Kesete, Fahrer)" items={[
+                {de:"Sehr geehrte Damen und Herren,",ru:"Уважаемые дамы и господа,"},
+                {de:"in der Zeitung vom 06.02.2016 habe ich Ihre Anzeige gelesen und würde mich gerne als Fahrer bei Ihnen bewerben.",ru:"В газете от 06.02.2016 я прочитал ваше объявление и хотел бы устроиться к вам водителем."},
+                {de:"Ich habe den Führerschein Klasse C1 und habe bereits als Paketfahrer gearbeitet.",ru:"У меня права категории C1, и я уже работал курьером-водителем."},
+                {de:"Jetzt arbeite ich als Aushilfe in einem Supermarkt.",ru:"Сейчас я работаю подсобным работником в супермаркете."},
+                {de:"Ich möchte gerne wieder als Fahrer arbeiten und möchte mich hiermit um die Stelle bewerben.",ru:"Я хотел бы снова работать водителем и настоящим подаю заявление на эту должность."},
+                {de:"Ich bin zeitlich flexibel und kann ab nächstem Monat anfangen.",ru:"Я гибок по времени и могу начать со следующего месяца."},
+                {de:"Ich würde mich über eine positive Antwort freuen.",ru:"Буду рад положительному ответу."},
+                {de:"Mit freundlichen Grüßen",ru:"С уважением"},
+              ]}/>
+              <RedeBlock col={C.blue} title="Wie kann man sein Deutsch verbessern?" items={[
+                {de:"viel Radio hören",ru:"много слушать радио"},
+                {de:"Zeitung lesen",ru:"читать газету"},
+                {de:"im Internet Nachrichten auf Deutsch lesen",ru:"читать в интернете новости на немецком"},
+                {de:"einen deutschen Blog schreiben",ru:"писать блог на немецком"},
+                {de:"mit den Nachbarn sprechen",ru:"разговаривать с соседями"},
+                {de:"einen berufsorientierten B2-Sprachkurs machen",ru:"пройти профессионально ориентированный языковой курс B2"},
+              ]}/>
+            </div>
           </div>
         )}
         {tab==="gespraech"&&(
@@ -18690,6 +18778,20 @@ function T_A2L10C(){
               </div>
               <TapEx de="Warum soll man pünktlich sein? — Weil man sonst einen schlechten Eindruck macht." ru="Почему нужно быть пунктуальным? — Потому что иначе производишь плохое впечатление." col={C.yellow} style={{marginTop:8,marginBottom:6}}/>
               <TapEx de="Was denkst du? — Ich denke, dass man die Arme nicht verschränken sollte." ru="Что ты думаешь? — Я думаю, что не стоит скрещивать руки." col={C.yellow}/>
+            </div>
+            <div style={{marginTop:12}}>
+              <RedeBlock col={C.purple} title="Tipps für das Vorstellungsgespräch" items={[
+                {de:"Informieren Sie sich vorher gut über die Firma.",ru:"Заранее хорошо узнайте о фирме."},
+                {de:"Schreiben Sie Fragen auf und notieren Sie Ihre Antworten.",ru:"Запишите вопросы и ваши ответы."},
+                {de:"Die Kleidung muss ordentlich sein und sie muss zur Stelle passen.",ru:"Одежда должна быть опрятной и подходить к должности."},
+                {de:"Kommen Sie fünf Minuten vor dem Gesprächstermin.",ru:"Приходите за пять минут до назначенного времени."},
+                {de:"Bringen Sie das Einladungsschreiben mit.",ru:"Возьмите с собой приглашение."},
+                {de:"Schalten Sie Ihr Handy aus.",ru:"Выключите телефон."},
+                {de:"Sehen Sie Ihren Gesprächspartner bei der Begrüßung freundlich an.",ru:"При приветствии дружелюбно смотрите на собеседника."},
+                {de:"Lassen Sie ihn ausreden, wenn er spricht.",ru:"Дайте ему договорить, когда он говорит."},
+                {de:"Sprechen Sie ruhig und deutlich.",ru:"Говорите спокойно и чётко."},
+                {de:"Bedanken Sie sich am Ende für das Gespräch.",ru:"В конце поблагодарите за беседу."},
+              ]}/>
             </div>
           </div>
         )}
@@ -18768,6 +18870,16 @@ const ZUORD_A2L10=[
   {de:"Ich gehe davon aus, …",ru:"я исхожу из того, что …"},
   {de:"das Schweigen",ru:"молчание"},
   {de:"Es wäre besser, wenn …",ru:"было бы лучше, если бы …"},
+  {de:"die Bewerbung",ru:"заявление о приёме на работу"},
+  {de:"der Lebenslauf",ru:"резюме, биография"},
+  {de:"das Vorstellungsgespräch",ru:"собеседование"},
+  {de:"die Überstunde",ru:"сверхурочный час"},
+  {de:"der Stundenlohn",ru:"почасовая оплата"},
+  {de:"die Aushilfe",ru:"временный работник"},
+  {de:"in Teilzeit arbeiten",ru:"работать на неполный день"},
+  {de:"vor allem",ru:"прежде всего"},
+  {de:"geduldig",ru:"терпеливый"},
+  {de:"kreativ",ru:"творческий"},
 ];
 
 const WSENTS_A2L10=[
@@ -18825,6 +18937,121 @@ function T_A2L11A(){
     </div>
   );
 }
+
+const LUECKEN_A2L11B=[
+  {sent:"Das ist der Mann, ___ uns die Stadt gezeigt hat.",opts:["der","den","die","das"],ans:0,ru:"Это мужчина, который показал нам город.",hint:"m → der"},
+  {sent:"Das ist die Ferienwohnung, ___ billiger als unsere war.",opts:["die","der","das","den"],ans:0,ru:"Это квартира для отпуска, которая была дешевле нашей.",hint:"f → die"},
+  {sent:"Das ist das Restaurant, ___ direkt am Strand war.",opts:["das","die","der","den"],ans:0,ru:"Это ресторан, который был прямо на пляже.",hint:"n → das"},
+  {sent:"Das sind die Berge, ___ hinter der Stadt liegen.",opts:["die","der","das","dem"],ans:0,ru:"Это горы, которые находятся за городом.",hint:"Plural → die"},
+  {sent:"Ich suche ein Hotel, ___ sehr ruhig liegt.",opts:["das","die","der","dem"],ans:0,ru:"Я ищу отель, который находится в очень тихом месте.",hint:"n → das"},
+  {sent:"Ich suche einen Strand, ___ feinen, weißen Sand hat.",opts:["der","den","die","das"],ans:0,ru:"Я ищу пляж, на котором мелкий белый песок.",hint:"m → der"},
+  {sent:"Ich suche eine Ferienwohnung, ___ für Kinder geeignet ist.",opts:["die","der","das","dem"],ans:0,ru:"Я ищу квартиру для отпуска, подходящую для детей.",hint:"f → die"},
+  {sent:"Ich suche Reiseangebote, ___ günstig sind.",opts:["die","der","das","den"],ans:0,ru:"Я ищу туристические предложения, которые недороги.",hint:"Plural → die"},
+];
+const Q_A2L11C=[
+  {q:"Wer sagt: «Guten Tag, was kann ich für Sie tun?»",opts:["Mitarbeiter/in im Reisebüro","Kunde/Kundin","der Pilot","der Nachbar"],ans:0,hint:"Im Reisebüro"},
+  {q:"Wie sagt die Kundin, wann der Flug sein soll?",opts:["Der Hinflug soll am 3. Oktober sein.","Ich kann Ihnen einen Flug anbieten.","Der Flug kostet nur 200 Euro.","Wann wollen Sie reisen?"],ans:0,hint:"Kunde/Kundin"},
+  {q:"Was bedeutet «der Rückflug»?",opts:["обратный рейс","рейс туда","пересадка","багаж"],ans:0,hint:"Reise buchen"},
+  {q:"Was bedeutet «Haben Sie Angebote, die günstig sind?»",opts:["У вас есть недорогие предложения?","Когда вы хотите поехать?","Сколько стоит рейс?","Где находится отель?"],ans:0,hint:"Relativsatz"},
+];
+function T_A2L11B(){
+  const rows=[["m","der Strand","der …",C.blue],["n","das Museum","das …",C.green],["f","die Kellnerin","die …",C.red],["Pl.","die Nachbarn","die …",C.orange]];
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.red}>
+        <H c={C.red}>🔗 Relativsätze im Nominativ</H>
+        <div style={{fontSize:13,color:C.text,lineHeight:1.8}}>
+          Relativsatz (относительное придаточное) уточняет существительное. Он начинается с <b>Relativpronomen</b>, перед ним стоит <b>запятая</b>, а глагол — <b>в конце</b>. В Nominativ Relativpronomen совпадает с артиклем слова, к которому оно относится.
+        </div>
+        <div style={{display:"grid",gridTemplateColumns:"40px minmax(0,1.3fr) minmax(0,1fr)",gap:3,marginTop:10,alignItems:"center"}}>
+          {rows.map(([g,ex,rp,c])=>(
+            <div key={g} style={{display:"contents"}}>
+              <div style={{fontSize:12,fontWeight:900,color:c,textAlign:"center",background:c+"22",borderRadius:6,padding:"6px 0"}}>{g}</div>
+              <div style={{fontSize:13,color:C.text,padding:"6px 8px",background:C.ov3,borderRadius:6}}>{ex}</div>
+              <div style={{fontSize:14,fontWeight:900,color:c,padding:"6px 8px",background:c+"15",borderRadius:6}}>{rp}</div>
+            </div>
+          ))}
+        </div>
+        <div style={{fontSize:12,fontWeight:800,color:C.muted,margin:"14px 0 6px",textTransform:"uppercase",letterSpacing:0.4}}>Два предложения → одно</div>
+        <TapEx de="Das ist der Strand. Der Strand war so ruhig. → Das ist der Strand, der so ruhig war." ru="Это пляж. Пляж был такой тихий. → Это пляж, который был таким тихим." col={C.red} style={{marginBottom:6}}/>
+        <TapEx de="Ich suche einen Strand. Der Strand ist auch so ruhig. → Ich suche einen Strand, der auch so ruhig ist." ru="Я ищу пляж. Пляж тоже такой тихий. → Я ищу пляж, который тоже такой тихий." col={C.red}/>
+      </Box>
+      <Box c={C.green}>
+        <H c={C.green}>📷 Beispiele (Urlaubsfotos)</H>
+        <TapEx de="Schau mal: Das ist die Kellnerin, die so gut Deutsch gesprochen hat." ru="Смотри: это официантка, которая так хорошо говорила по-немецки." col={C.green} style={{marginBottom:6}}/>
+        <TapEx de="Das ist das Museum, das fast immer geschlossen war." ru="Это музей, который почти всегда был закрыт." col={C.green} style={{marginBottom:6}}/>
+        <TapEx de="Das ist der Strand, der so toll war." ru="Это пляж, который был такой классный." col={C.green} style={{marginBottom:6}}/>
+        <TapEx de="Das sind die Nachbarn, die uns zum Essen eingeladen haben." ru="Это соседи, которые пригласили нас на ужин." col={C.green}/>
+      </Box>
+      <Box c={C.blue}>
+        <H c={C.blue}>🗺️ Kennst du / Kennen Sie …?</H>
+        <div style={{fontSize:13,color:C.muted,lineHeight:1.6,marginBottom:8}}>Спросить об интересных местах: <b>einen Kiosk, ein Lokal, ein Museum, einen Arzt, eine Apotheke, einen Strand, ein Restaurant, einen Campingplatz</b> — <b>der / das / die …</b></div>
+        <TapEx de="Kennst du einen Campingplatz, der auch für Kinder interessant ist?" ru="Ты знаешь кемпинг, который интересен и для детей?" col={C.blue} style={{marginBottom:6}}/>
+        <TapEx de="Ja, natürlich kenne ich einen Campingplatz, der gemütlich ist. Er ist in Bayern." ru="Да, конечно, я знаю кемпинг, где уютно. Он в Баварии." col={C.blue} style={{marginBottom:6}}/>
+        <TapEx de="Kennen Sie ein Restaurant, das gemütlich ist?" ru="Вы знаете ресторан, в котором уютно?" col={C.blue}/>
+      </Box>
+    </div>
+  );
+}
+function T_A2L11C(){
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:10}}>
+      <Box c={C.orange}>
+        <H c={C.orange}>✈️ Eine Reise im Reisebüro buchen</H>
+        <RedeBlock col={C.green} title="Kunde / Kundin" items={[
+          {de:"Guten Tag, ich möchte einen Flug / eine Urlaubsreise nach … buchen.",ru:"Здравствуйте, я хотел(а) бы забронировать рейс / отпускную поездку в …"},
+          {de:"Wir wollen im Juni/Juli/… Urlaub machen.",ru:"Мы хотим поехать в отпуск в июне/июле/…"},
+          {de:"Der Hinflug soll am … und der Rückflug am … sein.",ru:"Рейс туда должен быть … числа, а обратный — … числа."},
+          {de:"Ich möchte den Hinflug am …",ru:"Я хотел(а) бы рейс туда … числа."},
+          {de:"Ich möchte / Wir möchten von Berlin/… abfliegen.",ru:"Я хотел(а) бы / Мы хотели бы вылететь из Берлина/…"},
+          {de:"Haben Sie Angebote, die …?",ru:"У вас есть предложения, которые …?"},
+          {de:"Gibt es Hotels, die …?",ru:"Есть ли отели, которые …?"},
+        ]}/>
+        <RedeBlock col={C.blue} title="Mitarbeiter/in im Reisebüro" items={[
+          {de:"Guten Tag, was kann ich für Sie tun?",ru:"Здравствуйте, чем могу вам помочь?"},
+          {de:"Wann wollen Sie reisen?",ru:"Когда вы хотите поехать?"},
+          {de:"Ich kann Ihnen einen Flug ab … anbieten.",ru:"Я могу предложить вам рейс из …"},
+          {de:"Der Flug / Die Reise kostet (nur) …",ru:"Рейс / поездка стоит (всего) …"},
+          {de:"Ich habe hier einen Katalog mit günstigen Angeboten.",ru:"У меня здесь каталог с выгодными предложениями."},
+          {de:"Das ist kein Problem. Es gibt viele Hotels, die …",ru:"Это не проблема. Есть много отелей, которые …"},
+        ]}/>
+      </Box>
+      <Box c={C.purple}>
+        <H c={C.purple}>🎭 Aufgabe 5 · Dialog im Reisebüro</H>
+        <div style={{fontSize:13,color:C.text,lineHeight:1.8,marginBottom:8}}>Выберите ситуацию, напишите и разыграйте диалог в турагентстве.</div>
+        <div style={{background:C.orange+"15",border:`1px solid ${C.orange}33`,borderRadius:10,padding:"10px 13px",marginBottom:8,fontSize:13,color:C.text,lineHeight:1.7}}>
+          <b style={{color:C.orange}}>Situation 1</b> · Flug von Frankfurt nach Tunis<br/>Hinflug: 03.10. · Rückflug: 02.11.
+        </div>
+        <div style={{background:C.green+"15",border:`1px solid ${C.green}33`,borderRadius:10,padding:"10px 13px",fontSize:13,color:C.text,lineHeight:1.7}}>
+          <b style={{color:C.green}}>Situation 2</b> · Urlaub auf Mallorca<br/>Reisezeit: im Juli / für eine Woche · Abflug: Düsseldorf
+        </div>
+      </Box>
+    </div>
+  );
+}
+const Q_A2L11TEST=shuffle([...Q_A2L11A,...Q_A2L11C]);
+const ZUORD_A2L11=[
+  {de:"verfault",ru:"гнилой, испорченный"},
+  {de:"zurückhalten",ru:"сдерживать, удерживать"},
+  {de:"zwingen",ru:"заставлять"},
+  {de:"umwerfend",ru:"потрясающий, сногсшибательный"},
+  {de:"Wann wollen Sie reisen?",ru:"Когда вы хотите поехать?"},
+  {de:"Ich kann Ihnen einen Flug anbieten.",ru:"Я могу предложить вам рейс."},
+  {de:"Haben Sie Angebote, die …?",ru:"У вас есть предложения, которые …?"},
+  {de:"Das ist kein Problem.",ru:"Это не проблема."},
+];
+const WSENTS_A2L11=[
+  {w:["Das","ist","der","Mann,","der","uns","die","Stadt","gezeigt","hat","."],ru:"Это мужчина, который показал нам город."},
+  {w:["Ich","suche","einen","Strand,","der","feinen,","weißen","Sand","hat","."],ru:"Я ищу пляж, на котором мелкий белый песок."},
+  {w:["Haben","Sie","Angebote,","die","günstig","sind","?"],ru:"У вас есть предложения, которые недороги?"},
+  {w:["Kennen","Sie","ein","Restaurant,","das","gemütlich","ist","?"],ru:"Вы знаете ресторан, в котором уютно?"},
+];
+function GrosserTestA2L11(){return <GrosserTestContainer rounds={[
+  {icon:"🎯",label:"Quiz",          col:C.yellow, component:()=><Quiz questions={Q_A2L11TEST}/>},
+  {icon:"📝",label:"Lückentext",    col:C.blue,   component:()=><LueckenQuiz items={LUECKEN_A2L11B}/>},
+  {icon:"🔗",label:"Wortschatz",    col:C.green,  component:()=><Zuordnung pairs={ZUORD_A2L11} leftLabel="Wort" rightLabel="Bedeutung"/>},
+  {icon:"🔤",label:"Wortstellung",  col:C.orange, component:()=><WortstellungGame sents={WSENTS_A2L11}/>},
+]}/>;}
 
 const Q_L6A=[
   {q:"Welcher Artikel hat 'Apfel'?",          opts:["der","die","das"],                                                                     ans:0, hint:"Artikel"},
@@ -19288,11 +19515,16 @@ const LEKTIONEN=[
   },
   {
     id:"A2-L11",niveau:"A2",num:"11",title:"Von Ort zu Ort",
-    sub:"A Einstieg: Reisen",
-    date:"Kursbuch S.123",col:C.blue,
+    sub:"Einstieg · A Reisevorbereitungen",
+    date:"Kursbuch S.123–125",col:C.blue,
     sections:[
       {id:"dA2L11", icon:"💬",title:"Dialogfragen A2-L11",         sub:"Фразы для диалога",                                    time:"∞",     col:C.blue,   hasT:false, th:null, ex:()=><DialogCards lId="A2-L11"/>},
       {id:"a2l11a", icon:"🧳",title:"A · Einstieg: Reisen",        sub:"Fotos beschreiben · letzte Reise erzählen",        time:"6 мин", col:C.blue,   hasT:true, th:()=><T_A2L11A/>, ex:()=><Quiz questions={Q_A2L11A}/>},
+      {id:"a2l11b", icon:"🔗",title:"A · Relativsätze im Nominativ",sub:"der / das / die + Verb am Ende",                time:"7 мин", col:C.red,    hasT:true, th:()=><T_A2L11B/>, ex:()=><LueckenQuiz items={LUECKEN_A2L11B}/>},
+      {id:"a2l11c", icon:"✈️",title:"A · Im Reisebüro buchen",     sub:"Kunde/Kundin · Mitarbeiter/in · Situationen",      time:"6 мин", col:C.orange, hasT:true, th:()=><T_A2L11C/>, ex:()=><Quiz questions={Q_A2L11C}/>},
+      {id:"wbA2L11", icon:"📖",title:"Wörterbuch A2-L11",          sub:"Слова этого урока",                                    time:"—",    col:C.teal,   hasT:false, ex:()=><LektWoerterbuch lekt="A2-L11"/>},
+      {id:"tA2L11", icon:"🎯",title:"Großer Test A2-L11",          sub:"Quiz · Lücken · Wortschatz · Wortstellung",     time:"15 мин",col:C.yellow, hasT:false, ex:()=><GrosserTestA2L11/>},
+      {id:"wtA2L11", icon:"🧠",title:"Wortschatz-Test A2-L11",     sub:"Перевод · Артикли · Обратный перевод",                 time:"5 мин",col:C.teal,   hasT:false, ex:()=><WortschatzTest lekt="A2-L11"/>},
     ]
   },
 ];
