@@ -18794,65 +18794,29 @@ function GrosserTestA2L10(){return <GrosserTestContainer rounds={[
 
 // ═══ A2-L11 · Von Ort zu Ort ═══
 const Q_A2L11A=[
-  {q:"Was bedeutet «im Stau stehen»?",opts:["стоять в пробке","стоять на остановке","стоять в очереди","стоять на границе"],ans:0,hint:"Reisen"},
-  {q:"«eine Geschäftsreise machen» — это:",opts:["совершать командировку","ехать в отпуск","навещать родственников","встречать друзей"],ans:0,hint:"Reisen"},
-  {q:"«einchecken» — am Flughafen:",opts:["регистрироваться на рейс","покупать билет","выходить из самолёта","терять багаж"],ans:0,hint:"Am Flughafen"},
   {q:"Ich ___ nach Wien geflogen.",opts:["bin","habe","werde","hatte"],ans:0,hint:"Perfekt"},
   {q:"Ich ___ mich gefreut, weil ich meine Verwandten besucht habe.",opts:["habe","bin","wurde","war"],ans:0,hint:"Perfekt"},
   {q:"Auf dem Foto rechts oben sieht ___ viele Reisende.",opts:["man","ich","du","wir"],ans:0,hint:"Fotos beschreiben"},
-  {q:"Was bedeutet «oben»?",opts:["вверху","внизу","слева","справа"],ans:0,hint:"Richtungen"},
+  {q:"Was bedeutet «Wie sind Sie dorthin gekommen?»",opts:["Как вы туда добрались?","Когда вы туда приехали?","Зачем вы туда поехали?","С кем вы туда поехали?"],ans:0,hint:"Reise erzählen"},
 ];
 function T_A2L11A(){
-  const lernen=[
-    {de:"eine Reise im Reisebüro buchen",ru:"забронировать поездку в турагентстве"},
-    {de:"die Notrufzentrale anrufen",ru:"позвонить в центр экстренных вызовов"},
-    {de:"Dialoge auf der Reise",ru:"диалоги в путешествии"},
-    {de:"über interessante Reiseziele sprechen",ru:"говорить об интересных направлениях поездок"},
-    {de:"eine Reise planen",ru:"планировать поездку"},
-    {de:"Relativsätze im Nominativ und Akkusativ",ru:"относительные придаточные в Nominativ и Akkusativ"},
-  ];
-  const reisen=[
-    {de:"Verwandte besuchen",ru:"навещать родственников"},
-    {de:"in die Heimat fliegen/fahren",ru:"лететь/ехать на родину"},
-    {de:"zur Arbeit fahren",ru:"ехать на работу"},
-    {de:"eine Geschäftsreise machen",ru:"совершать командировку"},
-    {de:"eine Urlaubsreise machen",ru:"отправляться в отпускную поездку"},
-    {de:"im Stau stehen",ru:"стоять в пробке"},
-    {de:"einchecken",ru:"регистрироваться (на рейс)"},
-    {de:"in den Urlaub fahren/fliegen",ru:"ехать/лететь в отпуск"},
-    {de:"Freunde abholen",ru:"встречать друзей"},
-  ];
-  const dirs=[["←","links","слева"],["↑","oben","вверху"],["↓","unten","внизу"],["→","rechts","справа"]];
   return (
     <div style={{display:"flex",flexDirection:"column",gap:10}}>
       <Box c={C.blue}>
-        <H c={C.blue}>🧳 A2-L11A · Einstieg: Von Ort zu Ort</H>
-        <div style={{fontSize:13,color:C.muted,lineHeight:1.6,marginBottom:10}}>Вводная страница урока 11 (Kursbuch S.123): путешествия, поездки, фото и рассказ о своей последней поездке.</div>
-        <RedeBlock col={C.blue} title="Sie lernen — чему вы научитесь" items={lernen}/>
-        <RedeBlock col={C.blue} title="Warum reisen die Leute? — зачем люди ездят" items={reisen}/>
-        <div style={{fontSize:12,fontWeight:800,color:C.blue,margin:"12px 0 6px",textTransform:"uppercase",letterSpacing:0.4}}>Richtungen — направления на фото</div>
-        <div style={{display:"grid",gridTemplateColumns:"repeat(4,minmax(0,1fr))",gap:6}}>
-          {dirs.map(([ar,de,ru])=>(
-            <div key={de} style={{background:C.green+"15",border:`1px solid ${C.green}44`,borderRadius:9,padding:"8px 2px",textAlign:"center"}}>
-              <div style={{fontSize:20,color:C.green,fontWeight:900,lineHeight:1.1}}>{ar}</div>
-              <div style={{fontSize:13,fontWeight:800,color:C.text}}>{de}</div>
-              <div style={{fontSize:11,color:C.muted}}>{ru}</div>
-            </div>
-          ))}
-        </div>
-      </Box>
-      <Box c={C.green}>
-        <H c={C.green}>📷 Aufgabe 1 · Fotos beschreiben</H>
-        <div style={{fontSize:13,color:C.text,lineHeight:1.8,marginBottom:8}}>Опишите фото: <b>Was machen die Leute? Warum reisen sie?</b> (Что делают люди? Как вы думаете, почему они путешествуют?)</div>
-        <TapEx de="Auf dem Foto rechts oben sieht man viele Reisende. Sie stehen auf der Autobahn." ru="На фото справа вверху видно много путешественников. Они стоят на автобане." col={C.green} style={{marginBottom:6}}/>
-        <TapEx de="Ich glaube, sie wollen … Vielleicht …" ru="Я думаю, они хотят … Возможно …" col={C.green}/>
-      </Box>
-      <Box c={C.orange}>
-        <H c={C.orange}>🗺️ Aufgabe 2 · Meine letzte Reise</H>
-        <div style={{fontSize:13,color:C.text,lineHeight:1.8,marginBottom:8}}>Расскажите о своей последней поездке: <b>Wo waren Sie? Wie sind Sie dorthin gekommen? Wie war die Reise für Sie?</b></div>
-        <TapEx de="Ich bin nach … geflogen." ru="Я летел(а) в …" col={C.orange} style={{marginBottom:6}}/>
-        <TapEx de="Ich bin mit meinem Bruder mit dem Auto nach … gefahren." ru="Я ехал(а) с моим братом на машине в …" col={C.orange} style={{marginBottom:6}}/>
-        <TapEx de="Ich habe mich gefreut, weil …" ru="Я обрадовался (обрадовалась), потому что …" col={C.orange} style={{marginBottom:10}}/>
+        <H c={C.blue}>🧳 A2-L11A · Einstieg: Reisen</H>
+        <RedeBlock col={C.blue} title="Fotos beschreiben" items={[
+          {de:"Was machen die Leute? Warum reisen sie?",ru:"Что делают люди? Почему они путешествуют?"},
+          {de:"Auf dem Foto rechts oben sieht man viele Reisende.",ru:"На фото справа вверху видно много путешественников."},
+          {de:"Sie stehen auf der Autobahn.",ru:"Они стоят на автобане."},
+          {de:"Ich glaube, sie wollen … Vielleicht …",ru:"Я думаю, они хотят … Возможно …"},
+        ]}/>
+        <RedeBlock col={C.orange} title="Von der letzten Reise erzählen" items={[
+          {de:"Wo waren Sie? Wie sind Sie dorthin gekommen?",ru:"Где вы были? Как вы туда добрались?"},
+          {de:"Wie war die Reise für Sie?",ru:"Как была для вас эта поездка?"},
+          {de:"Ich bin nach … geflogen.",ru:"Я летел(а) в …"},
+          {de:"Ich bin mit meinem Bruder mit dem Auto nach … gefahren.",ru:"Я ехал(а) с братом на машине в …"},
+          {de:"Ich habe mich gefreut, weil …",ru:"Я обрадовался (обрадовалась), потому что …"},
+        ]}/>
         <div style={{background:C.yellow+"15",border:`1px solid ${C.yellow}33`,borderRadius:10,padding:"11px 13px"}}>
           <div style={{fontWeight:800,fontSize:13,color:C.yellow,marginBottom:4}}>Perfekt: sein или haben?</div>
           <div style={{fontSize:13,color:C.text,lineHeight:1.7}}>Движение из места в место → <b>sein</b>: ich <b>bin</b> geflogen, ich <b>bin</b> gefahren.<br/>Рефлексивный глагол → <b>haben</b>: ich <b>habe</b> mich gefreut.</div>
@@ -18861,35 +18825,6 @@ function T_A2L11A(){
     </div>
   );
 }
-
-const Q_A2L11TEST=shuffle([...Q_A2L11A]);
-const LUECKEN_A2L11=shuffle([
-  {sent:"Die Leute stehen auf der ___ im Stau. (автобан)",opts:["Autobahn","Autobus","Automat","Autofahrt"],ans:0,ru:"Люди стоят в пробке на автобане.",hint:"Foto beschreiben"},
-  {sent:"Sie fahren in den ___. (отпуск)",opts:["Urlaub","Reise","Stau","Flug"],ans:0,ru:"Они едут в отпуск.",hint:"in den + der-Wort"},
-  {sent:"Ich ___ mit meinem Bruder mit dem Auto nach Wien gefahren.",opts:["bin","habe","werde","hatte"],ans:0,ru:"Я ехал(а) с братом на машине в Вену.",hint:"Perfekt mit sein"},
-  {sent:"Ich habe ___ gefreut, weil ich meine Freunde besucht habe. (себя)",opts:["mich","mir","sich","dich"],ans:0,ru:"Я обрадовался, потому что навестил друзей.",hint:"sich freuen"},
-]);
-const ZUORD_A2L11=[
-  {de:"im Stau stehen",ru:"стоять в пробке"},
-  {de:"eine Geschäftsreise machen",ru:"совершать командировку"},
-  {de:"eine Urlaubsreise machen",ru:"отправляться в отпускную поездку"},
-  {de:"Verwandte besuchen",ru:"навещать родственников"},
-  {de:"einchecken",ru:"регистрироваться (на рейс)"},
-  {de:"Freunde abholen",ru:"встречать друзей"},
-  {de:"zur Arbeit fahren",ru:"ехать на работу"},
-  {de:"in die Heimat fliegen/fahren",ru:"лететь/ехать на родину"},
-];
-const WSENTS_A2L11=[
-  {w:["Auf","dem","Foto","sieht","man","viele","Reisende","."],ru:"На фото видно много путешественников."},
-  {w:["Ich","bin","mit","meinem","Bruder","mit","dem","Auto","nach","Wien","gefahren","."],ru:"Я ехал(а) с братом на машине в Вену."},
-  {w:["Ich","habe","mich","gefreut,","weil","ich","meine","Verwandten","besucht","habe","."],ru:"Я обрадовался(лась), потому что навестил(а) родственников."},
-];
-function GrosserTestA2L11(){return <GrosserTestContainer rounds={[
-  {icon:"🎯",label:"Quiz",          col:C.yellow, component:()=><Quiz questions={Q_A2L11TEST}/>},
-  {icon:"📝",label:"Lückentext",    col:C.blue,   component:()=><LueckenQuiz items={LUECKEN_A2L11}/>},
-  {icon:"🔗",label:"Wortschatz",    col:C.green,  component:()=><Zuordnung pairs={ZUORD_A2L11} leftLabel="Wort" rightLabel="Bedeutung"/>},
-  {icon:"🔤",label:"Wortstellung",  col:C.orange, component:()=><WortstellungGame sents={WSENTS_A2L11}/>},
-]}/>;}
 
 const Q_L6A=[
   {q:"Welcher Artikel hat 'Apfel'?",          opts:["der","die","das"],                                                                     ans:0, hint:"Artikel"},
@@ -19357,8 +19292,7 @@ const LEKTIONEN=[
     date:"Kursbuch S.123",col:C.blue,
     sections:[
       {id:"dA2L11", icon:"💬",title:"Dialogfragen A2-L11",         sub:"Фразы для диалога",                                    time:"∞",     col:C.blue,   hasT:false, th:null, ex:()=><DialogCards lId="A2-L11"/>},
-      {id:"a2l11a", icon:"🧳",title:"A · Einstieg: Reisen",        sub:"Reisegründe · Fotos beschreiben · letzte Reise",        time:"6 мин", col:C.blue,   hasT:true, th:()=><T_A2L11A/>, ex:()=><Quiz questions={Q_A2L11A}/>},
-      {id:"tA2L11", icon:"🎯",title:"Großer Test A2-L11",          sub:"Quiz · Lücken · Wortschatz · Wortstellung",     time:"10 мин",col:C.yellow, hasT:false, ex:()=><GrosserTestA2L11/>},
+      {id:"a2l11a", icon:"🧳",title:"A · Einstieg: Reisen",        sub:"Fotos beschreiben · letzte Reise erzählen",        time:"6 мин", col:C.blue,   hasT:true, th:()=><T_A2L11A/>, ex:()=><Quiz questions={Q_A2L11A}/>},
     ]
   },
 ];
